@@ -1,0 +1,97 @@
+--- 
+title: "Flight Test Engineering Reference Handbook"
+author: "Society of Flight Test Engineers"
+date: "2013"
+site: "bookdown::bookdown_site"
+output:
+  bookdown::gitbook: default
+documentclass: book
+bibliography: []
+biblio-style: apalike
+link-citations: yes
+---
+
+# Preface {-}
+
+![][1]
+
+**Flight Test Engineering Reference Handbook**
+
+Third (2013) Edition
+
+
+Corporate support supplied by
+
+McDonnell Douglas/Boeing (2nd Edition CD's)
+
+and
+
+The National Test Pilot School
+
+## Contributors {-}
+
+
+| Contributing Authors  | Sections |
+|-----------------------|----------|
+| Al Lawless | 1-8, 10-12, 15, 18|
+| Greg Lewis | 2.6 |
+| Bill Norton | 9, 13|
+| Dan Hrehov | 14|
+| Steven Arney | 16|
+| John Minor | 19|
+| David Kidman, Christopher Moulder, Craig Stevens |17|
+
+## Editors {-}
+
+|Editors| Tenure |
+|-------|--------|
+|Lee Gardner & Darcy Painter | 1998-2006 |
+|Harold Weaver | 2006-2013 |
+
+## Feedback {-}
+
+The SFTE Technical Council continually seeks comments and new content
+
+Contact <tech-council@sfte.org>
+
+
+## Publication Policy {-}
+
+Copyright ©2013 by Society Of Flight Test Engineers
+
+All rights reserved. This Technical Handbook is for the exclusive use of the Society of Flight Test Engineers individual and corporate members. The technical information contained herein may not be reproduced by any other individual or organization in any form without written permission from the Society of Flight Test Engineers. The Society reserves the exclusive right of publication. For further information concerning the publication policy, contact:
+
+
+> Society of Flight Test Engineers    
+> 44814 N. Elm Avenue    
+> Lancaster, California 93534 USA    
+> Phone: (661) 949-2095    
+> Fax: (661) 949-2096    
+> <http://www.sfte.org>
+
+
+## Section Index {-}
+
+  **Section**               **Title**
+  --------------------------- ----------------------------------------
+  1                           General Information
+  2                           Mathematics
+  3                           Earth and Atmosphere
+  4                           Pitot Statics
+  5                           Aerodynamics
+  6                           Axis Systems and Transformations
+  7                           Mass Properties
+  8                           Motion/Vibration Analysis
+  9                           Material Strength (Loads)
+  10                          Reciprocating Engines
+  11                          Propellers
+  12                          Fixed-Wing Performance Standardization
+  13                          Acoustics
+  14                          Electromagnetic Compatibility
+  15                          Handling Qualities
+  16                          Rotary Wing
+  17                          Gas Turbine Propulsion
+  18                          Radio Communications
+  19                          The Electromagnetic Spectrum
+
+  [1]: .\media/media/image1.jpg {width="5.333333333333333in" height="3.6366666666666667in"}
