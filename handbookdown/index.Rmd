@@ -72,7 +72,7 @@ All rights reserved. This Technical Handbook is for the exclusive use of the Soc
 
 ## Section Index {-}
 
-  **Section**               **Title**
+  Section                     Title
   --------------------------- ----------------------------------------
   1                           General Information
   2                           Mathematics
