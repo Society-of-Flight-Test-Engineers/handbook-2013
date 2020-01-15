@@ -3,6 +3,7 @@ title: "Flight Test Engineering Reference Handbook"
 author: "Society of Flight Test Engineers"
 date: "2013"
 site: "bookdown::bookdown_site"
+cover-image: "media/media/image1.jpg"
 output:
   bookdown::gitbook: default
 documentclass: book
