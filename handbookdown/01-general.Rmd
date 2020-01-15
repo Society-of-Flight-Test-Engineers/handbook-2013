@@ -1,6 +1,6 @@
 # General Information
 
-## Unit Conversions
+## Unit Conversions^[Common FTE conversions in boldface]
 
 (references 1.1, 1.2)
 
@@ -25,74 +25,53 @@ Exponent  Prefix  Abbreviation
 10^-15^   femto   f
 10^-18^   atto    a
 
- 
+|                          | Multiply       | by             | To Obtain                            |
+|--------------------------|----------------|----------------|--------------------------------------|
+| **Angles**               | circles        | 1              | circumferences                       |
+|                          | circles        | 12             | signs                                |
+|                          | circles        | 21,600         | minutes                              |
+|                          | circles        | 2π             | radians                              |
+|                          | circles        | 360            | degrees                              |
+|                          | degrees        | .01111         | quadrants                            |
+|                          | degrees        | 3600           | seconds                              |
+|                          | degrees        | 60             | minutes                              |
+|                          | mils (Army)    | 0.05625        | degrees                              |
+|                          | mils (Navy)    | 0.05729        | degrees                              |
+|                          | quadrants      | 90             | degrees                              |
+|                          | radians        | 57.2958        | degrees                              |
+|                          | revolutions    | 360            | degrees                              |
+|                          | sphere         | 4π             | steradians^[solid angle measurement] |
+|                          |                |                |                                      |
+| **Angular Acceleration** | rev/min^2^     | 0.001745       | rad/sec^2^                           |
+|                          |                |                |                                      |
+| **Angular Velocity**     | **cycles/sec** | **6.2814**     | **rads/sec**                         |
+|                          | **rads/sec**   | **0.1592**     | **rev/sec (cycles/sec)**             |
+|                          | rads/sec       | 9.549          | rpm                                  |
+|                          | **rad/sec**    | **57.296**     | **deg/sec**                          |
+|                          | rpm            | 0.01667        | rev/sec                              |
+|                          |                |                |                                      |
+| **Area**                 | acres          | 43,560         | ft^2^                                |
+|                          | ares           | 100            | m^2^                                 |
+|                          | barn           | 10^-28^        | m^2^                                 |
+|                          | centares       | 1              | m^2^                                 |
+|                          | circular mils  | 7.854 x 10^-7^ | in^2^                                |
+|                          | cm^2^          | 100            | mm^2^                                |
+|                          | **ft^2^**      | **144**        | **in^2^**                            |
+|                          | **ft^2^**      | **0.09290304** | **m^2^**                             |
+|                          | in^2^          | 6.452          | cm^2^                                |
+|                          | in^2^          | 10^6^          | mils^2^                              |
+|                          | m^2^           | 10.76          | ft^2^                                |
+|                          | section        | 2,589,988.1    | m^2^                                 |
+|                          | st. mile^2^    | 27,780,000     | ft^2^                                |
+|                          | st. mile^2^    | 2.590          | km^2^                                |
+|                          | township       | 93,239,572     | m^2^                                 |
+|                          | yd^2^          | 9              | ft^2^                                |
+|                          | yd^2^          | 0.8361         | m^2^                                 |
 
-| |Multiply|by |To Obtain|
-|-|:-------|:--|:---------|
-|**Angles**|circles |1 |circumferences|
-|          |circles| 12| signs|
-|          |circles| 21,600 |minutes|
-|          |circles| 2π| radians|
-|          |circles| 360| degrees|
-|          |degrees| .01111| quadrants|
-|          |degrees| 3600| seconds|
-|          |degrees| 60| minutes|
-|          |mils (Army)| 0.05625| degrees|
-|          |mils (Navy)| 0.05729| degrees|
-|          |quadrants| 90| degrees|
-|          |radians| 57.2958| degrees|
-|          |revolutions| 360| degrees|
-|          |sphere| 4π| steradians^[solid angle measurement]|
+
 |||||
-|**Angular Acceleration**| rev/min^2^ |0.001745 |rad/sec^2^|
-|||||
-|**Angular Velocity**|cycles/sec |6.2814 |rads/sec|
-|          |rads/sec |0.1592 |rev/sec (cycles/sec)|
-|          |rads/sec |9.549 |rpm|
-|          |rad/sec  |57.296 |deg/sec|
-|          |rpm      |0.01667 |rev/sec|
 
-> *[Multiply]{.underline} [by]{.underline} [To Obtain]{.underline}*
-
-** **
-
-**Area** acres 43,560 ft^2^
-
-> ares 100 m^2^
-
-barn 10^-28^ m^2^
-
-> centares 1 m^2^
->
-> circular mils 7.854 x 10^-7^ in^2^
->
-> cm^2^ 100 mm^2^
->
-> **ft^2^ 144 in^2^**
->
-> **ft^2^ 0.09290304 m^2^**
->
-> in^2^ 6.452 cm^2^
->
-> in^2^ 10^6^ mils^2^
->
-> m^2^ 10.76 ft^2^
-
-section 2,589,988.1 m^2^
-
-> st. mile^2^ 27,780,000 ft^2^
-
-st. mile^2^ 2.590 km^2^
-
-township 93,239,572 m^2^
-
-yd^2^ 9 ft^2^
-
-yd^2^ 0.8361 m^2^
-
-** **
-
-**Density** \* grams/cm^3^ 0.03613 pounds/in^3^
+|**Density**| \* grams/cm^3^ 0.03613 pounds/in^3^
 
 > grams/cm^3^ 62.43 pounds/ft^3^
 
@@ -3158,24 +3137,24 @@ while *I~cg~\<I~z~* yields retrograde precession
 
   [1]: media/media/image2.png {width="6.5in" height="3.4063156167979in"}
   [2]: media/media/image3.png {width="6.5in" height="4.874305555555556in"}
-  [3]: media/media/image4.wmf {width="0.7902777777777777in" height="0.6381944444444444in"}
-  [4]: media/media/image5.wmf {width="0.8236111111111111in" height="2.3604166666666666in"}
-  [5]: media/media/image6.wmf {width="2.470138888888889in" height="0.5in"}
-  [6]: media/media/image7.wmf {width="1.58125in" height="0.5in"}
-  [7]: media/media/image8.wmf {width="2.4881944444444444in" height="0.75in"}
-  [8]: media/media/image9.wmf {width="0.78125in" height="0.27708333333333335in"}
-  [9]: media/media/image10.wmf {width="0.7402777777777778in" height="0.4861111111111111in"}
-  [10]: media/media/image11.wmf {width="0.6673611111111111in" height="0.4861111111111111in"}
-  [11]: media/media/image12.wmf {width="0.5006944444444444in" height="0.5in"}
-  [12]: media/media/image13.wmf {width="0.8548611111111111in" height="0.4305555555555556in"}
-  [13]: media/media/image14.wmf {width="0.6986111111111111in" height="0.4305555555555556in"}
-  [14]: media/media/image15.wmf {width="1.78125in" height="0.48541666666666666in"}
-  [15]: media/media/image16.wmf {width="1.2930555555555556in" height="0.48541666666666666in"}
-  [16]: media/media/image17.wmf {width="0.6958333333333333in" height="0.5in"}
-  [17]: media/media/image18.wmf {width="0.9152777777777777in" height="0.5548611111111111in"}
-  [18]: media/media/image19.wmf {width="1.8055555555555556in" height="0.48541666666666666in"}
-  [19]: media/media/image20.wmf {width="1.3055555555555556in" height="0.48541666666666666in"}
-  [20]: media/media/image21.wmf {width="0.8541666666666666in" height="0.42986111111111114in"}
-  [21]: media/media/image22.wmf {width="0.9152777777777777in" height="0.6381944444444444in"}
-  [22]: media/media/image23.wmf {width="0.8180555555555555in" height="0.5548611111111111in"}
+  [3]: media/media/image4.png {width="0.7902777777777777in" height="0.6381944444444444in"}
+  [4]: media/media/image5.png {width="0.8236111111111111in" height="2.3604166666666666in"}
+  [5]: media/media/image6.png {width="2.470138888888889in" height="0.5in"}
+  [6]: media/media/image7.png {width="1.58125in" height="0.5in"}
+  [7]: media/media/image8.png {width="2.4881944444444444in" height="0.75in"}
+  [8]: media/media/image9.png {width="0.78125in" height="0.27708333333333335in"}
+  [9]: media/media/image10.png {width="0.7402777777777778in" height="0.4861111111111111in"}
+  [10]: media/media/image11.png {width="0.6673611111111111in" height="0.4861111111111111in"}
+  [11]: media/media/image12.png {width="0.5006944444444444in" height="0.5in"}
+  [12]: media/media/image13.png {width="0.8548611111111111in" height="0.4305555555555556in"}
+  [13]: media/media/image14.png {width="0.6986111111111111in" height="0.4305555555555556in"}
+  [14]: media/media/image15.png {width="1.78125in" height="0.48541666666666666in"}
+  [15]: media/media/image16.png {width="1.2930555555555556in" height="0.48541666666666666in"}
+  [16]: media/media/image17.png {width="0.6958333333333333in" height="0.5in"}
+  [17]: media/media/image18.png {width="0.9152777777777777in" height="0.5548611111111111in"}
+  [18]: media/media/image19.png {width="1.8055555555555556in" height="0.48541666666666666in"}
+  [19]: media/media/image20.png {width="1.3055555555555556in" height="0.48541666666666666in"}
+  [20]: media/media/image21.png {width="0.8541666666666666in" height="0.42986111111111114in"}
+  [21]: media/media/image22.png {width="0.9152777777777777in" height="0.6381944444444444in"}
+  [22]: media/media/image23.png {width="0.8180555555555555in" height="0.5548611111111111in"}
   [23]: media/media/image24.jpeg {width="6.08125in" height="8.9375in"}
