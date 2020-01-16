@@ -3114,8 +3114,7 @@ while *I~cg~\<I~z~* yields retrograde precession
  
 
   A   Alpha      • ▬
-  --- ---------- -----------
-  B   Bravo      ▬●●●
+  B   Bravo      ▬ • • •
   C   Charlie    ▬ • ▬ •
   D   Delta      ▬ • •
   E   Echo       ●
@@ -3140,17 +3139,17 @@ while *I~cg~\<I~z~* yields retrograde precession
   X   X-ray      ▬ • • ▬
   Y   Yankee     ▬ • ▬ ▬
   Z   Zulu       ▬ ▬ • •
-                  
+ 
   1   One        • ▬ ▬ ▬
   2   Two        • • ▬ ▬ ▬
-  3   Three      • • • ▬ ▬
+  3   Tree      • • • ▬ ▬
   4   Four       • • • • ▬
-  5   Five       • • • • •
+  5   Fife       • • • • •
   6   Six        ▬ • • • •
   7   Seven      ▬ ▬ • • •
   8   Eight      ▬ ▬ ▬ • •
   9   Niner      ▬ ▬ ▬ ▬ •
-  0   Zero       ▬ ▬ ▬ ▬ ▬
+  0   Zee-ro     ▬ ▬ ▬ ▬ ▬
 
  
 
