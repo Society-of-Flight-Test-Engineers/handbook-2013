@@ -72,7 +72,7 @@ Exponent  Prefix  Abbreviation
 ||grams/cm^3^| 62.43| pounds/ft^3^|
 ||kg/m^3^| 16.018463 |pounds/ft^3^|
 ||**slugs/ft^3^**| **515.4** |**kg/m^3^**|
-||**pounds/in^3^**^[Converting between force and mass (e.g. kg force to kg mass or pound force to pound mass) uses g = 32.174 ft/sec\^2]|**1728**| **pounds/ft^3^**|
+||**pounds/in^3^**|**1728**| **pounds/ft^3^**|
 ||slugs/ft^3^| 1.94 |grams/cm^3^|
 |||||
 |**Electrical Quantities**| amperes |0.1 |abamperes|
@@ -91,126 +91,62 @@ Exponent  Prefix  Abbreviation
 ||farads |10^-9^| abfarads|
 ||farads |10^6^ |microfarads|
 ||farads |8.986x10^11^ |statfarads|
->
-> gausses 1 maxwells/cm^2^
->
-> *[Multiply]{.underline} [by]{.underline} [To Obtain]{.underline}*
->
->  
-
-**Electrical** gausses 6.452 lines/in^2^
-
-**Quantities** gilberts 0.7958 ampere turns
-
-**Cont.** henries 10^9^ abhenries
-
-> henries 1.113x10^-12^ stathenries
->
-> maxwells 1 lines
->
-> oersteds 2.998x10^10^ statoersteds
->
-> ohms 10^9^ abohms
->
-> ohms 1.113x10^12^ statohms
->
-> ohm-cm 6.015x10^6^ circ mil-ohms/ft
->
-> volts 10^8^ abvolts
->
-> volts 0.003336 statvolts
-
-** **
-
-**Energy** / Btu 1.055x10^10^ ergs
-
-**Work** Btu 1055.1 Joules (N-m)
-
-Btu 2.9302x10^-4^ kilowatt-hours
-
-Btu 251.99 calories (gram)
-
-Btu 778.03 foot-pounds
-
-> calories 4.1868 watt-seconds
->
-> calories 3.088 foot-pounds
->
-> electron volt 1.519x10^-22^ Btu
->
-> ergs 1 dyne-centimeters
->
-> ergs 7.376x10^8^ foot-pounds
->
-> **foot-pounds 1.3558 Joules (N-m)**
-
-foot-pounds 3.766x10^-7^ kilowatt-hours
-
-foot-pounds 5.051x10^-7^ horsepower-hours
-
-> hp-hours 0.7457 kilowatt-hours
->
-> hp-hours 2546.1 Btu
->
-> Joules 0.23889 calories
->
-> Joules 1 Newton-meters
->
-> Joules 1 watt-seconds
->
-> Joules 10^7^ ergs
->
-> **kilowatt-hours 3.6x10^6^ Joules**
->
-> thermies 4.1868x10^6^ Joules
->
-> watt-second 0.73756 foot-pounds
-
-** **
-
-**Force** dynes 3.597x10^-5^ ounces
-
-**kilogram force 9.80665 Newtons**
-
-> kilopond force 9.80665 Newtons
->
-> kip 4,448.221 Newtons
->
-> **Newtons 0.224808931 pounds**
-
-Newtons 100,000 dynes
-
-> *[ ]{.underline}*
->
-> *[Multiply]{.underline} [by]{.underline} [To Obtain]{.underline}*
->
->  
-
-**Forc e**ounce 20 pennyweights
-
-**Cont.** ounces (troy) 480 grains
-
-pennyweights 24 grains
-
-pound 12 ounces
-
-> pounds 32.174 poundals
-
-**pounds 4.4482216 Newtons**
-
-> pounds 5760 grains
->
-> quintals (long) 112 pounds
->
-> quintals (met.) 100 kilograms
->
-> stones 14 pounds
->
-> tons (long) 2,240 pounds
->
-> tons (metric)\* 1.102 tons (short)
->
-> tons (short) 2000 pounds
+||gausses| 1 |maxwells/cm^2^|
+||gausses| 6.452 |lines/in^2^|
+||gilberts| 0.7958 |ampere turns|
+||henries| 10^9^| abhenries|
+||henries| 1.113x10^-12^| stathenries|
+||maxwells |1| lines|
+||oersteds |2.998x10^10^| statoersteds|
+||ohms| 10^9^ |abohms|
+||ohms| 1.113x10^12^| statohms|
+||ohm-cm| 6.015x10^6^| circ mil-ohms/ft|
+||volts| 10^8^| abvolts|
+||volts| 0.003336 |statvolts|
+|||||
+|**Energy & Work**|Btu| 1.055x10^10^| ergs|
+||Btu| 1055.1| Joules (N-m)|
+||Btu| 2.9302x10^-4^| kilowatt-hours|
+||Btu| 251.99 calories (gram)|
+||Btu| 778.03| foot-pounds|
+||calories| 4.1868 |watt-seconds|
+||calories| 3.088| foot-pounds|
+||electron volt| 1.519x10^-22^| Btu|
+||ergs| 1| dyne-centimeters|
+||ergs| 7.376x10^8^ |foot-pounds|
+||**foot-pounds**| **1.3558** |Joules (N-m)**|
+||foot-pounds |3.766x10^-7^| kilowatt-hours|
+||foot-pounds   |5.051x10^-7^ |horsepower-hours|
+||hp-hours      |0.7457       |kilowatt-hours|
+||hp-hours      |2546.1       |Btu|
+||Joules        |0.23889      |calories|
+||Joules        |1            |Newton-meters|
+||Joules        |1            |watt-seconds|
+||Joules        |10^7^        |ergs|
+||**kilowatt-hours**| **3.6x10^6^**| **Joules**|
+||thermies |4.1868x10^6^ |Joules|
+||watt-seconds |0.73756 |foot-pounds|
+|||||
+|**Force**^[Converting between force and mass (e.g. kg force to kg mass or pound force to pound mass) uses $g = 32.174 \frac{ft}{s^2}$]|dynes|3.597x10^-5^ |ounces|
+||**kilograms-force**| **9.80665**| **Newtons**|
+||kiloponds | 9.80665| Newtons|
+||kip (kilopound-force) |4,448.221| Newtons|
+||**Newtons**| **0.224808931**| **pounds**|
+||Newtons| 100,000| dynes|
+||ounces| 20| pennyweights|
+||ounces (troy)| 480 grains|
+||pennyweights| 24| grains|
+||pounds^[US standard is avoirdupois ounce]| 16| ounces |
+||pounds (troy)| 12| ounces (troy)|
+||pounds |32.174 |poundals^[$1 \frac{lb\cdot ft}{s^2}$]|
+||**pounds** |4.4482216| **Newtons**|
+||pounds (troy) |5760| grains (troy)|
+||quintals (long) |112 |pounds|
+||quintals (met.) |100| kilograms|
+||stones |14| pounds|
+||tons (long) |2,240 |pounds|
+||tons (metric) |1.102| tons (short)|
+||tons (short) |2000| pounds|
 
 ** **
 
@@ -230,51 +166,32 @@ pound 12 ounces
 
 **Illumination** candles 1 lumens/steradian
 
-> candles/cm^2^ π lamberts
->
-> candlepower 12.566 lumens
->
-> foot-candles 1 lumens/ft^2^
->
-> foot-candles 10.764 lux
->
-> foot-lamberts 1 lumen/ft^2^
->
-> lamberts 295.72 candles/ft^2^
->
-> lamberts 929.03 lumens/ft^2^
->
-> lumens 0.001496 watts
->
-> lumens/in^2^ 1 fots
->
-> lumens/m^2^ 1 lux
->
-> lux 1 meter-candles
->
-> lux 0.0001 fots
->
-> meter-candles 1 lumens/m^2^
->
-> millilamberts 0.2957 candles/ft^2^
->
-> millilamberts 0.929 foot-lamberts
->
-> milliphots 0.929 foot-candles
->
-> milliphots 0.929 lumens/ft^2^
->
-> milliphots 10 meter-candles
->
->  
+||candles/cm^2^ π lamberts
+||candlepower 12.566 lumens
+||foot-candles 1 lumens/ft^2^
+||foot-candles 10.764 lux
+||foot-lamberts 1 lumen/ft^2^
+||lamberts 295.72 candles/ft^2^
+||lamberts 929.03 lumens/ft^2^
+||lumens 0.001496 watts
+||lumens/in^2^ 1 fots
+||lumens/m^2^ 1 lux
+||lux 1 meter-candles
+||lux 0.0001 fots
+||meter-candles 1 lumens/m^2^
+||millilamberts 0.2957 candles/ft^2^
+||millilamberts 0.929 foot-lamberts
+||milliphots 0.929 foot-candles
+||milliphots 0.929 lumens/ft^2^
+||milliphots 10 meter-candles
+|| 
 
 ** **
 
 ** **
 
-> *[ ]{.underline}*
->
-> *[Multiply]{.underline} [by]{.underline} [To Obtain]{.underline}*
+||*[ ]{.underline}*
+||*[Multiply]{.underline} [by]{.underline} [To Obtain]{.underline}*
 
 ** **
 
@@ -282,15 +199,13 @@ pound 12 ounces
 
 astronmcl units 1.496x10^11^ meters
 
-> cable lengths 120 fathoms
+||cable lengths 120 fathoms
 
 caliber 0.01 inches
 
-> cubit 0.4572 meters
->
-> fermi 10^-15^ meters
->
-> fathoms 6 feet
+||cubit 0.4572 meters
+||fermi 10^-15^ meters
+||fathoms 6 feet
 
 feet 12 inches
 
@@ -300,55 +215,36 @@ hands 4 inches
 
 **inches 2.54 cm**
 
-> **kilometers 3281 feet**
->
-> **kilometers 0.53996 nautical miles**
->
-> leagues (U.S.) 3 nautical miles
->
-> light years 5.88x10^12^ statute miles
->
-> links (engnr's) 12 inches
->
-> links (srvyr's) 7.92 inches
+||**kilometers 3281 feet**
+||**kilometers 0.53996 nautical miles**
+||leagues (U.S.) 3 nautical miles
+||light years 5.88x10^12^ statute miles
+||links (engnr's) 12 inches
+||links (srvyr's) 7.92 inches
 
 **meters 3.28084 feet**
 
 **meters 39.370079 inches**
 
-> microns 0.1^6^ meters
->
-> mils 0.001 inches
->
-> **nautical miles 1.15078 statute miles**
->
-> **nautical miles 1,852 meters**
->
-> **nautical miles 6,076.115486 feet**
->
-> paces 0.762 meters
->
-> parsec 1.9163x10^13^ statute miles
->
-> perch 5.0292 meters
->
-> pica (printers) 0.0042175176 meters
->
-> point (printers) 0.0003514598 meters
->
-> pole (=rod) 5.0292 meters
->
-> skein 109.728 meters
->
-> **statute miles 5,280 feet**
->
-> **statute miles 1.609344 kilometers**
->
-> statute miles 8 furlongs
+||microns 0.1^6^ meters
+||mils 0.001 inches
+||**nautical miles 1.15078 statute miles**
+||**nautical miles 1,852 meters**
+||**nautical miles 6,076.115486 feet**
+||paces 0.762 meters
+||parsec 1.9163x10^13^ statute miles
+||perch 5.0292 meters
+||pica (printers) 0.0042175176 meters
+||point (printers) 0.0003514598 meters
+||pole (=rod) 5.0292 meters
+||skein 109.728 meters
+||**statute miles 5,280 feet**
+||**statute miles 1.609344 kilometers**
+||statute miles 8 furlongs
 
 yards 3 feet
 
->  
+|| 
 
 ** **
 
@@ -362,7 +258,7 @@ yards 3 feet
 
 ** **
 
-> *[Multiply]{.underline} [by]{.underline} [To Obtain]{.underline}*
+||*[Multiply]{.underline} [by]{.underline} [To Obtain]{.underline}*
 
 ** **
 
@@ -370,35 +266,29 @@ yards 3 feet
 
 **Acceleration** feet/sec^2^ 0.3048 meters/sec^2^
 
-> feet/sec^2^ 0.6818 mph/sec
+||feet/sec^2^ 0.6818 mph/sec
 
 **g 32.174049 feet/sec^2^**
 
-> **g 9.80665 meters/sec^2^**
->
-> gals (Galileo) 0.01 meters/sec^2^
->
-> knots/sec 1.6878 feet/sec^2^
->
-> meters/sec^2^ 3.6 kilometers/hr/sec
+||**g 9.80665 meters/sec^2^**
+||gals (Galileo) 0.01 meters/sec^2^
+||knots/sec 1.6878 feet/sec^2^
+||meters/sec^2^ 3.6 kilometers/hr/sec
 
 mph/sec 0.447 meters/sec^2^
 
-> mph/sec 1.609 kilometers/hr/sec [ ]{.underline}
->
->  
+||mph/sec 1.609 kilometers/hr/sec [ ]{.underline}
+|| 
 
 **Mass\*** carats *200* milligrams
 
-> grams 0.035274 ounces
+||grams 0.035274 ounces
 
 grains 6.479891x10^-5^ kilograms
 
-> hndrdwght long 50.80 234544 kilograms
->
-> hndrdwght shrt 45.359237 kilograms
->
-> **kilograms 0.06852 slugs**
+||hndrdwght long 50.80 234544 kilograms
+||hndrdwght shrt 45.359237 kilograms
+||**kilograms 0.06852 slugs**
 
 kilograms 6.024x1026 atomic mass units
 
@@ -408,9 +298,8 @@ ounces (avd)\* *28.349523125* grams
 
 ounces (troy)\* *31.1034768* grams
 
-> pounds (mass) 1 pounds (force)
->
-> **pounds (mass) 0.45359237 kilograms**
+||pounds (mass) 1 pounds (force)
+||**pounds (mass) 0.45359237 kilograms**
 
 **pounds (mass) 0.031081 slugs**
 
@@ -420,17 +309,12 @@ scuples (apoth) 0.0012959782 kilograms
 
 **slugs 14.594 kilograms**
 
-> tons (long) 1016.047 kilograms
->
-> tons (assay) 0.02916 kilograms
->
-> tons (metric) *1000* kilograms
->
-> tons (short) 907.1847 kilograms
->
-> \* Converting between force and mass (e.g. kg force to kg mass or pound force to pound mass) uses g = 32.174 ft/sec\^2
->
->  
+||tons (long) 1016.047 kilograms
+||tons (assay) 0.02916 kilograms
+||tons (metric) *1000* kilograms
+||tons (short) 907.1847 kilograms
+||\* Converting between force and mass (e.g. kg force to kg mass or pound force to pound mass) uses $g = 32.174 ft/sec\^2$
+|| 
 
 ** **
 
@@ -446,13 +330,10 @@ scuples (apoth) 0.0012959782 kilograms
 
 ** **
 
-> *[ ]{.underline}*
->
-> *[ ]{.underline}*
->
-> *[ ]{.underline}*
->
-> *[Multiply]{.underline} [by]{.underline} [To Obtain]{.underline}*
+||*[ ]{.underline}*
+||*[ ]{.underline}*
+||*[ ]{.underline}*
+||*[Multiply]{.underline} [by]{.underline} [To Obtain]{.underline}*
 
 ** **
 
@@ -468,65 +349,50 @@ scuples (apoth) 0.0012959782 kilograms
 
 slug-ft^2^ 12.00 pound-inch-sec^2^
 
-> slug-ft^2^ 192.00 ounce-inch-sec^2^
->
-> \* Converting between force and mass (e.g. kg force to kg mass or pound force to pound mass) uses g = 32.174 ft/sec\^2
+||slug-ft^2^ 192.00 ounce-inch-sec^2^
+
 
  
 
 **Power** btu/min 0.01758 kilowatts
 
-> calories(kg)/min 3087.46 foot-pounds/min ergs/sec 7.376x10^-8^ foot-pounds/sec
->
-> ft(lbs)/min 2.260x10-^5^ kilowatts
->
-> ft(lbs)/sec 0.07712 btu/min
->
-> ft(lbs)/sec 1.356 watts
->
-> **hp 550 ft(lb)/sec**
+||calories(kg)/min 3087.46 foot-pounds/min ergs/sec 7.376x10^-8^ foot-pounds/sec
+||ft(lbs)/min 2.260x10-^5^ kilowatts
+||ft(lbs)/sec 0.07712 btu/min
+||ft(lbs)/sec 1.356 watts
+||**hp 550 ft(lb)/sec**
 
 **hp 33,000 ft(lbs)/min**
 
-> hp 10.69 calories (kg)/min
->
-> **hp 745.7 watts \[J/sec\]**
->
-> **hp (metric) 735.5 watts**
+||hp 10.69 calories (kg)/min
+||**hp 745.7 watts \[J/sec\]**
+||**hp (metric) 735.5 watts**
 
 **hp 1.1014 horsepower (metric)**
 
 **kilowatts 1.341 horsepower**
 
-> watts 10^7^ ergs/sec
+||watts 10^7^ ergs/sec
 
 watts 1 Joules/sec
 
->  
+|| 
 
 **Pressure** **atmospheres 14.696 pounds/in^2^**
 
-> **atmospheres 29.92 inches of Hg**
->
-> atmospheres 76 cm of Hg
->
-> bars 1,000,000 dynes/cm^2^
->
-> **bars 29.52 inches of Hg**
->
-> **barye 0.1 Newtons/m^2^**
->
-> dynes/cm^2^ 10 Newtons/m^2^
+||**atmospheres 29.92 inches of Hg**
+||atmospheres 76 cm of Hg
+||bars 1,000,000 dynes/cm^2^
+||**bars 29.52 inches of Hg**
+||**barye 0.1 Newtons/m^2^**
+||dynes/cm^2^ 10 Newtons/m^2^
 
 **inches of H~2~O 5.20237 pound/ft^2^**
 
-> **inches of Hg 70.72619 pounds/ft^2^**
->
-> inches of Hg 0.491154 pounds/in^2^
->
-> inches of Hg 13.595 inches of H~2~O
->
-> **kiloPascals 100 bars**
+||**inches of Hg 70.72619 pounds/ft^2^**
+||inches of Hg 0.491154 pounds/in^2^
+||inches of Hg 13.595 inches of H~2~O
+||**kiloPascals 100 bars**
 
 **hectoPascals 1 millibars**
 
@@ -534,11 +400,9 @@ watts 1 Joules/sec
 
 mm of Hg 0.019337 pounds/in^2^
 
-> *[ ]{.underline}*
->
-> *[ ]{.underline}*
->
-> *[Multiply]{.underline} [by]{.underline} [To Obtain]{.underline}*
+||*[ ]{.underline}*
+||*[ ]{.underline}*
+||*[Multiply]{.underline} [by]{.underline} [To Obtain]{.underline}*
 
 ** **
 
@@ -556,11 +420,9 @@ pieze 1000 Newtons/m^2^
 
 pounds/in^2^ 27.681 inches of H~2~O
 
-> **pounds/in^2^ 6894.75728 Pascal**
->
-> torrs 133.32 Newtons/m^2^
->
->  
+||**pounds/in^2^ 6894.75728 Pascal**
+||torrs 133.32 Newtons/m^2^
+|| 
 
 **Temperature Kelvin = ^o^*C*+273.15^o^**
 
@@ -568,7 +430,7 @@ pounds/in^2^ 27.681 inches of H~2~O
 
 **^o^Centigrade = \[^o^*F* − 32^o^\] 5/9**
 
-> ^o^Fahrenheit = (9/5)^o^*C* + 32
+||^o^Fahrenheit = (9/5)^o^*C* + 32
 
 ** **
 
@@ -578,15 +440,11 @@ days (sidereal) 23.934 hours
 
 days (solar) 1.0027 days (sidereal)
 
-> hours 60 minutes
->
-> minutes 60 seconds
->
-> months (sdrl) 27d + 7hr +43min +11.47sec
->
-> months (lunar) 29d +12hr +44min + 2.78sec
->
-> year 365.24219879 days
+||hours 60 minutes
+||minutes 60 seconds
+||months (sdrl) 27d + 7hr +43min +11.47sec
+||months (lunar) 29d +12hr +44min + 2.78sec
+||year 365.24219879 days
 
  
 
@@ -594,17 +452,15 @@ days (solar) 1.0027 days (sidereal)
 
 foot-pounds 0.1383 kilogram-meters
 
-> ounce-inches 72.008 gram-centimeters
+||ounce-inches 72.008 gram-centimeters
 
 pound-inches 1129800 dyne-centimeters
-
-> \* Converting between force and mass (e.g. kg force to kg mass or pound force to pound mass) uses g = 32.174 ft/sec\^2
 
  
 
 **Velocity** inches/sec 0.0254 meters/sec
 
-> **knots 1.68781 feet/sec**
+||**knots 1.68781 feet/sec**
 
 **km/hr 0.621371 mph**
 
@@ -624,17 +480,15 @@ meters/sec 3.281 ft/sec
 
 mph 1.466667 feet/sec
 
-> *[Multiply]{.underline} [by]{.underline} [To Obtain]{.underline}*
+||*[Multiply]{.underline} [by]{.underline} [To Obtain]{.underline}*
 
 ** **
 
 **Viscosity** centistokes 10^-6^ m^2^/sec
 
-> ft^2^/sec 0.0929 m^2^/sec
->
-> pound sec/ ft^2^ 47.880258 Newton secs/ m^2^
->
-> poise 0.1 Newton secs/ m^2^
+||ft^2^/sec 0.0929 m^2^/sec
+||pound sec/ ft^2^ 47.880258 Newton secs/ m^2^
+||poise 0.1 Newton secs/ m^2^
 
 rhe 10 m^2^/Newton second
 
@@ -648,7 +502,7 @@ acre-feet 3.259x10^5^ gals (U.S.)
 
 barrels 31.5 gals (U.S.)
 
-> board-feet 144 in^3^
+||board-feet 144 in^3^
 
 bushels 1.244 ft^3^
 
@@ -656,9 +510,8 @@ bushels 32 quarts (dry)
 
 bushels 4 pecks
 
-> cm^3^ 0.001 liters
->
-> cm^3^ 0.03381 fluid ounces
+||cm^3^ 0.001 liters
+||cm^3^ 0.03381 fluid ounces
 
 cm^3^ 0.06102 in^3^
 
@@ -668,51 +521,32 @@ cords 128 ft^3^
 
 cups 0.5 pints (liquid)
 
-> dram (fluid) 3.69669x10^-6^ m^3^
->
-> **ft^3^ 0.0283167 m^3^**
->
-> ft^3^ 1728 in^3^
->
-> ft^3^ 28.32 liters
->
-> **ft^3^ 7.481 gals (U.S.)**
->
-> **gals (Imperial) 1.2009 gals (U.S.)**
->
-> gals (Imperial) 277.42 in^3^
->
-> gals (U.K.) 4546.1 cm^3^
->
-> **gals (U.S.) 231 in^3^**
->
-> **gals (U.S.) 0.003785 m^3^**
->
-> **gals (U.S.) 3.785 liters**
->
-> gals (U.S.) 4 quarts (liquid)
->
-> gals (U.S.) 0.0238095 barrels (U.S.)
->
-> gils 7.219 in^3^
->
-> hogshead 2 barrels
->
-> in^3^ 16.39 cm^3^
->
-> liters 0.02838 bushels
->
-> liters 0.9081 quarts (dry)
->
-> liters 1.057 quarts (liquid)
->
-> liters 1000 cm^3^
+||dram (fluid) 3.69669x10^-6^ m^3^
+||**ft^3^ 0.0283167 m^3^**
+||ft^3^ 1728 in^3^
+||ft^3^ 28.32 liters
+||**ft^3^ 7.481 gals (U.S.)**
+||**gals (Imperial) 1.2009 gals (U.S.)**
+||gals (Imperial) 277.42 in^3^
+||gals (U.K.) 4546.1 cm^3^
+||**gals (U.S.) 231 in^3^**
+||**gals (U.S.) 0.003785 m^3^**
+||**gals (U.S.) 3.785 liters**
+||gals (U.S.) 4 quarts (liquid)
+||gals (U.S.) 0.0238095 barrels (U.S.)
+||gils 7.219 in^3^
+||hogshead 2 barrels
+||in^3^ 16.39 cm^3^
+||liters 0.02838 bushels
+||liters 0.9081 quarts (dry)
+||liters 1.057 quarts (liquid)
+||liters 1000 cm^3^
 
 liters 61.03 in^3^
 
 m^3^ 1.308 yd^3^
 
-> *[Multiply]{.underline} [by]{.underline} [To Obtain]{.underline}*
+||*[Multiply]{.underline} [by]{.underline} [To Obtain]{.underline}*
 
 ** **
 
@@ -720,43 +554,31 @@ m^3^ 1.308 yd^3^
 
 **Cont.** m^3^ 264.2 gals (U.S.)
 
-> **m^3^ 35.314667 ft^3^**
->
-> mil-feet (circ.) 0.0001545 cm^3^
->
-> ounces (U.K.) 28.413 cm^3^
+||**m^3^ 35.314667 ft^3^**
+||mil-feet (circ.) 0.0001545 cm^3^
+||ounces (U.K.) 28.413 cm^3^
 
 ounces (U.S.) 29.574 cm^3^
 
 pecks 8 quarts (dry)
 
-> pecks 8.81 liters
+||pecks 8.81 liters
 
 perches 0.7008 m^3^
 
 perches 24.75 ft^3^
 
-> pints (dry) 33.60 in^3^
->
-> pints (liquid) 28.88 in^3^
->
-> pints (liquid) 4 gals
->
-> quarts (dry) 1.164 quarts (liquid)
->
-> quarts 2 pints
->
-> register tons 100 ft^3^
->
-> shipping ton (U.S.) 40 ft^3^
->
-> shipping ton (Br.) 42 ft^3^
->
-> steres 1000 liters
->
-> tablespoons 0.0625 cups
->
-> teaspoons 0.3333 tablespoons
+||pints (dry) 33.60 in^3^
+||pints (liquid) 28.88 in^3^
+||pints (liquid) 4 gals
+||quarts (dry) 1.164 quarts (liquid)
+||quarts 2 pints
+||register tons 100 ft^3^
+||shipping ton (U.S.) 40 ft^3^
+||shipping ton (Br.) 42 ft^3^
+||steres 1000 liters
+||tablespoons 0.0625 cups
+||teaspoons 0.3333 tablespoons
 
  
 
@@ -764,53 +586,30 @@ perches 24.75 ft^3^
 
 **1.2 Greek Alphabet**
 
-> Α α Alpha
->
-> Β β Beta
->
-> Γ γ Gamma
->
-> ∆ δ Delta
->
-> Ε ε Epsilon
->
-> Ζ ζ Zeta
->
-> Η η Eta 
->
-> Θ θ Theta
->
-> Ι ι Iota
->
-> Κ κ Kappa
->
-> Λ λ Lambda
->
-> Μ μ Mu
->
-> Ν ν Nu
->
-> Ξ ξ Xi
->
-> Ο ο Omicron
->
-> Π π Pi
->
-> p ρ    Rho
->
-> Σ σ Sigma
->
-> Τ τ Tau
->
-> Υ υ Upsilon
->
-> Φ φ Phi
->
-> Χ χ Chi
->
-> Ψ ψ Psi
->
-> Ω ω Omega
+|Α α Alpha
+|Β β Beta
+|Γ γ Gamma
+|∆ δ Delta
+|Ε ε Epsilon
+|Ζ ζ Zeta
+|Η η Eta 
+|Θ θ Theta
+|Ι ι Iota
+|Κ κ Kappa
+|Λ λ Lambda
+|Μ μ Mu
+|Ν ν Nu
+|Ξ ξ Xi
+|Ο ο Omicron
+|Π π Pi
+|p ρ    Rho
+|Σ σ Sigma
+|Τ τ Tau
+|Υ υ Upsilon
+|Φ φ Phi
+|Χ χ Chi
+|Ψ ψ Psi
+|Ω ω Omega
 
  
 
@@ -896,59 +695,33 @@ perches 24.75 ft^3^
 
  
 
-> *a* aileron
->
-> *a* ambient
->
-> alt at test altitude
->
-> avg average
->
-> *c* calibrated
->
-> *e* elevator
->
-> *e* equivalent
->
-> *E* endurance leg of mission
->
-> *F* final
->
-> *I* initial
->
-> *i* inbound leg of mission
->
-> *i* indicated
->
-> *ic* instrument corrected
->
-> *l* subscript for coefficient of rolling moment
->
-> *m* mission conditions
->
-> *m* pitching moment
->
-> *n* yawing moment
->
-> *O* outbound leg of mission
->
-> *o* sea-level standard day
->
-> *o* sea level
->
-> *r* reserve leg of mission
->
-> *r* rudder
->
-> *S* standard day
->
-> *s* standard day at altitude
->
-> *SL* sea level
->
-> *T* True
->
-> *t* test day
+|*a* aileron
+|*a* ambient
+|alt at test altitude
+|avg average
+|*c* calibrated
+|*e* elevator
+|*e* equivalent
+|*E* endurance leg of mission
+|*F* final
+|*I* initial
+|*i* inbound leg of mission
+|*i* indicated
+|*ic* instrument corrected
+|*l* subscript for coefficient of rolling moment
+|*m* mission conditions
+|*m* pitching moment
+|*n* yawing moment
+|*O* outbound leg of mission
+|*o* sea-level standard day
+|*o* sea level
+|*r* reserve leg of mission
+|*r* rudder
+|*S* standard day
+|*s* standard day at altitude
+|*SL* sea level
+|*T* True
+|*t* test day
 
  
 
@@ -2430,7 +2203,7 @@ Based on the above background, the SFTE technical council proposes the following
 
 ** **
 
->  
+ 
 
 A **Process** is an event with a redistribution of energy within a system.
 
@@ -2516,7 +2289,7 @@ R = gas constant for each gas (for air = 287 J/\[kg K\] = 53.35 ft-lb/lb~m~R)
 
 = R\[M\] = universal gas constant
 
-> = 8.314 kJ/\[kmol K\] = 1545 ft lb/\[lbmol R\]
+= 8.314 kJ/\[kmol K\] = 1545 ft lb/\[lbmol R\]
 
 M = molar mass (for air = 28.97 kg/kmol)
 
