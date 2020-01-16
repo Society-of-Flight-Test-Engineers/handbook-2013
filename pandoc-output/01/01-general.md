@@ -3223,3 +3223,4 @@ while *I~cg~\<I~z~* yields retrograde precession
   [21]: media/media/image22.wmf {width="0.9152777777777777in" height="0.6381944444444444in"}
   [22]: media/media/image23.wmf {width="0.8180555555555555in" height="0.5548611111111111in"}
   [23]: media/media/image24.jpeg {width="6.08125in" height="8.9375in"}
+test test test
