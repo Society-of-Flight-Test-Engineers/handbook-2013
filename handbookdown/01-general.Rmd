@@ -67,57 +67,30 @@ Exponent  Prefix  Abbreviation
 |                          | township       | 93,239,572     | m^2^                                 |
 |                          | yd^2^          | 9              | ft^2^                                |
 |                          | yd^2^          | 0.8361         | m^2^                                 |
-
-
 |||||
-
-|**Density**| \* grams/cm^3^ 0.03613 pounds/in^3^
-
-> grams/cm^3^ 62.43 pounds/ft^3^
-
-kg/m^3^ 16.018463 pounds/ft^3^
-
-> **slugs/ft^3^ 515.4 kg/m^3^**
->
-> **pounds/in^3^ \* 1728 pounds/ft^3^**
->
-> slugs/ft^3^ 1.94 grams/cm^3^
->
-> \* Converting between force and mass (e.g. kg force to kg mass or pound force to pound mass) uses g = 32.174 ft/sec\^2
-
-** **
-
-**Electrical** amperes 0.1 abamperes
-
-**Quantities** amperes 1.0365x10^-5^ faradays/sec
-
-amperes 2.998x10^9^ statamperes
-
-> amperes.cicmil 1.973x10^5^ amperes/cm^2^
->
-> ampere-hours 3,600 coulombs
->
-> ampere-hours 1.079x10^13^ statcoulombs
->
-> ampere turn/cm 1.257 gilberts/cm
->
-> ampere turn/cm 1.257 oersteds
->
-> coulombs 0.1 abcoulombs
->
-> coulombs 6.243x10^18^ electronic charges
-
-coulombs 1.037x10^-5^ faradays
-
-coulombs 2.998x10^9^ statcoulombs
-
-faradays 26.8 apmere-hours
-
-> farads 10-9 abfarads
->
-> farads 10^6^ microfarads
->
-> farads 8.986x10^11^ statfarads
+|**Density**| grams/cm^3^| 0.03613 |pounds/in^3^|
+||grams/cm^3^| 62.43| pounds/ft^3^|
+||kg/m^3^| 16.018463 |pounds/ft^3^|
+||**slugs/ft^3^**| **515.4** |**kg/m^3^**|
+||**pounds/in^3^**^[Converting between force and mass (e.g. kg force to kg mass or pound force to pound mass) uses g = 32.174 ft/sec\^2]|**1728**| **pounds/ft^3^**|
+||slugs/ft^3^| 1.94 |grams/cm^3^|
+|||||
+|**Electrical Quantities**| amperes |0.1 |abamperes|
+||amperes| 1.0365x10^-5^ |faradays/sec|
+||amperes| 2.998x10^9^ |statamperes|
+||amperes.cicmil |1.973x10^5^ |amperes/cm^2^|
+||ampere-hours |3,600 |coulombs|
+||ampere-hours |1.079x10^13^ |statcoulombs|
+||ampere turn/cm |1.257 |gilberts/cm|
+||ampere turn/cm |1.257 |oersteds|
+||coulombs |0.1 |abcoulombs|
+||coulombs |6.243x10^18^ |electronic charges|
+||coulombs |1.037x10^-5^ |faradays|
+||coulombs |2.998x10^9^ |statcoulombs|
+||faradays |26.8 |ampere-hours|
+||farads |10^-9^| abfarads|
+||farads |10^6^ |microfarads|
+||farads |8.986x10^11^ |statfarads|
 >
 > gausses 1 maxwells/cm^2^
 >
@@ -2105,7 +2078,7 @@ The generally accepted body axes sign convention is based on the establishment o
 
  
 
-![][1]
+![][2]
 
 Translational displacements, rates, accelerations, & forces are positive along the positive body axes directions. In spite of the simplicity of this logic, it is important to recognize that lift and normal load factor are positive in the *negative z* direction and the drag is positive in the *negative x* direction.
 
@@ -2123,7 +2096,7 @@ The body axes, forces & translations along them, and moments & rotations about t
 
  
 
-![][2]
+![][3]
 
 Angle of attack is positive clockwise from the projection of the velocity vector on the *xz* plane to the reference *x* body axis. The angle of sideslip is positive clockwise from the *xz* plane to the velocity vector (wind in the pilot's right ear).
 
@@ -2587,7 +2560,7 @@ PV=RT, P = ρRT, PV = mRT, PV = nRT
 
 for reversible processes
 
-![][3] 
+![][4] 
 
  
 
@@ -2601,7 +2574,7 @@ for reversible adiabatic process
 
  
 
- ![][4]
+ ![][5]
 
  
 
@@ -2625,7 +2598,7 @@ Steady Flow Energy Equation
 
  
 
- ![][5]
+ ![][6]
 
  
 
@@ -2635,7 +2608,7 @@ Bernoulli Equation:
 
  
 
- ![][6]
+ ![][7]
 
 Flow per Unit Area:
 
@@ -2643,7 +2616,7 @@ Flow per Unit Area:
 
  
 
- ![][7]
+ ![][8]
 
  
 
@@ -2651,13 +2624,13 @@ Flow per Unit Area:
 
 Velocity of sound in a perfect gas:
 
-![][8] 
+![][9] 
 
  
 
 Development of **Specific Heat Relations**
 
-![][9]** **
+![][10]** **
 
 specific heat at constant pressure
 
@@ -2665,7 +2638,7 @@ specific heat at constant pressure
 
  
 
-![][10] specific heat at constant volume
+![][11] specific heat at constant volume
 
 (for air = 717.986 J/\[kg ^o^K\])
 
@@ -2681,7 +2654,7 @@ specific heat at constant pressure
 
  
 
-![][11]
+![][12]
 
  
 
@@ -2695,11 +2668,11 @@ c~p~ *d*T = c~v~ *d*T + R*d*t or c~p~ = c~v~ + R
 
 Rearranging gives
 
-![][12]and
+![][13]and
 
  
 
-![][13]
+![][14]
 
 Development of **Poisson's Equation**:
 
@@ -2713,7 +2686,7 @@ Development of **Poisson's Equation**:
 
 5) Substitution gives *d*S = c~v~ *d*T/T + R *d*V/V
 
-![][14]6) Assume constant specific heat and integrate:
+![][15]6) Assume constant specific heat and integrate:
 
  
 
@@ -2723,7 +2696,7 @@ Development of **Poisson's Equation**:
 
  
 
- ![][15]
+ ![][16]
 
  
 
@@ -2731,11 +2704,11 @@ Development of **Poisson's Equation**:
 
 8) Substitute
 
-![][16]
+![][17]
 
 to get:
 
-![][17] 
+![][18] 
 
  
 
@@ -2749,7 +2722,7 @@ to get:
 
  
 
-![][18]
+![][19]
 
  
 
@@ -2757,19 +2730,19 @@ to get:
 
  
 
-![][19]
+![][20]
 
  
 
 13) Substitute
 
-![][20]
+![][21]
 
 to get:
 
  
 
-![][21]
+![][22]
 
  
 
@@ -2777,7 +2750,7 @@ to get:
 
 14) Combine steps \#8, \#13 to get:
 
-![][22]
+![][23]
 
 or PV^κ^ = const.
 
@@ -2986,7 +2959,7 @@ V= inertial velocity
 
  
 
- ![][23]
+ ![][24]
 
  **[Gyroscopic Motion]{.underline}**
 
@@ -3135,26 +3108,27 @@ while *I~cg~\<I~z~* yields retrograde precession
 
  
 
-  [1]: media/media/image2.png {width="6.5in" height="3.4063156167979in"}
-  [2]: media/media/image3.png {width="6.5in" height="4.874305555555556in"}
-  [3]: media/media/image4.png {width="0.7902777777777777in" height="0.6381944444444444in"}
-  [4]: media/media/image5.png {width="0.8236111111111111in" height="2.3604166666666666in"}
-  [5]: media/media/image6.png {width="2.470138888888889in" height="0.5in"}
-  [6]: media/media/image7.png {width="1.58125in" height="0.5in"}
-  [7]: media/media/image8.png {width="2.4881944444444444in" height="0.75in"}
-  [8]: media/media/image9.png {width="0.78125in" height="0.27708333333333335in"}
-  [9]: media/media/image10.png {width="0.7402777777777778in" height="0.4861111111111111in"}
-  [10]: media/media/image11.png {width="0.6673611111111111in" height="0.4861111111111111in"}
-  [11]: media/media/image12.png {width="0.5006944444444444in" height="0.5in"}
-  [12]: media/media/image13.png {width="0.8548611111111111in" height="0.4305555555555556in"}
-  [13]: media/media/image14.png {width="0.6986111111111111in" height="0.4305555555555556in"}
-  [14]: media/media/image15.png {width="1.78125in" height="0.48541666666666666in"}
-  [15]: media/media/image16.png {width="1.2930555555555556in" height="0.48541666666666666in"}
-  [16]: media/media/image17.png {width="0.6958333333333333in" height="0.5in"}
-  [17]: media/media/image18.png {width="0.9152777777777777in" height="0.5548611111111111in"}
-  [18]: media/media/image19.png {width="1.8055555555555556in" height="0.48541666666666666in"}
-  [19]: media/media/image20.png {width="1.3055555555555556in" height="0.48541666666666666in"}
-  [20]: media/media/image21.png {width="0.8541666666666666in" height="0.42986111111111114in"}
-  [21]: media/media/image22.png {width="0.9152777777777777in" height="0.6381944444444444in"}
-  [22]: media/media/image23.png {width="0.8180555555555555in" height="0.5548611111111111in"}
-  [23]: media/media/image24.jpeg {width="6.08125in" height="8.9375in"}
+
+  [2]:  media/media/image2.png {width="6.5in" height="3.4063156167979in"}
+  [3]:  media/media/image3.png {width="6.5in" height="4.874305555555556in"}
+  [4]:  media/media/image4.png {width="0.7902777777777777in" height="0.6381944444444444in"}
+  [5]:  media/media/image5.png {width="0.8236111111111111in" height="2.3604166666666666in"}
+  [6]:  media/media/image6.png {width="2.470138888888889in" height="0.5in"}
+  [7]:  media/media/image7.png {width="1.58125in" height="0.5in"}
+  [8]:  media/media/image8.png {width="2.4881944444444444in" height="0.75in"}
+  [9]:  media/media/image9.png {width="0.78125in" height="0.27708333333333335in"}
+  [10]: media/media/image10.png {width="0.7402777777777778in" height="0.4861111111111111in"}
+  [11]: media/media/image11.png {width="0.6673611111111111in" height="0.4861111111111111in"}
+  [12]: media/media/image12.png {width="0.5006944444444444in" height="0.5in"}
+  [13]: media/media/image13.png {width="0.8548611111111111in" height="0.4305555555555556in"}
+  [14]: media/media/image14.png {width="0.6986111111111111in" height="0.4305555555555556in"}
+  [15]: media/media/image15.png {width="1.78125in" height="0.48541666666666666in"}
+  [16]: media/media/image16.png {width="1.2930555555555556in" height="0.48541666666666666in"}
+  [17]: media/media/image17.png {width="0.6958333333333333in" height="0.5in"}
+  [18]: media/media/image18.png {width="0.9152777777777777in" height="0.5548611111111111in"}
+  [19]: media/media/image19.png {width="1.8055555555555556in" height="0.48541666666666666in"}
+  [20]: media/media/image20.png {width="1.3055555555555556in" height="0.48541666666666666in"}
+  [21]: media/media/image21.png {width="0.8541666666666666in" height="0.42986111111111114in"}
+  [22]: media/media/image22.png {width="0.9152777777777777in" height="0.6381944444444444in"}
+  [23]: media/media/image23.png {width="0.8180555555555555in" height="0.5548611111111111in"}
+  [24]: media/media/image24.jpeg {width="6.08125in" height="8.9375in"}
