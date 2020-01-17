@@ -4,6 +4,28 @@
 
 (references 1.1, 1.2)
 
+```{block, type='author_comment', echo=FALSE}
+Tables are covered here
+  https://bookdown.org/yihui/bookdown/tables.html
+and here
+  https://pandoc.org/MANUAL.html#tables
+
+I haven't got the (\#tab:label) labels working, yet
+
+I find https://www.tablesgenerator.com/markdown_tables to be 
+indispensable for working with markdown tables. It's how I
+got the big conversion factor table below formatted.
+
+1) Insert the `|` pipe characters where you want column delimiters
+2) Copy the table
+3) Go to https://www.tablesgenerator.com/markdown_tables 
+4) Make sure Markdown Tables is selected
+5) Select File...Paste table data...
+6) Paste the table in the text field
+7) The formatted table will then be available below for copying and pasting
+back into the document!
+```
+
 Table: Prefix Multipliers
 
 Exponent  Prefix  Abbreviation
@@ -26,7 +48,7 @@ Exponent  Prefix  Abbreviation
 10^-18^   atto    a
 
 |                          | Multiply       | by             | To Obtain                            |
-|--------------------------|----------------|----------------|--------------------------------------|
+|--------------------------|:---------------|:---------------|:-------------------------------------|
 | **Angles**               | circles        | 1              | circumferences                       |
 |                          | circles        | 12             | signs                                |
 |                          | circles        | 21,600         | minutes                              |
@@ -67,86 +89,74 @@ Exponent  Prefix  Abbreviation
 |                          | township       | 93,239,572     | m^2^                                 |
 |                          | yd^2^          | 9              | ft^2^                                |
 |                          | yd^2^          | 0.8361         | m^2^                                 |
-|||||
-|**Density**| grams/cm^3^| 0.03613 |pounds/in^3^|
-||grams/cm^3^| 62.43| pounds/ft^3^|
-||kg/m^3^| 16.018463 |pounds/ft^3^|
-||**slugs/ft^3^**| **515.4** |**kg/m^3^**|
-||**pounds/in^3^**|**1728**| **pounds/ft^3^**|
-||slugs/ft^3^| 1.94 |grams/cm^3^|
-|||||
-|**Electrical Quantities**| amperes |0.1 |abamperes|
-||amperes| 1.0365x10^-5^ |faradays/sec|
-||amperes| 2.998x10^9^ |statamperes|
-||amperes.cicmil |1.973x10^5^ |amperes/cm^2^|
-||ampere-hours |3,600 |coulombs|
-||ampere-hours |1.079x10^13^ |statcoulombs|
-||ampere turn/cm |1.257 |gilberts/cm|
-||ampere turn/cm |1.257 |oersteds|
-||coulombs |0.1 |abcoulombs|
-||coulombs |6.243x10^18^ |electronic charges|
-||coulombs |1.037x10^-5^ |faradays|
-||coulombs |2.998x10^9^ |statcoulombs|
-||faradays |26.8 |ampere-hours|
-||farads |10^-9^| abfarads|
-||farads |10^6^ |microfarads|
-||farads |8.986x10^11^ |statfarads|
-||gausses| 1 |maxwells/cm^2^|
-||gausses| 6.452 |lines/in^2^|
-||gilberts| 0.7958 |ampere turns|
-||henries| 10^9^| abhenries|
-||henries| 1.113x10^-12^| stathenries|
-||maxwells |1| lines|
-||oersteds |2.998x10^10^| statoersteds|
-||ohms| 10^9^ |abohms|
-||ohms| 1.113x10^12^| statohms|
-||ohm-cm| 6.015x10^6^| circ mil-ohms/ft|
-||volts| 10^8^| abvolts|
-||volts| 0.003336 |statvolts|
-|||||
-|**Energy & Work**|Btu| 1.055x10^10^| ergs|
-||Btu| 1055.1| Joules (N-m)|
-||Btu| 2.9302x10^-4^| kilowatt-hours|
-||Btu| 251.99 calories (gram)|
-||Btu| 778.03| foot-pounds|
-||calories| 4.1868 |watt-seconds|
-||calories| 3.088| foot-pounds|
-||electron volt| 1.519x10^-22^| Btu|
-||ergs| 1| dyne-centimeters|
-||ergs| 7.376x10^8^ |foot-pounds|
-||**foot-pounds**| **1.3558** |Joules (N-m)**|
-||foot-pounds |3.766x10^-7^| kilowatt-hours|
-||foot-pounds   |5.051x10^-7^ |horsepower-hours|
-||hp-hours      |0.7457       |kilowatt-hours|
-||hp-hours      |2546.1       |Btu|
-||Joules        |0.23889      |calories|
-||Joules        |1            |Newton-meters|
-||Joules        |1            |watt-seconds|
-||Joules        |10^7^        |ergs|
-||**kilowatt-hours**| **3.6x10^6^**| **Joules**|
-||thermies |4.1868x10^6^ |Joules|
-||watt-seconds |0.73756 |foot-pounds|
-|||||
-|**Force**^[Converting between force and mass (e.g. kg force to kg mass or pound force to pound mass) uses $g = 32.174 \frac{ft}{s^2}$]|dynes|3.597x10^-5^ |ounces|
-||**kilograms-force**| **9.80665**| **Newtons**|
-||kiloponds | 9.80665| Newtons|
-||kip (kilopound-force) |4,448.221| Newtons|
-||**Newtons**| **0.224808931**| **pounds**|
-||Newtons| 100,000| dynes|
-||ounces| 20| pennyweights|
-||ounces (troy)| 480 grains|
-||pennyweights| 24| grains|
-||pounds^[US standard is avoirdupois ounce]| 16| ounces |
-||pounds (troy)| 12| ounces (troy)|
-||pounds |32.174 |poundals^[$1 \frac{lb\cdot ft}{s^2}$]|
-||**pounds** |4.4482216| **Newtons**|
-||pounds (troy) |5760| grains (troy)|
-||quintals (long) |112 |pounds|
-||quintals (met.) |100| kilograms|
-||stones |14| pounds|
-||tons (long) |2,240 |pounds|
-||tons (metric) |1.102| tons (short)|
-||tons (short) |2000| pounds|
+|                           |                  |               |                    |
+| **Density**               | grams/cm^3^      | 0.03613       | pounds/in^3^       |
+|                           | grams/cm^3^      | 62.43         | pounds/ft^3^       |
+|                           | kg/m^3^          | 16.018463     | pounds/ft^3^       |
+|                           | **slugs/ft^3^**  | **515.4**     | **kg/m^3^**        |
+|                           | **pounds/in^3^** | **1728**      | **pounds/ft^3^**   |
+|                           | slugs/ft^3^      | 1.94          | grams/cm^3^        |
+|                           |                  |               |                    |
+| **Electrical Quantities** | amperes          | 0.1           | abamperes          |
+|                           | amperes          | 1.0365x10^-5^ | faradays/sec       |
+|                           | amperes          | 2.998x10^9^   | statamperes        |
+|                           | amperes.cicmil   | 1.973x10^5^   | amperes/cm^2^      |
+|                           | ampere-hours     | 3,600         | coulombs           |
+|                           | ampere-hours     | 1.079x10^13^  | statcoulombs       |
+|                           | ampere turn/cm   | 1.257         | gilberts/cm        |
+|                           | ampere turn/cm   | 1.257         | oersteds           |
+|                           | coulombs         | 0.1           | abcoulombs         |
+|                           | coulombs         | 6.243x10^18^  | electronic charges |
+|                           | coulombs         | 1.037x10^-5^  | faradays           |
+|                           | coulombs         | 2.998x10^9^   | statcoulombs       |
+|                           | faradays         | 26.8          | ampere-hours       |
+|                           | farads           | 10^-9^        | abfarads           |
+|                           | farads           | 10^6^         | microfarads        |
+|                           | farads           | 8.986x10^11^  | statfarads         |
+|                           | gausses          | 1             | maxwells/cm^2^     |
+|                           | gausses          | 6.452         | lines/in^2^        |
+|                           | gilberts         | 0.7958        | ampere turns       |
+|                           | henries          | 10^9^         | abhenries          |
+|                           | henries          | 1.113x10^-12^ | stathenries        |
+|                           | maxwells         | 1             | lines              |
+|                           | oersteds         | 2.998x10^10^  | statoersteds       |
+|                           | ohms             | 10^9^         | abohms             |
+|                           | ohms             | 1.113x10^12^  | statohms           |
+|                           | ohm-cm           | 6.015x10^6^   | circ mil-ohms/ft   |
+|                           | volts            | 10^8^         | abvolts            |
+|                           | volts            | 0.003336      | statvolts          |
+|                           |                  |               |                    |
+| **Energy & Work** | Btu                | 1.055x10^10^  | ergs             |
+|                   | Btu                | 1055.1        | Joules (N-m)     |
+|                   | Btu                | 2.9302x10^-4^ | kilowatt-hours   |
+|                   | Btu                | 251.99        | calories (gram)  |
+|                   | Btu                | 778.03        | foot-pounds      |
+|                   | calories           | 4.1868        | watt-seconds     |
+|                   | calories           | 3.088         | foot-pounds      |
+|                   | electron volt      | 1.519x10^-22^ | Btu              |
+|                   | ergs               | 1             | dyne-centimeters |
+|                   | ergs               | 7.376x10^8^   | foot-pounds      |
+|                   | **foot-pounds**    | **1.3558**    | Joules (N-m)**   |
+|                   | foot-pounds        | 3.766x10^-7^  | kilowatt-hours   |
+|                   | foot-pounds        | 5.051x10^-7^  | horsepower-hours |
+|                   | hp-hours           | 0.7457        | kilowatt-hours   |
+|                   | hp-hours           | 2546.1        | Btu              |
+|                   | Joules             | 0.23889       | calories         |
+|                   | Joules             | 1             | Newton-meters    |
+|                   | Joules             | 1             | watt-seconds     |
+|                   | Joules             | 10^7^         | ergs             |
+|                   | **kilowatt-hours** | **3.6x10^6^** | **Joules**       |
+|                   | thermies           | 4.1868x10^6^  | Joules           |
+|                   | watt-seconds       | 0.73756       | foot-pounds      |
+|                   |                    |               |                  |
+| **Force**^[Converting between force and mass (e.g. kg force to kg mass or pound force to pound mass) uses $g = 32.174 \frac{ft}{s^2}$] | dynes                 | 3.597x10^-5^    | ounces       |
+|                   | **kilograms-force**   | **9.80665**     | **Newtons**  |
+|                   | kiloponds             | 9.80665         | Newtons      |
+|                   | kip (kilopound-force) | 4,448.221       | Newtons      |
+|                   | **Newtons**           | **0.224808931** | **pounds**   |
+|                   | Newtons               | 100,000         | dynes        |
+|                   | ounces                | 20              | pennyweights |
+|                   | ounces (troy)         | 480             | grains       |
 
 ** **
 
