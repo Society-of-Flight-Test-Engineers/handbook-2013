@@ -5,25 +5,7 @@
 (references 1.1, 1.2)
 
 ```{block, type='author_comment', echo=FALSE}
-Tables are covered here
-  https://bookdown.org/yihui/bookdown/tables.html
-and here
-  https://pandoc.org/MANUAL.html#tables
-
-I haven't got the (\#tab:label) labels working, yet
-
-I find https://www.tablesgenerator.com/markdown_tables to be 
-indispensable for working with markdown tables. It's how I
-got the big conversion factor table below formatted.
-
-1) Insert the `|` pipe characters where you want column delimiters
-2) Copy the table
-3) Go to https://www.tablesgenerator.com/markdown_tables 
-4) Make sure Markdown Tables is selected
-5) Select File...Paste table data...
-6) Paste the table in the text field
-7) The formatted table will then be available below for copying and pasting
-back into the document!
+For more on tables: <https://github.com/Society-of-Flight-Test-Engineers/handbook-2013/wiki/Bookdown-Tips-and-Tricks#tables>
 ```
 
 Table: Prefix Multipliers
@@ -41,7 +23,7 @@ Exponent  Prefix  Abbreviation
 10^-1^    deci    d
 10^-2^    centi   c
 10^-3^    milli   m
-10^-6^    micro   μ
+10^-6^    micro   $\mu$
 10^-9^    nano    n
 10^-12^   pico    p
 10^-15^   femto   f
@@ -52,7 +34,7 @@ Exponent  Prefix  Abbreviation
 | **Angles**               | circles        | 1              | circumferences                       |
 |                          | circles        | 12             | signs                                |
 |                          | circles        | 21,600         | minutes                              |
-|                          | circles        | 2π             | radians                              |
+|                          | circles        | 2$\pi$             | radians                              |
 |                          | circles        | 360            | degrees                              |
 |                          | degrees        | .01111         | quadrants                            |
 |                          | degrees        | 3600           | seconds                              |
@@ -62,7 +44,7 @@ Exponent  Prefix  Abbreviation
 |                          | quadrants      | 90             | degrees                              |
 |                          | radians        | 57.2958        | degrees                              |
 |                          | revolutions    | 360            | degrees                              |
-|                          | sphere         | 4π             | steradians^[solid angle measurement] |
+|^[solid angle measurement]| sphere         | 4$\pi$         | steradians |
 |                          |                |                |                                      |
 | **Angular Acceleration** | rev/min^2^     | 0.001745       | rad/sec^2^                           |
 |                          |                |                |                                      |
@@ -157,473 +139,278 @@ Exponent  Prefix  Abbreviation
 |                   | Newtons               | 100,000         | dynes        |
 |                   | ounces                | 20              | pennyweights |
 |                   | ounces (troy)         | 480             | grains       |
+|                                                     |                   |           |                       |
+| **Fuel**^[Fuel densities are temperature dependent] | **gal**           | **5.8**   | **lbs (U.S. AV gas)** |
+|                                                     | **gal**           | **7.5**   | **lbs ( U.S. oil)**   |
+|                                                     | **Liter (jet A)** | **0.812** | **kilograms**         |
+|                                                     | **Liter (jet A)** | **1.794** | **pounds**            |
+|                                                     |                   |           |                       |
+| **Illumination**                                    | candles           | 1         | lumens/steradian      |
+|                                                     | candles/cm^2^     | $\pi$     | lamberts              |
+|                                                     | candlepower       | 12.566    | lumens                |
+|                                                     | foot-candles      | 1         | lumens/ft^2^          |
+|                                                     | foot-candles      | 10.764    | lux                   |
+|                                                     | foot-lamberts     | 1         | lumen/ft^2^           |
+|                                                     | lamberts          | 295.72    | candles/ft^2^         |
+|                                                     | lamberts          | 929.03    | lumens/ft^2^          |
+|                                                     | lumens            | 0.001496  | watts                 |
+|                                                     | lumens/in^2^      | 1         | fots                  |
+|                                                     | lumens/m^2^       | 1         | lux                   |
+|                                                     | lux               | 1         | meter-candles         |
+|                                                     | lux               | 0.0001    | fots                  |
+|                                                     | meter-candles     | 1         | lumens/m^2^           |
+|                                                     | millilamberts     | 0.2957    | candles/ft^2^         |
+|                                                     | millilamberts     | 0.929     | foot-lamberts         |
+|                                                     | milliphots        | 0.929     | foot-candles          |
+|                                                     | milliphots        | 0.929     | lumens/ft^2^          |
+|                                                     | milliphots        | 10        | meter-candles         |
+|                                                                                                                 |                    |                  |                    |
+| **Length**                                                                                                      | ångströms          | 10^-10^          | meters             |
+|                                                                                                                 | astronomical units | 1.496x10^11^     | meters             |
+|                                                                                                                 | cable lengths      | 120              | fathoms            |
+|                                                                                                                 | caliber            | 0.01             | inches             |
+|                                                                                                                 | cubit              | 0.4572           | meters             |
+|                                                                                                                 | fermi              | 10^-15^          | meters             |
+|                                                                                                                 | fathoms            | 6                | feet               |
+|                                                                                                                 | feet               | 12               | inches             |
+| ^[The foot is defined as exactly 0.3048 meters <https://www.nist.gov/pml/us-surveyfoot>]                        | **feet**           | **0.3048**       | **meters**         |
+|                                                                                                                 | furlongs           | 40               | rods               |
+|                                                                                                                 | hands              | 4                | inches             |
+|                                                                                                                 | **inches**         | **2.54**         | **cm**             |
+|                                                                                                                 | **kilometers**     | **3281**         | **feet**           |
+|                                                                                                                 | **kilometers**     | **0.53996**      | **nautical miles** |
+|                                                                                                                 | leagues (U.S.)     | 3                | nautical miles     |
+|                                                                                                                 | light years        | 5.88x10^12^      | statute miles      |
+|                                                                                                                 | links (engnr's)    | 12               | inches             |
+|                                                                                                                 | links (srvyr's)    | 7.92             | inches             |
+|                                                                                                                 | **meters**         | **3.28084**      | **feet**           |
+|                                                                                                                 | **meters**         | **39.370079**    | **inches**         |
+|                                                                                                                 | microns            | 10^-6^           | meters             |
+|                                                                                                                 | mils               | 10^-3^           | inches             |
+|                                                                                                                 | **nautical miles** | **1.15078**      | **statute miles**  |
+| ^[The SI defines the nautical mile as exactly 1852 meters. <https://www.bipm.org/en/publications/si-brochure/>] | **nautical miles** | **1,852**        | **meters**         |
+|                                                                                                                 | **nautical miles** | **6,076.115486** | **feet**           |
+|                                                                                                                 | paces              | 0.762            | meters             |
+|                                                                                                                 | parsec             | 1.9163x10^13^    | statute miles      |
+|                                                                                                                 | perch              | 5.0292           | meters             |
+|                                                                                                                 | pica (printers)    | 0.0042175176     | meters             |
+|                                                                                                                 | point (printers)   | 0.0003514598     | meters             |
+|                                                                                                                 | pole (=rod)        | 5.0292           | meters             |
+|                                                                                                                 | skein              | 109.728          | meters             |
+|                                                                                                                 | **statute miles**  | **5,280**        | **feet**           |
+|                                                                                                                 | **statute miles**  | **1.609344**     | **kilometers**     |
+|                                                                                                                 | statute miles      | 8                | furlongs           |
+|                                                                                                                 | yards              | 3                | feet               |
+|                                                                                                                 |                    |                  |                    |
+|                         |                |               |                   |
+| **Linear Acceleration** | feet/sec^2^    | 1.09728       | kilometers/hr/sec |
+|                         | feet/sec^2^    | 0.3048        | meters/sec^2^     |
+|                         | feet/sec^2^    | 0.6818        | mph/sec           |
+|                         | **g**          | **32.174049** | **feet/sec^2^**   |
+|                         | **g**          | **9.80665**   | **meters/sec^2^** |
+|                         | gals (Galileo) | 0.01          | meters/sec^2^     |
+|                         | knots/sec      | 1.6878        | feet/sec^2^       |
+|                         | meters/sec^2^  | 3.6           | kilometers/hr/sec |
+|                         | mph/sec        | 0.447         | meters/sec^2^     |
+|                         | mph/sec        | 1.609         | kilometers/hr/sec |
+|          |                                  |                 |                   |
+| **Mass** | carats                           | 200             | milligrams        |
+|          | grams                            | 0.035274        | ounces            |
+|          | grains                           | 6.479891x10^-5^ | kilograms         |
+|          | hundredweight (long or Imperial) | 50.80           | kilograms         |
+|          | hundredweight (short)            | 45.359237       | kilograms         |
+|          | **kilograms**                    | **0.06852**     | **slugs**         |
+|          | kilograms                        | 6.024x10^26^    | atomic mass units |
+|          | **kilograms**                    | **2.2046**      | **pounds**        |
+|          | ounces (avd)                     | 28.349523125    | grams             |
+|          | ounces (troy)                    | 31.1034768      | grams             |
+|          | pounds (mass)                    | 1               | pounds (force)    |
+|          | **pounds (mass)**                | **0.45359237**  | **kilograms**     |
+|          | **pounds (mass)**                | **0.031081**    | **slugs**         |
+|          | scruples (apoth)                 | 0.0012959782    | kilograms         |
+|          | **slugs**                        | **32.174**      | **pounds**        |
+|          | **slugs**                        | **14.594**      | **kilograms**     |
+|          | tons (long)                      | 1016.047        | kilograms         |
+|          | tons (assay)                     | 0.02916         | kilograms         |
+|          | tons (metric)                    | 1000            | kilograms         |
+|          | tons (short)                     | 907.1847        | kilograms         |
+|                        |                |              |                   |
+| **Moments of Inertia** | gram-cm^2^     | 0.737x10^-7^ | slug-ft^2^        |
+|                        | pound-ft^2^    | 0.031081     | slug-ft^2^        |
+|                        | slug-in^2^     | 0.0069444    | slug-ft^2^        |
+|                        | **slug-ft^2^** | **1.3546**   | **kg-m^2^**       |
+|                        | **slug-ft^2^** | **32.174**   | **pound-ft^2^**   |
+|                        | slug-ft^2^     | 12.00        | pound-inch-sec^2^ |
+|                        | slug-ft^2^     | 192.00       | ounce-inch-sec^2^ |
+|           |                         |              |                         |
+| **Power** | btu/min                 | 0.01758      | kilowatts               |
+|           | calories(kg)/min        | 3087.46      | foot-pounds/min         |
+|           | ergs/sec                | 7.376x10^-8^ | foot-pounds/sec         |
+|           | ft(lbs)/min             | 2.260x10-^5^ | kilowatts               |
+|           | ft(lbs)/sec             | 0.07712      | btu/min                 |
+|           | ft(lbs)/sec             | 1.356        | watts                   |
+|           | **horsepower**          | **550**      | **ft(lb)/sec**          |
+|           | **horsepower**          | **33,000**   | **ft(lbs)/min**         |
+|           | horsepower              | 10.69        | calories (kg)/min       |
+|           | **horsepower**          | **745.7**    | **watts **              |
+|           | **horsepower (metric)** | **735.5**    | **watts**               |
+|           | **horsepower**          | 1.1014       | **horsepower (metric)** |
+|           | **kilowatts**           | **1.341**    | **horsepower**          |
+|           | watts                   | 10^7^        | ergs/sec                |
+|           | watts                   | 1            | Joules/sec              |
+|              |                     |                |                  |
+| **Pressure** | **atmospheres**     | **14.696**     | **pounds/in^2^** |
+|              | **atmospheres**     | **29.92**      | **inches of Hg** |
+|              | atmospheres         | 760            | mm of Hg         |
+|              | bars                | 10^6^          | dynes/cm^2^      |
+|              | **bars**            | **29.52**      | **inches of Hg** |
+|              | **barye**           | **0.1**        | **Newtons/m^2^** |
+|              | dynes/cm^2^         | 10             | Newtons/m^2^     |
+|              | **inches of H~2~O** | **5.20237**    | **pound/ft^2^**  |
+|              | **inches of Hg**    | **70.72619**   | **pounds/ft^2^** |
+|              | inches of Hg        | 0.491154       | pounds/in^2^     |
+|              | inches of Hg        | 13.595         | inches of H~2~O  |
+|              | **kiloPascals**     | **100**        | **bars**         |
+|              | **hectoPascals**    | **1**          | **millibars**    |
+|              | **millibars**       | **0.02953**    | **inches of Hg** |
+|              | mm of Hg            | 0.019337       | pounds/in^2^     |
+|              | mm of Hg            | 133.32         | Newtons/m^2^     |
+|              | **Pascals**         | **1**          | **Newton/m^2^**  |
+|              | pieze               | 1000           | Newtons/m^2^     |
+|              | **pounds/ft^2^**    | **0.01414**    | **inches of Hg** |
+|              | **pounds/ft^2^**    | **47.88**      | **Newtons/m^2^** |
+|              | **pounds/in^2^**    | **2.036**      | **inches of Hg** |
+|              | pounds/in^2^        | 27.681         | inches of H~2~O  |
+|              | **pounds/in^2^**    | **6894.75728** | **Pascal**       |
+|              | torrs               | 133.32         | Newtons/m^2^     |
+|                 |                   |                                  |                 |
+| **Temperature** | **Kelvin**        | **Celsius + 273.15**             |                 |
+|                 | **Rankine**       | **Fahrenheit + 459.67**          |                 |
+|                 | **Celsius**       | (**Fahrenheit - 32**) \* **5/9** |                 |
+|                 | **Fahrenheit**    | (**9/5** \* **Celsius) + 32**    |                 |
+|                 |                   |                                  |                 |
+| **Time**        | days (solar)      | 24                               | hours           |
+|                 | days (sidereal)   | 23.934                           | hours           |
+|                 | days (solar)      | 1.0027                           | days (sidereal) |
+|                 | hours             | 60                               | minutes         |
+|                 | minutes           | 60                               | seconds         |
+|                 | months (sidereal) | 27d + 7hr + 43min + 11.47sec     |                 |
+|                 | months (lunar)    | 29d + 12hr + 44min + 2.78sec     |                 |
+|                 | year              | 365.24219879                     | days            |
+|            |                 |            |                   |
+| **Torque** | **foot-pounds** | **1.3558** | **Newton-meters** |
+|            | foot-pounds     | 0.1383     | kilogram-meters   |
+|            | ounce-inches    | 72.008     | gram-centimeters  |
+|            | pound-inches    | 1129800    | dyne-centimeters  |
+|              |                 |              |                |
+| **Velocity** | inches/sec      | 0.0254       | meters/sec     |
+|              | **km/hr**       | **0.621371** | **mph**        |
+|              | **km/hr**       | **0.9113**   | **feet/sec**   |
+|              | **knots**       | **1.68781**  | **feet/sec**   |
+|              | **knots (kts)** | **1.15078**  | **mph**        |
+|              | **knots (kts)** | **1.852**    | **km/hr**      |
+|              | **knots (kts)** | **0.51444**  | **meters/sec** |
+|              | meters/sec      | 3.281        | ft/sec         |
+|              | **meters/sec**  | **3.6**      | **km/hr**      |
+|              | **meters/sec**  | **196.85**   | **feet/min**   |
+|              | mph             | 1.466667     | feet/sec       |
+|               |                  |           |                    |
+| **Viscosity** | centistokes      | 10^-6^    | m^2^/sec           |
+|               | ft^2^/sec        | 0.0929    | m^2^/sec           |
+|               | pound sec/ ft^2^ | 47.880258 | Newton secs/m^2^   |
+|               | poise            | 0.1       | Newton secs/m^2^   |
+|               | rhe              | 10        | m^2^/Newton second |
+|            |                     |                |                 |
+| **Volume** | acre-feet           | 43,560         | ft^3^           |
+|            | acre-feet           | 1,233          | m^3^            |
+|            | acre-feet           | 3.259x10^5^    | gals (U.S.)     |
+|            | barrels             | 31.5           | gals (U.S.)     |
+|            | board-feet          | 144            | in^3^           |
+|            | bushels             | 1.244          | ft^3^           |
+|            | bushels             | 32             | quarts (dry)    |
+|            | bushels             | 4              | pecks           |
+|            | cm^3^               | 0.001          | liters          |
+|            | cm^3^               | 0.03381        | fluid ounces    |
+|            | cm^3^               | 0.06102        | in^3^           |
+|            | cord-feet           | 4x4x1          | ft^3^           |
+|            | cords               | 128            | ft^3^           |
+|            | cups                | 0.5            | pints (liquid)  |
+|            | dram (fluid)        | 3.69669x10^-6^ | m^3^            |
+|            | **ft^3^**           | **0.0283167**  | **m^3^**        |
+|            | ft^3^               | 1728           | in^3^           |
+|            | ft^3^               | 28.32          | liters          |
+|            | **ft^3^**           | **7.481**      | **gals (U.S.)** |
+|            | **gals (Imperial)** | **1.2009**     | **gals (U.S.)** |
+|            | gals (Imperial)     | 277.42         | in^3^           |
+|            | gals (U.K.)         | 4546.1         | cm^3^           |
+|            | **gals (U.S.)**     | **231**        | **in^3^**       |
+|            | **gals (U.S.)**     | **0.003785**   | **m^3^**        |
+|            | **gals (U.S.)**     | **3.785**      | **liters**      |
+|            | gals (U.S.)         | 4              | quarts (liquid) |
+|            | gals (U.S.)         | 0.0238095      | barrels (U.S.)  |
+|            | gills               | 7.219          | in^3^           |
+|            | hogshead            | 2              | barrels         |
+|            | in^3^               | 16.39          | cm^3^           |
+|            | liters              | 0.02838        | bushels         |
+|            | liters              | 0.9081         | quarts (dry)    |
+|            | liters              | 1.057          | quarts (liquid) |
+|            | liters              | 1000           | cm^3^           |
+|            | liters              | 61.03          | in^3^           |
+|            | m^3^                | 1.308          | yd^3^           |
+|            | m^3^                | 1000           | liters          |
+|            | m^3^                | 264.2          | gals (U.S.)     |
+|            | **m^3^**            | **35.314667**  | **ft^3^**       |
+|            | mil-feet (circ.)    | 0.0001545      | cm^3^           |
+|            | ounces (U.K.)       | 28.413         | cm^3^           |
+|            | ounces (U.S.)       | 29.574         | cm^3^           |
+|            | pecks               | 8              | quarts (dry)    |
+|            | pecks               | 8.81           | liters          |
+|            | perches             | 0.7008         | m^3^            |
+|            | perches             | 24.75          | ft^3^           |
+|            | pints (dry)         | 33.60          | in^3^           |
+|            | pints (liquid)      | 28.88          | in^3^           |
+|            | pints (liquid)      | 4              | gals            |
+|            | quarts (dry)        | 1.164          | quarts (liquid) |
+|            | quarts              | 2              | pints           |
+|            | register tons       | 100            | ft^3^           |
+|            | shipping ton (U.S.) | 40             | ft^3^           |
+|            | shipping ton (Br.)  | 42             | ft^3^           |
+|            | steres              | 1000           | liters          |
+|            | tablespoons         | 0.0625         | cups            |
+|            | teaspoons           | 0.3333         | tablespoons     |
 
-** **
+## Greek Alphabet
 
-**Fuel** **gal 5.8 lbs (U.S. AV gas)**
-
-**gal 7.5 lbs ( U.S. oil)**
-
-**Liter (jet A) 0.812 kilograms**
-
-**Liter (jet A) 1.794 pounds**
+|Uppercase| Lowercase|Name|Say|
+|:--|:--|:-----|:---|
+|$Α$ |$\alpha$ |Alpha|æl-fə|
+|$Β$ |$\beta$ |Beta|bei-tə|
+|$\Gamma$ |$\gamma$ |Gamma|gæ-mə|
+|$\Delta$ |$\delta$  |Delta|del-tə|
+|$Ε$ |$\epsilon$ |Epsilon|eps-ill-aan|
+|$Ζ$ |$\zeta$ |Zeta|zei-tə|
+|$Η$ |$\eta$ |Eta |ei-tə|
+|$\Theta$ |$\theta$ |Theta|thei-tə|
+|$Ι$ |$\iota$ |Iota|aai-oh-tə|
+|$Κ$ |$\kappa$ |Kappa|kæ-pə|
+|$\Lambda$ |$\lambda$ |Lambda|læm-də|
+|$M$| $\mu$ |Mu|myoo|
+|$Ν$ |$\nu$ |Nu|nyoo|
+|$\Xi$ |$\xi$ |Xi|ksaai |
+|$Ο$ |$ο$ |Omicron|oh-mə-kraan|
+|$\Pi$ |$\pi$ |Pi|paai|
+|$P$ |$\rho$    |Rho|roh|
+|$\Sigma$ |$\sigma$ |Sigma|sig-mə|
+|$Τ$ |$\tau$ |Tau| taa’u|
+|$\Upsilon$ |$\upsilon$|Upsilon|oops-ill-on|
+|$\Phi$ |$\phi$ |Phi|faai|
+|$Χ$ |$\chi$ |Chi|kaai|
+|$\Psi$ |$\psi$ |Psi|psaai|
+|$\Omega$ |$\omega$ |Omega|oh-meg-ə|
 
  
 
-**Note: Fuel densities are temperature dependent**
-
- 
-
-**Illumination** candles 1 lumens/steradian
-
-||candles/cm^2^ π lamberts
-||candlepower 12.566 lumens
-||foot-candles 1 lumens/ft^2^
-||foot-candles 10.764 lux
-||foot-lamberts 1 lumen/ft^2^
-||lamberts 295.72 candles/ft^2^
-||lamberts 929.03 lumens/ft^2^
-||lumens 0.001496 watts
-||lumens/in^2^ 1 fots
-||lumens/m^2^ 1 lux
-||lux 1 meter-candles
-||lux 0.0001 fots
-||meter-candles 1 lumens/m^2^
-||millilamberts 0.2957 candles/ft^2^
-||millilamberts 0.929 foot-lamberts
-||milliphots 0.929 foot-candles
-||milliphots 0.929 lumens/ft^2^
-||milliphots 10 meter-candles
-|| 
-
-** **
-
-** **
-
-||*[ ]{.underline}*
-||*[Multiply]{.underline} [by]{.underline} [To Obtain]{.underline}*
-
-** **
-
-**Length** angstroms 10^-10^ meters
-
-astronmcl units 1.496x10^11^ meters
-
-||cable lengths 120 fathoms
-
-caliber 0.01 inches
-
-||cubit 0.4572 meters
-||fermi 10^-15^ meters
-||fathoms 6 feet
-
-feet 12 inches
-
-furlongs 40 rods
-
-hands 4 inches
-
-**inches 2.54 cm**
-
-||**kilometers 3281 feet**
-||**kilometers 0.53996 nautical miles**
-||leagues (U.S.) 3 nautical miles
-||light years 5.88x10^12^ statute miles
-||links (engnr's) 12 inches
-||links (srvyr's) 7.92 inches
-
-**meters 3.28084 feet**
-
-**meters 39.370079 inches**
-
-||microns 0.1^6^ meters
-||mils 0.001 inches
-||**nautical miles 1.15078 statute miles**
-||**nautical miles 1,852 meters**
-||**nautical miles 6,076.115486 feet**
-||paces 0.762 meters
-||parsec 1.9163x10^13^ statute miles
-||perch 5.0292 meters
-||pica (printers) 0.0042175176 meters
-||point (printers) 0.0003514598 meters
-||pole (=rod) 5.0292 meters
-||skein 109.728 meters
-||**statute miles 5,280 feet**
-||**statute miles 1.609344 kilometers**
-||statute miles 8 furlongs
-
-yards 3 feet
-
-|| 
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-||*[Multiply]{.underline} [by]{.underline} [To Obtain]{.underline}*
-
-** **
-
-**Linear** feet/sec^2^ 1.09728 kilometers/hr/sec
-
-**Acceleration** feet/sec^2^ 0.3048 meters/sec^2^
-
-||feet/sec^2^ 0.6818 mph/sec
-
-**g 32.174049 feet/sec^2^**
-
-||**g 9.80665 meters/sec^2^**
-||gals (Galileo) 0.01 meters/sec^2^
-||knots/sec 1.6878 feet/sec^2^
-||meters/sec^2^ 3.6 kilometers/hr/sec
-
-mph/sec 0.447 meters/sec^2^
-
-||mph/sec 1.609 kilometers/hr/sec [ ]{.underline}
-|| 
-
-**Mass\*** carats *200* milligrams
-
-||grams 0.035274 ounces
-
-grains 6.479891x10^-5^ kilograms
-
-||hndrdwght long 50.80 234544 kilograms
-||hndrdwght shrt 45.359237 kilograms
-||**kilograms 0.06852 slugs**
-
-kilograms 6.024x1026 atomic mass units
-
-**kilograms 2.2046 pounds**
-
-ounces (avd)\* *28.349523125* grams
-
-ounces (troy)\* *31.1034768* grams
-
-||pounds (mass) 1 pounds (force)
-||**pounds (mass) 0.45359237 kilograms**
-
-**pounds (mass) 0.031081 slugs**
-
-scuples (apoth) 0.0012959782 kilograms
-
-**slugs 32.174 pounds**
-
-**slugs 14.594 kilograms**
-
-||tons (long) 1016.047 kilograms
-||tons (assay) 0.02916 kilograms
-||tons (metric) *1000* kilograms
-||tons (short) 907.1847 kilograms
-||\* Converting between force and mass (e.g. kg force to kg mass or pound force to pound mass) uses $g = 32.174 ft/sec\^2$
-|| 
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-||*[ ]{.underline}*
-||*[ ]{.underline}*
-||*[ ]{.underline}*
-||*[Multiply]{.underline} [by]{.underline} [To Obtain]{.underline}*
-
-** **
-
-**Moments** gram-cm^2^ 0.737x10^-7^ slug-ft^2^
-
-**of** pound-ft^2^\* 0.031081 slug-ft^2^
-
-**Inertia**\* slug-in^2^ 0.0069444 slug-ft^2^
-
-**slug-ft^2^ 1.3546 kg-m^2^**
-
-**slug-ft^2^ 32.174 pound-ft^2\ ^**
-
-slug-ft^2^ 12.00 pound-inch-sec^2^
-
-||slug-ft^2^ 192.00 ounce-inch-sec^2^
-
-
- 
-
-**Power** btu/min 0.01758 kilowatts
-
-||calories(kg)/min 3087.46 foot-pounds/min ergs/sec 7.376x10^-8^ foot-pounds/sec
-||ft(lbs)/min 2.260x10-^5^ kilowatts
-||ft(lbs)/sec 0.07712 btu/min
-||ft(lbs)/sec 1.356 watts
-||**hp 550 ft(lb)/sec**
-
-**hp 33,000 ft(lbs)/min**
-
-||hp 10.69 calories (kg)/min
-||**hp 745.7 watts \[J/sec\]**
-||**hp (metric) 735.5 watts**
-
-**hp 1.1014 horsepower (metric)**
-
-**kilowatts 1.341 horsepower**
-
-||watts 10^7^ ergs/sec
-
-watts 1 Joules/sec
-
-|| 
-
-**Pressure** **atmospheres 14.696 pounds/in^2^**
-
-||**atmospheres 29.92 inches of Hg**
-||atmospheres 76 cm of Hg
-||bars 1,000,000 dynes/cm^2^
-||**bars 29.52 inches of Hg**
-||**barye 0.1 Newtons/m^2^**
-||dynes/cm^2^ 10 Newtons/m^2^
-
-**inches of H~2~O 5.20237 pound/ft^2^**
-
-||**inches of Hg 70.72619 pounds/ft^2^**
-||inches of Hg 0.491154 pounds/in^2^
-||inches of Hg 13.595 inches of H~2~O
-||**kiloPascals 100 bars**
-
-**hectoPascals 1 millibars**
-
-**millibars 0.02953 inches of Hg**
-
-mm of Hg 0.019337 pounds/in^2^
-
-||*[ ]{.underline}*
-||*[ ]{.underline}*
-||*[Multiply]{.underline} [by]{.underline} [To Obtain]{.underline}*
-
-** **
-
-**Pressure** mm of Hg 133.32 Newtons/m^2^
-
-**Cont.** **Pascals 1 Newton/m^2^**
-
-pieze 1000 Newtons/m^2^
-
-**pounds/ft^2^ 0.01414 inches of Hg**
-
-**pounds/ft^2^ 47.88 Newtons/m^2^**
-
-**pounds/in^2^ 2.036 inches of Hg**
-
-pounds/in^2^ 27.681 inches of H~2~O
-
-||**pounds/in^2^ 6894.75728 Pascal**
-||torrs 133.32 Newtons/m^2^
-|| 
-
-**Temperature Kelvin = ^o^*C*+273.15^o^**
-
-**Rankin = ^o^*F* + 459.67^o^**
-
-**^o^Centigrade = \[^o^*F* − 32^o^\] 5/9**
-
-||^o^Fahrenheit = (9/5)^o^*C* + 32
-
-** **
-
-**Time** days (solar) 24 hours
-
-days (sidereal) 23.934 hours
-
-days (solar) 1.0027 days (sidereal)
-
-||hours 60 minutes
-||minutes 60 seconds
-||months (sdrl) 27d + 7hr +43min +11.47sec
-||months (lunar) 29d +12hr +44min + 2.78sec
-||year 365.24219879 days
-
- 
-
-**Torque** \* **foot-pounds 1.3558 Newton-meters**
-
-foot-pounds 0.1383 kilogram-meters
-
-||ounce-inches 72.008 gram-centimeters
-
-pound-inches 1129800 dyne-centimeters
-
- 
-
-**Velocity** inches/sec 0.0254 meters/sec
-
-||**knots 1.68781 feet/sec**
-
-**km/hr 0.621371 mph**
-
-**km/hr 0.9113 feet/sec**
-
-**Knots (kts) 1.15078 mph**
-
-**Knots (kts) 1.852 km/hr**
-
-**Knots (kts) 0.51444 meters/sec**
-
-meters/sec 3.281 ft/sec
-
-**meters/sec 3.6 km/hr**
-
-**meters/sec 196,85 feet/min**
-
-mph 1.466667 feet/sec
-
-||*[Multiply]{.underline} [by]{.underline} [To Obtain]{.underline}*
-
-** **
-
-**Viscosity** centistokes 10^-6^ m^2^/sec
-
-||ft^2^/sec 0.0929 m^2^/sec
-||pound sec/ ft^2^ 47.880258 Newton secs/ m^2^
-||poise 0.1 Newton secs/ m^2^
-
-rhe 10 m^2^/Newton second
-
-** **
-
-**Volume** acre-feet 43,560 ft^3^
-
-acre-feet 1,233 m^3^
-
-acre-feet 3.259x10^5^ gals (U.S.)
-
-barrels 31.5 gals (U.S.)
-
-||board-feet 144 in^3^
-
-bushels 1.244 ft^3^
-
-bushels 32 quarts (dry)
-
-bushels 4 pecks
-
-||cm^3^ 0.001 liters
-||cm^3^ 0.03381 fluid ounces
-
-cm^3^ 0.06102 in^3^
-
-cord-feet 4x4x1 ft^3^
-
-cords 128 ft^3^
-
-cups 0.5 pints (liquid)
-
-||dram (fluid) 3.69669x10^-6^ m^3^
-||**ft^3^ 0.0283167 m^3^**
-||ft^3^ 1728 in^3^
-||ft^3^ 28.32 liters
-||**ft^3^ 7.481 gals (U.S.)**
-||**gals (Imperial) 1.2009 gals (U.S.)**
-||gals (Imperial) 277.42 in^3^
-||gals (U.K.) 4546.1 cm^3^
-||**gals (U.S.) 231 in^3^**
-||**gals (U.S.) 0.003785 m^3^**
-||**gals (U.S.) 3.785 liters**
-||gals (U.S.) 4 quarts (liquid)
-||gals (U.S.) 0.0238095 barrels (U.S.)
-||gils 7.219 in^3^
-||hogshead 2 barrels
-||in^3^ 16.39 cm^3^
-||liters 0.02838 bushels
-||liters 0.9081 quarts (dry)
-||liters 1.057 quarts (liquid)
-||liters 1000 cm^3^
-
-liters 61.03 in^3^
-
-m^3^ 1.308 yd^3^
-
-||*[Multiply]{.underline} [by]{.underline} [To Obtain]{.underline}*
-
-** **
-
-**Volume** m^3^ 1000 liters
-
-**Cont.** m^3^ 264.2 gals (U.S.)
-
-||**m^3^ 35.314667 ft^3^**
-||mil-feet (circ.) 0.0001545 cm^3^
-||ounces (U.K.) 28.413 cm^3^
-
-ounces (U.S.) 29.574 cm^3^
-
-pecks 8 quarts (dry)
-
-||pecks 8.81 liters
-
-perches 0.7008 m^3^
-
-perches 24.75 ft^3^
-
-||pints (dry) 33.60 in^3^
-||pints (liquid) 28.88 in^3^
-||pints (liquid) 4 gals
-||quarts (dry) 1.164 quarts (liquid)
-||quarts 2 pints
-||register tons 100 ft^3^
-||shipping ton (U.S.) 40 ft^3^
-||shipping ton (Br.) 42 ft^3^
-||steres 1000 liters
-||tablespoons 0.0625 cups
-||teaspoons 0.3333 tablespoons
-
- 
-
- 
-
-**1.2 Greek Alphabet**
-
-|Α α Alpha
-|Β β Beta
-|Γ γ Gamma
-|∆ δ Delta
-|Ε ε Epsilon
-|Ζ ζ Zeta
-|Η η Eta 
-|Θ θ Theta
-|Ι ι Iota
-|Κ κ Kappa
-|Λ λ Lambda
-|Μ μ Mu
-|Ν ν Nu
-|Ξ ξ Xi
-|Ο ο Omicron
-|Π π Pi
-|p ρ    Rho
-|Σ σ Sigma
-|Τ τ Tau
-|Υ υ Upsilon
-|Φ φ Phi
-|Χ χ Chi
-|Ψ ψ Psi
-|Ω ω Omega
-
- 
-
-**1.3 Greek Symbols Used for Aircraft**
+## Greek Symbols Used for Aircraft
 
  
 
@@ -665,13 +452,13 @@ perches 24.75 ft^3^
 
 Λ wing sweep angle
 
-μ coefficient of absolute viscosity =  ρν
+$\mu$ coefficient of absolute viscosity =  ρν
 
-μ Mach cone angle
+$\mu$ Mach cone angle
 
-ν kinematic viscosity = μ/*g*
+ν kinematic viscosity = $\mu$/*g*
 
-π nondimensional parameter
+$\pi$ nondimensional parameter
 
 ρ density
 
@@ -701,7 +488,7 @@ perches 24.75 ft^3^
 
  
 
-**1.4 Common Subscripts**
+## Common Subscripts
 
  
 
@@ -735,7 +522,7 @@ perches 24.75 ft^3^
 
  
 
-**1.5 Common Abbreviations**
+## Common Abbreviations
 
  
 
@@ -1835,7 +1622,9 @@ a line perpendicular to the longitudinal and lat eral axes
 
  
 
-**1.6 Sign Conventions** (reference 1.8)
+## Sign Conventions
+
+(reference 1.8)
 
 *** ***
 
@@ -1897,7 +1686,7 @@ Flightpath heading angle (ground track heading) *σ~g~*, is the horizontal ang
 
 Flightpath elevation angle; *γ*, is the vertical angle between the flightpath and the horizontal plane. Positive rotation is up. During a descent, this parameter is commonly known as glide path angle.
 
-Flightpath bank angle; *μ*, is the angle between the plane formed by the velocity vector and the lift vector and the vertical plane containing the velocity vector. Positive rotation is clockwise about the velocity vector, looking forward.
+Flightpath bank angle; *$\mu$*, is the angle between the plane formed by the velocity vector and the lift vector and the vertical plane containing the velocity vector. Positive rotation is clockwise about the velocity vector, looking forward.
 
  
 
@@ -1957,7 +1746,7 @@ Fuselage reference station (FRS), Water line (WL), and Buttock line (BL) are ref
 +-------------------------------------------------------------+------------+-------------------------+
 | Yaw moment                                                  | *N*        | nose right              |
 +-------------------------------------------------------------+------------+-------------------------+
-| Flightpath bank angle                                       | *μ*        | right wing down         |
+| Flightpath bank angle                                       | *$\mu$*        | right wing down         |
 +-------------------------------------------------------------+------------+-------------------------+
 | Flightpath elevation                                        | *γ*        | climb                   |
 +-------------------------------------------------------------+------------+-------------------------+
@@ -1966,10 +1755,9 @@ Fuselage reference station (FRS), Water line (WL), and Buttock line (BL) are ref
 |                                                             |            | ward                    |
 +-------------------------------------------------------------+------------+-------------------------+
 
-Discussion of "Input & Deflection" Conventions
-==============================================
 
- 
+Discussion of "Input & Deflection" Conventions
+
 
 The debate regarding proper inputs and deflections stems from the user's viewpoint. From the body axis convention above, flight testers recognize that a climbing right turn generates positive angular measurements. Logically then, pull, right roll and right yaw pilot inputs and subsequent surface deflections should also be positive. The traditional flight tester's convention follows as "All input forces & displacements, surface deflections, and motions that cause a climbing right turn are positive."
 
@@ -2209,7 +1997,9 @@ Based on the above background, the SFTE technical council proposes the following
 
  
 
-**1.7 Thermodynamics Relations (references 1.3, 1.4, 1.5, 1.6)**
+## Thermodynamics Relations 
+
+(references 1.3, 1.4, 1.5, 1.6)
 
 ** **
 
@@ -2539,7 +2329,7 @@ or PV^κ^ = const.
 
  
 
-**1.8 Mechanics Relations**
+## Mechanics Relations
 
  
 
