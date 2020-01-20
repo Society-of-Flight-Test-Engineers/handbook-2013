@@ -422,7 +422,7 @@ Exponent  Prefix  Abbreviation
 |$\delta_a$    |aileron deflection angle|
 |$\delta_r$    |rudder deflection angle|
 |$\delta_e$    |elevator deflection angle|
-|$\epsilon$       |downwash angle at tail (degrees)|
+|$\varepsilon$       |downwash angle at tail (degrees)|
 |ζ       |damping ratio|
 |η       |efficiency|
 |θ       |body axis/pitch angle|
