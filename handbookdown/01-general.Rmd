@@ -381,114 +381,78 @@ Exponent  Prefix  Abbreviation
 
 ## Greek Alphabet
 
-|Uppercase| Lowercase|Name|Say|
-|:--|:--|:-----|:---|
-|$Α$ |$\alpha$ |Alpha|æl-fə|
-|$Β$ |$\beta$ |Beta|bei-tə|
-|$\Gamma$ |$\gamma$ |Gamma|gæ-mə|
-|$\Delta$ |$\delta$  |Delta|del-tə|
-|$Ε$ |$\epsilon$ |Epsilon|eps-ill-aan|
-|$Ζ$ |$\zeta$ |Zeta|zei-tə|
-|$Η$ |$\eta$ |Eta |ei-tə|
-|$\Theta$ |$\theta$ |Theta|thei-tə|
-|$Ι$ |$\iota$ |Iota|aai-oh-tə|
-|$Κ$ |$\kappa$ |Kappa|kæ-pə|
-|$\Lambda$ |$\lambda$ |Lambda|læm-də|
-|$M$| $\mu$ |Mu|myoo|
-|$Ν$ |$\nu$ |Nu|nyoo|
-|$\Xi$ |$\xi$ |Xi|ksaai |
-|$Ο$ |$ο$ |Omicron|oh-mə-kraan|
-|$\Pi$ |$\pi$ |Pi|paai|
-|$P$ |$\rho$    |Rho|roh|
-|$\Sigma$ |$\sigma$ |Sigma|sig-mə|
-|$Τ$ |$\tau$ |Tau| taa’u|
-|$\Upsilon$ |$\upsilon$|Upsilon|oops-ill-on|
-|$\Phi$ |$\phi$ |Phi|faai|
-|$Χ$ |$\chi$ |Chi|kaai|
-|$\Psi$ |$\psi$ |Psi|psaai|
-|$\Omega$ |$\omega$ |Omega|oh-meg-ə|
-
+| Uppercase                   |                           | Lowercase                   |                           | Name    | Say         |
+|-----------------------------|---------------------------|-----------------------------|---------------------------|---------|-------------|
+| $Α$                         | Α                         | $\alpha$                    | \\alpha                   | Alpha   | æl-fə       |
+| $Β$                         | Β                         | $\beta$                     | \\beta                    | Beta    | bei-tə      |
+| $\Gamma$ or $\varGamma$     | \\Gamma or \\varGamma     | $\gamma$                    | \\gamma                   | Gamma   | gæ-mə       |
+| $\Delta$ or $\varDelta$     | \\Delta or \\varDelta     | $\delta$                    | \\delta                   | Delta   | del-tə      |
+| $Ε$                         | Ε                         | $\epsilon$ or $\varepsilon$ | \\epsilon or \\varepsilon | Epsilon | eps-ill-aan |
+| $Ζ$                         | Ζ                         | $\zeta$                     | \\zeta                    | Zeta    | zei-tə      |
+| $Η$                         | Η                         | $\eta$                      | \\eta                     | Eta     | ei-tə       |
+| $\Theta$ or $\varTheta$     | \\Theta or \\varTheta     | $\theta$ or $\vartheta$     | \\theta or \\vartheta     | Theta   | thei-tə     |
+| $Ι$                         | Ι                         | $\iota$                     | \\iota                    | Iota    | aai-oh-tə   |
+| $Κ$                         | Κ                         | $\kappa$ or $\varkappa$     | \\kappa or \\varkappa     | Kappa   | kæ-pə       |
+| $\Lambda$ or $\varLambda$   | \\Lambda or \\varLambda   | $\lambda$                   | \\lambda                  | Lambda  | læm-də      |
+| $M$                         | M                         | $\mu$                       | \\mu                      | Mu      | myoo        |
+| $Ν$                         | Ν                         | $\nu$                       | \\nu                      | Nu      | nyoo        |
+| $\Xi$ or $\varXi$           | \\Xi or \\varXi           | $\xi$                       | \\xi                      | Xi      | ksaai       |
+| $Ο$                         | Ο                         | $ο$                         | ο                         | Omicron | oh-mə-kraan |
+| $\Pi$ or $\varPi$           | \\Pi or \\varPi           | $\pi$ or $\varpi$           | \\pi or \\varpi           | Pi      | paai        |
+| $P$                         | P                         | $\rho$ or $\varrho$         | \\rho    or \\varrho      | Rho     | roh         |
+| $\Sigma$ or $\varSigma$     | \\Sigma or \\varSigma     | $\sigma$ or $\varsigma$     | \\sigma or \\varsigma     | Sigma   | sig-mə      |
+| $Τ$                         | Τ                         | $\tau$                      | \\tau                     | Tau     | taa’u       |
+| $\Upsilon$ or $\varUpsilon$ | \\Upsilon or \\varUpsilon | $\upsilon$                  | \\upsilon                 | Upsilon | oops-ill-on |
+| $\Phi$ or $\varPhi$         | \\Phi or \\varPhi         | $\phi$ or $\varphi$         | \\phi   or \\varphi       | Phi     | faai        |
+| $Χ$                         | Χ                         | $\chi$                      | \\chi                     | Chi     | kaai        |
+| $\Psi$ or $\varPsi$         | \\Psi or \\varPsi         | $\psi$                      | \\psi                     | Psi     | psaai       |
+| $\Omega$ or $\varOmega$     | \\Omega or \\varOmega     | $\omega$                    | \\omega                   | Omega   | oh-meg-ə    |
  
 
 ## Greek Symbols Used for Aircraft
 
- 
-
-α            angle of attack (degrees or radians)
-
-α~τ~ tail angle of attack
-
-β angle of sideslip (degrees)
-
-γ flight path angle relative to horizontal
-
-γ specific heat ratio (1.4 for air)
-
-δ relative pressure ratio (*P~a~*/*P~o~*)
-
-δ~a~ aileron deflection angle
-
-δ~r~ rudder deflection angle
-
-δ~e~ elevator deflection angle
-
-ε downwash angle at tail (degrees)
-
-ζ damping ratio
-
-η efficiency
-
-θ body axis/pitch angle
-
-θ relative temperature ratio, *T~a~*/*T~o~*
-
-ι angle of incidence
-
-ι*~F~* thrust angle of incidence
-
-ι*~T~* horizontal tail angle of incidence
-
-λ pressure lag constant
-
-Λ wing sweep angle
-
-$\mu$ coefficient of absolute viscosity =  ρν
-
-$\mu$ Mach cone angle
-
-ν kinematic viscosity = $\mu$/*g*
-
-$\pi$ nondimensional parameter
-
-ρ density
-
-ρ*~a~* ambient air density
-
-ρ~*o*~ standard atmospheric density (slugs/ft3 )
-
-σ air density ratio (ρ*~α~ /*ρ*~ο~*)
-
-σ~cr~ critical density
-
-τ shear stress (pounds per square inch) psi
-
-τ~R~ Roll Mode Time Constant (sec)
-
-φ bank angle (degrees)
-
-ψ aircraft heading (degrees)
-
-ω frequency
-
-ω rotational velocity (radians per second)
-
-ω~*d* ~ damped natural frequency
-
-ω*~n~* natural undamped frequency
+|Symbol|Used For|
+|:-|:-|
+|$\alpha$       |angle of attack (degrees or radians)|
+|$\alpha_{\tau}$    |tail angle of attack|
+|$\beta$       |angle of sideslip (degrees)|
+|$\gamma$       |flight path angle relative to horizontal|
+|$\gamma$       |specific heat ratio (1.4 for air)|
+|$\delta$       |relative pressure ratio ($\frac{P_a}{P_0}$)|
+|$\delta_a$    |aileron deflection angle|
+|$\delta_r$    |rudder deflection angle|
+|$\delta_e$    |elevator deflection angle|
+|$\varepsilon$       |downwash angle at tail (degrees)|
+|ζ       |damping ratio|
+|η       |efficiency|
+|θ       |body axis/pitch angle|
+|θ       |relative temperature ratio, *T~a~*/*T~o~*|
+|ι       |angle of incidence|
+|ι*~F~*  |thrust angle of incidence|
+|ι*~T~*  |horizontal tail angle of incidence|
+|λ       |pressure lag constant|
+|Λ       |wing sweep angle|
+|$\mu$   |coefficient of absolute viscosity =  ρν|
+|$\mu$   |Mach cone angle|
+|ν       |kinematic viscosity = $\mu$/*g*|
+|$\pi$   |nondimensional parameter|
+|ρ       |density|
+|ρ*~a~*  |ambient air density|
+|ρ~*o*~  |standard atmospheric density (slugs/ft3 )|
+|σ       |air density ratio (ρ*~α~ /*ρ*~ο~*)|
+|σ~cr~   |critical density|
+|τ       |shear stress (pounds per square inch) psi|
+|τ~R~    |Roll Mode Time Constant (sec)|
+|φ       |bank angle (degrees)|
+|ψ       |aircraft heading (degrees)|
+|ω       |frequency|
+|ω       |rotational velocity (radians per second)|
+|ω~*d* ~ |damped natural frequency|
+|ω*~n~*  |natural undamped frequency|
 
  
 
-## Common Subscripts
+## Common Subscripts (raw)
 
  
 
@@ -522,7 +486,7 @@ $\pi$ nondimensional parameter
 
  
 
-## Common Abbreviations
+## Common Abbreviations (raw)
 
  
 
@@ -1622,7 +1586,7 @@ a line perpendicular to the longitudinal and lat eral axes
 
  
 
-## Sign Conventions
+## Sign Conventions (raw)
 
 (reference 1.8)
 
@@ -1997,7 +1961,7 @@ Based on the above background, the SFTE technical council proposes the following
 
  
 
-## Thermodynamics Relations 
+## Thermodynamics Relations (raw)
 
 (references 1.3, 1.4, 1.5, 1.6)
 
@@ -2329,7 +2293,7 @@ or PV^κ^ = const.
 
  
 
-## Mechanics Relations
+## Mechanics Relations (raw)
 
  
 
