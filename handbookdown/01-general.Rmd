@@ -486,269 +486,264 @@ Exponent  Prefix  Abbreviation
 
 ## Common Abbreviations (raw)
 
- 
+|Abbreviation|Meaning|
+|:-|:-|
+|a |lift curve slope|
+|a |linear acceleration (ft/sec^2^ or m/sec^2^)|
 
-a lift curve slope
+|a |speed of sound|
 
-a linear acceleration (ft/sec^2^ or m/sec^2^)
+|A/A |air-to-air|
 
-a speed of sound
+|a/c |aircraft|
 
-A/A air-to-air
+|AAA |anti aircraft artillery|
 
-a/c aircraft
+|AC |aerodynamic center|
 
-AAA anti aircraft artillery
+|ac |alternating current|
 
-AC aerodynamic center
+|ACM |air combat maneuvering|
 
-ac alternating current
+|A/D |analog to digital|
 
-ACM air combat maneuvering
+|ADC |air data computer|
 
-A/D analog to digital
+|ADC |analog-to-digital converter|
 
-ADC air data computer
+|ADF |automatic direction finder|
 
-ADC analog-to-digital converter
+|ADI |attitude direction indicator|
 
-ADF automatic direction finder
+|AFMC |Air Force Materiel Command|
 
-ADI attitude direction indicator
+|AFOTEC |Air Force Operational Test and Evaluation Center|
 
-AFMC Air Force Materiel Command
+|A/G |air-to-ground|
 
-AFOTEC Air Force Operational Test and Evaluation Center
+|AGL |above ground level|
 
-A/G air-to-ground
+|AHRS |attitude heading reference system|
 
-AGL above ground level
+|AM |amplitude modulation|
 
-AHRS attitude heading reference system
+|AOA |angle of attack|
 
-AM amplitude modulation
+|AOED |age of ephemeris data|
 
-AOA angle of attack
+|APU |auxiliary power unit|
 
-AOED age of ephemeris data
+|AR |air refuel (mode of flight)|
 
-APU auxiliary power unit
+|*AR* |aspect ratio = b^2^ / S|
 
-AR air refuel (mode of flight)
+|ARDP |advanced radar data processor|
 
-*AR *          aspect ratio = b^2^ / S
+|ARSP |advanced radar signal processor|
 
-ARDP advanced radar data processor
+|ASPJ |airborne self protection jammer|
 
-ARSP advanced radar signal processor
+|ATC |air traffic control|
 
-ASPJ airborne self protection jammer
+|avg |average|
 
-ATC air traffic control
+|ax |longitudinal acceleration|
 
-avg average
+|ay |lateral acceleration|
 
-ax longitudinal acceleration
+|AZ |azimuth|
 
-ay lateral acceleration
+|b |span of wing (feet)|
 
-AZ azimuth
+|B/N |bombardier/navigator|
 
-b span of wing (feet)
+|bbl |barrel|
 
-B/N bombadier/navigator
+|*BHP* |brake horsepower|
 
-bbl barrel
+|BICOMS |bistatic coherent measurement system|
 
-*BHP* brake horsepower
+|BID |bus interface device|
 
-BICOMS bistatic coherent measurement system
+|BIT |built-in test|
 
-BID bus interface device
+|*BSFC* |brake specific fuel consumption|
 
-BIT built-in test
+|Btu |British thermal unit|
 
-*BSFC* brake specific fuel consumption
+|BW |bandwidth|
 
-Btu British thermal unit
+|^o^*C* |degrees centigrade\...see *T*
 
-BW bandwidth
+|c |brake specific fuel consumption (BSFC)|
 
-^o^*C* degrees centigrade\...see *T*
+|c |speed of light in a vacuum (186,282 miles/sec = 299,792,500 \[m/s\])|
 
-c brake specific fuel consumption (BSFC)
+|c |mean aerodynamic chord (MAC) of a wing|
 
-c speed of light in a vacuum
+|C/A |coarse acquisition|
 
-(186,282 miles/sec = 299,792,500 \[m/s\])
+|C/N~o~ |carrier to noise ratio|
 
-c mean aerodynamic chord (MAC) of a wing
+|CADC |central air data computer|
 
-C/A coarse acquisition
+|CARD |cost analysis requirement document|
 
-C/N~o~ carrier to noise ratio
+|*C~D~* |coefficient of drag|
 
-CADC central air data computer
+|*C~D~*~i~ |induced drag coefficient|
 
-CARD cost analysis requirement document
+|*C~D~*~o~ |zero lift drag coefficient (also parasitic drag coefficient for symmetric wing)|
 
-*C~D~* coefficient of drag
+|CDI |course deviation indicator|
 
-*C~D~* ~i~ induced drag coefficient
+|CDMA |code division multiplex access|
 
-*C~D~* ~o~ zero lift drag coefficient
+|CDR |critical design review|
 
-(also parasitic drag coefficient for symmetric wing)
+|CDRL |contracts data requirement list|
 
-CDI course deviation indicator
+|CDU |control display unit|
 
-CDMA code division multiplex access
+|CEA |circular error average|
 
-CDR critical design review
+|CEP |circular error probable|
 
-CDRL contracts data requirement list
+|*C~f~* |coefficient of friction|
 
-CDU control display unit
+|CFE |contractor furnished equipment|
 
-CEA circular error average
+|CFT |conformal fuel tank|
 
-CEP circular error probable
+|*cg* |center of gravity (normally in % MAC)|
 
-*C~f~* coefficient of friction
+|C~H~ |hinge moment coefficient|
 
-CFE contractor furnished equipment
+|cine |cinetheodolite|
 
-CFT conformal fuel tank
+|*C~l~* |rolling moment coefficient, airfoil section lift coefficient|
 
-*cg* center of gravity (normally in % MAC)
+|*C~L~* |lift coefficient|
 
-C~H~ hinge moment coefficient
+|CLHQ |closed loop handling qualities|
 
-cine cinetheodolite
+|*C~lp~* |roll damping coefficient|
 
-*C~l\ ~* rolling moment coefficient, airfoil section lift co efficient
+|*C~lr~* |roll moment due to yaw rate coefficient|
 
-*C~L~* lift coefficient
+|*C~m~* |pitching moment coefficient|
 
-CLHQ closed loop handling qualities
+|*C~M~* |moment coefficient|
 
-*C~lp~* roll damping coefficient
+|cm |centimeters|
 
-*C~lr~* roll moment due to yaw rate coefficient
+|cos |cosine|
 
-*C~m~* pitching moment coefficient
+|cot |cotangent|
 
-*C~M~* moment coefficient
+|$C_{l \beta}$ |(dihedral) rolling moment due to sideslip|
 
-cm centimeters
+|$C_{l \delta a}$ |aileron power coefficient|
 
-cos cosine
+|$Cm_q$ |pitch damping coefficient|
 
-cot cotangent
+|$Cm_{\alpha}$ |longitudinal static stability coefficient|
 
-*C~lβ~* (dihedral) rolling moment due to sideslip
+|$Cm_{\delta e}$ |elevator power coefficient|
 
-*C~l~*~δa~ aileron power coefficient
+|$Cn$ |yawing moment coefficient|
 
-*Cm~q~* pitch damping coefficient
+|$Cn_r$ |yaw damping coefficient|
 
-*Cm~α~* longitudinal static stability coefficient
+|cnst |constant|
 
-*Cm~δe~* elevator power coefficient
+|$Cn_{\beta}$ |directional stability coefficient|
 
-*Cn*          yawing moment coefficient
+|$Cn_{\delta a}$ |adverse yaw coefficient|
 
-*Cn~r~* yaw damping coefficient
+|$Cn_{\delta r}$ |rudder power coefficient|
 
-cnst constant
+|COTS |commercial, off--the-shelf|
 
-*Cn~β~* directional stability coefficient
+|CP |center of pressure|
 
-*Cn~δa~*          adverse yaw coefficient
+|$C_P$ |propeller power coefficient|
 
-*Cn~δr~* rudder power coefficient
+|CPU |central processing unit|
 
-COTS commercial, off--the-shelf
+|$c_r$ |wing root chord|
 
-CP center of pressure
+|CRM |crew resource management|
 
-*C~P~* propeller power coefficient
+|$c_t$ |wing tip chord|
 
-CPU central processing unit
+|CTF |combined test force|
 
-c~r~ wing root chord
+|CY |calendar year|
 
-CRM crew resource management
+|$C_Y$ |side force coefficient|
 
-c~t~ wing tip chord
+|$C_{Y_{\beta}}$ |side force due to sideslip coefficient|
 
-CTF combined test force
+|$C_{Y_{\delta r}}$ |side force due to rudder coefficient|
 
-CY calendar year
+|D |diameter|
 
-*C~Y~* side force coefficient
+|D |drag|
 
-*CY~β~* side force due to sideslip coefficient
+|D/A |digital/analog|
 
-*CY~δr~* side force due to rudder coefficient
+|DAC |digital to analog converter|
 
-D diameter
+|DAPS |data acquisition and processing system|
 
-D drag
+|DARPA |Defense Advanced Research Projects Agency|
 
-D/A digital/analog
+|db |decibel|
 
-DAC digital to analog converter
+|DC |direct current|
 
-DAPS data acquisition and processing system
+|deg |degrees|
 
-DARPA Defense Advanced Research Projects Agency
+|DG |directional gyro|
 
-db decibel
+|DGPS |differential GPS|
 
-DC direct current
+|DMA |Defense Mapping Agency|
 
-deg degrees
+|DME |distance measuring equipment|
 
-DG directional gyro
+|DoD |Department of Defense|
 
-DGPS differential GPS
+|DOP |dilution of precision|
 
-DMA Defense Mapping Agency
+|DSN |defense switched network|
 
-DME distance measuring equipment
+|DT |development test|
 
-DoD Department of Defense
+|DTC |data transfer cartridge|
 
-DOP dilution of precision
+|DTIC |Defense Technical Information Center|
 
-DSN defense switched network
+|*e* |Oswald efficiency factor|
 
-DT development test
+|$e$ |natural mathematical constant = 2.718281828459|
 
-DTC data transfer cartridge
+|E |energy|
 
-DTIC Defense Technical Information Center
+|E |lift-to-drag ratio ($C_L / C_D$, $L/D$)|
 
-*e* Oswald efficiency factor
+|EAS |equivalent airspeed|
 
-e natural mathematical constant = 2.718281828459
+|EC |electronic combat|
 
-E energy
+|ECCM |electronic counter countermeasures|
 
-E lift-to-drag ratio (C~L~/C~D~, L/D)
+|ECM |electronic countermeasures|
 
-EAS equivalent airspeed
+|ECP |engineering change proposal|
 
-EC electronic combat
-
-ECCM electronic counter countermeasures
-
-ECM electronic countermeasures
-
-ECP engineering change proposal
-
-ECS environmental control system
+|ECS |environmental control system|
 
 EGT exhaust gas temperature
 
