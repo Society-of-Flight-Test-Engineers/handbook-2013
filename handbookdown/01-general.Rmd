@@ -407,7 +407,6 @@ Exponent  Prefix  Abbreviation
 | $Χ$                         | Χ                         | $\chi$                      | \\chi                     | Chi     | kaai        |
 | $\Psi$ or $\varPsi$         | \\Psi or \\varPsi         | $\psi$                      | \\psi                     | Psi     | psaai       |
 | $\Omega$ or $\varOmega$     | \\Omega or \\varOmega     | $\omega$                    | \\omega                   | Omega   | oh-meg-ə    |
- 
 
 ## Greek Symbols Used for Aircraft
 
@@ -423,34 +422,34 @@ Exponent  Prefix  Abbreviation
 |$\delta_r$    |rudder deflection angle|
 |$\delta_e$    |elevator deflection angle|
 |$\varepsilon$       |downwash angle at tail (degrees)|
-|ζ       |damping ratio|
-|η       |efficiency|
-|θ       |body axis/pitch angle|
-|θ       |relative temperature ratio, *T~a~*/*T~o~*|
-|ι       |angle of incidence|
-|ι*~F~*  |thrust angle of incidence|
-|ι*~T~*  |horizontal tail angle of incidence|
-|λ       |pressure lag constant|
-|Λ       |wing sweep angle|
-|$\mu$   |coefficient of absolute viscosity =  ρν|
+|$\zeta$       |damping ratio|
+|$\eta$       |efficiency|
+|$\theta$       |body axis/pitch angle|
+|$\theta$       |relative temperature ratio, *T~a~*/*T~o~*|
+|$\iota$       |angle of incidence|
+|$\iota_F$  |thrust angle of incidence|
+|$\iota_T$*  |horizontal tail angle of incidence|
+|$\lambda$       |pressure lag constant|
+|$\Lambda$       |wing sweep angle|
+|$\mu$   |coefficient of absolute viscosity =$\rho \nu$|
 |$\mu$   |Mach cone angle|
-|ν       |kinematic viscosity = $\mu$/*g*|
+|$\nu$       |kinematic viscosity =$\mu / g$|
 |$\pi$   |nondimensional parameter|
-|ρ       |density|
-|ρ*~a~*  |ambient air density|
-|ρ~*o*~  |standard atmospheric density (slugs/ft3 )|
-|σ       |air density ratio (ρ*~α~ /*ρ*~ο~*)|
-|σ~cr~   |critical density|
-|τ       |shear stress (pounds per square inch) psi|
-|τ~R~    |Roll Mode Time Constant (sec)|
-|φ       |bank angle (degrees)|
-|ψ       |aircraft heading (degrees)|
-|ω       |frequency|
-|ω       |rotational velocity (radians per second)|
-|ω~*d* ~ |damped natural frequency|
-|ω*~n~*  |natural undamped frequency|
+|$\rho$       |density|
+|$\rho_a$  |ambient air density|
+|$\rho_0$  |standard atmospheric density (slugs/ft^3 )|
+|$\sigma$       |air density ratio $(\rho_{\alpha} / \rho_o)$|
+|$sigma_{cr}$   |critical density|
+|$\tau$       |shear stress (pounds per square inch) psi|
+|$\tau_R$    |Roll Mode Time Constant (sec)|
+|$\phi$       |bank angle (degrees)|
+|$\psi$       |aircraft heading (degrees)|
+|$\omega$       |frequency|
+|$\omega$       |rotational velocity (radians per second)|
+|$\omega_d$ |damped natural frequency|
+|$\omega_n$  |natural undamped frequency|
 
- 
+
 
 ## Common Subscripts
 
