@@ -745,275 +745,271 @@ Exponent  Prefix  Abbreviation
 
 |ECS |environmental control system|
 
-EGT exhaust gas temperature
+|EGT |exhaust gas temperature|
 
-EL elevation
+|EL |elevation|
 
-ELINT electronic intelligence
+|ELINT |electronic intelligence|
 
-ELV expendable launch vehicle
+|ELV |expendable launch vehicle|
 
-EM electromagnetic
+|EM |electromagnetic|
 
-*E*~max~ maximum lift-to-drag ratio
+|$E_{\rm{max}}$ |maximum lift-to-drag ratio|
 
-EMC electromagnetic compatibility
+|EMC |electromagnetic compatibility|
 
-EMI electromagnetic interference
+|EMI |electromagnetic interference|
 
-EMP electromagnetic pulse
+|EMP |electromagnetic pulse|
 
-EO electro optical
+|EO |electro optical|
 
-EOM equations of motion
+|EOM |equations of motion|
 
-EPR engine pressure ratio
+|EPR |engine pressure ratio|
 
-EPROM electrically programmable read only memory
+|EPROM |electrically programmable read only memory|
 
-*Es* specific energy
+|*Es* |specific energy|
 
-ESA European Space Agency
+|ESA |European Space Agency|
 
-ESD Electronic Systems Division
+|ESD |Electronic Systems Division|
 
-*ESHP* equivalent shaft horsepower
+|*ESHP* |equivalent shaft horsepower|
 
-ETA estimate time of arrival
+|ETA |estimate time of arrival|
 
-ETE estimate time en-route
+|ETE |estimate time en-route|
 
-EW early warning
+|EW |early warning|
 
-EW electronic warfare
+|EW |electronic warfare|
 
-^o^*F* degrees Fahrenheit
+|^o^*F* |degrees Fahrenheit|
 
-*f* frequency\...hertz (originally cycles per second)
+|*f* |frequency\...hertz (originally cycles per second)|
 
-F.S. fuselage station
+|F.S. |fuselage station|
 
-*F~a~* aileron force
+|$F_a$ |aileron force|
 
-FAA Federal Aviation Administration
+|FAA |Federal Aviation Administration|
 
-FAR Federal Aviation Regulation
+|FAR |Federal Aviation Regulation|
 
-FCF functional check flight
+|FCF |functional check flight|
 
-FDC flight data computer
+|FDC |flight data computer|
 
-*F~e~* elevator force
+|$F_e$ |elevator force|
 
-*F~ex~* excess thrust
+|$F_{ex}$ |excess thrust|
 
-*F~g~* gross thrust
+|$F_g$ |gross thrust|
 
-FL flight level
+|FL |flight level|
 
-Flip flight information publication
+|FLIP |flight information publication|
 
-FLIR forward-looking infra red
+|FLIR |forward-looking infrared|
 
-FM frequency modulation
+|FM |frequency modulation|
 
-FMC fully mission capable
+|FMC |fully mission capable|
 
-FMS flight management system
+|FMS |flight management system|
 
-FMS foreign military sales
+|FMS |foreign military sales|
 
-*Fn* net thrust
+|*Fn* |net thrust|
 
-*Fn*/δ corrected thrust parameter
+|$Fn / \delta$ |corrected thrust parameter|
 
-FOM figure of merit
+|FOM |figure of merit|
 
-FOT&E follow-on test & evaluation
+|FOT&E |follow-on test & evaluation|
 
-FOUO for official use only
+|FOUO |for official use only|
 
-FOV field of view
+|FOV |field of view|
 
-fpm feet per minute
+|fpm |feet per minute|
 
-fps feet per second
+|fps |feet per second|
 
-FQT formal qualification test
+|FQT |formal qualification test|
 
-*Fr* rudder force
+|*Fr* |rudder force|
 
-FRD functional requirements document
+|FRD |functional requirements document|
 
-FRL fuselage reference line
+|FRL |fuselage reference line|
 
-FRL force, rudder, left
+|FRL |force, rudder, left|
 
-FRR force, rudder, right
+|FRR |force, rudder, right|
 
-FRR flight readiness review
+|FRR |flight readiness review|
 
-FSD full scale development
+|FSD |full scale development|
 
-FSI full scale integration
+|FSI |full scale integration|
 
-ft feet
+|ft |feet|
 
-ft-lb English unit of work\...foot-pound\...
+|ft-lb |English unit of work\...foot-pound\...|
 
-fwd forward
+|fwd |forward|
 
-FY fiscal year
+|FY |fiscal year|
 
-*g* acceleration due to gravity at altitude
+|*g* |acceleration due to gravity at altitude|
 
-*G* gravitational constant = 6.6732x10^-11^ \[N m^2^/kg^2^\]
+|*G* |gravitational constant = 6.6732x10^-11^ \[N m^2^/kg^2^\]|
 
-GAO Government Accounting Office
+|GAO |Government Accounting Office|
 
-GCA ground control approach
+|GCA |ground control approach|
 
-GCI ground controlled intercept
+|GCI |ground controlled intercept|
 
-GDOP geometric dilution of precision
+|GDOP |geometric dilution of precision|
 
-GMT Greenwich mean time
+|GMT |Greenwich mean time|
 
-*g~o~* standard acceleration due to gravity
+|*g~o~* |standard acceleration due to gravity (sea level, 46 deg latitude)|
 
-(sea level, 46 deg latitude)
+|GPS |global positioning system|
 
-GPS global positioning system
+|GS |ground speed|
 
-GS ground speed
+|GSI |glide slope indicator|
 
-GSI glide slope indicator
+|*h* |% MAC|
 
-*h* % MAC
+|*H* |altitude|
 
-*H* altitude
+|HARM |high-speed anti-radiation missile|
 
-HARM high-speed anti-radiation missile
+|*H~c~* |calibrated altitude (assumed to be pressure altitude in flight test)|
 
-*H~c~* calibrated altitude
+|*H~D~* |density altitude|
 
-(assumed to be pressure altitude in flight test)
+|HDDR |high density digital recorder|
 
-*H~D~* density altitude
+|HDOP |horizontal dilution of precision|
 
-HDDR high density digital recorder
+|HF |high frequency|
 
-HDOP horizontal dilution of precision
+|*Hg* |mercury|
 
-HF high frequency
+|*H~i~* |indicated altitude|
 
-*Hg* mercury
+|*h~m~* |stick-fixed maneuver point (%MAC)|
 
-*H~i~* indicated altitude
+|*h~\'m~* |stick-free maneuver point (%MAC)|
 
-*h~m~* stick-fixed maneuver point (%MAC)
+|*h~n\ ~* |stick-fixed neutral point (%MAC)|
 
-*h~\'m~* stick-free maneuver point (%MAC)
+|*h~\'n\ ~* |stick-free neutral point (%MAC)|
 
-*h~n\ ~* stick-fixed neutral point (%MAC)
+|hp |horsepower|
 
-*h~\'n\ ~* stick-free neutral point (%MAC)
+|hr |hour|
 
-hp horsepower
+|hrs |hours|
 
-hr hour
+|HSI |horizontal situation indicator|
 
-hrs hours
+|HUD |head-up display|
 
-HSI horizontal situation indicator
+|HV |host vehicle|
 
-HUD head-up display
+|*Hz* |hertz|
 
-HV host vehicle
+|I/O |input/output|
 
-*Hz* hertz
+|IAS |indicated airspeed|
 
-I/O input/output
+|IAW |in accordance with|
 
-IAS indicated airspeed
+|ICAO |International Civilian Aviation Organization|
 
-IAW in accordance with
+|ICU |interface computer unit|
 
-ICAO International Civilian Aviation Organization
+|ICBM |intercontinental ballistic missile|
 
-ICU interface computer unit
+|IFF |identification friend or foe|
 
-ICBM intercontinental ballistic missile
+|IFR |instrument flight rules|
 
-IFF identification friend or foe
+|ILS |instrument landing system|
 
-IFR instrument flight rules
+|IMC |instrument meteorological conditions|
 
-ILS instrument landing system
+|IMN |indicated Mach number|
 
-IMC instrument meteorological conditions
+|IMU |inertial measuring unit|
 
-IMN indicated Mach number
+|in |inch|
 
-IMU inertial measuring unit
+|INS |inertial navigation system|
 
-in inch
+|INU |inertial navigation unit|
 
-INS inertial navigation system
+|IOC |initial operational capability|
 
-INU inertial navigation unit
+|IOT&E |initial operational test & evaluation|
 
-IOC initial operational capability
+|IUGG |International Union of Geodesy and Geographics|
 
-IOT&E initial operational test & evaluation
+|*I~x~, I~x~, I~z~* |moments of inertia|
 
-IUGG International Union of Geodesy and Geographics
+|*I~xy~, I~xz~, I~yz~* |products of inertia|
 
-*I~x~, I~x~, I~z~* moments of inertia
+|*J* |joules energy, (Newton-Meter)|
 
-*I~xy~, I~xz~, I~yz~* products of inertia
+|*J* |propeller advance ratio|
 
-*J* joules energy, (Newton-Meter)
+|J&S |jamming and spoofing|
 
-*J* propeller advance ratio
+|JCS |Joint Chiefs of Staff|
 
-J&S jamming and spoofing
+|*K* |Kelvin (absolute temperature)|
 
-JCS Joint Chiefs of Staff
+|K |temperature probe recovery factor|
 
-*K* Kelvin (absolute temperature)
+|*K, k*1 |constants|
 
-K temperature probe recovery factor
+|KCAS |knots calibrated airspeed|
 
-*K, k*1 constants
+|KEAS |knots equivalent airspeed|
 
-KCAS knots calibrated airspeed
+|kg |kilogram, metric unit of mass|
 
-KEAS knots equivalent airspeed
+|KIAS |knots indicated airspeed|
 
-kg kilogram, metric unit of mass
+|KISS |keep it simple, stupid|
 
-KIAS knots indicated airspeed
+|km |kilometer|
 
-KISS keep it simple, stupid
+|KTAS |knots true airspeed|
 
-km kilometer
+|kt |knots|
 
-KTAS knots true airspeed
+|*L* |Lift (lbs)|
 
-kt knots
+|*l* |length|
 
-*L* Lift (lbs)
+|*L* |rolling moment|
 
-*l* length
+|L/D |Lift-to-drag ratio|
 
-*L* rolling moment
+|LANTIRN |low altitude navigation and targeting IR for night|
 
-L/D Lift-to-drag ratio
-
-LANTIRN low altitude navigation and targeting IR for night
-
-lat lateral
+|lat |lateral|
 
 lb pound
 
