@@ -452,39 +452,37 @@ Exponent  Prefix  Abbreviation
 
  
 
-## Common Subscripts (raw)
+## Common Subscripts
 
- 
+|Subscript|Meaning|
+|*a* |aileron
+|*a* |ambient
+|alt |at test altitude
+|avg |average
+|*c* |calibrated
+|*e* |elevator
+|*e* |equivalent
+|*E* |endurance leg of mission
+|*F* |final
+|*I* |initial
+|*i* |inbound leg of mission
+|*i* |indicated
+|*ic* |instrument corrected
+|*l* |subscript for coefficient of rolling moment
+|*m* |mission conditions
+|*m* |pitching moment
+|*n* |yawing moment
+|*O* |outbound leg of mission
+|*o* |sea-level standard day
+|*o* |sea level
+|*r* |reserve leg of mission
+|*r* |rudder
+|*S* |standard day
+|*s* |standard day at altitude
+|*SL* |sea level
+|*T* |True
+|*t* |test day
 
-|*a* aileron
-|*a* ambient
-|alt at test altitude
-|avg average
-|*c* calibrated
-|*e* elevator
-|*e* equivalent
-|*E* endurance leg of mission
-|*F* final
-|*I* initial
-|*i* inbound leg of mission
-|*i* indicated
-|*ic* instrument corrected
-|*l* subscript for coefficient of rolling moment
-|*m* mission conditions
-|*m* pitching moment
-|*n* yawing moment
-|*O* outbound leg of mission
-|*o* sea-level standard day
-|*o* sea level
-|*r* reserve leg of mission
-|*r* rudder
-|*S* standard day
-|*s* standard day at altitude
-|*SL* sea level
-|*T* True
-|*t* test day
-
- 
 
 ## Common Abbreviations (raw)
 
