@@ -490,1090 +490,543 @@ Exponent  Prefix  Abbreviation
 |:-|:-|
 |a |lift curve slope|
 |a |linear acceleration (ft/sec^2^ or m/sec^2^)|
-
 |a |speed of sound|
-
 |A/A |air-to-air|
-
 |a/c |aircraft|
-
 |AAA |anti aircraft artillery|
-
 |AC |aerodynamic center|
-
 |ac |alternating current|
-
 |ACM |air combat maneuvering|
-
 |A/D |analog to digital|
-
 |ADC |air data computer|
-
 |ADC |analog-to-digital converter|
-
 |ADF |automatic direction finder|
-
 |ADI |attitude direction indicator|
-
 |AFMC |Air Force Materiel Command|
-
 |AFOTEC |Air Force Operational Test and Evaluation Center|
-
 |A/G |air-to-ground|
-
 |AGL |above ground level|
-
 |AHRS |attitude heading reference system|
-
 |AM |amplitude modulation|
-
 |AOA |angle of attack|
-
 |AOED |age of ephemeris data|
-
 |APU |auxiliary power unit|
-
 |AR |air refuel (mode of flight)|
-
 |*AR* |aspect ratio = b^2^ / S|
-
 |ARDP |advanced radar data processor|
-
 |ARSP |advanced radar signal processor|
-
 |ASPJ |airborne self protection jammer|
-
 |ATC |air traffic control|
-
 |avg |average|
-
 |ax |longitudinal acceleration|
-
 |ay |lateral acceleration|
-
 |AZ |azimuth|
-
 |b |span of wing (feet)|
-
 |B/N |bombardier/navigator|
-
 |bbl |barrel|
-
 |*BHP* |brake horsepower|
-
 |BICOMS |bistatic coherent measurement system|
-
 |BID |bus interface device|
-
 |BIT |built-in test|
-
 |*BSFC* |brake specific fuel consumption|
-
 |Btu |British thermal unit|
-
 |BW |bandwidth|
-
 |^o^*C* |degrees centigrade\...see *T*
-
 |c |brake specific fuel consumption (BSFC)|
-
 |c |speed of light in a vacuum (186,282 miles/sec = 299,792,500 \[m/s\])|
-
 |c |mean aerodynamic chord (MAC) of a wing|
-
 |C/A |coarse acquisition|
-
 |C/N~o~ |carrier to noise ratio|
-
 |CADC |central air data computer|
-
 |CARD |cost analysis requirement document|
-
 |*C~D~* |coefficient of drag|
-
 |*C~D~*~i~ |induced drag coefficient|
-
 |*C~D~*~o~ |zero lift drag coefficient (also parasitic drag coefficient for symmetric wing)|
-
 |CDI |course deviation indicator|
-
 |CDMA |code division multiplex access|
-
 |CDR |critical design review|
-
 |CDRL |contracts data requirement list|
-
 |CDU |control display unit|
-
 |CEA |circular error average|
-
 |CEP |circular error probable|
-
 |*C~f~* |coefficient of friction|
-
 |CFE |contractor furnished equipment|
-
 |CFT |conformal fuel tank|
-
 |*cg* |center of gravity (normally in % MAC)|
-
 |C~H~ |hinge moment coefficient|
-
 |cine |cinetheodolite|
-
 |*C~l~* |rolling moment coefficient, airfoil section lift coefficient|
-
 |*C~L~* |lift coefficient|
-
 |CLHQ |closed loop handling qualities|
-
 |*C~lp~* |roll damping coefficient|
-
 |*C~lr~* |roll moment due to yaw rate coefficient|
-
 |*C~m~* |pitching moment coefficient|
-
 |*C~M~* |moment coefficient|
-
 |cm |centimeters|
-
 |cos |cosine|
-
 |cot |cotangent|
-
 |$C_{l \beta}$ |(dihedral) rolling moment due to sideslip|
-
 |$C_{l \delta a}$ |aileron power coefficient|
-
 |$Cm_q$ |pitch damping coefficient|
-
 |$Cm_{\alpha}$ |longitudinal static stability coefficient|
-
 |$Cm_{\delta e}$ |elevator power coefficient|
-
 |$Cn$ |yawing moment coefficient|
-
 |$Cn_r$ |yaw damping coefficient|
-
 |cnst |constant|
-
 |$Cn_{\beta}$ |directional stability coefficient|
-
 |$Cn_{\delta a}$ |adverse yaw coefficient|
-
 |$Cn_{\delta r}$ |rudder power coefficient|
-
 |COTS |commercial, off--the-shelf|
-
 |CP |center of pressure|
-
 |$C_P$ |propeller power coefficient|
-
 |CPU |central processing unit|
-
 |$c_r$ |wing root chord|
-
 |CRM |crew resource management|
-
 |$c_t$ |wing tip chord|
-
 |CTF |combined test force|
-
 |CY |calendar year|
-
 |$C_Y$ |side force coefficient|
-
 |$C_{Y_{\beta}}$ |side force due to sideslip coefficient|
-
 |$C_{Y_{\delta r}}$ |side force due to rudder coefficient|
-
 |D |diameter|
-
 |D |drag|
-
 |D/A |digital/analog|
-
 |DAC |digital to analog converter|
-
 |DAPS |data acquisition and processing system|
-
 |DARPA |Defense Advanced Research Projects Agency|
-
 |db |decibel|
-
 |DC |direct current|
-
 |deg |degrees|
-
 |DG |directional gyro|
-
 |DGPS |differential GPS|
-
 |DMA |Defense Mapping Agency|
-
 |DME |distance measuring equipment|
-
 |DoD |Department of Defense|
-
 |DOP |dilution of precision|
-
 |DSN |defense switched network|
-
 |DT |development test|
-
 |DTC |data transfer cartridge|
-
 |DTIC |Defense Technical Information Center|
-
 |*e* |Oswald efficiency factor|
-
 |$e$ |natural mathematical constant = 2.718281828459|
-
 |E |energy|
-
 |E |lift-to-drag ratio ($C_L / C_D$, $L/D$)|
-
 |EAS |equivalent airspeed|
-
 |EC |electronic combat|
-
 |ECCM |electronic counter countermeasures|
-
 |ECM |electronic countermeasures|
-
 |ECP |engineering change proposal|
-
 |ECS |environmental control system|
-
 |EGT |exhaust gas temperature|
-
 |EL |elevation|
-
 |ELINT |electronic intelligence|
-
 |ELV |expendable launch vehicle|
-
 |EM |electromagnetic|
-
 |$E_{\rm{max}}$ |maximum lift-to-drag ratio|
-
 |EMC |electromagnetic compatibility|
-
 |EMI |electromagnetic interference|
-
 |EMP |electromagnetic pulse|
-
 |EO |electro optical|
-
 |EOM |equations of motion|
-
 |EPR |engine pressure ratio|
-
 |EPROM |electrically programmable read only memory|
-
 |*Es* |specific energy|
-
 |ESA |European Space Agency|
-
 |ESD |Electronic Systems Division|
-
 |*ESHP* |equivalent shaft horsepower|
-
 |ETA |estimate time of arrival|
-
 |ETE |estimate time en-route|
-
 |EW |early warning|
-
 |EW |electronic warfare|
-
 |^o^*F* |degrees Fahrenheit|
-
 |*f* |frequency\...hertz (originally cycles per second)|
-
 |F.S. |fuselage station|
-
 |$F_a$ |aileron force|
-
 |FAA |Federal Aviation Administration|
-
 |FAR |Federal Aviation Regulation|
-
 |FCF |functional check flight|
-
 |FDC |flight data computer|
-
 |$F_e$ |elevator force|
-
 |$F_{ex}$ |excess thrust|
-
 |$F_g$ |gross thrust|
-
 |FL |flight level|
-
 |FLIP |flight information publication|
-
 |FLIR |forward-looking infrared|
-
 |FM |frequency modulation|
-
 |FMC |fully mission capable|
-
 |FMS |flight management system|
-
 |FMS |foreign military sales|
-
 |*Fn* |net thrust|
-
 |$Fn / \delta$ |corrected thrust parameter|
-
 |FOM |figure of merit|
-
 |FOT&E |follow-on test & evaluation|
-
 |FOUO |for official use only|
-
 |FOV |field of view|
-
 |fpm |feet per minute|
-
 |fps |feet per second|
-
 |FQT |formal qualification test|
-
 |*Fr* |rudder force|
-
 |FRD |functional requirements document|
-
 |FRL |fuselage reference line|
-
 |FRL |force, rudder, left|
-
 |FRR |force, rudder, right|
-
 |FRR |flight readiness review|
-
 |FSD |full scale development|
-
 |FSI |full scale integration|
-
 |ft |feet|
-
 |ft-lb |English unit of work\...foot-pound\...|
-
 |fwd |forward|
-
 |FY |fiscal year|
-
 |*g* |acceleration due to gravity at altitude|
-
 |*G* |gravitational constant = 6.6732x10^-11^ \[N m^2^/kg^2^\]|
-
 |GAO |Government Accounting Office|
-
 |GCA |ground control approach|
-
 |GCI |ground controlled intercept|
-
 |GDOP |geometric dilution of precision|
-
 |GMT |Greenwich mean time|
-
 |*g~o~* |standard acceleration due to gravity (sea level, 46 deg latitude)|
-
 |GPS |global positioning system|
-
 |GS |ground speed|
-
 |GSI |glide slope indicator|
-
 |*h* |% MAC|
-
 |*H* |altitude|
-
 |HARM |high-speed anti-radiation missile|
-
 |*H~c~* |calibrated altitude (assumed to be pressure altitude in flight test)|
-
 |*H~D~* |density altitude|
-
 |HDDR |high density digital recorder|
-
 |HDOP |horizontal dilution of precision|
-
 |HF |high frequency|
-
 |*Hg* |mercury|
-
 |*H~i~* |indicated altitude|
-
 |*h~m~* |stick-fixed maneuver point (%MAC)|
-
 |*h~\'m~* |stick-free maneuver point (%MAC)|
-
 |*h~n\ ~* |stick-fixed neutral point (%MAC)|
-
 |*h~\'n\ ~* |stick-free neutral point (%MAC)|
-
 |hp |horsepower|
-
 |hr |hour|
-
 |hrs |hours|
-
 |HSI |horizontal situation indicator|
-
 |HUD |head-up display|
-
 |HV |host vehicle|
-
 |*Hz* |hertz|
-
 |I/O |input/output|
-
 |IAS |indicated airspeed|
-
 |IAW |in accordance with|
-
 |ICAO |International Civilian Aviation Organization|
-
 |ICU |interface computer unit|
-
 |ICBM |intercontinental ballistic missile|
-
 |IFF |identification friend or foe|
-
 |IFR |instrument flight rules|
-
 |ILS |instrument landing system|
-
 |IMC |instrument meteorological conditions|
-
 |IMN |indicated Mach number|
-
 |IMU |inertial measuring unit|
-
 |in |inch|
-
 |INS |inertial navigation system|
-
 |INU |inertial navigation unit|
-
 |IOC |initial operational capability|
-
 |IOT&E |initial operational test & evaluation|
-
 |IUGG |International Union of Geodesy and Geographics|
-
 |*I~x~, I~x~, I~z~* |moments of inertia|
-
 |*I~xy~, I~xz~, I~yz~* |products of inertia|
-
 |*J* |joules energy, (Newton-Meter)|
-
 |*J* |propeller advance ratio|
-
 |J&S |jamming and spoofing|
-
 |JCS |Joint Chiefs of Staff|
-
 |*K* |Kelvin (absolute temperature)|
-
 |K |temperature probe recovery factor|
-
 |*K, k*1 |constants|
-
 |KCAS |knots calibrated airspeed|
-
 |KEAS |knots equivalent airspeed|
-
 |kg |kilogram, metric unit of mass|
-
 |KIAS |knots indicated airspeed|
-
 |KISS |keep it simple, stupid|
-
 |km |kilometer|
-
 |KTAS |knots true airspeed|
-
 |kt |knots|
-
 |*L* |Lift (lbs)|
-
 |*l* |length|
-
 |*L* |rolling moment|
-
 |L/D |Lift-to-drag ratio|
-
 |LANTIRN |low altitude navigation and targeting IR for night|
-
 |lat |lateral|
+|lb |pound|
+|lb~f~ |English unit of force, often just lb (pound)|
+|lb~m~ |English unit of mass, often just lb (slug)|
+|LCC |life cycle cost|
+|LCD |liquid crystal display|
+|LED |light emitting diode|
+|LLH |latitude, longitude, height|
+|ln |natural log, log to the base e|
+|LO |low observables|
+|Log |common log, to the base 10|
+|LOS |line of sight|
+|*l*~t~ |distance from *cg* to tail\'s aerodynamic cent|
+|$L_{\delta a} |rolling moment due to aileron deflection|
+|*M* |moment (ft-lbs)|
+|*M* |Mach number|
+|m |mass|
+|m |meter (length)|
+|*M* |pitching moment|
+|MAG |magnetic|
+|MAP |manifold pressure|
+|mb |millibar|
+|MCA |minimum crossing altitude|
+|*M~cr~* |critical Mach number|
+|*M~d~* |drag divergence Mach number|
+|M~ac~ |mean aerodynamic cord|
+|M~GC~ |mean geometric chord|
+|MHz |megahertz|
+|mHZ |millihertz|
+|*M~ic~* |instrument-corrected Mach number|
+|MilSpec |military specification|
+|MIL-STD |military standard (publication)|
+|min |minute (time)|
+|mm |millimeter|
+|MOA |memorandum of agreement|
+|MOE |measure of effectiveness|
+|MOP |measures of performance|
+|MOU |memorandum of understanding|
+|MP |manifold pressure|
+|MSL |mean sea level|
+|MTBF |mean time between failures|
+|MTTR |mean time to repair|
+|MX |maintenance|
+|N |newton (force)|
+|N |rotational speed (RPM)|
+|*n* |load factor (g\'s)|
+|N |yawing moment|
+|*N*~1~ |low pressure compressor speed|
+|*N*~2~ |high pressure compressor speed|
+|NACA |National Advisory Committee for Aeronautics|
+|NADC |Naval Air Development Center|
+|NASA |National Aeronautics and Space Administration|
+|NAV |navigation|
+|NED |North, East, Down|
+|NM, nm |nautical mile (6080 feet)|
+|NOE |nap-of-the-earth|
+|NOFORN |not releasable to foreign nationals|
+|NOTAM |notice to airmen|
+|NRC |National Research Council (Canada)|
+|NWC |Naval Weapons Center|
+|*N~x~* |longitudinal load factor (g\'s)|
+|N~y~ |lateral load factor (g\'s)|
+|*N~z~* |normal load factor (g\'s)|
+|OAT |outside air temperature|
+|OAT |on aircraft test|
+|OEI |One engine inoperative|
+|OPR |Office of Primary Responsibility|
+|OSD |Office of the Secretary of Defense|
+|OT&E |operational test & evaluation|
+|p |aircraft roll rate (degrees/sec)|
+|P |pressure (N/m^2^ ,pounds per square inch)|
+|P~a~ |ambient pressure|
+|PCM |pulse code modulation
+|P-code |precision code|
+|PD |pulse Doppler|
+|PDM |pulse duration modulation|
+|PGM |precision guided munitions|
+|PIO |pilot induced oscillations|
+|P~iw~ |total thrust horsepower required|
+|Pk |probability of kill|
+|PLF |power for level flight|
+|P~o~ |standard atmospheric pressure (2116.22 lb/ft^2^ )|
+|POC |point of contact|
+|P~p~ |pitot pressure|
+|ppm |parts per million|
+|Prop |propeller|
+|P~s~ |static pressure|
+|PS |pulse search|
+|psf |pounds per square foot|
+|psi |pounds per square inch|
+|P~T~ |total pressure|
+|PW |pulse width|
+|*Q* or *q* |dynamic pressure = $0.5 \rho V^2$|
+|q |aircraft pitch rate|
+|Q |engine torque|
+|q~c~ |impact pressure (*P~t~* − *P~a~*)|
+|^o^*R* |degrees Rankine = ^o^*F* + 459.67|
+|R |perfect gas constant = 8314.34 \[J/kmol K\]|
+|r |aircraft yaw rate (degrees/sec)|
+|R |earth radius|
+|R |range|
+|R&D |research and development|
+|R&M |reliability and maintainability|
+|R/C |rate of climb|
+|rad |radians|
+|Radar |radio detection and ranging|
+|RAF |resultant aerodynamic force|
+|RAM |radar absorbing material|
+|RAT |ram air turbine|
+|RCS |radar cross section|
+|Re |Reynolds number (dimensionless)|
+|REP |range error probable|
+|RF |range factor|
+|RLG |ring laser gyro|
+|rms |root mean square|
+|RNG |range|
+|ROC |rate of climb|
+|ROC |required obstacle clearance|
+|RPM |revolutions per minute (a.k.a. N)|
+|R/T |receiver/transmitter|
+|RTO |Rejected/refused takeoff|
+|RTO |responsible test organization|
+|S |wing area (ft^2^ or m^2^)|
+|S~a~ |horizontal distance between liftoff and specified height or between specified height and touch down|
+|SA |selective availability|
+|SA |situational awareness|
+|SE |specific endurance|
+|sec |seconds (time or angle)|
+|SFC |specific fuel consumption|
+|S~g~ |ground roll distance|
+|SHP |shaft horsepower|
+|SI |international system of units|
+|SIGINT |signal intelligence|
+|sin |sine|
+|SL |sea level|
+|SLAM |standoff land attack missile|
+|SLR |side-looking radar|
+|S/N |serial number|
+|S/N |signal -to-noise ratio|
+|SOF |special operations forces|
+|SOW |stand-off weapon|
+|SR |specific range|
+|SRB |safety review board|
+|S~T~ |tail area|
+|std |standard|
+|S~T~ |total takeoff or landing distance (S~a~ + S~g~)|
+|STOL |short takeoff and landing|
+|STOVL |short takeoff and vertical landing|
+|T |period of oscillation|
+|T |temperature|
+|t |thickness|
+|T, t |time (sec)|
+|t/c |thickness-to-chord ratio|
+|T~a~ |ambient temperature|
+|TACAN |tactical air navigation|
+|tan |tangent|
+|T~as~ |standard temperature at altitude|
+|TAS |true airspeed|
+|TBD |to be determined|
+|TD |touchdown|
+|TED |trailing edge down|
+|TEL |trailing edge left|
+|TEMP |test and evaluation master plan|
+|TER |trailing edge right|
+|TEU |trailing edge up|
+|TF |terrain following|
+|THP |Thrust Horsepower|
+|THP~alt~ |horsepower available at altitude|
+|THP~max~ |maximum horsepower available|
+|THP~min~ |minimum horsepower required|
+|THP~SL~ |horsepower required at sea level|
+|TIT |turbine inlet temperature|
+|TM |telemetry|
+|TMN |true Mach number|
+|T/O |takeoff|
+|T~o~ |standard sea level temperature (59.0 ^o^F, 15 ^o^C)|
+|TO |technical order|
+|TRB |technical review board|
+|TRD |technical requirements document|
+|TRP |technical resources plan|
+|TSFC |thrust specific fuel consumption|
+|TSPI |time, space, position information|
+|T~t~ |total temperature|
+|TV |television|
+|T/W |thrust to weight ratio|
+|TWT |track while scan|
+|TWT |traveling wave tube|
+|u |velocity along aircraft\'s x-axis|
+|UAV |uninhabited aerial vehicle|
+|UHF |ultra high frequency|
+|UPT |undergraduate pilot training|
+|USA |US Army|
+|USAF |US Air Force|
+|USCG |US Coast Guard|
+|USMC |US Marine Corps|
+|USN |US Navy|
+|UT |universal time|
+|UV |ultraviolet|
+|v |velocity along aircraft\'s lateral axis|
+|V~H~ |horizontal tail volume coefficient|
+|V~V~ |vertical tail volume coefficient|
+|V~1~ |takeoff decision speed|
+|V~2~ |takeoff safety speed|
+|V~A~ |design maneuvering speed|
+|VAC |volts AC|
+|V~b~ |buffet airspeed|
+|V~B~ |design speed for max gust intensity|
+|V~br~ |velocity for best range|
+|V~c~ |calibrated airspeed|
+|V~D~ |design diving speed|
+|VDC |volts DC|
+|VDOP |vertical dilution of precision|
+|V~e~ |equivalent velocity|
+|V~FE~ |maximum flap extended speed|
+|VFR |visual flight rules|
+|V~g~| ground speed|
+|VHF |very high frequency|
+|V~i~ |indicated airspeed|
+|V~ic~ |indicated airspeed corrected for instrument error|
+|V~iw~ |velocity at sea level std day and std weight|
+|VLE |max speed with landing gear extended|
+|V~LO~ |max speed while operating landing gear|
+|V~LOF~ |lift off speed|
+|VLSIC |very large scale integrated circuit|
+|V~mc~ |minimum directional control speed|
+|VMC |visual meteorological conditions|
+|V~mca~ |minimum directional control speed in the air|
+|V~mcg~ |minimum directional control speed on the ground|
+|V~mo~/M~mo~ |maximum operating limit speed|
+|V~mu~ |minimum unstick speed|
+|V~NE~ |never exceed velocity|
+|V~no~ |max structural cruising speed|
+|V~opt~ |optimum velocity for endurance flight|
+|VOR |VHF omni-directional range|
+|VORTAC |VOR + TACAN|
+|V~Pmin~ |velocity for minimum power|
+|V~Pmin,SL~ |velocity for minimum power at sea level|
+|V~R~ |rotation speed|
+|V~S~ |stall speed|
+|V~S0~ |stall speed in landing configuration|
+|V~S1~ |stall speed in some defined configuration|
+|VSTOL |vertical/short takeoff and landing|
+|V~T~ |true airspeed|
+|VTOL |vertical takeoff & landing|
+|VVI |vertical velocity indicator|
+|V~W~ |wind velocity|
+|V~X~ |speed for best angle of climb|
+|V~Y~ |speed for best rate of climb|
+|W |weight|
+|w |component of velocity along aircraft\'s Z-axis|
+|WDL |weapon data link|
+|$W / \delta$ |weight-to-pressure ratio|
+|W~f~ |fuel weight|
+|WGS-84 |World Geodetic System, 1984|
+|WI |watch item|
+|WOD |word of day|
+|WOW |weight on wheels|
+|WPT |waypoint|
+|wrt |with respect to|
+|$\frac{\dot{W_f}}{\delta \sqrt{\theta}}$ |corrected fuel flow parameter|
+|W/S |wing loading|
+|W~f~ |fuel flow (lb/hr)|
+|x |aircraft longitudinal axis, a line running through the nose & tail|
+|X~ac~ |distance from leading edge to aerodynamic center|
+|Xlink |cross link|
+|y |aircraft lateral axis, a line running the wingtips|
+|Y |force along y-axis|
+|Y-code |encrypted P-code|
+|z |aircraft vertical or yaw axis, a line perpendicular to the longitudinal and lateral axes|
+|$\Delta H_{ic}$ |altimeter instrument correction|
+|$\Delta H_{pc}$ |altimeter position error correction|
+|$\Delta P_{p}$ |pitot pressure error|
+|$\Delta P_{s}$ |static pressure error|
+|$\Delta V_{c}$ |scale attitude correction to airspeed|
+|$\Delta V_{ic}$ |instrument correction to airspeed indicator|
+|$\Delta V_{pc}$ |correction for airspeed position error|
+|$\infty$ |infinity, or freestream conditions|
 
-lb pound
-
-lb~f~ English unit of force, often just lb (pound)
-
-lb~m~ English unit of mass, often just lb (slug)
-
-LCC life cycle cost
-
-LCD liquid crystal display
-
-LED light emitting diode
-
-LLH latitude, longitude, height
-
-ln natural log, log to the base e
-
-LO low observables
-
-Log common log, to the base 10
-
-LOS line of sight
-
-*l*~t~ distance from *cg* to tail\'s aerodynamic cent
-
-L~δa~ rolling moment due to aileron deflection
-
-*M* moment (ft-lbs)
-
-*M* Mach number
-
-m mass
-
-m meter (length)
-
-*M* pitching moment
-
-MAG magnetic
-
-MAP manifold pressure
-
-mb millibar
-
-MCA minimum crossing altitude
-
-*M~cr~* critical Mach number
-
-*M~d~* drag divergence Mach number
-
-M~ac~ mean aerodynamic cord
-
-M~GC~ mean geometric chord
-
-MHz megahertz
-
-mHZ millihertz
-
-*M~ic~* instrument-corrected Mach number
-
-MilSpec military specification
-
-MIL-STD military standard (publication)
-
-min minute (time)
-
-Mm millimeters
-
-MOA memorandum of agreement
-
-MOE measure of effectiveness
-
-MOP measures of performance
-
-MOU memorandum of understanding
-
-MP manifold pressure
-
-MSL mean sea level
-
-MTBF mean time between failures
-
-MTTR mean time to repair
-
-MX maintenance
-
-N newton (force)
-
-N rotational speed (RPM)
-
-*n* load factor (g\'s)
-
-N yawing moment
-
-*N*~1~ low pressure compressor speed
-
-*N*~2~ high pressure compressor speed
-
-NACA National Advisory Committee for Aeronautics
-
-NADC Naval Air Development Center
-
-NASA National Aeronautics and Space Administration
-
-NAV navigation
-
-NED North, East, Down
-
-NM, nm nautical mile (6080 feet)
-
-NOE nap-of-the-earth
-
-NOFORN not releasable to foreign nationals
-
-NOTAM notice to airmen
-
-NRC National Research Council (Canada)
-
-NWC Naval Weapons Center
-
-*N~x~* longitudinal load factor (g\'s)
-
-N~y~ lateral load factor (g\'s)
-
-*N~z~* normal load factor (g\'s)
-
-OAT outside air temperature
-
-OAT on aircraft test
-
-OEI One engine inoperative
-
-OPR Office of Primary Responsibility
-
-OSD Office of the Secretary of Defense
-
-OT&E operational test & evaluation
-
-p aircraft roll rate (degrees/sec)
-
-P pressure (N/m^2^ ,pounds per square inch)
-
-P~a~ ambient pressure
-
-PCM pulse code modulation
-
-P-code precision code
-
-PD pulse Doppler
-
-PDM pulse duration modulation
-
-PGM precision guided munitions
-
-PIO pilot induced oscillations
-
-P~iw~ total thrust horsepower required
-
-Pk probability of kill
-
-PLF power for level flight
-
-P~o~ standard atmospheric pressure (2116.22 lb/ft^2^ )
-
-POC point of contact
-
-P~p~ pitot pressure
-
-ppm parts per million
-
-Prop propeller
-
-P~s~ static pressure
-
-PS pulse search
-
-psf pounds per square foot
-
-psi pounds per square inch
-
-P~T~ total pressure
-
-PW pulse width
-
-*Q* or *q* dynamic pressure = 0.5ρ*V* ^2^
-
-q aircraft pitch rate
-
-Q engine torque
-
-q~c~ impact pressure (*P~t~* − *P~a~*)
-
-^o^*R* degrees Rankine = ^o^*F* + 459.67
-
-R perfect gas constant = 8314.34 \[J/kmol K\]
-
-r aircraft yaw rate (degrees/sec)
-
-R earth radius
-
-R range
-
-R&D research and development
-
-R&M reliability and maintainability
-
-R/C rate of climb
-
-rad radians
-
-Radar radio detection and ranging
-
-RAF resultant aerodynamic force
-
-RAM radar absorbing material
-
-RAT ram air turbine
-
-RCS radar cross section
-
-Re Reynolds number (dimensionless)
-
-REP range error probable
-
-RF range factor
-
-RLG ring laser gyro
-
-rms root mean square
-
-RNG range
-
-ROC rate of climb
-
-ROC required obstacle clearance
-
-RPM revolutions per minute (a.k.a. N)
-
-R/T receiver/transmitter
-
-RTO Rejected/refused takeoff
-
-RTO responsible test organization
-
-S wing area (ft^2^ or m^2^)
-
-S~a~ horizontal distance between liftoff and specified height or between specified height and touch down.
-
-SA selective availability
-
-SA situational awareness
-
-SE specific endurance
-
-sec seconds (time or angle)
-
-SFC specific fuel consumption
-
-S~g~ ground roll distance
-
-SHP shaft horsepower
-
-SI international system of units
-
-SIGINT signal intelligence
-
-sin sine
-
-SL sea level
-
-SLAM standoff land attack missile
-
-SLR side-looking radar
-
-S/N serial number
-
-S/N signal -to-noise ratio
-
-SOF special operations forces
-
-SOW stand-off weapon
-
-SR specific range
-
-SRB safety review board
-
-S~T~ tail area
-
-std standard
-
-S~T~ total takeoff or landing distance (S~a~ + S~g~)
-
-STOL short takeoff and landing
-
-STOVL short takeoff and vertical landing
-
-T period of oscillation
-
-T temperature
-
-t thickness
-
-T, t time (sec)
-
-t/c thickness-to-chord ratio
-
-T~a~ ambient temperature
-
-TACAN tactical air navigation
-
-tan tangent
-
-T~as~ standard temperature at altitude
-
-TAS true airspeed
-
-TBD to be determined
-
-TD touchdown
-
-TED trailing edge down
-
-TEL trailing edge left
-
-TEMP test and evaluation master plan
-
-TER trailing edge right
-
-TEU trailing edge up
-
-TF terrain following
-
-THP Thrust Horsepower
-
-THP~alt~ horsepower available at altitude
-
-THP~max~ maximum horsepower available
-
-THP~min~ minimum horsepower required
-
-THP~SL~ horsepower required at sea level
-
-TIT turbine inlet temperature
-
-TM telemetry
-
-TMN true Mach number
-
-T/O takeoff
-
-T~o~ standard sea level temperature (59.0 ^o^F, 15 ^o^C)
-
-TO technical order
-
-TRB technical review board
-
-TRD technical requirements document
-
-TRP technical resources plan
-
-TSFC thrust specific fuel consumption
-
-TSPI time, space, position information
-
-T~t~ total temperature
-
-TV television
-
-T/W thrust to weight ratio
-
-TWT track while scan
-
-TWT traveling wave tube
-
-u velocity along aircraft\'s x-axis
-
-UAV uninhabited aerial vehicle
-
-UHF ultra high frequency
-
-UPT undergraduate pilot training
-
-USA US Army
-
-USAF US Air Force
-
-USCG US Coast Guard
-
-USMC US Marine Corps
-
-USN US Navy
-
-UT universal time
-
-UV ultraviolet
-
-v velocity along aircraft\'s lateral axis
-
-V~H~ horizontal tail volume coefficient
-
-V~V~ vertical tail volume coefficient
-
-V~1~ takeoff decision speed
-
-V~2~ takeoff safety speed
-
-V~A~ design maneuvering speed
-
-VAC volts AC
-
-V~b~ buffet airspeed
-
-V~B~ design speed for max gust intensity
-
-V~br~ velocity for best range
-
-V~c~ calibrated airspeed
-
-V~D~ design diving speed
-
-VDC volts DC
-
-VDOP vertical dilution of precision
-
-V~e~ equivalent velocity
-
-V~FE~ maximum flap extended speed
-
-V~FR~ visual flight rules
-
-V~g~ ground speed
-
-VHF very high frequency
-
-V~i~ indicated airspeed
-
-V~ic~ indicated airspeed corrected for instrument error
-
-V~iw~ velocity at sea level std day and std weight
-
-VLE max speed with landing gear extended
-
-V~LO~ max speed while operating landing gear
-
-V~LOF~ lift off speed
-
-VLSIC very large scale integrated circuit
-
-V~mc~ minimum directional control speed
-
-VMC visual meteorological conditions
-
-V~mca~ minimum directional control speed in the air
-
-V~mcg~ minimum directional control speed on the ground
-
-V~mo~/M~mo~ maximum operating limit speed
-
-V~mu~ minimum unstick speed
-
-V~NE~ never exceed velocity
-
-V~no~ max structural cruising speed
-
-V~opt~ optimum velocity for endurance flight
-
-VOR VHF omni-directional range
-
-VORTAC VHF omni-directional range Tactical Air Navi gation
-
-V~Pmin~ velocity for minimum power
-
-V~Pmin,SL~ velocity for minimum power at sea level
-
-V~R~ rotation speed
-
-V~S~ stall speed
-
-V~S0~ stall speed in landing configuration
-
-V~S1~ stall speed in some defined configuration
-
-VSTOL vertical/short takeoff and landing
-
-V~T~ true airspeed
-
-VTOL vertical takeoff & landing
-
-VVI vertical velocity indicator
-
-V~W~ wind velocity
-
-V~X~ speed for best angle of climb
-
-V~Y~ speed for best rate of climb
-
-W weight
-
-w component of velocity along aircraft\'s Z-axis
-
-WDL weapon data link
-
-W/δ weight-to-pressure ratio
-
-W~f~ fuel weight
-
-WGS-84 World Geodetic System, 1984
-
-WI watch item
-
-WOD word of day
-
-WOW weight on wheels
-
-WPT waypoint
-
-wrt with respect to
-
- 
-
-, corrected fuel flow parameter
-
- 
-
-W/S wing loading
-
-W~f~ fuel flow (lb/hr)
-
-x aircraft longitudinal axis,
-
-a line running through the nose & tail
-
-X~ac~ distance from leading edge to aerodynamic cen ter
-
-Xlink cross link
-
-y aircraft lateral axis, a line running the wingtips
-
-Y force along y-axis
-
-Y-code encrypted P-code
-
-z aircraft vertical or yaw axis,
-
-a line perpendicular to the longitudinal and lat eral axes
-
-∆*H~ic~* altimeter instrument correction
-
-∆*H~pc~* altimeter position error correction
-
-∆P~p~ pitot pressure error
-
-∆P~s~ static pressure error
-
-∆V~c~ scale attitude correction to airspeed
-
-∆V~ic~ instrument correction to airspeed indicator
-
-∆V~pc~ correction for airspeed position error
-
-∞ infinity, or freestream conditions
-
- 
-
- 
 
 ## Sign Conventions (raw)
 
