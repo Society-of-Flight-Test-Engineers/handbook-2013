@@ -1995,7 +1995,7 @@ An **Isentropic** process has constant entropy.
 |$\overline{V}$| velocity|
 |$\Delta$ | change ( final - initial value)|
 |$Z$ | altitude|
-|$S$ | specific entropy $\equiv \int \frac{dE + PdV}{T}$ for a reversible process |
+|$S$ | specific entropy $\equiv \int_{}^{}{\frac{dE + PdV}{T}}$ for a reversible process |
 |$R$ | gas constant for each gas (for air = 287 J/kg/K = 53.35 ft-lb/lb~m~R)|
 |$\overline{R}$ |  universal gas constant = 8.314 kJ/kmol/K = 1545 ft lb/lbmol/R|
 |$M$ | molar mass (for air = 28.97 kg/kmol)|
@@ -2035,8 +2035,8 @@ For reversible processes:
 
 $$
 \begin{align}
-W &= −\int PdV\\
-Q &= \int TdS
+W &= −\int_{}^{}{PdV}\\
+Q &= \int_{}^{}{TdS}
 \end{align}
 $$
 
@@ -2149,139 +2149,85 @@ Development of **Poisson's Equation**:
 
  
 
-## Mechanics Relations (raw)
+## Mechanics Relations 
 
- 
+### Mechanics Symbols
 
- 
+| Symbol   | Use                                                             |
+|:-------|:----|
+| $a$        | linear acceleration $= \frac{dV}{dt}$                                 |
+| $a_r$     | centripetal (radial) acceleration                               |
+| $a_T$     | tangential acceleration                                         |
+| $F$        | force                                                           |
+| $g$        | acceleration due to gravity |
+| $G$        | moment                                                          |
+| $H$        | angular momentum = $I\omega$                                           |
+| $H$        | height                                                          |
+| $Hp$       | horsepower                                 |
+| $I$        | rotational moment of inertia (see section 10)                   |
+| $J$        | impulse = change in momentum                                    |
+| $k$        | radius of gyration                                              |
+| $m$        | mass                                                            |
+| $N_r$     | radial load factor $= \frac{a_r}{g}$                                     |
+| $P$        | power $= \frac{dW}{dt}$                                               |
+| $L$        | linear momentum $= m\,V$                                            |
+| $Q$        | moment (a.k.a. torque)                                          |
+| $r$        | radius                                                          |
+| $S$        | distance, displacement                                          |
+| $s$        | seconds                                                         |
+| $t$        | time                                                            |
+| $V$        | true inertial velocity                                          |
+| $V_o$     | initial inertial velocity                                       |
+| $W$        | work $= F\,S = \frac{1}{2} m (V^2 - V_0^2)$                                |
+| $q$        | angular displacement                                            |
+| $\mathit{Vol}$    | volume                                                          |
+| $\omega$        | angular velocity (radians/second)                               |
+| $\dot{\omega}$        | angular acceleration                                            |
 
-**Abbreviations**
 
- 
-
-a = linear acceleration = *d*V/*d*t
-
-a~r~ = centripetal (radial) acceleration
-
-a~T~ = tangential acceleration
-
-F = force
-
-g = acceleration due to gravity (32.174 ft/s^2^ = 9.80 meters/s^2^)
-
-G = moment
-
-H = angular momentum = Iw
-
-H = height
-
-Hp = horsepower (Hp = 550ft-lbs/sec)
-
-I = rotational moment of inertia (see section 10)
-
-J = impulse = change in momentum
-
-k = radius of gyration
-
-m = mass
-
-N~r~ = radial load factor = a~r~/g
-
-P = power = *d*W/*d*t
-
-L = linear momentum = mV
-
-Q = moment (a.k.a. torque)
-
-r = radius
-
-S = distance, displacement
-
-s = seconds
-
-t = time
-
-V = true inertial velocity
-
-V~o~ = initial inertial velocity
-
-W = work = FS = ½ m \[V^2^ - V~o~^2^\]
-
-q = angular displacement
-
-*Vol* = volume
-
-ω = angular velocity (radians/second)
-
-ώ = angular acceleration
-
- 
-
-**Newtons Laws**
+### Newton's Laws
 
 **1^st^ law** (law of inertia):
 
-"Every body persists in its state of rest or uniform motion in a straight line unless it is compelled to change that state by forces impressed on it.
+"Every body persists in its state of rest or uniform motion in a straight line unless it is compelled to change that state by forces impressed on it."
 
- 
 
 **2^nd^ Law**:
 
-" The change in motion is proportional to the motive force impressed and is made in the direction of the straight line in which that force is impressed" (motion defined as velocity *x* quantity of matter or linear momentum, mV).
+"The change in motion is proportional to the motive force impressed and is made in the direction of the straight line in which that force is impressed" (motion defined as velocity *x* quantity of matter or linear momentum, $m\,V$).
 
-*d*F = *d*mV/*d*t = (*d*m/*d*t) + (*d*V/*d*t)
+$$
+dF = \frac{d(mV)}{dt}
+$$
 
-For constant mass in rectilinear motion: F = ma
+
+For constant mass in rectilinear motion: $F = ma$
 
 For constant mass distribution in curvilinear motion: $G = \dot{\omega}\text{\ I}$
 
-** **
 
 **3^rd^ Law**:
 
-"Every action has an equal and opposite reaction; or, the mutual attraction of two bodies upon each other are always equal and directed to contrary parts.\[opposite directions\]"
+"Every action has an equal and opposite reaction; or, the mutual attraction of two bodies upon each other are always equal and directed to contrary parts.(opposite directions)"
 
-** **
 
-**Planar Kinetics, Work, Power and Energy**
+### Planar Kinetics, Work, Power and Energy
 
-**[Rectilinear motion Curvilinear motion]{.underline}**
+| Rectilinear motion |                         | Curvilinear motion   |                                     |
+|:-------------------|:------------------------|:---------------------|:------------------------------------|
+| displacement       | $S$                     | angular displacement | $\theta$                            |
+| velocity           | $V = \frac{dS}{dt}$     | angular velocity     | $\omega = \frac{d\theta}{dt}$       |
+| acceleration       | $a = \frac{dV}{dt}$     | angular acceleration | $\dot{\omega} = \frac{d\omega}{dt}$ |
+| inertia            | $m$                     | rotational inertia   | $I = \int_{}^{}{r^2 dm}$            |
+| momentum           | $L = m\,V$              | angular momentum     | $H = I \omega$                      |
+| force              | $F = m\,a$              | torque               | $Q = I \dot{\omega}$                |
+| work               | $W = \int_{}^{}{F\,dS}$ | work                 | $W = \int_{}^{}{Qd\theta}$          |
+| power              | $P = F\,V$              | power                | $P = Q \omega$                      |
+| kinetic energy     | $\frac{1}{2} mV^2$      | kinetic energy       | $\frac{1}{2} I \omega^2$            |
+| potential energy   | $mgH$                   | n/a                  |                                     |
 
-displacement S angular displacement θ
 
- 
-
-velocity V = *d*S/*d*t angular velocity ω = dθ/dt
-
- 
-
-acceleration a = *d*V/*d*t angular acceleration $\dot{\omega}$= d ω /dt
-
- 
-
-inertia m rotational inertia $I = \int_{}^{}{r^{2}\text{dm}}$
-
- 
-
-momentum L = mV angular momentum H = I ω
-
-€
-
-force F = ma torque Q = I
-
- 
-
-work W = $\int_{}^{}\text{F\ dS}$ work W = $\int_{}^{}Qd\theta$
-
-power P = FV power P = Q ω
-
-kinetic energy ½ mV^2^ kinetic energy ½ I ω^2^
-
-potential energy mgH n/a
-
- 
-
-**Planar Kinematics at Constant Acceleration**
+### Planar Kinematics at Constant Acceleration
 
 **[ ]{.underline}**
 
