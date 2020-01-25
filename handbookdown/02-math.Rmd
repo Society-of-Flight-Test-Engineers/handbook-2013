@@ -60,13 +60,13 @@ exponents: *a^x^a^y^ = a^x+y^*
 
 *a^mn^ = (a^m^)^n^*
 
-if ![][2_1]
+if ![][2001]
 
-![][2_2]![][2_3]
+![][2002]![][2003]
 
 =
 
-![][2_4] ![][2_2]![][2_4]![][2_5]![][2_6]![][2_7]![][2_8]![][2_9]![][2_10]![][2_11]![][2_12]
+![][2004] ![][2002]![][2004]![][2005]![][2006]![][2007]![][2008]![][2009]![][2010]![][2011]![][2012]
 
 logarithms: if M, N,b are positive and
 
@@ -82,9 +82,9 @@ log ~b~ M^p^ = p log ~b~ M
 
 log~b~ \[1/M\] = -log ~b~ M
 
-![][2_13]
+![][2013]
 
-log~b~M = log~c~M log~b~c = ![][2_14]
+log~b~M = log~c~M log~b~c = ![][2014]
 
 examples:
 
@@ -136,7 +136,7 @@ solve for *x* in .6931*^x^* = 27.54: log\[.6931*^x^*\] = log 27.54
 
 (has two roots, both real or both complex)
 
-![][2_15]
+![][2015]
 
 **Cubic** Equation: for y^3^ + py^2^ + qy + r = 0
 
@@ -146,11 +146,11 @@ let y = x --(p/3) to rewrite equation in form of *x*^3^ + a*x* + b = 0
 
 where a = (3q --p^2^)/3 and b = (2p^3^ -- 9pq -- 27r)/27
 
-let ![][2_16]
+let ![][2016]
 
 and
 
-![][2_17]
+![][2017]
 
 then x~1~ = A +B
 
@@ -240,13 +240,13 @@ rent *R* is consistent payment at each period *n*
 
 let
 
-![][2_18]
+![][2018]
 
  
 
 and let
 
-![][2_19]
+![][2019]
 
  
 
@@ -256,7 +256,7 @@ then *A~n\ ~*= *Rs~n~*
 
 or
 
- ![][2_20]
+ ![][2020]
 
 present value of an annuity, *A* is the sum of the present values of all the future payments. *A = Rr~n~*
 
@@ -380,7 +380,7 @@ equation for parabola with vertex at (h,k), focus at (h,k+p):
 
 (x-h)^2^ = 4j(y-k) [if]{.underline} (j\<0)
 
-![][2_21]
+![][2021]
 
 hyperbola: p = distance between center and vertex
 
@@ -394,7 +394,7 @@ equation for hyperbola centered at (h, k):
 
 or (y-k)^2^/p^2^ -- (x-h)^2^/q^2^ = 1 [if]{.underline} (asymptotes slopes = +/- p/q)
 
-![][2_22]
+![][2022]
 
 sphere: A = 4πR^2^
 
@@ -434,7 +434,7 @@ coversine α = covers α = 1-sin α
 
 haversine α = hav α = (vers α )/2
 
-![][2_23]
+![][2023]
 
 also defined are the following...
 
@@ -574,7 +574,7 @@ c^2^ = a^2^ + b^2^ -- 2ab cos C
 
 C = cos^-1^\[(a^2^+b^2^-c^2^)/2ab\]
 
-![][2_24]
+![][2024]
 
 Law of Tangents:
 
@@ -606,11 +606,11 @@ Matrix **multiplication** can be defined for any two matrices only whe the numbe
 
 The product of a pair of, 2 × 2 matrices is:
 
-![][2_25]
+![][2025]
 
 The **identity** (or [unit]{.underline}) matrix \[*I*\] occupies the same position in matrix algebra that the value of unity does in ordinary algebra. That is, for any matrix
 
-[]{.underline}![][2_26]
+[]{.underline}![][2026]
 
 \[*A*\]: \[*I*\]\[*A*\] = \[*A*\]\[*I*\] = \[*A*\]
 
@@ -625,7 +625,7 @@ In the same way, the matrix \[*A*\]^-1^ is called the inverse matrix of \[*A*\] 
 Cofactors and Determinates
 
 
-![][2_27]
+![][2027]
 
 
 The signed minor, with the sign determined by the sum of the row and column, is called the **cofactor** of *a~ij~* and is denoted by:
@@ -642,7 +642,7 @@ determinant:
 
 \|*A*\| = *a~11~A~11~ + a~12~A~12~ + a~13~A~13~ =*
 
-![][2_28]
+![][2028]
 
 which expands to give the final solution:
 
@@ -672,7 +672,7 @@ given matrix \[*A*\]:
 
 This set of equations can be written as: \[*A*\]^ ^ \[*x*\] = \[*y*\]
 
-![][2_29]
+![][2029]
 
 and solved as follows: \[*x*\] = \[*A*\]^−1^ \[*y*\]
 
@@ -686,21 +686,21 @@ Thus, the system can be solved for the values of *x*~1~, *x*~2~, and *x*~3~ by c
 
 **Step 2.** Transpose \[*A*\].
 
-![][2_30]
+![][2030]
 
 **Step 3.** Determine the adjoint matrix by replacing each element in \[*A*\]*^T^* by its Cofactor.
 
-![][2_31]
+![][2031]
 
 **Step 4.** Divide by the scalar value of the determinant of \[*A*\] which was computed as 70 in Step 1.
 
-![][2_32]
+![][2032]
 
 if *y*~1~ = 1, *y*~2~ = 13, and *y*~3~ = 8
 
-![][2_33]
+![][2033]
 
-![][2_34]
+![][2034]
 
 **Cramer's Rule**
 
@@ -710,11 +710,11 @@ If the det (D) of a matrix (A) exists, and D~r~ is the det of the matrix obtaine
 
 Example of Cramer's Rule
 
-![][2_35]
+![][2035]
 
-![][2_36]
+![][2036]
 
-![][2_37]
+![][2037]
 
 **Section 2.5 VectorAlgebra**
 
@@ -722,41 +722,41 @@ Example of Cramer's Rule
 
 Addition
 
-![][2_38]
+![][2038]
 
 .
 
 Subtraction
 
-![][2_39]
+![][2039]
 
-![][2_40]
+![][2040]
 
-![][2_41]
+![][2041]
 
 **Dot Product**
 
-![][2_42]
+![][2042]
 
-![][2_43]
+![][2043]
 
-![][2_44]
+![][2044]
 
-![][2_45]
+![][2045]
 
 **Vector Product**
 
-![][2_46]
+![][2046]
 
-![][2_47]
+![][2047]
 
-![][2_48]
+![][2048]
 
-![][2_49]
+![][2049]
 
 **Vector Differentiation**
 
-![][2_50]
+![][2050]
 
 The first derivative of a position vector is a vector tangential to the trajectory with a magnitude equal to the speed of the particle.
 
@@ -764,29 +764,29 @@ The first derivative of a position vector is a vector tangential to the trajecto
 
 Reference A can be considered the inertial frame while Rotation of the B reference relative to the A reference must be considered when observing motion wrt the A reference system.
 
-![][2_51]
+![][2051]
 
 Note: Unit vectors are along the B system axes. Subscripts denote reference system. Reference B can be equivalent to a maneuvering aircraft.
 
-![][2_52]
+![][2052]
 
-![][2_53]
+![][2053]
 
 The velocities of the particle *P* relative to the *A* and to the *B* references are, respectively:
 
-![][2_54]
+![][2054]
 
 These velocities can be related by noting that:
 
-![][2_55]
+![][2055]
 
 Differentiating with respect to time for the *A* reference,
 
-![][2_56]
+![][2056]
 
-![][2_57]
+![][2057]
 
-The term is the "transport velocity" and is the only velocity if ![][2_58]
+The term is the "transport velocity" and is the only velocity if ![][2058]
 
 point P is rigidly attached to reference B.
 
@@ -798,25 +798,25 @@ is the transport acceleration and is the only acceleration if point P is rigidly
 
 To get acceleration wrt *A*, differentiate:
 
- ![][2_59]
+ ![][2059]
 
-![][2_60]
+![][2060]
 
 where
 
-![][2_61]
+![][2061]
 
 is the centripetal acceleration,
 
  
 
-![][2_62]
+![][2062]
 
 is the Coriolis acceleration, and
 
  
 
-![][2_63]
+![][2063]
 
 is the transport acceleration and is the only acceleration if point P is rigidly attached to reference B.
 
@@ -832,9 +832,9 @@ Reference A can be considered the inertial frame while
 
 The body can be equivalent to a maneuvering aircraft.
 
-![][2_64]
+![][2064]
 
-![][2_65]
+![][2065]
 
 **Section 2.6 Statistics** (reference 2.6)
 
@@ -850,7 +850,7 @@ Random Sample: Equal probability of selecting any member of the population Indep
 
 Sample and Population Mean (Average value):
 
-![][2_66]
+![][2066]
 
 Mode (Most commonly occurring value in a sample)
 
@@ -858,31 +858,31 @@ Median (middle value, 50th percentile. Half of the sample values are greater and
 
 Deviation (from the mean value):
 
-![][2_67]
+![][2067]
 
 Population Variance (from the mean value):
 
-![][2_68]
+![][2068]
 
 Population Standard Deviation (from the mean value):
 
-![][2_69]
+![][2069]
 
 Sample Standard Deviation (from the mean value):
 
-![][2_70]
+![][2070]
 
 **Discrete Probability Distributions:**
 
 **Binomial:** N independent events, each having probability *p* of success, and1-*p* of failure. For example, tossing a fair coin N times where *p =* the probability of getting a head on any toss. If the random variable x indicates the number of heads in N=2 tosses, then P(x=0) = 1/4, P(x=1) = 1/2, P(x=2) = 1/4. If N=4, then the probabilities are illus trated in the following graph:
 
-![][2_71]
+![][2071]
 
 As N approaches infinity \...
 
  
 
-![][2_72]
+![][2072]
 
 So**,** the binomial distribution is the discrete case of the Normal distribution.
 
@@ -902,21 +902,21 @@ Must talk about intervals, e.g. P(a \< x \< b)
 
 ** **
 
- ![][2_73]
+ ![][2073]
 
 **Normal Distribution:**
 
  
 
-![][2_74]
+![][2074]
 
-![][2_75]
+![][2075]
 
 **The Standard Normal Distribution:**
 
 ** **
 
-** **![][2_76]
+** **![][2076]
 
 ** **
 
@@ -942,13 +942,13 @@ Must talk about intervals, e.g. P(a \< x \< b)
 
 ** **
 
-** **![][2_77]
+** **![][2077]
 
 ** **
 
 **Circular Error Probable -- the 2 Dimensional Case (X error and Y error):**
 
-** **![][2_78]
+** **![][2078]
 
 ** **
 
@@ -960,7 +960,7 @@ Must talk about intervals, e.g. P(a \< x \< b)
 
 **Central Limit Theorem:** Given a population Normally distributed,
 
-![][2_79]
+![][2079]
 
  
 
@@ -972,13 +972,13 @@ then the distribution of successive sample means from samples of n observations
 
 Approaches a Normal distribution with parameters
 
-![][2_80]
+![][2080]
 
  
 
  
 
-![][2_81]We want 1- level of confidence that a region around our sample mean
+![][2081]We want 1- level of confidence that a region around our sample mean
 
  
 
@@ -986,7 +986,7 @@ value contains the actual population mean.
 
  
 
-![][2_82]
+![][2082]
 
 ** **
 
@@ -1028,13 +1028,13 @@ value contains the actual population mean.
 
  
 
-![][2_83]
+![][2083]
 
-![][2_84]
+![][2084]
 
 **If n \< 30, we must use Student's T Distribution instead of the Standard Normal**
 
-![][2_85]** **
+![][2085]** **
 
 ** **
 
@@ -1046,7 +1046,7 @@ value contains the actual population mean.
 
 **Determining Sample Size:** For the population mean to fall into an interval defined by
 
-![][2_86] 
+![][2086] 
 
  
 
@@ -1060,7 +1060,7 @@ value contains the actual population mean.
 
  
 
-![][2_87] 
+![][2087] 
 
 Where is the accuracy desired (or the error that can be tolerated).
 
@@ -1068,7 +1068,7 @@ Where is the accuracy desired (or the error that can be tolerated).
 
 Since the sample size decision must be made prior to the test, an estimate must be made for the population standard deviation. Using the estimate we can solve for N
 
-![][2_88] 
+![][2088] 
 
  
 
@@ -1086,29 +1086,21 @@ Since the sample size decision must be made prior to the test, an estimate must 
 
  
 
-![][2_89]![][2_89]
+![][2089]![][2089]
 
-![][2_90]
+![][2090]
 
-![][2_91]
+![][2091]
 
-![][2_92]
+![][2092]
 
  
 
 Large Samples, Unknown Variance use: for
 
-![][2_93] 
+![][2093] 
 
-![][2_94] 
-
- 
-
- 
-
- 
-
-![][2_95] 
+![][2094] 
 
  
 
@@ -1116,31 +1108,19 @@ Large Samples, Unknown Variance use: for
 
  
 
+![][2095] 
+
+ 
+
+ 
+
  
 
  
 
  
 
-** **
-
-** **
-
-** **
-
-** **
-
-![][2_96]** **
-
-Small Samples, Unknown Variance use: ![][2_96]
-
-** **
-
-** **
-
-** **
-
-![][2_97]** **
+ 
 
 ** **
 
@@ -1150,9 +1130,17 @@ Small Samples, Unknown Variance use: ![][2_96]
 
 ** **
 
+![][2096]** **
+
+Small Samples, Unknown Variance use: ![][2096]
+
 ** **
 
 ** **
+
+** **
+
+![][2097]** **
 
 ** **
 
@@ -1168,43 +1156,55 @@ Small Samples, Unknown Variance use: ![][2_96]
 
 ** **
 
-![][2_98]![][2_99]**Adjusting and**
+** **
+
+** **
+
+** **
+
+** **
+
+** **
+
+** **
+
+![][2098]![][2099]**Adjusting and**
 
 >  
 >
 > Adjust the size of the Error we wish to Detect Change the sample size *n*
 
-![][2_100] 
+![][2100] 
 
-![][2_101]
+![][2101]
 
-![][2_102]
+![][2102]
 
-![][2_102]
+![][2102]
 
 **2.7 Standard Series**
 
 (reference 2.4)
 
-![][2_103]Taylor's
+![][2103]Taylor's
 
 Maclaurin's (Taylor series with *a* = 0 ):
 
-![][2_104]
+![][2104]
 
-![][2_105]
+![][2105]
 
-![][2_106]Binomial:
+![][2106]Binomial:
 
-![][2_107]Exponential:
+![][2107]Exponential:
 
 Logarithmic:
 
-![][2_105]
+![][2105]
 
 Trigonometric:
 
-![][2_108]
+![][2108]
 
 **Section 2.8 Derivative Table**
 
@@ -1212,9 +1212,9 @@ Trigonometric:
 
 \[*x* is the independent variable; *u* and *v* are dependent on *x; w* is dependent on *u; a* and *n* are constants; *log* is common logarithm; *ln* is logarithm to the base *e*\]
 
-![][2_109]
+![][2109]
 
-![][2_110]
+![][2110]
 
 **Section 2.9 Integral Table**
 
@@ -1228,15 +1228,15 @@ Trigonometric:
 
 Fundamental Integrals
 
-![][2_111]
+![][2111]
 
 Expressions containing exponential and logarithmic functions
 
-![][2_112]
+![][2112]
 
 **Expressions containing trigonometric functions**
 
-![][2_113]
+![][2113]
 
 **Section 2.10 Laplace Table**
 
@@ -1249,43 +1249,43 @@ Expressions containing exponential and logarithmic functions
 +---------------------------+-----------------------------------+
 | t                         | 1/s^2^ (s\>0)                     |
 +---------------------------+-----------------------------------+
-| ![][2_114]                  | ![][2_115]                          |
+| ![][2114]                  | ![][2115]                          |
 |                           |                                   |
 |                           | (s\>0)                            |
 +---------------------------+-----------------------------------+
-| ![][2_116]                  | (s\>0)                            |
+| ![][2116]                  | (s\>0)                            |
 +---------------------------+-----------------------------------+
-| ![][2_117]                  | (s\>0)                            |
+| ![][2117]                  | (s\>0)                            |
 +---------------------------+-----------------------------------+
 | t^n-1/2^ (n=1,2,...)      | (s\>0)                            |
 +---------------------------+-----------------------------------+
 | e^at^                     | (s\>a)                            |
 +---------------------------+-----------------------------------+
-| te^at^                    | ![][2_118] (s\>a)                   |
+| te^at^                    | ![][2118] (s\>a)                   |
 +---------------------------+-----------------------------------+
-| t^n-1^e^ax^ (n=1, 2, ...) | ![][2_119] (s\>a)                   |
+| t^n-1^e^ax^ (n=1, 2, ...) | ![][2119] (s\>a)                   |
 +---------------------------+-----------------------------------+
-| sin at                    | ![][2_120] (s\>0)                   |
+| sin at                    | ![][2120] (s\>0)                   |
 +---------------------------+-----------------------------------+
-| cos at                    | ![][2_121] (s\>0)                   |
+| cos at                    | ![][2121] (s\>0)                   |
 +---------------------------+-----------------------------------+
-| e^bt^ sin at              | ![][2_122] (s?b)                    |
+| e^bt^ sin at              | ![][2122] (s?b)                    |
 +---------------------------+-----------------------------------+
-| e^bt^ cos at              | ![][2_123] (s\>b)                   |
+| e^bt^ cos at              | ![][2123] (s\>b)                   |
 +---------------------------+-----------------------------------+
-| x sin ax                  | ![][2_124]![][2_125] (s\>a)           |
+| x sin ax                  | ![][2124]![][2125] (s\>a)           |
 +---------------------------+-----------------------------------+
 | **x cos ax**              | (s \> 0)                          |
 +---------------------------+-----------------------------------+
-| sinh at                   | ![][2_126]                          |
+| sinh at                   | ![][2126]                          |
 |                           |                                   |
-|                           | ![][2_127]                          |
+|                           | ![][2127]                          |
 +---------------------------+-----------------------------------+
 
-![][2_128]
+![][2128]
 
 +------------------------------+-----------+
-|                              | ![][2_129]  |
+|                              | ![][2129]  |
 |                              |           |
 | cosh at                      |           |
 +==============================+===========+
@@ -1297,25 +1297,25 @@ Expressions containing exponential and logarithmic functions
 |                              |           |
 | cos(at + b)                  |           |
 +------------------------------+-----------+
-| ![][2_130]                     |           |
+| ![][2130]                     |           |
 +------------------------------+-----------+
-| ![][2_131]                     |           |
+| ![][2131]                     |           |
 +------------------------------+-----------+
 | δ (impulse function)         | 1         |
 +------------------------------+-----------+
-|                              | ![][2_132]  |
+|                              | ![][2132]  |
 |                              |           |
 | square wave, period =2c      |           |
 |                              |           |
 |                              |           |
 +------------------------------+-----------+
-|                              | ![][2_133]  |
+|                              | ![][2133]  |
 |                              |           |
 | triangular wave, period = 2c |           |
 |                              |           |
 |                              |           |
 +------------------------------+-----------+
-| *at* for                     | ![][2_134]  |
+| *at* for                     | ![][2134]  |
 |                              |           |
 | sawtooth wave, period = c    |           |
 |                              |           |
@@ -1325,14 +1325,14 @@ Expressions containing exponential and logarithmic functions
 |                              |           |
 | sin *at* sin *bt*            |           |
 +------------------------------+-----------+
-| ![][2_135]                     | ![][2_136]  |
+| ![][2135]                     | ![][2136]  |
 +------------------------------+-----------+
-|                              | ![][2_137]  |
+|                              | ![][2137]  |
 +------------------------------+-----------+
-| ![][2_138]                     | ![][2_139]  |
+| ![][2138]                     | ![][2139]  |
 +------------------------------+-----------+
 
-![][2_140]
+![][2140]
 
 **Section 2.11 References**
 
@@ -1350,143 +1350,143 @@ Expressions containing exponential and logarithmic functions
 
 2.7 Lewis, G., *Chapter 2, Data Analysis* , from "Crew station Evaluation and Data Analysis, Vol IV", 1997, National Test Pilot School, P.O. Box 658, Mojave CA, 93501.
 
-  [2_1]: ../media/02/image1.png
-  [2_2]: ../media/02/image2.png
-  [2_3]: ../media/02/image4.png
-  [2_4]: ../media/02/image5.png
-  [2_5]: ../media/02/image6.png
-  [2_6]: ../media/02/image7.png
-  [2_7]: ../media/02/image8.png
-  [2_8]: ../media/02/image9.png
-  [2_9]: ../media/02/image10.png
-  [2_10]: ../media/02/image11.png
-  [2_11]: ../media/02/image12.png
-  [2_12]: ../media/02/image13.png
-  [2_13]: ../media/02/image14.png
-  [2_14]: ../media/02/image15.png
-  [2_15]: ../media/02/image16.png
-  [2_16]: ../media/02/image17.png
-  [2_17]: ../media/02/image18.png
-  [2_18]: ../media/02/image19.png
-  [2_19]: ../media/02/image20.png
-  [2_20]: ../media/02/image21.png
-  [2_21]: ../media/02/image22.png
-  [2_22]: ../media/02/image23.png
-  [2_23]: ../media/02/image24.png
-  [2_24]: ../media/02/image25.png
-  [2_25]: ../media/02/image26.png
-  [2_26]: ../media/02/image27.png
-  [2_27]: ../media/02/image28.png
-  [2_28]: ../media/02/image29.png
-  [2_29]: ../media/02/image30.png
-  [2_30]: ../media/02/image31.png
-  [2_31]: ../media/02/image32.png
-  [2_32]: ../media/02/image33.png
-  [2_33]: ../media/02/image34.png
-  [2_34]: ../media/02/image35.png
-  [2_35]: ../media/02/image36.png
-  [2_36]: ../media/02/image37.png
-  [2_37]: ../media/02/image38.png
-  [2_38]: ../media/02/image39.png
-  [2_39]: ../media/02/image40.png
-  [2_40]: ../media/02/image41.png
-  [2_41]: ../media/02/image42.png
-  [2_42]: ../media/02/image43.png
-  [2_43]: ../media/02/image44.png
-  [2_44]: ../media/02/image45.png
-  [2_45]: ../media/02/image46.png
-  [2_46]: ../media/02/image47.png
-  [2_47]: ../media/02/image48.png
-  [2_48]: ../media/02/image49.png
-  [2_49]: ../media/02/image50.png
-  [2_50]: ../media/02/image51.png
-  [2_51]: ../media/02/image52.png
-  [2_52]: ../media/02/image53.png
-  [2_53]: ../media/02/image54.png
-  [2_54]: ../media/02/image55.png
-  [2_55]: ../media/02/image56.png
-  [2_56]: ../media/02/image57.png
-  [2_57]: ../media/02/image58.png
-  [2_58]: ../media/02/image59.png
-  [2_59]: ../media/02/image60.png
-  [2_60]: ../media/02/image61.png
-  [2_61]: ../media/02/image62.png
-  [2_62]: ../media/02/image63.png
-  [2_63]: ../media/02/image64.png
-  [2_64]: ../media/02/image65.png
-  [2_65]: ../media/02/image66.png
-  [2_66]: ../media/02/image67.png
-  [2_67]: ../media/02/image68.png
-  [2_68]: ../media/02/image69.png
-  [2_69]: ../media/02/image70.png
-  [2_70]: ../media/02/image71.png
-  [2_71]: ../media/02/image72.png
-  [2_72]: ../media/02/image73.png
-  [2_73]: ../media/02/image74.png
-  [2_74]: ../media/02/image75.png
-  [2_75]: ../media/02/image77.png
-  [2_76]: ../media/02/image78.png
-  [2_77]: ../media/02/image79.png
-  [2_78]: ../media/02/image80.png
-  [2_79]: ../media/02/image81.png
-  [2_80]: ../media/02/image82.png
-  [2_81]: ../media/02/image83.png
-  [2_82]: ../media/02/image84.png
-  [2_83]: ../media/02/image85.png
-  [2_84]: ../media/02/image86.png
-  [2_85]: ../media/02/image87.png
-  [2_86]: ../media/02/image88.png
-  [2_87]: ../media/02/image89.png
-  [2_88]: ../media/02/image90.png
-  [2_89]: ../media/02/image91.png
-  [2_90]: ../media/02/image92.png
-  [2_91]: ../media/02/image93.png
-  [2_92]: ../media/02/image94.png
-  [2_93]: ../media/02/image95.png
-  [2_94]: ../media/02/image96.png
-  [2_95]: ../media/02/image97.png
-  [2_96]: ../media/02/image98.png
-  [2_97]: ../media/02/image99.png
-  [2_98]: ../media/02/image100.png
-  [2_99]: ../media/02/image101.png
-  [2_100]: ../media/02/image102.png
-  [2_101]: ../media/02/image103.png
-  [2_102]: ../media/02/image104.png
-  [2_103]: ../media/02/image105.png
-  [2_104]: ../media/02/image106.png
-  [2_105]: ../media/02/image107.png
-  [2_106]: ../media/02/image108.png
-  [2_107]: ../media/02/image109.png
-  [2_108]: ../media/02/image110.png
-  [2_109]: ../media/02/image111.png
-  [2_110]: ../media/02/image112.png
-  [2_111]: ../media/02/image113.png
-  [2_112]: ../media/02/image114.png
-  [2_113]: ../media/02/image115.png
-  [2_114]: ../media/02/image116.png
-  [2_115]: ../media/02/image117.png
-  [2_116]: ../media/02/image122.png
-  [2_117]: ../media/02/image123.png
-  [2_118]: ../media/02/image124.png
-  [2_119]: ../media/02/image125.png
-  [2_120]: ../media/02/image126.png
-  [2_121]: ../media/02/image127.png
-  [2_122]: ../media/02/image128.png
-  [2_123]: ../media/02/image129.png
-  [2_124]: ../media/02/image130.png
-  [2_125]: ../media/02/image131.png
-  [2_126]: ../media/02/image132.png
-  [2_127]: ../media/02/image133.png
-  [2_128]: ../media/02/image134.png
-  [2_129]: ../media/02/image135.png
-  [2_130]: ../media/02/image140.png
-  [2_131]: ../media/02/image141.png
-  [2_132]: ../media/02/image142.png
-  [2_133]: ../media/02/image143.png
-  [2_134]: ../media/02/image144.png
-  [2_135]: ../media/02/image145.png
-  [2_136]: ../media/02/image146.png
-  [2_137]: ../media/02/image147.png
-  [2_138]: ../media/02/image148.png
-  [2_139]: ../media/02/image149.png
-  [2_140]: ../media/02/image150.png
+  [2001]: media/02/image1.png
+  [2002]: media/02/image2.png
+  [2003]: media/02/image4.png
+  [2004]: media/02/image5.png
+  [2005]: media/02/image6.png
+  [2006]: media/02/image7.png
+  [2007]: media/02/image8.png
+  [2008]: media/02/image9.png
+  [2009]: media/02/image10.png
+  [2010]: media/02/image11.png
+  [2011]: media/02/image12.png
+  [2012]: media/02/image13.png
+  [2013]: media/02/image14.png
+  [2014]: media/02/image15.png
+  [2015]: media/02/image16.png
+  [2016]: media/02/image17.png
+  [2017]: media/02/image18.png
+  [2018]: media/02/image19.png
+  [2019]: media/02/image20.png
+  [2020]: media/02/image21.png
+  [2021]: media/02/image22.png
+  [2022]: media/02/image23.png
+  [2023]: media/02/image24.png
+  [2024]: media/02/image25.png
+  [2025]: media/02/image26.png
+  [2026]: media/02/image27.png
+  [2027]: media/02/image28.png
+  [2028]: media/02/image29.png
+  [2029]: media/02/image30.png
+  [2030]: media/02/image31.png
+  [2031]: media/02/image32.png
+  [2032]: media/02/image33.png
+  [2033]: media/02/image34.png
+  [2034]: media/02/image35.png
+  [2035]: media/02/image36.png
+  [2036]: media/02/image37.png
+  [2037]: media/02/image38.png
+  [2038]: media/02/image39.png
+  [2039]: media/02/image40.png
+  [2040]: media/02/image41.png
+  [2041]: media/02/image42.png
+  [2042]: media/02/image43.png
+  [2043]: media/02/image44.png
+  [2044]: media/02/image45.png
+  [2045]: media/02/image46.png
+  [2046]: media/02/image47.png
+  [2047]: media/02/image48.png
+  [2048]: media/02/image49.png
+  [2049]: media/02/image50.png
+  [2050]: media/02/image51.png
+  [2051]: media/02/image52.png
+  [2052]: media/02/image53.png
+  [2053]: media/02/image54.png
+  [2054]: media/02/image55.png
+  [2055]: media/02/image56.png
+  [2056]: media/02/image57.png
+  [2057]: media/02/image58.png
+  [2058]: media/02/image59.png
+  [2059]: media/02/image60.png
+  [2060]: media/02/image61.png
+  [2061]: media/02/image62.png
+  [2062]: media/02/image63.png
+  [2063]: media/02/image64.png
+  [2064]: media/02/image65.png
+  [2065]: media/02/image66.png
+  [2066]: media/02/image67.png
+  [2067]: media/02/image68.png
+  [2068]: media/02/image69.png
+  [2069]: media/02/image70.png
+  [2070]: media/02/image71.png
+  [2071]: media/02/image72.png
+  [2072]: media/02/image73.png
+  [2073]: media/02/image74.png
+  [2074]: media/02/image75.png
+  [2075]: media/02/image77.png
+  [2076]: media/02/image78.png
+  [2077]: media/02/image79.png
+  [2078]: media/02/image80.png
+  [2079]: media/02/image81.png
+  [2080]: media/02/image82.png
+  [2081]: media/02/image83.png
+  [2082]: media/02/image84.png
+  [2083]: media/02/image85.png
+  [2084]: media/02/image86.png
+  [2085]: media/02/image87.png
+  [2086]: media/02/image88.png
+  [2087]: media/02/image89.png
+  [2088]: media/02/image90.png
+  [2089]: media/02/image91.png
+  [2090]: media/02/image92.png
+  [2091]: media/02/image93.png
+  [2092]: media/02/image94.png
+  [2093]: media/02/image95.png
+  [2094]: media/02/image96.png
+  [2095]: media/02/image97.png
+  [2096]: media/02/image98.png
+  [2097]: media/02/image99.png
+  [2098]: media/02/image100.png
+  [2099]: media/02/image101.png
+  [2100]: media/02/image102.png
+  [2101]: media/02/image103.png
+  [2102]: media/02/image104.png
+  [2103]: media/02/image105.png
+  [2104]: media/02/image106.png
+  [2105]: media/02/image107.png
+  [2106]: media/02/image108.png
+  [2107]: media/02/image109.png
+  [2108]: media/02/image110.png
+  [2109]: media/02/image111.png
+  [2110]: media/02/image112.png
+  [2111]: media/02/image113.png
+  [2112]: media/02/image114.png
+  [2113]: media/02/image115.png
+  [2114]: media/02/image116.png
+  [2115]: media/02/image117.png
+  [2116]: media/02/image122.png
+  [2117]: media/02/image123.png
+  [2118]: media/02/image124.png
+  [2119]: media/02/image125.png
+  [2120]: media/02/image126.png
+  [2121]: media/02/image127.png
+  [2122]: media/02/image128.png
+  [2123]: media/02/image129.png
+  [2124]: media/02/image130.png
+  [2125]: media/02/image131.png
+  [2126]: media/02/image132.png
+  [2127]: media/02/image133.png
+  [2128]: media/02/image134.png
+  [2129]: media/02/image135.png
+  [2130]: media/02/image140.png
+  [2131]: media/02/image141.png
+  [2132]: media/02/image142.png
+  [2133]: media/02/image143.png
+  [2134]: media/02/image144.png
+  [2135]: media/02/image145.png
+  [2136]: media/02/image146.png
+  [2137]: media/02/image147.png
+  [2138]: media/02/image148.png
+  [2139]: media/02/image149.png
+  [2140]: media/02/image150.png
