@@ -1,39 +1,22 @@
 # Mathematics
 
-> 2.1 Algebra
->
-> Laws
->
-> Identities
->
-> Equations
->
-> Interest & Annuities
->
-> 2.2 Geometry
->
-> 2.3 Trigonometry
->
-> Graphs
->
-> Identities
->
-> Oblique Triangle Laws
->
-> 2.4 Matrix Algebra
->
-> 2.5 Vector Algebra
->
-> 2.6 Statistics
->
-> 2.7 Standard Series
->
-> 2.8 Derivative Table
->
-> 2.9 Integral Table
-
+2.1 Algebra
+Laws
+Identities
+Equations
+Interest & Annuities
+2.2 Geometry
+2.3 Trigonometry
+Graphs
+Identities
+Oblique Triangle Laws
+2.4 Matrix Algebra
+2.5 Vector Algebra
+2.6 Statistics
+2.7 Standard Series
+2.8 Derivative Table
+2.9 Integral Table
 2.10 Laplace Transform Table
-
 2.11 References
 
 **Section 2.1 Algebra**
@@ -1170,9 +1153,8 @@ Small Samples, Unknown Variance use: ![][2096]
 
 ![][2098]![][2099]**Adjusting and**
 
->  
->
-> Adjust the size of the Error we wish to Detect Change the sample size *n*
+ 
+Adjust the size of the Error we wish to Detect Change the sample size *n*
 
 ![][2100] 
 
@@ -1275,7 +1257,7 @@ Expressions containing exponential and logarithmic functions
 +---------------------------+-----------------------------------+
 | x sin ax                  | ![][2124]![][2125] (s\>a)           |
 +---------------------------+-----------------------------------+
-| **x cos ax**              | (s \> 0)                          |
+| **x cos ax**              | (s \0)                          |
 +---------------------------+-----------------------------------+
 | sinh at                   | ![][2126]                          |
 |                           |                                   |
