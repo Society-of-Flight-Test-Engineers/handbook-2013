@@ -19,6 +19,7 @@ Oblique Triangle Laws
 2.10 Laplace Transform Table
 2.11 References
 
+
 **Section 2.1 Algebra**
 
 (reference 2.1)

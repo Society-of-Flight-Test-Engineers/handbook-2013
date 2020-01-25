@@ -1050,7 +1050,7 @@ The generally accepted body axes sign convention is based on the establishment o
 
 3. The axis system moves with the airframe.
 
-![][2]
+![][1002]
 
 Translational displacements, rates, accelerations, & forces are positive along the positive body axes directions. In spite of the simplicity of this logic, it is important to recognize that lift and normal load factor are positive in the *negative z* direction and the drag is positive in the *negative x* direction.
 
@@ -1062,7 +1062,7 @@ Angular displacements, rates, accelerations & moments, are positive according to
 
 The body axes, forces & translations along them, and moments & rotations about them are shown with arrows indicating the positive direction.
 
-![][3]
+![][1003]
 
 Angle of attack is positive clockwise from the projection of the velocity vector on the *xz* plane to the reference *x* body axis. The angle of sideslip is positive clockwise from the *xz* plane to the velocity vector (wind in the pilot's right ear).
 
@@ -1659,7 +1659,7 @@ For constant mass distribution in curvilinear motion: $$G = \dot{\omega} I$$
 
 ### Level Turn Kinematics Character
 
- ![][24]
+ ![][1004]
 
 ### Gyroscopic Motion
 
@@ -1754,26 +1754,6 @@ while $I_{cg} < I_z$ yields retrograde precession
 
 1.9 Unit Conversion Website Link <http://www.digitaldutch.com/atmoscalc/>.
 
-  [2]:  media/media/image2.png {width="6.5in" height="3.4063156167979in"}
-  [3]:  media/media/image3.png {width="6.5in" height="4.874305555555556in"}
-  [4]:  media/media/image4.png {width="0.7902777777777777in" height="0.6381944444444444in"}
-  [5]:  media/media/image5.png {width="0.8236111111111111in" height="2.3604166666666666in"}
-  [6]:  media/media/image6.png {width="2.470138888888889in" height="0.5in"}
-  [7]:  media/media/image7.png {width="1.58125in" height="0.5in"}
-  [8]:  media/media/image8.png {width="2.4881944444444444in" height="0.75in"}
-  [9]:  media/media/image9.png {width="0.78125in" height="0.27708333333333335in"}
-  [10]: media/media/image10.png {width="0.7402777777777778in" height="0.4861111111111111in"}
-  [11]: media/media/image11.png {width="0.6673611111111111in" height="0.4861111111111111in"}
-  [12]: media/media/image12.png {width="0.5006944444444444in" height="0.5in"}
-  [13]: media/media/image13.png {width="0.8548611111111111in" height="0.4305555555555556in"}
-  [14]: media/media/image14.png {width="0.6986111111111111in" height="0.4305555555555556in"}
-  [15]: media/media/image15.png {width="1.78125in" height="0.48541666666666666in"}
-  [16]: media/media/image16.png {width="1.2930555555555556in" height="0.48541666666666666in"}
-  [17]: media/media/image17.png {width="0.6958333333333333in" height="0.5in"}
-  [18]: media/media/image18.png {width="0.9152777777777777in" height="0.5548611111111111in"}
-  [19]: media/media/image19.png {width="1.8055555555555556in" height="0.48541666666666666in"}
-  [20]: media/media/image20.png {width="1.3055555555555556in" height="0.48541666666666666in"}
-  [21]: media/media/image21.png {width="0.8541666666666666in" height="0.42986111111111114in"}
-  [22]: media/media/image22.png {width="0.9152777777777777in" height="0.6381944444444444in"}
-  [23]: media/media/image23.png {width="0.8180555555555555in" height="0.5548611111111111in"}
-  [24]: media/media/image24.jpeg {width="6.08125in" height="8.9375in"}
+  [1002]:  media/01/image2.png {width="6.5in" height="3.4063156167979in"}
+  [1003]:  media/01/image3.png {width="6.5in" height="4.874305555555556in"}
+  [1004]:  media/01/image24.jpeg {width="6.08125in" height="8.9375in"}

@@ -14,7 +14,7 @@ link-citations: yes
 
 # Preface {-}
 
-![][1]
+![][0001]
 
 **Flight Test Engineering Reference Handbook**
 
@@ -95,4 +95,4 @@ All rights reserved. This Technical Handbook is for the exclusive use of the Soc
   18                          Radio Communications
   19                          The Electromagnetic Spectrum
 
-  [1]: .\media/media/image1.jpg {width="5.333333333333333in" height="3.6366666666666667in"}
+  [0001]: media/index/image1.jpg {width="5.333333333333333in" height="3.6366666666666667in"}
