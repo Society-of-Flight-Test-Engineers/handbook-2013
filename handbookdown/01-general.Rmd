@@ -439,7 +439,7 @@ Exponent  Prefix  Abbreviation
 |$\rho_a$  |ambient air density|
 |$\rho_0$  |standard atmospheric density (slugs/ft^3 )|
 |$\sigma$       |air density ratio $(\rho_{\alpha} / \rho_o)$|
-|$sigma_{cr}$   |critical density|
+|$\sigma_{cr}$   |critical density|
 |$\tau$       |shear stress (pounds per square inch) psi|
 |$\tau_R$    |Roll Mode Time Constant (sec)|
 |$\phi$       |bank angle (degrees)|
@@ -449,16 +449,14 @@ Exponent  Prefix  Abbreviation
 |$\omega_d$ |damped natural frequency|
 |$\omega_n$  |natural undamped frequency|
 
-
-
 ## Common Subscripts
 
 |Subscript|Meaning|
 |:-|:-|
 |*a* |aileron|
 |*a* |ambient|
-|alt |at test altitude|
-|avg |average|
+|*alt* |at test altitude|
+|*avg* |average|
 |*c* |calibrated|
 |*e* |elevator|
 |*e* |equivalent|
@@ -482,7 +480,6 @@ Exponent  Prefix  Abbreviation
 |*SL* |sea level|
 |*T* |True|
 |*t* |test day|
-
 
 ## Common Abbreviations (raw)
 
@@ -512,7 +509,7 @@ Exponent  Prefix  Abbreviation
 |AOED |age of ephemeris data|
 |APU |auxiliary power unit|
 |AR |air refuel (mode of flight)|
-|*AR* |aspect ratio = b^2^ / S|
+|AR |aspect ratio = b^2^ / S|
 |ARDP |advanced radar data processor|
 |ARSP |advanced radar signal processor|
 |ASPJ |airborne self protection jammer|
@@ -1027,7 +1024,6 @@ Exponent  Prefix  Abbreviation
 |$\Delta V_{pc}$ |correction for airspeed position error|
 |$\infty$ |infinity, or freestream conditions|
 
-
 ## Sign Conventions (raw)
 
 (reference 1.8)
@@ -1054,35 +1050,23 @@ The generally accepted body axes sign convention is based on the establishment o
 
 3. The axis system moves with the airframe.
 
- 
-
-![][2]
+![][1002]
 
 Translational displacements, rates, accelerations, & forces are positive along the positive body axes directions. In spite of the simplicity of this logic, it is important to recognize that lift and normal load factor are positive in the *negative z* direction and the drag is positive in the *negative x* direction.
 
 Angular displacements, rates, accelerations & moments, are positive according to the "right hand rule" (a clockwise rotation while looking in the direction of the positive axis) as shown in the figure.
 
- 
-
 The body axes, forces & translations along them, and moments & rotations about them are shown with arrows indicating the positive direction.
 
 Angular displacements, rates, accelerations & moments, are positive according to the "right hand rule" (a clockwise rotation while looking in the direction of the positive axis) as shown in the figure.
 
- 
-
 The body axes, forces & translations along them, and moments & rotations about them are shown with arrows indicating the positive direction.
 
- 
-
-![][3]
+![][1003]
 
 Angle of attack is positive clockwise from the projection of the velocity vector on the *xz* plane to the reference *x* body axis. The angle of sideslip is positive clockwise from the *xz* plane to the velocity vector (wind in the pilot's right ear).
 
- 
-
 Aircraft *true* heading is the angle between *true* North and the projection of the x-body axis onto the horizontal plane. Mag. heading refers to mag North
-
- 
 
 The velocity vector is measured relative to the air mass while the flightpath is measured relative to the ground. They are equivalent only when winds are zero.
 
@@ -1094,11 +1078,7 @@ Flightpath elevation angle; *γ*, is the vertical angle between the flightpath 
 
 Flightpath bank angle; *$\mu$*, is the angle between the plane formed by the velocity vector and the lift vector and the vertical plane containing the velocity vector. Positive rotation is clockwise about the velocity vector, looking forward.
 
- 
-
 Fuselage reference station (FRS), Water line (WL), and Buttock line (BL) are reference coordinates established by the design group.
-
- 
 
   **Summary of Generally Accepted Body Axes Sign Convention**                
   ------------------------------------------------------------- ------------ --------------------------------------------------------
@@ -1161,69 +1141,35 @@ Fuselage reference station (FRS), Water line (WL), and Buttock line (BL) are ref
 |                                                             |            | ward                    |
 +-------------------------------------------------------------+------------+-------------------------+
 
-
 Discussion of "Input & Deflection" Conventions
-
 
 The debate regarding proper inputs and deflections stems from the user's viewpoint. From the body axis convention above, flight testers recognize that a climbing right turn generates positive angular measurements. Logically then, pull, right roll and right yaw pilot inputs and subsequent surface deflections should also be positive. The traditional flight tester's convention follows as "All input forces & displacements, surface deflections, and motions that cause a climbing right turn are positive."
 
- 
-
 Due to differential nature of aileron deflections, they require more discussion. The flight tester's logic implies (but does not dictate) positive deflections are right aileron up and left aileron down. It is, however, equally acceptable to assign downward (or upward) deflection as positive for [both]{.underline} ailerons and calculate the difference between the two as a measure of rolling moment.
-
- 
 
 The rationale within the wind tunnel community is also logical: any control surface deflection that increases lift is positive. From this, positive deflections are trailing edge down (TED) for each: trailing edge flap, stabilizer, elevator, stabilator, rollervator, ruddervator, canard, aileron, flaperon, and all their tabs. Leading edge flap down is also positive. Similarly, since side force is positive to the right, then positive rudder and rudder tab deflections are trailing left (TEL). The only exception to this straightforward logic is for spoilers and speed brakes that extend only in one direction: this deflection is positive even though it might decrease the lift.
 
- 
-
 Since the above rationale defines downward deflection as positive for both ailerons, a measurement of rolling moments requires calculation of the differential aileron deflection. This rationale does not, however, specifically dictate whether a "positive" differential deflection should generate right wing down (RWD) or left wing down (LWD) moments. Differential aileron can be calculated as either.
-
- 
-
- 
 
  $\delta_{a} = \frac{\delta_{\text{aR}} - \delta_{\text{aL}}}{2}$ or $\delta_{a} = \frac{\delta_{\text{aL}} - \delta_{\text{aR}}}{2}$
 
- 
-
- 
-
- 
-
 Selection of the RWD convention is obvious from the flight tester's viewpoint since deflections that generate right rolls are positive. An alternative interpretation is that a positive differential aileron deflection is one that lifts the positive (right) wing lifts more than the left (LWD).
-
- 
 
 Another common convention for ailerons is one that gives the same sign to both ailerons for any input. The "right hand screw" convention is opposite to the flight tester's convention, but may be more common:
 
- 
-
 δ*~aR~* = +TED, δ~*aL*~ = +TEU.
-
- 
 
 The above wind tunnel rationale dictates only the polarity for individual control surface deflections, and leaves open the sign convention debate about controller (inceptor) input forces & displacements. One approach is that positive inputs should generate positive *motions* while an alternate approach is that positive inputs generate positive *surface deflections*. Only the flight tester's convention states that positive inputs yield positive motions *and* deflections. All approaches are mathematically connected to the hinge moment sign convention discussed below.
 
- 
-
 The simplest control surface hinge moment convention is that *all* positive hinge moments (generated by the pilot and the aerodynamics) move the surface in a positive direction, i.e., positive input forces yield positive deflections. This has different implications for the different sign conventions:
-
- 
 
 • According to the above flight tester's sign convention, a positive pull force is required to generate a positive (TEU) elevator deflection (positive stick force generates a climb).
 
 • According to wind tunnel sign convention, a positive *push* force is required to generate a positive (*TED*) elevator deflection (positive stick force generates a *dive*).
 
- 
-
 The alternate viewpoint defines a positive inceptor hinge moment as one that *opposes* the aerodynamic moments. In other words, a positive inceptor hinge moment moves the surface to a position which generates positive aerodynamic hinge moments or "positive input forces & displacements generate negative surface deflections."
 
- 
-
 Based on the above background, the SFTE technical council proposes the following standard convention for inceptor & surface forces & deflections:
-
- 
 
 • Due to its widespread use and its simple & robust nature, use the wind tunnel convention for control surface deflections.
 
@@ -1236,8 +1182,6 @@ Based on the above background, the SFTE technical council proposes the following
 ** **
 
 **Conventions for Positive Control Surface Deflections**
-
- 
 
 +---------------------------------+--------------------+---------------------------+-------------------------+
 | **Parameter**                   | **Symbol**         | **Flight Test**           | **SFTE/**               |
@@ -1393,15 +1337,9 @@ Based on the above background, the SFTE technical council proposes the following
 
 \*The wind tunnel rationale does not inherently define the polarity for control surface differential deflections.
 
- 
-
 \#The wind tunnel rationale does not specify a convention for positive inputs or hinge moments. Historically, Dutch, U.S. and some British aircraft use a climbing right turn, while it is a diving left turn for Canadian, Australian, and some British aircraft.
 
- 
-
 *The SFTE Technical Council recognizes that several combinations of the above possibilities are currently in use around the world, and invites comments, additions, or corrections to the above summary and proposal. Although SFTE does not expect all organizations to adopt this standard, it still **provides a cornerstone for reference purposes***
-
- 
 
 ## Thermodynamics Relations
 
@@ -1436,11 +1374,11 @@ An **Isentropic** process has constant entropy.
 | Symbol | Use |
 |:-------|:----|
 |$A$ | area|
-|$C$ | compressibility factor (?)|
+|$C$ | compressibility factor |
 |$c$ | speed of sound|
 |$E = u$ | specific internal energy (e.g. Btu/lb)|
-|$H$ | specific **enthalpy** $\equiv$ $E + PV$ (e.g. Btu/lb)|
-|$J$ | Joule's equivalent 10^7^ ergs = 778 ft-lb/Btu|
+|$H$ | specific **enthalpy**  (e.g. Btu/lb)|
+|$J$ | Joule |
 |$Q$ | energy supplied to a system or region as heat (e.g. Btu/lb)|
 |$P$ | absolute pressure (e.g. lbs/ft^2^)|
 |$V$ | specific volume (e.g. ft^3^/lb)|
@@ -1448,13 +1386,12 @@ An **Isentropic** process has constant entropy.
 |$\overline{V}$| velocity|
 |$\Delta$ | change ( final - initial value)|
 |$Z$ | altitude|
-|$S$ | specific entropy $\equiv \int_{}^{}{\frac{dE + PdV}{T}}$ for a reversible process |
+|$S$ | specific entropy  |
 |$R$ | gas constant for each gas (for air = 287 J/kg/K = 53.35 ft-lb/lb~m~R)|
 |$\overline{R}$ |  universal gas constant = 8.314 kJ/kmol/K = 1545 ft lb/lbmol/R|
 |$M$ | molar mass (for air = 28.97 kg/kmol)|
 |$N$ | number of moles|
 |$\rho$ | density|
-
 
 ### Thermodynamic Laws
 
@@ -1462,23 +1399,36 @@ The **First Law of Thermodynamics** shows that the net amount of energy added to
 
 The **Second Law of Thermodynamics** states that entropy increases during any irreversible process: $S_2 > S_1$
 
-**Ideal Gas Equation of State** (a.k.a. Perfect gas law): (?)
+**Ideal Gas Equation of State** (a.k.a. Perfect gas law): 
 
-$PV=RT$, $P = \rho RT$, $PV = mRT$, $PV = nRT$
+$$
+\begin{align}
+PV&=RT\\
+P &= \rho RT\\
+PV &= mRT\\
+PV &= nRT
+\end{align}$$
 
-$\delta = \sigma \theta$  where   $\delta = \frac{P_a}{P_0}$, $\sigma = \frac{\rho_a}{\rho_0}$, $\theta = \frac{T_a}{T_0}$
+$$\delta = \sigma \theta$$  
+where   
+$$
+\begin{align}
+\delta &= \frac{P_a}{P_0}\\
+\sigma &= \frac{\rho_a}{\rho_0}\\
+\theta &= \frac{T_a}{T_0}
+\end{align}$$
 
 **Boyle's Law** states that when the temperature of a given mass of gas is held constant, then the volume and pressure vary inversely.
 
 $$P_1 V_1 = P_2 V_2$$
 
-where $T_1 = T_2$
+where $$T_1 = T_2$$
 
 **Charles' Law** states that when a volume of a given mass is held constant, then the change in pressure of the gas is proportional to the change in temperature.
 
 $$\frac{P_1}{T_1} = \frac{P_2}{T_2}$$ 
 
-where $V_1 = V_2$
+where $$V_1 = V_2$$
 
 **Real Gas** Relation: 
 
@@ -1492,7 +1442,6 @@ W &= −\int_{}^{}{PdV}\\
 Q &= \int_{}^{}{TdS}
 \end{align}
 $$
-
 
 For reversible adiabatic processes:
 
@@ -1547,8 +1496,8 @@ Ratio of specific heats
 $$
 \kappa = \gamma \equiv \frac{c_p}{c_v}
 $$
- 
-Enthalpy equation in differential form is: $dH = du + d(PV)$
+
+Enthalpy equation in differential form is: $$dH = du + d(PV)$$
 
 Substituting definitions and ideal gas law gives
 
@@ -1572,35 +1521,33 @@ $$
 
 Development of **Poisson's Equation**:
 
-1) From the 1st law: $W+Q = E_2-E_1$
+1) From the 1st law: $$W+Q = E_2-E_1$$
 
-2) Substitution for each term gives: $T\,dS - P\,dV = du$
+2) Substitution for each term gives: $$T\,dS - P\,dV = du$$
 
-3) Divide through by T: $dS = \frac{du}{T} + \frac{P\,dV}{T}$
+3) Divide through by T: $$dS = \frac{du}{T} + \frac{P\,dV}{T}$$
 
-4) Recall: $du = c_v\,dT$ and $PV = RT$
+4) Recall: $$du = c_v\,dT$$ and $$PV = RT$$
 
-5) Substitution gives: $dS = c_v\frac{dT}{T} + R \frac{dV}{V}$
+5) Substitution gives: $$dS = c_v\frac{dT}{T} + R \frac{dV}{V}$$
 
-6) Assume constant specific heat and integrate: $s_2 - s_1 = c_v\,ln \frac{T_2}{T_1} + R\,ln \frac{V_2}{V_1}$
+6) Assume constant specific heat and integrate: $$s_2 - s_1 = c_v\,ln \frac{T_2}{T_1} + R\,ln \frac{V_2}{V_1}$$
 
-7) Assuming a reversible adiabatic process: $c_v\,ln \frac{T_2}{T_1} = - R\,ln \frac{V_2}{V_1}$
+7) Assuming a reversible adiabatic process: $$c_v\,ln \frac{T_2}{T_1} = - R\,ln \frac{V_2}{V_1}$$
 
-8) Substitute $c_v = R\frac{1}{\kappa - 1}$ to get: $\frac{T_2}{T_1} = \Big( \frac{V_1}{V_2} \Big)^{\kappa -1}$
+8) Substitute $$c_v = R\frac{1}{\kappa - 1}$$ to get: $$\frac{T_2}{T_1} = \Big( \frac{V_1}{V_2} \Big)^{\kappa -1}$$
 
-9) Differentiate H: $dH = du + P\,dV + V\,dP$
+9) Differentiate H: $$dH = du + P\,dV + V\,dP$$
 
-10) Substitution into step \#2: $T\,dS = dH - V\,dP$
+10) Substitution into step \#2: $$T\,dS = dH - V\,dP$$
 
-11) Integrate: $s_2 - s_1 = c_p\,ln \frac{T_2}{T_1} + R\,ln \frac{P_2}{P_1}$
+11) Integrate: $$s_2 - s_1 = c_p\,ln \frac{T_2}{T_1} + R\,ln \frac{P_2}{P_1}$$
 
-12) Assuming a reversible adiabatic process: $c_p\,ln \frac{T_2}{T_1} = - R\,ln \frac{P_2}{P_1}$
+12) Assuming a reversible adiabatic process: $$c_p\,ln \frac{T_2}{T_1} = - R\,ln \frac{P_2}{P_1}$$
 
-13) Substitute $c_v = R\frac{\kappa}{\kappa - 1}$ to get: $\frac{T_2}{T_1} = \Big( \frac{P_2}{P_1} \Big)^{\frac{\kappa -1}{\kappa}}$
+13) Substitute $$c_v = R\frac{\kappa}{\kappa - 1}$$ to get: $$\frac{T_2}{T_1} = \Big( \frac{P_2}{P_1} \Big)^{\frac{\kappa -1}{\kappa}}$$
 
-14) Combine steps \#8, \#13 to get: $\frac{P_2}{P_1}=\Big( \frac{V_1}{V_2} \Big)^{\kappa}$ or $(PV)^{\kappa} = \mathrm{const}$
-
- 
+14) Combine steps \#8, \#13 to get: $$\frac{P_2}{P_1}=\Big( \frac{V_1}{V_2} \Big)^{\kappa}$$ or $$(PV)^{\kappa} = \mathrm{const}$$
 
 ## Mechanics Relations 
 
@@ -1608,22 +1555,22 @@ Development of **Poisson's Equation**:
 
 | Symbol   | Use                                                             |
 |:-------|:----|
-| $a$        | linear acceleration $= \frac{dV}{dt}$                                 |
+| $a$        |  linear acceleration                                |
 | $a_r$     | centripetal (radial) acceleration                               |
 | $a_T$     | tangential acceleration                                         |
 | $F$        | force                                                           |
 | $g$        | acceleration due to gravity |
 | $G$        | moment                                                          |
-| $H$        | angular momentum = $I\omega$                                           |
+| $H$        | angular momentum                                          |
 | $H$        | height                                                          |
 | $Hp$       | horsepower                                 |
 | $I$        | rotational moment of inertia (see section 10)                   |
 | $J$        | impulse = change in momentum                                    |
 | $k$        | radius of gyration                                              |
 | $m$        | mass                                                            |
-| $N_r$     | radial load factor $= \frac{a_r}{g}$                                     |
-| $P$        | power $= \frac{dW}{dt}$                                               |
-| $L$        | linear momentum $= m\,V$                                            |
+| $N_r$     | radial load factor                                     |
+| $P$        | power                                                |
+| $L$        | linear momentum                                             |
 | $Q$        | moment (a.k.a. torque)                                          |
 | $r$        | radius                                                          |
 | $S$        | distance, displacement                                          |
@@ -1631,19 +1578,17 @@ Development of **Poisson's Equation**:
 | $t$        | time                                                            |
 | $V$        | true inertial velocity                                          |
 | $V_o$     | initial inertial velocity                                       |
-| $W$        | work $= F\,S = \frac{1}{2} m (V^2 - V_0^2)$                                |
+| $W$        | work                                 |
 | $q$        | angular displacement                                            |
 | $\mathit{Vol}$    | volume                                                          |
 | $\omega$        | angular velocity (radians/second)                               |
 | $\dot{\omega}$        | angular acceleration                                            |
-
 
 ### Newton's Laws
 
 **1^st^ law** (law of inertia):
 
 "Every body persists in its state of rest or uniform motion in a straight line unless it is compelled to change that state by forces impressed on it."
-
 
 **2^nd^ Law**:
 
@@ -1653,161 +1598,97 @@ $$
 dF = \frac{d(mV)}{dt}
 $$
 
+For constant mass in rectilinear motion: $$F = ma$$
 
-For constant mass in rectilinear motion: $F = ma$
-
-For constant mass distribution in curvilinear motion: $G = \dot{\omega}\text{\ I}$
-
+For constant mass distribution in curvilinear motion: $$G = \dot{\omega} I$$
 
 **3^rd^ Law**:
 
 "Every action has an equal and opposite reaction; or, the mutual attraction of two bodies upon each other are always equal and directed to contrary parts.(opposite directions)"
 
-
 ### Planar Kinetics, Work, Power and Energy
 
 | Rectilinear motion |                         | Curvilinear motion   |                                     |
 |:-------------------|:------------------------|:---------------------|:------------------------------------|
-| displacement       | $S$                     | angular displacement | $\theta$                            |
-| velocity           | $V = \frac{dS}{dt}$     | angular velocity     | $\omega = \frac{d\theta}{dt}$       |
-| acceleration       | $a = \frac{dV}{dt}$     | angular acceleration | $\dot{\omega} = \frac{d\omega}{dt}$ |
-| inertia            | $m$                     | rotational inertia   | $I = \int_{}^{}{r^2 dm}$            |
-| momentum           | $L = m\,V$              | angular momentum     | $H = I \omega$                      |
-| force              | $F = m\,a$              | torque               | $Q = I \dot{\omega}$                |
-| work               | $W = \int_{}^{}{F\,dS}$ | work                 | $W = \int_{}^{}{Qd\theta}$          |
-| power              | $P = F\,V$              | power                | $P = Q \omega$                      |
-| kinetic energy     | $\frac{1}{2} mV^2$      | kinetic energy       | $\frac{1}{2} I \omega^2$            |
-| potential energy   | $mgH$                   | n/a                  |                                     |
-
+| displacement       | $$S$$                     | angular displacement | $$\theta$$                            |
+| velocity           | $$V = \frac{dS}{dt}$$     | angular velocity     | $$\omega = \frac{d\theta}{dt}$$       |
+| acceleration       | $$a = \frac{dV}{dt}$$     | angular acceleration | $$\dot{\omega} = \frac{d\omega}{dt}$$ |
+| inertia            | $$m$$                     | rotational inertia   | $$I = \int_{}^{}{r^2 dm}$$            |
+| momentum           | $$L = m\,V$$              | angular momentum     | $$H = I \omega$$                      |
+| force              | $$F = m\,a$$              | torque               | $$Q = I \dot{\omega}$$                |
+| work               | $$W = \int_{}^{}{F\,dS}$$ | work                 | $$W = \int_{}^{}{Qd\theta}$$          |
+| power              | $$P = F\,V$$              | power                | $$P = Q \omega$$                      |
+| kinetic energy     | $$\frac{1}{2} mV^2$$      | kinetic energy       | $$\frac{1}{2} I \omega^2$$            |
+| potential energy   | $$mgH$$                   | n/a                  |                                     |
 
 ### Planar Kinematics at Constant Acceleration
 
-**[ ]{.underline}**
+| Rectilinear motion                                      | Curvilinear motion                                                                    |
+|---------------------------------------------------------|---------------------------------------------------------------------------------------|
+| $$V = V_0 + at$$                                          | $$\omega = \omega_0 + \dot{\omega} t$$                                                  |
+| $$V^2 = V_0^2 + 2aS$$                                     | $$\omega^2 = \omega_0^2 + 2 \dot{\omega}\theta$$                                        |
+| $$S = V_0 t + \frac{1}{2} a t^2$$                         | $$\theta = \omega_0 t + \frac{1}{2} \dot{\omega} t^2$$                                  |
+| $$S = \frac{1}{2}(V + V_0) t$$                            | $$\theta = \frac{1}{2}(\omega + \omega_0)t$$                                            |
+| $$S = \frac{\left( V^{2} - V_{0}^{2} \right)}{2a}$$       | $$\theta = \frac{\left( \omega^{2} - \omega_{0}^{2} \right)}{2\dot{\omega}}$$           |
+| $$t = \frac{- V_{0} + \sqrt{V_{0}^{2} + 2\text{aS}}}{a}$$ | $$t = \frac{- \omega_{0} + \sqrt{\omega_{0}^{2} - 2\dot{\omega}\theta}}{\dot{\omega}}$$ |
+| $$a = \frac{2\left( S - V_{0}t \right)}{t^{2}}$$          | $$\dot{\omega} = \frac{2(\theta - \omega_{0}t)}{t^{2}}$$                                |
 
-**[Rectilinear motion Curvilinear motion]{.underline}**
+### Curvilinear motion with constant acceleration and radius
 
-V = V~o~ + at ω = ω~o~ + t
+|                                                                   |
+|:---------------------------------------------------------------------------------------:|
+| $$r = \frac{V^2}{g N_r}$$                                                  |
+| $$V = \omega r$$                                        |
+| $$N_r = \frac{a_r}{g}$$                                  |
+| $$\omega = \frac{g N_r}{V}$$                                            |
+| $$\dot{\omega} = \frac{\dot{V}}{R}$$           |
+| $$a_r = r \omega^2 = \frac{V^2}{r}$$ |
+| $$a_{r} = \dot{\omega}r$$                                |
 
-V^2^ = V~o~^2^ + 2aS ω ^2^ = ω ~o~^2^+2 $\dot{\omega}$θ
+### Aircraft in level turn
 
-S = V~o~t + ½ at^2^ θ = ω ~o~t + ½ $\dot{\omega}$ t^2^
+|                                                                   |
+|:---------------------------------------------------------------------------------------:|
+| $N_{zw}$ = load factor normal to flight path                                                  |
+| $r$ = turn radius                                       |
+| $\Omega$ = turn rate (rad/sec)                                 |
+| $$r = \frac{V^{2}}{g\sqrt{N_{\text{zw}}^{2} - 1}}$$                                            |
+| $$\omega = \frac{g\sqrt{N_{\text{zw}}^{2} - 1}}{V}$$           |
+| $$N_{zw} = \sqrt{\frac{\omega V}{g} + 1}$$ |
+| $$V$$ = inertial velocity                               | 
 
- 
+### Level Turn Kinematics Character
 
-S = ½(V + V~o~)t θ = ½( ω + ω ~o~)t
+ ![][1004]
 
- \
-$S = \frac{\left( V^{2} - V_{0}^{2} \right)}{2a}$ $\theta = \frac{\left( \omega^{2} - \omega_{0}^{2} \right)}{2\dot{\omega}}$
-
-$t = \frac{- V_{0} + \sqrt{V_{0}^{2} + 2\text{aS}}}{a}$ $t = \frac{- \omega_{0} + \sqrt{\omega_{0}^{2} - 2\dot{\omega}\theta}}{\dot{\omega}}$
-
-$a = \frac{2\left( S - V_{0}t \right)}{t^{2}}$ $\dot{\omega} = \frac{2(\theta - \omega_{0}t)}{t^{2}}$
-
- 
-
-**[ ]{.underline}**
-
-**[Curvilinear motion with constant acceleration and radius:]{.underline}**
-
-r = V^2^/gN~r~
-
-V = ωr
-
-N~R~ = a~r~/g
-
-ω = gN~r~/V
-
-$$\dot{\omega} = \frac{\dot{V}}{R}$$
-
-a~r~ = rω^2^ = V^2^/r
-
-$$a_{r} = \dot{\omega}r$$
-
- 
-
- 
-
- **Aircraft in level turn:**
-
- 
-
-N~zw~ = load factor normal to flight path
-
-*r* = turn radius
-
-Ω = turn rate (rad/sec)
-
- 
-
-$$r = \frac{V^{2}}{g\sqrt{N_{\text{zw}}^{2} - 1}}$$
-
- $\omega = \frac{g\sqrt{N_{\text{zw}}^{2} - 1}}{V}$
-
-$$N_{\text{zw}} = \sqrt{\frac{\omega V}{g} + 1}$$
-
- 
-
-V= inertial velocity
-
- 
-
- ![][24]
-
- **[Gyroscopic Motion]{.underline}**
+### Gyroscopic Motion
 
 (reference 1.7)
 
-for bodies spinning about an axisymmetric axis
+For bodies spinning about an axisymmetric axis
 
- 
+| |
+|:-|
+|$\dot{\psi}$ = spin rate |
+|$\dot{\phi}$ = precession rate |
+|$\dot{\theta}$ = nutation rate |
+||
+|$I_z$ = moment of inertia about spin axis |
+|$I_t$ = transverse moment of inertia about the spin point (perpendicular to spin axis) |
+|$I_{cg}$ = moment of inertia about the *cg* (perpendicular to spin axis) |
+|$M_x$ = moment about spin point (acting along plane that defines $\theta$) |
 
-$\dot{\mathbf{\Psi}}$**=** spin rate
+For steady precession (constant $\dot{\theta}$, $\dot{\phi}$ , $\dot{\psi}$ )
 
-$\dot{\phi}$= precession rate
-
-$\dot{\theta}$ = nutation rate
-
- 
-
-*I~z~* = moment of inertia about spin axis
-
-*I~t~* = transverse moment of inertia about the spin point
-
-(perpendicular to spin axis)
-
-*I~cg~* = moment of inertia about the *cg* (perpendicular to spin axis)
-
-M~x~ = moment about spin point (acting along plane that defines θ)
-
-**. .**
-
-For steady precession (constant θ, φ , ψ )
-
- 
-
- $\sum_{}^{}M_{x} = - I_{t}\dot{\phi^{2}}\sin\theta\cos\theta + I_{z}\dot{\theta}\sin\theta\left( \dot{\phi}\cos\theta + \dot{\Psi} \right)$
-
- 
+$$ \sum M_{x} = - I_{t}\dot{\phi^{2}}\sin\theta\cos\theta + I_{z}\dot{\theta}\sin\theta\left( \dot{\phi}\cos\theta + \dot{\psi} \right) $$
 
 For torque free motion (gravity is only external force)
 
- 
+$$\dot{\psi} = \frac{I_{cg} - I_{z}}{I_{z}}\dot{\phi}\cos\theta$$
 
- $\dot{\Psi} = \frac{I_{\text{cg}} - I_{z}}{I_{z}}\dot{\phi}\cos$
+note that $I_{cg} > I_z$ yields regular precession
 
- 
-
- 
-
-note that *I~cg~\>I~z~* yields regular precession
-
-while *I~cg~\<I~z~* yields retrograde precession
-
- 
-
- 
-
- 
+while $I_{cg} < I_z$ yields retrograde precession
 
 ## International Phonetic Alphabet and Morse Code
 
@@ -1851,75 +1732,28 @@ while *I~cg~\<I~z~* yields retrograde precession
 |  9|   Niner      |▬ ▬ ▬ ▬ •|
 |  0|   Zee-ro     |▬ ▬ ▬ ▬ ▬|
 
- 
-
- 
-
-**Section 1 References**
-
-** **
+## Section 1 References
 
 <http://www.onlineconversion.com/>
 
- 
-
 1.1 Anon., "Weight Engineers Handbook", Society of Weight Engineers, P.O.Box 60024 Los Angeles, CA 90060,1976.
-
- 
 
 1.2 Anon., "Aeronautical Vestpocket Handbook", United Technologies Pratt & Whitney Canada, 1000 Marie Victorin Blvd. E. P.O.B. 10 Longueuil, Quebec Canada J4K 4X9.
 
- 
-
 1.3 Jones, J. P., Hawkins, G.A., "Engineering Thermodynamics" John Wiley & Sons, 1960.
-
- 
 
 1.4 Esbach, Ovid W., "Handbook of Engineering Fundamentals", John Wiley and Sons Inc., 1963.
 
- 
-
 1.5 Potter, M.C., Somerton, C.W., "Engineering Thermodynamics" Shaum's Outline Series, McGraw-Hill, Inc.,1993.
-
- 
 
 1.6 Abbott, M. M., Van Ness, H. C., "Thermodynamics", Shaum's Outline Series, McGraw-Hill, Inc., 1989.
 
- 
-
 1.7 Halliday, D., Resnick, R., "Fundamentals of Physics", John Wiley & Sons, New York, 1981.
-
- 
 
 1.8 Roberts, S.C., *Chapter 3 Aircraft Control Sytems* , "Aircraft Flying Qualities Testing", National Test Pilot School, 1997. P.O.B. 658, Mojave, CA, 93501.
 
- 
-
 1.9 Unit Conversion Website Link <http://www.digitaldutch.com/atmoscalc/>.
 
- 
-
-
-  [2]:  media/media/image2.png {width="6.5in" height="3.4063156167979in"}
-  [3]:  media/media/image3.png {width="6.5in" height="4.874305555555556in"}
-  [4]:  media/media/image4.png {width="0.7902777777777777in" height="0.6381944444444444in"}
-  [5]:  media/media/image5.png {width="0.8236111111111111in" height="2.3604166666666666in"}
-  [6]:  media/media/image6.png {width="2.470138888888889in" height="0.5in"}
-  [7]:  media/media/image7.png {width="1.58125in" height="0.5in"}
-  [8]:  media/media/image8.png {width="2.4881944444444444in" height="0.75in"}
-  [9]:  media/media/image9.png {width="0.78125in" height="0.27708333333333335in"}
-  [10]: media/media/image10.png {width="0.7402777777777778in" height="0.4861111111111111in"}
-  [11]: media/media/image11.png {width="0.6673611111111111in" height="0.4861111111111111in"}
-  [12]: media/media/image12.png {width="0.5006944444444444in" height="0.5in"}
-  [13]: media/media/image13.png {width="0.8548611111111111in" height="0.4305555555555556in"}
-  [14]: media/media/image14.png {width="0.6986111111111111in" height="0.4305555555555556in"}
-  [15]: media/media/image15.png {width="1.78125in" height="0.48541666666666666in"}
-  [16]: media/media/image16.png {width="1.2930555555555556in" height="0.48541666666666666in"}
-  [17]: media/media/image17.png {width="0.6958333333333333in" height="0.5in"}
-  [18]: media/media/image18.png {width="0.9152777777777777in" height="0.5548611111111111in"}
-  [19]: media/media/image19.png {width="1.8055555555555556in" height="0.48541666666666666in"}
-  [20]: media/media/image20.png {width="1.3055555555555556in" height="0.48541666666666666in"}
-  [21]: media/media/image21.png {width="0.8541666666666666in" height="0.42986111111111114in"}
-  [22]: media/media/image22.png {width="0.9152777777777777in" height="0.6381944444444444in"}
-  [23]: media/media/image23.png {width="0.8180555555555555in" height="0.5548611111111111in"}
-  [24]: media/media/image24.jpeg {width="6.08125in" height="8.9375in"}
+  [1002]:  media/01/image2.png {width="6.5in" height="3.4063156167979in"}
+  [1003]:  media/01/image3.png {width="6.5in" height="4.874305555555556in"}
+  [1004]:  media/01/image24.jpeg {width="6.08125in" height="8.9375in"}
