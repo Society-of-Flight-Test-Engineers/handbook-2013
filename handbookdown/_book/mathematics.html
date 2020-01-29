@@ -106,8 +106,9 @@
 <ul>
 <li class="chapter" data-level="2.1" data-path="mathematics.html"><a href="mathematics.html#algebra"><i class="fa fa-check"></i><b>2.1</b> Algebra</a>
 <ul>
-<li class="chapter" data-level="2.1.1" data-path="mathematics.html"><a href="mathematics.html#laws"><i class="fa fa-check"></i><b>2.1.1</b> LAWS</a></li>
-<li class="chapter" data-level="2.1.2" data-path="mathematics.html"><a href="mathematics.html#identities"><i class="fa fa-check"></i><b>2.1.2</b> IDENTITIES</a></li>
+<li class="chapter" data-level="2.1.1" data-path="mathematics.html"><a href="mathematics.html#laws"><i class="fa fa-check"></i><b>2.1.1</b> Laws</a></li>
+<li class="chapter" data-level="2.1.2" data-path="mathematics.html"><a href="mathematics.html#identities"><i class="fa fa-check"></i><b>2.1.2</b> Identities</a></li>
+<li class="chapter" data-level="2.1.3" data-path="mathematics.html"><a href="mathematics.html#equations"><i class="fa fa-check"></i><b>2.1.3</b> Equations</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -133,7 +134,7 @@
 <h2><span class="header-section-number">2.1</span> Algebra</h2>
 <p>(reference 2.1)</p>
 <div id="laws" class="section level3" number="2.1.1">
-<h3><span class="header-section-number">2.1.1</span> LAWS</h3>
+<h3><span class="header-section-number">2.1.1</span> Laws</h3>
 <table>
 <tbody>
 <tr class="odd">
@@ -152,7 +153,7 @@
 </table>
 </div>
 <div id="identities" class="section level3" number="2.1.2">
-<h3><span class="header-section-number">2.1.2</span> IDENTITIES</h3>
+<h3><span class="header-section-number">2.1.2</span> Identities</h3>
 <table>
 <colgroup>
 <col width="50%" />
@@ -258,29 +259,41 @@ log (6.54) = .8156 &amp;&amp;&amp;&amp;\\
 &amp; x &amp;= \frac{1.44}{-.1655} &amp;= \fbox{-8.701}
 \end{array}
 \]</span></p>
-<p> </p>
-<p><strong>EQUATIONS</strong></p>
-<p><strong>Quadratic</strong> Equation: for a<em>x</em><sup>2</sup> + b<em>x</em> + c =0</p>
-<p>(has two roots, both real or both complex)</p>
-<p><img src="media/02/image16.png" /></p>
-<p><strong>Cubic</strong> Equation: for y<sup>3</sup> + py<sup>2</sup> + qy + r = 0</p>
-<p>(has three roots, all real or one real &amp; two complex)</p>
-<p>let y = x –(p/3) to rewrite equation in form of <em>x</em><sup>3</sup> + a<em>x</em> + b = 0</p>
-<p>where a = (3q –p<sup>2</sup>)/3 and b = (2p<sup>3</sup> – 9pq – 27r)/27</p>
-<p>let <img src="media/02/image17.png" /></p>
+</div>
+<div id="equations" class="section level3" number="2.1.3">
+<h3><span class="header-section-number">2.1.3</span> Equations</h3>
+<p><strong>Quadratic Equation</strong></p>
+<p><span class="math display">\[ax^2 + bx + c =0\]</span></p>
+<p>Two roots, both real or both complex</p>
+<p><span class="math display">\[x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\]</span></p>
+<p><strong>Cubic Equation</strong></p>
+<p><span class="math display">\[y^3 + py^2 + qy + r = 0\]</span></p>
+<p>Three roots, all real or one real &amp; two complex</p>
+<p>Let <span class="math inline">\(y = x - \frac{p}{3}\)</span> to rewrite equation in form of <span class="math inline">\(x^3 + ax + b = 0\)</span></p>
+<p>where <span class="math inline">\(a = \frac{3q - p^2}{3}\)</span> and <span class="math inline">\(b = \frac{2p^3 - 9pq - 27r}{27}\)</span></p>
+<p>let</p>
+<p><span class="math display">\[ A = \sqrt[3]{-\frac{b}{2} + \sqrt{\frac{b^2}{4} + \frac{a^3}{27}}}\]</span></p>
 <p>and</p>
-<p><img src="media/02/image18.png" /></p>
-<p>then x<sub>1</sub> = A +B</p>
-<p>x<sub>2</sub> = -(A + B)/2 + {<span class="math display">\[-3\]</span><sup>1/2</sup>/2}(A – B)</p>
-<p>x<sub>3</sub> = -(A + B)/2 - {<span class="math display">\[-3\]</span><sup>1/2</sup>/2}(A – B)</p>
-<p>special cases…</p>
-<p>if (b<sup>2</sup>/4 + a<sup>3</sup>/27 &lt;0), then the real roots are</p>
-<p><em>x</em><sub>1,2,3</sub> = 2<span class="math display">\[-a/3\]</span><sup>1/2</sup>cos(φ/3 + 120<sup>o</sup>k)</p>
-<p>where k = 0,1,2</p>
-<p>and cosφ = +<span class="math display">\[(b^2^/4)/(-a^3^/27)\]</span><sup>1/ 2</sup> if b&lt;0</p>
-<p>or cosφ = -<span class="math display">\[(b^2^/4)/(-a^3^/27)\]</span><sup>1/ 2</sup> if b&gt;0</p>
-<p>if (b<sup>2</sup>/4 + a<sup>3</sup>/27 &gt;0) <span class="underline">and</span> a&gt;0, the single real root is</p>
-<p>x = 2<span class="math display">\[*a*/3\]</span><sup>1/2</sup> cot(2φ)</p>
+<p><span class="math display">\[B =\sqrt[3]{-\frac{b}{2} - \sqrt{\frac{b^2}{4} + \frac{a^3}{27}}} \]</span></p>
+<p>then</p>
+<p><span class="math display">\[
+\begin{align}
+x_1 &amp;= A + B\\
+x_2 &amp;= \frac{-(A + B)}{2} + \frac{\sqrt{-3}}{2} (A - B)\\
+x_3 &amp;= \frac{-(A + B)}{2} - \frac{\sqrt{-3}}{2} (A - B)
+\end{align}
+\]</span></p>
+<p>Special cases:</p>
+<p>If <span class="math inline">\(\frac{b^2}{4} + \frac{a^3}{27} &lt; 0\)</span>, then the real roots are</p>
+<p><span class="math display">\[x_{1,2,3} = 2 \sqrt{\frac{-a}{3}} cos \left( \frac{\phi}{3} + 120^{\circ} k \right)\]</span></p>
+<p>where <span class="math inline">\(k = 0,1,2\)</span></p>
+<p>and</p>
+<p><span class="math display">\[cos\phi = + \sqrt{\frac{ \frac{b^2}{4} }{ \frac{-a^3}{27} }} \;\;\;\textrm{if}\; b &lt; 0\]</span></p>
+<p>or</p>
+<p><span class="math display">\[cos\phi = - \sqrt{\frac{ \frac{b^2}{4} }{ \frac{-a^3}{27} }} \;\;\;\textrm{if}\; b &gt; 0\]</span></p>
+<p>If <span class="math inline">\(\frac{b^2}{4} + \frac{a^3}{27} &gt; 0\)</span> and <span class="math inline">\(a &gt; 0\)</span>, the single real root is</p>
+<p><span class="math display">\[x = 2 \sqrt{\frac{a}{3}} cot \left( 2\phi \right)\]</span></p>
+<p>where <span class="math inline">\(tan\phi = \sqrt[3]{tan\psi}\)</span></p>
 <p>where tan(φ) = <span class="math display">\[tan(ψ)\]</span><sup>1/3</sup></p>
 <p>and cot(2ψ) = +<span class="math display">\[(b^2^/4)/(-a^3^/27)\]</span><sup>1/ 2</sup> if b&lt;0</p>
 <p>or cot(2ψ) = -<span class="math display">\[(b^2^/4)/(-a^3^/27)\]</span><sup>1/ 2</sup> if b&gt;0</p>
