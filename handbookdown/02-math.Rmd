@@ -8,39 +8,39 @@
 
 | | |
 |:-|:-|
-|Commutative| $$\begin{align} a+b &= b+a\\ ab &= ba \end{align}$$|
-|Associative| $$a+(b+c) = (a+b)+c$$|
-|Distributive| $$a(b+c) = ab+ac$$|
+|Commutative| \[\begin{align} a+b &= b+a\\ ab &= ba \end{align}\]|
+|Associative| \[a+(b+c) = (a+b)+c\]|
+|Distributive| \[a(b+c) = ab+ac\]|
 
 ### Identities
 
 |Exponents|Logarithms^[If M, N,b are positive]|
 |:-:|:-:|
-| $$a^x a^y = a^{x+y}$$|  $$log_b{b} = 1$$ |
-|$$\left( ab \right) ^x = a^x b^x $$|$$log_b{1} = 0$$ |
-|$$\left( a^x \right) y = a^xy $$|$$ log_b \left( MN \right) = log_b{M} + log_b{N}$$|
-|$$a^{mn}  = \left( a^m \right) ^n $$|$$log_b \left( \frac{M}{N} \right) = log_b{M} - log_b{N}$$|
-|$$a^0 = 1$$^[If $a \neq 0$$] | $$log_b \left( M^p \right)   = p log_b{M}$$|
-|$$a^{-x} = \frac{1}{a^x} = \left( \frac{1}{a} \right)$$|$$log_b \left( \frac{1}{M} \right) = -log_b{M} $$ |
-|$$ \frac{a^x}{a^y} = a^{x-y} $$| $$ log_b{\sqrt[q]{M}} = \frac{1}{q} log_b{M} $$|
-|$$ \sqrt[x]{ab} = \left( \sqrt[x]{a} \right) \left( \sqrt[x]{b} \right) $$ | $$ log_b{M} = \left(log_c{M} \right) \left(log_b{c} \right)= \frac{log_c{M}}{log_c{b}} $$ |
-|$$ a^{\frac{x}{y}} = \sqrt[y]{a^x} = \left( \sqrt[y]{a} \right)^x $$ | |
-|$$ a^{\frac{1}{y}} = \sqrt[y]{a} $$ ||
-|$$ \left( \sqrt[x]{a} \right) \left( \sqrt[y]{a} \right) = a^{\left( \frac{1}{x} + \frac{1}{y} \right)} = \sqrt[xy]{a^{x+y}} $$||
-|$$ \sqrt{a} + \sqrt{b} = \sqrt{a + b + 2\sqrt{ab}}$$||
+|\[a^x a^y = a^{x+y}\]| \[log_b{b} = 1\]|
+|\[\left( ab \right) ^x = a^x b^x \]|\[log_b{1} = 0\]|
+|\[\left( a^x \right) y = a^xy \]|\[ log_b \left( MN \right) = log_b{M} + log_b{N}\]|
+|\[a^{mn}  = \left( a^m \right) ^n \]|\[log_b \left( \frac{M}{N} \right) = log_b{M} - log_b{N}\]|
+|\[a^0 = 1\]^[If \(a \neq 0\)] |\[log_b \left( M^p \right)   = p log_b{M}\]|
+|\[a^{-x} = \frac{1}{a^x} = \left( \frac{1}{a} \right)\]|\[log_b \left( \frac{1}{M} \right) = -log_b{M} \]|
+|\[ \frac{a^x}{a^y} = a^{x-y} \]|\[ log_b{\sqrt[q]{M}} = \frac{1}{q} log_b{M} \]|
+|\[ \sqrt[x]{ab} = \left( \sqrt[x]{a} \right) \left( \sqrt[x]{b} \right) \]|\[ log_b{M} = \left(log_c{M} \right) \left(log_b{c} \right)= \frac{log_c{M}}{log_c{b}} \]|
+|\[ a^{\frac{x}{y}} = \sqrt[y]{a^x} = \left( \sqrt[y]{a} \right)^x \]| |
+|\[ a^{\frac{1}{y}} = \sqrt[y]{a} \]||
+|\[ \left( \sqrt[x]{a} \right) \left( \sqrt[y]{a} \right) = a^{\left( \frac{1}{x} + \frac{1}{y} \right)} = \sqrt[xy]{a^{x+y}} \]||
+|\[ \sqrt{a} + \sqrt{b} = \sqrt{a + b + 2\sqrt{ab}}\]||
 
 
 Examples:
-$$
+\[
 \begin{array}{lllll}
 log (6.54) = .8156 &&&&\\
 & log (6540) &= log (6.54 \times 10^3 ) &= .8156 + 3 &= \fbox{3.8156}&\\
 & log (.6540) &= log (6.54 \times 10^{-1}) &= .8156 - 1 &= \fbox{9.8156 - 10}&\\
 & log (.0006540) &= log (6.54 \times 10^{-4}) &= .8156 - 4 &= \fbox{6.8156 - 10}&
 \end{array}
-$$
+\]
 
-$$
+\[
 \begin{array}{lllll}
 \textrm{calculate } 68.31 \times .2754 &&&&\\
 &log (68.31) &= 1.8354&&\\
@@ -48,96 +48,96 @@ $$
 &1.8354 +(-.56) &= 1.2745&&\\
 &log^{-1} (1.2745) &= \fbox{18.81}&&
 \end{array}
-$$
+\]
  
-$$
+\[
 \begin{array}{lllll}
 \textrm{calculate } (.6831)^{1.53} &&&&\\
 & log (.6831) &= -.1655&&\\
 & 1.53 \times -.1655 &= -.253&&\\
 & log^{-1} (-.253) &= \fbox{.5582}&&
 \end{array}
-$$
+\]
 
-$$
+\[
 \begin{array}{lllll}
 \textrm{calculate } (.6831)^{\frac{1}{5}} &&&&\\
 & log (.6831) &= -.1655&&\\
 & \frac{1}{5} \times -.1655 &= -.0331&&\\
 & log^{-1} (-.0331) &= \fbox{.9266}&&
 \end{array}
-$$
+\]
 
-$$
+\[
 \begin{array}{lllll}
-\textrm{solve for $x$ in $.6931^x = 27.54$}&&&&\\
+\textrm{solve for \(x\) in \(.6931^x = 27.54\) }&&&&\\
 & log (.6931^x) &= log (27.54)&&\\
 & x log (.6931) &= log (27.54)&&\\
 & x &= \frac{log (27.54 )}{log (.6931)}&&\\
 & x &= \frac{1.44}{-.1655} &= \fbox{-8.701}
 \end{array}
-$$
+\]
 
 ### Equations
 
 **Quadratic Equation**
 
-$$ax^2 + bx + c =0$$
+\[ax^2 + bx + c =0\]
 
 Two roots, both real or both complex
 
-$$x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+\[x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\]
 
 **Cubic Equation**
 
-$$y^3 + py^2 + qy + r = 0$$
+\[y^3 + py^2 + qy + r = 0\]
 
 Three roots, all real or one real & two complex
 
-Let $y = x - \frac{p}{3}$ to rewrite equation in form of $x^3 + ax + b = 0$
+Let \(y = x - \frac{p}{3}\) to rewrite equation in form of \(x^3 + ax + b = 0\) 
 
-where $a = \frac{3q - p^2}{3}$ and $b = \frac{2p^3 - 9pq - 27r}{27}$
+where \(a = \frac{3q - p^2}{3}\) and \(b = \frac{2p^3 - 9pq - 27r}{27}\) 
 
 let 
 
-$$ A = \sqrt[3]{-\frac{b}{2} + \sqrt{\frac{b^2}{4} + \frac{a^3}{27}}}$$
+\[ A = \sqrt[3]{-\frac{b}{2} + \sqrt{\frac{b^2}{4} + \frac{a^3}{27}}}\]
 
 and
 
-$$B =\sqrt[3]{-\frac{b}{2} - \sqrt{\frac{b^2}{4} + \frac{a^3}{27}}} $$
+\[B =\sqrt[3]{-\frac{b}{2} - \sqrt{\frac{b^2}{4} + \frac{a^3}{27}}} \]
 
 then 
 
-$$
+\[
 \begin{align}
 x_1 &= A + B\\
 x_2 &= \frac{-(A + B)}{2} + \frac{\sqrt{-3}}{2} (A - B)\\
 x_3 &= \frac{-(A + B)}{2} - \frac{\sqrt{-3}}{2} (A - B)
 \end{align}
-$$
+\]
 
 Special cases:
 
-If $\frac{b^2}{4} + \frac{a^3}{27} < 0$, then the real roots are
+If \(\frac{b^2}{4} + \frac{a^3}{27} < 0\) , then the real roots are
 
-$$x_{1,2,3} = 2 \sqrt{\frac{-a}{3}} cos \left( \frac{\phi}{3} + 120^{\circ} k \right)$$
+\[x_{1,2,3} = 2 \sqrt{\frac{-a}{3}} cos \left( \frac{\phi}{3} + 120^{\circ} k \right)\]
 
-where $k = 0,1,2$
+where \(k = 0,1,2\) 
 
 and 
 
-$$cos\phi = + \sqrt{\frac{ \frac{b^2}{4} }{ \frac{-a^3}{27} }} \;\;\;\textrm{if}\; b < 0$$
+\[cos\phi = + \sqrt{\frac{ \frac{b^2}{4} }{ \frac{-a^3}{27} }} \;\;\;\textrm{if}\; b < 0\]
 
 or 
 
-$$cos\phi = - \sqrt{\frac{ \frac{b^2}{4} }{ \frac{-a^3}{27} }} \;\;\;\textrm{if}\; b > 0$$
+\[cos\phi = - \sqrt{\frac{ \frac{b^2}{4} }{ \frac{-a^3}{27} }} \;\;\;\textrm{if}\; b > 0\]
 
 
-If $\frac{b^2}{4} + \frac{a^3}{27} > 0$ and $a > 0$, the single real root is
+If \(\frac{b^2}{4} + \frac{a^3}{27} > 0\) and \(a > 0\) , the single real root is
 
-$$x = 2 \sqrt{\frac{a}{3}} cot \left( 2\phi \right)$$
+\[x = 2 \sqrt{\frac{a}{3}} cot \left( 2\phi \right)\]
 
-where $tan\phi = \sqrt[3]{tan\psi}$
+where \(tan\phi = \sqrt[3]{tan\psi}\) 
 
 and cot(2ψ) = +\[(b^2^/4)/(-a^3^/27)\]^1/\ 2^ if b\<0
 

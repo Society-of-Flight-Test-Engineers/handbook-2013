@@ -252,7 +252,7 @@ log (6.54) = .8156 &amp;&amp;&amp;&amp;\\
 \]</span></p>
 <p><span class="math display">\[
 \begin{array}{lllll}
-\textrm{solve for $x$ in $.6931^x = 27.54$}&amp;&amp;&amp;&amp;\\
+\textrm{solve for \(x\) in \(.6931^x = 27.54\) }&amp;&amp;&amp;&amp;\\
 &amp; log (.6931^x) &amp;= log (27.54)&amp;&amp;\\
 &amp; x log (.6931) &amp;= log (27.54)&amp;&amp;\\
 &amp; x &amp;= \frac{log (27.54 )}{log (.6931)}&amp;&amp;\\
@@ -284,17 +284,16 @@ x_3 &amp;= \frac{-(A + B)}{2} - \frac{\sqrt{-3}}{2} (A - B)
 \end{align}
 \]</span></p>
 <p>Special cases:</p>
-<p>If <span class="math inline">\(\frac{b^2}{4} + \frac{a^3}{27} &lt; 0\)</span>, then the real roots are</p>
+<p>If <span class="math inline">\(\frac{b^2}{4} + \frac{a^3}{27} &lt; 0\)</span> , then the real roots are</p>
 <p><span class="math display">\[x_{1,2,3} = 2 \sqrt{\frac{-a}{3}} cos \left( \frac{\phi}{3} + 120^{\circ} k \right)\]</span></p>
 <p>where <span class="math inline">\(k = 0,1,2\)</span></p>
 <p>and</p>
 <p><span class="math display">\[cos\phi = + \sqrt{\frac{ \frac{b^2}{4} }{ \frac{-a^3}{27} }} \;\;\;\textrm{if}\; b &lt; 0\]</span></p>
 <p>or</p>
 <p><span class="math display">\[cos\phi = - \sqrt{\frac{ \frac{b^2}{4} }{ \frac{-a^3}{27} }} \;\;\;\textrm{if}\; b &gt; 0\]</span></p>
-<p>If <span class="math inline">\(\frac{b^2}{4} + \frac{a^3}{27} &gt; 0\)</span> and <span class="math inline">\(a &gt; 0\)</span>, the single real root is</p>
+<p>If <span class="math inline">\(\frac{b^2}{4} + \frac{a^3}{27} &gt; 0\)</span> and <span class="math inline">\(a &gt; 0\)</span> , the single real root is</p>
 <p><span class="math display">\[x = 2 \sqrt{\frac{a}{3}} cot \left( 2\phi \right)\]</span></p>
 <p>where <span class="math inline">\(tan\phi = \sqrt[3]{tan\psi}\)</span></p>
-<p>where tan(φ) = <span class="math display">\[tan(ψ)\]</span><sup>1/3</sup></p>
 <p>and cot(2ψ) = +<span class="math display">\[(b^2^/4)/(-a^3^/27)\]</span><sup>1/ 2</sup> if b&lt;0</p>
 <p>or cot(2ψ) = -<span class="math display">\[(b^2^/4)/(-a^3^/27)\]</span><sup>1/ 2</sup> if b&gt;0</p>
 <p>if (b<sup>2</sup>/4 + a<sup>3</sup>/27 =0), the three real roots are</p>
@@ -624,26 +623,26 @@ x_3 &amp;= \frac{-(A + B)}{2} - \frac{\sqrt{-3}}{2} (A - B)
 <p>The body can be equivalent to a maneuvering aircraft.</p>
 <p><img src="media/02/image65.png" /></p>
 <p><img src="media/02/image66.png" /></p>
-<p><strong>Section 2.6 Statistics</strong> (reference 2.6)</p>
-<p><strong>Definitions:</strong></p>
+<p><strong>Section 2.6 Probability and Statistics</strong> (reference 2.6) #raw</p>
+<p><strong><em>Definitions:</em></strong></p>
 <p>Population: The set of all possible observations</p>
 <p>Sample: Any subset of a population</p>
 <p>Homogeneous Sample: The sample comes from 1 population only</p>
 <p>Random Sample: Equal probability of selecting any member of the population Independence (of events A and B): P(A and B) = P(A)*P(B)</p>
-<p>Sample and Population Mean (Average value):</p>
-<p><img src="media/02/image67.png" /></p>
+<p>Sample and Population Mean (Average value):
+<span class="math display">\[\mu = \bar{x} = \frac{1}{N} \sum_{i=1}^N{x_i} \]</span></p>
 <p>Mode (Most commonly occurring value in a sample)</p>
 <p>Median (middle value, 50th percentile. Half of the sample values are greater and half are smaller)</p>
-<p>Deviation (from the mean value):</p>
-<p><img src="media/02/image68.png" /></p>
-<p>Population Variance (from the mean value):</p>
-<p><img src="media/02/image69.png" /></p>
-<p>Population Standard Deviation (from the mean value):</p>
-<p><img src="media/02/image70.png" /></p>
-<p>Sample Standard Deviation (from the mean value):</p>
-<p><img src="media/02/image71.png" /></p>
-<p><strong>Discrete Probability Distributions:</strong></p>
-<p><strong>Binomial:</strong> N independent events, each having probability <em>p</em> of success, and1-<em>p</em> of failure. For example, tossing a fair coin N times where <em>p =</em> the probability of getting a head on any toss. If the random variable x indicates the number of heads in N=2 tosses, then P(x=0) = 1/4, P(x=1) = 1/2, P(x=2) = 1/4. If N=4, then the probabilities are illus trated in the following graph:</p>
+<p>Deviation:
+<span class="math display">\[d_i = x_i - \bar{x} \]</span></p>
+<p>Population Variance:
+<span class="math display">\[\sigma^2 =  \frac{1}{N} \sum_{i=1}^N{(x_i - \bar{x}})^2 = \frac{1}{N} \sum_{i=1}^N{d_i^2}\]</span></p>
+<p>Population Standard Deviation (square root of variance):
+<span class="math display">\[\sigma = \sqrt{\frac{1}{N} \sum_{i=1}^N{(x_i - \bar{x}})^2} \]</span></p>
+<p>Sample Standard Deviation:
+<span class="math display">\[s = \sqrt{\frac{1}{N-1} \sum_{i=1}^N{(x_i - \bar{x}})^2} \]</span></p>
+<p><strong><em>Discrete Probability Distributions:</em></strong></p>
+<p>****Binomial:**** N independent events, each having probability <em>p</em> of success, and1-<em>p</em> of failure. For example, tossing a fair coin N times where <em>p =</em> the probability of getting a head on any toss. If the random variable x indicates the number of heads in N=2 tosses, then P(x=0) = 1/4, P(x=1) = 1/2, P(x=2) = 1/4. If N=4, then the probabilities are illus trated in the following graph:</p>
 <p><img src="media/02/image72.png" /></p>
 <p>As N approaches infinity ...</p>
 <p> </p>
@@ -1003,7 +1002,7 @@ cosh at</th>
 <hr />
 <ol start="2">
 <li id="fn2"><p>If M, N,b are positive<a href="mathematics.html#fnref2" class="footnote-back">↩︎</a></p></li>
-<li id="fn3"><p>If <span class="math inline">\(a \neq 0\)</span>$<a href="mathematics.html#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>If <span class="math inline">\(a \neq 0\)</span><a href="mathematics.html#fnref3" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
