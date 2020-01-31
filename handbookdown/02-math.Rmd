@@ -799,9 +799,9 @@ The body can be equivalent to a maneuvering aircraft.
 
 ![][2065]
 
-**Section 2.6 Statistics** (reference 2.6)
+**Section 2.6 Probability and Statistics** (reference 2.6) #raw
 
-**Definitions:**
+***Definitions:***
 
 Population: The set of all possible observations
 
@@ -812,32 +812,27 @@ Homogeneous Sample: The sample comes from 1 population only
 Random Sample: Equal probability of selecting any member of the population Independence (of events A and B): P(A and B) = P(A)\*P(B)
 
 Sample and Population Mean (Average value):
-
-![][2066]
+\[\mu = \bar{x} = \frac{1}{N} \sum_{i=1}^N{x_i} \]
 
 Mode (Most commonly occurring value in a sample)
 
 Median (middle value, 50th percentile. Half of the sample values are greater and half are smaller)
 
-Deviation (from the mean value):
+Deviation:
+\[d_i = x_i - \bar{x} \]
 
-![][2067]
+Population Variance:
+\[\sigma^2 =  \frac{1}{N} \sum_{i=1}^N{(x_i - \bar{x}})^2 = \frac{1}{N} \sum_{i=1}^N{d_i^2}\]
 
-Population Variance (from the mean value):
+Population Standard Deviation (square root of variance):
+\[\sigma = \sqrt{\frac{1}{N} \sum_{i=1}^N{(x_i - \bar{x}})^2} \]
 
-![][2068]
+Sample Standard Deviation:
+\[s = \sqrt{\frac{1}{N-1} \sum_{i=1}^N{(x_i - \bar{x}})^2} \]
 
-Population Standard Deviation (from the mean value):
+***Discrete Probability Distributions:***
 
-![][2069]
-
-Sample Standard Deviation (from the mean value):
-
-![][2070]
-
-**Discrete Probability Distributions:**
-
-**Binomial:** N independent events, each having probability *p* of success, and1-*p* of failure. For example, tossing a fair coin N times where *p =* the probability of getting a head on any toss. If the random variable x indicates the number of heads in N=2 tosses, then P(x=0) = 1/4, P(x=1) = 1/2, P(x=2) = 1/4. If N=4, then the probabilities are illus trated in the following graph:
+****Binomial:**** N independent events, each having probability *p* of success, and1-*p* of failure. For example, tossing a fair coin N times where *p =* the probability of getting a head on any toss. If the random variable x indicates the number of heads in N=2 tosses, then P(x=0) = 1/4, P(x=1) = 1/2, P(x=2) = 1/4. If N=4, then the probabilities are illus trated in the following graph:
 
 ![][2071]
 
