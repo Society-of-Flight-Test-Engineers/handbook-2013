@@ -23,7 +23,7 @@ Exponent  Prefix  Abbreviation
 10^-1^    deci    d
 10^-2^    centi   c
 10^-3^    milli   m
-10^-6^    micro   $\mu$
+10^-6^    micro   \(\mu\) 
 10^-9^    nano    n
 10^-12^   pico    p
 10^-15^   femto   f
@@ -34,7 +34,7 @@ Exponent  Prefix  Abbreviation
 | **Angles**               | circles        | 1              | circumferences                       |
 |                          | circles        | 12             | signs                                |
 |                          | circles        | 21,600         | minutes                              |
-|                          | circles        | 2$\pi$             | radians                              |
+|                          | circles        | 2\(\pi\)             | radians                              |
 |                          | circles        | 360            | degrees                              |
 |                          | degrees        | .01111         | quadrants                            |
 |                          | degrees        | 3600           | seconds                              |
@@ -44,7 +44,7 @@ Exponent  Prefix  Abbreviation
 |                          | quadrants      | 90             | degrees                              |
 |                          | radians        | 57.2958        | degrees                              |
 |                          | revolutions    | 360            | degrees                              |
-|^[solid angle measurement]| sphere         | 4$\pi$         | steradians |
+|^[solid angle measurement]| sphere         | 4\(\pi\)         | steradians |
 |                          |                |                |                                      |
 | **Angular Acceleration** | rev/min^2^     | 0.001745       | rad/sec^2^                           |
 |                          |                |                |                                      |
@@ -131,7 +131,7 @@ Exponent  Prefix  Abbreviation
 |                   | thermies           | 4.1868x10^6^  | Joules           |
 |                   | watt-seconds       | 0.73756       | foot-pounds      |
 |                   |                    |               |                  |
-| **Force**^[Converting between force and mass (e.g. kg force to kg mass or pound force to pound mass) uses $g = 32.174 \frac{ft}{s^2}$] | dynes                 | 3.597x10^-5^    | ounces       |
+| **Force**^[Converting between force and mass (e.g. kg force to kg mass or pound force to pound mass) uses \(g = 32.174 \frac{ft}{s^2}\)] | dynes                 | 3.597x10^-5^    | ounces       |
 |                   | **kilograms-force**   | **9.80665**     | **Newtons**  |
 |                   | kiloponds             | 9.80665         | Newtons      |
 |                   | kip (kilopound-force) | 4,448.221       | Newtons      |
@@ -146,7 +146,7 @@ Exponent  Prefix  Abbreviation
 |                                                     | **Liter (jet A)** | **1.794** | **pounds**            |
 |                                                     |                   |           |                       |
 | **Illumination**                                    | candles           | 1         | lumens/steradian      |
-|                                                     | candles/cm^2^     | $\pi$     | lamberts              |
+|                                                     | candles/cm^2^     | \(\pi\)     | lamberts              |
 |                                                     | candlepower       | 12.566    | lumens                |
 |                                                     | foot-candles      | 1         | lumens/ft^2^          |
 |                                                     | foot-candles      | 10.764    | lux                   |
@@ -383,71 +383,71 @@ Exponent  Prefix  Abbreviation
 
 | Uppercase                   |                           | Lowercase                   |                           | Name    | Say         |
 |-----------------------------|---------------------------|-----------------------------|---------------------------|---------|-------------|
-| $Α$                         | Α                         | $\alpha$                    | \\alpha                   | Alpha   | æl-fə       |
-| $Β$                         | Β                         | $\beta$                     | \\beta                    | Beta    | bei-tə      |
-| $\Gamma$ or $\varGamma$     | \\Gamma or \\varGamma     | $\gamma$                    | \\gamma                   | Gamma   | gæ-mə       |
-| $\Delta$ or $\varDelta$     | \\Delta or \\varDelta     | $\delta$                    | \\delta                   | Delta   | del-tə      |
-| $Ε$                         | Ε                         | $\epsilon$ or $\varepsilon$ | \\epsilon or \\varepsilon | Epsilon | eps-ill-aan |
-| $Ζ$                         | Ζ                         | $\zeta$                     | \\zeta                    | Zeta    | zei-tə      |
-| $Η$                         | Η                         | $\eta$                      | \\eta                     | Eta     | ei-tə       |
-| $\Theta$ or $\varTheta$     | \\Theta or \\varTheta     | $\theta$ or $\vartheta$     | \\theta or \\vartheta     | Theta   | thei-tə     |
-| $Ι$                         | Ι                         | $\iota$                     | \\iota                    | Iota    | aai-oh-tə   |
-| $Κ$                         | Κ                         | $\kappa$ or $\varkappa$     | \\kappa or \\varkappa     | Kappa   | kæ-pə       |
-| $\Lambda$ or $\varLambda$   | \\Lambda or \\varLambda   | $\lambda$                   | \\lambda                  | Lambda  | læm-də      |
-| $M$                         | M                         | $\mu$                       | \\mu                      | Mu      | myoo        |
-| $Ν$                         | Ν                         | $\nu$                       | \\nu                      | Nu      | nyoo        |
-| $\Xi$ or $\varXi$           | \\Xi or \\varXi           | $\xi$                       | \\xi                      | Xi      | ksaai       |
-| $Ο$                         | Ο                         | $ο$                         | ο                         | Omicron | oh-mə-kraan |
-| $\Pi$ or $\varPi$           | \\Pi or \\varPi           | $\pi$ or $\varpi$           | \\pi or \\varpi           | Pi      | paai        |
-| $P$                         | P                         | $\rho$ or $\varrho$         | \\rho    or \\varrho      | Rho     | roh         |
-| $\Sigma$ or $\varSigma$     | \\Sigma or \\varSigma     | $\sigma$ or $\varsigma$     | \\sigma or \\varsigma     | Sigma   | sig-mə      |
-| $Τ$                         | Τ                         | $\tau$                      | \\tau                     | Tau     | taa’u       |
-| $\Upsilon$ or $\varUpsilon$ | \\Upsilon or \\varUpsilon | $\upsilon$                  | \\upsilon                 | Upsilon | oops-ill-on |
-| $\Phi$ or $\varPhi$         | \\Phi or \\varPhi         | $\phi$ or $\varphi$         | \\phi   or \\varphi       | Phi     | faai        |
-| $Χ$                         | Χ                         | $\chi$                      | \\chi                     | Chi     | kaai        |
-| $\Psi$ or $\varPsi$         | \\Psi or \\varPsi         | $\psi$                      | \\psi                     | Psi     | psaai       |
-| $\Omega$ or $\varOmega$     | \\Omega or \\varOmega     | $\omega$                    | \\omega                   | Omega   | oh-meg-ə    |
+| \(Α\)                         | Α                         | \(\alpha\)                    | \\alpha                   | Alpha   | æl-fə       |
+| \(Β\)                         | Β                         | \(\beta\)                     | \\beta                    | Beta    | bei-tə      |
+| \(\Gamma\) or \(\varGamma\)     | \\Gamma or \\varGamma     | \(\gamma\)                    | \\gamma                   | Gamma   | gæ-mə       |
+| \(\Delta\) or \(\varDelta\)     | \\Delta or \\varDelta     | \(\delta\)                    | \\delta                   | Delta   | del-tə      |
+| \(Ε\)                         | Ε                         | \(\epsilon\) or \(\varepsilon\) | \\epsilon or \\varepsilon | Epsilon | eps-ill-aan |
+| \(Ζ\)                         | Ζ                         | \(\zeta\)                     | \\zeta                    | Zeta    | zei-tə      |
+| \(Η\)                         | Η                         | \(\eta\)                      | \\eta                     | Eta     | ei-tə       |
+| \(\Theta\) or \(\varTheta\)     | \\Theta or \\varTheta     | \(\theta\) or \(\vartheta\)     | \\theta or \\vartheta     | Theta   | thei-tə     |
+| \(Ι\)                         | Ι                         | \(\iota\)                     | \\iota                    | Iota    | aai-oh-tə   |
+| \(Κ\)                         | Κ                         | \(\kappa\) or \(\varkappa\)     | \\kappa or \\varkappa     | Kappa   | kæ-pə       |
+| \(\Lambda\) or \(\varLambda\)   | \\Lambda or \\varLambda   | \(\lambda\)                   | \\lambda                  | Lambda  | læm-də      |
+| \(M\)                         | M                         | \(\mu\)                       | \\mu                      | Mu      | myoo        |
+| \(Ν\)                         | Ν                         | \(\nu\)                       | \\nu                      | Nu      | nyoo        |
+| \(\Xi\) or \(\varXi\)           | \\Xi or \\varXi           | \(\xi\)                       | \\xi                      | Xi      | ksaai       |
+| \(Ο\)                         | Ο                         | \(ο\)                         | ο                         | Omicron | oh-mə-kraan |
+| \(\Pi\) or \(\varPi\)           | \\Pi or \\varPi           | \(\pi\) or \(\varpi\)           | \\pi or \\varpi           | Pi      | paai        |
+| \(P\)                         | P                         | \(\rho\) or \(\varrho\)         | \\rho    or \\varrho      | Rho     | roh         |
+| \(\Sigma\) or \(\varSigma\)     | \\Sigma or \\varSigma     | \(\sigma\) or \(\varsigma\)     | \\sigma or \\varsigma     | Sigma   | sig-mə      |
+| \(Τ\)                         | Τ                         | \(\tau\)                      | \\tau                     | Tau     | taa’u       |
+| \(\Upsilon\) or \(\varUpsilon\) | \\Upsilon or \\varUpsilon | \(\upsilon\)                  | \\upsilon                 | Upsilon | oops-ill-on |
+| \(\Phi\) or \(\varPhi\)         | \\Phi or \\varPhi         | \(\phi\) or \(\varphi\)         | \\phi   or \\varphi       | Phi     | faai        |
+| \(Χ\)                         | Χ                         | \(\chi\)                      | \\chi                     | Chi     | kaai        |
+| \(\Psi\) or \(\varPsi\)         | \\Psi or \\varPsi         | \(\psi\)                      | \\psi                     | Psi     | psaai       |
+| \(\Omega\) or \(\varOmega\)     | \\Omega or \\varOmega     | \(\omega\)                    | \\omega                   | Omega   | oh-meg-ə    |
 
 ## Greek Symbols Used for Aircraft
 
 |Symbol|Used For|
 |:-|:-|
-|$\alpha$       |angle of attack (degrees or radians)|
-|$\alpha_{\tau}$    |tail angle of attack|
-|$\beta$       |angle of sideslip (degrees)|
-|$\gamma$       |flight path angle relative to horizontal|
-|$\gamma$       |specific heat ratio (1.4 for air)|
-|$\delta$       |relative pressure ratio ($\frac{P_a}{P_0}$)|
-|$\delta_a$    |aileron deflection angle|
-|$\delta_r$    |rudder deflection angle|
-|$\delta_e$    |elevator deflection angle|
-|$\varepsilon$       |downwash angle at tail (degrees)|
-|$\zeta$       |damping ratio|
-|$\eta$       |efficiency|
-|$\theta$       |body axis/pitch angle|
-|$\theta$       |relative temperature ratio, *T~a~*/*T~o~*|
-|$\iota$       |angle of incidence|
-|$\iota_F$  |thrust angle of incidence|
-|$\iota_T$*  |horizontal tail angle of incidence|
-|$\lambda$       |pressure lag constant|
-|$\Lambda$       |wing sweep angle|
-|$\mu$   |coefficient of absolute viscosity =$\rho \nu$|
-|$\mu$   |Mach cone angle|
-|$\nu$       |kinematic viscosity =$\mu / g$|
-|$\pi$   |nondimensional parameter|
-|$\rho$       |density|
-|$\rho_a$  |ambient air density|
-|$\rho_0$  |standard atmospheric density (slugs/ft^3 )|
-|$\sigma$       |air density ratio $(\rho_{\alpha} / \rho_o)$|
-|$\sigma_{cr}$   |critical density|
-|$\tau$       |shear stress (pounds per square inch) psi|
-|$\tau_R$    |Roll Mode Time Constant (sec)|
-|$\phi$       |bank angle (degrees)|
-|$\psi$       |aircraft heading (degrees)|
-|$\omega$       |frequency|
-|$\omega$       |rotational velocity (radians per second)|
-|$\omega_d$ |damped natural frequency|
-|$\omega_n$  |natural undamped frequency|
+|\(\alpha\)       |angle of attack (degrees or radians)|
+|\(\alpha_{\tau}\)    |tail angle of attack|
+|\(\beta\)       |angle of sideslip (degrees)|
+|\(\gamma\)       |flight path angle relative to horizontal|
+|\(\gamma\)       |specific heat ratio (1.4 for air)|
+|\(\delta\)       |relative pressure ratio ( \(\frac{P_a}{P_0}\))|
+|\(\delta_a\)    |aileron deflection angle|
+|\(\delta_r\)    |rudder deflection angle|
+|\(\delta_e\)    |elevator deflection angle|
+|\(\varepsilon\)       |downwash angle at tail (degrees)|
+|\(\zeta\)       |damping ratio|
+|\(\eta\)       |efficiency|
+|\(\theta\)       |body axis/pitch angle|
+|\(\theta\)       |relative temperature ratio, *T~a~*/*T~o~*|
+|\(\iota\)       |angle of incidence|
+|\(\iota_F\)  |thrust angle of incidence|
+|\(\iota_T\)*  |horizontal tail angle of incidence|
+|\(\lambda\)       |pressure lag constant|
+|\(\Lambda\)       |wing sweep angle|
+|\(\mu\)   |coefficient of absolute viscosity =\(\rho \nu\)|
+|\(\mu\)   |Mach cone angle|
+|\(\nu\)       |kinematic viscosity =\(\mu / g\)|
+|\(\pi\)   |nondimensional parameter|
+|\(\rho\)       |density|
+|\(\rho_a\)  |ambient air density|
+|\(\rho_0\)  |standard atmospheric density (slugs/ft^3 )|
+|\(\sigma\)       |air density ratio \((\rho_{\alpha} / \rho_o)\)|
+|\(\sigma_{cr}\)   |critical density|
+|\(\tau\)       |shear stress (pounds per square inch) psi|
+|\(\tau_R\)    |Roll Mode Time Constant (sec)|
+|\(\phi\)       |bank angle (degrees)|
+|\(\psi\)       |aircraft heading (degrees)|
+|\(\omega\)       |frequency|
+|\(\omega\)       |rotational velocity (radians per second)|
+|\(\omega_d\) |damped natural frequency|
+|\(\omega_n\)  |natural undamped frequency|
 
 ## Common Subscripts
 
@@ -562,29 +562,29 @@ Exponent  Prefix  Abbreviation
 |cm |centimeters|
 |cos |cosine|
 |cot |cotangent|
-|$C_{l \beta}$ |(dihedral) rolling moment due to sideslip|
-|$C_{l \delta a}$ |aileron power coefficient|
-|$Cm_q$ |pitch damping coefficient|
-|$Cm_{\alpha}$ |longitudinal static stability coefficient|
-|$Cm_{\delta e}$ |elevator power coefficient|
-|$Cn$ |yawing moment coefficient|
-|$Cn_r$ |yaw damping coefficient|
+|\(C_{l \beta}\) |(dihedral) rolling moment due to sideslip|
+|\(C_{l \delta a}\) |aileron power coefficient|
+|\(Cm_q\) |pitch damping coefficient|
+|\(Cm_{\alpha}\) |longitudinal static stability coefficient|
+|\(Cm_{\delta e}\) |elevator power coefficient|
+|\(Cn\) |yawing moment coefficient|
+|\(Cn_r\) |yaw damping coefficient|
 |cnst |constant|
-|$Cn_{\beta}$ |directional stability coefficient|
-|$Cn_{\delta a}$ |adverse yaw coefficient|
-|$Cn_{\delta r}$ |rudder power coefficient|
+|\(Cn_{\beta}\) |directional stability coefficient|
+|\(Cn_{\delta a}\) |adverse yaw coefficient|
+|\(Cn_{\delta r}\) |rudder power coefficient|
 |COTS |commercial, off--the-shelf|
 |CP |center of pressure|
-|$C_P$ |propeller power coefficient|
+|\(C_P\) |propeller power coefficient|
 |CPU |central processing unit|
-|$c_r$ |wing root chord|
+|\(c_r\) |wing root chord|
 |CRM |crew resource management|
-|$c_t$ |wing tip chord|
+|\(c_t\) |wing tip chord|
 |CTF |combined test force|
 |CY |calendar year|
-|$C_Y$ |side force coefficient|
-|$C_{Y_{\beta}}$ |side force due to sideslip coefficient|
-|$C_{Y_{\delta r}}$ |side force due to rudder coefficient|
+|\(C_Y\) |side force coefficient|
+|\(C_{Y_{\beta}}\) |side force due to sideslip coefficient|
+|\(C_{Y_{\delta r}}\) |side force due to rudder coefficient|
 |D |diameter|
 |D |drag|
 |D/A |digital/analog|
@@ -605,9 +605,9 @@ Exponent  Prefix  Abbreviation
 |DTC |data transfer cartridge|
 |DTIC |Defense Technical Information Center|
 |*e* |Oswald efficiency factor|
-|$e$ |natural mathematical constant = 2.718281828459|
+|\(e\) |natural mathematical constant = 2.718281828459|
 |E |energy|
-|E |lift-to-drag ratio ($C_L / C_D$, $L/D$)|
+|E |lift-to-drag ratio ( \(C_L / C_D\) , \(L/D\) )|
 |EAS |equivalent airspeed|
 |EC |electronic combat|
 |ECCM |electronic counter countermeasures|
@@ -619,7 +619,7 @@ Exponent  Prefix  Abbreviation
 |ELINT |electronic intelligence|
 |ELV |expendable launch vehicle|
 |EM |electromagnetic|
-|$E_{\rm{max}}$ |maximum lift-to-drag ratio|
+|\(E_{\rm{max}}\) |maximum lift-to-drag ratio|
 |EMC |electromagnetic compatibility|
 |EMI |electromagnetic interference|
 |EMP |electromagnetic pulse|
@@ -638,14 +638,14 @@ Exponent  Prefix  Abbreviation
 |^o^*F* |degrees Fahrenheit|
 |*f* |frequency\...hertz (originally cycles per second)|
 |F.S. |fuselage station|
-|$F_a$ |aileron force|
+|\(F_a\) |aileron force|
 |FAA |Federal Aviation Administration|
 |FAR |Federal Aviation Regulation|
 |FCF |functional check flight|
 |FDC |flight data computer|
-|$F_e$ |elevator force|
-|$F_{ex}$ |excess thrust|
-|$F_g$ |gross thrust|
+|\(F_e\) |elevator force|
+|\(F_{ex}\) |excess thrust|
+|\(F_g\) |gross thrust|
 |FL |flight level|
 |FLIP |flight information publication|
 |FLIR |forward-looking infrared|
@@ -654,7 +654,7 @@ Exponent  Prefix  Abbreviation
 |FMS |flight management system|
 |FMS |foreign military sales|
 |*Fn* |net thrust|
-|$Fn / \delta$ |corrected thrust parameter|
+|\(Fn / \delta\) |corrected thrust parameter|
 |FOM |figure of merit|
 |FOT&E |follow-on test & evaluation|
 |FOUO |for official use only|
@@ -759,7 +759,7 @@ Exponent  Prefix  Abbreviation
 |Log |common log, to the base 10|
 |LOS |line of sight|
 |*l*~t~ |distance from *cg* to tail\'s aerodynamic cent|
-|$L_{\delta a} |rolling moment due to aileron deflection|
+|\(L_{\delta a} |rolling moment due to aileron deflection|
 |*M* |moment (ft-lbs)|
 |*M* |Mach number|
 |m |mass|
@@ -838,7 +838,7 @@ Exponent  Prefix  Abbreviation
 |psi |pounds per square inch|
 |P~T~ |total pressure|
 |PW |pulse width|
-|*Q* or *q* |dynamic pressure = $0.5 \rho V^2$|
+|*Q* or *q* |dynamic pressure = \(0.5 \rho V^2\) |
 |q |aircraft pitch rate|
 |Q |engine torque|
 |q~c~ |impact pressure (*P~t~* − *P~a~*)|
@@ -997,7 +997,7 @@ Exponent  Prefix  Abbreviation
 |W |weight|
 |w |component of velocity along aircraft\'s Z-axis|
 |WDL |weapon data link|
-|$W / \delta$ |weight-to-pressure ratio|
+|\(W / \delta\) |weight-to-pressure ratio|
 |W~f~ |fuel weight|
 |WGS-84 |World Geodetic System, 1984|
 |WI |watch item|
@@ -1005,7 +1005,7 @@ Exponent  Prefix  Abbreviation
 |WOW |weight on wheels|
 |WPT |waypoint|
 |wrt |with respect to|
-|$\frac{\dot{W_f}}{\delta \sqrt{\theta}}$ |corrected fuel flow parameter|
+|\(\frac{\dot{W_f}}{\delta \sqrt{\theta}}\) |corrected fuel flow parameter|
 |W/S |wing loading|
 |W~f~ |fuel flow (lb/hr)|
 |x |aircraft longitudinal axis, a line running through the nose & tail|
@@ -1015,14 +1015,14 @@ Exponent  Prefix  Abbreviation
 |Y |force along y-axis|
 |Y-code |encrypted P-code|
 |z |aircraft vertical or yaw axis, a line perpendicular to the longitudinal and lateral axes|
-|$\Delta H_{ic}$ |altimeter instrument correction|
-|$\Delta H_{pc}$ |altimeter position error correction|
-|$\Delta P_{p}$ |pitot pressure error|
-|$\Delta P_{s}$ |static pressure error|
-|$\Delta V_{c}$ |scale attitude correction to airspeed|
-|$\Delta V_{ic}$ |instrument correction to airspeed indicator|
-|$\Delta V_{pc}$ |correction for airspeed position error|
-|$\infty$ |infinity, or freestream conditions|
+|\(\Delta H_{ic}\) |altimeter instrument correction|
+|\(\Delta H_{pc}\) |altimeter position error correction|
+|\(\Delta P_{p}\) |pitot pressure error|
+|\(\Delta P_{s}\) |static pressure error|
+|\(\Delta V_{c}\) |scale attitude correction to airspeed|
+|\(\Delta V_{ic}\) |instrument correction to airspeed indicator|
+|\(\Delta V_{pc}\) |correction for airspeed position error|
+|\(\infty\) |infinity, or freestream conditions|
 
 ## Sign Conventions (raw)
 
@@ -1151,7 +1151,7 @@ The rationale within the wind tunnel community is also logical: any control surf
 
 Since the above rationale defines downward deflection as positive for both ailerons, a measurement of rolling moments requires calculation of the differential aileron deflection. This rationale does not, however, specifically dictate whether a "positive" differential deflection should generate right wing down (RWD) or left wing down (LWD) moments. Differential aileron can be calculated as either.
 
- $\delta_{a} = \frac{\delta_{\text{aR}} - \delta_{\text{aL}}}{2}$ or $\delta_{a} = \frac{\delta_{\text{aL}} - \delta_{\text{aR}}}{2}$
+ $\delta_{a} = \frac{\delta_{\text{aR}} - \delta_{\text{aL}}}{2}\) or \(\delta_{a} = \frac{\delta_{\text{aL}} - \delta_{\text{aR}}}{2}\)
 
 Selection of the RWD convention is obvious from the flight tester's viewpoint since deflections that generate right rolls are positive. An alternative interpretation is that a positive differential aileron deflection is one that lifts the positive (right) wing lifts more than the left (LWD).
 
@@ -1373,181 +1373,181 @@ An **Isentropic** process has constant entropy.
 
 | Symbol | Use |
 |:-------|:----|
-|$A$ | area|
-|$C$ | compressibility factor |
-|$c$ | speed of sound|
-|$E = u$ | specific internal energy (e.g. Btu/lb)|
-|$H$ | specific **enthalpy**  (e.g. Btu/lb)|
-|$J$ | Joule |
-|$Q$ | energy supplied to a system or region as heat (e.g. Btu/lb)|
-|$P$ | absolute pressure (e.g. lbs/ft^2^)|
-|$V$ | specific volume (e.g. ft^3^/lb)|
-|$W$ | work (+ if entering)|
-|$\overline{V}$| velocity|
-|$\Delta$ | change ( final - initial value)|
-|$Z$ | altitude|
-|$S$ | specific entropy  |
-|$R$ | gas constant for each gas (for air = 287 J/kg/K = 53.35 ft-lb/lb~m~R)|
-|$\overline{R}$ |  universal gas constant = 8.314 kJ/kmol/K = 1545 ft lb/lbmol/R|
-|$M$ | molar mass (for air = 28.97 kg/kmol)|
-|$N$ | number of moles|
-|$\rho$ | density|
+|\(A\) | area|
+|\(C\) | compressibility factor |
+|\(c\) | speed of sound|
+|\(E = u\) | specific internal energy (e.g. Btu/lb)|
+|\(H\) | specific **enthalpy**  (e.g. Btu/lb)|
+|\(J\) | Joule |
+|\(Q\) | energy supplied to a system or region as heat (e.g. Btu/lb)|
+|\(P\) | absolute pressure (e.g. lbs/ft^2^)|
+|\(V\) | specific volume (e.g. ft^3^/lb)|
+|\(W\) | work (+ if entering)|
+|\(\overline{V}\)| velocity|
+|\(\Delta\) | change ( final - initial value)|
+|\(Z\) | altitude|
+|\(S\) | specific entropy  |
+|\(R\) | gas constant for each gas (for air = 287 J/kg/K = 53.35 ft-lb/lb~m~R)|
+|\(\overline{R}\) |  universal gas constant = 8.314 kJ/kmol/K = 1545 ft lb/lbmol/R|
+|\(M\) | molar mass (for air = 28.97 kg/kmol)|
+|\(N\) | number of moles|
+|\(\rho\) | density|
 
 ### Thermodynamic Laws
 
-The **First Law of Thermodynamics** shows that the net amount of energy added to a system equals the net change in energy within the system (Principle of Conservation of Energy): $W + Q = (E_2 - E_1)$
+The **First Law of Thermodynamics** shows that the net amount of energy added to a system equals the net change in energy within the system (Principle of Conservation of Energy): \(W + Q = (E_2 - E_1)\) 
 
-The **Second Law of Thermodynamics** states that entropy increases during any irreversible process: $S_2 > S_1$
+The **Second Law of Thermodynamics** states that entropy increases during any irreversible process: \(S_2 > S_1\) 
 
 **Ideal Gas Equation of State** (a.k.a. Perfect gas law): 
 
-$$
+\[
 \begin{align}
 PV&=RT\\
 P &= \rho RT\\
 PV &= mRT\\
 PV &= nRT
-\end{align}$$
+\end{align}\]
 
-$$\delta = \sigma \theta$$  
+\[\delta = \sigma \theta\]  
 where   
-$$
+\[
 \begin{align}
 \delta &= \frac{P_a}{P_0}\\
 \sigma &= \frac{\rho_a}{\rho_0}\\
 \theta &= \frac{T_a}{T_0}
-\end{align}$$
+\end{align}\]
 
 **Boyle's Law** states that when the temperature of a given mass of gas is held constant, then the volume and pressure vary inversely.
 
-$$P_1 V_1 = P_2 V_2$$
+\[P_1 V_1 = P_2 V_2\]
 
-where $$T_1 = T_2$$
+where \[T_1 = T_2\]
 
 **Charles' Law** states that when a volume of a given mass is held constant, then the change in pressure of the gas is proportional to the change in temperature.
 
-$$\frac{P_1}{T_1} = \frac{P_2}{T_2}$$ 
+\[\frac{P_1}{T_1} = \frac{P_2}{T_2}\] 
 
-where $$V_1 = V_2$$
+where \[V_1 = V_2\]
 
 **Real Gas** Relation: 
 
-$$PV = CRT$$
+\[PV = CRT\]
 
 For reversible processes:
 
-$$
+\[
 \begin{align}
 W &= −\int_{}^{}{PdV}\\
 Q &= \int_{}^{}{TdS}
 \end{align}
-$$
+\]
 
 For reversible adiabatic processes:
 
-$$
+\[
 \begin{align}
 \frac{P_1}{P_2} &= \Bigg[ \frac{V_2}{V_1} \Bigg]^{\gamma} \\
 \frac{T_1}{T_2} &= \Bigg[ \frac{V_2}{V_1} \Bigg]^{\gamma - 1} \\
 \frac{T_1}{T_2} &= \Bigg[ \frac{P_1}{P_2} \Bigg]^{\frac{\gamma - 1}{\gamma}} \\
 \frac{P_1}{P_2} &= \Bigg[ \frac{\rho_1}{\rho_2} \Bigg]^{\gamma} \\
 \end{align}
-$$
+\]
 
 Steady Flow Energy Equation
 
-$$
+\[
 Q + H_1 + \frac{\overline{V}_1^2}{2g} + Z_1 = W + H_2 + \frac{\overline{V}_2^2}{2g} + Z_2
-$$ 
+\] 
 
 Bernoulli Equation:
 
-$$
+\[
 \frac{\Delta P}{\rho g} + \frac{\overline{V}_2^2 - \overline{V}_1^2}{2g} + \Delta Z = 0
-$$
+\]
 
 Flow per Unit Area:
 
-$$
+\[
 \frac{W}{A} = \sqrt{\frac{\gamma}{R} \frac{P}{\sqrt{T}} \frac{M}{
   \Big( 1 + \frac{\gamma - 1}{2} M^2 \Big) \frac{\gamma + 1}{2 (\gamma - 1)}
 }}
-$$
+\]
 
 Velocity of sound in a perfect gas:
 
-$$
+\[
 c = \sqrt{\gamma g R T}
-$$
+\]
 
 Development of **Specific Heat Relations**:
 
 Specific heat at constant pressure (for air = 1004.76 J/kg/K)
-$$
+\[
 c_p \equiv \frac{\partial H}{\partial T} \Bigg\rvert_{P}
-$$
+\]
   
 Specific heat at constant volume (for air = 717.986 J/kg/K)
-$$
+\[
 c_v \equiv \frac{\partial u}{\partial T} \Bigg\rvert_{V}
-$$
+\]
 
 Ratio of specific heats
-$$
+\[
 \kappa = \gamma \equiv \frac{c_p}{c_v}
-$$
+\]
 
-Enthalpy equation in differential form is: $$dH = du + d(PV)$$
+Enthalpy equation in differential form is: \[dH = du + d(PV)\]
 
 Substituting definitions and ideal gas law gives
 
-$$
+\[
 \begin{align}
 c_p \, dT &= c_v \, dT + R \, dt\\
 &\;\;\mathrm{or} \\
 c_p &= c_v + R
 \end{align}
-$$
+\]
 
 Rearranging gives
 
-$$
+\[
 \begin{align}
 c_p &= R \frac{\kappa}{\kappa - 1}\\
 &\;\;\mathrm{and} \\
 c_v &= R \frac{1}{\kappa - 1}
 \end{align}
-$$
+\]
 
 Development of **Poisson's Equation**:
 
-1) From the 1st law: $$W+Q = E_2-E_1$$
+1) From the 1st law: \[W+Q = E_2-E_1\]
 
-2) Substitution for each term gives: $$T\,dS - P\,dV = du$$
+2) Substitution for each term gives: \[T\,dS - P\,dV = du\]
 
-3) Divide through by T: $$dS = \frac{du}{T} + \frac{P\,dV}{T}$$
+3) Divide through by T: \[dS = \frac{du}{T} + \frac{P\,dV}{T}\]
 
-4) Recall: $$du = c_v\,dT$$ and $$PV = RT$$
+4) Recall: \[du = c_v\,dT\] and \[PV = RT\]
 
-5) Substitution gives: $$dS = c_v\frac{dT}{T} + R \frac{dV}{V}$$
+5) Substitution gives: \[dS = c_v\frac{dT}{T} + R \frac{dV}{V}\]
 
-6) Assume constant specific heat and integrate: $$s_2 - s_1 = c_v\,ln \frac{T_2}{T_1} + R\,ln \frac{V_2}{V_1}$$
+6) Assume constant specific heat and integrate: \[s_2 - s_1 = c_v\,ln \frac{T_2}{T_1} + R\,ln \frac{V_2}{V_1}\]
 
-7) Assuming a reversible adiabatic process: $$c_v\,ln \frac{T_2}{T_1} = - R\,ln \frac{V_2}{V_1}$$
+7) Assuming a reversible adiabatic process: \[c_v\,ln \frac{T_2}{T_1} = - R\,ln \frac{V_2}{V_1}\]
 
-8) Substitute $$c_v = R\frac{1}{\kappa - 1}$$ to get: $$\frac{T_2}{T_1} = \Big( \frac{V_1}{V_2} \Big)^{\kappa -1}$$
+8) Substitute \[c_v = R\frac{1}{\kappa - 1}\] to get: \[\frac{T_2}{T_1} = \Big( \frac{V_1}{V_2} \Big)^{\kappa -1}\]
 
-9) Differentiate H: $$dH = du + P\,dV + V\,dP$$
+9) Differentiate H: \[dH = du + P\,dV + V\,dP\]
 
-10) Substitution into step \#2: $$T\,dS = dH - V\,dP$$
+10) Substitution into step \#2: \[T\,dS = dH - V\,dP\]
 
-11) Integrate: $$s_2 - s_1 = c_p\,ln \frac{T_2}{T_1} + R\,ln \frac{P_2}{P_1}$$
+11) Integrate: \[s_2 - s_1 = c_p\,ln \frac{T_2}{T_1} + R\,ln \frac{P_2}{P_1}\]
 
-12) Assuming a reversible adiabatic process: $$c_p\,ln \frac{T_2}{T_1} = - R\,ln \frac{P_2}{P_1}$$
+12) Assuming a reversible adiabatic process: \[c_p\,ln \frac{T_2}{T_1} = - R\,ln \frac{P_2}{P_1}\]
 
-13) Substitute $$c_v = R\frac{\kappa}{\kappa - 1}$$ to get: $$\frac{T_2}{T_1} = \Big( \frac{P_2}{P_1} \Big)^{\frac{\kappa -1}{\kappa}}$$
+13) Substitute \[c_v = R\frac{\kappa}{\kappa - 1}\] to get: \[\frac{T_2}{T_1} = \Big( \frac{P_2}{P_1} \Big)^{\frac{\kappa -1}{\kappa}}\]
 
-14) Combine steps \#8, \#13 to get: $$\frac{P_2}{P_1}=\Big( \frac{V_1}{V_2} \Big)^{\kappa}$$ or $$(PV)^{\kappa} = \mathrm{const}$$
+14) Combine steps \#8, \#13 to get: \[\frac{P_2}{P_1}=\Big( \frac{V_1}{V_2} \Big)^{\kappa}\] or \[(PV)^{\kappa} = \mathrm{const}\]
 
 ## Mechanics Relations 
 
@@ -1555,34 +1555,34 @@ Development of **Poisson's Equation**:
 
 | Symbol   | Use                                                             |
 |:-------|:----|
-| $a$        |  linear acceleration                                |
-| $a_r$     | centripetal (radial) acceleration                               |
-| $a_T$     | tangential acceleration                                         |
-| $F$        | force                                                           |
-| $g$        | acceleration due to gravity |
-| $G$        | moment                                                          |
-| $H$        | angular momentum                                          |
-| $H$        | height                                                          |
-| $Hp$       | horsepower                                 |
-| $I$        | rotational moment of inertia (see section 10)                   |
-| $J$        | impulse = change in momentum                                    |
-| $k$        | radius of gyration                                              |
-| $m$        | mass                                                            |
-| $N_r$     | radial load factor                                     |
-| $P$        | power                                                |
-| $L$        | linear momentum                                             |
-| $Q$        | moment (a.k.a. torque)                                          |
-| $r$        | radius                                                          |
-| $S$        | distance, displacement                                          |
-| $s$        | seconds                                                         |
-| $t$        | time                                                            |
-| $V$        | true inertial velocity                                          |
-| $V_o$     | initial inertial velocity                                       |
-| $W$        | work                                 |
-| $q$        | angular displacement                                            |
-| $\mathit{Vol}$    | volume                                                          |
-| $\omega$        | angular velocity (radians/second)                               |
-| $\dot{\omega}$        | angular acceleration                                            |
+| \(a\)        |  linear acceleration                                |
+| \(a_r\)     | centripetal (radial) acceleration                               |
+| \(a_T\)     | tangential acceleration                                         |
+| \(F\)        | force                                                           |
+| \(g\)        | acceleration due to gravity |
+| \(G\)        | moment                                                          |
+| \(H\)        | angular momentum                                          |
+| \(H\)        | height                                                          |
+| \(Hp\)       | horsepower                                 |
+| \(I\)        | rotational moment of inertia (see section 10)                   |
+| \(J\)        | impulse = change in momentum                                    |
+| \(k\)        | radius of gyration                                              |
+| \(m\)        | mass                                                            |
+| \(N_r\)     | radial load factor                                     |
+| \(P\)        | power                                                |
+| \(L\)        | linear momentum                                             |
+| \(Q\)        | moment (a.k.a. torque)                                          |
+| \(r\)        | radius                                                          |
+| \(S\)        | distance, displacement                                          |
+| \(s\)        | seconds                                                         |
+| \(t\)        | time                                                            |
+| \(V\)        | true inertial velocity                                          |
+| \(V_o\)     | initial inertial velocity                                       |
+| \(W\)        | work                                 |
+| \(q\)        | angular displacement                                            |
+| \(\mathit{Vol}\)    | volume                                                          |
+| \(\omega\)        | angular velocity (radians/second)                               |
+| \(\dot{\omega}\)        | angular acceleration                                            |
 
 ### Newton's Laws
 
@@ -1592,15 +1592,15 @@ Development of **Poisson's Equation**:
 
 **2^nd^ Law**:
 
-"The change in motion is proportional to the motive force impressed and is made in the direction of the straight line in which that force is impressed" (motion defined as velocity *x* quantity of matter or linear momentum, $m\,V$).
+"The change in motion is proportional to the motive force impressed and is made in the direction of the straight line in which that force is impressed" (motion defined as velocity *x* quantity of matter or linear momentum, \(m\,V\) ).
 
-$$
+\[
 dF = \frac{d(mV)}{dt}
-$$
+\]
 
-For constant mass in rectilinear motion: $$F = ma$$
+For constant mass in rectilinear motion: \[F = ma\]
 
-For constant mass distribution in curvilinear motion: $$G = \dot{\omega} I$$
+For constant mass distribution in curvilinear motion: \[G = \dot{\omega} I\]
 
 **3^rd^ Law**:
 
@@ -1610,52 +1610,52 @@ For constant mass distribution in curvilinear motion: $$G = \dot{\omega} I$$
 
 | Rectilinear motion |                         | Curvilinear motion   |                                     |
 |:-------------------|:------------------------|:---------------------|:------------------------------------|
-| displacement       | $$S$$                     | angular displacement | $$\theta$$                            |
-| velocity           | $$V = \frac{dS}{dt}$$     | angular velocity     | $$\omega = \frac{d\theta}{dt}$$       |
-| acceleration       | $$a = \frac{dV}{dt}$$     | angular acceleration | $$\dot{\omega} = \frac{d\omega}{dt}$$ |
-| inertia            | $$m$$                     | rotational inertia   | $$I = \int_{}^{}{r^2 dm}$$            |
-| momentum           | $$L = m\,V$$              | angular momentum     | $$H = I \omega$$                      |
-| force              | $$F = m\,a$$              | torque               | $$Q = I \dot{\omega}$$                |
-| work               | $$W = \int_{}^{}{F\,dS}$$ | work                 | $$W = \int_{}^{}{Qd\theta}$$          |
-| power              | $$P = F\,V$$              | power                | $$P = Q \omega$$                      |
-| kinetic energy     | $$\frac{1}{2} mV^2$$      | kinetic energy       | $$\frac{1}{2} I \omega^2$$            |
-| potential energy   | $$mgH$$                   | n/a                  |                                     |
+| displacement       | \[S\]                     | angular displacement | \[\theta\]                            |
+| velocity           | \[V = \frac{dS}{dt}\]     | angular velocity     | \[\omega = \frac{d\theta}{dt}\]       |
+| acceleration       | \[a = \frac{dV}{dt}\]     | angular acceleration | \[\dot{\omega} = \frac{d\omega}{dt}\] |
+| inertia            | \[m\]                     | rotational inertia   | \[I = \int_{}^{}{r^2 dm}\]            |
+| momentum           | \[L = m\,V\]              | angular momentum     | \[H = I \omega\]                      |
+| force              | \[F = m\,a\]              | torque               | \[Q = I \dot{\omega}\]                |
+| work               | \[W = \int_{}^{}{F\,dS}\] | work                 | \[W = \int_{}^{}{Qd\theta}\]          |
+| power              | \[P = F\,V\]              | power                | \[P = Q \omega\]                      |
+| kinetic energy     | \[\frac{1}{2} mV^2\]      | kinetic energy       | \[\frac{1}{2} I \omega^2\]            |
+| potential energy   | \[mgH\]                   | n/a                  |                                     |
 
 ### Planar Kinematics at Constant Acceleration
 
 | Rectilinear motion                                      | Curvilinear motion                                                                    |
 |---------------------------------------------------------|---------------------------------------------------------------------------------------|
-| $$V = V_0 + at$$                                          | $$\omega = \omega_0 + \dot{\omega} t$$                                                  |
-| $$V^2 = V_0^2 + 2aS$$                                     | $$\omega^2 = \omega_0^2 + 2 \dot{\omega}\theta$$                                        |
-| $$S = V_0 t + \frac{1}{2} a t^2$$                         | $$\theta = \omega_0 t + \frac{1}{2} \dot{\omega} t^2$$                                  |
-| $$S = \frac{1}{2}(V + V_0) t$$                            | $$\theta = \frac{1}{2}(\omega + \omega_0)t$$                                            |
-| $$S = \frac{\left( V^{2} - V_{0}^{2} \right)}{2a}$$       | $$\theta = \frac{\left( \omega^{2} - \omega_{0}^{2} \right)}{2\dot{\omega}}$$           |
-| $$t = \frac{- V_{0} + \sqrt{V_{0}^{2} + 2\text{aS}}}{a}$$ | $$t = \frac{- \omega_{0} + \sqrt{\omega_{0}^{2} - 2\dot{\omega}\theta}}{\dot{\omega}}$$ |
-| $$a = \frac{2\left( S - V_{0}t \right)}{t^{2}}$$          | $$\dot{\omega} = \frac{2(\theta - \omega_{0}t)}{t^{2}}$$                                |
+| \[V = V_0 + at\]                                          | \[\omega = \omega_0 + \dot{\omega} t\]                                                  |
+| \[V^2 = V_0^2 + 2aS\]                                     | \[\omega^2 = \omega_0^2 + 2 \dot{\omega}\theta\]                                        |
+| \[S = V_0 t + \frac{1}{2} a t^2\]                         | \[\theta = \omega_0 t + \frac{1}{2} \dot{\omega} t^2\]                                  |
+| \[S = \frac{1}{2}(V + V_0) t\]                            | \[\theta = \frac{1}{2}(\omega + \omega_0)t\]                                            |
+| \[S = \frac{\left( V^{2} - V_{0}^{2} \right)}{2a}\]       | \[\theta = \frac{\left( \omega^{2} - \omega_{0}^{2} \right)}{2\dot{\omega}}\]           |
+| \[t = \frac{- V_{0} + \sqrt{V_{0}^{2} + 2\text{aS}}}{a}\] | \[t = \frac{- \omega_{0} + \sqrt{\omega_{0}^{2} - 2\dot{\omega}\theta}}{\dot{\omega}}\] |
+| \[a = \frac{2\left( S - V_{0}t \right)}{t^{2}}\]          | \[\dot{\omega} = \frac{2(\theta - \omega_{0}t)}{t^{2}}\]                                |
 
 ### Curvilinear motion with constant acceleration and radius
 
 |                                                                   |
 |:---------------------------------------------------------------------------------------:|
-| $$r = \frac{V^2}{g N_r}$$                                                  |
-| $$V = \omega r$$                                        |
-| $$N_r = \frac{a_r}{g}$$                                  |
-| $$\omega = \frac{g N_r}{V}$$                                            |
-| $$\dot{\omega} = \frac{\dot{V}}{R}$$           |
-| $$a_r = r \omega^2 = \frac{V^2}{r}$$ |
-| $$a_{r} = \dot{\omega}r$$                                |
+| \[r = \frac{V^2}{g N_r}\]                                                  |
+| \[V = \omega r\]                                        |
+| \[N_r = \frac{a_r}{g}\]                                  |
+| \[\omega = \frac{g N_r}{V}\]                                            |
+| \[\dot{\omega} = \frac{\dot{V}}{R}\]           |
+| \[a_r = r \omega^2 = \frac{V^2}{r}\] |
+| \[a_{r} = \dot{\omega}r\]                                |
 
 ### Aircraft in level turn
 
 |                                                                   |
 |:---------------------------------------------------------------------------------------:|
-| $N_{zw}$ = load factor normal to flight path                                                  |
-| $r$ = turn radius                                       |
-| $\Omega$ = turn rate (rad/sec)                                 |
-| $$r = \frac{V^{2}}{g\sqrt{N_{\text{zw}}^{2} - 1}}$$                                            |
-| $$\omega = \frac{g\sqrt{N_{\text{zw}}^{2} - 1}}{V}$$           |
-| $$N_{zw} = \sqrt{\frac{\omega V}{g} + 1}$$ |
-| $$V$$ = inertial velocity                               | 
+| \(N_{zw}\) = load factor normal to flight path                                                  |
+| \(r\) = turn radius                                       |
+| \(\Omega\) = turn rate (rad/sec)                                 |
+| \[r = \frac{V^{2}}{g\sqrt{N_{\text{zw}}^{2} - 1}}\]                                            |
+| \[\omega = \frac{g\sqrt{N_{\text{zw}}^{2} - 1}}{V}\]           |
+| \[N_{zw} = \sqrt{\frac{\omega V}{g} + 1}\] |
+| \[V\] = inertial velocity                               | 
 
 ### Level Turn Kinematics Character
 
@@ -1669,26 +1669,26 @@ For bodies spinning about an axisymmetric axis
 
 | |
 |:-|
-|$\dot{\psi}$ = spin rate |
-|$\dot{\phi}$ = precession rate |
-|$\dot{\theta}$ = nutation rate |
+|\(\dot{\psi}\) = spin rate |
+|\(\dot{\phi}\) = precession rate |
+|\(\dot{\theta}\) = nutation rate |
 ||
-|$I_z$ = moment of inertia about spin axis |
-|$I_t$ = transverse moment of inertia about the spin point (perpendicular to spin axis) |
-|$I_{cg}$ = moment of inertia about the *cg* (perpendicular to spin axis) |
-|$M_x$ = moment about spin point (acting along plane that defines $\theta$) |
+|\(I_z\) = moment of inertia about spin axis |
+|\(I_t\) = transverse moment of inertia about the spin point (perpendicular to spin axis) |
+|\(I_{cg}\) = moment of inertia about the *cg* (perpendicular to spin axis) |
+|\(M_x\) = moment about spin point (acting along plane that defines \(\theta\) ) |
 
-For steady precession (constant $\dot{\theta}$, $\dot{\phi}$ , $\dot{\psi}$ )
+For steady precession (constant \(\dot{\theta}\), \(\dot{\phi}\) , \(\dot{\psi}\) )
 
-$$ \sum M_{x} = - I_{t}\dot{\phi^{2}}\sin\theta\cos\theta + I_{z}\dot{\theta}\sin\theta\left( \dot{\phi}\cos\theta + \dot{\psi} \right) $$
+\[ \sum M_{x} = - I_{t}\dot{\phi^{2}}\sin\theta\cos\theta + I_{z}\dot{\theta}\sin\theta\left( \dot{\phi}\cos\theta + \dot{\psi} \right) \]
 
 For torque free motion (gravity is only external force)
 
-$$\dot{\psi} = \frac{I_{cg} - I_{z}}{I_{z}}\dot{\phi}\cos\theta$$
+\[\dot{\psi} = \frac{I_{cg} - I_{z}}{I_{z}}\dot{\phi}\cos\theta\]
 
-note that $I_{cg} > I_z$ yields regular precession
+note that \(I_{cg} > I_z\) yields regular precession
 
-while $I_{cg} < I_z$ yields retrograde precession
+while \(I_{cg} < I_z\) yields retrograde precession
 
 ## International Phonetic Alphabet and Morse Code
 
