@@ -799,7 +799,7 @@ The body can be equivalent to a maneuvering aircraft.
 
 ![][2065]
 
-**Section 2.6 Probability and Statistics** (reference 2.6) #raw
+**Section 2.6 Probability and Statistics** (reference 2.6) # raw
 
 ***Definitions:***
 
@@ -832,20 +832,24 @@ Sample Standard Deviation:
 
 ***Discrete Probability Distributions:***
 
-****Binomial:**** N independent events, each having probability *p* of success, and1-*p* of failure. For example, tossing a fair coin N times where *p =* the probability of getting a head on any toss. If the random variable x indicates the number of heads in N=2 tosses, then P(x=0) = 1/4, P(x=1) = 1/2, P(x=2) = 1/4. If N=4, then the probabilities are illus trated in the following graph:
+***Uniform***
+The probability of any outcome in a given set is the same.  If there are \(N\) possible outcomes in a set, then the probability of a given outcome is \(p=1/N\). For example, when rolling a fair dice with \(N=6\) sides, the probability that the toss will result in any given side is \(p = 1/6\).
 
-![][2071]
+***Binomial***
+The probability that the random variable \(X = x\) in \(N\) independent events, each having probability \(p\) of success, and \(1-p\) of failure. 
+\[P(X = k) = \binom{N}{k}p^x (1-p)^{N-x}\] where
+\[\binom{N}{k} = \frac{N!}{k!(N-k)!}\].
 
-As N approaches infinity \...
+For example, tossing a fair coin N times where \(p = 1/2\) is the probability of getting a head on any toss.  If \(X\) indicates the number of heads in \(N\) tosses, then we have  \(P(X = x) = (1/2)^x (1/2)^{N-x}\). For \(N = 4\) we have the following table:
+|x |P(X=x)|
+|:-|:-|
+|\(0\)| \(1/16\)|
+|\(1\)| \(1/4\)|
+|\(3\)| \(3/8\)|
+|\(3\)| \(1/4\)|
+|\(4\)| \(1/16\)|
 
- 
-
-![][2072]
-
-So**,** the binomial distribution is the discrete case of the Normal distribution.
-
- 
-
+# raw
 **Continuous Distributions:** As the number of samples increases and the width of the Discrete sample intervals shrink to zero, discrete distributions become continuous.
 
  
