@@ -759,7 +759,7 @@ Exponent  Prefix  Abbreviation
 |Log |common log, to the base 10|
 |LOS |line of sight|
 |*l*~t~ |distance from *cg* to tail\'s aerodynamic cent|
-|\(L_{\delta a} |rolling moment due to aileron deflection|
+|\(L_{\delta a}\) |rolling moment due to aileron deflection|
 |*M* |moment (ft-lbs)|
 |*M* |Mach number|
 |m |mass|
