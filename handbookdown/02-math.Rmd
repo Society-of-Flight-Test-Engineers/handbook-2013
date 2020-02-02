@@ -139,35 +139,45 @@ If \(\frac{b^2}{4} + \frac{a^3}{27} > 0\) and \(a > 0\) , the single real root i
 
 where \(tan\phi = \sqrt[3]{tan\psi}\) 
 
-and cot(2ψ) = +\[(b^2^/4)/(-a^3^/27)\]^1/\ 2^ if b\<0
+and 
 
-or cot(2ψ) = -\[(b^2^/4)/(-a^3^/27)\]^1/\ 2^ if b\>0
+\[ cot \left( 2\psi \right) = + \sqrt{\frac{ \frac{b^2}{4} }{ \frac{-a^3}{27} }} \;\;\;\textrm{if}\; b < 0\]
 
-if (b^2^/4 + a^3^/27 =0), the three real roots are
+or 
 
-x~1~ = -2\[-a/3\]^1/2^, x~2~ =x~3~ = +\[-a/3\] ^/2\ 1^if b\>0
+\[ cot \left( 2\psi \right) = - \sqrt{\frac{ \frac{b^2}{4} }{ \frac{-a^3}{27} }} \;\;\;\textrm{if}\; b < 0\]
 
-or x~1~ = +2\[-a/3\]^1/2^, x~2~ =x~3~ = -\[-a/3\]^1/2^ if b\<0
+If \( \frac{b^2}{4} + \frac{a^3}{27} = 0 \), the three real roots are
 
-Quartic (biquadratic) Equation: for y^4^ + py^3^ + qy^2^ + ry + s = 0
+\[ x_{1} = -2 \sqrt{\frac{-a}{3}}, \; x_{2,3} = +\sqrt{\frac{-a}{3}} \;\;\; \textrm{if} \; b > 0 \]
 
-let \[y = x-(p/4)\] to rewrite equation as x^4^ + ax^2^ + bx + c =0
+or 
 
-let *l, m, n* denote roots of the following resolvent cubic...
+\[ x_{1} = +2 \sqrt{\frac{-a}{3}}, \; x_{2,3} = -\sqrt{\frac{-a}{3}} \;\;\; \textrm{if} \; b < 0 \]
 
-t^3^ + at^2^/2 + (a^2^ --4c)t/16 -- b^2^/64 = 0
 
-the roots of the quartic are
+**Quartic (biquadratic) Equation**
 
-x~1~ = +\[l\]^1/2^ + \[*m*\]^1/2^ + \[*n*\]^1/2^
+For 
 
-x~2~ = +\[l\]^1/2^ - \[*m*\]^1/2^ - \[*n*\]^1/2^
+\[y^4 + py^3 + qy^2 + ry + s = 0\]
 
-x~3~ = -\[l\]^1/2^ + \[*m*\]^1/2^ - \[*n*\]^1/2^
+let \(y = x - \frac{p}{4}\) to rewrite equation as 
 
-x~4~ = -\[l\]^1/2^ - \[*m*\]^1/2^ + \[*n*\]^1/2^
+\[x^4 + ax^2 + bx + c = 0\]
 
-**INTEREST AND ANNUITIES**
+let \(l\), \(m\), \(n\) denote roots of the following resolvent cubic:
+
+\[ t^3 + \frac{1}{2} at^2 +  \frac{1}{16} \left( a^2 - 4c \right) t -  \frac{1}{64}b^2 = 0 \]
+
+The roots of the quartic are
+
+\[ x_{1} = + \sqrt{l} + \sqrt{m} + \sqrt{n} \]
+\[ x_{2} = + \sqrt{l} - \sqrt{m} - \sqrt{n} \]
+\[ x_{3} = - \sqrt{l} + \sqrt{m} - \sqrt{n} \]
+\[ x_{4} = - \sqrt{l} - \sqrt{m} + \sqrt{n} \]
+
+### Interest And Annuities
 
 (reference 2.3)
 
@@ -273,11 +283,11 @@ x, y, z = distances along orthogonal coordinate system
 
 triangle: A = bh/2
 
-sum of interior angles = 180^o^
+sum of interior angles = 180^o
 
 rectangle: A = bh
 
-sum of interior angles = 360^o^
+sum of interior angles = 360^o
 
 parallelogram (opposite sides parallel):
 
@@ -289,17 +299,17 @@ A = h(a+b)/2
 
 pentagon, hexagon, and other *n*-sided polygons:
 
-A = {(na^2^)cot (180^o^/n)}/4
+A = {(na^2)cot (180^o/n)}/4
 
-R = radius of circumscribed circle = {a csc(180^o^/n)}/2
+R = radius of circumscribed circle = {a csc(180^o/n)}/2
 
-r = radius of inscribed circle = {a cot(180^o^/n)}/2
+r = radius of inscribed circle = {a cot(180^o/n)}/2
 
-β = 180^o^ --(360^o^/n)
+β = 180^o --(360^o/n)
 
-sum of interior angles = *n*180^o^-360^o^
+sum of interior angles = *n*180^o-360^o
 
-circle: A = πR^2^
+circle: A = πR^2 
 
 C = 2πR = πD
 
@@ -307,29 +317,29 @@ perimeter of *n*-sided polygon inscribed within a circle
 
 = 2*n*Rsin(π/*n*)
 
-area of circumscribed polygon = *n*R^2^tan(π/*n*)
+area of circumscribed polygon = *n*R^2 tan(π/*n*)
 
-area of inscribed polygon = {*n*R^2^sin(2π/*n*)}/2
+area of inscribed polygon = {*n*R^2 sin(2π/*n*)}/2
 
-equation for a circle with center at (h,k): R^2^ = (x-h)^2^ + (y-k)^2^
+equation for a circle with center at (h,k): R^2  = (x-h)^2  + (y-k)^2 
 
 ellipse: f = semimajor axis
 
 g = semiminor axis
 
-e = eccentricity = (\[f^2^-g^2^\]^1/2^)/f
+e = eccentricity = (\[f^2 -g^2 \]^1/2^)/f
 
 A = πef
 
 equation for ellipse with center at (h,k):
 
-(x-h)^2^/f^2^ + (y-k)^2^/g^2^ = 1 if major axis along x-axis
+(x-h)^2 /f^2  + (y-k)^2 /g^2  = 1 if major axis along x-axis
 
-or (y-k)^2^/f^2^ + (x-h)^2^/g^2^ = 1 if major axis along y-axis
+or (y-k)^2 /f^2  + (x-h)^2 /g^2  = 1 if major axis along y-axis
 
-distance from center to either focus = \[f^2^-g^2^\]^1/2^
+distance from center to either focus = \[f^2 -g^2 \]^1/2^
 
-latus rectum = (2g^2^)/a
+latus rectum = (2g^2 )/a
 
 parabola: p = distance from vertex to focus
 
@@ -337,11 +347,11 @@ e = eccentricity = 1
 
 equation for parabola with vertex at (h,k), focus at (h+p,k):
 
-(y-k)^2^ = 4j(x-h) [if]{.underline} (j\>0)
+(y-k)^2  = 4j(x-h) [if]{.underline} (j\>0)
 
 equation for parabola with vertex at (h,k), focus at (h,k+p):
 
-(x-h)^2^ = 4j(y-k) [if]{.underline} (j\<0)
+(x-h)^2  = 4j(y-k) [if]{.underline} (j\<0)
 
 ![][2021]
 
@@ -349,25 +359,25 @@ hyperbola: p = distance between center and vertex
 
 q = distance between center and conjugate axis
 
-e = eccentricity = (\[p^2^+q^2^\]^1/2^)/p
+e = eccentricity = (\[p^2 +q^2 \]^1/2^)/p
 
 equation for hyperbola centered at (h, k):
 
-(x-h)^2^/p^2^ -- (y-k)^2^/q^2^ = 1 [if]{.underline} (asymptotes slopes = +/- q/p)
+(x-h)^2 /p^2  -- (y-k)^2 /q^2  = 1 [if]{.underline} (asymptotes slopes = +/- q/p)
 
-or (y-k)^2^/p^2^ -- (x-h)^2^/q^2^ = 1 [if]{.underline} (asymptotes slopes = +/- p/q)
+or (y-k)^2 /p^2  -- (x-h)^2 /q^2  = 1 [if]{.underline} (asymptotes slopes = +/- p/q)
 
 ![][2022]
 
-sphere: A = 4πR^2^
+sphere: A = 4πR^2 
 
-V = 4πR^3^/3
+V = 4πR^3 /3
 
-equation for sphere centered at origin: x^2^+y^2^+z^2^ = R^2^
+equation for sphere centered at origin: x^2 +y^2 +z^2  = R^2 
 
-torus: A= 4π^2^Rρ
+torus: A= 4π^2 Rρ
 
-V = 2π^2^Rρ^2^
+V = 2π^2 Rρ^2 
 
 ρ = smaller radius
 
@@ -401,9 +411,9 @@ haversine α = hav α = (vers α )/2
 
 also defined are the following...
 
-hyperbolic sine of *x* = sinh *x* = (*e^x^ -- e^-x^*)/2
+hyperbolic sine of *x* = sinh *x* = (*e^x  -- e^{-x} *)/2
 
-hyperbolic cosine of *x* = cosh *x* = (*e^x^ + e^-x^*)/2
+hyperbolic cosine of *x* = cosh *x* = (*e^x  + e^{-x} *)/2
 
 hyperbolic tangent of *x* = tanh *x* = sinh *x*/cosh *x*
 
@@ -417,11 +427,11 @@ coth *x* = 1/tanh *x*
 
 Pythagorean Identities:
 
-sin^2^ α + cos^2^ α = 1
+sin^2  α + cos^2  α = 1
 
-1 + tan^2^ α = sec^2^ α
+1 + tan^2  α = sec^2  α
 
-1+ cot^2^ α = csc^2^ α
+1+ cot^2  α = csc^2  α
 
 Half Angle Identities:
 
@@ -441,15 +451,15 @@ Double-Angle Identities
 
 sin 2α = 2sin α cos α
 
-cos 2α = 2cos^2^ α --1 = 1-2sin^2^ α = cos^2^ α - sin^2^ α
+cos 2α = 2cos^2  α --1 = 1-2sin^2  α = cos^2  α - sin^2  α
 
-tan 2α = 2tan α /\[1-tan^2^ α\]
+tan 2α = 2tan α /\[1-tan^2  α\]
 
 n --Angle Identities:
 
-sin 3α == 3sin α -- 4sin^3^ α
+sin 3α == 3sin α -- 4sin^3  α
 
-cos 3α = 4cos^3^ α -- 3cos α
+cos 3α = 4cos^3  α -- 3cos α
 
 sin nα = 2sin (n-1)α cos α -- sin (n-2)α
 
@@ -487,11 +497,11 @@ tan α - tan β = \[sin (α - β)\]/\[cos α cos β\]
 
 cot α - cot β = -\[sin (α - β)\]/\[sin α sin β\]
 
-sin^2^ α -- sin^2^ β = sin (α+β) sin (α-β)
+sin^2  α -- sin^2  β = sin (α+β) sin (α-β)
 
-cos^2^ α -- cos^2^ β = -sin (α+β) sin (α-β)
+cos^2  α -- cos^2  β = -sin (α+β) sin (α-β)
 
-cos^2^ α -- sin^2^ β = cos (α+β) cos (α-β)
+cos^2  α -- sin^2  β = cos (α+β) cos (α-β)
 
 Power Identities:
 
@@ -505,21 +515,21 @@ cos α sin β = \[sin (α+β) - sin (α-β)\]/2
 
 tan α cot α = sin α csc α = cos α sec α = 1
 
-sin^2^ α = \[1-cos2α\]/2
+sin^2  α = \[1-cos2α\]/2
 
-cos^2^ α= \[1+cos2α\]/2
+cos^2  α= \[1+cos2α\]/2
 
-sin^3^ α = \[3 sin α-- sin 3α\]/4
+sin^3  α = \[3 sin α-- sin 3α\]/4
 
-cos^3^ α = \[3 cos α + cos 3α\]/4
+cos^3  α = \[3 cos α + cos 3α\]/4
 
-sin^4^ α = \[3 - 4cos 2α + cos 4α\]/8
+sin^4  α = \[3 - 4cos 2α + cos 4α\]/8
 
-cos^4^ α = \[3 + 4cos 2α + cos 4α\]/8
+cos^4  α = \[3 + 4cos 2α + cos 4α\]/8
 
-sin^5^ α = \[10sin α --5sin 3α +sin5α\]/16
+sin^5  α = \[10sin α --5sin 3α +sin5α\]/16
 
-cos^5^ α = \[10cos α + 5cos 3α + cos5α\]/16
+cos^5  α = \[10cos α + 5cos 3α + cos5α\]/16
 
 OBLIQUE TRIANGLES
 
@@ -529,13 +539,13 @@ Law of Sines: a/sin A = b/sinB = c/sinC
 
 Law of Cosines:
 
-a^2^ = b^2^ + c^2^ -- 2bc cos A
+a^2  = b^2  + c^2  -- 2bc cos A
 
-b^2^ = a^2^ + c^2^ -- 2ac cos B
+b^2  = a^2  + c^2  -- 2ac cos B
 
-c^2^ = a^2^ + b^2^ -- 2ab cos C
+c^2  = a^2  + b^2  -- 2ab cos C
 
-C = cos^-1^\[(a^2^+b^2^-c^2^)/2ab\]
+C = cos^{-1} \[(a^2 +b^2 -c^2 )/2ab\]
 
 ![][2024]
 
@@ -579,11 +589,11 @@ The **identity** (or [unit]{.underline}) matrix \[*I*\] occupies the same positi
 
 The identity \[*I*\] is a square matrix consisting of ones on the principle diagonal and zeros everywhere else; i.e.:
 
-*a* ⋅ *α*^−1^ = *α*^1−1^ = *α*^0^ = 1
+*a* ⋅ *α*^{-1}  = *α*^{1-1}  = *α*^{0}  = 1
 
-In the same way, the matrix \[*A*\]^-1^ is called the inverse matrix of \[*A*\] since:
+In the same way, the matrix \[*A*\]^{-1}  is called the inverse matrix of \[*A*\] since:
 
-\[*A*\]\[*A*\]^-1^ = \[*A*\]^-1^\[*A*\] = \[*A*\]^0^ = \[*I*\]
+\[*A*\]\[*A*\]^{-1}  = \[*A*\]^{-1} \[*A*\] = \[*A*\]^{0}  = \[*I*\]
 
 Cofactors and Determinates
 
@@ -617,11 +627,11 @@ given matrix \[*A*\]:
 
 **Step 1** Compute the determinant of \[*A*\]. This determinant is written \|*A*\|. If the determinant is zero or does not exist, the matrix \[*A*\] is defined as singular and an inverse cannot be found.
 
-**Step 2** Transpose matrix \[*A*\]. The resultant matrix is written \[*A*\]*^T^*.
+**Step 2** Transpose matrix \[*A*\]. The resultant matrix is written \[*A*\]*^T *.
 
 **Step 3** Replace each element a~ij~ of the transposed matrix by its cofactor *A~ij~*. This resulting matrix is defined as the adjoint of matrix \[*A*\] and is written Adj\[*A*\].
 
-**Step 4** Divide the adjoint matrix by the scalar value of the determinant of \[*A*\] which was computed in Step 1. The resulting matrix is the inverse and is written \[*A*\]^-1^.
+**Step 4** Divide the adjoint matrix by the scalar value of the determinant of \[*A*\] which was computed in Step 1. The resulting matrix is the inverse and is written \[*A*\]^{-1} .
 
 *Example:* Given the following set of simultaneous equations, solve for
 
@@ -637,7 +647,7 @@ This set of equations can be written as: \[*A*\]^ ^ \[*x*\] = \[*y*\]
 
 ![][2029]
 
-and solved as follows: \[*x*\] = \[*A*\]^−1^ \[*y*\]
+and solved as follows: \[*x*\] = \[*A*\]^{-1}  \[*y*\]
 
 Thus, the system can be solved for the values of *x*~1~, *x*~2~, and *x*~3~ by computing the inverse of \[*A*\].
 
@@ -651,7 +661,7 @@ Thus, the system can be solved for the values of *x*~1~, *x*~2~, and *x*~3~ by c
 
 ![][2030]
 
-**Step 3.** Determine the adjoint matrix by replacing each element in \[*A*\]*^T^* by its Cofactor.
+**Step 3.** Determine the adjoint matrix by replacing each element in \[*A*\]*^T * by its Cofactor.
 
 ![][2031]
 
@@ -1204,7 +1214,7 @@ Expressions containing exponential and logarithmic functions
 +---------------------------+-----------------------------------+
 | 1 (step function)         | 1/s (s\>0)                        |
 +---------------------------+-----------------------------------+
-| t                         | 1/s^2^ (s\>0)                     |
+| t                         | 1/s^2  (s\>0)                     |
 +---------------------------+-----------------------------------+
 | ![][2114]                  | ![][2115]                          |
 |                           |                                   |
@@ -1214,21 +1224,21 @@ Expressions containing exponential and logarithmic functions
 +---------------------------+-----------------------------------+
 | ![][2117]                  | (s\>0)                            |
 +---------------------------+-----------------------------------+
-| t^n-1/2^ (n=1,2,...)      | (s\>0)                            |
+| t^{n-\frac{1}{2}} (n=1,2,...)      | (s\>0)                            |
 +---------------------------+-----------------------------------+
-| e^at^                     | (s\>a)                            |
+| e^{at}                     | (s\>a)                            |
 +---------------------------+-----------------------------------+
-| te^at^                    | ![][2118] (s\>a)                   |
+| te^{at}                    | ![][2118] (s\>a)                   |
 +---------------------------+-----------------------------------+
-| t^n-1^e^ax^ (n=1, 2, ...) | ![][2119] (s\>a)                   |
+| t^{n-1} e^{ax} (n=1, 2, ...) | ![][2119] (s\>a)                   |
 +---------------------------+-----------------------------------+
 | sin at                    | ![][2120] (s\>0)                   |
 +---------------------------+-----------------------------------+
 | cos at                    | ![][2121] (s\>0)                   |
 +---------------------------+-----------------------------------+
-| e^bt^ sin at              | ![][2122] (s?b)                    |
+| e^{bt} sin at              | ![][2122] (s?b)                    |
 +---------------------------+-----------------------------------+
-| e^bt^ cos at              | ![][2123] (s\>b)                   |
+| e^{bt} cos at              | ![][2123] (s\>b)                   |
 +---------------------------+-----------------------------------+
 | x sin ax                  | ![][2124]![][2125] (s\>a)           |
 +---------------------------+-----------------------------------+
