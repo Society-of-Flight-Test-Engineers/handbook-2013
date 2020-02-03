@@ -183,59 +183,57 @@ The roots of the quartic are
 
 Amount:
 
-*P* principal at *i* interest for *n* time accumulates to amount *A~n~*:
+\(P\) principal at \(i\) interest for \(n\) time accumulates to amount \(A_{n}\).
 
-simple interest: *A~n~* *= P(1 + ni)*
+Simple interest: 
 
-at interest compounded each *n* interval: *A~n~* = *P(1 + i)^n^*
+\[A_{n} = P(1 + ni)\]
 
-at interest compounded *q* times per *n* interval: *A~n~* = *P(1 + r/q)^nq^*
+at interest compounded each \(n\) interval: 
 
-where *r* is the nominal (quoted) rate of interest
+\[A_{n} = P(1 + i)^n \]
+
+at interest compounded \(q\) times per \(n\) interval: 
+
+\[A_{n} = P(1 + \frac{r}{q})^{nq} \]
+
+where \(r\) is the nominal (quoted) rate of interest
 
 Effective Interest:
 
-The rate per time period at which interest is earned during each pe riod is called the effective rate *i*.
+The rate per time period at which interest is earned during each period is called the effective rate \(i\).
 
-*i = (1 + r/q)^q^ -1*
-
+\[i = \left( 1 + \frac{r}{q} \right)^q -1\]
  
 
-Solve above equations for *P* to determine investment required now to accumulate to amount *A~n~*
+Solve above equations for \(P\) to determine investment required now to accumulate to amount \(A_{n}\)
 
-True discount , *D* = *A~n~* -- *P*
+True discount, 
 
-* *
+\[D = A_{n} - P\]
+
 
 Annuities:
 
-rent *R* is consistent payment at each period *n*
+rent \(R\) is consistent payment at each period \(n\)
 
 let
 
-![][2018]
-
- 
+\[s_n \equiv \frac{\left( 1 + i \right)^n - 1}{i}\]
 
 and let
 
-![][2019]
+\[r_n \equiv \frac{1 - \left( 1 + i \right)^{-n}}{i} \]
 
- 
-
-then *A~n\ ~*= *Rs~n~*
-
- 
+then \(A_n = R\,s_{n}\)
 
 or
 
- ![][2020]
+\[n = \frac{\log \left( A_n + R \right) - \log R }{\log \left(1 + i \right)} \]
 
-present value of an annuity, *A* is the sum of the present values of all the future payments. *A = Rr~n~*
+Present value of an annuity, \(A\) is the sum of the present values of all the future payments. \(A = R\,r_{n}\)
 
-*~ ~*
-
-Monthly interet rate = MIR = (annual interest rate) /12
+Monthly interest rate = \(MIR = \frac{ \textrm{annual interest rate} }{12} \)
 
  
 
@@ -243,17 +241,17 @@ Month Term = \# months in loan
 
  
 
-Monthly payment = \[amount financed\]\* \[MIR/(1-{1+MIR}^-\#months^)\]
+Monthly payment = \( \left[ \textrm{amount financed} \right] \left[ \frac{MIR}{1 - \left( 1 + MIR \right)^{-\#months}} \right] \)
 
  
 
-Final value (*FV*) of an investment is a function of the initial principal invested (P), interest rate (*r --*expressed as .05 for *5%, .*1 for 10% etc.), time invested (*Y*- typically years), and compounding periods per year (*n* -- typically =1 for yearly or =12 for monthly).
+Final value (\(FV\)) of an investment is a function of the initial principal invested (P), interest rate (\(r\) expressed as \(.05\) for \(5%\), \(.1\) for \(10%\), etc.), time invested (\(Y\) typically years), and compounding periods per year (\(n\) typically \(n = 1\) for yearly or \(n = 12\) for monthly).
 
-*FV*   =   *P* (1  +  *r* / *n*)*^Yn^*
+\[FV   =   P (1  +  \frac{r}{n})^{Y_n}\]
 
  
 
-**Section 2.2 Geometry**
+## Geometry (raw)
 
 (references 2.1, 2.2)
 
@@ -381,7 +379,7 @@ V = 2π^2 Rρ^2
 
 ρ = smaller radius
 
-**Section 2.3 Trigonometery**
+## Trigonometery (raw)
 
 (references 2.1, 2.2)
 
@@ -567,7 +565,7 @@ Mollweide's Check Formulas:
 
 \[a+b\]/c = \[cos ({A-B}/2)\]/ sin (C/2)
 
-**Section 2.4 Matrix Algebra**
+## Matrix Algebra (raw)
 
 (reference 2.5)
 
@@ -689,7 +687,7 @@ Example of Cramer's Rule
 
 ![][2037]
 
-**Section 2.5 VectorAlgebra**
+## Vector Algebra (raw)
 
 (reference 2.5)
 
@@ -809,7 +807,9 @@ The body can be equivalent to a maneuvering aircraft.
 
 ![][2065]
 
-**Section 2.6 Probability and Statistics** (reference 2.6) # raw
+## Probability and Statistics (raw)
+
+(reference 2.6)
 
 ***Definitions:***
 
@@ -859,7 +859,7 @@ For example, tossing a fair coin N times where \(p = 1/2\) is the probability of
 |\(3\)| \(1/4\)|
 |\(4\)| \(1/16\)|
 
-# raw
+(raw)
 **Continuous Distributions:** As the number of samples increases and the width of the Discrete sample intervals shrink to zero, discrete distributions become continuous.
 
  
@@ -1153,7 +1153,7 @@ Adjust the size of the Error we wish to Detect Change the sample size *n*
 
 ![][2102]
 
-**2.7 Standard Series**
+## Standard Series (raw)
 
 (reference 2.4)
 
@@ -1177,7 +1177,7 @@ Trigonometric:
 
 ![][2108]
 
-**Section 2.8 Derivative Table**
+## Derivative Table (raw)
 
 (references 2.2, 2.3)
 
@@ -1187,7 +1187,7 @@ Trigonometric:
 
 ![][2110]
 
-**Section 2.9 Integral Table**
+## Integral Table (raw)
 
 (references 2.2, 2.3)
 
@@ -1209,7 +1209,7 @@ Expressions containing exponential and logarithmic functions
 
 ![][2113]
 
-**Section 2.10 Laplace Table**
+## Laplace Table (raw)
 
 (references 2.2, 2.3)
 
@@ -1305,7 +1305,7 @@ Expressions containing exponential and logarithmic functions
 
 ![][2140]
 
-**Section 2.11 References**
+## References (raw)
 
 2.1 Burington, Richard S., "Handbook of Mathematical Tables and Formulas", McGraw-Hill Inc., 1973.
 
