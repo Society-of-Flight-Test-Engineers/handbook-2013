@@ -604,7 +604,7 @@ Exponent  Prefix  Abbreviation
 |DT |development test|
 |DTC |data transfer cartridge|
 |DTIC |Defense Technical Information Center|
-|*e* |Oswald efficiency factor|
+|\(e\) |Oswald efficiency factor|
 |\(e\) |natural mathematical constant = 2.718281828459|
 |E |energy|
 |E |lift-to-drag ratio ( \(C_L / C_D\) , \(L/D\) )|
@@ -1655,7 +1655,7 @@ For constant mass distribution in curvilinear motion: \[G = \dot{\omega} I\]
 | \[r = \frac{V^{2}}{g\sqrt{N_{\text{zw}}^{2} - 1}}\]                                            |
 | \[\omega = \frac{g\sqrt{N_{\text{zw}}^{2} - 1}}{V}\]           |
 | \[N_{zw} = \sqrt{\frac{\omega V}{g} + 1}\] |
-| \[V\] = inertial velocity                               | 
+| \[V = \mathrm{inertial velocity} \]                               | 
 
 ### Level Turn Kinematics Character
 
