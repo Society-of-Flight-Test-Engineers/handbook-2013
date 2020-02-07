@@ -42,7 +42,7 @@ log (6.54) = .8156 &&&&\\
 
 \[
 \begin{array}{lllll}
-\textrm{calculate } 68.31 \times .2754 &&&&\\
+\text{calculate } 68.31 \times .2754 &&&&\\
 &log (68.31) &= 1.8354&&\\
 &log (.2754) &= -.56&&\\
 &1.8354 +(-.56) &= 1.2745&&\\
@@ -52,7 +52,7 @@ log (6.54) = .8156 &&&&\\
  
 \[
 \begin{array}{lllll}
-\textrm{calculate } (.6831)^{1.53} &&&&\\
+\text{calculate } (.6831)^{1.53} &&&&\\
 & log (.6831) &= -.1655&&\\
 & 1.53 \times -.1655 &= -.253&&\\
 & log^{-1} (-.253) &= \fbox{.5582}&&
@@ -61,7 +61,7 @@ log (6.54) = .8156 &&&&\\
 
 \[
 \begin{array}{lllll}
-\textrm{calculate } (.6831)^{\frac{1}{5}} &&&&\\
+\text{calculate } (.6831)^{\frac{1}{5}} &&&&\\
 & log (.6831) &= -.1655&&\\
 & \frac{1}{5} \times -.1655 &= -.0331&&\\
 & log^{-1} (-.0331) &= \fbox{.9266}&&
@@ -70,7 +70,7 @@ log (6.54) = .8156 &&&&\\
 
 \[
 \begin{array}{lllll}
-\textrm{solve for \(x\) in \(.6931^x = 27.54\) }&&&&\\
+\text{solve for \(x\) in \(.6931^x = 27.54\) }&&&&\\
 & log (.6931^x) &= log (27.54)&&\\
 & x log (.6931) &= log (27.54)&&\\
 & x &= \frac{log (27.54 )}{log (.6931)}&&\\
@@ -126,11 +126,11 @@ where \(k = 0,1,2\)
 
 and 
 
-\[cos\phi = + \sqrt{\frac{ \frac{b^2}{4} }{ \frac{-a^3}{27} }} \;\;\;\textrm{if}\; b < 0\]
+\[cos\phi = + \sqrt{\frac{ \frac{b^2}{4} }{ \frac{-a^3}{27} }} \;\;\;\text{if}\; b < 0\]
 
 or 
 
-\[cos\phi = - \sqrt{\frac{ \frac{b^2}{4} }{ \frac{-a^3}{27} }} \;\;\;\textrm{if}\; b > 0\]
+\[cos\phi = - \sqrt{\frac{ \frac{b^2}{4} }{ \frac{-a^3}{27} }} \;\;\;\text{if}\; b > 0\]
 
 
 If \(\frac{b^2}{4} + \frac{a^3}{27} > 0\) and \(a > 0\) , the single real root is
@@ -141,19 +141,19 @@ where \(tan\phi = \sqrt[3]{tan\psi}\)
 
 and 
 
-\[ cot \left( 2\psi \right) = + \sqrt{\frac{ \frac{b^2}{4} }{ \frac{-a^3}{27} }} \;\;\;\textrm{if}\; b < 0\]
+\[ cot \left( 2\psi \right) = + \sqrt{\frac{ \frac{b^2}{4} }{ \frac{-a^3}{27} }} \;\;\;\text{if}\; b < 0\]
 
 or 
 
-\[ cot \left( 2\psi \right) = - \sqrt{\frac{ \frac{b^2}{4} }{ \frac{-a^3}{27} }} \;\;\;\textrm{if}\; b < 0\]
+\[ cot \left( 2\psi \right) = - \sqrt{\frac{ \frac{b^2}{4} }{ \frac{-a^3}{27} }} \;\;\;\text{if}\; b < 0\]
 
 If \( \frac{b^2}{4} + \frac{a^3}{27} = 0 \), the three real roots are
 
-\[ x_{1} = -2 \sqrt{\frac{-a}{3}}, \; x_{2,3} = +\sqrt{\frac{-a}{3}} \;\;\; \textrm{if} \; b > 0 \]
+\[ x_{1} = -2 \sqrt{\frac{-a}{3}}, \; x_{2,3} = +\sqrt{\frac{-a}{3}} \;\;\; \text{if} \; b > 0 \]
 
 or 
 
-\[ x_{1} = +2 \sqrt{\frac{-a}{3}}, \; x_{2,3} = -\sqrt{\frac{-a}{3}} \;\;\; \textrm{if} \; b < 0 \]
+\[ x_{1} = +2 \sqrt{\frac{-a}{3}}, \; x_{2,3} = -\sqrt{\frac{-a}{3}} \;\;\; \text{if} \; b < 0 \]
 
 
 **Quartic (biquadratic) Equation**
@@ -233,7 +233,7 @@ or
 
 Present value of an annuity, \(A\) is the sum of the present values of all the future payments. \(A = R\,r_{n}\)
 
-Monthly interest rate = \(MIR = \frac{ \textrm{annual interest rate} }{12} \)
+Monthly interest rate = \(MIR = \frac{ \text{annual interest rate} }{12} \)
 
  
 
@@ -241,7 +241,7 @@ Month Term = \# months in loan
 
  
 
-Monthly payment = \( \left[ \textrm{amount financed} \right] \left[ \frac{MIR}{1 - \left( 1 + MIR \right)^{-\#months}} \right] \)
+Monthly payment = \( \left[ \text{amount financed} \right] \left[ \frac{MIR}{1 - \left( 1 + MIR \right)^{-\#months}} \right] \)
 
  
 
@@ -251,133 +251,132 @@ Final value (\(FV\)) of an investment is a function of the initial principal inv
 
  
 
-## Geometry (raw)
+## Geometry
 
 (references 2.1, 2.2)
 
-General definitions:
+**General definitions**
 
-A = area
+| Symbol       | Definition                                   |
+|:-------------|:---------------------------------------------|
+| \(A\)        | area                                         |
+| \(a\)        | side length                                  |
+| \(b\)        | base length                                  |
+| \(C\)        | circumference                                |
+| \(D\)        | diameter                                     |
+| \(h\)        | height                                       |
+| \(n\)        | number of sides                              |
+| \(R\)        | radius                                       |
+| \(V\)        | volume                                       |
+| \(x, y, z \) | distances along orthogonal coordinate system |
+| \(\beta\)    | interior vertex angle                        |
 
-a = side length
+**Triangle**
 
-b = base length
+\[
+\begin{align}
+A &= \frac{bh}{2}\\
+\text{sum of interior angles} &= 180^{\circ}
+\end{align}
+\]
 
-C = circumference
+**Rectangle**
 
-D = diameter
+\[
+\begin{align}
+A &= bh\\
+\text{sum of interior angles} &= 360^{\circ}
+\end{align}
+\]
 
-h = height
+**Parallelogram (opposite sides parallel)**
 
-n = number of sides
+\[ A = ah = ab \sin \beta \]
 
-R = radius
 
-V = volume
+**Trapezoid (4 sides, 2 parallel)**
 
-x, y, z = distances along orthogonal coordinate system
+\[ A = \frac{h \left(a + b \right)}{2} \]
 
-β = interior vertex angle
+**Pentagon, Hexagon, and other \(n\)-sided Polygons**
 
-triangle: A = bh/2
+\begin{align}
+A &= \frac{1}{4} n a^2 \cot \left( \frac{180^{\circ}}{n} \right) \\
+R &= \text{radius of circumscribed circle} = \frac{1}{2} a^2 \csc \left( \frac{180^{\circ}}{n} \right) \\
+r &= \text{radius of inscribed circle} = \frac{1}{2} a \cot \left( \frac{180^{\circ}}{n} \right) \\
+\beta &= 180^{\circ} - \frac{360^{\circ}}{n} \\
+\text{sum of interior angles} &= n 180^{\circ} - 360^{\circ} \\
+\end{align}
 
-sum of interior angles = 180^o
 
-rectangle: A = bh
+**Circle**
 
-sum of interior angles = 360^o
+\begin{align}
+A &= \pi R^2 \\
+C &= 2 \pi R = \pi D \\
+\text{perimeter of n-sided polygon inscribed within a circle} &= 2 n R \sin \left(\frac{\pi}{n} \right) \\
+\text{area of circumscribed polygon} &= n R^2 \tan \left( \frac{\pi}{n} \right) \\
+\text{area of inscribed polygon} &= \frac{1}{2} n R^2 \sin \left( \frac{2\pi}{n} \right) \\
+\text{equation for a circle with center at (h,k):} \\
+R^2  &= \left(x-h \right)^2  + \left(y-k \right)^2 \\
+\end{align}
 
-parallelogram (opposite sides parallel):
+**Ellipse**
 
-A = ah = absin β 
+\begin{align}
+f &= \text{semimajor axis} \\
+g &= \text{semiminor axis} \\
+e &= \text{eccentricity} = \frac{ \sqrt{f^2 -g^2} }{f} \\
+A &= \pi e f \\
+\text{equation for ellipse with center at (h,k):} \\
+\frac{(x-h)^2 }{f^2}  + \frac{(y-k)^2}{g^2}  &= 1 \text{ if major axis along x-axis} \\
+\text{or } \frac{(y-k)^2 }{f^2}  + \frac{(x-h)^2}{g^2}  &= 1 \text{ if major axis along y-axis} \\
+\text{distance from center to either focus} &= \sqrt{f^2 -g^2} \\
+\text{latus rectum} &= \frac{2g^2}{a} \\
+\end{align}
 
-trapezoid (4 sides, 2 parallel):
+**Parabola**
 
-A = h(a+b)/2
+\begin{align}
+p &= \text{distance from vertex to focus} \\
+e &= \text{eccentricity} = 1 \\
+\text{equation for parabola with vertex at (h,k), focus at (h+p,k):} \\
+(y-k)^2  = 4j(x-h) \text{ if } j > 0 \\
+\text{equation for parabola with vertex at (h,k), focus at (h,k+p):} \\
+(x-h)^2  = 4j(y-k) \text{ if } j < 0 \\
+\end{align}
 
-pentagon, hexagon, and other *n*-sided polygons:
+![Parabola Diagram][2021]
 
-A = {(na^2)cot (180^o/n)}/4
+**Hyperbola**
 
-R = radius of circumscribed circle = {a csc(180^o/n)}/2
+\begin{align}
+p &= \text{distance between center and vertex} \\
+q &= \text{distance between center and conjugate axis} \\
+e &= \text{eccentricity} = \frac{ \sqrt{p^2 +q^2} }{p} \\
+\text{equation for hyperbola centered at (h, k):} \\
+\frac{(x-h)^2}{p^2} - \frac{(y-k)^2}{q^2} &= 1 \text{ if asymptotes slopes} = \pm \frac{q}{p} \\
+\text{or } \frac{(y-k)^2}{p^2} - \frac{(x-h)^2}{q^2} &= 1 \text{ if asymptotes slopes} = \pm \frac{p}{q} \\
+\end{align}
 
-r = radius of inscribed circle = {a cot(180^o/n)}/2
+![Hyperbola Diagram][2022]
 
-β = 180^o --(360^o/n)
+**Sphere**
 
-sum of interior angles = *n*180^o-360^o
+\begin{align}
+A &= 4 \pi R^2 \\
+V &= \frac{4}{3} \pi R^3 \\
+\text{equation for sphere centered at origin:} \\
+x^2 + y^2 + z^2 &= R^2 \\
+\end{align}
 
-circle: A = πR^2 
+**Torus**
 
-C = 2πR = πD
-
-perimeter of *n*-sided polygon inscribed within a circle
-
-= 2*n*Rsin(π/*n*)
-
-area of circumscribed polygon = *n*R^2 tan(π/*n*)
-
-area of inscribed polygon = {*n*R^2 sin(2π/*n*)}/2
-
-equation for a circle with center at (h,k): R^2  = (x-h)^2  + (y-k)^2 
-
-ellipse: f = semimajor axis
-
-g = semiminor axis
-
-e = eccentricity = (\[f^2 -g^2 \]^1/2^)/f
-
-A = πef
-
-equation for ellipse with center at (h,k):
-
-(x-h)^2 /f^2  + (y-k)^2 /g^2  = 1 if major axis along x-axis
-
-or (y-k)^2 /f^2  + (x-h)^2 /g^2  = 1 if major axis along y-axis
-
-distance from center to either focus = \[f^2 -g^2 \]^1/2^
-
-latus rectum = (2g^2 )/a
-
-parabola: p = distance from vertex to focus
-
-e = eccentricity = 1
-
-equation for parabola with vertex at (h,k), focus at (h+p,k):
-
-(y-k)^2  = 4j(x-h) [if]{.underline} (j\>0)
-
-equation for parabola with vertex at (h,k), focus at (h,k+p):
-
-(x-h)^2  = 4j(y-k) [if]{.underline} (j\<0)
-
-![][2021]
-
-hyperbola: p = distance between center and vertex
-
-q = distance between center and conjugate axis
-
-e = eccentricity = (\[p^2 +q^2 \]^1/2^)/p
-
-equation for hyperbola centered at (h, k):
-
-(x-h)^2 /p^2  -- (y-k)^2 /q^2  = 1 [if]{.underline} (asymptotes slopes = +/- q/p)
-
-or (y-k)^2 /p^2  -- (x-h)^2 /q^2  = 1 [if]{.underline} (asymptotes slopes = +/- p/q)
-
-![][2022]
-
-sphere: A = 4πR^2 
-
-V = 4πR^3 /3
-
-equation for sphere centered at origin: x^2 +y^2 +z^2  = R^2 
-
-torus: A= 4π^2 Rρ
-
-V = 2π^2 Rρ^2 
-
-ρ = smaller radius
+\begin{align}
+\rho &= \text{smaller radius} \\
+A &= 4 \pi ^2 R \rho \\
+V &= 2 \pi ^2 R \rho^2 \\
+\end{align}
 
 ## Trigonometery (raw)
 
@@ -1321,26 +1320,6 @@ Expressions containing exponential and logarithmic functions
 
 2.7 Lewis, G., *Chapter 2, Data Analysis* , from "Crew station Evaluation and Data Analysis, Vol IV", 1997, National Test Pilot School, P.O. Box 658, Mojave CA, 93501.
 
-  [2001]: media/02/image1.png
-  [2002]: media/02/image2.png
-  [2003]: media/02/image4.png
-  [2004]: media/02/image5.png
-  [2005]: media/02/image6.png
-  [2006]: media/02/image7.png
-  [2007]: media/02/image8.png
-  [2008]: media/02/image9.png
-  [2009]: media/02/image10.png
-  [2010]: media/02/image11.png
-  [2011]: media/02/image12.png
-  [2012]: media/02/image13.png
-  [2013]: media/02/image14.png
-  [2014]: media/02/image15.png
-  [2015]: media/02/image16.png
-  [2016]: media/02/image17.png
-  [2017]: media/02/image18.png
-  [2018]: media/02/image19.png
-  [2019]: media/02/image20.png
-  [2020]: media/02/image21.png
   [2021]: media/02/image22.png
   [2022]: media/02/image23.png
   [2023]: media/02/image24.png
