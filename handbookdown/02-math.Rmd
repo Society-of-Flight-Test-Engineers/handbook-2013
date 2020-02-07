@@ -806,7 +806,7 @@ The body can be equivalent to a maneuvering aircraft.
 
 ![][2065]
 
-## Probability and Statistics (raw)
+## Probability and Statistics
 
 (reference 2.6)
 
@@ -858,299 +858,29 @@ For example, tossing a fair coin N times where \(p = 1/2\) is the probability of
 |\(3\)| \(1/4\)|
 |\(4\)| \(1/16\)|
 
-(raw)
-**Continuous Distributions:** As the number of samples increases and the width of the Discrete sample intervals shrink to zero, discrete distributions become continuous.
+**Continuous Distributions** 
+Continuous distributions are defined for all \(x \in [a,b]\), where \(a, b \in \mathbb{R}\) or for all \(x \in (-\infty, \infty)\), that is, the whole real number line. The probability for any single point is zero; that is, \(P(X=x) = 0\). Instead, one must work with probability on an interval, e.g., \(P(0 < x)\) or \(P(a < x < b)\).
 
- 
+**The Normal Distribution**
+The probability density function of the Normal Distribution is given by:
+\[f(x) = \frac{1}{\sqrt{2 \pi \sigma}}e^{\frac{-(x-\mu)^2}{2\sigma^2}} \].
 
-P(x=X) = 0
+**The Standard Normal Distribution**
+The Standard Normal Distribution is simply the Normal Distribution with \(\mu = 0\) and \(\sigma=1\).
 
-Must talk about intervals, e.g. P(a \< x \< b)
+**Error Probable** 
+An interval centered at the mean that contains one-half of the distribution.
 
- 
+**Circular Error Probable**
+A circle centered at the mean, in a bivariate normal distribution, that contains one-half of the distribution.
 
-**The Normal Distribution:**
+**Confidence Intervals**
+An interval estimate of a statistic.  
 
-** **
+**Central Limit Theorem** 
+The sample mean of data sampled from a normally distributed population is itself normally distributed with mean, \(\mu\), and variance, \(\sigma^2/\sqrt{n}\), where the population distribution is \(N(\mu,\sigma^2)\) and \(n\) is the sample size and usually \(n \geq 30\).
 
- ![][2073]
-
-**Normal Distribution:**
-
- 
-
-![][2074]
-
-![][2075]
-
-**The Standard Normal Distribution:**
-
-** **
-
-** **![][2076]
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-**Error Probable:** An error budget that would contain half of the population data points. Assumes that events are independent and identically distributed (iid). **Also assumes N is large (greater than 30), or population is normally distributed.**
-
-** **
-
-** **![][2077]
-
-** **
-
-**Circular Error Probable -- the 2 Dimensional Case (X error and Y error):**
-
-** **![][2078]
-
-** **
-
-** **
-
-** Confidence Intervals:** In practice, we take a sample from population. The sample mean and variance will differ from the population mean and variance. Confidence Intervals express how certain we are that the population statistics lie in a region around the sample statistics.
-
- 
-
-**Central Limit Theorem:** Given a population Normally distributed,
-
-![][2079]
-
- 
-
-then the distribution of successive sample means from samples of n observations
-
- 
-
- 
-
-Approaches a Normal distribution with parameters
-
-![][2080]
-
- 
-
- 
-
-![][2081]We want 1- level of confidence that a region around our sample mean
-
- 
-
-value contains the actual population mean.
-
- 
-
-![][2082]
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
- 
-
-![][2083]
-
-![][2084]
-
-**If n \< 30, we must use Student's T Distribution instead of the Standard Normal**
-
-![][2085]** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-**Determining Sample Size:** For the population mean to fall into an interval defined by
-
-![][2086] 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-![][2087] 
-
-Where is the accuracy desired (or the error that can be tolerated).
-
- 
-
-Since the sample size decision must be made prior to the test, an estimate must be made for the population standard deviation. Using the estimate we can solve for N
-
-![][2088] 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-**Hypothesis Testing:** Begins with an assumption (hypothesis), usually about the underlying population distribution of some measured quantity or computed error. Select values for the hypothesis and alternate hypothesis(es) that partition the sample space. Collect N samples of the population test statistic or parameter. There are two types of errors: Type 1 errors reject the hypothesis when it is true; Type II accept the hypothesis when in is false.
-
- 
-
-![][2089]![][2089]
-
-![][2090]
-
-![][2091]
-
-![][2092]
-
- 
-
-Large Samples, Unknown Variance use: for
-
-![][2093] 
-
-![][2094] 
-
- 
-
- 
-
- 
-
-![][2095] 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-** **
-
-** **
-
-** **
-
-** **
-
-![][2096]** **
-
-Small Samples, Unknown Variance use: ![][2096]
-
-** **
-
-** **
-
-** **
-
-![][2097]** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-![][2098]![][2099]**Adjusting and**
-
- 
-Adjust the size of the Error we wish to Detect Change the sample size *n*
-
-![][2100] 
-
-![][2101]
-
-![][2102]
-
-![][2102]
+**Hypothesis Testing** Begins with an assumption (hypothesis), usually about the underlying population distribution of some measured quantity or computed error. Select values for the hypothesis and alternate hypothesis(es) that partition the sample space. Collect N samples of the population test statistic or parameter. There are two types of errors: Type 1 errors reject the hypothesis when it is true; Type II accept the hypothesis when in is false.
 
 ## Standard Series (raw)
 
