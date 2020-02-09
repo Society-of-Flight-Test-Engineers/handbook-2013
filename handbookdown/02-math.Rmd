@@ -1044,7 +1044,7 @@ Expressions containing exponential and logarithmic functions
 
 2.4 Hudson, Ralph G., "The Engineers' Manual", John Wiley and Sons Inc., 1944.
 
-2.5 Jones, G., *Chapter 14, Vectors and Matrices*, from " Flying Qualities Testing, Vol II" , National Test Pilot School, P.O. Box 658, Mojave CA, 93501.
+2.5 Jones, G., *Chapter 14, Vectors and Matrices*, from "Flying Qualities Testing, Vol II" , National Test Pilot School, P.O. Box 658, Mojave CA, 93501.
 
 2.6 "Flying Qualities Testing, Vol II", 1997, National Test Pilot School, P.O. Box 658, Mojave CA, 93501.
 
