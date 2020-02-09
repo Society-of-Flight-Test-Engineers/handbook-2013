@@ -1035,7 +1035,7 @@ Expressions containing exponential and logarithmic functions
 
 ![][2140]
 
-## References (raw)
+## References
 
 2.1 Burington, Richard S., "Handbook of Mathematical Tables and Formulas", McGraw-Hill Inc., 1973.
 
@@ -1045,11 +1045,12 @@ Expressions containing exponential and logarithmic functions
 
 2.4 Hudson, Ralph G., "The Engineers' Manual", John Wiley and Sons Inc., 1944.
 
-2.5 Jones, G., *Chapter 14, Vectors and Matrices* , from "*Chapter 14, Vectors and Matrices* , from " Flying Qualities Testing, Vol II" , National; Test Pilot School, P.O. Box 658, Mojave CA, 93501.
+2.5 Jones, G., *Chapter 14, Vectors and Matrices*, from " Flying Qualities Testing, Vol II" , National Test Pilot School, P.O. Box 658, Mojave CA, 93501.
 
-2.6 Flying Qualities Testing, Vol II", 1997, National Test Pilot School, P.O. Box 658, Mojave CA, 93501.
+2.6 "Flying Qualities Testing, Vol II", 1997, National Test Pilot School, P.O. Box 658, Mojave CA, 93501.
 
-2.7 Lewis, G., *Chapter 2, Data Analysis* , from "Crew station Evaluation and Data Analysis, Vol IV", 1997, National Test Pilot School, P.O. Box 658, Mojave CA, 93501.
+2.7 Lewis, G., *Chapter 2, Data Analysis*, from "Crew station Evaluation and Data Analysis, Vol IV", 1997, National Test Pilot School, P.O. Box 658, Mojave CA, 93501.
+
 
   [2001]: media/02/image1.png
   [2002]: media/02/image2.png
