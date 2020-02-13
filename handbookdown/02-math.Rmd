@@ -686,17 +686,17 @@ Example of Cramer's Rule
 
 ![][2037]
 
-## Vector Algebra (raw)
+## Vector Algebra
 
 (reference 2.5)
 
-Addition
+### Addition
+Given vectors \(\bar{A}\) and \(\bar{B}\), where the *i*th component of \(\bar{A}\) is given by \(a_i\), we define addition \(\bar{A} + \bar{B}\) component-wise, such that the *i*th component of \(\bar{A} + \bar{B}\) is given by \(a_i + b_i\).
 
 ![][2038]
 
-.
-
-Subtraction
+### Subtraction
+We define vector subtraction just as we defined vector addition above.
 
 ![][2039]
 
@@ -704,7 +704,38 @@ Subtraction
 
 ![][2041]
 
-**Dot Product**
+### Scalar Multiplication
+Given a real number, \(m\), and vectors \(\bar{A}\) and \(\bar{B}\), where the *i*th component of \(\bar{A}\) is given by \(a_i\), we define scalar multiplication addition \(m \bar{A}\) component-wise, such that the *i*th component of \(m \bar{A}\) is given by \(m a_i\). 
+
+When \(m\) and \(a+i\) are real numbers, the usual properties apply:
+*Commutative* \(m \bar{A} = \bar{A} m\).
+*Associative* \(m (n \bar{A}) = (mn) \bar{A}\).
+*Distributive* \((m + n) \bar{A} = m \bar{A} + n \bar{A}\).
+
+When \(a+i\) are real numbers, we have the following properties that apply to *vectors*:
+*Commutative* \(\bar{A} + \bar{B} = \bar{B} + \bar{A}\).
+*Associative* \(\bar{A} + (\bar{B} + \bar{C}) = (\bar{A} + \bar{B}) + \bar{C}\).
+*Distributive* \(m (\bar{A} + \bar{B}) = m \bar{A} + m \bar{B}\).
+
+### Dot Product
+Given vectors \(\bar{A}\) and \(\bar{B}\), where the *i*th component of \(\bar{A}\) is given by \(a_i\) and the vectors have the same dimension,\(n\), we define the dot product \(\bar{A} \cdot \bar{B}\) as follows:
+\[\bar{A} \cdot \bar{B} = \sum_{i=1}^{n}a_i b_i \].
+For example, given three-dimensional vectors, we have:
+\[\bar{A} \cdot \bar{B} = a_1 b_1 + a_2 b_2 + a_3 b_3\].
+The terms dot product, scalar product, and inner product usually mean the same thing.
+
+### Norm
+The norm or vector norm, denoted 
+\[ \left| \bar{A} \right|\],
+is the magnitude of the vector. We compute it thus:
+\[ \left| \bar{A} \right| = \sqrt{\sum_{i=1}^{n} a_i^2} \].
+For example, given a three-dimensional vector in the \(xyz\) plane, we have:
+\[ \left| \bar{A} \right| = \sqrt{a_x^2 + a_y^2 + a_z^2} \].
+The two types of notation, \(| \bar{A} |\) and \(||\bar{A}||\) are equivalent.
+
+With this additional notation, we can also define the *dot product* this way:
+\[\bar{A} \cdot \bar{B} = \left| \bar{A} \right| \left| \bar{B} \right| \cos{\theta} \],
+where \(\theta\) is the angle between the vectors.
 
 ![][2042]
 
@@ -714,7 +745,28 @@ Subtraction
 
 ![][2045]
 
-**Vector Product**
+### Vector Product
+The cross product is an operation on vectors in three dimensional space denoted \(\bar{A} \times \bar{B}\). We can define it in terms of matrix determinants in the following way.
+\[ \bar{A} \times \bar{B} = \begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k}\\
+a_x & a_y & a_z\\
+b_x & b_y & b_z
+\end{vmatrix}
+\].
+Expanding this expression gives us:
+\[ \bar{A} \times \bar{B} = \begin{vmatrix}
+a_y & a_z\\
+b_y & b_z
+\end{vmatrix} \hat{i}
++ \begin{vmatrix}
+a_x & a_z\\
+b_x & b_z
+\end{vmatrix} \hat{j}
++ \begin{vmatrix}
+a_x & a_y\\
+b_x & b_y
+\end{vmatrix} \hat{k}
+\].
 
 ![][2046]
 
@@ -724,7 +776,7 @@ Subtraction
 
 ![][2049]
 
-**Vector Differentiation**
+**Vector Differentiation** (raw)
 
 ![][2050]
 
