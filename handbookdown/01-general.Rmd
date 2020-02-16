@@ -1050,7 +1050,7 @@ The generally accepted body axes sign convention is based on the establishment o
 
 3. The axis system moves with the airframe.
 
-![][1002]
+![][01002]
 
 Translational displacements, rates, accelerations, & forces are positive along the positive body axes directions. In spite of the simplicity of this logic, it is important to recognize that lift and normal load factor are positive in the *negative z* direction and the drag is positive in the *negative x* direction.
 
@@ -1062,7 +1062,7 @@ Angular displacements, rates, accelerations & moments, are positive according to
 
 The body axes, forces & translations along them, and moments & rotations about them are shown with arrows indicating the positive direction.
 
-![][1003]
+![][01003]
 
 Angle of attack is positive clockwise from the projection of the velocity vector on the *xz* plane to the reference *x* body axis. The angle of sideslip is positive clockwise from the *xz* plane to the velocity vector (wind in the pilot's right ear).
 
@@ -1659,7 +1659,7 @@ For constant mass distribution in curvilinear motion: \[G = \dot{\omega} I\]
 
 ### Level Turn Kinematics Character
 
- ![][1004]
+ ![][01004]
 
 ### Gyroscopic Motion
 
@@ -1754,6 +1754,6 @@ while \(I_{cg} < I_z\) yields retrograde precession
 
 1.9 Unit Conversion Website Link <http://www.digitaldutch.com/atmoscalc/>.
 
-  [1002]:  media/01/image2.png {width="6.5in" height="3.4063156167979in"}
-  [1003]:  media/01/image3.png {width="6.5in" height="4.874305555555556in"}
-  [1004]:  media/01/image24.jpeg {width="6.08125in" height="8.9375in"}
+  [01002]:  media/01/image2.png {width="6.5in" height="3.4063156167979in"}
+  [01003]:  media/01/image3.png {width="6.5in" height="4.874305555555556in"}
+  [01004]:  media/01/image24.jpeg {width="6.08125in" height="8.9375in"}
