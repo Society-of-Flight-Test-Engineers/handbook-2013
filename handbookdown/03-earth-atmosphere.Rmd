@@ -1,6 +1,6 @@
 # Universe Earth Atmospheric
 
-**Properties**
+## Properties
 
 3.1 Universal Constants
 
