@@ -170,7 +170,7 @@ The name comes from the fact that although the equivalent airspeed equation does
 
 *~ ~*
 
-*~ ~*![][04001]
+*~ ~*![][1]
 
 *~ ~*
 
@@ -178,7 +178,7 @@ Next, substitute this value and the ambient pressure (*P~a~*) into the equivalen
 
  
 
- ![][04002]
+ ![][2]
 
  
 
@@ -190,7 +190,7 @@ The adjacent chart does this graphically for all subsonic airspeeds.
 
  
 
-![][04003]
+![][3]
 
 **Section 4.3 Subsonic Relations Between Compressible and Incompressible Dynamic Pressure**
 
@@ -202,7 +202,7 @@ For constant density (incompressible) flow Bernoulli's equation reduces to
 
  
 
- ![][04004]![][04005]![][04006]![][04007]
+ ![][4]![][5]![][6]![][7]
 
  
 
@@ -231,7 +231,7 @@ This value for *q* should not be confused with compressible (a.k.a. impact or di
 **\
 **
 
-![][04008]**\
+![][8]**\
 **
 
 **Section 4.4 Supersonic Airspeed and Mach Equations**
@@ -244,13 +244,13 @@ True Airspeed
 
  
 
- ![][04009] 
+ ![][9] 
 
-![][04010]Equivalent Airspeed (valid if q~c~/P~a~ \>0.892929158)
+![][10]Equivalent Airspeed (valid if q~c~/P~a~ \>0.892929158)
 
  
 
-![][04011] Calibrated Airspeed (valid if V~c~\>a~o~)
+![][11] Calibrated Airspeed (valid if V~c~\>a~o~)
 
  
 
@@ -258,7 +258,7 @@ True Airspeed
 
  
 
-![][04012]Mach Number
+![][12]Mach Number
 
  
 
@@ -267,7 +267,7 @@ True Airspeed
 
 **Section 4.5 Total Temperature Equation**
 
- ![][04013] 
+ ![][13] 
 
 During position error flight testing, measure *T~i~*
 
@@ -277,12 +277,12 @@ From *V~c\ ~*and *H~pc\ ~*determine *M*
 
 plot *T~i~* \~ *M ^2^*
 
-![][04014] 
+![][14] 
 
 **\
 **
 
-![][04015]![][04016]*Hi* Indicated pressure altitude (29.92" Hg)
+![][15]![][16]*Hi* Indicated pressure altitude (29.92" Hg)
 
 Δ *Hic* Instrument error correction
 
@@ -307,7 +307,7 @@ plot *T~i~* \~ *M ^2^*
 
 As depicted below, the flyby method originally used some sort of viewing platform with surveyed distances and a grid or other device for determining the aircraft's relative angle above the platform's altimeter. This information combined to give the aircraft's actual pressure altitude. Modern methods replace the tower system with a radar altimeter or GPS unit to determine tapeline height above the flyby line (*H~g~*). This geometric height is converted to a pressure altitude change using a temperature correction. When added to the aircraft's pressure altitude on the runway, this change provides the actual pressure altitude during the flyby (Actual *H~c~* = runway pressure altitude + *H~g~*(*T~s~*/*T~t~*).
 
-![][04017]** **
+![][17]** **
 
 ** **
 
@@ -349,7 +349,7 @@ $${\Delta P_{S} = q_{c} - q_{\text{cic}}
 
 *Hc* Calibrated pressure altitude
 
-![][04018]Note: A check on basic instrument calibration is easily accomplished using a "ground block" where a parked test aircraft compares altimeters with tower. Any error can be treated as a bias.
+![][18]Note: A check on basic instrument calibration is easily accomplished using a "ground block" where a parked test aircraft compares altimeters with tower. Any error can be treated as a bias.
 
  
 
@@ -361,17 +361,17 @@ This can be determined either through direct comparison with a calibrated nosebo
 
 **Section 4.7.2 Ground Course Method**
 
-![][04019] 
+![][19] 
 
-![][04020]
+![][20]
 
-![][04021]![][04022]
+![][21]![][22]
 
 This airspeed-based Test method determines airspeed corrections directly. Accurately converting this airspeed error to a static source error requires knowledge of the test pitot tube\'s total pressure error (∆P~T~ ). This can be determined using one of the altitude-based methods that directly yield altitude corrections (tower fly-by, trailing cone or bomb). In lieu of these options, the pitot error may assumed to be zero, but this will reduce confidence in the calculated values for static pressure error and altimeter. correction
 
  
 
-![][04023]**Section 4.7.3 Trailing Cone/Bomb Method**
+![][23]**Section 4.7.3 Trailing Cone/Bomb Method**
 
  
 
@@ -385,7 +385,7 @@ This airspeed-based Test method determines airspeed corrections directly. Accura
 
 5. Consider lag effects during rapid altitude changes
 
-![][04024]![][04025] 
+![][24]![][25] 
 
 If pitot errors do exist, then they must be included in calculations for Δ*V~pc~* (see flowchart)
 
@@ -401,7 +401,7 @@ This altitude-based Test method determines altimeter corrections and therefore s
 
 **4.7.4 GPS Methods**
 
-![][04026] 
+![][26] 
 
 Various methods available, all assume [steady]{.underline} winds and ambient temperature. You must determine wind speed and direction to calculate *V~T~* and *T~0~* and to ensure steady winds existed during test series.
 
@@ -429,11 +429,11 @@ Flying four legs instead of three allows four separate calculations of wind spee
 
  
 
-![][04027]![][04028]**Horseshoe Track GPS Method**
+![][27]![][28]**Horseshoe Track GPS Method**
 
  
 
-![][04029]
+![][29]
 
 **Horseshoe Heading GPS Method**
 
@@ -443,9 +443,9 @@ Flying four legs instead of three allows four separate calculations of wind spee
 >
 > ∼ Determine true airspeed by solving three equations in three unknowns
 
-![][04030] 
+![][30] 
 
-![][04031]
+![][31]
 
 The "Windbox" method consists of flying four legs instead of three. The extra leg provides a fourfold increase in wind calculations to improve result confidence. The "Orbis" method extends this advantage by collecting data at every heading throughout a level turn.
 
@@ -515,7 +515,7 @@ Aircraft heading results for each leg entail an airborne compass swing.
 
 **[ ]{.underline}**
 
-**[ ]{.underline}**![][04032]
+**[ ]{.underline}**![][32]
 
 **[ ]{.underline}**
 
@@ -557,69 +557,69 @@ Aircraft true airspeed *= V~T~* = \[(*X~1\ ~*- *V~Wx~*)^2^ +(*Y~1\ ~*- *V~Wy~*)^
 
 \* *
 
-![][04033] 
+![][33] 
 
  
 
  
 
-![][04034]![][04035]
+![][34]![][35]
 
 **4.9 PEC Correction Process Flow Chart**
 
- ![][04036]
+ ![][36]
 
-![][04037]**4.10 Airspeed/Altitude/Mach Graphic Relation**
+![][37]**4.10 Airspeed/Altitude/Mach Graphic Relation**
 
-![][04038]
+![][38]** **
 
-![][04039] **4.11 Effect of Errors on Calibrated Airspeed and Altitude**
+![][39] **4.11 Effect of Errors on Calibrated Airspeed and Altitude**
 
-![][04040] 
+![][40] 
 
-![][04041]
+![][41]
 
-![][04042]
+![][42]
 
-[04001]: /media/04/image1.png {width="1.792361111111111in" height="0.6111111111111112in"}
-[04002]: /media/04/image2.png {width="1.8131944444444446in" height="0.7222222222222222in"}
-[04003]: /media/04/image3.png {width="8.915277777777778in" height="6.207638888888889in"}
-[04004]: /media/04/image4.png {width="1.7715277777777778in" height="0.5277777777777778in"}
-[04005]: /media/04/image5.png {width="2.5006944444444446in" height="0.5277777777777778in"}
-[04006]: /media/04/image6.png {width="2.7631944444444443in" height="0.5in"}
-[04007]: /media/04/image7.png {width="1.9166666666666667in" height="0.6333333333333333in"}
-[04008]: /media/04/image8.png {width="5.290972222222222in" height="8.998611111111112in"}
-[04009]: /media/04/image9.png {width="4.271527777777778in" height="1.2666666666666666in"}
-[04010]: /media/04/image10.png {width="1.7715277777777778in" height="1.1388888888888888in"}
-[04011]: /media/04/image11.png {width="1.542361111111111in" height="1.0833333333333333in"}
-[04012]: /media/04/image12.png {width="1.4590277777777778in" height="0.5138888888888888in"}
-[04013]: /media/04/image13.png {width="4.9375in" height="3.1875in"}
-[04014]: /media/04/image14.png {width="4.3125in" height="3.0in"}
-[04015]: /media/04/image15.png {width="4.2034722222222225in" height="4.113194444444445in"}
-[04016]: /media/04/image16.png {width="4.4375in" height="1.375in"}
-[04017]: /media/04/image17.png {width="5.2868055555555555in" height="1.7604166666666667in"}
-[04018]: /media/04/image18.png {width="5.1875in" height="3.15in"}
-[04019]: /media/04/image19.png {width="4.5625in" height="4.0625in"}
-[04020]: /media/04/image20.png {width="5.3125in" height="3.9611111111111112in"}
-[04021]: /media/04/image21.png {width="5.5125in" height="6.4625in"}
-[04022]: /media/04/image22.png {width="3.145138888888889in" height="0.24513888888888888in"}
-[04023]: /media/04/image23.png {width="5.9375in" height="3.0in"}
-[04024]: /media/04/image24.png {width="3.513888888888889in" height="0.6875in"}
-[04025]: /media/04/image25.png {width="1.4375in" height="0.28125in"}
-[04026]: /media/04/image26.png {width="4.5in" height="3.45in"}
-[04027]: /media/04/image27.png {width="3.4375in" height="1.6625in"}
-[04028]: /media/04/image28.png {width="2.7in" height="2.495138888888889in"}
-[04029]: /media/04/image29.png {width="5.375in" height="2.1875in"}
-[04030]: /media/04/image30.png {width="6.951388888888889in" height="2.3125in"}
-[04031]: /media/04/image31.png {width="5.0625in" height="2.6875in"}
-[04032]: /media/04/image32.png {width="3.0in" height="2.8833333333333333in"}
-[04033]: /media/04/image49.png {width="2.9in" height="0.5097222222222222in"}
-[04034]: /media/04/image50.png {width="5.75in" height="2.6875in"}
-[04035]: /media/04/image51.png {width="2.8in" height="0.4986111111111111in"}
-[04036]: /media/04/image52.png {width="8.630718503937008in" height="6.446496062992126in"}
-[04037]: /media/04/image53.png {width="6.311805555555556in" height="8.686111111111112in"}
-[04038]: /media/04/image54.png {width="9.316666666666666in" height="6.4215277777777775in"}
-[04039]: /media/04/image55.png {width="5.738194444444445in" height="8.6875in"}
-[04040]: /media/04/image56.png {width="9.0in" height="5.7444444444444445in"}
-[04041]: /media/04/image57.png {width="5.338888888888889in" height="9.0in"}
-[04042]: /media/04/image58.png {width="9.0in" height="6.511111111111111in"}
+  [1]: /media/04/image1.png {width="1.792361111111111in" height="0.6111111111111112in"}
+  [2]: /media/04/image2.png {width="1.8131944444444446in" height="0.7222222222222222in"}
+  [3]: /media/04/image3.png {width="8.915277777777778in" height="6.207638888888889in"}
+  [4]: /media/04/image4.png {width="1.7715277777777778in" height="0.5277777777777778in"}
+  [5]: /media/04/image5.png {width="2.5006944444444446in" height="0.5277777777777778in"}
+  [6]: /media/04/image6.png {width="2.7631944444444443in" height="0.5in"}
+  [7]: /media/04/image7.png {width="1.9166666666666667in" height="0.6333333333333333in"}
+  [8]: /media/04/image8.png {width="5.290972222222222in" height="8.998611111111112in"}
+  [9]: /media/04/image9.png {width="4.271527777777778in" height="1.2666666666666666in"}
+  [10]: /media/04/image10.png {width="1.7715277777777778in" height="1.1388888888888888in"}
+  [11]: /media/04/image11.png {width="1.542361111111111in" height="1.0833333333333333in"}
+  [12]: /media/04/image12.png {width="1.4590277777777778in" height="0.5138888888888888in"}
+  [13]: /media/04/image13.png {width="4.9375in" height="3.1875in"}
+  [14]: /media/04/image14.png {width="4.3125in" height="3.0in"}
+  [15]: /media/04/image15.png {width="4.2034722222222225in" height="4.113194444444445in"}
+  [16]: /media/04/image16.png {width="4.4375in" height="1.375in"}
+  [17]: /media/04/image17.png {width="5.2868055555555555in" height="1.7604166666666667in"}
+  [18]: /media/04/image18.png {width="5.1875in" height="3.15in"}
+  [19]: /media/04/image19.png {width="4.5625in" height="4.0625in"}
+  [20]: /media/04/image20.png {width="5.3125in" height="3.9611111111111112in"}
+  [21]: /media/04/image21.png {width="5.5125in" height="6.4625in"}
+  [22]: /media/04/image22.png {width="3.145138888888889in" height="0.24513888888888888in"}
+  [23]: /media/04/image23.png {width="5.9375in" height="3.0in"}
+  [24]: /media/04/image24.png {width="3.513888888888889in" height="0.6875in"}
+  [25]: /media/04/image25.png {width="1.4375in" height="0.28125in"}
+  [26]: /media/04/image26.png {width="4.5in" height="3.45in"}
+  [27]: /media/04/image27.png {width="3.4375in" height="1.6625in"}
+  [28]: /media/04/image28.png {width="2.7in" height="2.495138888888889in"}
+  [29]: /media/04/image29.png {width="5.375in" height="2.1875in"}
+  [30]: /media/04/image30.png {width="6.951388888888889in" height="2.3125in"}
+  [31]: /media/04/image31.png {width="5.0625in" height="2.6875in"}
+  [32]: /media/04/image32.png {width="3.0in" height="2.8833333333333333in"}
+  [33]: /media/04/image49.png {width="2.9in" height="0.5097222222222222in"}
+  [34]: /media/04/image50.png {width="5.75in" height="2.6875in"}
+  [35]: /media/04/image51.png {width="2.8in" height="0.4986111111111111in"}
+  [36]: /media/04/image52.png {width="8.630718503937008in" height="6.446496062992126in"}
+  [37]: /media/04/image53.png {width="6.311805555555556in" height="8.686111111111112in"}
+  [38]: /media/04/image54.png {width="9.316666666666666in" height="6.4215277777777775in"}
+  [39]: /media/04/image55.png {width="5.738194444444445in" height="8.6875in"}
+  [40]: /media/04/image56.png {width="9.0in" height="5.7444444444444445in"}
+  [41]: /media/04/image57.png {width="5.338888888888889in" height="9.0in"}
+  [42]: /media/04/image58.png {width="9.0in" height="6.511111111111111in"}
