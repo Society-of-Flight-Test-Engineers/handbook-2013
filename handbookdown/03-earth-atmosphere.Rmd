@@ -972,8 +972,8 @@ at Austin, 1994. ([[www.colorado.edu/geography/gcraft/notes/gps/gps\_f.html]{.un
   [03027]: media/03/image28.png {width="6.999305555555556in" height="6.999305555555556in"}
   [http://www.colorado.edu/geography/gcraft/notes/coordsys/gif/latlon2.gif]: media/03/image29.gif {width="4.71665135608049in" height="3.3229166666666665in"}
   [http://principles.ou.edu/earth\_figure\_gravity/geoid/geoid-ellipsoidal-orthometric\_height.jpg]: media/03/image30.jpeg {width="4.69963145231846in" height="2.632075678040245in"}
-  [03028]: media/03/image31.emf {width="4.3740780839895015in" height="4.462264873140858in"}
-  [03029]: media/03/image32.emf {width="3.3050623359580054in" height="3.3113199912510938in"}
+  [03028]: media/03/image31.png {width="4.3740780839895015in" height="4.462264873140858in"}
+  [03029]: media/03/image32.png {width="3.3050623359580054in" height="3.3113199912510938in"}
   [03030]: media/03/image33.png {width="6.0in" height="2.441666666666667in"}
   [[www.colorado.edu/geography/gcraft/notes/gps/gps\_f.html]{.underline}]: http://www.colorado.edu/geography/gcraft/notes/gps/gps_f.html
   [[http://www.digitaldutch.com/atmoscalc/]{.underline}]: http://www.digitaldutch.com/atmoscalc/

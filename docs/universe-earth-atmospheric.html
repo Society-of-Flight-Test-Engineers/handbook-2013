@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="mathematics.html"/>
-
+<link rel="next" href="pitot-statics.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -125,6 +125,7 @@
 <li class="chapter" data-level="3" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html"><i class="fa fa-check"></i><b>3</b> Universe Earth Atmospheric</a><ul>
 <li class="chapter" data-level="3.1" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html#properties"><i class="fa fa-check"></i><b>3.1</b> Properties</a></li>
 </ul></li>
+<li class="chapter" data-level="4" data-path="pitot-statics.html"><a href="pitot-statics.html"><i class="fa fa-check"></i><b>4</b> Pitot Statics</a></li>
 </ul>
 
       </nav>
@@ -812,7 +813,7 @@ Crest to Trough (ft)</th>
 <p>Modern GPS units typically include a geoid model (e.g. EGM-96) that provides N (geoid height over the WGS ellipsoid) at the current position. Such a unit can provide the height above geoid. If GPS height output is only available relative to the ellipsoid (h), then traditional Orthometric height (H) above the geoid can be obtained by subtracting the geoid height above the ellipsoid. <span class="math display">\[http://www.esri.com/news/arcuser/0703/geoid1of3.html\]</span></p>
 <p><strong><span class="underline">ECEF Transformations</span></strong></p>
 <p>For the purpose of performance, navigation, or noise analysis, flight testers may require distances between two points (the shortest being along the great circle arc) and the average heading of that arc. Calculating these from typical Geodetic System Lat/Long inputs requires conversion to the Earth Centered Earth Fixed (ECEF) coordinate system as shown in Figure 3.8-3.</p>
-<p><img src="media/03/image31.emf" style="width:4.37408in;height:4.46226in" /></p>
+<p><img src="media/03/image31.png" style="width:4.37408in;height:4.46226in" /></p>
 <p><strong>Figure 3.8-3 Earth Centered Earth Fixed Coordinate System</strong></p>
 <p>The ECEF coordinate system is a Cartesian system with the origin at the earth’s center. In this system, the X-axis is defined by the intersection of the Prime Meridian and equatorial planes. The Z-axis goes through the North Pole. The Y-axis completes a right-handed orthogonal system by a plane 90 degrees east of the X-axis and its intersection with the equator.</p>
 <p>Geodetic System (lat/long/height) data converts to ECEF as follows:</p>
@@ -836,7 +837,7 @@ Crest to Trough (ft)</th>
 <p><span class="math display">\[M = \frac{a(1 - e^{2})}{\left\lbrack 1 - e^{2} \bullet \sin^{2}(\phi) \right\rbrack^{1.5}}\]</span></p>
 <p><strong><span class="underline">Great Circle Calculations</span></strong></p>
 <p>Any plane passing through the center of a spheroid traces a <strong>Great Circle</strong> around the perimeter of that spheroid. The shortest distance between two points on the surface is that portion of the great circle arc encompassing both points (Figure 3.8-3).</p>
-<p><img src="media/03/image32.emf" style="width:3.30506in;height:3.31132in" /></p>
+<p><img src="media/03/image32.png" style="width:3.30506in;height:3.31132in" /></p>
 <p><strong>Figure 3.8-3 Great Circle Arc</strong></p>
 <p>Except when moving around the equator, navigating along a great circle route has the characteristic of intercepting longitude lines at different angles. In other words, the heading (or bearing) changes along the route. Analysis shows bearing <span class="underline">change</span> along a great circle route:</p>
 <ul>
@@ -930,26 +931,13 @@ Crest to Trough (ft)</th>
 
 </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
             </section>
 
           </div>
         </div>
       </div>
-<a href="mathematics.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="mathematics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="pitot-statics.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
