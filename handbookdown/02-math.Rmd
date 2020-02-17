@@ -745,7 +745,7 @@ where \(\theta\) is the angle between the vectors.
 
 ![][02045]
 
-### Vector Product
+### Vector Cross Product
 The cross product is an operation on vectors in three dimensional space denoted \(\bar{A} \times \bar{B}\). We can define it in terms of matrix determinants in the following way.
 \[ \bar{A} \times \bar{B} = \begin{vmatrix}
 \hat{i} & \hat{j} & \hat{k}\\
@@ -776,15 +776,32 @@ b_x & b_y
 
 ![][02049]
 
-**Vector Differentiation** (raw)
+### Vector Differentiation (raw)
+Let \(\vec{r}(t)\) be a vector-valued function. We can denote this in this way: \(\vec{r}(t) = (x(t),y(t))\) is an example of a function that returns a position vector.  A similar and equivalent notation is as follows: \(\vec{r}(t) = x(t)\hat{i} + y(t)\hat{j}\).
+
+The first derivative of \(\vec{r}(t)\) with respect to time, \(t\), is a vector-valued function that denotes velocity. This function returns a vector tangential to the trajectory with a magnitude equal to the speed of the particle.
+
+The second derivative of \(\vec{r}(t)\) with respect to time, \(t\), is a vector-valued function that denotes acceleration. This function returns a vector tangential to the velocity vector with a magnitude equal to the acceleration of the particle.
+
+With this notation, the normal differenation operations hold for vector-valued *functions* along with the following. 
+**Derivative of a Sum**
+\[\frac{d}{dt}\left( \vec{r}(t) + \vec{s}(t) \right) = \frac{d}{dt}\vec{r}(t) + \frac{d}{dt}\vec{s}(t)\].
+
+**Derivative of a Dot Product**
+\[\frac{d}{dt}\left( \vec{r}(t) \cdot \vec{s}(t) \right) = \vec{r}(t) \cdot \frac{d}{dt}\vec{s}(t) + \frac{d}{dt}\vec{r}(t) \cdot \vec{s}(t) \].
+
+**Derivative of a Cross Product**
+\[\frac{d}{dt}\left( \vec{r}(t) \times \vec{s}(t) \right) = \vec{r}(t) \times \frac{d}{dt}\vec{s}(t) +  \frac{d}{dt}\vec{r}(t) \times \vec{s}(t)\].
+
+**Derivative of a Scalar Product**
+If \(f(t)\) be a scalar-valued function, then
+\[\frac{d}{dt}\left( f(t)\vec{r}(t) \right) = f(t)\frac{d}{dt}\vec{r}(t) + \left(\frac{d}{dt} f(t)\right) \vec{r}(t)\].
 
 ![][02050]
 
-The first derivative of a position vector is a vector tangential to the trajectory with a magnitude equal to the speed of the particle.
+### Motion of a point using two reference systems
 
-**Motion of a point using two reference systems**.
-
-Reference A can be considered the inertial frame while Rotation of the B reference relative to the A reference must be considered when observing motion wrt the A reference system.
+Reference A can be considered the inertial frame while Rotation of the B reference relative to the A reference must be considered when observing motion with respect to the A reference system.
 
 ![][02051]
 
@@ -818,7 +835,7 @@ is the Coriolis acceleration, and
 
 is the transport acceleration and is the only acceleration if point P is rigidly attached to reference B.
 
-To get acceleration wrt *A*, differentiate:
+To get acceleration with respect to *A*, differentiate:
 
  ![][02059]
 
@@ -842,13 +859,7 @@ is the Coriolis acceleration, and
 
 is the transport acceleration and is the only acceleration if point P is rigidly attached to reference B.
 
- 
-
-** **
-
- 
-
-**Motion of a point using one reference system**.
+### Motion of a point using one reference system
 
 Reference A can be considered the inertial frame while
 
