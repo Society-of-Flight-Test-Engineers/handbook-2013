@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Universe Earth Atmospheric | Flight Test Engineering Reference Handbook</title>
+  <meta name="description" content="3 Universe Earth Atmospheric | Flight Test Engineering Reference Handbook" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Universe Earth Atmospheric | Flight Test Engineering Reference Handbook" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="media/media/image1.jpg" />
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Universe Earth Atmospheric | Flight Test Engineering Reference Handbook" />
+  
+  
+  <meta name="twitter:image" content="media/media/image1.jpg" />
+
+<meta name="author" content="Society of Flight Test Engineers" />
+
+
+<meta name="date" content="2013-01-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="mathematics.html"/>
+<link rel="next" href="pitot-statics.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#contributors"><i class="fa fa-check"></i>Contributors</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#editors"><i class="fa fa-check"></i>Editors</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#feedback"><i class="fa fa-check"></i>Feedback</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#publication-policy"><i class="fa fa-check"></i>Publication Policy</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#section-index"><i class="fa fa-check"></i>Section Index</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="general-information.html"><a href="general-information.html"><i class="fa fa-check"></i><b>1</b> General Information</a><ul>
+<li class="chapter" data-level="1.1" data-path="general-information.html"><a href="general-information.html#unit-conversions"><i class="fa fa-check"></i><b>1.1</b> Unit Conversions</a></li>
+<li class="chapter" data-level="1.2" data-path="general-information.html"><a href="general-information.html#greek-alphabet"><i class="fa fa-check"></i><b>1.2</b> Greek Alphabet</a></li>
+<li class="chapter" data-level="1.3" data-path="general-information.html"><a href="general-information.html#greek-symbols-used-for-aircraft"><i class="fa fa-check"></i><b>1.3</b> Greek Symbols Used for Aircraft</a></li>
+<li class="chapter" data-level="1.4" data-path="general-information.html"><a href="general-information.html#common-subscripts"><i class="fa fa-check"></i><b>1.4</b> Common Subscripts</a></li>
+<li class="chapter" data-level="1.5" data-path="general-information.html"><a href="general-information.html#common-abbreviations-raw"><i class="fa fa-check"></i><b>1.5</b> Common Abbreviations (raw)</a></li>
+<li class="chapter" data-level="1.6" data-path="general-information.html"><a href="general-information.html#sign-conventions-raw"><i class="fa fa-check"></i><b>1.6</b> Sign Conventions (raw)</a></li>
+<li class="chapter" data-level="1.7" data-path="general-information.html"><a href="general-information.html#thermodynamics-relations"><i class="fa fa-check"></i><b>1.7</b> Thermodynamics Relations</a><ul>
+<li class="chapter" data-level="1.7.1" data-path="general-information.html"><a href="general-information.html#thermodynamic-definitions"><i class="fa fa-check"></i><b>1.7.1</b> Thermodynamic Definitions</a></li>
+<li class="chapter" data-level="1.7.2" data-path="general-information.html"><a href="general-information.html#thermodynamic-symbols"><i class="fa fa-check"></i><b>1.7.2</b> Thermodynamic Symbols</a></li>
+<li class="chapter" data-level="1.7.3" data-path="general-information.html"><a href="general-information.html#thermodynamic-laws"><i class="fa fa-check"></i><b>1.7.3</b> Thermodynamic Laws</a></li>
+</ul></li>
+<li class="chapter" data-level="1.8" data-path="general-information.html"><a href="general-information.html#mechanics-relations"><i class="fa fa-check"></i><b>1.8</b> Mechanics Relations</a><ul>
+<li class="chapter" data-level="1.8.1" data-path="general-information.html"><a href="general-information.html#mechanics-symbols"><i class="fa fa-check"></i><b>1.8.1</b> Mechanics Symbols</a></li>
+<li class="chapter" data-level="1.8.2" data-path="general-information.html"><a href="general-information.html#newtons-laws"><i class="fa fa-check"></i><b>1.8.2</b> Newton’s Laws</a></li>
+<li class="chapter" data-level="1.8.3" data-path="general-information.html"><a href="general-information.html#planar-kinetics-work-power-and-energy"><i class="fa fa-check"></i><b>1.8.3</b> Planar Kinetics, Work, Power and Energy</a></li>
+<li class="chapter" data-level="1.8.4" data-path="general-information.html"><a href="general-information.html#planar-kinematics-at-constant-acceleration"><i class="fa fa-check"></i><b>1.8.4</b> Planar Kinematics at Constant Acceleration</a></li>
+<li class="chapter" data-level="1.8.5" data-path="general-information.html"><a href="general-information.html#curvilinear-motion-with-constant-acceleration-and-radius"><i class="fa fa-check"></i><b>1.8.5</b> Curvilinear motion with constant acceleration and radius</a></li>
+<li class="chapter" data-level="1.8.6" data-path="general-information.html"><a href="general-information.html#aircraft-in-level-turn"><i class="fa fa-check"></i><b>1.8.6</b> Aircraft in level turn</a></li>
+<li class="chapter" data-level="1.8.7" data-path="general-information.html"><a href="general-information.html#level-turn-kinematics-character"><i class="fa fa-check"></i><b>1.8.7</b> Level Turn Kinematics Character</a></li>
+<li class="chapter" data-level="1.8.8" data-path="general-information.html"><a href="general-information.html#gyroscopic-motion"><i class="fa fa-check"></i><b>1.8.8</b> Gyroscopic Motion</a></li>
+</ul></li>
+<li class="chapter" data-level="1.9" data-path="general-information.html"><a href="general-information.html#international-phonetic-alphabet-and-morse-code"><i class="fa fa-check"></i><b>1.9</b> International Phonetic Alphabet and Morse Code</a></li>
+<li class="chapter" data-level="1.10" data-path="general-information.html"><a href="general-information.html#section-1-references"><i class="fa fa-check"></i><b>1.10</b> Section 1 References</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="mathematics.html"><a href="mathematics.html"><i class="fa fa-check"></i><b>2</b> Mathematics</a><ul>
+<li class="chapter" data-level="2.1" data-path="mathematics.html"><a href="mathematics.html#algebra"><i class="fa fa-check"></i><b>2.1</b> Algebra</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="mathematics.html"><a href="mathematics.html#laws"><i class="fa fa-check"></i><b>2.1.1</b> Laws</a></li>
+<li class="chapter" data-level="2.1.2" data-path="mathematics.html"><a href="mathematics.html#identities"><i class="fa fa-check"></i><b>2.1.2</b> Identities</a></li>
+<li class="chapter" data-level="2.1.3" data-path="mathematics.html"><a href="mathematics.html#equations"><i class="fa fa-check"></i><b>2.1.3</b> Equations</a></li>
+<li class="chapter" data-level="2.1.4" data-path="mathematics.html"><a href="mathematics.html#interest-and-annuities"><i class="fa fa-check"></i><b>2.1.4</b> Interest And Annuities</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="mathematics.html"><a href="mathematics.html#geometry"><i class="fa fa-check"></i><b>2.2</b> Geometry</a></li>
+<li class="chapter" data-level="2.3" data-path="mathematics.html"><a href="mathematics.html#trigonometery-raw"><i class="fa fa-check"></i><b>2.3</b> Trigonometery (raw)</a></li>
+<li class="chapter" data-level="2.4" data-path="mathematics.html"><a href="mathematics.html#matrix-algebra-raw"><i class="fa fa-check"></i><b>2.4</b> Matrix Algebra (raw)</a></li>
+<li class="chapter" data-level="2.5" data-path="mathematics.html"><a href="mathematics.html#vector-algebra"><i class="fa fa-check"></i><b>2.5</b> Vector Algebra</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="mathematics.html"><a href="mathematics.html#addition"><i class="fa fa-check"></i><b>2.5.1</b> Addition</a></li>
+<li class="chapter" data-level="2.5.2" data-path="mathematics.html"><a href="mathematics.html#subtraction"><i class="fa fa-check"></i><b>2.5.2</b> Subtraction</a></li>
+<li class="chapter" data-level="2.5.3" data-path="mathematics.html"><a href="mathematics.html#scalar-multiplication"><i class="fa fa-check"></i><b>2.5.3</b> Scalar Multiplication</a></li>
+<li class="chapter" data-level="2.5.4" data-path="mathematics.html"><a href="mathematics.html#dot-product"><i class="fa fa-check"></i><b>2.5.4</b> Dot Product</a></li>
+<li class="chapter" data-level="2.5.5" data-path="mathematics.html"><a href="mathematics.html#norm"><i class="fa fa-check"></i><b>2.5.5</b> Norm</a></li>
+<li class="chapter" data-level="2.5.6" data-path="mathematics.html"><a href="mathematics.html#vector-product"><i class="fa fa-check"></i><b>2.5.6</b> Vector Product</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="mathematics.html"><a href="mathematics.html#probability-and-statistics"><i class="fa fa-check"></i><b>2.6</b> Probability and Statistics</a></li>
+<li class="chapter" data-level="2.7" data-path="mathematics.html"><a href="mathematics.html#standard-series-raw"><i class="fa fa-check"></i><b>2.7</b> Standard Series (raw)</a></li>
+<li class="chapter" data-level="2.8" data-path="mathematics.html"><a href="mathematics.html#derivative-table-raw"><i class="fa fa-check"></i><b>2.8</b> Derivative Table (raw)</a></li>
+<li class="chapter" data-level="2.9" data-path="mathematics.html"><a href="mathematics.html#integral-table-raw"><i class="fa fa-check"></i><b>2.9</b> Integral Table (raw)</a></li>
+<li class="chapter" data-level="2.10" data-path="mathematics.html"><a href="mathematics.html#laplace-table-raw"><i class="fa fa-check"></i><b>2.10</b> Laplace Table (raw)</a></li>
+<li class="chapter" data-level="2.11" data-path="mathematics.html"><a href="mathematics.html#references"><i class="fa fa-check"></i><b>2.11</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html"><i class="fa fa-check"></i><b>3</b> Universe Earth Atmospheric</a><ul>
+<li class="chapter" data-level="3.1" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html#properties"><i class="fa fa-check"></i><b>3.1</b> Properties</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="pitot-statics.html"><a href="pitot-statics.html"><i class="fa fa-check"></i><b>4</b> Pitot Statics</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Flight Test Engineering Reference Handbook</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="universe-earth-atmospheric" class="section level1">
+<h1><span class="header-section-number">3</span> Universe Earth Atmospheric</h1>
+<div id="properties" class="section level2">
+<h2><span class="header-section-number">3.1</span> Properties</h2>
+<p>3.1 Universal Constants</p>
+<p>Newtonian Gravity</p>
+<p>3.2 Earth Properties</p>
+<p>Centrifugal relief from gravity</p>
+<p>Altitude effect on gravitational acceleration</p>
+<p>Actual gravitational pull on an aircraft</p>
+<p>Gravity influence on cruise performance</p>
+<p>3.3 General Properties of Air</p>
+<p>Composition of air</p>
+<p>Viscosities of Air</p>
+<p>Psychrometric Chart</p>
+<p> </p>
+<p>3.4 Standard Atmosphere</p>
+<p>Divisions of the Atmosphere</p>
+<p>Altitude Definitions</p>
+<p>Atmosphere Assumptions</p>
+<p>Standard Day Sea Level Conditions</p>
+<p>1976 Standard Atmosphere Equations</p>
+<p>Standard Atmosphere Graph &amp; Tables</p>
+<p> </p>
+<blockquote>
+<p>3.5 Sea States</p>
+</blockquote>
+<p> </p>
+<blockquote>
+<p>3.6 Sunrise and Sunset Times</p>
+<p> </p>
+<p>3.7 Crosswind Components</p>
+<p> </p>
+<p>3.8 Geodetic Measurements</p>
+<p> </p>
+<p>3.9 References</p>
+</blockquote>
+<p> </p>
+<p><strong><br />
+</strong></p>
+<p><strong>Section 3 Recurring Nomenclature</strong></p>
+<p><strong> </strong></p>
+<p><strong><em>H<sub>p </sub></em> =</strong> pressure altitude. The pressure associate with geopotential altitude on a standard day.</p>
+<p><em>T</em> = absolute temperature (Rankin or Kelvin)</p>
+<p><em>T<sub>R</sub></em> = absolute temperature, Rankin scale</p>
+<p><em>T<sub>o</sub></em> = standard day seal level absolute temperature</p>
+<p><em>P</em> = ambient pressure</p>
+<p><em>P<sub>o</sub></em>= standard day seal level ambient pressure</p>
+<p><em>ρ</em> = ambient density</p>
+<p><em>ρ</em> <em><sub>ο</sub></em>= standard day seal level ambient density</p>
+<p>δ = P/P<sub>o</sub> = atmospheric pressure/std day sea level pressure</p>
+<p>θ = T/T<sub>o</sub> = atmospheric absolute temp / std day sea level absolute temp</p>
+<p>σ = <em>ρ</em> /<em>ρ</em> <em><sub>ο </sub></em>= atmospheric density/std day sea level density</p>
+<p>g = acceleration due to gravity</p>
+<p>g<sub>o</sub> = standard earth acceleration due to gravity</p>
+<p><em>a<sub>o</sub></em> = speed of sound at std day sea level temperature</p>
+<p> </p>
+<p><strong><br />
+</strong></p>
+<p><strong>Section 3.1 Universal Constants</strong> (reference 3.1)</p>
+<p> </p>
+<p>Avogadros number, <em>N<sub>o</sub></em> 6.022169 x 10<sup>23</sup> molecules/mole</p>
+<p>Boltzmann constant, <em>k</em> 1.380 x 10<sup>-23</sup> J/<sup>o</sup>K</p>
+<p>electron charge, <em>e</em> 1,602 x 10<sup>-19</sup> coulomb</p>
+<p>electron mass, <em>m<sub>e</sub></em> 9.109 x 10<sup>-31</sup> kg</p>
+<p>gas constant, <em>R</em> 8.31434 J/<sup>o</sup>K mole</p>
+<p>gravitational constant, <em>G</em> 6.673 x 10<sup>-11</sup> Nm<sup>2</sup>/kg<sup>2</sup></p>
+<p>neutron mass, <em>m<sub>n</sub></em> 1.674 x 10<sup>-27</sup> kg</p>
+<p>Planck constant, <em>h</em> 6.625 x 10<sup>-34</sup> J sec</p>
+<p>proton mass, <em>m<sub>p</sub></em> 1.672 x 10<sup>-27</sup> kg</p>
+<p>speed of light in a vacuum, <em>c</em> 2.998 x 10<sup>8</sup> m/sec</p>
+<p>unified atomic mass constant, <em>m<sub>u</sub></em> 1.660 x 10<sup>-27</sup> kg</p>
+<p>volume of ideal gas (std temp &amp; press) 2.241 x 10 m<sup>3</sup>/mol</p>
+<p> </p>
+<p><strong>Newtonian Gravity</strong></p>
+<p>The gravitaional field (<em>g</em>) near any mass can be calculated as</p>
+<p> <img src="media/03/image1.png" style="width:0.66736in;height:0.45833in" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>where <em>G</em> is the universal gravitational constant and <em>R<sub>A</sub></em> is the absolute distance from the center of mass M</p>
+<p> </p>
+<p><strong><br />
+</strong></p>
+<p><strong>Section 3.2 Earth Properties (references 3.9.2, 3.9.3 )</strong></p>
+<p> </p>
+<p>Std Earth gravitational acceleration, g<sub>o</sub> = 9.8066 <em>m/s<sup>2</sup></em> = 32.174 <em>ft/s<sup>2</sup></em></p>
+<p>mass = 5.9722 × 10<sup>24</sup> <em>kg</em> = 13.22 x 10<sup>24</sup> <em>lb</em></p>
+<p>rotation rate, ω = 7.292115 × 10<sup>−5</sup> <em>rad/sec</em></p>
+<p>average density = 5.522 <em>g/cm<sup>3</sup></em> = 344.7 <em>lb/ft<sup>3</sup></em></p>
+<p>radius average, <em>R<sub>avg</sub></em> = 6,367,444 <em>m</em> = 3956.538 <em>st. miles</em> = 20,890,522 <em>ft</em></p>
+<p>radius at the equator (<em>R<sub>e</sub></em>) is 6,378,137 <em>m</em> (±2)</p>
+<p>radius at the poles <em>R<sub>p</sub></em> = 6,356,752 <span class="math display">\[*m*\]</span></p>
+<p>radius as a function of latitude, φ (assumes perfect ellipsoid):</p>
+<p> </p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong>Centrifugal Relief from Gravity</strong></p>
+<p>The earth's "normal" gravity field includes both the Newtonian Law and a correction for the centrifugal force caused by the earth's rotation. The centrifugal relief correction is</p>
+<p> </p>
+<p> <img src="media/03/image2.png" style="width:1.74167in;height:0.68056in" /></p>
+<p> </p>
+<p> </p>
+<p>where ω is the earth’s rotation rate and <em>R<sub>x</sub></em> is the perpendicular distance from the earth's axis to the surface and can be calculated as <em>R<sub>x</sub></em> =<em>R</em> cos φ (see figure below).</p>
+<p> </p>
+<p><img src="media/03/image3.png" style="width:1.94514in;height:0.47222in" /> </p>
+<p> </p>
+<p> <img src="media/03/image5.png" style="width:2.07292in;height:1.375in" />For any centrifugal relief calculations associated with aircraft performance, it is sufficiently exact (g ±0.00004 <em>m</em>/<em>s</em><sup>2</sup>) to use the average earth radius. An aircraft flying eastward contributes to centrifugal relief while a westbound aircraft diminishes it.</p>
+<p> <strong><br />
+</strong></p>
+<p><img src="media/03/image6.png" style="width:4.0375in;height:0.29167in" />The International Association of Geodesy publishes the following equation (accurate to 0.005%) to calculate <em>local sea level gravity including the effects of centrifugal relief for</em> <em>any point fixed to the earth's surface</em></p>
+<p>  </p>
+<p>The above equation is tabulated below for quick reference.</p>
+<p>  </p>
+<table style="width:81%;">
+<colgroup>
+<col width="19%" />
+<col width="33%" />
+<col width="27%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"><strong>Latitude<br />
+(deg)</strong></th>
+<th align="left"><strong>Normal <em>g<sub>local</sub></em></strong></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"><strong>(<em>m</em>/<em>s</em><sup>2</sup>)</strong></td>
+<td><strong>(<em>ft</em>/<em>s</em><sup>2</sup>)</strong></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>0</strong></td>
+<td align="left">9.780327</td>
+<td>32.088</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>15</strong></td>
+<td align="left">9.783659</td>
+<td>32.098</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>30</strong></td>
+<td align="left">9.792866</td>
+<td>32.188</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>45</strong></td>
+<td align="left">9.805689</td>
+<td>32.171</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>60</strong></td>
+<td align="left">9.818795</td>
+<td>32.214</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>75</strong></td>
+<td align="left">9.828569</td>
+<td>32.249</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>90</strong></td>
+<td align="left">9.832185</td>
+<td>32.258</td>
+</tr>
+</tbody>
+</table>
+<p>  </p>
+<p>The standard acceleration (<em>g<sub>o</sub></em>) corresponds to a latitude of 46.0625°.</p>
+<p><em>g<sub>lsl</sub></em> at the equator and the poles varies ±0.27% from <em>g<sub>o</sub></em>.</p>
+<p> </p>
+<p><strong>Altitude Effect on Gravitational Acceleration</strong></p>
+<p><em>R<sub>A </sub></em>is the sum of the earth's local radius and the geometric distance (<em>h<sub>G</sub></em>) above the surface: <em>R<sub>A</sub> = R</em> + <em>h<sub>G</sub></em></p>
+<p> </p>
+<p><img src="media/03/image7.png" style="width:1.25972in;height:0.52778in" /></p>
+<p>Gravitational acceleration at any geometric altitude:</p>
+<p> </p>
+<table style="width:40%;">
+<colgroup>
+<col width="16%" />
+<col width="23%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p><em>h<sub>G</sub></em></p>
+(1000 ft)</th>
+<th> g_alt/g_lsl</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>0.99904</td>
+</tr>
+<tr class="odd">
+<td>20</td>
+<td>0.99809</td>
+</tr>
+<tr class="even">
+<td>40</td>
+<td>0.99618</td>
+</tr>
+<tr class="odd">
+<td>60</td>
+<td>0.99428</td>
+</tr>
+<tr class="even">
+<td>80</td>
+<td>0.99238</td>
+</tr>
+<tr class="odd">
+<td>100</td>
+<td>0.99049</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><strong><br />
+</strong></p>
+<p><strong>Actual Gravitational Pull on an Aircraft</strong></p>
+<p>Adding a centrifugal relief correction due to the aircraft’s velocity, a complete calculation for its gravitational acceleration is</p>
+<p> </p>
+<p> <img src="media/03/image8.png" style="width:4.13056in;height:0.52639in" />where <em>V<sub>G</sub></em> = ground speed and σ = ground track angle (0° = true North, 90° = East, etc.).</p>
+<p><strong> </strong></p>
+<p><strong>Gravity Influence on Aircraft Cruise Performance</strong></p>
+<p>Even at the same altitude, changes in gravity due to latitude or centrifugal relief directly alter the required lift, drag, and fuel flow. For example, with sufficiently precise instrumentation, data collected heading West could show about 0.5% more drag and fuel flow than data collected heading East (centrifugal relief effect). After determining test and standard (or mission) values for <em>g</em>, flight test values for <em>C<sub>L</sub></em>, <em>C<sub>D</sub></em>, drag, and fuel flow can be corrected to standard as follows:</p>
+<p><img src="media/03/image9.png" style="width:2.075in;height:0.26389in" /><img src="media/03/image10.png" style="width:0.98194in;height:0.48611in" /><img src="media/03/image11.png" style="width:1.5375in;height:0.52778in" /></p>
+<p><img src="media/03/image12.png" style="width:1.575in;height:0.26389in" />where <em>N<sub>z</sub></em> = normal load factor,</p>
+<p><em>C<sub>L</sub></em> = lift coefficient, <em>C<sub>D</sub></em> = drag coefficient,</p>
+<p>AR = aspect ratio, e = Oswald efficiency factor,</p>
+<p><em>∆D</em> change in drag force,</p>
+<p><em>TSFC</em> = thrust specific fuel consumption, and</p>
+<p><img src="media/03/image13.png" style="width:0.31528in;height:0.27778in" /> = standard day fuel flow</p>
+<p> </p>
+<p><strong><br />
+</strong></p>
+<p><strong>Section 3.3 General Properties of Air</strong> (reference 3.9.1)</p>
+<p> </p>
+<p>Gas constant, R = 53.35 ft lb/R lbm = 287.074 J/kg K</p>
+<p>= 1716 lb(ft)/slgs(<em>R</em>) = 3089.7 lb(ft)/slgs(<em>K</em>)</p>
+<p> </p>
+<p>Speed of sound = <em>a<sub>o</sub></em>(<em>θ</em>) <sup>½</sup></p>
+<p>= 49.02 (T<sub>R</sub>)<sup>1/2</sup> <em>ft/sec</em></p>
+<p>= 33.42 (T<sub>R</sub>)<sup>1/2</sup> <em>miles/hr</em></p>
+<p>= 29.04 (T<sub>R</sub>)<sup>1/2</sup> <em>knots</em></p>
+<p>= 20.05 (T<sub>R</sub>)<sup>1/2</sup> <em>m/sec</em></p>
+<p> </p>
+<p>Density, <em>ρ</em> = .0023769 <em>slug/ft<sup>3</sup> =</em> 1.225 <em>kg/m<sup>3</sup> (at 15<sup>o</sup> C)</em></p>
+<p>Specific weight, <em>g<sub>ρ</sub></em> = .07647 <em>sec<sup>2</sup>/ft<sup>4</sup></em></p>
+<p><strong> </strong></p>
+<p>Specific heat capacity at 59<em><sup>o</sup>F</em> (=<em>T<sub>o</sub></em>)</p>
+<blockquote>
+<p>at constant pressure, <em>c<sub>p</sub></em> = .240 <em>BTU/lb R</em> = 1004.76 <em>J/kg K</em></p>
+<p>at constant volume, <em>c<sub>v</sub></em> = .1715 <em>BTU/lb R</em> = 717.986 <em>J/kg K</em></p>
+<p>specific heat ratio, <em>γ</em> = {<em>c<sub>p</sub></em> / <em>c<sub>v</sub></em> } =1.4</p>
+</blockquote>
+<p> </p>
+<p><strong>Normal Composition of clean, dry atmospheric air near sea level</strong></p>
+<p>Nitrogen, <em>N<sub>2</sub></em> 78.084 % by volume</p>
+<p>Oxygen, <em>O<sub>2</sub></em> 20.948 %</p>
+<p>Argon, <em>A</em> 0.934 %</p>
+<p>Carbon Dioxide, <em>CO<sub>2</sub></em> 0.031 %</p>
+<p>Neon, <em>Ne</em> <span class="underline">0.002 %</span></p>
+<p>total 99.9988 %</p>
+<p> </p>
+<p>plus traces of helium, kryton, xenon, hydrogen, methane, nitrous oxide, ozone, sulfur dioxide, nitrogen dioxide, ammonia, carbon monoxide, and iodine.</p>
+<p><strong> </strong></p>
+<p><strong>Viscosities of Air</strong></p>
+<p>Coefficient of Viscosity, lb/ft sec</p>
+<p> <img src="media/03/image14.png" style="width:1.4375in;height:0.42847in" /></p>
+<p><strong><br />
+</strong></p>
+<p><img src="media/03/image15.png" style="width:0.48125in;height:0.4375in" />Kinematic viscosity, ft<sup>2</sup>/sec</p>
+<p><img src="media/03/image16.png" style="width:2.15903in;height:0.4375in" /> Absolute Viscosity, lb sec/ft<sup>2</sup></p>
+<p><sup> </sup></p>
+<p> </p>
+<p><strong>Atmospheric Viscosity (U.S. Standard Atmosphere)</strong></p>
+<p> </p>
+<table style="width:89%;">
+<colgroup>
+<col width="27%" />
+<col width="30%" />
+<col width="30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>Pressure Altitude</p>
+<em>ft</em></th>
+<th><p>Kinematic Viscosity</p>
+<em>υ (</em> <em>ft<sup>2</sup>/sec)</em></th>
+<th><p>Absolute Viscosity</p>
+<em>μ (lb sec/ft<sup>2</sup>)</em></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>1.572 x 10<sup>-4</sup></td>
+<td>3.737 x 10<sup>-7</sup></td>
+</tr>
+<tr class="even">
+<td>5,000</td>
+<td>1.776</td>
+<td>3.638</td>
+</tr>
+<tr class="odd">
+<td>10,000</td>
+<td>2.013</td>
+<td>3.538</td>
+</tr>
+<tr class="even">
+<td>15,000</td>
+<td>2.293</td>
+<td>3.435</td>
+</tr>
+<tr class="odd">
+<td>20,000</td>
+<td>2.625</td>
+<td>3.330</td>
+</tr>
+<tr class="even">
+<td>25,000</td>
+<td>3.019</td>
+<td>3.224</td>
+</tr>
+<tr class="odd">
+<td>30,000</td>
+<td>3.493</td>
+<td>3.115</td>
+</tr>
+<tr class="even">
+<td>35,000</td>
+<td>4.065</td>
+<td>3.004</td>
+</tr>
+<tr class="odd">
+<td>40,000</td>
+<td>5.074</td>
+<td>2.981</td>
+</tr>
+<tr class="even">
+<td>45,000</td>
+<td>6.453</td>
+<td>2.982</td>
+</tr>
+<tr class="odd">
+<td>50,000</td>
+<td>8.206</td>
+<td>2.983</td>
+</tr>
+<tr class="even">
+<td>55,000</td>
+<td>10.44</td>
+<td>2.985</td>
+</tr>
+<tr class="odd">
+<td>60,000</td>
+<td>13.27</td>
+<td>2.986</td>
+</tr>
+<tr class="even">
+<td>70,000</td>
+<td>21.69</td>
+<td>3.005</td>
+</tr>
+<tr class="odd">
+<td>80,000</td>
+<td>35.75</td>
+<td>3.043</td>
+</tr>
+<tr class="even">
+<td>90,000</td>
+<td>58.53</td>
+<td>3.080</td>
+</tr>
+<tr class="odd">
+<td>100,000</td>
+<td>95.19</td>
+<td>3.118</td>
+</tr>
+<tr class="even">
+<td>150,000</td>
+<td>1066</td>
+<td>3.572</td>
+</tr>
+<tr class="odd">
+<td>200,000</td>
+<td>6880</td>
+<td>3.435</td>
+</tr>
+</tbody>
+</table>
+<p><strong><br />
+</strong></p>
+<p><img src="media/03/image17.jpg" style="width:6.98681in;height:9in" /><strong>Psychrometric Chart for Seal Level Barometric Pressure</strong></p>
+<p><img src="media/03/image18.jpg" style="width:6.98681in;height:9in" /> </p>
+<p><strong><br />
+</strong></p>
+<p><strong>Section 3.4 Standard Atmosphere</strong></p>
+<p><strong> Divisions of the Atmosphere</strong></p>
+<p><img src="media/03/image19.png" style="width:7in;height:8.25in" /> </p>
+<p><strong><br />
+</strong></p>
+<p>Constantly changing atmospheric conditions cannot be duplicated at will to provide the exact environment in which a flight takes place. A standard atmosphere provides a common basis to relate all flight test, wind tunnel results, aircraft design and general performance. Several models of “standard atmosphere” exist with minor differences based on mathematical constants used in the calculations.</p>
+<p> </p>
+<p><strong>Geometric altitude,</strong> <em>h<sub>G </sub></em>, is defined as the height of an aircraft above sea level (also called <strong>tapeline</strong> altitude)</p>
+<p> </p>
+<p><strong>Absolute altitude,</strong> <em>h<sub>a</sub></em>, is defined as the height of an aircraft above the center of the earth: (geometric altitude + radius of the earth).</p>
+<p> </p>
+<p><strong>Geopotential altitude,</strong> <em>h</em>, is required because <em>g</em> changes with height.If potential energy is calculated using sea level weight (<em>W<sub>SL</sub></em> = <em>mg<sub>o</sub></em>) instead of actual weight (<em>W</em> = <em>mg</em>), then the altitude must be lower.</p>
+<p><em>W h<sub>G</sub> = W<sub>SL</sub>  h</em></p>
+<p>* *</p>
+<p><strong>Pressure altitude, <em>H<sub>p</sub></em></strong> is the altitude, on a standard day, at which the test day pressure would be found</p>
+<p> </p>
+<p><strong>Density altitude</strong> is the altitude, on a standard day, at which the test day density would be found</p>
+<p> </p>
+<p><strong>Temperature altitude</strong> is the altitude, on a standard day, at which the test day temperature would be found</p>
+<p> </p>
+<p><strong>Assumptions on which the standard atmosphere is built</strong></p>
+<p> 1. The air is dry (only 0.4% per volume of water vapor)</p>
+<p> 2. The air is a perfect gas and obeys the equation of state,</p>
+<p><em>P</em> = ρg<em>RT</em></p>
+<p>where R = 53.35 ft lb/<sup>o</sup>R lbm</p>
+<p>  3. The gravitational field decreases with altitude</p>
+<p>  4. Hydrostatic equilibrium exists (∆<em>p=</em> −ρ<em>g<sub>o</sub></em>∆<em>h</em>)</p>
+<p> <strong><br />
+</strong></p>
+<p><strong>Standard Day Sea Level Atmospheric Conditions</strong></p>
+<p><strong> </strong><em>P<sub>o</sub></em> = 2116.22 lb/ft<sup>2</sup> = 14.696 lb/in<sup>2</sup> = 29.921 in <em>Hg</em></p>
+<p>= 1013.25 HPa (mb) = 101325 Pa</p>
+<p><em>T<sub>o</sub> =</em> 288.15 <em>K =</em> 518.67 <em>R =</em> 59 <sup>o</sup><em>F</em> <em>=</em> 15 <sup>o</sup><em>C</em></p>
+<p> </p>
+<p>ρ<em><sub>o</sub></em> = 0.0023769 slgs/ft<sup>3</sup> = 0.07647 lbm/in<sup>3</sup> = 1.255 kg/m<sup>3</sup> (at 15<sup>o</sup> <em>C</em> )</p>
+<p> </p>
+<p><em>a<sub>o</sub></em> = 1116.45 ft/sec = 661.478 KTAS = 761.14 mph = 340.294 m/sec</p>
+<p> </p>
+<p><em>g<sub>o</sub></em> = 32.174 ft/sec<sup>2</sup> = 9.80665 m/sec<sup>2</sup></p>
+<p> </p>
+<p><em>L</em> = standard temperature lapse rate = 0.0019812 <em>K</em> /ft</p>
+<p> </p>
+<p> </p>
+<p><strong>1976 U.S Standard Atmosphere Equations</strong></p>
+<p>Troposhere - below 36,089 ft (11,000 m) <em>&lt; 22636 Pa</em></p>
+<p>θ = 1 − (L/<em>Το</em> ) <em>h</em> = 1-(6.8755856 x 10<sup>-6</sup>) <em>h</em></p>
+<p>σ = θ<sup><em>n</em>-1</sup></p>
+<p>δ = θ<em><sup>n</sup></em></p>
+<p>where <em>n</em> = 5.255876, <em>h</em> = geopotential altitude (ft)</p>
+<p>Stratosphere- between 36,089 ft and 65,616 ft (20,000 m) the standard day temperature is a constant 216.65 <em>K</em>, therefore:</p>
+<p>θ = 0.751865</p>
+<p>* <em><img src="media/03/image20.png" style="width:2.27083in;height:0.21944in" /><img src="media/03/image21.png" style="width:2.33819in;height:0.24653in" />The above relations characterize the standard atmosphere table in this handbook. They may be re-written to solve for pressure altitude (</em>H<sub>p</sub>*) for any ambient pressure. Below the tropopause (ambient pressure greater than 472.683 psf or 22632 Pa)</p>
+<p><em>H</em><sub>p</sub> <span class="math display">\[ft\]</span> = <span class="math display">\[1-(*P~a~/P~o~*)^0.1902632^\]</span>/<span class="math display">\[6.8755856 x 10^-6^\]</span></p>
+<p> </p>
+<p>In the troposphere (ambient pressure between 114.347 and 472.683 psf or between 5475 and 22632.1 Pascal)</p>
+<p><em>H</em><sub>p</sub> <span class="math display">\[ft\]</span> = 36089+<span class="math display">\[ln(*P~a~/P~o~*)+1.498966\]</span>/ 0.000048063</p>
+<p> <strong><br />
+</strong></p>
+<p><img src="media/03/image22.png" style="width:5.33403in;height:5.33403in" /><strong>1976 U.S. Standard Atmosphere Graph</strong></p>
+<p> </p>
+<p><strong><br />
+</strong></p>
+<p><img src="media/03/image23.jpeg" style="width:6.64028in;height:7.99167in" /></p>
+<p><strong><br />
+</strong></p>
+<p><img src="media/03/image24.jpeg" style="width:6.43194in;height:9in" /><strong><br />
+</strong></p>
+<p><img src="media/03/image25.jpeg" style="width:1.98125in;height:9in" />Standard Atmosphere Calculator Website Link <a href="http://www.digitaldutch.com/atmoscalc/" class="uri">http://www.digitaldutch.com/atmoscalc/</a><strong><br />
+</strong></p>
+<p><img src="media/03/image26.jpeg" style="width:6.99028in;height:8.99514in" /><strong><br />
+</strong></p>
+<p><strong>Section 3.5 Sea States</strong></p>
+<p>(ref 3.3) Sea Stale</p>
+<p>International Swell Scale</p>
+<table>
+<colgroup>
+<col width="9%" />
+<col width="61%" />
+<col width="29%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Code</th>
+<th>Sea</th>
+<th><p>Wave Height,</p>
+Crest to Trough (ft)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>Calm</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Smooth</td>
+<td>Less than 1</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>Slight</td>
+<td>1-3</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>Moderate</td>
+<td>3-5</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>Rough</td>
+<td>5-8</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>Very rough</td>
+<td>8-12</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td>High</td>
+<td>12-20</td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td>Very high</td>
+<td>20-40</td>
+</tr>
+<tr class="odd">
+<td>8</td>
+<td>Mountainous</td>
+<td>40+</td>
+</tr>
+<tr class="even">
+<td>9</td>
+<td>Confused, Used as additional description 1-8</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Code</th>
+<th align="left">Swell</th>
+<th align="left">In Open Sea</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">0</td>
+<td align="left">None</td>
+<td align="left">low</td>
+</tr>
+<tr class="even">
+<td align="left">1</td>
+<td align="left">Short or average</td>
+<td align="left"> </td>
+</tr>
+<tr class="odd">
+<td align="left">2</td>
+<td align="left">Long</td>
+<td align="left"> </td>
+</tr>
+<tr class="even">
+<td align="left">3</td>
+<td align="left">Short</td>
+<td align="left">Moderate height</td>
+</tr>
+<tr class="odd">
+<td align="left">4</td>
+<td align="left">Average</td>
+<td align="left"> </td>
+</tr>
+<tr class="even">
+<td align="left">5</td>
+<td align="left">Long</td>
+<td align="left"> </td>
+</tr>
+<tr class="odd">
+<td align="left">6</td>
+<td align="left">Short</td>
+<td align="left">heavy</td>
+</tr>
+<tr class="even">
+<td align="left">7</td>
+<td align="left">Average</td>
+<td align="left"> </td>
+</tr>
+<tr class="odd">
+<td align="left">8</td>
+<td align="left">Long</td>
+<td align="left"> </td>
+</tr>
+<tr class="even">
+<td align="left">9</td>
+<td align="left">Confused, Used as additional description 1-8</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<p><strong><br />
+</strong></p>
+<p><img src="media/03/image27.png" style="width:6.99931in;height:8.74861in" /><strong>Section 3.6 Sunrise Sunset Times</strong></p>
+<p><strong><br />
+</strong></p>
+<p><strong>Section 3.7 Crosswind Components</strong></p>
+<p><img src="media/03/image28.png" style="width:6.99931in;height:6.99931in" /></p>
+<p><strong><br />
+</strong></p>
+<p><strong>Section 3.8 Geodetic Measurements</strong></p>
+<p><strong>Acronyms, Abbreviations and Symbols</strong></p>
+<p>DGPS Differential Global Positioning System</p>
+<p>ECEF Earth Centered Earth Fixed coordinate system</p>
+<p>GPS Global Positioning System</p>
+<p>INS Inertial Navigation System</p>
+<p>WGS84 World Geodetic System 1984</p>
+<p><em>a</em> Earth’s semi-major axis radius</p>
+<p><em>b</em> Earth’s semi-minor axis radius</p>
+<p><em>D</em> Great circle distance between two points</p>
+<p><em>e</em> eccentricity of the Earth square</p>
+<p><em>f</em> Earth’s flatness factor</p>
+<p><em>h</em> geodetic height</p>
+<p><em>N</em> radius of curvature in prime vertical</p>
+<p><em>P</em> radius of curvature in prime vertical</p>
+<p><span class="math inline">\(\overset{\rightarrow}{P}\)</span> Vector from earth center extending to coordinates</p>
+<p><em>r</em> Earth’s radius</p>
+<p><em>X</em> ECEF x coordinate</p>
+<p><em>Y</em> ECEF y coordinate</p>
+<p><em>Z</em> ECEF z coordinate</p>
+<p>φ Geodetic latitude</p>
+<p>ϕ Angle between the two <span class="math inline">\(\overset{\rightarrow}{P}\)</span> vectors originating at the Earth’s center and extending to their respective coordinates at the start and end points.</p>
+<p>λ Geodetic longitude</p>
+<p>ψ Runway heading with respect to true North.</p>
+<p><strong><span class="underline">Earth Modeling</span></strong></p>
+<p>The Geodetic System defines the location of any point relative to the earth using latitude, longitude and height (Figure 3.8-1, point P). Longitude and latitude are expressed in degrees, minutes, seconds. Longitude lines extend <span class="math inline">\(\pm\)</span> 180 degrees from the Prime Meridian, run north to south, and converge at the poles. Latitude lines are parallel to the equator and extend <span class="math inline">\(\pm\)</span> 90°.</p>
+<div class="figure">
+<img src="media/03/image29.gif" style="width:4.71665in;height:3.32292in" alt="" />
+<p class="caption"><a href="http://www.colorado.edu/geography/gcraft/notes/coordsys/gif/latlon2.gif" class="uri">http://www.colorado.edu/geography/gcraft/notes/coordsys/gif/latlon2.gif</a></p>
+</div>
+<p><strong>Figure 3.8-1 Geodetic Coordinate System</strong></p>
+<p>The 1984 world geodetic system, WGS84, models the earth’s surface as an oblate spheroid - an ellipsoid rotated about its semi-minor axis. In this model, used by global positioning systems, the earth’s semi-major axis, <em>a</em> is 6,378,137.0 meters and the semi-minor axis, <em>b is</em> 6,356,752.314 meters.</p>
+<p>The flatness factor (<em>f</em>) is defined as:</p>
+<p><span class="math display">\[f = \frac{a - b}{a}\]</span></p>
+<p>For the WGS84 model, <em>f</em> =1/298.257223563</p>
+<p>Because the earth is not perfectly spherical, there are various methods for defining latitude. Unlike the geocentric latitude which uses the earth’s center for determining a point’s latitude, the <strong>geodetic latitude</strong> (used herein) is the angle between the equatorial plane and a line <em>normal to the reference ellipsoid</em>. Figure 3.8-1 exaggerates this with a normal line being well offset from the earth’s center. This definition leads to a degree of latitude being longer at the pole than at the equator: 111,694 m (60.3 nm) vs. 110,574 m (59.7 nm).</p>
+<p>The <strong>geodetic longitude</strong> of a point is the angle between a reference plane and a plane passing through the point, both planes being perpendicular to the equatorial plane.</p>
+<p><strong>Mathematically, the geodetic surface is a smooth ellipsoid modeling the earth’s surface. Clearly, the topography (actual surface height) deviates from this model whenever land is above or below sea level. Less evident is that the actual sea level also deviates from the geodetic model due to local changes in the earth’s gravity. Specifically, mass variations caused by changes in earth density and topography, such as mountains or trenches, change local gravity vectors and therefore sea level relative to the ellipsoid.</strong></p>
+<p>Reference to <strong>Mean Sea Level</strong> (MSL) served as the traditional way to express topographic or bathymetric height. Geodesists once considered the sea in balance with the earth's gravity and formed a perfectly regular figure. MSL is usually described as a tidal datum that is the arithmetic mean of hourly water elevations observed over a 19-year (Metonic) cycle. This definition averages out tidal highs and lows caused by the changing effects of the gravitational forces from the moon and sun. MSL defines the zero elevation (vertical datum) for a local area. Because the sea surface conforms to the earth's gravitational field, MSL also has slight hills and valleys similar to the land surface but much smoother. Zero elevation as defined by one nation is often not the same zero elevation defined by another, thus locally defined vertical datums differ from each other.</p>
+<p><strong>The Geoid is the equipotential surface in the earth’s gravity field that coincides most closely with the mean sea level extended continuously under the continents. In other words, it approximates the level of any non-flowing water connected (actually or theoretically) to the seas by waterway or via trenches or tunnels.</strong> The geoid s<strong>urface</strong> undulates relative to the geodetic ellipsoid and <strong>is perpendicular to the local gravity vector – as seen with a plumb line. Similarly, a spirit level defines the local surface parallel to the geoid, which is tangent to the local horizon. Because the geoid is an equipotential surface, it is the best datum for measuring potential energy</strong> and is the true zero surface for measuring elevations<strong>.</strong> Previously, there was no way to accurately measure the geoid, so heights were measured relative to the similar MSL. <strong>EGM96 (Earth Gravity Model 1996) represents the best geoid model currently available and shows smoothly changing surface undulations ranging from +85 to -107 meters relative to the WGS84 ellipsoid.</strong></p>
+<p>The geoid surface cannot be directly observed, thus heights above or below it can't be directly measured. Instead the geoid surface is modeled mathematically using gravitational measurements. Although for practical purposes, at the coastline the geoid and MSL surfaces are assumed to be essentially the same, at some spots the geoid can actually differ from MSL by several meters.</p>
+<div class="figure">
+<img src="media/03/image30.jpeg" style="width:4.69963in;height:2.63208in" alt="" />
+<p class="caption"><a href="http://principles.ou.edu/earth\_figure\_gravity/geoid/geoid-ellipsoidal-orthometric\_height.jpg" class="uri">http://principles.ou.edu/earth\_figure\_gravity/geoid/geoid-ellipsoidal-orthometric\_height.jpg</a></p>
+</div>
+<p><strong>Figure 3.8-2 Height Comparisons</strong></p>
+<p><strong>Ellipsoidal height (h) is the same as geodetic height and is the geometric distance between an object and the earth ellipsoid (Figure 3.8-2). This may be a GPS output.</strong></p>
+<p><strong>Geoid height (N) is the height of the geoid above or below the ellipsoid. Some GPS devices output this undulation value in the data stream.</strong></p>
+<p><strong>Orthometric height (H)</strong> is the geometric distance along a gravitational force line from a given point P to the geoid. This is essentially the conventional height measurement because the geoid approximates MSL- the traditional method for determining height.</p>
+<p>Modern GPS units typically include a geoid model (e.g. EGM-96) that provides N (geoid height over the WGS ellipsoid) at the current position. Such a unit can provide the height above geoid. If GPS height output is only available relative to the ellipsoid (h), then traditional Orthometric height (H) above the geoid can be obtained by subtracting the geoid height above the ellipsoid. <span class="math display">\[http://www.esri.com/news/arcuser/0703/geoid1of3.html\]</span></p>
+<p><strong><span class="underline">ECEF Transformations</span></strong></p>
+<p>For the purpose of performance, navigation, or noise analysis, flight testers may require distances between two points (the shortest being along the great circle arc) and the average heading of that arc. Calculating these from typical Geodetic System Lat/Long inputs requires conversion to the Earth Centered Earth Fixed (ECEF) coordinate system as shown in Figure 3.8-3.</p>
+<p><img src="media/03/image31.png" style="width:4.37408in;height:4.46226in" /></p>
+<p><strong>Figure 3.8-3 Earth Centered Earth Fixed Coordinate System</strong></p>
+<p>The ECEF coordinate system is a Cartesian system with the origin at the earth’s center. In this system, the X-axis is defined by the intersection of the Prime Meridian and equatorial planes. The Z-axis goes through the North Pole. The Y-axis completes a right-handed orthogonal system by a plane 90 degrees east of the X-axis and its intersection with the equator.</p>
+<p>Geodetic System (lat/long/height) data converts to ECEF as follows:</p>
+<p><em>x</em> = (<em>N</em> + <em>h</em>)<span class="math inline">\(\bullet\)</span>cos(φ)<span class="math inline">\(\bullet\)</span>cos(λ)</p>
+<p><em>y</em> = (<em>N</em> + <em>h</em>)<span class="math inline">\(\bullet\)</span>cos(φ)<span class="math inline">\(\bullet\)</span>sin(λ)</p>
+<p><em>z</em> = (<em>N</em><span class="math inline">\(\bullet\)</span><em>(1-e<sup>2</sup>)</em> + <em>h</em>) <span class="math inline">\(\bullet\)</span>sin(φ)</p>
+<p>where,</p>
+<p><em>x</em> = ECEF coordinate parallel to the X-axis</p>
+<p><em>y</em> = ECEF coordinate parallel to the Y-axis</p>
+<p><em>z</em> = ECEF coordinate parallel to the Z-axis</p>
+<p><em>φ</em> = geodetic latitude</p>
+<p><em>λ</em> = geodetic longitude</p>
+<p><em>h</em> = height above geodetic (ellipsoid) surface</p>
+<p><em>N</em> = Normal radius of curvature; distance from earth axis to any point on the geodetic surface at that latitude (extension of r to axis shown in Figure 3.8-3).</p>
+<p><span class="math display">\[N = \frac{a}{\sqrt{1 - e^{2} \bullet \sin^{2}(\phi)}}\]</span></p>
+<p>where,</p>
+<p><em>a</em> = semi-major axis radius (6,378,137 m; 20,925,647 ft)</p>
+<p><em>e<sup>2 </sup></em>= eccentricity squared; <span class="math inline">\(e^{2} = 1 - \left( \frac{a}{b} \right)^{2} = 2 \bullet f - f^{2}\)</span>= 0.00669438002290 (Earth, per WGS84).</p>
+<p>Also useful is</p>
+<p><em>M</em> = Meridian radius of curvature; distance from earth axis to any point on the geodetic surface at that longitude.</p>
+<p><span class="math display">\[M = \frac{a(1 - e^{2})}{\left\lbrack 1 - e^{2} \bullet \sin^{2}(\phi) \right\rbrack^{1.5}}\]</span></p>
+<p><strong><span class="underline">Great Circle Calculations</span></strong></p>
+<p>Any plane passing through the center of a spheroid traces a <strong>Great Circle</strong> around the perimeter of that spheroid. The shortest distance between two points on the surface is that portion of the great circle arc encompassing both points (Figure 3.8-3).</p>
+<p><img src="media/03/image32.png" style="width:3.30506in;height:3.31132in" /></p>
+<p><strong>Figure 3.8-3 Great Circle Arc</strong></p>
+<p>Except when moving around the equator, navigating along a great circle route has the characteristic of intercepting longitude lines at different angles. In other words, the heading (or bearing) changes along the route. Analysis shows bearing <span class="underline">change</span> along a great circle route:</p>
+<ul>
+<li><p>Is never greater than the longitude difference between the end points.</p></li>
+<li><p>Approaches the value of the longitude change as the final latitude approaches a pole (regardless of initial latitude).</p></li>
+<li><p>Is smallest when the final latitude is at the equator</p></li>
+</ul>
+<blockquote>
+<p>(for this case, bearing change ≈ longitude change x initial latitude/100).</p>
+</blockquote>
+<p>Calculate the <strong>great circle distance (D)</strong> between points (subscripts 1 and 2) as</p>
+<blockquote>
+<p><span class="math inline">\(P_{1} = \sqrt{x_{1}^{2} + y_{1}^{2} + z_{1}^{2}}\)</span>, <span class="math inline">\(\text{\ \ P}_{2} = \sqrt{x_{2}^{2} + y_{2}^{2} + z_{2}^{2}}\)</span></p>
+</blockquote>
+<p><span class="math display">\[{\overset{\rightarrow}{P}}_{1} \bullet {\overset{\rightarrow}{P}}_{2} = P_{1} \bullet P_{2}\cos\varphi = x_{1} \bullet x_{2} + y_{1} \bullet y_{2} + z_{1} \bullet z_{2}\]</span></p>
+<p><span class="math display">\[\varphi = \arccos\left( \frac{x_{1} \bullet x_{2} + y_{1} \bullet y_{2} + z_{1} \bullet \text{Zz}_{2}}{P_{1} \bullet P_{2}} \right)\]</span></p>
+<p><span class="math display">\[D = P_{\text{avg}} \bullet \varphi\]</span></p>
+<p>where</p>
+<p><em>P</em> = distance from earth center to any point (including height above the spheroid surface).</p>
+<p><span class="math inline">\(\overset{\rightarrow}{P}\)</span> = Vector from the Earth’s center to point P.</p>
+<p>ϕ = Angle between the two <span class="math inline">\(\overset{\rightarrow}{P}\)</span> vectors</p>
+<p>&lt;<a href="http://www.movable-type.co.uk/scripts/latlong.html" class="uri">http://www.movable-type.co.uk/scripts/latlong.html</a>&gt; provides equations an online tool for calculating great circle initial &amp; final bearings (headings).</p>
+<p><strong><span class="underline"><br />
+</span></strong></p>
+<p><strong><span class="underline">Local Distance Transformation</span></strong></p>
+<p>Latitude <em>φ</em>, longitude λ, and height (typical GPS output data) can be transformed into rectangular (X,Y,Z) coordinates. The following presents a method for applying this to two different coordinate systems, both with the X-Y axes defining the horizontal plane. This is useful when working with local distances associated with typical flight testing such as noise measurement, local navigation, or field performance.</p>
+<p>Figure 3.8-4a shows a case where the X-Y coordinate system aligns with the latitude &amp; longitude grid. Figure 3.8-4b shows a case where the X-Y coordinate system aligns with a runway, with Y=0 defining the centerline. In both cases, a designated primary reference datum <span class="math display">\[*φ*~0~, λ~0~\]</span>, such as the runway centerline threshold, coincides with X=0, Y=0. With the example shown in Figure 3.8-4b, the opposite end of the runway centerline <span class="math display">\[*φ*~1~, λ~1~\]</span>, coincides with X= <em>runway length</em> and Y= 0.</p>
+<p><img src="media/03/image33.png" style="width:6in;height:2.44167in" /></p>
+<p><strong>Figure 3.8-4: Local X-Y Coordinate System Aligned with (a)</strong>φ<strong>,</strong>λ <strong>Grid; (b) Runway</strong></p>
+<p>Because each degree of latitude change is not always exactly 60 nm and because the spacing between degrees of longitude changes markedly with latitude, converting from degrees latitude &amp; longitude change to distance requires scaling factors. First select equatorial distances for each degree change</p>
+<p>φ_scale{φ=0} = 110,574 m = 362,776.6 ft = 59.70518 nm</p>
+<p>λ_scale{φ=0} = 111,319.5 m = 365,221.4 ft = 60.10772 nm</p>
+<p>Use average latitude to calculate latitude and longitude scaling factors</p>
+<p><span class="math inline">\(\varnothing\_\text{scale} = \frac{\varnothing\_\mathrm{\text{scale}}\{\varnothing = 0\}}{\left\lbrack 1 - e^{2} \bullet \sin^{2}(\phi) \right\rbrack^{1.5}}\)</span> <span class="math inline">\(\mathrm{\lambda}\_\mathrm{\text{scale}} = \frac{\lbrack\lambda\_\text{scale}\{\varnothing = 0\}\rbrack \bullet cos\varnothing}{\sqrt{1 - e^{2} \bullet \sin^{2}(\phi)}}\)</span></p>
+<p>Calculate X and Y components of distances aligned with the latitude &amp; longitude grid (Figure 3.8-4a)</p>
+<p>Y = <em>φ</em> _scale·(<em>φ</em> <sub>1</sub> - <em>φ</em> <sub>0</sub>)</p>
+<p>X = λ_scale·(λ<sub>1</sub> - λ<sub>0</sub>)</p>
+<p>The 2-D <em>local</em> (vice great circle) distance between any two points on the X-Y plane is</p>
+<p>D = (X<sup>2</sup> + Y<sup>2</sup>)<sup>1/2</sup></p>
+<p>For field performance work, it is preferable to align X &amp; Y with the runway as shown in Figure 3.8-4b. To convert from grid-aligned to runway-aligned coordinates, apply a rotation matrix that ensures X remains positive when going from point <span class="math display">\[*φ* ~0~, λ~0~\]</span> towards <span class="math display">\[*φ* ~1~, λ~1~\]</span>. The rotation angle, <em>ψ</em>, is positive counter-clockwise from true East to the direction of the runway. <span class="math display">\[Note: do not confuse *ψ* with runway heading measured relative to magnetic north\]</span>. The function</p>
+<p><em>ψ</em> = atan2(X, Y)</p>
+<p>returns rotation angles from - π to π, so that rotating to headings between 90° and 270° results in</p>
+<p>negative rotation angles.</p>
+<p>For any point <span class="math display">\[*φ*, λ\]</span>, calculate runway-aligned X &amp; Y distances using</p>
+<p>X = <em>φ</em> _scale·(<em> φ</em> - <em>φ</em> <sub>0</sub>)·sin(<em>ψ</em>) + λ_scale·(λ - λ<sub>0</sub>)·cos(<em>ψ</em>)</p>
+<p>Y = <em>φ</em> _scale·(<em> φ</em> - <em>φ</em> <sub>0</sub>)·cos(<em>ψ</em>) – λ_scale·(λ - λ<sub>0</sub>)·sin(<em>ψ</em>)</p>
+<p>This provides a right-handed rectangular coordinate system where X is positive from <span class="math display">\[*φ* ~0~, λ~0~\]</span> towards <span class="math display">\[*φ*~1~, λ~1~\]</span> and Y is positive left of the runway centerline (Figure 3.8-4b).</p>
+<p>Calculating aircraft height Z above the X-Y plane requires defining where the X-Y plane lies. An analyst may define Z=0 at some arbitrary height (i.e. GPS altitude at the beginning of a maneuver) and consider only changes from that reference.</p>
+<p>For field performance, it is typical to use the runway altitude as the reference. Because runway altitudes vary however, height should be surveyed and modeled or tabulated as a function runway centerline position, H{X}. For best accuracy, the runway survey accounts for GPS antenna height above the surface. Airplane height above the X-Y plane (Z) is then</p>
+<p>Z = ζ – H{X}</p>
+<p>where ζ is the test GPS antenna’s altitude.</p>
+<blockquote>
+<p>.</p>
+</blockquote>
+<p><strong>3.9 Temperature Compensated Barometric Altitude</strong></p>
+<p><strong>Background:</strong> Pressure altitude is the geopotential height above mean sea level (MSL) associated with atmospheric pressure on a theoretical standard day. Geopotential height is almost identical to geometric (a.k.a. tapeline) altitude, as seen in page 03-5. Altimeters set at 29.92 in Hg (or 1013 HPa) display pressure altitude. An altimeter’s baro-set knob allows pilots to bias the pressure vs. altitude relation so it matches sea level pressure for non-standard conditions. Matching the local altimeter setting (known as setting QNH in many parts of the world) adjusts the altimeter so it displays nearly the same altitude above MSL for non-standard pressure conditions. The correct setting is critical for terrain &amp; obstacle clearance when the pilot’s visibility is low.</p>
+<p>Although the long-used practice of matching the local altimeter setting has been sufficiently safe in the vast majority of operations, it in fact does not account for temperature deviation from standard conditions. Extreme temperature deviations cause a classic mechanical altimeter to display an MSL altitude erring by hundreds of feet. Modern technology allows calculating and displaying a more accurate altitude that corrects for temperature deviations. The following equation yields temperature-compensated altitude which better estimates geometric altitude above MSL, <em>h<sub>G</sub></em>. Calculations require knowledge of aircraft’s baro and pressure altitudes and the terminal airport’s temperature and pressure altitude. In lieu of pressure altitudes, calculations allow for implementing the field elevation (depicted on airport approach plates, etc.) and so-called baro bias. Baro bias is the displayed altitude shift when switching from local to standard altimeter setting.</p>
+<p><em>h<sub>G</sub></em> = <em>H<sub>b</sub></em> + <span class="math display">\[(*T~ap~*~t~ -- *T~0~*)/*L* -- *Hp~apt~*\]</span>ln<span class="math display">\[1 + *L*(*Hp* -- *Hp~apt~*)/(*T~0~* + *L\*Hp~apt~*)\]</span></p>
+<p>where</p>
+<p><em>h<sub>G</sub></em> = temperature-compensated altitude</p>
+<p><em>H<sub>b</sub></em> = baro altitude (displayed when altimeter is set to local value)</p>
+<p><em>T<sub>apt</sub></em> = airport temperature (Kelvin)</p>
+<p><em>T<sub>0</sub></em> = standard day sea level temperature = 15 deg C = 288.15 K</p>
+<p><em>L</em> = standard temperature lapse rate = -0.0065 K/m = -.0019812 K/ft</p>
+<p><em>Hp<sub>apt</sub></em> = airport pressure altitude ( = airport field elevation – baro bias)</p>
+<p><em>Hp</em> = aircraft pressure altitude ( = H<sub>b</sub> – baro bias)</p>
+<p>Note: ensure altitude units are consistent with lapse rate units.</p>
+<p>In lieu of the pilot adjusting the baro set knob to determine baro bias, it may be calculated using</p>
+<p>Baro bias = <em>H<sub>b</sub></em> - <em>Hp</em> = <em>H<sub>b</sub></em> – (29.92<sup>.1903</sup> – PA<sup>.1903</sup>)/.00001313 <span class="math display">\[ft\]</span></p>
+<p>where</p>
+<p>PA = ambient pressure = {altimeter setting <span class="math display">\[in Hg\]</span><sup>.1903</sup> – <em>H<sub>b</sub></em>(.00001313)}<sup>1/.1903</sup></p>
+<p>Flight testers can use the above to verify the aircraft’s temperature compensation system is working correctly. Data analysts can use these equations to more precisely determine geometric height above the ground–potentially useful for performance or pitot-static flyby testing.</p>
+<p><strong>Section 3.10 References</strong></p>
+<p><strong> </strong></p>
+<p>3.1 Anon., “Aeronautical Vestpocket Handbook” ,Part No. P&amp;W</p>
+<p>079500, United Technologies Pratt &amp; Whitney, Canada, 1990.</p>
+<p> </p>
+<p>3.2 Lawless, Alan. R. et al, “Aerodynamics for Flight Testers”, National Test Pilot School, P.O. Box 658, Mojave CA, 93501, 1999.</p>
+<p> </p>
+<p>3.3 Denno, Richard R., et al “AIAA Aerospace Design Engineers Guide” ISBN 0-930403-21-5, AIAA, 1987.</p>
+<p> </p>
+<p>3.4 Global Positioning System Overview, Peter H. Dana, Department of Geography, University of Texas</p>
+<p>at Austin, 1994. (<a href="http://www.colorado.edu/geography/gcraft/notes/gps/gps_f.html"><span class="underline">www.colorado.edu/geography/gcraft/notes/gps/gps_f.html</span></a>)</p>
+<p> </p>
+<p>3.5 Charles D Ghilani, Penn State College of Engineering, 2008 (<a href="http://surveying.wb.psu.edu/sur351/georef/" class="uri">http://surveying.wb.psu.edu/sur351/georef/</a> Ellip4.htm) &lt;<a href="http://www.colorado.edu/geography/gcraft/notes/gps/gps_f.html"><span class="underline">www.colorado.edu/geography/gcraft/notes/gps/gps_f.html</span></a>&gt;</p>
+<p> </p>
+<p>3.6 Standard Atmosphere Calculator Website Link <a href="http://www.digitaldutch.com/atmoscalc/"><span class="underline">http://www.digitaldutch.com/atmoscalc/</span></a>.</p>
+<p> </p>
+<p>3.7 Movable Type Scripts. &lt;<span class="underline"><a href="http://www.movable-type.co.uk/scripts/latlong.html" class="uri">http://www.movable-type.co.uk/scripts/latlong.html</a>&gt;</span></p>
+<p><strong><span class="math display">\[**Calculate distance, bearing and more between Latitude/Longitude points**\]</span></strong></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="mathematics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="pitot-statics.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
