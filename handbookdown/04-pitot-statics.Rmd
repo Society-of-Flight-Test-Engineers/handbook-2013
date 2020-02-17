@@ -1,0 +1,625 @@
+# Pitot Statics
+
+>  
+
+4.1 Subsonic Airspeed and Mach Equations
+
+4.2 Subsonic Scale Altitude (Compressibility) Correction Chart
+
+4.3 Subsonic Relations Between Compressible and Incompressible Dynamic Pressure
+
+4.4 Supersonic Airspeed and Mach Equations
+
+4.5 Total Temperature Equation
+
+4.6 Altimeter Equation
+
+4.7 PEC Test Methods
+
+4.7.1 Tower Fly-by
+
+4.7.2 Ground Course Method
+
+4.7.3 Trailing Bomb, Cone Method
+
+4.7.4 GPS Methods
+
+4.8 Postion Error Correction Certification Requirements
+
+4.9 PEC Correction Process Flow Chart
+
+4.10 Airspeed/Altitude/Mach Graphic Relations
+
+4.11 Effect of Errors on Calibrated Airspeed and Altitude
+
+\* *
+
+*Editor\'s Note*
+
+*In an effort to reduce confusion and conflict regarding pitot and static pressure nomenclature, SFTE has elected to change two definitions and symbols since the first edition of this handbook was released. Henceforth, ∆Ps shall indicate static pressure ERROR (∆P~s~ = P~s~ -- P~a~) and ∆P~T~ shall indicate total (i.e. pitot) pressure ERROR (∆P~T~ = P~p~ -- P~T~). This nomenclature eliminates the ∆P~p~ symbol and confusion as to whether it indicates position error or pitot error.*
+
+ 
+
+**\
+**
+
+**Section 4 Common Nomenclature**
+
+a = speed of sound
+
+a~o~ = speed of sound at sea level on a std day
+
+M = Mach number
+
+P~a~ =ambient pressure
+
+P~o~ = ambient pressure at sea level on a std day
+
+(=2116.2 lb/ft^2^ = 29.92 in Hg)
+
+P~p~ = pitot pressure corrected for instrument error only
+
+P~s~ = static pressure (indicated at static port)
+
+P~T~ = total pressure
+
+q = incompressible dynamic pressure
+
+q~c~ = compressible differential pressure (P~T~-P~a~)
+
+q~cic~ = instrument corrected differential pressure (= P~p~-P~s~)
+
+T~a~ = ambient temperature (absolute scale)
+
+T~o~ =ambient temperature at sea level on a std day
+
+(=288.15 ^o^K = 15 ^o^C = 518.7 ^o^R = 59 ^o^F)
+
+T~T~ = total temperature (absolute scale)
+
+V~c~ = calibrated airspeed
+
+V~e~ = equivlent airspeed
+
+V~g~ = ground speed
+
+V~i~ = indicated airspeed
+
+V~ic~ = instrument corrected airspeed
+
+V~T~ = true airspeed
+
+∆H~ic~ = altimeter instrument correction
+
+∆H~pc~ = altimeter position error correction
+
+∆P~D~ = dynamic pressure error (= P~T~-∆P~s~)
+
+∆P~T~ = total (pitot) pressure error (= P~P~ - P~T~)
+
+∆P~s~ =static pressure error (= P~s~ - P~a~)
+
+∆V~ic~ = airspeed instrument correction
+
+∆V~pc~ =airspeed position error correction
+
+*δ* = pressure ratio between ambient and sea level std (= P~a~ / P~o~)
+
+*θ* = temperature ratio between ambient and sea level std (= T~a~ / T~o~)
+
+*ρ~o~* =ambient density at sea level on a std day (=.002377 slg/ft^3^)
+
+*σ* = density ratio between ambient and sea level std (= *ρ*~a~ /*ρ*~o~)
+
+γ = ratio of specific heats (= 1.4 for air)
+
+ 
+
+**\
+**
+
+**Section 4.1 Subsonic Airspeed and Mach Equations**
+
+True Airspeed
+
+$\mathrm{\text{\ \ \ \ }}V_{T} = \left\lbrack \frac{2\gamma}{\gamma - 1}\frac{P_{a}}{\rho_{a}}\left( \left\lbrack \frac{P_{T} - P_{a}}{P_{a}} + 1 \right\rbrack^{\frac{\gamma - 1}{\gamma}} - 1 \right) \right\rbrack^{\frac{1}{2}}$ 
+
+ 
+
+Equivalent Airspeed
+
+(= *V~T~* equation with assumption of std day sea level density)
+
+$V_{e} = \sqrt{7\frac{P_{a}}{\rho_{o}}\left( \left\lbrack \frac{P_{T} - P_{a}}{P_{a}} + 1 \right\rbrack^{\frac{2}{7}} - 1 \right)} = V_{T}\sqrt{\frac{\rho_{a}}{\rho_{o}}} = V_{T}\sqrt{\sigma}$ 
+
+  
+
+Calibrated Airspeed
+
+(= *V~e~* equation with assumption of std day sea level pressure)
+
+$\mathrm{\text{\ \ \ \ }}V_{c} = \left\lbrack \frac{2\gamma}{\gamma - 1}\frac{P_{o}}{\rho_{o}}\left( \left\lbrack \frac{P_{T} - P_{a}}{P_{o}} + 1 \right\rbrack^{\frac{\gamma - 1}{\gamma}} - 1 \right) \right\rbrack^{\frac{1}{2}}$ 
+
+ 
+
+ $\sqrt{\mathrm{7}\frac{\mathrm{P}_{\mathrm{o}}}{\mathrm{\rho}_{\mathrm{o}}}\left( \left\lbrack \frac{\mathrm{q}_{\mathrm{c}}}{\mathrm{P}_{\mathrm{o}}}\mathrm{+ 1} \right\rbrack^{\mathrm{.2857}}\mathrm{- 1} \right)}$
+
+ 
+
+Applying British units (*lb/ft^2^*) and converting from *ft/sec* to knots yields
+
+ 
+
+$$\mathrm{\text{\ \ \ \ }}V_{c} = 1479\sqrt{\left\lbrack \frac{P_{T} - P_{a}}{2116} + 1 \right\rbrack^{\frac{2}{7}} - 1}$$
+
+> (kts)
+
+ 
+
+Mach Number
+
+$M = \frac{V_{T}}{a} = \sqrt{\frac{2}{\gamma - 1}\left\lbrack \left( \frac{P_{T} - P_{a}}{P_{a}} + 1 \right)^{\frac{\gamma - 1}{\gamma}} - 1 \right\rbrack} = \sqrt{5\left( \left\lbrack \frac{q_{c}}{P_{a}} + 1 \right\rbrack^{\frac{2}{7}} - 1 \right)}$ 
+
+ 
+
+**Section 4.2 Scale Altitude (Compressibility ) Correction**
+
+ 
+
+The name comes from the fact that although the equivalent airspeed equation does correct for compressibility, the sea level pressure assumption used for calibrated airspeed makes the compressibility correction valid only for that (sea level) pressure. Above sea level, the calibrated airspeed must be re-scaled for pressure effects on compressibility. The mathematical method for determining *V~e~* from *V~c~* is to first solve the calibrated airspeed equation for *q~c~*
+
+*~ ~*
+
+*~ ~*![][04001]
+
+*~ ~*
+
+Next, substitute this value and the ambient pressure (*P~a~*) into the equivalent airspeed equation. (*q~c~ = P~T~ - P~a~* )
+
+ 
+
+ ![][04002]
+
+ 
+
+ 
+
+The adjacent chart does this graphically for all subsonic airspeeds.
+
+*V~e~ = V~c~ +∆V~c~*
+
+ 
+
+![][04003]
+
+**Section 4.3 Subsonic Relations Between Compressible and Incompressible Dynamic Pressure**
+
+** **
+
+For constant density (incompressible) flow Bernoulli's equation reduces to
+
+ 
+
+ 
+
+ ![][04004]![][04005]![][04006]![][04007]
+
+ 
+
+ 
+
+Where incompressible dynamic pressure *q* is defined as *P~T~-P~a~* **.**
+
+As airflow speed increases, its density at the stagnation point increases thereby increasing the sensed pressure. The ratio between compressible & incompressible dynamic pressure can be written as a function of Mach number
+
+ 
+
+ 
+
+True dynamic pressure *q* (as used in modeling) is defined in dimensional analysis as:
+
+ 
+
+ 
+
+ 
+
+This value for *q* should not be confused with compressible (a.k.a. impact or differential) pressure, *q~c~ (= P~T~ -P~a~)*
+
+ 
+
+**\
+**
+
+![][04008]**\
+**
+
+**Section 4.4 Supersonic Airspeed and Mach Equations**
+
+*P~T~'* denotes pitot pressure behind shock wave
+
+ 
+
+True Airspeed
+
+ 
+
+ ![][04009] 
+
+![][04010]Equivalent Airspeed (valid if q~c~/P~a~ \>0.892929158)
+
+ 
+
+![][04011] Calibrated Airspeed (valid if V~c~\>a~o~)
+
+ 
+
+  
+
+ 
+
+![][04012]Mach Number
+
+ 
+
+**\
+**
+
+**Section 4.5 Total Temperature Equation**
+
+ ![][04013] 
+
+During position error flight testing, measure *T~i~*
+
+From *V~c\ ~*and *H~pc\ ~*determine *M*
+
+*T~i\ ~*+ ∆*T~ic\ ~*= *T~T\ ~*= *T~α\ ~*+ *T~α~ KM ^2^*
+
+plot *T~i~* \~ *M ^2^*
+
+![][04014] 
+
+**\
+**
+
+![][04015]![][04016]*Hi* Indicated pressure altitude (29.92" Hg)
+
+Δ *Hic* Instrument error correction
+
+*Hic* Altimeter corrected of instrument error
+
+Δ *Hpc* Position error correction
+
+*Hc* Calibrated pressure altitude
+
+ 
+
+ 
+
+**\
+**
+
+**Section 4.7 Position Error Test Methods**
+
+** **
+
+**4.7.1 Fly-by**
+
+As depicted below, the flyby method originally used some sort of viewing platform with surveyed distances and a grid or other device for determining the aircraft's relative angle above the platform's altimeter. This information combined to give the aircraft's actual pressure altitude. Modern methods replace the tower system with a radar altimeter or GPS unit to determine tapeline height above the flyby line (*H~g~*). This geometric height is converted to a pressure altitude change using a temperature correction. When added to the aircraft's pressure altitude on the runway, this change provides the actual pressure altitude during the flyby (Actual *H~c~* = runway pressure altitude + *H~g~*(*T~s~*/*T~t~*).
+
+![][04017]** **
+
+** **
+
+** **
+
+** **
+
+** **
+
+** **
+
+** **
+
+** **
+
+** **
+
+** **
+
+** **
+
+$$\mathrm{\text{Actual\ }}H_{c} = H_{c_{\text{tower}}} + \left( D\tan\theta \cdot \frac{T_{s}}{T_{t}} \right)
+$$
+
+$${\Delta P_{S} = q_{c} - q_{\text{cic}}
+}{\Delta P_{S} = \frac{1}{2}\rho_{0}{V_{c}}^{2} - \frac{1}{2}\rho_{0}{V_{\text{ic}}}^{2}\mathrm{\text{\ \ \ }}(\mathrm{\text{low\ Mach\ only}})
+}{\mathrm{\text{Solve\ for\ }}V_{c}
+}$$
+
+** **See flowchart for high mach or ΔP~T~≠0 cases.
+
+*Hi* Indicated pressure altitude (29.92" Hg)
+
+Δ *Hic* Instrument error correction
+
+*Hic* Altimeter corrected of instrument error
+
+Δ *Hpc* Position error correction
+
+*Hc* Calibrated pressure altitude
+
+![][04018]Note: A check on basic instrument calibration is easily accomplished using a "ground block" where a parked test aircraft compares altimeters with tower. Any error can be treated as a bias.
+
+ 
+
+This altitude-based Test method determines altimeter corrections and therefore static error directly. Accurately converting this static source error to an airspeed correction also requires knowledge of the test pitot tube\'s total pressure error (∆P~T~ ).
+
+This can be determined either through direct comparison with a calibrated noseboom pitot pressure or from one of the airspeed-based methods that directly yield airspeed corrections (pace, ground course, GPS). In lieu of these options, the pitot error may assumed to be zero, but this will reduce confidence in the calculated value for airspeed correction.
+
+ 
+
+**Section 4.7.2 Ground Course Method**
+
+![][04019] 
+
+![][04020]
+
+![][04021]![][04022]
+
+This airspeed-based Test method determines airspeed corrections directly. Accurately converting this airspeed error to a static source error requires knowledge of the test pitot tube\'s total pressure error (∆P~T~ ). This can be determined using one of the altitude-based methods that directly yield altitude corrections (tower fly-by, trailing cone or bomb). In lieu of these options, the pitot error may assumed to be zero, but this will reduce confidence in the calculated values for static pressure error and altimeter. correction
+
+ 
+
+![][04023]**Section 4.7.3 Trailing Cone/Bomb Method**
+
+ 
+
+1. Measure *P~S~* (ref) away from pressure field of aircraft
+
+2. Cone is used to stabilize static line
+
+3. No speed limitations
+
+4. Inexpensive---can be trailed on landing
+
+5. Consider lag effects during rapid altitude changes
+
+![][04024]![][04025] 
+
+If pitot errors do exist, then they must be included in calculations for Δ*V~pc~* (see flowchart)
+
+ 
+
+Using a trailing cone during stall testing may give airspeed errors due to lag errors during the deceleration.
+
+ 
+
+This altitude-based Test method determines altimeter corrections and therefore static error directly. Accurately converting this static source error to an airspeed correction also requires knowledge of the test pitot tube\'s total pressure error (∆P~T~ ). This can be determined either through direct comparison with a calibrated noseboom pitot pressure or from one of the airspeed-based methods that directly yield airspeed corrections (pace, ground course, GPS). In lieu of these options, the pitot error may assumed to be zero, but this will reduce confidence in the calculated value for airspeed correction.
+
+ 
+
+**4.7.4 GPS Methods**
+
+![][04026] 
+
+Various methods available, all assume [steady]{.underline} winds and ambient temperature. You must determine wind speed and direction to calculate *V~T~* and *T~0~* and to ensure steady winds existed during test series.
+
+ 
+
+GPS accuracies are variable. Know tolerances before accepting GPS as a truth model.
+
+\* *
+
+If exact (± 10º ) winds are calculated inflight, you can fly one pass directly into/away from the wind
+
+*V~T~ = V~G~ + V~Headwind~*
+
+*~ ~*
+
+This airspeed-based Test method determines airspeed corrections directly. Accurately converting this airspeed error to a static source error requires knowledge of the test pitot tube\'s total pressure error (∆P~T~ ). This can be determined using one of the altitude-based methods that directly yield altitude corrections (tower fly-by, trailing cone or bomb). In lieu of these options, the pitot error may assumed to be zero, but this will reduce confidence in the calculated values for static pressure error and altimeter. correction
+
+ 
+
+*Graphs in Section 4.11 separately show the effect of measurement errors in ∆P~T~, air temperature, or true airspeed on ∆V~C~ calculations . The last chart (Page 04-29) shows how each knot of accumulated ∆V~C~ uncertainty affects the ∆H~C~ uncertainty at various altitudes and temperatures.*
+
+ 
+
+Flying four legs instead of three allows four separate calculations of wind speed & direction to confirm stable winds at that test airspeed. If several real-time calculations of winds confirm constant direction and velocity, then testing may be shortened by flying only one pass directly into or away from the wind. If this is done, an end-of-test wind calibration must be performed to confirm steady winds throughout the test series. To minimize temperature and wind variations, testing should be accomplished within a relatively small area.
+
+ 
+
+![][04027]![][04028]**Horseshoe Track GPS Method**
+
+ 
+
+![][04029]
+
+**Horseshoe Heading GPS Method**
+
+ • Horseshoe Heading Method
+
+> ∼ Fly three legs with perpendicular headings, noting GPS ground speed on each
+>
+> ∼ Determine true airspeed by solving three equations in three unknowns
+
+![][04030] 
+
+![][04031]
+
+The "Windbox" method consists of flying four legs instead of three. The extra leg provides a fourfold increase in wind calculations to improve result confidence. The "Orbis" method extends this advantage by collecting data at every heading throughout a level turn.
+
+ 
+
+**Cloverleaf Method**
+
+(Microsoft Excel spreadsheet adapted from Doug Gray, NSW Australia)
+
+ 
+
+Fly three legs with approximately 90-120 degree difference between headings.
+
+> \~ Can be accomplished in a broad turn as with the horseshoe method, or
+>
+> \~ Directly over a single point (cloverleaf maneuver).
+
+Accurate results require
+
+> \~ Identical values for indicated airspeed (and TAS) for all legs.
+>
+> \~ Constant winds throughout data collection (single W/S vector in figure).
+>
+> \~ Approx. 10 seconds stable ground speed, Vg, (G/S in figure) during each leg.
+
+Aircraft heading results for each leg entail an airborne compass swing.
+
+ 
+
+[Inputs for each 3-leg data set]{.underline}
+
+*Vg~1~* *Vg~2~* *Vg~3~*
+
+*Trk~1~ Trk~2~ Trk~3~*
+
+\* *
+
+\* *
+
+[Intermediate calculations]{.underline}
+
+*X~1~* = *Vg~1~*\*SIN(PI()\*(360-*Trk~1~*)/180)
+
+*Y~1~* = *Vg~1~*\*COS(PI()\*(360-*Trk~1~*)/180)
+
+*X~2~* = *Vg~2~*\*SIN(PI()\*(360-*Trk~2~*)/180)
+
+*Y~2~* = *Vg~2~*\*COS(PI()\*(360-*Trk~2~*)/180)
+
+*X~3~* = *Vg~3~*\*SIN(PI()\*(360-*Trk~3~*)/180)
+
+*Y~3~* = *Vg~3~*\*COS(PI()\*(360-*Trk~3~*)/180)
+
+*M~1~* = -(*X~2~ -X~1~*)/(*Y ~2~-Y~1~*)
+
+*M~2~* = -(*X~3\ ~*-*X~1~*)/(*Y~3~ -Y~1~*)
+
+*B~1~* = (*Y~1\ ~*+*Y~2~*)/2 -*M~1~*\*(*X~1\ ~*+*X~2~*)/2
+
+*B~2~* = (*Y~1\ ~*+*Y~3~*)/2 -*M~2~*\*(*X~1\ ~*+*X~3~*)/2
+
+*V~Wx~* = (*B~1\ ~*-*B~2~*)/(*M~2\ ~*-*M~1~*)
+
+*V~Wy~* = *M~1~*\* *V~Wx~* +*B~1~*
+
+**[ ]{.underline}**
+
+**[ ]{.underline}**
+
+**[ ]{.underline}**![][04032]
+
+**[ ]{.underline}**
+
+**[ ]{.underline}**
+
+**[Results]{.underline}**
+
+Aircraft true airspeed *= V~T~* = \[(*X~1\ ~*- *V~Wx~*)^2^ +(*Y~1\ ~*- *V~Wy~*)^2^\] ^0.5^
+
+**Total wind speed *= V~w~*** = \[(*V~Wx~* ^2^ + *V~Wy~* ^2^)\]^0.5^
+
+**Wind direction *= ψ~w~ = Psi~w~*** = MOD(540-(180/PI()\*ATAN2(*V~Wy~, V~Wx~*)),360)
+
+1^st^ leg a/c heading *= **ψ~1~ =** Psi~1~* = MOD(540-(180/PI()\*ATAN2(*V~Wy~ -Y~1~, V~Wx~ -X~1~*)),360)
+
+2^nd^ leg a/c heading *= **ψ~2~ =** Psi~2~* = MOD(540-(180/PI()\*ATAN2(*V~Wy~ --Y~2~, V~Wx~ -X~2~*)),360)
+
+3^rd^ leg a/c heading *= **ψ~3~ =** Psi~3~* = MOD(540-(180/PI()\*ATAN2(*V~Wy~* *-Y~3~, V~Wx~ -X~3~*)),360)
+
+ 
+
+**Section 4.8 Position Error FAR 23/25.1323 and .1325/JAR Certification**
+
+**Requirements**
+
+** **
+
+ 
+
+ 
+
+  Maximum error at sea level must be less than ± 30 ft/100 kts between 1.3 *V~SO~* and 1.8 *V~SI~*
+
+*V~SO~ =* Full flap, gear down, power off, stall speed
+
+*V~SI~ = Stall speed in a specific configuration*
+
+\* *
+
+\* *
+
+![][04033] 
+
+ 
+
+ 
+
+![][04034]![][04035]
+
+**4.9 PEC Correction Process Flow Chart**
+
+ ![][04036]
+
+![][04037]**4.10 Airspeed/Altitude/Mach Graphic Relation**
+
+![][04038]
+
+![][04039] **4.11 Effect of Errors on Calibrated Airspeed and Altitude**
+
+![][04040] 
+
+![][04041]
+
+![][04042]
+
+[04001]: /media/04/image1.png {width="1.792361111111111in" height="0.6111111111111112in"}
+[04002]: /media/04/image2.png {width="1.8131944444444446in" height="0.7222222222222222in"}
+[04003]: /media/04/image3.png {width="8.915277777777778in" height="6.207638888888889in"}
+[04004]: /media/04/image4.png {width="1.7715277777777778in" height="0.5277777777777778in"}
+[04005]: /media/04/image5.png {width="2.5006944444444446in" height="0.5277777777777778in"}
+[04006]: /media/04/image6.png {width="2.7631944444444443in" height="0.5in"}
+[04007]: /media/04/image7.png {width="1.9166666666666667in" height="0.6333333333333333in"}
+[04008]: /media/04/image8.png {width="5.290972222222222in" height="8.998611111111112in"}
+[04009]: /media/04/image9.png {width="4.271527777777778in" height="1.2666666666666666in"}
+[04010]: /media/04/image10.png {width="1.7715277777777778in" height="1.1388888888888888in"}
+[04011]: /media/04/image11.png {width="1.542361111111111in" height="1.0833333333333333in"}
+[04012]: /media/04/image12.png {width="1.4590277777777778in" height="0.5138888888888888in"}
+[04013]: /media/04/image13.png {width="4.9375in" height="3.1875in"}
+[04014]: /media/04/image14.png {width="4.3125in" height="3.0in"}
+[04015]: /media/04/image15.png {width="4.2034722222222225in" height="4.113194444444445in"}
+[04016]: /media/04/image16.png {width="4.4375in" height="1.375in"}
+[04017]: /media/04/image17.png {width="5.2868055555555555in" height="1.7604166666666667in"}
+[04018]: /media/04/image18.png {width="5.1875in" height="3.15in"}
+[04019]: /media/04/image19.png {width="4.5625in" height="4.0625in"}
+[04020]: /media/04/image20.png {width="5.3125in" height="3.9611111111111112in"}
+[04021]: /media/04/image21.png {width="5.5125in" height="6.4625in"}
+[04022]: /media/04/image22.png {width="3.145138888888889in" height="0.24513888888888888in"}
+[04023]: /media/04/image23.png {width="5.9375in" height="3.0in"}
+[04024]: /media/04/image24.png {width="3.513888888888889in" height="0.6875in"}
+[04025]: /media/04/image25.png {width="1.4375in" height="0.28125in"}
+[04026]: /media/04/image26.png {width="4.5in" height="3.45in"}
+[04027]: /media/04/image27.png {width="3.4375in" height="1.6625in"}
+[04028]: /media/04/image28.png {width="2.7in" height="2.495138888888889in"}
+[04029]: /media/04/image29.png {width="5.375in" height="2.1875in"}
+[04030]: /media/04/image30.png {width="6.951388888888889in" height="2.3125in"}
+[04031]: /media/04/image31.png {width="5.0625in" height="2.6875in"}
+[04032]: /media/04/image32.png {width="3.0in" height="2.8833333333333333in"}
+[04033]: /media/04/image49.png {width="2.9in" height="0.5097222222222222in"}
+[04034]: /media/04/image50.png {width="5.75in" height="2.6875in"}
+[04035]: /media/04/image51.png {width="2.8in" height="0.4986111111111111in"}
+[04036]: /media/04/image52.png {width="8.630718503937008in" height="6.446496062992126in"}
+[04037]: /media/04/image53.png {width="6.311805555555556in" height="8.686111111111112in"}
+[04038]: /media/04/image54.png {width="9.316666666666666in" height="6.4215277777777775in"}
+[04039]: /media/04/image55.png {width="5.738194444444445in" height="8.6875in"}
+[04040]: /media/04/image56.png {width="9.0in" height="5.7444444444444445in"}
+[04041]: /media/04/image57.png {width="5.338888888888889in" height="9.0in"}
+[04042]: /media/04/image58.png {width="9.0in" height="6.511111111111111in"}
