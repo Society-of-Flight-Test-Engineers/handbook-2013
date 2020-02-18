@@ -797,19 +797,24 @@ Reference A can be considered the inertial frame while Rotation of the B referen
 
 Note: Unit vectors are along the B system axes. Subscripts denote reference system. Reference B can be equivalent to a maneuvering aircraft.
 
-![][02052]
+\[\bar{\rho} = x \hat{i} + y \hat{j} + z \hat{k}\]
 
-![][02053]
+\[\left( \frac{d \bar{\rho}}{dt} \right)_B = \dot{x} \hat{i} + \dot{y} \hat{j} + \dot{z} \hat{k}\]
 
-The velocities of the particle *P* relative to the *A* and to the *B* references are, respectively:
+\[\left( \frac{d \bar{\rho}}{dt} \right)_A = \left( \dot{x}\hat{i} + \dot{y}\hat{j} + \dot{z}\hat{k} \right) + \left( x \dot{\hat{i}} + y \dot{\hat{j}} + z \dot{\hat{k}} \right)\]
 
-![][02054]
+\[\left( \frac{d \bar{\rho}}{dt} \right)_A = \left( \frac{d \bar{\rho}}{dt} \right)_B + \bar{\omega} \times \bar{\rho}\]
 
-These velocities can be related by noting that:
+The velocities of the particle \(P\) relative to the \(A\) and to the \(B\) references, respectively, are as follows:
 
-![][02055]
+\[\bar{V}_A = \left( \frac{d\bar{r}}{dt} \right)_A\]
 
-Differentiating with respect to time for the *A* reference,
+\[\bar{V}_B = \left( \frac{d\bar{\rho}}{dt} \right)_B\]
+
+These velocities can be related by noting that \(\bar{r} = \bar{R} + \bar{\rho}\).
+
+Taking the derivative with respect to time for the \(A\) reference:
+\[\left(\frac{d \bar{r}}{dt}  \right)_A = \left( \frac{d \bar{R}}{dt} \right)_A + \left( \frac{d \bar{\rho}}{dt} \right)_A\]
 
 ![][02056]
 
@@ -827,7 +832,7 @@ is the transport acceleration and is the only acceleration if point P is rigidly
 
 To get acceleration with respect to *A*, differentiate:
 
- ![][02059]
+![][02059]
 
 ![][02060]
 
