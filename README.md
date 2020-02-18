@@ -26,3 +26,9 @@ The [Project](https://github.com/Society-of-Flight-Test-Engineers/handbook-2013/
 The [wiki](https://github.com/Society-of-Flight-Test-Engineers/handbook-2013/wiki) is the place for persistent discussion about the handbook
 
 It includes the [Handbook Markdown Style Guide](https://github.com/Society-of-Flight-Test-Engineers/handbook-2013/wiki/Handbook-Markdown-Style-Guide) for contributors.
+
+## Process Diagram
+
+Here's a diagram of the process.
+
+![Process Diagram](handbook-port-process.png)

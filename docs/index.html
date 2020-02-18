@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Flight Test Engineering Reference Handbook</title>
+  <meta name="description" content="Flight Test Engineering Reference Handbook" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Flight Test Engineering Reference Handbook" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="media/media/image1.jpg" />
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Flight Test Engineering Reference Handbook" />
+  
+  
+  <meta name="twitter:image" content="media/media/image1.jpg" />
+
+<meta name="author" content="Society of Flight Test Engineers" />
+
+
+<meta name="date" content="2013-01-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+<link rel="next" href="general-information.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#contributors"><i class="fa fa-check"></i>Contributors</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#editors"><i class="fa fa-check"></i>Editors</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#feedback"><i class="fa fa-check"></i>Feedback</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#publication-policy"><i class="fa fa-check"></i>Publication Policy</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#section-index"><i class="fa fa-check"></i>Section Index</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="general-information.html"><a href="general-information.html"><i class="fa fa-check"></i><b>1</b> General Information</a><ul>
+<li class="chapter" data-level="1.1" data-path="general-information.html"><a href="general-information.html#unit-conversions"><i class="fa fa-check"></i><b>1.1</b> Unit Conversions</a></li>
+<li class="chapter" data-level="1.2" data-path="general-information.html"><a href="general-information.html#greek-alphabet"><i class="fa fa-check"></i><b>1.2</b> Greek Alphabet</a></li>
+<li class="chapter" data-level="1.3" data-path="general-information.html"><a href="general-information.html#greek-symbols-used-for-aircraft"><i class="fa fa-check"></i><b>1.3</b> Greek Symbols Used for Aircraft</a></li>
+<li class="chapter" data-level="1.4" data-path="general-information.html"><a href="general-information.html#common-subscripts"><i class="fa fa-check"></i><b>1.4</b> Common Subscripts</a></li>
+<li class="chapter" data-level="1.5" data-path="general-information.html"><a href="general-information.html#common-abbreviations-raw"><i class="fa fa-check"></i><b>1.5</b> Common Abbreviations (raw)</a></li>
+<li class="chapter" data-level="1.6" data-path="general-information.html"><a href="general-information.html#sign-conventions-raw"><i class="fa fa-check"></i><b>1.6</b> Sign Conventions (raw)</a></li>
+<li class="chapter" data-level="1.7" data-path="general-information.html"><a href="general-information.html#thermodynamics-relations"><i class="fa fa-check"></i><b>1.7</b> Thermodynamics Relations</a><ul>
+<li class="chapter" data-level="1.7.1" data-path="general-information.html"><a href="general-information.html#thermodynamic-definitions"><i class="fa fa-check"></i><b>1.7.1</b> Thermodynamic Definitions</a></li>
+<li class="chapter" data-level="1.7.2" data-path="general-information.html"><a href="general-information.html#thermodynamic-symbols"><i class="fa fa-check"></i><b>1.7.2</b> Thermodynamic Symbols</a></li>
+<li class="chapter" data-level="1.7.3" data-path="general-information.html"><a href="general-information.html#thermodynamic-laws"><i class="fa fa-check"></i><b>1.7.3</b> Thermodynamic Laws</a></li>
+</ul></li>
+<li class="chapter" data-level="1.8" data-path="general-information.html"><a href="general-information.html#mechanics-relations"><i class="fa fa-check"></i><b>1.8</b> Mechanics Relations</a><ul>
+<li class="chapter" data-level="1.8.1" data-path="general-information.html"><a href="general-information.html#mechanics-symbols"><i class="fa fa-check"></i><b>1.8.1</b> Mechanics Symbols</a></li>
+<li class="chapter" data-level="1.8.2" data-path="general-information.html"><a href="general-information.html#newtons-laws"><i class="fa fa-check"></i><b>1.8.2</b> Newton’s Laws</a></li>
+<li class="chapter" data-level="1.8.3" data-path="general-information.html"><a href="general-information.html#planar-kinetics-work-power-and-energy"><i class="fa fa-check"></i><b>1.8.3</b> Planar Kinetics, Work, Power and Energy</a></li>
+<li class="chapter" data-level="1.8.4" data-path="general-information.html"><a href="general-information.html#planar-kinematics-at-constant-acceleration"><i class="fa fa-check"></i><b>1.8.4</b> Planar Kinematics at Constant Acceleration</a></li>
+<li class="chapter" data-level="1.8.5" data-path="general-information.html"><a href="general-information.html#curvilinear-motion-with-constant-acceleration-and-radius"><i class="fa fa-check"></i><b>1.8.5</b> Curvilinear motion with constant acceleration and radius</a></li>
+<li class="chapter" data-level="1.8.6" data-path="general-information.html"><a href="general-information.html#aircraft-in-level-turn"><i class="fa fa-check"></i><b>1.8.6</b> Aircraft in level turn</a></li>
+<li class="chapter" data-level="1.8.7" data-path="general-information.html"><a href="general-information.html#level-turn-kinematics-character"><i class="fa fa-check"></i><b>1.8.7</b> Level Turn Kinematics Character</a></li>
+<li class="chapter" data-level="1.8.8" data-path="general-information.html"><a href="general-information.html#gyroscopic-motion"><i class="fa fa-check"></i><b>1.8.8</b> Gyroscopic Motion</a></li>
+</ul></li>
+<li class="chapter" data-level="1.9" data-path="general-information.html"><a href="general-information.html#international-phonetic-alphabet-and-morse-code"><i class="fa fa-check"></i><b>1.9</b> International Phonetic Alphabet and Morse Code</a></li>
+<li class="chapter" data-level="1.10" data-path="general-information.html"><a href="general-information.html#section-1-references"><i class="fa fa-check"></i><b>1.10</b> Section 1 References</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="mathematics.html"><a href="mathematics.html"><i class="fa fa-check"></i><b>2</b> Mathematics</a><ul>
+<li class="chapter" data-level="2.1" data-path="mathematics.html"><a href="mathematics.html#algebra"><i class="fa fa-check"></i><b>2.1</b> Algebra</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="mathematics.html"><a href="mathematics.html#laws"><i class="fa fa-check"></i><b>2.1.1</b> Laws</a></li>
+<li class="chapter" data-level="2.1.2" data-path="mathematics.html"><a href="mathematics.html#identities"><i class="fa fa-check"></i><b>2.1.2</b> Identities</a></li>
+<li class="chapter" data-level="2.1.3" data-path="mathematics.html"><a href="mathematics.html#equations"><i class="fa fa-check"></i><b>2.1.3</b> Equations</a></li>
+<li class="chapter" data-level="2.1.4" data-path="mathematics.html"><a href="mathematics.html#interest-and-annuities"><i class="fa fa-check"></i><b>2.1.4</b> Interest And Annuities</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="mathematics.html"><a href="mathematics.html#geometry"><i class="fa fa-check"></i><b>2.2</b> Geometry</a></li>
+<li class="chapter" data-level="2.3" data-path="mathematics.html"><a href="mathematics.html#trigonometery-raw"><i class="fa fa-check"></i><b>2.3</b> Trigonometery (raw)</a></li>
+<li class="chapter" data-level="2.4" data-path="mathematics.html"><a href="mathematics.html#matrix-algebra-raw"><i class="fa fa-check"></i><b>2.4</b> Matrix Algebra (raw)</a></li>
+<li class="chapter" data-level="2.5" data-path="mathematics.html"><a href="mathematics.html#vector-algebra"><i class="fa fa-check"></i><b>2.5</b> Vector Algebra</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="mathematics.html"><a href="mathematics.html#addition"><i class="fa fa-check"></i><b>2.5.1</b> Addition</a></li>
+<li class="chapter" data-level="2.5.2" data-path="mathematics.html"><a href="mathematics.html#subtraction"><i class="fa fa-check"></i><b>2.5.2</b> Subtraction</a></li>
+<li class="chapter" data-level="2.5.3" data-path="mathematics.html"><a href="mathematics.html#scalar-multiplication"><i class="fa fa-check"></i><b>2.5.3</b> Scalar Multiplication</a></li>
+<li class="chapter" data-level="2.5.4" data-path="mathematics.html"><a href="mathematics.html#dot-product"><i class="fa fa-check"></i><b>2.5.4</b> Dot Product</a></li>
+<li class="chapter" data-level="2.5.5" data-path="mathematics.html"><a href="mathematics.html#norm"><i class="fa fa-check"></i><b>2.5.5</b> Norm</a></li>
+<li class="chapter" data-level="2.5.6" data-path="mathematics.html"><a href="mathematics.html#vector-cross-product"><i class="fa fa-check"></i><b>2.5.6</b> Vector Cross Product</a></li>
+<li class="chapter" data-level="2.5.7" data-path="mathematics.html"><a href="mathematics.html#vector-differentiation-raw"><i class="fa fa-check"></i><b>2.5.7</b> Vector Differentiation (raw)</a></li>
+<li class="chapter" data-level="2.5.8" data-path="mathematics.html"><a href="mathematics.html#motion-of-a-point-using-two-reference-systems"><i class="fa fa-check"></i><b>2.5.8</b> Motion of a point using two reference systems</a></li>
+<li class="chapter" data-level="2.5.9" data-path="mathematics.html"><a href="mathematics.html#motion-of-a-point-using-one-reference-system"><i class="fa fa-check"></i><b>2.5.9</b> Motion of a point using one reference system</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="mathematics.html"><a href="mathematics.html#probability-and-statistics"><i class="fa fa-check"></i><b>2.6</b> Probability and Statistics</a></li>
+<li class="chapter" data-level="2.7" data-path="mathematics.html"><a href="mathematics.html#standard-series-raw"><i class="fa fa-check"></i><b>2.7</b> Standard Series (raw)</a></li>
+<li class="chapter" data-level="2.8" data-path="mathematics.html"><a href="mathematics.html#derivative-table-raw"><i class="fa fa-check"></i><b>2.8</b> Derivative Table (raw)</a></li>
+<li class="chapter" data-level="2.9" data-path="mathematics.html"><a href="mathematics.html#integral-table-raw"><i class="fa fa-check"></i><b>2.9</b> Integral Table (raw)</a></li>
+<li class="chapter" data-level="2.10" data-path="mathematics.html"><a href="mathematics.html#laplace-table-raw"><i class="fa fa-check"></i><b>2.10</b> Laplace Table (raw)</a></li>
+<li class="chapter" data-level="2.11" data-path="mathematics.html"><a href="mathematics.html#references"><i class="fa fa-check"></i><b>2.11</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html"><i class="fa fa-check"></i><b>3</b> Universe Earth Atmospheric</a><ul>
+<li class="chapter" data-level="3.1" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html#properties"><i class="fa fa-check"></i><b>3.1</b> Properties</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="pitot-statics.html"><a href="pitot-statics.html"><i class="fa fa-check"></i><b>4</b> Pitot Statics</a></li>
+<li class="chapter" data-level="5" data-path="aerodynamics.html"><a href="aerodynamics.html"><i class="fa fa-check"></i><b>5</b> 5 Aerodynamics**</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Flight Test Engineering Reference Handbook</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">Flight Test Engineering Reference Handbook</h1>
+<p class="author"><em>Society of Flight Test Engineers</em></p>
+<p class="date"><em>2013</em></p>
+</div>
+<div id="preface" class="section level1 unnumbered">
+<h1>Preface</h1>
+<p><img src="media/index/image1.jpg" style="width:5.33333in;height:3.63667in" /></p>
+<p><strong>Flight Test Engineering Reference Handbook</strong></p>
+<p>Third (2013) Edition</p>
+<p>Corporate support supplied by</p>
+<p>McDonnell Douglas/Boeing (2nd Edition CD’s)</p>
+<p>and</p>
+<p>The National Test Pilot School</p>
+<div id="contributors" class="section level2 unnumbered">
+<h2>Contributors</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Contributing Authors</th>
+<th>Sections</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Al Lawless</td>
+<td>1-8, 10-12, 15, 18</td>
+</tr>
+<tr class="even">
+<td>Greg Lewis</td>
+<td>2.6</td>
+</tr>
+<tr class="odd">
+<td>Bill Norton</td>
+<td>9, 13</td>
+</tr>
+<tr class="even">
+<td>Dan Hrehov</td>
+<td>14</td>
+</tr>
+<tr class="odd">
+<td>Steven Arney</td>
+<td>16</td>
+</tr>
+<tr class="even">
+<td>John Minor</td>
+<td>19</td>
+</tr>
+<tr class="odd">
+<td>David Kidman, Christopher Moulder, Craig Stevens</td>
+<td>17</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="editors" class="section level2 unnumbered">
+<h2>Editors</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Editors</th>
+<th>Tenure</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Lee Gardner &amp; Darcy Painter</td>
+<td>1998-2006</td>
+</tr>
+<tr class="even">
+<td>Harold Weaver</td>
+<td>2006-2013</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="feedback" class="section level2 unnumbered">
+<h2>Feedback</h2>
+<p>The SFTE Technical Council continually seeks comments and new content.</p>
+<p>Contact <a href="mailto:edir@sfte.org" class="email">edir@sfte.org</a></p>
+</div>
+<div id="publication-policy" class="section level2 unnumbered">
+<h2>Publication Policy</h2>
+<p>Copyright ©2013 by Society Of Flight Test Engineers</p>
+<p>All rights reserved. This Technical Handbook is for the exclusive use of the Society of Flight Test Engineers individual and corporate members. The technical information contained herein may not be reproduced by any other individual or organization in any form without written permission from the Society of Flight Test Engineers. The Society reserves the exclusive right of publication. For further information concerning the publication policy, contact:</p>
+<blockquote>
+<p>Society of Flight Test Engineers<br />
+44814 N. Elm Avenue<br />
+Lancaster, California 93534 USA<br />
+Phone: (661) 949-2095<br />
+Fax: (661) 949-2096<br />
+<a href="http://www.sfte.org" class="uri">http://www.sfte.org</a></p>
+</blockquote>
+</div>
+<div id="section-index" class="section level2 unnumbered">
+<h2>Section Index</h2>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Section</th>
+<th align="left">Title</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">1</td>
+<td align="left">General Information</td>
+</tr>
+<tr class="even">
+<td align="left">2</td>
+<td align="left">Mathematics</td>
+</tr>
+<tr class="odd">
+<td align="left">3</td>
+<td align="left">Earth and Atmosphere</td>
+</tr>
+<tr class="even">
+<td align="left">4</td>
+<td align="left">Pitot Statics</td>
+</tr>
+<tr class="odd">
+<td align="left">5</td>
+<td align="left">Aerodynamics</td>
+</tr>
+<tr class="even">
+<td align="left">6</td>
+<td align="left">Axis Systems and Transformations</td>
+</tr>
+<tr class="odd">
+<td align="left">7</td>
+<td align="left">Mass Properties</td>
+</tr>
+<tr class="even">
+<td align="left">8</td>
+<td align="left">Motion/Vibration Analysis</td>
+</tr>
+<tr class="odd">
+<td align="left">9</td>
+<td align="left">Material Strength (Loads)</td>
+</tr>
+<tr class="even">
+<td align="left">10</td>
+<td align="left">Reciprocating Engines</td>
+</tr>
+<tr class="odd">
+<td align="left">11</td>
+<td align="left">Propellers</td>
+</tr>
+<tr class="even">
+<td align="left">12</td>
+<td align="left">Fixed-Wing Performance Standardization</td>
+</tr>
+<tr class="odd">
+<td align="left">13</td>
+<td align="left">Acoustics</td>
+</tr>
+<tr class="even">
+<td align="left">14</td>
+<td align="left">Electromagnetic Compatibility</td>
+</tr>
+<tr class="odd">
+<td align="left">15</td>
+<td align="left">Handling Qualities</td>
+</tr>
+<tr class="even">
+<td align="left">16</td>
+<td align="left">Rotary Wing</td>
+</tr>
+<tr class="odd">
+<td align="left">17</td>
+<td align="left">Gas Turbine Propulsion</td>
+</tr>
+<tr class="even">
+<td align="left">18</td>
+<td align="left">Radio Communications</td>
+</tr>
+<tr class="odd">
+<td align="left">19</td>
+<td align="left">The Electromagnetic Spectrum</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="general-information.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
