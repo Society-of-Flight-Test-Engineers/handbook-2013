@@ -114,9 +114,9 @@
 <li class="chapter" data-level="2.5.4" data-path="mathematics.html"><a href="mathematics.html#dot-product"><i class="fa fa-check"></i><b>2.5.4</b> Dot Product</a></li>
 <li class="chapter" data-level="2.5.5" data-path="mathematics.html"><a href="mathematics.html#norm"><i class="fa fa-check"></i><b>2.5.5</b> Norm</a></li>
 <li class="chapter" data-level="2.5.6" data-path="mathematics.html"><a href="mathematics.html#vector-cross-product"><i class="fa fa-check"></i><b>2.5.6</b> Vector Cross Product</a></li>
-<li class="chapter" data-level="2.5.7" data-path="mathematics.html"><a href="mathematics.html#vector-differentiation-raw"><i class="fa fa-check"></i><b>2.5.7</b> Vector Differentiation (raw)</a></li>
-<li class="chapter" data-level="2.5.8" data-path="mathematics.html"><a href="mathematics.html#motion-of-a-point-using-two-reference-systems"><i class="fa fa-check"></i><b>2.5.8</b> Motion of a point using two reference systems</a></li>
-<li class="chapter" data-level="2.5.9" data-path="mathematics.html"><a href="mathematics.html#motion-of-a-point-using-one-reference-system"><i class="fa fa-check"></i><b>2.5.9</b> Motion of a point using one reference system</a></li>
+<li class="chapter" data-level="2.5.7" data-path="mathematics.html"><a href="mathematics.html#vector-differentiation"><i class="fa fa-check"></i><b>2.5.7</b> Vector Differentiation</a></li>
+<li class="chapter" data-level="2.5.8" data-path="mathematics.html"><a href="mathematics.html#motion-of-a-point-using-two-reference-systems-raw"><i class="fa fa-check"></i><b>2.5.8</b> Motion of a point using two reference systems (raw)</a></li>
+<li class="chapter" data-level="2.5.9" data-path="mathematics.html"><a href="mathematics.html#motion-of-a-point-using-one-reference-system-raw"><i class="fa fa-check"></i><b>2.5.9</b> Motion of a point using one reference system (raw)</a></li>
 </ul></li>
 <li class="chapter" data-level="2.6" data-path="mathematics.html"><a href="mathematics.html#probability-and-statistics"><i class="fa fa-check"></i><b>2.6</b> Probability and Statistics</a></li>
 <li class="chapter" data-level="2.7" data-path="mathematics.html"><a href="mathematics.html#standard-series-raw"><i class="fa fa-check"></i><b>2.7</b> Standard Series (raw)</a></li>
@@ -130,6 +130,7 @@
 </ul></li>
 <li class="chapter" data-level="4" data-path="pitot-statics.html"><a href="pitot-statics.html"><i class="fa fa-check"></i><b>4</b> Pitot Statics</a></li>
 <li class="chapter" data-level="5" data-path="aerodynamics.html"><a href="aerodynamics.html"><i class="fa fa-check"></i><b>5</b> 5 Aerodynamics**</a></li>
+<li class="chapter" data-level="6" data-path="axis-systems-and-transformations.html"><a href="axis-systems-and-transformations.html"><i class="fa fa-check"></i><b>6</b> 6 Axis Systems and Transformations**</a></li>
 </ul>
 
       </nav>
@@ -682,63 +683,57 @@ V &amp;= 2 \pi ^2 R \rho^2 \\
 <p>(reference 2.5)</p>
 <div id="addition" class="section level3">
 <h3><span class="header-section-number">2.5.1</span> Addition</h3>
-<p>Given vectors <span class="math inline">\(\bar{A}\)</span> and <span class="math inline">\(\bar{B}\)</span>, where the <em>i</em>th component of <span class="math inline">\(\bar{A}\)</span> is given by <span class="math inline">\(a_i\)</span>, we define addition <span class="math inline">\(\bar{A} + \bar{B}\)</span> component-wise, such that the <em>i</em>th component of <span class="math inline">\(\bar{A} + \bar{B}\)</span> is given by <span class="math inline">\(a_i + b_i\)</span>.</p>
+<p>Given vectors <span class="math inline">\(\bar{A}\)</span> and <span class="math inline">\(\bar{B}\)</span>, where the <span class="math inline">\(i\)</span>th component of <span class="math inline">\(\bar{A}\)</span> is given by <span class="math inline">\(a_i\)</span>, we define addition <span class="math inline">\(\bar{A} + \bar{B}\)</span> component-wise, such that the <span class="math inline">\(i\)</span>th component of <span class="math inline">\(\bar{A} + \bar{B}\)</span> is given by <span class="math inline">\(a_i + b_i\)</span>.</p>
 <p><img src="media/02/image39.png" /></p>
 </div>
 <div id="subtraction" class="section level3">
 <h3><span class="header-section-number">2.5.2</span> Subtraction</h3>
 <p>We define vector subtraction just as we defined vector addition above.</p>
 <p><img src="media/02/image40.png" /></p>
-<p><img src="media/02/image41.png" /></p>
-<p><img src="media/02/image42.png" /></p>
 </div>
 <div id="scalar-multiplication" class="section level3">
 <h3><span class="header-section-number">2.5.3</span> Scalar Multiplication</h3>
-<p>Given a real number, <span class="math inline">\(m\)</span>, and vectors <span class="math inline">\(\bar{A}\)</span> and <span class="math inline">\(\bar{B}\)</span>, where the <em>i</em>th component of <span class="math inline">\(\bar{A}\)</span> is given by <span class="math inline">\(a_i\)</span>, we define scalar multiplication addition <span class="math inline">\(m \bar{A}\)</span> component-wise, such that the <em>i</em>th component of <span class="math inline">\(m \bar{A}\)</span> is given by <span class="math inline">\(m a_i\)</span>.</p>
-<p>When <span class="math inline">\(m\)</span> and <span class="math inline">\(a+i\)</span> are real numbers, the usual properties apply:
-<em>Commutative</em> <span class="math inline">\(m \bar{A} = \bar{A} m\)</span>.
-<em>Associative</em> <span class="math inline">\(m (n \bar{A}) = (mn) \bar{A}\)</span>.
-<em>Distributive</em> <span class="math inline">\((m + n) \bar{A} = m \bar{A} + n \bar{A}\)</span>.</p>
-<p>When <span class="math inline">\(a+i\)</span> are real numbers, we have the following properties that apply to <em>vectors</em>:
-<em>Commutative</em> <span class="math inline">\(\bar{A} + \bar{B} = \bar{B} + \bar{A}\)</span>.
-<em>Associative</em> <span class="math inline">\(\bar{A} + (\bar{B} + \bar{C}) = (\bar{A} + \bar{B}) + \bar{C}\)</span>.
-<em>Distributive</em> <span class="math inline">\(m (\bar{A} + \bar{B}) = m \bar{A} + m \bar{B}\)</span>.</p>
+<p>Given a real number, <span class="math inline">\(m\)</span>, and vectors <span class="math inline">\(\bar{A}\)</span> and <span class="math inline">\(\bar{B}\)</span>, where the <em>i</em>th component of <span class="math inline">\(\bar{A}\)</span> is given by <span class="math inline">\(a_i\)</span>, we define scalar multiplication <span class="math inline">\(m \bar{A}\)</span> component-wise, such that the <em>i</em>th component of <span class="math inline">\(m \bar{A}\)</span> is given by <span class="math inline">\(m a_i\)</span>.</p>
+<p>When <span class="math inline">\(m\)</span> and <span class="math inline">\(a+i\)</span> are real numbers, the usual properties apply:</p>
+<p><strong>Commutative</strong> <span class="math inline">\(m \bar{A} = \bar{A} m\)</span>.</p>
+<p><strong>Associative</strong> <span class="math inline">\(m (n \bar{A}) = (mn) \bar{A}\)</span>.</p>
+<p><strong>Distributive</strong> <span class="math inline">\((m + n) \bar{A} = m \bar{A} + n \bar{A}\)</span>.</p>
+<p>When <span class="math inline">\(a+i\)</span> are real numbers, we have the following properties that apply to <em>vectors</em>:</p>
+<p><strong>Commutative</strong> <span class="math inline">\(\bar{A} + \bar{B} = \bar{B} + \bar{A}\)</span>.</p>
+<p><strong>Associative</strong> <span class="math inline">\(\bar{A} + (\bar{B} + \bar{C}) = (\bar{A} + \bar{B}) + \bar{C}\)</span>.</p>
+<p><strong>Distributive</strong> <span class="math inline">\(m (\bar{A} + \bar{B}) = m \bar{A} + m \bar{B}\)</span>.</p>
 </div>
 <div id="dot-product" class="section level3">
 <h3><span class="header-section-number">2.5.4</span> Dot Product</h3>
-<p>Given vectors <span class="math inline">\(\bar{A}\)</span> and <span class="math inline">\(\bar{B}\)</span>, where the <em>i</em>th component of <span class="math inline">\(\bar{A}\)</span> is given by <span class="math inline">\(a_i\)</span> and the vectors have the same dimension,<span class="math inline">\(n\)</span>, we define the dot product <span class="math inline">\(\bar{A} \cdot \bar{B}\)</span> as follows:
-<span class="math display">\[\bar{A} \cdot \bar{B} = \sum_{i=1}^{n}a_i b_i \]</span>.
+<p>Given vectors <span class="math inline">\(\bar{A}\)</span> and <span class="math inline">\(\bar{B}\)</span>, where the <span class="math inline">\(i\)</span>th component of <span class="math inline">\(\bar{A}\)</span> is given by <span class="math inline">\(a_i\)</span> and the vectors have the same dimension, <span class="math inline">\(n\)</span>, we define the dot product <span class="math inline">\(\bar{A} \cdot \bar{B}\)</span> as follows:
+<span class="math display">\[\bar{A} \cdot \bar{B} = \sum_{i=1}^{n}a_i b_i .\]</span>
 For example, given three-dimensional vectors, we have:
-<span class="math display">\[\bar{A} \cdot \bar{B} = a_1 b_1 + a_2 b_2 + a_3 b_3\]</span>.
+<span class="math display">\[\bar{A} \cdot \bar{B} = a_1 b_1 + a_2 b_2 + a_3 b_3 .\]</span>
 The terms dot product, scalar product, and inner product usually mean the same thing.</p>
 </div>
 <div id="norm" class="section level3">
 <h3><span class="header-section-number">2.5.5</span> Norm</h3>
 <p>The norm or vector norm, denoted
-<span class="math display">\[ \left| \bar{A} \right|\]</span>,
+<span class="math display">\[ \left| \bar{A} \right|,\]</span>
 is the magnitude of the vector. We compute it thus:
-<span class="math display">\[ \left| \bar{A} \right| = \sqrt{\sum_{i=1}^{n} a_i^2} \]</span>.
+<span class="math display">\[ \left| \bar{A} \right| = \sqrt{\sum_{i=1}^{n} a_i^2} .\]</span>.
 For example, given a three-dimensional vector in the <span class="math inline">\(xyz\)</span> plane, we have:
-<span class="math display">\[ \left| \bar{A} \right| = \sqrt{a_x^2 + a_y^2 + a_z^2} \]</span>.
+<span class="math display">\[ \left| \bar{A} \right| = \sqrt{a_x^2 + a_y^2 + a_z^2} .\]</span>
 The two types of notation, <span class="math inline">\(| \bar{A} |\)</span> and <span class="math inline">\(||\bar{A}||\)</span> are equivalent.</p>
-<p>With this additional notation, we can also define the <em>dot product</em> this way:
-<span class="math display">\[\bar{A} \cdot \bar{B} = \left| \bar{A} \right| \left| \bar{B} \right| \cos{\theta} \]</span>,
+<p>With this additional notation, we can also define the <strong>dot product</strong> this way:
+<span class="math display">\[\bar{A} \cdot \bar{B} = \left| \bar{A} \right| \left| \bar{B} \right| \cos{\theta} ,\]</span>
 where <span class="math inline">\(\theta\)</span> is the angle between the vectors.</p>
-<p><img src="media/02/image43.png" /></p>
-<p><img src="media/02/image44.png" /></p>
-<p><img src="media/02/image45.png" /></p>
-<p><img src="media/02/image46.png" /></p>
 </div>
 <div id="vector-cross-product" class="section level3">
 <h3><span class="header-section-number">2.5.6</span> Vector Cross Product</h3>
-<p>The cross product is an operation on vectors in three dimensional space denoted <span class="math inline">\(\bar{A} \times \bar{B}\)</span>. We can define it in terms of matrix determinants in the following way.
+<p>The cross product is an operation on vectors in three dimensional space denoted <span class="math inline">\(\bar{A} \times \bar{B} .\)</span> We can define it in terms of matrix determinants in the following way.
 <span class="math display">\[ \bar{A} \times \bar{B} = \begin{vmatrix}
 \hat{i} &amp; \hat{j} &amp; \hat{k}\\
 a_x &amp; a_y &amp; a_z\\
 b_x &amp; b_y &amp; b_z
 \end{vmatrix}
-\]</span>.
-Expanding this expression gives us:
+.\]</span></p>
+<p>Expanding this expression gives us:
 <span class="math display">\[ \bar{A} \times \bar{B} = \begin{vmatrix}
 a_y &amp; a_z\\
 b_y &amp; b_z
@@ -751,41 +746,41 @@ b_x &amp; b_z
 a_x &amp; a_y\\
 b_x &amp; b_y
 \end{vmatrix} \hat{k}
-\]</span>.</p>
-<p><img src="media/02/image47.png" /></p>
-<p><img src="media/02/image48.png" /></p>
+.\]</span></p>
 <p><img src="media/02/image49.png" /></p>
 <p><img src="media/02/image50.png" /></p>
 </div>
-<div id="vector-differentiation-raw" class="section level3">
-<h3><span class="header-section-number">2.5.7</span> Vector Differentiation (raw)</h3>
-<p>Let <span class="math inline">\(\vec{r}(t)\)</span> be a vector-valued function. We can denote this in this way: <span class="math inline">\(\vec{r}(t) = (x(t),y(t))\)</span> is an example of a function that returns a position vector. A similar and equivalent notation is as follows: <span class="math inline">\(\vec{r}(t) = x(t)\hat{i} + y(t)\hat{j}\)</span>.</p>
+<div id="vector-differentiation" class="section level3">
+<h3><span class="header-section-number">2.5.7</span> Vector Differentiation</h3>
+<p>Let <span class="math inline">\(\vec{r}(t)\)</span> be a vector-valued function, denoted in this way: <span class="math inline">\(\vec{r}(t) = (x(t),y(t))\)</span>, which is an example of a function that returns a position vector. A similar and equivalent notation is as follows: <span class="math inline">\(\vec{r}(t) = x(t)\hat{i} + y(t)\hat{j}\)</span>.</p>
 <p>The first derivative of <span class="math inline">\(\vec{r}(t)\)</span> with respect to time, <span class="math inline">\(t\)</span>, is a vector-valued function that denotes velocity. This function returns a vector tangential to the trajectory with a magnitude equal to the speed of the particle.</p>
 <p>The second derivative of <span class="math inline">\(\vec{r}(t)\)</span> with respect to time, <span class="math inline">\(t\)</span>, is a vector-valued function that denotes acceleration. This function returns a vector tangential to the velocity vector with a magnitude equal to the acceleration of the particle.</p>
-<p>With this notation, the normal differenation operations hold for vector-valued <em>functions</em> along with the following.
-<strong>Derivative of a Sum</strong>
-<span class="math display">\[\frac{d}{dt}\left( \vec{r}(t) + \vec{s}(t) \right) = \frac{d}{dt}\vec{r}(t) + \frac{d}{dt}\vec{s}(t)\]</span>.</p>
+<p>With this notation, the normal differenation operations hold for vector-valued <em>functions</em> along with the following.</p>
+<p><strong>Derivative of a Sum</strong>
+<span class="math display">\[\frac{d}{dt}\left( \vec{r}(t) + \vec{s}(t) \right) = \frac{d}{dt}\vec{r}(t) + \frac{d}{dt}\vec{s}(t).\]</span></p>
 <p><strong>Derivative of a Dot Product</strong>
-<span class="math display">\[\frac{d}{dt}\left( \vec{r}(t) \cdot \vec{s}(t) \right) = \vec{r}(t) \cdot \frac{d}{dt}\vec{s}(t) + \frac{d}{dt}\vec{r}(t) \cdot \vec{s}(t) \]</span>.</p>
+<span class="math display">\[\frac{d}{dt}\left( \vec{r}(t) \cdot \vec{s}(t) \right) = \vec{r}(t) \cdot \frac{d}{dt}\vec{s}(t) + \frac{d}{dt}\vec{r}(t) \cdot \vec{s}(t).\]</span></p>
 <p><strong>Derivative of a Cross Product</strong>
-<span class="math display">\[\frac{d}{dt}\left( \vec{r}(t) \times \vec{s}(t) \right) = \vec{r}(t) \times \frac{d}{dt}\vec{s}(t) +  \frac{d}{dt}\vec{r}(t) \times \vec{s}(t)\]</span>.</p>
+<span class="math display">\[\frac{d}{dt}\left( \vec{r}(t) \times \vec{s}(t) \right) = \vec{r}(t) \times \frac{d}{dt}\vec{s}(t) +  \frac{d}{dt}\vec{r}(t) \times \vec{s}(t).\]</span></p>
 <p><strong>Derivative of a Scalar Product</strong>
-If <span class="math inline">\(f(t)\)</span> be a scalar-valued function, then
-<span class="math display">\[\frac{d}{dt}\left( f(t)\vec{r}(t) \right) = f(t)\frac{d}{dt}\vec{r}(t) + \left(\frac{d}{dt} f(t)\right) \vec{r}(t)\]</span>.</p>
-<p><img src="media/02/image51.png" /></p>
+If <span class="math inline">\(f(t)\)</span> is a scalar-valued function, then
+<span class="math display">\[\frac{d}{dt}\left( f(t)\vec{r}(t) \right) = f(t)\frac{d}{dt}\vec{r}(t) + \left(\frac{d}{dt} f(t)\right) \vec{r}(t).\]</span></p>
 </div>
-<div id="motion-of-a-point-using-two-reference-systems" class="section level3">
-<h3><span class="header-section-number">2.5.8</span> Motion of a point using two reference systems</h3>
+<div id="motion-of-a-point-using-two-reference-systems-raw" class="section level3">
+<h3><span class="header-section-number">2.5.8</span> Motion of a point using two reference systems (raw)</h3>
 <p>Reference A can be considered the inertial frame while Rotation of the B reference relative to the A reference must be considered when observing motion with respect to the A reference system.</p>
 <p><img src="media/02/image52.png" /></p>
 <p>Note: Unit vectors are along the B system axes. Subscripts denote reference system. Reference B can be equivalent to a maneuvering aircraft.</p>
-<p><img src="media/02/image53.png" /></p>
-<p><img src="media/02/image54.png" /></p>
-<p>The velocities of the particle <em>P</em> relative to the <em>A</em> and to the <em>B</em> references are, respectively:</p>
-<p><img src="media/02/image55.png" /></p>
-<p>These velocities can be related by noting that:</p>
-<p><img src="media/02/image56.png" /></p>
-<p>Differentiating with respect to time for the <em>A</em> reference,</p>
+<p><span class="math display">\[\bar{\rho} = x \hat{i} + y \hat{j} + z \hat{k}\]</span></p>
+<p><span class="math display">\[\left( \frac{d \bar{\rho}}{dt} \right)_B = \dot{x} \hat{i} + \dot{y} \hat{j} + \dot{z} \hat{k}\]</span></p>
+<p><span class="math display">\[\left( \frac{d \bar{\rho}}{dt} \right)_A = \left( \dot{x}\hat{i} + \dot{y}\hat{j} + \dot{z}\hat{k} \right) + \left( x \dot{\hat{i}} + y \dot{\hat{j}} + z \dot{\hat{k}} \right)\]</span></p>
+<p><span class="math display">\[\left( \frac{d \bar{\rho}}{dt} \right)_A = \left( \frac{d \bar{\rho}}{dt} \right)_B + \bar{\omega} \times \bar{\rho}\]</span></p>
+<p>The velocities of the particle <span class="math inline">\(P\)</span> relative to the <span class="math inline">\(A\)</span> and to the <span class="math inline">\(B\)</span> references, respectively, are as follows:</p>
+<p><span class="math display">\[\bar{V}_A = \left( \frac{d\bar{r}}{dt} \right)_A\]</span></p>
+<p><span class="math display">\[\bar{V}_B = \left( \frac{d\bar{\rho}}{dt} \right)_B\]</span></p>
+<p>These velocities can be related by noting that <span class="math inline">\(\bar{r} = \bar{R} + \bar{\rho}\)</span>.</p>
+<p>Taking the derivative with respect to time for the <span class="math inline">\(A\)</span> reference:
+<span class="math display">\[\left(\frac{d \bar{r}}{dt}  \right)_A = \left( \frac{d \bar{R}}{dt} \right)_A + \left( \frac{d \bar{\rho}}{dt} \right)_A\]</span></p>
 <p><img src="media/02/image57.png" /></p>
 <p><img src="media/02/image58.png" /></p>
 <p>The term is the “transport velocity” and is the only velocity if <img src="media/02/image59.png" /></p>
@@ -794,20 +789,18 @@ If <span class="math inline">\(f(t)\)</span> be a scalar-valued function, then
 <p>is the Coriolis acceleration, and</p>
 <p>is the transport acceleration and is the only acceleration if point P is rigidly attached to reference B.</p>
 <p>To get acceleration with respect to <em>A</em>, differentiate:</p>
-<p> <img src="media/02/image60.png" /></p>
+<p><img src="media/02/image60.png" /></p>
 <p><img src="media/02/image61.png" /></p>
 <p>where</p>
 <p><img src="media/02/image62.png" /></p>
 <p>is the centripetal acceleration,</p>
-<p> </p>
 <p><img src="media/02/image63.png" /></p>
 <p>is the Coriolis acceleration, and</p>
-<p> </p>
 <p><img src="media/02/image64.png" /></p>
 <p>is the transport acceleration and is the only acceleration if point P is rigidly attached to reference B.</p>
 </div>
-<div id="motion-of-a-point-using-one-reference-system" class="section level3">
-<h3><span class="header-section-number">2.5.9</span> Motion of a point using one reference system</h3>
+<div id="motion-of-a-point-using-one-reference-system-raw" class="section level3">
+<h3><span class="header-section-number">2.5.9</span> Motion of a point using one reference system (raw)</h3>
 <p>Reference A can be considered the inertial frame while</p>
 <p>The body can be equivalent to a maneuvering aircraft.</p>
 <p><img src="media/02/image65.png" /></p>

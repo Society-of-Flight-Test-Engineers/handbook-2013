@@ -1,0 +1,49 @@
+# 6 Axis Systems and Transformations**
+
+** **
+
+** **
+
+** **
+
+ 
+
+6.1 Earth Axis Systems
+
+ 
+
+6.2 Aircraft Axis Systems
+
+Body, Stability, Wind, Principle
+
+ 
+
+6.3 Euler Angles
+
+ 
+
+6.4 Flight Path Angles
+
+ 
+
+6.5 Axis System Transformations
+
+Earth-to-Body, Body-to-Earth
+
+6.6 References
+
+ 
+
+**6.1 Earth Axis Systems** (ref 6.6.1)
+
+** **
+
+Both fixed-Earth and moving-Earth axis systems keep constant *orientation* with respect to the Earth. The Z-axis point towards the center of the Earth.
+
+• The origin of a fixed-Earth system does not move relative to the Earth. (such as a ground radar site)
+
+• The origin of a moving Earth system does not move relative to its host (such as an aircraft inertial reference unit) .
+
+![][06001] 
+
+  [06001]: media/06/image1.png {width="4.709027777777778in" height="3.839583333333333in"}
