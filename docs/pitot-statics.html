@@ -168,59 +168,148 @@
             <section class="normal" id="section-">
 <div id="pitot-statics" class="section level1">
 <h1><span class="header-section-number">4</span> Pitot Statics</h1>
-<p>4.1 Subsonic Airspeed and Mach Equations</p>
-<p>4.2 Subsonic Scale Altitude (Compressibility) Correction Chart</p>
-<p>4.3 Subsonic Relations Between Compressible and Incompressible Dynamic Pressure</p>
-<p>4.4 Supersonic Airspeed and Mach Equations</p>
-<p>4.5 Total Temperature Equation</p>
-<p>4.6 Altimeter Equation</p>
-<p>4.7 PEC Test Methods</p>
-<p>4.7.1 Tower Fly-by</p>
-<p>4.7.2 Ground Course Method</p>
-<p>4.7.3 Trailing Bomb, Cone Method</p>
-<p>4.7.4 GPS Methods</p>
-<p>4.8 Postion Error Correction Certification Requirements</p>
-<p>4.9 PEC Correction Process Flow Chart</p>
-<p>4.10 Airspeed/Altitude/Mach Graphic Relations</p>
-<p>4.11 Effect of Errors on Calibrated Airspeed and Altitude</p>
-<p><em>Editor's Note</em></p>
-<p><em>In an effort to reduce confusion and conflict regarding pitot and static pressure nomenclature, SFTE has elected to change two definitions and symbols since the first edition of this handbook was released. Henceforth, ∆Ps shall indicate static pressure ERROR (∆P<sub>s</sub> = P<sub>s</sub> – P<sub>a</sub>) and ∆P<sub>T</sub> shall indicate total (i.e. pitot) pressure ERROR (∆P<sub>T</sub> = P<sub>p</sub> – P<sub>T</sub>). This nomenclature eliminates the ∆P<sub>p</sub> symbol and confusion as to whether it indicates position error or pitot error.</em></p>
+<p><em>Editor’s Note</em></p>
+<p><em>In an effort to reduce confusion and conflict regarding pitot and static pressure nomenclature, SFTE has elected to change two definitions and symbols since the first edition of this handbook was released. Henceforth, <span class="math inline">\(\Delta Ps\)</span> shall indicate static pressure ERROR (<span class="math inline">\(\Delta P_s = P_s - P_a)\)</span> and <span class="math inline">\(\Delta P_T\)</span> shall indicate total (i.e. pitot) pressure ERROR (<span class="math inline">\(\Delta P_T = P_p - P_T\)</span>). This nomenclature eliminates the <span class="math inline">\(\Delta P_p\)</span> symbol and confusion as to whether it indicates position error or pitot error.</em></p>
 <div id="common-nomenclature" class="section level2 unnumbered">
 <h2>Common Nomenclature</h2>
-<p>a = speed of sound</p>
-<p>a<sub>o</sub> = speed of sound at sea level on a std day</p>
-<p>M = Mach number</p>
-<p>P<sub>a</sub> =ambient pressure</p>
-<p>P<sub>o</sub> = ambient pressure at sea level on a std day</p>
-<p>(=2116.2 lb/ft<sup>2</sup> = 29.92 in Hg)</p>
-<p>P<sub>p</sub> = pitot pressure corrected for instrument error only</p>
-<p>P<sub>s</sub> = static pressure (indicated at static port)</p>
-<p>P<sub>T</sub> = total pressure</p>
-<p>q = incompressible dynamic pressure</p>
-<p>q<sub>c</sub> = compressible differential pressure (P<sub>T</sub>-P<sub>a</sub>)</p>
-<p>q<sub>cic</sub> = instrument corrected differential pressure (= P<sub>p</sub>-P<sub>s</sub>)</p>
-<p>T<sub>a</sub> = ambient temperature (absolute scale)</p>
-<p>T<sub>o</sub> =ambient temperature at sea level on a std day</p>
-<p>(=288.15 <sup>o</sup>K = 15 <sup>o</sup>C = 518.7 <sup>o</sup>R = 59 <sup>o</sup>F)</p>
-<p>T<sub>T</sub> = total temperature (absolute scale)</p>
-<p>V<sub>c</sub> = calibrated airspeed</p>
-<p>V<sub>e</sub> = equivlent airspeed</p>
-<p>V<sub>g</sub> = ground speed</p>
-<p>V<sub>i</sub> = indicated airspeed</p>
-<p>V<sub>ic</sub> = instrument corrected airspeed</p>
-<p>V<sub>T</sub> = true airspeed</p>
-<p>∆H<sub>ic</sub> = altimeter instrument correction</p>
-<p>∆H<sub>pc</sub> = altimeter position error correction</p>
-<p>∆P<sub>D</sub> = dynamic pressure error (=P<sub>T</sub>-∆P<sub>s</sub>)</p>
-<p>∆P<sub>T</sub> = total (pitot) pressure error (= P<sub>P</sub> - P<sub>T</sub>)</p>
-<p>∆P<sub>s</sub> =static pressure error (= P<sub>s</sub> - P<sub>a</sub>)</p>
-<p>∆V<sub>ic</sub> = airspeed instrument correction</p>
-<p>∆V<sub>pc</sub> =airspeed position error correction</p>
-<p><em>δ</em> = pressure ratio between ambient and sea level std (= P<sub>a</sub> / P<sub>o</sub>)</p>
-<p><em>θ</em> = temperature ratio between ambient and sea level std (= T<sub>a</sub> / T<sub>o</sub>)</p>
-<p><em>ρ<sub>o</sub></em> =ambient density at sea level on a std day (=.002377 slg/ft<sup>3</sup>)</p>
-<p><em>σ</em> = density ratio between ambient and sea level std (= <em>ρ</em><sub>a</sub> /<em>ρ</em><sub>o</sub>)</p>
-<p>γ = ratio of specific heats (= 1.4 for air)</p>
+<table style="width:86%;">
+<colgroup>
+<col width="20%" />
+<col width="65%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Symbol</th>
+<th align="left">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(a\)</span></td>
+<td align="left">speed of sound</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(a_0\)</span></td>
+<td align="left">speed of sound at sea level on a standard day</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(M\)</span></td>
+<td align="left">Mach number</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(P_a\)</span></td>
+<td align="left">ambient pressure</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(P_0\)</span></td>
+<td align="left">ambient pressure at sea level on a standard day (<span class="math inline">\(=2116.2 lb/ft^2 = 29.92 in Hg \)</span>)</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(P_p\)</span></td>
+<td align="left">pitot pressure corrected for instrument error only</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(P_s\)</span></td>
+<td align="left">static pressure (indicated at static port)</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(P_T\)</span></td>
+<td align="left">total pressure</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(q\)</span></td>
+<td align="left">incompressible dynamic pressure</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(q_c\)</span></td>
+<td align="left">compressible dynamic pressure (<span class="math inline">\(=P_T-P_a\)</span>)</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(q_{cic}\)</span></td>
+<td align="left">instrument corrected differential pressure (<span class="math inline">\(=P_p-P_s\)</span>)</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(T_a\)</span></td>
+<td align="left">ambient temperature (absolute scale)</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(T_0\)</span></td>
+<td align="left">ambient temperature at sea level on a standard day (<span class="math inline">\(=288.15 K = 15^{\circ} C = 518.7^{\circ}R=59.0^{\circ}F\)</span>)</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(T_T\)</span></td>
+<td align="left">total temperature (absolute scale)</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(V_c\)</span></td>
+<td align="left">calibrated airspeed</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(V_e\)</span></td>
+<td align="left">equivalent airspeed</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(V_g\)</span></td>
+<td align="left">ground speed</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(V_i\)</span></td>
+<td align="left">indicated airspeed</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(V_T\)</span></td>
+<td align="left">true airspeed</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\Delta H_{ic}\)</span></td>
+<td align="left">altimeter instrument correction</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\Delta H_{pc}\)</span></td>
+<td align="left">altimeter position error correction</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\Delta P_D\)</span></td>
+<td align="left">dynamic pressure error (<span class="math inline">\(=P_T-\Delta P_s\)</span>)</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\Delta P_T\)</span></td>
+<td align="left">total (pitot) pressure error (<span class="math inline">\(=P_P-P_T\)</span>)</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\Delta P_s\)</span></td>
+<td align="left">static pressure error (<span class="math inline">\(=P_s-P_a\)</span>)</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\Delta V_{ic}\)</span></td>
+<td align="left">airspeed instrument correction</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\Delta V_{pc}\)</span></td>
+<td align="left">airspeed position error correction</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\delta\)</span></td>
+<td align="left">pressure ratio between ambient and sea level std (<span class="math inline">\(=P_a/P_0\)</span>)</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\theta\)</span></td>
+<td align="left">temperature ratio between ambient and sea level std (<span class="math inline">\(=T_a/T_0\)</span>)</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\rho_0\)</span></td>
+<td align="left">ambient density at sea level on a std day (<span class="math inline">\(=0.002377 slg/ft^3\)</span>)</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\sigma\)</span></td>
+<td align="left">density ratio between ambient and sea level std (<span class="math inline">\(=P_a/P_0\)</span>)</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\gamma\)</span></td>
+<td align="left">ratio of specific heats (<span class="math inline">\(=1.4\)</span> for air)</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="subsonic-airspeed-and-mach-equation" class="section level2">
 <h2><span class="header-section-number">4.1</span> Subsonic Airspeed and Mach Equation</h2>

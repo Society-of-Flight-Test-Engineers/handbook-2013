@@ -1,113 +1,44 @@
 # Pitot Statics
 
+*Editor's Note*
 
-4.1 Subsonic Airspeed and Mach Equations
-
-4.2 Subsonic Scale Altitude (Compressibility) Correction Chart
-
-4.3 Subsonic Relations Between Compressible and Incompressible Dynamic Pressure
-
-4.4 Supersonic Airspeed and Mach Equations
-
-4.5 Total Temperature Equation
-
-4.6 Altimeter Equation
-
-4.7 PEC Test Methods
-
-4.7.1 Tower Fly-by
-
-4.7.2 Ground Course Method
-
-4.7.3 Trailing Bomb, Cone Method
-
-4.7.4 GPS Methods
-
-4.8 Postion Error Correction Certification Requirements
-
-4.9 PEC Correction Process Flow Chart
-
-4.10 Airspeed/Altitude/Mach Graphic Relations
-
-4.11 Effect of Errors on Calibrated Airspeed and Altitude
-
-
-
-*Editor\'s Note*
-
-*In an effort to reduce confusion and conflict regarding pitot and static pressure nomenclature, SFTE has elected to change two definitions and symbols since the first edition of this handbook was released. Henceforth, ∆Ps shall indicate static pressure ERROR (∆P~s~ = P~s~ -- P~a~) and ∆P~T~ shall indicate total (i.e. pitot) pressure ERROR (∆P~T~ = P~p~ -- P~T~). This nomenclature eliminates the ∆P~p~ symbol and confusion as to whether it indicates position error or pitot error.*
-
-
+*In an effort to reduce confusion and conflict regarding pitot and static pressure nomenclature, SFTE has elected to change two definitions and symbols since the first edition of this handbook was released. Henceforth, \(\Delta Ps\) shall indicate static pressure ERROR (\(\Delta P_s = P_s - P_a)\) and \(\Delta P_T\) shall indicate total (i.e. pitot) pressure ERROR (\(\Delta P_T = P_p - P_T\)). This nomenclature eliminates the \(\Delta P_p\) symbol and confusion as to whether it indicates position error or pitot error.*
 
 ## Common Nomenclature {-}
 
-a = speed of sound
-
-a~o~ = speed of sound at sea level on a std day
-
-M = Mach number
-
-P~a~ =ambient pressure
-
-P~o~ = ambient pressure at sea level on a std day
-
-(=2116.2 lb/ft^2^ = 29.92 in Hg)
-
-P~p~ = pitot pressure corrected for instrument error only
-
-P~s~ = static pressure (indicated at static port)
-
-P~T~ = total pressure
-
-q = incompressible dynamic pressure
-
-q~c~ = compressible differential pressure (P~T~-P~a~)
-
-q~cic~ = instrument corrected differential pressure (= P~p~-P~s~)
-
-T~a~ = ambient temperature (absolute scale)
-
-T~o~ =ambient temperature at sea level on a std day
-
-(=288.15 ^o^K = 15 ^o^C = 518.7 ^o^R = 59 ^o^F)
-
-T~T~ = total temperature (absolute scale)
-
-V~c~ = calibrated airspeed
-
-V~e~ = equivlent airspeed
-
-V~g~ = ground speed
-
-V~i~ = indicated airspeed
-
-V~ic~ = instrument corrected airspeed
-
-V~T~ = true airspeed
-
-∆H~ic~ = altimeter instrument correction
-
-∆H~pc~ = altimeter position error correction
-
-∆P~D~ = dynamic pressure error (=P~T~-∆P~s~)
-
-∆P~T~ = total (pitot) pressure error (= P~P~ - P~T~)
-
-∆P~s~ =static pressure error (= P~s~ - P~a~)
-
-∆V~ic~ = airspeed instrument correction
-
-∆V~pc~ =airspeed position error correction
-
-*δ* = pressure ratio between ambient and sea level std (= P~a~ / P~o~)
-
-*θ* = temperature ratio between ambient and sea level std (= T~a~ / T~o~)
-
-*ρ~o~* =ambient density at sea level on a std day (=.002377 slg/ft^3^)
-
-*σ* = density ratio between ambient and sea level std (= *ρ*~a~ /*ρ*~o~)
-
-γ = ratio of specific heats (= 1.4 for air)
+| Symbol       | Definition                                   |
+|:-------------|:---------------------------------------------|
+| \(a\)             | speed of sound                                                                                                   |
+| \(a_0\)           | speed of sound at sea level on a standard day                                                                    |
+| \(M\)             | Mach number                                                                                                      |
+| \(P_a\)           | ambient pressure                                                                                                 |
+| \(P_0\)           | ambient pressure at sea level on a standard day (\(=2116.2 lb/ft^2 = 29.92 in Hg \))                             |
+| \(P_p\)           | pitot pressure corrected for instrument error only                                                               |
+| \(P_s\)           | static pressure (indicated at static port)                                                                       |
+| \(P_T\)           | total pressure                                                                                                   |
+| \(q\)             | incompressible dynamic pressure                                                                                  |
+| \(q_c\)           | compressible dynamic pressure (\(=P_T-P_a\))                                                                     |
+| \(q_{cic}\)       | instrument corrected differential pressure (\(=P_p-P_s\))                                                        |
+| \(T_a\)           | ambient temperature (absolute scale)                                                                             |
+| \(T_0\)           | ambient temperature at sea level on a standard day (\(=288.15 K = 15^{\circ} C = 518.7^{\circ}R=59.0^{\circ}F\)) |
+| \(T_T\)           | total temperature (absolute scale)                                                                               |
+| \(V_c\)           | calibrated airspeed                                                                                              |
+| \(V_e\)           | equivalent airspeed                                                                                              |
+| \(V_g\)           | ground speed                                                                                                     |
+| \(V_i\)           |indicated airspeed                                                                                                |
+| \(V_T\)           | true airspeed                                                                                                    |
+| \(\Delta H_{ic}\) | altimeter instrument correction                                                                                  |
+| \(\Delta H_{pc}\) | altimeter position error correction                                                                              |
+| \(\Delta P_D\)    | dynamic pressure error (\(=P_T-\Delta P_s\))                                                                     |
+| \(\Delta P_T\)    |total (pitot) pressure error (\(=P_P-P_T\))                                                                      |
+| \(\Delta P_s\)    | static pressure error (\(=P_s-P_a\))                                                                            |
+| \(\Delta V_{ic}\) | airspeed instrument correction                                                                                   |
+| \(\Delta V_{pc}\) | airspeed position error correction                                                                               |
+| \(\delta\)        | pressure ratio between ambient and sea level std (\(=P_a/P_0\))                                                  |
+| \(\theta\)        | temperature ratio between ambient and sea level std (\(=T_a/T_0\))                                               |
+| \(\rho_0\)        | ambient density at sea level on a std day (\(=0.002377 slg/ft^3\))                                               |
+| \(\sigma\)        | density ratio between ambient and sea level std (\(=P_a/P_0\))                                                   |
+| \(\gamma\)        | ratio of specific heats (\(=1.4\) for air)                                                                       |
 
 
 ## Subsonic Airspeed and Mach Equation
