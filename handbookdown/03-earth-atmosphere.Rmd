@@ -943,26 +943,26 @@ at Austin, 1994. ([[www.colorado.edu/geography/gcraft/notes/gps/gps\_f.html]{.un
 
 **\[**Calculate distance, bearing and more between Latitude/Longitude points**\]**
 
-  [03001]: media/03/image1.png {width="0.6673611111111111in" height="0.4583333333333333in"}
-  [03002]: media/03/image2.png {width="1.7416666666666667in" height="0.6805555555555556in"}
-  [03003]: media/03/image3.png {width="1.945138888888889in" height="0.4722222222222222in"}
+  [03001]: media/03/image1.svg {width="0.6673611111111111in" height="0.4583333333333333in"}
+  [03002]: media/03/image2.svg {width="1.7416666666666667in" height="0.6805555555555556in"}
+  [03003]: media/03/image3.svg {width="1.945138888888889in" height="0.4722222222222222in"}
   [03004]: media/03/image5.png {width="2.0729166666666665in" height="1.375in"}
-  [03005]: media/03/image6.png {width="4.0375in" height="0.2916666666666667in"}
-  [03006]: media/03/image7.png {width="1.2597222222222222in" height="0.5277777777777778in"}
-  [03007]: media/03/image8.png {width="4.1305555555555555in" height="0.5263888888888889in"}
-  [03008]: media/03/image9.png {width="2.075in" height="0.2638888888888889in"}
-  [03009]: media/03/image10.png {width="0.9819444444444444in" height="0.4861111111111111in"}
-  [03010]: media/03/image11.png {width="1.5375in" height="0.5277777777777778in"}
-  [03011]: media/03/image12.png {width="1.575in" height="0.2638888888888889in"}
-  [03012]: media/03/image13.png {width="0.31527777777777777in" height="0.2777777777777778in"}
-  [03013]: media/03/image14.png {width="1.4375in" height="0.4284722222222222in"}
-  [03014]: media/03/image15.png {width="0.48125in" height="0.4375in"}
-  [03015]: media/03/image16.png {width="2.1590277777777778in" height="0.4375in"}
+  [03005]: media/03/image6.svg {width="4.0375in" height="0.2916666666666667in"}
+  [03006]: media/03/image7.svg {width="1.2597222222222222in" height="0.5277777777777778in"}
+  [03007]: media/03/image8.svg {width="4.1305555555555555in" height="0.5263888888888889in"}
+  [03008]: media/03/image9.svg {width="2.075in" height="0.2638888888888889in"}
+  [03009]: media/03/image10.svg {width="0.9819444444444444in" height="0.4861111111111111in"}
+  [03010]: media/03/image11.svg {width="1.5375in" height="0.5277777777777778in"}
+  [03011]: media/03/image12.svg {width="1.575in" height="0.2638888888888889in"}
+  [03012]: media/03/image13.svg {width="0.31527777777777777in" height="0.2777777777777778in"}
+  [03013]: media/03/image14.svg {width="1.4375in" height="0.4284722222222222in"}
+  [03014]: media/03/image15.svg {width="0.48125in" height="0.4375in"}
+  [03015]: media/03/image16.svg {width="2.1590277777777778in" height="0.4375in"}
   [03016]: media/03/image17.jpg {width="6.986805555555556in" height="9.0in"}
   [03017]: media/03/image18.jpg {width="6.986805555555556in" height="9.0in"}
-  [03018]: media/03/image19.png {width="7.0in" height="8.25in"}
-  [03019]: media/03/image20.png {width="2.2708333333333335in" height="0.21944444444444444in"}
-  [03020]: media/03/image21.png {width="2.3381944444444445in" height="0.2465277777777778in"}
+  [03018]: media/03/image19.svg {width="7.0in" height="8.25in"}
+  [03019]: media/03/image20.svg {width="2.2708333333333335in" height="0.21944444444444444in"}
+  [03020]: media/03/image21.svg {width="2.3381944444444445in" height="0.2465277777777778in"}
   [03021]: media/03/image22.png {width="5.334027777777778in" height="5.334027777777778in"}
   [03022]: media/03/image23.jpeg {width="6.6402777777777775in" height="7.991666666666666in"}
   [03023]: media/03/image24.jpeg {width="6.4319444444444445in" height="9.0in"}
@@ -972,8 +972,8 @@ at Austin, 1994. ([[www.colorado.edu/geography/gcraft/notes/gps/gps\_f.html]{.un
   [03027]: media/03/image28.png {width="6.999305555555556in" height="6.999305555555556in"}
   [http://www.colorado.edu/geography/gcraft/notes/coordsys/gif/latlon2.gif]: media/03/image29.gif {width="4.71665135608049in" height="3.3229166666666665in"}
   [http://principles.ou.edu/earth\_figure\_gravity/geoid/geoid-ellipsoidal-orthometric\_height.jpg]: media/03/image30.jpeg {width="4.69963145231846in" height="2.632075678040245in"}
-  [03028]: media/03/image31.png {width="4.3740780839895015in" height="4.462264873140858in"}
-  [03029]: media/03/image32.png {width="3.3050623359580054in" height="3.3113199912510938in"}
+  [03028]: media/03/image31.svg {width="4.3740780839895015in" height="4.462264873140858in"}
+  [03029]: media/03/image32.svg {width="3.3050623359580054in" height="3.3113199912510938in"}
   [03030]: media/03/image33.png {width="6.0in" height="2.441666666666667in"}
   [[www.colorado.edu/geography/gcraft/notes/gps/gps\_f.html]{.underline}]: http://www.colorado.edu/geography/gcraft/notes/gps/gps_f.html
   [[http://www.digitaldutch.com/atmoscalc/]{.underline}]: http://www.digitaldutch.com/atmoscalc/
