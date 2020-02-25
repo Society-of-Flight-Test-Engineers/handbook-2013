@@ -314,61 +314,58 @@
 <div id="subsonic-airspeed-and-mach-equation" class="section level2">
 <h2><span class="header-section-number">4.1</span> Subsonic Airspeed and Mach Equation</h2>
 <p>True Airspeed</p>
-<p><span class="math inline">\(\mathrm{\text{\ \ \ \ }}V_{T} = \left\lbrack \frac{2\gamma}{\gamma - 1}\frac{P_{a}}{\rho_{a}}\left( \left\lbrack \frac{P_{T} - P_{a}}{P_{a}} + 1 \right\rbrack^{\frac{\gamma - 1}{\gamma}} - 1 \right) \right\rbrack^{\frac{1}{2}}\)</span></p>
+<p><span class="math display">\[V_{T} = \left\lbrack \frac{2\gamma}{\gamma-1} \frac{P_a}{\rho_a} \left( \left\lbrack \frac{P_T - P_a}{P_a} + 1 \right\rbrack^\frac{\gamma-1}{\gamma} - 1 \right) \right\rbrack ^{1/2}\]</span></p>
 <p>Equivalent Airspeed</p>
-<p>(= <em>V<sub>T</sub></em> equation with assumption of std day sea level density)</p>
-<p><span class="math inline">\(V_{e} = \sqrt{7\frac{P_{a}}{\rho_{o}}\left( \left\lbrack \frac{P_{T} - P_{a}}{P_{a}} + 1 \right\rbrack^{\frac{2}{7}} - 1 \right)} = V_{T}\sqrt{\frac{\rho_{a}}{\rho_{o}}} = V_{T}\sqrt{\sigma}\)</span></p>
+<p>(= <span class="math inline">\(V_T\)</span> equation with assumption of std day sea level density)</p>
+<p><span class="math display">\[V_{e} = \sqrt{7\frac{P_{a}}{\rho_{o}}\left( \left\lbrack \frac{P_{T} - P_{a}}{P_{a}} + 1 \right\rbrack^{\frac{2}{7}} - 1 \right)} = V_{T}\sqrt{\frac{\rho_{a}}{\rho_{o}}} = V_{T}\sqrt{\sigma}\]</span></p>
 <p>Calibrated Airspeed</p>
-<p>(= <em>V<sub>e</sub></em> equation with assumption of std day sea level pressure)</p>
-<p><span class="math inline">\(\mathrm{\text{\ \ \ \ }}V_{c} = \left\lbrack \frac{2\gamma}{\gamma - 1}\frac{P_{o}}{\rho_{o}}\left( \left\lbrack \frac{P_{T} - P_{a}}{P_{o}} + 1 \right\rbrack^{\frac{\gamma - 1}{\gamma}} - 1 \right) \right\rbrack^{\frac{1}{2}}\)</span></p>
-<p><span class="math inline">\(\sqrt{\mathrm{7}\frac{\mathrm{P}_{\mathrm{o}}}{\mathrm{\rho}_{\mathrm{o}}}\left( \left\lbrack \frac{\mathrm{q}_{\mathrm{c}}}{\mathrm{P}_{\mathrm{o}}}\mathrm{+ 1} \right\rbrack^{\mathrm{.2857}}\mathrm{- 1} \right)}\)</span></p>
-<p>Applying British units (<em>lb/ft<sup>2</sup></em>) and converting from <em>ft/sec</em> to knots yields</p>
-<p><span class="math display">\[\mathrm{\text{\ \ \ \ }}V_{c} = 1479\sqrt{\left\lbrack \frac{P_{T} - P_{a}}{2116} + 1 \right\rbrack^{\frac{2}{7}} - 1}\]</span></p>
-<blockquote>
-<p>(kts)</p>
-</blockquote>
+<p>(= <span class="math inline">\(V_e\)</span> equation with assumption of std day sea level pressure)</p>
+<p><span class="math display">\[V_{c} = \left\lbrack \frac{2\gamma}{\gamma - 1}\frac{P_{o}}{\rho_{o}}\left( \left\lbrack \frac{P_{T} - P_{a}}{P_{o}} + 1 \right\rbrack^{\frac{\gamma - 1}{\gamma}} - 1 \right) \right\rbrack^{\frac{1}{2}}\]</span></p>
+<p><span class="math display">\[\sqrt{\mathrm{7}\frac{\mathrm{P}_{\mathrm{o}}}{\mathrm{\rho}_{\mathrm{o}}}\left( \left\lbrack \frac{\mathrm{q}_{\mathrm{c}}}{\mathrm{P}_{\mathrm{o}}}\mathrm{+ 1} \right\rbrack^{\mathrm{0.2857}}\mathrm{- 1} \right)}\]</span></p>
+<p>Applying British units (<span class="math inline">\(lb/ft^2\)</span>) and converting from <em>ft/sec</em> to knots yields</p>
+<p><span class="math display">\[ V_{c} = 1479\sqrt{\left\lbrack \frac{P_{T} - P_{a}}{2116} + 1 \right\rbrack^{\frac{2}{7}} - 1} ~(kts)\]</span></p>
 <p>Mach Number</p>
-<p><span class="math inline">\(M = \frac{V_{T}}{a} = \sqrt{\frac{2}{\gamma - 1}\left\lbrack \left( \frac{P_{T} - P_{a}}{P_{a}} + 1 \right)^{\frac{\gamma - 1}{\gamma}} - 1 \right\rbrack} = \sqrt{5\left( \left\lbrack \frac{q_{c}}{P_{a}} + 1 \right\rbrack^{\frac{2}{7}} - 1 \right)}\)</span></p>
+<p><span class="math display">\[M = \frac{V_{T}}{a} = \sqrt{\frac{2}{\gamma - 1}\left\lbrack \left( \frac{P_{T} - P_{a}}{P_{a}} + 1 \right)^{\frac{\gamma - 1}{\gamma}} - 1 \right\rbrack} = \sqrt{5\left( \left\lbrack \frac{q_{c}}{P_{a}} + 1 \right\rbrack^{\frac{2}{7}} - 1 \right)}\]</span></p>
 </div>
 <div id="scale-altitude-compressibility-correction" class="section level2">
 <h2><span class="header-section-number">4.2</span> Scale Altitude (Compressibility ) Correction</h2>
-<p>The name comes from the fact that although the equivalent airspeed equation does correct for compressibility, the sea level pressure assumption used for calibrated airspeed makes the compressibility correction valid only for that (sea level) pressure. Above sea level, the calibrated airspeed must be re-scaled for pressure effects on compressibility. The mathematical method for determining <em>V<sub>e</sub></em> from <em>V<sub>c</sub></em> is to first solve the calibrated airspeed equation for <em>q<sub>c</sub></em></p>
-<p><em>~~</em></p>
-<p><em>~~</em><img src="media/04/image1.png" width="172" height="58" /></p>
-<p><em>~~</em></p>
-<p>Next, substitute this value and the ambient pressure (<em>P<sub>a</sub></em>) into the equivalent airspeed equation. (<em>q<sub>c</sub> = P<sub>T</sub> - P<sub>a</sub></em> )</p>
+<p>The name comes from the fact that although the equivalent airspeed equation does correct for compressibility, the sea level pressure assumption used for calibrated airspeed makes the compressibility correction valid only for that (sea level) pressure. Above sea level, the calibrated airspeed must be re-scaled for pressure effects on compressibility. The mathematical method for determining <span class="math inline">\(V_e\)</span> from <span class="math inline">\(V_c\)</span> is to first solve the calibrated airspeed equation for <span class="math inline">\(q_c\)</span>.</p>
+<p><span class="math display">\[q_c = P_0  \left\lbrack \left( \frac{\rho_0}{P_0} \frac{V_c^2}{7} + 1 \right)^{3.5} - 1 \right\rbrack\]</span></p>
+<p>Next, substitute this value and the ambient pressure (<span class="math inline">\(P_a\)</span> into the equivalent airspeed equation. (<span class="math inline">\(q_c = P_T - P_a\)</span>)</p>
+<p><span class="math display">\[V_e = \sqrt{7 \frac{P_a}{\rho_0} \left( \left\lbrack \frac{q_c}{P_a}+1 \right\rbrack^{2/7} - 1 \right) } \]</span></p>
+<p>The adjacent chart does this graphically for all subsonic airspeeds.</p>
+<p><span class="math display">\[V_e = V_c + \Delta V_c\]</span></p>
 <div class="figure">
-<img src="media/04/image2.png" width="174" height="69" />
+<img src="media/04/image3.png" width="855" height="595" />
 
 </div>
-<p>The adjacent chart does this graphically for all subsonic airspeeds.</p>
-<p><em>V<sub>e</sub> = V<sub>c</sub> +∆V<sub>c</sub></em></p>
-<p>[][04003</p>
 </div>
 <div id="subsonic-relations-between-compressible-and-incompressible-dynamic-pressure" class="section level2">
 <h2><span class="header-section-number">4.3</span> Subsonic Relations Between Compressible and Incompressible Dynamic Pressure</h2>
 <p>For constant density (incompressible) flow Bernoulli’s equation reduces to</p>
-<p><img src="media/04/image4.png" width="170" height="50" /> <img src="media/04/image5.png" width="240" height="50" /> <img src="media/04/image6.png" width="265" height="48" /> <img src="media/04/image7.png" width="184" height="60" /></p>
-<p>Where incompressible dynamic pressure <em>q</em> is defined as <em>P<sub>T</sub>-P<sub>a</sub></em> <strong>.</strong></p>
+<p><span class="math display">\[V_T = \sqrt{\frac{2}{\rho_a}(P_T - P_a)} = \sqrt{\frac{2q}{\rho_a}} \]</span></p>
+<p>Where incompressible dynamic pressure <span class="math inline">\(q\)</span> is defined as <span class="math inline">\(P_T-P_a\)</span>.</p>
 <p>As airflow speed increases, its density at the stagnation point increases thereby increasing the sensed pressure. The ratio between compressible &amp; incompressible dynamic pressure can be written as a function of Mach number</p>
-<p>True dynamic pressure <em>q</em> (as used in modeling) is defined in dimensional analysis as:</p>
-<p>This value for <em>q</em> should not be confused with compressible (a.k.a. impact or differential) pressure, <em>q<sub>c</sub> (= P<sub>T</sub> -P<sub>a</sub>)</em></p>
+<p><span class="math display">\[q_c = q \left\lbrack 1 + \frac{M^2}{4} + \frac{M^4}{40} + \frac{M^6}{1600} + ... \right\rbrack \]</span></p>
+<p>True dynamic pressure <span class="math inline">\(q\)</span> (as used in modeling) is defined in dimensional analysis as:</p>
+<p><span class="math display">\[q = \frac{1}{2} \rho_a V_T^2 = \frac{1}{2}\rho_0V_e^2\]</span></p>
+<p>This value for <span class="math inline">\(q\)</span> should not be confused with compressible (a.k.a. impact or differential) pressure, <span class="math inline">\(q_c (= P_T - P_a) \)</span></p>
 <div class="figure">
-<img src="media/04/image8.png" width="507" height="863" />
+<img src="media/04/image8.png" width="863" height="507" />
 
 </div>
 </div>
 <div id="supersonic-airspeed-and-mach-equations" class="section level2">
 <h2><span class="header-section-number">4.4</span> Supersonic Airspeed and Mach Equations</h2>
-<p><em>P<sub>T</sub>’</em> denotes pitot pressure behind shock wave</p>
+<p><span class="math inline">\(=P_T&#39;\)</span> denotes pitot pressure behind shock wave</p>
 <p>True Airspeed</p>
-<div class="figure">
-<img src="media/04/image9.png" width="410" height="121" />
-
-</div>
-<p><img src="media/04/image10.png" width="170" height="109" />Equivalent Airspeed (valid if q<sub>c</sub>/P<sub>a</sub> &gt;0.892929158)</p>
-<p><img src="media/04/image11.png" width="148" height="103" />Calibrated Airspeed (valid if V<sub>c</sub>&gt;a<sub>o</sub>)</p>
-<p><img src="media/04/image12.png" width="140" height="49" />Mach Number</p>
+<p><span class="math display">\[ \frac{P_T&#39; - P_a}{P_a} = \frac{q_c}{P_a} = \left[ \frac{\gamma + 1}{2} \left(  \frac{V}{a} \right)^2  \right]^\frac{\gamma}{\gamma-1} \left[ \frac{1}{ \frac{2\gamma}{\gamma+1} \left( \frac{V}{a} \right)^2 - \frac{\gamma-1}{\gamma+1} }  \right]^\frac{1}{\gamma-1} - 1 \]</span></p>
+<p>Equivalent Airspeed (valid if <span class="math inline">\(q_c/P_a &gt; 0.892929158 \)</span>)</p>
+<p><span class="math display">\[ \frac{q_c}{P_a} = \frac{166.92 \left[ \frac{V_e}{a_0 \sqrt{\sigma}} \right]^7} {\left( 7 \left[ \frac{V_e}{a_0 \sqrt{\sigma}} \right]^2 - 1 \right)^{2.5}} - 1 \]</span></p>
+<p>Calibrated Airspeed (valid if <span class="math inline">\(V_c &gt; a_0 \)</span>)</p>
+<p><span class="math display">\[ \frac{q_c}{P_0} = \frac{166.92 \left[ \frac{V_c}{a_0} \right]^7} {\left( 7 \left[ \frac{V_c}{a_0} \right]^2 - 1 \right)^{2.5}} - 1\]</span></p>
+<p>Mach Number</p>
+<p><span class="math display">\[ \frac{q_c}{P_a} = \frac{166.92 M^7} {\left( 7 M^2 - 1 \right)^{2.5}} -1 \]</span></p>
 </div>
 <div id="total-temperature-equation" class="section level2">
 <h2><span class="header-section-number">4.5</span> Total Temperature Equation</h2>

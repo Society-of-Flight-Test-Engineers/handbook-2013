@@ -30,8 +30,8 @@
 | \(\Delta H_{ic}\) | altimeter instrument correction                                                                                  |
 | \(\Delta H_{pc}\) | altimeter position error correction                                                                              |
 | \(\Delta P_D\)    | dynamic pressure error (\(=P_T-\Delta P_s\))                                                                     |
-| \(\Delta P_T\)    |total (pitot) pressure error (\(=P_P-P_T\))                                                                      |
-| \(\Delta P_s\)    | static pressure error (\(=P_s-P_a\))                                                                            |
+| \(\Delta P_T\)    |total (pitot) pressure error (\(=P_P-P_T\))                                                                       |
+| \(\Delta P_s\)    | static pressure error (\(=P_s-P_a\))                                                                             |
 | \(\Delta V_{ic}\) | airspeed instrument correction                                                                                   |
 | \(\Delta V_{pc}\) | airspeed position error correction                                                                               |
 | \(\delta\)        | pressure ratio between ambient and sea level std (\(=P_a/P_0\))                                                  |
@@ -45,109 +45,89 @@
 
 True Airspeed
 
-$\mathrm{\text{\ \ \ \ }}V_{T} = \left\lbrack \frac{2\gamma}{\gamma - 1}\frac{P_{a}}{\rho_{a}}\left( \left\lbrack \frac{P_{T} - P_{a}}{P_{a}} + 1 \right\rbrack^{\frac{\gamma - 1}{\gamma}} - 1 \right) \right\rbrack^{\frac{1}{2}}$
-
-
+\[V_{T} = \left\lbrack \frac{2\gamma}{\gamma-1} \frac{P_a}{\rho_a} \left( \left\lbrack \frac{P_T - P_a}{P_a} + 1 \right\rbrack^\frac{\gamma-1}{\gamma} - 1 \right) \right\rbrack ^{1/2}\]
 
 Equivalent Airspeed
 
-(= *V~T~* equation with assumption of std day sea level density)
+(= \(V_T\) equation with assumption of std day sea level density)
 
-$V_{e} = \sqrt{7\frac{P_{a}}{\rho_{o}}\left( \left\lbrack \frac{P_{T} - P_{a}}{P_{a}} + 1 \right\rbrack^{\frac{2}{7}} - 1 \right)} = V_{T}\sqrt{\frac{\rho_{a}}{\rho_{o}}} = V_{T}\sqrt{\sigma}$
-
-
+\[V_{e} = \sqrt{7\frac{P_{a}}{\rho_{o}}\left( \left\lbrack \frac{P_{T} - P_{a}}{P_{a}} + 1 \right\rbrack^{\frac{2}{7}} - 1 \right)} = V_{T}\sqrt{\frac{\rho_{a}}{\rho_{o}}} = V_{T}\sqrt{\sigma}\]
 
 Calibrated Airspeed
 
-(= *V~e~* equation with assumption of std day sea level pressure)
+(= \(V_e\) equation with assumption of std day sea level pressure)
 
-$\mathrm{\text{\ \ \ \ }}V_{c} = \left\lbrack \frac{2\gamma}{\gamma - 1}\frac{P_{o}}{\rho_{o}}\left( \left\lbrack \frac{P_{T} - P_{a}}{P_{o}} + 1 \right\rbrack^{\frac{\gamma - 1}{\gamma}} - 1 \right) \right\rbrack^{\frac{1}{2}}$
-
-
-
-$\sqrt{\mathrm{7}\frac{\mathrm{P}_{\mathrm{o}}}{\mathrm{\rho}_{\mathrm{o}}}\left( \left\lbrack \frac{\mathrm{q}_{\mathrm{c}}}{\mathrm{P}_{\mathrm{o}}}\mathrm{+ 1} \right\rbrack^{\mathrm{.2857}}\mathrm{- 1} \right)}$
+\[V_{c} = \left\lbrack \frac{2\gamma}{\gamma - 1}\frac{P_{o}}{\rho_{o}}\left( \left\lbrack \frac{P_{T} - P_{a}}{P_{o}} + 1 \right\rbrack^{\frac{\gamma - 1}{\gamma}} - 1 \right) \right\rbrack^{\frac{1}{2}}\]
 
 
+\[\sqrt{\mathrm{7}\frac{\mathrm{P}_{\mathrm{o}}}{\mathrm{\rho}_{\mathrm{o}}}\left( \left\lbrack \frac{\mathrm{q}_{\mathrm{c}}}{\mathrm{P}_{\mathrm{o}}}\mathrm{+ 1} \right\rbrack^{\mathrm{0.2857}}\mathrm{- 1} \right)}\]
 
-Applying British units (*lb/ft^2^*) and converting from *ft/sec* to knots yields
+Applying British units (\(lb/ft^2\)) and converting from *ft/sec* to knots yields
 
-
-
-$$\mathrm{\text{\ \ \ \ }}V_{c} = 1479\sqrt{\left\lbrack \frac{P_{T} - P_{a}}{2116} + 1 \right\rbrack^{\frac{2}{7}} - 1}$$
-
-> (kts)
-
+\[ V_{c} = 1479\sqrt{\left\lbrack \frac{P_{T} - P_{a}}{2116} + 1 \right\rbrack^{\frac{2}{7}} - 1} ~(kts)\]
 
 Mach Number
 
-$M = \frac{V_{T}}{a} = \sqrt{\frac{2}{\gamma - 1}\left\lbrack \left( \frac{P_{T} - P_{a}}{P_{a}} + 1 \right)^{\frac{\gamma - 1}{\gamma}} - 1 \right\rbrack} = \sqrt{5\left( \left\lbrack \frac{q_{c}}{P_{a}} + 1 \right\rbrack^{\frac{2}{7}} - 1 \right)}$
+\[M = \frac{V_{T}}{a} = \sqrt{\frac{2}{\gamma - 1}\left\lbrack \left( \frac{P_{T} - P_{a}}{P_{a}} + 1 \right)^{\frac{\gamma - 1}{\gamma}} - 1 \right\rbrack} = \sqrt{5\left( \left\lbrack \frac{q_{c}}{P_{a}} + 1 \right\rbrack^{\frac{2}{7}} - 1 \right)}\]
+
 
 ## Scale Altitude (Compressibility ) Correction
 
+The name comes from the fact that although the equivalent airspeed equation does correct for compressibility, the sea level pressure assumption used for calibrated airspeed makes the compressibility correction valid only for that (sea level) pressure. Above sea level, the calibrated airspeed must be re-scaled for pressure effects on compressibility. The mathematical method for determining \(V_e\) from \(V_c\) is to first solve the calibrated airspeed equation for \(q_c\).
 
-The name comes from the fact that although the equivalent airspeed equation does correct for compressibility, the sea level pressure assumption used for calibrated airspeed makes the compressibility correction valid only for that (sea level) pressure. Above sea level, the calibrated airspeed must be re-scaled for pressure effects on compressibility. The mathematical method for determining *V~e~* from *V~c~* is to first solve the calibrated airspeed equation for *q~c~*
+\[q_c = P_0  \left\lbrack \left( \frac{\rho_0}{P_0} \frac{V_c^2}{7} + 1 \right)^{3.5} - 1 \right\rbrack\]
 
-*~~*
+Next, substitute this value and the ambient pressure (\(P_a\) into the equivalent airspeed equation. (\(q_c = P_T - P_a\))
 
-*~~*![][04001]
-
-*~~*
-
-Next, substitute this value and the ambient pressure (*P~a~*) into the equivalent airspeed equation. (*q~c~ = P~T~ - P~a~* )
-
-
-![][04002]
-
+\[V_e = \sqrt{7 \frac{P_a}{\rho_0} \left( \left\lbrack \frac{q_c}{P_a}+1 \right\rbrack^{2/7} - 1 \right) } \]
 
 The adjacent chart does this graphically for all subsonic airspeeds.
 
-*V~e~ = V~c~ +∆V~c~*
+\[V_e = V_c + \Delta V_c\]
 
+![][04003]
 
-![][04003
 
 ## Subsonic Relations Between Compressible and Incompressible Dynamic Pressure
 
-
 For constant density (incompressible) flow Bernoulli's equation reduces to
 
+\[V_T = \sqrt{\frac{2}{\rho_a}(P_T - P_a)} = \sqrt{\frac{2q}{\rho_a}} \]
 
-![][04004]
-![][04005]
-![][04006]
-![][04007]
-
-
-
-
-
-Where incompressible dynamic pressure *q* is defined as *P~T~-P~a~* **.**
+Where incompressible dynamic pressure \(q\) is defined as \(P_T-P_a\).
 
 As airflow speed increases, its density at the stagnation point increases thereby increasing the sensed pressure. The ratio between compressible & incompressible dynamic pressure can be written as a function of Mach number
 
-True dynamic pressure *q* (as used in modeling) is defined in dimensional analysis as:
+\[q_c = q \left\lbrack 1 + \frac{M^2}{4} + \frac{M^4}{40} + \frac{M^6}{1600} + ... \right\rbrack \]
 
-This value for *q* should not be confused with compressible (a.k.a. impact or differential) pressure, *q~c~ (= P~T~ -P~a~)*
+True dynamic pressure \(q\) (as used in modeling) is defined in dimensional analysis as:
 
+\[q = \frac{1}{2} \rho_a V_T^2 = \frac{1}{2}\rho_0V_e^2\]
+
+This value for \(q\) should not be confused with compressible (a.k.a. impact or differential) pressure, \(q_c (= P_T - P_a) \)
 
 ![][04008]
 
+
 ## Supersonic Airspeed and Mach Equations
 
-*P~T~'* denotes pitot pressure behind shock wave
-
+\(=P_T'\) denotes pitot pressure behind shock wave
 
 True Airspeed
 
-![][04009]
+\[ \frac{P_T' - P_a}{P_a} = \frac{q_c}{P_a} = \left[ \frac{\gamma + 1}{2} \left(  \frac{V}{a} \right)^2  \right]^\frac{\gamma}{\gamma-1} \left[ \frac{1}{ \frac{2\gamma}{\gamma+1} \left( \frac{V}{a} \right)^2 - \frac{\gamma-1}{\gamma+1} }  \right]^\frac{1}{\gamma-1} - 1 \]
 
-![][04010]Equivalent Airspeed (valid if q~c~/P~a~ \>0.892929158)
+Equivalent Airspeed (valid if \(q_c/P_a > 0.892929158 \))
 
+\[ \frac{q_c}{P_a} = \frac{166.92 \left[ \frac{V_e}{a_0 \sqrt{\sigma}} \right]^7} {\left( 7 \left[ \frac{V_e}{a_0 \sqrt{\sigma}} \right]^2 - 1 \right)^{2.5}} - 1 \]
 
-![][04011]Calibrated Airspeed (valid if V~c~\>a~o~)
+Calibrated Airspeed (valid if \(V_c > a_0 \))
 
+\[ \frac{q_c}{P_0} = \frac{166.92 \left[ \frac{V_c}{a_0} \right]^7} {\left( 7 \left[ \frac{V_c}{a_0} \right]^2 - 1 \right)^{2.5}} - 1\]
 
-![][04012]Mach Number
+Mach Number
+
+\[ \frac{q_c}{P_a} = \frac{166.92 M^7} {\left( 7 M^2 - 1 \right)^{2.5}} -1 \]
 
 
 ## Total Temperature Equation
@@ -447,7 +427,7 @@ Maximum error at sea level must be less than ± 30 ft/100 kts between 1.3 *V~SO~
 [04005]: media/04/image5.png {width="2.5006944444444446in" height="0.5277777777777778in"}
 [04006]: media/04/image6.png {width="2.7631944444444443in" height="0.5in"}
 [04007]: media/04/image7.png {width="1.9166666666666667in" height="0.6333333333333333in"}
-[04008]: media/04/image8.png {width="5.290972222222222in" height="8.998611111111112in"}
+[04008]: media/04/image8.png {width="8.998611111111112in" height="5.290972222222222in"}
 [04009]: media/04/image9.png {width="4.271527777777778in" height="1.2666666666666666in"}
 [04010]: media/04/image10.png {width="1.7715277777777778in" height="1.1388888888888888in"}
 [04011]: media/04/image11.png {width="1.542361111111111in" height="1.0833333333333333in"}
