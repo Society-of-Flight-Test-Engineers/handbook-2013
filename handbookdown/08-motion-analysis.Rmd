@@ -1,0 +1,1480 @@
+# 8 Motion/Vibration Analysis**
+
+8.1 Recurring Abbreviations
+
+8.2 First Order Motion
+
+> 8.2.1 Elements of First Order Motion
+>
+> 8.2.2 First Order Motion Descriptive Parameters
+>
+> 8.2.3 Determining Descriptive Parameter *τ*
+
+8.3 Second Order Motion
+
+> 8.3.1 Elements of Second Order Motion
+>
+> 8.3.2 Second Order Motion Descriptive Parameters
+>
+> 8.3.3 Determining Descriptive Parameters
+
+8.4 Complex Plane
+
+8.5 Parameter Conversions
+
+8.6 Vibration Nomograph
+
+8.7 References
+
+**8.1 Recurring Abbreviations**
+
+###### *C ~1/x~* number of cycles to achieve 1/*x* amplitude
+
+###### *D* damping
+
+*D~1~,D~2~* peak-to-peak displacement (subsequent)
+
+*FV* final value
+
+*F(t) forcing function*
+
+*f* frequency, cycles/sec = ω/(2π)
+
+*HCAR* half cycle amplitude ratio (i.e., *x~2~/x~1~*, *x~3~/x~2~*, etc.)
+
+*Im* imaginary axis
+
+*M* mass
+
+*MP* peak overshoot
+
+*Re* real axis
+
+*rms* root mean square
+
+*s*~1~, *s*~2~ equation roots of second order
+
+*T* period = 1/*f* = 2π/ω~d~ (seconds)
+
+*T~d~* delay time (i.e., time to 50% of FV)
+
+*T~r~* rise time (i.e., time from 10% to 90% of FV)
+
+*T~p~* time to peak amplitude
+
+*TPR* transient peak ratio
+
+*T~s~* settling time (time to settle within *x*% of FV)
+
+*T ~1/2~* time to achieve 1/*x* amplitude
+
+*x* displacement
+
+*x~1~,x~2~* peak displacements (subsequent)
+
+*v* velocity
+
+*v~o~* peak velocity
+
+*ε =ζω~n~ /ω~d~* = ζ/\[1-ζ^2^\]^.5^
+
+*φ* phase lag (radians)
+
+*ζ* damping coefficient (non-dimensional)
+
+*σ* damping rate *=ζω~n~* = 1/*τ*
+
+*τ* time constant =1/*ζω~n~*
+
+ω  frequency, radians/sec
+
+*ω~d~* damped natural frequency (rad/sec)
+
+*ω~n~* natural frequency (rad/sec)
+
+**8.2 First Order Motion**
+
+Found in classical aircraft roll and spiral modes. Named first-order because the motions are described by mathematics using the first derivative of a parameter.
+
+**8.2.1 Elements of First Order Motion**
+
+Mechanical analogy contains elements of mass, damping and
+
+sometimes a forcing function.
+
+Example: Determine the vertical velocity of a diver as she hits the water at 10 ft/s (assume constant body position & neutral buoyancy)
+
+Summing vertical forces gives
+
+![][08001] 
+
+Since *D* & *M* are constant
+
+ 
+
+![][08002]![][08003]
+
+Apply initial condition
+
+ 
+
+![][08004]
+
+Plot response over time
+
+ 
+
+![][08005]
+
+• Exponential rate of decay described by *D/M* ratio
+
+ 
+
+• Example 2: Diver with 20 lb submerged weight releases from zero velocity at top of pool (quiescent condition).
+
+Solve using Laplace analysis methods:
+
+ 
+
+![][08006]
+
+![][08007]
+
+![][08008]
+
+This "force/damping" ratio is merely a scaling factor for the steady state.
+
+ 
+
+![][08009]
+
+• Several methods can be used to describe the quickness of convergence toward steady state (i.e., time to 99.999 % of *V~ss~*, time to 1/2 *V~ss~*).
+
+• By convention, we use a % that directly reflects the exponent.
+
+• Establish a time constant *τ* based on *D/M*.
+
+ 
+
+![][08010]
+
+**8.2.2 First Order Motion Descriptive Parameters**
+
+![][08011]
+
+![][08012]
+
+when *t* = 0.6931τ: *x = e*^−.6931^ = 0.5 (time to half amplitude)
+
+when *t* = τ: *x = e*^−1^ = 0.37
+
+when *t* = 3τ     *x = e*^−3^ = 0.05
+
+when *t* = 4τ: *x = e*^−4^ = 0.02
+
+If exponent \> 0, then motion is divergent.
+
+![][08013]![][08014]
+
+![][08015]
+
+• *τ *again describes the exponential rate of divergence.
+
+• By convention, the "time to double amplitude" (*t~2~*) is usually applied as the evaluation metric.
+
+• *x*~(t2)~ = 2*x*~(0)~ where *x*~(0)~ = *ce^m^*^0^
+
+ 
+
+![][08016]
+
+![][08017]
+
+**8.2.3 Determining *τ* from Step Input Time History**
+
+**Method \#1**
+
+τ = time to reach 0.632 *x~ss~*
+
+![][08018]
+
+**Method \#2**
+
+![][08019]
+
+![][08020]
+
+![][08021]
+
+**Method \#3**
+
+ 
+
+1\. Pick any time *t~1~*.
+
+2\. Draw tangent at *t~1~*.
+
+3\. Note *t~2~* where tangent intercepts x~ss~.
+
+4\. *τ* = *t~2~*-*t~1~*
+
+ 
+
+![][08022]
+
+**Method \#4** When *X~SS~* is unknown use
+
+ 
+
+![][08023]
+
+![][08024]
+
+**Method \#5** When *Xss* is known, use
+
+ 
+
+![][08025]
+
+**Linearity check:**
+
+Note parameter change between even time increments.
+
+ 
+
+Plot parameter changes vs elapsed time on semi-log scale
+
+ 
+
+![][08026]
+
+Slope of line equals *τ*
+
+ 
+
+Dp
+
+![][08027]
+
+**8.3 Second Order Motion**
+
+Found in classical aircraft phugoid, Dutch roll and short period modes as well as noise filter and vibration testing. Named second-order because the motions are described by mathematics using the second derivative of a parameter.
+
+**8.3.1 Elements of Second Order Motion**
+
+Mechanical systems have elements of spring, mass, and usually damping. Forcing functions can be included (see illustration).
+
+![][08028]
+
+*K* = spring stiffness (*F*/*x*)
+
+*x* = displacement from equilibrium
+
+*M* = mass
+
+*F*~(*t*)~ = forcing function
+
+*D* = damping
+
+ 
+
+#### 
+
+#### 
+
+#### 
+
+#### Natural character is observed when system is allowed to move with no external input \[*F*(*t*) = 0\] 
+
+#### 
+
+#### ![][08029]
+
+#### 
+
+#### Apply operator technique:
+
+#### 
+
+#### ![][08030]
+
+Divide out *e^st^*, since it never equals zero, the characteristic equation remains:
+
+![][08031]
+
+The values of *s* that satisfy this equation are called the roots
+
+![][08032]
+
+Solve for the roots using the quadratic equation
+
+![][08033]
+
+**8.3.2 Second Order Motion Descriptive Parameters**
+
+ 
+
+Solution (*x*) calculated as
+
+ 
+
+ ![][08034]
+
+ 
+
+ 
+
+Apply Euler's identity for complex conjugate roots
+
+ 
+
+ ![][08035]
+
+ 
+
+• φ defines the **phase shift**.
+
+•  *A* defines the **initial amplitude**.
+
+•  The real part of the root \[*D*/2*M*\] defines the **envelope** of the motion.
+
+•  The imaginary part of the root identifies the **damped frequency**
+
+of the oscillations, ω*~d~* (rad/sec).
+
+ 
+
+![][08036]
+
+ 
+
+ ![][08037]
+
+• If damping is reduced to *D* = 0 then only \[*K/M*\]^1/2^ remains.
+
+This is the undamped or **"natural" frequency** (ω~η~).
+
+ 
+
+ ![][08038]
+
+ 
+
+•  If
+
+![][08039]
+
+then *D* is conisidered to be critical \[just enough to prevent oscillations\]
+
+ 
+
+ ![][08040]
+
+ 
+
+ 
+
+• For oscillatory motion, actual system damping is typically expressed as a fraction critical damping. Define **damping ratio** as
+
+ 
+
+ ![][08041]
+
+![][08042]
+
+![][08043]
+
+![][08044]
+
+![][08045]
+
+![][08046]
+
+Possible Solutions:
+
+ ![][08047]
+
+• The various combination of *K*, *M*, and *D* and their effects on system response can be related to damping ratio *ζ* as follows:
+
+ 
+
+   ζ \> 1 Real & unequal roots exponential, convergent
+
+ 
+
+  ζ =  ± 1 Real & equal roots exponential, conv or div
+
+ 0 \< ζ \< 1  Complex pair roots sinusoidal, convergent
+
+ 
+
+     ζ = 0 Imaginary pair roots sinusoidal, neutral
+
+€
+
+−1 \< ζ \< 0 Complex pair roots sinusoidal, divergent
+
+ 
+
+ ζ \< − 1 Real & unequal roots exponential, divergent
+
+ 
+
+![][08048]![][08049]
+
+**Damping ratio effect on second order system**
+
+  
+
+ 
+
+Response of various second order systems to an impulse input.
+
+ 
+
+ 
+
+Second-order systems are oscillatory if
+
+-1 \> *ζ* \> 1.
+
+ 
+
+ 
+
+Motion typically
+
+described by
+
+*ω~n~* and *ζ*
+
+ 
+
+ 
+
+*T*, *ω~d~*, *ω~n~* and *ζ *are linked such that knowledge of any two will yield
+
+the other two.
+
+ 
+
+ ![][08050]
+
+ 
+
+![][08051]
+
+![][08052]
+
+2nd order system response to **unit step input** for **underdamped systems**
+
+** **
+
+(0 \> *ζ* \> 1)
+
+ 
+
+![][08053]
+
+**Decay rates (for 0 \< ζ \<1) and Useful Insights**
+
+ 
+
+![][08054]
+
+**8.3.3 Determining Descriptive Parameters**
+
+** **
+
+Time domain metrics
+
+ 
+
+ ![][08055]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Peak Value, *MP*: largest value
+
+ 
+
+Final Value, *FV*: steady state value
+
+ 
+
+Delay Time, *T~d~*: 50% of final value
+
+ 
+
+Rise Time, *T~r~*: 10% - 90% of FV
+
+ 
+
+Peak Time, *T~p~*: time to MP
+
+ 
+
+Settling Time, *T~s~*: time to reach some defined % of final value
+
+ 
+
+\% Overshoot, *PO*:
+
+ 
+
+![][08056]
+
+*target value = unity*
+
+ 
+
+**Method \#1** Basic Analysis
+
+ 
+
+ 
+
+Note
+
+ ![][08057]
+
+![][08058]
+
+![][08059]
+
+![][08060]
+
+![][08061]
+
+Easily measured values: can use any points on envelope
+
+ 
+
+![][08062]
+
+![][08063]
+
+![][08064]
+
+![][08065]
+
+![][08066]
+
+**Method \#2** Transient Peak Ratio Analysis
+
+ 
+
+1\) Measure either *D* or *x* distances as shown.
+
+ 
+
+ ![][08067]
+
+ 
+
+Example Calculation
+
+ 
+
+ ![][08068]
+
+ 
+
+ ![][08069]
+
+ 
+
+ Average TPR = 0.8409
+
+ 
+
+ 
+
+ 
+
+ 
+
+2\) Note ratio of adjacent peak values (transient peak ratios).
+
+3\) Average several TPRs.
+
+4\) Use equation to find *ζ*:
+
+ 
+
+ ![][08070]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+4a) Can use
+
+*D~1~/D~2~* or *x~1~/x~2~*
+
+ratios in above equation.
+
+ 
+
+4b) In lieu of equation, use
+
+adjacent look-up curve to find *ζ*.
+
+ 
+
+4c) Time ratio method works better with heavy damping.
+
+ 
+
+ 
+
+![][08071]
+
+**Method \#3** Multiple *TPR* Analysis
+
+ 
+
+![][08072]
+
+To determine damping ratio
+
+> \~  Use the *m* = 1 line when comparing the next ratio.
+>
+>  \~  Use the *m* = 2 line for comparing every other
+>
+> peak ratio.
+
+ 
+
+ 
+
+ ![][08073]
+
+ ![][08074]
+
+**Method \#4** Time Ratio Analysis
+
+ 
+
+• If the damping ratio is between 0.5 and 1.0 (two or less overshoots), then the time ratio method can be used to determine frequency and damping ratio. Select a peak where the response if free.
+
+ 
+
+• Note times for amplitude to reduce to 73.6%, 40.9%, and 19.9% of the peak value.
+
+ 
+
+ 
+
+ ![][08075]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+•  Form the time ratios *t~2~/t~1~*, *t~3~/t~1~*, and \[*t~3~-t~2~*\]/\[*t~2~-t~1~*\]
+
+ 
+
+•  Enter the next figure at the time ratio side to find ζ for each time ratio.
+
+ 
+
+•  This technique is valid if the system transfer function has no zeros.
+
+ 
+
+ 
+
+• If recorded measurements are not available and if the number of overshoots is between 2 and 6, then
+
+ 
+
+![][08076]
+
+![][08077]
+
+**Frequency Time Products (wnDt3), (wnDt2), (wnDt1)**
+
+![][08078]
+
+![][08079]
+
+![][08080]
+
+• Calculation of *ζ* somewhat sensitive to ∆*x*~1~ measurement
+
+~ ~
+
+•  ω*~n~* = ![][08081] not too sensitive to ∆*x*~1~
+
+~ ~
+
+• Best if 0.5 ≤ ζ ≤ 1.4
+
+ 
+
+• Initial overshoot approximation: let (step inputs only)
+
+ 
+
+![][08082]
+
+![][08083]
+
+**Method \#6** Separated Real Root Analysis (when ζ\>1)
+
+ 
+
+1\) Determine several steady state ∆*X*(*t*) values from time history
+
+ 
+
+ 
+
+ ![][08084]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2\) Plot ∆*X* vs *t* on semi-log scale
+
+ 
+
+ 
+
+ 
+
+ ![][08085]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+3\) After the faster root has decayed, the semi-log plot will be a straight line whose slope determines the slower root (1/τ~1~)
+
+ 
+
+ 
+
+ ![][08086]
+
+ 
+
+ 
+
+ 
+
+4\) Determine by extrapolating the straight line portion of the response to establish the values
+
+ 
+
+![][08087]
+
+![][08088]
+
+![][08089]
+
+![][08090]
+
+**Method \#7** Modified Separated Real Root Analysis
+
+ 
+
+•  Method \#6 is sensitive to errors in determining steady state values
+
+•  Alternate method is to avoid need for steady state value
+
+•  Define ∆*X*(*t*) ≡ \[ *x*(*t*+ ∆*T*) -*x*(*t*)\] where ∆*T* is a time increment
+
+1\) From time history, measure ∆*X* values according to definition
+
+€![][08091]
+
+€
+
+∆T = (t~1~-t~o~) = (t~2~-t~1~), etc.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2\) Plot ∆*X* (*t*) vs time on semi-log scale
+
+ 
+
+ 
+
+![][08092]
+
+3\) Use previous method to determine roots and characteristics
+
+ 
+
+• Gross error will result if ζ is actually \<1
+
+ 
+
+• If ζ is near 1, check results using time ratio or slope method
+
+ 
+
+**Method \# 8** Frequency Sweep Analysis
+
+Determine *ω~n~* and *ζ* using sinusoidal inputs.
+
+• This "forced response" method most useful when damping is heavy.
+
+• For a second order system, output/input amplitude ratio and phase shift are a function of input frequency.
+
+ 
+
+ 
+
+ ![][08093]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+~ ~
+
+• Amplitude ratio peaks at "resonant" frequency, ω*~r.~*
+
+• Resonant peaks increase as *ζ* decreases below 0.707.
+
+• Peak amplitude ratio "rolls off" as *ζ* increases above 0.707.
+
+• Resonant frequency approaches natural fre
+
+quency as damping decreases:
+
+ω*~r~* = ω*~n~*\[1 − 2*ζ*^2^\]^.5^
+
+• Phase shift = 90° if excited at ω*~n~*, regardless of damping ratio.
+
+ ζ = 0.5(ω~2~ -- ω~1~)/ω~n~
+
+ 
+
+![][08094]
+
+Frequency Sweep Analysis (continued)
+
+1\. Using sinusoidal inputs excite system @ ω near ω*~n~*
+
+ 
+
+2\. Measure phase lag (*φ*) of
+
+ 
+
+ ![][08095]
+
+ 
+
+ ![][08096]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+3\. Excite system @ another ω near ω*~n~*
+
+ 
+
+4\. Again Measure phase lag *φ*
+
+*€*
+
+*€*![][08097]
+
+*€*
+
+*€*
+
+*€*
+
+*€*
+
+*€*
+
+*€*
+
+5\. Plot φ vs input frequency
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+6\. ω*~n~* occurs at φ = 90°
+
+ 
+
+![][08098]
+
+**Linearity Check /Accuracy Improvement**
+
+** **
+
+1\) On semi-log scale, plot ratio of initial amplitude to subsequent peak
+
+amplitudes at each half cycle (points *a-e*).
+
+ 
+
+2\) Fair straight line (*f*) through these points.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ ![][08099]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+3\) Draw line (*g*) parallel (*f*) intercepting the ordinate at *TPR*=1
+
+ 
+
+4\) Average *TPR* occurs at *T*/2 on line *g*
+
+ 
+
+**8.4 Complex Plane**
+
+** **
+
+Begin with sum of forces in spring-mass-damper example
+
+ 
+
+ 
+
+ Apply quadratic equation to solve for roots
+
+ 
+
+ ![][08100]
+
+ 
+
+ 
+
+ Recall previous analogy
+
+ 
+
+![][08101]
+
+ 
+
+ ![][08102]
+
+ 
+
+ ![][08103]
+
+ 
+
+ ![][08104]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Location of Roots on Complex Plane
+
+> 1\. Line of constant damping ratio ζ − varying *C*~1/*n*~ and ω*~n~*
+>
+> 2\. Line of constant ω*~n~* − varying ζ
+>
+> 3\. Line of constant ω*~d~* and period (*T*)
+>
+> 4\. Line of constant real part (ζω*~n~*) and time to damp (*T*~1/*n*~)
+
+ 
+
+![][08105]
+
+*σ* = ζω*~n~* = 1/*τ* = damping rate
+
+ 
+
+![][08106]
+
+**Sample second order root plots and corresponding time histories**
+
+ 
+
+(time histories represent trends only)
+
+ 
+
+ 
+
+Examples of "two real roots"
+
+ 
+
+![][08107]
+
+**More sample second order root plots and corresponding time histories**
+
+ 
+
+Examples of "imaginary roots"
+
+ 
+
+ 
+
+![][08108]
+
+**8.5 Parameter Conversions**
+
+ 
+
+For conversion of accelerometer measurements.
+
+• For magnitude conversion substitute 2*πf* for *jω*.
+
+• Assumes linear spectra.
+
+• Conversion factor should be squared for power spectra.
+
+ 
+
+*Acceleration to velocity*
+
+> [to convert from to multiply by]{.underline}
+>
+> *ft/s^2^ rms ft/s rms* 1*/jω*
+>
+> *ft/s^2^ rms in/s rms* 12*/jω*
+>
+> *ft/s^2^ rms in/s peak* 16.97/*jω*
+>
+> *g rms in/s rms* 386*/jω*
+>
+> *g rms in/s peak* 545.8/*jω*
+>
+> *m/s^2^ rms mm/s rms* 1000/*jω*
+>
+> *m/s^2^ rms mm/s peak* 1414*/jω*
+>
+> *g rms mm/s rms* 9806*/jω*
+>
+> *g rms mm/s peak* 13865.7/*jω*
+>
+> \* *
+
+*Acceleration to Displacement*
+
+> [to convert from to multiply by]{.underline}
+>
+> *ft/s^2^ rms in rms* 12/(jω)^2^
+>
+> *ft/s^2^ rms in p-p* 33.9/(jω)^2^
+>
+> *ft/s^2^ rms mil p-p* 33.9 *E* 03/(jω)^2^
+>
+> *g rms in rms* 386/(jω)^2^
+>
+> *g rms in p-p* 1091.6 *E* 03/(jω)^2^
+>
+> *g rms mil p-p* 1091.6 *E* 03/(jω)^2^
+>
+> *m/s^2^ rms mm rms* 1000/(jω)^2^
+>
+> *m/s^2^ rms mm p-p* 2828/(jω)^2^
+>
+> *m/s^2^ rms* micron *p-p* 2828 *E* 03/(jω)^2^
+
+\* *
+
+*E*= engineering exponent (x10 \_\_)
+
+*g* = 32.174 ft/sec2
+
+*in*= inches
+
+*mil* = thousandths of an inch
+
+*mm* = milimeters
+
+*p-p* = peak-to-peak
+
+*rms* = root mean square
+
+ 
+
+**8.6 Vibration Nomographs**
+
+**Vibration Nomograph equations**
+
+ 
+
+**For British** \[V in inches/sec\], \[d in inches\]
+
+ 
+
+*V =* 386*g /* 2π*f*
+
+ 
+
+*d* = 386*g* / (2π*f*)^2^
+
+ 
+
+where 386 = earth\'s gravitational pull \[in/sec^2^\]
+
+ 
+
+ 
+
+**For metric** \[V in mm/sec\] , \[d in mm\]
+
+ 
+
+*V =* 9800*g /* 2π*f*
+
+ 
+
+*d* = 9800*g* / (2π*f*)^2^
+
+where 9800 = earth\'s gravitational pull \[mm/sec^2^\]
+
+ 
+
+**Nomograph - British Units**
+
+ 
+
+![][08109]
+
+**Nomograph - Metric Units**
+
+ 
+
+![][08110]
+
+**8.7 References**
+
+8.7.1 Lawless, Alan R., *Math and Physics for Flight Testers*, "Chapter 9, Motion Analysis," National Test Pilot School, Mojave CA, 1999.
+
+8.7.2 Ward, Don, *Introduction to Flight Testing*, Texas A&M, Elsevier, 1993.
+
+8.7.3 Lang, George F., *Understanding Vibration Measurements*,
+
+Application Note 9, Rockland Scientific Corporation, Rockleigh, New Jersey, December 1978.
+
+8.7.4 *The Fundamentals of Modal Testing*, Application Note 243-3,
+
+Hewlett-Packard Company,
+
+####### Additional Reading 
+
+Hartog, J.P. Den, *Mechanical Vibrations*, Dover Publications, New York, New York, 1984.
+
+Jacobsen, Ludik S. and Ayre, Robert S., *Engineering Vibrations*, McGraw-Hill Book Company, New York, New York, 1958.
+
+Meirovitch, Leonard, *Elements of Vibration Analysis*, McGraw-Hill Book Company, New York, New York, 1986.
+
+Meirovitch, Leonard, *Analytical Methods in Vibrations*, Macmillan Publishing Company, New York, New York, 1967.
+
+Myklestad, N.O., *Vibration Analysis*, McGraw-Hill Book
+
+Company, New York, New York, 1944.
+
+  [08001]: media/08/image1.svg
+  [08002]: media/08/image2.svg
+  [08003]: media/08/image3.png
+  [08004]: media/08/image4.png
+  [08005]: media/08/image5.png
+  [08006]: media/08/image6.png
+  [08007]: media/08/image7.png
+  [08008]: media/08/image8.png
+  [08009]: media/08/image9.png
+  [08010]: media/08/image10.png
+  [08011]: media/08/image11.png
+  [08012]: media/08/image12.png
+  [08013]: media/08/image13.svg
+  [08014]: media/08/image14.png
+  [08015]: media/08/image15.png
+  [08016]: media/08/image16.png
+  [08017]: media/08/image17.png
+  [08018]: media/08/image18.png
+  [08019]: media/08/image19.png
+  [08020]: media/08/image20.png
+  [08021]: media/08/image21.png
+  [08022]: media/08/image22.png
+  [08023]: media/08/image23.png
+  [08024]: media/08/image24.png
+  [08025]: media/08/image25.png
+  [08026]: media/08/image26.png
+  [08027]: media/08/image27.png
+  [08028]: media/08/image28.png
+  [08029]: media/08/image29.png
+  [08030]: media/08/image30.png
+  [08031]: media/08/image31.png
+  [08032]: media/08/image32.png
+  [08033]: media/08/image33.png
+  [08034]: media/08/image34.png
+  [08035]: media/08/image35.png
+  [08036]: media/08/image36.png
+  [08037]: media/08/image37.png
+  [08038]: media/08/image38.png
+  [08039]: media/08/image39.png
+  [08040]: media/08/image40.png
+  [08041]: media/08/image41.png
+  [08042]: media/08/image42.png
+  [08043]: media/08/image43.png
+  [08044]: media/08/image44.png
+  [08045]: media/08/image45.png
+  [08046]: media/08/image46.png
+  [08047]: media/08/image47.png
+  [08048]: media/08/image48.svg
+  [08049]: media/08/image49.png
+  [08050]: media/08/image50.png
+  [08051]: media/08/image51.png
+  [08052]: media/08/image52.png
+  [08053]: media/08/image53.png
+  [08054]: media/08/image54.png
+  [08055]: media/08/image55.png
+  [08056]: media/08/image56.png
+  [08057]: media/08/image57.png
+  [08058]: media/08/image58.png
+  [08059]: media/08/image59.png
+  [08060]: media/08/image60.png
+  [08061]: media/08/image61.png
+  [08062]: media/08/image62.png
+  [08063]: media/08/image63.png
+  [08064]: media/08/image64.png
+  [08065]: media/08/image65.png
+  [08066]: media/08/image66.png
+  [08067]: media/08/image67.png
+  [08068]: media/08/image68.png
+  [08069]: media/08/image69.png
+  [08070]: media/08/image70.png
+  [08071]: media/08/image71.png
+  [08072]: media/08/image72.png
+  [08073]: media/08/image73.png
+  [08074]: media/08/image74.png
+  [08075]: media/08/image75.png
+  [08076]: media/08/image76.png
+  [08077]: media/08/image77.png
+  [08078]: media/08/image78.png
+  [08079]: media/08/image79.png
+  [08080]: media/08/image80.png
+  [08081]: media/08/image81.png
+  [08082]: media/08/image82.png
+  [08083]: media/08/image83.png
+  [08084]: media/08/image84.png
+  [08085]: media/08/image85.png
+  [08086]: media/08/image86.png
+  [08087]: media/08/image87.png
+  [08088]: media/08/image88.png
+  [08089]: media/08/image89.png
+  [08090]: media/08/image90.png
+  [08091]: media/08/image91.png
+  [08092]: media/08/image92.png
+  [08093]: media/08/image93.png
+  [08094]: media/08/image94.png
+  [08095]: media/08/image95.png
+  [08096]: media/08/image96.png
+  [08097]: media/08/image97.png
+  [08098]: media/08/image98.png
+  [08099]: media/08/image99.png
+  [08100]: media/08/image100.png
+  [08101]: media/08/image101.png
+  [08102]: media/08/image102.png
+  [08103]: media/08/image103.png
+  [08104]: media/08/image104.png
+  [08105]: media/08/image105.png
+  [08106]: media/08/image106.png
+  [08107]: media/08/image107.png
+  [08108]: media/08/image108.png
+  [08109]: media/08/image109.png
+  [08110]: media/08/image110.png

@@ -1,0 +1,455 @@
+**Section 6 Axis Systems and Transformations**
+
+** **
+
+** **
+
+** **
+
+ 
+
+6.1 Earth Axis Systems
+
+ 
+
+6.2 Aircraft Axis Systems
+
+Body, Stability, Wind, Principle
+
+ 
+
+6.3 Euler Angles
+
+ 
+
+6.4 Flight Path Angles
+
+ 
+
+6.5 Axis System Transformations
+
+Earth-to-Body, Body-to-Earth
+
+6.6 References
+
+ 
+
+**6.1 Earth Axis Systems** (ref 6.6.1)
+
+** **
+
+Both fixed-Earth and moving-Earth axis systems keep constant *orientation* with respect to the Earth. The Z-axis point towards the center of the Earth.
+
+• The origin of a fixed-Earth system does not move relative to the Earth. (such as a ground radar site)
+
+• The origin of a moving Earth system does not move relative to its host (such as an aircraft inertial reference unit) .
+
+![][1] 
+
+**6.2 Aircraft Axis Systems** (ref 6.6.2)
+
+ 
+
+• The **body axis** system originates at the aircraft's reference center of gravity. The +*x~b~* direction is towards the front, the +*y~b~* direction is towards the right wing tip, and the +*z~b~* direction is towards the bottom of the aircraft.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ ![][2]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+• The **stability axis system** is similar to the body axis system except that it is rotated about the y-axis through the angle of attack (α)
+
+ 
+
+ 
+
+ 
+
+![][3] 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Forces, velocities or accelerations along the stability axes are related to the body axes as follows
+
+ 
+
+ 
+
+  
+
+ *x~b~* = *x~s~* cos α − *z~s~* sin α
+
+*z~b~* = *z~s~* cos α + *x~s~* sin α
+
+*y~b~* = *y~s~*
+
+ 
+
+ 
+
+ 
+
+ 
+
+For cases where the z axis is defined positive upward (typical for normal-axis accelerometers)
+
+ 
+
+x~b~ = x~s~ cos α + z~s~ sin α
+
+z~b~ = z~s~ cos α - x~s~ sin α
+
+ 
+
+ 
+
+ 
+
+ 
+
+ • The **wind axis** system is similar to the stability axis system except it is rotated about the *z~s~* axis through the angle of sideslip (β).
+
+ 
+
+The term "wind" refers to the fact that the freestream relative wind approaches the aircraft directly along the *x~w~* axis. This dictates that the true airspeed also lies along the *x~w~* axis.
+
+ 
+
+ 
+
+ 
+
+![][4] 
+
+ 
+
+ Forces, velocities or accelerations along the wind axes are related to the stability axes as follows
+
+ 
+
+*x~s~ = x~w~* cos β − *y~w~* sin β
+
+*y~s~ = y~w~* cos β + *x~w~* sin β
+
+*z~s~ = z~w~*
+
+ 
+
+The geometric relations between body, stability and wind axis velocities are illustrated here.
+
+ 
+
+ 
+
+![][5]
+
+ 
+
+ ![][6]
+
+ ![][7]
+
+ Most aircraft sideslip vanes do not measure *β* directly. They measure the flanking angle, which is the projection of the relative wind into the aircraft's *x-y* plane. The difference between these two angles increases with angle of attack. Ignoring upwash, boom bending, and body axis rate corrections, calculate true sideslip as a function of vane *α* and *β* as follows:
+
+β~true~ = tan^-1^ \[ tan(β~vane~ ) cosα \]
+
+ 
+
+• **Wind-Body Axis Transformations** (ref 6.6.1)
+
+Combining the two previous transformations, forces, velocities or accelerations along the wind axes are related to the body axes as follows
+
+ 
+
+![][8] 
+
+ 
+
+ 
+
+ 
+
+After expansion, *x~b~* = cos*α *(*x~w~*cos*β* -- *y~w~*sin*β*) - *z~w~*sin*α*
+
+*y~b~* = *x~w~*sin*β* + *y~w~*cos*β*
+
+*z~b~* = sin*α *(*x~w~*cos*β* -- *y~w~*cos*β*) + *z~w~*cos*α*
+
+ 
+
+The inverse transform, converting from the body to the wind axis system is
+
+ 
+
+ 
+
+![][9] 
+
+ 
+
+ 
+
+ 
+
+After expansion,
+
+*x~w~* = cos*β *(*x~b~*cos*α* + *z~b~*sin*α*) + *y~b~*sin*β*
+
+*y~w~* = *-*sin*β *(*x~b~*cos*α*+*z~b~*sin*α*)+ *y~b~*cos*β*
+
+*z~w~* = -*x~b~*sin*α* + *z~b~*cos*α*
+
+** **
+
+** **
+
+ Note that these equations apply to the sign convention with z+ down. If sign convention (and instrumentation calibration) use z+ upward, then the above equations become:
+
+> x~w~ = cosβ(x~b~cosα - z~b~sinα) + y~b~sinβ
+>
+> y~w~ = --sinβ(x~b~cosα + z~b~sinα) + y~b~cosβ
+>
+> z~w~ = x~b~sinα + z~b~cosα
+
+ 
+
+ • The **Principle axes** are those about which the products of inertia are zero. They can be equated to the axis of "dumbells" which represent concentrated mass elements. Neglecting aerodynamic and gyroscopic effects, an aircraft rotating about one of its principle axes will [not]{.underline} tend to cross-couple into motion about any other axis.
+
+** **
+
+** **
+
+** **
+
+** **
+
+** **
+
+** **![][10]
+
+** **
+
+** **
+
+** **
+
+** **
+
+** **
+
+** **
+
+** **
+
+** **
+
+**Wind to Body Axes Matrix Transformation**
+
+ 
+
+ 
+
+ 
+
+ **6.3 Euler Angles** (ref 6.6.1)
+
+ 
+
+Euler angles are expressed as yaw, pitch, and roll. The sequence: first yaw, then pitch, then roll; must be maintained to arrive at the proper orientation angles. The Euler angles are defined as follows:
+
+ 
+
+> *ψ* ≡ Yaw Angle: The angle between the projection of the vehicle *x~b~*- axis onto the horizontal reference plane and some initial reference position of the Earth *x*-axis. Yaw angle equals the vehicle heading only if the initial reference is North.
+>
+>  
+>
+> *θ* ≡ Pitch angle (in vertical plane) between *x~b~* and horizon.
+>
+> *φ* ≡ Bank angle, the angle (measured in the *y-z* plane of the body-axis system) between the *y*-axis and the horizontal reference plane. Also known at the roll angle, it is a measure of the rotation (about the *x*-axis) to return the aircraft to a wings level condition.
+
+ 
+
+ 
+
+ ![][11]
+
+ 
+
+** 6.4 Flight Path Angles** (ref 6.6.3)
+
+Just as the Euler angles define the attitude of the aircraft with respect to the Earth, three flightpath angles describe the vehicle\'s *cg* trajectory relative to the Earth (not the air mass).
+
+*σ*  = Flight path heading angle; also known as ground track heading, is the horizontal angle between some reference direction (usually North) and the projection of the velocity vector on the horizontal plane. Positive rotation is from North to East.
+
+*γ* = Flightpath elevation angle; the vertical angle between the flightpath and the horizontal plane. Positive rotation is up. During a descent, this parameter is commonly known as glide path angle.
+
+*μ*    = Flightpath bank angle; the angle between the plane formed by the velocity vector and the lift vector and the vertical plane containing the velocity vector. Positive rotation is clockwise about the velocity vector, looking forward.
+
+>  
+
+The first two parameters above are easily measured using ground-based radar, or onboard GPS or inertial reference systems. If only *α*, *β*, and the Euler angles are available, then **assuming zero winds**, the flightpath angles can be calculated as
+
+ 
+
+ 
+
+![][12]![][13] ![][14]
+
+ 
+
+ 
+
+ 
+
+ 
+
+Technically, the above equations describe the **velocity vector** (angles relative to the air mass). If the air mass is moving relative to the Earth, as is usually the case, the above equations [do not]{.underline} describe the flight path.
+
+ 
+
+*Editor's note: not knowing the difference between flightpath and velocity vector angles can cause considerable confusion when analyzing data from different sources.*
+
+ 
+
+ 
+
+**6.5 Axis System Transformations** (ref 6.6.2)
+
+ 
+
+Transformation matrix for converting forces, velocities or accelerations **from inertial (X, Y, Z) to body (*x, y, z*) axes**
+
+![][15] 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Expanding gives:
+
+ 
+
+ ![][16]
+
+ 
+
+ The inverse of the above transform matrix converts
+
+**from the body axis to the inertial axis** coordinate system
+
+![][17] 
+
+**Acceleration Transformations**
+
+• Convert body-axis angular rates & linear accelerations into total
+
+accelerations along body axes.
+
+![][18]![][19]![][20]![][21]• Convert element (*m~1~*) location & rates into specific angular momentum
+
+ 
+
+**Transformations between body axis rates and Euler angle rates**
+
+![][22]** **
+
+![][23]![][24] **Transformations from Euler & aerodynamic angles to the aircraft stability and wind axis angular rates.** Subscripts *b*, *s*, and *w* denote the body, stability and relative wind axis systems.
+
+![][25] 
+
+**Transformations from Euler angles to the three aircraft axis angular accelerations** (ref 6.6.3)
+
+ 
+
+ 
+
+ ![][26]![][27]![][28]![][29]
+
+**6.6 References**
+
+ 
+
+6.6.1 Lawless, Alan R., *Math and Physics for Flight Testers* "Chapter 7, Axis Systems and Transformations", National Test Pilot School, Mojave CA, 1998.
+
+6.6.2 Anon., *Aircraft Flying Qualities, Chapter 4, Equations of Motion*, USAF TestPilot School notes, AFFTC Edwards AFB CA, March 1991.
+
+6.6.3 Kalviste, Juri, *Flight Dynamics Reference Handbook*, Northrop Corp. Aircraft Division, April 1988.
+
+ 
+
+  [1]: ..\..\handbook-2013\pandoc-output\06\/media/image1.wmf {width="4.709027777777778in" height="3.839583333333333in"}
+  [2]: ..\..\handbook-2013\pandoc-output\06\/media/image2.wmf {width="3.65625in" height="3.03125in"}
+  [3]: ..\..\handbook-2013\pandoc-output\06\/media/image4.wmf {width="4.5in" height="1.625in"}
+  [4]: ..\..\handbook-2013\pandoc-output\06\/media/image5.wmf {width="1.6993055555555556in" height="2.0701388888888888in"}
+  [5]: ..\..\handbook-2013\pandoc-output\06\/media/image6.wmf {width="2.4590277777777776in" height="2.21875in"}
+  [6]: ..\..\handbook-2013\pandoc-output\06\/media/image7.wmf {width="1.8416666666666666in" height="0.44583333333333336in"}
+  [7]: ..\..\handbook-2013\pandoc-output\06\/media/image8.wmf {width="2.588888888888889in" height="0.8777777777777778in"}
+  [8]: ..\..\handbook-2013\pandoc-output\06\/media/image9.wmf {width="3.277083333333333in" height="0.6652777777777777in"}
+  [9]: ..\..\handbook-2013\pandoc-output\06\/media/image10.wmf {width="3.3229166666666665in" height="0.6895833333333333in"}
+  [10]: ..\..\handbook-2013\pandoc-output\06\/media/image11.wmf {width="4.5in" height="2.375in"}
+  [11]: ..\..\handbook-2013\pandoc-output\06\/media/image12.wmf {width="4.0in" height="4.125in"}
+  [12]: ..\..\handbook-2013\pandoc-output\06\/media/image13.wmf {width="4.342361111111111in" height="0.4583333333333333in"}
+  [13]: ..\..\handbook-2013\pandoc-output\06\/media/image14.wmf {width="3.0in" height="0.75in"}
+  [14]: ..\..\handbook-2013\pandoc-output\06\/media/image15.wmf {width="4.5125in" height="0.29791666666666666in"}
+  [15]: ..\..\handbook-2013\pandoc-output\06\/media/image16.wmf {width="4.860416666666667in" height="0.6236111111111111in"}
+  [16]: ..\..\handbook-2013\pandoc-output\06\/media/image17.wmf {width="5.6194444444444445in" height="0.6284722222222222in"}
+  [17]: ..\..\handbook-2013\pandoc-output\06\/media/image18.wmf {width="5.06875in" height="0.6152777777777778in"}
+  [18]: ..\..\handbook-2013\pandoc-output\06\/media/image19.wmf {width="1.7083333333333333in" height="1.2708333333333333in"}
+  [19]: ..\..\handbook-2013\pandoc-output\06\/media/image20.wmf {width="2.3993055555555554in" height="0.7125in"}
+  [20]: ..\..\handbook-2013\pandoc-output\06\/media/image21.wmf {width="2.5625in" height="0.7527777777777778in"}
+  [21]: ..\..\handbook-2013\pandoc-output\06\/media/image22.wmf {width="1.0541666666666667in" height="0.7215277777777778in"}
+  [22]: ..\..\handbook-2013\pandoc-output\06\/media/image23.wmf {width="2.286111111111111in" height="1.4118055555555555in"}
+  [23]: ..\..\handbook-2013\pandoc-output\06\/media/image24.wmf {width="1.6590277777777778in" height="0.75in"}
+  [24]: ..\..\handbook-2013\pandoc-output\06\/media/image25.wmf {width="2.8006944444444444in" height="0.25in"}
+  [25]: ..\..\handbook-2013\pandoc-output\06\/media/image26.wmf {width="1.5923611111111111in" height="0.75in"}
+  [26]: ..\..\handbook-2013\pandoc-output\06\/media/image27.wmf {width="4.592361111111111in" height="0.2638888888888889in"}
+  [27]: ..\..\handbook-2013\pandoc-output\06\/media/image28.wmf {width="4.534027777777778in" height="0.8194444444444444in"}
+  [28]: ..\..\handbook-2013\pandoc-output\06\/media/image29.wmf {width="3.092361111111111in" height="0.75in"}
+  [29]: ..\..\handbook-2013\pandoc-output\06\/media/image30.wmf {width="3.267361111111111in" height="0.7916666666666666in"}

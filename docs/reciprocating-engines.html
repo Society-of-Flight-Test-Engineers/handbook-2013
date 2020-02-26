@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>10 10 Reciprocating Engines** | Flight Test Engineering Reference Handbook</title>
+  <meta name="description" content="10 10 Reciprocating Engines** | Flight Test Engineering Reference Handbook" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="10 10 Reciprocating Engines** | Flight Test Engineering Reference Handbook" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="media/media/image1.jpg" />
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="10 10 Reciprocating Engines** | Flight Test Engineering Reference Handbook" />
+  
+  
+  <meta name="twitter:image" content="media/media/image1.jpg" />
+
+<meta name="author" content="Society of Flight Test Engineers" />
+
+
+<meta name="date" content="2013-01-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="material-strength.html"/>
+<link rel="next" href="propellers.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#contributors"><i class="fa fa-check"></i>Contributors</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#editors"><i class="fa fa-check"></i>Editors</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#feedback"><i class="fa fa-check"></i>Feedback</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#publication-policy"><i class="fa fa-check"></i>Publication Policy</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#section-index"><i class="fa fa-check"></i>Section Index</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="general-information.html"><a href="general-information.html"><i class="fa fa-check"></i><b>1</b> General Information</a><ul>
+<li class="chapter" data-level="1.1" data-path="general-information.html"><a href="general-information.html#unit-conversions"><i class="fa fa-check"></i><b>1.1</b> Unit Conversions</a></li>
+<li class="chapter" data-level="1.2" data-path="general-information.html"><a href="general-information.html#greek-alphabet"><i class="fa fa-check"></i><b>1.2</b> Greek Alphabet</a></li>
+<li class="chapter" data-level="1.3" data-path="general-information.html"><a href="general-information.html#greek-symbols-used-for-aircraft"><i class="fa fa-check"></i><b>1.3</b> Greek Symbols Used for Aircraft</a></li>
+<li class="chapter" data-level="1.4" data-path="general-information.html"><a href="general-information.html#common-subscripts"><i class="fa fa-check"></i><b>1.4</b> Common Subscripts</a></li>
+<li class="chapter" data-level="1.5" data-path="general-information.html"><a href="general-information.html#common-abbreviations-raw"><i class="fa fa-check"></i><b>1.5</b> Common Abbreviations (raw)</a></li>
+<li class="chapter" data-level="1.6" data-path="general-information.html"><a href="general-information.html#sign-conventions-raw"><i class="fa fa-check"></i><b>1.6</b> Sign Conventions (raw)</a></li>
+<li class="chapter" data-level="1.7" data-path="general-information.html"><a href="general-information.html#thermodynamics-relations"><i class="fa fa-check"></i><b>1.7</b> Thermodynamics Relations</a><ul>
+<li class="chapter" data-level="1.7.1" data-path="general-information.html"><a href="general-information.html#thermodynamic-definitions"><i class="fa fa-check"></i><b>1.7.1</b> Thermodynamic Definitions</a></li>
+<li class="chapter" data-level="1.7.2" data-path="general-information.html"><a href="general-information.html#thermodynamic-symbols"><i class="fa fa-check"></i><b>1.7.2</b> Thermodynamic Symbols</a></li>
+<li class="chapter" data-level="1.7.3" data-path="general-information.html"><a href="general-information.html#thermodynamic-laws"><i class="fa fa-check"></i><b>1.7.3</b> Thermodynamic Laws</a></li>
+</ul></li>
+<li class="chapter" data-level="1.8" data-path="general-information.html"><a href="general-information.html#mechanics-relations"><i class="fa fa-check"></i><b>1.8</b> Mechanics Relations</a><ul>
+<li class="chapter" data-level="1.8.1" data-path="general-information.html"><a href="general-information.html#mechanics-symbols"><i class="fa fa-check"></i><b>1.8.1</b> Mechanics Symbols</a></li>
+<li class="chapter" data-level="1.8.2" data-path="general-information.html"><a href="general-information.html#newtons-laws"><i class="fa fa-check"></i><b>1.8.2</b> Newton’s Laws</a></li>
+<li class="chapter" data-level="1.8.3" data-path="general-information.html"><a href="general-information.html#planar-kinetics-work-power-and-energy"><i class="fa fa-check"></i><b>1.8.3</b> Planar Kinetics, Work, Power and Energy</a></li>
+<li class="chapter" data-level="1.8.4" data-path="general-information.html"><a href="general-information.html#planar-kinematics-at-constant-acceleration"><i class="fa fa-check"></i><b>1.8.4</b> Planar Kinematics at Constant Acceleration</a></li>
+<li class="chapter" data-level="1.8.5" data-path="general-information.html"><a href="general-information.html#curvilinear-motion-with-constant-acceleration-and-radius"><i class="fa fa-check"></i><b>1.8.5</b> Curvilinear motion with constant acceleration and radius</a></li>
+<li class="chapter" data-level="1.8.6" data-path="general-information.html"><a href="general-information.html#aircraft-in-level-turn"><i class="fa fa-check"></i><b>1.8.6</b> Aircraft in level turn</a></li>
+<li class="chapter" data-level="1.8.7" data-path="general-information.html"><a href="general-information.html#level-turn-kinematics-character"><i class="fa fa-check"></i><b>1.8.7</b> Level Turn Kinematics Character</a></li>
+<li class="chapter" data-level="1.8.8" data-path="general-information.html"><a href="general-information.html#gyroscopic-motion"><i class="fa fa-check"></i><b>1.8.8</b> Gyroscopic Motion</a></li>
+</ul></li>
+<li class="chapter" data-level="1.9" data-path="general-information.html"><a href="general-information.html#international-phonetic-alphabet-and-morse-code"><i class="fa fa-check"></i><b>1.9</b> International Phonetic Alphabet and Morse Code</a></li>
+<li class="chapter" data-level="1.10" data-path="general-information.html"><a href="general-information.html#section-1-references"><i class="fa fa-check"></i><b>1.10</b> Section 1 References</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="mathematics.html"><a href="mathematics.html"><i class="fa fa-check"></i><b>2</b> Mathematics</a><ul>
+<li class="chapter" data-level="2.1" data-path="mathematics.html"><a href="mathematics.html#algebra"><i class="fa fa-check"></i><b>2.1</b> Algebra</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="mathematics.html"><a href="mathematics.html#laws"><i class="fa fa-check"></i><b>2.1.1</b> Laws</a></li>
+<li class="chapter" data-level="2.1.2" data-path="mathematics.html"><a href="mathematics.html#identities"><i class="fa fa-check"></i><b>2.1.2</b> Identities</a></li>
+<li class="chapter" data-level="2.1.3" data-path="mathematics.html"><a href="mathematics.html#equations"><i class="fa fa-check"></i><b>2.1.3</b> Equations</a></li>
+<li class="chapter" data-level="2.1.4" data-path="mathematics.html"><a href="mathematics.html#interest-and-annuities"><i class="fa fa-check"></i><b>2.1.4</b> Interest And Annuities</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="mathematics.html"><a href="mathematics.html#geometry"><i class="fa fa-check"></i><b>2.2</b> Geometry</a></li>
+<li class="chapter" data-level="2.3" data-path="mathematics.html"><a href="mathematics.html#trigonometery-raw"><i class="fa fa-check"></i><b>2.3</b> Trigonometery (raw)</a></li>
+<li class="chapter" data-level="2.4" data-path="mathematics.html"><a href="mathematics.html#matrix-algebra-raw"><i class="fa fa-check"></i><b>2.4</b> Matrix Algebra (raw)</a></li>
+<li class="chapter" data-level="2.5" data-path="mathematics.html"><a href="mathematics.html#vector-algebra"><i class="fa fa-check"></i><b>2.5</b> Vector Algebra</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="mathematics.html"><a href="mathematics.html#addition"><i class="fa fa-check"></i><b>2.5.1</b> Addition</a></li>
+<li class="chapter" data-level="2.5.2" data-path="mathematics.html"><a href="mathematics.html#subtraction"><i class="fa fa-check"></i><b>2.5.2</b> Subtraction</a></li>
+<li class="chapter" data-level="2.5.3" data-path="mathematics.html"><a href="mathematics.html#scalar-multiplication"><i class="fa fa-check"></i><b>2.5.3</b> Scalar Multiplication</a></li>
+<li class="chapter" data-level="2.5.4" data-path="mathematics.html"><a href="mathematics.html#dot-product"><i class="fa fa-check"></i><b>2.5.4</b> Dot Product</a></li>
+<li class="chapter" data-level="2.5.5" data-path="mathematics.html"><a href="mathematics.html#norm"><i class="fa fa-check"></i><b>2.5.5</b> Norm</a></li>
+<li class="chapter" data-level="2.5.6" data-path="mathematics.html"><a href="mathematics.html#vector-cross-product"><i class="fa fa-check"></i><b>2.5.6</b> Vector Cross Product</a></li>
+<li class="chapter" data-level="2.5.7" data-path="mathematics.html"><a href="mathematics.html#vector-differentiation"><i class="fa fa-check"></i><b>2.5.7</b> Vector Differentiation</a></li>
+<li class="chapter" data-level="2.5.8" data-path="mathematics.html"><a href="mathematics.html#motion-of-a-point-using-two-reference-systems-raw"><i class="fa fa-check"></i><b>2.5.8</b> Motion of a point using two reference systems (raw)</a></li>
+<li class="chapter" data-level="2.5.9" data-path="mathematics.html"><a href="mathematics.html#motion-of-a-point-using-one-reference-system-raw"><i class="fa fa-check"></i><b>2.5.9</b> Motion of a point using one reference system (raw)</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="mathematics.html"><a href="mathematics.html#probability-and-statistics"><i class="fa fa-check"></i><b>2.6</b> Probability and Statistics</a></li>
+<li class="chapter" data-level="2.7" data-path="mathematics.html"><a href="mathematics.html#standard-series-raw"><i class="fa fa-check"></i><b>2.7</b> Standard Series (raw)</a></li>
+<li class="chapter" data-level="2.8" data-path="mathematics.html"><a href="mathematics.html#derivative-table-raw"><i class="fa fa-check"></i><b>2.8</b> Derivative Table (raw)</a></li>
+<li class="chapter" data-level="2.9" data-path="mathematics.html"><a href="mathematics.html#integral-table-raw"><i class="fa fa-check"></i><b>2.9</b> Integral Table (raw)</a></li>
+<li class="chapter" data-level="2.10" data-path="mathematics.html"><a href="mathematics.html#laplace-table-raw"><i class="fa fa-check"></i><b>2.10</b> Laplace Table (raw)</a></li>
+<li class="chapter" data-level="2.11" data-path="mathematics.html"><a href="mathematics.html#references"><i class="fa fa-check"></i><b>2.11</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html"><i class="fa fa-check"></i><b>3</b> Universe Earth Atmospheric</a><ul>
+<li class="chapter" data-level="3.1" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html#properties"><i class="fa fa-check"></i><b>3.1</b> Properties</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="pitot-statics.html"><a href="pitot-statics.html"><i class="fa fa-check"></i><b>4</b> Pitot Statics</a><ul>
+<li class="chapter" data-level="" data-path="pitot-statics.html"><a href="pitot-statics.html#common-nomenclature"><i class="fa fa-check"></i>Common Nomenclature</a></li>
+<li class="chapter" data-level="4.1" data-path="pitot-statics.html"><a href="pitot-statics.html#subsonic-airspeed-and-mach-equation"><i class="fa fa-check"></i><b>4.1</b> Subsonic Airspeed and Mach Equation</a></li>
+<li class="chapter" data-level="4.2" data-path="pitot-statics.html"><a href="pitot-statics.html#scale-altitude-compressibility-correction"><i class="fa fa-check"></i><b>4.2</b> Scale Altitude (Compressibility ) Correction</a></li>
+<li class="chapter" data-level="4.3" data-path="pitot-statics.html"><a href="pitot-statics.html#subsonic-relations-between-compressible-and-incompressible-dynamic-pressure"><i class="fa fa-check"></i><b>4.3</b> Subsonic Relations Between Compressible and Incompressible Dynamic Pressure</a></li>
+<li class="chapter" data-level="4.4" data-path="pitot-statics.html"><a href="pitot-statics.html#supersonic-airspeed-and-mach-equations"><i class="fa fa-check"></i><b>4.4</b> Supersonic Airspeed and Mach Equations</a></li>
+<li class="chapter" data-level="4.5" data-path="pitot-statics.html"><a href="pitot-statics.html#total-temperature-equation"><i class="fa fa-check"></i><b>4.5</b> Total Temperature Equation</a></li>
+<li class="chapter" data-level="4.6" data-path="pitot-statics.html"><a href="pitot-statics.html#altimeter-equation"><i class="fa fa-check"></i><b>4.6</b> Altimeter Equation</a></li>
+<li class="chapter" data-level="4.7" data-path="pitot-statics.html"><a href="pitot-statics.html#position-error-test-methods"><i class="fa fa-check"></i><b>4.7</b> Position Error Test Methods**</a><ul>
+<li class="chapter" data-level="4.7.1" data-path="pitot-statics.html"><a href="pitot-statics.html#fly-by"><i class="fa fa-check"></i><b>4.7.1</b> Fly-by</a></li>
+<li class="chapter" data-level="4.7.2" data-path="pitot-statics.html"><a href="pitot-statics.html#ground-course-method"><i class="fa fa-check"></i><b>4.7.2</b> Ground Course Method</a></li>
+<li class="chapter" data-level="4.7.3" data-path="pitot-statics.html"><a href="pitot-statics.html#trailing-conebomb-method"><i class="fa fa-check"></i><b>4.7.3</b> Trailing Cone/Bomb Method</a></li>
+<li class="chapter" data-level="4.7.4" data-path="pitot-statics.html"><a href="pitot-statics.html#gps-methods"><i class="fa fa-check"></i><b>4.7.4</b> 4.7.4 GPS Methods</a></li>
+</ul></li>
+<li class="chapter" data-level="4.8" data-path="pitot-statics.html"><a href="pitot-statics.html#position-error-far-2325.1323-and-.1325jar-certification"><i class="fa fa-check"></i><b>4.8</b> Position Error FAR 23/25.1323 and .1325/JAR Certification</a></li>
+<li class="chapter" data-level="4.9" data-path="pitot-statics.html"><a href="pitot-statics.html#pec-correction-process-flow-chart"><i class="fa fa-check"></i><b>4.9</b> PEC Correction Process Flow Chart</a></li>
+<li class="chapter" data-level="4.10" data-path="pitot-statics.html"><a href="pitot-statics.html#airspeedaltitudemach-graphic-relation"><i class="fa fa-check"></i><b>4.10</b> Airspeed/Altitude/Mach Graphic Relation</a></li>
+<li class="chapter" data-level="4.11" data-path="pitot-statics.html"><a href="pitot-statics.html#effect-of-errors-on-calibrated-airspeed-and-altitude"><i class="fa fa-check"></i><b>4.11</b> Effect of Errors on Calibrated Airspeed and Altitude</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="aerodynamics.html"><a href="aerodynamics.html"><i class="fa fa-check"></i><b>5</b> 5 Aerodynamics**</a></li>
+<li class="chapter" data-level="6" data-path="axis-systems-and-transformations.html"><a href="axis-systems-and-transformations.html"><i class="fa fa-check"></i><b>6</b> 6 Axis Systems and Transformations**</a></li>
+<li class="chapter" data-level="7" data-path="mass-properties.html"><a href="mass-properties.html"><i class="fa fa-check"></i><b>7</b> 7 Mass Properties**</a></li>
+<li class="chapter" data-level="8" data-path="motionvibration-analysis.html"><a href="motionvibration-analysis.html"><i class="fa fa-check"></i><b>8</b> 8 Motion/Vibration Analysis**</a></li>
+<li class="chapter" data-level="9" data-path="material-strength.html"><a href="material-strength.html"><i class="fa fa-check"></i><b>9</b> 9 Material Strength**</a></li>
+<li class="chapter" data-level="10" data-path="reciprocating-engines.html"><a href="reciprocating-engines.html"><i class="fa fa-check"></i><b>10</b> 10 Reciprocating Engines**</a></li>
+<li class="chapter" data-level="11" data-path="propellers.html"><a href="propellers.html"><i class="fa fa-check"></i><b>11</b> 11 Propellers**</a></li>
+<li class="chapter" data-level="12" data-path="fixed-wing-performance-standardization.html"><a href="fixed-wing-performance-standardization.html"><i class="fa fa-check"></i><b>12</b> 12 Fixed-Wing Performance Standardization**</a></li>
+<li class="chapter" data-level="13" data-path="acoustics.html"><a href="acoustics.html"><i class="fa fa-check"></i><b>13</b> 13 Acoustics**</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Flight Test Engineering Reference Handbook</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="reciprocating-engines" class="section level1">
+<h1><span class="header-section-number">10</span> 10 Reciprocating Engines**</h1>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p> </p>
+<p>10.1 Recurring Abbreviations and Terminology</p>
+<p> </p>
+<p>10.2 Reciprocating Engine Modeling</p>
+<p>Graphic Power Model</p>
+<p>Analytic Power Model</p>
+<p>Fuel Flow Model</p>
+<p> </p>
+<p>10.3 Reciprocating Engine Power Standardization</p>
+<p>Partial Throttle Standardization</p>
+<p>Full Throttle Standardization</p>
+<p> </p>
+<p>10.4 FAA Approved Engine Temperature Corrections</p>
+<p> </p>
+<p>10.5 References</p>
+<p> </p>
+<p> </p>
+<p><strong>10.1 Recurring Abbreviations and Terminology</strong></p>
+<p>(references 10.5.1-10.5.5)</p>
+<p><strong>Abbreviations</strong></p>
+<p><em>BHP</em> brake horsepower (measured at engine crankshaft)</p>
+<p><em>BHP<sub>s </sub></em> brake horsepower at standard conditions</p>
+<p><em>BHP<sub>t</sub></em> brake horsepower at test conditions</p>
+<p><em>BHP <sub>alt </sub></em>brake horsepower at maximum altitude where test RPM and MP can be maintained.</p>
+<p><em>BHP<sub>slmax </sub></em>maximum brake horsepower at standard sea level conditions (for any given RPM)</p>
+<p><em>BHP<sub>c </sub></em>chart brake horsepower</p>
+<p><em>BSFC</em> brake specific fuel consumption (fuel flow/horsepower/ hour)</p>
+<p>C manifold pressure correction factor</p>
+<p><em>HP</em> horsepower (= 550ft-lb/sec)</p>
+<p><em>M</em> freestream Mach number</p>
+<p><em>MP</em> manifold pressure, also <em>MAP</em></p>
+<p><em>SHP</em> shaft horsepower (measured at propeller shaft)</p>
+<p><em>P</em> power output <span class="math display">\[ft-lb/sec or HP\]</span></p>
+<p><em>P<sub>a</sub></em> ambient pressure</p>
+<p><em>P<sub>ts</sub></em> standard day total (ram) pressure</p>
+<p><em>P<sub>tt</sub></em> test day total (ram) pressure</p>
+<p><em>Q</em> torque <span class="math display">\[ft-lbs\]</span></p>
+<p><em>q</em> dynamic pressure</p>
+<p>RPM revolutions per minute</p>
+<p><em>T<sub>ct</sub></em> test day carburetor temperature (absolute)</p>
+<p><em>T<sub>cs</sub></em> standard day carburetor temperature (absolute)</p>
+<p><em>T<sub>as</sub></em> standard day ambient temperature (absolute)</p>
+<p><em>T<sub>at</sub></em> test day ambient temperature (absolute)</p>
+<p><em>V<sub>T</sub></em> freestream true velocity</p>
+<p>∆<em>BHP<sub>cat </sub></em>change in brake horsepower due to carb. temp. change</p>
+<p>∆<em>BHP<sub>mp </sub></em>change in brake horsepower due to manifold pressure change</p>
+<p>∆<em>MP<sub>∆t </sub></em>change in manifold pressure due to temperature change</p>
+<p>∆<em>t</em> change between test and standard temperature (<em>T<sub>at</sub>-T<sub>as</sub>)</em></p>
+<p><em>η<sub>r</sub></em> carburetor ram inlet efficiency</p>
+<p><em>ρ</em><sub>a</sub> ambient density</p>
+<p>In <em>Hg</em> inches of mercury (manifold pressure)</p>
+<p> </p>
+<p><strong>Terminology</strong></p>
+<p>Bore Piston diameter</p>
+<p>Critical Altitude</p>
+<p>The altitude at which a supercharged (or turbocharged) engine can no longer:</p>
+<p>a) maintain sea level manifold pressure, or</p>
+<p>b) maximum allowable horsepower.</p>
+<p>Detonation</p>
+<p>An operating condition where combinations of excessive temperature, high manifold pressure, and l ow RPM cause explosive fuel burn, large internal pressure pulses, and subsequent engine damage.</p>
+<p>Displacement</p>
+<p>Total volume swept by all cylinders, measured in either cubic inches or liters.</p>
+<p>Manifold Pressure</p>
+<p>Pressure of fuel-air mixture passing through intake manifold, typically measured in absolute gauge pressure (inches of mercury or lb/in<sup>2</sup>).</p>
+<p>Mixture Ratio</p>
+<p>Ratio of <span class="math display">\[fuel weight/air weight\]</span> passing through the intake manifold.</p>
+<p>• This ratio must be between .05 and .125 to burn.</p>
+<p>• Best power typically occurs at mixture ratio of 0.075 to 0.08.</p>
+<p>• Best economy typically occurs at a ratio of .0625</p>
+<p>• To provide sufficient cooling, the mixture ratio is usually greatly increased from best economy when operating at very high or very low power settings (a.k.a. auto rich).</p>
+<p>Reduction gear</p>
+<p>Gearing between the engine crankshaft and propeller shaft that reduces the rotation speed going to the propeller.</p>
+<p>Stroke Linear distance traveled by piston.</p>
+<p>Supercharger</p>
+<p>A mechanically driven compressor that boosts the ambient air pressure to provide the engine with higher power output.</p>
+<p>Turbocharger</p>
+<p>Also known as a turbo supercharger, it is similar to a super charger except that the compressor is</p>
+<p>driven by engine exhaust pressure.</p>
+<p> </p>
+<p><strong>10.2 Reciprocating Engine Modeling</strong> (ref 10.5.3)</p>
+<p> </p>
+<p>For any given engine design, power output is primarily a function of the product of engine speed (<em>RPM</em>) and intake manifold pressure (<em>MP</em>). Smaller but significant effects are due to the fuel/air density (<em>ρ<sub>fa</sub></em>) and exhaust back pressure (which is essentially ambient pressure, <em>P<sub>a</sub></em>). Less significant effects are due to the condition of the engine itself and include such factors as ignition quality &amp; timing, piston ring leakage, fuel grade, and oil viscosity.</p>
+<p> </p>
+<p>Engine models have various levels of sophistication which can account for the four most significant factors listed above. Theses models can be presented graphically or analytically. Figure 10.2a shows a typical</p>
+<p><strong>graphic power model</strong> for determining reciprocating engine BHP.</p>
+<p>1) The left-hand chart shows the fundamental relation between <em>BHP</em> and the product of <em>RPM</em> and <em>MP</em>. Enter with <em>MP</em> and <em>RPM</em> to obtain point “B” and the associated “base brake horse power” (<em>BHP<sub>B</sub></em>) at sea level standard day pressure and temperature.</p>
+<p> </p>
+<p>2) Transfer this <em>BHP<sub>B</sub></em> value to point “B<sup>1</sup>” on the ordinate of the right hand chart.</p>
+<p>3) Enter the right hand chart with the same <em>MP</em> &amp; <em>RPM</em> to obtain point “A” and the associated brake horsepower at altitude (<em>BHP<sub>A</sub></em>) .</p>
+<p> </p>
+<p>4) Connect points B<sup>1</sup> and A with a straight line.</p>
+<p> </p>
+<p>5) Enter the abscissa at the test pressure altitude, locate point “C”, and read the corresponding “chart horsepower” (<em>BHP<sub>C</sub></em>). <em>BHP<sub>C</sub></em>. is the sea level power corrected to the reduced back pressure con ditions at altitude. It does not account for non-standard temperatures.</p>
+<p> </p>
+<p>6) To correct for non-standard air temperature, subtract 1% from <em>BHP<sub>C </sub></em>for each 6<sup>0</sup>C warmer than test altitude standard temperature. Conversely, add 1% to <em>BHP<sub>C </sub></em>for each 6<sup>0</sup>C cooler than standard. For convenience, the lower right hand chart of Figure 10.2a illustrates standard temperature as a function of pressure altitude.</p>
+<p> </p>
+<p><img src="media/10/image1.png" style="width:4.89514in;height:8.68611in" /></p>
+<p>Figure 10.2a Engine Performance Chart for Continental IO360D</p>
+<p> An <strong>analytic power model</strong> of a reciprocating engine should match the graphic model. Its principle application is in automating the power determination process rather than manually performing graphic lookups.</p>
+<p> </p>
+<p>1) The left hand chart shows that <em>BHP<sub>B</sub></em> is a linear function of <em>MP</em>, but it is not necessarily a linear function of RPM. Extrapolating the <em>RPM</em> curves towards low manifold pressure illustrates their convergence to a common point. This left hand chart can be summarized with the equation</p>
+<p> </p>
+<p> <img src="media/10/image2.png" style="width:3.11389in;height:0.21875in" /></p>
+<p> </p>
+<p><em>a</em> through <em>e</em> are determined from the graph or from separate engine tests.</p>
+<p> </p>
+<p>2) In a similar fashion, calculate</p>
+<p> <img src="media/10/image3.png" style="width:2.54167in;height:0.20833in" /></p>
+<p> </p>
+<p>3) Based on the direct relation between available power and density, calculate chart horsepower as</p>
+<p> <img src="media/10/image4.png" style="width:3.17639in;height:0.22917in" /></p>
+<p>where <em>σ<sub>D</sub></em> is the standard atmosphere density ratio at the operating pressure altitude (<em>H<sub>c</sub></em>). For convenience, this calculation is presented below for flight in the tropopause</p>
+<p><img src="media/10/image5.png" style="width:2.11458in;height:0.25in" /> (<em>H<sub>c</sub></em> in feet)</p>
+<p> </p>
+<p><em>σ<sub>A</sub></em> is the density ratio corresponding to point A and is calculated as</p>
+<p> </p>
+<p> <img src="media/10/image6.png" style="width:1.67708in;height:0.47917in" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>where <em>BHP<sub>sl max</sub></em> is the full-throttle sea level power at the <em>RPM</em> in question. This value is located towards the right side of the <em>BHP<sub>B</sub></em> chart.</p>
+<p> </p>
+<p>4) The final step in determining test day power (<em>BHP<sub>t</sub></em>) is to correct for non-standard ambient absolute temperature (<em>T<sub>a</sub></em>)</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>where <em>T<sub>as</sub></em> is the standard absolute ambient temperature at the test altitude, and, below the tropopause, is calculated as <em>T<sub>as</sub></em> = 288.15-.0019812<em>H<sub>c</sub></em> .</p>
+<p> </p>
+<p><img src="media/10/image7.png" style="width:1.28125in;height:0.4375in" /></p>
+<p>The <strong>fuel flow model</strong> is centered around the brake specific fuel consumption (<em>BSFC</em>) defined as</p>
+<p> </p>
+<p> <img src="media/10/image8.png" style="width:1.69792in;height:0.44792in" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>Figure 10.2b shows the basic effect of <em>RPM</em> &amp; <em>BHP</em> on <em>BSFC</em> (ref 10.5.4).</p>
+<p>• At any given <em>BHP</em>, operating at lower <em>RPM</em>s reduces mechanical friction and therefore <em>BSFC</em>.</p>
+<p>• At any given <em>RPM</em>, operating at very low <em>BHP</em> increases the percentage of piston work overcoming friction and therefore increases <em>BSFC</em>.</p>
+<p>• Operation at high <em>BHP</em> also increases <em>BSFC</em>, but this is due to the fuel enrichment required to prevent detonation at high loads.</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> <img src="media/10/image9.png" style="width:4.49931in;height:3.22847in" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>Figure 10.2b Effect of <em>RPM</em> and <em>BHP</em> on <em>BSFC</em></p>
+<p> </p>
+<p>The same effects can be modeled as shown in Figure 10.2c (ref 10.5.5).</p>
+<p> </p>
+<p>• Not shown on these figures are the possible altitude and temperature effects. Flight testers rarely need to validate these models throughout the engine’s working range. Instead, testers typically evaluate <em>BSFC</em> only at the combinations of <em>RPM</em> and <em>MP</em> recommended by the manufacturer to give the desired power output.</p>
+<p> </p>
+<p><img src="media/10/image10.png" style="width:5.74931in;height:8.56111in" /></p>
+<p>Figure 10.2c BSFC Curves for a Typical Supercharged Airplane Engine</p>
+<p> </p>
+<p><strong>10.3 Reciprocating Engine Power Standardization</strong> (ref 10.5.4)</p>
+<p><strong> </strong></p>
+<p>Correcting from test day to standard day power available uses one of</p>
+<p>several methods, depending on the test conditions.</p>
+<p>Some useful insights are summarized below.</p>
+<p>• <span class="underline">In all cases, test day <em>RPM</em> must equal standard day <em>RPM</em></span>. There are no corrections if this requirement is violated.</p>
+<p>• The effect of density on power output at wide open throttle has been empirically shown to be</p>
+<p>(ref. 10.5.6)</p>
+<p> </p>
+<p> <img src="media/10/image11.png" style="width:2.42708in;height:0.22917in" /></p>
+<p> </p>
+<p>• The above correction is not typically applied to test data since test and standard day pressure altitudes (<em>H<sub>c</sub></em>) are usually the same. Instead, most standardization requirements center around correcting to standard temperature.</p>
+<p>• Engine power is actually related to the carburetor air temperature. The difference between test and standard day carburetor temperature equals the difference between test and standard day ambient temperature (<em>T<sub>ct</sub>-T<sub>cs</sub> = T<sub>at</sub>-T<sub>as</sub></em>).</p>
+<p>• With proper design, most of the freestream dynamic pressure (<em>q</em>) is converted into additional pressure at the carburetor and is known as “ram” effect. Above the critical altitude (where full throttle operation does not generate maximum manifold pressure), ram effect can be used to increase manifold pressure and therefore power output.</p>
+<p> </p>
+<p>The different power standardization methods are described below.</p>
+<p> </p>
+<p><strong>Partial Throttle Standardization.</strong> If the test engine is set at some partial throttle setting to achieve a specific manifold pressure, then the same <em>MP</em> should be achievable on standard day with a slightly different throttle setting. Calculate standard day power (<em>BHP<sub>s</sub></em>) as</p>
+<p> </p>
+<p> </p>
+<p> <img src="media/10/image12.png" style="width:1.80208in;height:0.59375in" /></p>
+<p> </p>
+<p> </p>
+<p><em>T<sub>cs</sub></em> is the standard day carburetor absolute temperature <em>= T<sub>as</sub>-T<sub>at</sub> +T<sub>ct </sub></em></p>
+<p><em>n</em> is the power exponent, usually = 0.5</p>
+<p> </p>
+<p>This correction does not address changes in back pressure,</p>
+<p>so <em>H<sub>c test </sub></em>= <em>H<sub>c std </sub></em> std</p>
+<p> </p>
+<p><strong>Full Throttle Standardization</strong> applies only if test and standard pressure altitude are equal. If the engine is operated full throttle on a test day, then the change in ambient temperature would generate a power change due to carburetor air temperature (∆<em>BHP<sub>cat</sub></em>) and manifold pressure changes (∆<em>BHP<sub>mp</sub></em>). Calculate standard day power (<em>BHP<sub>s</sub></em>) as</p>
+<p> </p>
+<p> <img src="media/10/image13.png" style="width:2.07292in;height:0.27083in" /></p>
+<p> </p>
+<p>The first correction is another form of the previous constant <em>MP</em> correction</p>
+<p> </p>
+<p> <img src="media/10/image14.png" style="width:1.85417in;height:0.58333in" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>The second (manifold pressure) correction accounts for two effects:</p>
+<p>1) For supercharged engines, correct for the change in pressure ratio of the supercharger due to inlet temperature changes.</p>
+<p>2) For all engines operating below maximum <em>MP</em>, correct for the change in air inlet ram pressure ratio due to flight Mach number changes.</p>
+<p> </p>
+<p> <img src="media/10/image15.png" style="width:1.45833in;height:0.46875in" /></p>
+<p> </p>
+<p> </p>
+<p><em>MP<sub>t</sub></em> is the test manifold pressure.</p>
+<p><em>MP<sub>s</sub></em> is the manifold pressure corrected to standard temperature and flight Mach number:</p>
+<p> </p>
+<p> </p>
+<p> <img src="media/10/image16.png" style="width:0.96875in;height:0.42708in" /></p>
+<p> </p>
+<p><em>MP<sub>∆t </sub></em>is the correction of manifold pressure due to changes in ambient temperature and is approximated as</p>
+<p> </p>
+<p> <img src="media/10/image17.png" style="width:1.27083in;height:0.22917in" /></p>
+<p> </p>
+<p>C is a constant depending upon the pressure ratio (<em>P<sub>2</sub>/P<sub>1</sub></em>), carburetor air inlet temperature, and whether or not the fuel is vaporized during process.</p>
+<p>• If only the air is compressed, or if the inlet temperature is measured <em>after</em> fuel vaporization, then determine C using Figure 10.3a .</p>
+<p>• If the fuel is injected after the temperature is taken but <em>before</em> the charge is compressed, then determine C using Figure 10.3b.</p>
+<p>• By use of Figures 10.3a and 10.3b, any combination of induction processes for air only or for a fuel air mixture may be evaluated<em>.</em></p>
+<p> </p>
+<p>∆<em>t</em> is the difference between test and standard day carburetor air temperature and was previously described as the change in ambient air temperature</p>
+<p>∆<em>t</em> = <em>T<sub>at</sub>-T<sub>as</sub></em></p>
+<p> </p>
+<p><em>P<sub>ts</sub>/P<sub>tt</sub></em> is the ratio between standard and test day total (ram) inlet pressures at the standard and test Mach numbers. The first step in determining this ratio is to recognize</p>
+<p> </p>
+<p> <img src="media/10/image18.png" style="width:0.91667in;height:0.6875in" /></p>
+<p> </p>
+<p> </p>
+<p>* *</p>
+<p><em>P<sub>a</sub></em> is the pressure altitude and must be the same for test and standard days. Calculate <em>P<sub>tt</sub>/P<sub>a</sub></em> using test Mach number and the equation</p>
+<p> </p>
+<p> <img src="media/10/image19.png" style="width:1.8125in;height:0.4375in" /></p>
+<p> </p>
+<p><em>€</em></p>
+<p><em>η<sub>r</sub></em> is the carburetor inlet ram efficiency and is usually between 0.7 and 0.75. A more exact value may be calculated as</p>
+<p> </p>
+<p> <img src="media/10/image20.png" style="width:1.63542in;height:0.4375in" /></p>
+<p> </p>
+<p> </p>
+<p>Calculate <em>P<sub>ts</sub> /P<sub>a</sub></em> using the same equations and standard Mach number.</p>
+<p>• This last calculation may be iterative because standard Mach number cannot be exactly determined from the drag polar until power output is known.</p>
+<p>• This correction is not normally made unless the flight Mach number is above 0.6 and the power change causes a speed change of more than 3 knots.</p>
+<p>• To get a feel for the dynamic pressure change (and therefore ram effect change) due to Mach number change, recall</p>
+<p> </p>
+<p> <img src="media/10/image21.png" style="width:1.98958in;height:0.48958in" /></p>
+<p> </p>
+<p>The final standard day power curves are presented in a form similar to that shown in Figure 10.3c</p>
+<p> </p>
+<p><img src="media/10/image22.png" style="width:4.52014in;height:3.70764in" /></p>
+<p>Figure 10.3a - Manifold Pressure Correction When Temperature is Measured After Fuel Vaporization</p>
+<p> </p>
+<p><img src="media/10/image23.png" style="width:6.87431in;height:4.37431in" /></p>
+<p>Figure 10.3b—Manifold Pressure Correction When Temperature is Measured Before Fuel Injection</p>
+<p> </p>
+<p><img src="media/10/image24.png" style="width:6.24931in;height:8.62361in" /></p>
+<p>Figure 10.3c Example Standard Day Supercharged Engine Performance Data</p>
+<p> </p>
+<p><strong>10.4 FAA Approved Engine Temperature Corrections</strong></p>
+<p><strong> </strong></p>
+<p>The intent is to ensure that the critical engine parts, (i.e., cylinder head and cylinder barrel) do not exceed the engine manufacturer’s specified limits during worst-case climb operating conditions on a 100 <sup>o</sup>F hot day.</p>
+<p> </p>
+<p>Test procedures are detailed in AC 23-A. The basic idea is best illustrated with the single-engine airplane procedure:</p>
+<p> </p>
+<p>1)  Trim in level flight at the lowest practical altitude with at least 75% maximum continuous power. Allow</p>
+<p>2)  temperatures to stabilize.</p>
+<p>2) Increase engine power to takeoff rating and climb at a speed not greater than <em>V<sub>y</sub></em> (best climb speed). Maintain takeoff power for one minute.</p>
+<p>3) At the end of one minute, reduce engine power to maximum continuous and continue climb for at least five minutes after temperatures peak or the maximum operating altitude is reached. Flight manual lean ing procedures should be used.</p>
+<p> </p>
+<p>Correct the peak test day cylinder barrel temperature (<em>T<sub>bt</sub></em>) to hot day conditions (<em>T<sub>bh</sub></em>) as follows</p>
+<p>* *</p>
+<p><em>T<sub>bh =</sub> T<sub>bt</sub></em>+0.7<span class="math display">\[100-0.0036*H~c~-T~at~*\]</span></p>
+<p> </p>
+<p>Correct the peak test day cylinder head or other temperature (<em>T<sub>ht</sub></em>) to hot day conditions (<em>T<sub>hh</sub></em>) as follows</p>
+<p> </p>
+<p><em>T<sub>hh =</sub> T<sub>ht</sub></em>+100-0.0036<em>H<sub>c</sub>-T<sub>at</sub></em></p>
+<p> </p>
+<p><em>H<sub>c </sub></em>is the pressure altitude in feet</p>
+<p><em>T<sub>at </sub></em>is the outside air temperature in degrees F</p>
+<p> </p>
+<p>This method is known to be quite conservative More satisfactory temperatures may be achieved by actually testing during hot weather.</p>
+<p> </p>
+<p><strong>10.5 References</strong></p>
+<p><strong> </strong></p>
+<p>10.5.1 Roberts, Sean C. “Light Aircraft Performance,” Flight Research Inc. Mojave, CA, 1982.</p>
+<p> </p>
+<p>10.5.2 Lawless, Alan R, “Fixed Wing Aircraft Performance Testing” Chapters 3 and 4, National Test Pilot School, Mojave CA, 1996.</p>
+<p> </p>
+<p>10.5.3 Baughn, J. W., “A Method for computing Brake Horsepower from the Performance Charts of Reciprocating Aircraft Engines,” AIAA- 94-2148-CP, from 7th Biennial AIAA Flight Test Conf., 1994.</p>
+<p> </p>
+<p>10.5.4 Herrington, R. M. Major, USAF, et al, “Flight Test Engineering Handbook,” USAF Technical report No. 6273, AFFTC, Edwards AFB, CA, May 1951.</p>
+<p> </p>
+<p>10.5.5 Chatfield, C. H., et al, “The Airplane and its Engine,” McGraw Hill, 1949.</p>
+<p> </p>
+<p>10.5.6 Gagg, R.F., and Farrar, E.V., “Altitude Performance of Aircraft Engines Equipped with Gear-Driven Superchargers,” SAE Transcripts, Vol 29, pg 217-223, 1934.</p>
+<p> </p>
+<p>10.5.7 anon., “Flight Test Guide for Certification of Part 23 Air planes,” U.S. Department of Transportation Advisory Circu- lar 23-8A, 1989.</p>
+<p> </p>
+<p><strong>Additional Reading and Second Generation References</strong></p>
+<p> </p>
+<p>10.5.8 Smith, H. C., and Dreier M. E., “A computer Technique for the Determination of Brake Horsepower Output of Normally Aspirated Reciprocating Aircraft Engines,” SAE paper No. 770465,</p>
+<p>March 1977.</p>
+<p> </p>
+<p>10.5.9 Hamlin, B., “Flight Testing Conventional and Jet-Propelled Airplanes,” The Macmillan Co., New York, NY, 1946.</p>
+<p> </p>
+<p>10.5.10 Operators Manual for Series IO-360 Aircraft Engines, form No. X-30032, FAA Approved March 1979.</p>
+<p> </p>
+
+<p><strong> </strong></p>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="material-strength.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="propellers.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>11 11 Propellers** | Flight Test Engineering Reference Handbook</title>
+  <meta name="description" content="11 11 Propellers** | Flight Test Engineering Reference Handbook" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="11 11 Propellers** | Flight Test Engineering Reference Handbook" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="media/media/image1.jpg" />
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="11 11 Propellers** | Flight Test Engineering Reference Handbook" />
+  
+  
+  <meta name="twitter:image" content="media/media/image1.jpg" />
+
+<meta name="author" content="Society of Flight Test Engineers" />
+
+
+<meta name="date" content="2013-01-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="reciprocating-engines.html"/>
+<link rel="next" href="fixed-wing-performance-standardization.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#contributors"><i class="fa fa-check"></i>Contributors</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#editors"><i class="fa fa-check"></i>Editors</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#feedback"><i class="fa fa-check"></i>Feedback</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#publication-policy"><i class="fa fa-check"></i>Publication Policy</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#section-index"><i class="fa fa-check"></i>Section Index</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="general-information.html"><a href="general-information.html"><i class="fa fa-check"></i><b>1</b> General Information</a><ul>
+<li class="chapter" data-level="1.1" data-path="general-information.html"><a href="general-information.html#unit-conversions"><i class="fa fa-check"></i><b>1.1</b> Unit Conversions</a></li>
+<li class="chapter" data-level="1.2" data-path="general-information.html"><a href="general-information.html#greek-alphabet"><i class="fa fa-check"></i><b>1.2</b> Greek Alphabet</a></li>
+<li class="chapter" data-level="1.3" data-path="general-information.html"><a href="general-information.html#greek-symbols-used-for-aircraft"><i class="fa fa-check"></i><b>1.3</b> Greek Symbols Used for Aircraft</a></li>
+<li class="chapter" data-level="1.4" data-path="general-information.html"><a href="general-information.html#common-subscripts"><i class="fa fa-check"></i><b>1.4</b> Common Subscripts</a></li>
+<li class="chapter" data-level="1.5" data-path="general-information.html"><a href="general-information.html#common-abbreviations-raw"><i class="fa fa-check"></i><b>1.5</b> Common Abbreviations (raw)</a></li>
+<li class="chapter" data-level="1.6" data-path="general-information.html"><a href="general-information.html#sign-conventions-raw"><i class="fa fa-check"></i><b>1.6</b> Sign Conventions (raw)</a></li>
+<li class="chapter" data-level="1.7" data-path="general-information.html"><a href="general-information.html#thermodynamics-relations"><i class="fa fa-check"></i><b>1.7</b> Thermodynamics Relations</a><ul>
+<li class="chapter" data-level="1.7.1" data-path="general-information.html"><a href="general-information.html#thermodynamic-definitions"><i class="fa fa-check"></i><b>1.7.1</b> Thermodynamic Definitions</a></li>
+<li class="chapter" data-level="1.7.2" data-path="general-information.html"><a href="general-information.html#thermodynamic-symbols"><i class="fa fa-check"></i><b>1.7.2</b> Thermodynamic Symbols</a></li>
+<li class="chapter" data-level="1.7.3" data-path="general-information.html"><a href="general-information.html#thermodynamic-laws"><i class="fa fa-check"></i><b>1.7.3</b> Thermodynamic Laws</a></li>
+</ul></li>
+<li class="chapter" data-level="1.8" data-path="general-information.html"><a href="general-information.html#mechanics-relations"><i class="fa fa-check"></i><b>1.8</b> Mechanics Relations</a><ul>
+<li class="chapter" data-level="1.8.1" data-path="general-information.html"><a href="general-information.html#mechanics-symbols"><i class="fa fa-check"></i><b>1.8.1</b> Mechanics Symbols</a></li>
+<li class="chapter" data-level="1.8.2" data-path="general-information.html"><a href="general-information.html#newtons-laws"><i class="fa fa-check"></i><b>1.8.2</b> Newton’s Laws</a></li>
+<li class="chapter" data-level="1.8.3" data-path="general-information.html"><a href="general-information.html#planar-kinetics-work-power-and-energy"><i class="fa fa-check"></i><b>1.8.3</b> Planar Kinetics, Work, Power and Energy</a></li>
+<li class="chapter" data-level="1.8.4" data-path="general-information.html"><a href="general-information.html#planar-kinematics-at-constant-acceleration"><i class="fa fa-check"></i><b>1.8.4</b> Planar Kinematics at Constant Acceleration</a></li>
+<li class="chapter" data-level="1.8.5" data-path="general-information.html"><a href="general-information.html#curvilinear-motion-with-constant-acceleration-and-radius"><i class="fa fa-check"></i><b>1.8.5</b> Curvilinear motion with constant acceleration and radius</a></li>
+<li class="chapter" data-level="1.8.6" data-path="general-information.html"><a href="general-information.html#aircraft-in-level-turn"><i class="fa fa-check"></i><b>1.8.6</b> Aircraft in level turn</a></li>
+<li class="chapter" data-level="1.8.7" data-path="general-information.html"><a href="general-information.html#level-turn-kinematics-character"><i class="fa fa-check"></i><b>1.8.7</b> Level Turn Kinematics Character</a></li>
+<li class="chapter" data-level="1.8.8" data-path="general-information.html"><a href="general-information.html#gyroscopic-motion"><i class="fa fa-check"></i><b>1.8.8</b> Gyroscopic Motion</a></li>
+</ul></li>
+<li class="chapter" data-level="1.9" data-path="general-information.html"><a href="general-information.html#international-phonetic-alphabet-and-morse-code"><i class="fa fa-check"></i><b>1.9</b> International Phonetic Alphabet and Morse Code</a></li>
+<li class="chapter" data-level="1.10" data-path="general-information.html"><a href="general-information.html#section-1-references"><i class="fa fa-check"></i><b>1.10</b> Section 1 References</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="mathematics.html"><a href="mathematics.html"><i class="fa fa-check"></i><b>2</b> Mathematics</a><ul>
+<li class="chapter" data-level="2.1" data-path="mathematics.html"><a href="mathematics.html#algebra"><i class="fa fa-check"></i><b>2.1</b> Algebra</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="mathematics.html"><a href="mathematics.html#laws"><i class="fa fa-check"></i><b>2.1.1</b> Laws</a></li>
+<li class="chapter" data-level="2.1.2" data-path="mathematics.html"><a href="mathematics.html#identities"><i class="fa fa-check"></i><b>2.1.2</b> Identities</a></li>
+<li class="chapter" data-level="2.1.3" data-path="mathematics.html"><a href="mathematics.html#equations"><i class="fa fa-check"></i><b>2.1.3</b> Equations</a></li>
+<li class="chapter" data-level="2.1.4" data-path="mathematics.html"><a href="mathematics.html#interest-and-annuities"><i class="fa fa-check"></i><b>2.1.4</b> Interest And Annuities</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="mathematics.html"><a href="mathematics.html#geometry"><i class="fa fa-check"></i><b>2.2</b> Geometry</a></li>
+<li class="chapter" data-level="2.3" data-path="mathematics.html"><a href="mathematics.html#trigonometery-raw"><i class="fa fa-check"></i><b>2.3</b> Trigonometery (raw)</a></li>
+<li class="chapter" data-level="2.4" data-path="mathematics.html"><a href="mathematics.html#matrix-algebra-raw"><i class="fa fa-check"></i><b>2.4</b> Matrix Algebra (raw)</a></li>
+<li class="chapter" data-level="2.5" data-path="mathematics.html"><a href="mathematics.html#vector-algebra"><i class="fa fa-check"></i><b>2.5</b> Vector Algebra</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="mathematics.html"><a href="mathematics.html#addition"><i class="fa fa-check"></i><b>2.5.1</b> Addition</a></li>
+<li class="chapter" data-level="2.5.2" data-path="mathematics.html"><a href="mathematics.html#subtraction"><i class="fa fa-check"></i><b>2.5.2</b> Subtraction</a></li>
+<li class="chapter" data-level="2.5.3" data-path="mathematics.html"><a href="mathematics.html#scalar-multiplication"><i class="fa fa-check"></i><b>2.5.3</b> Scalar Multiplication</a></li>
+<li class="chapter" data-level="2.5.4" data-path="mathematics.html"><a href="mathematics.html#dot-product"><i class="fa fa-check"></i><b>2.5.4</b> Dot Product</a></li>
+<li class="chapter" data-level="2.5.5" data-path="mathematics.html"><a href="mathematics.html#norm"><i class="fa fa-check"></i><b>2.5.5</b> Norm</a></li>
+<li class="chapter" data-level="2.5.6" data-path="mathematics.html"><a href="mathematics.html#vector-cross-product"><i class="fa fa-check"></i><b>2.5.6</b> Vector Cross Product</a></li>
+<li class="chapter" data-level="2.5.7" data-path="mathematics.html"><a href="mathematics.html#vector-differentiation"><i class="fa fa-check"></i><b>2.5.7</b> Vector Differentiation</a></li>
+<li class="chapter" data-level="2.5.8" data-path="mathematics.html"><a href="mathematics.html#motion-of-a-point-using-two-reference-systems-raw"><i class="fa fa-check"></i><b>2.5.8</b> Motion of a point using two reference systems (raw)</a></li>
+<li class="chapter" data-level="2.5.9" data-path="mathematics.html"><a href="mathematics.html#motion-of-a-point-using-one-reference-system-raw"><i class="fa fa-check"></i><b>2.5.9</b> Motion of a point using one reference system (raw)</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="mathematics.html"><a href="mathematics.html#probability-and-statistics"><i class="fa fa-check"></i><b>2.6</b> Probability and Statistics</a></li>
+<li class="chapter" data-level="2.7" data-path="mathematics.html"><a href="mathematics.html#standard-series-raw"><i class="fa fa-check"></i><b>2.7</b> Standard Series (raw)</a></li>
+<li class="chapter" data-level="2.8" data-path="mathematics.html"><a href="mathematics.html#derivative-table-raw"><i class="fa fa-check"></i><b>2.8</b> Derivative Table (raw)</a></li>
+<li class="chapter" data-level="2.9" data-path="mathematics.html"><a href="mathematics.html#integral-table-raw"><i class="fa fa-check"></i><b>2.9</b> Integral Table (raw)</a></li>
+<li class="chapter" data-level="2.10" data-path="mathematics.html"><a href="mathematics.html#laplace-table-raw"><i class="fa fa-check"></i><b>2.10</b> Laplace Table (raw)</a></li>
+<li class="chapter" data-level="2.11" data-path="mathematics.html"><a href="mathematics.html#references"><i class="fa fa-check"></i><b>2.11</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html"><i class="fa fa-check"></i><b>3</b> Universe Earth Atmospheric</a><ul>
+<li class="chapter" data-level="3.1" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html#properties"><i class="fa fa-check"></i><b>3.1</b> Properties</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="pitot-statics.html"><a href="pitot-statics.html"><i class="fa fa-check"></i><b>4</b> Pitot Statics</a><ul>
+<li class="chapter" data-level="" data-path="pitot-statics.html"><a href="pitot-statics.html#common-nomenclature"><i class="fa fa-check"></i>Common Nomenclature</a></li>
+<li class="chapter" data-level="4.1" data-path="pitot-statics.html"><a href="pitot-statics.html#subsonic-airspeed-and-mach-equation"><i class="fa fa-check"></i><b>4.1</b> Subsonic Airspeed and Mach Equation</a></li>
+<li class="chapter" data-level="4.2" data-path="pitot-statics.html"><a href="pitot-statics.html#scale-altitude-compressibility-correction"><i class="fa fa-check"></i><b>4.2</b> Scale Altitude (Compressibility ) Correction</a></li>
+<li class="chapter" data-level="4.3" data-path="pitot-statics.html"><a href="pitot-statics.html#subsonic-relations-between-compressible-and-incompressible-dynamic-pressure"><i class="fa fa-check"></i><b>4.3</b> Subsonic Relations Between Compressible and Incompressible Dynamic Pressure</a></li>
+<li class="chapter" data-level="4.4" data-path="pitot-statics.html"><a href="pitot-statics.html#supersonic-airspeed-and-mach-equations"><i class="fa fa-check"></i><b>4.4</b> Supersonic Airspeed and Mach Equations</a></li>
+<li class="chapter" data-level="4.5" data-path="pitot-statics.html"><a href="pitot-statics.html#total-temperature-equation"><i class="fa fa-check"></i><b>4.5</b> Total Temperature Equation</a></li>
+<li class="chapter" data-level="4.6" data-path="pitot-statics.html"><a href="pitot-statics.html#altimeter-equation"><i class="fa fa-check"></i><b>4.6</b> Altimeter Equation</a></li>
+<li class="chapter" data-level="4.7" data-path="pitot-statics.html"><a href="pitot-statics.html#position-error-test-methods"><i class="fa fa-check"></i><b>4.7</b> Position Error Test Methods**</a><ul>
+<li class="chapter" data-level="4.7.1" data-path="pitot-statics.html"><a href="pitot-statics.html#fly-by"><i class="fa fa-check"></i><b>4.7.1</b> Fly-by</a></li>
+<li class="chapter" data-level="4.7.2" data-path="pitot-statics.html"><a href="pitot-statics.html#ground-course-method"><i class="fa fa-check"></i><b>4.7.2</b> Ground Course Method</a></li>
+<li class="chapter" data-level="4.7.3" data-path="pitot-statics.html"><a href="pitot-statics.html#trailing-conebomb-method"><i class="fa fa-check"></i><b>4.7.3</b> Trailing Cone/Bomb Method</a></li>
+<li class="chapter" data-level="4.7.4" data-path="pitot-statics.html"><a href="pitot-statics.html#gps-methods"><i class="fa fa-check"></i><b>4.7.4</b> 4.7.4 GPS Methods</a></li>
+</ul></li>
+<li class="chapter" data-level="4.8" data-path="pitot-statics.html"><a href="pitot-statics.html#position-error-far-2325.1323-and-.1325jar-certification"><i class="fa fa-check"></i><b>4.8</b> Position Error FAR 23/25.1323 and .1325/JAR Certification</a></li>
+<li class="chapter" data-level="4.9" data-path="pitot-statics.html"><a href="pitot-statics.html#pec-correction-process-flow-chart"><i class="fa fa-check"></i><b>4.9</b> PEC Correction Process Flow Chart</a></li>
+<li class="chapter" data-level="4.10" data-path="pitot-statics.html"><a href="pitot-statics.html#airspeedaltitudemach-graphic-relation"><i class="fa fa-check"></i><b>4.10</b> Airspeed/Altitude/Mach Graphic Relation</a></li>
+<li class="chapter" data-level="4.11" data-path="pitot-statics.html"><a href="pitot-statics.html#effect-of-errors-on-calibrated-airspeed-and-altitude"><i class="fa fa-check"></i><b>4.11</b> Effect of Errors on Calibrated Airspeed and Altitude</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="aerodynamics.html"><a href="aerodynamics.html"><i class="fa fa-check"></i><b>5</b> 5 Aerodynamics**</a></li>
+<li class="chapter" data-level="6" data-path="axis-systems-and-transformations.html"><a href="axis-systems-and-transformations.html"><i class="fa fa-check"></i><b>6</b> 6 Axis Systems and Transformations**</a></li>
+<li class="chapter" data-level="7" data-path="mass-properties.html"><a href="mass-properties.html"><i class="fa fa-check"></i><b>7</b> 7 Mass Properties**</a></li>
+<li class="chapter" data-level="8" data-path="motionvibration-analysis.html"><a href="motionvibration-analysis.html"><i class="fa fa-check"></i><b>8</b> 8 Motion/Vibration Analysis**</a></li>
+<li class="chapter" data-level="9" data-path="material-strength.html"><a href="material-strength.html"><i class="fa fa-check"></i><b>9</b> 9 Material Strength**</a></li>
+<li class="chapter" data-level="10" data-path="reciprocating-engines.html"><a href="reciprocating-engines.html"><i class="fa fa-check"></i><b>10</b> 10 Reciprocating Engines**</a></li>
+<li class="chapter" data-level="11" data-path="propellers.html"><a href="propellers.html"><i class="fa fa-check"></i><b>11</b> 11 Propellers**</a></li>
+<li class="chapter" data-level="12" data-path="fixed-wing-performance-standardization.html"><a href="fixed-wing-performance-standardization.html"><i class="fa fa-check"></i><b>12</b> 12 Fixed-Wing Performance Standardization**</a></li>
+<li class="chapter" data-level="13" data-path="acoustics.html"><a href="acoustics.html"><i class="fa fa-check"></i><b>13</b> 13 Acoustics**</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Flight Test Engineering Reference Handbook</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="propellers" class="section level1">
+<h1><span class="header-section-number">11</span> 11 Propellers**</h1>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p>11.1 Abbreviations and Terminology</p>
+<p> </p>
+<p>11.2 Propeller Geometry</p>
+<p> </p>
+<p>11.3 Propeller Coefficients</p>
+<p> </p>
+<p>11.4 Propeller Efficiency and States</p>
+<p><strong> </strong></p>
+<p>11.5 Propeller Theory</p>
+<p> </p>
+<p>11.6 Propeller Modeling Examples</p>
+<p>Static Thrust Chart, In-Flight Charts,</p>
+<p>Blocking Correction Factor Charts,</p>
+<p>Tip Compressibility Factor Charts</p>
+<p> </p>
+<p>11.7 Propeller Flight Test</p>
+<p>11.8 References</p>
+<p> </p>
+<p><strong>11.1 Abbreviations and Terminology</strong></p>
+<p> </p>
+<p><strong>Abbreviations</strong></p>
+<p><em>AF</em> activity factor <em>=</em></p>
+<p>* *<img src="media/11/image1.png" style="width:1.60417in;height:0.41667in" /></p>
+<p><em>B</em> number of blades</p>
+<p><em>b</em> blade section width (feet)</p>
+<p><em>BHP</em> brake horsepower (measured at engine crankshaft)</p>
+<p><em>C<sub>LD</sub></em> blade section design lift coefficient</p>
+<p>* *</p>
+<p><em>C<sub>Li</sub></em> integrated design lift coefficient =</p>
+<p> <img src="media/11/image2.png" style="width:1.375in;height:0.36458in" /></p>
+<p><em>C<sub>P</sub></em> power (absorbed) coefficient</p>
+<p><em>C<sub>T </sub></em>thrust coefficient</p>
+<p><em>D</em> propeller diameter (feet)</p>
+<p><em>f<sub>c</sub></em> ratio of speed of sound at standard day sea level to speed of sound at operating condition</p>
+<p>* *<img src="media/11/image3.png" style="width:0.53125in;height:0.35417in" /></p>
+<p><em>HP</em> horsepower (1 <em>HP</em> = 550 ft-lb/sec)</p>
+<p>G.R. gear ratio, propeller speed/engine speed</p>
+<p>J Propeller advance ratio <em>=V<sub>T</sub>/nD</em> (nondimensional)</p>
+<p><em>M</em> aircraft Mach number</p>
+<p><em>N</em> propeller speed, revolutions per minute (<em>RPM</em>)</p>
+<p><em>n</em> propeller speed, revolutions per second</p>
+<p><em>N<sub>e</sub></em> engine speed, <em>RPM</em></p>
+<p><em>P<sub>a</sub></em> ambient pressure</p>
+<p><em>P</em> power output (ft-lb/sec)</p>
+<p><em>Q</em> torque (ft-lb)</p>
+<p><em>q</em> dynamic pressure</p>
+<p><em>T</em> thrust</p>
+<p><em>T<sub>a</sub></em> absolute ambient temperature</p>
+<p><em>R</em> blade radius at propeller tip (feet)</p>
+<p><em>r</em> radius at blade element (feet)</p>
+<p><em>SHP</em> shaft horsepower (measured at propeller shaft)</p>
+<p><em>T</em> propeller thrust (pounds)</p>
+<p><em>V<sub>T</sub></em> freestream velocity (ft/sec)</p>
+<p><em>V<sub>K</sub></em> freestream velocity (knots)</p>
+<p><em>x</em> fraction of propeller tip radius, <em>r/R</em></p>
+<p><em>V<sub>tan</sub></em> tangential velocity</p>
+<p><em>V<sub>R</sub></em> resultant velocity</p>
+<p><em>V<sub>tip</sub></em> tip speed</p>
+<p><em>α</em> local angle of attack</p>
+<p><em>β</em>  local blade twist angle, measured between chord and plane of rotation, same as <em>θ</em> (degrees).</p>
+<p>∆<em>M</em> Mach number adjustment for effect of blade camber</p>
+<p><em>φ</em> propeller disk angle of attack</p>
+<p><em>η</em> isolated propeller efficiency.</p>
+<p><em>η<sub>comp</sub></em> composite prop efficiency (includes tip and blockage corrections)</p>
+<p><em>θ </em><sup>3/4</sup> propeller blade twist angle at <em>x</em> =3/4 (degrees), same as <em>β <sup>3</sup></em><sup>/4</sup></p>
+<p><em>σ</em> ratio of operating density to sea level standard density = <em>ρ</em><sub>a</sub>/<em>ρ</em><sub>o.</sub></p>
+<p>ω propeller rotation speed (radians/second)</p>
+<p> </p>
+<p> </p>
+<p><strong>Terminology</strong></p>
+<p> <strong> </strong></p>
+<p>blade aspect ratio measured as <span class="math display">\[*R* / max blade width\]</span>.</p>
+<p> </p>
+<p>effective pitch actual advance per revolution.</p>
+<p> </p>
+<p>experimental pitch necessary advance to generate zero thrust.</p>
+<p> </p>
+<p>geometric pitch (<em>p</em>) advance per revolution if blade element moves</p>
+<p>according to β (i.e., with no slip).</p>
+<p>reduction gear gearing between the engine crankshaft and prop shaft that reduces the propeller rotation speed .</p>
+<p>right-handed moves clockwise (viewed from the slipstream).</p>
+<p> </p>
+<p>solidity fraction of prop disk covered by blade area = 2π<em>R/Bb</em>.</p>
+<p> </p>
+<p>total width ratio (<em>TWR</em>) measured as <span class="math display">\[*WR* x *B*\]</span></p>
+<p> </p>
+<p>thickness ratio (<em>TR</em>) blade thicknessmeasured locally or at .75<em>R</em> to represent entire prop.</p>
+<p> </p>
+<p>width ratio (<em>WR</em>) calculated as {<em>b</em> @ .75<em>R</em> } / <em>D</em></p>
+<p> </p>
+<p><strong>11.2 Propeller Geometry</strong></p>
+<p><strong> </strong></p>
+<p>• <em>δ<sub>r</sub></em> is the width of any element along blade radius.</p>
+<p> </p>
+<p> <img src="media/11/image4.png" style="width:2.81181in;height:1.04167in" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>• <em>x = r/R,</em> the local fraction of prop tip radius</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> <img src="media/11/image5.png" style="width:2.80139in;height:1.57292in" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>• Prop blade chord extends from leading edge to trailing edge.</p>
+<p>• Blade twist angle <em>θ,</em> measured between rotation plane and local chord.</p>
+<p>• Relative wind is the resultant velocity (<em>V<sub>R</sub></em>), comprised of aircraft</p>
+<p>forward speed and tangential speed at radial location along blade.</p>
+<p> </p>
+<p> <img src="media/11/image6.png" style="width:1.53125in;height:0.3125in" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>• Angle <em>φ</em> is measured between plane of rotation and local <em>V<sub>R</sub></em></p>
+<p><em><sub> </sub></em></p>
+<p><em><sub> </sub></em><img src="media/11/image7.png" style="width:4.04097in;height:0.39583in" /></p>
+<p><em><sub> </sub></em></p>
+<p><strong> </strong></p>
+<p>• Αdvance ratio (<em>J</em>) is defined as <em>J = V<sub>T</sub>/nD.</em></p>
+<p>• Local angle of attack at any fraction of radius(<em>α<sup>x</sup></em>) is measured between the local chord line and relative wind</p>
+<p><img src="media/11/image8.png" style="width:3.69722in;height:0.375in" /></p>
+<p>• Lift and drag are perpendicular and parallel to <em>V<sub>R</sub></em>, respectively</p>
+<p>• Thrust (<em>T</em>) and torque (<em>Q</em>) are perpendicular and parallel to the plane of rotation, respectively.</p>
+<p> </p>
+<p><strong>11.3 Propeller Coefficients</strong></p>
+<p><strong> </strong></p>
+<p>Integrating lift and drag along a blade gives the thrust (<em>T</em>) and torque (<em>Q</em>). Multiply by number of blades (<em>B</em>) to determine total <em>T</em> and <em>Q</em>.</p>
+<p> </p>
+<p> </p>
+<p> <img src="media/11/image9.png" style="width:2.70833in;height:0.86458in" /></p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p> </p>
+<p>Thrust Coefficient, <em>C<sub>T</sub></em></p>
+<p> <img src="media/11/image10.png" style="width:0.92708in;height:0.45833in" /></p>
+<p> </p>
+<p>Torque Coefficient, <em>C<sub>Q</sub></em></p>
+<p> <img src="media/11/image11.png" style="width:0.94792in;height:0.45833in" /></p>
+<p> </p>
+<p>Power Coefficient, <em>C<sub>P</sub></em></p>
+<p> </p>
+<p> <img src="media/11/image12.png" style="width:3.05139in;height:0.36458in" /></p>
+<p> </p>
+<p>Typical effect of advance ratio on thrust and torque coefficients</p>
+<p><img src="media/11/image13.png" style="width:4.49931in;height:3.62431in" /></p>
+<p><strong>11.4 Propeller Efficiency and States</strong></p>
+<p><strong> </strong></p>
+<p>Propeller efficiency (<em>η</em>)</p>
+<p> </p>
+<p><img src="media/11/image14.png" style="width:4.15556in;height:0.53125in" /></p>
+<p> </p>
+<p> </p>
+<p> <img src="media/11/image15.png" style="width:4.49931in;height:2.97847in" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>Propeller state: positive thrust &amp; efficiency, power supplied by engine.</p>
+<p>Brake state: negative thrust &amp; efficiency, power supplied by engine.</p>
+<p>Windmill state: negative thrust &amp; <em>η</em>, power supplied by freestream.</p>
+<p> </p>
+<p><img src="media/11/image16.png" style="width:4.49931in;height:1.875in" /></p>
+<p><strong>11.5 Propeller Theory</strong></p>
+<p> </p>
+<p>Simple momentum theory describes pressure jump (∆<em>P</em>) across</p>
+<p>propeller disk .</p>
+<p>• The downstream velocity increment (<em>v<sub>1</sub></em>) is twice the velocity</p>
+<p>increment at the disk (<em>v</em>) .</p>
+<p>• Thrust (∆<em>P</em>) = ∆<em>P</em> x disk area</p>
+<p>• Froude’s momentum theory: efficiency =</p>
+<p> </p>
+<p> <img src="media/11/image17.png" style="width:1.33333in;height:0.46875in" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> <img src="media/11/image18.png" style="width:4.49931in;height:2.125in" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>Blade element theory tends to be more complex and may include corrections for tip swirl losses, Mach effects, nacelle blockage, etc. Below is a comparison of typical calculated and measured thrust distribution.</p>
+<p> </p>
+<p><img src="media/11/image19.png" style="width:4.00972in;height:1.59375in" /></p>
+<p><strong>11.6 Propeller Modeling</strong></p>
+<p> </p>
+<p>• For a specified propeller geometry; <em>C<sub>T</sub></em> , <em>C<sub>P</sub></em>, <em>J,</em> and blade angle (<em>θ</em>) are interrelated such that knowledge of any two defines the other two.</p>
+<p>• Calculate propeller efficiency as <em>η = JC<sub>T</sub></em> /<em>C<sub>P </sub></em>.</p>
+<p>• Models assume isolated conditions, i.e., without nacelle blockage.</p>
+<p>• Models assume negligible Mach effects at propeller tips.</p>
+<p>• Different models required for static and “in-flight” conditions.</p>
+<p> </p>
+<p>Determine static <em>C<sub>T</sub></em> and <em>C<sub>P</sub></em> using “<strong>Static Thrust Chart</strong>” (ref 11.2)</p>
+<p> </p>
+<p> <img src="media/11/image20.png" style="width:0.63542in;height:0.375in" /></p>
+<p> <img src="media/11/image21.png" style="width:4.36389in;height:4.10347in" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>∼ Separate charts exist for each combination of <em>AF</em> and # of blades (<em>B)</em>.</p>
+<p>∼ Enter chart at appropriate <em>J</em> &amp; <em>C<sub>li</sub></em></p>
+<p> </p>
+<p>Static Thrust = where <em>N</em> = Propeller <em>RPM</em> Determine isolated propeller in-flight effi</p>
+<p> </p>
+<p>ciency (<em>η</em>) from the appropriate <strong>“Flight Charts.”</strong> They are typically presented in one of two forms.</p>
+<p> <img src="media/11/image22.png" style="width:1.41667in;height:0.42708in" /></p>
+<p><img src="media/11/image23.png" style="width:6.99931in;height:8.31181in" /></p>
+<p>Above example for AiResearch TPE331-3U-303G engines and Hartzell T10282HDB-4R 3-blade, constant speed, feathering propellers.</p>
+<p> </p>
+<p><strong> </strong>The other “in-flight <em>η</em>” format also requires calculation of <em>C<sub>P</sub></em> and <em>J</em>. Below is a typical flight chart published by Hamilton Standard (Ref 11.2). This applies to a propeller with 2 blades, <em>AF</em>= 80, and <em>C<sub>Li</sub></em> =0.5</p>
+<p> </p>
+<p><img src="media/11/image24.png" style="width:6.62431in;height:8.31181in" /></p>
+<p> </p>
+<p>A <strong>body correction factor</strong> (<em>F<sub>BC</sub></em>) should be applied to account for reduced efficiency due to body flow blockage immediately behind the propeller. Two examples follow.</p>
+<p> <img src="media/11/image25.png" style="width:6.49931in;height:8.56111in" /></p>
+<p>Hamilton Standard also publishes a generalized nacelle blocking correction for typical scoop and annual inlet nacelles used on typical turboprops.</p>
+<p> </p>
+<p><img src="media/11/image26.png" style="width:5.87431in;height:8.43611in" /></p>
+<p>To determine if tip compressibility corrections are appropriate, find the maximum integrated design lift coefficient, <em>C<sub>Limax</sub></em> from the graph below.</p>
+<p>∼ Enter at flight Mach number, and move across at appropriate <em>NDf<sub>c.</sub></em></p>
+<p> </p>
+<p><em><sub> </sub></em><img src="media/11/image3.png" style="width:0.53125in;height:0.35417in" /></p>
+<p><em><sub> </sub></em></p>
+<p>∼ If <em>C<sub>Limax</sub></em> is below calculated <em>C<sub>li , </sub></em>then corrections are required.</p>
+<p> </p>
+<p><img src="media/11/image27.png" style="width:6.24931in;height:7.56181in" /></p>
+<p>If tip compressibility corrections are necessary, then the first step is to</p>
+<p>• Determine the <strong>Mach number adjustment for the effect of blade camber</strong> (∆<em>M</em>) from the figure below.</p>
+<p> </p>
+<p><img src="media/11/image28.png" style="width:6.99931in;height:5.93681in" /></p>
+<p>• Next, add ∆<em>M</em> from above to flight Mach number to get <em>M<sub>eff</sub></em>.</p>
+<p>• Enter adjacent <strong>generalized compressibility correction chart</strong> to determine propeller efficiency tip factor (<em>F<sub>t</sub></em>)</p>
+<p>• Calculate composite propeller efficiency as</p>
+<p> </p>
+<p><em>η</em><sub>comp</sub> = <em>η</em> x <em>F<sub>t</sub></em> x <em>F<sub>BC</sub></em></p>
+<p> </p>
+<p>• Calculate in-flight thrust as</p>
+<p> </p>
+<p><img src="media/11/image29.png" style="width:2.09375in;height:0.46875in" /></p>
+<p><img src="media/11/image30.png" style="width:5.75972in;height:8.72778in" /></p>
+<p><strong>11.7 Propeller Flight Test</strong></p>
+<p>The best method for determining <em>η<sub>comp</sub></em> is to instrument the prop shaft and/or engine mounts to measure thrust and torque.</p>
+<p> </p>
+<p> </p>
+<p> <img src="media/11/image31.png" style="width:3.22847in;height:1.88542in" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>Calculate efficiency as</p>
+<p> </p>
+<p> <img src="media/11/image32.png" style="width:1.20833in;height:0.53125in" /></p>
+<p>As an alternate, the <strong>incremental drag method</strong> requires an accurate</p>
+<p>engine power model, a load cell and a small drag device.</p>
+<p> </p>
+<p>• Trim the aircraft at test <em>RPM, V<sub>T</sub> ,</em> &amp; altitude. Note <em>SHP</em> required.</p>
+<p>• Repeat above test with drag device and load cell attached. Note the power requirement change (∆<em>SHP</em> ) and load cell drag (∆<em>D</em>).</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> <img src="media/11/image33.png" style="width:2.14583in;height:1.16667in" /></p>
+<p> <img src="media/11/image34.png" style="width:4.37431in;height:1.75in" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>• Calculate aircraft drag and prop efficiency as</p>
+<p> </p>
+<p> <img src="media/11/image35.png" style="width:0.94792in;height:0.39583in" /></p>
+<p> </p>
+<p> </p>
+<p>• This technique assumes the same <em>η</em> for both tests and is valid if <em>J</em> is constant and the <em>C<sub>P</sub></em> change is small. The drag device must therefore be small enough to not violate this assumption, yet large enough for the change in <em>SHP</em> to be measurable on engine instruments.</p>
+<p> </p>
+<p><img src="media/11/image36.png" style="width:1.1875in;height:0.40625in" /></p>
+<p><strong>11.8 References</strong></p>
+<p><strong> </strong></p>
+<p>11.8.1 Roberts, Sean, “Light Aircraft Performance for Test Pilots and Flight Test Engineers,” Flight Research Inc., Mojave CA, 1982.</p>
+<p> </p>
+<p>11.8.2 anon., Hamilton Standard Propeller Efficiency Charts (a.k.a.Redbook), PDB 6101.</p>
+<p> </p>
+<p>11.8.3 Von Mises, Richard, “Theory of Flight,” McGraw-Hill, 1945.</p>
+<p> </p>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="reciprocating-engines.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="fixed-wing-performance-standardization.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

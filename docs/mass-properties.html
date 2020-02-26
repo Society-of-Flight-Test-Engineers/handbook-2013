@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>7 7 Mass Properties** | Flight Test Engineering Reference Handbook</title>
+  <meta name="description" content="7 7 Mass Properties** | Flight Test Engineering Reference Handbook" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="7 7 Mass Properties** | Flight Test Engineering Reference Handbook" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="media/media/image1.jpg" />
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="7 7 Mass Properties** | Flight Test Engineering Reference Handbook" />
+  
+  
+  <meta name="twitter:image" content="media/media/image1.jpg" />
+
+<meta name="author" content="Society of Flight Test Engineers" />
+
+
+<meta name="date" content="2013-01-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="axis-systems-and-transformations.html"/>
+<link rel="next" href="motionvibration-analysis.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#contributors"><i class="fa fa-check"></i>Contributors</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#editors"><i class="fa fa-check"></i>Editors</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#feedback"><i class="fa fa-check"></i>Feedback</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#publication-policy"><i class="fa fa-check"></i>Publication Policy</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#section-index"><i class="fa fa-check"></i>Section Index</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="general-information.html"><a href="general-information.html"><i class="fa fa-check"></i><b>1</b> General Information</a><ul>
+<li class="chapter" data-level="1.1" data-path="general-information.html"><a href="general-information.html#unit-conversions"><i class="fa fa-check"></i><b>1.1</b> Unit Conversions</a></li>
+<li class="chapter" data-level="1.2" data-path="general-information.html"><a href="general-information.html#greek-alphabet"><i class="fa fa-check"></i><b>1.2</b> Greek Alphabet</a></li>
+<li class="chapter" data-level="1.3" data-path="general-information.html"><a href="general-information.html#greek-symbols-used-for-aircraft"><i class="fa fa-check"></i><b>1.3</b> Greek Symbols Used for Aircraft</a></li>
+<li class="chapter" data-level="1.4" data-path="general-information.html"><a href="general-information.html#common-subscripts"><i class="fa fa-check"></i><b>1.4</b> Common Subscripts</a></li>
+<li class="chapter" data-level="1.5" data-path="general-information.html"><a href="general-information.html#common-abbreviations-raw"><i class="fa fa-check"></i><b>1.5</b> Common Abbreviations (raw)</a></li>
+<li class="chapter" data-level="1.6" data-path="general-information.html"><a href="general-information.html#sign-conventions-raw"><i class="fa fa-check"></i><b>1.6</b> Sign Conventions (raw)</a></li>
+<li class="chapter" data-level="1.7" data-path="general-information.html"><a href="general-information.html#thermodynamics-relations"><i class="fa fa-check"></i><b>1.7</b> Thermodynamics Relations</a><ul>
+<li class="chapter" data-level="1.7.1" data-path="general-information.html"><a href="general-information.html#thermodynamic-definitions"><i class="fa fa-check"></i><b>1.7.1</b> Thermodynamic Definitions</a></li>
+<li class="chapter" data-level="1.7.2" data-path="general-information.html"><a href="general-information.html#thermodynamic-symbols"><i class="fa fa-check"></i><b>1.7.2</b> Thermodynamic Symbols</a></li>
+<li class="chapter" data-level="1.7.3" data-path="general-information.html"><a href="general-information.html#thermodynamic-laws"><i class="fa fa-check"></i><b>1.7.3</b> Thermodynamic Laws</a></li>
+</ul></li>
+<li class="chapter" data-level="1.8" data-path="general-information.html"><a href="general-information.html#mechanics-relations"><i class="fa fa-check"></i><b>1.8</b> Mechanics Relations</a><ul>
+<li class="chapter" data-level="1.8.1" data-path="general-information.html"><a href="general-information.html#mechanics-symbols"><i class="fa fa-check"></i><b>1.8.1</b> Mechanics Symbols</a></li>
+<li class="chapter" data-level="1.8.2" data-path="general-information.html"><a href="general-information.html#newtons-laws"><i class="fa fa-check"></i><b>1.8.2</b> Newton’s Laws</a></li>
+<li class="chapter" data-level="1.8.3" data-path="general-information.html"><a href="general-information.html#planar-kinetics-work-power-and-energy"><i class="fa fa-check"></i><b>1.8.3</b> Planar Kinetics, Work, Power and Energy</a></li>
+<li class="chapter" data-level="1.8.4" data-path="general-information.html"><a href="general-information.html#planar-kinematics-at-constant-acceleration"><i class="fa fa-check"></i><b>1.8.4</b> Planar Kinematics at Constant Acceleration</a></li>
+<li class="chapter" data-level="1.8.5" data-path="general-information.html"><a href="general-information.html#curvilinear-motion-with-constant-acceleration-and-radius"><i class="fa fa-check"></i><b>1.8.5</b> Curvilinear motion with constant acceleration and radius</a></li>
+<li class="chapter" data-level="1.8.6" data-path="general-information.html"><a href="general-information.html#aircraft-in-level-turn"><i class="fa fa-check"></i><b>1.8.6</b> Aircraft in level turn</a></li>
+<li class="chapter" data-level="1.8.7" data-path="general-information.html"><a href="general-information.html#level-turn-kinematics-character"><i class="fa fa-check"></i><b>1.8.7</b> Level Turn Kinematics Character</a></li>
+<li class="chapter" data-level="1.8.8" data-path="general-information.html"><a href="general-information.html#gyroscopic-motion"><i class="fa fa-check"></i><b>1.8.8</b> Gyroscopic Motion</a></li>
+</ul></li>
+<li class="chapter" data-level="1.9" data-path="general-information.html"><a href="general-information.html#international-phonetic-alphabet-and-morse-code"><i class="fa fa-check"></i><b>1.9</b> International Phonetic Alphabet and Morse Code</a></li>
+<li class="chapter" data-level="1.10" data-path="general-information.html"><a href="general-information.html#section-1-references"><i class="fa fa-check"></i><b>1.10</b> Section 1 References</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="mathematics.html"><a href="mathematics.html"><i class="fa fa-check"></i><b>2</b> Mathematics</a><ul>
+<li class="chapter" data-level="2.1" data-path="mathematics.html"><a href="mathematics.html#algebra"><i class="fa fa-check"></i><b>2.1</b> Algebra</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="mathematics.html"><a href="mathematics.html#laws"><i class="fa fa-check"></i><b>2.1.1</b> Laws</a></li>
+<li class="chapter" data-level="2.1.2" data-path="mathematics.html"><a href="mathematics.html#identities"><i class="fa fa-check"></i><b>2.1.2</b> Identities</a></li>
+<li class="chapter" data-level="2.1.3" data-path="mathematics.html"><a href="mathematics.html#equations"><i class="fa fa-check"></i><b>2.1.3</b> Equations</a></li>
+<li class="chapter" data-level="2.1.4" data-path="mathematics.html"><a href="mathematics.html#interest-and-annuities"><i class="fa fa-check"></i><b>2.1.4</b> Interest And Annuities</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="mathematics.html"><a href="mathematics.html#geometry"><i class="fa fa-check"></i><b>2.2</b> Geometry</a></li>
+<li class="chapter" data-level="2.3" data-path="mathematics.html"><a href="mathematics.html#trigonometery-raw"><i class="fa fa-check"></i><b>2.3</b> Trigonometery (raw)</a></li>
+<li class="chapter" data-level="2.4" data-path="mathematics.html"><a href="mathematics.html#matrix-algebra-raw"><i class="fa fa-check"></i><b>2.4</b> Matrix Algebra (raw)</a></li>
+<li class="chapter" data-level="2.5" data-path="mathematics.html"><a href="mathematics.html#vector-algebra"><i class="fa fa-check"></i><b>2.5</b> Vector Algebra</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="mathematics.html"><a href="mathematics.html#addition"><i class="fa fa-check"></i><b>2.5.1</b> Addition</a></li>
+<li class="chapter" data-level="2.5.2" data-path="mathematics.html"><a href="mathematics.html#subtraction"><i class="fa fa-check"></i><b>2.5.2</b> Subtraction</a></li>
+<li class="chapter" data-level="2.5.3" data-path="mathematics.html"><a href="mathematics.html#scalar-multiplication"><i class="fa fa-check"></i><b>2.5.3</b> Scalar Multiplication</a></li>
+<li class="chapter" data-level="2.5.4" data-path="mathematics.html"><a href="mathematics.html#dot-product"><i class="fa fa-check"></i><b>2.5.4</b> Dot Product</a></li>
+<li class="chapter" data-level="2.5.5" data-path="mathematics.html"><a href="mathematics.html#norm"><i class="fa fa-check"></i><b>2.5.5</b> Norm</a></li>
+<li class="chapter" data-level="2.5.6" data-path="mathematics.html"><a href="mathematics.html#vector-cross-product"><i class="fa fa-check"></i><b>2.5.6</b> Vector Cross Product</a></li>
+<li class="chapter" data-level="2.5.7" data-path="mathematics.html"><a href="mathematics.html#vector-differentiation"><i class="fa fa-check"></i><b>2.5.7</b> Vector Differentiation</a></li>
+<li class="chapter" data-level="2.5.8" data-path="mathematics.html"><a href="mathematics.html#motion-of-a-point-using-two-reference-systems-raw"><i class="fa fa-check"></i><b>2.5.8</b> Motion of a point using two reference systems (raw)</a></li>
+<li class="chapter" data-level="2.5.9" data-path="mathematics.html"><a href="mathematics.html#motion-of-a-point-using-one-reference-system-raw"><i class="fa fa-check"></i><b>2.5.9</b> Motion of a point using one reference system (raw)</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="mathematics.html"><a href="mathematics.html#probability-and-statistics"><i class="fa fa-check"></i><b>2.6</b> Probability and Statistics</a></li>
+<li class="chapter" data-level="2.7" data-path="mathematics.html"><a href="mathematics.html#standard-series-raw"><i class="fa fa-check"></i><b>2.7</b> Standard Series (raw)</a></li>
+<li class="chapter" data-level="2.8" data-path="mathematics.html"><a href="mathematics.html#derivative-table-raw"><i class="fa fa-check"></i><b>2.8</b> Derivative Table (raw)</a></li>
+<li class="chapter" data-level="2.9" data-path="mathematics.html"><a href="mathematics.html#integral-table-raw"><i class="fa fa-check"></i><b>2.9</b> Integral Table (raw)</a></li>
+<li class="chapter" data-level="2.10" data-path="mathematics.html"><a href="mathematics.html#laplace-table-raw"><i class="fa fa-check"></i><b>2.10</b> Laplace Table (raw)</a></li>
+<li class="chapter" data-level="2.11" data-path="mathematics.html"><a href="mathematics.html#references"><i class="fa fa-check"></i><b>2.11</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html"><i class="fa fa-check"></i><b>3</b> Universe Earth Atmospheric</a><ul>
+<li class="chapter" data-level="3.1" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html#properties"><i class="fa fa-check"></i><b>3.1</b> Properties</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="pitot-statics.html"><a href="pitot-statics.html"><i class="fa fa-check"></i><b>4</b> Pitot Statics</a><ul>
+<li class="chapter" data-level="" data-path="pitot-statics.html"><a href="pitot-statics.html#common-nomenclature"><i class="fa fa-check"></i>Common Nomenclature</a></li>
+<li class="chapter" data-level="4.1" data-path="pitot-statics.html"><a href="pitot-statics.html#subsonic-airspeed-and-mach-equation"><i class="fa fa-check"></i><b>4.1</b> Subsonic Airspeed and Mach Equation</a></li>
+<li class="chapter" data-level="4.2" data-path="pitot-statics.html"><a href="pitot-statics.html#scale-altitude-compressibility-correction"><i class="fa fa-check"></i><b>4.2</b> Scale Altitude (Compressibility ) Correction</a></li>
+<li class="chapter" data-level="4.3" data-path="pitot-statics.html"><a href="pitot-statics.html#subsonic-relations-between-compressible-and-incompressible-dynamic-pressure"><i class="fa fa-check"></i><b>4.3</b> Subsonic Relations Between Compressible and Incompressible Dynamic Pressure</a></li>
+<li class="chapter" data-level="4.4" data-path="pitot-statics.html"><a href="pitot-statics.html#supersonic-airspeed-and-mach-equations"><i class="fa fa-check"></i><b>4.4</b> Supersonic Airspeed and Mach Equations</a></li>
+<li class="chapter" data-level="4.5" data-path="pitot-statics.html"><a href="pitot-statics.html#total-temperature-equation"><i class="fa fa-check"></i><b>4.5</b> Total Temperature Equation</a></li>
+<li class="chapter" data-level="4.6" data-path="pitot-statics.html"><a href="pitot-statics.html#altimeter-equation"><i class="fa fa-check"></i><b>4.6</b> Altimeter Equation</a></li>
+<li class="chapter" data-level="4.7" data-path="pitot-statics.html"><a href="pitot-statics.html#position-error-test-methods"><i class="fa fa-check"></i><b>4.7</b> Position Error Test Methods**</a><ul>
+<li class="chapter" data-level="4.7.1" data-path="pitot-statics.html"><a href="pitot-statics.html#fly-by"><i class="fa fa-check"></i><b>4.7.1</b> Fly-by</a></li>
+<li class="chapter" data-level="4.7.2" data-path="pitot-statics.html"><a href="pitot-statics.html#ground-course-method"><i class="fa fa-check"></i><b>4.7.2</b> Ground Course Method</a></li>
+<li class="chapter" data-level="4.7.3" data-path="pitot-statics.html"><a href="pitot-statics.html#trailing-conebomb-method"><i class="fa fa-check"></i><b>4.7.3</b> Trailing Cone/Bomb Method</a></li>
+<li class="chapter" data-level="4.7.4" data-path="pitot-statics.html"><a href="pitot-statics.html#gps-methods"><i class="fa fa-check"></i><b>4.7.4</b> 4.7.4 GPS Methods</a></li>
+</ul></li>
+<li class="chapter" data-level="4.8" data-path="pitot-statics.html"><a href="pitot-statics.html#position-error-far-2325.1323-and-.1325jar-certification"><i class="fa fa-check"></i><b>4.8</b> Position Error FAR 23/25.1323 and .1325/JAR Certification</a></li>
+<li class="chapter" data-level="4.9" data-path="pitot-statics.html"><a href="pitot-statics.html#pec-correction-process-flow-chart"><i class="fa fa-check"></i><b>4.9</b> PEC Correction Process Flow Chart</a></li>
+<li class="chapter" data-level="4.10" data-path="pitot-statics.html"><a href="pitot-statics.html#airspeedaltitudemach-graphic-relation"><i class="fa fa-check"></i><b>4.10</b> Airspeed/Altitude/Mach Graphic Relation</a></li>
+<li class="chapter" data-level="4.11" data-path="pitot-statics.html"><a href="pitot-statics.html#effect-of-errors-on-calibrated-airspeed-and-altitude"><i class="fa fa-check"></i><b>4.11</b> Effect of Errors on Calibrated Airspeed and Altitude</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="aerodynamics.html"><a href="aerodynamics.html"><i class="fa fa-check"></i><b>5</b> 5 Aerodynamics**</a></li>
+<li class="chapter" data-level="6" data-path="axis-systems-and-transformations.html"><a href="axis-systems-and-transformations.html"><i class="fa fa-check"></i><b>6</b> 6 Axis Systems and Transformations**</a></li>
+<li class="chapter" data-level="7" data-path="mass-properties.html"><a href="mass-properties.html"><i class="fa fa-check"></i><b>7</b> 7 Mass Properties**</a></li>
+<li class="chapter" data-level="8" data-path="motionvibration-analysis.html"><a href="motionvibration-analysis.html"><i class="fa fa-check"></i><b>8</b> 8 Motion/Vibration Analysis**</a></li>
+<li class="chapter" data-level="9" data-path="material-strength.html"><a href="material-strength.html"><i class="fa fa-check"></i><b>9</b> 9 Material Strength**</a></li>
+<li class="chapter" data-level="10" data-path="reciprocating-engines.html"><a href="reciprocating-engines.html"><i class="fa fa-check"></i><b>10</b> 10 Reciprocating Engines**</a></li>
+<li class="chapter" data-level="11" data-path="propellers.html"><a href="propellers.html"><i class="fa fa-check"></i><b>11</b> 11 Propellers**</a></li>
+<li class="chapter" data-level="12" data-path="fixed-wing-performance-standardization.html"><a href="fixed-wing-performance-standardization.html"><i class="fa fa-check"></i><b>12</b> 12 Fixed-Wing Performance Standardization**</a></li>
+<li class="chapter" data-level="13" data-path="acoustics.html"><a href="acoustics.html"><i class="fa fa-check"></i><b>13</b> 13 Acoustics**</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Flight Test Engineering Reference Handbook</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="mass-properties" class="section level1">
+<h1><span class="header-section-number">7</span> 7 Mass Properties**</h1>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p> </p>
+<p>7.1 Abbreviations and Terminology</p>
+<p> </p>
+<p>7.2 Longitudinal &amp; Lateral Center of Gravity Measurement</p>
+<p> </p>
+<p>7.3 Vertical Center of Gravity Measurement</p>
+<p> </p>
+<p>7.4 Moment &amp; Product of Inertia Measurement</p>
+<p>7.4.1 Radius of Gyration</p>
+<p>Aircraft moment of inertia summary</p>
+<p>7.4.2 Parallel Axis Theorem Applications</p>
+<p>determine modified moment of inertia,</p>
+<p>determine modified products of inertia,</p>
+<p>correct the moment of inertia to the actual <em>cg</em> axis</p>
+<p>7.4.3 Measuring Roll Inertia, <em>I<sub>xb</sub></em></p>
+<p>7.4.4 Measuring Pitch Inertia, <em>I<sub>yb</sub></em></p>
+<p>7.4.5 Measuring Yaw Inertia, <em>I<sub>zb</sub></em></p>
+<p>7.4.6 Measuring Axis of Inclination and <em>I<sub>xz</sub></em></p>
+<p>7.4.7 Guidelines for Spring Oscillation Method</p>
+<p>7.4.8 Swing Method</p>
+<p> </p>
+<p>7.5 References</p>
+<p> </p>
+<p><strong>7.1 Abbreviations and Terminology Abbreviations</strong></p>
+<p>* *</p>
+<p><em>a</em> perpendicular distance from the spring line of action to the oscillation axis (<em>ft</em>).</p>
+<p><em>cg</em> center of gravity</p>
+<p><em>f</em> measured frequency of oscillation (cycles/sec)</p>
+<p><em>g</em> Earth’s acceleration due to gravity (<em>g</em> = 32.172 ft/sec<sup>2</sup>)</p>
+<p><em>h</em> vertical component of the perpendicular distance from the <em>cg</em> to the oscillation axis.</p>
+<p><em>I<sub>cg </sub></em>moment of inertia any axis passing through the <em>cg</em></p>
+<p><em>I<sub>xb</sub></em> moment of inertia about aircraft body x-axis</p>
+<p><em>I<sub>yb</sub></em> moment of inertia about aircraft body y-axis</p>
+<p><em>I<sub>zb</sub></em> moment of inertia about aircraft body z-axis</p>
+<p><em>I<sub>xz</sub></em> product of inertia in aircraft body x-z plane</p>
+<p><em>I<sub>o</sub></em> moment of inertia about oscillation axis</p>
+<p><em>K<sub>o</sub></em> component of spring stiffness perpendicular to vehicle motion.</p>
+<p><em>k</em> spring constant (<em>lb/ft</em>)</p>
+<p><em>K<sub>tot</sub></em> total radius of gyration (includes effect of offset pivot)</p>
+<p>L rolling moment</p>
+<p><em>l<sub>eff</sub></em> effective pendulum length</p>
+<p><em>MAC</em> mean aerodynamic chord</p>
+<p><em>METO</em> maximum power (except for takeoff)</p>
+<p><em>m</em> mass</p>
+<p>N yawing moment</p>
+<p><em>T</em> period of oscillation</p>
+<p><em>p</em> roll rate</p>
+<p><em>r</em> yaw rate</p>
+<p>∆<em>I<sub>te</sub></em> correction for test equipment mass (slug-<em>ft</em>2)</p>
+<p>∆<em>I<sub>am</sub></em> equivalent moment of inertia contribution of the air</p>
+<p>(slug-<em>ft</em>2)</p>
+<p><em>δ</em> tilt of spring assembly (measured positive if tilted nose-down relative to local horizontal).</p>
+<p><em>ε</em> inclination of principle axis (positive if tilted down).</p>
+<p><em>φ</em> angle between aircraft y-axis and line connecting aircraft <em>cg</em> with spring attach points.</p>
+<p><em>ω<sub>d</sub></em> damped frequency of oscillation (rad/sec) =2<em>πf</em></p>
+<p><em>ω<sub>n </sub></em> natural frequency of oscillation (rad/sec)</p>
+<p> </p>
+<p><strong>Terminology</strong></p>
+<p> </p>
+<p>Allowable <em>cg</em> range Documented on Type Certificate Data Sheet. May be different for takeoff vs landing. Forward limit usually determined by control power limitations, aft limit usually deter mined by stability requirements.</p>
+<p> </p>
+<p>datum The manufacturer defined reference plane used for distance calculations.</p>
+<p> </p>
+<p>empty weight Basic aircraft weight with only equipment on board. (without crew, passengers, or fuel). This weight may or may not inlcude oil weight, depending on civil certification date.</p>
+<p> </p>
+<p>empty weight <em>cg</em> range The allowable <em>cg</em> locations for an empty aircraft. This is defined by the manufacturer to help assure that a normally loaded aircraft will have an acceptable total <em>cg</em> location.</p>
+<p> </p>
+<p>lateral Along the aircraft y-axis.</p>
+<p> </p>
+<p>longitudinal Along the aircraft x-axis</p>
+<p> </p>
+<p>maximum weight Maximum allowable weight. Usually implies takeoff weight, but may apply to landing or in-flight weight. conditions after aerial refueling.</p>
+<p> </p>
+<p>minimum fuel A calculated value that represents the minimum amount of fuel any airplane should have while retaining appropriate flight reserves. Calculated as</p>
+<p>min fuel <span class="math display">\[*lbs*\]</span> = 0.5<em>METO</em> <span class="math display">\[*hp*\]</span></p>
+<p> </p>
+<p>moment arm Distance between datum plane and <em>cg</em> of object.</p>
+<p> </p>
+<p>moment Product of moment arm and force (weight)</p>
+<p> </p>
+<p>tare The bias in weight scales due to test equipment weight or due to scale calibration errors.</p>
+<p> </p>
+<p>useful load Maximum takeoff weight minus empty weight.</p>
+<p> </p>
+<p>weighing point Location where aircraft is supported during the <em>cg</em> measurement.</p>
+<p> </p>
+<p><strong>7.2 Longitudinal &amp; Lateral Center of Gravity Measurement</strong></p>
+<p> </p>
+<p><strong>Test set-up procedures for empty weight <em>cg</em> determination</strong></p>
+<blockquote>
+<p>1. Clean aircraft including any mud or water seepage.</p>
+<p>2. Ensure all aircraft equipment in place.</p>
+<p>3. Drain to only residual oil (for older aircraft that include only</p>
+<p>residual oil as part of empty weight calculations) or fill to full oil (newer aircraft include full oil for calculations).</p>
+<p>4. Drain to residual fuel only.</p>
+<p>5. Rig all equipment in a closed building to eliminate wind effects.</p>
+<p>6 Calibrate scales.</p>
+<p>7. Record tare (bias in scale readings, may be due to wheel chocks, jack stands, or other test equipment)</p>
+<p>8. Place aircraft on scales and level according to manufacturer’s specifications.</p>
+<p>9. Measure longitudinal and lateral distances between scale centers and datum. NOTE: distances behind datum are positive, distances ahead of datum are negative.</p>
+<p>10. Record each scale weight</p>
+<p> </p>
+<p><strong>Calculating longitudinal center of gravity</strong></p>
+<p>11. Subtract the tare from each scale reading to get the correct weight.</p>
+<p>12. Multiply each scale’s corrected weight by its distance to the</p>
+<p>datum. This product is the moment for each scale.</p>
+<p>13. Sum the moments in step 12.</p>
+<p>14. Sum the corrected weights.</p>
+<p>15. Divide the total moment by the total weight <span class="math display">\[step 13/step 14\]</span> to</p>
+<p>obtain the distance from the datum to the <em>cg.</em> Some aircraft use this distance for all <em>cg</em> references (typically presented in inches).</p>
+<p>16. Other aircraft refer <em>cg</em> location to a percent of the mean aerodynamic chord (<em>MAC</em>). In this case, subtract the distance between the datum and the leading edge of the <em>MAC</em> from the distance in step 15.</p>
+<p>17. Divide the distance in step 16 by the length of the MAC. This number is the fraction of the cg location along the MAC.</p>
+<p>18 To present the above fraction in terms of % <em>MAC</em>, multiply by 100.</p>
+</blockquote>
+<p> </p>
+<p><img src="media/07/image1.svg" style="width:3.38889in;height:1.77083in" /><strong>Example <em>cg</em> calculations</strong></p>
+<p> </p>
+<p>320 <em>lbs</em></p>
+<p>  816 <em>lbs</em> right</p>
+<p>810 <em>lbs</em> left</p>
+<p> <img src="media/07/image2.svg" style="width:2.84236in;height:1.39861in" /><img src="media/07/image3.svg" style="width:2.95972in;height:1.44792in" /><img src="media/07/image4.svg" style="width:2.94792in;height:1.44306in" /></p>
+<p><strong>Correcting empty weight <em>cg</em> for changes in fuel, passengers,</strong></p>
+<p><strong>equipment or stores.</strong></p>
+<p> </p>
+<p>1. Note aircraft empty weight &amp; empty weight <em>cg</em>. Multiply these</p>
+<p>values to obtain the empty weight moment.</p>
+<p>2. Note the weight and moment arm for each item added to or subtracted from the aircraft (items subtracted are listed as negative weights).</p>
+<p>3. Multiply each item’s weight and arm to determine its moment.</p>
+<p>4. Sum each item’s moment in step 3 with the aircraft empty weight moment.</p>
+<p>5. Sum each item’s weight with the aircraft empty weight.</p>
+<p>6. Calculate the new <em>cg</em> as <span class="math display">\[step 4/step 5\]</span>.</p>
+<p><strong>Example <em>cg</em> corrections:</strong></p>
+<p>Given aircraft with empty weight = 1,075 <em>lbs</em> and <em>cg</em> @ 84 inches. Add pilot (170 <em>lbs</em>, @85.5“), fuel (75 <em>lbs</em> @94”), and oil (15 <em>lbs</em> @ 31.7").</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><img src="media/07/image5.svg" style="width:2.825in;height:1.63056in" /> </p>
+<p> </p>
+<p>Given aircraft with empty weight = 1,220 <em>lbs</em> and <em>cg</em> @ 25 inches. Add radio (15 <em>lbs</em>, @ 65“), and replace 11 <em>lb</em> generator with 14 <em>lb</em> generator at same 21.5” location (in front of datum-located on firewall).</p>
+<p><img src="media/07/image6.svg" style="width:3.29167in;height:1.72153in" /> </p>
+<p><strong>7.3 Vertical Center of Gravity Measurement</strong></p>
+<p><strong> </strong></p>
+<p>1. Drain or block landing gear struts to keep distances <em>G</em>, <em>J</em>, and <em>V</em> constant.</p>
+<p>2. Level the fuselage and measure the weight on the nose wheel (<em>F<sub>o</sub></em>).</p>
+<p>3. Tilt the aircraft at various (<em>θ</em>) measure nose wheel weight (<em>F</em>).</p>
+<p>The change in nose wheel force can be written as</p>
+<p> </p>
+<p> </p>
+<p> <img src="media/07/image7.png" style="width:6.5in;height:2.58542in" /></p>
+<p> <img src="media/07/image8.svg" style="width:2.0375in;height:0.41597in" /></p>
+<p> </p>
+<p>4. Plot (<em>F<sub>o</sub>-F</em>) vs the term in</p>
+<p>parenthesis.</p>
+<p>5. Slope of line equals term in brackets.</p>
+<p>6. Solve for <em>V</em> after measuring <em>B</em>, <em>C</em>, <em>G,</em></p>
+<p>and the slope.</p>
+<p>• This method</p>
+<p>applies to "gear</p>
+<p>down" <em>cg</em> .</p>
+<p>• For “gear up” add the manufacturer's</p>
+<p>prediction of the <em>cg</em> shift to this result.</p>
+<p> </p>
+<p><img src="media/07/image9.svg" style="width:3.17083in;height:2.69792in" /></p>
+<p><strong>7.4 Moment &amp; Product of Inertia Measurement</strong></p>
+<p> </p>
+<p>The moment of inertia about any axis of a body is the summation of the product of every element’s mass and distance squared. Moments of inertia represent the resistance to rotational momentum changes.</p>
+<p> </p>
+<p> </p>
+<p><img src="media/07/image13.svg" style="width:2.16458in;height:1.28264in" /> <img src="media/07/image14.svg" style="width:1.20347in;height:0.92708in" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>Products of inertia are also calculated about any body axes. They represent the symmetry of mass distribution (comparing opposing quadrants).</p>
+<p> </p>
+<p> </p>
+<p> <img src="media/07/image15.svg" style="width:1.22917in;height:0.97917in" /><img src="media/07/image16.svg" style="width:1.79236in;height:1.07083in" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>• Aircraft moments and products of inertia are calculated using body axes as the reference system.</p>
+<p> </p>
+<p>• Careful</p>
+<p>Documentation can yield</p>
+<p>inertial</p>
+<p>predictions</p>
+<p>within about</p>
+<p><img src="media/07/image17.svg" style="width:3.37222in;height:2.33681in" /> 1-5% of actual.</p>
+<p><strong> </strong></p>
+<p><strong> 7.4.1 Radius of Gyration</strong></p>
+<p>* *</p>
+<p>• Dimensions of all <em>I</em> terms are <span class="math display">\[slugs-*ft^2^*\]</span>.</p>
+<p>• Aircraft moments &amp; products of inertia are generally assumed to be constant.</p>
+<p>• For moments of inertia, mathematically replace <em>I</em> with the product of total mass times some constant with the dimensions of square feet.</p>
+<p>• This constant is called the “radius of gyration” (<em>k</em>)</p>
+<p>• If all the mass were concentrated at this radius, it would have the same moment of inertia as the actual body.</p>
+<p> </p>
+<p> <img src="media/07/image18.svg" style="width:1.88542in;height:0.34028in" /></p>
+<p> </p>
+<p><strong>Aircraft moment of inertia summary</strong></p>
+<p>I<sub>zb</sub> is always the largest value<em>.</em></p>
+<p><em>I<sub>yb</sub>&gt; I<sub>xb</sub></em> for fuselage-loaded aircraft</p>
+<p><em>I<sub>xb</sub>&gt; I<sub>yb </sub></em>for wing-loaded aircraft.</p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> </strong><img src="media/07/image19.svg" style="width:4.5in;height:2.375in" /></p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p>• Vehicle mass distribution can be represented with concentrated “dumbbell” masses.</p>
+<p>• The lines connecting the opposing dumbbells are the <strong>principle axes</strong>.</p>
+<p>• When the principle axis lies along some line different from the body axis, the products of inertia are non-zero.</p>
+<p>• If the orientation of the principle axes and the moments of inertia about theses axes are known, then the moments of inertia about any other axis system can be calculated.</p>
+<p><strong> </strong></p>
+<p> </p>
+<p><strong> 7.4.2 Parallel Axis Theorem Applications</strong></p>
+<p><strong> </strong></p>
+<p>Shows how to <strong>determine modified moment of inertia</strong> after some</p>
+<p>component alterations. Example: Correct original aircraft roll inertia, <em>I<sub>xb</sub></em><sub>,</sub> to a modified value that accounts for the addition of wingtip fuel tanks.</p>
+<p><img src="media/07/image20.svg" style="width:1.68403in;height:0.28611in" /> </p>
+<p> </p>
+<p> </p>
+<p>• ∆<em>I<sub>x comp</sub></em> is composed of two components</p>
+<p><img src="media/07/image21.svg" style="width:2.09028in;height:0.32847in" /> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>• <em>I<sub>x comp</sub></em> is the moment of inertia of just the new component about an axis which is parallel to the aircraft axis in question (this axis should run through the component’s <em>cg</em>)<em>.</em></p>
+<p>• <em>I<sub>x comp</sub></em> can be determined analytically by summing the inertias of every mass element throughout the component (documented for simple shapes in various engineering handbooks).</p>
+<p>• <em>I<sub>x comp</sub></em> can be determined experimentally by “swinging,” (sect’n 7.4.8).</p>
+<p>• <em>I<sub>x comp</sub></em> is usually much smaller than <em>m<sub>comp</sub> r<sup>2</sup></em> and can often be omitted.</p>
+<p>• <em>m<sub>comp</sub></em> is the component’s mass</p>
+<p>•  <em>r</em> is the distance from the axis in question to the component’s <em>cg</em>.</p>
+<p> </p>
+<p>Similarly, the parallel axis theorem shows how to <strong>determine modified products of inertia</strong> after some component alterations</p>
+<p><img src="media/07/image22.svg" style="width:2.45069in;height:0.27222in" /> </p>
+<p>* *</p>
+<p><em>x</em> and <em>z</em> are the distances from the component <em>cg</em> to the reference axes.</p>
+<p> </p>
+<p>Moments of inertia are calculated about a set of reference axes which all intersect at the reference <em>cg</em>. In general, however, the actual <em>cg</em> does not lie exactly at this reference <em>cg.</em> The parallel axis theorem shows how to <strong>correct the moment of inertia to the actual <em>cg</em> axis</strong><em>.</em> As an example, the rolling moment of inertia about the actual <em>cg</em> (<em>I<sub>xcg</sub></em>) is calculated from the reference <em>I<sub>xb</sub></em> as follows.</p>
+<p><img src="media/07/image23.svg" style="width:1.43403in;height:0.25139in" /> </p>
+<p> </p>
+<p> </p>
+<p>where <em>m</em> = total mass</p>
+<p><em>y</em> = lateral distance between <em>cg</em> and aircraft x-axis.</p>
+<p><em>z</em> = vertical distance between <em>cg</em> and aircraft x-axis.</p>
+<p> </p>
+<p> </p>
+<p><strong>7.4.3 Measuring Roll Inertia, <em>I<sub>xb</sub></em></strong> (spring oscillation method)</p>
+<p><strong> </strong></p>
+<p>1. Balance aircraft on prism-like “knife edges” that support wooden</p>
+<p>cradles that conform to aircraft shape.</p>
+<p>2. Attach springs (tension springs illustrated here) so they are parallel to</p>
+<p>line <em>a</em> as shown.</p>
+<p> </p>
+<p> </p>
+<p><img src="media/07/image24.svg" style="width:4.47917in;height:1.52847in" /> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><img src="media/07/image25.svg" style="width:4.45278in;height:1.69375in" /> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>3. Allow aircraft to oscillate freely in roll after a small disturbance.</p>
+<p>4. Use <strong>automatic recording</strong> to determine period of oscillations (<em>T</em>).</p>
+<p>5. Calculate damped frequency as</p>
+<p><img src="media/07/image26.svg" style="width:0.62639in;height:0.42361in" /> </p>
+<p> </p>
+<p> </p>
+<p>6. Record peak magnitude of each oscillation.</p>
+<p>7. Calculate ζ using transient peak ratio method (see “Motion Analy sis,” Section 8 of this handbook).</p>
+<p>8. Calculate natural frequency as</p>
+<p><img src="media/07/image27.svg" style="width:0.90764in;height:0.50347in" /> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><strong>Measuring Roll Inertia (continued)</strong></p>
+<p><strong> </strong></p>
+<p>9. Measure the spring’s stiffness (<em>K<sub>o</sub></em>)</p>
+<p> </p>
+<p>10. Calculate inertia about oscillation axis (<em>I<sub>o</sub></em>) as</p>
+<p> </p>
+<p> <img src="media/07/image28.svg" style="width:2.52917in;height:0.48958in" /><img src="media/07/image29.svg" style="width:0.63889in;height:0.51736in" /><img src="media/07/image30.svg" style="width:1.5in;height:0.375in" /></p>
+<p>11. Use parallel axis theorem to correct <em>I<sub>o</sub></em> to a parallel axis passing through the <em>cg.</em></p>
+<p>12. Springs, cradles and attachments hardware will change the moment of inertia. Sum their total into a combined “test equipment inertia” (∆<em>I<sub>te</sub></em>) and subtract this from the above result.</p>
+<p> </p>
+<p>Combining steps 10-12 gives the complete <strong>moment of inertia equation</strong></p>
+<p> </p>
+<p><img src="media/07/image31.svg" style="width:0.59722in;height:0.48333in" /> </p>
+<p> </p>
+<p>where <em>h</em> is the vertical distance between the <em>cg</em> and axis of oscillation and <em>d</em> is the total distance between the <em>cg</em> and the axis of oscillation (<em>d</em> = <em>h</em> in the illustrated roll inertia test setup).</p>
+<p><strong> </strong></p>
+<p><strong>If automatic recording is not available...</strong></p>
+<p>Accomplish steps 1-3 as described for automatic recording case.</p>
+<p>4. Use a stopwatch to time several oscillations and calculate <em>ω<sub>d</sub></em> as before</p>
+<p>5. Measure the spring’s rotational stiffness (<em>K<sub>o</sub></em>)</p>
+<p>6. Approximate inertia using the damped frequency using</p>
+<p> </p>
+<p>7. Use parallel axis theorem to correct <em>I<sub>o</sub></em> to a parallel axis</p>
+<p>passing through the <em>cg.</em></p>
+<p>* *</p>
+<p>8<em>.</em> Correct for effects of test hardware moment of inertia (∆<em>I<sub>te</sub></em>).</p>
+<p>9. To correct for errors in the <em>I<sub>o</sub></em> approximation, apply an "additional mass correction" (∆<em>I<sub>am</sub></em>) which equates the flate plate area damping effect to additional inertia. This correction is detailed in ref. 7.5.3.</p>
+<p> </p>
+<p> </p>
+<p>Combining steps 6-9 gives</p>
+<p> <img src="media/07/image28.svg" style="width:2.52917in;height:0.48958in" /></p>
+<p>Above methods can also be used to determine <em>I<sub>yb</sub></em> and <em>I<sub>zb</sub></em></p>
+<p> </p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> 7.4.4 Measuring Pitch Inertia, <em>I<sub>yb</sub></em></strong> (spring oscillation method)</p>
+<p><strong> </strong></p>
+<p>1. Balance aircraft on knife edges as shown.</p>
+<p> </p>
+<p>2. Attach spring perpendicular to line <em>a</em>. Only one spring is required since the aircraft <em>cg</em> is off-center. Spring must be stiff enough to hold the aircraft in equilibrium as well as provide a restoring moment during oscillations.</p>
+<p> </p>
+<p> </p>
+<p> <img src="media/07/image32.svg" style="width:4.5in;height:1.66667in" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> <img src="media/07/image33.svg" style="width:4.5in;height:1.58333in" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> <img src="media/07/image34.svg" style="width:1.83611in;height:0.42708in" /><img src="media/07/image35.svg" style="width:2.52917in;height:0.48958in" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>Repeat steps 3-12 and apply the moment of inertia equation to determine <em>I<sub>yb</sub></em></p>
+<p><em><sub> </sub></em></p>
+<p><em><sub> </sub></em></p>
+<p><em><sub> </sub></em></p>
+<p><em><sub> </sub></em></p>
+<p>or, for an uninstrumented aircraft,</p>
+<p> </p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> 7.4.5 Measuring Yaw Inertia, <em>I<sub>zb</sub></em></strong> (spring oscillation method)</p>
+<p><strong> </strong></p>
+<p>1. Suspend aircraft as shown: fuselage reference line parallel with floor,</p>
+<p><em>z-</em>body axis coincides with the oscillation axis (<em>h</em> = <em>d</em> = 0).</p>
+<p>For <em>I<sub>zb</sub></em> test, set spring assembly tilt angle parallel to floor (<em>δ </em>= 0).</p>
+<p> </p>
+<p> </p>
+<p><img src="media/07/image36.svg" style="width:4.5in;height:2.57292in" /> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><img src="media/07/image37.svg" style="width:3.83194in;height:3.08333in" />2. Ideal case is where the wing attach points are in line with the aircraft <em>cg</em> as shown. Springs are perpendicular to the AB line and are parallel.</p>
+<p> </p>
+<p> </p>
+<p><strong> Measuring Yaw Inertia (continued)</strong></p>
+<p><strong> </strong></p>
+<p>If not possible to rig wing attach points in line with the <em>cg</em>, then keep the springs parallel to each other and measure the angle φ.  </p>
+<p>€</p>
+<p>• Calculate <em>K<sub>o</sub></em> = <em>k</em> cos <em>φ   </em>where <em>k</em> is the actual spring constant</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> <img src="media/07/image38.svg" style="width:3.15625in;height:3.08333in" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>Repeat steps 3-12 and apply the moment of inertia equation to determine <em>I<sub>zb. </sub></em>Note that distances <em>h</em> and <em>d</em> are zero for a properly suspended aircraft.</p>
+<p> </p>
+<p> </p>
+<p><img src="media/07/image39.svg" style="width:1.36736in;height:0.48958in" /> </p>
+<p> </p>
+<p> </p>
+<p>or, for an uninstrumented aircraft,</p>
+<p> </p>
+<p> </p>
+<p><strong> </strong><img src="media/07/image40.svg" style="width:1.98194in;height:0.50764in" /></p>
+<p><strong> </strong></p>
+<p><strong> 7.4.6 Measuring Axis of Inclination and <em>I<sub>xz</sub></em></strong></p>
+<p><strong> </strong></p>
+<p>• Inclination of principle axis (<em>ε</em>) is positive if it lies in the +<em>xz</em> plane as shown.</p>
+<p> </p>
+<p>• <em>I<sub>xz</sub></em> positive if <em>ε</em> is positive.</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> <img src="media/07/image41.svg" style="width:4.5in;height:2.67708in" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><img src="media/07/image42.svg" style="width:2.13819in;height:0.25139in" />•  From equations of motion</p>
+<p> </p>
+<p>and</p>
+<p><img src="media/07/image43.svg" style="width:2.14514in;height:0.24931in" /></p>
+<p>• When forcing small motions about only the yaw axis, <em>pq</em> and <em>qr</em> are</p>
+<p><img src="media/07/image44.svg" style="width:1.19583in;height:0.23264in" /> negligible, giving</p>
+<p>and</p>
+<p><img src="media/07/image45.svg" style="width:1.03542in;height:0.26528in" /> </p>
+<p>• If <em>ε</em> (and therefore <em>I<sub>xz </sub></em>) is positive, then yawing to the right will</p>
+<p>generate a left rolling moment.</p>
+<p> </p>
+<p>• If <em>ε</em> and <em>I<sub>xz</sub></em> are negative, a right yaw will generate a <em>right</em> moment.</p>
+<p> </p>
+<p><strong> </strong></p>
+<p><strong> Measuring Axis of Inclination and <em>I<sub>xz </sub></em>(continued)</strong></p>
+<p><strong> </strong></p>
+<p>1. Determine <em>I<sub>xz</sub></em> and <em>ε</em> by repeating yaw experiment for different spring</p>
+<p>angles (δ). Use instrumentation to note for each δ.</p>
+<p> </p>
+<p>2 Graphically determine the angle δ<sub>o</sub> at which the restoring vector</p>
+<p>produced by the springs completely counteracts the roll motion.</p>
+<p><img src="media/07/image46.svg" style="width:0.125in;height:0.27222in" /> Plot <span class="math display">\[tan *δ*\]</span> vs as shown.</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><img src="media/07/image47.svg" style="width:4.5in;height:2.5in" /> <img src="media/07/image48.svg" style="width:0.18194in;height:0.39931in" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>3. Determine the point where <img src="media/07/image49.svg" style="width:0.14861in;height:0.32639in" /> equals zero. This occurs at tan<em>δ<sub>o</sub>.</em></p>
+<p>* *</p>
+<p><img src="media/07/image50.svg" style="width:0.875in;height:0.23889in" />4. Calculate the product of inertia using</p>
+<p> </p>
+<p>5. Calculate the inclination of the principle axis using</p>
+<p> </p>
+<p> <img src="media/07/image51.svg" style="width:1.13264in;height:0.45486in" /></p>
+<p> </p>
+<p> </p>
+<p><img src="media/07/image52.svg" style="width:0.125in;height:0.25in" />Note: Since the <em>I<sub>xz</sub></em> test objective is to interpolate to a condition where equals zero, only the ratio is necessary</p>
+<p>and the absolute magnitudes of the accelerations are not reuired. In other words, the roll acceleration sensitivity can be increased to allow for easier measurement of the ratio.</p>
+<p> </p>
+<p><strong>7.4.7 Guidelines for Spring Oscillation Method</strong></p>
+<p> </p>
+<p> </p>
+<p>• Use only small magnitude oscillations</p>
+<p> </p>
+<p>• Keep size and radius of knife edges as small as practical.</p>
+<p> </p>
+<p>• Springs are typically linear except around zero load. Best results</p>
+<p>occur if springs are pre-loaded.</p>
+<p> </p>
+<p>• Choose spring stiffness so oscillation frequency will be within</p>
+<p>instrumentation limits.</p>
+<p> </p>
+<p>• If using a hand recorded stopwatch, best spring stiffness gives about one cycle per second (<em>f</em> = 1).</p>
+<p> </p>
+<p>∗ Estimate the desired spring rate using</p>
+<p> </p>
+<p> <img src="media/07/image53.svg" style="width:1.90486in;height:0.44236in" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>• The purpose of instrumentation is to provide a means for measuring frequency and magnitude. Any of several parameters will be sufficient, including angular displacement, rate or acceleration; or linear acceleration.</p>
+<p> </p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> 7.4.8 Swing Method</strong></p>
+<p><strong> </strong></p>
+<p>1. Suspend component as shown.</p>
+<p><img src="media/07/image54.svg" style="width:2.98264in;height:2.15625in" /> </p>
+<p>2. Measure pendulum length (<em>l</em>), component mass (<em>m ),</em> and the period of oscillation (<em>T</em>).</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><img src="media/07/image55.svg" style="width:0.71389in;height:0.52083in" />• The observed period is a function of the effective pendulum length.</p>
+<p><img src="media/07/image56.svg" style="width:1.28472in;height:0.5in" /> and</p>
+<p>or</p>
+<p><img src="media/07/image57.svg" style="width:0.95833in;height:0.49375in" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>• This effective length is the total radius of gyration <em>l<sub>eff</sub></em> = <em>K<sub>tot </sub></em></p>
+<p> </p>
+<p>• The total moment of inertia about the pivot point is the product of mass and radius of gyration squared. The parallel axis theorem states that this also is the sum of the component’s moment of inertia about its <em>cg</em> plus its mass times the distance between the pivot and the component’s <em>cg</em>.</p>
+<p> </p>
+<p> <img src="media/07/image58.svg" style="width:1.70833in;height:0.27847in" /></p>
+<p> </p>
+<p>3. Solving for the component’s moment of inertia about its own <em>cg</em> gives</p>
+<p><img src="media/07/image59.svg" style="width:3.36458in;height:0.52917in" /> </p>
+<p><strong> 7.5 References</strong></p>
+<p><strong> </strong></p>
+<p>7.5.1 Lawless, Alan R. et al, “Special Topics and Aircraft Subsystems Flight Testing,” <em>Chapter 1, Mass Properties</em>, National Test Pilot School, Mojave, CA, 1999.</p>
+<p> </p>
+<p>7.5.2 Bradfield, Edward N., "Experimental Determination of the Moments of Inertia, Product of Inertia, and Inclination of the Principle Axis of Conventional Aircraft by the Spring Oscillation Method" FTC-TIM- 1001, AFFTC, Edwards AFB, CA, 1971.</p>
+<p> </p>
+<p>7.5.3 Malvestuto, S. F., et al, "Formulas for Additional Mass Corrections to the Moments of Inertia of Air planes" TN 1187, Langley Memorial Aeronautical Laboratory, Langley Field Virginia, 1947.</p>
+<p> </p>
+<p>7.5.4 Lawless, Alan R., "Fixed Wing Flying Qualities Flight Testing" <em>Chapter 7, Equations of Motion</em>, Na tional Test Pilot School Mojave CA, 1998.</p>
+<p> </p>
+<p> </p>
+<p><strong>Additional Reading</strong></p>
+<p> </p>
+<p>7.5.5 Tanner H.L., "Measurement of the Moments of Inertia of an Airplane by a Simplified Method" NACA2201, Ames Aeronautical Laboratory, Moffet Field, CA, 1950.</p>
+<p> </p>
+<p>7.5.6 Woodward, C.R., et al "Handbook of Instructions for Experimentally Determining the Moments of Iner tia of Aircraft by the Spring Oscillation Method" TB-822-F-2, ASTIA AD97104, Cornell Aeronautical Laboratory, Buffalo, New York, 1955.</p>
+<p> </p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="axis-systems-and-transformations.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="motionvibration-analysis.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
