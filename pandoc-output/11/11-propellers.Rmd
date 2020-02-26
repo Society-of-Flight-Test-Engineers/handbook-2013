@@ -1,0 +1,728 @@
+** **
+
+**Section 11 Propellers**
+
+** **
+
+** **
+
+11.1 Abbreviations and Terminology
+
+ 
+
+11.2 Propeller Geometry
+
+ 
+
+11.3 Propeller Coefficients
+
+ 
+
+11.4 Propeller Efficiency and States
+
+** **
+
+11.5 Propeller Theory
+
+ 
+
+11.6 Propeller Modeling Examples
+
+Static Thrust Chart, In-Flight Charts,
+
+Blocking Correction Factor Charts,
+
+Tip Compressibility Factor Charts
+
+ 
+
+11.7 Propeller Flight Test
+
+11.8 References
+
+ 
+
+**11.1 Abbreviations and Terminology**
+
+ 
+
+**Abbreviations**
+
+*AF* activity factor *=*
+
+\* *![][1]
+
+*B* number of blades
+
+*b* blade section width (feet)
+
+*BHP* brake horsepower (measured at engine crankshaft)
+
+*C~LD~* blade section design lift coefficient
+
+\* *
+
+*C~Li~* integrated design lift coefficient =
+
+ ![][2]
+
+*C~P~* power (absorbed) coefficient
+
+*C~T\ ~*thrust coefficient
+
+*D* propeller diameter (feet)
+
+*f~c~* ratio of speed of sound at standard day sea level to speed of sound at operating condition
+
+\* *![][3]
+
+*HP* horsepower (1 *HP* = 550 ft-lb/sec)
+
+G.R. gear ratio, propeller speed/engine speed
+
+J Propeller advance ratio *=V~T~/nD* (nondimensional)
+
+*M* aircraft Mach number
+
+*N* propeller speed, revolutions per minute (*RPM*)
+
+*n* propeller speed, revolutions per second
+
+*N~e~* engine speed, *RPM*
+
+*P~a~* ambient pressure
+
+*P* power output (ft-lb/sec)
+
+*Q* torque (ft-lb)
+
+*q* dynamic pressure
+
+*T* thrust
+
+*T~a~* absolute ambient temperature
+
+*R* blade radius at propeller tip (feet)
+
+*r* radius at blade element (feet)
+
+*SHP* shaft horsepower (measured at propeller shaft)
+
+*T* propeller thrust (pounds)
+
+*V~T~* freestream velocity (ft/sec)
+
+*V~K~* freestream velocity (knots)
+
+*x* fraction of propeller tip radius, *r/R*
+
+*V~tan~* tangential velocity
+
+*V~R~* resultant velocity
+
+*V~tip~* tip speed
+
+*α* local angle of attack
+
+*β*  local blade twist angle, measured between chord and plane of rotation, same as *θ* (degrees).
+
+∆*M* Mach number adjustment for effect of blade camber
+
+*φ* propeller disk angle of attack
+
+*η* isolated propeller efficiency.
+
+*η~comp~* composite prop efficiency (includes tip and blockage corrections)
+
+*θ *^3/4^ propeller blade twist angle at *x* =3/4 (degrees), same as *β ^3^*^/4^
+
+*σ* ratio of operating density to sea level standard density = *ρ*~a~/*ρ*~o.~
+
+ω propeller rotation speed (radians/second)
+
+ 
+
+ 
+
+**Terminology**
+
+ ** **
+
+blade aspect ratio measured as \[*R* / max blade width\].
+
+ 
+
+effective pitch actual advance per revolution.
+
+ 
+
+experimental pitch necessary advance to generate zero thrust.
+
+ 
+
+geometric pitch (*p*) advance per revolution if blade element moves
+
+according to β (i.e., with no slip).
+
+reduction gear gearing between the engine crankshaft and prop shaft that reduces the propeller rotation speed .
+
+right-handed moves clockwise (viewed from the slipstream).
+
+ 
+
+solidity fraction of prop disk covered by blade area = 2π*R/Bb*.
+
+ 
+
+total width ratio (*TWR*) measured as \[*WR* x *B*\]
+
+ 
+
+thickness ratio (*TR*) blade thicknessmeasured locally or at .75*R* to represent entire prop.
+
+ 
+
+width ratio (*WR*) calculated as {*b* @ .75*R* } / *D*
+
+ 
+
+**11.2 Propeller Geometry**
+
+** **
+
+• *δ~r~* is the width of any element along blade radius.
+
+ 
+
+ ![][4]
+
+ 
+
+ 
+
+ 
+
+• *x = r/R,* the local fraction of prop tip radius
+
+ 
+
+ 
+
+ 
+
+ ![][5]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+• Prop blade chord extends from leading edge to trailing edge.
+
+• Blade twist angle *θ,* measured between rotation plane and local chord.
+
+• Relative wind is the resultant velocity (*V~R~*), comprised of aircraft
+
+forward speed and tangential speed at radial location along blade.
+
+ 
+
+ ![][6]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+• Angle *φ* is measured between plane of rotation and local *V~R~*
+
+*~ ~*
+
+*~ ~*![][7]
+
+*~ ~*
+
+** **
+
+• Αdvance ratio (*J*) is defined as *J = V~T~/nD.*
+
+• Local angle of attack at any fraction of radius(*α^x^*) is measured between the local chord line and relative wind
+
+![][8]
+
+• Lift and drag are perpendicular and parallel to *V~R~*, respectively
+
+• Thrust (*T*) and torque (*Q*) are perpendicular and parallel to the plane of rotation, respectively.
+
+ 
+
+**11.3 Propeller Coefficients**
+
+** **
+
+Integrating lift and drag along a blade gives the thrust (*T*) and torque (*Q*). Multiply by number of blades (*B*) to determine total *T* and *Q*.
+
+ 
+
+ 
+
+ ![][9]
+
+** **
+
+** **
+
+** **
+
+ 
+
+Thrust Coefficient, *C~T~*
+
+ ![][10]
+
+ 
+
+Torque Coefficient, *C~Q~*
+
+ ![][11]
+
+ 
+
+Power Coefficient, *C~P~*
+
+ 
+
+ ![][12]
+
+ 
+
+Typical effect of advance ratio on thrust and torque coefficients
+
+![][13]
+
+**11.4 Propeller Efficiency and States**
+
+** **
+
+Propeller efficiency (*η*)
+
+ 
+
+![][14]
+
+ 
+
+ 
+
+ ![][15]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Propeller state: positive thrust & efficiency, power supplied by engine.
+
+Brake state: negative thrust & efficiency, power supplied by engine.
+
+Windmill state: negative thrust & *η*, power supplied by freestream.
+
+ 
+
+![][16]
+
+**11.5 Propeller Theory**
+
+ 
+
+Simple momentum theory describes pressure jump (∆*P*) across
+
+propeller disk .
+
+• The downstream velocity increment (*v~1~*) is twice the velocity
+
+increment at the disk (*v*) .
+
+• Thrust (∆*P*) = ∆*P* x disk area
+
+• Froude's momentum theory: efficiency =
+
+ 
+
+ ![][17]
+
+ 
+
+ 
+
+ 
+
+ ![][18]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Blade element theory tends to be more complex and may include corrections for tip swirl losses, Mach effects, nacelle blockage, etc. Below is a comparison of typical calculated and measured thrust distribution.
+
+ 
+
+![][19]
+
+**11.6 Propeller Modeling**
+
+ 
+
+• For a specified propeller geometry; *C~T~* , *C~P~*, *J,* and blade angle (*θ*) are interrelated such that knowledge of any two defines the other two.
+
+• Calculate propeller efficiency as *η = JC~T~* /*C~P\ ~*.
+
+• Models assume isolated conditions, i.e., without nacelle blockage.
+
+• Models assume negligible Mach effects at propeller tips.
+
+• Different models required for static and "in-flight" conditions.
+
+ 
+
+Determine static *C~T~* and *C~P~* using "**Static Thrust Chart**" (ref 11.2)
+
+ 
+
+ ![][20]
+
+ ![][21]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+∼ Separate charts exist for each combination of *AF* and \# of blades (*B)*.
+
+∼ Enter chart at appropriate *J* & *C~li~*
+
+ 
+
+Static Thrust = where *N* = Propeller *RPM* Determine isolated propeller in-flight effi
+
+ 
+
+ciency (*η*) from the appropriate **"Flight Charts."** They are typically presented in one of two forms.
+
+ ![][22]
+
+![][23]
+
+Above example for AiResearch TPE331-3U-303G engines and Hartzell T10282HDB-4R 3-blade, constant speed, feathering propellers.
+
+ 
+
+** **The other "in-flight *η*" format also requires calculation of *C~P~* and *J*. Below is a typical flight chart published by Hamilton Standard (Ref 11.2). This applies to a propeller with 2 blades, *AF*= 80, and *C~Li~* =0.5
+
+ 
+
+![][24]
+
+ 
+
+A **body correction factor** (*F~BC~*) should be applied to account for reduced efficiency due to body flow blockage immediately behind the propeller. Two examples follow.
+
+ ![][25]
+
+Hamilton Standard also publishes a generalized nacelle blocking correction for typical scoop and annual inlet nacelles used on typical turboprops.
+
+ 
+
+![][26]
+
+To determine if tip compressibility corrections are appropriate, find the maximum integrated design lift coefficient, *C~Limax~* from the graph below.
+
+∼ Enter at flight Mach number, and move across at appropriate *NDf~c.~*
+
+ 
+
+*~ ~*![][3]
+
+*~ ~*
+
+∼ If *C~Limax~* is below calculated *C~li\ ,\ ~*then corrections are required.
+
+ 
+
+![][27]
+
+If tip compressibility corrections are necessary, then the first step is to
+
+• Determine the **Mach number adjustment for the effect of blade camber** (∆*M*) from the figure below.
+
+ 
+
+![][28]
+
+• Next, add ∆*M* from above to flight Mach number to get *M~eff~*.
+
+• Enter adjacent **generalized compressibility correction chart** to determine propeller efficiency tip factor (*F~t~*)
+
+• Calculate composite propeller efficiency as
+
+ 
+
+*η*~comp~ = *η* x *F~t~* x *F~BC~*
+
+ 
+
+• Calculate in-flight thrust as
+
+ 
+
+![][29]
+
+![][30]
+
+**11.7 Propeller Flight Test**
+
+The best method for determining *η~comp~* is to instrument the prop shaft and/or engine mounts to measure thrust and torque.
+
+ 
+
+ 
+
+ ![][31]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Calculate efficiency as
+
+ 
+
+ ![][32]
+
+As an alternate, the **incremental drag method** requires an accurate
+
+engine power model, a load cell and a small drag device.
+
+ 
+
+• Trim the aircraft at test *RPM, V~T~ ,* & altitude. Note *SHP* required.
+
+• Repeat above test with drag device and load cell attached. Note the power requirement change (∆*SHP* ) and load cell drag (∆*D*).
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ ![][33]
+
+ ![][34]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+• Calculate aircraft drag and prop efficiency as
+
+ 
+
+ ![][35]
+
+ 
+
+ 
+
+• This technique assumes the same *η* for both tests and is valid if *J* is constant and the *C~P~* change is small. The drag device must therefore be small enough to not violate this assumption, yet large enough for the change in *SHP* to be measurable on engine instruments.
+
+ 
+
+![][36]
+
+**11.8 References**
+
+** **
+
+11.8.1 Roberts, Sean, "Light Aircraft Performance for Test Pilots and Flight Test Engineers," Flight Research Inc., Mojave CA, 1982.
+
+ 
+
+11.8.2 anon., Hamilton Standard Propeller Efficiency Charts (a.k.a.Redbook), PDB 6101.
+
+ 
+
+11.8.3 Von Mises, Richard, "Theory of Flight," McGraw-Hill, 1945.
+
+ 
+
+  [1]: ..\..\handbook-2013\pandoc-output\11\/media/image1.png {width="1.6041666666666667in" height="0.4166666666666667in"}
+  [2]: ..\..\handbook-2013\pandoc-output\11\/media/image2.png {width="1.375in" height="0.3645833333333333in"}
+  [3]: ..\..\handbook-2013\pandoc-output\11\/media/image3.png {width="0.53125in" height="0.3541666666666667in"}
+  [4]: ..\..\handbook-2013\pandoc-output\11\/media/image4.png {width="2.8118055555555554in" height="1.0416666666666667in"}
+  [5]: ..\..\handbook-2013\pandoc-output\11\/media/image5.png {width="2.801388888888889in" height="1.5729166666666667in"}
+  [6]: ..\..\handbook-2013\pandoc-output\11\/media/image6.png {width="1.53125in" height="0.3125in"}
+  [7]: ..\..\handbook-2013\pandoc-output\11\/media/image7.png {width="4.040972222222222in" height="0.3958333333333333in"}
+  [8]: ..\..\handbook-2013\pandoc-output\11\/media/image8.png {width="3.6972222222222224in" height="0.375in"}
+  [9]: ..\..\handbook-2013\pandoc-output\11\/media/image9.png {width="2.7083333333333335in" height="0.8645833333333334in"}
+  [10]: ..\..\handbook-2013\pandoc-output\11\/media/image10.png {width="0.9270833333333334in" height="0.4583333333333333in"}
+  [11]: ..\..\handbook-2013\pandoc-output\11\/media/image11.png {width="0.9479166666666666in" height="0.4583333333333333in"}
+  [12]: ..\..\handbook-2013\pandoc-output\11\/media/image12.png {width="3.051388888888889in" height="0.3645833333333333in"}
+  [13]: ..\..\handbook-2013\pandoc-output\11\/media/image13.png {width="4.499305555555556in" height="3.6243055555555554in"}
+  [14]: ..\..\handbook-2013\pandoc-output\11\/media/image14.png {width="4.155555555555556in" height="0.53125in"}
+  [15]: ..\..\handbook-2013\pandoc-output\11\/media/image15.png {width="4.499305555555556in" height="2.9784722222222224in"}
+  [16]: ..\..\handbook-2013\pandoc-output\11\/media/image16.png {width="4.499305555555556in" height="1.875in"}
+  [17]: ..\..\handbook-2013\pandoc-output\11\/media/image17.png {width="1.3333333333333333in" height="0.46875in"}
+  [18]: ..\..\handbook-2013\pandoc-output\11\/media/image18.png {width="4.499305555555556in" height="2.125in"}
+  [19]: ..\..\handbook-2013\pandoc-output\11\/media/image19.png {width="4.009722222222222in" height="1.59375in"}
+  [20]: ..\..\handbook-2013\pandoc-output\11\/media/image20.png {width="0.6354166666666666in" height="0.375in"}
+  [21]: ..\..\handbook-2013\pandoc-output\11\/media/image21.png {width="4.363888888888889in" height="4.103472222222222in"}
+  [22]: ..\..\handbook-2013\pandoc-output\11\/media/image22.png {width="1.4166666666666667in" height="0.4270833333333333in"}
+  [23]: ..\..\handbook-2013\pandoc-output\11\/media/image23.png {width="6.999305555555556in" height="8.311805555555555in"}
+  [24]: ..\..\handbook-2013\pandoc-output\11\/media/image24.png {width="6.624305555555556in" height="8.311805555555555in"}
+  [25]: ..\..\handbook-2013\pandoc-output\11\/media/image25.png {width="6.499305555555556in" height="8.561111111111112in"}
+  [26]: ..\..\handbook-2013\pandoc-output\11\/media/image26.png {width="5.874305555555556in" height="8.436111111111112in"}
+  [27]: ..\..\handbook-2013\pandoc-output\11\/media/image27.png {width="6.249305555555556in" height="7.561805555555556in"}
+  [28]: ..\..\handbook-2013\pandoc-output\11\/media/image28.png {width="6.999305555555556in" height="5.936805555555556in"}
+  [29]: ..\..\handbook-2013\pandoc-output\11\/media/image29.png {width="2.09375in" height="0.46875in"}
+  [30]: ..\..\handbook-2013\pandoc-output\11\/media/image30.png {width="5.759722222222222in" height="8.727777777777778in"}
+  [31]: ..\..\handbook-2013\pandoc-output\11\/media/image31.png {width="3.2284722222222224in" height="1.8854166666666667in"}
+  [32]: ..\..\handbook-2013\pandoc-output\11\/media/image32.png {width="1.2083333333333333in" height="0.53125in"}
+  [33]: ..\..\handbook-2013\pandoc-output\11\/media/image33.png {width="2.1458333333333335in" height="1.1666666666666667in"}
+  [34]: ..\..\handbook-2013\pandoc-output\11\/media/image34.png {width="4.374305555555556in" height="1.75in"}
+  [35]: ..\..\handbook-2013\pandoc-output\11\/media/image35.png {width="0.9479166666666666in" height="0.3958333333333333in"}
+  [36]: ..\..\handbook-2013\pandoc-output\11\/media/image36.png {width="1.1875in" height="0.40625in"}
