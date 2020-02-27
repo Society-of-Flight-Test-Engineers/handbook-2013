@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Flight Test Engineering Reference Handbook</title>
-  <meta name="description" content="Flight Test Engineering Reference Handbook" />
+  <title>15 14.7 Lightning | Flight Test Engineering Reference Handbook</title>
+  <meta name="description" content="15 14.7 Lightning | Flight Test Engineering Reference Handbook" />
   <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Flight Test Engineering Reference Handbook" />
+  <meta property="og:title" content="15 14.7 Lightning | Flight Test Engineering Reference Handbook" />
   <meta property="og:type" content="book" />
   
   <meta property="og:image" content="media/media/image1.jpg" />
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Flight Test Engineering Reference Handbook" />
+  <meta name="twitter:title" content="15 14.7 Lightning | Flight Test Engineering Reference Handbook" />
   
   
   <meta name="twitter:image" content="media/media/image1.jpg" />
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="general-information.html"/>
+<link rel="prev" href="electromagnetic-compatibility.html"/>
+<link rel="next" href="high-intensity-radiated-fields-hirf.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -193,189 +193,24 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Flight Test Engineering Reference Handbook</h1>
-<p class="author"><em>Society of Flight Test Engineers</em></p>
-<p class="date"><em>2013</em></p>
+<div id="lightning" class="section level1">
+<h1><span class="header-section-number">15</span> 14.7 Lightning</h1>
+<p>Lightning is a very large electrical transient that can impart thousands of Amperes of current through an aircraft structure. The structure needs to present a low impedance path for the lightning current so that no damage causing arcing and/or over-heating occurs. Additionally nearby wiring needs to be shielded to protect against the induced current produced by the ever changing magnetic fields.</p>
+<div id="aircraft-lightning-zones" class="section level2">
+<h2><span class="header-section-number">15.1</span> <em>14.7.1 Aircraft Lightning Zones</em></h2>
+<p>The aircraft is divided into different areas that relate to the probability of a lightning attachment. The nose, tail, wingtips and engine nacelles (extremities) are more likely areas.</p>
 </div>
-<div id="preface" class="section level1 unnumbered">
-<h1>Preface</h1>
-<p><img src="media/index/image1.jpg" style="width:5.33333in;height:3.63667in" /></p>
-<p><strong>Flight Test Engineering Reference Handbook</strong></p>
-<p>Third (2013) Edition</p>
-<p>Corporate support supplied by</p>
-<p>McDonnell Douglas/Boeing (2nd Edition CD’s)</p>
-<p>and</p>
-<p>The National Test Pilot School</p>
-<div id="contributors" class="section level2 unnumbered">
-<h2>Contributors</h2>
-<table>
-<thead>
-<tr class="header">
-<th>Contributing Authors</th>
-<th>Sections</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Al Lawless</td>
-<td>1-8, 10-12, 15, 18</td>
-</tr>
-<tr class="even">
-<td>Greg Lewis</td>
-<td>2.6</td>
-</tr>
-<tr class="odd">
-<td>Bill Norton</td>
-<td>9, 13</td>
-</tr>
-<tr class="even">
-<td>Dan Hrehov</td>
-<td>14</td>
-</tr>
-<tr class="odd">
-<td>Steven Arney</td>
-<td>16</td>
-</tr>
-<tr class="even">
-<td>John Minor</td>
-<td>19</td>
-</tr>
-<tr class="odd">
-<td>David Kidman, Christopher Moulder, Craig Stevens</td>
-<td>17</td>
-</tr>
-</tbody>
-</table>
+<div id="direct-effects" class="section level2">
+<h2><span class="header-section-number">15.2</span> <em>14.7.2 Direct Effects</em></h2>
+<p>Direct effects of a lightning attachment can be in the form of heating, arcing and acoustic issues. Designing the structure to handle the current flow and providing a low impedance path for the lightning current will greatly minimize these effects.</p>
 </div>
-<div id="editors" class="section level2 unnumbered">
-<h2>Editors</h2>
-<table>
-<thead>
-<tr class="header">
-<th>Editors</th>
-<th>Tenure</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lee Gardner &amp; Darcy Painter</td>
-<td>1998-2006</td>
-</tr>
-<tr class="even">
-<td>Harold Weaver</td>
-<td>2006-2013</td>
-</tr>
-</tbody>
-</table>
+<div id="indirect-effects" class="section level2">
+<h2><span class="header-section-number">15.3</span> <em>14.7.3 Indirect Effects</em></h2>
+<p>Indirect effects considers the current that is induced by the transient and coupled onto aircraft wiring that is parallel to the main lightning current flow. The protection is two fold. Systems are designed and tested to handle these types of transients as well as the wiring is addressed to minimize the induced transient to these systems. Shielding and good grounding with short pigtails at both ends is a good method to reduce the induced current.</p>
 </div>
-<div id="feedback" class="section level2 unnumbered">
-<h2>Feedback</h2>
-<p>The SFTE Technical Council continually seeks comments and new content.</p>
-<p>Contact <a href="mailto:edir@sfte.org" class="email">edir@sfte.org</a></p>
-</div>
-<div id="publication-policy" class="section level2 unnumbered">
-<h2>Publication Policy</h2>
-<p>Copyright ©2013 by Society Of Flight Test Engineers</p>
-<p>All rights reserved. This Technical Handbook is for the exclusive use of the Society of Flight Test Engineers individual and corporate members. The technical information contained herein may not be reproduced by any other individual or organization in any form without written permission from the Society of Flight Test Engineers. The Society reserves the exclusive right of publication. For further information concerning the publication policy, contact:</p>
-<blockquote>
-<p>Society of Flight Test Engineers<br />
-44814 N. Elm Avenue<br />
-Lancaster, California 93534 USA<br />
-Phone: (661) 949-2095<br />
-Fax: (661) 949-2096<br />
-<a href="http://www.sfte.org" class="uri">http://www.sfte.org</a></p>
-</blockquote>
-</div>
-<div id="section-index" class="section level2 unnumbered">
-<h2>Section Index</h2>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Section</th>
-<th align="left">Title</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">1</td>
-<td align="left">General Information</td>
-</tr>
-<tr class="even">
-<td align="left">2</td>
-<td align="left">Mathematics</td>
-</tr>
-<tr class="odd">
-<td align="left">3</td>
-<td align="left">Earth and Atmosphere</td>
-</tr>
-<tr class="even">
-<td align="left">4</td>
-<td align="left">Pitot Statics</td>
-</tr>
-<tr class="odd">
-<td align="left">5</td>
-<td align="left">Aerodynamics</td>
-</tr>
-<tr class="even">
-<td align="left">6</td>
-<td align="left">Axis Systems and Transformations</td>
-</tr>
-<tr class="odd">
-<td align="left">7</td>
-<td align="left">Mass Properties</td>
-</tr>
-<tr class="even">
-<td align="left">8</td>
-<td align="left">Motion/Vibration Analysis</td>
-</tr>
-<tr class="odd">
-<td align="left">9</td>
-<td align="left">Material Strength (Loads)</td>
-</tr>
-<tr class="even">
-<td align="left">10</td>
-<td align="left">Reciprocating Engines</td>
-</tr>
-<tr class="odd">
-<td align="left">11</td>
-<td align="left">Propellers</td>
-</tr>
-<tr class="even">
-<td align="left">12</td>
-<td align="left">Fixed-Wing Performance Standardization</td>
-</tr>
-<tr class="odd">
-<td align="left">13</td>
-<td align="left">Acoustics</td>
-</tr>
-<tr class="even">
-<td align="left">14</td>
-<td align="left">Electromagnetic Compatibility</td>
-</tr>
-<tr class="odd">
-<td align="left">15</td>
-<td align="left">Handling Qualities</td>
-</tr>
-<tr class="even">
-<td align="left">16</td>
-<td align="left">Rotary Wing</td>
-</tr>
-<tr class="odd">
-<td align="left">17</td>
-<td align="left">Gas Turbine Propulsion</td>
-</tr>
-<tr class="even">
-<td align="left">18</td>
-<td align="left">Radio Communications</td>
-</tr>
-<tr class="odd">
-<td align="left">19</td>
-<td align="left">The Electromagnetic Spectrum</td>
-</tr>
-</tbody>
-</table>
-
+<div id="instrumentation-precaution" class="section level2">
+<h2><span class="header-section-number">15.4</span> <em>14.7.4 Instrumentation Precaution</em></h2>
+<p>Any flight test instrumentation wiring that lies outside the protective fuselage needs to be evaluated for both direct and indirect effects of a nearby lightning attachment. The sensor itself must be protected from the direct attachment and the wiring must be protected from induced current onto that wiring. This current may damage the data system equipment and/or, other aircraft systems that are also instrumented. Good shielding and grounding techniques will minimize these effects. For more information see the 10-6 Reference at the end of this handbook section.</p>
 </div>
 </div>
             </section>
@@ -383,8 +218,8 @@ Fax: (661) 949-2096<br />
           </div>
         </div>
       </div>
-
-<a href="general-information.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="electromagnetic-compatibility.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="high-intensity-radiated-fields-hirf.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
