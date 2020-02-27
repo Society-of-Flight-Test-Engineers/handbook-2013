@@ -132,32 +132,48 @@ Mach Number
 
 ## Total Temperature Equation
 
+Since stagnation exists at the probe, it absorbs the energy of the air
+
 ![][04013]
 
-During position error flight testing, measure *T~i~*
+Apply Bernoulli:
 
-From *V~c\ ~*and *H~pc\ ~*determine *M*
+\[ \frac{V^2}{2} + \frac{\gamma}{\gamma - 1}  \frac{P_s}{\rho_s} = \frac{\gamma}{\gamma - 1} \frac{P_p}{\rho_p} \]
 
-*T~i\ ~*+ ∆*T~ic\ ~*= *T~T\ ~*= *T~α\ ~*+ *T~α~ KM ^2^*
+Also \(\frac{P}{\rho} = RT \) and \(a^2 = \gamma RT \) therefore
 
-plot *T~i~* \~ *M ^2^*
+\[ \frac{T_T}{T_a} = 1 + \left[ \frac{\gamma - 1}{2} \right] M^2 \]
+
+Use *K* (probe recovery factor) to account for heat losses:
+
+\[ \frac{T_T}{T_a} = 1 + \left[ \frac{K(\gamma - 1)}{2} \right] M^2 \]
+
+During position error flight testing, measure \(T_i\).  From \(V_c\) and \(H_{pc}\) determine M
+
+\[ T_i + \Delta T_{ic} = T_T = T_a + T_aKM^2 \]
+
+Plot \(T_i\) vs \(M^2\)
 
 ![][04014]
 
 
 ## Altimeter Equation
 
+\(P_a = P_0 \left(1-6.87535 \times 10^{-6} H\right)^{5.256}\) below 36,089 ft
+
+\(P_a = P_0 \left(0.22335 \right) \textrm{e}^{-0.00004806[H-36089]}\) above 36,089 ft
+
+<!--- FIXME: This figure really tells you nothing --->
 ![][04015]
-![][04016]*Hi* Indicated pressure altitude (29.92" Hg)
 
-Δ *Hic* Instrument error correction
-
-*Hic* Altimeter corrected of instrument error
-
-Δ *Hpc* Position error correction
-
-*Hc* Calibrated pressure altitude
-
+<!--- FIXME: The following equations aren't really referenced anywhere in this section.  Some are defined at the section beginning --->
+| Symbol       | Definition                                   |
+|:-------------|:---------------------------------------------|
+| \(H_i\)                     | indicated pressure altituide (29.92" Hg)     |
+| \(\Delta H_{ic}\)           | instrument error correction                  | <!--- already defined at the beginning of the section --->
+| \(H_{ic}\)                  | altimeter corrected of instrument error      |
+| \(\Delta H_{pc}\)           | position error correction                    | <!--- already defined at the beginning of the section --->
+| \(H_c\)                     | calibrated pressure altitude                 |
 
 
 ## Position Error Test Methods**
@@ -432,7 +448,7 @@ Maximum error at sea level must be less than ± 30 ft/100 kts between 1.3 *V~SO~
 [04010]: media/04/image10.png {width="1.7715277777777778in" height="1.1388888888888888in"}
 [04011]: media/04/image11.png {width="1.542361111111111in" height="1.0833333333333333in"}
 [04012]: media/04/image12.png {width="1.4590277777777778in" height="0.5138888888888888in"}
-[04013]: media/04/image13.png {width="4.9375in" height="3.1875in"}
+[04013]: media/04/image13.png {width="4.0in" height="0.657in"}
 [04014]: media/04/image14.png {width="4.3125in" height="3.0in"}
 [04015]: media/04/image15.png {width="4.2034722222222225in" height="4.113194444444445in"}
 [04016]: media/04/image16.png {width="4.4375in" height="1.375in"}

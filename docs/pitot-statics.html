@@ -369,14 +369,20 @@
 </div>
 <div id="total-temperature-equation" class="section level2">
 <h2><span class="header-section-number">4.5</span> Total Temperature Equation</h2>
+<p>Since stagnation exists at the probe, it absorbs the energy of the air</p>
 <div class="figure">
-<img src="media/04/image13.png" width="474" height="306" />
+<img src="media/04/image13.png" width="384" height="63" />
 
 </div>
-<p>During position error flight testing, measure <em>T<sub>i</sub></em></p>
-<p>From <em>V<sub>c </sub></em>and <em>H<sub>pc </sub></em>determine <em>M</em></p>
-<p><em>T<sub>i </sub></em>+ ∆<em>T<sub>ic </sub></em>= <em>T<sub>T </sub></em>= <em>T<sub>α </sub></em>+ <em>T<sub>α</sub> KM <sup>2</sup></em></p>
-<p>plot <em>T<sub>i</sub></em> ~ <em>M <sup>2</sup></em></p>
+<p>Apply Bernoulli:</p>
+<p><span class="math display">\[ \frac{V^2}{2} + \frac{\gamma}{\gamma - 1}  \frac{P_s}{\rho_s} = \frac{\gamma}{\gamma - 1} \frac{P_p}{\rho_p} \]</span></p>
+<p>Also <span class="math inline">\(\frac{P}{\rho} = RT \)</span> and <span class="math inline">\(a^2 = \gamma RT \)</span> therefore</p>
+<p><span class="math display">\[ \frac{T_T}{T_a} = 1 + \left[ \frac{\gamma - 1}{2} \right] M^2 \]</span></p>
+<p>Use <em>K</em> (probe recovery factor) to account for heat losses:</p>
+<p><span class="math display">\[ \frac{T_T}{T_a} = 1 + \left[ \frac{K(\gamma - 1)}{2} \right] M^2 \]</span></p>
+<p>During position error flight testing, measure <span class="math inline">\(T_i\)</span>. From <span class="math inline">\(V_c\)</span> and <span class="math inline">\(H_{pc}\)</span> determine M</p>
+<p><span class="math display">\[ T_i + \Delta T_{ic} = T_T = T_a + T_aKM^2 \]</span></p>
+<p>Plot <span class="math inline">\(T_i\)</span> vs <span class="math inline">\(M^2\)</span></p>
 <div class="figure">
 <img src="media/04/image14.png" width="414" height="288" />
 
@@ -384,11 +390,44 @@
 </div>
 <div id="altimeter-equation" class="section level2">
 <h2><span class="header-section-number">4.6</span> Altimeter Equation</h2>
-<p><img src="media/04/image15.png" width="403" height="394" /> <img src="media/04/image16.png" width="426" height="132" /><em>Hi</em> Indicated pressure altitude (29.92&quot; Hg)</p>
-<p>Δ <em>Hic</em> Instrument error correction</p>
-<p><em>Hic</em> Altimeter corrected of instrument error</p>
-<p>Δ <em>Hpc</em> Position error correction</p>
-<p><em>Hc</em> Calibrated pressure altitude</p>
+<p><span class="math inline">\(P_a = P_0 \left(1-6.87535 \times 10^{-6} H\right)^{5.256}\)</span> below 36,089 ft</p>
+<p><span class="math inline">\(P_a = P_0 \left(0.22335 \right) \textrm{e}^{-0.00004806[H-36089]}\)</span> above 36,089 ft</p>
+<!--- FIXME: This figure really tells you nothing --->
+<div class="figure">
+<img src="media/04/image15.png" width="403" height="394" />
+
+</div>
+<!--- FIXME: The following equations aren't really referenced anywhere in this section.  Some are defined at the section beginning --->
+<table>
+<thead>
+<tr class="header">
+<th align="left">Symbol</th>
+<th align="left">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(H_i\)</span></td>
+<td align="left">indicated pressure altituide (29.92&quot; Hg)</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\Delta H_{ic}\)</span></td>
+<td align="left">instrument error correction</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(H_{ic}\)</span></td>
+<td align="left">altimeter corrected of instrument error</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\Delta H_{pc}\)</span></td>
+<td align="left">position error correction</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(H_c\)</span></td>
+<td align="left">calibrated pressure altitude</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="position-error-test-methods" class="section level2">
 <h2><span class="header-section-number">4.7</span> Position Error Test Methods**</h2>
