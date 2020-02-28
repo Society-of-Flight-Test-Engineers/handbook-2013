@@ -136,7 +136,7 @@
 <li class="chapter" data-level="4.4" data-path="pitot-statics.html"><a href="pitot-statics.html#supersonic-airspeed-and-mach-equations"><i class="fa fa-check"></i><b>4.4</b> Supersonic Airspeed and Mach Equations</a></li>
 <li class="chapter" data-level="4.5" data-path="pitot-statics.html"><a href="pitot-statics.html#total-temperature-equation"><i class="fa fa-check"></i><b>4.5</b> Total Temperature Equation</a></li>
 <li class="chapter" data-level="4.6" data-path="pitot-statics.html"><a href="pitot-statics.html#altimeter-equation"><i class="fa fa-check"></i><b>4.6</b> Altimeter Equation</a></li>
-<li class="chapter" data-level="4.7" data-path="pitot-statics.html"><a href="pitot-statics.html#position-error-test-methods"><i class="fa fa-check"></i><b>4.7</b> Position Error Test Methods**</a><ul>
+<li class="chapter" data-level="4.7" data-path="pitot-statics.html"><a href="pitot-statics.html#position-error-test-methods"><i class="fa fa-check"></i><b>4.7</b> Position Error Test Methods</a><ul>
 <li class="chapter" data-level="4.7.1" data-path="pitot-statics.html"><a href="pitot-statics.html#fly-by"><i class="fa fa-check"></i><b>4.7.1</b> Fly-by</a></li>
 <li class="chapter" data-level="4.7.2" data-path="pitot-statics.html"><a href="pitot-statics.html#ground-course-method"><i class="fa fa-check"></i><b>4.7.2</b> Ground Course Method</a></li>
 <li class="chapter" data-level="4.7.3" data-path="pitot-statics.html"><a href="pitot-statics.html#trailing-conebomb-method"><i class="fa fa-check"></i><b>4.7.3</b> Trailing Cone/Bomb Method</a></li>
@@ -430,29 +430,30 @@
 </table>
 </div>
 <div id="position-error-test-methods" class="section level2">
-<h2><span class="header-section-number">4.7</span> Position Error Test Methods**</h2>
+<h2><span class="header-section-number">4.7</span> Position Error Test Methods</h2>
 <div id="fly-by" class="section level3">
 <h3><span class="header-section-number">4.7.1</span> Fly-by</h3>
-<p>As depicted below, the flyby method originally used some sort of viewing platform with surveyed distances and a grid or other device for determining the aircraft’s relative angle above the platform’s altimeter. This information combined to give the aircraft’s actual pressure altitude. Modern methods replace the tower system with a radar altimeter or GPS unit to determine tapeline height above the flyby line (<em>H<sub>g</sub></em>). This geometric height is converted to a pressure altitude change using a temperature correction. When added to the aircraft’s pressure altitude on the runway, this change provides the actual pressure altitude during the flyby (Actual <em>H<sub>c</sub></em> = runway pressure altitude + <em>H<sub>g</sub></em>(<em>T<sub>s</sub></em>/<em>T<sub>t</sub></em>).</p>
+<p>As depicted below, the flyby method originally used some sort of viewing platform with surveyed distances and a grid or other device for determining the aircraft’s relative angle above the platform’s altimeter. This information combined to give the aircraft’s actual pressure altitude. Modern methods replace the tower system with a radar altimeter or GPS unit to determine tapeline height above the flyby line (<span class="math inline">\(H_g\)</span>). This geometric height is converted to a pressure altitude change using a temperature correction. When added to the aircraft’s pressure altitude on the runway, this change provides the actual pressure altitude during the flyby (<span class="math inline">\(\textrm{Actual } H_c = \textrm{runway pressure altitude} + H_g (T_s/T_t)\)</span>). <!--- This nomenclature is inconsistent with the rest of the section ---></p>
 <div class="figure">
 <img src="media/04/image17.png" width="507" height="169" />
 
 </div>
-<p><span class="math display">\[\mathrm{\text{Actual\ }}H_{c} = H_{c_{\text{tower}}} + \left( D\tan\theta \cdot \frac{T_{s}}{T_{t}} \right)
-\]</span></p>
-<p><span class="math display">\[{\Delta P_{S} = q_{c} - q_{\text{cic}}
-}{\Delta P_{S} = \frac{1}{2}\rho_{0}{V_{c}}^{2} - \frac{1}{2}\rho_{0}{V_{\text{ic}}}^{2}\mathrm{\text{\ \ \ }}(\mathrm{\text{low\ Mach\ only}})
-}{\mathrm{\text{Solve\ for\ }}V_{c}
-}\]</span></p>
-<p>****See flowchart for high mach or ΔP<sub>T</sub>≠0 cases.</p>
-<p><em>Hi</em> Indicated pressure altitude (29.92&quot; Hg)</p>
-<p>Δ <em>Hic</em> Instrument error correction</p>
-<p><em>Hic</em> Altimeter corrected of instrument error</p>
-<p>Δ <em>Hpc</em> Position error correction</p>
-<p><em>Hc</em> Calibrated pressure altitude</p>
-<p><img src="media/04/image18.png" width="498" height="302" />Note: A check on basic instrument calibration is easily accomplished using a “ground block” where a parked test aircraft compares altimeters with tower. Any error can be treated as a bias.</p>
-<p>This altitude-based Test method determines altimeter corrections and therefore static error directly. Accurately converting this static source error to an airspeed correction also requires knowledge of the test pitot tube's total pressure error (∆P<sub>T</sub> ).</p>
-<p>This can be determined either through direct comparison with a calibrated noseboom pitot pressure or from one of the airspeed-based methods that directly yield airspeed corrections (pace, ground course, GPS). In lieu of these options, the pitot error may assumed to be zero, but this will reduce confidence in the calculated value for airspeed correction.</p>
+<p><span class="math display">\[\textrm{Actual } H_{c} = H_{c_{tower}} + \left( D\tan\theta \cdot \frac{T_{s}}{T_{t}} \right) \]</span></p>
+<p><span class="math display">\[ \Delta H_{pc} = \textrm{Actual } H_c - \left( H_i + \Delta H_{ic} \right) \]</span></p>
+<!--- Changing capital subscript 's' to lower-case to make more consistent with rest of the handbook --->
+<p><span class="math display">\[ \Delta P_s = \rho g \Delta H_{pc} \]</span></p>
+<p><span class="math display">\[ \Delta P_{S} = q_{c} - q_{cic} \]</span></p>
+<p><span class="math display">\[ \Delta P_{S} = \frac{1}{2}\rho_{0}{V_{c}^{2} - \frac{1}{2}\rho_{0}{V_{ic}}^{2} \text{ (low Mach only)}} \]</span></p>
+<p>Solve for <span class="math inline">\(V_c\)</span></p>
+<p><span class="math display">\[ \Delta V_{pc} = V_c - V_{ic} \]</span></p>
+<!--- FIXME: What flow chart is this referring to??? --->
+<p>See flowchart for high mach or <span class="math inline">\(P_T \ne 0\)</span> cases.</p>
+<div class="figure">
+<img src="media/04/image18.png" width="498" height="302" />
+
+</div>
+<p>Note: A check on basic instrument calibration is easily accomplished using a “ground block” where a parked test aircraft compares altimeters with tower. Any error can be treated as a bias.</p>
+<p>This altitude-based Test method determines altimeter corrections and therefore static error directly. Accurately converting this static source error to an airspeed correction also requires knowledge of the test pitot tube’s total pressure error (<span class="math inline">\(\Delta P_T\)</span> ). This can be determined either through direct comparison with a calibrated noseboom pitot pressure or from one of the airspeed-based methods that directly yield airspeed corrections (pace, ground course, GPS). In lieu of these options, the pitot error may assumed to be zero, but this will reduce confidence in the calculated value for airspeed correction.</p>
 </div>
 <div id="ground-course-method" class="section level3">
 <h3><span class="header-section-number">4.7.2</span> Ground Course Method</h3>

@@ -176,43 +176,37 @@ Plot \(T_i\) vs \(M^2\)
 | \(H_c\)                     | calibrated pressure altitude                 |
 
 
-## Position Error Test Methods**
-
+## Position Error Test Methods
 
 ### Fly-by
 
-As depicted below, the flyby method originally used some sort of viewing platform with surveyed distances and a grid or other device for determining the aircraft's relative angle above the platform's altimeter. This information combined to give the aircraft's actual pressure altitude. Modern methods replace the tower system with a radar altimeter or GPS unit to determine tapeline height above the flyby line (*H~g~*). This geometric height is converted to a pressure altitude change using a temperature correction. When added to the aircraft's pressure altitude on the runway, this change provides the actual pressure altitude during the flyby (Actual *H~c~* = runway pressure altitude + *H~g~*(*T~s~*/*T~t~*).
+As depicted below, the flyby method originally used some sort of viewing platform with surveyed distances and a grid or other device for determining the aircraft's relative angle above the platform's altimeter. This information combined to give the aircraft's actual pressure altitude. Modern methods replace the tower system with a radar altimeter or GPS unit to determine tapeline height above the flyby line (\(H_g\)). This geometric height is converted to a pressure altitude change using a temperature correction. When added to the aircraft's pressure altitude on the runway, this change provides the actual pressure altitude during the flyby (\(\textrm{Actual } H_c = \textrm{runway pressure altitude} + H_g (T_s/T_t)\)). <!--- This nomenclature is inconsistent with the rest of the section --->
 
 ![][04017]
 
-$$\mathrm{\text{Actual\ }}H_{c} = H_{c_{\text{tower}}} + \left( D\tan\theta \cdot \frac{T_{s}}{T_{t}} \right)
-$$
+\[\textrm{Actual } H_{c} = H_{c_{tower}} + \left( D\tan\theta \cdot \frac{T_{s}}{T_{t}} \right) \]
 
-$${\Delta P_{S} = q_{c} - q_{\text{cic}}
-}{\Delta P_{S} = \frac{1}{2}\rho_{0}{V_{c}}^{2} - \frac{1}{2}\rho_{0}{V_{\text{ic}}}^{2}\mathrm{\text{\ \ \ }}(\mathrm{\text{low\ Mach\ only}})
-}{\mathrm{\text{Solve\ for\ }}V_{c}
-}$$
+\[ \Delta H_{pc} = \textrm{Actual } H_c - \left( H_i + \Delta H_{ic} \right) \]
 
-****See flowchart for high mach or ΔP~T~≠0 cases.
+<!--- Changing capital subscript 's' to lower-case to make more consistent with rest of the handbook --->
+\[ \Delta P_s = \rho g \Delta H_{pc} \]
 
-*Hi* Indicated pressure altitude (29.92" Hg)
+\[ \Delta P_{S} = q_{c} - q_{cic} \]
 
-Δ *Hic* Instrument error correction
+\[ \Delta P_{S} = \frac{1}{2}\rho_{0}{V_{c}^{2} - \frac{1}{2}\rho_{0}{V_{ic}}^{2} \text{ (low Mach only)}} \]
 
-*Hic* Altimeter corrected of instrument error
+Solve for \(V_c\)
 
-Δ *Hpc* Position error correction
+\[ \Delta V_{pc} = V_c - V_{ic} \]
 
-*Hc* Calibrated pressure altitude
+<!--- FIXME: What flow chart is this referring to??? --->
+See flowchart for high mach or \(P_T \ne 0\) cases.
 
-![][04018]Note: A check on basic instrument calibration is easily accomplished using a "ground block" where a parked test aircraft compares altimeters with tower. Any error can be treated as a bias.
+![][04018]
 
+Note: A check on basic instrument calibration is easily accomplished using a "ground block" where a parked test aircraft compares altimeters with tower. Any error can be treated as a bias.
 
-
-This altitude-based Test method determines altimeter corrections and therefore static error directly. Accurately converting this static source error to an airspeed correction also requires knowledge of the test pitot tube\'s total pressure error (∆P~T~ ).
-
-This can be determined either through direct comparison with a calibrated noseboom pitot pressure or from one of the airspeed-based methods that directly yield airspeed corrections (pace, ground course, GPS). In lieu of these options, the pitot error may assumed to be zero, but this will reduce confidence in the calculated value for airspeed correction.
-
+This altitude-based Test method determines altimeter corrections and therefore static error directly. Accurately converting this static source error to an airspeed correction also requires knowledge of the test pitot tube's total pressure error (\(\Delta P_T\) ).  This can be determined either through direct comparison with a calibrated noseboom pitot pressure or from one of the airspeed-based methods that directly yield airspeed corrections (pace, ground course, GPS). In lieu of these options, the pitot error may assumed to be zero, but this will reduce confidence in the calculated value for airspeed correction.
 
 ### Ground Course Method
 
