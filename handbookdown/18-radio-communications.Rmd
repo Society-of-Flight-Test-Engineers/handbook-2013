@@ -1,0 +1,54 @@
+# 18 - Telemetry Control Room and Radio Communications**
+
+**"SFTE Tech Council "Best Practice Guidelines"**
+
+In accordance with experienced FTE feedback from across industry, below are suggested best practices for communications between flight and ground crews.  This guideline uses the following terminology
+
+-   "Ground station" is a generic term for any station providing radio support, whether it is a simple radio, fixed-base TM control room, mobile TM station, or other.
+
+-   "R/O" is a generic term for the ground station radio operator. Different organizations may use different job titles for the person commanding the ground station (i.e., TM Chief, Test Director, Test Conductor). The radio call sign for this role is typically "TM" or "Control"
+
+-   "Flight crew" to refer to whichever test aircraft crew member (pilot-in-command, copilot, or other) is designated to communicate with the test ground station.
+
+**[Overall Guidance]{.underline}**
+
+Unless otherwise established during the preflight briefing, radio operations between the test aircraft and ground station should use some standard phraseology established by the testing organization. The following are presented as radio transmission terminology between designated participants. The same phrases equally apply to communications within the telemetry (TM) room during a test. This phraseology is not necessarily applied to any communication with air traffic control (ATC).
+
+"**Stand by**" - Instruction issued by any participant to direct others to stay on established flight conditions and remain prepared for continuing, but to not execute the next action. Used when everything is OK, but the caller requires more time for some reason (e.g. ATC conversations, data analysis, airspace maneuvering).
+
+"**Cleared for \_\_\_"** - Transmitted by the R/O to authorize proceeding to the specified condition, typically the next planned test point, but sometimes a out-of-sequence test point, airspeed, or flight condition. The flight crew will typically "parrot back" the same phrase to acknowledge clearance. When in doubt, the flight crew requests "Confirm clear for \_\_\_." Routine operations generally do not require clearance; these transmissions are typically used only when the flight crew requires clearance for saefty of flight (SOF) or technical reasons -- as established during the preflight briefing.
+
+"**On Condition**" -- Normally transmitted by test pilot to announce the aircraft is properly trimmed or otherwise set up to beginf the test.
+
+"**Hold**" -- Instruction by R/O to maintain current flight condition to either extend data collection period or emphasize critical parameter (e.g "Hold condition" or "Hold altitude").
+
+\"**3,2,1, HACK**\" -- countdown to event.
+
+Silent countdown " **Five, four, three \_\_\_ \_\_\_"** - an intentional silence at the end of a countdown to allow other participants a chance to call for an abort. Most common with ordinance employment.
+
+\"**Condition Complete**\" or "Test Complete" -- Call from test conductor or pilot to announce a normal completion.
+
+\"**Continue**\" -- transmitted by R/O when there is a series of steps in the maneuver and flight crew is cleared to continue to the next one.  
+
+\"**Recover**\" called by either participant at test point completion or non-urgent cessation of a test point. Instructs the flight crew to smoothly return to a normal flying condition.
+
+"**Copy**" -- Routine shorthand reply meaning "I understood your previous transmission." This single statement is generally preferred. This can be replaced by a non-verbal radio double-click (zipper) to acknowledge simple statements. Some organizations may also aknowledge a transmission using "**Roger**." Flight testers do not use CB radio slang such as "10-4"
+
+"**Stop Test**" or "**Knock it Off**"- Instruction transmitted by flight crew or R/O to stop test underway using normal means. There is no implied requirement to change flight conditions. Used when testing does not present SOF concerns but continuing will not provide useful data. The R/O would typically make this call if witnessing incorrect execution or experiencing critical data dropouts or other technical difficulties. The R/O would also make this call on behalf of a participating engineer who does not have radio access. The flight crew would make this call if testing is invalidated by ATC or weather interference or in the case of an improperly executed procedure. The caller should state the reason for stopping the test (e.g. reaching \_\_ limit).
+
+"**ABORT, ABORT, ABORT**" - Emergency instruction transmitted by flight crew, chase aircraft, or R/O to stop test immediately and recover to safe flight conditions as soon as possible. Used when continued testing presents SOF concerns. The R/O may make this call if witnessing a dangerous situation or if unable to confirm SOF because of critical data dropouts or other technical difficulties. The flight crew would make this call to advise the R/O of actions they are taking. In certain cases pre-arranged at the prebriefing, a ground station participant other than the R/O may be authorized and physically positioned to make radio abort calls. The caller should state the reason for stopping the test (e.g. reaching \_\_ limit).
+
+"**BAIL OUT, BAIL OUT, BAIL OUT**" - Emergency instruction to or between the flight crew to leave the aircraft. Nominally used when out-of-control aircraft descends through a pre-set minimum or other briefed altitude. In circumstance leading up to any potential bail out call, the R/O will transmit "\_\_ altitude" callouts every thousand feet during attempted recovery of an out-of-control aircraft.
+
+"**Terminate**" is the instruction to destroy or otherwise incapacitate a flight vehicle. Applies to vehicles with a flight termination system designed to quickly end its flight and limit possible damage to the surroundings.
+
+**[\
+]{.underline}**
+
+**[Call sign designation]{.underline}**. Depending on prior agreements, ATC may communicate to an aircraft by referencing its registration (a.k.a. tail) number or by an accepted call sign such as "Zoom 86." Call signs potentially have the advantage of being easier to say & understand and bringing familiarity between operators. The R/O may use this same call sign if so arranged prior to the flight, but will otherwise refer to the test aircraft as "**Test**" and a chase aircraft as "**Chase**." The call sign for the ground station is "**Ground**" and is "\[Company\] **Weather**" for the mobile ground weather station. The call sign for any other mobile radio-equipped ground crew is "\[Company\] **Mobile**" unless otherwise specified during the pre-flight briefing. The dispatcher's radio station, is "\[Company\] **Dispatch**." Security personnel employed who control the gate at the taxiway and are called "\[Company\] **Security**."
+
+[**Call sign use**.]{.underline} When initiating radio communications at the beginning of a flight or after a period of silence, the caller will first state the receiver's call sign then his own (e.g. R/O transmits "Test -- Ground"). This is an abbreviated version of the formal "Calling Zoom 86, this is Ground, Over" which is not useful unless radio transmission quality is poor. After two-way communication has been initiated, each transmission need only to begin with the recipient's call sign.
+
+**[Thumbs Up]{.underline}**. A convenient non-verbal communication between control room participants is the "thumbs-up" hand signal. During active testing, this signal is preferred for routinely acknowledging a message or for indicating readiness. Not only does this signal eliminate unnecessary discussion, but allows all ground station participants to signal simultaneously and continuously if needed.
+
+NOTES
