@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>20 20 - Communication Systems Testing** | Flight Test Engineering Reference Handbook</title>
+  <meta name="description" content="20 20 - Communication Systems Testing** | Flight Test Engineering Reference Handbook" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="20 20 - Communication Systems Testing** | Flight Test Engineering Reference Handbook" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="media/media/image1.jpg" />
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="20 20 - Communication Systems Testing** | Flight Test Engineering Reference Handbook" />
+  
+  
+  <meta name="twitter:image" content="media/media/image1.jpg" />
+
+<meta name="author" content="Society of Flight Test Engineers" />
+
+
+<meta name="date" content="2013-01-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="the-electromagnetic-spectrum.html"/>
+<link rel="next" href="real-time-data-display-guidelines.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#contributors"><i class="fa fa-check"></i>Contributors</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#editors"><i class="fa fa-check"></i>Editors</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#feedback"><i class="fa fa-check"></i>Feedback</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#publication-policy"><i class="fa fa-check"></i>Publication Policy</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#section-index"><i class="fa fa-check"></i>Section Index</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="general-information.html"><a href="general-information.html"><i class="fa fa-check"></i><b>1</b> General Information</a><ul>
+<li class="chapter" data-level="1.1" data-path="general-information.html"><a href="general-information.html#unit-conversions"><i class="fa fa-check"></i><b>1.1</b> Unit Conversions</a></li>
+<li class="chapter" data-level="1.2" data-path="general-information.html"><a href="general-information.html#greek-alphabet"><i class="fa fa-check"></i><b>1.2</b> Greek Alphabet</a></li>
+<li class="chapter" data-level="1.3" data-path="general-information.html"><a href="general-information.html#greek-symbols-used-for-aircraft"><i class="fa fa-check"></i><b>1.3</b> Greek Symbols Used for Aircraft</a></li>
+<li class="chapter" data-level="1.4" data-path="general-information.html"><a href="general-information.html#common-subscripts"><i class="fa fa-check"></i><b>1.4</b> Common Subscripts</a></li>
+<li class="chapter" data-level="1.5" data-path="general-information.html"><a href="general-information.html#common-abbreviations-raw"><i class="fa fa-check"></i><b>1.5</b> Common Abbreviations (raw)</a></li>
+<li class="chapter" data-level="1.6" data-path="general-information.html"><a href="general-information.html#sign-conventions-raw"><i class="fa fa-check"></i><b>1.6</b> Sign Conventions (raw)</a></li>
+<li class="chapter" data-level="1.7" data-path="general-information.html"><a href="general-information.html#thermodynamics-relations"><i class="fa fa-check"></i><b>1.7</b> Thermodynamics Relations</a><ul>
+<li class="chapter" data-level="1.7.1" data-path="general-information.html"><a href="general-information.html#thermodynamic-definitions"><i class="fa fa-check"></i><b>1.7.1</b> Thermodynamic Definitions</a></li>
+<li class="chapter" data-level="1.7.2" data-path="general-information.html"><a href="general-information.html#thermodynamic-symbols"><i class="fa fa-check"></i><b>1.7.2</b> Thermodynamic Symbols</a></li>
+<li class="chapter" data-level="1.7.3" data-path="general-information.html"><a href="general-information.html#thermodynamic-laws"><i class="fa fa-check"></i><b>1.7.3</b> Thermodynamic Laws</a></li>
+</ul></li>
+<li class="chapter" data-level="1.8" data-path="general-information.html"><a href="general-information.html#mechanics-relations"><i class="fa fa-check"></i><b>1.8</b> Mechanics Relations</a><ul>
+<li class="chapter" data-level="1.8.1" data-path="general-information.html"><a href="general-information.html#mechanics-symbols"><i class="fa fa-check"></i><b>1.8.1</b> Mechanics Symbols</a></li>
+<li class="chapter" data-level="1.8.2" data-path="general-information.html"><a href="general-information.html#newtons-laws"><i class="fa fa-check"></i><b>1.8.2</b> Newton’s Laws</a></li>
+<li class="chapter" data-level="1.8.3" data-path="general-information.html"><a href="general-information.html#planar-kinetics-work-power-and-energy"><i class="fa fa-check"></i><b>1.8.3</b> Planar Kinetics, Work, Power and Energy</a></li>
+<li class="chapter" data-level="1.8.4" data-path="general-information.html"><a href="general-information.html#planar-kinematics-at-constant-acceleration"><i class="fa fa-check"></i><b>1.8.4</b> Planar Kinematics at Constant Acceleration</a></li>
+<li class="chapter" data-level="1.8.5" data-path="general-information.html"><a href="general-information.html#curvilinear-motion-with-constant-acceleration-and-radius"><i class="fa fa-check"></i><b>1.8.5</b> Curvilinear motion with constant acceleration and radius</a></li>
+<li class="chapter" data-level="1.8.6" data-path="general-information.html"><a href="general-information.html#aircraft-in-level-turn"><i class="fa fa-check"></i><b>1.8.6</b> Aircraft in level turn</a></li>
+<li class="chapter" data-level="1.8.7" data-path="general-information.html"><a href="general-information.html#level-turn-kinematics-character"><i class="fa fa-check"></i><b>1.8.7</b> Level Turn Kinematics Character</a></li>
+<li class="chapter" data-level="1.8.8" data-path="general-information.html"><a href="general-information.html#gyroscopic-motion"><i class="fa fa-check"></i><b>1.8.8</b> Gyroscopic Motion</a></li>
+</ul></li>
+<li class="chapter" data-level="1.9" data-path="general-information.html"><a href="general-information.html#international-phonetic-alphabet-and-morse-code"><i class="fa fa-check"></i><b>1.9</b> International Phonetic Alphabet and Morse Code</a></li>
+<li class="chapter" data-level="1.10" data-path="general-information.html"><a href="general-information.html#section-1-references"><i class="fa fa-check"></i><b>1.10</b> Section 1 References</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="mathematics.html"><a href="mathematics.html"><i class="fa fa-check"></i><b>2</b> Mathematics</a><ul>
+<li class="chapter" data-level="2.1" data-path="mathematics.html"><a href="mathematics.html#algebra"><i class="fa fa-check"></i><b>2.1</b> Algebra</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="mathematics.html"><a href="mathematics.html#laws"><i class="fa fa-check"></i><b>2.1.1</b> Laws</a></li>
+<li class="chapter" data-level="2.1.2" data-path="mathematics.html"><a href="mathematics.html#identities"><i class="fa fa-check"></i><b>2.1.2</b> Identities</a></li>
+<li class="chapter" data-level="2.1.3" data-path="mathematics.html"><a href="mathematics.html#equations"><i class="fa fa-check"></i><b>2.1.3</b> Equations</a></li>
+<li class="chapter" data-level="2.1.4" data-path="mathematics.html"><a href="mathematics.html#interest-and-annuities"><i class="fa fa-check"></i><b>2.1.4</b> Interest And Annuities</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="mathematics.html"><a href="mathematics.html#geometry"><i class="fa fa-check"></i><b>2.2</b> Geometry</a></li>
+<li class="chapter" data-level="2.3" data-path="mathematics.html"><a href="mathematics.html#trigonometery-raw"><i class="fa fa-check"></i><b>2.3</b> Trigonometery (raw)</a></li>
+<li class="chapter" data-level="2.4" data-path="mathematics.html"><a href="mathematics.html#matrix-algebra-raw"><i class="fa fa-check"></i><b>2.4</b> Matrix Algebra (raw)</a></li>
+<li class="chapter" data-level="2.5" data-path="mathematics.html"><a href="mathematics.html#vector-algebra"><i class="fa fa-check"></i><b>2.5</b> Vector Algebra</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="mathematics.html"><a href="mathematics.html#addition"><i class="fa fa-check"></i><b>2.5.1</b> Addition</a></li>
+<li class="chapter" data-level="2.5.2" data-path="mathematics.html"><a href="mathematics.html#subtraction"><i class="fa fa-check"></i><b>2.5.2</b> Subtraction</a></li>
+<li class="chapter" data-level="2.5.3" data-path="mathematics.html"><a href="mathematics.html#scalar-multiplication"><i class="fa fa-check"></i><b>2.5.3</b> Scalar Multiplication</a></li>
+<li class="chapter" data-level="2.5.4" data-path="mathematics.html"><a href="mathematics.html#dot-product"><i class="fa fa-check"></i><b>2.5.4</b> Dot Product</a></li>
+<li class="chapter" data-level="2.5.5" data-path="mathematics.html"><a href="mathematics.html#norm"><i class="fa fa-check"></i><b>2.5.5</b> Norm</a></li>
+<li class="chapter" data-level="2.5.6" data-path="mathematics.html"><a href="mathematics.html#vector-cross-product"><i class="fa fa-check"></i><b>2.5.6</b> Vector Cross Product</a></li>
+<li class="chapter" data-level="2.5.7" data-path="mathematics.html"><a href="mathematics.html#vector-differentiation"><i class="fa fa-check"></i><b>2.5.7</b> Vector Differentiation</a></li>
+<li class="chapter" data-level="2.5.8" data-path="mathematics.html"><a href="mathematics.html#motion-of-a-point-using-two-reference-systems"><i class="fa fa-check"></i><b>2.5.8</b> Motion of a point using two reference systems</a></li>
+<li class="chapter" data-level="2.5.9" data-path="mathematics.html"><a href="mathematics.html#motion-of-a-point-using-one-reference-system"><i class="fa fa-check"></i><b>2.5.9</b> Motion of a point using one reference system</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="mathematics.html"><a href="mathematics.html#probability-and-statistics"><i class="fa fa-check"></i><b>2.6</b> Probability and Statistics</a></li>
+<li class="chapter" data-level="2.7" data-path="mathematics.html"><a href="mathematics.html#standard-series-raw"><i class="fa fa-check"></i><b>2.7</b> Standard Series (raw)</a></li>
+<li class="chapter" data-level="2.8" data-path="mathematics.html"><a href="mathematics.html#derivative-table-raw"><i class="fa fa-check"></i><b>2.8</b> Derivative Table (raw)</a></li>
+<li class="chapter" data-level="2.9" data-path="mathematics.html"><a href="mathematics.html#integral-table-raw"><i class="fa fa-check"></i><b>2.9</b> Integral Table (raw)</a></li>
+<li class="chapter" data-level="2.10" data-path="mathematics.html"><a href="mathematics.html#laplace-table-raw"><i class="fa fa-check"></i><b>2.10</b> Laplace Table (raw)</a></li>
+<li class="chapter" data-level="2.11" data-path="mathematics.html"><a href="mathematics.html#references"><i class="fa fa-check"></i><b>2.11</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html"><i class="fa fa-check"></i><b>3</b> Universe Earth Atmospheric</a><ul>
+<li class="chapter" data-level="3.1" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html#properties"><i class="fa fa-check"></i><b>3.1</b> Properties</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="pitot-statics.html"><a href="pitot-statics.html"><i class="fa fa-check"></i><b>4</b> Pitot Statics</a><ul>
+<li class="chapter" data-level="" data-path="pitot-statics.html"><a href="pitot-statics.html#common-nomenclature"><i class="fa fa-check"></i>Common Nomenclature</a></li>
+<li class="chapter" data-level="4.1" data-path="pitot-statics.html"><a href="pitot-statics.html#subsonic-airspeed-and-mach-equation"><i class="fa fa-check"></i><b>4.1</b> Subsonic Airspeed and Mach Equation</a></li>
+<li class="chapter" data-level="4.2" data-path="pitot-statics.html"><a href="pitot-statics.html#scale-altitude-compressibility-correction"><i class="fa fa-check"></i><b>4.2</b> Scale Altitude (Compressibility ) Correction</a></li>
+<li class="chapter" data-level="4.3" data-path="pitot-statics.html"><a href="pitot-statics.html#subsonic-relations-between-compressible-and-incompressible-dynamic-pressure"><i class="fa fa-check"></i><b>4.3</b> Subsonic Relations Between Compressible and Incompressible Dynamic Pressure</a></li>
+<li class="chapter" data-level="4.4" data-path="pitot-statics.html"><a href="pitot-statics.html#supersonic-airspeed-and-mach-equations"><i class="fa fa-check"></i><b>4.4</b> Supersonic Airspeed and Mach Equations</a></li>
+<li class="chapter" data-level="4.5" data-path="pitot-statics.html"><a href="pitot-statics.html#total-temperature-equation"><i class="fa fa-check"></i><b>4.5</b> Total Temperature Equation</a></li>
+<li class="chapter" data-level="4.6" data-path="pitot-statics.html"><a href="pitot-statics.html#altimeter-equation"><i class="fa fa-check"></i><b>4.6</b> Altimeter Equation</a></li>
+<li class="chapter" data-level="4.7" data-path="pitot-statics.html"><a href="pitot-statics.html#position-error-test-methods"><i class="fa fa-check"></i><b>4.7</b> Position Error Test Methods**</a><ul>
+<li class="chapter" data-level="4.7.1" data-path="pitot-statics.html"><a href="pitot-statics.html#fly-by"><i class="fa fa-check"></i><b>4.7.1</b> Fly-by</a></li>
+<li class="chapter" data-level="4.7.2" data-path="pitot-statics.html"><a href="pitot-statics.html#ground-course-method"><i class="fa fa-check"></i><b>4.7.2</b> Ground Course Method</a></li>
+<li class="chapter" data-level="4.7.3" data-path="pitot-statics.html"><a href="pitot-statics.html#trailing-conebomb-method"><i class="fa fa-check"></i><b>4.7.3</b> Trailing Cone/Bomb Method</a></li>
+<li class="chapter" data-level="4.7.4" data-path="pitot-statics.html"><a href="pitot-statics.html#gps-methods"><i class="fa fa-check"></i><b>4.7.4</b> 4.7.4 GPS Methods</a></li>
+</ul></li>
+<li class="chapter" data-level="4.8" data-path="pitot-statics.html"><a href="pitot-statics.html#position-error-far-2325.1323-and-.1325jar-certification"><i class="fa fa-check"></i><b>4.8</b> Position Error FAR 23/25.1323 and .1325/JAR Certification</a></li>
+<li class="chapter" data-level="4.9" data-path="pitot-statics.html"><a href="pitot-statics.html#pec-correction-process-flow-chart"><i class="fa fa-check"></i><b>4.9</b> PEC Correction Process Flow Chart</a></li>
+<li class="chapter" data-level="4.10" data-path="pitot-statics.html"><a href="pitot-statics.html#airspeedaltitudemach-graphic-relation"><i class="fa fa-check"></i><b>4.10</b> Airspeed/Altitude/Mach Graphic Relation</a></li>
+<li class="chapter" data-level="4.11" data-path="pitot-statics.html"><a href="pitot-statics.html#effect-of-errors-on-calibrated-airspeed-and-altitude"><i class="fa fa-check"></i><b>4.11</b> Effect of Errors on Calibrated Airspeed and Altitude</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="aerodynamics.html"><a href="aerodynamics.html"><i class="fa fa-check"></i><b>5</b> 5 Aerodynamics**</a></li>
+<li class="chapter" data-level="6" data-path="axis-systems-and-transformations.html"><a href="axis-systems-and-transformations.html"><i class="fa fa-check"></i><b>6</b> 6 Axis Systems and Transformations**</a></li>
+<li class="chapter" data-level="7" data-path="mass-properties.html"><a href="mass-properties.html"><i class="fa fa-check"></i><b>7</b> 7 Mass Properties**</a></li>
+<li class="chapter" data-level="8" data-path="motionvibration-analysis.html"><a href="motionvibration-analysis.html"><i class="fa fa-check"></i><b>8</b> 8 Motion/Vibration Analysis**</a></li>
+<li class="chapter" data-level="9" data-path="material-strength.html"><a href="material-strength.html"><i class="fa fa-check"></i><b>9</b> 9 Material Strength**</a></li>
+<li class="chapter" data-level="10" data-path="reciprocating-engines.html"><a href="reciprocating-engines.html"><i class="fa fa-check"></i><b>10</b> 10 Reciprocating Engines**</a></li>
+<li class="chapter" data-level="11" data-path="propellers.html"><a href="propellers.html"><i class="fa fa-check"></i><b>11</b> 11 Propellers**</a></li>
+<li class="chapter" data-level="12" data-path="fixed-wing-performance-standardization.html"><a href="fixed-wing-performance-standardization.html"><i class="fa fa-check"></i><b>12</b> 12 Fixed-Wing Performance Standardization**</a></li>
+<li class="chapter" data-level="13" data-path="acoustics.html"><a href="acoustics.html"><i class="fa fa-check"></i><b>13</b> 13 Acoustics**</a></li>
+<li class="chapter" data-level="14" data-path="electromagnetic-compatibility.html"><a href="electromagnetic-compatibility.html"><i class="fa fa-check"></i><b>14</b> 14 Electromagnetic Compatibility**</a><ul>
+<li class="chapter" data-level="14.0.1" data-path="electromagnetic-compatibility.html"><a href="electromagnetic-compatibility.html#regulations-and-industry-guidance"><i class="fa fa-check"></i><b>14.0.1</b> Regulations and Industry Guidance</a></li>
+<li class="chapter" data-level="14.0.2" data-path="electromagnetic-compatibility.html"><a href="electromagnetic-compatibility.html#lab-testing"><i class="fa fa-check"></i><b>14.0.2</b> 14.6.1 Lab Testing</a></li>
+<li class="chapter" data-level="14.0.3" data-path="electromagnetic-compatibility.html"><a href="electromagnetic-compatibility.html#aircraft-ground-testing"><i class="fa fa-check"></i><b>14.0.3</b> 14.6.2 Aircraft Ground Testing</a></li>
+<li class="chapter" data-level="14.0.4" data-path="electromagnetic-compatibility.html"><a href="electromagnetic-compatibility.html#aircraft-flight-testing"><i class="fa fa-check"></i><b>14.0.4</b> 14.6.3 Aircraft Flight Testing</a></li>
+<li class="chapter" data-level="14.0.5" data-path="electromagnetic-compatibility.html"><a href="electromagnetic-compatibility.html#avionics-changes-and-emi-testing"><i class="fa fa-check"></i><b>14.0.5</b> 14.6.4 Avionics changes and EMI testing</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="handling-qualities.html"><a href="handling-qualities.html"><i class="fa fa-check"></i><b>15</b> 15 Handling Qualities**</a></li>
+<li class="chapter" data-level="16" data-path="rotary-wing.html"><a href="rotary-wing.html"><i class="fa fa-check"></i><b>16</b> 16 Rotary Wing**</a></li>
+<li class="chapter" data-level="17" data-path="gas-turbine-propulsion.html"><a href="gas-turbine-propulsion.html"><i class="fa fa-check"></i><b>17</b> 17 Gas Turbine Propulsion**</a></li>
+<li class="chapter" data-level="18" data-path="telemetry-control-room-and-radio-communications.html"><a href="telemetry-control-room-and-radio-communications.html"><i class="fa fa-check"></i><b>18</b> 18 - Telemetry Control Room and Radio Communications**</a></li>
+<li class="chapter" data-level="19" data-path="the-electromagnetic-spectrum.html"><a href="the-electromagnetic-spectrum.html"><i class="fa fa-check"></i><b>19</b> 19 - The Electromagnetic Spectrum**</a></li>
+<li class="chapter" data-level="20" data-path="communication-systems-testing.html"><a href="communication-systems-testing.html"><i class="fa fa-check"></i><b>20</b> 20 - Communication Systems Testing**</a></li>
+<li class="chapter" data-level="21" data-path="real-time-data-display-guidelines.html"><a href="real-time-data-display-guidelines.html"><i class="fa fa-check"></i><b>21</b> 21. Real-Time Data Display Guidelines**</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Flight Test Engineering Reference Handbook</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="communication-systems-testing" class="section level1">
+<h1><span class="header-section-number">20</span> 20 - Communication Systems Testing**</h1>
+<p>Written by Jim Fawcett <a href="mailto:james.fawcett@airbus.com" class="email">james.fawcett@airbus.com</a></p>
+<p>The below content is relative to CS25/Part 25 radio communications equipment testing, principally on large civil aircraft.</p>
+<p><strong>20.1 VHF Radios</strong></p>
+<p><strong>20.1.1 Technology</strong></p>
+<p>Aeronautical very high frequency (VHF) radios are a line-of sight (LOS) technology within the frequency band 118-136.975 megahertz (MHz) and channel separations of 8.33 (historically 25) MHz. The typical output power on commercial aircraft is in the order of 25 watts (W) in AM (amplitude modulation) mode. Typically mounted on the fuselage-mounted, blade antennae best serve the wavelengths within the frequency band. Less common mounting locations include wing tips or the vertical tailplane.</p>
+<p>Modern VHF radios include capacity for datalink communications within the same frequency band. Such radios are referred to as VDR (VHF Data Radio) or MVDR (Multiple VDR). V identifies mono-channel equipment with one avionics box per radio channel, whereas M identifies multi-channel equipment where one avionics box controls two radio channels.</p>
+<p>Data communications currently employ one of two “modes”. Mode 2 (for ATN – Aircraft Telecommunications Network) has recently replaced mode A (Aircraft Communications Addressing and Reporting System - ACARS) due to higher throughput rates. Mode A remains deployed in some areas of the world.</p>
+<p>To satisfy CS25/Part 25 certification requirements, a typical civil aircraft will have 3 VHF or VDR or 2 MVDR with 2 channels each, providing three VDR channels and one hot spare.</p>
+<p><strong>20.1.2 Test Objectives</strong></p>
+<p>The four principle objectives for voice functions are range, masking, control, and interference. When relevant, functional tests of data applications and switching between voice and data services should also be assessed.</p>
+<p><strong>Range performance</strong></p>
+<p>The theoretical maximum line of sight distance for a VHF radio with one station on an aircraft and one station on the ground at sea-level on a flat surface is</p>
+<p><img src="media/20/image1.png" style="width:2.07847in;height:1.28681in" /></p>
+<p><span class="math display">\[range\ \lbrack NM\rbrack\ \sim\ 1.06\sqrt{h\ \lbrack\text{ft}\rbrack}\]</span></p>
+<p>Atmospheric refraction deflects electromagnetic waves and VHF signals may travel beyond line-of-sight by an amount varying slightly according to atmospheric conditions. A common memorable empirically-based relation is</p>
+<p><img src="media/20/image2.png" style="width:2.25in;height:1.36406in" /></p>
+<p><span class="math display">\[\text{range\ }\left\lbrack \text{NM} \right\rbrack = 1.23\sqrt{h\lbrack\text{ft}\rbrack}\]</span></p>
+<p>Transmission distance can increase if the ground station is above sea-level, or reduce if there is terrain between the aircraft and the ground station.</p>
+<p><img src="media/20/image3.png" style="width:3.5625in;height:1.64931in" /></p>
+<p>The minimum range performance to be demonstrated is 80% of the so-called “optical” (LOS) range, adjusted for altitude. Test at or above FL310.</p>
+<p><strong>Masking performance</strong></p>
+<p>As VHF is a LOS technology, any obstacle between the aircraft and the ground station can partially or totally attenuate signal strength. Such an obstacle may be on the ground (see comments on terrain in the section on range performance) but may also be any major aircraft structural element such as the fuselage, wings, tailplane, engines, or landing gear.</p>
+<p><img src="media/20/image4.png" style="width:3.22917in;height:1.761in" /></p>
+<p>Perform masking checks at 65% of the optical range, adjusted for altitude, Test at or above FL310.</p>
+<p><strong>Audio and control integration</strong></p>
+<p>It is highly unusual for modern civil transport aircraft to operate VHF on a stand-alone basis. Typically, audio management system centralizes the audio which is available to all crew members through a variety of listening equipment (boomset, headset, loudspeaker). The crew controls radios via a management interface which may be a dedicated Radio Management Panel (RMP) or included in a display format. For new installations testing to include tuning from all combinations of radios and panels is needed.</p>
+<p>Testers must verify the radios can be controlled correctly and the audio quality is correct. In the absence of a universally accepted and easily implemented objective solution for audio volume and clarity, the flight crew may use a subjective scale to judge for loudness and clearness. This will include a signal report on the transmission from the ground station as well.</p>
+<table>
+<colgroup>
+<col width="14%" />
+<col width="50%" />
+<col width="34%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Signal</strong></th>
+<th><strong>Question</strong></th>
+<th><strong>Answer, Advice, or Order</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>QSA</td>
+<td>What is the strength of my signals<br />
+(or those of...)?</td>
+<td><ol style="list-style-type: decimal">
+<li><p>scarcely perceptible</p></li>
+<li><p>weak</p></li>
+<li><p>fairly good</p></li>
+<li><p>good</p></li>
+<li><p>very good</p></li>
+</ol></td>
+</tr>
+<tr class="even">
+<td>QRK</td>
+<td>What is the intelligibility of my signals<br />
+(or those of...)?</td>
+<td><ol style="list-style-type: decimal">
+<li><p>bad</p></li>
+<li><p>poor</p></li>
+<li><p>fair</p></li>
+<li><p>good</p></li>
+<li><p>excellent</p></li>
+</ol></td>
+</tr>
+</tbody>
+</table>
+<p><em>Source<strong>:</strong> ITU Radio Regulations 1990, Appendix 13</em></p>
+<p><strong>Non-interference</strong></p>
+<p>By their nature as electromagnetic transmission systems, VHF radios can be an interference victim or source. This can take two forms: interaction between different VHF radios operating on similar frequencies, or interaction between the VHF system and other aircraft systems or interactions from other systems to the VHF system.</p>
+<p>Concerning the first interaction, the relative proximity of aircraft VHF antennas make it difficult to avoid interference for frequency separations of less than 6 MHz. This can be easily identified for voice communications (interference on VHF radio X frequency A reception when VHF radio Y is emitting on frequency B) but can be more difficult to identify for data communications when the frequency used for data transmissions is not readily visible in the cockpit.</p>
+<p>For interactions between VHF radios and different aircraft systems, the issue only occurs during VHF transmission by the aircraft due to the radiated power from the VHF antennae located close to other systems. Electromagnetic interference studies can predict the frequencies (or their harmonics) which may be problematic.</p>
+<p>For new installations, interactions from the aircraft systems to the VHF receivers, an EMI ground test is needed to determine what, if any, interference is entering the receiver’s circuitry, either through the antenna or through wiring that will show up as a noise on a particular frequency. A spectrum analyser connected to the aircrafts antennas, performing a scan throughout the entire VHF comm/nav band is needed to find any narrow band emissions from other systems that may be interfering. Checks at low, medium and high frequencies is no longer acceptable as most interference is now from narrow band emissions. For further details and recommendations, consult RTCA DO-160.</p>
+<p><strong>20.1.3 Test technique</strong></p>
+<p><strong>Range performance</strong></p>
+<p>The aircraft flies outbound ≥ FL310 on any convenient radial from a calibrated ground station. The aircraft distance from the ground station is needed and most often determined via FMS or GPS. VOR/DME data, when the ground station is located close to VOR/DME equipment, can be used, but since VOR/DME is also a line-of-sight technology and the output power can be lower than for a VHF transmitter, it is likely that the VOR/DME range will be lost before voice communication is interrupted.</p>
+<p>Every 5 NM (or more often, if required), a flight crew member calls a ground crew member who notes the transmission loudness/clarity. They then swap roles to determine aircraft reception. The checks continue until the loudness or clearness drops below 3, at which point the maximum range is considered to have been reached. It can nevertheless be useful to continue flying and testing outbound to characterise the distance at which there is a total loss of communication.</p>
+<p>A few nautical miles after completing outbound communication testing, the aircraft should reverse course to fly inbound on any convenient radial from the calibrated ground station. Once again, calls should continue every 5 NM until the communication is re-established with a loudness/clearness of at least 3. Repeat the above check for each radio and antenna combination.</p>
+<p>Depending on the antenna position, some masking may occur (e.g. tailplane masks a forward upper fuselage-mounted antenna during outbound legs). Results can demonstrate masking performance, or conversely justify any discrepancy in range obtained for outbound and inbound legs.</p>
+<p><strong>Masking performance</strong></p>
+<p>Longitudinal masking from the fuselage and/or tailplane having been identified during the range checks, only fuselage masking remains to be verified.</p>
+<p>The aircraft flies a 360º turn to the left or to the right, centered at 65% of the optical range, adjusted for altitude, the test being performed ≥ FL310. To identify areas where there is a reduction in signal strength, verify transmission and reception loudness &amp; clearness every 30º of heading. Demonstrate that reductions in strength are justified when considering the antenna location relative to the fuselage and taking into account the relative positions of the aircraft and the ground station. Repeat the check for each radio and antenna combination.</p>
+<p>On occasion, checks may be performed with landing gear and/or flaps/slats extended. However, since such configurations usually correspond to landing configurations, the distance between the aircraft and the ground station is reduced and the radiated power is therefore usually sufficient for the signal to “get around” the masking element. In case of unusual antenna locations and/or aircraft configurations, additional masking checks may be required.</p>
+<p><strong>Audio and control integration</strong></p>
+<p>General use of VHF radios during the course of standard flight operations is usually enough to identify if there is an issue of audio and/or control integration. Nevertheless, it is important to ensure all available radios are controlled from all available RMPs and the audio performance is checked from all available crew member positions with all available communications means (boomset, headset, hand microphone/loudspeaker, oxygen mask, etc). Typically, comfortable audio levels should be confirmed at mid-range volume setting on any audio control device.</p>
+<p><strong>Non-interference</strong></p>
+<p><strong>VHF / VHF</strong></p>
+<p>When listening on VHF radio X, transmit VHF radio Y frequencies previously agreed with the design office. Generally, do this at decreasing frequency spacings or on harmonic frequencies to assess the absence of interference, or acceptability level if interference occurs. Verify each combination of VHF and antenna. Such a test could be performed on the ground, but there is a strong potential for additional interference caused by signal reflections from surrounding infrastructure (buildings, ground, other aircraft or vehicles, etc.)</p>
+<p><strong>VHF / other aircraft systems</strong></p>
+<p>Evaluate the effect of each VHF radio transmission on other aircraft systems by transmitting on VHF frequencies previously agreed with the design office (almost always corresponding to harmonic frequencies for different aircraft systems).</p>
+<p>Note that electromagnetic interference is not limited to systems with similar operating characteristics (e.g. radio navigation equipment). It may also concern other aircraft systems, particularly those with long and potentially not well-shielded wiring runs.</p>
+<p><strong>20.1.4 Weather conditions</strong></p>
+<p>VHF communications are not significantly affected by atmospheric conditions such as clouds or precipitation, wind or temperature. Therefore, there is no significant restriction when testing VHF radios - especially since it is often done at altitude in rather clear air. The only exception would be interference due to lightning when discharging in proximity.</p>
+<p><strong>20.1.5 Safety</strong></p>
+<p>VHF use for ATC purposes is part of standard operating procedures for air crews and is not considered an inherently risky test. Nevertheless, due to the multiple changes of frequency and radio under test, combined with the fact that often a test frequency rather than an ATC frequency is used, there is potential for losing the current ATC frequency. This can be compounded on aircraft types where the standby frequency is not synchronised between RMPs. Clear communication between the crew members about who is tuning which radio and using which RMP can mitigate any problems.</p>
+<p>Ensure appropriate authorisations are in place for planned test frequencies. If an ATC frequency is used for some reason, avoid working heavily-used locations. Do not perform blind transmissions on a frequency without first listening for a while to see if that frequency is being used by other traffic.</p>
+<p><strong>20.1.6 Tips and hints</strong></p>
+<p>A common comment about audio quality is that “there is an echo.” This is usually due to more than one radio being tuned to the same frequency, thus both are heard simultaneously. It is therefore good practice to listen to only one radio at a time and ensure all radios are tuned to different frequencies.</p>
+<p>VHF data frequencies range from 131 to 136 MHz. Therefore, in case of interference on voice frequencies above 125 MHz (i.e. below the 6 MHz separation limit), consider switching off the VHF data mode to see if this is the source of the interference.</p>
+<p>Different radio types have different characteristics. Some may demonstrate a gradual loss of signal strength whereas others may have a more abrupt transition from intelligible to unintelligible. This is another reason to continue range checks beyond the loudness/clearness level 3.</p>
+<p>The number of available VHF frequencies, even with 8.33 MHz spacing, is rather limited and the same frequencies are re-used at multiple ground stations. An aircraft at high altitude may be able to receive more than one ground station transmitting at the same frequency. Accordingly, ensure the right ground station is answering!</p>
+<p><strong>20.2. HF radios</strong></p>
+<p><strong>20.2.1 Technology</strong></p>
+<p>The significant benefit of high frequency (HF) technology is the ability to communicate beyond line of sight. This is possible because the HF wavelengths (2-30 MHz with 1 kHz channel spacing) are such that the signal can easily reflect off the Earth’s surface or different ionosphere layers (layers of charged particles at altitudes between 60 and 1000 km). While LOS communications are possible, coverage is not entirely guaranteed between the aircraft and all ground stations because there may be “holes” where reflected signals do not reach the ground.</p>
+<p><img src="media/20/image5.png" style="width:4.11in;height:2.41in" /></p>
+<p>The long wavelengths involved would generally dictate the use of very long antennas. On an aircraft, this is not always geometrically possible. Cable antennas from the upper forward fuselage to the forward tip of the fin are one solution; so-called towel-bar antennas stood off from the fuselage are another option. However, more common, since the aerodynamic impact is much lower, is to fit the antenna inside the leading edge of one of the surfaces, typically the fin.</p>
+<p>Nevertheless, such antennas must be tuned to optimize their performance. This is achieved by connecting a coupler to the antenna. The coupler in turn is connected to the transceiver via a network of coaxial cables. Aeronautical transceivers generally provide both voice and data communications and can use upper side band (USB) or amplitude modulations (AM). A typical system output power is 400 W.</p>
+<p>CS25/Part 25 do not require multiple HF radios. Operational requirements for remote or oceanic airspace will nevertheless almost always require two independent long-range communication systems. Even if only one single antenna is usually installed, two separate transceiver/coupler chains are needed to fulfill the independence criteria.</p>
+<p><strong>20.2.2 Test Objectives</strong></p>
+<p>HF testing has several objectives. In addition to the below items, functional tests of data applications and switching between voice and data services may be assessed if relevant.</p>
+<p><strong>Range performance</strong></p>
+<p>There is no hard and fast numerical value for HF range performance, even if in practice, over the horizon contacts at 700nm+ is considered adequate. Nevertheless, it should be generally possible to achieve distances of 1000 NM or more, depending on the time of day and the frequency being used. A good guide is to consider operational requirements on routes on which HF radio may be used; there are very few points in the world’s oceanic or polar regions that lie on commonly operated routes which are more than 1000 NM from land and therefore from an HF transmitter (indeed, so-called “point Nemo”, the most remote oceanic point on the planet, is only 1500 NM from any land). The check should be performed in the clean configuration at a representative cruise altitude.</p>
+<p>It is also desirable to perform a short-range communication, preferable at low altitude, to check for any issues linked to saturation when receiving signal from the ground station at relatively high power.</p>
+<p><strong>Masking performance</strong></p>
+<p>Masking performance is generally not an issue for HF radios, because signal reflections can allow for non-LOS communications.</p>
+<p><strong>Audio and control integration</strong></p>
+<p>The same comments as for VHF testing apply for HF testing.</p>
+<p><strong>Non-interference</strong></p>
+<p>The principal problem with HF radios is the relatively high radiated power. Accordingly, even systems not operating on nearby frequencies (actual or harmonic) may be affected by aircraft HF radio transmissions. Aircraft with one HF antenna shared between two transceivers avoiding HF/HF interference, but those with dual HF antennas (principally military or search and rescue/maritime patrol operations) might. On such aircraft, there is often an interlock to prevent simultaneous transmission from both antennas at the same time.</p>
+<p><strong>20.2.3 Atmospheric conditions</strong></p>
+<p>Beyond LOS communications for HF rely on reflections of the transmission between layers of the ionosphere and the Earth’s surface. The exact position (altitude) of the ionosphere layers is a function of the time of day, the time of year, and solar activity. While the effect of the time of day and time of year on HF range performance is rather easy to predict, solar activity can only be precisely detailed a few minutes in advance. Satellites located between the Earth and the Sun measure the solar wind and transmit characteristics to Earth. Nevertheless, as solar activity is rather cyclic in nature, some high-level predictions can be made. The reflectivity of the Earth’s surface is also variable according to the type of surface (water, land, vegetation, etc.) and the local weather conditions. It is therefore possible to generate coverage (or “propagation”) maps for any given frequency, aircraft position, and time of day. For general purpose HF testing, it should be possible to achieve reasonable results almost any time, but if a specific range performance is targeted or if only a short time window is available for testing, such coverage maps can be a useful tool for optimizing testing.</p>
+<p>In case of intense solar activity, it is possible for HF communications to be completely unavailable (so-called “blackout”). Such periods of activity also generate strong auroras and may also impact terrestrial or satellite communications.</p>
+<p><img src="media/20/image6.png" style="width:3.79245in;height:3.83744in" /></p>
+<p><strong>20.2.4 Test technique</strong></p>
+<p><strong>Range performance</strong></p>
+<p>With the aircraft established at a cruise flight level in clean configuration, calls should be made to close and distant ground stations on a range of frequencies, using both USB and AM modulations. Note the distance from the station and loudness/clearness for transmission (i.e., as heard at the ground station) and reception (i.e., as heard on the aircraft). The system is considered successful if the loudness and clearness have a minimum level of 3. The check should be repeated at low altitude and short distance from a ground station.</p>
+<p><strong>Masking performance</strong></p>
+<p>It is unusual to perform specific masking checks for HF radios.</p>
+<p><strong>Audio and control integration</strong></p>
+<p>The same comments as for VHF testing apply for HF testing.</p>
+<p><strong>Non-interference</strong></p>
+<p>The same comments as for VHF testing apply for HF testing. Bear in mind the increased transmission power of HF radios.</p>
+<p><strong>20.2.5 Safety</strong></p>
+<p>Because the output power of HF radios is considerably higher than other communication means, it is generally recommended to not transmit HF from the aircraft if there are maintenance personnel nearby or if refueling is in progress. Ensure the appropriate authorisations are in place for the planned test frequencies. If an ATC frequency is used for some reason, avoid working heavily-used locations. Do not perform blind transmissions on a frequency without first listening for a while to see if that frequency is being used by other traffic.</p>
+<p><strong>20.2.6 Tips and hints</strong></p>
+<p>HF communications can be heard by numerous aircraft over a wide area. Furthermore, for long-range tests it is common to use commercially available providers (such as Stockholm radio) or even distant ATC centers (Gander or New York for tests in European airspace, for example). Such frequencies are widely used and therefore it is important to use standardized phraseology when performing HF checks on “public” frequencies. Communications should be short, efficient, and spoken clearly, since even on a good day, HF communications are not of a very high quality.</p>
+<p>A rule of thumb for finding a good frequency for long-range communications is to consider the position of the sun over the horizon. If it is low in the sky (or at night), testers prefer a low frequency. If it is high in the sky, a high frequency will generally be more successful.</p>
+<p>To facilitate operations, and bearing in mind that some parts of the planet are in darkness and others in daylight, the same frequencies are re-used at multiple ground stations. An aircraft performing very long range communications may therefore be in contact with more than one ground station using the same frequency. Therefore, ensure the right ground station is answering! This is a common occurrence in the North Atlantic where in the track system, the frequencies in use move from one side of the ocean to the other according to the time of day and the predominant traffic flows.</p>
+<p>On aircraft equipped with flight test instrumentation, aircraft HF transmissions can generate spurious readings on strain gauges located near the antenna. HF testing should therefore be avoided on flights where data from the strain gauges could be critical (e.g. loads monitoring).</p>
+<p><strong>20.3 SATCOM</strong></p>
+<p>This section covers only cockpit-based SATCOM communications systems. It does not address the testing of cabin-based SATCOM communications systems, typically in the Ka or Ku bands, which are usually used for the transmission of large amounts of data at rather high speeds, such as passenger internet access/mobile telephony, or military intelligence applications.</p>
+<p><strong>20.3.1 Technology</strong></p>
+<p>There are two principal satellite communication systems in use on large civil aircraft.</p>
+<p><strong>INMARSAT</strong></p>
+<p>Inmarsat satellites, initially designed with maritime operations in mind, are geostationary satellites orbiting 36000 km above the equator. Different generations of constellation (I2, I3, I4…) have been deployed at different locations. Historically they were evenly spread around the globe (Atlantic-E, Atlantic-W, Indian Ocean, Pacific Ocean) but more recent constellations have been located to provide higher capacity in areas of the Earth with higher traffic density (EMEA or Alphasat for example). The strong limitation of geostationary satellites is the total lack of terrestrial coverage above approximately 82ºN or S, and partial loss of coverage at even lower latitudes at the longitudes where the coverage areas of adjacent satellites overlap. This is because the signal from the satellite tangents the Earth’s surface at these locations.</p>
+<p><img src="media/20/image7.jpeg" style="width:3.42453in;height:2.53941in" /></p>
+<p><img src="media/20/image8.png" style="width:2.96181in;height:1.57569in" /></p>
+<p>To communicate, the aircraft (Aircraft Earth Station, AES) links to the nearest available satellite. Each satellite links to the ground via dedicated ground stations (Ground Earth Stations, GES, such as Fucino, or Paumalu) within the coverage area of the associated satellite. The call is then routed to the final user using a dedicated ground network.</p>
+<p>A typical Inmarsat Satellite Data Unit (SDU) contains 4 simultaneously usable channels (2 for cockpit voice, 1 for cockpit data and 1 for passenger services) and is connected via an amplifier to an antenna located on the upper fuselage. The antenna is usually an electrically steered phase array-type; the steering is required to avoid excessive transmitting power and to correctly receive the relatively weak signal coming from the satellite. The phase array technique allows a flat antenna which does not have a high drag penalty. Transmissions in the L-band occur between 1.5 and 1.6 Ghz for AES to/from satellite (4-6 GHz is used for satellite to/from GES).</p>
+<p>Within each satellite coverage area, the transmitted power from the satellite can be modulated across a number of areas known as spot beams, which provide higher capacity in areas where there is more traffic.</p>
+<p><strong>IRIDIUM</strong></p>
+<p>The main benefit of the Iridium constellation is that it provides global coverage. A total of 66 satellites (plus spares) at 780 km are in highly inclined Low Earth Orbits. As well as being linked to users such as aircraft, the satellites are always linked to each other. Communications are routed from aircraft to satellite and between satellites until reaching a satellite which is view of the unique ground station in the USA. The call is then routed to the final user using a dedicated ground network.</p>
+<p>An SDU is installed on the aircraft, typically with only two channels for simultaneous use (1 for cockpit voice and 1 for cockpit data) along with a small, non-steerable antenna on the upper fuselage. The aircraft is always in view of at least one satellite as they pass overhead; the Iridium network manages the switching between satellites to ensure seamless communications. As for Inmarsat, capacity is increased via the use of spotbeams, and L-band is used for AES to/from satellite communications.</p>
+<p><strong>20.3.2 Test Objectives</strong></p>
+<p>In addition to the objectives below, functional tests of cockpit data or passenger service applications may be assessed if relevant. Contrary to VHF or HF radios, range is never an issue for SATCOM systems.</p>
+<p><strong>20.3.2.1 Coverage</strong></p>
+<p><strong>INMARSAT</strong></p>
+<p>There are several aspects to be considered.</p>
+<p>1. For an aircraft in straight &amp; level flight, the elevation of the satellite antenna reduces with geographic latitude until it reaches 0º at 82º N or S. However, the elevation of the satellite antenna can also be reduced during aircraft maneuvers. For example, the elevation of the I4-F2 satellite seen from western Europe is approximately 11º. Therefore, if the aircraft is facing the satellite, the antenna elevation will be zero at an aircraft pitch attitude of 11º. The antenna elevation will also be at 0º if the aircraft is at a bank angle of 11º and the aircraft heading is perpendicular to the azimuth of the satellite antenna. It should be demonstrated that communications are possible whenever the antenna elevation is positive.</p>
+<p>2. Even with positive antenna elevations, masking can occur if a structural element is in the path of the communication beam. For example, in straight &amp; level flight directly away from a satellite, particularly at higher latitudes, the satellite beam may pass through the vertical tailplane.</p>
+<p>3. Although the satellite antenna elevation and azimuth does not change significantly when switching between spotbeams, there is a change of parameters in the system. Testers should verify the seamless nature of a spotbeam handover.</p>
+<p>4. Switching between satellites is less transparent because the antenna elevation and azimuth change at the boundary between satellite coverage areas. The changes may be quite significant, for example at very low latitudes close to the equator, an antenna switching between the I4-Alphasat and I4-Americas satellite will experience an azimuth change of 180º. There is therefore a communication interruption. According to the system definition, it must be verified if communications are re-established and to what extent. Generally speaking, cockpit data services automatically recover whereas cockpit voice and passenger services need to be reconnected.</p>
+<p><strong>Iridium</strong></p>
+<p>As previously discussed, the Iridium system continuously switches between satellites to give the best available connection. As a result, coverage is almost guaranteed and there are no specific cases to be addressed. Transient masking may be experienced but following an interruption to communications, a new non-masked satellite is automatically selected.</p>
+<p><strong>Audio and control integration</strong></p>
+<p>The same comments as for VHF testing apply for SATCOM testing.</p>
+<p><strong>Non-interference</strong></p>
+<p>The principal issue with SATCOM, particularly Inmarsat, is the rather high radiated power. This means that even systems which are not operating on close frequencies (actual or harmonic) may be affected by SATCOM transmissions from the aircraft.</p>
+<p>On the other hand, on many civil aircraft, as there is only one SATCOM antenna, there is no issue for interference between SATCOM channels. This may however be an issue on aircraft with more than one SATCOM antenna, operating in the same frequency band.</p>
+<p><strong>20.3.3 Weather conditions</strong></p>
+<p>Generally speaking, satellite communications in the L-band are not significantly affected by different weather conditions. This is not the case for Ka or Ku band signals which are strongly degraded by clouds and/or precipitation between the AES and the satellite.</p>
+<p><strong>20.3.4 Test technique</strong></p>
+<p><strong>20.3.4.1 Coverage</strong></p>
+<p><strong>INMARSAT</strong></p>
+<p>Initially, the correct performance of the system is determined by performing a number of air/ground and ground/air communications in straight and level cruise flight. It can also be useful to establish a communication and see if it remains in place during operational aircraft maneuvers. If masking is encountered, show interruptions are justified when considering the antenna position the fuselage, and taking into account the relative positions of the aircraft and the satellite.</p>
+<p>To more precisely identify the correct antenna coverage, establish communication and leave it in place. The aircraft performs a series of 360º turns at incrementally increasing bank angles for each turn. It should be demonstrated that no loss in communication occurs at any time during the turns until the bank angle exceeds the satellite elevation expected for the location of the testing. Even above that bank angle, there will be sectors of the turn when the antenna is “facing” the satellite and communications may still be possible, so it is important to complete the 360º turn. There is no specific CS25 / part 25 requirement for a minimum bank angle; rather it should be shown that there is no loss within a normal operational domain (for example, the bank angles achieved during autopilot turns across minor heading changes at high altitude).</p>
+<p>To check system behavior at spotbeam or satellite handovers, obtain a detailed coverage map and fly a specific route which crosses the boundaries. In general, switching occurs when the received signal drops below a minimum power threshold rather than at a precise geographic location; it is therefore important to plan a flight route perpendicular to the predicted handover boundary and which extends beyond it for a significant distance.</p>
+<p><strong>Iridium</strong></p>
+<p>Verify acceptable system performance by executing a number of air/ground and ground/air communications in a range of aircraft positions and attitudes. It can also be useful to establish a communication and determine if it remains in place during operational aircraft maneuvers.</p>
+<p><strong>Audio and control integration</strong></p>
+<p>The same comments as for VHF testing apply for SATCOM testing.</p>
+<p><strong>Non-interference</strong></p>
+<p>As the beam for satellite communications is highly directional, interference between the SATCOM and other aircraft systems generally only occurs when the beam directly falls on the antenna or other component of another aircraft system. It is therefore necessary to place the aircraft in a very specific attitude, as a function of the position of the aircraft, the specific location of the system under test, and according to the satellite in use. While in this specific attitude, execute SATCOM communications and note any impact on the system under study. For example, to check for interference of a SATCOM communication on an MMR (or GPS) antenna, with a SATCOM antenna on the upper central fuselage and an MMR antenna on the upper forward fuselage, requires an aircraft flying in western Europe and using the I4-F2 satellite to fly at a pitch of 11º on a heading of 112º.</p>
+<p><strong>20.3.5 Safety</strong></p>
+<p>The output power of SATCOM systems, especially Inmarsat, is considerably higher than other communication means. As a result, it is generally recommended not to perform SATCOM communications if there are maintenance personnel close to the aircraft. SATCOM test flights can be very long with just a few moments of “excitement” at a satellite handover boundary. Crew fatigue and loss of concentration is therefore to be carefully assessed.</p>
+<p><strong>20.3.6 Tips and hints</strong></p>
+<p>Generally speaking, cockpit HMIs do not provide information on which satellite/spotbeam combination is being used, even if for Inmarsat systems it is usually possible to identify the satellite and GES in use. It is also very rare to be able to identify antenna azimuth and elevation in real time. Therefore, when possible, it is strongly recommended to connect a test tool – which is generally specific to the SDU manufacturer – which allows to access such information in real time. This allows quick identification of masking or handover issues.</p>
+<p>A number of publicly available internet sites allow the quick and easy calculation of expected antenna elevations and azimuths as a function of aircraft position, for example <a href="http://www.dishpointer.com">www.dishpointer.com</a>.</p>
+<p>In particular for satellite handovers, the required flight routes can be very long and may well be in oceanic airspace. As a result, it is almost always required to follow a flight plan and therefore rarely possible to repeat the overflight of the handover boundary. It is therefore important to involve all actors to maximize the success of the check (ATC, design office, SDU or other system components suppliers, satellite operator, ground network operator, etc.).</p>
+<p><strong>20.4 Other communication systems</strong></p>
+<p><strong>20.4.1 SELCAL</strong></p>
+<p>Although often tested in parallel with the radios, strictly speaking, SELCAL (SELective CALling) is a function of the audio management system rather than of the VHF or HF radios. It allows a ground station to generate a buzzer in the cockpit of an aircraft - even when the aircraft is not actively listening to the tuned frequency (HF during oceanic sectors, for example). It relies on both aircraft and ground station being tuned to the same frequency, for the ground station to know in advance the four-letter SELCAL code of the aircraft. The ground station sends an audible signal, made up of a mixture of tones, which corresponds to the SELCAL code of the aircraft. The AMU decodes the signal and sounds the buzzer.</p>
+<p>A number of rules govern the list of available SELCAL codes, such that their number is rather limited compared to the number of aircraft flying at any one time. As a result, the same code may be used by several aircraft. If they happen to be in the same geographical region and on the same frequency, there is the potential for more than one aircraft to be contacted at the same time. A simple voice check clarifies the situation.</p>
+<p><strong>20.4.2 TVHF</strong></p>
+<p>Tactical VHF (TVHF) communications, principally for military users, use 30–88 MHz frequencies. Although this is seen as an extension of the VHF range, and therefore used and tested in a similar fashion, the wavelengths of such frequencies are rather long. As a result, antennas which are designed for VHF applications but used for TVHF applications are not well-adapted. Tunable antennas are sometimes implemented to improve performance.</p>
+<p>TVHF wavelengths would benefit from increased transmission power, but this is not generally the case. As a result, it can be difficult or even impossible to meet the range performance requirements of VHF radios. Since TVHF is rarely certified for civilian operations under CS25 / Part 25, the qualification requirements discussed with military operators have to be carefully defined to avoid difficult discussions.</p>
+<p><strong>20.4.3 Maritime radio</strong></p>
+<p>Some large aircraft, typically those used for search and rescue or maritime patrol activities, are equipped with maritime radio. The frequency band is 156-174 MHz. The specificity of such radios is that the frequencies are automatically stored under channel numbers. Some channel numbers refer to a pair of frequencies, the so-called “ship” and “shore” roles, which allows full duplex communications. In maritime applications, vessels logically use the ship role and ground stations the shore role. In aeronautical applications, the aircraft needs to be able to perform the ship role (for coordination with a ground station) or the shore role (for communication with a vessel). To further complicate matters, the pre-defined tables of frequencies are different in different geographical locations. Testing, which is done in the same way as standard VHF radios, requires the involved parties to agree on precisely which channel, role and geographical table will be used.</p>
+<p><strong>20.4.4 V/UHF</strong></p>
+<p>V/UHF (Very/Ultra High Frequency) is a further extension of the VHF domain towards higher frequencies, including into the lowest parts of the UHF spectrum, exclusively used by the military in aeronautical applications. The frequencies range from 225- 400 MHz and both AM and FM modulations may be available. Testing is performed in the same way as standard VHF radios.</p>
+<p><strong>20.4.5 ALE</strong></p>
+<p>ALE (Automatic Link Establishment) is an HF-radio technology that alleviates the need for the crew to manually tune the HF-radio at different frequencies to reach a given ground station. Instead, a “network” of frequencies is shared by the aircraft and the ground station, and the HF radio equipment in both aircraft and ground station automatically identify the best frequency as function of range, aircraft positon, atmospheric conditions, etc. The selection of the frequency and its continuous update all along the transmissions is completely transparent to the crew.</p>
+<p><strong>20.4.6 Encryption technologies</strong></p>
+<p>Whatever the frequency band, it is possible to use different encryption techniques to secure communications. In principle these techniques do not have any impact on the range or masking performance of the communication means, but audio and control integration must be carefully tested to ensure the correct encryption and decryption. There are two principal methods of encryption:</p>
+<p>- COMSEC (communications security): the signal is modified in such a way that a listener not equipped with encryption key cannot understand the content of the message. The same encryption key must be used by both aircraft and ground station to encrypt the message before transmission and to decrypt it upon reception.</p>
+<p>- TRANSEC (transmission security), for example HAVEQUICK or SATURN. The most commonly used technology is frequency hopping: the radios automatically cycle through a set of different frequencies according to an order and time schedule which is defined in an encryption key which must be loaded in both aircraft and ground station.</p>
+<p>It is possible to combine both methods of encryption.</p>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="the-electromagnetic-spectrum.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="real-time-data-display-guidelines.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

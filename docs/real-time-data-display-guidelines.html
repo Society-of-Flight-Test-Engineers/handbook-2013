@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>21 21. Real-Time Data Display Guidelines** | Flight Test Engineering Reference Handbook</title>
+  <meta name="description" content="21 21. Real-Time Data Display Guidelines** | Flight Test Engineering Reference Handbook" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="21 21. Real-Time Data Display Guidelines** | Flight Test Engineering Reference Handbook" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="media/media/image1.jpg" />
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="21 21. Real-Time Data Display Guidelines** | Flight Test Engineering Reference Handbook" />
+  
+  
+  <meta name="twitter:image" content="media/media/image1.jpg" />
+
+<meta name="author" content="Society of Flight Test Engineers" />
+
+
+<meta name="date" content="2013-01-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="communication-systems-testing.html"/>
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#contributors"><i class="fa fa-check"></i>Contributors</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#editors"><i class="fa fa-check"></i>Editors</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#feedback"><i class="fa fa-check"></i>Feedback</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#publication-policy"><i class="fa fa-check"></i>Publication Policy</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#section-index"><i class="fa fa-check"></i>Section Index</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="general-information.html"><a href="general-information.html"><i class="fa fa-check"></i><b>1</b> General Information</a><ul>
+<li class="chapter" data-level="1.1" data-path="general-information.html"><a href="general-information.html#unit-conversions"><i class="fa fa-check"></i><b>1.1</b> Unit Conversions</a></li>
+<li class="chapter" data-level="1.2" data-path="general-information.html"><a href="general-information.html#greek-alphabet"><i class="fa fa-check"></i><b>1.2</b> Greek Alphabet</a></li>
+<li class="chapter" data-level="1.3" data-path="general-information.html"><a href="general-information.html#greek-symbols-used-for-aircraft"><i class="fa fa-check"></i><b>1.3</b> Greek Symbols Used for Aircraft</a></li>
+<li class="chapter" data-level="1.4" data-path="general-information.html"><a href="general-information.html#common-subscripts"><i class="fa fa-check"></i><b>1.4</b> Common Subscripts</a></li>
+<li class="chapter" data-level="1.5" data-path="general-information.html"><a href="general-information.html#common-abbreviations-raw"><i class="fa fa-check"></i><b>1.5</b> Common Abbreviations (raw)</a></li>
+<li class="chapter" data-level="1.6" data-path="general-information.html"><a href="general-information.html#sign-conventions-raw"><i class="fa fa-check"></i><b>1.6</b> Sign Conventions (raw)</a></li>
+<li class="chapter" data-level="1.7" data-path="general-information.html"><a href="general-information.html#thermodynamics-relations"><i class="fa fa-check"></i><b>1.7</b> Thermodynamics Relations</a><ul>
+<li class="chapter" data-level="1.7.1" data-path="general-information.html"><a href="general-information.html#thermodynamic-definitions"><i class="fa fa-check"></i><b>1.7.1</b> Thermodynamic Definitions</a></li>
+<li class="chapter" data-level="1.7.2" data-path="general-information.html"><a href="general-information.html#thermodynamic-symbols"><i class="fa fa-check"></i><b>1.7.2</b> Thermodynamic Symbols</a></li>
+<li class="chapter" data-level="1.7.3" data-path="general-information.html"><a href="general-information.html#thermodynamic-laws"><i class="fa fa-check"></i><b>1.7.3</b> Thermodynamic Laws</a></li>
+</ul></li>
+<li class="chapter" data-level="1.8" data-path="general-information.html"><a href="general-information.html#mechanics-relations"><i class="fa fa-check"></i><b>1.8</b> Mechanics Relations</a><ul>
+<li class="chapter" data-level="1.8.1" data-path="general-information.html"><a href="general-information.html#mechanics-symbols"><i class="fa fa-check"></i><b>1.8.1</b> Mechanics Symbols</a></li>
+<li class="chapter" data-level="1.8.2" data-path="general-information.html"><a href="general-information.html#newtons-laws"><i class="fa fa-check"></i><b>1.8.2</b> Newton’s Laws</a></li>
+<li class="chapter" data-level="1.8.3" data-path="general-information.html"><a href="general-information.html#planar-kinetics-work-power-and-energy"><i class="fa fa-check"></i><b>1.8.3</b> Planar Kinetics, Work, Power and Energy</a></li>
+<li class="chapter" data-level="1.8.4" data-path="general-information.html"><a href="general-information.html#planar-kinematics-at-constant-acceleration"><i class="fa fa-check"></i><b>1.8.4</b> Planar Kinematics at Constant Acceleration</a></li>
+<li class="chapter" data-level="1.8.5" data-path="general-information.html"><a href="general-information.html#curvilinear-motion-with-constant-acceleration-and-radius"><i class="fa fa-check"></i><b>1.8.5</b> Curvilinear motion with constant acceleration and radius</a></li>
+<li class="chapter" data-level="1.8.6" data-path="general-information.html"><a href="general-information.html#aircraft-in-level-turn"><i class="fa fa-check"></i><b>1.8.6</b> Aircraft in level turn</a></li>
+<li class="chapter" data-level="1.8.7" data-path="general-information.html"><a href="general-information.html#level-turn-kinematics-character"><i class="fa fa-check"></i><b>1.8.7</b> Level Turn Kinematics Character</a></li>
+<li class="chapter" data-level="1.8.8" data-path="general-information.html"><a href="general-information.html#gyroscopic-motion"><i class="fa fa-check"></i><b>1.8.8</b> Gyroscopic Motion</a></li>
+</ul></li>
+<li class="chapter" data-level="1.9" data-path="general-information.html"><a href="general-information.html#international-phonetic-alphabet-and-morse-code"><i class="fa fa-check"></i><b>1.9</b> International Phonetic Alphabet and Morse Code</a></li>
+<li class="chapter" data-level="1.10" data-path="general-information.html"><a href="general-information.html#section-1-references"><i class="fa fa-check"></i><b>1.10</b> Section 1 References</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="mathematics.html"><a href="mathematics.html"><i class="fa fa-check"></i><b>2</b> Mathematics</a><ul>
+<li class="chapter" data-level="2.1" data-path="mathematics.html"><a href="mathematics.html#algebra"><i class="fa fa-check"></i><b>2.1</b> Algebra</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="mathematics.html"><a href="mathematics.html#laws"><i class="fa fa-check"></i><b>2.1.1</b> Laws</a></li>
+<li class="chapter" data-level="2.1.2" data-path="mathematics.html"><a href="mathematics.html#identities"><i class="fa fa-check"></i><b>2.1.2</b> Identities</a></li>
+<li class="chapter" data-level="2.1.3" data-path="mathematics.html"><a href="mathematics.html#equations"><i class="fa fa-check"></i><b>2.1.3</b> Equations</a></li>
+<li class="chapter" data-level="2.1.4" data-path="mathematics.html"><a href="mathematics.html#interest-and-annuities"><i class="fa fa-check"></i><b>2.1.4</b> Interest And Annuities</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="mathematics.html"><a href="mathematics.html#geometry"><i class="fa fa-check"></i><b>2.2</b> Geometry</a></li>
+<li class="chapter" data-level="2.3" data-path="mathematics.html"><a href="mathematics.html#trigonometery-raw"><i class="fa fa-check"></i><b>2.3</b> Trigonometery (raw)</a></li>
+<li class="chapter" data-level="2.4" data-path="mathematics.html"><a href="mathematics.html#matrix-algebra-raw"><i class="fa fa-check"></i><b>2.4</b> Matrix Algebra (raw)</a></li>
+<li class="chapter" data-level="2.5" data-path="mathematics.html"><a href="mathematics.html#vector-algebra"><i class="fa fa-check"></i><b>2.5</b> Vector Algebra</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="mathematics.html"><a href="mathematics.html#addition"><i class="fa fa-check"></i><b>2.5.1</b> Addition</a></li>
+<li class="chapter" data-level="2.5.2" data-path="mathematics.html"><a href="mathematics.html#subtraction"><i class="fa fa-check"></i><b>2.5.2</b> Subtraction</a></li>
+<li class="chapter" data-level="2.5.3" data-path="mathematics.html"><a href="mathematics.html#scalar-multiplication"><i class="fa fa-check"></i><b>2.5.3</b> Scalar Multiplication</a></li>
+<li class="chapter" data-level="2.5.4" data-path="mathematics.html"><a href="mathematics.html#dot-product"><i class="fa fa-check"></i><b>2.5.4</b> Dot Product</a></li>
+<li class="chapter" data-level="2.5.5" data-path="mathematics.html"><a href="mathematics.html#norm"><i class="fa fa-check"></i><b>2.5.5</b> Norm</a></li>
+<li class="chapter" data-level="2.5.6" data-path="mathematics.html"><a href="mathematics.html#vector-cross-product"><i class="fa fa-check"></i><b>2.5.6</b> Vector Cross Product</a></li>
+<li class="chapter" data-level="2.5.7" data-path="mathematics.html"><a href="mathematics.html#vector-differentiation"><i class="fa fa-check"></i><b>2.5.7</b> Vector Differentiation</a></li>
+<li class="chapter" data-level="2.5.8" data-path="mathematics.html"><a href="mathematics.html#motion-of-a-point-using-two-reference-systems"><i class="fa fa-check"></i><b>2.5.8</b> Motion of a point using two reference systems</a></li>
+<li class="chapter" data-level="2.5.9" data-path="mathematics.html"><a href="mathematics.html#motion-of-a-point-using-one-reference-system"><i class="fa fa-check"></i><b>2.5.9</b> Motion of a point using one reference system</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="mathematics.html"><a href="mathematics.html#probability-and-statistics"><i class="fa fa-check"></i><b>2.6</b> Probability and Statistics</a></li>
+<li class="chapter" data-level="2.7" data-path="mathematics.html"><a href="mathematics.html#standard-series-raw"><i class="fa fa-check"></i><b>2.7</b> Standard Series (raw)</a></li>
+<li class="chapter" data-level="2.8" data-path="mathematics.html"><a href="mathematics.html#derivative-table-raw"><i class="fa fa-check"></i><b>2.8</b> Derivative Table (raw)</a></li>
+<li class="chapter" data-level="2.9" data-path="mathematics.html"><a href="mathematics.html#integral-table-raw"><i class="fa fa-check"></i><b>2.9</b> Integral Table (raw)</a></li>
+<li class="chapter" data-level="2.10" data-path="mathematics.html"><a href="mathematics.html#laplace-table-raw"><i class="fa fa-check"></i><b>2.10</b> Laplace Table (raw)</a></li>
+<li class="chapter" data-level="2.11" data-path="mathematics.html"><a href="mathematics.html#references"><i class="fa fa-check"></i><b>2.11</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html"><i class="fa fa-check"></i><b>3</b> Universe Earth Atmospheric</a><ul>
+<li class="chapter" data-level="3.1" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html#properties"><i class="fa fa-check"></i><b>3.1</b> Properties</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="pitot-statics.html"><a href="pitot-statics.html"><i class="fa fa-check"></i><b>4</b> Pitot Statics</a><ul>
+<li class="chapter" data-level="" data-path="pitot-statics.html"><a href="pitot-statics.html#common-nomenclature"><i class="fa fa-check"></i>Common Nomenclature</a></li>
+<li class="chapter" data-level="4.1" data-path="pitot-statics.html"><a href="pitot-statics.html#subsonic-airspeed-and-mach-equation"><i class="fa fa-check"></i><b>4.1</b> Subsonic Airspeed and Mach Equation</a></li>
+<li class="chapter" data-level="4.2" data-path="pitot-statics.html"><a href="pitot-statics.html#scale-altitude-compressibility-correction"><i class="fa fa-check"></i><b>4.2</b> Scale Altitude (Compressibility ) Correction</a></li>
+<li class="chapter" data-level="4.3" data-path="pitot-statics.html"><a href="pitot-statics.html#subsonic-relations-between-compressible-and-incompressible-dynamic-pressure"><i class="fa fa-check"></i><b>4.3</b> Subsonic Relations Between Compressible and Incompressible Dynamic Pressure</a></li>
+<li class="chapter" data-level="4.4" data-path="pitot-statics.html"><a href="pitot-statics.html#supersonic-airspeed-and-mach-equations"><i class="fa fa-check"></i><b>4.4</b> Supersonic Airspeed and Mach Equations</a></li>
+<li class="chapter" data-level="4.5" data-path="pitot-statics.html"><a href="pitot-statics.html#total-temperature-equation"><i class="fa fa-check"></i><b>4.5</b> Total Temperature Equation</a></li>
+<li class="chapter" data-level="4.6" data-path="pitot-statics.html"><a href="pitot-statics.html#altimeter-equation"><i class="fa fa-check"></i><b>4.6</b> Altimeter Equation</a></li>
+<li class="chapter" data-level="4.7" data-path="pitot-statics.html"><a href="pitot-statics.html#position-error-test-methods"><i class="fa fa-check"></i><b>4.7</b> Position Error Test Methods**</a><ul>
+<li class="chapter" data-level="4.7.1" data-path="pitot-statics.html"><a href="pitot-statics.html#fly-by"><i class="fa fa-check"></i><b>4.7.1</b> Fly-by</a></li>
+<li class="chapter" data-level="4.7.2" data-path="pitot-statics.html"><a href="pitot-statics.html#ground-course-method"><i class="fa fa-check"></i><b>4.7.2</b> Ground Course Method</a></li>
+<li class="chapter" data-level="4.7.3" data-path="pitot-statics.html"><a href="pitot-statics.html#trailing-conebomb-method"><i class="fa fa-check"></i><b>4.7.3</b> Trailing Cone/Bomb Method</a></li>
+<li class="chapter" data-level="4.7.4" data-path="pitot-statics.html"><a href="pitot-statics.html#gps-methods"><i class="fa fa-check"></i><b>4.7.4</b> 4.7.4 GPS Methods</a></li>
+</ul></li>
+<li class="chapter" data-level="4.8" data-path="pitot-statics.html"><a href="pitot-statics.html#position-error-far-2325.1323-and-.1325jar-certification"><i class="fa fa-check"></i><b>4.8</b> Position Error FAR 23/25.1323 and .1325/JAR Certification</a></li>
+<li class="chapter" data-level="4.9" data-path="pitot-statics.html"><a href="pitot-statics.html#pec-correction-process-flow-chart"><i class="fa fa-check"></i><b>4.9</b> PEC Correction Process Flow Chart</a></li>
+<li class="chapter" data-level="4.10" data-path="pitot-statics.html"><a href="pitot-statics.html#airspeedaltitudemach-graphic-relation"><i class="fa fa-check"></i><b>4.10</b> Airspeed/Altitude/Mach Graphic Relation</a></li>
+<li class="chapter" data-level="4.11" data-path="pitot-statics.html"><a href="pitot-statics.html#effect-of-errors-on-calibrated-airspeed-and-altitude"><i class="fa fa-check"></i><b>4.11</b> Effect of Errors on Calibrated Airspeed and Altitude</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="aerodynamics.html"><a href="aerodynamics.html"><i class="fa fa-check"></i><b>5</b> 5 Aerodynamics**</a></li>
+<li class="chapter" data-level="6" data-path="axis-systems-and-transformations.html"><a href="axis-systems-and-transformations.html"><i class="fa fa-check"></i><b>6</b> 6 Axis Systems and Transformations**</a></li>
+<li class="chapter" data-level="7" data-path="mass-properties.html"><a href="mass-properties.html"><i class="fa fa-check"></i><b>7</b> 7 Mass Properties**</a></li>
+<li class="chapter" data-level="8" data-path="motionvibration-analysis.html"><a href="motionvibration-analysis.html"><i class="fa fa-check"></i><b>8</b> 8 Motion/Vibration Analysis**</a></li>
+<li class="chapter" data-level="9" data-path="material-strength.html"><a href="material-strength.html"><i class="fa fa-check"></i><b>9</b> 9 Material Strength**</a></li>
+<li class="chapter" data-level="10" data-path="reciprocating-engines.html"><a href="reciprocating-engines.html"><i class="fa fa-check"></i><b>10</b> 10 Reciprocating Engines**</a></li>
+<li class="chapter" data-level="11" data-path="propellers.html"><a href="propellers.html"><i class="fa fa-check"></i><b>11</b> 11 Propellers**</a></li>
+<li class="chapter" data-level="12" data-path="fixed-wing-performance-standardization.html"><a href="fixed-wing-performance-standardization.html"><i class="fa fa-check"></i><b>12</b> 12 Fixed-Wing Performance Standardization**</a></li>
+<li class="chapter" data-level="13" data-path="acoustics.html"><a href="acoustics.html"><i class="fa fa-check"></i><b>13</b> 13 Acoustics**</a></li>
+<li class="chapter" data-level="14" data-path="electromagnetic-compatibility.html"><a href="electromagnetic-compatibility.html"><i class="fa fa-check"></i><b>14</b> 14 Electromagnetic Compatibility**</a><ul>
+<li class="chapter" data-level="14.0.1" data-path="electromagnetic-compatibility.html"><a href="electromagnetic-compatibility.html#regulations-and-industry-guidance"><i class="fa fa-check"></i><b>14.0.1</b> Regulations and Industry Guidance</a></li>
+<li class="chapter" data-level="14.0.2" data-path="electromagnetic-compatibility.html"><a href="electromagnetic-compatibility.html#lab-testing"><i class="fa fa-check"></i><b>14.0.2</b> 14.6.1 Lab Testing</a></li>
+<li class="chapter" data-level="14.0.3" data-path="electromagnetic-compatibility.html"><a href="electromagnetic-compatibility.html#aircraft-ground-testing"><i class="fa fa-check"></i><b>14.0.3</b> 14.6.2 Aircraft Ground Testing</a></li>
+<li class="chapter" data-level="14.0.4" data-path="electromagnetic-compatibility.html"><a href="electromagnetic-compatibility.html#aircraft-flight-testing"><i class="fa fa-check"></i><b>14.0.4</b> 14.6.3 Aircraft Flight Testing</a></li>
+<li class="chapter" data-level="14.0.5" data-path="electromagnetic-compatibility.html"><a href="electromagnetic-compatibility.html#avionics-changes-and-emi-testing"><i class="fa fa-check"></i><b>14.0.5</b> 14.6.4 Avionics changes and EMI testing</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="handling-qualities.html"><a href="handling-qualities.html"><i class="fa fa-check"></i><b>15</b> 15 Handling Qualities**</a></li>
+<li class="chapter" data-level="16" data-path="rotary-wing.html"><a href="rotary-wing.html"><i class="fa fa-check"></i><b>16</b> 16 Rotary Wing**</a></li>
+<li class="chapter" data-level="17" data-path="gas-turbine-propulsion.html"><a href="gas-turbine-propulsion.html"><i class="fa fa-check"></i><b>17</b> 17 Gas Turbine Propulsion**</a></li>
+<li class="chapter" data-level="18" data-path="telemetry-control-room-and-radio-communications.html"><a href="telemetry-control-room-and-radio-communications.html"><i class="fa fa-check"></i><b>18</b> 18 - Telemetry Control Room and Radio Communications**</a></li>
+<li class="chapter" data-level="19" data-path="the-electromagnetic-spectrum.html"><a href="the-electromagnetic-spectrum.html"><i class="fa fa-check"></i><b>19</b> 19 - The Electromagnetic Spectrum**</a></li>
+<li class="chapter" data-level="20" data-path="communication-systems-testing.html"><a href="communication-systems-testing.html"><i class="fa fa-check"></i><b>20</b> 20 - Communication Systems Testing**</a></li>
+<li class="chapter" data-level="21" data-path="real-time-data-display-guidelines.html"><a href="real-time-data-display-guidelines.html"><i class="fa fa-check"></i><b>21</b> 21. Real-Time Data Display Guidelines**</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Flight Test Engineering Reference Handbook</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="real-time-data-display-guidelines" class="section level1">
+<h1><span class="header-section-number">21</span> 21. Real-Time Data Display Guidelines**</h1>
+<p><strong><em><span class="underline">Author</span>:</em></strong></p>
+<p><strong><em>Mark Updegrove</em></strong></p>
+<p><strong><em>(email: mark.updegrove@outlook.com)</em></strong></p>
+<p><strong><em><span class="underline">Contributing Editors</span>:</em></strong></p>
+<p><strong><em>Mark Mondt, Steve Carothers, Brian Maisler, Bill Kuhlemeier, Nathan Cook,</em></strong></p>
+<p><strong><em>Amit Alex, Libin Daniel, Ben Povall, Hunter Bloch, Andre Celere</em></strong></p>
+<p>This section provides “best practice guidelines” for building real-time flight test monitoring displays. The goal of a well-designed display is to present information, not merely data, to the user. These guidelines are applicable for both on-aircraft and telemetry-based control room displays. While the guidelines are aimed primarily at the FTE/Test Conductor/Test Director role, the principles are applicable to any engineering displays that support the real-time flight test mission.</p>
+<p><strong><span class="underline">Display Guidelines</span></strong></p>
+<ol style="list-style-type: decimal">
+<li><p><strong>General</strong> – No set of guidelines can cover all potential situations. In cases where a conflict between specific items arises, judgment is required as to how to honor the overall intent of the guidelines while still accomplishing the intended mission.</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Criticality and Application</p>
+<ol style="list-style-type: lower-roman">
+<li><p>The level of diligence put into building the display should be commensurate with the criticality of the display.</p></li>
+<li><p>The intended users of these guidelines are those FTEs who, either on the aircraft or in the control room, make real-time decisions that affect the safety of the crew and the integrity of the aircraft.</p></li>
+<li><p>Displays which are safety critical should be identified as such, versus displays which provide situational awareness information only.</p></li>
+<li><p>As the criticality of a display increases, more care should be taken to ensure the display conveys critical information, without being cluttered by non-critical data.</p></li>
+<li><p>To the greatest extent practical, displays should tightly follow a common design philosophy across the individual test assets within a program, as well as across various platform types within an organization.</p></li>
+</ol></li>
+<li><p>Organization – Roles and Responsibilities of Users</p>
+<ol style="list-style-type: lower-roman">
+<li><p>The primary responsibility of the overall display layout and functional design should be placed on an experienced FTE.</p></li>
+<li><p>The cognizant FTE should have a robust knowledge of the aircraft/systems under test, the types of testing to be performed, and the manner in which the FTEs will conduct the test and make decisions.</p></li>
+<li><p>The cognizant FTE should ensure that displays are designed in order to allow data quality and basic pass/fail criteria to be easily assessed during test conduct.</p></li>
+<li><p>In no circumstance should the creation of data displays be blindly delegated to the least experienced person on the team, without direct guidance and oversight from a more senior FTE.</p></li>
+</ol></li>
+</ol></li>
+<li><p><strong>Visual Elements</strong> – Visual elements are the interface layer at which the FTE integrates operationally with the aircraft. This is perhaps the area that has the largest immediate impact on any FTE’s ability to act efficiently and safely during a test. Consequently, careful thought should be given to visual element design when building displays.</p>
+<ol start="3" style="list-style-type: lower-alpha">
+<li><p>Human Factors<sup>2,3,4,7</sup></p>
+<ol style="list-style-type: lower-roman">
+<li><p>Design displays to deliver data in a manner that accommodates the basic human factors strengths/weaknesses of the users.</p></li>
+<li><p>Follow the basic human factors design philosophies of cockpit displays, adding information as required to enable the FTE to perform their function.</p></li>
+<li><p>Avoid cluttered displays by utilizing negative (empty space) to allow spatial differentiation of data.</p></li>
+<li><p>Data displays should not have more than ~60% of the overall display space occupied with visual elements (ie; at least 40% empty space).</p></li>
+<li><p>The display should utilize color, contrast, and a thoughtful layout to maximize legibility and reduce clutter.</p></li>
+</ol></li>
+<li><p>Contrast</p>
+<ol start="6" style="list-style-type: lower-roman">
+<li><p>Contrast is the primary visual cue for users to efficiently locate information on a display<sup>7</sup>. Use contrast appropriately.</p></li>
+<li><p>Contrast is used primarily to manage the user’s attention, and increase legibility of elements on a display<sup>7</sup>.</p></li>
+<li><p>Contrast can also be a useful tool to provide non-distracting contextual cues to data (ie; background lines, grouping boxes, etc).</p></li>
+<li><p>In general, the most critical and useful elements on a display should have the highest contrast against the background (color usage as status information is addressed separately, below).</p></li>
+<li><p><img src="media/21/image1.png" style="width:4.37014in;height:2.79097in" />Less important or less useful elements should have less contrast, allowing them to be easily ignored when the FTE’s brain is highly saturated with critical tasks. See Fig 1 below.</p></li>
+</ol></li>
+<li><p>Color</p>
+<ol start="11" style="list-style-type: lower-roman">
+<li><p>Color is a secondary visual cue which allows users to more efficiently sort and interpret information on a display<sup>6</sup>.</p></li>
+<li><p>Color should not be the only discriminator used, especially for critical data. <strong>NOTE:</strong> See Appendix A, or MIL-STD-1472<sup>3</sup> for specific guidance on color usage for color vision deficient users.</p></li>
+<li><p>Color can provide information that can quickly give the FTE insight as to the purpose of the data, as well as its health, status, proximity to a limit, etc.</p></li>
+<li><p>Each screen element should have a meaningful color that represents the type of information it is displaying. The following is suggested<sup>8</sup>:</p></li>
+</ol></li>
+</ol></li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Element</th>
+<th align="left">IADS</th>
+<th align="left">Hex</th>
+<th align="left">RGB</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Display Background</td>
+<td align="left"><strong>0x000000</strong></td>
+<td align="left"><strong>#000000</strong></td>
+<td align="left"><strong>0,0,0</strong></td>
+</tr>
+<tr class="even">
+<td align="left">Data Label/Text</td>
+<td align="left"><strong>0xF7B634</strong></td>
+<td align="left"><strong>#34B6F7</strong></td>
+<td align="left"><strong>52,182,247</strong></td>
+</tr>
+<tr class="odd">
+<td align="left">Data w/no Limits</td>
+<td align="left"><strong>0xE0E0E0</strong></td>
+<td align="left"><strong>#E0E0E0</strong></td>
+<td align="left"><strong>224,224,224</strong></td>
+</tr>
+<tr class="even">
+<td align="left">Data with Limits:*</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Nominal</td>
+<td align="left"><strong>0x00C000</strong></td>
+<td align="left"><strong>#00C000</strong></td>
+<td align="left"><strong>0,192,0</strong></td>
+</tr>
+<tr class="even">
+<td align="left">Caution</td>
+<td align="left"><strong>0x00F0FF</strong></td>
+<td align="left"><strong>#FFF000</strong></td>
+<td align="left"><strong>255,240,0</strong></td>
+</tr>
+<tr class="odd">
+<td align="left">Warning</td>
+<td align="left"><strong>0x0000FF</strong></td>
+<td align="left"><strong>#FF0000</strong></td>
+<td align="left"><strong>255,0,0</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>*<strong>NOTE</strong>: Limits should not be assigned arbitrarily. If no engineering guidance and/or substantiation exists for assigning a meaningful limit, the data should be displayed as Data w/no Limits.</p>
+</blockquote>
+<ol start="15" style="list-style-type: lower-roman">
+<li><p>Each representative color should be specifically defined for easy reproduction and consistency.</p></li>
+<li><p>In general, avoid superfluous or excessive use of color on a display.</p></li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> Random and/or excessive use of a color reduces the perception of the color as a “novelty”, which dilutes its utility as a visual cue. This is especially important for colors that are used for alerting in emergency situations (ie; red).</p>
+</blockquote>
+<ol start="17" style="list-style-type: lower-roman">
+<li>A typical display should not contain more than 4 or 5 distinct colors<sup>1</sup>.</li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> “Distinct colors” are those colors which are used for the purpose of information discrimination, aside from the base background and data colors (ie; black and white).</p>
+</blockquote>
+<ol start="18" style="list-style-type: lower-roman">
+<li>Caution and Warning – An automated alerting/messaging system can greatly aid the FTE in passive monitoring tasks during testing. Depending on software capabilities, the user may implement a variable color status on either the message text itself, or the message background. The following colors are suggested for the associated status levels:</li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Element</th>
+<th align="left">IADS</th>
+<th align="left">Hex</th>
+<th align="left">RGB</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Advisory<sup>†</sup></td>
+<td align="left"><strong>0xFFFF00</strong></td>
+<td align="left"><strong>#00FFFF</strong></td>
+<td align="left"><strong>0,255,255</strong></td>
+</tr>
+<tr class="even">
+<td align="left">Caution</td>
+<td align="left"><strong>0x00F0FF</strong></td>
+<td align="left"><strong>#FFF000</strong></td>
+<td align="left"><strong>255,240,0</strong></td>
+</tr>
+<tr class="odd">
+<td align="left">Warning</td>
+<td align="left"><strong>0x0000FF</strong></td>
+<td align="left"><strong>#FF0000</strong></td>
+<td align="left"><strong>255,0,0</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><em><sup>†</sup>See Section 2.g for suggested definitions for Advisory/Caution/Warning</em></p>
+</blockquote>
+<ol start="19" style="list-style-type: lower-roman">
+<li><p>Color fidelity, contrast, and luminance will all be impacted by the type of monitor hardware used (LED vs LCD), hardware settings, ambient lighting conditions, screen reflectivity, etc. Make sure to evaluate the suitability of the color schemes and general display design on ALL monitors which will be used during real-time flight tests. Make changes as required to accommodate insufficiencies.</p></li>
+<li><p>If software limitations only allow the use of a single font color against a variable color background, the following is suggested as a compromise to attempt to optimize text legibility against all the various status background colors:</p></li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Element</th>
+<th align="left">IADS</th>
+<th align="left">Hex</th>
+<th align="left">RGB</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Message Text</td>
+<td align="left"><strong>0x80808</strong></td>
+<td align="left"><strong>#808080</strong></td>
+<td align="left"><strong>128,128,128</strong></td>
+</tr>
+<tr class="even">
+<td align="left">Advisory</td>
+<td align="left"><strong>0xFFFF00</strong></td>
+<td align="left"><strong>#00FFFF</strong></td>
+<td align="left"><strong>0,255,255</strong></td>
+</tr>
+<tr class="odd">
+<td align="left">Caution</td>
+<td align="left"><strong>0x00F0FF</strong></td>
+<td align="left"><strong>#FFF000</strong></td>
+<td align="left"><strong>255,240,0</strong></td>
+</tr>
+<tr class="even">
+<td align="left">Warning</td>
+<td align="left"><strong>0x0000FF</strong></td>
+<td align="left"><strong>#FF0000</strong></td>
+<td align="left"><strong>255,0,0</strong></td>
+</tr>
+</tbody>
+</table>
+<ol start="6" style="list-style-type: lower-alpha">
+<li><p>Text</p>
+<ol start="21" style="list-style-type: lower-roman">
+<li><p>Where it is selectable by the user, font should be a sans-serif font. Trebuchet MS regular (not bold), is a suitable choice if available.</p></li>
+<li><p>Standard font size should generally be 12pt, with a minimum of 10pt (may vary depending on size and resolution of monitor).</p></li>
+<li><p>Modifications such as bold, underline, etc., should generally be avoided. May be used sparingly when necessary to support legibility, convey separation of purpose (group of data versus individual labels), etc.</p></li>
+<li><p>Acronyms, abbreviations, button labels, annunciators, etc. should always be set in ALL CAPS.</p></li>
+<li><p>Regular type case should be used for dialog, “lengthy” text, descriptive text, etc.</p></li>
+</ol></li>
+<li><p>Graphics – It may be helpful to display some data graphically in order to give the user at-a-glance spatial reference for the current value of the parameter, along with trend information.</p>
+<ol start="26" style="list-style-type: lower-roman">
+<li><p>Consider graphics (analog indicators - gauges, tapes, needles, etc) for use in identifying trends and relative status within a range.</p></li>
+<li><p>Consider numerical values for use in hard data, targeting a specific value, etc.</p></li>
+<li><p>Graphics should always include a numerical value that is adjacent to the tape, preferably in a box and located at the origin, as practical<sup>2</sup>.</p></li>
+</ol></li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> Thoughtful combination of numerals and graphics can make for a very scan-friendly layout, which can be “flown to”, and used for both low resolution and high resolution monitoring simultaneously.</p>
+</blockquote>
+<ol start="29" style="list-style-type: lower-roman">
+<li><p>The variety of different styles of graphics used on a display should be kept to a minimum, with each different application of a specific style (bar, slider, dial, etc) kept consistent for its purpose, and presenting the information in a manner that is visually compelling in the most appropriate sense for the data that is being presented.</p></li>
+<li><p>Numerical values and their respective boxes should generally be stationary.</p></li>
+<li><p>For graphics that display basic quantities or relatively steady values, bar graphs/tapes should be the default as reasonable and appropriate.</p></li>
+</ol>
+<blockquote>
+<p><img src="media/21/image2.png" style="width:4.60972in;height:1.88889in" />See Fig 2 below.</p>
+</blockquote>
+<ol start="32" style="list-style-type: lower-roman">
+<li><p>For graphical displays of physical positions of components (ie; flight control surfaces), sliders with pointers may be preferred.</p></li>
+<li><p>In some cases, such as N1 and EGT, dials may be preferred, especially if this reflects similar implementation to the cockpit displays.</p></li>
+<li><p>Time history charts (strip charts) can be very useful for monitoring behavior over time, spotting trends or oscillations, and monitoring proximity to limits.</p></li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> One very useful benefit of a time history chart is the ready ability for the FTE to visually identify an increasing trend toward a safety limit, thus allowing for proactive abort calls.</p>
+</blockquote>
+<ol start="35" style="list-style-type: lower-roman">
+<li>Time history charts (strip charts) may also provide the ability for real time basic analysis functions (slope calculations, fast fourier transforms, etc). The availability of these features will be software dependent.</li>
+</ol>
+<pre><code>**NOTE:** Excessive use of strip charts on a display may impact computer processing performance.</code></pre>
+<ol start="36" style="list-style-type: lower-roman">
+<li><p>Minimize the use of tickmarks and gridlines to avoid overpowering the data (also ref section 2.b,c – color and contrast).</p></li>
+<li><p>Create graphics that are only as complex as necessary, and are as simple as practical.</p></li>
+<li><p>For any graphics that change to show a component status or state (ie; open/closed), ensure that the transition or invalid signal state is also clearly conveyed.</p></li>
+<li><p>Consider the use of a “synoptic” style display for intuitive display of a system, versus a graphical reproduction of the actual physical layout. (Placement of components relative to system operation, versus actual installation – Ref Fig 3, next page).</p></li>
+<li><p><img src="media/21/image3.png" style="width:4.74167in;height:3.45595in" />Take care to create graphics which do not falsely lead the user to assume things about the system state which are not true, or are not actually being measured.</p></li>
+</ol>
+<blockquote>
+<p><img src="media/21/image4.png" style="width:4.08958in;height:1.97986in" />For graphics where verification of a response to a command is critical, consider showing the command value with a hollow or shadowed indicator, and the actual value with a solid or filled indicator. See Fig 4 below.</p>
+</blockquote>
+<ol start="8" style="list-style-type: lower-alpha">
+<li><p>Sense and Direction – When utilizing graphics, care should be taken to ensure that the indications on the display are intuitive and non-distracting.</p>
+<ol start="41" style="list-style-type: lower-roman">
+<li><p>Tapes or bar graphs utilized on the periphery of an attitude indicator should be evaluated to ensure there is no situation where the movement of the tapes could induce a false perception of attitude changes.</p></li>
+<li><p>Moving graphics should be carefully constructed to convey a correct intuitive sense of movement that correlates with the reality it is representing.</p></li>
+<li><p>Increasing values should typically move: clockwise (dial), up (tape/bar graph), or right (slider/gauge)<sup>2</sup>.</p></li>
+<li><p>When using moveable graphics, consider which elements remain fixed, and which will move. Consider the impact on the users’ ability to scan the display, and quickly read and understand the data.</p></li>
+<li><p>In general, look for any susceptibility to misinterpretation or confusion due to the presentation method.</p></li>
+</ol></li>
+<li><p>Alerting features – Consider the implementation of any available alerting features in order to increase the test team’s ability to perform safely and efficiently. IADS©, in particular, has multiple alerting tools which can greatly increase the user’s situational awareness, while allowing their attention to remain focused on more real-time critical functions.</p>
+<ol start="46" style="list-style-type: lower-roman">
+<li>The following terminology for criticality levels is suggested (<em>See Sec 2.c for associated color guidelines</em>):</li>
+</ol></li>
+</ol>
+<blockquote>
+<p><span class="underline">Advisory</span> – Condition which represents a non-critical degradation of functionality, loss of redundancy, etc. No immediate action is required, but some minor actions may be required to continue nominal operations. No damage to aircraft or injury to personnel is expected.</p>
+<p><span class="underline">Caution</span> – Condition which represents a potentially critical degradation of functionality, failure of systems, unsustainable modes of operation, etc. Immediate action may not be required, but if no action is taken, damage to aircraft or injury to personnel may be possible.</p>
+<p><span class="underline">Warning</span> – Condition which represents a critical degradation of critical functionality, total system failure, etc. Immediate action is required in order to avoid damage to aircraft and/or injury to personnel.</p>
+</blockquote>
+<ol start="47" style="list-style-type: lower-roman">
+<li><p>Ensure that alerting functions are robust, reliable, easily recognizable, and allow the user to quickly diagnose any emerging situation.</p></li>
+<li><p>Carefully consider what items will be subject to automated alerting, and why.</p></li>
+<li><p>Alerting functions should enhance the FTE’s ability to focus on the important elements of a test, without being distracted by more mundane monitoring tasks.</p></li>
+<li><p>Safety of a test can also be enhanced, particularly if the limiting criteria for a complex or dynamic test are multi-dimensional or difficult to interpret in real time.</p></li>
+<li><p>Ensure that any alerting features are readily understood by any and all users of the system, and that each user can verify the status of the system prior to use.</p></li>
+<li><p>Any alerting system should have configuration control and version monitoring which can be verified by the user prior to use.</p></li>
+<li><p>Each user should understand the automated alerting logic used in the display.</p></li>
+<li><p>Ensure that alerting functions do not produce nuisance or spurious alerts (e.g., persistent flashing, blinking, etc.).</p></li>
+</ol>
+<!-- -->
+<ol start="10" style="list-style-type: lower-alpha">
+<li><p>Limits on ability to absorb info</p>
+<ol start="55" style="list-style-type: lower-roman">
+<li><p>Update rates for data displays should generally be no higher than 8-10hz.</p></li>
+<li><p>For general numerical data, consider filtering the data down to 2-4hz to minimize flickering or dithering.</p></li>
+<li><p>Graphical elements (gauges, tapes, etc.), should be filtered to the lowest usable level to minimize flickering or dithering.</p></li>
+</ol>
+<pre><code>**NOTE:** When filtering data to avoid flickering, ensure that the data can be still be verified as &quot;alive&quot; at a glance, and is not slowed to the point of being misleading or lagging.</code></pre>
+<ol start="58" style="list-style-type: lower-roman">
+<li><p>The level of significant digits shown should be the lowest that adequately displays the data for the intended purpose<sup>5</sup>.</p></li>
+<li><p>A single FTE should not have more than 4 critical parameters to monitor at a given point in time.</p></li>
+</ol></li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> The above statement is in reference to parameters where the FTE must dedicate cognitive function to actively monitoring critical data. This does not include automated monitoring and alerting functions performed by the computer, in cases where an alert will be automatically posted in clear view of the FTE.</p>
+</blockquote>
+<ol start="11" style="list-style-type: lower-alpha">
+<li><p>Use of control elements – As the computing packages grow in complexity, they introduce the ability to create control elements on the displays. This gives the users the ability to interact with the displays to give numerical inputs to the system, make various selections on the screen, enable functions, etc.</p>
+<ol start="60" style="list-style-type: lower-roman">
+<li><p>Care should be taken when implementing control functions to ensure that the type of control is appropriate for the use.</p></li>
+<li><p>Users should be able to assess the position/status of any control element by simple visual inspection.</p></li>
+<li><p>Consider any nuances that can affect interactions with the controls (e.g., system lag when selecting a virtual button, switch, etc.).</p></li>
+<li><p>When placing control elements on a display, carefully consider if the implementation is appropriate for how the user expects to interact with the computer, given the available equipment and operating environment.</p></li>
+<li><p>The user must be capable of effectively managing any inputs to the displays under any expected flight conditions, if used on board the aircraft.</p></li>
+<li><p>For control room only displays, ensure that the users are not given so many inputs or required interactions as to be easily saturated or distracted.</p></li>
+<li><p>Utilize visual cues to give the user feedback as to the pressed status of a button (eg; text on the button changes content or color while “pressed”).</p></li>
+<li><p>Standardize the appearance of control elements across various displays. Square buttons are easily recognizable as buttons. They also allow for efficient placement and organization on a display.</p></li>
+<li><p>Button/annunciator labels should either be verbs (commanded action), or status (commanded or present status).</p></li>
+<li><p>Standardize the philosophy used for button/annunciator labels (e.g., normally dark, constant status indication, etc.). If the aircraft platform or the experimental equipment under test has a standard philosophy established, attempt to follow it.</p></li>
+<li><p>For controls that are turning a function “on” or “off”, toggle switches of some manner are preferable to buttons, as the spatial element of the switch position is more compelling than the status cues of a button.</p></li>
+<li><p>Standardize the philosophy used for switch positions (e.g., up for ON, down for OFF, normal position at 12 o’clock, etc.). If the aircraft platform or the experimental equipment under test has a standard philosophy established, attempt to follow it.</p></li>
+<li><p>For controls that have more than two selections available (where only one item is selectable at a time) consider a virtual dial, radio buttons, or a drop-down menu in order to give the user visibility on both the current selection, and all available selections.</p></li>
+<li><p>Drop-down menus and lists should be sorted alphanumerically.</p></li>
+<li><p>For user-input fields, the tab key should shift the focus from left to right and then top to bottom. Using shift-tab should move the focus in the reverse order.</p></li>
+</ol></li>
+</ol>
+<!-- -->
+<ol start="3" style="list-style-type: decimal">
+<li><p><strong>Parameter Selection</strong> – Many parameters are repeated across an aircraft platform for the purposes of redundancy or multiple sample points, especially in the case of FBW or highly integrated aircraft, with information being reproduced multiple times across redundant buses and passing data between consumers. Unless specific system operation or data view needs preclude it, the following basic standards should be considered when choosing which parameters to utilize in data displays:</p>
+<ol start="12" style="list-style-type: lower-alpha">
+<li><p>Selection for Technical Purposes</p>
+<ol start="75" style="list-style-type: lower-roman">
+<li><p>Select the most representative parameter that gives the most appropriate and trustworthy information available, given the nature of the data monitoring requirement (basic situational awareness vs system integrity monitoring, etc.).</p></li>
+<li><p>Multi-Channel – When LRU’s utilize multiple redundant channels, and only one value is required to be displayed to represent the data, select the parameter from the primary channel, or the channel with the highest integrity.</p></li>
+<li><p>If multiple channels from a given LRU are simply redundant and no hierarchy or difference in integrity exists, select parameter from the first (1, or A) channel.</p></li>
+<li><p>Source Proximity – Selection of a parameter for display should be as close to its source as practical, relative to the data stream, and not from downstream consumers of the data.</p></li>
+<li><p>Multiple Sample Points – In cases where there are multiple independent and redundant sample points available where only one value is required to represent the overall data, as in multiple slat/flap sensors across the physical surface, select the inboard sensor in cases where there exist only two sensors, and select the mid-most sensor in cases where more than two are installed on the surface.</p></li>
+</ol>
+<pre><code>**NOTE:** Be aware of any requirements to monitor disagreements between the multiple sensors in such cases, and be aware of the increasing complexity of logic in order to implement comparators across sensors, etc.</code></pre></li>
+<li><p>Selection for Safety/Critical Monitoring Purposes</p>
+<ol start="80" style="list-style-type: lower-roman">
+<li><p>For any monitoring which may have a safety implication, the specific parameters selected for display must be deemed robust and reliable. Consideration must also be given to the accuracy and “honesty” of the data source. Consider any filtering, interpolation, calculations, etc., that are involved in the data source.</p></li>
+<li><p>Consider assigning parameters to criticality categories, based on the flight scenarios which they are deemed required to support. For example:</p></li>
+</ol>
+<pre><code>1.  Safety Critical
+
+2.  Test Critical
+
+3.  Required for Analysis</code></pre>
+<ol start="82" style="list-style-type: lower-roman">
+<li><p>Any parameters which are required for safety monitoring should be clearly labeled as such.</p></li>
+<li><p>Ensure a process or mechanism is in place to ensure the health and availability of any parameters which are utilized in safety/critical monitoring functions.</p></li>
+</ol></li>
+</ol></li>
+<li><p><strong>Configuration Management</strong></p>
+<ol start="14" style="list-style-type: lower-alpha">
+<li><p>Versioning:</p>
+<ol start="84" style="list-style-type: lower-roman">
+<li>Displays should have some mechanism to allow for version tracking.</li>
+</ol></li>
+</ol></li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> Version tracking and configuration control methods may be highly influenced by an individual flight test organization’s IT and data management methods. Seek out cooperation from these groups to ensure successful processes are created.</p>
+</blockquote>
+<ol start="85" style="list-style-type: lower-roman">
+<li><p>Each user should have immediate access to verify current version of the display(s) at the start of each test session.</p></li>
+<li><p>Consider incorporating display/configuration revision information into the test card for each day.</p></li>
+<li><p>Especially for safety or test critical displays, a version history of each display should be easily accessible.</p></li>
+</ol>
+<!-- -->
+<ol start="15" style="list-style-type: lower-alpha">
+<li><p>Validation / checkout process</p>
+<ol start="88" style="list-style-type: lower-roman">
+<li><pre><code>Ensure multiple FTE&#39;s provide input and feedback during the display design, build, and validation process.</code></pre></li>
+<li><p>Once built, each display should be validated using previously existing data, if available.</p></li>
+<li><p>Displays which are used for safety or test critical monitoring should be validated thoroughly prior to use.</p></li>
+<li><p>Consider off-nominal usage cases, and/or display behavior when aircraft is far off the conditions for which the display is intended.</p></li>
+<li><p>Test results of critical displays should be documented for later reference.</p></li>
+</ol></li>
+</ol>
+<!-- -->
+<ol start="5" style="list-style-type: decimal">
+<li><p><strong>Documentation and Training</strong></p>
+<ol start="16" style="list-style-type: lower-alpha">
+<li><p>Documentation</p>
+<ol start="93" style="list-style-type: lower-roman">
+<li><p>Each flight test organization should implement its own set of display standards, based on the above, but containing more specifics where required.</p></li>
+<li><p>Each flight test organization should implement its own set of documents and reference material to outline processes for handling safety critical parameter creation, display creation, display validation, etc.</p></li>
+</ol></li>
+<li><p>Training</p>
+<ol start="95" style="list-style-type: lower-roman">
+<li><p>Displays which contain “complicated” calculations or particular interface actions should have some form of user’s guide to describe the functionality and data sources.</p></li>
+<li><p>Each user should be well versed on the data displays prior to their use during actual testing.</p></li>
+<li><p>When possible, displays should be exercised during simulations prior to use in actual testing.</p></li>
+<li><p>Each flight test organization should ensure that any FTE building data displays is provided adequate training on the appropriate software/hardware.</p></li>
+</ol></li>
+</ol></li>
+<li><p><strong>Further Reading/References</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Neil, Douglas E; Application of Color Coding in Tactical Display S-3A, NPS-55-80-113, Naval Postgraduate School, 1980</p></li>
+<li><p>M. Yeh, J. Young, C. Donovan, S. Gabree; Human Factors Considerations in the Design and Evaluation of Flight Deck Displays and Controls, DOT-VNTSC-FAA-13-09, Volpe Nat’l Transportation Systems Ctr/Federal Aviation Administration, 2013</p></li>
+<li><p>Dept of Defense Design Criteria Standard – Human Engineering, MIL-STD-1472G, Dept of Defense, 2012</p></li>
+<li><p>Dept of Defense Joint Service Specification Guide – Air Vehicle, JSSG-2001A, Dept of Defense, 2002</p></li>
+<li><p>T. Holden, J. Adolf, Human Research Facility (HRF) Human-Computer Interface (HCI) Design Guide, LS-71130, NASA JSC, 1997</p></li>
+<li><p>Bemis, Winer, Leeds, The Efficacy of Color-Coded Symbols to Enhance Air-Traffic Control Displays, TR-1244, Naval Ocean Systems Center, 1988</p></li>
+<li><p>“Using Color in Information Display Graphics”, Color Usage Lab, NASA Ames Research Center, <a href="https://colorusage.arc.nasa.gov" class="uri">https://colorusage.arc.nasa.gov</a></p></li>
+<li><p>M. Updegrove, J. Maxwell, The Evolution of Real-Time Data Monitoring Requirements, Society of Flight Test Engineers, 2017</p></li>
+</ol></li>
+<li><p><strong>Examples</strong></p></li>
+</ol>
+<blockquote>
+<p><img src="media/21/image8.png" style="width:3.27292in;height:5.12361in" /><span class="underline">Example 1</span>: Basic FTE Situational Awareness display.</p>
+<p>Display includes basic flight information, engine stack, flight control synoptic, fuel and water ballast quantities.</p>
+<p>The majority of the data on this display is for FTE awareness only, and is available to the pilots as a primary source in the cockpit. As such, most of the data is displayed as unlimited (Data w/no Limits), and is “white” per the color standards of Section 2.</p>
+<p><img src="media/21/image8.png" style="width:2.93403in;height:4.65in" /><span class="underline">Example 2 (right)</span>: FTE Pre-Flight setup screen.</p>
+<p>This is an example of a display created to make the FTE’s job of entering pre-flight aircraft weight/balance constants more efficient. Additionally, many other user configurable items can be set from this central location. Note the use of buttons and toggle switches.</p>
+</blockquote>
+<p><img src="media/21/image8.png" style="width:3.2616in;height:5.15833in" /></p>
+<p><span class="underline">Example 3 (left)</span>: FTE Safety Monitoring display.</p>
+<blockquote>
+<p>This display is intended for more passive monitoring, including automated alerting of safety critical parameters (windows in top half of display).</p>
+<p>Automated functions will alert the FTE if certain parameters exceed their given limits, and further information regarding the issue is available in tabs on the lower portion of the display. During normal operations, the Wt/CG envelope is available for display in the tabbed area.</p>
+<p>Note the banners on the top and bottom of the display, denoting it as “SOF CONTROLLED”.</p>
+<p><img src="media/21/image8.png" style="width:6.47083in;height:3.64792in" /><span class="underline">Example 4</span>: Displays from examples 1-3 combined into a modular display package, where each screen is interchangeable, and located on the monitor in a 1/3 slot according to its overall intended function.</p>
+<p><img src="media/21/image9.png" style="width:5.24931in;height:2.68061in" /><span class="underline">Example 5</span>: Automated alerting window (bottom) with associated verification information from the day’s test card (top). Any automated alerting scheme should be verifiable by the user at the beginning of each test operation (see Sec 2.g and 4.a).</p>
+<p><span class="underline">Example 6</span>: Cockpit Flight Test display.</p>
+<p>Note the relative lack of status colors. The majority of the information here is provided to the pilot for quick reference, verification of maneuvering limits, and flight data which is not standard in production cockpit displays. Tapes are provided for Nz and dV/dT, and a dial is provided for Angle of Attack (the AOA). For the program in question, AOA was generally the critical parameter to monitor, thus having the most prominence in the center of the display, providing excellent visual trend data.</p>
+<p><img src="media/21/image13.png" style="width:4.00486in;height:5.34236in" />Also note that the numerical read-outs for the basic flight data are arranged in a relatively straight line across the display, above the tapes and gauges, in order to allow for an efficient scan of the values if desired.</p>
+<p><strong><span class="underline">Appendix A. – Design Considerations for Color Vision Deficient Users</span></strong></p>
+<p>While pilots have requirements for normal color vision, no such requirement exists for the engineering personnel which typically make up the FTE population. As such, some flight test organizations may have FTEs that have some level of color vision deficiency (CVD). Per 14 CFR Part 67.303, the color vision requirement for airmen is “the ability to perceive those colors necessary for the safe performance of airman duties”. While FTEs do not technically fall under this definition, many FTEs perform “airman duties”, where their data monitoring tasks are critical to the safe execution of a particular test in flight, or to the safe operation of the test aircraft itself. This is true whether the FTE is on board the aircraft or in a ground-based station.</p>
+<p>Since engineers have control over the construct of their own data displays, total reliance on color as a safety discriminator is easily avoided, thus allowing the safe execution of airman duties, without normal color vision. It is important to understand the design considerations which may impact the interpretation of visual information when CVD is a factor. This appendix highlights some design considerations, along with other organizational considerations which are available to mitigate inadvertent safety impacts due to misinterpretation of color coded safety-critical data.</p>
+<p>The most common CVD condition makes it difficult to discern red and green<sup>1</sup>. This is particularly problematic for aerospace applications, since these colors are almost universally used for representing opposing statuses: green=good, red=bad. This is perhaps the most important area where CVD accommodations should be considered.</p>
+<p>From the Display Guidelines, section 2.c. – Color:</p>
+</blockquote>
+<ol style="list-style-type: lower-roman">
+<li><p>Color is a secondary visual cue…</p></li>
+<li><p>Color should not be the only discriminator used, <span class="underline">especially for critical data</span>.</p>
+<p>An especially problematic situation for CVD FTEs is when the standard green/yellow/red color scheme is used to color text or numerals against a black background. This should be avoided.</p>
+<p>Per the guidelines above, this colored data would always be accompanied by some other discriminator. However, the benefit of this secondary cue may be effectively nullified for the CVD FTE if not implemented correctly.</p>
+<p>See below for an example of how this coloring might appear to a red-green CVD user<sup>2</sup>:</p></li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Normal</th>
+<th align="left">CVD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>NOMINAL</strong></td>
+<td align="left"><strong>NOMINAL</strong></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>CAUTION</strong></td>
+<td align="left"><strong>CAUTION</strong></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>WARNING</strong></td>
+<td align="left"><strong>WARNING</strong></td>
+</tr>
+</tbody>
+</table>
+<p>This method of presentation is clearly not acceptable for the CVD user, as the NOMINAL and WARNING statuses are not discernable relative to each other, and CAUTION would not be easily discernable from standard “unlimited” data (i.e.; white).</p>
+<p>Consider other methods to provide status discrimination. Whatever other methods are used, ensure they do not compromise other standards used in the display(s) to the most practical extent, and do not provide distracting indications. The following pages provide several options.</p>
+<ol style="list-style-type: decimal">
+<li><strong>Design Considerations:</strong></li>
+</ol>
+<!-- -->
+<ol style="list-style-type: lower-alpha">
+<li><p>Utilize other/additional coloring methods to distinguish parameter status, such as background fill, a colored surrounding box, etc.</p>
+<ol style="list-style-type: lower-alpha">
+<li>NOTE: if using background fill, ensure fill is not distracting, and that contrast of the text/numerals remains sufficient against the fill in all cases.</li>
+</ol></li>
+<li><p>Provide some manner of icon adjoining the text to indicate status.</p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>NOTE: This option should be utilized only for data which is being actively monitored during a test, and/or in conjunction with an automated alerting scheme.</li>
+</ol></li>
+<li><p>Do not color the text/digits at all:</p>
+<ol start="3" style="list-style-type: lower-alpha">
+<li><p>Color the data as “unlimited” (See Guidelines, Section 2.c.iv), and handle status annunciation separately.</p></li>
+<li><p>Leverage automated alerting for limit exceedances. Alert the user to the exceedance with the associated status word (e.g.; “WARNING” – with appropriate color as well), and indicate by other means which parameter has tripped the limit. This could be descriptive text, a shorthand parameter name with the annunciation, an icon adjacent to the numerical data, etc.</p></li>
+</ol></li>
+<li><p>Provide visual indication of proximity to the limit:</p>
+<ol start="5" style="list-style-type: lower-alpha">
+<li><p>Limit line(s) on strip chart or tape.</p></li>
+<li><p>Needle(s) or shape(s) on dial.</p></li>
+<li><p>Along with a. and b., provide an additional visual cue when past the limit (see sub-bullets above).</p></li>
+</ol></li>
+<li><p>Consider different methods of communicating “nominal”:</p>
+<ol start="8" style="list-style-type: lower-alpha">
+<li><p>Excessive use of color to denote nominal dilutes the meaning and in the extreme can “clutter” a display.</p></li>
+<li><p>Consider the “normally dark” philosophy. Only give status alerts when parameters are off-nominal (see sub-bullets above).</p></li>
+</ol></li>
+<li><p>If none of the above options are sufficient or practical, consider shifting the color definitions slightly per MIL-STD-1472, in order to aid in the differentiation between red and green<sup>3</sup>:</p></li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Color</th>
+<th align="left">IADS</th>
+<th align="left">Hex</th>
+<th align="left">RGB</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Blue</td>
+<td align="left"><strong>0xFF4010</strong></td>
+<td align="left"><strong>#1040FF</strong></td>
+<td align="left"><strong>16,64,255</strong></td>
+</tr>
+<tr class="even">
+<td align="left">Green</td>
+<td align="left"><strong>0x82C011</strong></td>
+<td align="left"><strong>#11C082</strong></td>
+<td align="left"><strong>17,192,130</strong></td>
+</tr>
+<tr class="odd">
+<td align="left">Yellow</td>
+<td align="left"><strong>0x00FFFF</strong></td>
+<td align="left"><strong>#FFFF00</strong></td>
+<td align="left"><strong>255,255,0</strong></td>
+</tr>
+<tr class="even">
+<td align="left">Red</td>
+<td align="left"><strong>0x1E41FF</strong></td>
+<td align="left"><strong>#FF411E</strong></td>
+<td align="left"><strong>255,65,30</strong></td>
+</tr>
+</tbody>
+</table>
+<ol start="2" style="list-style-type: decimal">
+<li><strong>Organizational Considerations:</strong></li>
+</ol>
+<!-- -->
+<ol style="list-style-type: lower-alpha">
+<li><p>While it is obviously important to respect the rights and privacy of all personnel in any organization, it is important to be aware of any CVD users that are present in an organization, so that data displays are not inadvertently designed in such a manner that would preclude their safe use by the CVD FTE.</p></li>
+<li><p>If CVD users are a known part of the organization’s FTE population, proactively design the display to incorporate CVD accommodations, while soliciting input from the affected individual(s) during the design process in order to ensure suitability prior to fielding the display.</p></li>
+<li><p>If experimental data displays are being heavily relied upon for safety critical monitoring, and the use of color to ensure safety is presenting obstacles, take the opportunity to reconsider the test team’s approach to carrying out the test. Is the monitoring scheme appropriate? Is the system under test overly immature? Is the THA written appropriately? Consider automation, CRM aspects, and other mitigations to reduce monitoring requirements in an effort to reduce the reliance on critical display monitoring.</p></li>
+<li><p>Consider individual FTE qualifications. If, after taking all of the above considerations into account, the ability to normally discriminate color remains an integral part of safely executing certain tests, then those tests may require normal color vision as part of the qualification for FTEs executing the test.</p>
+<p><strong>NOTE:</strong> Given the myriad of available options for FTEs to design their own displays in any appropriate manner, this option should be considered in extremis.</p></li>
+</ol>
+<!-- -->
+<ol start="3" style="list-style-type: decimal">
+<li><strong>References:</strong></li>
+</ol>
+<!-- -->
+<ol style="list-style-type: decimal">
+<li><p>“Color Vision Deficiency”, Glossary of Common Eye &amp; Vision Conditions, American Optometric Association, <a href="https://www.aoa.org/patients-and-public/eye-and-vision-problems/glossary-of-eye-and-vision-conditions/color-deficiency" class="uri">https://www.aoa.org/patients-and-public/eye-and-vision-problems/glossary-of-eye-and-vision-conditions/color-deficiency</a></p></li>
+<li><p>C. Ludwig, Display Design for Critical Monitoring, Society of Flight Test Engineers</p></li>
+<li><p>Dept of Defense Design Criteria Standard – Human Engineering, MIL-STD-1472G, Dept of Defense, 2012</p></li>
+</ol>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="communication-systems-testing.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
