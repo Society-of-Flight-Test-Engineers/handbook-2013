@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>11 11 Propellers** | Flight Test Engineering Reference Handbook</title>
-  <meta name="description" content="11 11 Propellers** | Flight Test Engineering Reference Handbook" />
+  <title>20 19.6 References** | Flight Test Engineering Reference Handbook</title>
+  <meta name="description" content="20 19.6 References** | Flight Test Engineering Reference Handbook" />
   <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="11 11 Propellers** | Flight Test Engineering Reference Handbook" />
+  <meta property="og:title" content="20 19.6 References** | Flight Test Engineering Reference Handbook" />
   <meta property="og:type" content="book" />
   
   <meta property="og:image" content="media/media/image1.jpg" />
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="11 11 Propellers** | Flight Test Engineering Reference Handbook" />
+  <meta name="twitter:title" content="20 19.6 References** | Flight Test Engineering Reference Handbook" />
   
   
   <meta name="twitter:image" content="media/media/image1.jpg" />
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="reciprocating-engines.html"/>
-<link rel="next" href="fixed-wing-performance-standardization.html"/>
+<link rel="prev" href="the-electromagnetic-spectrum.html"/>
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -168,6 +168,7 @@
 <li class="chapter" data-level="17" data-path="gas-turbine-propulsion.html"><a href="gas-turbine-propulsion.html"><i class="fa fa-check"></i><b>17</b> 17 Gas Turbine Propulsion**</a></li>
 <li class="chapter" data-level="18" data-path="telemetry-control-room-and-radio-communications.html"><a href="telemetry-control-room-and-radio-communications.html"><i class="fa fa-check"></i><b>18</b> 18 - Telemetry Control Room and Radio Communications**</a></li>
 <li class="chapter" data-level="19" data-path="the-electromagnetic-spectrum.html"><a href="the-electromagnetic-spectrum.html"><i class="fa fa-check"></i><b>19</b> 19 - The Electromagnetic Spectrum**</a></li>
+<li class="chapter" data-level="20" data-path="references-1.html"><a href="references-1.html"><i class="fa fa-check"></i><b>20</b> 19.6 References**</a></li>
 </ul>
 
       </nav>
@@ -185,361 +186,40 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="propellers" class="section level1">
-<h1><span class="header-section-number">11</span> 11 Propellers**</h1>
-<p><strong> </strong></p>
-<p><strong> </strong></p>
-<p>11.1 Abbreviations and Terminology</p>
-<p> </p>
-<p>11.2 Propeller Geometry</p>
-<p> </p>
-<p>11.3 Propeller Coefficients</p>
-<p> </p>
-<p>11.4 Propeller Efficiency and States</p>
-<p><strong> </strong></p>
-<p>11.5 Propeller Theory</p>
-<p> </p>
-<p>11.6 Propeller Modeling Examples</p>
-<p>Static Thrust Chart, In-Flight Charts,</p>
-<p>Blocking Correction Factor Charts,</p>
-<p>Tip Compressibility Factor Charts</p>
-<p> </p>
-<p>11.7 Propeller Flight Test</p>
-<p>11.8 References</p>
-<p> </p>
-<p><strong>11.1 Abbreviations and Terminology</strong></p>
-<p> </p>
-<p><strong>Abbreviations</strong></p>
-<p><em>AF</em> activity factor <em>=</em></p>
-<p>* *<img src="media/11/image1.png" style="width:1.60417in;height:0.41667in" /></p>
-<p><em>B</em> number of blades</p>
-<p><em>b</em> blade section width (feet)</p>
-<p><em>BHP</em> brake horsepower (measured at engine crankshaft)</p>
-<p><em>C<sub>LD</sub></em> blade section design lift coefficient</p>
-<p>* *</p>
-<p><em>C<sub>Li</sub></em> integrated design lift coefficient =</p>
-<p> <img src="media/11/image2.png" style="width:1.375in;height:0.36458in" /></p>
-<p><em>C<sub>P</sub></em> power (absorbed) coefficient</p>
-<p><em>C<sub>T </sub></em>thrust coefficient</p>
-<p><em>D</em> propeller diameter (feet)</p>
-<p><em>f<sub>c</sub></em> ratio of speed of sound at standard day sea level to speed of sound at operating condition</p>
-<p>* *<img src="media/11/image3.png" style="width:0.53125in;height:0.35417in" /></p>
-<p><em>HP</em> horsepower (1 <em>HP</em> = 550 ft-lb/sec)</p>
-<p>G.R. gear ratio, propeller speed/engine speed</p>
-<p>J Propeller advance ratio <em>=V<sub>T</sub>/nD</em> (nondimensional)</p>
-<p><em>M</em> aircraft Mach number</p>
-<p><em>N</em> propeller speed, revolutions per minute (<em>RPM</em>)</p>
-<p><em>n</em> propeller speed, revolutions per second</p>
-<p><em>N<sub>e</sub></em> engine speed, <em>RPM</em></p>
-<p><em>P<sub>a</sub></em> ambient pressure</p>
-<p><em>P</em> power output (ft-lb/sec)</p>
-<p><em>Q</em> torque (ft-lb)</p>
-<p><em>q</em> dynamic pressure</p>
-<p><em>T</em> thrust</p>
-<p><em>T<sub>a</sub></em> absolute ambient temperature</p>
-<p><em>R</em> blade radius at propeller tip (feet)</p>
-<p><em>r</em> radius at blade element (feet)</p>
-<p><em>SHP</em> shaft horsepower (measured at propeller shaft)</p>
-<p><em>T</em> propeller thrust (pounds)</p>
-<p><em>V<sub>T</sub></em> freestream velocity (ft/sec)</p>
-<p><em>V<sub>K</sub></em> freestream velocity (knots)</p>
-<p><em>x</em> fraction of propeller tip radius, <em>r/R</em></p>
-<p><em>V<sub>tan</sub></em> tangential velocity</p>
-<p><em>V<sub>R</sub></em> resultant velocity</p>
-<p><em>V<sub>tip</sub></em> tip speed</p>
-<p><em>α</em> local angle of attack</p>
-<p><em>β</em>  local blade twist angle, measured between chord and plane of rotation, same as <em>θ</em> (degrees).</p>
-<p>∆<em>M</em> Mach number adjustment for effect of blade camber</p>
-<p><em>φ</em> propeller disk angle of attack</p>
-<p><em>η</em> isolated propeller efficiency.</p>
-<p><em>η<sub>comp</sub></em> composite prop efficiency (includes tip and blockage corrections)</p>
-<p><em>θ </em><sup>3/4</sup> propeller blade twist angle at <em>x</em> =3/4 (degrees), same as <em>β <sup>3</sup></em><sup>/4</sup></p>
-<p><em>σ</em> ratio of operating density to sea level standard density = <em>ρ</em><sub>a</sub>/<em>ρ</em><sub>o.</sub></p>
-<p>ω propeller rotation speed (radians/second)</p>
-<p> </p>
-<p> </p>
-<p><strong>Terminology</strong></p>
-<p> <strong> </strong></p>
-<p>blade aspect ratio measured as <span class="math display">\[*R* / max blade width\]</span>.</p>
-<p> </p>
-<p>effective pitch actual advance per revolution.</p>
-<p> </p>
-<p>experimental pitch necessary advance to generate zero thrust.</p>
-<p> </p>
-<p>geometric pitch (<em>p</em>) advance per revolution if blade element moves</p>
-<p>according to β (i.e., with no slip).</p>
-<p>reduction gear gearing between the engine crankshaft and prop shaft that reduces the propeller rotation speed .</p>
-<p>right-handed moves clockwise (viewed from the slipstream).</p>
-<p> </p>
-<p>solidity fraction of prop disk covered by blade area = 2π<em>R/Bb</em>.</p>
-<p> </p>
-<p>total width ratio (<em>TWR</em>) measured as <span class="math display">\[*WR* x *B*\]</span></p>
-<p> </p>
-<p>thickness ratio (<em>TR</em>) blade thicknessmeasured locally or at .75<em>R</em> to represent entire prop.</p>
-<p> </p>
-<p>width ratio (<em>WR</em>) calculated as {<em>b</em> @ .75<em>R</em> } / <em>D</em></p>
-<p> </p>
-<p><strong>11.2 Propeller Geometry</strong></p>
-<p><strong> </strong></p>
-<p>• <em>δ<sub>r</sub></em> is the width of any element along blade radius.</p>
-<p> </p>
-<p> <img src="media/11/image4.png" style="width:2.81181in;height:1.04167in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>• <em>x = r/R,</em> the local fraction of prop tip radius</p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> <img src="media/11/image5.png" style="width:2.80139in;height:1.57292in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>• Prop blade chord extends from leading edge to trailing edge.</p>
-<p>• Blade twist angle <em>θ,</em> measured between rotation plane and local chord.</p>
-<p>• Relative wind is the resultant velocity (<em>V<sub>R</sub></em>), comprised of aircraft</p>
-<p>forward speed and tangential speed at radial location along blade.</p>
-<p> </p>
-<p> <img src="media/11/image6.png" style="width:1.53125in;height:0.3125in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>• Angle <em>φ</em> is measured between plane of rotation and local <em>V<sub>R</sub></em></p>
-<p><em><sub> </sub></em></p>
-<p><em><sub> </sub></em><img src="media/11/image7.png" style="width:4.04097in;height:0.39583in" /></p>
-<p><em><sub> </sub></em></p>
-<p><strong> </strong></p>
-<p>• Αdvance ratio (<em>J</em>) is defined as <em>J = V<sub>T</sub>/nD.</em></p>
-<p>• Local angle of attack at any fraction of radius(<em>α<sup>x</sup></em>) is measured between the local chord line and relative wind</p>
-<p><img src="media/11/image8.png" style="width:3.69722in;height:0.375in" /></p>
-<p>• Lift and drag are perpendicular and parallel to <em>V<sub>R</sub></em>, respectively</p>
-<p>• Thrust (<em>T</em>) and torque (<em>Q</em>) are perpendicular and parallel to the plane of rotation, respectively.</p>
-<p> </p>
-<p><strong>11.3 Propeller Coefficients</strong></p>
-<p><strong> </strong></p>
-<p>Integrating lift and drag along a blade gives the thrust (<em>T</em>) and torque (<em>Q</em>). Multiply by number of blades (<em>B</em>) to determine total <em>T</em> and <em>Q</em>.</p>
-<p> </p>
-<p> </p>
-<p> <img src="media/11/image9.png" style="width:2.70833in;height:0.86458in" /></p>
-<p><strong> </strong></p>
-<p><strong> </strong></p>
-<p><strong> </strong></p>
-<p> </p>
-<p>Thrust Coefficient, <em>C<sub>T</sub></em></p>
-<p> <img src="media/11/image10.png" style="width:0.92708in;height:0.45833in" /></p>
-<p> </p>
-<p>Torque Coefficient, <em>C<sub>Q</sub></em></p>
-<p> <img src="media/11/image11.png" style="width:0.94792in;height:0.45833in" /></p>
-<p> </p>
-<p>Power Coefficient, <em>C<sub>P</sub></em></p>
-<p> </p>
-<p> <img src="media/11/image12.png" style="width:3.05139in;height:0.36458in" /></p>
-<p> </p>
-<p>Typical effect of advance ratio on thrust and torque coefficients</p>
-<p><img src="media/11/image13.png" style="width:4.49931in;height:3.62431in" /></p>
-<p><strong>11.4 Propeller Efficiency and States</strong></p>
-<p><strong> </strong></p>
-<p>Propeller efficiency (<em>η</em>)</p>
-<p> </p>
-<p><img src="media/11/image14.png" style="width:4.15556in;height:0.53125in" /></p>
-<p> </p>
-<p> </p>
-<p> <img src="media/11/image15.png" style="width:4.49931in;height:2.97847in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>Propeller state: positive thrust &amp; efficiency, power supplied by engine.</p>
-<p>Brake state: negative thrust &amp; efficiency, power supplied by engine.</p>
-<p>Windmill state: negative thrust &amp; <em>η</em>, power supplied by freestream.</p>
-<p> </p>
-<p><img src="media/11/image16.png" style="width:4.49931in;height:1.875in" /></p>
-<p><strong>11.5 Propeller Theory</strong></p>
-<p> </p>
-<p>Simple momentum theory describes pressure jump (∆<em>P</em>) across</p>
-<p>propeller disk .</p>
-<p>• The downstream velocity increment (<em>v<sub>1</sub></em>) is twice the velocity</p>
-<p>increment at the disk (<em>v</em>) .</p>
-<p>• Thrust (∆<em>P</em>) = ∆<em>P</em> x disk area</p>
-<p>• Froude’s momentum theory: efficiency =</p>
-<p> </p>
-<p> <img src="media/11/image17.png" style="width:1.33333in;height:0.46875in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> <img src="media/11/image18.png" style="width:4.49931in;height:2.125in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>Blade element theory tends to be more complex and may include corrections for tip swirl losses, Mach effects, nacelle blockage, etc. Below is a comparison of typical calculated and measured thrust distribution.</p>
-<p> </p>
-<p><img src="media/11/image19.png" style="width:4.00972in;height:1.59375in" /></p>
-<p><strong>11.6 Propeller Modeling</strong></p>
-<p> </p>
-<p>• For a specified propeller geometry; <em>C<sub>T</sub></em> , <em>C<sub>P</sub></em>, <em>J,</em> and blade angle (<em>θ</em>) are interrelated such that knowledge of any two defines the other two.</p>
-<p>• Calculate propeller efficiency as <em>η = JC<sub>T</sub></em> /<em>C<sub>P </sub></em>.</p>
-<p>• Models assume isolated conditions, i.e., without nacelle blockage.</p>
-<p>• Models assume negligible Mach effects at propeller tips.</p>
-<p>• Different models required for static and “in-flight” conditions.</p>
-<p> </p>
-<p>Determine static <em>C<sub>T</sub></em> and <em>C<sub>P</sub></em> using “<strong>Static Thrust Chart</strong>” (ref 11.2)</p>
-<p> </p>
-<p> <img src="media/11/image20.png" style="width:0.63542in;height:0.375in" /></p>
-<p> <img src="media/11/image21.png" style="width:4.36389in;height:4.10347in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>∼ Separate charts exist for each combination of <em>AF</em> and # of blades (<em>B)</em>.</p>
-<p>∼ Enter chart at appropriate <em>J</em> &amp; <em>C<sub>li</sub></em></p>
-<p> </p>
-<p>Static Thrust = where <em>N</em> = Propeller <em>RPM</em> Determine isolated propeller in-flight effi</p>
-<p> </p>
-<p>ciency (<em>η</em>) from the appropriate <strong>“Flight Charts.”</strong> They are typically presented in one of two forms.</p>
-<p> <img src="media/11/image22.png" style="width:1.41667in;height:0.42708in" /></p>
-<p><img src="media/11/image23.png" style="width:6.99931in;height:8.31181in" /></p>
-<p>Above example for AiResearch TPE331-3U-303G engines and Hartzell T10282HDB-4R 3-blade, constant speed, feathering propellers.</p>
-<p> </p>
-<p><strong> </strong>The other “in-flight <em>η</em>” format also requires calculation of <em>C<sub>P</sub></em> and <em>J</em>. Below is a typical flight chart published by Hamilton Standard (Ref 11.2). This applies to a propeller with 2 blades, <em>AF</em>= 80, and <em>C<sub>Li</sub></em> =0.5</p>
-<p> </p>
-<p><img src="media/11/image24.png" style="width:6.62431in;height:8.31181in" /></p>
-<p> </p>
-<p>A <strong>body correction factor</strong> (<em>F<sub>BC</sub></em>) should be applied to account for reduced efficiency due to body flow blockage immediately behind the propeller. Two examples follow.</p>
-<p> <img src="media/11/image25.png" style="width:6.49931in;height:8.56111in" /></p>
-<p>Hamilton Standard also publishes a generalized nacelle blocking correction for typical scoop and annual inlet nacelles used on typical turboprops.</p>
-<p> </p>
-<p><img src="media/11/image26.png" style="width:5.87431in;height:8.43611in" /></p>
-<p>To determine if tip compressibility corrections are appropriate, find the maximum integrated design lift coefficient, <em>C<sub>Limax</sub></em> from the graph below.</p>
-<p>∼ Enter at flight Mach number, and move across at appropriate <em>NDf<sub>c.</sub></em></p>
-<p> </p>
-<p><em><sub> </sub></em><img src="media/11/image3.png" style="width:0.53125in;height:0.35417in" /></p>
-<p><em><sub> </sub></em></p>
-<p>∼ If <em>C<sub>Limax</sub></em> is below calculated <em>C<sub>li , </sub></em>then corrections are required.</p>
-<p> </p>
-<p><img src="media/11/image27.png" style="width:6.24931in;height:7.56181in" /></p>
-<p>If tip compressibility corrections are necessary, then the first step is to</p>
-<p>• Determine the <strong>Mach number adjustment for the effect of blade camber</strong> (∆<em>M</em>) from the figure below.</p>
-<p> </p>
-<p><img src="media/11/image28.png" style="width:6.99931in;height:5.93681in" /></p>
-<p>• Next, add ∆<em>M</em> from above to flight Mach number to get <em>M<sub>eff</sub></em>.</p>
-<p>• Enter adjacent <strong>generalized compressibility correction chart</strong> to determine propeller efficiency tip factor (<em>F<sub>t</sub></em>)</p>
-<p>• Calculate composite propeller efficiency as</p>
-<p> </p>
-<p><em>η</em><sub>comp</sub> = <em>η</em> x <em>F<sub>t</sub></em> x <em>F<sub>BC</sub></em></p>
-<p> </p>
-<p>• Calculate in-flight thrust as</p>
-<p> </p>
-<p><img src="media/11/image29.png" style="width:2.09375in;height:0.46875in" /></p>
-<p><img src="media/11/image30.png" style="width:5.75972in;height:8.72778in" /></p>
-<p><strong>11.7 Propeller Flight Test</strong></p>
-<p>The best method for determining <em>η<sub>comp</sub></em> is to instrument the prop shaft and/or engine mounts to measure thrust and torque.</p>
-<p> </p>
-<p> </p>
-<p> <img src="media/11/image31.png" style="width:3.22847in;height:1.88542in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>Calculate efficiency as</p>
-<p> </p>
-<p> <img src="media/11/image32.png" style="width:1.20833in;height:0.53125in" /></p>
-<p>As an alternate, the <strong>incremental drag method</strong> requires an accurate</p>
-<p>engine power model, a load cell and a small drag device.</p>
-<p> </p>
-<p>• Trim the aircraft at test <em>RPM, V<sub>T</sub> ,</em> &amp; altitude. Note <em>SHP</em> required.</p>
-<p>• Repeat above test with drag device and load cell attached. Note the power requirement change (∆<em>SHP</em> ) and load cell drag (∆<em>D</em>).</p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> <img src="media/11/image33.png" style="width:2.14583in;height:1.16667in" /></p>
-<p> <img src="media/11/image34.png" style="width:4.37431in;height:1.75in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>• Calculate aircraft drag and prop efficiency as</p>
-<p> </p>
-<p> <img src="media/11/image35.png" style="width:0.94792in;height:0.39583in" /></p>
-<p> </p>
-<p> </p>
-<p>• This technique assumes the same <em>η</em> for both tests and is valid if <em>J</em> is constant and the <em>C<sub>P</sub></em> change is small. The drag device must therefore be small enough to not violate this assumption, yet large enough for the change in <em>SHP</em> to be measurable on engine instruments.</p>
-<p> </p>
-<p><img src="media/11/image36.png" style="width:1.1875in;height:0.40625in" /></p>
-<p><strong>11.8 References</strong></p>
-<p><strong> </strong></p>
-<p>11.8.1 Roberts, Sean, “Light Aircraft Performance for Test Pilots and Flight Test Engineers,” Flight Research Inc., Mojave CA, 1982.</p>
-<p> </p>
-<p>11.8.2 anon., Hamilton Standard Propeller Efficiency Charts (a.k.a.Redbook), PDB 6101.</p>
-<p> </p>
-<p>11.8.3 Von Mises, Richard, “Theory of Flight,” McGraw-Hill, 1945.</p>
-<p> </p>
+<div id="references-1" class="section level1">
+<h1><span class="header-section-number">20</span> 19.6 References**</h1>
+<p>19.1 Thermal Imaging Systems by J.M. Lloyd, C 1975, Plenum Press, New York &amp; London, 451 pages.</p>
+<p>19.2 Infrared Systems Engineering by Richard D. Hudson Jr., C  1969, John Wiley &amp; Sons Inc. 642 Pages.</p>
+<p>19.3 Electro-Optical Systems Analysis 3rd edition, C 1985, Electro-Optical Research Company, Los Angeles, 356 pages.</p>
+<p>19.4 Light, The Mystery of the Universe by Khalil Seyrafi C 1986 by Electro-Optical Research Company, Los Angeles, 240 Pages.</p>
+<p>19.5 Test and Evaluation of Infrared Imaging Systems 2nd edition by Gerald Holst, C 1998, JCD Publishing, Winter Park, Fl., 422 pages.</p>
+<p>19.6 Electro-Optical Imaging Systems Performance by Gerald Holst, C 1995, JCD Publishing, Winter Park, Fl., 468 pages.</p>
+<p>19.7 Infrared Technology and Fundamentals by Spiro &amp; Schlessinger, C 1989, Marcel Dekker Inc.</p>
+<p>19.8 The Infrared and Electro-Optical Systems Handbook, C 1993, The Infrared Information and Analysis Center and the Society of Photo-Optical Instrumentation Engineers (SPIE), 8 Volumes.</p>
+<p>10.9 Electro-Optical Surveillance by Gene Adcock, C 1999, CCS Security Publishing Ltd.</p>
+<p><strong>NOTES</strong></p>
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
             </section>
 
           </div>
         </div>
       </div>
-<a href="reciprocating-engines.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="fixed-wing-performance-standardization.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="the-electromagnetic-spectrum.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>11 11 Propellers** | Flight Test Engineering Reference Handbook</title>
-  <meta name="description" content="11 11 Propellers** | Flight Test Engineering Reference Handbook" />
+  <title>19 19 - The Electromagnetic Spectrum** | Flight Test Engineering Reference Handbook</title>
+  <meta name="description" content="19 19 - The Electromagnetic Spectrum** | Flight Test Engineering Reference Handbook" />
   <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="11 11 Propellers** | Flight Test Engineering Reference Handbook" />
+  <meta property="og:title" content="19 19 - The Electromagnetic Spectrum** | Flight Test Engineering Reference Handbook" />
   <meta property="og:type" content="book" />
   
   <meta property="og:image" content="media/media/image1.jpg" />
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="11 11 Propellers** | Flight Test Engineering Reference Handbook" />
+  <meta name="twitter:title" content="19 19 - The Electromagnetic Spectrum** | Flight Test Engineering Reference Handbook" />
   
   
   <meta name="twitter:image" content="media/media/image1.jpg" />
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="reciprocating-engines.html"/>
-<link rel="next" href="fixed-wing-performance-standardization.html"/>
+<link rel="prev" href="telemetry-control-room-and-radio-communications.html"/>
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -185,361 +185,244 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="propellers" class="section level1">
-<h1><span class="header-section-number">11</span> 11 Propellers**</h1>
-<p><strong> </strong></p>
-<p><strong> </strong></p>
-<p>11.1 Abbreviations and Terminology</p>
-<p> </p>
-<p>11.2 Propeller Geometry</p>
-<p> </p>
-<p>11.3 Propeller Coefficients</p>
-<p> </p>
-<p>11.4 Propeller Efficiency and States</p>
-<p><strong> </strong></p>
-<p>11.5 Propeller Theory</p>
-<p> </p>
-<p>11.6 Propeller Modeling Examples</p>
-<p>Static Thrust Chart, In-Flight Charts,</p>
-<p>Blocking Correction Factor Charts,</p>
-<p>Tip Compressibility Factor Charts</p>
-<p> </p>
-<p>11.7 Propeller Flight Test</p>
-<p>11.8 References</p>
-<p> </p>
-<p><strong>11.1 Abbreviations and Terminology</strong></p>
-<p> </p>
-<p><strong>Abbreviations</strong></p>
-<p><em>AF</em> activity factor <em>=</em></p>
-<p>* *<img src="media/11/image1.png" style="width:1.60417in;height:0.41667in" /></p>
-<p><em>B</em> number of blades</p>
-<p><em>b</em> blade section width (feet)</p>
-<p><em>BHP</em> brake horsepower (measured at engine crankshaft)</p>
-<p><em>C<sub>LD</sub></em> blade section design lift coefficient</p>
-<p>* *</p>
-<p><em>C<sub>Li</sub></em> integrated design lift coefficient =</p>
-<p> <img src="media/11/image2.png" style="width:1.375in;height:0.36458in" /></p>
-<p><em>C<sub>P</sub></em> power (absorbed) coefficient</p>
-<p><em>C<sub>T </sub></em>thrust coefficient</p>
-<p><em>D</em> propeller diameter (feet)</p>
-<p><em>f<sub>c</sub></em> ratio of speed of sound at standard day sea level to speed of sound at operating condition</p>
-<p>* *<img src="media/11/image3.png" style="width:0.53125in;height:0.35417in" /></p>
-<p><em>HP</em> horsepower (1 <em>HP</em> = 550 ft-lb/sec)</p>
-<p>G.R. gear ratio, propeller speed/engine speed</p>
-<p>J Propeller advance ratio <em>=V<sub>T</sub>/nD</em> (nondimensional)</p>
-<p><em>M</em> aircraft Mach number</p>
-<p><em>N</em> propeller speed, revolutions per minute (<em>RPM</em>)</p>
-<p><em>n</em> propeller speed, revolutions per second</p>
-<p><em>N<sub>e</sub></em> engine speed, <em>RPM</em></p>
-<p><em>P<sub>a</sub></em> ambient pressure</p>
-<p><em>P</em> power output (ft-lb/sec)</p>
-<p><em>Q</em> torque (ft-lb)</p>
-<p><em>q</em> dynamic pressure</p>
-<p><em>T</em> thrust</p>
-<p><em>T<sub>a</sub></em> absolute ambient temperature</p>
-<p><em>R</em> blade radius at propeller tip (feet)</p>
-<p><em>r</em> radius at blade element (feet)</p>
-<p><em>SHP</em> shaft horsepower (measured at propeller shaft)</p>
-<p><em>T</em> propeller thrust (pounds)</p>
-<p><em>V<sub>T</sub></em> freestream velocity (ft/sec)</p>
-<p><em>V<sub>K</sub></em> freestream velocity (knots)</p>
-<p><em>x</em> fraction of propeller tip radius, <em>r/R</em></p>
-<p><em>V<sub>tan</sub></em> tangential velocity</p>
-<p><em>V<sub>R</sub></em> resultant velocity</p>
-<p><em>V<sub>tip</sub></em> tip speed</p>
-<p><em>α</em> local angle of attack</p>
-<p><em>β</em>  local blade twist angle, measured between chord and plane of rotation, same as <em>θ</em> (degrees).</p>
-<p>∆<em>M</em> Mach number adjustment for effect of blade camber</p>
-<p><em>φ</em> propeller disk angle of attack</p>
-<p><em>η</em> isolated propeller efficiency.</p>
-<p><em>η<sub>comp</sub></em> composite prop efficiency (includes tip and blockage corrections)</p>
-<p><em>θ </em><sup>3/4</sup> propeller blade twist angle at <em>x</em> =3/4 (degrees), same as <em>β <sup>3</sup></em><sup>/4</sup></p>
-<p><em>σ</em> ratio of operating density to sea level standard density = <em>ρ</em><sub>a</sub>/<em>ρ</em><sub>o.</sub></p>
-<p>ω propeller rotation speed (radians/second)</p>
-<p> </p>
-<p> </p>
-<p><strong>Terminology</strong></p>
-<p> <strong> </strong></p>
-<p>blade aspect ratio measured as <span class="math display">\[*R* / max blade width\]</span>.</p>
-<p> </p>
-<p>effective pitch actual advance per revolution.</p>
-<p> </p>
-<p>experimental pitch necessary advance to generate zero thrust.</p>
-<p> </p>
-<p>geometric pitch (<em>p</em>) advance per revolution if blade element moves</p>
-<p>according to β (i.e., with no slip).</p>
-<p>reduction gear gearing between the engine crankshaft and prop shaft that reduces the propeller rotation speed .</p>
-<p>right-handed moves clockwise (viewed from the slipstream).</p>
-<p> </p>
-<p>solidity fraction of prop disk covered by blade area = 2π<em>R/Bb</em>.</p>
-<p> </p>
-<p>total width ratio (<em>TWR</em>) measured as <span class="math display">\[*WR* x *B*\]</span></p>
-<p> </p>
-<p>thickness ratio (<em>TR</em>) blade thicknessmeasured locally or at .75<em>R</em> to represent entire prop.</p>
-<p> </p>
-<p>width ratio (<em>WR</em>) calculated as {<em>b</em> @ .75<em>R</em> } / <em>D</em></p>
-<p> </p>
-<p><strong>11.2 Propeller Geometry</strong></p>
-<p><strong> </strong></p>
-<p>• <em>δ<sub>r</sub></em> is the width of any element along blade radius.</p>
-<p> </p>
-<p> <img src="media/11/image4.png" style="width:2.81181in;height:1.04167in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>• <em>x = r/R,</em> the local fraction of prop tip radius</p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> <img src="media/11/image5.png" style="width:2.80139in;height:1.57292in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>• Prop blade chord extends from leading edge to trailing edge.</p>
-<p>• Blade twist angle <em>θ,</em> measured between rotation plane and local chord.</p>
-<p>• Relative wind is the resultant velocity (<em>V<sub>R</sub></em>), comprised of aircraft</p>
-<p>forward speed and tangential speed at radial location along blade.</p>
-<p> </p>
-<p> <img src="media/11/image6.png" style="width:1.53125in;height:0.3125in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>• Angle <em>φ</em> is measured between plane of rotation and local <em>V<sub>R</sub></em></p>
-<p><em><sub> </sub></em></p>
-<p><em><sub> </sub></em><img src="media/11/image7.png" style="width:4.04097in;height:0.39583in" /></p>
-<p><em><sub> </sub></em></p>
-<p><strong> </strong></p>
-<p>• Αdvance ratio (<em>J</em>) is defined as <em>J = V<sub>T</sub>/nD.</em></p>
-<p>• Local angle of attack at any fraction of radius(<em>α<sup>x</sup></em>) is measured between the local chord line and relative wind</p>
-<p><img src="media/11/image8.png" style="width:3.69722in;height:0.375in" /></p>
-<p>• Lift and drag are perpendicular and parallel to <em>V<sub>R</sub></em>, respectively</p>
-<p>• Thrust (<em>T</em>) and torque (<em>Q</em>) are perpendicular and parallel to the plane of rotation, respectively.</p>
-<p> </p>
-<p><strong>11.3 Propeller Coefficients</strong></p>
-<p><strong> </strong></p>
-<p>Integrating lift and drag along a blade gives the thrust (<em>T</em>) and torque (<em>Q</em>). Multiply by number of blades (<em>B</em>) to determine total <em>T</em> and <em>Q</em>.</p>
-<p> </p>
-<p> </p>
-<p> <img src="media/11/image9.png" style="width:2.70833in;height:0.86458in" /></p>
-<p><strong> </strong></p>
-<p><strong> </strong></p>
-<p><strong> </strong></p>
-<p> </p>
-<p>Thrust Coefficient, <em>C<sub>T</sub></em></p>
-<p> <img src="media/11/image10.png" style="width:0.92708in;height:0.45833in" /></p>
-<p> </p>
-<p>Torque Coefficient, <em>C<sub>Q</sub></em></p>
-<p> <img src="media/11/image11.png" style="width:0.94792in;height:0.45833in" /></p>
-<p> </p>
-<p>Power Coefficient, <em>C<sub>P</sub></em></p>
-<p> </p>
-<p> <img src="media/11/image12.png" style="width:3.05139in;height:0.36458in" /></p>
-<p> </p>
-<p>Typical effect of advance ratio on thrust and torque coefficients</p>
-<p><img src="media/11/image13.png" style="width:4.49931in;height:3.62431in" /></p>
-<p><strong>11.4 Propeller Efficiency and States</strong></p>
-<p><strong> </strong></p>
-<p>Propeller efficiency (<em>η</em>)</p>
-<p> </p>
-<p><img src="media/11/image14.png" style="width:4.15556in;height:0.53125in" /></p>
-<p> </p>
-<p> </p>
-<p> <img src="media/11/image15.png" style="width:4.49931in;height:2.97847in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>Propeller state: positive thrust &amp; efficiency, power supplied by engine.</p>
-<p>Brake state: negative thrust &amp; efficiency, power supplied by engine.</p>
-<p>Windmill state: negative thrust &amp; <em>η</em>, power supplied by freestream.</p>
-<p> </p>
-<p><img src="media/11/image16.png" style="width:4.49931in;height:1.875in" /></p>
-<p><strong>11.5 Propeller Theory</strong></p>
-<p> </p>
-<p>Simple momentum theory describes pressure jump (∆<em>P</em>) across</p>
-<p>propeller disk .</p>
-<p>• The downstream velocity increment (<em>v<sub>1</sub></em>) is twice the velocity</p>
-<p>increment at the disk (<em>v</em>) .</p>
-<p>• Thrust (∆<em>P</em>) = ∆<em>P</em> x disk area</p>
-<p>• Froude’s momentum theory: efficiency =</p>
-<p> </p>
-<p> <img src="media/11/image17.png" style="width:1.33333in;height:0.46875in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> <img src="media/11/image18.png" style="width:4.49931in;height:2.125in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>Blade element theory tends to be more complex and may include corrections for tip swirl losses, Mach effects, nacelle blockage, etc. Below is a comparison of typical calculated and measured thrust distribution.</p>
-<p> </p>
-<p><img src="media/11/image19.png" style="width:4.00972in;height:1.59375in" /></p>
-<p><strong>11.6 Propeller Modeling</strong></p>
-<p> </p>
-<p>• For a specified propeller geometry; <em>C<sub>T</sub></em> , <em>C<sub>P</sub></em>, <em>J,</em> and blade angle (<em>θ</em>) are interrelated such that knowledge of any two defines the other two.</p>
-<p>• Calculate propeller efficiency as <em>η = JC<sub>T</sub></em> /<em>C<sub>P </sub></em>.</p>
-<p>• Models assume isolated conditions, i.e., without nacelle blockage.</p>
-<p>• Models assume negligible Mach effects at propeller tips.</p>
-<p>• Different models required for static and “in-flight” conditions.</p>
-<p> </p>
-<p>Determine static <em>C<sub>T</sub></em> and <em>C<sub>P</sub></em> using “<strong>Static Thrust Chart</strong>” (ref 11.2)</p>
-<p> </p>
-<p> <img src="media/11/image20.png" style="width:0.63542in;height:0.375in" /></p>
-<p> <img src="media/11/image21.png" style="width:4.36389in;height:4.10347in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>∼ Separate charts exist for each combination of <em>AF</em> and # of blades (<em>B)</em>.</p>
-<p>∼ Enter chart at appropriate <em>J</em> &amp; <em>C<sub>li</sub></em></p>
-<p> </p>
-<p>Static Thrust = where <em>N</em> = Propeller <em>RPM</em> Determine isolated propeller in-flight effi</p>
-<p> </p>
-<p>ciency (<em>η</em>) from the appropriate <strong>“Flight Charts.”</strong> They are typically presented in one of two forms.</p>
-<p> <img src="media/11/image22.png" style="width:1.41667in;height:0.42708in" /></p>
-<p><img src="media/11/image23.png" style="width:6.99931in;height:8.31181in" /></p>
-<p>Above example for AiResearch TPE331-3U-303G engines and Hartzell T10282HDB-4R 3-blade, constant speed, feathering propellers.</p>
-<p> </p>
-<p><strong> </strong>The other “in-flight <em>η</em>” format also requires calculation of <em>C<sub>P</sub></em> and <em>J</em>. Below is a typical flight chart published by Hamilton Standard (Ref 11.2). This applies to a propeller with 2 blades, <em>AF</em>= 80, and <em>C<sub>Li</sub></em> =0.5</p>
-<p> </p>
-<p><img src="media/11/image24.png" style="width:6.62431in;height:8.31181in" /></p>
-<p> </p>
-<p>A <strong>body correction factor</strong> (<em>F<sub>BC</sub></em>) should be applied to account for reduced efficiency due to body flow blockage immediately behind the propeller. Two examples follow.</p>
-<p> <img src="media/11/image25.png" style="width:6.49931in;height:8.56111in" /></p>
-<p>Hamilton Standard also publishes a generalized nacelle blocking correction for typical scoop and annual inlet nacelles used on typical turboprops.</p>
-<p> </p>
-<p><img src="media/11/image26.png" style="width:5.87431in;height:8.43611in" /></p>
-<p>To determine if tip compressibility corrections are appropriate, find the maximum integrated design lift coefficient, <em>C<sub>Limax</sub></em> from the graph below.</p>
-<p>∼ Enter at flight Mach number, and move across at appropriate <em>NDf<sub>c.</sub></em></p>
-<p> </p>
-<p><em><sub> </sub></em><img src="media/11/image3.png" style="width:0.53125in;height:0.35417in" /></p>
-<p><em><sub> </sub></em></p>
-<p>∼ If <em>C<sub>Limax</sub></em> is below calculated <em>C<sub>li , </sub></em>then corrections are required.</p>
-<p> </p>
-<p><img src="media/11/image27.png" style="width:6.24931in;height:7.56181in" /></p>
-<p>If tip compressibility corrections are necessary, then the first step is to</p>
-<p>• Determine the <strong>Mach number adjustment for the effect of blade camber</strong> (∆<em>M</em>) from the figure below.</p>
-<p> </p>
-<p><img src="media/11/image28.png" style="width:6.99931in;height:5.93681in" /></p>
-<p>• Next, add ∆<em>M</em> from above to flight Mach number to get <em>M<sub>eff</sub></em>.</p>
-<p>• Enter adjacent <strong>generalized compressibility correction chart</strong> to determine propeller efficiency tip factor (<em>F<sub>t</sub></em>)</p>
-<p>• Calculate composite propeller efficiency as</p>
-<p> </p>
-<p><em>η</em><sub>comp</sub> = <em>η</em> x <em>F<sub>t</sub></em> x <em>F<sub>BC</sub></em></p>
-<p> </p>
-<p>• Calculate in-flight thrust as</p>
-<p> </p>
-<p><img src="media/11/image29.png" style="width:2.09375in;height:0.46875in" /></p>
-<p><img src="media/11/image30.png" style="width:5.75972in;height:8.72778in" /></p>
-<p><strong>11.7 Propeller Flight Test</strong></p>
-<p>The best method for determining <em>η<sub>comp</sub></em> is to instrument the prop shaft and/or engine mounts to measure thrust and torque.</p>
-<p> </p>
-<p> </p>
-<p> <img src="media/11/image31.png" style="width:3.22847in;height:1.88542in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>Calculate efficiency as</p>
-<p> </p>
-<p> <img src="media/11/image32.png" style="width:1.20833in;height:0.53125in" /></p>
-<p>As an alternate, the <strong>incremental drag method</strong> requires an accurate</p>
-<p>engine power model, a load cell and a small drag device.</p>
-<p> </p>
-<p>• Trim the aircraft at test <em>RPM, V<sub>T</sub> ,</em> &amp; altitude. Note <em>SHP</em> required.</p>
-<p>• Repeat above test with drag device and load cell attached. Note the power requirement change (∆<em>SHP</em> ) and load cell drag (∆<em>D</em>).</p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> <img src="media/11/image33.png" style="width:2.14583in;height:1.16667in" /></p>
-<p> <img src="media/11/image34.png" style="width:4.37431in;height:1.75in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>• Calculate aircraft drag and prop efficiency as</p>
-<p> </p>
-<p> <img src="media/11/image35.png" style="width:0.94792in;height:0.39583in" /></p>
-<p> </p>
-<p> </p>
-<p>• This technique assumes the same <em>η</em> for both tests and is valid if <em>J</em> is constant and the <em>C<sub>P</sub></em> change is small. The drag device must therefore be small enough to not violate this assumption, yet large enough for the change in <em>SHP</em> to be measurable on engine instruments.</p>
-<p> </p>
-<p><img src="media/11/image36.png" style="width:1.1875in;height:0.40625in" /></p>
-<p><strong>11.8 References</strong></p>
-<p><strong> </strong></p>
-<p>11.8.1 Roberts, Sean, “Light Aircraft Performance for Test Pilots and Flight Test Engineers,” Flight Research Inc., Mojave CA, 1982.</p>
-<p> </p>
-<p>11.8.2 anon., Hamilton Standard Propeller Efficiency Charts (a.k.a.Redbook), PDB 6101.</p>
-<p> </p>
-<p>11.8.3 Von Mises, Richard, “Theory of Flight,” McGraw-Hill, 1945.</p>
-<p> </p>
+<div id="the-electromagnetic-spectrum" class="section level1">
+<h1><span class="header-section-number">19</span> 19 - The Electromagnetic Spectrum**</h1>
+<p><strong>19.1 Electromagnetic Waves</strong></p>
+<p>All energy in the universe radiates in waves. Figure 1 depicts an electromagnetic wave, characterized by an electric field vector (E) and a magnetic field vector (H) oscillating orthogonal to each other. The electromagnetic wave propagation direction is determined by the right-hand rule and crossing the electric field into the magnetic field as illustrated. The electromagnetic wavelength (λ) is the distance between two consecutive electric field peaks. The electromagnetic wave frequency (f or ν) is inversely proportional to its wavelength. The product of any electromagnetic radiation’s frequency and wavelength equals the speed of light (C=λν).</p>
+<p>.</p>
+<div class="figure">
+<img src="media/19/image1.jpeg" style="width:4.84043in;height:2.40625in" alt="" />
+<p class="caption">4-3</p>
+</div>
+<p><strong>Figure 1 - The Electromagnetic Spectrum</strong></p>
+<p><strong>19.2 The Electromagnetic Spectrum</strong></p>
+<p>Figure 2 illustrates several concepts related to the electromagnetic spectrum</p>
+<ul>
+<li><p>Size reference for various wavelengths.</p></li>
+<li><p>Numerical relation between wavelength (meters between peaks), wave number (peaks per cm), energy (electron volts), and frequency (Hz).</p></li>
+<li><p>Separate frequency bands identified within the overall spectrum.</p></li>
+<li><p>Common sources &amp; uses within frequency bands.</p></li>
+</ul>
+<blockquote>
+<p>Many aircraft and spacecraft systems operate within limited regions of the electromagnetic spectrum. Common examples include radar, electro-optical sensors, radios, data links, electronic warfare, and navigation systems.</p>
+</blockquote>
+<p><img src="media/19/image2.jpeg" style="width:9.27749in;height:6.9492in" /></p>
+<p><strong>19.3 Radio Frequency Electromagnetic Radiation</strong></p>
+<p>One of the most heavily used regions of the electromagnetic spectrum is the radio frequency or RF spectrum, from ~3 kilohertz to ~ 300 gigahertz. The RF Spectrum encompasses an array of telecommunications devices including radios, television, satellite communications, data links, radio-navigation aids, and radar. Table 1 shows how the RF Spectrum is subdivided into frequency bands.</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>Band Designation</strong></td>
+<td align="left"><strong>Label</strong></td>
+<td align="left"><strong>Frequency Spread</strong></td>
+</tr>
+<tr class="even">
+<td align="left">Extremely Low Frequency</td>
+<td align="left">ELF</td>
+<td align="left">3 - 30 Hz</td>
+</tr>
+<tr class="odd">
+<td align="left">Super Low Frequency</td>
+<td align="left">SLF</td>
+<td align="left">30 - 300 Hz</td>
+</tr>
+<tr class="even">
+<td align="left">Ultra Low (Voice) Frequency</td>
+<td align="left">ULF or VF</td>
+<td align="left">300 Hz - 3 KHz</td>
+</tr>
+<tr class="odd">
+<td align="left">Very Low Frequency</td>
+<td align="left">VLF</td>
+<td align="left">3 - 30 KHz</td>
+</tr>
+<tr class="even">
+<td align="left">Low Frequency</td>
+<td align="left">LF</td>
+<td align="left">30 - 300 KHz</td>
+</tr>
+<tr class="odd">
+<td align="left">Medium Frequency</td>
+<td align="left">MF</td>
+<td align="left">300 KHz - 3 MHz</td>
+</tr>
+<tr class="even">
+<td align="left">High Frequency</td>
+<td align="left">HF</td>
+<td align="left">3 - 30 MHz</td>
+</tr>
+<tr class="odd">
+<td align="left">Very High Frequency</td>
+<td align="left">VHF</td>
+<td align="left">30 - 300 MHz</td>
+</tr>
+<tr class="even">
+<td align="left">Ultra High Frequency</td>
+<td align="left">UHF</td>
+<td align="left">300 MHz - 3 GHz</td>
+</tr>
+<tr class="odd">
+<td align="left">Super High Frequency</td>
+<td align="left">SHF</td>
+<td align="left">3 - 30 GHz</td>
+</tr>
+<tr class="even">
+<td align="left">Extremely High Frequency</td>
+<td align="left">EHF</td>
+<td align="left">30 - 300 GHz</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 1 - Radio Frequency Band Designations</strong></p>
+<p>Depending on the type of RF system, additional subdivisions of the bands also exist. Table 2 applies to radar systems.</p>
+<table style="width:100%;">
+<colgroup>
+<col width="18%" />
+<col width="33%" />
+<col width="15%" />
+<col width="13%" />
+<col width="18%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p><strong>IEEE US</strong></p>
+(Old RADAR Designation)</th>
+<th><strong>Origin</strong></th>
+<th><strong>Frequency Range</strong></th>
+<th><strong>Wavelength</strong></th>
+<th><p><strong>NATO, US ECM</strong></p>
+(New RADAR Designation)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>W</td>
+<td>W follows V in alphabet</td>
+<td>75-111 GHz</td>
+<td>400 mm-270 mm</td>
+<td>M (60-100 GHz)</td>
+</tr>
+<tr class="even">
+<td>V</td>
+<td>Very Short</td>
+<td>40-75 GHz</td>
+<td>700 mm – 400 mm</td>
+<td>L (40-60 GHz)</td>
+</tr>
+<tr class="odd">
+<td>K<sub>A</sub></td>
+<td>Kurtz (above)</td>
+<td>26-40 GHz</td>
+<td>1.1 cm -.7 cm</td>
+<td>K (20-40 GHz)</td>
+</tr>
+<tr class="even">
+<td>K</td>
+<td>Kurtz</td>
+<td>18-26 GHz</td>
+<td>1.6 cm – 1.1 cm</td>
+<td>J (10-20 GHz)</td>
+</tr>
+<tr class="odd">
+<td>K<sub>U</sub></td>
+<td>Kurtz (under)</td>
+<td>12.4-18 GHz</td>
+<td>2.5 cm – 1.6 cm</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>X</td>
+<td>WWII fire control - as an “X” for crosshairs</td>
+<td>8-12.4 GHz</td>
+<td>3.7 cm -2.5 cm</td>
+<td>I (8-10 GHz)</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>Compromise between S and X</td>
+<td>4-8 GHz</td>
+<td>7.5 cm -3.7 cm</td>
+<td><p>H (6-8 GHz)</p>
+<p>G (4-6 GHz)</p></td>
+</tr>
+<tr class="even">
+<td>S</td>
+<td>Short Wave</td>
+<td>2-4 GHz</td>
+<td>15 cm – 7.5 cm</td>
+<td><p>F (3-4 GHz)</p>
+<p>E (2-3 GHz)</p></td>
+</tr>
+<tr class="odd">
+<td>L</td>
+<td>Long Wave</td>
+<td>1-2 GHz</td>
+<td>30 cm – 15 cm</td>
+<td>D (1-2 GHz)</td>
+</tr>
+<tr class="even">
+<td>UHF</td>
+<td></td>
+<td>.3-1 GHz</td>
+<td>&lt;1 m – 30 cm</td>
+<td>C (.5-1 GHz)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 2 - Radar Frequency Band Designations</strong></p>
+<p>Electromagnetic wave propagation does not stop at national boundaries. Most governments regulate radio frequency band use via <strong>frequency</strong> or <strong>spectrum allocation</strong>. For technical and economic reasons, governments try to harmonize and standardize RF band allocation. A number of forums and standards bodies address frequency allocation. The International Telecommunication Union (ITU) is the United Nations agency for information and communication technologies. The ITU allocates global radio spectrum and satellite orbits and develops technical standards that ensure networks and technologies seamlessly interconnect. There are numerous users and spectrum allocation is complicated to implement and regulate. Figure 3 illustrates the United States frequency allocations.</p>
+<p><span class="math display">\[Editor&#39;s Note: Figure 3 is highly detailed and not legible in either 8.5 x 11&quot; or 11 x 17&quot; format. Posters may be purchased via &lt;http://bookstore.gpo.gov/products/sku/003-000-00694-8&gt;. A high resolution online version is available at &lt;http://www.ntia.doc.gov/files/ntia/publications/spectrum_wall_chart_aug2011.pdf&gt; \]</span></p>
+<p><img src="media/19/image3.jpeg" style="width:9.25068in;height:5.90597in" /></p>
+<p><strong>19.4 Optical Frequency Electromagnetic Radiation</strong></p>
+<p>Optical frequency electromagnetic radiation includes ultraviolet (UV), visible, and infrared (IR) light ranging from about 0.01 microns (µm) out to about 1000 µm wavelength. These comprise the optical spectrum as shown in Figure 4.</p>
+<p>Optical Spectrum</p>
+<p><img src="media/19/image4.png" style="width:6.5in;height:3.47778in" /></p>
+<p><strong>Figure 4 - The Optical Spectrum and the Visible Spectrum</strong></p>
+<p>Just as the RF spectrum can be subdivided into various special bands, Table 3 shows bands in the optical spectrum. The visible, near infrared (NIR), mid wave IR (MWIR), and long wave IR (LWIR) bands are most commonly used for airborne electro-optical sensor systems. All bands can be useful, depending on the specific mission and operational requirements. <span class="math display">\[Editor&#39;s Note: Some band nomenclature and boundaries depend on author and text. SFTE has not established standards on this subject\]</span></p>
+<p>The most familiar example of electromagnetic radiation is the light spectrum humans see. Different colors of visible light have different wavelengths, ranging from violet at the shorter wavelengths (0.4 µm) to red at the longer wavelengths (0.7 µm). Aerospace vehicles employ many visible light sensor systems. Visible light sensors provide useful and highly recognizable images, but logically enough, do not work well in poor visibility or at night without some sort of artificial illumination or image intensification.</p>
+<p><img src="media/19/image5.png" style="width:6.33303in;height:4.26563in" /></p>
+<p><strong>Table 3 - Optical Spectrum Bands</strong></p>
+<p>Infrared radiation refers to the optical spectrum between ~0.7 µm and ~1000 µm. Infrared radiation is popularly known as "heat or thermal radiation", but light and electromagnetic waves of any frequency will heat surfaces that absorb them. Infrared light from the sun accounts for ~49% of earth heating, the rest is by visible light that is absorbed then re-radiated at longer wavelengths. Objects at room temperature emit radiation mostly concentrated in the 8 to 25 µm region.</p>
+<p>Infrared sensors are useful in numerous civil and military remote sensing applications. At wavelengths beyond about 14 microns, infrared radiation is not useful for most airborne remote sensing applications due to the earth’s atmosphere attenuation. This is especially true in hot and humid atmospheric conditions with extreme infrared radiation attenuation.</p>
+<p><strong>19.5 Atmospheric Transmission Windows</strong></p>
+<p>The sun is the earth’s major source of natural energy across the electromagnetic spectrum and its radiation bombards the atmosphere constantly. The earth's atmosphere protects its life from excessive exposure to a range of higher energy waves such as Gamma rays, x-rays, and some ultraviolet waves. These are "ionizing" radiation because they have sufficiently high energy to knock electrons out of atoms, alter atoms and molecules, and damage organic cells. Figure 5 shows atmospheric opacity (blocking) across a wide wavelength spectrum.</p>
+<p><img src="media/19/image6.png" style="width:6.75in;height:3.18938in" alt="http://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Atmospheric\_electromagnetic\_opacity.svg/2000px-Atmospheric\_electromagnetic\_opacity.svg.png" /><strong>Figure 5 - Atmospheric Opacity vs. Wavelength</strong></p>
+<p>The opposite of opacity is transmission. The earth’s atmosphere absorbs, reflects, refracts, or allows electromagnetic radiation transmission. Suspended particles such as dust and raindrops can reflect and refract radiation. Figure 6 shows electromagnetic radiation transmission through the atmosphere across the visible and infrared wavelength spectrum (subset of the Figure 5 spectrum). Some radiation bands, including visible light and some infrared pass through the earth’s atmosphere with little to no attenuation. Such “atmospheric windows” or “transmission windows” allow infrared remote sensing from standoff distances. The bottom scale of Figure 6 shows which molecules are primary absorbers at various infrared radiation wavelengths. The most important absorbers are water vapor (H<sup>2</sup>O), carbon dioxide (CO<sup>2</sup>), and ozone (O<sup>3</sup>). Flight testers should understand wavelengths, absorption, refraction and atmospheric windows when designing tests to evaluate sensors.</p>
+<p><img src="media/19/image7.png" style="width:5.86458in;height:3.2563in" /></p>
+<p><strong>Figure 6 - Infrared Atmospheric Transmission Windows</strong></p>
+<p>19.6 References**</p>
+<p>19.1 Thermal Imaging Systems by J.M. Lloyd, C 1975, Plenum Press, New York &amp; London, 451 pages.</p>
+<p>19.2 Infrared Systems Engineering by Richard D. Hudson Jr., C  1969, John Wiley &amp; Sons Inc. 642 Pages.</p>
+<p>19.3 Electro-Optical Systems Analysis 3rd edition, C 1985, Electro-Optical Research Company, Los Angeles, 356 pages.</p>
+<p>19.4 Light, The Mystery of the Universe by Khalil Seyrafi C 1986 by Electro-Optical Research Company, Los Angeles, 240 Pages.</p>
+<p>19.5 Test and Evaluation of Infrared Imaging Systems 2nd edition by Gerald Holst, C 1998, JCD Publishing, Winter Park, Fl., 422 pages.</p>
+<p>19.6 Electro-Optical Imaging Systems Performance by Gerald Holst, C 1995, JCD Publishing, Winter Park, Fl., 468 pages.</p>
+<p>19.7 Infrared Technology and Fundamentals by Spiro &amp; Schlessinger, C 1989, Marcel Dekker Inc.</p>
+<p>19.8 The Infrared and Electro-Optical Systems Handbook, C 1993, The Infrared Information and Analysis Center and the Society of Photo-Optical Instrumentation Engineers (SPIE), 8 Volumes.</p>
+<p>10.9 Electro-Optical Surveillance by Gene Adcock, C 1999, CCS Security Publishing Ltd.</p>
+<p><strong>NOTES</strong></p>
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
             </section>
 
           </div>
         </div>
       </div>
-<a href="reciprocating-engines.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="fixed-wing-performance-standardization.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="telemetry-control-room-and-radio-communications.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
