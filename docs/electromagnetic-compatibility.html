@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>14 14 Electromagnetic Compatibility** | Flight Test Engineering Reference Handbook</title>
+  <meta name="description" content="14 14 Electromagnetic Compatibility** | Flight Test Engineering Reference Handbook" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="14 14 Electromagnetic Compatibility** | Flight Test Engineering Reference Handbook" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="media/media/image1.jpg" />
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="14 14 Electromagnetic Compatibility** | Flight Test Engineering Reference Handbook" />
+  
+  
+  <meta name="twitter:image" content="media/media/image1.jpg" />
+
+<meta name="author" content="Society of Flight Test Engineers" />
+
+
+<meta name="date" content="2013-01-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="acoustics.html"/>
+<link rel="next" href="handling-qualities.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#contributors"><i class="fa fa-check"></i>Contributors</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#editors"><i class="fa fa-check"></i>Editors</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#feedback"><i class="fa fa-check"></i>Feedback</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#publication-policy"><i class="fa fa-check"></i>Publication Policy</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#section-index"><i class="fa fa-check"></i>Section Index</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="general-information.html"><a href="general-information.html"><i class="fa fa-check"></i><b>1</b> General Information</a><ul>
+<li class="chapter" data-level="1.1" data-path="general-information.html"><a href="general-information.html#unit-conversions"><i class="fa fa-check"></i><b>1.1</b> Unit Conversions</a></li>
+<li class="chapter" data-level="1.2" data-path="general-information.html"><a href="general-information.html#greek-alphabet"><i class="fa fa-check"></i><b>1.2</b> Greek Alphabet</a></li>
+<li class="chapter" data-level="1.3" data-path="general-information.html"><a href="general-information.html#greek-symbols-used-for-aircraft"><i class="fa fa-check"></i><b>1.3</b> Greek Symbols Used for Aircraft</a></li>
+<li class="chapter" data-level="1.4" data-path="general-information.html"><a href="general-information.html#common-subscripts"><i class="fa fa-check"></i><b>1.4</b> Common Subscripts</a></li>
+<li class="chapter" data-level="1.5" data-path="general-information.html"><a href="general-information.html#common-abbreviations-raw"><i class="fa fa-check"></i><b>1.5</b> Common Abbreviations (raw)</a></li>
+<li class="chapter" data-level="1.6" data-path="general-information.html"><a href="general-information.html#sign-conventions-raw"><i class="fa fa-check"></i><b>1.6</b> Sign Conventions (raw)</a></li>
+<li class="chapter" data-level="1.7" data-path="general-information.html"><a href="general-information.html#thermodynamics-relations"><i class="fa fa-check"></i><b>1.7</b> Thermodynamics Relations</a><ul>
+<li class="chapter" data-level="1.7.1" data-path="general-information.html"><a href="general-information.html#thermodynamic-definitions"><i class="fa fa-check"></i><b>1.7.1</b> Thermodynamic Definitions</a></li>
+<li class="chapter" data-level="1.7.2" data-path="general-information.html"><a href="general-information.html#thermodynamic-symbols"><i class="fa fa-check"></i><b>1.7.2</b> Thermodynamic Symbols</a></li>
+<li class="chapter" data-level="1.7.3" data-path="general-information.html"><a href="general-information.html#thermodynamic-laws"><i class="fa fa-check"></i><b>1.7.3</b> Thermodynamic Laws</a></li>
+</ul></li>
+<li class="chapter" data-level="1.8" data-path="general-information.html"><a href="general-information.html#mechanics-relations"><i class="fa fa-check"></i><b>1.8</b> Mechanics Relations</a><ul>
+<li class="chapter" data-level="1.8.1" data-path="general-information.html"><a href="general-information.html#mechanics-symbols"><i class="fa fa-check"></i><b>1.8.1</b> Mechanics Symbols</a></li>
+<li class="chapter" data-level="1.8.2" data-path="general-information.html"><a href="general-information.html#newtons-laws"><i class="fa fa-check"></i><b>1.8.2</b> Newton’s Laws</a></li>
+<li class="chapter" data-level="1.8.3" data-path="general-information.html"><a href="general-information.html#planar-kinetics-work-power-and-energy"><i class="fa fa-check"></i><b>1.8.3</b> Planar Kinetics, Work, Power and Energy</a></li>
+<li class="chapter" data-level="1.8.4" data-path="general-information.html"><a href="general-information.html#planar-kinematics-at-constant-acceleration"><i class="fa fa-check"></i><b>1.8.4</b> Planar Kinematics at Constant Acceleration</a></li>
+<li class="chapter" data-level="1.8.5" data-path="general-information.html"><a href="general-information.html#curvilinear-motion-with-constant-acceleration-and-radius"><i class="fa fa-check"></i><b>1.8.5</b> Curvilinear motion with constant acceleration and radius</a></li>
+<li class="chapter" data-level="1.8.6" data-path="general-information.html"><a href="general-information.html#aircraft-in-level-turn"><i class="fa fa-check"></i><b>1.8.6</b> Aircraft in level turn</a></li>
+<li class="chapter" data-level="1.8.7" data-path="general-information.html"><a href="general-information.html#level-turn-kinematics-character"><i class="fa fa-check"></i><b>1.8.7</b> Level Turn Kinematics Character</a></li>
+<li class="chapter" data-level="1.8.8" data-path="general-information.html"><a href="general-information.html#gyroscopic-motion"><i class="fa fa-check"></i><b>1.8.8</b> Gyroscopic Motion</a></li>
+</ul></li>
+<li class="chapter" data-level="1.9" data-path="general-information.html"><a href="general-information.html#international-phonetic-alphabet-and-morse-code"><i class="fa fa-check"></i><b>1.9</b> International Phonetic Alphabet and Morse Code</a></li>
+<li class="chapter" data-level="1.10" data-path="general-information.html"><a href="general-information.html#section-1-references"><i class="fa fa-check"></i><b>1.10</b> Section 1 References</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="mathematics.html"><a href="mathematics.html"><i class="fa fa-check"></i><b>2</b> Mathematics</a><ul>
+<li class="chapter" data-level="2.1" data-path="mathematics.html"><a href="mathematics.html#algebra"><i class="fa fa-check"></i><b>2.1</b> Algebra</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="mathematics.html"><a href="mathematics.html#laws"><i class="fa fa-check"></i><b>2.1.1</b> Laws</a></li>
+<li class="chapter" data-level="2.1.2" data-path="mathematics.html"><a href="mathematics.html#identities"><i class="fa fa-check"></i><b>2.1.2</b> Identities</a></li>
+<li class="chapter" data-level="2.1.3" data-path="mathematics.html"><a href="mathematics.html#equations"><i class="fa fa-check"></i><b>2.1.3</b> Equations</a></li>
+<li class="chapter" data-level="2.1.4" data-path="mathematics.html"><a href="mathematics.html#interest-and-annuities"><i class="fa fa-check"></i><b>2.1.4</b> Interest And Annuities</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="mathematics.html"><a href="mathematics.html#geometry"><i class="fa fa-check"></i><b>2.2</b> Geometry</a></li>
+<li class="chapter" data-level="2.3" data-path="mathematics.html"><a href="mathematics.html#trigonometery-raw"><i class="fa fa-check"></i><b>2.3</b> Trigonometery (raw)</a></li>
+<li class="chapter" data-level="2.4" data-path="mathematics.html"><a href="mathematics.html#matrix-algebra-raw"><i class="fa fa-check"></i><b>2.4</b> Matrix Algebra (raw)</a></li>
+<li class="chapter" data-level="2.5" data-path="mathematics.html"><a href="mathematics.html#vector-algebra"><i class="fa fa-check"></i><b>2.5</b> Vector Algebra</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="mathematics.html"><a href="mathematics.html#addition"><i class="fa fa-check"></i><b>2.5.1</b> Addition</a></li>
+<li class="chapter" data-level="2.5.2" data-path="mathematics.html"><a href="mathematics.html#subtraction"><i class="fa fa-check"></i><b>2.5.2</b> Subtraction</a></li>
+<li class="chapter" data-level="2.5.3" data-path="mathematics.html"><a href="mathematics.html#scalar-multiplication"><i class="fa fa-check"></i><b>2.5.3</b> Scalar Multiplication</a></li>
+<li class="chapter" data-level="2.5.4" data-path="mathematics.html"><a href="mathematics.html#dot-product"><i class="fa fa-check"></i><b>2.5.4</b> Dot Product</a></li>
+<li class="chapter" data-level="2.5.5" data-path="mathematics.html"><a href="mathematics.html#norm"><i class="fa fa-check"></i><b>2.5.5</b> Norm</a></li>
+<li class="chapter" data-level="2.5.6" data-path="mathematics.html"><a href="mathematics.html#vector-cross-product"><i class="fa fa-check"></i><b>2.5.6</b> Vector Cross Product</a></li>
+<li class="chapter" data-level="2.5.7" data-path="mathematics.html"><a href="mathematics.html#vector-differentiation"><i class="fa fa-check"></i><b>2.5.7</b> Vector Differentiation</a></li>
+<li class="chapter" data-level="2.5.8" data-path="mathematics.html"><a href="mathematics.html#motion-of-a-point-using-two-reference-systems"><i class="fa fa-check"></i><b>2.5.8</b> Motion of a point using two reference systems</a></li>
+<li class="chapter" data-level="2.5.9" data-path="mathematics.html"><a href="mathematics.html#motion-of-a-point-using-one-reference-system"><i class="fa fa-check"></i><b>2.5.9</b> Motion of a point using one reference system</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="mathematics.html"><a href="mathematics.html#probability-and-statistics"><i class="fa fa-check"></i><b>2.6</b> Probability and Statistics</a></li>
+<li class="chapter" data-level="2.7" data-path="mathematics.html"><a href="mathematics.html#standard-series-raw"><i class="fa fa-check"></i><b>2.7</b> Standard Series (raw)</a></li>
+<li class="chapter" data-level="2.8" data-path="mathematics.html"><a href="mathematics.html#derivative-table-raw"><i class="fa fa-check"></i><b>2.8</b> Derivative Table (raw)</a></li>
+<li class="chapter" data-level="2.9" data-path="mathematics.html"><a href="mathematics.html#integral-table-raw"><i class="fa fa-check"></i><b>2.9</b> Integral Table (raw)</a></li>
+<li class="chapter" data-level="2.10" data-path="mathematics.html"><a href="mathematics.html#laplace-table-raw"><i class="fa fa-check"></i><b>2.10</b> Laplace Table (raw)</a></li>
+<li class="chapter" data-level="2.11" data-path="mathematics.html"><a href="mathematics.html#references"><i class="fa fa-check"></i><b>2.11</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html"><i class="fa fa-check"></i><b>3</b> Universe Earth Atmospheric</a><ul>
+<li class="chapter" data-level="3.1" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html#properties"><i class="fa fa-check"></i><b>3.1</b> Properties</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="pitot-statics.html"><a href="pitot-statics.html"><i class="fa fa-check"></i><b>4</b> Pitot Statics</a><ul>
+<li class="chapter" data-level="" data-path="pitot-statics.html"><a href="pitot-statics.html#common-nomenclature"><i class="fa fa-check"></i>Common Nomenclature</a></li>
+<li class="chapter" data-level="4.1" data-path="pitot-statics.html"><a href="pitot-statics.html#subsonic-airspeed-and-mach-equation"><i class="fa fa-check"></i><b>4.1</b> Subsonic Airspeed and Mach Equation</a></li>
+<li class="chapter" data-level="4.2" data-path="pitot-statics.html"><a href="pitot-statics.html#scale-altitude-compressibility-correction"><i class="fa fa-check"></i><b>4.2</b> Scale Altitude (Compressibility ) Correction</a></li>
+<li class="chapter" data-level="4.3" data-path="pitot-statics.html"><a href="pitot-statics.html#subsonic-relations-between-compressible-and-incompressible-dynamic-pressure"><i class="fa fa-check"></i><b>4.3</b> Subsonic Relations Between Compressible and Incompressible Dynamic Pressure</a></li>
+<li class="chapter" data-level="4.4" data-path="pitot-statics.html"><a href="pitot-statics.html#supersonic-airspeed-and-mach-equations"><i class="fa fa-check"></i><b>4.4</b> Supersonic Airspeed and Mach Equations</a></li>
+<li class="chapter" data-level="4.5" data-path="pitot-statics.html"><a href="pitot-statics.html#total-temperature-equation"><i class="fa fa-check"></i><b>4.5</b> Total Temperature Equation</a></li>
+<li class="chapter" data-level="4.6" data-path="pitot-statics.html"><a href="pitot-statics.html#altimeter-equation"><i class="fa fa-check"></i><b>4.6</b> Altimeter Equation</a></li>
+<li class="chapter" data-level="4.7" data-path="pitot-statics.html"><a href="pitot-statics.html#position-error-test-methods"><i class="fa fa-check"></i><b>4.7</b> Position Error Test Methods**</a><ul>
+<li class="chapter" data-level="4.7.1" data-path="pitot-statics.html"><a href="pitot-statics.html#fly-by"><i class="fa fa-check"></i><b>4.7.1</b> Fly-by</a></li>
+<li class="chapter" data-level="4.7.2" data-path="pitot-statics.html"><a href="pitot-statics.html#ground-course-method"><i class="fa fa-check"></i><b>4.7.2</b> Ground Course Method</a></li>
+<li class="chapter" data-level="4.7.3" data-path="pitot-statics.html"><a href="pitot-statics.html#trailing-conebomb-method"><i class="fa fa-check"></i><b>4.7.3</b> Trailing Cone/Bomb Method</a></li>
+<li class="chapter" data-level="4.7.4" data-path="pitot-statics.html"><a href="pitot-statics.html#gps-methods"><i class="fa fa-check"></i><b>4.7.4</b> 4.7.4 GPS Methods</a></li>
+</ul></li>
+<li class="chapter" data-level="4.8" data-path="pitot-statics.html"><a href="pitot-statics.html#position-error-far-2325.1323-and-.1325jar-certification"><i class="fa fa-check"></i><b>4.8</b> Position Error FAR 23/25.1323 and .1325/JAR Certification</a></li>
+<li class="chapter" data-level="4.9" data-path="pitot-statics.html"><a href="pitot-statics.html#pec-correction-process-flow-chart"><i class="fa fa-check"></i><b>4.9</b> PEC Correction Process Flow Chart</a></li>
+<li class="chapter" data-level="4.10" data-path="pitot-statics.html"><a href="pitot-statics.html#airspeedaltitudemach-graphic-relation"><i class="fa fa-check"></i><b>4.10</b> Airspeed/Altitude/Mach Graphic Relation</a></li>
+<li class="chapter" data-level="4.11" data-path="pitot-statics.html"><a href="pitot-statics.html#effect-of-errors-on-calibrated-airspeed-and-altitude"><i class="fa fa-check"></i><b>4.11</b> Effect of Errors on Calibrated Airspeed and Altitude</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="aerodynamics.html"><a href="aerodynamics.html"><i class="fa fa-check"></i><b>5</b> 5 Aerodynamics**</a></li>
+<li class="chapter" data-level="6" data-path="axis-systems-and-transformations.html"><a href="axis-systems-and-transformations.html"><i class="fa fa-check"></i><b>6</b> 6 Axis Systems and Transformations**</a></li>
+<li class="chapter" data-level="7" data-path="mass-properties.html"><a href="mass-properties.html"><i class="fa fa-check"></i><b>7</b> 7 Mass Properties**</a></li>
+<li class="chapter" data-level="8" data-path="motionvibration-analysis.html"><a href="motionvibration-analysis.html"><i class="fa fa-check"></i><b>8</b> 8 Motion/Vibration Analysis**</a></li>
+<li class="chapter" data-level="9" data-path="material-strength.html"><a href="material-strength.html"><i class="fa fa-check"></i><b>9</b> 9 Material Strength**</a></li>
+<li class="chapter" data-level="10" data-path="reciprocating-engines.html"><a href="reciprocating-engines.html"><i class="fa fa-check"></i><b>10</b> 10 Reciprocating Engines**</a></li>
+<li class="chapter" data-level="11" data-path="propellers.html"><a href="propellers.html"><i class="fa fa-check"></i><b>11</b> 11 Propellers**</a></li>
+<li class="chapter" data-level="12" data-path="fixed-wing-performance-standardization.html"><a href="fixed-wing-performance-standardization.html"><i class="fa fa-check"></i><b>12</b> 12 Fixed-Wing Performance Standardization**</a></li>
+<li class="chapter" data-level="13" data-path="acoustics.html"><a href="acoustics.html"><i class="fa fa-check"></i><b>13</b> 13 Acoustics**</a></li>
+<li class="chapter" data-level="14" data-path="electromagnetic-compatibility.html"><a href="electromagnetic-compatibility.html"><i class="fa fa-check"></i><b>14</b> 14 Electromagnetic Compatibility**</a><ul>
+<li class="chapter" data-level="14.0.1" data-path="electromagnetic-compatibility.html"><a href="electromagnetic-compatibility.html#regulations-and-industry-guidance"><i class="fa fa-check"></i><b>14.0.1</b> Regulations and Industry Guidance</a></li>
+<li class="chapter" data-level="14.0.2" data-path="electromagnetic-compatibility.html"><a href="electromagnetic-compatibility.html#lab-testing"><i class="fa fa-check"></i><b>14.0.2</b> 14.6.1 Lab Testing</a></li>
+<li class="chapter" data-level="14.0.3" data-path="electromagnetic-compatibility.html"><a href="electromagnetic-compatibility.html#aircraft-ground-testing"><i class="fa fa-check"></i><b>14.0.3</b> 14.6.2 Aircraft Ground Testing</a></li>
+<li class="chapter" data-level="14.0.4" data-path="electromagnetic-compatibility.html"><a href="electromagnetic-compatibility.html#aircraft-flight-testing"><i class="fa fa-check"></i><b>14.0.4</b> 14.6.3 Aircraft Flight Testing</a></li>
+<li class="chapter" data-level="14.0.5" data-path="electromagnetic-compatibility.html"><a href="electromagnetic-compatibility.html#avionics-changes-and-emi-testing"><i class="fa fa-check"></i><b>14.0.5</b> 14.6.4 Avionics changes and EMI testing</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="handling-qualities.html"><a href="handling-qualities.html"><i class="fa fa-check"></i><b>15</b> 15 Handling Qualities**</a></li>
+<li class="chapter" data-level="16" data-path="rotary-wing.html"><a href="rotary-wing.html"><i class="fa fa-check"></i><b>16</b> 16 Rotary Wing**</a></li>
+<li class="chapter" data-level="17" data-path="gas-turbine-propulsion.html"><a href="gas-turbine-propulsion.html"><i class="fa fa-check"></i><b>17</b> 17 Gas Turbine Propulsion**</a></li>
+<li class="chapter" data-level="18" data-path="telemetry-control-room-and-radio-communications.html"><a href="telemetry-control-room-and-radio-communications.html"><i class="fa fa-check"></i><b>18</b> 18 - Telemetry Control Room and Radio Communications**</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Flight Test Engineering Reference Handbook</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="electromagnetic-compatibility" class="section level1">
+<h1><span class="header-section-number">14</span> 14 Electromagnetic Compatibility**</h1>
+<blockquote>
+<p>14.1 Electromagnetic Compatibility (EMC)</p>
+<p>14.2 Abbreviations</p>
+<p>14.3 Terms</p>
+<p>14.4 Fundamentals</p>
+<p>14.4.1 Electric and Magnetic Fields</p>
+<p>14.4.2 Antennas</p>
+<p>14.4.3 Spectra</p>
+<p>14.4.4 Non-Ideal behavior of components</p>
+<p>14.5 Electromagnetic Interference (EMI)</p>
+<p>14.5.1 Interference Model</p>
+<p>15.5.2 Conducted Emissions</p>
+<p>15.5.3 Radiated Emissions</p>
+<p>15.5.4 Aviation Frequency Spectrum</p>
+<p>14.6 Testing</p>
+<p>14.6.1 Lab Testing</p>
+<p>14.6.2 Aircraft Ground Testing</p>
+<p>14.6.3 Aircraft Flight Testing</p>
+<p>14.6.4 Avionics changes and EMI testing</p>
+<p>14.7 Lightning</p>
+<p>14.7.1 Aircraft Lightning Zones</p>
+<p>14.7.2 Direct Effects</p>
+<p>14.7.3 Indirect Effects</p>
+<p>14.7.4 Instrumentation Precaution</p>
+<p>14.8 High Intensity Radiated Fields (HIRF)</p>
+<p>14.9 Precipitation Static (Pstatic)</p>
+<p>14.10 Reference Material</p>
+</blockquote>
+<p><strong>14.1 Electromagnetic Compatibility (EMC)</strong></p>
+<p>This section gives the Flight Test Engineer a basic introduction to terms and concepts used by EMC engineers and insight into good testing philosophy and appropriate practices thus improving the interaction between the EMC and Flight Test engineers.</p>
+<p><strong>14.2 Abbreviations</strong></p>
+<p><em>A</em> Area m<sup>2</sup></p>
+<p>c Speed of Light 3.0E8 m/s</p>
+<p><strong>E</strong> Electric Field Intensity Volts/meter, V/m</p>
+<p><em>f</em> Frequency Hertz, Hz</p>
+<p><strong>H</strong> Magnetic Field Intensity Ampere/meter, A/m</p>
+<p><em>I</em> Current Ampere, A</p>
+<p>L Inductance Henries</p>
+<p><em>Q</em> Charge Coulomb, C</p>
+<p><em>V</em> Electric Potential Volt, V</p>
+<p>X<sub>C</sub> Capacitive Impedance Ohms</p>
+<p>X<sub>L</sub> Inductive Impedance Ohms</p>
+<p>λ Wavelength meter</p>
+<p><strong>14.3 Terms</strong></p>
+<p>AC Alternating Current</p>
+<p>DC Direct Current</p>
+<p>EMC Electromagnetic Compatibility</p>
+<p>EMI Electromagnetic Interference</p>
+<p>Far Field Distance beyond 10λ</p>
+<p>HIRF High Intensity Radiated Fields</p>
+<p>RF Radio Frequency</p>
+<p>DecibelLogarithmic (base 10) expression for amplitude ratios.</p>
+<blockquote>
+<p>dB(power) = 10 Log<sub>10</sub> (P<sub>1</sub>/P<sub>2</sub>)</p>
+<p>dB(voltage) = 20 Log<sub>10</sub> (V<sub>1</sub>/V<sub>2</sub>)</p>
+<p>dB(current) = 20 Log<sub>10</sub> (I<sub>1</sub>/I<sub>2</sub>)</p>
+</blockquote>
+<p>Commonly used decibels for EMC:</p>
+<blockquote>
+<p>dBm decibels relative to 1 milliwatt</p>
+<p>dBW decibels relative to 1 watt</p>
+<p>dBμV decibels relative to 1 microvolt</p>
+<p>dBi antenna gain relative to an isotropic antenna</p>
+</blockquote>
+<table style="width:44%;">
+<colgroup>
+<col width="12%" />
+<col width="15%" />
+<col width="16%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>dB</strong></td>
+<td align="left"><strong>Power<br />
+Ratio</strong></td>
+<td align="left"><strong>V or I<br />
+Ratio</strong></td>
+</tr>
+<tr class="even">
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">3</td>
+<td align="left">2.0</td>
+<td align="left">1.4</td>
+</tr>
+<tr class="even">
+<td align="left">6</td>
+<td align="left">4</td>
+<td align="left">2</td>
+</tr>
+<tr class="odd">
+<td align="left">10</td>
+<td align="left">10</td>
+<td align="left">3.2</td>
+</tr>
+<tr class="even">
+<td align="left">20</td>
+<td align="left">100</td>
+<td align="left">10</td>
+</tr>
+<tr class="odd">
+<td align="left">30</td>
+<td align="left">1000</td>
+<td align="left">32</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Common Decibel Values</strong></p>
+<p>The sensitivity of a radio receiver can be on the order of 1 µV/m, while RF field strengths for HIRF can be 1000V/m, a factor of a billion or 180dBµV/m.</p>
+<p><strong><br />
+14.4 Fundamentals</strong></p>
+<p><strong>14.4.1 Electric and Magnetic Fields</strong></p>
+<p>A static charge <em>Q,</em> creates a static Electric field, ‘E’.</p>
+<p>A common magnet produces a static magnetic field, ‘H’.</p>
+<p>Transferring charge <em>Q</em>, i.e. DC current on a wire creates both a constant magnitude Electric and Magnetic field.</p>
+<p>An amplitude varying charge, i.e. changing current (AC) will generate a time varying Electric and Magnetic Field in different planes.</p>
+<p>Plane Waves that are self sustaining Electric and Magnetic Fields and combine in the far field, are commonly called an Electromagnetic Wave.</p>
+<p><strong>14.4.2 Antennas</strong></p>
+<p>Antennas can transmit and/or Receive RF equally well. Electrical length determines effectiveness.</p>
+<blockquote>
+<p>is an efficient antenna element length</p>
+<p>where:</p>
+</blockquote>
+<table>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>Frequency, <em>f</em></strong></td>
+<td align="left"><strong>Wavelength, λ</strong></td>
+</tr>
+<tr class="even">
+<td align="left">3 MHz</td>
+<td align="left">100m</td>
+</tr>
+<tr class="odd">
+<td align="left">30 MHz</td>
+<td align="left">10 m</td>
+</tr>
+<tr class="even">
+<td align="left">150 MHz</td>
+<td align="left">2 m</td>
+</tr>
+<tr class="odd">
+<td align="left">300 MHz</td>
+<td align="left">1 m</td>
+</tr>
+<tr class="even">
+<td align="left">3 GHz</td>
+<td align="left">0.10 m</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Common Wavelengths</strong></p>
+<p><strong>Slots</strong> that have favorable electrical lengths are effective antenna elements also, i.e. hatches, doors, avionics metal enclosure seams and ventilation holes.</p>
+<p><strong>Loop Area</strong> is the area encapsulated between the signal line and its return path that can be an effective antenna. The larger the loop (capture) area, the better the antenna effectiveness is.</p>
+<div id="spectra-are-the-frequency-content-of-the-electronic-signals-and-are-an-important-consideration-in-understanding-emi-issues.-periodic-signals-contain-energy-at-various-frequencies-and-as-such-a-frequency-domain-approach-is-needed.-how-much-energy-at-what-frequency-depends-largely-on-the-type-of-periodic-signal-i.e.-square-wave-or-sine-wave-initial-frequency-and-risefall-times-of-the-signal.-the-faster-the-risefall-times-are-the-more-spectral-content-will-be-developed-in-the-signal-most-of-which-will-be-unintentional-and-unwanted.-this-is-mathematically-demonstrated-by-the-use-of-a-trigonometric-fourier-series." class="section level4">
+<h4><span class="header-section-number">14.0.0.1</span> 14.4.3 Spectra are the frequency content of the electronic signals and are an important consideration in understanding EMI issues. Periodic signals contain energy at various frequencies and as such, a frequency domain approach is needed. How much energy at what frequency depends largely on the type of periodic signal, (i.e. square wave or sine wave), initial frequency and rise/fall times of the signal. The faster the rise/fall times are, the more spectral content will be developed in the signal, most of which will be unintentional and unwanted. This is mathematically demonstrated by the use of a trigonometric Fourier series.</h4>
+</div>
+<div id="non-ideal-behavior-of-components-can-exists-in-discrete-components-such-as-resistors-capacitors-inductors-and-even-wire-when-operated-at-off-nominal-conditions-for-example-temperature.-another-condition-is-frequency.-for-example-a-short-grounding-wire-from-a-dc-perspective-is-a-dead-short-neglecting-the-extremely-small-inductance.-but-at-some-frequency-this-inductance-gets-large-enough-to-be-a-factor-for-example-on-a-bonding-strap-for-lightning-protection.-a-26-gauge-wire-1-inch-above-a-ground-plane-will-have-0.028-µh-per-inch-of-inductance-l." class="section level4">
+<h4><span class="header-section-number">14.0.0.2</span> 14.4.4 Non-Ideal behavior of components can exists in discrete components such as resistors, capacitors, inductors and even wire when operated at off nominal conditions, for example temperature. Another condition is frequency. For example, a short grounding wire from a DC perspective is a dead short, neglecting the extremely small inductance. But at some frequency, this inductance gets large enough to be a factor, for example on a bonding strap for lightning protection. A 26 gauge wire, 1 inch above a ground plane will have 0.028 µH per inch of inductance (L).</h4>
+<p>Where: <strong>X<sub>L</sub>=2пfL</strong></p>
+<p>For f = 150 MHz; X<sub>L</sub>=26.4 Ohms per inch of wire which can be significant. To reduce this, replace the ground wire with a wide strap.</p>
+<p><strong><br />
+14.5 Electromagnetic Interference (EMI)</strong></p>
+<p><strong>Electromagnetic Compatibility (EMC)</strong> is defined as systems that:</p>
+<p>a) don’t interfere with other systems;</p>
+<p>b) are tolerant of interference from other systems;</p>
+<p>c) don’t interfere with itself.</p>
+<p><strong>Broadband Interference</strong> is interfering signals over a large range of frequencies. These can be associated with spark producing equipment like motors that can create signals with lots of spectral content.</p>
+<p><strong>Narrowband Interference</strong> is interfering signals that have a limited range of frequencies, usually a single frequency along with it’s harmonics. These can be associated with digital devices that have periodic characteristics like clocks.</p>
+<p><em>14.5.1 Interference Model</em></p>
+<p>The classic interference model is:</p>
+<blockquote>
+<p>Source Path Victim</p>
+</blockquote>
+<p>To reduce the interference you can:</p>
+<p>–Reduce the emissions from the <strong><em>Source</em></strong></p>
+<p>–Disrupt the <strong><em>Path</em></strong></p>
+<p>–Harden the <strong><em>Victim</em></strong></p>
+<p><strong>Sources</strong> of interference can be clocks, switching power supplies, CPUs, data buses, network systems, relays, local oscillators, and transmitter harmonics.</p>
+<p><strong>Coupling Paths</strong> can be signal and power lines, radiating wires, apertures or slots on LRUs, windows, door and hatch openings or antennas themselves.</p>
+<p><strong>Front Door</strong> <strong>coupling</strong> is meant to be interference coming in the normal path to the system, i.e. through the antenna ports to the radio, and can cause interference at extremely low power levels (‑100dBm).</p>
+<p><strong>Back Door</strong> <strong>coupling</strong> is interference coming into the system with the wires leading to the system and is of relatively higher power.</p>
+<p><strong>Capacitive coupling</strong> primarily involves electric waves in the near field and is due to voltages on wires.</p>
+<p><strong>Inductive coupling</strong> primarily involves magnetic waves in the near field and is due to current on either wires or chassis.</p>
+<p>The aircraft fuselage is sometimes incorrectly thought of as a Faraday Cage encapsulating the RF energy inside or preventing it from entering because of its aluminum structure, but actually it is not. All of the windows, doors and hatches allow RF energy to travel through quite easily.</p>
+<p><strong>Victims</strong> of interference can be radio receivers, VHF, HF, VOR, ILS, ADF, Display systems, Audio and Passenger Address system, smoke and fire detection circuits, fuel quantity systems. Typically, low energy systems can be susceptible.</p>
+<p>The reduction or elimination of EMI can be done in three areas; the systems end; by modifying the emissions and/or susceptibility requirements; or at the aircraft end by modifying the aircrafts wiring or structure.</p>
+<ul>
+<li>14.5.2 Conducted Emissions*</li>
+</ul>
+<p>Current/signal on wires that are not the intended or primary signal is considered conducted emissions. This ‘extra’ current will be passed along to other systems and/or can radiate on those wires acting like antennas.</p>
+<p><strong>Differential Mode</strong> current is made up of the intended signal or information and/or noise that goes out on the signal wires and comes back on the return lines.</p>
+<p><strong>Common Mode</strong> current is usually just noise that goes out on two or more signal/return lines and returns via some other path. This is usually the most troublesome in terms of emissions and should be eliminated whenever possible.</p>
+<p><em>14.5.3 Radiated Emissions</em></p>
+<p>RF energy emanating from the unit/LRU itself through holes, slots and apertures or from the interconnecting wires is considered radiated emissions.</p>
+<p><em>14.5.4 Aviation Frequency Spectrum</em></p>
+<p>The table below lists the frequency spectrum of interest to the aviation community. The range is from 100kHz to 10GHz, a factor of 10<sup>8</sup> , (90dB). The primary interest is with equipment that is sensitive to RF energy, i.e. radio receivers, which are primarily intended to detect small signals<br />
+(-105dBm). Emission requirements are set at a low level that will still allow proper operation of the radio receivers. For EMI purposes, emissions from equipment should stay clear of these frequencies.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left"><strong>Band</strong></th>
+<th align="left"><strong>Frequency</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">ADF</td>
+<td align="left">190–1750 kHz</td>
+</tr>
+<tr class="even">
+<td align="left">HF</td>
+<td align="left">2–30 MHz</td>
+</tr>
+<tr class="odd">
+<td align="left">Marker Beacon</td>
+<td align="left">75 MHz</td>
+</tr>
+<tr class="even">
+<td align="left">VHF Nav</td>
+<td align="left">108-118 MHz</td>
+</tr>
+<tr class="odd">
+<td align="left">VHF Comm</td>
+<td align="left">118–138 MHz</td>
+</tr>
+<tr class="even">
+<td align="left">Glideslope</td>
+<td align="left">328-335 MHz</td>
+</tr>
+<tr class="odd">
+<td align="left">DME, ATC, TCAS</td>
+<td align="left">960-1220 MHz</td>
+</tr>
+<tr class="even">
+<td align="left">GPS</td>
+<td align="left">1227, 1558, 1575 MHz</td>
+</tr>
+<tr class="odd">
+<td align="left">Glonass</td>
+<td align="left">1609 MHz</td>
+</tr>
+<tr class="even">
+<td align="left">Radio Altitude</td>
+<td align="left">4.2-4.4 GHz</td>
+</tr>
+<tr class="odd">
+<td align="left">MLS</td>
+<td align="left">5.0-5.25 GHz</td>
+</tr>
+<tr class="even">
+<td align="left">WXR</td>
+<td align="left">5.4, 8.8, 9.0-9.3 GHz</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Aviation Frequencies of Interest</strong></p>
+<p><strong><em>14.6 Testing</em></strong></p>
+</div>
+<div id="regulations-and-industry-guidance" class="section level3">
+<h3><span class="header-section-number">14.0.1</span> Regulations and Industry Guidance</h3>
+<p>The following references are regulations and industry guidelines that address procedures and acceptable limits for interference testing.</p>
+<p>-RTCA DO160D, Chapter 21</p>
+<p>-FARs Part 25.1353 and 25.1431</p>
+<p>-MIL STD 461</p>
+<p>-CISPR</p>
+<p>-FCC Part 15</p>
+<p>-Aircraft manufacturers own standards</p>
+</div>
+<div id="lab-testing" class="section level3">
+<h3><span class="header-section-number">14.0.2</span> 14.6.1 Lab Testing</h3>
+<p>Lab testing of the unit using established standards and practices is the first and best means of testing. Not only is this where you will find the trouble spots (i.e. frequencies) but also is a place where some troubleshooting could alleviate potential problem areas. Contracts with LRU vendors should be written to require the equipment pass these tests, identified above, before delivery. A list of frequencies that exceed an established limit is the result.</p>
+</div>
+<div id="aircraft-ground-testing" class="section level3">
+<h3><span class="header-section-number">14.0.3</span> 14.6.2 Aircraft Ground Testing</h3>
+<p>After lab testing, the unit should be installed in the airplane and be tested with the installed shops wiring. Testing will consist of measuring conducted emissions with current probes on wire bundles associated with the new equipment.</p>
+<p>Radiated emissions are tested by using the aircrafts antennas hooked to test equipment to determine how much RF energy is getting into these sensitive systems. Again, a list of frequencies that exceed an established limit is the result.</p>
+</div>
+<div id="aircraft-flight-testing" class="section level3">
+<h3><span class="header-section-number">14.0.4</span> 14.6.3 Aircraft Flight Testing</h3>
+<p>Only after both lab and ground testing is accomplished can a meaningful flight test occur. The results of the ground test should produce a list of frequencies of some exceedance or observed interference. It is usually only these frequencies that need to be cleared in flight. The appropriate systems should be tuned to those frequencies and with the equipment to be tested in its’ operating mode, determine if there is objectionable interference, (usually a pilots subjective opinion). Pilots can evaluate systems only if adequate lab/ground testing has been done beforehand. EMI issues that are found in Flight Test are very difficult and expensive to fix at this stage, and can typically only reduce or mask the problem.</p>
+</div>
+<div id="avionics-changes-and-emi-testing" class="section level3">
+<h3><span class="header-section-number">14.0.5</span> 14.6.4 Avionics changes and EMI testing</h3>
+<p>Changes in the hardware/wiring of a piece of avionics that could affect EMI testing are:</p>
+<p>-Processor speeds</p>
+<p>-Power Supply changes</p>
+<p>-Frequency sensitive components, capacitors and inductors</p>
+<p>-Circuit card layout and repackaging changes</p>
+<p>Software changes typically don’t affect EMI unless software controls/switches hardware related functions, i.e. speeds, options, peripherals etc.</p>
+<p>14.7 Lightning</p>
+<p>Lightning is a very large electrical transient that can impart thousands of Amperes of current through an aircraft structure. The structure needs to present a low impedance path for the lightning current so that no damage causing arcing and/or over-heating occurs. Additionally nearby wiring needs to be shielded to protect against the induced current produced by the ever changing magnetic fields.</p>
+<p><em>14.7.1 Aircraft Lightning Zones</em></p>
+<p>The aircraft is divided into different areas that relate to the probability of a lightning attachment. The nose, tail, wingtips and engine nacelles (extremities) are more likely areas.</p>
+<p><em>14.7.2 Direct Effects</em></p>
+<p>Direct effects of a lightning attachment can be in the form of heating, arcing and acoustic issues. Designing the structure to handle the current flow and providing a low impedance path for the lightning current will greatly minimize these effects.</p>
+<p><em>14.7.3 Indirect Effects</em></p>
+<p>Indirect effects considers the current that is induced by the transient and coupled onto aircraft wiring that is parallel to the main lightning current flow. The protection is two fold. Systems are designed and tested to handle these types of transients as well as the wiring is addressed to minimize the induced transient to these systems. Shielding and good grounding with short pigtails at both ends is a good method to reduce the induced current.</p>
+<p><em>14.7.4 Instrumentation Precaution</em></p>
+<p>Any flight test instrumentation wiring that lies outside the protective fuselage needs to be evaluated for both direct and indirect effects of a nearby lightning attachment. The sensor itself must be protected from the direct attachment and the wiring must be protected from induced current onto that wiring. This current may damage the data system equipment and/or, other aircraft systems that are also instrumented. Good shielding and grounding techniques will minimize these effects. For more information see the 10-6 Reference at the end of this handbook section.</p>
+<p>14.8 High Intensity Radiated Fields (HIRF)</p>
+<p>Aircraft can be exposed to large RF energy produced by high powered radio transmitters or military/airport surveillance radars. These RF fields can penetrate the aircraft fuselage through windows and doors/slots which could couple with aircraft wiring and/or systems and potentially interfere. This threat is addressed by both the aircraft and systems approach.</p>
+<p>The systems themselves are designed and tested to be immune to a particular level of RF. These levels are determined by the criticality of the systems and are specified in regulatory material. Testing is usually done in a laboratory environment.</p>
+<p>From the aircraft side, the internal wiring for critical systems is protected with appropriate shielding and grounding. Aircraft ground testing is done at special facilities that can radiate the vehicle with large RF fields with instrumentation inside to measure the penetration and to verify correct system operation.</p>
+<p>14.9 Precipitation Static (Pstatic)</p>
+<p>This occurs due to a buildup of static charges that discharge by noisy arcing from/to various parts of the aircraft. The static buildup is caused by tribo-electric charging from the aircraft impacting snow/rain/ash particles in the air while flying. This charge should gracefully exit the aircraft through static wicks installed on the wingtips and empennage tips. If it doesn’t the problem shows up as broad banded noise (white noise) heard on receivers such as ADF, HF and to some extent VHF as the aircraft flies through the precipitation.</p>
+<p>Typical causes are access panels (composite and metal), cowling and fairings that are not properly grounded. Ground straps do a good job of not isolating parts. (Note: these straps should not be used for lightning protection as they usually are not sized to handle the current).</p>
+<p>Reference Material</p>
+<p>10.1) Paul, C. R., “Introduction to Electromagnetic Compatibility”, John Wiley &amp; Sons Publishing, 1992</p>
+<p>10.2) Ott, H. W, “Noise Reduction Techniques in Electronic Systems”, John Wiley &amp; Sons Publishing, 1988</p>
+<p>10.3) Hrehov, D. W. and Walen, D. B., “What Flight Test Crews Need to Know About EMI/EMC”, <em>34<sup>th</sup> Annual SFTE Symposium Workshop,</em> 2003</p>
+<p>10.4) Federal Aviation Regulations, Part 25</p>
+<p>10.5) RTCA DO160D, “Environmental Conditions and Test Procedures for Airborne Equipment”, 1997</p>
+<p>10.6) Hrehov, D. W., “What Instrumentation Engineers Need to Know About Lightning”, <em>31<sup>st</sup> Annual SFTE Symposium,</em> 2000</p>
+<p>10.7) Fisher, F. A., Perala, F. A., and Plumer, J A., “Lightning Protection for Aircraft”, Lightning Technologies Inc., 1990</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="acoustics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="handling-qualities.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
