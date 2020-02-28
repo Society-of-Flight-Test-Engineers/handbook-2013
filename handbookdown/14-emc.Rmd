@@ -201,7 +201,7 @@ c\) don't interfere with itself.
 **Narrowband Interference** is interfering signals that have a limited range of frequencies, usually a single frequency along with it's harmonics. These can be associated with digital devices that have periodic characteristics like clocks.
 
 *14.5.1 Interference Model*
----------------------------
+
 
 The classic interference model is:
 
@@ -234,7 +234,7 @@ The aircraft fuselage is sometimes incorrectly thought of as a Faraday Cage enca
 The reduction or elimination of EMI can be done in three areas; the systems end; by modifying the emissions and/or susceptibility requirements; or at the aircraft end by modifying the aircrafts wiring or structure.
 
 * 14.5.2 Conducted Emissions*
------------------------------
+
 
 Current/signal on wires that are not the intended or primary signal is considered conducted emissions. This 'extra' current will be passed along to other systems and/or can radiate on those wires acting like antennas.
 
@@ -243,12 +243,12 @@ Current/signal on wires that are not the intended or primary signal is considere
 **Common Mode** current is usually just noise that goes out on two or more signal/return lines and returns via some other path. This is usually the most troublesome in terms of emissions and should be eliminated whenever possible.
 
 *14.5.3 Radiated Emissions*
----------------------------
+
 
 RF energy emanating from the unit/LRU itself through holes, slots and apertures or from the interconnecting wires is considered radiated emissions.
 
 *14.5.4 Aviation Frequency Spectrum*
-------------------------------------
+
 
 The table below lists the frequency spectrum of interest to the aviation community. The range is from 100kHz to 10GHz, a factor of 10^8^ , (90dB). The primary interest is with equipment that is sensitive to RF energy, i.e. radio receivers, which are primarily intended to detect small signals\
 (-105dBm). Emission requirements are set at a low level that will still allow proper operation of the radio receivers. For EMI purposes, emissions from equipment should stay clear of these frequencies.
@@ -317,32 +317,32 @@ Changes in the hardware/wiring of a piece of avionics that could affect EMI test
 Software changes typically don't affect EMI unless software controls/switches hardware related functions, i.e. speeds, options, peripherals etc.
 
 14.7 Lightning
-==============
+
 
 Lightning is a very large electrical transient that can impart thousands of Amperes of current through an aircraft structure. The structure needs to present a low impedance path for the lightning current so that no damage causing arcing and/or over-heating occurs. Additionally nearby wiring needs to be shielded to protect against the induced current produced by the ever changing magnetic fields.
 
 *14.7.1 Aircraft Lightning Zones*
----------------------------------
+
 
 The aircraft is divided into different areas that relate to the probability of a lightning attachment. The nose, tail, wingtips and engine nacelles (extremities) are more likely areas.
 
 *14.7.2 Direct Effects*
------------------------
+
 
 Direct effects of a lightning attachment can be in the form of heating, arcing and acoustic issues. Designing the structure to handle the current flow and providing a low impedance path for the lightning current will greatly minimize these effects.
 
 *14.7.3 Indirect Effects*
--------------------------
+
 
 Indirect effects considers the current that is induced by the transient and coupled onto aircraft wiring that is parallel to the main lightning current flow. The protection is two fold. Systems are designed and tested to handle these types of transients as well as the wiring is addressed to minimize the induced transient to these systems. Shielding and good grounding with short pigtails at both ends is a good method to reduce the induced current.
 
 *14.7.4 Instrumentation Precaution*
------------------------------------
+
 
 Any flight test instrumentation wiring that lies outside the protective fuselage needs to be evaluated for both direct and indirect effects of a nearby lightning attachment. The sensor itself must be protected from the direct attachment and the wiring must be protected from induced current onto that wiring. This current may damage the data system equipment and/or, other aircraft systems that are also instrumented. Good shielding and grounding techniques will minimize these effects. For more information see the 10-6 Reference at the end of this handbook section.
 
 14.8 High Intensity Radiated Fields (HIRF)
-==========================================
+
 
 Aircraft can be exposed to large RF energy produced by high powered radio transmitters or military/airport surveillance radars. These RF fields can penetrate the aircraft fuselage through windows and doors/slots which could couple with aircraft wiring and/or systems and potentially interfere. This threat is addressed by both the aircraft and systems approach.
 
@@ -351,14 +351,14 @@ The systems themselves are designed and tested to be immune to a particular leve
 From the aircraft side, the internal wiring for critical systems is protected with appropriate shielding and grounding. Aircraft ground testing is done at special facilities that can radiate the vehicle with large RF fields with instrumentation inside to measure the penetration and to verify correct system operation.
 
  14.9 Precipitation Static (Pstatic)
-===================================
+
 
 This occurs due to a buildup of static charges that discharge by noisy arcing from/to various parts of the aircraft. The static buildup is caused by tribo-electric charging from the aircraft impacting snow/rain/ash particles in the air while flying. This charge should gracefully exit the aircraft through static wicks installed on the wingtips and empennage tips. If it doesn't the problem shows up as broad banded noise (white noise) heard on receivers such as ADF, HF and to some extent VHF as the aircraft flies through the precipitation.
 
 Typical causes are access panels (composite and metal), cowling and fairings that are not properly grounded. Ground straps do a good job of not isolating parts. (Note: these straps should not be used for lightning protection as they usually are not sized to handle the current).
 
 Reference Material
-==================
+
 
 10.1) Paul, C. R., "Introduction to Electromagnetic Compatibility", John Wiley & Sons Publishing, 1992
 
