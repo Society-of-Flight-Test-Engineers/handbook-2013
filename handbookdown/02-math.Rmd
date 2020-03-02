@@ -568,29 +568,42 @@ Mollweide's Check Formulas:
 
 (reference 2.5)
 
-Matrix **multiplication** can be defined for any two matrices only whe the number of columns of the first is equal to the number of rows of the second matrix. Multiplication is not defined for other matrices.
+Given two matrices, \(A, B\) where \(A\) is an \(i \times m\) matrix and \(B\) is an \(m \times j\) matrix, that is, the numbers of columns of the first matrix equals the number of rows of the second matrix, we define matrix multiplication as follows:
+\[A \times B = A B = C\] where the entry in the *i*th row and *j*th column is given by \(c_{ij}\) where:
+\[c_{ij} = \sum_{k=1}^m (a_{ik}b_{kj}) \].
+In other words, we take the dot product of the *i*th row and the *j*th column.
 
-\[*A*\]\[*B*\] = \[*C*\]
+For example, the product of a pair of, \(2 \times 2\) matrices is:
+\[
+\begin{bmatrix}
+a_{11} & a_{12} \\
+a_{21} & a_{22}
+\end{bmatrix}
 
-\[*a~im~*\]\[*b~mj~*\] = \[*c~ij~*\]
+\begin{bmatrix}
+b_{11} & b_{12} \\
+b_{21} & b_{22}
+\end{bmatrix}
+ = 
+\begin{bmatrix}
+a_{11}b_{11}+a_{12}b_{21} & a_{11}b_{12}+a_{12}b_{22} \\
+a_{21}b_{11}+a_{22}b_{21} & a_{21}b_{12}+a_{12}b_{22}
+\end{bmatrix}
+\]
 
-The product of a pair of, 2 × 2 matrices is:
 
-![][02025]
+The *identity* matrix \[I\] occupies the same position in matrix algebra that the value of unity does in ordinary algebra. It is a square matrix consisting of ones on the principle diagonal and zeros everywhere else:
+\[I = 
+\begin{bmatrix}
+1 & 0 & \dots & 0 \\
+0 & 1 & \dots & 0 \\
+\vdots & \vdots & \ddots & \vdots\\
+0 & 0 & \dots & 1
+\end{bmatrix}
+\]
 
-The **identity** (or [unit]{.underline}) matrix \[*I*\] occupies the same position in matrix algebra that the value of unity does in ordinary algebra. That is, for any matrix
+For any matrix \(A\), \(A I = I A = A\).
 
-[]{.underline}![][02026]
-
-\[*A*\]: \[*I*\]\[*A*\] = \[*A*\]\[*I*\] = \[*A*\]
-
-The identity \[*I*\] is a square matrix consisting of ones on the principle diagonal and zeros everywhere else; i.e.:
-
-*a* ⋅ *α*^{-1}  = *α*^{1-1}  = *α*^{0}  = 1
-
-In the same way, the matrix \[*A*\]^{-1}  is called the inverse matrix of \[*A*\] since:
-
-\[*A*\]\[*A*\]^{-1}  = \[*A*\]^{-1} \[*A*\] = \[*A*\]^{0}  = \[*I*\]
 
 Cofactors and Determinates
 
