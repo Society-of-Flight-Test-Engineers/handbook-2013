@@ -1,0 +1,88 @@
+# 15 Handling Qualities**
+
+** **
+
+**15.1 Cooper-Harper Rating Related Figures**
+
+![][15001]** **
+
+** **
+
+** **
+
+ 
+
+**Figure 15.1-1 Elements of Closed-Loop Handling Qualities**
+
+ 
+
+![][15002]
+
+**Figure 15.1-2 Undesirable step input responses and pilot compensation to achieve**
+
+**desired response**
+
+**a) Lag compensation, b) lead-lag compensation.**
+
+** **
+
+**a) Lag compensation, b) lead-lag compensation.**
+
+ 
+
+![][15003]
+
+**Figure 15.1-3 Optimum Short Period Frequency and Damping Based on Pilot Opinion**
+
+ 
+
+![][15004]
+
+**Figure 15.1-4 General Pilot Ratings for Handling Qualities**
+
+ 
+
+**Closed Loop Handling Qualities Test Requirements**
+
+1) Explicit **mission definition:** what the pilot must accomplish. Identify the circumstances and operating conditions.
+
+ 
+
+2\) Define mission **tasks**. Tasks should be repeatable, require sufficient control input frequency to stress the system, and they should be of adequate duration to differentiate transient from steady state responses.
+
+ 
+
+3\) Establish **desirable** and **acceptable** criteria for task performance. Criteria established should be quantifiable, recordable, and realistic. Desirable criteria specify a satisfactory level of performance. Acceptable criteria specify the level of performance that is marginally adequate.
+
+ 
+
+4\) Test should include realistic typical **distractions and disturbances**.
+
+ 
+
+5\) Record task **performance** relative to the criteria established (comments, video, audio, pipper movement, etc.)
+
+ 
+
+6). Measuring & record pilot **workload** and compensation.
+
+ 
+
+![][15005]
+
+**Figure 15.1-5 Cooper Harper Workload and Handling Qualities Rating Scale**
+
+ 
+
+![][15006]
+
+**Figure 15.1-6 Pilot Induced Oscillations Rating Scale**
+
+ 
+
+  [15001]: media/15/image1.png {width="6.5in" height="2.8444444444444446in"}
+  [15002]: media/15/image2.png {width="6.809027777777778in" height="2.033333333333333in"}
+  [15003]: media/15/image3.png {width="6.5in" height="5.274305555555555in"}
+  [15004]: media/15/image4.png {width="7.0in" height="3.033333333333333in"}
+  [15005]: media/15/image5.jpeg {width="8.486805555555556in" height="6.973611111111111in"}
+  [15006]: media/15/image6.png {width="6.058333333333334in" height="8.629861111111111in"}

@@ -1,0 +1,1849 @@
+# 12 Fixed-Wing Performance Standardization**
+
+** **
+
+12.1 Recurring Abbreviations
+
+12.2 Standardization Techniques
+
+Difference Method, Ratio Method
+
+12.3 Takeoff Distance
+
+12.3.1 Empirical Standardization Method
+
+12.3.2 Takeoff Distance Prediction
+
+direct approximation of takeoff ground roll,
+
+total takeoff distance
+
+12.4 Landing Distance
+
+12.4.1 Empirical Standardization Method
+
+12.4.2 Landing Distance Prediction
+
+direct approximation of landing ground roll,
+
+direct approximation of the landing air distance,
+
+exact prediction of landing performance,
+
+fixed time increment approach
+
+12.5 Climb/Descent Acceleration
+
+. 12.5.1 Climb/Descent/Acceleration Prediction
+
+12.5.2 Correcting to Standard Climb Rate
+
+12.5.3 WAT Limits
+
+12.6 Level Turn Performance
+
+12.6.1 Sustained Level Turn Performance Prediction
+
+12.6.2 Sustained Level Turn Performance Correction
+
+12.6.3 Level Limit Turn Performance Correction
+
+12.7 Reciprocating Engine Cruise Performance
+
+12.7.1 Power Standardization
+
+12.7.2 Fuel Flow Standardization
+
+12.7.3 Endurance Optimization and Prediction
+
+12.7.4 Range Optimization and Prediction
+
+12.8 Jet Aircraft Cruise Performance
+
+12.8.1 Thrust Standardization
+
+12.8.2 Fuel Flow Standardization
+
+12.8.3 Endurance Optimization and Prediction
+
+12.8.4 Range Optimization and Prediction
+
+12.9 References
+
+ 
+
+**12.1 Recurring Abbreviations** (references 10.5.1-10.5.5)
+
+** **
+
+*a* acceleration
+
+*BHP* brake horsepower
+
+*BSFC* brake specific fuel consumption (fuel flow per horsepower per hour)
+
+*C~D~* drag coefficient
+
+*C~Di~*~OGE~ induced drag coefficient out of ground effect
+
+*C~Di~*~IGE~ induced drag coefficient in ground effect
+
+*cg* center of gravity
+
+*C~L~* lift coefficient
+
+*C~L~*~IGE~ lift coefficient in ground effect
+
+*C~L~*~OGE~ lift coefficient out of ground effect
+
+*D* drag
+
+*F~n~* net thrust
+
+F~g~ gross thrust
+
+*F~e~* ram thrust
+
+*F~ex\ ~*excess thrust
+
+*F/δ* corrected thrust
+
+*g* reference acceleration due to gravity (32.174 ft/sec²)
+
+*GE~CL\ ~*ground effect correction factor for lift coefficient
+
+*GE~CD\ ~*ground effect correction factor for drag coefficient
+
+*H, h* geopotential altitude
+
+*H~c~* pressure altitude
+
+*L* lift
+
+*L~W\ ~*lift of the wing
+
+*M* Mach number
+
+*m* mass
+
+*N~xw~* longitudinal load factor along flight path (wind axis)
+
+*N~zw~*, *n~z~* load factor normal to flight path
+
+*P* power output
+
+*P~a~* ambient pressure
+
+*P~o~* std ambient pressure sea level (2116.22 lb/ft² = 29.921 in Hg)
+
+*P~iw~* standard day sea-level power required
+
+*P~m~* mission-day power required
+
+*P~s~* specific excess power
+
+*P~s\ ~*standard power required
+
+*P~t~* test-day power required
+
+*q* dynamic pressure
+
+ *R* range
+
+*R/C* rate of climb
+
+*R~n~* Reynolds number
+
+*RF* range factor
+
+*S* reference wing area
+
+*S~a~* horizontal air distance
+
+*S~g~* ground roll
+
+*S~LD\ ~*total landing distance
+
+*SR* specific range
+
+*S~TO\ ~*total takeoff distance
+
+*T* ambient air temperature (absolute)
+
+*T* thrust
+
+*T~o~* ambient temperature sea level standard (288.15 °K=15.0 °C)
+
+*V* inertial speed
+
+*V~c~* calibrated airspeed
+
+*V~e~* equivalent airspeed
+
+*V~iw~* standard day sea-level true airspeed
+
+*V~T~* true airspeed
+
+*V~T~*~t~ test true airspeed
+
+*V~T~*~s~ test true airspeed
+
+*W~t\ ~* test weight
+
+*W~s\ ~*weight standard
+
+![][12001] Fuel Flow
+
+![][12002] standard day sea-level fuel flow
+
+€
+
+α angle of attack
+
+β  sideslip angle
+
+δ ambient air pressure ratio
+
+σ ambient air density ratio
+
+ι~T~ thrust incidence angle
+
+γ flightpath angle
+
+φ bank angle
+
+μ rolling coefficient of friction
+
+ω  turn rate (rad/sec)
+
+ 
+
+**12.2 Standardization Techniques** (ref 12.5)
+
+Performance data is usually corrected to "standard" conditions which are specified values of weight, altitude, *cg* and Mach number. The process also corrects data to some standard ambient air temperature, usually defined by the 1976 U.S. Standard Atmos­phere. In some cases the data is corrected to "standard hot" day or "standard cold" day conditions which are a specified increment relative to the true standard conditions.
+
+The standardization process usually relies on models of drag, thrust (or power), fuel flow, and propeller efficiency if appropriate. The overall principle is to collect test data as near as practical to standard conditions (+/-10%) and correct the results to standard using the models. Even with a 10% modeling error, correcting test data that is 10% from standard leads to only 1% total error in the standard­ized results.
+
+The most common of the two standardization methods is the
+
+**difference method** which adds a correction to the test day parameter. This correction is the difference between the model predictions for standard and test conditions:
+
+ 
+
+*P~s~ = P~t~ +* (*P~s~' - P~t~'*) (Eq'n 12.1)
+
+ 
+
+where
+
+*P~s\ ~* = standardized parameter
+
+*P~t~* = test day parameter
+
+*P~s~'* = standard day parameter predicted by models
+
+*P~t~'* = test day parameter predicted by models
+
+ 
+
+The parameter of interest can be one of the basic modeling values such as thrust, drag, power, or fuel flow. The parameter can also be the end result of the predictive process, and may include values like takeoff/landing distance, climb/sustained turning capability, or cruise range.
+
+The **ratio method** is the other standardization process. It corrects to standard conditions by multiplying the test values by a correction factor. This factor is the ratio of the model predictions for standard and test
+
+conditions.
+
+*P~s~ = P~t~* (*P~s~' / P~t~'*) (Eq'n 12.2)
+
+ 
+
+ 
+
+The preferred approach is whichever gives the lowest total error. If the prediction models are in error by approximately a constant percentage, then the ratio method yields the least error. If the models are in error by approximately a constant magnitude, then the increment method yields the least error. Less exact empirical methods can also be used.
+
+ 
+
+**12.3 Takeoff Distance** (refs 12.1, 12.2, 12.5)
+
+The total takeoff distance is the sum of the ground roll distance (*S~g~*, from brake release to main wheel liftoff) and the horizontal component of the air distance (*S~a~*, from liftoff to main gear reaching either 35 or 50 feet altitude-depending on the requirements).
+
+*~ ~S~TO~ = S~g~ + S~a~*
+
+ 
+
+*~ ~*
+
+Both *S~g~* and *S~a\ ~* can be standardized using the increment or ratio method, or by empirical relations. The empirical methods are useful when detailed aircraft models are not available. The more exact process of predicting takeoff distance using models is described in section 12.3.2.
+
+** **
+
+**12.3.1 Empirical Standardization Method**
+
+First correct for the effects of the test day wind. Define headwind velocity as *V~w\ ~*, liftoff true airspeed as *V~LO~*, and test day ground roll as *S~gw~*. With a typical variation of thrust per headwind, estimate the test day zero-wind ground roll (*S~gzw~*) using the following empirical equation:
+
+ 
+
+![][12003] 
+
+ 
+
+ 
+
+ 
+
+ 
+
+If the average thrust is not appreciably affected by velocity, then the exponent should be 2.0 in lieu of 1.85. The zero-wind air distance (*S~at~*) correction is
+
+ 
+
+ ![][12004]
+
+ 
+
+ 
+
+ 
+
+where *t* is the time from liftoff to 35 (or 50) feet altitude.
+
+The second correction is for the effect of runway slope (*θ*, positive *uphill*) and therefore applies only to the ground roll. Correct the above zero-wind distance (*S~gzw~)* to the test day zero-slope distance (*S~gt~*) as follows:
+
+ 
+
+ ![][12005]
+
+ 
+
+ 
+
+If the average excess thrust is not known, then approximate *F~ex~* as that at 70% of the liftoff airspeed or from the zero-wind ground roll distance:
+
+ ![][12006]
+
+After correcting the test day distance to zero wind and slope, use the following empirical equations to correct for non-standard weight, density, and temperature. Any desired values can be treated as the \"standard\" conditions.
+
+ 
+
+** **
+
+ 
+
+ 
+
++-----------------------------------------+---------------------------+
+| **Aircraft Propulsion Type**            | **Standard Day Distance** |
++=========================================+===========================+
+| ** **                                   |  ![][12007]                   |
+|                                         |                           |
+| **Fixed pitch propellers**              |                           |
+|                                         |                           |
+| ** **                                   |                           |
+|                                         |                           |
+| (neglect temp correction for            |                           |
+|                                         |                           |
+| constant rpm evaluation)                |                           |
+|                                         |                           |
+|                                         |                           |
+|                                         |                           |
+|                                         |                           |
++-----------------------------------------+---------------------------+
+| ** **                                   |  ![][12008]                   |
+|                                         |                           |
+| **Turbo-propeller aircraft**            |                           |
+|                                         |                           |
+|                                         |                           |
+|                                         |                           |
+| (for heavy aircraft, replace 2.3 & -1.2 |                           |
+|                                         |                           |
+| with 2.6 & -1.5 respectively)           |                           |
+|                                         |                           |
+|                                         |                           |
+|                                         |                           |
+|                                         |                           |
++-----------------------------------------+---------------------------+
+| ** **                                   |  ![][12009]                   |
+|                                         |                           |
+| **Large jet aircraft**                  |                           |
+|                                         |                           |
+| ** **                                   |                           |
+|                                         |                           |
+| (for lights jets, replace 2.3 & 0.7     |                           |
+|                                         |                           |
+| exponents with 2.6 & 1 respectively)    |                           |
+|                                         |                           |
+|                                         |                           |
+|                                         |                           |
+|                                         |                           |
++-----------------------------------------+---------------------------+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ **12.3.2 Takeoff Distance Prediction** (refs 12.1, 12.5)
+
+** **
+
+[Estimating takeoff ground roll without numerical methods]{.underline}
+
+ 
+
+Define
+
+> V = airspeed
+>
+> V~TO~ = liftoff airspeed
+>
+> S~g~ = ground roll distance
+>
+> S~w~ = reference wing area
+>
+> F~ex~ = excess thrust
+>
+> F~n~ = net thrust
+>
+> C~LIGE~ = lift coeffient in ground effect
+>
+> C~DIGE~ = drag coefficient in ground effect
+>
+> W = aircraft weight
+>
+> m = rolling friction
+>
+> g = acceleration due to gravity
+
+A = acceleration = g\*Fex/
+
+ 
+
+Assuming zero initial speed for takeoff run, ground roll distance
+
+ 
+
+ ![][12010]
+
+ 
+
+ 
+
+ 
+
+ 
+
+Where *F~navg~* may be estimated as the average of static thrust and net thrust at liftoff airspeed. If the initial airspeed is non-zero, its value should be inserted into Equation 10.3 in place of *VL/O* and the answer subtracted from the zero-wind case.
+
+ 
+
+where *μ* is the rolling friction coefficient (typically between 0.015 and 0.025 for hard dry runways), and
+
+*C~LIGE~* is the lift coefficient in ground effect while at ground roll attitude.
+
+Estimate *C~LIGE~* by determining the out-of-ground-effect lift coefficient (*C~LOGE~*) at the ground roll angle of attack and correcting it as follows: n
+
+ 
+
+*C~LIGE~ = C~LOGE\ ~*GE~CL~
+
+ 
+
+where the ground effect factor, GE~CL~ = \[0.8609 --0.6282 log~10~(*h/b*)\] and *h* is the wing height above the surface and *b* is the wingspan. The above correction is *not used* above the height that predicts
+
+ 
+
+GE~CL~ *\<* 1
+
+ 
+
+*C~DIGE~* is the induced drag coefficient while in ground effect. Estimate this by determining the out-of-ground-effect drag coefficient (*C~Di~*~OGE~ ) at the appropriate angle of attack and correcting it as follows:
+
+*C~Di~*~IGE~ = *C~Di~*~OGE~ GE~CD~
+
+ 
+
+where the ground effect factor, GE~CD~ = \[0.2412 ln(*h/b*)+1.0829\] The above correction is *not used* above the height that predicts
+
+GE~CD~ *\>* 1
+
+ 
+
+ A **direct approximation of** **takeoff air distance** requires the desired speeds at liftoff and at 50 feet (typically 1.1*V~s~* and 1.2*V~s~*, respectively). It also requires an estimate of the average excess thrust as the aircraft climbs out of ground effect.
+
+![][12011] 
+
+ 
+
+ 
+
+ 
+
+A **direct approximation of** **the total takeoff distance** (*S~TO~*) can be calculated as the sum of the ground and air distances or can be estimated by multiplying the ground roll distance by a "planform factor" (*F~pl~*).
+
+\* *
+
+*S~TO~ = S~g~F~pl~*
+
+*~ ~*
+
+*F~pl~* combines the effects of wing type, thrust-to-weight ratio, and pilot technique. The following values characterize the typical aircraft.
+
+ 
+
+straight wing: *F~pl\ ~*= 1.15
+
+swept wing: *F~pl\ ~*= 1.36
+
+delta wing: *F~pl~* = 1.58
+
+ 
+
+A more **exact prediction of takeoff performance** (ref 12.5) requires accurate thrust and drag models and an integration of the aircraft's velocity over the takeoff time. This is equivalent to a double integration of the aircraft's acceleration or its specific excess thrust.
+
+ 
+
+![][12012] 
+
+ 
+
+ 
+
+This double integration can be performed numerically or graphically. Alternately, use planar kinematics and sum the distances required to accelerate between incremental true airspeeds from brake release (*V~0~*) to the true airspeed when the aircraft reaches the takeoff altitude (*V~50'~*).
+
+ 
+
+ 
+
+ ![][12013]
+
+ 
+
+Both methods above are typically split into pre-rotation ground roll,
+
+rotation/post-rotation ground roll, and airborne segments. Both methods require calculation of the excess thrust, addressed below.
+
+ 
+
+ Solving for the excess net thrust *during the ground roll* for either takeoff or landing cases requires a simultaneous solution of the three equations of motion along the aircraft's longitudinal & vertical axes and about the pitch axis. These equations (in the above order) are as follows:
+
+\* *
+
+*F~ex\ ~*+ *μ~nw~R~nw\ ~*+ *μ~m~R~m~* = \[*F~g~*cosι~T~ + *F~e\ ~*-- *D~wb~* -- *D~t~* -- Wsin*θ~rw~*\]
+
+ 
+
+*R~nw~*+*R~m~* = \[*Wco*s*θ~rw~* -- *L~w~ -- L~t~*\]
+
+ 
+
+(*X~1~* + *X~2~*)*R~nw~* = \[*Wco*s*θ~rw~X~2~* + *W*sin*θ~rw~ Z~1~* + {*F~g~*cos(θ+ι~T~)-*F~e~*}*Z~1~*
+
+\+ *L~t~*(*X~3~ + X~4~ -- X~2~*) - *L~w~*(*X~2\ ~*-- *X~3~*) - *D~t~* (*Z~1~* + *Z~2~* )\]
+
+where
+
+*F~ex\ ~*= excess net thrust
+
+*μ~nw~* = nose wheel coefficient of friction
+
+(about 0.02 for takeoff, 0.5 for maximum dry runway braking)
+
+*R~nw\ ~*= reaction force (weight) on nose wheel (positive)
+
+*μ~m~* = main wheel coefficient of friction (positive)
+
+*R~m~* = reaction force (weight) on main wheel (positive)
+
+*F~g\ ~*= gross engine thrust (positive, aligned with engine axis)
+
+ι~T~ = thrust incidence angle (positive denotes thrust that generates lift)
+
+*F~e\ ~*= ram thrust (or drag) due to momentum change of the air outside the engine, measured along drag axis- aligned with relative wind (typically negative at low speed, positive at high speed)
+
+*D~wb\ ~*= aerodynamic drag of wing and body (excludes horizontal tail drag)
+
+*D~t\ ~*= aerodynamic drag of horizontal tail (positive aft)
+
+*W* = aircraft weight (positive)
+
+*θ~rw\ ~*= runway slope (positive denotes uphill)
+
+*L~w\ ~*= main wing lift (positive denotes up)
+
+*L~t\ ~*= horizontal tail (positive denotes up)
+
+*X~1\ ~*= distance from nose gear to aircraft cg (positive)
+
+*X~2\ ~*= distance from the main gear to aircraft cg (positive)
+
+*Z~1~* = distance from the ground plane to the aircraft body axis (positive)
+
+*θ*    = aircraft pitch attitude (positive denotes nose up)
+
+*X~3\ ~*= horiz. dist. from wing's aerodynamic center to aircraft *cg* (positive)
+
+*X~4\ ~*= horizontal distance from the wing's aerodynamic center to the horizontal tail's aerodynamic center (positive)
+
+*Z~2~* = vertical distance from the horizontal tail's aerodynamic center to the aircraft body axis (positive)
+
+ 
+
+ 
+
+ 
+
+ The previous equations were arranged so that the right hand side of each can be abbreviated as *A~1~*, *A~2~*, and *A~3~* respectively. This step allows for a compact matrix form of the equations using a 3x3 matrix
+
+ 
+
+ 
+
+ ![][12014]
+
+ 
+
+ 
+
+ 
+
+Solve for *F~ex~* by pre-multiplying both sides by the inverse of the first matrix
+
+ 
+
+ 
+
+ ![][12015]
+
+ 
+
+ 
+
+ 
+
+Although wheel reaction forces are not required for takeoff distance
+
+prediction, they are useful for accurate calculation of rotation capability and for braking effectiveness during landing ground rolls. For takeoff
+
+calculations, several simplifying assumptions can be made such as:
+
+*€*
+
+*μ~nw~* = *μ~m~* = 0.02
+
+*F~g\ ~*\>\> *F~e\ ~*
+
+*D~t~ =* 0
+
+ 
+
+This above approach can be repeated for the segment between rotation and liftoff. This is slightly more complicated because the changing angle of attack alters drag and acceleration.
+
+Precise **predictions of the takeoff air distance** can be made by applying Equation 12.10 in small increments using accurate models that describe thrust as a function of airspeed and the lift & drag changes due to climbing out of ground effect.
+
+ 
+
+Along with the incremental *S~g~* and *S~a~* calculations, the time to accelerate between the corresponding incremental velocities can be calculated as
+
+ 
+
+![][12016]
+
+ 
+
+ **12.4 Landing Distance** (refs 12.1, 12.2)
+
+The total landing distance (*S~LD~*) is the sum of the ground roll distance (*S~g~*, from touchdown to full stop) and the horizontal component of the air distance (*S~a~*, from the screen height to touchdown). The screen height can be either 35 or 50 feet above the surface, depending on the requirements
+
+ 
+
+*S~LD~ = S~g~ + S~a~*
+
+*~ ~*
+
+Both *S~g~* and *S~a\ ~* can be standardized according to the increment or ratio methods described by equations 12.1 and 12.2, or by empirical relations. The empirical methods are useful when detailed aircraft models are not available. The more exact process of predicting landing distance using models is described in section 12.4.2.
+
+** **
+
+**12.4.1 Empirical Standardization Method**
+
+First correct for the effects of the test day wind. Define headwind velocity as *V~w\ ~*, touchdown true airspeed as *V~TD~*, and test day ground roll as *S~gw~*. With a typical variation of thrust per headwind, estimate the test day zero-wind ground roll (*S~gzw~*) using the approach applied to takeoff ground roll:
+
+ 
+
+ 
+
+ ![][12017]
+
+ 
+
+ 
+
+If the average thrust is not appreciably affected by velocity, then the exponent should be 2.0 in lieu of 1.85.
+
+ 
+
+Apply Equation 12.4 to correct to the zero-wind air distance (where *t* is the time to descend from the screen height to touchdown).
+
+To **correct to a zero-slope runway**, apply Equation 12.5 to the zero-wind ground roll distance (note that *F~ex~* is negative). If the average excess thrust is not known, then approximate \[*F~ex~* \]~avg~ as that at 70% of the touchdown airspeed. Alternately, approximate \[*F~ex~* \]~avg~ from the zero-wind ground roll distance using
+
+ 
+
+![][12018]
+
+ 
+
+After correcting the test day distance to zero wind and slope, use the following empirical equations to correct the ground roll to standard weight and air density.
+
+ 
+
+ 
+
+ ![][12019]
+
+ 
+
+ 
+
+Any desired values can be treated as the \"standard\" conditions.
+
+Correct the air distance to standard weight and air density using the zero-wind air distance as follows (for a 50-foot screen height)
+
+ 
+
+ ![][12020]
+
+ 
+
+ 
+
+where *h~v~* is the specific kinetic energy change during the air phase. For the case of a 50-foot screen height, this term is calculated as
+
+ 
+
+ ![][12021]
+
+ 
+
+ 
+
+ 
+
+**12.4.2 Landing Distance Prediction**
+
+With reasonably precise models available, the landing distance can be predicted through calculation. Test distances can then be standardized using either the increment or ratio method (Equations 12.1-12.2).
+
+A **direct** **approximation of landing ground roll** can be obtained by applying the same Equation 12.7 used for the takeoff case. This method requires a value for the average net thrust (*T~avg~*) across the landing roll speed range and reasonable values for the wheel braking friction coefficient (0.35\<*μ*\<0.5 for typical dry runway max braking). The same equations for estimating ground effect also apply.
+
+A **direct approximation of** **takeoff air distance** including the flare requires the desired lift and associated drag coefficients, the thrust, and the applied normal load factor during the landing flare (*n* = 1.15).
+
+ 
+
+![][12022]
+
+A more **exact prediction of landing performance** requires
+
+accurate thrust and drag models and an integration of the aircraft's velocity across the landing time. This is equivalent to a double integration of the aircraft's acceleration as shown in Equation 12.12. This double integration can be performed numerically or graphically. Similarly, Equation 12.13 can be adapted for landing as follows:
+
+ 
+
+ 
+
+ ![][12023]
+
+ 
+
+ 
+
+As with the takeoff case, this equation is usually broken into the air phase and the ground roll phase. Calculation of excess thrust during the ground roll needs to consider the changing weight on the wheels and associated braking force. This requires a simultaneous solution of the three equations of motion along the aircraft's longitudinal & vertical axes and about the pitch axis, previously shown as Eq'ns 12.14-12.16.
+
+Precise calculation of excess thrust during the air phase must consider the change in normal and longitudinal load factor during the flare and the changes in lift and drag coefficients due to entering ground effect (previously described).
+
+If the desired flare technique is some schedule of flight path angle (γ) versus altitude, then the normal load factor can be calculated from γ and the rate of γ using
+
+ 
+
+ ![][12024]
+
+ 
+
+ 
+
+ 
+
+The longitudinal load factor can be calculated as
+
+\* *
+
+ ![][12025]
+
+ 
+
+where
+
+![][12026]
+
+An alternate method of calculating distance is the **fixed time increment approach**. The following air distance example is based on a *constant angle of attack* landing technique (ref 12.5).
+
+ 
+
+[Fixed inputs]{.underline} [Initial inputs]{.underline}
+
+angle of attack, α initial ground speed, *V~go~*
+
+wing area, *S* initial air distance, *S~ao\ ~*= 0
+
+air density, *ρ* initial altitude, *h~o\ ~*
+
+weight, *W* initial sink rate, *h~o~*dot
+
+wingspan, *b* initial lift coefficient, *C~LOGE\ ~*
+
+head wind, *V~w\ ~*wing aspect ratio*, AR*
+
+net thrust, *F~n\ ~*(*F~n~ = F~g~ cosα --F~e~*) wing Oswald efficiency factor*, e*
+
+time increment, ∆*t* (.05 sec works well)
+
+height of wing above ground when on gear, *h~wing~*
+
+\* *
+
+[Initial calculations]{.underline} initial true airspeed, *V~To~* = *V~go~* + *V~w~*
+
+initial glide slope, γ~o~ =sin^-1^ \[*h~o~*dot\]*/* *V~To~*
+
+initial load factor, *N~z~* = cosγ~o~ (assumes *dγ~o~/dt* =0)
+
+initial trim speed, *V~T\ ~*=\[2*N~z~W*/*ρC~L~S*\]^1/2^
+
+[Incremental calculations]{.underline}
+
+(values with prime symbols represent the result of the previous iteration).
+
+ 
+
+1\) *C~L~* = *C~LOGE\ ~*GE~CL~ = *C~LOGE~*\[0.8609 --0.6282 log~10~(*h/b*)\]
+
+2\) *L* = 0.5*N~z~WρC~L~SV~T~^2^*
+
+3\) *N~z~* = *L/W*
+
+4\) *γ*dot *= g(N~z~* --cos*γ*)/*V~T~*
+
+5\) *γ* = \[*γdot*\]'∆*t +γ* '
+
+6\) *h*dot = *V~T~* sin*γ*
+
+7\) *h* = (*h*dot + \[*h*dot\]')∆*t/*2 + *h*'
+
+8\) *C~Di~*~IGE~ = *C~Di~*~OGE~ GE~CD~ = \[*C~L~*^2^/π*AR*e\]\[0.2412 ln(*h/b*)+1.0829\]
+
+9\) *C~D~* = *C~Do~* +*C~Di~*~IGE~
+
+10\) drag, *D* = *C~D~ρSV~T~^2^*/2
+
+11\) *F~ex~ = F~n~ - D*
+
+12\) *N~x~* = *F~ex~/W*
+
+13\) *V*dot = *g*(*N~x~ - sinγ* )
+
+14\) *V*~g~ = *V*~g~' +*V*dot(∆*t*)
+
+15\) *S~a~* = (*V*~g~ + *V*~g~')∆*t*/2 +*S~a~*'
+
+ 
+
+**12.5 Climb/Descent/Level Acceleration** (ref 12.4)
+
+Standard performance can be determined either by *predicting*
+
+results using (flight test validated) models or by *correcting* individual flight test climb/acceleration results to standard conditions
+
+Performance predictions require accurate net thrust and
+
+aerodynamic models. Net thrust is the sum of the gross thrust and ram drag, while the aero model includes the drag polar and lift curve.
+
+Corrections to individual climb/accelerations tests require models that only show the *change* in thrust & drag between test and standard conditions. The following sections address both the prediction and correction approaches.
+
+ 
+
+**12.5.1 Climb/Descent/Acceleration Prediction**
+
+According to basic energy theory, an aircraft's specific excess power (*P~s~*) is related to the change in kinetic and potential energy as follows
+
+ 
+
+ ![][12027]
+
+ 
+
+where *V* is technically inertial speed. True airspeed and an assumption of zero wind is usually used instead of inertial speed. Since aircraft typically have negligible weight change during a maneuver, the above
+
+reduces to
+
+ 
+
+ ![][12028]
+
+ 
+
+This shows not only how climb rate *or* acceleration performance can be predicted, but also shows how the climb and acceleration capabilities can be *exchanged* at any given specific excess power. Dividing this equation through by *V* shows the relation between specific excess thrust and **climb** **angle, γ**
+
+ ![][12029]
+
+ ![][12030]
+
+ 
+
+.
+
+When predicting climb performance capability using this approach, iterations may be required because the resulting climb angle affects the normal load factor (*N~z~* = cosγ) and the therefore the induced drag.
+
+ 
+
+**12.5.2 Correcting to Standard Climb Rate**
+
+*The below sequence corrects results at the test q and (usually) pressure altitude*
+
+*(i.e., V~e\ test~ = V~e\ std~, and H~test~ =H~std~).*
+
+1\) If the test day vertical velocity is measured by timing pressure altitude changes, then first correct the altimeter readings for instrument error and then convert the indicated pressure altitude rate to geometric (tapeline) climb rate as follows
+
+ 
+
+ ![][12031]
+
+ 
+
+ 
+
+2\) Equation 12.25 yields the climb rate correction that accounts for the change in power (or thrust) between test and standard days (at the test weight and velocity)
+
+ 
+
+ 
+
+ ![][12032]
+
+ 
+
+where ∆*P* or ∆*F~n~* comes from engine models. For reciprocating engines without models that can predict this power change, estimate the correction using only a standard day power chart and the following
+
+equation
+
+ 
+
+![][12033]
+
+ 
+
+ 
+
+3\) A changing horizontal headwind with altitude will alter climb results. If this change (*dV~w~/dH*) is known, then add the following correction to the tapeline climb rate
+
+ 
+
+ ![][12034]
+
+ 
+
+ 
+
+Usually the exact wind shear profile is unknown. In this case, fly perpendicular to the known crosswind direction and repeat each climb speed at the reciprocal heading. After completing the remaining corrections listed below, average the reciprocal results to obtain a standard climb rate.
+
+ 
+
+4\) If the climb is flown at constant indicated airspeed or Mach, then true airspeed will change with air density. Correct for any change in true airspeed with the following "acceleration factor" correction
+
+ 
+
+![][12035]
+
+5\) Combine the previous corrections then multiply this by the "inertial correction" factor that accounts for the inertial effects of changing the weight from test to standard conditions
+
+ 
+
+ ![][12036]
+
+ 
+
+ 
+
+6\) To the above result, add a correction for the change in induced drag due to weight change.
+
+ 
+
+ ![][12037]
+
+ 
+
+ 
+
+**Summary of climb rate corrections**
+
+ 
+
+ ![][12038]
+
+ 
+
+ 
+
+ 
+
+Equation 12.27 can also be used to correct descents, level accelerations, and level decelerations to a standard climb rate. The primary difference is that for level accelerations, the accelerations factor is the dominant term while the indicated climb rate is near zero.
+
+**12.5.3 Weight/Altitude/Temperature (WAT) Limits**
+
+To ensure safety, aviation authorities specify minimum climb gradients (γ~req'd~) for many aircraft operations. The most straight forward way to comply with the specified gradients is to document the maximum allowable weight at various pressure altitude/temperature combinations.
+
+Assuming the test day *C~L~* for best γ equals that for any other day, calculate the maximum allowable weight by applying the following correction to the best test γ results.
+
+ 
+
+ 
+
+ ![][12039]
+
+ 
+
+ 
+
+ 
+
+ 
+
+where ∆*F~n~* (= *F~nstd~* -*F~ntest~* ) comes from the engine model. To ensure accuracy, the test configuration (i.e., one engine inoperative) must equal the standard configuration. Level acceleration results are not an acceptable substitute for actual climb data.
+
+ 
+
+**12.6 Level Turn Performance** (ref 12.1)
+
+Standard level turn performance can be determined either by
+
+*predicting* results using (flight test validated) models or by *correcting*
+
+individual turn results to standard conditions. It is possible to predict turn performance using climb or level acceleration data, but this approach is not always accurate and should be validated with actual turn results.
+
+Performance predictions require accurate net thrust and aero
+
+models (drag polar and lift curve). Corrections to test day turn results
+
+require models that only show the *change* in thrust & drag between test and standard conditions.
+
+The following sections address both the prediction and correction approaches. For either approach, load factor (n~zw~) is usually determined first, then the corresponding turn rate (ω-radians/sec) and radius (*R*-ft) are calculated using the equations below.
+
+ 
+
+ 
+
+ ![][12040]
+
+ 
+
+ 
+
+**12.6.1 Sustained Level Turn Performance Prediction**
+
+ 
+
+1\) At the desired speed, altitude, temperature, and throttle setting use the
+
+engine model to determine the gross thrust (*F~g~*). Sophisticated models may show this to be a function of the inlet angle of attack as well.
+
+ 
+
+2\) At the same conditions, use the engine and airframe models to determine the ram drag (*F~e~*).
+
+ 
+
+3\) Calculate net thrust as *F~n\ ~*= *F~g~* cos *α*~F~ +*F~e\ ~*where *α*~F~ = (*α* + ι~T~) and is ι~T~ the incidence angle of the thrust line (TED positive).
+
+ 
+
+4\) The total lift is the sum of the wing lift and the thrust lift:
+
+ 
+
+*L = L~W~* + *F~g\ ~*sin*α*~F~.
+
+~ ~
+
+Since *L = n~zw~W ,* then *L~W~ = n~zw~W* - *F~g\ ~*sin*α*~F~
+
+ 
+
+5\) For any sustained turn, the net thrust equals the drag
+
+ 
+
+ ![][12041]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Solving for load factor gives
+
+ 
+
+ ![][12042]
+
+ 
+
+ 
+
+For any combination of weight, altitude, and airspeed, calculation of the standard sustained load factor requires knowledge of the gross thrust, ram drag, drag polar (*C~D0~, e*), and angle of attack.
+
+ 
+
+6\) To determine the standard angle of attack, start with the lift curve slope model
+
+ 
+
+ ![][12043]
+
+ 
+
+ 
+
+Rearrange to solve for *α*
+
+*€*
+
+*€*
+
+ ![][12044]
+
+ 
+
+ 
+
+ 
+
+Because *α* cannot be solved for explicitly, calculate it using successive iterations of Equations 12.29 and 12.30.
+
+ 
+
+ 
+
+In cases where
+
+ 
+
+ ![][12045]
+
+the angle of attack can be roughly estimated without significant error to the final result.
+
+ 
+
+**12.6.2 Sustained Level Turn Performance Correction**
+
+The best method for obtaining standardized sustained level turn data is to correct actual level turn results to standard conditions. It is also possible to correct level acceleration or climb data to give standard level turn results. This approach may not work as well since any drag polar or engine model errors will be magnified. Additionally, inlet distortion that accompanies actual turn thrust is different during (low angle of attack) climbs and accelerations.
+
+The equation below corrects any combination of test day climb, turn, and acceleration to a load factor for a sustained turn at the same dynamic pressure but at standard conditions.
+
+ 
+
+ 
+
+ ![][12046]
+
+ 
+
+ 
+
+ 
+
+ ![][12047]
+
+ 
+
+ 
+
+then the above equation can be closely approximated as
+
+ 
+
+ ![][12048]
+
+ 
+
+ 
+
+ ![][12049]
+
+ 
+
+where ∆*F~ex~* = *F~gstd~*(cos*α*~Fstd~) - *F~gt~*(cos *α*~Ft~)
+
+ 
+
+The primary difference between using turn, accel, or climb test data is the dominant term in the above corrections. In all cases, the test and standard day thrust values come from engine models.
+
+ 
+
+**12.6.3 Level Limit Turn Performance Correction**
+
+A limit turn is one in which the aircraft performs a level turn beginning from maximum speed and maximum load factor and continues to decelerate at the *N~zb~* limit until reaching the maximum *C~L~* ~.~ At this point, the aircraft continues its level turning deceleration at the lift limit. This maneuver is also known as a "slow-down" turn.
+
+Test day limit turn data is corrected to a standard specific excess power (*P~s~*) for each given combination of altitude, Mach number and load factor (or AOA) limit. The following correction accounts for changes in trim drag, weight, and atmospheric affects on thrust.
+
+ 
+
+ 
+
+ 
+
+ ![][12050]
+
+ 
+
+where
+
+ 
+
+and
+
+ 
+
+ 
+
+ ![][12051]
+
+ 
+
+ 
+
+where
+
+ 
+
+ 
+
+ ![][12052]
+
+ 
+
+ 
+
+As with the sustained level turn case, one cannot solve explicitly for *α*~F~, so either assume an approximate value or iterate until a solution converges.
+
+In For the simplified case where δ~t~ = δ~s~, *cg~t~* = *cg~std~ ,* and sin*α*~F~ = 0, then the above equation reduces to
+
+ 
+
+![][12053]
+
+**12.7 Reciprocating Engine Cruise Performance** (ref 12.1)
+
+Cruise performance standardization consists of correcting test day range and endurance results to standard conditions. Standard conditions are typically the standard aircraft weight & *cg* location, the nearest 5,000 ft increment of pressure altitude, and standard ambient temperature at that altitude. Although not included in this section, additional corrections can be made to adjust fuel flow to a standard
+
+heating value and to adjust the thrust and fuel flow for the slight gravity effects due to changes in latitude and centrifugal relief (see section 3.2).
+
+Although any weight can be called "standard," several are quite common. General aviation aircraft typically have the test data corrected to the maximum takeoff weight. Transport aircraft often use a mid-mission weight (maximum payload and one-half fuel) as standard, and fighter/attack aircraft typically use full ordnance and half internal fuel as standard for any given configuration.
+
+Once standard cruise results are documented, mission planning can be conducted by reversing the standardization equations to the desired "mission" conditions. If desired, test day results can be directly corrected to mission conditions by simply treating the mission conditions as standard. These options are shown below.
+
+It is common practice to correct test data for only minor changes in altitude & temperature conditions. Because large changes in Mach and Reynolds numbers alter drag polars and engine efficiency, it is not common practice to correct results across altitude differences of more than 5,000 feet. This leads to a series of results separated by altitude.
+
+.
+
+**12.7.1 Power Standardization**
+
+If fuel flow is directly proportional to power output only, the power and optimal velocity for cruise performance can be determined from a power required curve as shown below.
+
+ 
+
+ ![][12054]
+
+To correct the power required curve to any standard altitude/weight condition, the usual approach is to treat the lift coefficient as the anchor (*C~L\ test\ ~*= *C~L\ std~*). This leads to the following power and velocity standardization equations
+
+ 
+
+ ![][12055]
+
+ 
+
+ 
+
+Because the drag polar of low performance propeller aircraft generally collapses (generalizes) well to a single curve, it is often acceptable to correct [all]{.underline} power required data to a single standard altitude/weight condition. When this condition is chosen to be standard day sea level at maximum weight, the above correction simplifies to what is known as the "*P~iw~ \~V~iw~*" values.
+
+ 
+
+ 
+
+ ![][12056]
+
+ 
+
+ 
+
+Although all points along the test day power curve can be standardized, the most useful points are those for best range and endurance. When corrected to standard conditions, the performance of the test aircraft can be fairly compared to that of another aircraft which has also been corrected to the same flight conditions.
+
+Additionally, once the standard power and velocity are known and documented, the required power and airspeed for any "mission" conditions can be predicted by reversing Equations 12.36 as follows
+
+ 
+
+ 
+
+ ![][12057]
+
+ 
+
+ 
+
+ 
+
+The power & optimal speed for best mission range (and mission
+
+endurance) are determined by applying the above equations to correct the points noted on the above figure. To correct directly from test conditions to mission conditions, apply Equation 12.35 and substitute mission weight and density in lieu of standard values.
+
+ 
+
+**12.7.2 Fuel Flow Standardization**
+
+Because reciprocating engine fuel flow is essentially
+
+proportional to power output, Equations 12.35 and 12.36 can be modified to correct the test fuel flow to standard values. For the following standardization equations to be accurate, the propeller efficiency and brake specific fuel consumption (*BSFC*) must be the same for test and standard days.
+
+ 
+
+ 
+
+ ![][12058]
+
+ 
+
+ 
+
+ 
+
+Because *BSFC* is affected by engine RPM (due to friction losses), fuel flow results at one engine RPM are never corrected to another RPM. Separate tests must be performed for each engine speed of interest. *BSFC* [may]{.underline} also be affected by ambient air pressure and temperature. If the relation between fuel flow and power can be represented with a model as shown, then the fuel flow is a linear function of *BSFC*.
+
+ 
+
+ 
+
+ ![][12059]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+\* *
+
+If the values for *b* and *BSFC* are known for both the test and standard conditions, then test fuel flow can be more exactly corrected to standard weight and density conditions as follows
+
+ 
+
+ 
+
+ ![][12060]
+
+ 
+
+ 
+
+ 
+
+Note that this correction requires only a knowledge of the *ratio* of test and standard *BSFC* values. If both values have the same percent error, then the effect is self-canceling. The above equation also corrects for changes in fuel flow due to changing propeller efficiency.
+
+ **12.7.3 Endurance Optimization and Prediction**
+
+To determine the optimum endurance flight profile and time aloft for any condition (at the same RPM as the test condition), plot the test day specific endurance parameter (*SEP*) vs the test day lift coefficient (*C~L~*)
+
+ 
+
+ ![][12061]
+
+ 
+
+![][12062] 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ ![][12063]
+
+ 
+
+ 
+
+The maximum endurance occurs at the peak of the *SEP* curve. The associated lift coefficient is the optimum endurance condition for the aircraft (at that same RPM). The results of this test change with engine speed. If the aircraft operates at this optimum *C~L\ ~*or any other constant *C~L~* , then the total endurance time (*t*) while *at constant altitude* can be calculated from this test day data using
+
+\* *
+
+ ![][12064]
+
+ 
+
+ 
+
+ 
+
+where the *SEP* comes from the above test day curve at whatever *C~L~* is chosen. *W~I~* is the total aircraft weight at the start of the endurance segment and *W~F~* is the final weight of the endurance segment. This equation accounts for the effect of how a change in air density alters the power required and the subsequent fuel flow, but does not account for changes in propeller efficiency, *BSFC*, or the fuel flow intercept, *b.*For endurance at a constant *C~L~* and *V~T~*, use the following equation and the *SEP* and test weight associated with the lift coefficient at the start of the endurance segment.
+
+ 
+
+![][12065]
+
+**12.7.4 Range Optimization and Prediction** (ref 12.1)
+
+To determine the optimum range flight profile and distance for any condition (at the same RPM as the test condition), plot the test day range factor (*RF*) vs the test day lift coefficient (*C~L~*)
+
+ 
+
+ 
+
+ ![][12066]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+The maximum range occurs at the peak of the *RF* curve. The associated lift coefficient is the optimum range condition for the aircraft (at that same RPM). The results of this test change with engine speed. If the
+
+aircraft operates at this optimum *C~L\ ~*or any other constant *C~L~* , then the range at constant *altitude* can be calculated from this test day data using
+
+ 
+
+ ![][12067]
+
+ 
+
+ 
+
+where the *RF* comes from the above test day curve at whatever *C~L~* is chosen. *W~I~* is the total aircraft weight at the start of the range segment and *W~F~* is the final weight of the range segment. Although not explicitly shown in this equation, the correction does account for changes in air density, but does not account for changes in propeller efficiency, *BSFC*, or the fuel flow intercept, *b.*
+
+For cruise at constant *airspeed and altitude*, use the following equation and the *RF* associated with the lift coefficient at the start of the cruise segment.
+
+ ![][12068]
+
+**12.8 Jet Aircraft Cruise Performance** (ref 12.1)
+
+Refer to section 12.7 for a general discussion of cruise
+
+performance standardization.
+
+.
+
+**12.8.1 Thrust Standardization**
+
+If fuel flow is directly proportional to net thrust output only, the thrust and optimal velocity for cruise performance can be determined from a thrust required curve as shown below.
+
+ 
+
+ 
+
+ ![][12054]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Because jet aircraft typically cruise at speeds where changes in Mach number affect the drag polar, it is customary to treat both the lift coefficient and Mach numbers as anchors (*C~L\ test\ ~*= *C~L\ std\ ~*, *M ~test\ ~*= *M~std~*). In terms of Mach number, cruise (*n~z~* = 1) lift coefficient is calculated as
+
+ 
+
+ ![][12069]
+
+ 
+
+ 
+
+From this relation, the only way to match test & standard values for both *C~L~* and *M* is to match test & standard values for *W/δ . * In this case, the test day net thrust required curve can be corrected to standard conditions as follows
+
+ 
+
+ ![][12070]
+
+ 
+
+ 
+
+Although all points along the test day thrust curve can be standardized, the most useful points are those for best range and endurance. When corrected to standard conditions, the performance of the test aircraft can be fairly compared to that of another aircraft which has also been corrected to the same flight conditions. Additionally, once the standard thrust and velocity are known and documented, the required power and airspeed for any "mission" conditions can be predicted by reversing Equations 12.45.
+
+ 
+
+**12.8.2 Fuel Flow Standardization**
+
+Both the thrust and fuel flow of a simple (fixed-geometry turbojet) turbine engine are functions of engine speed (*N*), Mach number (*M*), ambient pressure (δ), and ambient temperature (*θ*). Dimensional analysis and experimental results show these parameters to be related approximately as illustrated in the figures below.
+
+ 
+
+ 
+
+![][12071] 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Thrust specific fuel consumption (*TSFC* ) is defined as the fuel flow per thrust. At any given level of corrected fuel flow, the above figures can be cross-plotted onto a single figure that relates corrected thrust (*F/δ*) to corrected fuel flow at various Mach numbers.
+
+.
+
+** **
+
+ 
+
+ ![][12072]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+The slopes of the above figure exaggerate the typical case where *TSFC* changes with Mach number. If, at any given Mach number, steady increments of corrected fuel flow are evenly spaced vertically, then
+
+ 
+
+ ![][12073]
+
+Standard fuel flow can be determined from these relations. If flight test data is to be corrected from test to standard conditions at the same *C~L~* and *M* , then the *C~D~* will also be the same for both test &
+
+standard conditions. Because thrust equals drag\* during cruise, the
+
+following relations show that corrected thrust (*F/δ*) must be the same for test and standard conditions
+
+ ![][12074]
+
+ 
+
+ 
+
+ 
+
+ • technically *F~n~* cos(α+ι~T~)+*F~e~* = *D*, where *F~n~* = net thrust, *F~e~* = ram thrust,
+
+and ι~T~ is the thrust incidence angle
+
+ 
+
+ 
+
+ 
+
+ 
+
+If Mach number and *F/δ* are equal for both test & standard
+
+conditions, then the previous cross plot shows that corrected fuel flow must also be the same for both conditions.
+
+ 
+
+ ![][12075]
+
+ 
+
+ 
+
+ 
+
+This relation allows standard fuel flow to be calculated as
+
+ ![][12076]
+
+**12.8.3 Endurance Optimization and Prediction**
+
+Test day results are corrected to standard results at the same Mach, *C~L~* (and therefore the same *W/δ ,* according to Eq'n 12.44) as the test condition. For each *W/δ* ratio tested, plot the test day corrected fuel flow vs the test Mach number.
+
+ 
+
+ 
+
+ ![][12077]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+At any given *W/δ ,* the maximum endurance occurs at the Mach corresponding to the bottom of the curve. This optimal Mach and *W/δ* define the optimum lift coefficient for endurance (Eq'n 12.44).
+
+The corrected fuel flow for any desired Mach & *W/δ* combination can be interpolated from the above
+
+figure. Calculate the actual fuel flow using Equation 12.46.
+
+ 
+
+ Even with simple turbojets, experience has shown that the above
+
+curves do not generalize well if the desired standard altitudes
+
+are more than about 5,000 ft away from the test alt
+
+ 
+
+ 
+
+ 
+
+ 
+
+If the aircraft maintains flight at any combination of constant Mach & *W/δ* , then the corrected fuel flow will be constant. For flight at a constant *C~L~*, endurance time can be calculated using
+
+ 
+
+ 
+
+ ![][12078]
+
+ 
+
+\* *
+
+where *c* is the thrust specific fuel consumption at sea level std conditions. *W~I~* is the total aircraft weight at the start of the endurance segment and *W~F~* is the final weight of the endurance segment. Although not explicitly shown in this equation, the correction process does account for changes in aircraft weight, and ambient pressure & temperature.
+
+ 
+
+**12.8.4 Range Optimization and Prediction**
+
+As with endurance analysis, test day range results are
+
+standardized at a common Mach & *W/δ*. Using the same corrected fuel flow vs Mach test data illustrated in section 12.8.3, create a cross plot of range factor (*RF*) vs Mach number for each *W/δ  *tested.
+
+ 
+
+where range factor can be calculated as
+
+ 
+
+ ![][12079]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+The optimum *C~L~* for range at any given *W/δ* occurs at the Mach corresponding to the top of the curve. The best overall *W/δ* is the highest. These curves do not usually generalize well if the desired standard altitudes are more than about 5,000 ft away from the test altitudes.
+
+If the aircraft cruises at any combination of constant Mach & *W/δ* , then the range factor will be constant, and range is calculated as
+
+ 
+
+ ![][12080]
+
+ 
+
+ 
+
+where *RF* comes from the above test day figure at whatever Mach & *W/δ* is chosen. It is often reasonable to interpolate the above test data to define a *RF* for the desired standard conditions. *W~I~* and *W~F~* are the total aircraft weights at the start and end of the range segment.
+
+For cruise at constant *altitude*, fly at a constant *C~L~* by allowing the airspeed to decrease with weight. Calculate range from test day results using
+
+ 
+
+ ![][12081]
+
+ 
+
+ 
+
+ 
+
+For this equation to be valid, use the *V~Tt~* and fuel flow corresponding to the same *C~L~* and altitude of the desired standard conditions. Both of the above correction equations account for changes in aircraft weight and
+
+ambient temperature.
+
+ 
+
+**12.9 References**
+
+12.1 Lawless, Alan R, "Fixed Wing Aircraft Performance Testing," Volume III, Professional Textbook Series, National Test Pilot School, Mojave CA, 1998.
+
+ 
+
+12.2 anon, "Performance Flight Testing Phase" notes, USAF TPS , Edwards AFB, CA, 1991.
+
+ 
+
+12.3 Lush, Kenneth J "Standardization of Take-Off Performance Measuresments for Airplanes," AFFTC Technical Note R-12, USAF Air Research and Development Command, Edwards AFB, CA, circa 1955.
+
+ 
+
+12.4 Roberts, S.C., *Light Aircraft Performance for Test Pilots and Flight Test Engineers*, NTPS publication
+
+ 
+
+12.5 Olson, Wayne, "Performance Testing Handbook,"
+
+(publication number pending ) AFFTC, Edwards AFB, CA, 1999.
+
+ 
+
+  [12001]: media/12/image1.svg {width="0.27291666666666664in" height="0.28055555555555556in"}
+  [12002]: media/12/image2.svg {width="0.27291666666666664in" height="0.28055555555555556in"}
+  [12003]: media/12/image3.svg {width="3.1770833333333335in" height="0.7083333333333334in"}
+  [12004]: media/12/image5.svg {width="2.9006944444444445in" height="0.2604166666666667in"}
+  [12005]: media/12/image7.svg {width="3.125in" height="0.5631944444444444in"}
+  [12006]: media/12/image9.svg {width="3.2125in" height="0.5208333333333334in"}
+  [12007]: media/12/image11.svg {width="2.1666666666666665in" height="1.09375in"}
+  [12008]: media/12/image12.svg {width="2.692361111111111in" height="1.0506944444444444in"}
+  [12009]: media/12/image13.svg {width="2.0506944444444444in" height="1.0395833333333333in"}
+  [12010]: media/12/image14.svg {width="3.9791666666666665in" height="0.7347222222222223in"}
+  [12011]: media/12/image15.svg {width="3.4479166666666665in" height="0.5in"}
+  [12012]: media/12/image17.svg {width="3.9166666666666665in" height="0.4305555555555556in"}
+  [12013]: media/12/image19.svg {width="3.095833333333333in" height="0.4777777777777778in"}
+  [12014]: media/12/image21.svg {width="2.25in" height="0.7784722222222222in"}
+  [12015]: media/12/image22.svg {width="2.3881944444444443in" height="0.8048611111111111in"}
+  [12016]: media/12/image23.svg {width="0.8993055555555556in" height="0.46875in"}
+  [12017]: media/12/image24.svg {width="1.9270833333333333in" height="0.6361111111111111in"}
+  [12018]: media/12/image25.svg {width="1.8958333333333333in" height="0.6041666666666666in"}
+  [12019]: media/12/image26.svg {width="1.4069444444444446in" height="0.5833333333333334in"}
+  [12020]: media/12/image27.svg {width="2.1770833333333335in" height="0.65625in"}
+  [12021]: media/12/image28.svg {width="1.4715277777777778in" height="0.5076388888888889in"}
+  [12022]: media/12/image29.svg {width="1.9277777777777778in" height="0.8645833333333334in"}
+  [12023]: media/12/image30.svg {width="1.6659722222222222in" height="0.59375in"}
+  [12024]: media/12/image31.svg {width="1.1145833333333333in" height="0.5215277777777778in"}
+  [12025]: media/12/image32.svg {width="0.90625in" height="0.5270833333333333in"}
+  [12026]: media/12/image33.svg {width="1.8125in" height="0.5430555555555555in"}
+  [12027]: media/12/image35.svg {width="3.01875in" height="0.4166666666666667in"}
+  [12028]: media/12/image36.svg {width="1.7395833333333333in" height="0.43125in"}
+  [12029]: media/12/image37.svg {width="0.25in" height="0.5in"}
+  [12030]: media/12/image38.svg {width="2.0729166666666665in" height="0.5104166666666666in"}
+  [12031]: media/12/image39.svg {width="1.7916666666666667in" height="0.48819444444444443in"}
+  [12032]: media/12/image40.svg {width="1.6458333333333333in" height="0.4375in"}
+  [12033]: media/12/image41.svg {width="1.8541666666666667in" height="0.5375in"}
+  [12034]: media/12/image42.svg {width="1.323611111111111in" height="0.40625in"}
+  [12035]: media/12/image43.svg {width="2.3666666666666667in" height="0.56875in"}
+  [12036]: media/12/image44.svg {width="0.7708333333333334in" height="0.4479166666666667in"}
+  [12037]: media/12/image45.svg {width="2.0590277777777777in" height="0.4895833333333333in"}
+  [12038]: media/12/image46.svg {width="3.734722222222222in" height="0.5361111111111111in"}
+  [12039]: media/12/image47.svg {width="2.4791666666666665in" height="0.8048611111111111in"}
+  [12040]: media/12/image48.svg {width="4.822916666666667in" height="0.5416666666666666in"}
+  [12041]: media/12/image50.svg {width="4.5in" height="0.9986111111111111in"}
+  [12042]: media/12/image51.svg {width="4.5in" height="0.6354166666666666in"}
+  [12043]: media/12/image52.svg {width="2.7576388888888888in" height="0.4375in"}
+  [12044]: media/12/image53.svg {width="3.473611111111111in" height="0.80625in"}
+  [12045]: media/12/image54.svg {width="1.29375in" height="0.4479166666666667in"}
+  [12046]: media/12/image55.svg {width="1.375in" height="0.45555555555555555in"}
+  [12047]: media/12/image56.svg {width="4.5in" height="0.625in"}
+  [12048]: media/12/image57.svg {width="1.21875in" height="0.4111111111111111in"}
+  [12049]: media/12/image58.svg {width="4.247916666666667in" height="0.6333333333333333in"}
+  [12050]: media/12/image59.svg {width="3.9118055555555555in" height="1.0208333333333333in"}
+  [12051]: media/12/image60.svg {width="4.5in" height="0.8645833333333334in"}
+  [12052]: media/12/image61.svg {width="2.46875in" height="0.9458333333333333in"}
+  [12053]: media/12/image62.svg {width="4.5in" height="0.5in"}
+  [12054]: media/12/image63.svg {width="2.3854166666666665in" height="1.3354166666666667in"}
+  [12055]: media/12/image65.svg {width="4.442361111111111in" height="0.6145833333333334in"}
+  [12056]: media/12/image69.svg {width="4.2965277777777775in" height="0.6458333333333334in"}
+  [12057]: media/12/image73.svg {width="4.514583333333333in" height="0.6354166666666666in"}
+  [12058]: media/12/image77.svg {width="4.3902777777777775in" height="0.5729166666666666in"}
+  [12059]: media/12/image81.svg {width="4.108333333333333in" height="1.3256944444444445in"}
+  [12060]: media/12/image85.svg {width="3.8125in" height="0.5472222222222223in"}
+  [12061]: media/12/image87.svg {width="1.0625in" height="0.47708333333333336in"}
+  [12062]: media/12/image88.svg {width="1.5847222222222221in" height="1.2291666666666667in"}
+  [12063]: media/12/image90.svg {width="0.875in" height="0.4701388888888889in"}
+  [12064]: media/12/image91.svg {width="3.296527777777778in" height="0.5833333333333334in"}
+  [12065]: media/12/image93.svg {width="2.9166666666666665in" height="0.4583333333333333in"}
+  [12066]: media/12/image95.svg {width="3.0in" height="1.9076388888888889in"}
+  [12067]: media/12/image99.svg {width="3.03125in" height="0.4986111111111111in"}
+  [12068]: media/12/image101.svg {width="3.2604166666666665in" height="0.8229166666666666in"}
+  [12069]: media/12/image103.svg {width="2.7604166666666665in" height="0.4305555555555556in"}
+  [12070]: media/12/image105.svg {width="3.625in" height="0.5097222222222222in"}
+  [12071]: media/12/image109.svg {width="4.65625in" height="1.9930555555555556in"}
+  [12072]: media/12/image113.svg {width="2.6569444444444446in" height="1.4993055555555554in"}
+  [12073]: media/12/image115.svg {width="2.90625in" height="0.4048611111111111in"}
+  [12074]: media/12/image117.svg {width="1.9895833333333333in" height="0.49930555555555556in"}
+  [12075]: media/12/image118.svg {width="1.61875in" height="0.53125in"}
+  [12076]: media/12/image119.svg {width="4.127777777777778in" height="0.5722222222222222in"}
+  [12077]: media/12/image121.svg {width="2.2222222222222223in" height="1.5944444444444446in"}
+  [12078]: media/12/image122.svg {width="3.1875in" height="0.5104166666666666in"}
+  [12079]: media/12/image124.svg {width="4.533333333333333in" height="1.5166666666666666in"}
+  [12080]: media/12/image128.svg {width="2.7604166666666665in" height="0.4513888888888889in"}
+  [12081]: media/12/image130.svg {width="3.0388888888888888in" height="0.49583333333333335in"}

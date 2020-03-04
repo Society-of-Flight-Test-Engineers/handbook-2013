@@ -1,0 +1,1480 @@
+**Section 8 Motion/Vibration Analysis**
+
+8.1 Recurring Abbreviations
+
+8.2 First Order Motion
+
+> 8.2.1 Elements of First Order Motion
+>
+> 8.2.2 First Order Motion Descriptive Parameters
+>
+> 8.2.3 Determining Descriptive Parameter *τ*
+
+8.3 Second Order Motion
+
+> 8.3.1 Elements of Second Order Motion
+>
+> 8.3.2 Second Order Motion Descriptive Parameters
+>
+> 8.3.3 Determining Descriptive Parameters
+
+8.4 Complex Plane
+
+8.5 Parameter Conversions
+
+8.6 Vibration Nomograph
+
+8.7 References
+
+**8.1 Recurring Abbreviations**
+
+###### *C ~1/x~* number of cycles to achieve 1/*x* amplitude
+
+###### *D* damping
+
+*D~1~,D~2~* peak-to-peak displacement (subsequent)
+
+*FV* final value
+
+*F(t) forcing function*
+
+*f* frequency, cycles/sec = ω/(2π)
+
+*HCAR* half cycle amplitude ratio (i.e., *x~2~/x~1~*, *x~3~/x~2~*, etc.)
+
+*Im* imaginary axis
+
+*M* mass
+
+*MP* peak overshoot
+
+*Re* real axis
+
+*rms* root mean square
+
+*s*~1~, *s*~2~ equation roots of second order
+
+*T* period = 1/*f* = 2π/ω~d~ (seconds)
+
+*T~d~* delay time (i.e., time to 50% of FV)
+
+*T~r~* rise time (i.e., time from 10% to 90% of FV)
+
+*T~p~* time to peak amplitude
+
+*TPR* transient peak ratio
+
+*T~s~* settling time (time to settle within *x*% of FV)
+
+*T ~1/2~* time to achieve 1/*x* amplitude
+
+*x* displacement
+
+*x~1~,x~2~* peak displacements (subsequent)
+
+*v* velocity
+
+*v~o~* peak velocity
+
+*ε =ζω~n~ /ω~d~* = ζ/\[1-ζ^2^\]^.5^
+
+*φ* phase lag (radians)
+
+*ζ* damping coefficient (non-dimensional)
+
+*σ* damping rate *=ζω~n~* = 1/*τ*
+
+*τ* time constant =1/*ζω~n~*
+
+ω  frequency, radians/sec
+
+*ω~d~* damped natural frequency (rad/sec)
+
+*ω~n~* natural frequency (rad/sec)
+
+**8.2 First Order Motion**
+
+Found in classical aircraft roll and spiral modes. Named first-order because the motions are described by mathematics using the first derivative of a parameter.
+
+**8.2.1 Elements of First Order Motion**
+
+Mechanical analogy contains elements of mass, damping and
+
+sometimes a forcing function.
+
+Example: Determine the vertical velocity of a diver as she hits the water at 10 ft/s (assume constant body position & neutral buoyancy)
+
+Summing vertical forces gives
+
+![][1] 
+
+Since *D* & *M* are constant
+
+ 
+
+![][2]![][3]
+
+Apply initial condition
+
+ 
+
+![][4]
+
+Plot response over time
+
+ 
+
+![][5]
+
+• Exponential rate of decay described by *D/M* ratio
+
+ 
+
+• Example 2: Diver with 20 lb submerged weight releases from zero velocity at top of pool (quiescent condition).
+
+Solve using Laplace analysis methods:
+
+ 
+
+![][6]
+
+![][7]
+
+![][8]
+
+This "force/damping" ratio is merely a scaling factor for the steady state.
+
+ 
+
+![][9]
+
+• Several methods can be used to describe the quickness of convergence toward steady state (i.e., time to 99.999 % of *V~ss~*, time to 1/2 *V~ss~*).
+
+• By convention, we use a % that directly reflects the exponent.
+
+• Establish a time constant *τ* based on *D/M*.
+
+ 
+
+![][10]
+
+**8.2.2 First Order Motion Descriptive Parameters**
+
+![][11]
+
+![][12]
+
+when *t* = 0.6931τ: *x = e*^−.6931^ = 0.5 (time to half amplitude)
+
+when *t* = τ: *x = e*^−1^ = 0.37
+
+when *t* = 3τ     *x = e*^−3^ = 0.05
+
+when *t* = 4τ: *x = e*^−4^ = 0.02
+
+If exponent \> 0, then motion is divergent.
+
+![][13]![][14]
+
+![][15]
+
+• *τ *again describes the exponential rate of divergence.
+
+• By convention, the "time to double amplitude" (*t~2~*) is usually applied as the evaluation metric.
+
+• *x*~(t2)~ = 2*x*~(0)~ where *x*~(0)~ = *ce^m^*^0^
+
+ 
+
+![][16]
+
+![][17]
+
+**8.2.3 Determining *τ* from Step Input Time History**
+
+**Method \#1**
+
+τ = time to reach 0.632 *x~ss~*
+
+![][18]
+
+**Method \#2**
+
+![][19]
+
+![][20]
+
+![][21]
+
+**Method \#3**
+
+ 
+
+1\. Pick any time *t~1~*.
+
+2\. Draw tangent at *t~1~*.
+
+3\. Note *t~2~* where tangent intercepts x~ss~.
+
+4\. *τ* = *t~2~*-*t~1~*
+
+ 
+
+![][22]
+
+**Method \#4** When *X~SS~* is unknown use
+
+ 
+
+![][23]
+
+![][24]
+
+**Method \#5** When *Xss* is known, use
+
+ 
+
+![][25]
+
+**Linearity check:**
+
+Note parameter change between even time increments.
+
+ 
+
+Plot parameter changes vs elapsed time on semi-log scale
+
+ 
+
+![][26]
+
+Slope of line equals *τ*
+
+ 
+
+Dp
+
+![][27]
+
+**8.3 Second Order Motion**
+
+Found in classical aircraft phugoid, Dutch roll and short period modes as well as noise filter and vibration testing. Named second-order because the motions are described by mathematics using the second derivative of a parameter.
+
+**8.3.1 Elements of Second Order Motion**
+
+Mechanical systems have elements of spring, mass, and usually damping. Forcing functions can be included (see illustration).
+
+![][28]
+
+*K* = spring stiffness (*F*/*x*)
+
+*x* = displacement from equilibrium
+
+*M* = mass
+
+*F*~(*t*)~ = forcing function
+
+*D* = damping
+
+ 
+
+#### 
+
+#### 
+
+#### 
+
+#### Natural character is observed when system is allowed to move with no external input \[*F*(*t*) = 0\] 
+
+#### 
+
+#### ![][29]
+
+#### 
+
+#### Apply operator technique:
+
+#### 
+
+#### ![][30]
+
+Divide out *e^st^*, since it never equals zero, the characteristic equation remains:
+
+![][31]
+
+The values of *s* that satisfy this equation are called the roots
+
+![][32]
+
+Solve for the roots using the quadratic equation
+
+![][33]
+
+**8.3.2 Second Order Motion Descriptive Parameters**
+
+ 
+
+Solution (*x*) calculated as
+
+ 
+
+ ![][34]
+
+ 
+
+ 
+
+Apply Euler's identity for complex conjugate roots
+
+ 
+
+ ![][35]
+
+ 
+
+• φ defines the **phase shift**.
+
+•  *A* defines the **initial amplitude**.
+
+•  The real part of the root \[*D*/2*M*\] defines the **envelope** of the motion.
+
+•  The imaginary part of the root identifies the **damped frequency**
+
+of the oscillations, ω*~d~* (rad/sec).
+
+ 
+
+![][36]
+
+ 
+
+ ![][37]
+
+• If damping is reduced to *D* = 0 then only \[*K/M*\]^1/2^ remains.
+
+This is the undamped or **"natural" frequency** (ω~η~).
+
+ 
+
+ ![][38]
+
+ 
+
+•  If
+
+![][39]
+
+then *D* is conisidered to be critical \[just enough to prevent oscillations\]
+
+ 
+
+ ![][40]
+
+ 
+
+ 
+
+• For oscillatory motion, actual system damping is typically expressed as a fraction critical damping. Define **damping ratio** as
+
+ 
+
+ ![][41]
+
+![][42]
+
+![][43]
+
+![][44]
+
+![][45]
+
+![][46]
+
+Possible Solutions:
+
+ ![][47]
+
+• The various combination of *K*, *M*, and *D* and their effects on system response can be related to damping ratio *ζ* as follows:
+
+ 
+
+   ζ \> 1 Real & unequal roots exponential, convergent
+
+ 
+
+  ζ =  ± 1 Real & equal roots exponential, conv or div
+
+ 0 \< ζ \< 1  Complex pair roots sinusoidal, convergent
+
+ 
+
+     ζ = 0 Imaginary pair roots sinusoidal, neutral
+
+€
+
+−1 \< ζ \< 0 Complex pair roots sinusoidal, divergent
+
+ 
+
+ ζ \< − 1 Real & unequal roots exponential, divergent
+
+ 
+
+![][48]![][49]
+
+**Damping ratio effect on second order system**
+
+  
+
+ 
+
+Response of various second order systems to an impulse input.
+
+ 
+
+ 
+
+Second-order systems are oscillatory if
+
+-1 \> *ζ* \> 1.
+
+ 
+
+ 
+
+Motion typically
+
+described by
+
+*ω~n~* and *ζ*
+
+ 
+
+ 
+
+*T*, *ω~d~*, *ω~n~* and *ζ *are linked such that knowledge of any two will yield
+
+the other two.
+
+ 
+
+ ![][50]
+
+ 
+
+![][51]
+
+![][52]
+
+2nd order system response to **unit step input** for **underdamped systems**
+
+** **
+
+(0 \> *ζ* \> 1)
+
+ 
+
+![][53]
+
+**Decay rates (for 0 \< ζ \<1) and Useful Insights**
+
+ 
+
+![][54]
+
+**8.3.3 Determining Descriptive Parameters**
+
+** **
+
+Time domain metrics
+
+ 
+
+ ![][55]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Peak Value, *MP*: largest value
+
+ 
+
+Final Value, *FV*: steady state value
+
+ 
+
+Delay Time, *T~d~*: 50% of final value
+
+ 
+
+Rise Time, *T~r~*: 10% - 90% of FV
+
+ 
+
+Peak Time, *T~p~*: time to MP
+
+ 
+
+Settling Time, *T~s~*: time to reach some defined % of final value
+
+ 
+
+\% Overshoot, *PO*:
+
+ 
+
+![][56]
+
+*target value = unity*
+
+ 
+
+**Method \#1** Basic Analysis
+
+ 
+
+ 
+
+Note
+
+ ![][57]
+
+![][58]
+
+![][59]
+
+![][60]
+
+![][61]
+
+Easily measured values: can use any points on envelope
+
+ 
+
+![][62]
+
+![][63]
+
+![][64]
+
+![][65]
+
+![][66]
+
+**Method \#2** Transient Peak Ratio Analysis
+
+ 
+
+1\) Measure either *D* or *x* distances as shown.
+
+ 
+
+ ![][67]
+
+ 
+
+Example Calculation
+
+ 
+
+ ![][68]
+
+ 
+
+ ![][69]
+
+ 
+
+ Average TPR = 0.8409
+
+ 
+
+ 
+
+ 
+
+ 
+
+2\) Note ratio of adjacent peak values (transient peak ratios).
+
+3\) Average several TPRs.
+
+4\) Use equation to find *ζ*:
+
+ 
+
+ ![][70]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+4a) Can use
+
+*D~1~/D~2~* or *x~1~/x~2~*
+
+ratios in above equation.
+
+ 
+
+4b) In lieu of equation, use
+
+adjacent look-up curve to find *ζ*.
+
+ 
+
+4c) Time ratio method works better with heavy damping.
+
+ 
+
+ 
+
+![][71]
+
+**Method \#3** Multiple *TPR* Analysis
+
+ 
+
+![][72]
+
+To determine damping ratio
+
+> \~  Use the *m* = 1 line when comparing the next ratio.
+>
+>  \~  Use the *m* = 2 line for comparing every other
+>
+> peak ratio.
+
+ 
+
+ 
+
+ ![][73]
+
+ ![][74]
+
+**Method \#4** Time Ratio Analysis
+
+ 
+
+• If the damping ratio is between 0.5 and 1.0 (two or less overshoots), then the time ratio method can be used to determine frequency and damping ratio. Select a peak where the response if free.
+
+ 
+
+• Note times for amplitude to reduce to 73.6%, 40.9%, and 19.9% of the peak value.
+
+ 
+
+ 
+
+ ![][75]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+•  Form the time ratios *t~2~/t~1~*, *t~3~/t~1~*, and \[*t~3~-t~2~*\]/\[*t~2~-t~1~*\]
+
+ 
+
+•  Enter the next figure at the time ratio side to find ζ for each time ratio.
+
+ 
+
+•  This technique is valid if the system transfer function has no zeros.
+
+ 
+
+ 
+
+• If recorded measurements are not available and if the number of overshoots is between 2 and 6, then
+
+ 
+
+![][76]
+
+![][77]
+
+**Frequency Time Products (wnDt3), (wnDt2), (wnDt1)**
+
+![][78]
+
+![][79]
+
+![][80]
+
+• Calculation of *ζ* somewhat sensitive to ∆*x*~1~ measurement
+
+~ ~
+
+•  ω*~n~* = ![][81] not too sensitive to ∆*x*~1~
+
+~ ~
+
+• Best if 0.5 ≤ ζ ≤ 1.4
+
+ 
+
+• Initial overshoot approximation: let (step inputs only)
+
+ 
+
+![][82]
+
+![][83]
+
+**Method \#6** Separated Real Root Analysis (when ζ\>1)
+
+ 
+
+1\) Determine several steady state ∆*X*(*t*) values from time history
+
+ 
+
+ 
+
+ ![][84]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2\) Plot ∆*X* vs *t* on semi-log scale
+
+ 
+
+ 
+
+ 
+
+ ![][85]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+3\) After the faster root has decayed, the semi-log plot will be a straight line whose slope determines the slower root (1/τ~1~)
+
+ 
+
+ 
+
+ ![][86]
+
+ 
+
+ 
+
+ 
+
+4\) Determine by extrapolating the straight line portion of the response to establish the values
+
+ 
+
+![][87]
+
+![][88]
+
+![][89]
+
+![][90]
+
+**Method \#7** Modified Separated Real Root Analysis
+
+ 
+
+•  Method \#6 is sensitive to errors in determining steady state values
+
+•  Alternate method is to avoid need for steady state value
+
+•  Define ∆*X*(*t*) ≡ \[ *x*(*t*+ ∆*T*) -*x*(*t*)\] where ∆*T* is a time increment
+
+1\) From time history, measure ∆*X* values according to definition
+
+€![][91]
+
+€
+
+∆T = (t~1~-t~o~) = (t~2~-t~1~), etc.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2\) Plot ∆*X* (*t*) vs time on semi-log scale
+
+ 
+
+ 
+
+![][92]
+
+3\) Use previous method to determine roots and characteristics
+
+ 
+
+• Gross error will result if ζ is actually \<1
+
+ 
+
+• If ζ is near 1, check results using time ratio or slope method
+
+ 
+
+**Method \# 8** Frequency Sweep Analysis
+
+Determine *ω~n~* and *ζ* using sinusoidal inputs.
+
+• This "forced response" method most useful when damping is heavy.
+
+• For a second order system, output/input amplitude ratio and phase shift are a function of input frequency.
+
+ 
+
+ 
+
+ ![][93]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+~ ~
+
+• Amplitude ratio peaks at "resonant" frequency, ω*~r.~*
+
+• Resonant peaks increase as *ζ* decreases below 0.707.
+
+• Peak amplitude ratio "rolls off" as *ζ* increases above 0.707.
+
+• Resonant frequency approaches natural fre
+
+quency as damping decreases:
+
+ω*~r~* = ω*~n~*\[1 − 2*ζ*^2^\]^.5^
+
+• Phase shift = 90° if excited at ω*~n~*, regardless of damping ratio.
+
+ ζ = 0.5(ω~2~ -- ω~1~)/ω~n~
+
+ 
+
+![][94]
+
+Frequency Sweep Analysis (continued)
+
+1\. Using sinusoidal inputs excite system @ ω near ω*~n~*
+
+ 
+
+2\. Measure phase lag (*φ*) of
+
+ 
+
+ ![][95]
+
+ 
+
+ ![][96]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+3\. Excite system @ another ω near ω*~n~*
+
+ 
+
+4\. Again Measure phase lag *φ*
+
+*€*
+
+*€*![][97]
+
+*€*
+
+*€*
+
+*€*
+
+*€*
+
+*€*
+
+*€*
+
+5\. Plot φ vs input frequency
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+6\. ω*~n~* occurs at φ = 90°
+
+ 
+
+![][98]
+
+**Linearity Check /Accuracy Improvement**
+
+** **
+
+1\) On semi-log scale, plot ratio of initial amplitude to subsequent peak
+
+amplitudes at each half cycle (points *a-e*).
+
+ 
+
+2\) Fair straight line (*f*) through these points.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ ![][99]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+3\) Draw line (*g*) parallel (*f*) intercepting the ordinate at *TPR*=1
+
+ 
+
+4\) Average *TPR* occurs at *T*/2 on line *g*
+
+ 
+
+**8.4 Complex Plane**
+
+** **
+
+Begin with sum of forces in spring-mass-damper example
+
+ 
+
+ 
+
+ Apply quadratic equation to solve for roots
+
+ 
+
+ ![][100]
+
+ 
+
+ 
+
+ Recall previous analogy
+
+ 
+
+![][101]
+
+ 
+
+ ![][102]
+
+ 
+
+ ![][103]
+
+ 
+
+ ![][104]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Location of Roots on Complex Plane
+
+> 1\. Line of constant damping ratio ζ − varying *C*~1/*n*~ and ω*~n~*
+>
+> 2\. Line of constant ω*~n~* − varying ζ
+>
+> 3\. Line of constant ω*~d~* and period (*T*)
+>
+> 4\. Line of constant real part (ζω*~n~*) and time to damp (*T*~1/*n*~)
+
+ 
+
+![][105]
+
+*σ* = ζω*~n~* = 1/*τ* = damping rate
+
+ 
+
+![][106]
+
+**Sample second order root plots and corresponding time histories**
+
+ 
+
+(time histories represent trends only)
+
+ 
+
+ 
+
+Examples of "two real roots"
+
+ 
+
+![][107]
+
+**More sample second order root plots and corresponding time histories**
+
+ 
+
+Examples of "imaginary roots"
+
+ 
+
+ 
+
+![][108]
+
+**8.5 Parameter Conversions**
+
+ 
+
+For conversion of accelerometer measurements.
+
+• For magnitude conversion substitute 2*πf* for *jω*.
+
+• Assumes linear spectra.
+
+• Conversion factor should be squared for power spectra.
+
+ 
+
+*Acceleration to velocity*
+
+> [to convert from to multiply by]{.underline}
+>
+> *ft/s^2^ rms ft/s rms* 1*/jω*
+>
+> *ft/s^2^ rms in/s rms* 12*/jω*
+>
+> *ft/s^2^ rms in/s peak* 16.97/*jω*
+>
+> *g rms in/s rms* 386*/jω*
+>
+> *g rms in/s peak* 545.8/*jω*
+>
+> *m/s^2^ rms mm/s rms* 1000/*jω*
+>
+> *m/s^2^ rms mm/s peak* 1414*/jω*
+>
+> *g rms mm/s rms* 9806*/jω*
+>
+> *g rms mm/s peak* 13865.7/*jω*
+>
+> \* *
+
+*Acceleration to Displacement*
+
+> [to convert from to multiply by]{.underline}
+>
+> *ft/s^2^ rms in rms* 12/(jω)^2^
+>
+> *ft/s^2^ rms in p-p* 33.9/(jω)^2^
+>
+> *ft/s^2^ rms mil p-p* 33.9 *E* 03/(jω)^2^
+>
+> *g rms in rms* 386/(jω)^2^
+>
+> *g rms in p-p* 1091.6 *E* 03/(jω)^2^
+>
+> *g rms mil p-p* 1091.6 *E* 03/(jω)^2^
+>
+> *m/s^2^ rms mm rms* 1000/(jω)^2^
+>
+> *m/s^2^ rms mm p-p* 2828/(jω)^2^
+>
+> *m/s^2^ rms* micron *p-p* 2828 *E* 03/(jω)^2^
+
+\* *
+
+*E*= engineering exponent (x10 \_\_)
+
+*g* = 32.174 ft/sec2
+
+*in*= inches
+
+*mil* = thousandths of an inch
+
+*mm* = milimeters
+
+*p-p* = peak-to-peak
+
+*rms* = root mean square
+
+ 
+
+**8.6 Vibration Nomographs**
+
+**Vibration Nomograph equations**
+
+ 
+
+**For British** \[V in inches/sec\], \[d in inches\]
+
+ 
+
+*V =* 386*g /* 2π*f*
+
+ 
+
+*d* = 386*g* / (2π*f*)^2^
+
+ 
+
+where 386 = earth\'s gravitational pull \[in/sec^2^\]
+
+ 
+
+ 
+
+**For metric** \[V in mm/sec\] , \[d in mm\]
+
+ 
+
+*V =* 9800*g /* 2π*f*
+
+ 
+
+*d* = 9800*g* / (2π*f*)^2^
+
+where 9800 = earth\'s gravitational pull \[mm/sec^2^\]
+
+ 
+
+**Nomograph - British Units**
+
+ 
+
+![][109]
+
+**Nomograph - Metric Units**
+
+ 
+
+![][110]
+
+**8.7 References**
+
+8.7.1 Lawless, Alan R., *Math and Physics for Flight Testers*, "Chapter 9, Motion Analysis," National Test Pilot School, Mojave CA, 1999.
+
+8.7.2 Ward, Don, *Introduction to Flight Testing*, Texas A&M, Elsevier, 1993.
+
+8.7.3 Lang, George F., *Understanding Vibration Measurements*,
+
+Application Note 9, Rockland Scientific Corporation, Rockleigh, New Jersey, December 1978.
+
+8.7.4 *The Fundamentals of Modal Testing*, Application Note 243-3,
+
+Hewlett-Packard Company,
+
+####### Additional Reading 
+
+Hartog, J.P. Den, *Mechanical Vibrations*, Dover Publications, New York, New York, 1984.
+
+Jacobsen, Ludik S. and Ayre, Robert S., *Engineering Vibrations*, McGraw-Hill Book Company, New York, New York, 1958.
+
+Meirovitch, Leonard, *Elements of Vibration Analysis*, McGraw-Hill Book Company, New York, New York, 1986.
+
+Meirovitch, Leonard, *Analytical Methods in Vibrations*, Macmillan Publishing Company, New York, New York, 1967.
+
+Myklestad, N.O., *Vibration Analysis*, McGraw-Hill Book
+
+Company, New York, New York, 1944.
+
+  [1]: ..\..\handbook-2013\pandoc-output\08\/media/image1.wmf
+  [2]: ..\..\handbook-2013\pandoc-output\08\/media/image2.wmf
+  [3]: ..\..\handbook-2013\pandoc-output\08\/media/image3.png
+  [4]: ..\..\handbook-2013\pandoc-output\08\/media/image4.png
+  [5]: ..\..\handbook-2013\pandoc-output\08\/media/image5.png
+  [6]: ..\..\handbook-2013\pandoc-output\08\/media/image6.png
+  [7]: ..\..\handbook-2013\pandoc-output\08\/media/image7.png
+  [8]: ..\..\handbook-2013\pandoc-output\08\/media/image8.png
+  [9]: ..\..\handbook-2013\pandoc-output\08\/media/image9.png
+  [10]: ..\..\handbook-2013\pandoc-output\08\/media/image10.png
+  [11]: ..\..\handbook-2013\pandoc-output\08\/media/image11.png
+  [12]: ..\..\handbook-2013\pandoc-output\08\/media/image12.png
+  [13]: ..\..\handbook-2013\pandoc-output\08\/media/image13.wmf
+  [14]: ..\..\handbook-2013\pandoc-output\08\/media/image14.png
+  [15]: ..\..\handbook-2013\pandoc-output\08\/media/image15.png
+  [16]: ..\..\handbook-2013\pandoc-output\08\/media/image16.png
+  [17]: ..\..\handbook-2013\pandoc-output\08\/media/image17.png
+  [18]: ..\..\handbook-2013\pandoc-output\08\/media/image18.png
+  [19]: ..\..\handbook-2013\pandoc-output\08\/media/image19.png
+  [20]: ..\..\handbook-2013\pandoc-output\08\/media/image20.png
+  [21]: ..\..\handbook-2013\pandoc-output\08\/media/image21.png
+  [22]: ..\..\handbook-2013\pandoc-output\08\/media/image22.png
+  [23]: ..\..\handbook-2013\pandoc-output\08\/media/image23.png
+  [24]: ..\..\handbook-2013\pandoc-output\08\/media/image24.png
+  [25]: ..\..\handbook-2013\pandoc-output\08\/media/image25.png
+  [26]: ..\..\handbook-2013\pandoc-output\08\/media/image26.png
+  [27]: ..\..\handbook-2013\pandoc-output\08\/media/image27.png
+  [28]: ..\..\handbook-2013\pandoc-output\08\/media/image28.png
+  [29]: ..\..\handbook-2013\pandoc-output\08\/media/image29.png
+  [30]: ..\..\handbook-2013\pandoc-output\08\/media/image30.png
+  [31]: ..\..\handbook-2013\pandoc-output\08\/media/image31.png
+  [32]: ..\..\handbook-2013\pandoc-output\08\/media/image32.png
+  [33]: ..\..\handbook-2013\pandoc-output\08\/media/image33.png
+  [34]: ..\..\handbook-2013\pandoc-output\08\/media/image34.png
+  [35]: ..\..\handbook-2013\pandoc-output\08\/media/image35.png
+  [36]: ..\..\handbook-2013\pandoc-output\08\/media/image36.png
+  [37]: ..\..\handbook-2013\pandoc-output\08\/media/image37.png
+  [38]: ..\..\handbook-2013\pandoc-output\08\/media/image38.png
+  [39]: ..\..\handbook-2013\pandoc-output\08\/media/image39.png
+  [40]: ..\..\handbook-2013\pandoc-output\08\/media/image40.png
+  [41]: ..\..\handbook-2013\pandoc-output\08\/media/image41.png
+  [42]: ..\..\handbook-2013\pandoc-output\08\/media/image42.png
+  [43]: ..\..\handbook-2013\pandoc-output\08\/media/image43.png
+  [44]: ..\..\handbook-2013\pandoc-output\08\/media/image44.png
+  [45]: ..\..\handbook-2013\pandoc-output\08\/media/image45.png
+  [46]: ..\..\handbook-2013\pandoc-output\08\/media/image46.png
+  [47]: ..\..\handbook-2013\pandoc-output\08\/media/image47.png
+  [48]: ..\..\handbook-2013\pandoc-output\08\/media/image48.wmf
+  [49]: ..\..\handbook-2013\pandoc-output\08\/media/image49.png
+  [50]: ..\..\handbook-2013\pandoc-output\08\/media/image50.png
+  [51]: ..\..\handbook-2013\pandoc-output\08\/media/image51.png
+  [52]: ..\..\handbook-2013\pandoc-output\08\/media/image52.png
+  [53]: ..\..\handbook-2013\pandoc-output\08\/media/image53.png
+  [54]: ..\..\handbook-2013\pandoc-output\08\/media/image54.png
+  [55]: ..\..\handbook-2013\pandoc-output\08\/media/image55.png
+  [56]: ..\..\handbook-2013\pandoc-output\08\/media/image56.png
+  [57]: ..\..\handbook-2013\pandoc-output\08\/media/image57.png
+  [58]: ..\..\handbook-2013\pandoc-output\08\/media/image58.png
+  [59]: ..\..\handbook-2013\pandoc-output\08\/media/image59.png
+  [60]: ..\..\handbook-2013\pandoc-output\08\/media/image60.png
+  [61]: ..\..\handbook-2013\pandoc-output\08\/media/image61.png
+  [62]: ..\..\handbook-2013\pandoc-output\08\/media/image62.png
+  [63]: ..\..\handbook-2013\pandoc-output\08\/media/image63.png
+  [64]: ..\..\handbook-2013\pandoc-output\08\/media/image64.png
+  [65]: ..\..\handbook-2013\pandoc-output\08\/media/image65.png
+  [66]: ..\..\handbook-2013\pandoc-output\08\/media/image66.png
+  [67]: ..\..\handbook-2013\pandoc-output\08\/media/image67.png
+  [68]: ..\..\handbook-2013\pandoc-output\08\/media/image68.png
+  [69]: ..\..\handbook-2013\pandoc-output\08\/media/image69.png
+  [70]: ..\..\handbook-2013\pandoc-output\08\/media/image70.png
+  [71]: ..\..\handbook-2013\pandoc-output\08\/media/image71.png
+  [72]: ..\..\handbook-2013\pandoc-output\08\/media/image72.png
+  [73]: ..\..\handbook-2013\pandoc-output\08\/media/image73.png
+  [74]: ..\..\handbook-2013\pandoc-output\08\/media/image74.png
+  [75]: ..\..\handbook-2013\pandoc-output\08\/media/image75.png
+  [76]: ..\..\handbook-2013\pandoc-output\08\/media/image76.png
+  [77]: ..\..\handbook-2013\pandoc-output\08\/media/image77.png
+  [78]: ..\..\handbook-2013\pandoc-output\08\/media/image78.png
+  [79]: ..\..\handbook-2013\pandoc-output\08\/media/image79.png
+  [80]: ..\..\handbook-2013\pandoc-output\08\/media/image80.png
+  [81]: ..\..\handbook-2013\pandoc-output\08\/media/image81.png
+  [82]: ..\..\handbook-2013\pandoc-output\08\/media/image82.png
+  [83]: ..\..\handbook-2013\pandoc-output\08\/media/image83.png
+  [84]: ..\..\handbook-2013\pandoc-output\08\/media/image84.png
+  [85]: ..\..\handbook-2013\pandoc-output\08\/media/image85.png
+  [86]: ..\..\handbook-2013\pandoc-output\08\/media/image86.png
+  [87]: ..\..\handbook-2013\pandoc-output\08\/media/image87.png
+  [88]: ..\..\handbook-2013\pandoc-output\08\/media/image88.png
+  [89]: ..\..\handbook-2013\pandoc-output\08\/media/image89.png
+  [90]: ..\..\handbook-2013\pandoc-output\08\/media/image90.png
+  [91]: ..\..\handbook-2013\pandoc-output\08\/media/image91.png
+  [92]: ..\..\handbook-2013\pandoc-output\08\/media/image92.png
+  [93]: ..\..\handbook-2013\pandoc-output\08\/media/image93.png
+  [94]: ..\..\handbook-2013\pandoc-output\08\/media/image94.png
+  [95]: ..\..\handbook-2013\pandoc-output\08\/media/image95.png
+  [96]: ..\..\handbook-2013\pandoc-output\08\/media/image96.png
+  [97]: ..\..\handbook-2013\pandoc-output\08\/media/image97.png
+  [98]: ..\..\handbook-2013\pandoc-output\08\/media/image98.png
+  [99]: ..\..\handbook-2013\pandoc-output\08\/media/image99.png
+  [100]: ..\..\handbook-2013\pandoc-output\08\/media/image100.png
+  [101]: ..\..\handbook-2013\pandoc-output\08\/media/image101.png
+  [102]: ..\..\handbook-2013\pandoc-output\08\/media/image102.png
+  [103]: ..\..\handbook-2013\pandoc-output\08\/media/image103.png
+  [104]: ..\..\handbook-2013\pandoc-output\08\/media/image104.png
+  [105]: ..\..\handbook-2013\pandoc-output\08\/media/image105.png
+  [106]: ..\..\handbook-2013\pandoc-output\08\/media/image106.png
+  [107]: ..\..\handbook-2013\pandoc-output\08\/media/image107.png
+  [108]: ..\..\handbook-2013\pandoc-output\08\/media/image108.png
+  [109]: ..\..\handbook-2013\pandoc-output\08\/media/image109.png
+  [110]: ..\..\handbook-2013\pandoc-output\08\/media/image110.png

@@ -789,7 +789,7 @@ With this notation, the normal differenation operations hold for vector-valued *
 If \(f(t)\) is a scalar-valued function, then
 \[\frac{d}{dt}\left( f(t)\vec{r}(t) \right) = f(t)\frac{d}{dt}\vec{r}(t) + \left(\frac{d}{dt} f(t)\right) \vec{r}(t).\]
 
-### Motion of a point using two reference systems (raw)
+### Motion of a point using two reference systems
 
 Reference A can be considered the inertial frame while Rotation of the B reference relative to the A reference must be considered when observing motion with respect to the A reference system.
 
@@ -814,51 +814,34 @@ The velocities of the particle \(P\) relative to the \(A\) and to the \(B\) refe
 These velocities can be related by noting that \(\bar{r} = \bar{R} + \bar{\rho}\).
 
 Taking the derivative with respect to time for the \(A\) reference:
-\[\left(\frac{d \bar{r}}{dt}  \right)_A = \left( \frac{d \bar{R}}{dt} \right)_A + \left( \frac{d \bar{\rho}}{dt} \right)_A\]
+\[\bar{V}_A = \left(\frac{d \bar{r}}{dt}  \right)_A = \left( \frac{d \bar{R}}{dt} \right)_A + \left( \frac{d \bar{\rho}}{dt} \right)_A\]
 
-![][02056]
+The term \(\left(\frac{d \bar{r}}{dt}  \right)_A \) is the velocity of the origin of \(B\) reference relative to the \(A\) reference.  We denote 
+\[\left(\frac{d \bar{r}}{dt}  \right)_A = \dot{\overline{R}}.\]
 
-![][02057]
+Substituting for \(\left( \frac{d \bar{\rho}}{dt} \right)_A\) gives the following:
+\[\bar{V}_A  = \dot{\overline{R}} + \bar{V}_B + \bar{\omega} \times \bar{\rho}.\]
 
-The term is the "transport velocity" and is the only velocity if ![][02058]
+The term is the "transport velocity" and is the only velocity if point P is rigidly attached to reference B.
 
-point P is rigidly attached to reference B.
+A similar derivation for acceleration gives the following:
+\[\bar{a}_A = \bar{a}_B + 2(\bar{\omega} \times \bar{V}_B) + \ddot{\overline{R}} + (\dot{\bar{\omega}} \times \bar{\rho}) + \bar{\omega} \times (\bar{\omega} \times \bar{\rho}).\]
 
-where is the centripetal acceleration,
+Here \(\bar{\omega} \times (\bar{\omega} \times \bar{\rho})\) is the centripetal acceleration,  \(2(\bar{\omega} \times \bar{V}_B) \) is the Coriolis acceleration, and the transport acceleration, which is the only acceleration if point P is rigidly attached to reference B, is given by the following:
+\[\ddot{\overline{R}} + (\dot{\bar{\omega}} \times \bar{\rho}) + \bar{\omega} \times (\bar{\omega} \times \bar{\rho}).\]
 
-is the Coriolis acceleration, and
+### Motion of a point using one reference system
 
-is the transport acceleration and is the only acceleration if point P is rigidly attached to reference B.
-
-To get acceleration with respect to *A*, differentiate:
-
-![][02059]
-
-![][02060]
-
-where
-
-![][02061]
-
-is the centripetal acceleration,
-
-![][02062]
-
-is the Coriolis acceleration, and
-
-![][02063]
-
-is the transport acceleration and is the only acceleration if point P is rigidly attached to reference B.
-
-### Motion of a point using one reference system (raw)
-
-Reference A can be considered the inertial frame while
-
-The body can be equivalent to a maneuvering aircraft.
+Reference A can be considered the inertial frame while the body can be equivalent to a maneuvering aircraft.
 
 ![][02064]
 
-![][02065]
+A derivation similar to the previous gives us the following for
+velocity:
+\[\dot{\bar{\rho}} = \bar{\omega} \times \bar{\rho},\] 
+
+and acceleration:
+\[\bar{a}_b = \bar{a}_a + (\dot{\bar{\omega}} \times \bar{\rho}) + \bar{\omega} \times (\bar{\omega} \times \bar{\rho}).\]
 
 ## Probability and Statistics
 
@@ -901,7 +884,7 @@ The probability of any outcome in a given set is the same.  If there are \(N\) p
 ***Binomial***
 The probability that the random variable \(X = x\) in \(N\) independent events, each having probability \(p\) of success, and \(1-p\) of failure. 
 \[P(X = k) = \binom{N}{k}p^x (1-p)^{N-x}\] where
-\[\binom{N}{k} = \frac{N!}{k!(N-k)!}\].
+\[\binom{N}{k} = \frac{N!}{k!(N-k)!}.\]
 
 For example, tossing a fair coin N times where \(p = 1/2\) is the probability of getting a head on any toss.  If \(X\) indicates the number of heads in \(N\) tosses, then we have  \(P(X = x) = (1/2)^x (1/2)^{N-x}\). For \(N = 4\) we have the following table:
 |x |P(X=x)|
@@ -917,7 +900,7 @@ Continuous distributions are defined for all \(x \in [a,b]\), where \(a, b \in \
 
 **The Normal Distribution**
 The probability density function of the Normal Distribution is given by:
-\[f(x) = \frac{1}{\sqrt{2 \pi \sigma}}e^{\frac{-(x-\mu)^2}{2\sigma^2}} \].
+\[f(x) = \frac{1}{\sqrt{2 \pi \sigma}}e^{\frac{-(x-\mu)^2}{2\sigma^2}}\]
 
 **The Standard Normal Distribution**
 The Standard Normal Distribution is simply the Normal Distribution with \(\mu = 0\) and \(\sigma=1\).
@@ -940,21 +923,31 @@ The sample mean of data sampled from a normally distributed population is itself
 
 (reference 2.4)
 
-![][02103]Taylor's
+A *Taylor Series* is the expansion of a function about a point, \(a\), given only the value of the function and all of its derivatives at that point.  It is used to estimate functions when other analytical techniques will not work.
+\[f(x) = \sum_{i=0}^{\infty} \frac{{f(a)(x-a)^i}}{i!} = f(a) + f'(x-a) + \frac{f''(a)(x-a)^2}{2} + \dots + \frac{f^{(n)}(a)(x-a)^n}{n!} + \dots\]
 
-Maclaurin's (Taylor series with *a* = 0 ):
+The *Maclaurin Series* is a Taylor Series with \(a = 0\).
 
-![][02104]
+The *Binomial Series* is a Taylor Series with \(f(x)=(a + x)^n\). When n is a natural number, the result is a polynomial as follows:
+\[(a+x)^n = a^n + na^{n-1}x + \frac{n(n-1)a^{n-2}x^2}{2} + \frac{n(n-1)(n-2)a^{n-3}x^3}{3!} + \dots + x^n\]
 
-![][02105]
+The Taylor Series expansion of an *Exponential* function gives the following:
+\[a^x = 1 + x \ln a + \frac{(x \ln a)^2}{2} + \frac{(x \ln a)^3}{3!} + \dots\]
 
-![][02106]Binomial:
+In the special case when \(a = e\):
+\[e^x = 1 + x + \frac{x^2}{2} + \frac{x^3}{3!}+ \dots\]
 
-![][02107]Exponential:
+Hyperbolic \(\sin\) and \(\cos\) functions are another special case:
+\[\cosh x = \frac{(e^x + e^{-x})}{2} = 1 + \frac{x^2}{2} + \frac{x^4}{4!}+ \dots\]
+\[\sinh x = \frac{(e^x - e^{-x})}{2} = x + \frac{x^3}{3!} + \frac{x^5}{5!}+ \dots\]
 
-Logarithmic:
+The Taylor Series expansion of an *Logarithmic* function gives the following. When \(0 < x < 2\):
+\[\ln x = (x-1) - \frac{(x-1)^2}{2} + \frac{(x-1)^3}{3} + \dots\]
+When \(x > 1/2\):
+\[\ln x = \frac{(x-1)}{x} - \frac{(x-1)^2}{2x^2} + \frac{(x-1)^3}{3x^3} + \dots\]
+When \(0 < x\):
+\[\ln x = 2 \left[ \frac{(x-1)}{x+1} - \frac{(x-1)^3}{3(x+1)^3} + \frac{(x-1)^5}{5(x-1)^5} + \dots \right]\]
 
-![][02105]
 
 Trigonometric:
 
