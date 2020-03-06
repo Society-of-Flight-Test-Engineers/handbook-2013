@@ -129,7 +129,7 @@
 </ul></li>
 <li class="chapter" data-level="2.6" data-path="mathematics.html"><a href="mathematics.html#probability-and-statistics"><i class="fa fa-check"></i><b>2.6</b> Probability and Statistics</a></li>
 <li class="chapter" data-level="2.7" data-path="mathematics.html"><a href="mathematics.html#standard-series"><i class="fa fa-check"></i><b>2.7</b> Standard Series</a></li>
-<li class="chapter" data-level="2.8" data-path="mathematics.html"><a href="mathematics.html#derivative-table-raw"><i class="fa fa-check"></i><b>2.8</b> Derivative Table (raw)</a></li>
+<li class="chapter" data-level="2.8" data-path="mathematics.html"><a href="mathematics.html#derivative-table"><i class="fa fa-check"></i><b>2.8</b> Derivative Table</a></li>
 <li class="chapter" data-level="2.9" data-path="mathematics.html"><a href="mathematics.html#integral-table-raw"><i class="fa fa-check"></i><b>2.9</b> Integral Table (raw)</a></li>
 <li class="chapter" data-level="2.10" data-path="mathematics.html"><a href="mathematics.html#laplace-table-raw"><i class="fa fa-check"></i><b>2.10</b> Laplace Table (raw)</a></li>
 <li class="chapter" data-level="2.11" data-path="mathematics.html"><a href="mathematics.html#references"><i class="fa fa-check"></i><b>2.11</b> References</a></li>
@@ -1084,12 +1084,93 @@ When <span class="math inline">\(0 &lt; x\)</span>:
 <span class="math display">\[e^{\cos x} = e \left(1 - \frac{x^2}{2!} +\frac{4x^2}{4!} - \frac{31x^6}{6!} + \dots \right)\]</span>
 <span class="math display">\[e^{\tan x} = 1 + x + \frac{x^2}{2!} + \frac{3x^3}{3!} + \frac{9x^4}{4!} + \frac{37x^5}{5!} + \dots \text{for } x^2 &lt; \frac{\pi^2}{4}\]</span></p>
 </div>
-<div id="derivative-table-raw" class="section level2">
-<h2><span class="header-section-number">2.8</span> Derivative Table (raw)</h2>
+<div id="derivative-table" class="section level2">
+<h2><span class="header-section-number">2.8</span> Derivative Table</h2>
 <p>(references 2.2, 2.3)</p>
-<p><em>x</em> is the independent variable; <em>u</em> and <em>v</em> are dependent on <em>x; w</em> is dependent on <em>u; a</em> and <em>n</em> are constants; <em>log</em> is common logarithm; <em>ln</em> is logarithm to the base <em>e</em></p>
-<p><img src="media/02/image111.svg" /></p>
-<p><img src="media/02/image112.svg" /></p>
+<ul>
+<li><span class="math inline">\(x\)</span> is the independent variable</li>
+<li><span class="math inline">\(u\)</span> and <span class="math inline">\(v\)</span> are dependent on <span class="math inline">\(x\)</span></li>
+<li><span class="math inline">\(w\)</span> is dependent on <span class="math inline">\(u\)</span></li>
+<li><span class="math inline">\(a\)</span> and <span class="math inline">\(n\)</span> are constants</li>
+<li><span class="math inline">\(\log{x}\)</span> is the common logarithm to base 10, <span class="math inline">\(\log_{10}{x}\)</span></li>
+<li><span class="math inline">\(\ln{x}\)</span> is logarithm to the base <span class="math inline">\(e\)</span>, <span class="math inline">\(\log_e{x}\)</span></li>
+</ul>
+<table>
+<tbody>
+<tr class="odd">
+<td><span class="math display">\[\frac{da}{dx} = 0\]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[\frac{d\left(ax\right)}{dx} = a\]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[\frac{dx^n}{dx} = nx^{n-1}\]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[\frac{d\left(u + v \right)}{dx} = \frac{du}{dx} + \frac{dv}{dx}\]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[\frac{d\left(uv \right)}{dx} = u\frac{dv}{dx} + v\frac{du}{dx}\]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[\frac{d\left(\frac{u}{v} \right)}{dx} = \frac{1}{v^2} \left( v\frac{du}{dx} - u\frac{dv}{dx} \right)\]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[\frac{dw}{dx} = \frac{dw}{du}\frac{du}{dx}\]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[\frac{du^n}{dx} = nu^{n-1}\frac{du}{dx}\]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[\frac{d \ln{x}}{dx} = \frac{1}{x}\]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[\frac{d \ln{u}}{dx} = \frac{1}{u}\frac{du}{dx}\]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[\frac{d \log{u}}{dx} = \frac{\log{e}}{u}\frac{du}{dx}\]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[\frac{de^x}{dx} = e^x\]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[\frac{da^x}{dx} = a^x \ln{a}\]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[\frac{da^u}{dx} = a^u \ln{a}\frac{du}{dx}\]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[\frac{du^v}{dx} = vu^{v-1}\frac{du}{dx} + u^v \ln{u}\frac{dv}{dx}\]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[\frac{d \sin{x}}{dx} = \cos{x} \text{ or } \frac{d \sin{u}}{dx} = \cos{u}\frac{du}{dx}\]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[\frac{d \cos{x}}{dx} = -\sin{x} \text{ or } \frac{d \cos{u}}{dx} = -\sin{u}\frac{du}{dx}\]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[\frac{d \tan{x}}{dx} = \sec^2{x} \text{ or } \frac{d \tan{u}}{dx} = \sec^2{u}\frac{du}{dx}\]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[\frac{d \sec{x}}{dx} = \sec{x}\tan{x} \text{ or } \frac{d \sec{u}}{dx} = \sec{u}\tan{u}\frac{du}{dx}\]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[\frac{d \cot{x}}{dx} = -\csc^2{x} \text{ or } \frac{d \cot{u}}{dx} = -\csc^2{u}\frac{du}{dx}\]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[\frac{d \sin^{-1}{x}}{dx} = \frac{1}{\sqrt{1-x^2}} \text{ or } \frac{d \sin^{-1}{u}}{dx} = \frac{1}{\sqrt{1-u^2}}\frac{du}{dx}\]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[\frac{d \cos^{-1}{x}}{dx} = -\frac{1}{\sqrt{1-x^2}} \text{ or } \frac{d \cos^{-1}{u}}{dx} = -\frac{1}{\sqrt{1-u^2}}\frac{du}{dx}\]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[\frac{d \tan^{-1}{x}}{dx} = \frac{1}{1+x^2} \text{ or } \frac{d \tan^{-1}{u}}{dx} = \frac{1}{1+u^2}\frac{du}{dx}\]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[\frac{d \cot^{-1}{x}}{dx} = -\frac{1}{1+x^2} \text{ or } \frac{d \cot^{-1}{u}}{dx} = -\frac{1}{1+u^2}\frac{du}{dx}\]</span></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="integral-table-raw" class="section level2">
 <h2><span class="header-section-number">2.9</span> Integral Table (raw)</h2>

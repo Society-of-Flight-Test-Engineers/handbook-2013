@@ -962,15 +962,43 @@ The following are Taylor Series expansion of *Trigonometric* functions:
 \[e^{\cos x} = e \left(1 - \frac{x^2}{2!} +\frac{4x^2}{4!} - \frac{31x^6}{6!} + \dots \right)\]
 \[e^{\tan x} = 1 + x + \frac{x^2}{2!} + \frac{3x^3}{3!} + \frac{9x^4}{4!} + \frac{37x^5}{5!} + \dots \text{for } x^2 < \frac{\pi^2}{4}\]
 
-## Derivative Table (raw)
+## Derivative Table 
 
 (references 2.2, 2.3)
 
-*x* is the independent variable; *u* and *v* are dependent on *x; w* is dependent on *u; a* and *n* are constants; *log* is common logarithm; *ln* is logarithm to the base *e*
+* \(x\) is the independent variable
+* \(u\) and \(v\) are dependent on \(x\)
+* \(w\) is dependent on \(u\)
+* \(a\) and \(n\) are constants
+* \(\log{x}\) is the common logarithm to base 10, \(\log_{10}{x}\)
+* \(\ln{x}\) is logarithm to the base \(e\), \(\log_e{x}\)
 
-![][02109]
-
-![][02110]
+------
+\[\frac{da}{dx} = 0\]
+\[\frac{d\left(ax\right)}{dx} = a\]
+\[\frac{dx^n}{dx} = nx^{n-1}\]
+\[\frac{d\left(u + v \right)}{dx} = \frac{du}{dx} + \frac{dv}{dx}\]
+\[\frac{d\left(uv \right)}{dx} = u\frac{dv}{dx} + v\frac{du}{dx}\]
+\[\frac{d\left(\frac{u}{v} \right)}{dx} = \frac{1}{v^2} \left( v\frac{du}{dx} - u\frac{dv}{dx} \right)\]
+\[\frac{dw}{dx} = \frac{dw}{du}\frac{du}{dx}\]
+\[\frac{du^n}{dx} = nu^{n-1}\frac{du}{dx}\]
+\[\frac{d \ln{x}}{dx} = \frac{1}{x}\]
+\[\frac{d \ln{u}}{dx} = \frac{1}{u}\frac{du}{dx}\]
+\[\frac{d \log{u}}{dx} = \frac{\log{e}}{u}\frac{du}{dx}\]
+\[\frac{de^x}{dx} = e^x\]
+\[\frac{da^x}{dx} = a^x \ln{a}\]
+\[\frac{da^u}{dx} = a^u \ln{a}\frac{du}{dx}\]
+\[\frac{du^v}{dx} = vu^{v-1}\frac{du}{dx} + u^v \ln{u}\frac{dv}{dx}\]
+\[\frac{d \sin{x}}{dx} = \cos{x} \text{ or } \frac{d \sin{u}}{dx} = \cos{u}\frac{du}{dx}\]
+\[\frac{d \cos{x}}{dx} = -\sin{x} \text{ or } \frac{d \cos{u}}{dx} = -\sin{u}\frac{du}{dx}\]
+\[\frac{d \tan{x}}{dx} = \sec^2{x} \text{ or } \frac{d \tan{u}}{dx} = \sec^2{u}\frac{du}{dx}\]
+\[\frac{d \sec{x}}{dx} = \sec{x}\tan{x} \text{ or } \frac{d \sec{u}}{dx} = \sec{u}\tan{u}\frac{du}{dx}\]
+\[\frac{d \cot{x}}{dx} = -\csc^2{x} \text{ or } \frac{d \cot{u}}{dx} = -\csc^2{u}\frac{du}{dx}\]
+\[\frac{d \sin^{-1}{x}}{dx} = \frac{1}{\sqrt{1-x^2}} \text{ or } \frac{d \sin^{-1}{u}}{dx} = \frac{1}{\sqrt{1-u^2}}\frac{du}{dx}\]
+\[\frac{d \cos^{-1}{x}}{dx} = -\frac{1}{\sqrt{1-x^2}} \text{ or } \frac{d \cos^{-1}{u}}{dx} = -\frac{1}{\sqrt{1-u^2}}\frac{du}{dx}\]
+\[\frac{d \tan^{-1}{x}}{dx} = \frac{1}{1+x^2} \text{ or } \frac{d \tan^{-1}{u}}{dx} = \frac{1}{1+u^2}\frac{du}{dx}\]
+\[\frac{d \cot^{-1}{x}}{dx} = -\frac{1}{1+x^2} \text{ or } \frac{d \cot^{-1}{u}}{dx} = -\frac{1}{1+u^2}\frac{du}{dx}\]
+-----
 
 ## Integral Table (raw)
 
