@@ -548,25 +548,25 @@ Given two matrices, \(A, B\) where \(A\) is an \(i \times m\) matrix and \(B\) i
 \[c_{ij} = \sum_{k=1}^m (a_{ik}b_{kj}).\]
 In other words, we take the dot product of the *i*th row and the *j*th column.
 
-For example, the product of a pair of, \(2 \times 2\) matrices is:
-\[
-\begin{bmatrix}
-a_{11} & a_{12} \\
-a_{21} & a_{22}
-\end{bmatrix}
+For example, the product of a pair of, \(2 \times 2\) matrices is: 
 
-\begin{bmatrix}
-b_{11} & b_{12} \\
-b_{21} & b_{22}
-\end{bmatrix}
- =
-\begin{bmatrix}
-a_{11}b_{11}+a_{12}b_{21} & a_{11}b_{12}+a_{12}b_{22} \\
-a_{21}b_{11}+a_{22}b_{21} & a_{21}b_{12}+a_{12}b_{22}
-\end{bmatrix}
+\[
+\begin{bmatrix} 
+a_{11} & a_{12} \\ 
+a_{21} & a_{22} 
+\end{bmatrix} 
+\begin{bmatrix} 
+b_{11} & b_{12} \\ 
+b_{21} & b_{22} 
+\end{bmatrix} 
+= 
+\begin{bmatrix} 
+a_{11}b_{11}+a_{12}b_{21} & a_{11}b_{12}+a_{12}b_{22} \\ 
+a_{21}b_{11}+a_{22}b_{21} & a_{21}b_{12}+a_{12}b_{22} 
+\end{bmatrix} 
 \]
 
-The *identity* matrix \[I\] occupies the same position in matrix algebra that the value of unity does in ordinary algebra. It is a square matrix consisting of ones on the principle diagonal and zeros everywhere else:
+The *identity* matrix \(I\) occupies the same position in matrix algebra that the value of unity does in ordinary algebra. It is a square matrix consisting of ones on the principle diagonal and zeros everywhere else:
 \[I =
 \begin{bmatrix}
 1 & 0 & \dots & 0 \\
