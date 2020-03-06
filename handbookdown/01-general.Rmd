@@ -381,7 +381,7 @@ Exponent  Prefix  Abbreviation
 
 ## Greek Alphabet
 
-| Uppercase                   |                           | Lowercase                   |                           | Name    | Say         |
+| Uppercase                   | \(\LaTeX{}\) Command          | Lowercase                   |   \(\LaTeX{}\) Command       | Name    | Say         |
 |-----------------------------|---------------------------|-----------------------------|---------------------------|---------|-------------|
 | \(Α\)                         | Α                         | \(\alpha\)                    | \\alpha                   | Alpha   | æl-fə       |
 | \(Β\)                         | Β                         | \(\beta\)                     | \\beta                    | Beta    | bei-tə      |
