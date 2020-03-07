@@ -296,7 +296,6 @@ Flying four legs instead of three allows four separate calculations of wind spee
 
 #### Horseshoe Track GPS Method {-}
 
- 
   * Horseshoe track method
     * fly three legs with each perpedicular ground tracks, noting GPS ground speed on each
     * determine true airspeed by solving three equations in three unknowns
@@ -375,13 +374,18 @@ The "Windbox" method consists of flying four legs instead of three. The extra le
 
 
 ## Position Error FAR 23/25.1323 and .1325/JAR Certification
+
+![][04047]
+
 <!--- FIXME: This should be defined elsewhere --->
   * Requirements
     * Maximum error at sea level must be less than \(\pm 30 \textrm{ft}/100 \textrm{kts}\) between \(1.3 V_{SO}\) and \(1.8 V_{S1}\) 
     * \(V_{S0} = \) Full flap, gear down, power off, stall speed \)
     * \(V_{S1} = \) Stall speed in a specific configuration \)
 
-![][04033]
+![][04048]
+
+Errors must be equal to or less than \(\pm3\%\) of \(V_c\) or \(\pm5\textrm{kts}\) whichever is greater
 
 #### Mil Spec P-26292 C (USAF)
 Landing configuration: \(\Delta H_{pc} \pm 30\) ft.
@@ -399,6 +403,7 @@ Landing configuration: \(\Delta H_{pc} \pm 30\) ft.
 ![][04037]
 
 ![][04038]
+
 
 
 ## Effect of Errors on Calibrated Airspeed and Altitude
@@ -423,7 +428,7 @@ Landing configuration: \(\Delta H_{pc} \pm 30\) ft.
 [04010]: media/04/image10.svg {width="1.7715277777777778in" height="1.1388888888888888in"}
 [04011]: media/04/image11.svg {width="1.542361111111111in" height="1.0833333333333333in"}
 [04012]: media/04/image12.svg {width="1.4590277777777778in" height="0.5138888888888888in"}
-[04013]: media/04/image13.svg {width="4.9375in" height="3.1875in"}
+[04013]: media/04/image13.png {width="5.0in" height="0.82in"}
 [04014]: media/04/image14.svg {width="4.3125in" height="3.0in"}
 [04015]: media/04/image15.png {width="4.2034722222222225in" height="4.113194444444445in"}
 [04016]: media/04/image16.svg {width="4.4375in" height="1.375in"}
@@ -449,9 +454,9 @@ Landing configuration: \(\Delta H_{pc} \pm 30\) ft.
 [04036]: media/04/image52.svg {width="8.630718503937008in" height="6.446496062992126in"}
 [04037]: media/04/image53.png {width="8.686111111111112in" height="6.311805555555556in"}
 [04038]: media/04/image54.svg {width="9.316666666666666in" height="6.4215277777777775in"}
-[04039]: media/04/image55.svg {width="5.738194444444445in" height="8.6875in"}
+[04039]: media/04/image55.png {width="8.6875in" height="5.738194444444445in"} 
 [04040]: media/04/image56.svg {width="9.0in" height="5.7444444444444445in"}
-[04041]: media/04/image57.svg {width="5.338888888888889in" height="9.0in"}
+[04041]: media/04/image57.png {width="9.0in" height="5.338888888888889in"}
 [04042]: media/04/image58.svg {width="9.0in" height="6.511111111111111in"}
-[04100]: media/04/Picture1.svg
-[04101]: media/04/Picture2.svg
+[04047]: media/04/image47.svg
+[04048]: media/04/image48.svg
