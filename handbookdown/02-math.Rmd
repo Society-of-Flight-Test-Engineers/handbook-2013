@@ -29,7 +29,6 @@
 |\[ \left( \sqrt[x]{a} \right) \left( \sqrt[y]{a} \right) = a^{\left( \frac{1}{x} + \frac{1}{y} \right)} = \sqrt[xy]{a^{x+y}} \]||
 |\[ \sqrt{a} + \sqrt{b} = \sqrt{a + b + 2\sqrt{ab}}\]||
 
-
 Examples:
 \[
 \begin{array}{lllll}
@@ -49,7 +48,7 @@ log (6.54) = .8156 &&&&\\
 &log^{-1} (1.2745) &= \fbox{18.81}&&
 \end{array}
 \]
- 
+
 \[
 \begin{array}{lllll}
 \text{calculate } (.6831)^{1.53} &&&&\\
@@ -80,7 +79,7 @@ log (6.54) = .8156 &&&&\\
 
 ### Equations
 
-**Quadratic Equation**
+#### Quadratic Equation {-}
 
 \[ax^2 + bx + c =0\]
 
@@ -88,17 +87,17 @@ Two roots, both real or both complex
 
 \[x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\]
 
-**Cubic Equation**
+#### Cubic Equation {-}
 
 \[y^3 + py^2 + qy + r = 0\]
 
 Three roots, all real or one real & two complex
 
-Let \(y = x - \frac{p}{3}\) to rewrite equation in form of \(x^3 + ax + b = 0\) 
+Let \(y = x - \frac{p}{3}\) to rewrite equation in form of \(x^3 + ax + b = 0\)
 
-where \(a = \frac{3q - p^2}{3}\) and \(b = \frac{2p^3 - 9pq - 27r}{27}\) 
+where \(a = \frac{3q - p^2}{3}\) and \(b = \frac{2p^3 - 9pq - 27r}{27}\)
 
-let 
+let
 
 \[ A = \sqrt[3]{-\frac{b}{2} + \sqrt{\frac{b^2}{4} + \frac{a^3}{27}}}\]
 
@@ -106,7 +105,7 @@ and
 
 \[B =\sqrt[3]{-\frac{b}{2} - \sqrt{\frac{b^2}{4} + \frac{a^3}{27}}} \]
 
-then 
+then
 
 \[
 \begin{align}
@@ -122,28 +121,27 @@ If \(\frac{b^2}{4} + \frac{a^3}{27} < 0\) , then the real roots are
 
 \[x_{1,2,3} = 2 \sqrt{\frac{-a}{3}} cos \left( \frac{\phi}{3} + 120^{\circ} k \right)\]
 
-where \(k = 0,1,2\) 
+where \(k = 0,1,2\)
 
-and 
+and
 
 \[cos\phi = + \sqrt{\frac{ \frac{b^2}{4} }{ \frac{-a^3}{27} }} \;\;\;\text{if}\; b < 0\]
 
-or 
+or
 
 \[cos\phi = - \sqrt{\frac{ \frac{b^2}{4} }{ \frac{-a^3}{27} }} \;\;\;\text{if}\; b > 0\]
-
 
 If \(\frac{b^2}{4} + \frac{a^3}{27} > 0\) and \(a > 0\) , the single real root is
 
 \[x = 2 \sqrt{\frac{a}{3}} cot \left( 2\phi \right)\]
 
-where \(tan\phi = \sqrt[3]{tan\psi}\) 
+where \(tan\phi = \sqrt[3]{tan\psi}\)
 
-and 
+and
 
 \[ cot \left( 2\psi \right) = + \sqrt{\frac{ \frac{b^2}{4} }{ \frac{-a^3}{27} }} \;\;\;\text{if}\; b < 0\]
 
-or 
+or
 
 \[ cot \left( 2\psi \right) = - \sqrt{\frac{ \frac{b^2}{4} }{ \frac{-a^3}{27} }} \;\;\;\text{if}\; b < 0\]
 
@@ -151,18 +149,17 @@ If \( \frac{b^2}{4} + \frac{a^3}{27} = 0 \), the three real roots are
 
 \[ x_{1} = -2 \sqrt{\frac{-a}{3}}, \; x_{2,3} = +\sqrt{\frac{-a}{3}} \;\;\; \text{if} \; b > 0 \]
 
-or 
+or
 
 \[ x_{1} = +2 \sqrt{\frac{-a}{3}}, \; x_{2,3} = -\sqrt{\frac{-a}{3}} \;\;\; \text{if} \; b < 0 \]
 
+#### Quartic (biquadratic) Equation {-}
 
-**Quartic (biquadratic) Equation**
-
-For 
+For
 
 \[y^4 + py^3 + qy^2 + ry + s = 0\]
 
-let \(y = x - \frac{p}{4}\) to rewrite equation as 
+let \(y = x - \frac{p}{4}\) to rewrite equation as
 
 \[x^4 + ax^2 + bx + c = 0\]
 
@@ -185,15 +182,15 @@ Amount:
 
 \(P\) principal at \(i\) interest for \(n\) time accumulates to amount \(A_{n}\).
 
-Simple interest: 
+Simple interest:
 
 \[A_{n} = P(1 + ni)\]
 
-at interest compounded each \(n\) interval: 
+at interest compounded each \(n\) interval:
 
 \[A_{n} = P(1 + i)^n \]
 
-at interest compounded \(q\) times per \(n\) interval: 
+at interest compounded \(q\) times per \(n\) interval:
 
 \[A_{n} = P(1 + \frac{r}{q})^{nq} \]
 
@@ -204,14 +201,12 @@ Effective Interest:
 The rate per time period at which interest is earned during each period is called the effective rate \(i\).
 
 \[i = \left( 1 + \frac{r}{q} \right)^q -1\]
- 
 
 Solve above equations for \(P\) to determine investment required now to accumulate to amount \(A_{n}\)
 
-True discount, 
+True discount,
 
 \[D = A_{n} - P\]
-
 
 Annuities:
 
@@ -235,27 +230,19 @@ Present value of an annuity, \(A\) is the sum of the present values of all the f
 
 Monthly interest rate = \(MIR = \frac{ \text{annual interest rate} }{12} \)
 
- 
-
 Month Term = \# months in loan
 
- 
-
 Monthly payment = \( \left[ \text{amount financed} \right] \left[ \frac{MIR}{1 - \left( 1 + MIR \right)^{-\#months}} \right] \)
-
- 
 
 Final value (\(FV\)) of an investment is a function of the initial principal invested (P), interest rate (\(r\) expressed as \(.05\) for \(5%\), \(.1\) for \(10%\), etc.), time invested (\(Y\) typically years), and compounding periods per year (\(n\) typically \(n = 1\) for yearly or \(n = 12\) for monthly).
 
 \[FV   =   P (1  +  \frac{r}{n})^{Y_n}\]
 
- 
-
 ## Geometry
 
 (references 2.1, 2.2)
 
-**General definitions**
+### General definitions {-}
 
 | Symbol       | Definition                                   |
 |:-------------|:---------------------------------------------|
@@ -271,7 +258,7 @@ Final value (\(FV\)) of an investment is a function of the initial principal inv
 | \(x, y, z \) | distances along orthogonal coordinate system |
 | \(\beta\)    | interior vertex angle                        |
 
-**Triangle**
+#### Triangle {-}
 
 \[
 \begin{align}
@@ -280,7 +267,7 @@ A &= \frac{bh}{2}\\
 \end{align}
 \]
 
-**Rectangle**
+#### Rectangle {-}
 
 \[
 \begin{align}
@@ -289,16 +276,15 @@ A &= bh\\
 \end{align}
 \]
 
-**Parallelogram (opposite sides parallel)**
+#### Parallelogram (opposite sides parallel) {-}
 
 \[ A = ah = ab \sin \beta \]
 
-
-**Trapezoid (4 sides, 2 parallel)**
+#### Trapezoid (4 sides, 2 parallel) {-}
 
 \[ A = \frac{h \left(a + b \right)}{2} \]
 
-**Pentagon, Hexagon, and other \(n\)-sided Polygons**
+#### Pentagon, Hexagon, and other \(n\)-sided Polygons {-}
 
 \begin{align}
 A &= \frac{1}{4} n a^2 \cot \left( \frac{180^{\circ}}{n} \right) \\
@@ -308,8 +294,7 @@ r &= \text{radius of inscribed circle} = \frac{1}{2} a \cot \left( \frac{180^{\c
 \text{sum of interior angles} &= n 180^{\circ} - 360^{\circ} \\
 \end{align}
 
-
-**Circle**
+#### Circle  {-}
 
 \begin{align}
 A &= \pi R^2 \\
@@ -321,7 +306,7 @@ C &= 2 \pi R = \pi D \\
 R^2  &= \left(x-h \right)^2  + \left(y-k \right)^2 \\
 \end{align}
 
-**Ellipse**
+#### Ellipse {-}
 
 \begin{align}
 f &= \text{semimajor axis} \\
@@ -335,7 +320,7 @@ A &= \pi e f \\
 \text{latus rectum} &= \frac{2g^2}{a} \\
 \end{align}
 
-**Parabola**
+#### Parabola {-}
 
 \begin{align}
 p &= \text{distance from vertex to focus} \\
@@ -348,7 +333,7 @@ e &= \text{eccentricity} = 1 \\
 
 ![Parabola Diagram][02021]
 
-**Hyperbola**
+#### Hyperbola {-}
 
 \begin{align}
 p &= \text{distance between center and vertex} \\
@@ -361,7 +346,7 @@ e &= \text{eccentricity} = \frac{ \sqrt{p^2 +q^2} }{p} \\
 
 ![Hyperbola Diagram][02022]
 
-**Sphere**
+#### Sphere {-}
 
 \begin{align}
 A &= 4 \pi R^2 \\
@@ -370,7 +355,7 @@ V &= \frac{4}{3} \pi R^3 \\
 x^2 + y^2 + z^2 &= R^2 \\
 \end{align}
 
-**Torus**
+#### Torus {-}
 
 \begin{align}
 \rho &= \text{smaller radius} \\
@@ -378,249 +363,257 @@ A &= 4 \pi ^2 R \rho \\
 V &= 2 \pi ^2 R \rho^2 \\
 \end{align}
 
-## Trigonometery (raw)
+## Trigonometery
 
 (references 2.1, 2.2)
 
-For any right triangle with hypotenuse *h*, an acute angle α, side length *o* opposite from α, and side length *a* adjacent to α, the following terms are defined:
+![Right Triangle][02023]
 
-sine α = sin  α = *o/h*
+For any right triangle with hypotenuse \(h\), an acute angle \(\alpha\), side length \(o\) opposite from \(\alpha\), and side length \(a\) adjacent to \(\alpha\), the following terms are defined:
 
-cosine α = cos α = *a/h*
-
-tangent α = tan α = *o/a* = sin α /cos α
-
-cotangent α = cot α = ctn α = *a/o =* 1/tan α = cos  α /sin  α
-
-secant α = sec α = *h/a =* 1/cos α
-
-cosecant α = csc α = *h/o =* 1/sin α
-
-exsecant α = exsec α = sec α -1
-
-versine α = vers α = 1-cos α
-
-coversine α = covers α = 1-sin α
-
-haversine α = hav α = (vers α )/2
-
-![][02023]
+\[
+\begin{align}
+\text{sine } \alpha &= \sin{\alpha} = \frac{o}{h} \\
+\text{cosine } \alpha &= \cos{\alpha} = \frac{a}{h} \\
+\text{tangent } \alpha &= \tan{\alpha} = \frac{o}{a} = \frac{\sin{\alpha}}{cos{\alpha}} \\
+\text{cotangent } \alpha &= \cot{\alpha} = \text{ctn } \alpha = \frac{a}{o} = \frac{1}{\tan{\alpha}} = \frac{\cos{\alpha}}{\sin{\alpha}} \\
+\text{secant } \alpha &= \sec{\alpha} = \frac{h}{a} = \frac{1}{\cos{\alpha}} \\
+\text{cosecant } \alpha &= \csc{\alpha} = \frac{h}{o} = \frac{1}{\sin{\alpha}} \\
+\text{exsecant } \alpha &= \text{exsec } \alpha = \sec{\alpha} - 1 \\
+\text{versine } \alpha &= \text{vers } \alpha = 1 - \cos{\alpha} \\
+\text{coversine } \alpha &= \text{covers } \alpha = 1 - \sin{\alpha} \\
+\text{haversine } \alpha &= \text{hav } \alpha = \frac{\text{vers } \alpha}{2} \\
+\end{align}
+\]
 
 also defined are the following...
 
-hyperbolic sine of *x* = sinh *x* = (*e^x  -- e^{-x} *)/2
+\[
+\begin{align}
+\text{hyperbolic sine of } x &= \sinh{x} = \frac{e^x - e^{-x}}{2} \\
+\text{hyperbolic cosine of } x &= \cosh{x} = \frac{e^x + e^{-x}}{2} \\
+\text{hyperbolic tangent of } x &= \tanh{x} = \frac{\sinh{x}}{\cosh{x}} = \frac{e^x - e^{-x}}{e^x + e^{-x}} \\
+\text{csch } x &= \frac{1}{\sinh{x}} \\
+\text{sech } x &= \frac{1}{\cosh{x}} \\
+\text{coth } x &= \frac{1}{\tanh{x}} \\
+\end{align}
+\]
 
-hyperbolic cosine of *x* = cosh *x* = (*e^x  + e^{-x} *)/2
+### Identities {-}
 
-hyperbolic tangent of *x* = tanh *x* = sinh *x*/cosh *x*
+#### Pythagorean Identities: {-}
 
-csch *x* = 1/sinh *x*
+\[
+\begin{align}
+\sin^2{\alpha} + \cos^2{\alpha} &= 1 \\
+1 + \tan^2{\alpha} &= \sec^2{\alpha} \\
+1 + \cot^2{\alpha} &= \csc^2{\alpha} \\
+\end{align}
+\]
 
-sech *x* = 1/cosh *x*
+#### Half Angle Identities: {-}
 
-coth *x* = 1/tanh *x*
+\[
+\begin{align}
+\sin{\frac{\alpha}{2}} &= \pm \sqrt{\frac{1 - \cos{\alpha}}{2}} \text{ (negative if } \frac{\alpha}{2} \text{ is in quadrant III or IV)}\\
+\cos{\frac{\alpha}{2}} &= \pm \sqrt{\frac{1 + \cos{\alpha}}{2}} \text{ (negative if } \frac{\alpha}{2} \text{ is in quadrant II or III)}\\
+\tan{\frac{\alpha}{2}} &= \pm \sqrt{\frac{1 - \cos{\alpha}}{1 + \cos{\alpha}}} \text{ (negative if } \frac{\alpha}{2} \text{ is in quadrant II or IV)}\\
+\end{align}
+\]
 
-**IDENTITIES**
+#### Double-Angle Identities: {-}
 
-Pythagorean Identities:
+\[
+\begin{align}
+\sin{2\alpha} &= 2\sin{\alpha}\cos{\alpha}\\
+\cos{2\alpha} &= 2\cos^2{\alpha} - 1 = 1 - 2\sin^2{\alpha} = \cos^2{\alpha} - \sin^2{\alpha}\\
+\tan{2\alpha} &= \frac{2\tan{\alpha}}{1 - \tan^2{\alpha}}\\
+\end{align}
+\]
 
-sin^2  α + cos^2  α = 1
+#### n-Angle Identities: {-}
 
-1 + tan^2  α = sec^2  α
+\[
+\begin{align}
+\sin{3\alpha} &= 3\sin{\alpha} - 4\sin^3{\alpha}\\
+\cos{3\alpha} &= 4\cos^3{\alpha} - 3\cos{\alpha}\\
+\sin{n\alpha} &= 2\sin\big(\left(n-1\right)\alpha\big) \cos{\alpha} - \sin(n-2)\alpha\\
+\cos{n\alpha} &= 2\cos\big(\left(n-1\right)\alpha\big) \cos{\alpha} - \cos\left(n-2\right)\alpha\\
+\end{align}
+\]
 
-1+ cot^2  α = csc^2  α
+#### Two-Angle Identities: {-}
 
-Half Angle Identities:
+\[
+\begin{align}
+\sin\left(\alpha + \beta\right) &= \sin{\alpha}\cos{\beta} + \cos{\alpha}\sin{\beta}\\
+\cos\left(\alpha + \beta\right) &= \cos{\alpha}\cos{\beta} - \sin{\alpha}\sin{\beta}\\
+\tan\left(\alpha + \beta\right) &= \frac{\tan{\alpha} + \tan{\beta}}{1 - \tan{\alpha}\tan{\beta}}\\
+\sin\left(\alpha - \beta\right) &= \sin{\alpha}\cos{\beta} - \cos{\alpha}\sin{\beta}\\
+\cos\left(\alpha - \beta\right) &= \cos{\alpha}\cos{\beta} + \sin{\alpha}\sin{\beta}\\
+\tan\left(\alpha - \beta\right) &= \frac{\tan{\alpha} - \tan{\beta}}{1 + \tan{\alpha}\tan{\beta}}\\
+\end{align}
+\]
 
-sin \[α/2\] = +/- \[(1 - cos α)/2\]^1/2^
+#### Sum and Difference Identities: {-}
 
-(negative if \[α/2\] is in quadrant III or IV)
+\[
+\begin{align}
+\sin{\alpha} + \sin{\beta} &=  2\sin{\frac{\alpha + \beta}{2}}\cos{\frac{\alpha - \beta}{2}}\\
+\sin{\alpha} - \sin{\beta} &=  2\cos{\frac{\alpha + \beta}{2}}\sin{\frac{\alpha - \beta}{2}}\\
+\cos{\alpha} + \cos{\beta} &=  2\cos{\frac{\alpha + \beta}{2}}\sin{\frac{\alpha - \beta}{2}}\\
+\cos{\alpha} - \cos{\beta} &= -2\cos{\frac{\alpha + \beta}{2}}\sin{\frac{\alpha - \beta}{2}}\\
+\tan{\alpha} + \tan{\beta} &=  \frac{\sin\left(\alpha + \beta\right)}{\cos{\alpha}\cos{\beta}}\\
+\cot{\alpha} + \cot{\beta} &=  \frac{\sin\left(\alpha + \beta\right)}{\sin{\alpha}\sin{\beta}}\\
+\tan{\alpha} - \tan{\beta} &=  \frac{\sin\left(\alpha - \beta\right)}{\cos{\alpha}\cos{\beta}}\\
+\cot{\alpha} - \cot{\beta} &= -\frac{\sin\left(\alpha - \beta\right)}{\sin{\alpha}\sin{\beta}}\\
+\sin^2{\alpha} - \sin^2{\beta} &=  \sin\left(\alpha + \beta\right) \sin\left(\alpha - \beta\right)\\
+\cos^2{\alpha} - \cos^2{\beta} &= -\sin\left(\alpha + \beta\right) \sin\left(\alpha - \beta\right)\\
+\cos^2{\alpha} - \sin^2{\beta} &=  \cos\left(\alpha + \beta\right) \cos\left(\alpha - \beta\right)\\
+\end{align}
+\]
 
-cos \[α/2\] = +/- \[(1 + cos α)/2\]^1/2^
+#### Power Identities: {-}
 
-(negative if \[α/2\] is in quadrant II or III)
+\[
+\begin{align}
+\sin{\alpha}\sin{\beta} &= \frac{\cos\left(\alpha - \beta\right) - \cos\left(\alpha + \beta\right)}{2}\\
+\cos{\alpha}\cos{\beta} &= \frac{\cos\left(\alpha - \beta\right) + \cos\left(\alpha + \beta\right)}{2}\\
+\sin{\alpha}\cos{\beta} &= \frac{\sin\left(\alpha + \beta\right) + \sin\left(\alpha - \beta\right)}{2}\\
+\cos{\alpha}\sin{\beta} &= \frac{\sin\left(\alpha + \beta\right) - \sin\left(\alpha - \beta\right)}{2}\\
+\tan{\alpha}\cot{\alpha} &= \sin{\alpha}\csc{\alpha} = \cos{\alpha}\sec{\alpha} = 1\\
+\sin^2{\alpha} &= \frac{1 - \cos{2\alpha}}{2}\\
+\cos^2{\alpha} &= \frac{1 + \cos{2\alpha}}{2}\\
+\sin^3{\alpha} &= \frac{3\sin{\alpha} - \sin{3\alpha}}{4}\\
+\cos^3{\alpha} &= \frac{3\cos{\alpha} + \cos{3\alpha}}{4}\\
+\sin^4{\alpha} &= \frac{3 - 4\cos{2\alpha} + \cos{4\alpha}}{8}\\
+\cos^4{\alpha} &= \frac{3 + 4\cos{2\alpha} + \cos{4\alpha}}{8}\\
+\sin^5{\alpha} &= \frac{10\sin{\alpha} - 5\sin{3\alpha} + \sin{5\alpha}}{16}\\
+\cos^5{\alpha} &= \frac{10\cos{\alpha} + 5\cos{3\alpha} + \cos{5\alpha}}{16}\\
+\end{align}
+\]
 
-tan \[α/2\] = +/- \[(1 - cos α)/(1+cos α)\]^1/2^
-
-(negative if \[α/2\] is in quadrant II or IV)
-
-Double-Angle Identities
-
-sin 2α = 2sin α cos α
-
-cos 2α = 2cos^2  α --1 = 1-2sin^2  α = cos^2  α - sin^2  α
-
-tan 2α = 2tan α /\[1-tan^2  α\]
-
-n --Angle Identities:
-
-sin 3α == 3sin α -- 4sin^3  α
-
-cos 3α = 4cos^3  α -- 3cos α
-
-sin nα = 2sin (n-1)α cos α -- sin (n-2)α
-
-cos nα = 2cos (n-1)α cos α -- cos (n-2)α
-
-Two-Angle Identities:
-
-sin (α+β) = sin α cos β + cos α sin β
-
-cos (α+β) = cos α cos β -- sin α sin β
-
-tan (α+β) = \[tan α + tan β\]/\[1- tan α tan β\]
-
-sin (α-β) = sin α cos β - cos α sin β
-
-cos (α-β) = cos α cos β + sin α sin β
-
-tan (α-β) = \[tan α - tan β\]/\[1+ tan α tan β\]
-
-Sum and Difference Identities:
-
-sin α + sin β = 2sin \[(α+β)/2\] cos \[(α-β)/2\]
-
-sin α -- sin β = 2cos{(α+ β)/2\] sin {(α- β)/2\]
-
-cos α+ cos β = 2cos \[(α+β)/2\] sin \[(α-β)/2\]
-
-cos α -cos β = -2cos \[(α+β)/2\] sin \[(α-β)/2\]
-
-tan α + tan β = \[sin (α + β)\]/\[cos α cos β\]
-
-cot α + cot β = \[sin (α + β)\]/\[sin α sin β\]
-
-tan α - tan β = \[sin (α - β)\]/\[cos α cos β\]
-
-cot α - cot β = -\[sin (α - β)\]/\[sin α sin β\]
-
-sin^2  α -- sin^2  β = sin (α+β) sin (α-β)
-
-cos^2  α -- cos^2  β = -sin (α+β) sin (α-β)
-
-cos^2  α -- sin^2  β = cos (α+β) cos (α-β)
-
-Power Identities:
-
-sin α sin β = \[cos (α-β) - cos (α+β)\]/2
-
-cos α cos β = \[cos (α-β) + cos (α+β)\]/2
-
-sin α cos β = \[sin (α+β) + sin (α-β)\]/2
-
-cos α sin β = \[sin (α+β) - sin (α-β)\]/2
-
-tan α cot α = sin α csc α = cos α sec α = 1
-
-sin^2  α = \[1-cos2α\]/2
-
-cos^2  α= \[1+cos2α\]/2
-
-sin^3  α = \[3 sin α-- sin 3α\]/4
-
-cos^3  α = \[3 cos α + cos 3α\]/4
-
-sin^4  α = \[3 - 4cos 2α + cos 4α\]/8
-
-cos^4  α = \[3 + 4cos 2α + cos 4α\]/8
-
-sin^5  α = \[10sin α --5sin 3α +sin5α\]/16
-
-cos^5  α = \[10cos α + 5cos 3α + cos5α\]/16
-
-OBLIQUE TRIANGLES
+#### OBLIQUE TRIANGLES {-}
 
 (no right angle, angles A,B,C are opposite of legs a,b,c)
 
-Law of Sines: a/sin A = b/sinB = c/sinC
+![Oblique Triangle][02024]
 
-Law of Cosines:
+##### Law of Sines:  {-}
 
-a^2  = b^2  + c^2  -- 2bc cos A
+\[\frac{a}{\sin{A}} = \frac{b}{\sin{B}} = \frac{c}{\sin{C}}\]
 
-b^2  = a^2  + c^2  -- 2ac cos B
+##### Law of Cosines: {-}
 
-c^2  = a^2  + b^2  -- 2ab cos C
+\[
+\begin{align}
+a^2  &= b^2  + c^2  - 2bc\cos{A}\\
+b^2  &= a^2  + c^2  - 2ac\cos{B}\\
+c^2  &= a^2  + b^2  - 2ab\cos{C}\\
+\cos{C} &= \frac{a^2 +b^2 -c^2}{2ab}\\
+\end{align}
+\]
 
-C = cos^{-1} \[(a^2 +b^2 -c^2 )/2ab\]
+##### Law of Tangents: {-}
 
-![][02024]
+\[\frac{a-b}{a+b} = \frac{\tan\frac{a-b}{2}}{\tan\frac{a+b}{2}}\]
 
-Law of Tangents:
+##### Projection Formulas: {-}
 
-\[a-b\]/\[a+b\] = \[tan ({a-b}/2\]/ \[tan ({a+b}/2\]
+\[
+\begin{align}
+a &= b\cos{C} + c\cos{B}\\
+b &= c\cos{A} + a\cos{C}\\
+c &= a\cos{B} + b\cos{A}\\
+\end{align}
+\]
 
-Projection Formulas:
+##### Mollweide's Check Formulas: {-}
 
-a = b cos C + c cosB
+\[
+\begin{align}
+\frac{a-b}{c} = \frac{\sin\frac{A-B}{2}}{\cos\frac{C}{2}}\\
+\frac{a+b}{c} = \frac{\cos\frac{A-B}{2}}{\sin\frac{C}{2}}\\
+\end{align}
+\]
 
-b =c cos A + a cos C
+## Matrix Algebra 
 
-c = a cos B + b cos A
-
-Mollweide's Check Formulas:
-
-\[a-b\]/c = \[sin ({A-B}/2)\]/ cos (C/2)
-
-\[a+b\]/c = \[cos ({A-B}/2)\]/ sin (C/2)
-
-## Matrix Algebra (raw)
+### Fundamentals
 
 (reference 2.5)
 
-Matrix **multiplication** can be defined for any two matrices only whe the number of columns of the first is equal to the number of rows of the second matrix. Multiplication is not defined for other matrices.
+Given two matrices, \(A, B\) where \(A\) is an \(i \times m\) matrix and \(B\) is an \(m \times j\) matrix, that is, the numbers of columns of the first matrix equals the number of rows of the second matrix, we define matrix multiplication as follows:
+\[A \times B = A B = C\] where the entry in the *i*th row and *j*th column is given by \(c_{ij}\) where:
+\[c_{ij} = \sum_{k=1}^m (a_{ik}b_{kj}).\]
+In other words, we take the dot product of the *i*th row and the *j*th column.
 
-\[*A*\]\[*B*\] = \[*C*\]
+For example, the product of a pair of, \(2 \times 2\) matrices is: 
 
-\[*a~im~*\]\[*b~mj~*\] = \[*c~ij~*\]
+\[
+\begin{bmatrix} 
+a_{11} & a_{12} \\ 
+a_{21} & a_{22} 
+\end{bmatrix} 
+\begin{bmatrix} 
+b_{11} & b_{12} \\ 
+b_{21} & b_{22} 
+\end{bmatrix} 
+= 
+\begin{bmatrix} 
+a_{11}b_{11}+a_{12}b_{21} & a_{11}b_{12}+a_{12}b_{22} \\ 
+a_{21}b_{11}+a_{22}b_{21} & a_{21}b_{12}+a_{12}b_{22} 
+\end{bmatrix} 
+\]
 
-The product of a pair of, 2 × 2 matrices is:
+The *identity* matrix \(I\) occupies the same position in matrix algebra that the value of unity does in ordinary algebra. It is a square matrix consisting of ones on the principle diagonal and zeros everywhere else:
+\[I =
+\begin{bmatrix}
+1 & 0 & \dots & 0 \\
+0 & 1 & \dots & 0 \\
+\vdots & \vdots & \ddots & \vdots\\
+0 & 0 & \dots & 1
+\end{bmatrix}
+\]
 
-![][02025]
+For any matrix \(A\), \(A I = I A = A\).
 
-The **identity** (or [unit]{.underline}) matrix \[*I*\] occupies the same position in matrix algebra that the value of unity does in ordinary algebra. That is, for any matrix
+The *inverse* matrix \(A^{-1}\), if it exists, is the multiplicative inverse under matrix multiplication. That is, 
+\[A A^{-1} = A^{-1}A = I.\]
 
-[]{.underline}![][02026]
+### Cofactors and Determinants
 
-\[*A*\]: \[*I*\]\[*A*\] = \[*A*\]\[*I*\] = \[*A*\]
+We denote the *determinant* of a square matrix by \(|A|\). For a two-by-two matrix, the determinant is as follows:
+\[
+\begin{vmatrix}
+a & b \\
+c & d
+\end{vmatrix} = ad - bc.
+\]
 
-The identity \[*I*\] is a square matrix consisting of ones on the principle diagonal and zeros everywhere else; i.e.:
+Formally, for any \(n \times n\) matrix, the determinant is:
+\[|A| = \sum_{i=1}^{k}a_{ij} C_{ij} \] where
+\[C_{ij} = (-1)^{i+j}M_{ij}\] where
+the minor matrix \(M_{ij}\) is in the \((n-1) \times (n-1)\) matrix resulting when the *i*th row and *j*th column are removed from \(A\).  This holds when the sum above is taken over any row, \(i\), or column \(j\). The *cofactor* is \(C_{ij}\) above.
 
-*a* ⋅ *α*^{-1}  = *α*^{1-1}  = *α*^{0}  = 1
+Arbitrarily expanding about the first row of a 3 x 3 matrix gives the determinant:
 
-In the same way, the matrix \[*A*\]^{-1}  is called the inverse matrix of \[*A*\] since:
+\[|A| = (-1)^{1+1} a_{11} \begin{vmatrix}
+a_{22} & a_{23} \\
+a_{32} & a_{33}
+\end{vmatrix} 
++ (-1)^{1+2}a_{12} \begin{vmatrix}
+a_{21} & a_{23} \\
+a_{22} & a_{33}
+\end{vmatrix} 
++ (-1)^{1+3}a_{13}\begin{vmatrix}
+a_{21} & a_{22} \\
+a_{22} & a_{23}
+\end{vmatrix}.\]
 
-\[*A*\]\[*A*\]^{-1}  = \[*A*\]^{-1} \[*A*\] = \[*A*\]^{0}  = \[*I*\]
+### Computing the Inverse of a Matrix (raw)
 
-Cofactors and Determinates
-
-
-![][02027]
-
-
-The signed minor, with the sign determined by the sum of the row and column, is called the **cofactor** of *a~ij~* and is denoted by:
-
-*A~ij~* = (−1)*^i+j^ Μ~ij~*
-
-The value of the **determinant** is equal to the sum of the products of the
-
-elements of any single row or column and their respective cofactors.
-
-Arbitrarily expanding about the first row of a 3 x 3 matrix gives the
-
-determinant:
-
-\|*A*\| = *a~11~A~11~ + a~12~A~12~ + a~13~A~13~ =*
-
-![][02028]
-
-which expands to give the final solution:
-
-\|*A*\| = *a*~11~(*a*~22~ *a*~33~ − *a*~23~ *a*~32~) − *a*~12~(*a*~21~ *a*~33~ − *a*~23~ *a*~31~) + *a*~13~(*a*~21~ *a*~32~ − *a*~22~ *a*~31~) 
-
-There is a straightforward four-step method for computing the **inverse** of a
-
-given matrix \[*A*\]:
+There is a straightforward (but computationally inefficient and intensive) four-step method for computing the *inverse* of a matrix \[A\].
 
 **Step 1** Compute the determinant of \[*A*\]. This determinant is written \|*A*\|. If the determinant is zero or does not exist, the matrix \[*A*\] is defined as singular and an inverse cannot be found.
 
@@ -672,7 +665,7 @@ if *y*~1~ = 1, *y*~2~ = 13, and *y*~3~ = 8
 
 ![][02034]
 
-**Cramer's Rule**
+### Cramer's Rule {-} (raw)
 
 Given matrices A{x} = {b}
 
@@ -691,17 +684,20 @@ Example of Cramer's Rule
 (reference 2.5)
 
 ### Addition
+
 Given vectors \(\bar{A}\) and \(\bar{B}\), where the \(i\)th component of \(\bar{A}\) is given by \(a_i\), we define addition \(\bar{A} + \bar{B}\) component-wise, such that the \(i\)th component of \(\bar{A} + \bar{B}\) is given by \(a_i + b_i\).
 
 ![][02038]
 
 ### Subtraction
+
 We define vector subtraction just as we defined vector addition above.
 
 ![][02039]
 
 ### Scalar Multiplication
-Given a real number, \(m\), and vectors \(\bar{A}\) and \(\bar{B}\), where the *i*th component of \(\bar{A}\) is given by \(a_i\), we define scalar multiplication \(m \bar{A}\) component-wise, such that the *i*th component of \(m \bar{A}\) is given by \(m a_i\). 
+
+Given a real number, \(m\), and vectors \(\bar{A}\) and \(\bar{B}\), where the *i*th component of \(\bar{A}\) is given by \(a_i\), we define scalar multiplication \(m \bar{A}\) component-wise, such that the *i*th component of \(m \bar{A}\) is given by \(m a_i\).
 
 When \(m\) and \(a+i\) are real numbers, the usual properties apply:
 
@@ -720,6 +716,7 @@ When \(a+i\) are real numbers, we have the following properties that apply to *v
 **Distributive** \(m (\bar{A} + \bar{B}) = m \bar{A} + m \bar{B}\).
 
 ### Dot Product
+
 Given vectors \(\bar{A}\) and \(\bar{B}\), where the \(i\)th component of \(\bar{A}\) is given by \(a_i\) and the vectors have the same dimension, \(n\), we define the dot product \(\bar{A} \cdot \bar{B}\) as follows:
 \[\bar{A} \cdot \bar{B} = \sum_{i=1}^{n}a_i b_i .\]
 For example, given three-dimensional vectors, we have:
@@ -727,7 +724,8 @@ For example, given three-dimensional vectors, we have:
 The terms dot product, scalar product, and inner product usually mean the same thing.
 
 ### Norm
-The norm or vector norm, denoted 
+
+The norm or vector norm, denoted
 \[ \left| \bar{A} \right|,\]
 is the magnitude of the vector. We compute it thus:
 \[ \left| \bar{A} \right| = \sqrt{\sum_{i=1}^{n} a_i^2} .\].
@@ -740,6 +738,7 @@ With this additional notation, we can also define the **dot product** this way:
 where \(\theta\) is the angle between the vectors.
 
 ### Vector Cross Product
+
 The cross product is an operation on vectors in three dimensional space denoted \(\bar{A} \times \bar{B} .\) We can define it in terms of matrix determinants in the following way.
 \[ \bar{A} \times \bar{B} = \begin{vmatrix}
 \hat{i} & \hat{j} & \hat{k}\\
@@ -768,13 +767,14 @@ b_x & b_y
 ![][02049]
 
 ### Vector Differentiation
+
 Let \(\vec{r}(t)\) be a vector-valued function, denoted in this way: \(\vec{r}(t) = (x(t),y(t))\), which is an example of a function that returns a position vector.  A similar and equivalent notation is as follows: \(\vec{r}(t) = x(t)\hat{i} + y(t)\hat{j}\).
 
 The first derivative of \(\vec{r}(t)\) with respect to time, \(t\), is a vector-valued function that denotes velocity. This function returns a vector tangential to the trajectory with a magnitude equal to the speed of the particle.
 
 The second derivative of \(\vec{r}(t)\) with respect to time, \(t\), is a vector-valued function that denotes acceleration. This function returns a vector tangential to the velocity vector with a magnitude equal to the acceleration of the particle.
 
-With this notation, the normal differenation operations hold for vector-valued *functions* along with the following. 
+With this notation, the normal differenation operations hold for vector-valued *functions* along with the following.
 
 **Derivative of a Sum**
 \[\frac{d}{dt}\left( \vec{r}(t) + \vec{s}(t) \right) = \frac{d}{dt}\vec{r}(t) + \frac{d}{dt}\vec{s}(t).\]
@@ -816,7 +816,7 @@ These velocities can be related by noting that \(\bar{r} = \bar{R} + \bar{\rho}\
 Taking the derivative with respect to time for the \(A\) reference:
 \[\bar{V}_A = \left(\frac{d \bar{r}}{dt}  \right)_A = \left( \frac{d \bar{R}}{dt} \right)_A + \left( \frac{d \bar{\rho}}{dt} \right)_A\]
 
-The term \(\left(\frac{d \bar{r}}{dt}  \right)_A \) is the velocity of the origin of \(B\) reference relative to the \(A\) reference.  We denote 
+The term \(\left(\frac{d \bar{r}}{dt}  \right)_A \) is the velocity of the origin of \(B\) reference relative to the \(A\) reference.  We denote
 \[\left(\frac{d \bar{r}}{dt}  \right)_A = \dot{\overline{R}}.\]
 
 Substituting for \(\left( \frac{d \bar{\rho}}{dt} \right)_A\) gives the following:
@@ -838,7 +838,7 @@ Reference A can be considered the inertial frame while the body can be equivalen
 
 A derivation similar to the previous gives us the following for
 velocity:
-\[\dot{\bar{\rho}} = \bar{\omega} \times \bar{\rho},\] 
+\[\dot{\bar{\rho}} = \bar{\omega} \times \bar{\rho},\]
 
 and acceleration:
 \[\bar{a}_b = \bar{a}_a + (\dot{\bar{\omega}} \times \bar{\rho}) + \bar{\omega} \times (\bar{\omega} \times \bar{\rho}).\]
@@ -882,7 +882,7 @@ Sample Standard Deviation:
 The probability of any outcome in a given set is the same.  If there are \(N\) possible outcomes in a set, then the probability of a given outcome is \(p=1/N\). For example, when rolling a fair dice with \(N=6\) sides, the probability that the toss will result in any given side is \(p = 1/6\).
 
 ***Binomial***
-The probability that the random variable \(X = x\) in \(N\) independent events, each having probability \(p\) of success, and \(1-p\) of failure. 
+The probability that the random variable \(X = x\) in \(N\) independent events, each having probability \(p\) of success, and \(1-p\) of failure.
 \[P(X = k) = \binom{N}{k}p^x (1-p)^{N-x}\] where
 \[\binom{N}{k} = \frac{N!}{k!(N-k)!}.\]
 
@@ -895,7 +895,7 @@ For example, tossing a fair coin N times where \(p = 1/2\) is the probability of
 |\(3\)| \(1/4\)|
 |\(4\)| \(1/16\)|
 
-**Continuous Distributions** 
+**Continuous Distributions**
 Continuous distributions are defined for all \(x \in [a,b]\), where \(a, b \in \mathbb{R}\) or for all \(x \in (-\infty, \infty)\), that is, the whole real number line. The probability for any single point is zero; that is, \(P(X=x) = 0\). Instead, one must work with probability on an interval, e.g., \(P(0 < x)\) or \(P(a < x < b)\).
 
 **The Normal Distribution**
@@ -905,21 +905,21 @@ The probability density function of the Normal Distribution is given by:
 **The Standard Normal Distribution**
 The Standard Normal Distribution is simply the Normal Distribution with \(\mu = 0\) and \(\sigma=1\).
 
-**Error Probable** 
+**Error Probable**
 An interval centered at the mean that contains one-half of the distribution.
 
 **Circular Error Probable**
 A circle centered at the mean, in a bivariate normal distribution, that contains one-half of the distribution.
 
 **Confidence Intervals**
-An interval estimate of a statistic.  
+An interval estimate of a statistic.
 
-**Central Limit Theorem** 
+**Central Limit Theorem**
 The sample mean of data sampled from a normally distributed population is itself normally distributed with mean, \(\mu\), and variance, \(\sigma^2/\sqrt{n}\), where the population distribution is \(N(\mu,\sigma^2)\) and \(n\) is the sample size and usually \(n \geq 30\).
 
 **Hypothesis Testing** Begins with an assumption (hypothesis), usually about the underlying population distribution of some measured quantity or computed error. Select values for the hypothesis and alternate hypothesis(es) that partition the sample space. Collect N samples of the population test statistic or parameter. There are two types of errors: Type 1 errors reject the hypothesis when it is true; Type II accept the hypothesis when in is false.
 
-## Standard Series (raw)
+## Standard Series
 
 (reference 2.4)
 
@@ -948,20 +948,57 @@ When \(x > 1/2\):
 When \(0 < x\):
 \[\ln x = 2 \left[ \frac{(x-1)}{x+1} - \frac{(x-1)^3}{3(x+1)^3} + \frac{(x-1)^5}{5(x-1)^5} + \dots \right]\]
 
+The following are Taylor Series expansion of *Trigonometric* functions:
+\[\sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} -\frac{x^7}{7!}+ \dots\]
+\[\cos x = x - \frac{x^2}{2!} + \frac{x^4}{4!} -\frac{x^6}{6!}+ \dots\]
+\[\tan x = x + \frac{x^3}{3} + \frac{2x^5}{15} + \frac{17x^7}{315}+ \dots \text{ whenever } (x^2 < \pi^2/4)\]
+\[\sin^{-1} x = x + \frac{1}{2}\frac{x^3}{3} + \frac{1}{2}\frac{3}{4}\frac{x^5}{5} + \frac{1}{2}\frac{3}{4}\frac{5}{6}\frac{x^7}{7!} + \dots \text{for } |x|<1\]
+\[\cos^{-1} x = \frac{\pi}{2} - \sin^{-1}x \text{ for } |x|<1\]
+\[\tan^{-1} x = x - \frac{x^3}{3!} + \frac{x^5}{5!} -\frac{x^7}{7!} + \dots\text{ for } |x|<1\]
+\[\ln(\sin x) = \ln x - \frac{x^2}{6} - \frac{x^4}{180} - \frac{x^6}{2835}- \dots \text{for } x^2 < \pi^2\]
+\[\ln(\cos x) = - \frac{x^2}{s} - \frac{x^4}{12} - \frac{x^6}{45} - \frac{x^8}{2520} \dots \text{for } x^2 < \frac{\pi^2}{4}\]
+\[\ln(\tan x) = \ln x + \frac{x^2}{3} - \frac{7x^4}{90} - \frac{62x^6}{2835}+ \dots \text{for } x^2 < \frac{\pi^2}{4}\]
+\[e^{\sin x} = 1 + x + \frac{x^2}{2!} - \frac{3x^4}{4!} -\frac{8x^5}{5!} + \frac{3x^2}{6!} + \dots\]
+\[e^{\cos x} = e \left(1 - \frac{x^2}{2!} +\frac{4x^2}{4!} - \frac{31x^6}{6!} + \dots \right)\]
+\[e^{\tan x} = 1 + x + \frac{x^2}{2!} + \frac{3x^3}{3!} + \frac{9x^4}{4!} + \frac{37x^5}{5!} + \dots \text{for } x^2 < \frac{\pi^2}{4}\]
 
-Trigonometric:
-
-![][02108]
-
-## Derivative Table (raw)
+## Derivative Table 
 
 (references 2.2, 2.3)
 
-\[*x* is the independent variable; *u* and *v* are dependent on *x; w* is dependent on *u; a* and *n* are constants; *log* is common logarithm; *ln* is logarithm to the base *e*\]
+* \(x\) is the independent variable
+* \(u\) and \(v\) are dependent on \(x\)
+* \(w\) is dependent on \(u\)
+* \(a\) and \(n\) are constants
+* \(\log{x}\) is the common logarithm to base 10, \(\log_{10}{x}\)
+* \(\ln{x}\) is logarithm to the base \(e\), \(\log_e{x}\)
 
-![][02109]
-
-![][02110]
+------
+\[\frac{da}{dx} = 0\]
+\[\frac{d\left(ax\right)}{dx} = a\]
+\[\frac{dx^n}{dx} = nx^{n-1}\]
+\[\frac{d\left(u + v \right)}{dx} = \frac{du}{dx} + \frac{dv}{dx}\]
+\[\frac{d\left(uv \right)}{dx} = u\frac{dv}{dx} + v\frac{du}{dx}\]
+\[\frac{d\left(\frac{u}{v} \right)}{dx} = \frac{1}{v^2} \left( v\frac{du}{dx} - u\frac{dv}{dx} \right)\]
+\[\frac{dw}{dx} = \frac{dw}{du}\frac{du}{dx}\]
+\[\frac{du^n}{dx} = nu^{n-1}\frac{du}{dx}\]
+\[\frac{d \ln{x}}{dx} = \frac{1}{x}\]
+\[\frac{d \ln{u}}{dx} = \frac{1}{u}\frac{du}{dx}\]
+\[\frac{d \log{u}}{dx} = \frac{\log{e}}{u}\frac{du}{dx}\]
+\[\frac{de^x}{dx} = e^x\]
+\[\frac{da^x}{dx} = a^x \ln{a}\]
+\[\frac{da^u}{dx} = a^u \ln{a}\frac{du}{dx}\]
+\[\frac{du^v}{dx} = vu^{v-1}\frac{du}{dx} + u^v \ln{u}\frac{dv}{dx}\]
+\[\frac{d \sin{x}}{dx} = \cos{x} \text{ or } \frac{d \sin{u}}{dx} = \cos{u}\frac{du}{dx}\]
+\[\frac{d \cos{x}}{dx} = -\sin{x} \text{ or } \frac{d \cos{u}}{dx} = -\sin{u}\frac{du}{dx}\]
+\[\frac{d \tan{x}}{dx} = \sec^2{x} \text{ or } \frac{d \tan{u}}{dx} = \sec^2{u}\frac{du}{dx}\]
+\[\frac{d \sec{x}}{dx} = \sec{x}\tan{x} \text{ or } \frac{d \sec{u}}{dx} = \sec{u}\tan{u}\frac{du}{dx}\]
+\[\frac{d \cot{x}}{dx} = -\csc^2{x} \text{ or } \frac{d \cot{u}}{dx} = -\csc^2{u}\frac{du}{dx}\]
+\[\frac{d \sin^{-1}{x}}{dx} = \frac{1}{\sqrt{1-x^2}} \text{ or } \frac{d \sin^{-1}{u}}{dx} = \frac{1}{\sqrt{1-u^2}}\frac{du}{dx}\]
+\[\frac{d \cos^{-1}{x}}{dx} = -\frac{1}{\sqrt{1-x^2}} \text{ or } \frac{d \cos^{-1}{u}}{dx} = -\frac{1}{\sqrt{1-u^2}}\frac{du}{dx}\]
+\[\frac{d \tan^{-1}{x}}{dx} = \frac{1}{1+x^2} \text{ or } \frac{d \tan^{-1}{u}}{dx} = \frac{1}{1+u^2}\frac{du}{dx}\]
+\[\frac{d \cot^{-1}{x}}{dx} = -\frac{1}{1+x^2} \text{ or } \frac{d \cot^{-1}{u}}{dx} = -\frac{1}{1+u^2}\frac{du}{dx}\]
+-----
 
 ## Integral Table (raw)
 
@@ -1096,7 +1133,6 @@ Expressions containing exponential and logarithmic functions
 2.6 "Flying Qualities Testing, Vol II", 1997, National Test Pilot School, P.O. Box 658, Mojave CA, 93501.
 
 2.7 Lewis, G., *Chapter 2, Data Analysis*, from "Crew station Evaluation and Data Analysis, Vol IV", 1997, National Test Pilot School, P.O. Box 658, Mojave CA, 93501.
-
 
   [02021]: media/02/image22.png
   [02022]: media/02/image23.png
