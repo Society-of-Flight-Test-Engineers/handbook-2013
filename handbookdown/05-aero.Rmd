@@ -1,84 +1,6 @@
-# 5 Aerodynamics**
+# Aerodynamics
 
-** **
-
-5.1 Dimensional Analysis Interpretations
-
-*Dynamic Pressure, Force Coefficients*
-
- 
-
-5.2 General Aerodynamic Relations
-
-*Continuity Equation, Conservation of Energy Equation, Resultant Aerodynamic Force*
-
- 
-
-5.3 Wing Design Effects on Lift Curve Slope
-
-*Aspect Ratio, Leading Edge Flap, Boundry Layer*
-
-*Control & Trailing Edge Flap Effects*
-
- 
-
-5.4 Elements of Drag
-
-5.4.1 Skin Friction Drag
-
-*Viscosity, Reynolds Number Effects*
-
-5.4.2 Pressure Drag
-
-5.4.3 Interference Drag
-
-5.4.4 Induced Drag
-
- 
-
-5.5 Aerodynamic Compressibility Relations
-
-*Prandtl/Glauert, Total vs Ambient Property Relations for Adiabatic Flow, Normal Shock Rela tions*
-
-5.5.1 Oblique Shocks
-
-*Oblique Shock Relations, Mach Cone Angle*
-
-5.5.2 Supersonic Isentropic Expansion Relations
-
-*Prandtl-Meyer Function*
-
-5.5.3 Two-Dimensional Supersonic Airfoil Approximations
-
- 
-
-5.6 Drag Polars
-
-5.6.1 Drag Polar Construction and Terminology
-
-*Simple Drag Polar Equation Limitations*
-
-5.6.2 Complicating Effects
-
-*Airflow Separation, Reynolds Number, Wing Camber or Incidence Angle, Mach Number,*
-
-*Propeller Slipstream, and Trim Drag Effects*
-
-5.6.3 Drag Polar Analysis
-
-*Optimum Aerodynamic Flight Conditions*
-
- 
-
-5.7 References
-
- 
-
- 
-
-**5.0 Recurring Terminology**
-
-** **
+## Recurring Terminology {-}
 
 *a* slope of lift curve, *dC~L~/dα*
 
@@ -156,137 +78,101 @@ MGC mean geometric chord, the average chord length, derived only from a plan for
 
 *ρ* density
 
- 
 
- 
+* Perfect Fluid
+  * incompressible, inelastic, and non-viscous
+  * used in flow outside of boundary layers at M < .7
+* Incompressible, inelastic, viscous
+  * used for boundary layer studies at M < .7
+* Compressible, non-viscous, elastic fluid
+  * used outside boundary layers up to M = 5
 
-• Perfect Fluid
-
-> \~  incompressible, inelastic, and non-viscous
->
-> \~  used in flow outside of boundary layers at M \< .7
-
-• Incompressible, inelastic, viscous
-
-> \~  used for boundary layer studies at M \< .7
-
-• Compressible, non-viscous, elastic fluid
-
-\~ used outside boundary layers up to M = 5
-
- 
-
- 
-
-**5.1 Dimensional Analysis Interpretations** (ref 5.2)
-
- 
+<!--- FIXME: Reference should be replaced with linked cross reference --->
+## Dimensional Analysis Interpretations** (ref 5.2)
 
 Aerodynamic force = *F*
 
- 
+* F = f* *(ρ, μ, T*, *V*, shape, orientation, size, roughness, gravity)
+* For aircraft ignore *R*, *K* & hypersonic effects
 
-• *F = f* *(ρ, μ, T*, *V*, shape, orientation, size, roughness, gravity)
+![][05001]
 
-• For aircraft ignore *R*, *K* & hypersonic effects
+* Initially assume similar body orientations, shapes & roughness.
+* Dimensional Analysis reveals four non-dimensional (π) parameters:
 
-  
 
-![][05001]• Initially assume similar body orientations, shapes & roughness.
+ Force Coefficient
 
- 
+![][05002]
 
-• Dimensional Analysis reveals four non-dimensional (π) parameters:
+Reynolds Number
 
- 
+![][05003] 
 
-  Force Coefficient
+ Mach Number
 
- ![][05002]![][05003] Reynolds Number
-
-  Mach Number
-
-  Froude Number
-
- 
+ Froude Number
 
 A closer look at the force coefficient:
 
- 
-
 ![][05004]
 
- where ^1^/~2~ ρ*~a~V~T~*^2^ = ^1^/~2~ ρ*~o~V~e~*^2^ =dynamic pressure, *q* dimensions of reference wing area, *S* are the same as *l*^2^
+where ^1^/~2~ ρ*~a~V~T~*^2^ = ^1^/~2~ ρ*~o~V~e~*^2^ =dynamic pressure, *q* dimensions of reference wing area, *S* are the same as *l*^2^
 
- 
 
- **A feel for *q***
+**A feel for *q***
 
-• Kinetic energy of a moving object = ½ mV~T~^2^
+* Kinetic energy of a moving object = ½ mV~T~^2^
 
-• Block of moving air kinetic energy = ½ ρ (volume) V ~T~^2^
+* Block of moving air kinetic energy = ½ ρ (volume) V ~T~^2^
 
-• Dividing through by volume yields KE per volume of moving air = ½ ρ V ~T~^2^
+* Dividing through by volume yields KE per volume of moving air = ½ ρ V ~T~^2^
 
-• \"Dynamic pressure" or "*q*" = potential for converting each cubic foot of the airflow\'s kinetic energy into frontal stagnation pressure
+* \"Dynamic pressure" or "*q*" = potential for converting each cubic foot of the airflow\'s kinetic energy into frontal stagnation pressure
 
-• Feel *q* by extending your hand out the window of a moving car
+* Feel *q* by extending your hand out the window of a moving car
 
- 
 
- **A feel for coefficients**
+**A feel for coefficients**
 
-• *C ~F~* = (*F /S)/q* = the ratio between the total force pressure and the flow \'s dynamic pressure
+* *C ~F~* = (*F /S)/q* = the ratio between the total force pressure and the flow \'s dynamic pressure
 
-• Lift is the component of the total force perpendicular to the free stream flow
+* Lift is the component of the total force perpendicular to the free stream flow
 
-• Drag is the component along the flow
+* Drag is the component along the flow
 
-• Break total into lift and drag coefficients:
+* Break total into lift and drag coefficients:
 
 *C ~L~ = (L/S)/q CD = (D/S)/q*
 
-• Increasing dynamic pressure generates a larger total force, lift and drag
+* Increasing dynamic pressure generates a larger total force, lift and drag
 
- 
+![][05005]
 
- ![][05005]
+* Froude number is not significant in aerodynamic phenomena
 
-• Froude number is not significant in aerodynamic phenomena
-
- 
-
-• Recall that forces are aslo a function of angle of attack, shape & surface roughness, therefore
-
- 
+* Recall that forces are aslo a function of angle of attack, shape & surface roughness, therefore
 
 ![][05006]
 
 Effects are exaggerated
 
- 
-
 ![][05007]
 
 To compare test day and standard day aircraft or to match wind tunnel *C~F~* data to actual aircraft; the shape, roughness, *M, R~n~* and *α* must be equal for both aircraft
 
- 
+![][05008]
 
-![][05008]![][05009]
+![][05009]
 
- 
 
-**5.2 General Aerodynamic Relations** (refs 5.1, 5.2, 5.10)
-
-** **
+<!--- FIXME: update references to dynamic cross references--->
+## General Aerodynamic Relations (refs 5.1, 5.2, 5.10)
 
 Lift & Drag forces can be described using two approaches:
 
-1\) Change in momentum of airstream, *F = d{mv\]/dt*
-
-2\) "Bernoulli" approach which requires the continuity and conservation of energy equations
-
- 
+1. Change in momentum of airstream, *F = d{mv\]/dt*
+2. "Bernoulli" approach which requires the continuity and conservation of energy equations
 
 **Continuity Equation**
 
@@ -296,9 +182,8 @@ Fluid M ass in = Fluid Mass out
 
 For subsonic (incompressible) flow ρ ~1~ = ρ ~2~
 
-> *V* ~1~*A* ~1~ = *V* ~2~*A* ~2~
->
-> ~ ~
+*V* ~1~*A* ~1~ = *V* ~2~*A* ~2~
+
 
 **Conservation of Energy** (Bernoulli) **Equation:**
 
@@ -310,225 +195,105 @@ Energy per unit volume is pressure then
 
 Dynamic Pressure + Static Pressure = Total Pressure
 
-![][05010] 
+![][05010]
 
- 
 
-• This classic approach only applies in the "potential flow" region and not in the boundary layer where energy losses occur
-
- 
-
-• Pressures around a surface can be calculated or measured from tests and converted into pressure coefficients,
-
- 
+* This classic approach only applies in the "potential flow" region and not in the boundary layer where energy losses occur
+* Pressures around a surface can be calculated or measured from tests and converted into pressure coefficients,
 
 *c~p~* = (*p*~local~-*p*~ambient~)/dynamic pressure = *∆p/q*
 
- 
+* *c~p~* values can be mapped out for all surfaces
 
-• *c~p~* values can be mapped out for all surfaces
+![][05011]
 
- 
+* Summation of all pressures perpendicular to surface yield the pitching moments and the "**Resultant Aerodynamic Force**" which is broken into lift and drag components
 
- 
-
- ![][05011]
-
- • Summation of all pressures perpendicular to surface yield the pitching moments and the "**Resultant Aerodynamic Force**" which is broken into lift and drag components
-
- 
 
 ![][05012]
 
- 
+* Lift & drag forces are referred to the aerodynamic center (*ac*) where the pitching moment is constant for reasonable angles of attack.
+* Pitching moments increase with airfoil camber, are zero if symmetric.
+* Aerodynamic center is located at 25% MAC for fully subsonic flow and at 50% MAC for fully supersonic flow.
 
- • Lift & drag forces are referred to the aerodynamic center (*ac*) where the pitching moment is constant for reasonable angles of attack.
 
-• Pitching moments increase with airfoil camber, are zero if symmetric.
+## Wing Design Effects on Lift Curve Slope (refs 5.1, 5.2, 5.10)
 
-• Aerodynamic center is located at 25% MAC for fully subsonic flow and at 50% MAC for fully supersonic flow.
+### Aspect Ratio Effect {-}
 
- 
-
-**5.3 Wing Design Effects on Lift Curve Slope** (refs 5.1, 5.2, 5.10)
-
- 
-
-**Aspect Ratio Effect**
-
-• Pressure differential at wingtip causes tip vortex
-
- 
+* Pressure differential at wingtip causes tip vortex
 
 ![][05013]
 
- 
+![][05014]
 
- ![][05014] 
-
-• Vortex creates flow field that reduces AOA across wingspan
-
- 
+* Vortex creates flow field that reduces AOA across wingspan
 
 ![][05015]
 
- 
+* Local AOA reductions decrease average lift curve slope
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- • Local AOA reductions decrease average lift curve slope
-
-![][05016] 
+![][05016]
 
 2D wing = wind tunnel
 
 airfoil extending to walls (infinite aspect ratio).
 
- 
-
 *a~o~* = Lift curve slope for
 
 an infinite wing
-
- 
 
 *a* = Lift curve slope for
 
 a finite wing
 
- 
-
- • Above relationship estimated as
-
- 
+* Above relationship estimated as
 
 ![][05017]
 
- 
+### Trailing Edge Flap Effects {-}
 
-**Trailing Edge Flap Effects**
+![][05018]
 
-** **
 
-** **
+![][05019]
 
-** **![][05018]
-
-** **
-
-![][05019]** **
-
-** **
-
-** **
-
-** **
-
-** Leading Edge Flap Effects**
-
- 
+### Leading Edge Flap Effects {-}
 
 ![][05020]
 
-** **
+![][05021]
 
-** **![][05021]
+### Boundary Layer Control Effects {-}
 
-** Boundary Layer Control Effects**
+![][05022]
 
- 
+![][05023]
 
- 
 
-** **
+## Elements of Drag (refs 5.1, 5.2, 5.10)
 
-** **
+![][05024]
 
-![][05022]** **
+* Skin friction shear stress is a function of velocity profile at surface
 
-** **![][05023]
+![][05025]
 
-** **
+![][05026]
 
-** **
+![][05027]
 
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** 5.4 Elements of Drag** (refs 5.1, 5.2, 5.10)
-
-** **
-
-** **
-
-** **![][05024]
-
-** **• Skin friction shear stress is a function of velocity profile at surface
-
- 
-
-** **![][05025]![][05026]
-
-** **
-
-![][05027]** **
-
-** **
-
-** **
-
-** **
-
-** **•  **Viscosity** (μ) increases with temperature (ref 5.9)
-
- 
+*Viscosity** (μ) increases with temperature (ref 5.9)
 
 Sutherland law:
 
- 
-
- 
-
 ![][05028]
 
-** **
-
-** **Power law:
-
- 
+Power law:
 
 ![][05029]
 
-** **Where *T~o~* = 273.15 *K* = 518.67 *R*.
+****Where *T~o~* = 273.15 *K* = 518.67 *R*.
 
 For air: *S* =110.4 *K* = 199 *R; n=.67*
 
@@ -536,31 +301,19 @@ For air at 273 K: μ~o~= 1.717x10^-5^ \[kg/m s\] = 3.59x10^-7^ \[slug/ft s\]
 
 Inserting air values (*T~K~*=Kelvin and T*~R~*=Rankin) into Sutherland law gives
 
- 
+![][05030]
 
- 
+### Reynolds Number Effects (ref 5.10) {-}
 
- ![][05030]
-
- 
-
- **Reynolds Number Effects** (ref 5.10)
-
- 
-
-• Laminar boundary layers have more gradual change in
+* Laminar boundary layers have more gradual change in
 
 velocity near surface than
 
 turbulent boundary layers.
 
-• High Reynolds numbers help
+* High Reynolds numbers help
 
 ![][05031] propagate turbulent flow.
-
- 
-
- 
 
 ![][05032]
 
@@ -568,111 +321,68 @@ turbulent boundary layers.
 
 *Re~L~* based on total length of flat plate
 
- 
-
-• Depth of boundary layer (δ) depends on local Reynolds number (Re~x~) and whether the flow is turbulent or laminar.
-
- 
+* Depth of boundary layer (δ) depends on local Reynolds number (Re~x~) and whether the flow is turbulent or laminar.
 
 ![][05034]
 
-![][05035]*x*= distance traveled to point in question
+![][05035]
 
- 
+*x*= distance traveled to point in question
 
-**5.4.2 Pressure Drag**
 
-** **
+### Pressure Drag
 
-• Ideal frictionless flow has no losses and leads to zero pressure drag
-
- 
-
-• Real fluids have friction and energy losses along surface
-
- 
-
-• Energy losses negate total pressure recovery, lead to decreasing total pressure along surface
-
- 
+* Ideal frictionless flow has no losses and leads to zero pressure drag
+* Real fluids have friction and energy losses along surface
+* Energy losses negate total pressure recovery, lead to decreasing total pressure along surface
 
 ![][05036]
 
-• Imbalance of pressures on surfaces causes pressure drag
+* Imbalance of pressures on surfaces causes pressure drag
 
-![][05037]![][05038] 
+![][05037]
 
-• Profile streamlining reduces pressure drag
+![][05038]
 
-![][05039] 
+* Profile streamlining reduces pressure drag
 
-**5.4.3 Interference Drag**
+![][05039]
 
- 
+### Interference Drag
 
-• Occurs with multiple surfaces approximately parallel to flow
-
- 
-
-• Caused by flow's interference with itself or by excessive adverse pressure gradient due to rapidly decreasing vehicle cross section
-
- 
-
-• Most severe with surfaces at acute angles to each other
-
- 
-
-• Effects often reduced by fillets around contracting surfaces
-
- 
+* Occurs with multiple surfaces approximately parallel to flow
+* Caused by flow's interference with itself or by excessive adverse pressure gradient due to rapidly decreasing vehicle cross section
+* Most severe with surfaces at acute angles to each other
+* Effects often reduced by fillets around contracting surfaces
 
 ![][05040]
 
-**5.4.4 Induced Drag**
+### Induced Drag
 
-** **
+* Wingtip vortex reduces local AOA at each station along wing
+* Local lift vector is perpendicular to local AOA
+* Local lift vector is therefore tilted back relative to freestream lift
+* Induced drag defined as rearward component of local lift vector
 
-• Wingtip vortex reduces local AOA at each station along wing
-
- 
-
-• Local lift vector is perpendicular to local AOA
-
- 
-
-• Local lift vector is therefore tilted back relative to freestream lift
-
- 
-
-• Induced drag defined as rearward component of local lift vector
-
-![][05041] 
+![][05041]
 
 ![][05042]
 
 Oswald efficiency factor, *e*, accounts for losses in excess of those predicted above (due to uneven downwash and changing interference drag effects).
 
- 
-
- 
-
 ![][05043]
 
-**5.5 Aerodynamic Compressibility Relations** (reference 5.8)
-
-** **
+## Aerodynamic Compressibility Relations** (reference 5.8)
 
 **Prandtl/Glauert Approximation**
 
 Approximates Mach effects on aerodynamics below critical Mach
 
- 
-
 ![][05044]
 
 **Total vs Ambient Property Relations for Adiabatic Flow**
 
-![][05045] 
+![][05045]
 
 **Normal Shock Relations**
 
@@ -682,117 +392,81 @@ Assumes flow across shock is adiabatic
 
 Property changes occur in a constant area (throat)
 
-• 
-
-• 
-
- 
-
 ![][05046]
 
 Normal shock summary
 
- 
 
 ![][05047]
 
-**5.5.1 Oblique Shocks**
-
- 
+### Oblique Shocks
 
 **Oblique Shock Description**
 
-![][05048] 
+![][05048]
 
 δ = surface turning angle
 
- 
-
 θ = shock wave angle
-
- 
 
 Subscript 1 denotes upstream conditions
 
- 
-
 Subscript 2 denotes downstream conditions
-
- 
 
 **Oblique Shock Relations**
 
-• Calculate *P~2~/P~1~, T~2~/T~1~*, and *ρ~2~/ρ~1~* across oblique shocks by using normal shock equations and substituting *M~1~ sinθ* in place of *M~1~*
+* Calculate *P~2~/P~1~, T~2~/T~1~*, and *ρ~2~/ρ~1~* across oblique shocks by using normal shock equations and substituting *M~1~ sinθ* in place of *M~1~*
 
-• Calculate total pressure loss across oblique shock as
+* Calculate total pressure loss across oblique shock as
+* Calculate relation between Mach number and angles as
 
-• Calculate relation between Mach number and angles as
+![][05049]
 
- 
-
-![][05049]![][05050]
+![][05050]
 
 **Oblique Shock Turning Angle as a Function of Wave Angle**
 
- 
-
 ![][05051]
 
-• Two θ solutions exist for every M~1~ & *δ* combination
+* Two θ solutions exist for every M~1~ & *δ* combination
 
 These represent the strong and weak shock solutions
 
 Weak shocks normally occur in nature
 
-• There is a minimum Mach number for each turning angle
+* There is a minimum Mach number for each turning angle
 
-• The wave angle of a weak shock decreases with increased Mach
+* The wave angle of a weak shock decreases with increased Mach
 
-• For a given Mach number, *θ* approaches *μ* as *δ* decreases
-
- 
-
- 
+* For a given Mach number, *θ* approaches *μ* as *δ* decreases
 
 **Mach Cone Angle**
-
- 
-
- 
 
 ![][05052]
 
 Minimum Wave Angle
 
-μ = sin^−1 ^(1/Μ)
+μ=sin^−1^(1/Μ)
 
- 
-
-**5.5.2 Supersonic Isentropic Expansion Relations**
-
- 
+### Supersonic Isentropic Expansion Relation
 
 ![][05053]
 
-• The wave angle *μ* determines where the lower pressure can be felt and thus where the flow can be accelerated
+* The wave angle *μ* determines where the lower pressure can be felt and thus where the flow can be accelerated
 
-• As the flow accelerates, a new wave angle forms and the subsequent lower pressure further accelerates the flow
+* As the flow accelerates, a new wave angle forms and the subsequent lower pressure further accelerates the flow
 
-• Results in a series of Mach waves forming a "fan" until the flow turns and accelerates so that it is parallel to the new boundary
-
- 
+* Results in a series of Mach waves forming a "fan" until the flow turns and accelerates so that it is parallel to the new boundary
 
 **Prandtl-Meyer Function**
 
 Shows flow's required turning angle (ν) to accelerate from one Mach number to another
 
- 
-
 ![][05054]
 
-• If upstream Mach (M~1~) =1, then ν~1~ = 0, and equation directly relates downstream Mach (M~2~) to surface turning angle (∆ν)
+* If upstream Mach (M~1~) =1, then ν~1~ = 0, and equation directly relates downstream Mach (M~2~) to surface turning angle (∆ν)
 
-• If M~1~\>1, determine M~2~ as follows:
+* If M~1~\>1, determine M~2~ as follows:
 
 Calculate upstream ν~1~ from above equation
 
@@ -800,59 +474,37 @@ Calculate ν~2~ = ν~1~ + ∆ν
 
 Reverse above equation to obtain corresponding M~2~
 
-• Above equation is tabulated in NACA TR 1135 and is plotted below
+* Above equation is tabulated in NACA TR 1135 and is plotted below
 
-![][05055] 
+![][05055]
 
 Example: Flow initially at *M~1~* = 2.0 accelerates through an expansion corner of 24 *deg*. Exit Mach number is 3.0
 
- 
+### Two-Dimensional Supersonic Airfoil Approximations
 
-**5.5.3 Two-Dimensional Supersonic Airfoil Approximations**
+* Determine surface static pressures by calculating changes through obliques shocks and expansion fans
 
- 
+![][05056]
 
-• Determine surface static pressures by calculating changes through obliques shocks and expansion fans
+* Ackert approximations for thin wings are based on
 
-![][05056] 
+![][05057]
 
- 
+![][05058]
 
- 
+* Double wedge airfoil approximations
 
- 
+![][05059]
 
- 
+* Biconvex wing approximations
 
-• Ackert approximations for thin wings are based on
+![][05060]
 
- 
+![][05061]
 
-![][05057]![][05058] 
+## Drag Polars (ref 5.2)
 
- 
-
- 
-
-• Double wedge airfoil approximations
-
-![][05059] 
-
- 
-
- 
-
-• Biconvex wing approximations
-
- 
-
-![][05060]![][05061]
-
-**5.6 Drag Polars** (ref 5.2)
-
- 
-
-**5.6.1 Drag Polar Construction and Terminology**
+### Drag Polar Construction and Terminology
 
 *C~L~* = lift coefficient
 
@@ -872,143 +524,95 @@ AR = aspect ratio
 
 *S* = reference wing area
 
- 
-
 **Simple Drag Polar Equation Limitations**
 
-• No separated flow losses
+* No separated flow losses
 
-• Symmetric Camber
+* Symmetric Camber
 
-• Applies at one Mach, Altitude, *cg*
+* Applies at one Mach, Altitude, *cg*
 
-![][05062]![][05063] 
+![][05062]
 
-![][05064]"Polar" form of simple drag polar
+![][05063]
 
- Linearized form of
+![][05064]
+
+"Polar" form of simple drag polar
+
+Linearized form of
 
 simple drag polar
 
- 
-
-**5.6.2 Complicating Factors**
-
- 
+### Complicating Factors
 
 **Airflow Separation Effects**
-
- 
 
 ![][05065]
 
 Drag Polar Equation Accounting for Flow Separation:
 
- 
+![][05066]
 
-![][05066]• Delete last term if *C~L~\<C~lbreak~*
+* Delete last term if *C~L~\<C~lbreak~*
 
-• Determine *k*~2~ from flight test
+* Determine *k*~2~ from flight test
 
- 
 
 **Reynolds Number Effects** (refs 5.4, 5.11)
 
-• Calculate length *Re~L~* and friction coefficient (*c~f\ ~*) for each surface as
+* Calculate length *Re~L~* and friction coefficient (*c~f\ ~*) for each surface as
 
- *T~K~* = Kelvin*,*
+*T~K~* = Kelvin*,*
 
 *l=* total length*,* ft)
 
-![][05067] 
+![][05067]
 
-• In general*, c~f\ ~* decreases as *R~n\ ~*increases (unless transitioning from laminar to turbulent flow)
+* In general*, c~f\ ~* decreases as *R~n\ ~*increases (unless transitioning from laminar to turbulent flow)
 
-• Friction drag *= c~f~ q S~wet~* for each component (*S~wet~* = wetted area)
+* Friction drag *= c~f~ q S~wet~* for each component (*S~wet~* = wetted area)
 
-• Correct from test day to standard day aircraft drag coefficient by summing differences of each component's drag change
+* Correct from test day to standard day aircraft drag coefficient by summing differences of each component's drag change
 
-![][05068] 
+![][05068]
 
 **Wing Camber or Incidence Angle Effects**
-
- 
 
 ![][05069]
 
 Note slight increase in drag as lift decreases towards zero
 
- 
 
-Linearized drag polafor aircraft with
-
-wing camber and/or
-
-incidence
-
- 
+Linearized drag polar for aircraft with wing camber and/or incidence
 
 ![][05070]
 
 Revised drag polar equation accounting for wing camber or incidence
 
- 
+![][05071]
 
- 
+* Generally not necessary since most flight occurs above *C~Lmin~*
 
- ![][05071]
+**Mach Number Effects**
 
- 
+* Aircraft with low parasitic drag coefficients and high fineness ratios pay a relatively small "wave drag" penalty.
 
-• Generally not necessary since most flight occurs above *C~Lmin~*
+![][05072]
 
- 
+* With external stores, same aircraft pays larger Mach penalty
 
- **Mach Number Effects**
+![][05073]
 
-** **
+**Propeller Slipstream Effects**
 
-• Aircraft with
-
-low parasitic drag
-
-coefficients and
-
-high fineness ratios
-
-pay a relatively
-
-small "wave drag"
-
-![][05072] penalty.
-
- 
-
-• With external stores, same aircraft pays larger Mach penalty
-
- 
-
- ![][05073]
-
- 
-
- **Propeller Slipstream Effects**
-
-•  a.k.a "scrubbing" drag
-
-•  Propwash increases flow speed over surface within slipstream
-
-•  More drag is created by higher *q* and vorticity.
-
-•  Function of prop speed and power absorbed (*C~p~*)or thrust (*C~T~*)
-
-• Problem should be addressed in airframe or propeller models
-
- 
+*  a.k.a "scrubbing" drag
+*  Propwash increases flow speed over surface within slipstream
+*  More drag is created by higher *q* and vorticity.
+*  Function of prop speed and power absorbed (*C~p~*)or thrust (*C~T~*)
+* Problem should be addressed in airframe or propeller models
 
 **Trim Drag Effects** (reference 5.4)
-
- 
 
 e = wing Oswald efficiency factor
 
@@ -1022,31 +626,25 @@ b = span, b~t~ = tail span
 
 S = Area
 
- 
-
 ![][05074]
 
-![][05075] 
+![][05075]
 
 Trim drag change relative to
 
 total induced drag:
 
- ![][05076]
+![][05076]
 
 Plot of above equation
 
- 
-
 ![][05077]
 
-![][05078]**5.6.3 Drag Polar Analysis**
+![][05078]
 
- 
+### Drag Polar Analysis
 
-• For a given configuration (*C~Do~, S, AR, e*)
-
- 
+* For a given configuration (*C~Do~, S, AR, e*)
 
 ![][05079]
 
@@ -1054,151 +652,111 @@ first term *=* parasitic drag,
 
 second term = induced drag
 
- 
-
-• For any given weight, *D* = *f*(equivalent airspeed) only
-
- 
+* For any given weight, *D* = *f*(equivalent airspeed) only
 
 ![][05080]
 
-• Minimum total drag occurs when *D~induced~ = D~parasitic~*
+* Minimum total drag occurs when *D~induced~ = D~parasitic~*
 
 same as speed where *C~Di~ = C~Do~*
 
 occurs at max *C~L~ /C~D~* ratio (same as max *L/D* ratio)
 
-• Minimum drag/velocity occurs at min slope of Drag vs V curve
+* Minimum drag/velocity occurs at min slope of Drag vs V curve
 
 same as speed where 3*C~Di~ =C~Do~*
 
 occurs at max *C~L~ ^1/2^ /C~D~* ratio
 
- 
 
 Power required = drag x true airspeed
-
- 
 
 ![][05081]
 
 Minimum total *P~req'd~* occurs when *P~induced~ = P~parasitic~*
 
-•  same as speed where *C~Di~ = 3C~Do~*
+*  same as speed where *C~Di~ = 3C~Do~*
 
-•  occurs at max *C~L~ ^3/2^ /C~D~* ratio
+*  occurs at max *C~L~ ^3/2^ /C~D~* ratio
 
 Minimum power/velocity occurs at min slope of *P~req'd~* vs *V* curve
 
-•  same as speed where *C~Di~ =C~Do~*
+*  same as speed where *C~Di~ =C~Do~*
 
-•  occurs at max *C~L~ /C~D~* ratio
+*  occurs at max *C~L~ /C~D~* ratio
 
- 
 
 **Optimum Aerodynamic Flight Conditions**
 
-** **
 
 *Gliders/ Engine-Out Flight*
 
-• Max range (minimum glide slope) occurs at max *C~L~/C~D~*
+* Max range (minimum glide slope) occurs at max *C~L~/C~D~*
 
 same as condition where *C~Do~* = *C~Di~* *if* drag polar is parabolic
 
-• Min sink rate (minimum power req'd) occurs at max *C~L~^3/2^ /C~D~* ratio same as condition where 3*C~Do~* = *C~Di~* *if* drag polar is parabolic
+* Min sink rate (minimum power req'd) occurs at max *C~L~^3/2^ /C~D~* ratio same as condition where 3*C~Do~* = *C~Di~* *if* drag polar is parabolic
 
- 
 
 *Reciprocating Engine Aircraft (assuming constant BSFC & prop η)*
 
-• Max range (minimum power/velocity) occurs at max *C~L~/C~D~* ratio
+* Max range (minimum power/velocity) occurs at max *C~L~/C~D~* ratio
 
 same as condition where *C~Do~* = *C~Di~* *if* drag polar is parabolic
 
-• Max endurance (minimum power req'd) occurs at max *C~L~^3/2^ /C~D~*
+* Max endurance (minimum power req'd) occurs at max *C~L~^3/2^ /C~D~*
 
 same as condition where 3*C~Do~* = *C~Di~* *if* drag polar is parabolic
 
- 
-
 *Turbine Jet Engine Aircraft (assuming constant TSFC)*
 
-• Max range at constant altitude (minimum drag/velocity)
+* Max range at constant altitude (minimum drag/velocity)
 
 occurs at max *C~L~ ^1/2^ /C~D~* ratio
 
 same as condition where *C~Do~* = 3*C~Di~* *if* drag polar is parabolic
 
-• Best cruise/climb range (maximum \[*M* x *L/D*\] ratio)
+* Best cruise/climb range (maximum \[*M* x *L/D*\] ratio)
 
 occurs at max *C~L~/C~D~ ^3/2\ ^*ratio
 
 same as condition where *C~Do~* = 2*C~Di~* *if* drag polar is parabolic
 
-• Best endurance (minimum drag)
+* Best endurance (minimum drag)
 
 occurs at max *C~L~/C~D~* ratio
 
 same as condition where *C~Do~* = *C~Di~* *if* drag polar is parabolic
 
- 
-
 ![][05082]
 
 To calculate optimum speed *V*~2~ for configuration~2~ & weight~2~ based on optimum speed *V*~1~ at configuration~1~ & weight~1~
 
- 
-
 ![][05083]
 
-**5.7 References**
-
- 
+## References
 
 5.1 Roberts, Sean "Aerodynamics for Flight Testers" *Chapter 3, Subsonic Aerodynamics*, National Test Pilot School, Mojave, CA, 1999
 
- 
-
 5.2 Lawless, Alan R., et al, "Aerodynamics for Flight Testers" *Chptr 4, Drag Polars*, National Test Pilot School, Mojave ,CA, 1999
-
- 
 
 5.3 Hurt Hugh H., "Aerodynamics for Naval Aviators", University of Southern California, Los Angeles, CA, 1959.
 
- 
-
 5.4 McCormick, Barnes W., "Aerodynamics, Aeronautics, and Flight Mechanics", Wilet &Sons, 1979
-
- 
 
 5.5 Stinton, Darryl, "The Design of the Aeroplane", BSP Professional Books, Oxford, 1983
 
- 
-
 5.6 Roskam, Jan Dr., "Airplane Design, Part VI", Roskam Aviation and Engineering Corp. 1990
-
- 
 
 5.7 Anon, "Equations, Tables, and Charts for Compressible Flow" NACA Report 1135, 1953
 
- 
-
 5.8 Lewis, Gregory, "Aerodynamics for Flight Testers" *Chapter 6, Supersonic Aerodynamics*, National Test Pilot School, Mojave CA, 1999
-
- 
 
 5.9 White, Frank M. "Fluid Mechanics" pg 29, McGraw-Hill, 1979, ISBN 0-07-069667-5.
 
- 
-
 5.10 Anderson, John D. Jr, "Introduction to Flight" pg 142, Mcraw-Hill, 1989, ISBN 0-07-001641-0.
 
- 
-
 5.11 Twaites, Bryan, Editor, "Incompressible Aerodynamics: An Account of the steady flow of incompressible Fluid Past Aerofoils, Wings, and Other Bodies," Dover Publications, 1960.
-
- 
 
   [05001]: media/05/image1.svg {width="2.9in" height="1.7402777777777778in"}
   [05002]: media/05/image2.svg {width="0.8444444444444444in" height="0.5125in"}
