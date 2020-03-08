@@ -1068,101 +1068,41 @@ should be added to the result of every integration
 \[ \int_{}{} \sin{x} \cos{x} dx = \frac{1}{2} \sin^2{x} \]
 ---------------------
 
-## Laplace Table (raw)
+## Laplace Table
 
 (references 2.2, 2.3)
 
-+---------------------------+-----------------------------------+
-| time domain *f(t)*        | frequency domain F(s)=*L*{*f(t)*} |
-+---------------------------+-----------------------------------+
-| 1 (step function)         | 1/s (s\>0)                        |
-+---------------------------+-----------------------------------+
-| t                         | 1/s^2  (s\>0)                     |
-+---------------------------+-----------------------------------+
-| ![][02114]                  | ![][02115]                          |
-|                           |                                   |
-|                           | (s\>0)                            |
-+---------------------------+-----------------------------------+
-| ![][02116]                  | (s\>0)                            |
-+---------------------------+-----------------------------------+
-| ![][02117]                  | (s\>0)                            |
-+---------------------------+-----------------------------------+
-| t^{n-\frac{1}{2}} (n=1,2,...)      | (s\>0)                            |
-+---------------------------+-----------------------------------+
-| e^{at}                     | (s\>a)                            |
-+---------------------------+-----------------------------------+
-| te^{at}                    | ![][02118] (s\>a)                   |
-+---------------------------+-----------------------------------+
-| t^{n-1} e^{ax} (n=1, 2, ...) | ![][02119] (s\>a)                   |
-+---------------------------+-----------------------------------+
-| sin at                    | ![][02120] (s\>0)                   |
-+---------------------------+-----------------------------------+
-| cos at                    | ![][02121] (s\>0)                   |
-+---------------------------+-----------------------------------+
-| e^{bt} sin at              | ![][02122] (s?b)                    |
-+---------------------------+-----------------------------------+
-| e^{bt} cos at              | ![][02123] (s\>b)                   |
-+---------------------------+-----------------------------------+
-| x sin ax                  | ![][02124]![][02125] (s\>a)           |
-+---------------------------+-----------------------------------+
-| **x cos ax**              | (s \0)                          |
-+---------------------------+-----------------------------------+
-| sinh at                   | ![][02126]                          |
-|                           |                                   |
-|                           | ![][02127]                          |
-+---------------------------+-----------------------------------+
-
-![][02128]
-
-+------------------------------+-----------+
-|                              | ![][02129]  |
-|                              |           |
-| cosh at                      |           |
-+==============================+===========+
-|                              |           |
-|                              |           |
-| sin (at + b)                 |           |
-+------------------------------+-----------+
-|                              |           |
-|                              |           |
-| cos(at + b)                  |           |
-+------------------------------+-----------+
-| ![][02130]                     |           |
-+------------------------------+-----------+
-| ![][02131]                     |           |
-+------------------------------+-----------+
-| δ (impulse function)         | 1         |
-+------------------------------+-----------+
-|                              | ![][02132]  |
-|                              |           |
-| square wave, period =2c      |           |
-|                              |           |
-|                              |           |
-+------------------------------+-----------+
-|                              | ![][02133]  |
-|                              |           |
-| triangular wave, period = 2c |           |
-|                              |           |
-|                              |           |
-+------------------------------+-----------+
-| *at* for                     | ![][02134]  |
-|                              |           |
-| sawtooth wave, period = c    |           |
-|                              |           |
-|                              |           |
-+------------------------------+-----------+
-|                              |           |
-|                              |           |
-| sin *at* sin *bt*            |           |
-+------------------------------+-----------+
-| ![][02135]                     | ![][02136]  |
-+------------------------------+-----------+
-|                              | ![][02137]  |
-+------------------------------+-----------+
-| ![][02138]                     | ![][02139]  |
-+------------------------------+-----------+
-
-![][02140]
+Time Domain \(f(t) = \mathcal{L}^{-1} \left\{ F \left( s \right) \right\} \)      | Frequency Domain \(F\left( s \right) = \mathcal{L} \left\{ f \left( t \right) \right\}\)
+---------------------------|---------------------------------
+\[1 \text{ (step function)}\]      | \[\frac{1}{s} \text{, where } \left(s\gt 0\right) \]
+\[t\]                         | \[\frac{1}{s^2} \text{, where } \left(s\gt 0\right) \]
+\[t^{n-1}\]                | \[\frac{\left( n-1 \right)!}{s^n} \text{, where } \left(s\gt 0\right) \]
+\[\sqrt{t}\]                  | \[\frac{{\sqrt \pi  }}{{2{s^{\frac{3}{2}}}}} \text{, where } \left(s\gt 0\right) \]
+\[\frac{1}{\sqrt{t}}\]         | \[\frac{{\sqrt \pi  }}{{{s^{\frac{1}{2}}}}} \text{, where } \left(s\gt 0\right) \]                            
+\[{t^{n - \frac{1}{2}}},\,\,\,\,\,n = 1,2,3, \ldots\]     | \[\frac{{1 \cdot 3 \cdot 5 \cdots \left( {2n - 1} \right)\sqrt \pi  }}{{{2^n}{s^{n + \frac{1}{2}}}}} {, where } \left(s\gt 0\right) \]
+\[e^{at}\]                     | \[ \frac{1}{s-a} \text{, where } \left(s\gt a \right) \]
+\[te^{at}\]                    | \[\frac{1}{{\left( {s - a} \right)}^{2}} \text{, where } \left(s\gt a \right) \]
+\[{t^n}{{e}^{at}},\,\,\,\,\,n = 1,2,3, \ldots\] | \[\frac{{n!}}{{{{\left( {s - a} \right)}^{n + 1}}}} \text{, where } \left(s\gt a \right) \]
+\[\sin{at} \]                   | \[\frac{a}{s^2 + a^2} \text{, where } \left(s\gt 0 \right) \]
+\[\cos{at}\]                    | \[\frac{s}{s^2 + a^2} \text{, where } \left(s\gt 0 \right) \]
+\[e^{bt} \sin{at}\]              | \[\frac{a}{\left(s - b \right)^2 + a^2} \text{, where } \left(s\gt b \right) \]
+\[e^{bt} \cos{at}\]              | \[\frac{s-b}{\left(s - b \right)^2 + a^2} \text{, where } \left(s\gt b \right) \]
+\[t \sin{at}\]                  | \[\frac{2as}{\left(s^2  - a^2\right)^2} \text{, where } \left(s\gt a \right) \]
+\[t \cos{at}\]                  | \[\frac{s^2  - a^2}{\left(s^2  + a^2\right)^2} \text{, where } \left(s\gt 0 \right) \]
+\[\sinh{at}\]                   | \[\frac{a}{\left(s^2  - a^2\right)^2} \text{, where } \left(s\gt \lvert a \rvert \right) \]
+\[\cosh{at}\]                      |           \[\frac{s}{\left(s^2  - a^2\right)^2} \text{, where } \left(s\gt \lvert a \rvert \right) \]
+\[\sin \left(at + b\right)\]                 |   \[\frac{s\sin{b} + a \cos{b}}{\left(s^2  + a^2\right)^2} \]
+\[\cos \left(at + b\right)\]                 |   \[\frac{s\cos{b} - a \sin{b}}{\left(s^2  + a^2\right)^2} \]
+\[\frac{e^{at} - e^{bt}}{a - b}\] | \[\frac{1}{\left(s-a\right)\left(s-b\right)} \]
+\[\frac{ae^{at} - be^{bt}}{a - b}\] | \[\frac{s}{\left(s-a\right)\left(s-b\right)} \]
+\[\delta \text{ (impulse function)}\]         | \[1\]
+\[\text{square wave, period }=2c\]      | \[\frac{1}{s \left( 1 + e^{-cs} \right)} \]
+\[\text{triangular wave, period }=2c\]      | \[\frac{1 - e^{-cs}}{s^2 \left( 1 + e^{-cs} \right)} \]
+\[ \begin{align} at \text{ for } 0 \leq t \lt c \\ \text{sawtooth wave, period } = c \end{align}\]   | \[ \frac{a \left( 1 + cs - e^{-cs} \right) }{s^2 \left( 1 - e^{-cs} \right) } \]
+\[\sin{at} \sin{bt} \]           |      \[ \frac{2abs}{\left( s^2 + \left(a+b\right)^2\right) \left( s^2 + \left(a-b\right)^2\right)} \]
+\[\frac{1 - \cos{at}}{a^2}  \]                   | \[ \frac{1}{s \left( s^2 + a^2 \right) } \]
+\[\frac{at - \sin{at}}{a^3}  \]                   | \[ \frac{1}{s^2 \left( s^2 + a^2 \right) } \]
+\[\frac{\sin{at} - at\cos{at}}{2a^3}  \]                   | \[ \frac{1}{\left( s^2 + a^2 \right)^2 } \]
 
 ## References
 
