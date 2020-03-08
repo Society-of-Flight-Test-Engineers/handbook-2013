@@ -202,10 +202,10 @@
 <p><em>In an effort to reduce confusion and conflict regarding pitot and static pressure nomenclature, SFTE has elected to change two definitions and symbols since the first edition of this handbook was released. Henceforth, <span class="math inline">\(\Delta Ps\)</span> shall indicate static pressure ERROR (<span class="math inline">\(\Delta P_s = P_s - P_a)\)</span> and <span class="math inline">\(\Delta P_T\)</span> shall indicate total (i.e. pitot) pressure ERROR (<span class="math inline">\(\Delta P_T = P_p - P_T\)</span>). This nomenclature eliminates the <span class="math inline">\(\Delta P_p\)</span> symbol and confusion as to whether it indicates position error or pitot error.</em></p>
 <div id="common-nomenclature" class="section level2 unnumbered">
 <h2>Common Nomenclature</h2>
-<table style="width:86%;">
+<table>
 <colgroup>
-<col width="20%" />
-<col width="65%" />
+<col width="23%" />
+<col width="76%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -232,7 +232,7 @@
 </tr>
 <tr class="odd">
 <td align="left"><span class="math inline">\(P_0\)</span></td>
-<td align="left">ambient pressure at sea level on a standard day (<span class="math inline">\(=2116.2 lb/ft^2 = 29.92 in Hg \)</span>)</td>
+<td align="left">ambient pressure at sea level on a standard day (<span class="math inline">\(=2116.2 lb/ft^2 = 29.92 in Hg\)</span>)</td>
 </tr>
 <tr class="even">
 <td align="left"><span class="math inline">\(P_p\)</span></td>
@@ -365,10 +365,7 @@
 <p><span class="math display">\[V_e = \sqrt{7 \frac{P_a}{\rho_0} \left( \left\lbrack \frac{q_c}{P_a}+1 \right\rbrack^{2/7} - 1 \right) } \]</span></p>
 <p>The adjacent chart does this graphically for all subsonic airspeeds.</p>
 <p><span class="math display">\[V_e = V_c + \Delta V_c\]</span></p>
-<div class="figure">
-<img src="media/04/image3.svg" width="855" height="595" />
-
-</div>
+<p><img src="media/04/image3.svg" style="width:8.91528in;height:6.20764in" /></p>
 </div>
 <div id="subsonic-relations-between-compressible-and-incompressible-dynamic-pressure" class="section level2">
 <h2><span class="header-section-number">4.3</span> Subsonic Relations Between Compressible and Incompressible Dynamic Pressure</h2>
@@ -379,20 +376,17 @@
 <p><span class="math display">\[q_c = q \left\lbrack 1 + \frac{M^2}{4} + \frac{M^4}{40} + \frac{M^6}{1600} + ... \right\rbrack \]</span></p>
 <p>True dynamic pressure <span class="math inline">\(q\)</span> (as used in modeling) is defined in dimensional analysis as:</p>
 <p><span class="math display">\[q = \frac{1}{2} \rho_a V_T^2 = \frac{1}{2}\rho_0V_e^2\]</span></p>
-<p>This value for <span class="math inline">\(q\)</span> should not be confused with compressible (a.k.a. impact or differential) pressure, <span class="math inline">\(q_c (= P_T - P_a) \)</span></p>
-<div class="figure">
-<img src="media/04/image8.png" width="863" height="507" />
-
-</div>
+<p>This value for <span class="math inline">\(q\)</span> should not be confused with compressible (a.k.a. impact or differential) pressure, <span class="math inline">\(q_c (= P_T - P_a)\)</span></p>
+<p><img src="media/04/image8.png" style="width:8.99861in;height:5.29097in" /></p>
 </div>
 <div id="supersonic-airspeed-and-mach-equations" class="section level2">
 <h2><span class="header-section-number">4.4</span> Supersonic Airspeed and Mach Equations</h2>
-<p><span class="math inline">\(=P_T&#39;\)</span> denotes pitot pressure behind shock wave</p>
+<p><span class="math inline">\(P_T&#39;\)</span> denotes pitot pressure behind shock wave</p>
 <p>True Airspeed</p>
 <p><span class="math display">\[ \frac{P_T&#39; - P_a}{P_a} = \frac{q_c}{P_a} = \left[ \frac{\gamma + 1}{2} \left(  \frac{V}{a} \right)^2  \right]^\frac{\gamma}{\gamma-1} \left[ \frac{1}{ \frac{2\gamma}{\gamma+1} \left( \frac{V}{a} \right)^2 - \frac{\gamma-1}{\gamma+1} }  \right]^\frac{1}{\gamma-1} - 1 \]</span></p>
-<p>Equivalent Airspeed (valid if <span class="math inline">\(q_c/P_a &gt; 0.892929158 \)</span>)</p>
+<p>Equivalent Airspeed (valid if <span class="math inline">\(q_c/P_a &gt; 0.892929158\)</span>)</p>
 <p><span class="math display">\[ \frac{q_c}{P_a} = \frac{166.92 \left[ \frac{V_e}{a_0 \sqrt{\sigma}} \right]^7} {\left( 7 \left[ \frac{V_e}{a_0 \sqrt{\sigma}} \right]^2 - 1 \right)^{2.5}} - 1 \]</span></p>
-<p>Calibrated Airspeed (valid if <span class="math inline">\(V_c &gt; a_0 \)</span>)</p>
+<p>Calibrated Airspeed (valid if <span class="math inline">\(V_c &gt; a_0\)</span>)</p>
 <p><span class="math display">\[ \frac{q_c}{P_0} = \frac{166.92 \left[ \frac{V_c}{a_0} \right]^7} {\left( 7 \left[ \frac{V_c}{a_0} \right]^2 - 1 \right)^{2.5}} - 1\]</span></p>
 <p>Mach Number</p>
 <p><span class="math display">\[ \frac{q_c}{P_a} = \frac{166.92 M^7} {\left( 7 M^2 - 1 \right)^{2.5}} -1 \]</span></p>
@@ -400,33 +394,24 @@
 <div id="total-temperature-equation" class="section level2">
 <h2><span class="header-section-number">4.5</span> Total Temperature Equation</h2>
 <p>Since stagnation exists at the probe, it absorbs the energy of the air</p>
-<div class="figure">
-<img src="media/04/image13.png" width="480" height="78" />
-
-</div>
+<p><img src="media/04/image13.png" style="width:5in;height:0.82in" /></p>
 <p>Apply Bernoulli:</p>
 <p><span class="math display">\[ \frac{V^2}{2} + \frac{\gamma}{\gamma - 1}  \frac{P_s}{\rho_s} = \frac{\gamma}{\gamma - 1} \frac{P_p}{\rho_p} \]</span></p>
-<p>Also <span class="math inline">\(\frac{P}{\rho} = RT \)</span> and <span class="math inline">\(a^2 = \gamma RT \)</span> therefore</p>
+<p>Also <span class="math inline">\(\frac{P}{\rho} = RT\)</span> and <span class="math inline">\(a^2 = \gamma RT\)</span> therefore</p>
 <p><span class="math display">\[ \frac{T_T}{T_a} = 1 + \left[ \frac{\gamma - 1}{2} \right] M^2 \]</span></p>
 <p>Use <em>K</em> (probe recovery factor) to account for heat losses:</p>
 <p><span class="math display">\[ \frac{T_T}{T_a} = 1 + \left[ \frac{K(\gamma - 1)}{2} \right] M^2 \]</span></p>
 <p>During position error flight testing, measure <span class="math inline">\(T_i\)</span>. From <span class="math inline">\(V_c\)</span> and <span class="math inline">\(H_{pc}\)</span> determine M</p>
 <p><span class="math display">\[ T_i + \Delta T_{ic} = T_T = T_a + T_aKM^2 \]</span></p>
 <p>Plot <span class="math inline">\(T_i\)</span> vs <span class="math inline">\(M^2\)</span></p>
-<div class="figure">
-<img src="media/04/image14.svg" width="414" height="288" />
-
-</div>
+<p><img src="media/04/image14.svg" style="width:4.3125in;height:3in" /></p>
 </div>
 <div id="altimeter-equation" class="section level2">
 <h2><span class="header-section-number">4.6</span> Altimeter Equation</h2>
 <p><span class="math inline">\(P_a = P_0 \left(1-6.87535 \times 10^{-6} H\right)^{5.256}\)</span> below 36,089 ft</p>
 <p><span class="math inline">\(P_a = P_0 \left(0.22335 \right) \textrm{e}^{-0.00004806[H-36089]}\)</span> above 36,089 ft</p>
 <!--- FIXME: This figure really tells you nothing --->
-<div class="figure">
-<img src="media/04/image15.png" width="403" height="394" />
-
-</div>
+<p><img src="media/04/image15.png" style="width:4.20347in;height:4.11319in" /></p>
 <!--- FIXME: The following equations aren't really referenced anywhere in this section.  Some are defined at the section beginning --->
 <table>
 <thead>
@@ -438,7 +423,7 @@
 <tbody>
 <tr class="odd">
 <td align="left"><span class="math inline">\(H_i\)</span></td>
-<td align="left">indicated pressure altituide (29.92&quot; Hg)</td>
+<td align="left">indicated pressure altituide (29.92" Hg)</td>
 </tr>
 <tr class="even">
 <td align="left"><span class="math inline">\(\Delta H_{ic}\)</span></td>
@@ -464,10 +449,7 @@
 <div id="fly-by" class="section level3">
 <h3><span class="header-section-number">4.7.1</span> Fly-by</h3>
 <p>As depicted below, the flyby method originally used some sort of viewing platform with surveyed distances and a grid or other device for determining the aircraft’s relative angle above the platform’s altimeter. This information combined to give the aircraft’s actual pressure altitude. Modern methods replace the tower system with a radar altimeter or GPS unit to determine tapeline height above the flyby line (<span class="math inline">\(H_g\)</span>). This geometric height is converted to a pressure altitude change using a temperature correction. When added to the aircraft’s pressure altitude on the runway, this change provides the actual pressure altitude during the flyby (<span class="math inline">\(\textrm{Actual } H_c = \textrm{runway pressure altitude} + H_g (T_s/T_t)\)</span>). <!--- This nomenclature is inconsistent with the rest of the section ---></p>
-<div class="figure">
-<img src="media/04/image17.png" width="507" height="169" />
-
-</div>
+<p><img src="media/04/image17.png" style="width:5.28681in;height:1.76042in" /></p>
 <p><span class="math display">\[\textrm{Actual } H_{c} = H_{c_{tower}} + \left( D\tan\theta \cdot \frac{T_{s}}{T_{t}} \right) \]</span></p>
 <p><span class="math display">\[ \Delta H_{pc} = \textrm{Actual } H_c - \left( H_i + \Delta H_{ic} \right) \]</span></p>
 <!--- Changing capital subscript 's' to lower-case to make more consistent with rest of the handbook --->
@@ -478,45 +460,33 @@
 <p><span class="math display">\[ \Delta V_{pc} = V_c - V_{ic} \]</span></p>
 <!--- FIXME: What flow chart is this referring to??? --->
 <p>See flowchart for high mach or <span class="math inline">\(P_T \ne 0\)</span> cases.</p>
-<div class="figure">
-<img src="media/04/image18.svg" width="498" height="302" />
-
-</div>
+<p><img src="media/04/image18.svg" style="width:5.1875in;height:3.15in" /></p>
 <p>Note: A check on basic instrument calibration is easily accomplished using a “ground block” where a parked test aircraft compares altimeters with tower. Any error can be treated as a bias.</p>
-<p>This altitude-based Test method determines altimeter corrections and therefore static error directly. Accurately converting this static source error to an airspeed correction also requires knowledge of the test pitot tube’s total pressure error (<span class="math inline">\(\Delta P_T\)</span> ). This can be determined either through direct comparison with a calibrated noseboom pitot pressure or from one of the airspeed-based methods that directly yield airspeed corrections (pace, ground course, GPS). In lieu of these options, the pitot error may assumed to be zero, but this will reduce confidence in the calculated value for airspeed correction.</p>
+<p>This altitude-based test method determines altimeter corrections and therefore static error directly. Accurately converting this static source error to an airspeed correction also requires knowledge of the test pitot tube’s total pressure error (<span class="math inline">\(\Delta P_T\)</span> ). This can be determined either through direct comparison with a calibrated noseboom pitot pressure or from one of the airspeed-based methods that directly yield airspeed corrections (pace, ground course, GPS). In lieu of these options, the pitot error may assumed to be zero, but this will reduce confidence in the calculated value for airspeed correction.</p>
 </div>
 <div id="ground-course-method" class="section level3">
 <h3><span class="header-section-number">4.7.2</span> Ground Course Method</h3>
 <!--- This figure doesn't add much value --->
-<div class="figure">
-<img src="media/04/image19.svg" width="438" height="390" />
-
-</div>
+<p><img src="media/04/image19.svg" style="width:4.5625in;height:4.0625in" /></p>
 <p>Fly known course at constant <span class="math inline">\(V_i\)</span></p>
-<p>Elapsed time = <span class="math inline">\(\Delta T\)</span>, therefore <span class="math inline">\(V_T = \frac{\Delta S}{\Delta T} \)</span></p>
+<p>Elapsed time = <span class="math inline">\(\Delta T\)</span>, therefore <span class="math inline">\(V_T = \frac{\Delta S}{\Delta T}\)</span></p>
 <p>Use <span class="math inline">\(H_i\)</span> and <span class="math inline">\(T_i\)</span> to compute <span class="math inline">\(V_e = V_T \left(\sqrt{\sigma} \right) = V_c\)</span> for low altitude</p>
-<p>Correct <span class="math inline">\(V_i\)</span> for instrument error corrections (<span class="math inline">\(\Delta V_{ic} \)</span>) using</p>
+<p>Correct <span class="math inline">\(V_i\)</span> for instrument error corrections (<span class="math inline">\(\Delta V_{ic}\)</span>) using</p>
 <p><span class="math display">\[V_{ic} = V_i + \Delta V_{ic} \]</span></p>
 <p><span class="math display">\[\Delta V_{pc} = V_c - V_{ic} \]</span></p>
 <p>To determine altimeter error assume <span class="math inline">\(\Delta P_T = 0\)</span></p>
 <p><span class="math display">\[\frac{1}{2} \rho_0 \left[ V_c^2 - V_{ic}^2 \right] = +\Delta P_s \]</span></p>
 <p><span class="math display">\[\Delta P_s = +\rho g \Delta H \]</span></p>
-<p>If <span class="math inline">\(\Delta P_T \ne 0\)</span>, then <span class="math inline">\(\Delta H_{pc} = + \frac{\Delta P_s - \Delta P_T}{\rho g} \)</span></p>
+<p>If <span class="math inline">\(\Delta P_T \ne 0\)</span>, then <span class="math inline">\(\Delta H_{pc} = + \frac{\Delta P_s - \Delta P_T}{\rho g}\)</span></p>
 <!--- FIXME: This is a poor place to label a figure --->
 <p>Error resulting from a <span class="math inline">\(\frac{1}{2}\)</span> sec timing error</p>
 <!--- FIXME: This image should probably be split into two with consistent axes and font sizes --->
-<div class="figure">
-<img src="media/04/image21.svg" width="529" height="620" />
-
-</div>
-<p>This airspeed-based Test method determines airspeed corrections directly. Accurately converting this airspeed error to a static source error requires knowledge of the test pitot tube’s total pressure error (<span class="math inline">\(\Delta P_T\)</span>). This can be determined using one of the altitude-based methods that directly yield altitude corrections (tower fly-by, trailing cone or bomb). In lieu of these options, the pitot error may assumed to be zero, but this will reduce confidence in the calculated values for static pressure error and altimeter correction.</p>
+<p><img src="media/04/image21.svg" style="width:5.5125in;height:6.4625in" /></p>
+<p>This airspeed-based test method determines airspeed corrections directly. Accurately converting this airspeed error to a static source error requires knowledge of the test pitot tube’s total pressure error (<span class="math inline">\(\Delta P_T\)</span>). This can be determined using one of the altitude-based methods that directly yield altitude corrections (tower fly-by, trailing cone or bomb). In lieu of these options, the pitot error may assumed to be zero, but this will reduce confidence in the calculated values for static pressure error and altimeter correction.</p>
 </div>
 <div id="trailing-conebomb-method" class="section level3">
 <h3><span class="header-section-number">4.7.3</span> Trailing Cone/Bomb Method</h3>
-<div class="figure">
-<img src="media/04/image23.svg" width="570" height="288" />
-
-</div>
+<p><img src="media/04/image23.svg" style="width:5.9375in;height:3in" /></p>
 <ol style="list-style-type: decimal">
 <li>Measure <span class="math inline">\(P_s\)</span> (ref) away from pressure field of aircraft</li>
 <li>Cone is used to stabilize static line</li>
@@ -524,12 +494,12 @@
 <li>Inexpensive—can be trailed on landing</li>
 <li>Consider lag effects during rapid altitude changes</li>
 </ol>
-<p><span class="math inline">\(\Delta P_s = \Delta P_{s_{A/C}} - \Delta P_{s_{REF}} \)</span></p>
-<p><span class="math inline">\(\Delta H_{pc} = +\frac{\Delta P_s}{\rho g} = \textrm{altimeter correction} \)</span> <!--- Probably not needed to define this here again ---></p>
-<p><span class="math inline">\(\Delta P_T - \Delta P_s = \Delta P_D = q_{ic} - q_c \textrm{ assuming } \Delta P_T = 0 \textrm{ , } M &lt; 0.2 \)</span> <!--- Unclear ---></p>
+<p><span class="math inline">\(\Delta P_s = \Delta P_{s_{A/C}} - \Delta P_{s_{REF}}\)</span></p>
+<p><span class="math inline">\(\Delta H_{pc} = +\frac{\Delta P_s}{\rho g} = \textrm{altimeter correction}\)</span> <!--- Probably not needed to define this here again ---></p>
+<p><span class="math inline">\(\Delta P_T - \Delta P_s = \Delta P_D = q_{ic} - q_c \textrm{ assuming } \Delta P_T = 0 \textrm{ , } M &lt; 0.2\)</span> <!--- Unclear ---></p>
 <p>If pitot errors do exist, then they must be included in calculations for <span class="math inline">\(\Delta V_{pc}\)</span> (see flowchart). <!--- which one??? ---></p>
 <p>Using a trailing cone during stall testing may give airspeed errors due to lag errors during the deceleration.</p>
-<p>This altitude-based Test method determines altimeter corrections and therefore static error directly. Accurately converting this static source error to an airspeed correction also requires knowledge of the test pitot tube’s total pressure error (<span class="math inline">\(\Delta P_T\)</span>). This can be determined either through direct comparison with a calibrated noseboom pitot pressure or from one of the airspeed-based methods that directly yield airspeed corrections (pace, ground course, GPS). In lieu of these options, the pitot error may assumed to be zero, but this will reduce confidence in the calculated value for airspeed correction.</p>
+<p>This altitude-based test method determines altimeter corrections and therefore static error directly. Accurately converting this static source error to an airspeed correction also requires knowledge of the test pitot tube’s total pressure error (<span class="math inline">\(\Delta P_T\)</span>). This can be determined either through direct comparison with a calibrated noseboom pitot pressure or from one of the airspeed-based methods that directly yield airspeed corrections (pace, ground course, GPS). In lieu of these options, the pitot error may assumed to be zero, but this will reduce confidence in the calculated value for airspeed correction.</p>
 </div>
 <div id="gps-methods" class="section level3">
 <h3><span class="header-section-number">4.7.4</span> GPS Methods</h3>
@@ -556,7 +526,7 @@
 <p>GPS accuracies are variable. Know tolerances before accepting GPS as a truth model.</p>
 <p>If exact (<span class="math inline">\(\pm 10^{\circ}\)</span>) winds are calculated inflight, you can fly one pass directly into/away from the wind</p>
 <p><span class="math display">\[V_T = V_G + V_{Headwind}\]</span></p>
-<p>This airspeed-based Test method determines airspeed corrections directly. Accurately converting this airspeed error to a static source error requires knowledge of the test pitot tube’s total pressure error (<span class="math inline">\(\Delta P_T\)</span>). This can be determined using one of the altitude-based methods that directly yield altitude corrections (tower fly-by, trailing cone or bomb). In lieu of these options, the pitot error may assumed to be zero, but this will reduce confidence in the calculated values for static pressure error and altimeter correction.</p>
+<p>This airspeed-based test method determines airspeed corrections directly. Accurately converting this airspeed error to a static source error requires knowledge of the test pitot tube’s total pressure error (<span class="math inline">\(\Delta P_T\)</span>). This can be determined using one of the altitude-based methods that directly yield altitude corrections (tower fly-by, trailing cone or bomb). In lieu of these options, the pitot error may assumed to be zero, but this will reduce confidence in the calculated values for static pressure error and altimeter correction.</p>
 <!--- FIXME: set up cross-reference to Section 4.11 and the "last chart on Page 04-29" below.  Also there is no Page 04-29 in the handbook--->
 <p><em>Graphs in Section 4.11 separately show the effect of measurement errors in <span class="math inline">\(\Delta P_T\)</span>, air temperature, or true airspeed on <span class="math inline">\(\Delta V_c\)</span> calculations . The last chart of this Section shows how each knot of accumulated <span class="math inline">\(\Delta V_c\)</span> uncertainty affects the <span class="math inline">\(\Delta H_c\)</span> uncertainty at various altitudes and temperatures.</em></p>
 <p>Flying four legs instead of three allows four separate calculations of wind speed &amp; direction to confirm stable winds at that test airspeed. If several real-time calculations of winds confirm constant direction and velocity, then testing may be shortened by flying only one pass directly into or away from the wind. If this is done, an end-of-test wind calibration must be performed to confirm steady winds throughout the test series. To minimize temperature and wind variations, testing should be accomplished within a relatively small area.</p>
@@ -573,13 +543,10 @@
 <li>need to fly close to the ground, tracking perpendicular ground references</li>
 </ul></li>
 </ul>
-<div class="figure">
-<img src="media/04/image28.svg" width="259" height="239" />
-
-</div>
+<p><img src="media/04/image28.svg" style="width:2.7in;height:2.49514in" /></p>
 <p>True airspeed: <span class="math inline">\(V_T = \frac{1}{2} \sqrt{V_1^2 + V_2^2 + V_3^2 + V_1^2 \times \frac{V_3^2}{V_2^2}}\)</span></p>
-<p>Wind velocity: <span class="math inline">\(V_W = \sqrt{\left( \frac{V_1 - V_3}{2} \right)^2 + \left( \frac{V_2 - V_1 \times V_3 / V_2}{2} \right) ^2 } \)</span></p>
-<p>Wind direction: <span class="math inline">\(\psi_W = \tan^{-1} \frac{V_2 - V_1 \times V_3 / V_2}{V_1 - V_3} \)</span></p>
+<p>Wind velocity: <span class="math inline">\(V_W = \sqrt{\left( \frac{V_1 - V_3}{2} \right)^2 + \left( \frac{V_2 - V_1 \times V_3 / V_2}{2} \right) ^2 }\)</span></p>
+<p>Wind direction: <span class="math inline">\(\psi_W = \tan^{-1} \frac{V_2 - V_1 \times V_3 / V_2}{V_1 - V_3}\)</span></p>
 </div>
 <div id="horseshoe-heading-gps-method" class="section level4 unnumbered">
 <h4>Horseshoe Heading GPS Method</h4>
@@ -590,14 +557,11 @@
 <li>Determine true airspeed by solving three equations in three unknowns</li>
 </ul></li>
 </ul>
-<div class="figure">
-<img src="media/04/image31.svg" width="486" height="258" />
-
-</div>
+<p><img src="media/04/image31.svg" style="width:5.0625in;height:2.6875in" /></p>
 <!--- FIXME: the wind direction (psi) below doesn't use the "W" subscript as it did above.  Intentional? --->
-<p>Wind direction: <span class="math inline">\(\psi = \tan^{-1} \frac{-V_{G1}^2 + 2V_{G2}^2 - V_{G3}^2}{V_{G3}^2 - V_{G1}^2} \)</span></p>
-<p>Wind velocity: <span class="math inline">\(V_W = \frac{1}{2} \left[ V_{G3}^2 + V_{G1}^2 \pm \sqrt{ \left(V_{G3}^2 + V_{G1}^2 \right)^2 \pm \left( \frac{-V_{G1}^2 + 2V_{G2}^2 - V_{G3}^2}{\sin{\psi}} \right)^2 } \right]^{1/2} \)</span></p>
-<p>True airspeed: <span class="math inline">\(V_T = \sqrt{\frac{V_{G3}^2 + V_{G1}^2}{2} - V_W^2} \)</span></p>
+<p>Wind direction: <span class="math inline">\(\psi = \tan^{-1} \frac{-V_{G1}^2 + 2V_{G2}^2 - V_{G3}^2}{V_{G3}^2 - V_{G1}^2}\)</span></p>
+<p>Wind velocity: <span class="math inline">\(V_W = \frac{1}{2} \left[ V_{G3}^2 + V_{G1}^2 \pm \sqrt{ \left(V_{G3}^2 + V_{G1}^2 \right)^2 \pm \left( \frac{-V_{G1}^2 + 2V_{G2}^2 - V_{G3}^2}{\sin{\psi}} \right)^2 } \right]^{1/2}\)</span></p>
+<p>True airspeed: <span class="math inline">\(V_T = \sqrt{\frac{V_{G3}^2 + V_{G1}^2}{2} - V_W^2}\)</span></p>
 <p>The “Windbox” method consists of flying four legs instead of three. The extra leg provides a fourfold increase in wind calculations to improve result confidence. The “Orbis” method extends this advantage by collecting data at every heading throughout a level turn.</p>
 </div>
 <div id="cloverleaf-method" class="section level4 unnumbered">
@@ -641,50 +605,47 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><span class="math inline">\(X_1 = V_{g_1} * \sin(\pi * (360 - Trk_1) / 180) \)</span></td>
+<td align="left"><span class="math inline">\(X_1 = V_{g_1} * \sin(\pi * (360 - Trk_1) / 180)\)</span></td>
 </tr>
 <tr class="even">
-<td align="left"><span class="math inline">\(Y_1 = V_{g_1} * \cos(\pi * (360 - Trk_1) / 180) \)</span></td>
+<td align="left"><span class="math inline">\(Y_1 = V_{g_1} * \cos(\pi * (360 - Trk_1) / 180)\)</span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span class="math inline">\(X_2 = V_{g_2} * \sin(\pi * (360 - Trk_2) / 180) \)</span></td>
+<td align="left"><span class="math inline">\(X_2 = V_{g_2} * \sin(\pi * (360 - Trk_2) / 180)\)</span></td>
 </tr>
 <tr class="even">
-<td align="left"><span class="math inline">\(Y_2 = V_{g_2} * \cos(\pi * (360 - Trk_2) / 180) \)</span></td>
+<td align="left"><span class="math inline">\(Y_2 = V_{g_2} * \cos(\pi * (360 - Trk_2) / 180)\)</span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span class="math inline">\(X_3 = V_{g_3} * \sin(\pi * (360 - Trk_3) / 180) \)</span></td>
+<td align="left"><span class="math inline">\(X_3 = V_{g_3} * \sin(\pi * (360 - Trk_3) / 180)\)</span></td>
 </tr>
 <tr class="even">
-<td align="left"><span class="math inline">\(Y_3 = V_{g_3} * \cos(\pi * (360 - Trk_3) / 180) \)</span></td>
+<td align="left"><span class="math inline">\(Y_3 = V_{g_3} * \cos(\pi * (360 - Trk_3) / 180)\)</span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span class="math inline">\(M_1 = -(X_2 - X_1) / (Y_2 - Y_1) \)</span></td>
+<td align="left"><span class="math inline">\(M_1 = -(X_2 - X_1) / (Y_2 - Y_1)\)</span></td>
 </tr>
 <tr class="even">
-<td align="left"><span class="math inline">\(M_2 = -(X_3 - X_1) / (Y_3 - Y_1) \)</span></td>
+<td align="left"><span class="math inline">\(M_2 = -(X_3 - X_1) / (Y_3 - Y_1)\)</span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span class="math inline">\(B_1 = (Y_1 + Y_2)/2 - M_1 * (X_1 + X_2) / 2 \)</span></td>
+<td align="left"><span class="math inline">\(B_1 = (Y_1 + Y_2)/2 - M_1 * (X_1 + X_2) / 2\)</span></td>
 </tr>
 <tr class="even">
-<td align="left"><span class="math inline">\(B_2 = (Y_1 + Y_3)/2 - M_2 * (X_1 + X_3) / 2 \)</span></td>
+<td align="left"><span class="math inline">\(B_2 = (Y_1 + Y_3)/2 - M_2 * (X_1 + X_3) / 2\)</span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span class="math inline">\(V_{W_x} = (B_1 - B_2) / (M_2 - M_1) \)</span></td>
+<td align="left"><span class="math inline">\(V_{W_x} = (B_1 - B_2) / (M_2 - M_1)\)</span></td>
 </tr>
 <tr class="even">
-<td align="left"><span class="math inline">\(V_{w_y} = M_1 * V_{W_x} + B_1 \)</span></td>
+<td align="left"><span class="math inline">\(V_{w_y} = M_1 * V_{W_x} + B_1\)</span></td>
 </tr>
 </tbody>
 </table>
-<div class="figure">
-<img src="media/04/image32.png" width="480" height="326" />
-
-</div>
-<table style="width:35%;">
+<p><img src="media/04/image32.png" style="width:5in;height:3.4in" /></p>
+<table>
 <colgroup>
-<col width="34%" />
+<col width="100%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -693,22 +654,22 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Aircraft true airspeed <span class="math inline">\(= V_T = \left[\left(X_1 - V_{W_x}\right)^2 + \left(Y_1 - V_{W_y}\right)^2 \right]^{0.5} \)</span></td>
+<td align="left">Aircraft true airspeed <span class="math inline">\(= V_T = \left[\left(X_1 - V_{W_x}\right)^2 + \left(Y_1 - V_{W_y}\right)^2 \right]^{0.5}\)</span></td>
 </tr>
 <tr class="even">
-<td align="left">Total wind speed <span class="math inline">\(= V_W = \left[\left(V_{W_x}^2 + V_{W_y}^2\right)\right]^{0.5} \)</span></td>
+<td align="left">Total wind speed <span class="math inline">\(= V_W = \left[\left(V_{W_x}^2 + V_{W_y}^2\right)\right]^{0.5}\)</span></td>
 </tr>
 <tr class="odd">
-<td align="left">Wind direction <span class="math inline">\(= \psi_W = Psi_W = \mod(540 - (180/\pi * \textrm{ATAN2}(V_{W_y}, V_{W_x})), 360) \)</span></td>
+<td align="left">Wind direction <span class="math inline">\(= \psi_W = Psi_W = \mod(540 - (180/\pi * \textrm{ATAN2}(V_{W_y}, V_{W_x})), 360)\)</span></td>
 </tr>
 <tr class="even">
-<td align="left">1<sup>st</sup> leg a/c heading <span class="math inline">\(= \psi_1 = Psi_1 = \mod(540 - (180/\pi * \textrm{ATAN2}(V_{W_y}-Y_1, V_{W_x}-X_1)), 360) \)</span></td>
+<td align="left">1<sup>st</sup> leg a/c heading <span class="math inline">\(= \psi_1 = Psi_1 = \mod(540 - (180/\pi * \textrm{ATAN2}(V_{W_y}-Y_1, V_{W_x}-X_1)), 360)\)</span></td>
 </tr>
 <tr class="odd">
-<td align="left">2<sup>nd</sup> leg a/c heading <span class="math inline">\(= \psi_2 = Psi_2 = \mod(540 - (180/\pi * \textrm{ATAN2}(V_{W_y}-Y_2, V_{W_x}-X_2)), 360) \)</span></td>
+<td align="left">2<sup>nd</sup> leg a/c heading <span class="math inline">\(= \psi_2 = Psi_2 = \mod(540 - (180/\pi * \textrm{ATAN2}(V_{W_y}-Y_2, V_{W_x}-X_2)), 360)\)</span></td>
 </tr>
 <tr class="even">
-<td align="left">3<sup>rd</sup> leg a/c heading <span class="math inline">\(= \psi_3 = Psi_3 = \mod(540 - (180/\pi * \textrm{ATAN2}(V_{W_y}-Y_3, V_{W_x}-X_3)), 360) \)</span></td>
+<td align="left">3<sup>rd</sup> leg a/c heading <span class="math inline">\(= \psi_3 = Psi_3 = \mod(540 - (180/\pi * \textrm{ATAN2}(V_{W_y}-Y_3, V_{W_x}-X_3)), 360)\)</span></td>
 </tr>
 </tbody>
 </table>
@@ -717,69 +678,39 @@
 </div>
 <div id="position-error-far-2325.1323-and-.1325jar-certification" class="section level2">
 <h2><span class="header-section-number">4.8</span> Position Error FAR 23/25.1323 and .1325/JAR Certification</h2>
-<div class="figure">
-<img src="media/04/image47.svg" />
-
-</div>
+<p><img src="media/04/image47.svg" /></p>
 <!--- FIXME: This should be defined elsewhere --->
 <ul>
 <li>Requirements
 <ul>
 <li>Maximum error at sea level must be less than <span class="math inline">\(\pm 30 \textrm{ft}/100 \textrm{kts}\)</span> between <span class="math inline">\(1.3 V_{SO}\)</span> and <span class="math inline">\(1.8 V_{S1}\)</span></li>
-<li><span class="math inline">\(V_{S0} = \)</span> Full flap, gear down, power off, stall speed )</li>
-<li><span class="math inline">\(V_{S1} = \)</span> Stall speed in a specific configuration )</li>
+<li><span class="math inline">\(V_{S0} =\)</span> Full flap, gear down, power off, stall speed )</li>
+<li><span class="math inline">\(V_{S1} =\)</span> Stall speed in a specific configuration )</li>
 </ul></li>
 </ul>
-<div class="figure">
-<img src="media/04/image48.svg" />
-
-</div>
+<p><img src="media/04/image48.svg" /></p>
 <p>Errors must be equal to or less than <span class="math inline">\(\pm3\%\)</span> of <span class="math inline">\(V_c\)</span> or <span class="math inline">\(\pm5\textrm{kts}\)</span> whichever is greater</p>
 <div id="mil-spec-p-26292-c-usaf" class="section level4">
 <h4><span class="header-section-number">4.8.0.1</span> Mil Spec P-26292 C (USAF)</h4>
 <p>Landing configuration: <span class="math inline">\(\Delta H_{pc} \pm 30\)</span> ft.</p>
-<div class="figure">
-<img src="media/04/image50.svg" width="552" height="258" />
-
-</div>
+<p><img src="media/04/image50.svg" style="width:5.75in;height:2.6875in" /></p>
 </div>
 </div>
 <div id="pec-correction-process-flow-chart" class="section level2">
 <h2><span class="header-section-number">4.9</span> PEC Correction Process Flow Chart</h2>
-<div class="figure">
-<img src="media/04/image52.svg" width="828" height="618" />
-
-</div>
+<p><img src="media/04/image52.svg" style="width:8.63072in;height:6.4465in" /></p>
 </div>
 <div id="airspeedaltitudemach-graphic-relation" class="section level2">
 <h2><span class="header-section-number">4.10</span> Airspeed/Altitude/Mach Graphic Relation</h2>
-<div class="figure">
-<img src="media/04/image53.png" width="833" height="605" />
-
-</div>
-<div class="figure">
-<img src="media/04/image54.svg" width="894" height="616" />
-
-</div>
+<p><img src="media/04/image53.png" style="width:8.68611in;height:6.31181in" /></p>
+<p><img src="media/04/image54.svg" style="width:9.31667in;height:6.42153in" /></p>
 </div>
 <div id="effect-of-errors-on-calibrated-airspeed-and-altitude" class="section level2">
 <h2><span class="header-section-number">4.11</span> Effect of Errors on Calibrated Airspeed and Altitude</h2>
-<div class="figure">
-<img src="media/04/image55.png" width="834" height="550" />
-
-</div>
-<div class="figure">
-<img src="media/04/image56.svg" width="864" height="551" />
-
-</div>
-<div class="figure">
-<img src="media/04/image57.png" width="864" height="512" />
-
-</div>
-<div class="figure">
-<img src="media/04/image58.svg" width="864" height="625" />
-
-</div>
+<p><img src="media/04/image55.png" style="width:8.6875in;height:5.73819in" /></p>
+<p><img src="media/04/image56.svg" style="width:9in;height:5.74444in" /></p>
+<p><img src="media/04/image57.png" style="width:9in;height:5.33889in" /></p>
+<p><img src="media/04/image58.svg" style="width:9in;height:6.51111in" /></p>
 
 </div>
 </div>
@@ -844,7 +775,7 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    var src = "";
+    var src = "true";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
