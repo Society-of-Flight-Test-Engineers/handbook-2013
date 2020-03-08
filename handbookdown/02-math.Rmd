@@ -611,55 +611,46 @@ a_{21} & a_{22} \\
 a_{22} & a_{23}
 \end{vmatrix}.\]
 
-### Computing the Inverse of a Matrix (raw)
+### Computing the Inverse of a Matrix
 
 There is a straightforward (but computationally inefficient and intensive) four-step method for computing the *inverse* of a matrix \[A\].
 
-**Step 1** Compute the determinant of \[*A*\]. This determinant is written \|*A*\|. If the determinant is zero or does not exist, the matrix \[*A*\] is defined as singular and an inverse cannot be found.
+**Step 1** Compute the determinant of \(A\).   If the determinant is zero or does not exist, the matrix \[*A*\] is said to be *singular* and an inverse does not exist.
 
-**Step 2** Transpose matrix \[*A*\]. The resultant matrix is written \[*A*\]*^T *.
+**Step 2** Transpose matrix \(A\), denoted \(A^T\).
 
-**Step 3** Replace each element a~ij~ of the transposed matrix by its cofactor *A~ij~*. This resulting matrix is defined as the adjoint of matrix \[*A*\] and is written Adj\[*A*\].
+**Step 3** Replace each element \(a_{ij}\) of the transposed matrix by its *cofactor*, \(A_{ij}\). The resulting matrix is called the *adjoint* matrix, Adj\(A\).
 
-**Step 4** Divide the adjoint matrix by the scalar value of the determinant of \[*A*\] which was computed in Step 1. The resulting matrix is the inverse and is written \[*A*\]^{-1} .
+**Step 4** Divide the adjoint matrix by the determinant.
 
-*Example:* Given the following set of simultaneous equations, solve for
+*Example.* Solve the following set of simultaneous equations.
+\[
+3x_1 + 2x_2 - 2x_3 = y_1 \\
+-x_1 +x_2 +4x_3 = y_2 \\
+2x_1 -3x_2 +4x_3 = y_3
+\]
+We can express this as \(Ax = y\). If the matrix is invertible, then the solution of the system is given by \(x = A^{-1} y\).
 
-*x*~1~, *x*~2~, and *x*~3~.
-
-3*x*~1~ *+* 2*x*~2~ *− * 2*x*~3~* * = *y*~1~
-
-*− x*~1~ *+ x*~2~   +* * 4*x*~3~* * = *y*~2~
-
-2*x*~1~ * −* 3*x*~2~ +* * 4*x*~3~* * = *y*~3~
-
-This set of equations can be written as: \[*A*\]^ ^ \[*x*\] = \[*y*\]
-
-![][02029]
-
-and solved as follows: \[*x*\] = \[*A*\]^{-1}  \[*y*\]
-
-Thus, the system can be solved for the values of *x*~1~, *x*~2~, and *x*~3~ by computing the inverse of \[*A*\].
-
-**Step 1.** Compute the determinant of \[*A*\]. Expanding about the first row
-
-\|*A*\| *=* 3(4 + 12) − 2 (−4 −8) −2 (3 − 2)
-
-\|*A*\| *=* 48 + 24 −2 = 70
+**Step 1.** Compute the determinant: \(|A| = 70\).
 
 **Step 2.** Transpose \[*A*\].
+\[
+A^T = \begin{bmatrix} 
+3 & -1 & -2 \\ 
+2 & 1 & -3 \\
+-2 & 4 & 4
+\end{bmatrix} 
+\]
 
-![][02030]
-
-**Step 3.** Determine the adjoint matrix by replacing each element in \[*A*\]*^T * by its Cofactor.
+**Step 3.** Determine the adjoint matrix by replacing each element in \(A^T\) by its Cofactor.
 
 ![][02031]
 
-**Step 4.** Divide by the scalar value of the determinant of \[*A*\] which was computed as 70 in Step 1.
+**Step 4.** Divide by the determinant.
 
 ![][02032]
 
-if *y*~1~ = 1, *y*~2~ = 13, and *y*~3~ = 8
+Then, if \(y_1 = 1, y_2 = 13\), and \(y_3 = 8\):
 
 ![][02033]
 
