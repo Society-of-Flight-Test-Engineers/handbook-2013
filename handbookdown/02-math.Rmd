@@ -1000,27 +1000,73 @@ The following are Taylor Series expansion of *Trigonometric* functions:
 \[\frac{d \cot^{-1}{x}}{dx} = -\frac{1}{1+x^2} \text{ or } \frac{d \cot^{-1}{u}}{dx} = -\frac{1}{1+u^2}\frac{du}{dx}\]
 -----
 
-## Integral Table (raw)
+## Integral Table
 
 (references 2.2, 2.3)
 
-*x* is any variable, *u* is any function of *x*, *a* & *b* are arbitrary constants.
+```{block, type='author_comment', echo=FALSE}
+The section of variable definitions should match the Derivative Table section 
+above. There's no reason for them to be different, and every reason for them
+to be the same.
+```
 
-*The constant of integration, c, has been omitted from this table*
+* \(x\) is any variable
+* \(u\) is any function of \(x\)
+* \(w\) is dependent on \(u\)
+* \(a\) and \(b\) are arbitrary constants
+* \(C\), the constant of integration, has been omitted from this table, but
+should be added to the result of every integration
 
-*but should be added to the result of every integration*.
-
-Fundamental Integrals
-
-![][02111]
-
-Expressions containing exponential and logarithmic functions
-
-![][02112]
-
-**Expressions containing trigonometric functions**
-
-![][02113]
+---------------------
+*Fundamental Integrals*
+\[ \int_{}{} a \, dx = ax \]
+\[ \int_{}{} a \, f\left(x\right) dx = a \int_{}{} f\left(x\right) dx \]
+\[ \int_{}{} \left(u+v\right) dx = \int_{}{} u\,dx + \int_{}{}v\,dx \]
+\[ \int_{}{} u\,dv = uv - \int_{}{}v\,du \]
+\[ \int_{}{} \frac{u\,dv}{dx} dx = uv - \int_{}{} v \frac{du}{dx} dx\]
+\[ \int_{}{} x^n dx = \frac{x^{n+1}}{n+1} \text{, } n \neq -1\]
+\[ \int_{}{} x^{-1} dx = \ln{x}  \]
+\[ \int_{}{} w \left( u \right) dx = \int_{}{} w\left( u \right) \frac{dx}{du} u \]
+\[ \int_{}{} \frac{dx}{a^2 + x^2} = \frac{1}{a} \tan^{-1} \frac{x}{a} \]
+\[ \int_{}{} \frac{dx}{\sqrt{a^2 - x^2}} = \sin^{-1} \frac{x}{a} \]
+\[ \int_{}{} \frac{dx}{\sqrt{a^2 \pm x^2}} = \ln \left( x - \sqrt{a^2 \pm x^2} \right) \]
+\[ \int_{}{} \sqrt{a^2 - u^2} = \frac{1}{2} \left( u \sqrt{a^2 - x^2} + a^2 \sin^{-1} \frac{u}{a} \right) \]
+\[ \int_{}{} \frac{du}{a^2 + u^2} = \frac{1}{a} \tan^{-1} \frac{u}{a} \text{, } a \gt 0 \]
+*Expressions Containing Exponential and Logarithmic Functions*
+\[ \int_{}{} \frac{dx}{x} = \ln{x} \]
+\[ \int_{}{} e^{x} dx = e^{x} \]
+\[ \int_{}{} e^{ax} dx = \frac{e^{ax}}{a} \]
+\[ \int_{}{} b^{ax} dx = \frac{b^ax}{a \ln{b}} \]
+\[ \int_{}{} \ln{x} dx = x \ln{x} - x \]
+\[ \int_{}{} b^{u} du = \frac{b^u}{\ln{u}} \]
+\[ \int_{}{} x e^{ax} dx = \frac{e^ax}{a^2} \left( ax - 1 \right) \]
+\[ \int_{}{} x b^{ax} dx = \frac{x b^{ax}}{a \ln{b} } - \frac{b^{ax}}{a^2 \left( \ln{b} \right) } \]
+\[ \int_{}{} x^2 e^{ax} dx = \frac{e^{ax}}{a^3} \left(a^2 x^2 - 2ax + 2 \right) \]
+\[ \int_{}{} \ln{ax} dx = x \ln{ax} - x \]
+\[ \int_{}{} x \ln{ax} dx = \frac{x^2}{2} \ln{ax} - \frac{x^2}{4} \]
+\[ \int_{}{} x^2 \ln{ax} dx = \frac{x^3}{3} \ln{ax} - \frac{x^3}{9} \]
+\[ \int_{}{} \left( \ln{ax} \right)^2 dx = x \left( \ln{ax} \right)^2 - 2x \ln{ax} + 2x \]
+\[ \int_{}{} \frac{dx}{x \ln{ax}} = \ln{\left( \ln{ax} \right)} \]
+\[ \int_{}{} \frac{x^n}{\ln{ax}} dx = \frac{1}{a^{n+1}} \int_{}{} \frac{e^{y} dy}{y} \text{, where } y = \left(n + 1\right) \ln{ax} \]
+*Expressions Containing Trigonometric Functions*
+\[ \int_{}{} \sin{x} dx = -\cos{x} \]
+\[ \int_{}{} \cos{x} dx = \sin{x} \]
+\[ \int_{}{} \tan{x} dx = -\ln{ \left( \cos{x} \right)} \]
+\[ \int_{}{} \cot{x} dx = \ln{\left( \sin{x} \right)} \]
+\[ \int_{}{} \sec{x} dx = \ln{ \left( \sec{x} + \tan{x} \right)} \]
+\[ \int_{}{} \csc{x} dx = \ln{ \left( \csc{x} - \cot{x} \right)} \]
+\[ \int_{}{} \sin^2{u} du = \frac{1}{2} u - \frac{1}{2} \sin{u} \cos{u} \]
+\[ \int_{}{} \cos^2{u} du = \frac{1}{2} u + \frac{1}{2} \sin{u} \cos{u} \]
+\[ \int_{}{} \csc^2{u} du = -\cot{u} \]
+\[ \int_{}{} \tan^2{u} du = \tan{u} - u \]
+\[ \int_{}{} \cot^2{u} du = -\cot{u} - u \]
+\[ \int_{}{} \sin{ax} dx = -\frac{1}{a} \cos{ax} \]
+\[ \int_{}{} \sin^2{ax} dx = \frac{x}{2}-\frac{\sin{2ax}}{4a}  \]
+\[ \int_{}{} \frac{dx}{\sin{ax}} = \frac{1}{a} \ln{ \tan{\frac{ax}{2}}} \]
+\[ \int_{}{} \frac{dx}{\sin^2{ax}} = -\frac{1}{a} \cot{ax} \]
+\[ \int_{}{} \frac{dx}{1 \pm \sin{ax}} = \mp \frac{1}{a} \tan{\left( \frac{\pi}{4} \mp \frac{ax}{2} \right) } \]
+\[ \int_{}{} \sin{x} \cos{x} dx = \frac{1}{2} \sin^2{x} \]
+---------------------
 
 ## Laplace Table (raw)
 

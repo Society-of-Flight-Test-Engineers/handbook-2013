@@ -130,7 +130,7 @@
 <li class="chapter" data-level="2.6" data-path="mathematics.html"><a href="mathematics.html#probability-and-statistics"><i class="fa fa-check"></i><b>2.6</b> Probability and Statistics</a></li>
 <li class="chapter" data-level="2.7" data-path="mathematics.html"><a href="mathematics.html#standard-series"><i class="fa fa-check"></i><b>2.7</b> Standard Series</a></li>
 <li class="chapter" data-level="2.8" data-path="mathematics.html"><a href="mathematics.html#derivative-table"><i class="fa fa-check"></i><b>2.8</b> Derivative Table</a></li>
-<li class="chapter" data-level="2.9" data-path="mathematics.html"><a href="mathematics.html#integral-table-raw"><i class="fa fa-check"></i><b>2.9</b> Integral Table (raw)</a></li>
+<li class="chapter" data-level="2.9" data-path="mathematics.html"><a href="mathematics.html#integral-table"><i class="fa fa-check"></i><b>2.9</b> Integral Table</a></li>
 <li class="chapter" data-level="2.10" data-path="mathematics.html"><a href="mathematics.html#laplace-table-raw"><i class="fa fa-check"></i><b>2.10</b> Laplace Table (raw)</a></li>
 <li class="chapter" data-level="2.11" data-path="mathematics.html"><a href="mathematics.html#references"><i class="fa fa-check"></i><b>2.11</b> References</a></li>
 </ul></li>
@@ -1172,18 +1172,165 @@ When <span class="math inline">\(0 &lt; x\)</span>:
 </tbody>
 </table>
 </div>
-<div id="integral-table-raw" class="section level2">
-<h2><span class="header-section-number">2.9</span> Integral Table (raw)</h2>
+<div id="integral-table" class="section level2">
+<h2><span class="header-section-number">2.9</span> Integral Table</h2>
 <p>(references 2.2, 2.3)</p>
-<p><em>x</em> is any variable, <em>u</em> is any function of <em>x</em>, <em>a</em> &amp; <em>b</em> are arbitrary constants.</p>
-<p><em>The constant of integration, c, has been omitted from this table</em></p>
-<p><em>but should be added to the result of every integration</em>.</p>
-<p>Fundamental Integrals</p>
-<p><img src="media/02/image113.svg" /></p>
-<p>Expressions containing exponential and logarithmic functions</p>
-<p><img src="media/02/image114.svg" /></p>
-<p><strong>Expressions containing trigonometric functions</strong></p>
-<p><img src="media/02/image115.svg" /></p>
+<ul>
+<li><span class="math inline">\(x\)</span> is any variable</li>
+<li><span class="math inline">\(u\)</span> is any function of <span class="math inline">\(x\)</span></li>
+<li><span class="math inline">\(w\)</span> is dependent on <span class="math inline">\(u\)</span></li>
+<li><span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are arbitrary constants</li>
+<li><span class="math inline">\(C\)</span>, the constant of integration, has been omitted from this table, but
+should be added to the result of every integration</li>
+</ul>
+<table>
+<tbody>
+<tr class="odd">
+<td><em>Fundamental Integrals</em></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[ \int_{}{} a \, dx = ax \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[ \int_{}{} a \, f\left(x\right) dx = a \int_{}{} f\left(x\right) dx \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[ \int_{}{} \left(u+v\right) dx = \int_{}{} u\,dx + \int_{}{}v\,dx \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[ \int_{}{} u\,dv = uv - \int_{}{}v\,du \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[ \int_{}{} \frac{u\,dv}{dx} dx = uv - \int_{}{} v \frac{du}{dx} dx\]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[ \int_{}{} x^n dx = \frac{x^{n+1}}{n+1} \text{, } n \neq -1\]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[ \int_{}{} x^{-1} dx = \ln{x}  \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[ \int_{}{} w \left( u \right) dx = \int_{}{} w\left( u \right) \frac{dx}{du} u \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[ \int_{}{} \frac{dx}{a^2 + x^2} = \frac{1}{a} \tan^{-1} \frac{x}{a} \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[ \int_{}{} \frac{dx}{\sqrt{a^2 - x^2}} = \sin^{-1} \frac{x}{a} \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[ \int_{}{} \frac{dx}{\sqrt{a^2 \pm x^2}} = \ln \left( x - \sqrt{a^2 \pm x^2} \right) \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[ \int_{}{} \sqrt{a^2 - u^2} = \frac{1}{2} \left( u \sqrt{a^2 - x^2} + a^2 \sin^{-1} \frac{u}{a} \right) \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[ \int_{}{} \frac{du}{a^2 + u^2} = \frac{1}{a} \tan^{-1} \frac{u}{a} \text{, } a \gt 0 \]</span></td>
+</tr>
+<tr class="odd">
+<td><em>Expressions Containing Exponential and Logarithmic Functions</em></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[ \int_{}{} \frac{dx}{x} = \ln{x} \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[ \int_{}{} e^{x} dx = e^{x} \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[ \int_{}{} e^{ax} dx = \frac{e^{ax}}{a} \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[ \int_{}{} b^{ax} dx = \frac{b^ax}{a \ln{b}} \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[ \int_{}{} \ln{x} dx = x \ln{x} - x \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[ \int_{}{} b^{u} du = \frac{b^u}{\ln{u}} \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[ \int_{}{} x e^{ax} dx = \frac{e^ax}{a^2} \left( ax - 1 \right) \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[ \int_{}{} x b^{ax} dx = \frac{x b^{ax}}{a \ln{b} } - \frac{b^{ax}}{a^2 \left( \ln{b} \right) } \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[ \int_{}{} x^2 e^{ax} dx = \frac{e^{ax}}{a^3} \left(a^2 x^2 - 2ax + 2 \right) \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[ \int_{}{} \ln{ax} dx = x \ln{ax} - x \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[ \int_{}{} x \ln{ax} dx = \frac{x^2}{2} \ln{ax} - \frac{x^2}{4} \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[ \int_{}{} x^2 \ln{ax} dx = \frac{x^3}{3} \ln{ax} - \frac{x^3}{9} \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[ \int_{}{} \left( \ln{ax} \right)^2 dx = x \left( \ln{ax} \right)^2 - 2x \ln{ax} + 2x \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[ \int_{}{} \frac{dx}{x \ln{ax}} = \ln{\left( \ln{ax} \right)} \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[ \int_{}{} \frac{x^n}{\ln{ax}} dx = \frac{1}{a^{n+1}} \int_{}{} \frac{e^{y} dy}{y} \text{, where } y = \left(n + 1\right) \ln{ax} \]</span></td>
+</tr>
+<tr class="odd">
+<td><em>Expressions Containing Trigonometric Functions</em></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[ \int_{}{} \sin{x} dx = -\cos{x} \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[ \int_{}{} \cos{x} dx = \sin{x} \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[ \int_{}{} \tan{x} dx = -\ln{ \left( \cos{x} \right)} \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[ \int_{}{} \cot{x} dx = \ln{\left( \sin{x} \right)} \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[ \int_{}{} \sec{x} dx = \ln{ \left( \sec{x} + \tan{x} \right)} \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[ \int_{}{} \csc{x} dx = \ln{ \left( \csc{x} - \cot{x} \right)} \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[ \int_{}{} \sin^2{u} du = \frac{1}{2} u - \frac{1}{2} \sin{u} \cos{u} \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[ \int_{}{} \cos^2{u} du = \frac{1}{2} u + \frac{1}{2} \sin{u} \cos{u} \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[ \int_{}{} \csc^2{u} du = -\cot{u} \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[ \int_{}{} \tan^2{u} du = \tan{u} - u \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[ \int_{}{} \cot^2{u} du = -\cot{u} - u \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[ \int_{}{} \sin{ax} dx = -\frac{1}{a} \cos{ax} \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[ \int_{}{} \sin^2{ax} dx = \frac{x}{2}-\frac{\sin{2ax}}{4a}  \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[ \int_{}{} \frac{dx}{\sin{ax}} = \frac{1}{a} \ln{ \tan{\frac{ax}{2}}} \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[ \int_{}{} \frac{dx}{\sin^2{ax}} = -\frac{1}{a} \cot{ax} \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[ \int_{}{} \frac{dx}{1 \pm \sin{ax}} = \mp \frac{1}{a} \tan{\left( \frac{\pi}{4} \mp \frac{ax}{2} \right) } \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[ \int_{}{} \sin{x} \cos{x} dx = \frac{1}{2} \sin^2{x} \]</span></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="laplace-table-raw" class="section level2">
 <h2><span class="header-section-number">2.10</span> Laplace Table (raw)</h2>
