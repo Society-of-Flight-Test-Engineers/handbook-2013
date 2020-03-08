@@ -131,7 +131,7 @@
 <li class="chapter" data-level="2.7" data-path="mathematics.html"><a href="mathematics.html#standard-series"><i class="fa fa-check"></i><b>2.7</b> Standard Series</a></li>
 <li class="chapter" data-level="2.8" data-path="mathematics.html"><a href="mathematics.html#derivative-table"><i class="fa fa-check"></i><b>2.8</b> Derivative Table</a></li>
 <li class="chapter" data-level="2.9" data-path="mathematics.html"><a href="mathematics.html#integral-table"><i class="fa fa-check"></i><b>2.9</b> Integral Table</a></li>
-<li class="chapter" data-level="2.10" data-path="mathematics.html"><a href="mathematics.html#laplace-table-raw"><i class="fa fa-check"></i><b>2.10</b> Laplace Table (raw)</a></li>
+<li class="chapter" data-level="2.10" data-path="mathematics.html"><a href="mathematics.html#laplace-table"><i class="fa fa-check"></i><b>2.10</b> Laplace Table</a></li>
 <li class="chapter" data-level="2.11" data-path="mathematics.html"><a href="mathematics.html#references"><i class="fa fa-check"></i><b>2.11</b> References</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html"><i class="fa fa-check"></i><b>3</b> Universe Earth Atmospheric</a><ul>
@@ -1332,161 +1332,139 @@ should be added to the result of every integration</li>
 </tbody>
 </table>
 </div>
-<div id="laplace-table-raw" class="section level2">
-<h2><span class="header-section-number">2.10</span> Laplace Table (raw)</h2>
+<div id="laplace-table" class="section level2">
+<h2><span class="header-section-number">2.10</span> Laplace Table</h2>
 <p>(references 2.2, 2.3)</p>
-<table style="width:89%;">
+<table>
 <colgroup>
-<col width="38%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>time domain <em>f(t)</em></td>
-<td>frequency domain F(s)=<em>L</em>{<em>f(t)</em>}</td>
-</tr>
-<tr class="even">
-<td>1 (step function)</td>
-<td>1/s (s&gt;0)</td>
-</tr>
-<tr class="odd">
-<td>t</td>
-<td>1/s^2 (s&gt;0)</td>
-</tr>
-<tr class="even">
-<td><img src="media/02/image116.svg" /></td>
-<td><div class="line-block"><img src="media/02/image117.svg" /></div>
-(s&gt;0)</td>
-</tr>
-<tr class="odd">
-<td><img src="media/02/image122.svg" /></td>
-<td><div class="line-block">(s&gt;0)</div></td>
-</tr>
-<tr class="even">
-<td><img src="media/02/image123.svg" /></td>
-<td><div class="line-block">(s&gt;0)</div></td>
-</tr>
-<tr class="odd">
-<td>t^{n-} (n=1,2,..</td>
-<td>.) | (s&gt;0)</td>
-</tr>
-<tr class="even">
-<td>e^{at}</td>
-<td><div class="line-block">(s&gt;a)</div></td>
-</tr>
-<tr class="odd">
-<td>te^{at}</td>
-<td><div class="line-block"><img src="media/02/image124.svg" /> (s&gt;a)</div></td>
-</tr>
-<tr class="even">
-<td>t^{n-1} e^{ax} (n=1, 2, …</td>
-<td>) | <img src="media/02/image125.svg" /> (s&gt;a)</td>
-</tr>
-<tr class="odd">
-<td>sin at</td>
-<td><img src="media/02/image126.svg" /> (s&gt;0)</td>
-</tr>
-<tr class="even">
-<td>cos at</td>
-<td><img src="media/02/image127.svg" /> (s&gt;0)</td>
-</tr>
-<tr class="odd">
-<td>e^{bt} sin at</td>
-<td><div class="line-block"><img src="media/02/image128.svg" /> (s?b)</div></td>
-</tr>
-<tr class="even">
-<td>e^{bt} cos at</td>
-<td><div class="line-block"><img src="media/02/image129.svg" /> (s&gt;b)</div></td>
-</tr>
-<tr class="odd">
-<td>x sin ax</td>
-<td><img src="media/02/image130.svg" /><img src="media/02/image131.svg" /> (s&gt;a)</td>
-</tr>
-<tr class="even">
-<td><strong>x cos ax</strong></td>
-<td>(s \0)</td>
-</tr>
-<tr class="odd">
-<td>sinh at</td>
-<td><p><img src="media/02/image132.svg" /></p>
-<p><img src="media/02/image133.svg" /></p></td>
-</tr>
-</tbody>
-</table>
-<p><img src="media/02/image134.svg" /></p>
-<table style="width:60%;">
-<colgroup>
-<col width="43%" />
-<col width="16%" />
+<col width="45%" />
+<col width="55%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th><p> </p>
-cosh at</th>
-<th><img src="media/02/image135.svg" /> </th>
+<th>Time Domain <span class="math inline">\(f(t) = \mathcal{L}^{-1} \left\{ F \left( s \right) \right\}\)</span></th>
+<th>Frequency Domain <span class="math inline">\(F\left( s \right) = \mathcal{L} \left\{ f \left( t \right) \right\}\)</span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p> </p>
-<p>sin (at + b)</p></td>
-<td> </td>
+<td><span class="math display">\[1 \text{ (step function)}\]</span></td>
+<td><span class="math display">\[\frac{1}{s} \text{, where } \left(s\gt 0\right) \]</span></td>
 </tr>
 <tr class="even">
-<td><p> </p>
-<p>cos(at + b)</p></td>
-<td> </td>
+<td><span class="math display">\[t\]</span></td>
+<td><span class="math display">\[\frac{1}{s^2} \text{, where } \left(s\gt 0\right) \]</span></td>
 </tr>
 <tr class="odd">
-<td><img src="media/02/image140.svg" /> </td>
-<td><div class="line-block"> </div></td>
+<td><span class="math display">\[t^{n-1}\]</span></td>
+<td><span class="math display">\[\frac{\left( n-1 \right)!}{s^n} \text{, where } \left(s\gt 0\right) \]</span></td>
 </tr>
 <tr class="even">
-<td><img src="media/02/image141.svg" /> </td>
-<td><div class="line-block"> </div></td>
+<td><span class="math display">\[\sqrt{t}\]</span></td>
+<td><span class="math display">\[\frac{{\sqrt \pi  }}{{2{s^{\frac{3}{2}}}}} \text{, where } \left(s\gt 0\right) \]</span></td>
 </tr>
 <tr class="odd">
-<td>δ (impulse function)</td>
-<td>1</td>
+<td><span class="math display">\[\frac{1}{\sqrt{t}}\]</span></td>
+<td><span class="math display">\[\frac{{\sqrt \pi  }}{{{s^{\frac{1}{2}}}}} \text{, where } \left(s\gt 0\right) \]</span></td>
 </tr>
 <tr class="even">
-<td><p> </p>
-<p>square wave, period =2c</p>
-<p> </p></td>
-<td><img src="media/02/image142.svg" /> </td>
+<td><span class="math display">\[{t^{n - \frac{1}{2}}},\,\,\,\,\,n = 1,2,3, \ldots\]</span></td>
+<td><span class="math display">\[\frac{{1 \cdot 3 \cdot 5 \cdots \left( {2n - 1} \right)\sqrt \pi  }}{{{2^n}{s^{n + \frac{1}{2}}}}} {, where } \left(s\gt 0\right) \]</span></td>
 </tr>
 <tr class="odd">
-<td><p> </p>
-<p>triangular wave, period = 2c</p>
-<p> </p></td>
-<td><img src="media/02/image143.svg" /> </td>
+<td><span class="math display">\[e^{at}\]</span></td>
+<td><span class="math display">\[ \frac{1}{s-a} \text{, where } \left(s\gt a \right) \]</span></td>
 </tr>
 <tr class="even">
-<td><p><em>at</em> for</p>
-<p>sawtooth wave, period = c</p>
-<p> </p></td>
-<td><img src="media/02/image144.svg" /> </td>
+<td><span class="math display">\[te^{at}\]</span></td>
+<td><span class="math display">\[\frac{1}{{\left( {s - a} \right)}^{2}} \text{, where } \left(s\gt a \right) \]</span></td>
 </tr>
 <tr class="odd">
-<td><p> </p>
-<p>sin <em>at</em> sin <em>bt</em></p></td>
-<td> </td>
+<td><span class="math display">\[{t^n}{{e}^{at}},\,\,\,\,\,n = 1,2,3, \ldots\]</span></td>
+<td><span class="math display">\[\frac{{n!}}{{{{\left( {s - a} \right)}^{n + 1}}}} \text{, where } \left(s\gt a \right) \]</span></td>
 </tr>
 <tr class="even">
-<td><img src="media/02/image145.svg" /> </td>
-<td><div class="line-block"><img src="media/02/image146.svg" /> </div></td>
+<td><span class="math display">\[\sin{at} \]</span></td>
+<td><span class="math display">\[\frac{a}{s^2 + a^2} \text{, where } \left(s\gt 0 \right) \]</span></td>
 </tr>
 <tr class="odd">
-<td> </td>
-<td><img src="media/02/image147.svg" /> </td>
+<td><span class="math display">\[\cos{at}\]</span></td>
+<td><span class="math display">\[\frac{s}{s^2 + a^2} \text{, where } \left(s\gt 0 \right) \]</span></td>
 </tr>
 <tr class="even">
-<td><img src="media/02/image148.svg" /> </td>
-<td><div class="line-block"><img src="media/02/image149.svg" /> </div></td>
+<td><span class="math display">\[e^{bt} \sin{at}\]</span></td>
+<td><span class="math display">\[\frac{a}{\left(s - b \right)^2 + a^2} \text{, where } \left(s\gt b \right) \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[e^{bt} \cos{at}\]</span></td>
+<td><span class="math display">\[\frac{s-b}{\left(s - b \right)^2 + a^2} \text{, where } \left(s\gt b \right) \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[t \sin{at}\]</span></td>
+<td><span class="math display">\[\frac{2as}{\left(s^2  - a^2\right)^2} \text{, where } \left(s\gt a \right) \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[t \cos{at}\]</span></td>
+<td><span class="math display">\[\frac{s^2  - a^2}{\left(s^2  + a^2\right)^2} \text{, where } \left(s\gt 0 \right) \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[\sinh{at}\]</span></td>
+<td><span class="math display">\[\frac{a}{\left(s^2  - a^2\right)^2} \text{, where } \left(s\gt \lvert a \rvert \right) \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[\cosh{at}\]</span></td>
+<td><span class="math display">\[\frac{s}{\left(s^2  - a^2\right)^2} \text{, where } \left(s\gt \lvert a \rvert \right) \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[\sin \left(at + b\right)\]</span></td>
+<td><span class="math display">\[\frac{s\sin{b} + a \cos{b}}{\left(s^2  + a^2\right)^2} \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[\cos \left(at + b\right)\]</span></td>
+<td><span class="math display">\[\frac{s\cos{b} - a \sin{b}}{\left(s^2  + a^2\right)^2} \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[\frac{e^{at} - e^{bt}}{a - b}\]</span></td>
+<td><span class="math display">\[\frac{1}{\left(s-a\right)\left(s-b\right)} \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[\frac{ae^{at} - be^{bt}}{a - b}\]</span></td>
+<td><span class="math display">\[\frac{s}{\left(s-a\right)\left(s-b\right)} \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[\delta \text{ (impulse function)}\]</span></td>
+<td><span class="math display">\[1\]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[\text{square wave, period }=2c\]</span></td>
+<td><span class="math display">\[\frac{1}{s \left( 1 + e^{-cs} \right)} \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[\text{triangular wave, period }=2c\]</span></td>
+<td><span class="math display">\[\frac{1 - e^{-cs}}{s^2 \left( 1 + e^{-cs} \right)} \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[ \begin{align} at \text{ for } 0 \leq t \lt c \\ \text{sawtooth wave, period } = c \end{align}\]</span></td>
+<td><span class="math display">\[ \frac{a \left( 1 + cs - e^{-cs} \right) }{s^2 \left( 1 - e^{-cs} \right) } \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[\sin{at} \sin{bt} \]</span></td>
+<td><span class="math display">\[ \frac{2abs}{\left( s^2 + \left(a+b\right)^2\right) \left( s^2 + \left(a-b\right)^2\right)} \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[\frac{1 - \cos{at}}{a^2}  \]</span></td>
+<td><span class="math display">\[ \frac{1}{s \left( s^2 + a^2 \right) } \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[\frac{at - \sin{at}}{a^3}  \]</span></td>
+<td><span class="math display">\[ \frac{1}{s^2 \left( s^2 + a^2 \right) } \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[\frac{\sin{at} - at\cos{at}}{2a^3}  \]</span></td>
+<td><span class="math display">\[ \frac{1}{\left( s^2 + a^2 \right)^2 } \]</span></td>
 </tr>
 </tbody>
 </table>
-<p><img src="media/02/image150.svg" /></p>
 </div>
 <div id="references" class="section level2">
 <h2><span class="header-section-number">2.11</span> References</h2>
