@@ -548,25 +548,25 @@ Given two matrices, \(A, B\) where \(A\) is an \(i \times m\) matrix and \(B\) i
 \[c_{ij} = \sum_{k=1}^m (a_{ik}b_{kj}).\]
 In other words, we take the dot product of the *i*th row and the *j*th column.
 
-For example, the product of a pair of, \(2 \times 2\) matrices is:
-\[
-\begin{bmatrix}
-a_{11} & a_{12} \\
-a_{21} & a_{22}
-\end{bmatrix}
+For example, the product of a pair of, \(2 \times 2\) matrices is: 
 
-\begin{bmatrix}
-b_{11} & b_{12} \\
-b_{21} & b_{22}
-\end{bmatrix}
- =
-\begin{bmatrix}
-a_{11}b_{11}+a_{12}b_{21} & a_{11}b_{12}+a_{12}b_{22} \\
-a_{21}b_{11}+a_{22}b_{21} & a_{21}b_{12}+a_{12}b_{22}
-\end{bmatrix}
+\[
+\begin{bmatrix} 
+a_{11} & a_{12} \\ 
+a_{21} & a_{22} 
+\end{bmatrix} 
+\begin{bmatrix} 
+b_{11} & b_{12} \\ 
+b_{21} & b_{22} 
+\end{bmatrix} 
+= 
+\begin{bmatrix} 
+a_{11}b_{11}+a_{12}b_{21} & a_{11}b_{12}+a_{12}b_{22} \\ 
+a_{21}b_{11}+a_{22}b_{21} & a_{21}b_{12}+a_{12}b_{22} 
+\end{bmatrix} 
 \]
 
-The *identity* matrix \[I\] occupies the same position in matrix algebra that the value of unity does in ordinary algebra. It is a square matrix consisting of ones on the principle diagonal and zeros everywhere else:
+The *identity* matrix \(I\) occupies the same position in matrix algebra that the value of unity does in ordinary algebra. It is a square matrix consisting of ones on the principle diagonal and zeros everywhere else:
 \[I =
 \begin{bmatrix}
 1 & 0 & \dots & 0 \\
@@ -962,133 +962,147 @@ The following are Taylor Series expansion of *Trigonometric* functions:
 \[e^{\cos x} = e \left(1 - \frac{x^2}{2!} +\frac{4x^2}{4!} - \frac{31x^6}{6!} + \dots \right)\]
 \[e^{\tan x} = 1 + x + \frac{x^2}{2!} + \frac{3x^3}{3!} + \frac{9x^4}{4!} + \frac{37x^5}{5!} + \dots \text{for } x^2 < \frac{\pi^2}{4}\]
 
-## Derivative Table (raw)
+## Derivative Table 
 
 (references 2.2, 2.3)
 
-*x* is the independent variable; *u* and *v* are dependent on *x; w* is dependent on *u; a* and *n* are constants; *log* is common logarithm; *ln* is logarithm to the base *e*
+* \(x\) is the independent variable
+* \(u\) and \(v\) are dependent on \(x\)
+* \(w\) is dependent on \(u\)
+* \(a\) and \(n\) are constants
+* \(\log{x}\) is the common logarithm to base 10, \(\log_{10}{x}\)
+* \(\ln{x}\) is logarithm to the base \(e\), \(\log_e{x}\)
 
-![][02109]
+------
+\[\frac{da}{dx} = 0\]
+\[\frac{d\left(ax\right)}{dx} = a\]
+\[\frac{dx^n}{dx} = nx^{n-1}\]
+\[\frac{d\left(u + v \right)}{dx} = \frac{du}{dx} + \frac{dv}{dx}\]
+\[\frac{d\left(uv \right)}{dx} = u\frac{dv}{dx} + v\frac{du}{dx}\]
+\[\frac{d\left(\frac{u}{v} \right)}{dx} = \frac{1}{v^2} \left( v\frac{du}{dx} - u\frac{dv}{dx} \right)\]
+\[\frac{dw}{dx} = \frac{dw}{du}\frac{du}{dx}\]
+\[\frac{du^n}{dx} = nu^{n-1}\frac{du}{dx}\]
+\[\frac{d \ln{x}}{dx} = \frac{1}{x}\]
+\[\frac{d \ln{u}}{dx} = \frac{1}{u}\frac{du}{dx}\]
+\[\frac{d \log{u}}{dx} = \frac{\log{e}}{u}\frac{du}{dx}\]
+\[\frac{de^x}{dx} = e^x\]
+\[\frac{da^x}{dx} = a^x \ln{a}\]
+\[\frac{da^u}{dx} = a^u \ln{a}\frac{du}{dx}\]
+\[\frac{du^v}{dx} = vu^{v-1}\frac{du}{dx} + u^v \ln{u}\frac{dv}{dx}\]
+\[\frac{d \sin{x}}{dx} = \cos{x} \text{ or } \frac{d \sin{u}}{dx} = \cos{u}\frac{du}{dx}\]
+\[\frac{d \cos{x}}{dx} = -\sin{x} \text{ or } \frac{d \cos{u}}{dx} = -\sin{u}\frac{du}{dx}\]
+\[\frac{d \tan{x}}{dx} = \sec^2{x} \text{ or } \frac{d \tan{u}}{dx} = \sec^2{u}\frac{du}{dx}\]
+\[\frac{d \sec{x}}{dx} = \sec{x}\tan{x} \text{ or } \frac{d \sec{u}}{dx} = \sec{u}\tan{u}\frac{du}{dx}\]
+\[\frac{d \cot{x}}{dx} = -\csc^2{x} \text{ or } \frac{d \cot{u}}{dx} = -\csc^2{u}\frac{du}{dx}\]
+\[\frac{d \sin^{-1}{x}}{dx} = \frac{1}{\sqrt{1-x^2}} \text{ or } \frac{d \sin^{-1}{u}}{dx} = \frac{1}{\sqrt{1-u^2}}\frac{du}{dx}\]
+\[\frac{d \cos^{-1}{x}}{dx} = -\frac{1}{\sqrt{1-x^2}} \text{ or } \frac{d \cos^{-1}{u}}{dx} = -\frac{1}{\sqrt{1-u^2}}\frac{du}{dx}\]
+\[\frac{d \tan^{-1}{x}}{dx} = \frac{1}{1+x^2} \text{ or } \frac{d \tan^{-1}{u}}{dx} = \frac{1}{1+u^2}\frac{du}{dx}\]
+\[\frac{d \cot^{-1}{x}}{dx} = -\frac{1}{1+x^2} \text{ or } \frac{d \cot^{-1}{u}}{dx} = -\frac{1}{1+u^2}\frac{du}{dx}\]
+-----
 
-![][02110]
-
-## Integral Table (raw)
+## Integral Table
 
 (references 2.2, 2.3)
 
-*x* is any variable, *u* is any function of *x*, *a* & *b* are arbitrary constants.
+```{block, type='author_comment', echo=FALSE}
+The section of variable definitions should match the Derivative Table section 
+above. There's no reason for them to be different, and every reason for them
+to be the same.
+```
 
-*The constant of integration, c, has been omitted from this table*
+* \(x\) is any variable
+* \(u\) is any function of \(x\)
+* \(w\) is dependent on \(u\)
+* \(a\) and \(b\) are arbitrary constants
+* \(C\), the constant of integration, has been omitted from this table, but
+should be added to the result of every integration
 
-*but should be added to the result of every integration*.
+---------------------
+*Fundamental Integrals*
+\[ \int_{}{} a \, dx = ax \]
+\[ \int_{}{} a \, f\left(x\right) dx = a \int_{}{} f\left(x\right) dx \]
+\[ \int_{}{} \left(u+v\right) dx = \int_{}{} u\,dx + \int_{}{}v\,dx \]
+\[ \int_{}{} u\,dv = uv - \int_{}{}v\,du \]
+\[ \int_{}{} \frac{u\,dv}{dx} dx = uv - \int_{}{} v \frac{du}{dx} dx\]
+\[ \int_{}{} x^n dx = \frac{x^{n+1}}{n+1} \text{, } n \neq -1\]
+\[ \int_{}{} x^{-1} dx = \ln{x}  \]
+\[ \int_{}{} w \left( u \right) dx = \int_{}{} w\left( u \right) \frac{dx}{du} u \]
+\[ \int_{}{} \frac{dx}{a^2 + x^2} = \frac{1}{a} \tan^{-1} \frac{x}{a} \]
+\[ \int_{}{} \frac{dx}{\sqrt{a^2 - x^2}} = \sin^{-1} \frac{x}{a} \]
+\[ \int_{}{} \frac{dx}{\sqrt{a^2 \pm x^2}} = \ln \left( x - \sqrt{a^2 \pm x^2} \right) \]
+\[ \int_{}{} \sqrt{a^2 - u^2} = \frac{1}{2} \left( u \sqrt{a^2 - x^2} + a^2 \sin^{-1} \frac{u}{a} \right) \]
+\[ \int_{}{} \frac{du}{a^2 + u^2} = \frac{1}{a} \tan^{-1} \frac{u}{a} \text{, } a \gt 0 \]
+*Expressions Containing Exponential and Logarithmic Functions*
+\[ \int_{}{} \frac{dx}{x} = \ln{x} \]
+\[ \int_{}{} e^{x} dx = e^{x} \]
+\[ \int_{}{} e^{ax} dx = \frac{e^{ax}}{a} \]
+\[ \int_{}{} b^{ax} dx = \frac{b^ax}{a \ln{b}} \]
+\[ \int_{}{} \ln{x} dx = x \ln{x} - x \]
+\[ \int_{}{} b^{u} du = \frac{b^u}{\ln{u}} \]
+\[ \int_{}{} x e^{ax} dx = \frac{e^ax}{a^2} \left( ax - 1 \right) \]
+\[ \int_{}{} x b^{ax} dx = \frac{x b^{ax}}{a \ln{b} } - \frac{b^{ax}}{a^2 \left( \ln{b} \right) } \]
+\[ \int_{}{} x^2 e^{ax} dx = \frac{e^{ax}}{a^3} \left(a^2 x^2 - 2ax + 2 \right) \]
+\[ \int_{}{} \ln{ax} dx = x \ln{ax} - x \]
+\[ \int_{}{} x \ln{ax} dx = \frac{x^2}{2} \ln{ax} - \frac{x^2}{4} \]
+\[ \int_{}{} x^2 \ln{ax} dx = \frac{x^3}{3} \ln{ax} - \frac{x^3}{9} \]
+\[ \int_{}{} \left( \ln{ax} \right)^2 dx = x \left( \ln{ax} \right)^2 - 2x \ln{ax} + 2x \]
+\[ \int_{}{} \frac{dx}{x \ln{ax}} = \ln{\left( \ln{ax} \right)} \]
+\[ \int_{}{} \frac{x^n}{\ln{ax}} dx = \frac{1}{a^{n+1}} \int_{}{} \frac{e^{y} dy}{y} \text{, where } y = \left(n + 1\right) \ln{ax} \]
+*Expressions Containing Trigonometric Functions*
+\[ \int_{}{} \sin{x} dx = -\cos{x} \]
+\[ \int_{}{} \cos{x} dx = \sin{x} \]
+\[ \int_{}{} \tan{x} dx = -\ln{ \left( \cos{x} \right)} \]
+\[ \int_{}{} \cot{x} dx = \ln{\left( \sin{x} \right)} \]
+\[ \int_{}{} \sec{x} dx = \ln{ \left( \sec{x} + \tan{x} \right)} \]
+\[ \int_{}{} \csc{x} dx = \ln{ \left( \csc{x} - \cot{x} \right)} \]
+\[ \int_{}{} \sin^2{u} du = \frac{1}{2} u - \frac{1}{2} \sin{u} \cos{u} \]
+\[ \int_{}{} \cos^2{u} du = \frac{1}{2} u + \frac{1}{2} \sin{u} \cos{u} \]
+\[ \int_{}{} \csc^2{u} du = -\cot{u} \]
+\[ \int_{}{} \tan^2{u} du = \tan{u} - u \]
+\[ \int_{}{} \cot^2{u} du = -\cot{u} - u \]
+\[ \int_{}{} \sin{ax} dx = -\frac{1}{a} \cos{ax} \]
+\[ \int_{}{} \sin^2{ax} dx = \frac{x}{2}-\frac{\sin{2ax}}{4a}  \]
+\[ \int_{}{} \frac{dx}{\sin{ax}} = \frac{1}{a} \ln{ \tan{\frac{ax}{2}}} \]
+\[ \int_{}{} \frac{dx}{\sin^2{ax}} = -\frac{1}{a} \cot{ax} \]
+\[ \int_{}{} \frac{dx}{1 \pm \sin{ax}} = \mp \frac{1}{a} \tan{\left( \frac{\pi}{4} \mp \frac{ax}{2} \right) } \]
+\[ \int_{}{} \sin{x} \cos{x} dx = \frac{1}{2} \sin^2{x} \]
+---------------------
 
-Fundamental Integrals
-
-![][02111]
-
-Expressions containing exponential and logarithmic functions
-
-![][02112]
-
-**Expressions containing trigonometric functions**
-
-![][02113]
-
-## Laplace Table (raw)
+## Laplace Table
 
 (references 2.2, 2.3)
 
-+---------------------------+-----------------------------------+
-| time domain *f(t)*        | frequency domain F(s)=*L*{*f(t)*} |
-+---------------------------+-----------------------------------+
-| 1 (step function)         | 1/s (s\>0)                        |
-+---------------------------+-----------------------------------+
-| t                         | 1/s^2  (s\>0)                     |
-+---------------------------+-----------------------------------+
-| ![][02114]                  | ![][02115]                          |
-|                           |                                   |
-|                           | (s\>0)                            |
-+---------------------------+-----------------------------------+
-| ![][02116]                  | (s\>0)                            |
-+---------------------------+-----------------------------------+
-| ![][02117]                  | (s\>0)                            |
-+---------------------------+-----------------------------------+
-| t^{n-\frac{1}{2}} (n=1,2,...)      | (s\>0)                            |
-+---------------------------+-----------------------------------+
-| e^{at}                     | (s\>a)                            |
-+---------------------------+-----------------------------------+
-| te^{at}                    | ![][02118] (s\>a)                   |
-+---------------------------+-----------------------------------+
-| t^{n-1} e^{ax} (n=1, 2, ...) | ![][02119] (s\>a)                   |
-+---------------------------+-----------------------------------+
-| sin at                    | ![][02120] (s\>0)                   |
-+---------------------------+-----------------------------------+
-| cos at                    | ![][02121] (s\>0)                   |
-+---------------------------+-----------------------------------+
-| e^{bt} sin at              | ![][02122] (s?b)                    |
-+---------------------------+-----------------------------------+
-| e^{bt} cos at              | ![][02123] (s\>b)                   |
-+---------------------------+-----------------------------------+
-| x sin ax                  | ![][02124]![][02125] (s\>a)           |
-+---------------------------+-----------------------------------+
-| **x cos ax**              | (s \0)                          |
-+---------------------------+-----------------------------------+
-| sinh at                   | ![][02126]                          |
-|                           |                                   |
-|                           | ![][02127]                          |
-+---------------------------+-----------------------------------+
-
-![][02128]
-
-+------------------------------+-----------+
-|                              | ![][02129]  |
-|                              |           |
-| cosh at                      |           |
-+==============================+===========+
-|                              |           |
-|                              |           |
-| sin (at + b)                 |           |
-+------------------------------+-----------+
-|                              |           |
-|                              |           |
-| cos(at + b)                  |           |
-+------------------------------+-----------+
-| ![][02130]                     |           |
-+------------------------------+-----------+
-| ![][02131]                     |           |
-+------------------------------+-----------+
-| δ (impulse function)         | 1         |
-+------------------------------+-----------+
-|                              | ![][02132]  |
-|                              |           |
-| square wave, period =2c      |           |
-|                              |           |
-|                              |           |
-+------------------------------+-----------+
-|                              | ![][02133]  |
-|                              |           |
-| triangular wave, period = 2c |           |
-|                              |           |
-|                              |           |
-+------------------------------+-----------+
-| *at* for                     | ![][02134]  |
-|                              |           |
-| sawtooth wave, period = c    |           |
-|                              |           |
-|                              |           |
-+------------------------------+-----------+
-|                              |           |
-|                              |           |
-| sin *at* sin *bt*            |           |
-+------------------------------+-----------+
-| ![][02135]                     | ![][02136]  |
-+------------------------------+-----------+
-|                              | ![][02137]  |
-+------------------------------+-----------+
-| ![][02138]                     | ![][02139]  |
-+------------------------------+-----------+
-
-![][02140]
+Time Domain \(f(t) = \mathcal{L}^{-1} \left\{ F \left( s \right) \right\} \)      | Frequency Domain \(F\left( s \right) = \mathcal{L} \left\{ f \left( t \right) \right\}\)
+---------------------------|---------------------------------
+\[1 \text{ (step function)}\]      | \[\frac{1}{s} \text{, where } \left(s\gt 0\right) \]
+\[t\]                         | \[\frac{1}{s^2} \text{, where } \left(s\gt 0\right) \]
+\[t^{n-1}\]                | \[\frac{\left( n-1 \right)!}{s^n} \text{, where } \left(s\gt 0\right) \]
+\[\sqrt{t}\]                  | \[\frac{{\sqrt \pi  }}{{2{s^{\frac{3}{2}}}}} \text{, where } \left(s\gt 0\right) \]
+\[\frac{1}{\sqrt{t}}\]         | \[\frac{{\sqrt \pi  }}{{{s^{\frac{1}{2}}}}} \text{, where } \left(s\gt 0\right) \]                            
+\[{t^{n - \frac{1}{2}}},\,\,\,\,\,n = 1,2,3, \ldots\]     | \[\frac{{1 \cdot 3 \cdot 5 \cdots \left( {2n - 1} \right)\sqrt \pi  }}{{{2^n}{s^{n + \frac{1}{2}}}}} {, where } \left(s\gt 0\right) \]
+\[e^{at}\]                     | \[ \frac{1}{s-a} \text{, where } \left(s\gt a \right) \]
+\[te^{at}\]                    | \[\frac{1}{{\left( {s - a} \right)}^{2}} \text{, where } \left(s\gt a \right) \]
+\[{t^n}{{e}^{at}},\,\,\,\,\,n = 1,2,3, \ldots\] | \[\frac{{n!}}{{{{\left( {s - a} \right)}^{n + 1}}}} \text{, where } \left(s\gt a \right) \]
+\[\sin{at} \]                   | \[\frac{a}{s^2 + a^2} \text{, where } \left(s\gt 0 \right) \]
+\[\cos{at}\]                    | \[\frac{s}{s^2 + a^2} \text{, where } \left(s\gt 0 \right) \]
+\[e^{bt} \sin{at}\]              | \[\frac{a}{\left(s - b \right)^2 + a^2} \text{, where } \left(s\gt b \right) \]
+\[e^{bt} \cos{at}\]              | \[\frac{s-b}{\left(s - b \right)^2 + a^2} \text{, where } \left(s\gt b \right) \]
+\[t \sin{at}\]                  | \[\frac{2as}{\left(s^2  - a^2\right)^2} \text{, where } \left(s\gt a \right) \]
+\[t \cos{at}\]                  | \[\frac{s^2  - a^2}{\left(s^2  + a^2\right)^2} \text{, where } \left(s\gt 0 \right) \]
+\[\sinh{at}\]                   | \[\frac{a}{\left(s^2  - a^2\right)^2} \text{, where } \left(s\gt \lvert a \rvert \right) \]
+\[\cosh{at}\]                      |           \[\frac{s}{\left(s^2  - a^2\right)^2} \text{, where } \left(s\gt \lvert a \rvert \right) \]
+\[\sin \left(at + b\right)\]                 |   \[\frac{s\sin{b} + a \cos{b}}{\left(s^2  + a^2\right)^2} \]
+\[\cos \left(at + b\right)\]                 |   \[\frac{s\cos{b} - a \sin{b}}{\left(s^2  + a^2\right)^2} \]
+\[\frac{e^{at} - e^{bt}}{a - b}\] | \[\frac{1}{\left(s-a\right)\left(s-b\right)} \]
+\[\frac{ae^{at} - be^{bt}}{a - b}\] | \[\frac{s}{\left(s-a\right)\left(s-b\right)} \]
+\[\delta \text{ (impulse function)}\]         | \[1\]
+\[\text{square wave, period }=2c\]      | \[\frac{1}{s \left( 1 + e^{-cs} \right)} \]
+\[\text{triangular wave, period }=2c\]      | \[\frac{1 - e^{-cs}}{s^2 \left( 1 + e^{-cs} \right)} \]
+\[ \begin{align} at \text{ for } 0 \leq t \lt c \\ \text{sawtooth wave, period } = c \end{align}\]   | \[ \frac{a \left( 1 + cs - e^{-cs} \right) }{s^2 \left( 1 - e^{-cs} \right) } \]
+\[\sin{at} \sin{bt} \]           |      \[ \frac{2abs}{\left( s^2 + \left(a+b\right)^2\right) \left( s^2 + \left(a-b\right)^2\right)} \]
+\[\frac{1 - \cos{at}}{a^2}  \]                   | \[ \frac{1}{s \left( s^2 + a^2 \right) } \]
+\[\frac{at - \sin{at}}{a^3}  \]                   | \[ \frac{1}{s^2 \left( s^2 + a^2 \right) } \]
+\[\frac{\sin{at} - at\cos{at}}{2a^3}  \]                   | \[ \frac{1}{\left( s^2 + a^2 \right)^2 } \]
 
 ## References
 

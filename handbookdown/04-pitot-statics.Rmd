@@ -30,8 +30,8 @@
 | \(\Delta H_{ic}\) | altimeter instrument correction                                                                                  |
 | \(\Delta H_{pc}\) | altimeter position error correction                                                                              |
 | \(\Delta P_D\)    | dynamic pressure error (\(=P_T-\Delta P_s\))                                                                     |
-| \(\Delta P_T\)    |total (pitot) pressure error (\(=P_P-P_T\))                                                                      |
-| \(\Delta P_s\)    | static pressure error (\(=P_s-P_a\))                                                                            |
+| \(\Delta P_T\)    |total (pitot) pressure error (\(=P_P-P_T\))                                                                       |
+| \(\Delta P_s\)    | static pressure error (\(=P_s-P_a\))                                                                             |
 | \(\Delta V_{ic}\) | airspeed instrument correction                                                                                   |
 | \(\Delta V_{pc}\) | airspeed position error correction                                                                               |
 | \(\delta\)        | pressure ratio between ambient and sea level std (\(=P_a/P_0\))                                                  |
@@ -45,397 +45,370 @@
 
 True Airspeed
 
-$\mathrm{\text{\ \ \ \ }}V_{T} = \left\lbrack \frac{2\gamma}{\gamma - 1}\frac{P_{a}}{\rho_{a}}\left( \left\lbrack \frac{P_{T} - P_{a}}{P_{a}} + 1 \right\rbrack^{\frac{\gamma - 1}{\gamma}} - 1 \right) \right\rbrack^{\frac{1}{2}}$
-
-
+\[V_{T} = \left\lbrack \frac{2\gamma}{\gamma-1} \frac{P_a}{\rho_a} \left( \left\lbrack \frac{P_T - P_a}{P_a} + 1 \right\rbrack^\frac{\gamma-1}{\gamma} - 1 \right) \right\rbrack ^{1/2}\]
 
 Equivalent Airspeed
 
-(= *V~T~* equation with assumption of std day sea level density)
+(= \(V_T\) equation with assumption of std day sea level density)
 
-$V_{e} = \sqrt{7\frac{P_{a}}{\rho_{o}}\left( \left\lbrack \frac{P_{T} - P_{a}}{P_{a}} + 1 \right\rbrack^{\frac{2}{7}} - 1 \right)} = V_{T}\sqrt{\frac{\rho_{a}}{\rho_{o}}} = V_{T}\sqrt{\sigma}$
-
-
+\[V_{e} = \sqrt{7\frac{P_{a}}{\rho_{o}}\left( \left\lbrack \frac{P_{T} - P_{a}}{P_{a}} + 1 \right\rbrack^{\frac{2}{7}} - 1 \right)} = V_{T}\sqrt{\frac{\rho_{a}}{\rho_{o}}} = V_{T}\sqrt{\sigma}\]
 
 Calibrated Airspeed
 
-(= *V~e~* equation with assumption of std day sea level pressure)
+(= \(V_e\) equation with assumption of std day sea level pressure)
 
-$\mathrm{\text{\ \ \ \ }}V_{c} = \left\lbrack \frac{2\gamma}{\gamma - 1}\frac{P_{o}}{\rho_{o}}\left( \left\lbrack \frac{P_{T} - P_{a}}{P_{o}} + 1 \right\rbrack^{\frac{\gamma - 1}{\gamma}} - 1 \right) \right\rbrack^{\frac{1}{2}}$
-
-
-
-$\sqrt{\mathrm{7}\frac{\mathrm{P}_{\mathrm{o}}}{\mathrm{\rho}_{\mathrm{o}}}\left( \left\lbrack \frac{\mathrm{q}_{\mathrm{c}}}{\mathrm{P}_{\mathrm{o}}}\mathrm{+ 1} \right\rbrack^{\mathrm{.2857}}\mathrm{- 1} \right)}$
+\[V_{c} = \left\lbrack \frac{2\gamma}{\gamma - 1}\frac{P_{o}}{\rho_{o}}\left( \left\lbrack \frac{P_{T} - P_{a}}{P_{o}} + 1 \right\rbrack^{\frac{\gamma - 1}{\gamma}} - 1 \right) \right\rbrack^{\frac{1}{2}}\]
 
 
+\[\sqrt{\mathrm{7}\frac{\mathrm{P}_{\mathrm{o}}}{\mathrm{\rho}_{\mathrm{o}}}\left( \left\lbrack \frac{\mathrm{q}_{\mathrm{c}}}{\mathrm{P}_{\mathrm{o}}}\mathrm{+ 1} \right\rbrack^{\mathrm{0.2857}}\mathrm{- 1} \right)}\]
 
-Applying British units (*lb/ft^2^*) and converting from *ft/sec* to knots yields
+Applying British units (\(lb/ft^2\)) and converting from *ft/sec* to knots yields
 
-
-
-$$\mathrm{\text{\ \ \ \ }}V_{c} = 1479\sqrt{\left\lbrack \frac{P_{T} - P_{a}}{2116} + 1 \right\rbrack^{\frac{2}{7}} - 1}$$
-
-> (kts)
-
+\[ V_{c} = 1479\sqrt{\left\lbrack \frac{P_{T} - P_{a}}{2116} + 1 \right\rbrack^{\frac{2}{7}} - 1} ~(kts)\]
 
 Mach Number
 
-$M = \frac{V_{T}}{a} = \sqrt{\frac{2}{\gamma - 1}\left\lbrack \left( \frac{P_{T} - P_{a}}{P_{a}} + 1 \right)^{\frac{\gamma - 1}{\gamma}} - 1 \right\rbrack} = \sqrt{5\left( \left\lbrack \frac{q_{c}}{P_{a}} + 1 \right\rbrack^{\frac{2}{7}} - 1 \right)}$
+\[M = \frac{V_{T}}{a} = \sqrt{\frac{2}{\gamma - 1}\left\lbrack \left( \frac{P_{T} - P_{a}}{P_{a}} + 1 \right)^{\frac{\gamma - 1}{\gamma}} - 1 \right\rbrack} = \sqrt{5\left( \left\lbrack \frac{q_{c}}{P_{a}} + 1 \right\rbrack^{\frac{2}{7}} - 1 \right)}\]
+
 
 ## Scale Altitude (Compressibility ) Correction
 
+The name comes from the fact that although the equivalent airspeed equation does correct for compressibility, the sea level pressure assumption used for calibrated airspeed makes the compressibility correction valid only for that (sea level) pressure. Above sea level, the calibrated airspeed must be re-scaled for pressure effects on compressibility. The mathematical method for determining \(V_e\) from \(V_c\) is to first solve the calibrated airspeed equation for \(q_c\).
 
-The name comes from the fact that although the equivalent airspeed equation does correct for compressibility, the sea level pressure assumption used for calibrated airspeed makes the compressibility correction valid only for that (sea level) pressure. Above sea level, the calibrated airspeed must be re-scaled for pressure effects on compressibility. The mathematical method for determining *V~e~* from *V~c~* is to first solve the calibrated airspeed equation for *q~c~*
+\[q_c = P_0  \left\lbrack \left( \frac{\rho_0}{P_0} \frac{V_c^2}{7} + 1 \right)^{3.5} - 1 \right\rbrack\]
 
-*~~*
+Next, substitute this value and the ambient pressure (\(P_a\) into the equivalent airspeed equation. (\(q_c = P_T - P_a\))
 
-*~~*![][04001]
-
-*~~*
-
-Next, substitute this value and the ambient pressure (*P~a~*) into the equivalent airspeed equation. (*q~c~ = P~T~ - P~a~* )
-
-
-![][04002]
-
+\[V_e = \sqrt{7 \frac{P_a}{\rho_0} \left( \left\lbrack \frac{q_c}{P_a}+1 \right\rbrack^{2/7} - 1 \right) } \]
 
 The adjacent chart does this graphically for all subsonic airspeeds.
 
-*V~e~ = V~c~ +∆V~c~*
+\[V_e = V_c + \Delta V_c\]
 
+![][04003]
 
-![][04003
 
 ## Subsonic Relations Between Compressible and Incompressible Dynamic Pressure
 
-
 For constant density (incompressible) flow Bernoulli's equation reduces to
 
+\[V_T = \sqrt{\frac{2}{\rho_a}(P_T - P_a)} = \sqrt{\frac{2q}{\rho_a}} \]
 
-![][04004]
-![][04005]
-![][04006]
-![][04007]
-
-
-
-
-
-Where incompressible dynamic pressure *q* is defined as *P~T~-P~a~* **.**
+Where incompressible dynamic pressure \(q\) is defined as \(P_T-P_a\).
 
 As airflow speed increases, its density at the stagnation point increases thereby increasing the sensed pressure. The ratio between compressible & incompressible dynamic pressure can be written as a function of Mach number
 
-True dynamic pressure *q* (as used in modeling) is defined in dimensional analysis as:
+\[q_c = q \left\lbrack 1 + \frac{M^2}{4} + \frac{M^4}{40} + \frac{M^6}{1600} + ... \right\rbrack \]
 
-This value for *q* should not be confused with compressible (a.k.a. impact or differential) pressure, *q~c~ (= P~T~ -P~a~)*
+True dynamic pressure \(q\) (as used in modeling) is defined in dimensional analysis as:
 
+\[q = \frac{1}{2} \rho_a V_T^2 = \frac{1}{2}\rho_0V_e^2\]
+
+This value for \(q\) should not be confused with compressible (a.k.a. impact or differential) pressure, \(q_c (= P_T - P_a) \)
 
 ![][04008]
 
+
 ## Supersonic Airspeed and Mach Equations
 
-*P~T~'* denotes pitot pressure behind shock wave
-
+\(P_T'\) denotes pitot pressure behind shock wave
 
 True Airspeed
 
-![][04009]
+\[ \frac{P_T' - P_a}{P_a} = \frac{q_c}{P_a} = \left[ \frac{\gamma + 1}{2} \left(  \frac{V}{a} \right)^2  \right]^\frac{\gamma}{\gamma-1} \left[ \frac{1}{ \frac{2\gamma}{\gamma+1} \left( \frac{V}{a} \right)^2 - \frac{\gamma-1}{\gamma+1} }  \right]^\frac{1}{\gamma-1} - 1 \]
 
-![][04010]Equivalent Airspeed (valid if q~c~/P~a~ \>0.892929158)
+Equivalent Airspeed (valid if \(q_c/P_a > 0.892929158 \))
 
+\[ \frac{q_c}{P_a} = \frac{166.92 \left[ \frac{V_e}{a_0 \sqrt{\sigma}} \right]^7} {\left( 7 \left[ \frac{V_e}{a_0 \sqrt{\sigma}} \right]^2 - 1 \right)^{2.5}} - 1 \]
 
-![][04011]Calibrated Airspeed (valid if V~c~\>a~o~)
+Calibrated Airspeed (valid if \(V_c > a_0 \))
 
+\[ \frac{q_c}{P_0} = \frac{166.92 \left[ \frac{V_c}{a_0} \right]^7} {\left( 7 \left[ \frac{V_c}{a_0} \right]^2 - 1 \right)^{2.5}} - 1\]
 
-![][04012]Mach Number
+Mach Number
+
+\[ \frac{q_c}{P_a} = \frac{166.92 M^7} {\left( 7 M^2 - 1 \right)^{2.5}} -1 \]
 
 
 ## Total Temperature Equation
 
+Since stagnation exists at the probe, it absorbs the energy of the air
+
 ![][04013]
 
-During position error flight testing, measure *T~i~*
+Apply Bernoulli:
 
-From *V~c\ ~*and *H~pc\ ~*determine *M*
+\[ \frac{V^2}{2} + \frac{\gamma}{\gamma - 1}  \frac{P_s}{\rho_s} = \frac{\gamma}{\gamma - 1} \frac{P_p}{\rho_p} \]
 
-*T~i\ ~*+ ∆*T~ic\ ~*= *T~T\ ~*= *T~α\ ~*+ *T~α~ KM ^2^*
+Also \(\frac{P}{\rho} = RT \) and \(a^2 = \gamma RT \) therefore
 
-plot *T~i~* \~ *M ^2^*
+\[ \frac{T_T}{T_a} = 1 + \left[ \frac{\gamma - 1}{2} \right] M^2 \]
+
+Use *K* (probe recovery factor) to account for heat losses:
+
+\[ \frac{T_T}{T_a} = 1 + \left[ \frac{K(\gamma - 1)}{2} \right] M^2 \]
+
+During position error flight testing, measure \(T_i\).  From \(V_c\) and \(H_{pc}\) determine M
+
+\[ T_i + \Delta T_{ic} = T_T = T_a + T_aKM^2 \]
+
+Plot \(T_i\) vs \(M^2\)
 
 ![][04014]
 
 
 ## Altimeter Equation
 
+\(P_a = P_0 \left(1-6.87535 \times 10^{-6} H\right)^{5.256}\) below 36,089 ft
+
+\(P_a = P_0 \left(0.22335 \right) \textrm{e}^{-0.00004806[H-36089]}\) above 36,089 ft
+
+<!--- FIXME: This figure really tells you nothing --->
 ![][04015]
-![][04016]*Hi* Indicated pressure altitude (29.92" Hg)
 
-Δ *Hic* Instrument error correction
+<!--- FIXME: The following equations aren't really referenced anywhere in this section.  Some are defined at the section beginning --->
+| Symbol       | Definition                                   |
+|:-------------|:---------------------------------------------|
+| \(H_i\)                     | indicated pressure altituide (29.92" Hg)     |
+| \(\Delta H_{ic}\)           | instrument error correction                  | <!--- already defined at the beginning of the section --->
+| \(H_{ic}\)                  | altimeter corrected of instrument error      |
+| \(\Delta H_{pc}\)           | position error correction                    | <!--- already defined at the beginning of the section --->
+| \(H_c\)                     | calibrated pressure altitude                 |
 
-*Hic* Altimeter corrected of instrument error
 
-Δ *Hpc* Position error correction
-
-*Hc* Calibrated pressure altitude
-
-
-
-## Position Error Test Methods**
-
+## Position Error Test Methods
 
 ### Fly-by
 
-As depicted below, the flyby method originally used some sort of viewing platform with surveyed distances and a grid or other device for determining the aircraft's relative angle above the platform's altimeter. This information combined to give the aircraft's actual pressure altitude. Modern methods replace the tower system with a radar altimeter or GPS unit to determine tapeline height above the flyby line (*H~g~*). This geometric height is converted to a pressure altitude change using a temperature correction. When added to the aircraft's pressure altitude on the runway, this change provides the actual pressure altitude during the flyby (Actual *H~c~* = runway pressure altitude + *H~g~*(*T~s~*/*T~t~*).
+As depicted below, the flyby method originally used some sort of viewing platform with surveyed distances and a grid or other device for determining the aircraft's relative angle above the platform's altimeter. This information combined to give the aircraft's actual pressure altitude. Modern methods replace the tower system with a radar altimeter or GPS unit to determine tapeline height above the flyby line (\(H_g\)). This geometric height is converted to a pressure altitude change using a temperature correction. When added to the aircraft's pressure altitude on the runway, this change provides the actual pressure altitude during the flyby (\(\textrm{Actual } H_c = \textrm{runway pressure altitude} + H_g (T_s/T_t)\)). <!--- This nomenclature is inconsistent with the rest of the section --->
 
 ![][04017]
 
-$$\mathrm{\text{Actual\ }}H_{c} = H_{c_{\text{tower}}} + \left( D\tan\theta \cdot \frac{T_{s}}{T_{t}} \right)
-$$
+\[\textrm{Actual } H_{c} = H_{c_{tower}} + \left( D\tan\theta \cdot \frac{T_{s}}{T_{t}} \right) \]
 
-$${\Delta P_{S} = q_{c} - q_{\text{cic}}
-}{\Delta P_{S} = \frac{1}{2}\rho_{0}{V_{c}}^{2} - \frac{1}{2}\rho_{0}{V_{\text{ic}}}^{2}\mathrm{\text{\ \ \ }}(\mathrm{\text{low\ Mach\ only}})
-}{\mathrm{\text{Solve\ for\ }}V_{c}
-}$$
+\[ \Delta H_{pc} = \textrm{Actual } H_c - \left( H_i + \Delta H_{ic} \right) \]
 
-****See flowchart for high mach or ΔP~T~≠0 cases.
+<!--- Changing capital subscript 's' to lower-case to make more consistent with rest of the handbook --->
+\[ \Delta P_s = \rho g \Delta H_{pc} \]
 
-*Hi* Indicated pressure altitude (29.92" Hg)
+\[ \Delta P_{S} = q_{c} - q_{cic} \]
 
-Δ *Hic* Instrument error correction
+\[ \Delta P_{S} = \frac{1}{2}\rho_{0}{V_{c}^{2} - \frac{1}{2}\rho_{0}{V_{ic}}^{2} \text{ (low Mach only)}} \]
 
-*Hic* Altimeter corrected of instrument error
+Solve for \(V_c\)
 
-Δ *Hpc* Position error correction
+\[ \Delta V_{pc} = V_c - V_{ic} \]
 
-*Hc* Calibrated pressure altitude
+<!--- FIXME: What flow chart is this referring to??? --->
+See flowchart for high mach or \(P_T \ne 0\) cases.
 
-![][04018]Note: A check on basic instrument calibration is easily accomplished using a "ground block" where a parked test aircraft compares altimeters with tower. Any error can be treated as a bias.
+![][04018]
 
+Note: A check on basic instrument calibration is easily accomplished using a "ground block" where a parked test aircraft compares altimeters with tower. Any error can be treated as a bias.
 
-
-This altitude-based Test method determines altimeter corrections and therefore static error directly. Accurately converting this static source error to an airspeed correction also requires knowledge of the test pitot tube\'s total pressure error (∆P~T~ ).
-
-This can be determined either through direct comparison with a calibrated noseboom pitot pressure or from one of the airspeed-based methods that directly yield airspeed corrections (pace, ground course, GPS). In lieu of these options, the pitot error may assumed to be zero, but this will reduce confidence in the calculated value for airspeed correction.
-
+This altitude-based test method determines altimeter corrections and therefore static error directly. Accurately converting this static source error to an airspeed correction also requires knowledge of the test pitot tube's total pressure error (\(\Delta P_T\) ).  This can be determined either through direct comparison with a calibrated noseboom pitot pressure or from one of the airspeed-based methods that directly yield airspeed corrections (pace, ground course, GPS). In lieu of these options, the pitot error may assumed to be zero, but this will reduce confidence in the calculated value for airspeed correction.
 
 ### Ground Course Method
 
+<!--- This figure doesn't add much value --->
 ![][04019]
 
-![][04020]
+Fly known course at constant \(V_i\)
 
-![][04021]![][04022]
+Elapsed time = \(\Delta T\), therefore \(V_T = \frac{\Delta S}{\Delta T} \)
 
-This airspeed-based Test method determines airspeed corrections directly. Accurately converting this airspeed error to a static source error requires knowledge of the test pitot tube\'s total pressure error (∆P~T~ ). This can be determined using one of the altitude-based methods that directly yield altitude corrections (tower fly-by, trailing cone or bomb). In lieu of these options, the pitot error may assumed to be zero, but this will reduce confidence in the calculated values for static pressure error and altimeter correction.
+Use \(H_i\) and \(T_i\) to compute \(V_e = V_T \left(\sqrt{\sigma} \right) = V_c\) for low altitude
 
+Correct \(V_i\) for instrument error corrections (\(\Delta V_{ic} \)) using
+
+\[V_{ic} = V_i + \Delta V_{ic} \]
+
+\[\Delta V_{pc} = V_c - V_{ic} \]
+
+To determine altimeter error assume \(\Delta P_T = 0\)
+
+\[\frac{1}{2} \rho_0 \left[ V_c^2 - V_{ic}^2 \right] = +\Delta P_s \]
+
+\[\Delta P_s = +\rho g \Delta H \]
+
+If \(\Delta P_T \ne 0\), then \(\Delta H_{pc} = + \frac{\Delta P_s - \Delta P_T}{\rho g} \)
+
+<!--- FIXME: This is a poor place to label a figure --->
+Error resulting from a \(\frac{1}{2}\) sec timing error
+
+<!--- FIXME: This image should probably be split into two with consistent axes and font sizes --->
+![][04021]
+
+This airspeed-based test method determines airspeed corrections directly. Accurately converting this airspeed error to a static source error requires knowledge of the test pitot tube's total pressure error (\(\Delta P_T\)). This can be determined using one of the altitude-based methods that directly yield altitude corrections (tower fly-by, trailing cone or bomb). In lieu of these options, the pitot error may assumed to be zero, but this will reduce confidence in the calculated values for static pressure error and altimeter correction.
 
 
 ### Trailing Cone/Bomb Method
 
 ![][04023]
 
-1.Measure *P~S~* (ref) away from pressure field of aircraft
+1. Measure \(P_s\) (ref) away from pressure field of aircraft
+2. Cone is used to stabilize static line
+3. No speed limitations
+4. Inexpensive---can be trailed on landing
+5. Consider lag effects during rapid altitude changes
 
-2.Cone is used to stabilize static line
+\(\Delta P_s = \Delta P_{s_{A/C}} - \Delta P_{s_{REF}} \)
 
-3.No speed limitations
+\(\Delta H_{pc} = +\frac{\Delta P_s}{\rho g} = \textrm{altimeter correction} \)  <!--- Probably not needed to define this here again --->
 
-4.Inexpensive---can be trailed on landing
+\(\Delta P_T - \Delta P_s = \Delta P_D = q_{ic} - q_c \textrm{ assuming } \Delta P_T = 0 \textrm{ , } M < 0.2 \)  <!--- Unclear --->
 
-5.Consider lag effects during rapid altitude changes
-
-![][04024]![][04025]
-
-If pitot errors do exist, then they must be included in calculations for Δ*V~pc~* (see flowchart)
-
-
+If pitot errors do exist, then they must be included in calculations for \(\Delta V_{pc}\) (see flowchart). <!--- which one??? --->
 
 Using a trailing cone during stall testing may give airspeed errors due to lag errors during the deceleration.
 
+This altitude-based test method determines altimeter corrections and therefore static error directly. Accurately converting this static source error to an airspeed correction also requires knowledge of the test pitot tube's total pressure error (\(\Delta P_T\)). This can be determined either through direct comparison with a calibrated noseboom pitot pressure or from one of the airspeed-based methods that directly yield airspeed corrections (pace, ground course, GPS). In lieu of these options, the pitot error may assumed to be zero, but this will reduce confidence in the calculated value for airspeed correction.
 
+### GPS Methods
+<!--- FIXME: This whole subsection needs to be reworked to make more consistent with the rest of the Section and handbook.  Particularly formatting and use of unordered lists to introduce each chapter --->
 
-This altitude-based Test method determines altimeter corrections and therefore static error directly. Accurately converting this static source error to an airspeed correction also requires knowledge of the test pitot tube\'s total pressure error (∆P~T~ ). This can be determined either through direct comparison with a calibrated noseboom pitot pressure or from one of the airspeed-based methods that directly yield airspeed corrections (pace, ground course, GPS). In lieu of these options, the pitot error may assumed to be zero, but this will reduce confidence in the calculated value for airspeed correction.
+<!--- The following list should probably be turned into a paragraph rather than a bullet list --->
+The attraction
 
+  * no aircraft modifcations required
+    * no trailing cone or aircraft plumbing mod
+    * no flight test boom
+  * no limitation on speed or altitude
+    * can be done down to near stall
+    * any altitude
+  * easy data reduction
+    * no correlation with pace aircraft, ground radar, or other references required
 
-
-### 4.7.4 GPS Methods
-
-![][04026]
-
-Various methods available, all assume [steady]{.underline} winds and ambient temperature. You must determine wind speed and direction to calculate *V~T~* and *T~0~* and to ensure steady winds existed during test series.
-
-
+Various methods available, all assume **steady** winds and ambient temperature. You must determine wind speed and direction to calculate \(V_T\) and \(T_0\) and to ensure steady winds existed during test series.
 
 GPS accuracies are variable. Know tolerances before accepting GPS as a truth model.
 
+If exact (\(\pm 10^{\circ}\)) winds are calculated inflight, you can fly one pass directly into/away from the wind
 
+\[V_T = V_G + V_{Headwind}\]
 
-If exact (± 10º ) winds are calculated inflight, you can fly one pass directly into/away from the wind
+This airspeed-based test method determines airspeed corrections directly. Accurately converting this airspeed error to a static source error requires knowledge of the test pitot tube's total pressure error (\(\Delta P_T\)). This can be determined using one of the altitude-based methods that directly yield altitude corrections (tower fly-by, trailing cone or bomb). In lieu of these options, the pitot error may assumed to be zero, but this will reduce confidence in the calculated values for static pressure error and altimeter correction.
 
-*V~T~ = V~G~ + V~Headwind~*
-
-*~~*
-
-This airspeed-based Test method determines airspeed corrections directly. Accurately converting this airspeed error to a static source error requires knowledge of the test pitot tube\'s total pressure error (∆P~T~ ). This can be determined using one of the altitude-based methods that directly yield altitude corrections (tower fly-by, trailing cone or bomb). In lieu of these options, the pitot error may assumed to be zero, but this will reduce confidence in the calculated values for static pressure error and altimeter. correction
-
-
-
-*Graphs in Section 4.11 separately show the effect of measurement errors in ∆P~T~, air temperature, or true airspeed on ∆V~C~ calculations . The last chart (Page 04-29) shows how each knot of accumulated ∆V~C~ uncertainty affects the ∆H~C~ uncertainty at various altitudes and temperatures.*
-
-
+<!--- FIXME: set up cross-reference to Section 4.11 and the "last chart on Page 04-29" below.  Also there is no Page 04-29 in the handbook--->
+*Graphs in Section 4.11 separately show the effect of measurement errors in \(\Delta P_T\), air temperature, or true airspeed on \(\Delta V_c\) calculations . The last chart of this Section shows how each knot of accumulated \(\Delta V_c\) uncertainty affects the \(\Delta H_c\) uncertainty at various altitudes and temperatures.*
 
 Flying four legs instead of three allows four separate calculations of wind speed & direction to confirm stable winds at that test airspeed. If several real-time calculations of winds confirm constant direction and velocity, then testing may be shortened by flying only one pass directly into or away from the wind. If this is done, an end-of-test wind calibration must be performed to confirm steady winds throughout the test series. To minimize temperature and wind variations, testing should be accomplished within a relatively small area.
 
-
-
-![][04027]![][04028]
-
 #### Horseshoe Track GPS Method {-}
 
+  * Horseshoe track method
+    * fly three legs with each perpedicular ground tracks, noting GPS ground speed on each
+    * determine true airspeed by solving three equations in three unknowns
+  * Practical problem
+    * need to fly close to the ground, tracking perpendicular ground references
 
+![][04028]
 
-![][04029]
+True airspeed: \(V_T = \frac{1}{2} \sqrt{V_1^2 + V_2^2 + V_3^2 + V_1^2 \times \frac{V_3^2}{V_2^2}}\)
+
+Wind velocity: \(V_W = \sqrt{\left( \frac{V_1 - V_3}{2} \right)^2 + \left( \frac{V_2 - V_1 \times V_3 / V_2}{2} \right) ^2 } \)
+
+Wind direction: \(\psi_W = \tan^{-1} \frac{V_2 - V_1 \times V_3 / V_2}{V_1 - V_3} \)
 
 #### Horseshoe Heading GPS Method {-}
 
-•Horseshoe Heading Method
-
-> ∼Fly three legs with perpendicular headings, noting GPS ground speed on each
->
-> ∼Determine true airspeed by solving three equations in three unknowns
-
-![][04030]
+  * Horseshoe Heading Method
+    * Fly three legs with perpendicular headings, noting GPS ground speed on each
+    * Determine true airspeed by solving three equations in three unknowns
 
 ![][04031]
 
+<!--- FIXME: the wind direction (psi) below doesn't use the "W" subscript as it did above.  Intentional? --->
+Wind direction: \(\psi = \tan^{-1} \frac{-V_{G1}^2 + 2V_{G2}^2 - V_{G3}^2}{V_{G3}^2 - V_{G1}^2} \)
+
+Wind velocity: \(V_W = \frac{1}{2} \left[ V_{G3}^2 + V_{G1}^2 \pm \sqrt{ \left(V_{G3}^2 + V_{G1}^2 \right)^2 \pm \left( \frac{-V_{G1}^2 + 2V_{G2}^2 - V_{G3}^2}{\sin{\psi}} \right)^2 } \right]^{1/2} \)
+
+True airspeed: \(V_T = \sqrt{\frac{V_{G3}^2 + V_{G1}^2}{2} - V_W^2} \)
+
 The "Windbox" method consists of flying four legs instead of three. The extra leg provides a fourfold increase in wind calculations to improve result confidence. The "Orbis" method extends this advantage by collecting data at every heading throughout a level turn.
-
-
 
 #### Cloverleaf Method {-}
 
 (Microsoft Excel spreadsheet adapted from Doug Gray, NSW Australia)
 
+  * Fly three legs with approximately 90-120 degree difference between headings.
+    * Can be accomplished in a broad turn as with the horseshoe method, or
+    * Directly over a single point (cloverleaf maneuver).
+  * Accurate results require
+    * Identical values for indicated airspeed (and TAS) for all legs.
+    * Constant winds throughout data collection (single W/S vector in figure).
+    * Approx. 10 seconds stable ground speed, Vg, (G/S in figure) during each leg.
+  * Aircraft heading results for each leg entail an airborne compass swing.
 
+<!--- FIXME: The following is mean to represent Excel spreadsheet formulas, but they either need to copy-and-pastable for Excel, or the basic formulas consistent with the rest of the Handbook should be presented --->
+| Inputs for each 3-leg data set|
+|:-------------|
+| \(V_{g_1}\)    \(V_{g_2}\)    \(V_{g_3}\)  |
+| \(Trk_{1}\)    \(Trk_{2}\)    \(Trk_{3}\)  |
 
-Fly three legs with approximately 90-120 degree difference between headings.
+| Intermediate calculations     |
+|:-----------------------|
+| \(X_1 = V_{g_1} * \sin(\pi * (360 - Trk_1) / 180) \) |
+| \(Y_1 = V_{g_1} * \cos(\pi * (360 - Trk_1) / 180) \) |
+| \(X_2 = V_{g_2} * \sin(\pi * (360 - Trk_2) / 180) \) |
+| \(Y_2 = V_{g_2} * \cos(\pi * (360 - Trk_2) / 180) \) |
+| \(X_3 = V_{g_3} * \sin(\pi * (360 - Trk_3) / 180) \) |
+| \(Y_3 = V_{g_3} * \cos(\pi * (360 - Trk_3) / 180) \) |
+| \(M_1 = -(X_2 - X_1) / (Y_2 - Y_1) \) |
+| \(M_2 = -(X_3 - X_1) / (Y_3 - Y_1) \) |
+| \(B_1 = (Y_1 + Y_2)/2 - M_1 * (X_1 + X_2) / 2 \) |
+| \(B_2 = (Y_1 + Y_3)/2 - M_2 * (X_1 + X_3) / 2 \) |
+| \(V_{W_x} = (B_1 - B_2) / (M_2 - M_1) \) |
+| \(V_{w_y} = M_1 * V_{W_x} + B_1 \) |
 
-> \~ Can be accomplished in a broad turn as with the horseshoe method, or
->
-> \~ Directly over a single point (cloverleaf maneuver).
+![][04032]
 
-Accurate results require
-
-> \~ Identical values for indicated airspeed (and TAS) for all legs.
->
-> \~ Constant winds throughout data collection (single W/S vector in figure).
->
-> \~ Approx. 10 seconds stable ground speed, Vg, (G/S in figure) during each leg.
-
-Aircraft heading results for each leg entail an airborne compass swing.
-
-
-
-[Inputs for each 3-leg data set]{.underline}
-
-*Vg~1~* *Vg~2~* *Vg~3~*
-
-*Trk~1~ Trk~2~ Trk~3~*
-
-\**
-
-\**
-
-[Intermediate calculations]{.underline}
-
-*X~1~* = *Vg~1~*\*SIN(PI()\*(360-*Trk~1~*)/180)
-
-*Y~1~* = *Vg~1~*\*COS(PI()\*(360-*Trk~1~*)/180)
-
-*X~2~* = *Vg~2~*\*SIN(PI()\*(360-*Trk~2~*)/180)
-
-*Y~2~* = *Vg~2~*\*COS(PI()\*(360-*Trk~2~*)/180)
-
-*X~3~* = *Vg~3~*\*SIN(PI()\*(360-*Trk~3~*)/180)
-
-*Y~3~* = *Vg~3~*\*COS(PI()\*(360-*Trk~3~*)/180)
-
-*M~1~* = -(*X~2~ -X~1~*)/(*Y ~2~-Y~1~*)
-
-*M~2~* = -(*X~3\ ~*-*X~1~*)/(*Y~3~ -Y~1~*)
-
-*B~1~* = (*Y~1\ ~*+*Y~2~*)/2 -*M~1~*\*(*X~1\ ~*+*X~2~*)/2
-
-*B~2~* = (*Y~1\ ~*+*Y~3~*)/2 -*M~2~*\*(*X~1\ ~*+*X~3~*)/2
-
-*V~Wx~* = (*B~1\ ~*-*B~2~*)/(*M~2\ ~*-*M~1~*)
-
-*V~Wy~* = *M~1~*\* *V~Wx~* +*B~1~*
-
-**[]{.underline}**
-
-**[]{.underline}**
-
-**[]{.underline}**![][04032]
-
-**[]{.underline}**
-
-**[]{.underline}**
-
-**[Results]{.underline}**
-
-Aircraft true airspeed *= V~T~* = \[(*X~1\ ~*- *V~Wx~*)^2^ +(*Y~1\ ~*- *V~Wy~*)^2^\] ^0.5^
-
-**Total wind speed *= V~w~*** = \[(*V~Wx~* ^2^ + *V~Wy~* ^2^)\]^0.5^
-
-**Wind direction *= ψ~w~ = Psi~w~*** = MOD(540-(180/PI()\*ATAN2(*V~Wy~, V~Wx~*)),360)
-
-1^st^ leg a/c heading *= **ψ~1~ =** Psi~1~* = MOD(540-(180/PI()\*ATAN2(*V~Wy~ -Y~1~, V~Wx~ -X~1~*)),360)
-
-2^nd^ leg a/c heading *= **ψ~2~ =** Psi~2~* = MOD(540-(180/PI()\*ATAN2(*V~Wy~ --Y~2~, V~Wx~ -X~2~*)),360)
-
-3^rd^ leg a/c heading *= **ψ~3~ =** Psi~3~* = MOD(540-(180/PI()\*ATAN2(*V~Wy~* *-Y~3~, V~Wx~ -X~3~*)),360)
-
+| Results     |
+|:-----------------------|
+| Aircraft true airspeed \(= V_T = \left[\left(X_1 - V_{W_x}\right)^2 + \left(Y_1 - V_{W_y}\right)^2 \right]^{0.5} \) |
+| Total wind speed \(= V_W = \left[\left(V_{W_x}^2 + V_{W_y}^2\right)\right]^{0.5} \)  |
+| Wind direction \(= \psi_W = Psi_W = \mod(540 - (180/\pi * \textrm{ATAN2}(V_{W_y}, V_{W_x})), 360) \) |
+| 1^st^ leg a/c heading \(= \psi_1 = Psi_1 = \mod(540 - (180/\pi * \textrm{ATAN2}(V_{W_y}-Y_1, V_{W_x}-X_1)), 360) \) |
+| 2^nd^ leg a/c heading \(= \psi_2 = Psi_2 = \mod(540 - (180/\pi * \textrm{ATAN2}(V_{W_y}-Y_2, V_{W_x}-X_2)), 360) \) |
+| 3^rd^ leg a/c heading \(= \psi_3 = Psi_3 = \mod(540 - (180/\pi * \textrm{ATAN2}(V_{W_y}-Y_3, V_{W_x}-X_3)), 360) \) |
 
 
 ## Position Error FAR 23/25.1323 and .1325/JAR Certification
 
-**Requirements**
+![][04047]
 
-****
-![][04100]
+<!--- FIXME: This should be defined elsewhere --->
+  * Requirements
+    * Maximum error at sea level must be less than \(\pm 30 \textrm{ft}/100 \textrm{kts}\) between \(1.3 V_{SO}\) and \(1.8 V_{S1}\) 
+    * \(V_{S0} = \) Full flap, gear down, power off, stall speed \)
+    * \(V_{S1} = \) Stall speed in a specific configuration \)
 
-Maximum error at sea level must be less than ± 30 ft/100 kts between 1.3 *V~SO~* and 1.8 *V~SI~*
+![][04048]
 
-*V~SO~ =* Full flap, gear down, power off, stall speed
+Errors must be equal to or less than \(\pm3\%\) of \(V_c\) or \(\pm5\textrm{kts}\) whichever is greater
 
-*V~SI~ = Stall speed in a specific configuration*
-
-![][04101]
-
-\**
-
-\**
-
-![][04033]
-
+#### Mil Spec P-26292 C (USAF)
+Landing configuration: \(\Delta H_{pc} \pm 30\) ft.
 
 ![][04034]
-![][04035]
 
 ## PEC Correction Process Flow Chart
 
 ![][04036]
 
-![][04037]
+
 
 ## Airspeed/Altitude/Mach Graphic Relation
 
+![][04037]
+
 ![][04038]
 
-![][04039]
+
 
 ## Effect of Errors on Calibrated Airspeed and Altitude
+
+![][04039]
 
 ![][04040]
 
@@ -450,12 +423,12 @@ Maximum error at sea level must be less than ± 30 ft/100 kts between 1.3 *V~SO~
 [04005]: media/04/image5.svg {width="2.5006944444444446in" height="0.5277777777777778in"}
 [04006]: media/04/image6.svg {width="2.7631944444444443in" height="0.5in"}
 [04007]: media/04/image7.svg {width="1.9166666666666667in" height="0.6333333333333333in"}
-[04008]: media/04/image8.png {width="5.290972222222222in" height="8.998611111111112in"}
+[04008]: media/04/image8.png {width="8.998611111111112in" height="5.290972222222222in"}
 [04009]: media/04/image9.svg {width="4.271527777777778in" height="1.2666666666666666in"}
 [04010]: media/04/image10.svg {width="1.7715277777777778in" height="1.1388888888888888in"}
 [04011]: media/04/image11.svg {width="1.542361111111111in" height="1.0833333333333333in"}
 [04012]: media/04/image12.svg {width="1.4590277777777778in" height="0.5138888888888888in"}
-[04013]: media/04/image13.svg {width="4.9375in" height="3.1875in"}
+[04013]: media/04/image13.png {width="5.0in" height="0.82in"}
 [04014]: media/04/image14.svg {width="4.3125in" height="3.0in"}
 [04015]: media/04/image15.png {width="4.2034722222222225in" height="4.113194444444445in"}
 [04016]: media/04/image16.svg {width="4.4375in" height="1.375in"}
@@ -474,16 +447,16 @@ Maximum error at sea level must be less than ± 30 ft/100 kts between 1.3 *V~SO~
 [04029]: media/04/image29.svg {width="5.375in" height="2.1875in"}
 [04030]: media/04/image30.svg {width="6.951388888888889in" height="2.3125in"}
 [04031]: media/04/image31.svg {width="5.0625in" height="2.6875in"}
-[04032]: media/04/image32.png {width="3.0in" height="2.8833333333333333in"}
+[04032]: media/04/image32.png {width="5.0in" height="3.40in"}
 [04033]: media/04/image49.svg {width="2.9in" height="0.5097222222222222in"}
 [04034]: media/04/image50.svg {width="5.75in" height="2.6875in"}
 [04035]: media/04/image51.svg {width="2.8in" height="0.4986111111111111in"}
 [04036]: media/04/image52.svg {width="8.630718503937008in" height="6.446496062992126in"}
-[04037]: media/04/image53.png {width="6.311805555555556in" height="8.686111111111112in"}
+[04037]: media/04/image53.png {width="8.686111111111112in" height="6.311805555555556in"}
 [04038]: media/04/image54.svg {width="9.316666666666666in" height="6.4215277777777775in"}
-[04039]: media/04/image55.svg {width="5.738194444444445in" height="8.6875in"}
+[04039]: media/04/image55.png {width="8.6875in" height="5.738194444444445in"} 
 [04040]: media/04/image56.svg {width="9.0in" height="5.7444444444444445in"}
-[04041]: media/04/image57.svg {width="5.338888888888889in" height="9.0in"}
+[04041]: media/04/image57.png {width="9.0in" height="5.338888888888889in"}
 [04042]: media/04/image58.svg {width="9.0in" height="6.511111111111111in"}
-[04100]: media/04/Picture1.svg
-[04101]: media/04/Picture2.svg
+[04047]: media/04/image47.svg
+[04048]: media/04/image48.svg
