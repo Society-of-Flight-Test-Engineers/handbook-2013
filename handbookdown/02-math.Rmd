@@ -613,13 +613,13 @@ a_{22} & a_{23}
 
 ### Computing the Inverse of a Matrix
 
-There is a straightforward (but computationally inefficient and intensive) four-step method for computing the *inverse* of a matrix \[A\].
+There is a straightforward (but computationally inefficient and intensive) four-step method for computing the *inverse* of a matrix \(A\).
 
-**Step 1** Compute the determinant of \(A\).   If the determinant is zero or does not exist, the matrix \[*A*\] is said to be *singular* and an inverse does not exist.
+**Step 1** Compute the determinant of \(A\).   If the determinant is zero or does not exist, the matrix is said to be *singular* and an inverse does not exist.
 
 **Step 2** Transpose matrix \(A\), denoted \(A^T\).
 
-**Step 3** Replace each element \(a_{ij}\) of the transposed matrix by its *cofactor*, \(A_{ij}\). The resulting matrix is called the *adjoint* matrix, Adj\(A\).
+**Step 3** Replace each element \(a_{ij}\) of the transposed matrix by its *cofactor*, \(A_{ij}\). The resulting matrix is called the *adjoint* matrix, Adj \(A\).
 
 **Step 4** Divide the adjoint matrix by the determinant.
 
@@ -633,7 +633,7 @@ We can express this as \(Ax = y\). If the matrix is invertible, then the solutio
 
 **Step 1.** Compute the determinant: \(|A| = 70\).
 
-**Step 2.** Transpose \[*A*\].
+**Step 2.** Transpose the matrix.
 \[
 A^T = \begin{bmatrix} 
 3 & -1 & -2 \\ 
@@ -656,11 +656,10 @@ Then, if \(y_1 = 1, y_2 = 13\), and \(y_3 = 8\):
 
 ![][02034]
 
-### Cramer's Rule {-} (raw)
+### Cramer's Rule
 
-Given matrices A{x} = {b}
-
-If the det (D) of a matrix (A) exists, and D~r~ is the det of the matrix obtained from A by replacing the rth column of A by the column {b}, then the solution to (1) is x~r~ = D~r~/D r = 1,2,...,n
+Given a matrix, \(A\) and vectors, \(x, b\), we have a system of equations \(A x = b\).  If the determinant of the matrix exists, then let \(A_r\) be the matrix obtained from \(A\) by replacing the \(r\)th column with the vector \(b\).  Then the system of equations has a unique solution:
+\[x_r = \det(A)/ \det(A_r).\]
 
 Example of Cramer's Rule
 
