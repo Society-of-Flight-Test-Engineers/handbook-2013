@@ -619,7 +619,7 @@ There is a straightforward (but computationally inefficient and intensive) four-
 
 **Step 2** Transpose matrix \(A\), denoted \(A^T\).
 
-**Step 3** Replace each element \(a_{ij}\) of the transposed matrix by its *cofactor*, \(A_{ij}\). The resulting matrix is called the *adjoint* matrix, Adj \(A\).
+**Step 3** Replace each element \(a_{ij}\) of the transposed matrix by its *cofactor*, \(A_{ij}\). The resulting matrix is called the *adjoint* matrix, \(adj\left[A\right]\).
 
 **Step 4** Divide the adjoint matrix by the determinant.
 
@@ -644,17 +644,59 @@ A^T = \begin{bmatrix}
 
 **Step 3.** Determine the adjoint matrix by replacing each element in \(A^T\) by its Cofactor.
 
-![][02031]
+\[
+  adj\left[A\right] =
+\begin{bmatrix}
+\begin{vmatrix} 1 & -3 \\ 4 & 4 \end{vmatrix} 
+& - \begin{vmatrix} 2 & -3 \\ -2 & 4 \end{vmatrix}  
+& \begin{vmatrix} 2 & 1 \\ -2 & 4 \end{vmatrix} \\
+- \begin{vmatrix} -1 & 2 \\ 4 & 4 \end{vmatrix} 
+& \begin{vmatrix} 3 & 2 \\ -2 & 4 \end{vmatrix}  
+& - \begin{vmatrix} 3 & -1 \\ -2 & 4\end{vmatrix} \\
+\begin{vmatrix} -1 & 2 \\ 1 & -3 \end{vmatrix} 
+& - \begin{vmatrix} 3 & 2 \\ 2 & -3 \end{vmatrix}  
+& \begin{vmatrix} 3 & -1 \\ 2 & 1\end{vmatrix} \\
+\end{bmatrix}
+=
+\begin{bmatrix}
+16 & -2 & 10 \\
+12 & 16 & -10 \\
+1 & 13 & 5 \\
+\end{bmatrix}
+\]
 
 **Step 4.** Divide by the determinant.
 
-![][02032]
+\[
+\left[ A \right]^{-1} = \frac{1}{70}
+\begin{bmatrix}
+16 & -2 & 10 \\
+12 & 16 & -10 \\
+1 & 13 & 5 \\
+\end{bmatrix}
+\]
 
 Then, if \(y_1 = 1, y_2 = 13\), and \(y_3 = 8\):
 
-![][02033]
+\[
+\begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \frac{1}{70}
+\begin{bmatrix}
+16 & -2 & 10 \\
+12 & 16 & -10 \\
+1 & 13 & 5 \\
+\end{bmatrix}
+\begin{bmatrix}
+1 \\ 13 \\ 8
+\end{bmatrix} 
+\]
 
-![][02034]
+\[
+\begin{align}
+x_1 &= \frac{1}{70} \left( 16 - 26 + 80 \right) = \frac{70}{70} &= 1 \\
+x_2 &= \frac{1}{70} \left( 12 0 208 - 80 \right) = \frac{140}{70} &= 2 \\
+x_3 &= \frac{1}{70} \left( 1 + 169 + 40 \right) = \frac{210}{70} &= 3 \\
+\end{align}
+\]
 
 ### Cramer's Rule
 
@@ -663,11 +705,35 @@ Given a matrix, \(A\) and vectors, \(x, b\), we have a system of equations \(A x
 
 Example of Cramer's Rule
 
-![][02035]
+\[
+\begin{bmatrix}
+1 & 0 & 2\\
+-3 & 4 & 6 \\
+-1 & -2 & 3 \\
+\end{bmatrix}
+\begin{bmatrix}
+x_1 \\ x_2 \\ x_3
+\end{bmatrix}
+=
+\begin{bmatrix}
+6 \\ 30 \\ 8
+\end{bmatrix}
+\]
 
-![][02036]
+\[
+\begin{align}
+A = \begin{bmatrix} 1 & 0 & 2 \\ -3 & 4 & 6 \\ -1 & -2 & 3 \end{bmatrix} & A_1 = \begin{bmatrix} 6 & 0 & 2 \\ 30 & 4 & 6 \\ 8 & -2 & 3 \end{bmatrix} \\
+A_2 = \begin{bmatrix} 1 & 6 & 2 \\ -3 & 30 & 6 \\ -1 & 8 & 3 \end{bmatrix} & A_3 = \begin{bmatrix} 1 & 0 & 6 \\ -1 & 4 & 30 \\ -3 & -2 & 8 \end{bmatrix} \\
+\end{align}
+\]
 
-![][02037]
+\[
+\begin{align}
+x_1 &= \frac{\det\left( A_1 \right)}{\det\left( A \right)} = \frac{-40}{44} = \frac{-10}{11} \\
+x_2 &= \frac{\det\left( A_2 \right)}{\det\left( A \right)} = \frac{72}{44} = \frac{18}{11} \\
+x_3 &= \frac{\det\left( A_3 \right)}{\det\left( A \right)} = \frac{152}{44} = \frac{38}{11} \\
+\end{align}
+\]
 
 ## Vector Algebra
 
@@ -677,13 +743,13 @@ Example of Cramer's Rule
 
 Given vectors \(\bar{A}\) and \(\bar{B}\), where the \(i\)th component of \(\bar{A}\) is given by \(a_i\), we define addition \(\bar{A} + \bar{B}\) component-wise, such that the \(i\)th component of \(\bar{A} + \bar{B}\) is given by \(a_i + b_i\).
 
-![][02038]
+![Vector Addition][02038]
 
 ### Subtraction
 
 We define vector subtraction just as we defined vector addition above.
 
-![][02039]
+![Vector Subtraction][02039]
 
 ### Scalar Multiplication
 
@@ -752,9 +818,11 @@ b_x & b_y
 \end{vmatrix} \hat{k}
 .\]
 
-![][02048]
+![Cross Product][02048]
 
-![][02049]
+\[\hat{i} \times \hat{i} = \hat{j} \times \hat{j} = \hat{k} \times \hat{k} = 0 \]
+\[\hat{i} \times \hat{j} = \hat{k} \quad \hat{j} \times \hat{k} = \hat{i} \quad \hat{k} \times \hat{i} = \hat{j} \]
+\[\hat{j} \times \hat{i} = -\hat{k} \quad \hat{k} \times \hat{j} = -\hat{i} \quad \hat{i} \times \hat{k} = -\hat{j} \]
 
 ### Vector Differentiation
 
@@ -783,7 +851,7 @@ If \(f(t)\) is a scalar-valued function, then
 
 Reference A can be considered the inertial frame while Rotation of the B reference relative to the A reference must be considered when observing motion with respect to the A reference system.
 
-![][02051]
+![Trajectory with Two Reference Systems][02051]
 
 Note: Unit vectors are along the B system axes. Subscripts denote reference system. Reference B can be equivalent to a maneuvering aircraft.
 
@@ -824,7 +892,7 @@ Here \(\bar{\omega} \times (\bar{\omega} \times \bar{\rho})\) is the centripetal
 
 Reference A can be considered the inertial frame while the body can be equivalent to a maneuvering aircraft.
 
-![][02064]
+![Motion with One Reference System][02064]
 
 A derivation similar to the previous gives us the following for
 velocity:
