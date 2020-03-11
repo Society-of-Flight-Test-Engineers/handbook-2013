@@ -19,38 +19,32 @@
 | \(\theta = T/T_o\)       | atmospheric absolute temp/std day sea level absolute temp                              |
 | \(\sigma = \rho/\rho_ο\) | atmospheric density/std day sea level density                                          |
 
-## Section 3.1 Universal Constants** (reference 3.1)
+## Universal Constants
 
-| Constant                               | Symbol  | Value                                |
-|----------------------------------------|---------|--------------------------------------|
-| Avogadros number                       | \(N_o\) | \(6.022169 \times 10^23\) molecules/mole |
-| Boltzmann constant                     | \(k\)   | \(1.380 \times 10^-23\) J/K           |
-| electron charge                        | \(e\)   | \(1,602 \times 10^-19\) Coulomb          |
-| electron mass                          | \(m_e\) | \(9.109 \times 10^-31\) kg               |
-| gas constant                           | \(R\)   | \(8.31434\) J/K mole              |
-| gravitational constant                 | \(G\)   | \(6.673 \times 10^-11\) Nm2/kg2      |
-| neutron mass                           | \(m_n\) | \(1.674 \times 10^-27\) kg               |
-| Planck constant                        | \(h\)   | \(6.625 \times 10^-34\) J sec            |
-| proton mass                            | \(m_p\) | \(1.672 \times 10^-27\) kg               |
-| speed of light in a vacuum             | \(c\)   | \(2.998 \times 10^8\) m/sec              |
-| unified atomic mass constant           | \(m_u\) | \(1.660 \times 10^-27\) kg               |
-| volume of ideal gas (std temp & press) | \(V\)   | \(2.241 \times 10\) m3/mol              |
+(reference 3.1)
 
- 
+| Constant                               | Symbol  | Value                                |  Units |
+|----------------------------------------|---------|--------------------------------------|--------|
+| Avogadros number                       | \(N_o\) | \(6.022169 \times 10^{23}\) | molecules/mole |
+| Boltzmann constant                     | \(k\)   | \(1.380 \times 10^{-23}\) | J/^o^K           |
+| electron charge                        | \(e\)   | \(1.602 \times 10^{-19}\) | Coulomb          |
+| electron mass                          | \(m_e\) | \(9.109 \times 10^{-31}\) | kg               |
+| gas constant                           | \(R\)   | \(8.31434\) | J/^o^K mole              |
+| gravitational constant                 | \(G\)   | \(6.673 \times 10^{-11}\) | Nm^2^/kg^2^      |
+| neutron mass                           | \(m_n\) | \(1.674 \times 10^{-27}\) | kg               |
+| Planck constant                        | \(h\)   | \(6.625 \times 10^{-34}\) | J sec            |
+| proton mass                            | \(m_p\) | \(1.672 \times 10^{-27}\) | kg               |
+| speed of light in a vacuum             | \(c\)   | \(2.998 \times 10^8\) | m/sec              |
+| unified atomic mass constant           | \(m_u\) | \(1.660 \times 10^{-27}\) | kg               |
+| volume of ideal gas (std temp & press) | \(V\)   | \(2.241 \times 10\) | m^3^/mol              |
 
-### Newtonian Gravity**
+### Newtonian Gravity {-}
 
-The gravitaional field (\(g\)) near any mass can be calculated as
+The gravitational field (\(g\)) near any mass can be calculated as
 
- ![][03001]
+\[ g = \frac{GM}{R_A^2} \]
 
- 
-
- 
-
- 
-
-where \(G\) is the universal gravitational constant and \(R_A\) is the absolute distance from the center of mass M
+where \(G\) is the universal gravitational constant and \(R_A\) is the absolute distance from the center of mass \(M\)
 
  
 
