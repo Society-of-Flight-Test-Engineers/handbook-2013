@@ -9,255 +9,144 @@ Both fixed-earth and moving-earth axis systems keep constant *orientation* with 
 
 ![][06001]
 
-## 6.2 Aircraft Axis Systems** (ref 6.6.2)
-
- 
-
-• The **body axis** system originates at the aircraft's reference center of gravity. The +*x~b~* direction is towards the front, the +*y~b~* direction is towards the right wing tip, and the +*z~b~* direction is towards the bottom of the aircraft.
-
- 
-
- 
-
- 
-
- 
-
- ![][06002]
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-• The **stability axis system** is similar to the body axis system except that it is rotated about the y-axis through the angle of attack (α)
-
- 
-
- 
-
- 
-
-![][06003] 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-Forces, velocities or accelerations along the stability axes are related to the body axes as follows
-
- 
-
- 
-
-  
-
- *x~b~* = *x~s~* cos α − *z~s~* sin α
-
-*z~b~* = *z~s~* cos α + *x~s~* sin α
-
-*y~b~* = *y~s~*
-
- 
-
- 
-
- 
-
- 
-
-For cases where the z axis is defined positive upward (typical for normal-axis accelerometers)
-
- 
-
-x~b~ = x~s~ cos α + z~s~ sin α
-
-z~b~ = z~s~ cos α - x~s~ sin α
-
- 
-
- 
-
- 
-
- 
-
- • The **wind axis** system is similar to the stability axis system except it is rotated about the *z~s~* axis through the angle of sideslip (β).
-
- 
-
-The term "wind" refers to the fact that the freestream relative wind approaches the aircraft directly along the *x~w~* axis. This dictates that the true airspeed also lies along the *x~w~* axis.
-
- 
-
- 
-
- 
-
-![][06004] 
-
- 
-
- Forces, velocities or accelerations along the wind axes are related to the stability axes as follows
-
- 
-
-*x~s~ = x~w~* cos β − *y~w~* sin β
-
-*y~s~ = y~w~* cos β + *x~w~* sin β
-
-*z~s~ = z~w~*
-
- 
+## Aircraft Axis Systems
+(Reference 6.6.2)
+
+### Body Axis System
+The *body axis* system, denoted by a subscript \(b\,) originates at the aircraft center of gravity. The positive direction of the \(x_b\)-axis is towards the front. The positive direction of the \(y_b\)-axis is towards the right wing tip, and the positive direction of the \(z_b\)-axis is towards the bottom of the aircraft. 
+
+![][06002]
+
+### Stability Axis System
+The *stability axis* system is similar to the body axis system except that it is rotated about the \(y\)-axis through the angle of attack \(\alpha\).
+
+![][06003]
+
+Forces, velocities or accelerations along the stability axes are related to the body axes as follows.
+\[
+\begin{align}
+x_b =& x_s \cos \alpha − z_s \sin \alpha \\
+y_b =& y_s \\
+z_b =& z_s \cos \alpha + x_s \sin \alpha
+\end{align}
+\]
+
+For cases where the z axis is defined positive upward (typical for normal-axis accelerometers), we have the following.
+\[
+\begin{align}
+x_b =& x_s \cos \alpha + z_s \sin \alpha \\
+z_b =& z_x \cos \alpha - x_s \sin \alpha
+\end{align}
+\]
+
+### Wind Axis System
+The *wind axis* system is similar to the stability axis system except it is rotated about the \(z_s\)-axis through the angle of sideslip, \(\beta\).
+
+The term "wind" refers to the fact that the freestream relative wind approaches the aircraft directly along the \(x_w\)-axis. This dictates that the true airspeed also lies along the same axis.
+
+![][06004]
+
+Forces, velocities, or accelerations along the wind axes are related to the stability axes as follows
+\[
+\begin{align}
+x_s =&x_w \cos \beta - y_w \sin \beta \\
+y_s =& y_w \cos \beta + x_w \sin \beta \\
+z_s =& z_w
+\end{align}
+\]
 
 The geometric relations between body, stability and wind axis velocities are illustrated here.
 
- 
-
- 
-
 ![][06005]
 
- 
+Most aircraft sideslip vanes do not measure \(\beta\) directly. They measure the flanking angle, which is the projection of the relative wind into the aircraft's \(x-y\) plane. The difference between these two angles increases with angle of attack.  Ignoring upwash, boom bending, and body axis rate corrections, calculate true sideslip as a function of vane \(\alpha\) and \(\beta\) as follows:
+\[\beta_{true} = \tan^{-1} (an\beta_{vane})).\]
 
- ![][06006]
+### Wind-Body Axis Transformations
+(Reference 6.6.1)
 
- ![][06007]
-
- Most aircraft sideslip vanes do not measure *β* directly. They measure the flanking angle, which is the projection of the relative wind into the aircraft's *x-y* plane. The difference between these two angles increases with angle of attack. Ignoring upwash, boom bending, and body axis rate corrections, calculate true sideslip as a function of vane *α* and *β* as follows:
-
-β~true~ = tan^-1^ \[ tan(β~vane~ ) cosα \]
-
- 
-
-• **Wind-Body Axis Transformations** (ref 6.6.1)
-
-Combining the two previous transformations, forces, velocities or accelerations along the wind axes are related to the body axes as follows
-
- 
-
-![][06008] 
-
- 
-
- 
-
- 
-
-After expansion, *x~b~* = cos*α *(*x~w~*cos*β* -- *y~w~*sin*β*) - *z~w~*sin*α*
-
-*y~b~* = *x~w~*sin*β* + *y~w~*cos*β*
-
-*z~b~* = sin*α *(*x~w~*cos*β* -- *y~w~*cos*β*) + *z~w~*cos*α*
-
- 
-
-The inverse transform, converting from the body to the wind axis system is
-
- 
-
- 
-
-![][06009] 
-
- 
-
- 
-
- 
+Combining the two previous transformations, we see that forces, velocities, or accelerations along the wind axes are related to the body axes as follows.
+\[
+\begin{bmatrix}
+x_b \\
+y_b \\
+z_b
+\end{bmatrix} = 
+\begin{bmatrix}
+\cos \alpha & 0 & -\sin \alpha \\
+0 & 1 & 0 \\
+\sin \alpha & 0 & \cos \alpha
+\end{bmatrix}
+\begin{bmatrix}
+\cos \beta & -\sin \beta & 0 \\
+\sin \beta & \cos \beta & 0 \\
+0 & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+x_w \\
+y_w \\
+z_w 
+\end{bmatrix}
+\]
 
 After expansion,
+\[
+\begin{align}
+x_b =& \cos \alpha (x_w \cos \beta - y_w \sin \beta) - z_w \sin \alpha \\
+y_b =& x_w \sin \beta + y_w \cos \beta \\
+z_b =& \sin \alpha (x_w \cos \beta - y_w \cos \beta) + z_w \cos \alpha 
+\end{align}
+\] 
 
-*x~w~* = cos*β *(*x~b~*cos*α* + *z~b~*sin*α*) + *y~b~*sin*β*
+The inverse transform, converting from the body to the wind axis system is as follows.
+\[
+\begin{bmatrix}
+x_w \\
+y_w \\
+z_w
+\end{bmatrix} = 
+\begin{bmatrix}
+\cos \beta & \sin \beta & 0 \\
+-\sin \beta & \cos \beta & 0 \\
+0 & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+\cos \alpha & 0 & \sin \alpha \\
+0 & 1 & 0 \\
+-\sin \alpha & 0 & \cos \alpha
+\end{bmatrix}
+\begin{bmatrix}
+x_b \\
+y_b \\
+z_b 
+\end{bmatrix}
+\]
 
-*y~w~* = *-*sin*β *(*x~b~*cos*α*+*z~b~*sin*α*)+ *y~b~*cos*β*
+After expansion,
+\[
+\begin{align}
+x_w =& \cos \beta (x_b \cos \alpha + z_b \sin \alpha) + y_b \sin \beta \\
+y_w =& -\sin \beta(x_b \cos \alpha + z_b \sin \alpha) + y_b \cos \beta \\
+z_w =& -x_b \sin \alpha + z_b \cos \alpha 
+\end{align}
+\] 
 
-*z~w~* = -*x~b~*sin*α* + *z~b~*cos*α*
+Note that these equations apply to the sign convention with z+ down. If sign convention (and instrumentation calibration) use z+ upward, then the above equations become:
+\[
+\begin{align}
+x_w =& \cos \beta (x_b \cos \alpha - z_b \sin \alpha) + y_b \sin \beta \\
+y_w =& -\sin \beta(x_b \cos \alpha + z_b \sin \alpha) + y_b \cos \beta \\
+z_w =& x_b \sin \alpha + z_b \cos \alpha 
+\end{align}
+\]
 
-** **
+### Principle Axes
+The *principle axes* are those about which the products of inertia are zero. They can be equated to the axis of "dumbells" which represent concentrated mass elements.  Neglecting aerodynamic and gyroscopic effects, an aircraft rotating about one of its principle axes will not tend to cross-couple into motion about any other axis.
 
-** **
+![][06010]
 
- Note that these equations apply to the sign convention with z+ down. If sign convention (and instrumentation calibration) use z+ upward, then the above equations become:
-
-> x~w~ = cosβ(x~b~cosα - z~b~sinα) + y~b~sinβ
->
-> y~w~ = --sinβ(x~b~cosα + z~b~sinα) + y~b~cosβ
->
-> z~w~ = x~b~sinα + z~b~cosα
-
- 
-
- • The **Principle axes** are those about which the products of inertia are zero. They can be equated to the axis of "dumbells" which represent concentrated mass elements. Neglecting aerodynamic and gyroscopic effects, an aircraft rotating about one of its principle axes will [not]{.underline} tend to cross-couple into motion about any other axis.
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **![][06010]
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-** **
-
-**Wind to Body Axes Matrix Transformation**
-
- 
-
- 
-
- 
-
- **6.3 Euler Angles** (ref 6.6.1)
+## 6.3 Euler Angles
+(Reference 6.6.1)
 
  
 
