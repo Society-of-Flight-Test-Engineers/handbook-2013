@@ -1,17 +1,5 @@
 # Axis Systems and Transformations** (raw)
 
-6.1 Earth Axis Systems
-
-6.2 Aircraft Axis Systems - Body, Stability, Wind, Principle
-
-6.3 Euler Angles
-
-6.4 Flight Path Angles
-
-6.5 Axis System Transformations - Earth-to-Body, Body-to-Earth
-
-6.6 References
-
 ## Earth Axis Systems
 (Reference 6.6.1)
 
