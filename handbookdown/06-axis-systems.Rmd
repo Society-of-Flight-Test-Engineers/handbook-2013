@@ -148,27 +148,18 @@ The *principle axes* are those about which the products of inertia are zero. The
 ## 6.3 Euler Angles
 (Reference 6.6.1)
 
- 
+*Euler angles* are expressed as yaw, pitch, and roll.  The sequence--first yaw, then pitch, then roll--must be maintained to arrive at the proper orientation angles.  The Euler angles are defined as follows:
 
-Euler angles are expressed as yaw, pitch, and roll. The sequence: first yaw, then pitch, then roll; must be maintained to arrive at the proper orientation angles. The Euler angles are defined as follows:
+Yaw Angle
+: \(\psi\) - The angle between the projection of the vehicle \(x_b\)-axis onto the horizontal reference plane and some initial reference position of the Earth \(x\)-axis.  Yaw angle equals the vehicle heading only if the initial reference is North.
 
- 
+Pitch Angle
+: \(\theta\) - The angle in the vertical plane between \(x_b\) and the horizon.
 
-> *ψ* ≡ Yaw Angle: The angle between the projection of the vehicle *x~b~*- axis onto the horizontal reference plane and some initial reference position of the Earth *x*-axis. Yaw angle equals the vehicle heading only if the initial reference is North.
->
->  
->
-> *θ* ≡ Pitch angle (in vertical plane) between *x~b~* and horizon.
->
-> *φ* ≡ Bank angle, the angle (measured in the *y-z* plane of the body-axis system) between the *y*-axis and the horizontal reference plane. Also known at the roll angle, it is a measure of the rotation (about the *x*-axis) to return the aircraft to a wings level condition.
+Bank Angle
+: \(\phi\) - The angle measured in the \(y-z\) plane of the body-axis system between the \(y\)-axis and the horizontal reference plane.  Also known as the roll angle, it is a measure of the rotation about the \(x\)-axis.
 
- 
-
- 
-
- ![][06011]
-
- 
+![][06011]
 
 ** 6.4 Flight Path Angles** (ref 6.6.3)
 
