@@ -1,94 +1,62 @@
 # Aerodynamics
 
+<!--- FIXME: This section header should be made consistent with the rest of the document (Section 4 uses "Common Nomenclature") --->
 ## Recurring Terminology {-}
 
-*a* slope of lift curve, *dC~L~/dα*
-
-*a.c*. aerodynamic center, location along the chord where pitching moments about this center do not change with angle of attack (25% MAC for airfoils in subsonic flow, 50% MAC for airfoils in supersonic flow)
-
-*AOA* angle of attack
-
-AR aspect ratio = \[wing span\]^2^/ \[reference wing area\] = *b^2^/S*
-
-B wing span
-
-b~t~ horizontal tail span
-
-*C* coefficient, a non-dimensional representation of an aerodynamic property
-
-*c* wing chord length Camber maximum curvature of an airfoil, measured at maximum distance between chord line and amber line, expressed in % of MAC.Camber line theoretical line extending from an air foil's leading edge to the trailing edge, located halfway between the upper and lower surfaces.
-
-*C~D~* drag coefficient
-
-*C~Di~* induced drag coefficient
-
-*C~Do,~C~Dpe~* parasitic drag coefficient
-
-*c~f~* friction coefficient
-
-Chord straight-line distance from an airfoil's leading edge to its trailing edge.
-
-*C~L~* lift coefficient
-
-*Cp* pressure coefficient = *∆p/q*
-
-*e* Oswald efficiency factor
-
-*l* distance traveled by flow, or characteristic length of surface
-
-*M* Mach number
-
-MAC mean aerodynamic chord, chord length of location on wing where total aerodynamic forces can be concentrated.
-
-MGC mean geometric chord, the average chord length, derived only from a plan form view of a wing (similar to MAC if wing has no twist and constant cross section & thickness-to-chord ratio).
-
-*P* pressure
-
-*P~req'd~* power required
-
-*q* dynamic pressure = *½ ρ~a~ V~T~^2^ = ½ ρ~o~ V~T~^2^*
-
-*R* gas constant
-
-*R~n~,R~e~* Reynolds number
-
-*S* reference wing area, includes extension of wing to fuselage centerline.
-
-*S~t\ ~*horizontal tail surface area
-
-*S~W~* wetted area of surface
-
-*T* temperature
-
-*V* true velocity
-
-*V~e~* equivalent velocity
-
-*α* angle of attack
-
-*α~i~* induced angle of attack
-
-δ depth of boundary layer, or surface wedge angle
-
-*μ* viscosity, or wave angle
-
-ν flow turning angle
-
-*θ* shock wave angle
-
-*ρ* density
-
+<!--- FIXME: not very consistent with these definitions.  Sometimes full sentences with periods, sometimes not --->
+<!--- FIXME: MAC definition could use some work.  Total aero force concentrated without changing pitching moment as f(AOA)? --->
+<!--- FIXME: Should 'P' for pressure be lower case? Confusing with Power. --->
+| Symbol       | Definition                                   |
+|:-------------|:---------------------------------------------|
+| \(a\)                  | slope of lift curve, \(dC_L/d\alpha\)                                                                         |
+| \(a.c.\)               | aerodynamic center, location along the chord where pitching moments about this center do not change with angle of attack (25% MAC for airfoils in subsonic flow, 50% MAC for airfoils in supersonic flow)  |
+| \(AOA\)                | angle of attack                                                                                               |
+| \(AR\)                 | aspect ratio \(= [\textrm{wing span}]^2 / [\textrm{reference wing area}] = b^2/S \)                           |
+| \(B\)                  | wing span                                                                                                     |
+| \(b_t\)                | horizontal tail span                                                                                          |
+| \(C\)                  | coefficient, a non-dimensional representation of an aerodynamic property                                      |
+| \(c\)                  | wing chord length Camber maximum curvature of an airfoil, measured at maximum distance between chord line and amber line, expressed in % of MAC.  Camber line theoretical line extending from an airfoil's leading edge to the trailing edge, located halfway between the upper and lower surfaces. |
+| \(C_D\)                | drag coefficient                                                                                              |
+| \(C_{Di}\)             | induced drag coefficient                                                                                      |
+| \(C_{D0}, C_{D_{PE}}\) | parasitic drag coefficient                                                                                    |
+| \(c_f\)               | friction coefficient                                                                                          |
+| \(Chord\)             | straight-line distance from an airfoil's leading edge to its trailing edge                                    |
+| \(C_L\)                | lift coefficient                                                                                              |
+| \(C_p\)                | pressure coefficient = \(\Delta p/q\)                                                                         |
+| \(e\)                  | Oswald efficiency factor                                                                                      |
+| \(l\)                  | distance traveled by flow, or characteristic length of surface                                                |
+| \(M\)                  | Mach number                                                                                                   |
+| \(MAC\)                | mean aerodynamic chord, chord length of location on wing where total aerodynamic forces can be concentrated.  |
+| \(MGC\)                | mean geometric chord, the average chord length, derived only from a plan form view of a wing (similar to MAC if wing has no twist and constant cross section & thickness-to-chord ratio).  |
+| \(P\)                  | pressure                                                                                                      |
+| \(P_{req'd}\)          | power required                                                                                                |
+| \(q\)                  | dynamic pressure = \(\frac{1}{2} \rho_a V_T^2 = \frac{1}{2} \rho_0 V_T^2\)                                    |
+| \(R\)                  | gas constant                                                                                                  |
+| \(R_n,R_e\)            | Reynolds number                                                                                               |
+| \(S\)                  | reference wing area, includes extension of wing to fuselage centerline.                                       |
+| \(S_t\)                | horizontal tail surface area                                                                                  |
+| \(S_W\)                | wetted area of surface                                                                                        |
+| \(T\)                  | temperature                                                                                                   |
+| \(V\)                  | true velocity                                                                                                 |
+| \(V_e\)                | equivalent velocity                                                                                           |
+| \(\alpha\)             | angle of attack                                                                                               |
+| \(\alpha_i\)           | induced angle of attack                                                                                       |
+| \(\delta\)             | depth of boundary layer, or surface wedge angle                                                               |
+| \(\mu\)                | viscosity, or wave angle                                                                                      |
+| \(\nu\)                | flow turning angle                                                                                            |
+| \(\theta\)             | shock wave angle                                                                                              |
+| \(\rho\)               | density                                                                                                       |
 
 * Perfect Fluid
-  * incompressible, inelastic, and non-viscous
-  * used in flow outside of boundary layers at M < .7
+    * incompressible, inelastic, and non-viscous
+    * used in flow outside of boundary layers at M < .7
 * Incompressible, inelastic, viscous
-  * used for boundary layer studies at M < .7
+    * used for boundary layer studies at M < .7
 * Compressible, non-viscous, elastic fluid
-  * used outside boundary layers up to M = 5
+    * used outside boundary layers up to M = 5
 
 <!--- FIXME: Reference should be replaced with linked cross reference --->
-## Dimensional Analysis Interpretations** (ref 5.2)
+## Dimensional Analysis Interpretations (ref 5.2)
 
 Aerodynamic force = *F*
 
