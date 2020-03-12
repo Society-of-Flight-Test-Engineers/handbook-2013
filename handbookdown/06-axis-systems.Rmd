@@ -55,7 +55,10 @@ z_s =& z_w
 \end{align}
 \]
 
-The geometric relations between body, stability and wind axis velocities are illustrated here.
+The geometric relations between body, stability and wind axis velocities are defined and illustrated here. In general,
+\[ \sin \alpha = \frac{w}{V_T \cos \beta}\] and
+\[\sin \beta = \frac{V}{V_T}.\]
+If \(\beta\) is small, then \(\sin \alpha = w/V_T\) and \(\beta = V / V_T\). If \(alpha\) is small, then \(\alpha = w/V_T\).
 
 ![][06005]
 
