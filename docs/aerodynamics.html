@@ -417,81 +417,81 @@
 <div id="dimensional-analysis-interpretations-ref-5.2" class="section level2">
 <h2><span class="header-section-number">5.1</span> Dimensional Analysis Interpretations (ref 5.2)</h2>
 <p>Aerodynamic force = <em>F</em></p>
+<!--- Fixme: what is the second bullet point referring to?  What is K? --->
 <ul>
-<li>F = f* <em>(ρ, μ, T</em>, <em>V</em>, shape, orientation, size, roughness, gravity)</li>
+<li><span class="math inline">\(F = f(\rho, \mu, T, V, \textrm{shape}, \textrm{orientation}, \textrm{size}, \textrm{roughness}, \textrm{gravity}) \)</span></li>
 <li>For aircraft ignore <em>R</em>, <em>K</em> &amp; hypersonic effects</li>
 </ul>
 <div class="figure">
 <img src="media/05/image1.svg" width="278" height="167" />
 
 </div>
+<!--- TODO: Remove the following figures: 05002, 05003, 05004 (replaced with LaTex) --->
+<!--- TODO: align the non-dimensional parameters (align equals sign) --->
 <ul>
 <li>Initially assume similar body orientations, shapes &amp; roughness.</li>
-<li>Dimensional Analysis reveals four non-dimensional (π) parameters:</li>
+<li>Dimensional Analysis reveals four non-dimensional (<span class="math inline">\(\pi\)</span>) parameters:
+<ul>
+<li>Force Coefficient <span class="math inline">\(\pi_1 = \frac{F}{\rho V^2 l^2} \)</span></li>
+<li>Reynolds Number <span class="math inline">\(\pi_2 = \frac{\rho V l}{\mu} \)</span></li>
+<li>Mach Number <span class="math inline">\(\pi_3 = \frac{V}{a} \)</span></li>
+<li>Froude Number <span class="math inline">\(\pi_4 = \frac{V}{\sqrt{lg}} \)</span></li>
+</ul></li>
 </ul>
-<p>Force Coefficient</p>
-<div class="figure">
-<img src="media/05/image2.svg" width="81" height="49" />
-
-</div>
-<p>Reynolds Number</p>
-<div class="figure">
-<img src="media/05/image3.svg" width="78" height="156" />
-
-</div>
-<p>Mach Number</p>
-<p>Froude Number</p>
 <p>A closer look at the force coefficient:</p>
-<div class="figure">
-<img src="media/05/image4.svg" width="138" height="43" />
-
-</div>
-<p>where <sup>1</sup>/<sub>2</sub> ρ<em><sub>a</sub>V<sub>T</sub></em><sup>2</sup> = <sup>1</sup>/<sub>2</sub> ρ<em><sub>o</sub>V<sub>e</sub></em><sup>2</sup> =dynamic pressure, <em>q</em> dimensions of reference wing area, <em>S</em> are the same as <em>l</em><sup>2</sup></p>
+<!--- This force coefficient should probably be defined at the beginning of the section --->
+<p><span class="math display">\[C_F = \frac{F}{\rho V^2 l^2} =&gt; \frac{F}{\frac{1}{2} \rho V^2 S} \]</span></p>
+<!--- This doesn't really make sense.  What is "S" the same as? --->
+<p>where <span class="math inline">\(\frac{1}{2} \rho_a V_T^2 = \frac{1}{2} \rho_0 V_e^2 = \textrm{dynamic pressure}, q \)</span> dimensions of reference wing area, <span class="math inline">\(S\)</span> are the same</p>
+<!--- FIXME: m is not defined --->
+<!--- FIXME: q doesn't need quotes --->
+<blockquote>
 <p><strong>A feel for <em>q</em></strong></p>
 <ul>
-<li><p>Kinetic energy of a moving object = ½ mV<sub>T</sub><sup>2</sup></p></li>
-<li><p>Block of moving air kinetic energy = ½ ρ (volume) V <sub>T</sub><sup>2</sup></p></li>
-<li><p>Dividing through by volume yields KE per volume of moving air = ½ ρ V <sub>T</sub><sup>2</sup></p></li>
-<li><p>&quot;Dynamic pressure&quot; or “<em>q</em>” = potential for converting each cubic foot of the airflow's kinetic energy into frontal stagnation pressure</p></li>
-<li><p>Feel <em>q</em> by extending your hand out the window of a moving car</p></li>
+<li>Kinetic energy of a moving object = <span class="math inline">\(\frac{1}{2} m V_T^2 \)</span></li>
+<li>Block of moving air kinetic energy = <span class="math inline">\(\frac{1}{2} \rho \textrm{volume} V_T^2 \)</span></li>
+<li>Dividing through by volume yields KE per volume of moving air = <span class="math inline">\(\frac{1}{2} \rho V V_T^2 \)</span></li>
+<li>“Dynamic pressure” or “<span class="math inline">\(q\)</span>” = potential for converting each cubic foot of the airflow’s kinetic energy into frontal stagnation pressure</li>
+<li>Feel <span class="math inline">\(q\)</span> by extending your hand out the window of a moving car</li>
 </ul>
+</blockquote>
+<blockquote>
 <p><strong>A feel for coefficients</strong></p>
 <ul>
-<li><p><em>C <sub>F</sub></em> = (<em>F /S)/q</em> = the ratio between the total force pressure and the flow 's dynamic pressure</p></li>
-<li><p>Lift is the component of the total force perpendicular to the free stream flow</p></li>
-<li><p>Drag is the component along the flow</p></li>
-<li><p>Break total into lift and drag coefficients:</p></li>
-</ul>
-<p><em>C <sub>L</sub> = (L/S)/q CD = (D/S)/q</em></p>
+<li><span class="math inline">\(C_F = (F/S)/q\)</span> = the ratio between the total force pressure and the flow’s dynamic pressure</li>
+<li>Lift is the component of the total force perpendicular to the free stream flow</li>
+<li>Drag is the component along the flow</li>
+<li>Break total into lift and drag coefficients:
 <ul>
+<li><span class="math inline">\(C_L = (L/S)/q\)</span></li>
+<li><span class="math inline">\(C_D = (D/S)/q\)</span></li>
+</ul></li>
 <li>Increasing dynamic pressure generates a larger total force, lift and drag</li>
 </ul>
+</blockquote>
 <div class="figure">
 <img src="media/05/image5.svg" width="166" height="132" />
 
 </div>
 <ul>
-<li><p>Froude number is not significant in aerodynamic phenomena</p></li>
-<li><p>Recall that forces are aslo a function of angle of attack, shape &amp; surface roughness, therefore</p></li>
+<li>Froude number is not significant in aerodynamic phenomena</li>
+<li>Recall that forces are aslo a function of angle of attack, shape &amp; surface roughness, therefore</li>
 </ul>
-<div class="figure">
-<img src="media/05/image6.svg" width="422" height="120" />
-
-</div>
-<p>Effects are exaggerated</p>
+<p><span class="math display">\[C_L,C_D = f[M, Re, \alpha] \]</span></p>
 <div class="figure">
 <img src="media/05/image7.svg" width="281" height="185" />
 
 </div>
-<p>To compare test day and standard day aircraft or to match wind tunnel <em>C<sub>F</sub></em> data to actual aircraft; the shape, roughness, <em>M, R<sub>n</sub></em> and <em>α</em> must be equal for both aircraft</p>
-<div class="figure">
-<img src="media/05/image8.svg" width="151" height="60" />
-
-</div>
+<p><em>Note in the figure above the Reynolds effects are exaggerated</em></p>
+<!--- FIXME: I don't like the inconcistent use of Rn and Re for Reynolds number --->
+<!--- TODO: Removed 05008 and replaced with latex --->
+<p>To compare test day and standard day aircraft or to match wind tunnel <span class="math inline">\(C_F\)</span> data to actual aircraft; the shape, roughness, <span class="math inline">\(M\)</span>, <span class="math inline">\(R_n\)</span> and <span class="math inline">\(\alpha\)</span> must be equal for both aircraft</p>
 <div class="figure">
 <img src="media/05/image9.svg" width="422" height="108" />
 
 </div>
+<!--- FIXME: Define these subscripts --->
+<p><span class="math display">\[\frac{L_A}{q_A S_A} = C_L = \frac{L_M}{q_M S_M} \]</span></p>
 <!--- FIXME: update references to dynamic cross references--->
 </div>
 <div id="general-aerodynamic-relations-refs-5.1-5.2-5.10" class="section level2">

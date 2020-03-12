@@ -60,79 +60,69 @@
 
 Aerodynamic force = *F*
 
-* F = f* *(ρ, μ, T*, *V*, shape, orientation, size, roughness, gravity)
+<!--- Fixme: what is the second bullet point referring to?  What is K? --->
+* \(F = f(\rho, \mu, T, V, \textrm{shape}, \textrm{orientation}, \textrm{size}, \textrm{roughness}, \textrm{gravity}) \)
 * For aircraft ignore *R*, *K* & hypersonic effects
 
 ![][05001]
 
+<!--- TODO: Remove the following figures: 05002, 05003, 05004 (replaced with LaTex) --->
+<!--- TODO: align the non-dimensional parameters (align equals sign) --->
 * Initially assume similar body orientations, shapes & roughness.
-* Dimensional Analysis reveals four non-dimensional (π) parameters:
-
-
- Force Coefficient
-
-![][05002]
-
-Reynolds Number
-
-![][05003] 
-
- Mach Number
-
- Froude Number
+* Dimensional Analysis reveals four non-dimensional (\(\pi\)) parameters:
+    * Force Coefficient  \(\pi_1 = \frac{F}{\rho V^2 l^2} \)
+    * Reynolds Number \(\pi_2 = \frac{\rho V l}{\mu} \)
+    * Mach Number \(\pi_3 = \frac{V}{a} \)
+    * Froude Number \(\pi_4 = \frac{V}{\sqrt{lg}} \)
 
 A closer look at the force coefficient:
 
-![][05004]
+<!--- This force coefficient should probably be defined at the beginning of the section --->
+\[C_F = \frac{F}{\rho V^2 l^2} => \frac{F}{\frac{1}{2} \rho V^2 S} \]
 
-where ^1^/~2~ ρ*~a~V~T~*^2^ = ^1^/~2~ ρ*~o~V~e~*^2^ =dynamic pressure, *q* dimensions of reference wing area, *S* are the same as *l*^2^
+<!--- This doesn't really make sense.  What is "S" the same as? --->
+where \(\frac{1}{2} \rho_a V_T^2 = \frac{1}{2} \rho_0 V_e^2 = \textrm{dynamic pressure}, q \)
+dimensions of reference wing area, \(S\) are the same
 
+<!--- FIXME: m is not defined --->
+<!--- FIXME: q doesn't need quotes --->
+> **A feel for *q***
+>
+> * Kinetic energy of a moving object = \(\frac{1}{2} m V_T^2 \)
+> * Block of moving air kinetic energy = \(\frac{1}{2} \rho \textrm{volume} V_T^2 \)
+> * Dividing through by volume yields KE per volume of moving air = \(\frac{1}{2} \rho V V_T^2 \)
+> * "Dynamic pressure" or "\(q\)" = potential for converting each cubic foot of the airflow's kinetic energy into frontal stagnation pressure
+> * Feel \(q\) by extending your hand out the window of a moving car
 
-**A feel for *q***
-
-* Kinetic energy of a moving object = ½ mV~T~^2^
-
-* Block of moving air kinetic energy = ½ ρ (volume) V ~T~^2^
-
-* Dividing through by volume yields KE per volume of moving air = ½ ρ V ~T~^2^
-
-* \"Dynamic pressure" or "*q*" = potential for converting each cubic foot of the airflow\'s kinetic energy into frontal stagnation pressure
-
-* Feel *q* by extending your hand out the window of a moving car
-
-
-**A feel for coefficients**
-
-* *C ~F~* = (*F /S)/q* = the ratio between the total force pressure and the flow \'s dynamic pressure
-
-* Lift is the component of the total force perpendicular to the free stream flow
-
-* Drag is the component along the flow
-
-* Break total into lift and drag coefficients:
-
-*C ~L~ = (L/S)/q CD = (D/S)/q*
-
-* Increasing dynamic pressure generates a larger total force, lift and drag
+> **A feel for coefficients**
+> 
+> * \(C_F = (F/S)/q\) = the ratio between the total force pressure and the flow's dynamic pressure
+> * Lift is the component of the total force perpendicular to the free stream flow
+> * Drag is the component along the flow
+> * Break total into lift and drag coefficients:
+>     * \(C_L = (L/S)/q\)
+>     * \(C_D = (D/S)/q\)
+> * Increasing dynamic pressure generates a larger total force, lift and drag
 
 ![][05005]
 
 * Froude number is not significant in aerodynamic phenomena
-
 * Recall that forces are aslo a function of angle of attack, shape & surface roughness, therefore
 
-![][05006]
-
-Effects are exaggerated
+\[C_L,C_D = f[M, Re, \alpha] \]
 
 ![][05007]
 
-To compare test day and standard day aircraft or to match wind tunnel *C~F~* data to actual aircraft; the shape, roughness, *M, R~n~* and *α* must be equal for both aircraft
+*Note in the figure above the Reynolds effects are exaggerated*
 
-![][05008]
+<!--- FIXME: I don't like the inconcistent use of Rn and Re for Reynolds number --->
+<!--- TODO: Removed 05008 and replaced with latex --->
+To compare test day and standard day aircraft or to match wind tunnel \(C_F\) data to actual aircraft; the shape, roughness, \(M\), \(R_n\) and \(\alpha\) must be equal for both aircraft
 
 ![][05009]
 
+<!--- FIXME: Define these subscripts --->
+\[\frac{L_A}{q_A S_A} = C_L = \frac{L_M}{q_M S_M} \]
 
 <!--- FIXME: update references to dynamic cross references--->
 ## General Aerodynamic Relations (refs 5.1, 5.2, 5.10)
