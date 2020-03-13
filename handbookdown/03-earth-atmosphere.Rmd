@@ -185,89 +185,58 @@ where \(N_z\) = normal load factor,
 
 \(\dot{W}_{f_{std}}\) = standard day fuel flow
 
- 
+## General Properties of Air
 
-**\
-**
+(reference 3.9.1)
 
-## Section 3.3 General Properties of Air** (reference 3.9.1)
-
- 
-
-Gas constant, R = 53.35 ft lb/R lbm = 287.074 J/kg K
-
-= 1716 lb(ft)/slgs(*R*) = 3089.7 lb(ft)/slgs(*K*)
-
- 
-
-Speed of sound = *a_o(*θ*) ^½^
-
-= 49.02 (T_R~)^1/2^ *ft/sec*
-
-= 33.42 (T_R~)^1/2^ *miles/hr*
-
-= 29.04 (T_R~)^1/2^ *knots*
-
-= 20.05 (T_R~)^1/2^ *m/sec*
+| Property                                     | Symbol              | Value            | Unit                |
+|----------------------------------------------|---------------------|------------------|---------------------|
+| Gas constant                                 | \(R\)               | 53.35            | ft lb/R lbm         |
+|                                              |                     | 287.074          | J/kg K              |
+|                                              |                     | 1716             | lb(ft)/slgs(*R*)    |
+|                                              |                     | 3089.7           | lb(ft)/slgs(*K*)    |
+| Speed of sound                               | \(a_o \sqrt{\theta}\) | 49.02 \(\sqrt{T_R}\) | ft/sec              |
+|                                              |                     | 33.42 \(\sqrt{T_R}\) | miles/hr            |
+|                                              |                     | 29.04 \(\sqrt{T_R}\) | knots               |
+|                                              |                     | 20.05 \(\sqrt{T_R}\) | m/sec               |
+| Density                                      | \(\rho\)            | .0023769         | slug/ft^3^          |
+|                                              |                     | 1.225            | kg/m^3^ (at 15^o^C) |
+| Specific weight                              | \(g_\rho\)          | .07647           | sec^2^/ft^4^        |
+| Specific heat capacity at 59 ^o^F (=\(T_o\)) |                     |                  |                     |
+| at constant pressure                         | \(c_p\)             | .240             | BTU/lb R            |
+|                                              |                     | 1004.76          | J/kg K              |
+| at constant volume                           | \(c_v\)             | .1715 | BTU/lb R   |
 
  
 
-Density, *\rho* = .0023769 *slug/ft^3^ =* 1.225 *kg/m^3^ (at 15^o^ C)*
+### Normal Composition of clean, dry atmospheric air near sea level, by volume {-}
 
-Specific weight, *g~\rho~* = .07647 *sec^2^/ft^4^*
-
-** **
-
-Specific heat capacity at 59*^o^F* (=*T_o)
-
-> at constant pressure, *c_p = .240 *BTU/lb R* = 1004.76 *J/kg K*
->
-> at constant volume, *c_v = .1715 *BTU/lb R* = 717.986 *J/kg K*
->
-> specific heat ratio, *γ* = {*c_p / *c_v } =1.4
-
- 
-
-### Normal Composition of clean, dry atmospheric air near sea level**
-
-Nitrogen, *N_2 78.084 % by volume
-
-Oxygen, *O_2 20.948 %
-
-Argon, *A* 0.934 %
-
-Carbon Dioxide, *CO_2 0.031 %
-
-Neon, *Ne* [0.002 %]{.underline}
-
-total 99.9988 %
-
- 
+| Gas | Symbol | Proportion |
+|-----|--------|------------|
+| Nitrogen | N~2~ | 78.084 % |
+| Oxygen | O~2~ | 0.948 % |
+| Argon | A | 0.934 %|
+|Carbon Dioxide|CO~2~ | 0.031 %|
+|Neon| Ne | 0.002 %|
+| total || 99.9988 %|
 
 plus traces of helium, kryton, xenon, hydrogen, methane, nitrous oxide, ozone, sulfur dioxide, nitrogen dioxide, ammonia, carbon monoxide, and iodine.
 
-** **
+### Viscosities of Air {-}
 
-### Viscosities of Air**
+Coefficient of Viscosity
 
-Coefficient of Viscosity, lb/ft sec
+\[ \mu_c = \frac{7.3025 \times 10^{-7} \left(T_R \right)^{3/2}}{T_R + 198.72} \text{lb/ft sec}\]
 
- ![][03013]
+Kinematic viscosity
 
-**\
-**
+\[ \nu = \frac{\mu_c}{g\rho} \text{ft^2^/sec} \]
 
-![][03014]Kinematic viscosity, ft^2^/sec
+Absolute Viscosity
 
-![][03015] Absolute Viscosity, lb sec/ft^2^
+\[ \mu = \rho\nu = \left[ 0.317 \left(T_R\right)^{3/2} \left( \frac{734.7}{T_R + 216} \right) \right] \times 10^{-10} \text{lb sec/ft^2^} \]
 
-^ ^
-
- 
-
-### Atmospheric Viscosity (U.S. Standard Atmosphere)**
-
- 
+### Atmospheric Viscosity (U.S. Standard Atmosphere) {-}
 
 +-------------------+---------------------+--------------------+
 | Pressure Altitude | Kinematic Viscosity | Absolute Viscosity |
@@ -313,15 +282,11 @@ Coefficient of Viscosity, lb/ft sec
 | 200,000           | 6880                | 3.435              |
 +-------------------+---------------------+--------------------+
 
-**\
-**
+### Psychrometric Chart for Seal Level Barometric Pressure {-}
 
-![][03016]### Psychrometric Chart for Seal Level Barometric Pressure**
+![][03016]
 
 ![][03017] 
-
-**\
-**
 
 ## Section 3.4 Standard Atmosphere**
 
