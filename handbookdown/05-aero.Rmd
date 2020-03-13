@@ -189,26 +189,19 @@ Dynamic Pressure + Static Pressure = Total Pressure
 
 ![][05016]
 
-2D wing = wind tunnel
+*2D wing = wind tunnel airfoil extending to walls (infinite aspect ratio).*
 
-airfoil extending to walls (infinite aspect ratio).
+\(a_0 = \textrm{Lift curve slope for an infinite wing} \)
 
-*a~o~* = Lift curve slope for
+\(a = \textrm{Lift curve slope for a finite wing}\)
 
-an infinite wing
+* Above relationship estimated as \(\alpha = \frac{dC_L}{d \alpha} = \frac{a_0}{1+\frac{57.3 a_0}{\pi AR}} \)
 
-*a* = Lift curve slope for
-
-a finite wing
-
-* Above relationship estimated as
-
-![][05017]
+<!--- TODO: Remove reference to 05017 --->
 
 ### Trailing Edge Flap Effects {-}
 
 ![][05018]
-
 
 ![][05019]
 
@@ -223,7 +216,6 @@ a finite wing
 ![][05022]
 
 ![][05023]
-
 
 ## Elements of Drag (refs 5.1, 5.2, 5.10)
 
