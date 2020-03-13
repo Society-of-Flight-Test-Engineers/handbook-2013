@@ -66,52 +66,35 @@ where \(G\) is the universal gravitational constant and \(R_A\) is the absolute 
 | radius at the poles | \(R_p\) | \(6,356,752\) | m |
 | radius as a function of latitude, \(\phi\) (assumes perfect ellipsoid) | | \[R = \sqrt{\left(\frac{\cos{\phi}}{R_e}\right)^2 + \left(\frac{\sin{\phi}}{R_p}\right)^2 \] |
 
- 
+### Centrifugal Relief from Gravity
 
-** **
+The earth's "normal" gravity field includes both the Newtonian Law and a correction for the centrifugal force caused by the earth's rotation. The centrifugal relief correction is
 
-** **
+\[ 
+\Delta C R = -\frac{V^2}{R_x} = -\frac{\left( R_x \omega \right)^2}{R_x} = R_x \omega^2
+\]
 
-** **
+where \(\omega\) is the earth's rotation rate and \(R_x\) is the perpendicular distance from the earth\'s axis to the surface and can be calculated as \(R_x =R \cos{\phi}\) (see figure below).
 
-### Centrifugal Relief from Gravity**
+![Rx determination][03004]
 
-The earth\'s \"normal\" gravity field includes both the Newtonian Law and a correction for the centrifugal force caused by the earth\'s rotation. The centrifugal relief correction is
+For any centrifugal relief calculations associated with aircraft performance, it is sufficiently exact (g ±0.00004 *m*/*s*^2^) to use the average earth radius. An aircraft flying eastward contributes to centrifugal relief while a westbound aircraft diminishes it.
 
- 
+The International Association of Geodesy publishes the following equation (accurate to 0.005%) to calculate \(local sea level gravity including the effects of centrifugal relief for* *any point fixed to the earth\'s surface*
 
- ![][03002]
-
- 
-
- 
-
-where ω is the earth's rotation rate and \(R_x\) is the perpendicular distance from the earth\'s axis to the surface and can be calculated as \(R_x =*R* cos φ (see figure below).
-
- 
-
-![][03003] 
-
- 
-
- ![][03004]For any centrifugal relief calculations associated with aircraft performance, it is sufficiently exact (g ±0.00004 *m*/*s*^2^) to use the average earth radius. An aircraft flying eastward contributes to centrifugal relief while a westbound aircraft diminishes it.
-
- **\
-**
-
-![][03005]The International Association of Geodesy publishes the following equation (accurate to 0.005%) to calculate \(local sea level gravity including the effects of centrifugal relief for* *any point fixed to the earth\'s surface*
-
-  
+\[
+g_{lsl} = 9.780327 \left( 1 + 0.005300224 \sin^2{\phi} - 0.000058 \sin^2{2 \phi} \right) \left[ \frac{m}{s^2} \right]
+\]
 
 The above equation is tabulated below for quick reference.
 
   
 
   ---------------------------------------------------------
-  **Latitude\   **Normal \(g_{local}\)***   
-  (deg)**                               
+  **Latitude\   **Normal**   
+  (deg)**       \(g_{local}\)         
   ------------- ----------------------- -------------------
-                **(*m*/*s*^2^)**        **(*ft*/*s*^2^)**
+                \((m/s^2)\)             \((ft/s^2)\)
 
   **0**         9.780327                32.088
 
@@ -130,76 +113,77 @@ The above equation is tabulated below for quick reference.
 
   
 
-The standard acceleration (\(g_o) corresponds to a latitude of 46.0625°.
+The standard acceleration (\(g_o\)) corresponds to a latitude of 46.0625°.
 
-\(g_{lsl}\)* at the equator and the poles varies ±0.27% from \(g_o.
-
- 
-
-### Altitude Effect on Gravitational Acceleration**
-
-*R_A\ ~*is the sum of the earth\'s local radius and the geometric distance (*h_G) above the surface: *R_A~ = R* + *h_G
+\(g_{lsl}\)* at the equator and the poles varies ±0.27% from \(g_o\).
 
  
 
-![][03006]
+### Altitude Effect on Gravitational Acceleration
+
+\(R_A\) is the sum of the earth's local radius and the geometric distance, \(h_G\) above the surface: \(R_A = R + h_G\)
+
+\[
+g_{alt} = g_{sls}\left( \frac{R}{R + h_G} \right)^2
+\]
 
 Gravitational acceleration at any geometric altitude:
 
  
 
-+-----------+----------------+
-| *h_G    |  g\_alt/g\_lsl |
-|           |                |
-| (1000 ft) |                |
-+===========+================+
-| 0         | 1              |
-+-----------+----------------+
-| 10        | 0.99904        |
-+-----------+----------------+
-| 20        | 0.99809        |
-+-----------+----------------+
-| 40        | 0.99618        |
-+-----------+----------------+
-| 60        | 0.99428        |
-+-----------+----------------+
-| 80        | 0.99238        |
-+-----------+----------------+
-| 100       | 0.99049        |
-+-----------+----------------+
++-----------+-------------------+
+| *h_G      |\(g_{alt}/g_{lsl}\)|
+|           |                   |
+| (1000 ft) |                   |
++===========+===================+
+| 0         | 1                 |
++-----------+-------------------+
+| 10        | 0.99904           |
++-----------+-------------------+
+| 20        | 0.99809           |
++-----------+-------------------+
+| 40        | 0.99618           |
++-----------+-------------------+
+| 60        | 0.99428           |
++-----------+-------------------+
+| 80        | 0.99238           |
++-----------+-------------------+
+| 100       | 0.99049           |
++-----------+-------------------+
 
- 
-
-**\
-**
-
-### Actual Gravitational Pull on an Aircraft**
+### Actual Gravitational Pull on an Aircraft
 
 Adding a centrifugal relief correction due to the aircraft's velocity, a complete calculation for its gravitational acceleration is
 
- 
+\[
+g_{A/C} = \left[ g_{lsl} + \omega^2 R \cos{\phi} \right] \left[ \frac{R}{R + h_G} \right]^2 - \left( \omega + \frac{V_G \sin{\sigma}}{R + h_G} \right)^2 \left(R + h_G\right) \cos{\phi}
+\]
 
- ![][03007]where *V_G = ground speed and σ = ground track angle (0° = true North, 90° = East, etc.).
+where \(V_G\) = ground speed and \(\sigma\) = ground track angle (0° = true North, 90° = East, etc.).
 
-** **
-
-### Gravity Influence on Aircraft Cruise Performance**
+### Gravity Influence on Aircraft Cruise Performance
 
 Even at the same altitude, changes in gravity due to latitude or centrifugal relief directly alter the required lift, drag, and fuel flow. For example, with sufficiently precise instrumentation, data collected heading West could show about 0.5% more drag and fuel flow than data collected heading East (centrifugal relief effect). After determining test and standard (or mission) values for *g*, flight test values for *C_L, *C_D, drag, and fuel flow can be corrected to standard as follows:
 
-![][03008]![][03009]![][03010]
+\[C_{L_{std}} = C_{L_i} \frac{N_{z_{\omega_{std}}}}{N_{Z_{\omega_i}}} \left[\frac{g_{std}}{g_{A/C}} \right] \]
 
-![][03011]where *N_z = normal load factor,
+\[C_{D_{std}} = \frac{C^2_{L_{std}}}{\pi A \text{Re}} \]
 
-*C_L = lift coefficient, *C_D = drag coefficient,
+\[\Delta D = D_{std} - D_t = qS\left[C_{D_{i_{std}}} - C_{D_{i_t}} \right] \]
 
-AR = aspect ratio, e = Oswald efficiency factor,
+\[\dot{W}_{f_{std}} = \dot{W}_{f_i} + \Delta D \cdot TFSC \]
 
-*∆D* change in drag force,
+where \(N_z\) = normal load factor,
 
-*TSFC* = thrust specific fuel consumption, and
+\(C_L\) = lift coefficient, \(C_D\) = drag coefficient,
 
-![][03012] = standard day fuel flow
+\(AR\) = aspect ratio, \(e\) = Oswald efficiency factor,
+
+\(\Delta D\) = change in drag force,
+
+\(TSFC\) = thrust specific fuel consumption, and
+
+\(\dot{W}_{f_{std}}\) = standard day fuel flow
 
  
 

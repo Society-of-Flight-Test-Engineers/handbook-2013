@@ -140,10 +140,10 @@
 <li class="chapter" data-level="" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html#newtonian-gravity"><i class="fa fa-check"></i>Newtonian Gravity</a></li>
 </ul></li>
 <li class="chapter" data-level="3.2" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html#earth-properties"><i class="fa fa-check"></i><b>3.2</b> Earth Properties</a><ul>
-<li class="chapter" data-level="3.2.1" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html#centrifugal-relief-from-gravity"><i class="fa fa-check"></i><b>3.2.1</b> Centrifugal Relief from Gravity**</a></li>
-<li class="chapter" data-level="3.2.2" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html#altitude-effect-on-gravitational-acceleration"><i class="fa fa-check"></i><b>3.2.2</b> Altitude Effect on Gravitational Acceleration**</a></li>
-<li class="chapter" data-level="3.2.3" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html#actual-gravitational-pull-on-an-aircraft"><i class="fa fa-check"></i><b>3.2.3</b> Actual Gravitational Pull on an Aircraft**</a></li>
-<li class="chapter" data-level="3.2.4" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html#gravity-influence-on-aircraft-cruise-performance"><i class="fa fa-check"></i><b>3.2.4</b> Gravity Influence on Aircraft Cruise Performance**</a></li>
+<li class="chapter" data-level="3.2.1" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html#centrifugal-relief-from-gravity"><i class="fa fa-check"></i><b>3.2.1</b> Centrifugal Relief from Gravity</a></li>
+<li class="chapter" data-level="3.2.2" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html#altitude-effect-on-gravitational-acceleration"><i class="fa fa-check"></i><b>3.2.2</b> Altitude Effect on Gravitational Acceleration</a></li>
+<li class="chapter" data-level="3.2.3" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html#actual-gravitational-pull-on-an-aircraft"><i class="fa fa-check"></i><b>3.2.3</b> Actual Gravitational Pull on an Aircraft</a></li>
+<li class="chapter" data-level="3.2.4" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html#gravity-influence-on-aircraft-cruise-performance"><i class="fa fa-check"></i><b>3.2.4</b> Gravity Influence on Aircraft Cruise Performance</a></li>
 </ul></li>
 <li class="chapter" data-level="3.3" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html#section-3.3-general-properties-of-air-reference-3.9.1"><i class="fa fa-check"></i><b>3.3</b> Section 3.3 General Properties of Air** (reference 3.9.1)</a><ul>
 <li class="chapter" data-level="3.3.1" data-path="universe-earth-atmospheric.html"><a href="universe-earth-atmospheric.html#normal-composition-of-clean-dry-atmospheric-air-near-sea-level"><i class="fa fa-check"></i><b>3.3.1</b> Normal Composition of clean, dry atmospheric air near sea level**</a></li>
@@ -492,26 +492,22 @@
 </tr>
 </tbody>
 </table>
-<p> </p>
-<p><strong> </strong></p>
-<p><strong> </strong></p>
-<p><strong> </strong></p>
 <div id="centrifugal-relief-from-gravity" class="section level3">
-<h3><span class="header-section-number">3.2.1</span> Centrifugal Relief from Gravity**</h3>
-<p>The earth's "normal" gravity field includes both the Newtonian Law and a correction for the centrifugal force caused by the earth's rotation. The centrifugal relief correction is</p>
-<p> </p>
-<p> <img src="media/03/image2.svg" style="width:1.74167in;height:0.68056in" /></p>
-<p> </p>
-<p> </p>
-<p>where ω is the earth’s rotation rate and <span class="math inline">\(R_x\)</span> is the perpendicular distance from the earth's axis to the surface and can be calculated as (R_x =<em>R</em> cos φ (see figure below).</p>
-<p> </p>
-<p><img src="media/03/image3.svg" style="width:1.94514in;height:0.47222in" /> </p>
-<p> </p>
-<p> <img src="media/03/image5.png" style="width:2.07292in;height:1.375in" />For any centrifugal relief calculations associated with aircraft performance, it is sufficiently exact (g ±0.00004 <em>m</em>/<em>s</em><sup>2</sup>) to use the average earth radius. An aircraft flying eastward contributes to centrifugal relief while a westbound aircraft diminishes it.</p>
-<p> <strong><br />
-</strong></p>
-<p><img src="media/03/image6.svg" style="width:4.0375in;height:0.29167in" />The International Association of Geodesy publishes the following equation (accurate to 0.005%) to calculate (local sea level gravity including the effects of centrifugal relief for* <em>any point fixed to the earth's surface</em></p>
-<p>  </p>
+<h3><span class="header-section-number">3.2.1</span> Centrifugal Relief from Gravity</h3>
+<p>The earth’s “normal” gravity field includes both the Newtonian Law and a correction for the centrifugal force caused by the earth’s rotation. The centrifugal relief correction is</p>
+<p><span class="math display">\[ 
+\Delta C R = -\frac{V^2}{R_x} = -\frac{\left( R_x \omega \right)^2}{R_x} = R_x \omega^2
+\]</span></p>
+<p>where <span class="math inline">\(\omega\)</span> is the earth’s rotation rate and <span class="math inline">\(R_x\)</span> is the perpendicular distance from the earth's axis to the surface and can be calculated as <span class="math inline">\(R_x =R \cos{\phi}\)</span> (see figure below).</p>
+<div class="figure">
+<img src="media/03/image5.png" style="width:2.07292in;height:1.375in" alt="" />
+<p class="caption">Rx determination</p>
+</div>
+<p>For any centrifugal relief calculations associated with aircraft performance, it is sufficiently exact (g ±0.00004 <em>m</em>/<em>s</em><sup>2</sup>) to use the average earth radius. An aircraft flying eastward contributes to centrifugal relief while a westbound aircraft diminishes it.</p>
+<p>The International Association of Geodesy publishes the following equation (accurate to 0.005%) to calculate (local sea level gravity including the effects of centrifugal relief for* <em>any point fixed to the earth's surface</em></p>
+<p><span class="math display">\[
+g_{lsl} = 9.780327 \left( 1 + 0.005300224 \sin^2{\phi} - 0.000058 \sin^2{2 \phi} \right) \left[ \frac{m}{s^2} \right]
+\]</span></p>
 <p>The above equation is tabulated below for quick reference.</p>
 <p>  </p>
 <table style="width:81%;">
@@ -524,75 +520,77 @@
 <tr class="header">
 <th align="left"><strong>Latitude<br />
 (deg)</strong></th>
-<th><strong>Normal <span class="math inline">\(g_{local}\)</span></strong></th>
-<th align="left">*</th>
+<th align="left"><strong>Normal</strong>
+<span class="math inline">\(g_{local}\)</span></th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left"></td>
-<td><strong>(<em>m</em>/<em>s</em><sup>2</sup>)</strong></td>
-<td align="left"><strong>(<em>ft</em>/<em>s</em><sup>2</sup>)</strong></td>
+<td align="left"><span class="math inline">\((m/s^2)\)</span></td>
+<td><span class="math inline">\((ft/s^2)\)</span></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>0</strong></td>
-<td>9.780327</td>
-<td align="left">32.088</td>
+<td align="left">9.780327</td>
+<td>32.088</td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>15</strong></td>
-<td>9.783659</td>
-<td align="left">32.098</td>
+<td align="left">9.783659</td>
+<td>32.098</td>
 </tr>
 <tr class="even">
 <td align="left"><strong>30</strong></td>
-<td>9.792866</td>
-<td align="left">32.188</td>
+<td align="left">9.792866</td>
+<td>32.188</td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>45</strong></td>
-<td>9.805689</td>
-<td align="left">32.171</td>
+<td align="left">9.805689</td>
+<td>32.171</td>
 </tr>
 <tr class="even">
 <td align="left"><strong>60</strong></td>
-<td>9.818795</td>
-<td align="left">32.214</td>
+<td align="left">9.818795</td>
+<td>32.214</td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>75</strong></td>
-<td>9.828569</td>
-<td align="left">32.249</td>
+<td align="left">9.828569</td>
+<td>32.249</td>
 </tr>
 <tr class="even">
 <td align="left"><strong>90</strong></td>
-<td>9.832185</td>
-<td align="left">32.258</td>
+<td align="left">9.832185</td>
+<td>32.258</td>
 </tr>
 </tbody>
 </table>
 <p>  </p>
-<p>The standard acceleration ((g_o) corresponds to a latitude of 46.0625°.</p>
-<p><span class="math inline">\(g_{lsl}\)</span>* at the equator and the poles varies ±0.27% from (g_o.</p>
+<p>The standard acceleration (<span class="math inline">\(g_o\)</span>) corresponds to a latitude of 46.0625°.</p>
+<p><span class="math inline">\(g_{lsl}\)</span>* at the equator and the poles varies ±0.27% from <span class="math inline">\(g_o\)</span>.</p>
 <p> </p>
 </div>
 <div id="altitude-effect-on-gravitational-acceleration" class="section level3">
-<h3><span class="header-section-number">3.2.2</span> Altitude Effect on Gravitational Acceleration**</h3>
-<p><em>R_A ~</em>is the sum of the earth's local radius and the geometric distance (<em>h_G) above the surface: </em>R_A~ = R* + *h_G</p>
-<p> </p>
-<p><img src="media/03/image7.svg" style="width:1.25972in;height:0.52778in" /></p>
+<h3><span class="header-section-number">3.2.2</span> Altitude Effect on Gravitational Acceleration</h3>
+<p><span class="math inline">\(R_A\)</span> is the sum of the earth’s local radius and the geometric distance, <span class="math inline">\(h_G\)</span> above the surface: <span class="math inline">\(R_A = R + h_G\)</span></p>
+<p><span class="math display">\[
+g_{alt} = g_{sls}\left( \frac{R}{R + h_G} \right)^2
+\]</span></p>
 <p>Gravitational acceleration at any geometric altitude:</p>
 <p> </p>
-<table style="width:40%;">
+<table style="width:44%;">
 <colgroup>
 <col width="16%" />
-<col width="23%" />
+<col width="27%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>*h_G |  </p>
+<th><p>*h_G</p>
 (1000 ft)</th>
-<th>g_alt/g_lsl</th>
+<th><span class="math inline">\(g_{alt}/g_{lsl}\)</span></th>
 </tr>
 </thead>
 <tbody>
@@ -626,27 +624,28 @@
 </tr>
 </tbody>
 </table>
-<p> </p>
-<p><strong><br />
-</strong></p>
 </div>
 <div id="actual-gravitational-pull-on-an-aircraft" class="section level3">
-<h3><span class="header-section-number">3.2.3</span> Actual Gravitational Pull on an Aircraft**</h3>
+<h3><span class="header-section-number">3.2.3</span> Actual Gravitational Pull on an Aircraft</h3>
 <p>Adding a centrifugal relief correction due to the aircraft’s velocity, a complete calculation for its gravitational acceleration is</p>
-<p> </p>
-<p> <img src="media/03/image8.svg" style="width:4.13056in;height:0.52639in" />where *V_G = ground speed and σ = ground track angle (0° = true North, 90° = East, etc.).</p>
-<p><strong> </strong></p>
+<p><span class="math display">\[
+g_{A/C} = \left[ g_{lsl} + \omega^2 R \cos{\phi} \right] \left[ \frac{R}{R + h_G} \right]^2 - \left( \omega + \frac{V_G \sin{\sigma}}{R + h_G} \right)^2 \left(R + h_G\right) \cos{\phi}
+\]</span></p>
+<p>where <span class="math inline">\(V_G\)</span> = ground speed and <span class="math inline">\(\sigma\)</span> = ground track angle (0° = true North, 90° = East, etc.).</p>
 </div>
 <div id="gravity-influence-on-aircraft-cruise-performance" class="section level3">
-<h3><span class="header-section-number">3.2.4</span> Gravity Influence on Aircraft Cruise Performance**</h3>
+<h3><span class="header-section-number">3.2.4</span> Gravity Influence on Aircraft Cruise Performance</h3>
 <p>Even at the same altitude, changes in gravity due to latitude or centrifugal relief directly alter the required lift, drag, and fuel flow. For example, with sufficiently precise instrumentation, data collected heading West could show about 0.5% more drag and fuel flow than data collected heading East (centrifugal relief effect). After determining test and standard (or mission) values for <em>g</em>, flight test values for <em>C_L, </em>C_D, drag, and fuel flow can be corrected to standard as follows:</p>
-<p><img src="media/03/image9.svg" style="width:2.075in;height:0.26389in" /><img src="media/03/image10.svg" style="width:0.98194in;height:0.48611in" /><img src="media/03/image11.svg" style="width:1.5375in;height:0.52778in" /></p>
-<p><img src="media/03/image12.svg" style="width:1.575in;height:0.26389in" />where *N_z = normal load factor,</p>
-<p><em>C_L = lift coefficient, </em>C_D = drag coefficient,</p>
-<p>AR = aspect ratio, e = Oswald efficiency factor,</p>
-<p><em>∆D</em> change in drag force,</p>
-<p><em>TSFC</em> = thrust specific fuel consumption, and</p>
-<p><img src="media/03/image13.svg" style="width:0.31528in;height:0.27778in" /> = standard day fuel flow</p>
+<p><span class="math display">\[C_{L_{std}} = C_{L_i} \frac{N_{z_{\omega_{std}}}}{N_{Z_{\omega_i}}} \left[\frac{g_{std}}{g_{A/C}} \right] \]</span></p>
+<p><span class="math display">\[C_{D_{std}} = \frac{C^2_{L_{std}}}{\pi A \text{Re}} \]</span></p>
+<p><span class="math display">\[\Delta D = D_{std} - D_t = qS\left[C_{D_{i_{std}}} - C_{D_{i_t}} \right] \]</span></p>
+<p><span class="math display">\[\dot{W}_{f_{std}} = \dot{W}_{f_i} + \Delta D \cdot TFSC \]</span></p>
+<p>where <span class="math inline">\(N_z\)</span> = normal load factor,</p>
+<p><span class="math inline">\(C_L\)</span> = lift coefficient, <span class="math inline">\(C_D\)</span> = drag coefficient,</p>
+<p><span class="math inline">\(AR\)</span> = aspect ratio, <span class="math inline">\(e\)</span> = Oswald efficiency factor,</p>
+<p><span class="math inline">\(\Delta D\)</span> = change in drag force,</p>
+<p><span class="math inline">\(TSFC\)</span> = thrust specific fuel consumption, and</p>
+<p><span class="math inline">\(\dot{W}_{f_{std}}\)</span> = standard day fuel flow</p>
 <p> </p>
 <p><strong><br />
 </strong></p>
