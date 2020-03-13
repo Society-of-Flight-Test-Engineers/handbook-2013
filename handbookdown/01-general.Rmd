@@ -1030,17 +1030,12 @@ Exponent  Prefix  Abbreviation
 
 (reference 1.8)
 
-*** ***
-
-***Editor's note** There is near unanimous agreement on most sign conventions except for pilot inputs and control surface deflections. Although individual organizations generally are consistent in-house, confusion often arises when trying to mathematically translate inputs & deflections from one organization to another. This section documents the generally accepted "body axes" sign conventions then discusses the rationale for several viewpoints addressing the "inputs & deflections" debate. Below is the SFTE sign convention.*
-
-** **
+**Editor's note** There is near unanimous agreement on most sign conventions except for pilot inputs and control surface deflections. Although individual organizations generally are consistent in-house, confusion often arises when trying to mathematically translate inputs & deflections from one organization to another. This section documents the generally accepted "body axes" sign conventions then discusses the rationale for several viewpoints addressing the "inputs & deflections" debate. Below is the SFTE sign convention.
 
 **Wind Axes Sign Convention**
 
 Winds are listed according to the direction they are coming from. Airports refer winds to magnetic North while winds at altitude are typically referred to true North. Headwind is true airspeed minus ground speed. (\(V_w =V_T - V_g\)).
 
-** **
 
 **Body Axes Sign Convention**
 
@@ -1072,13 +1067,11 @@ Aircraft *true* heading is the angle between *true* North and the projection of 
 
 The velocity vector is measured relative to the air mass while the flightpath is measured relative to the ground. They are equivalent only when winds are zero.
 
-Flightpath heading angle (ground track heading) *σ~g~*, is the horizontal angle between true North and the projection of the flightpath on the horizontal plane. Positive rotation is from north to east.
-
-€
+Flightpath heading angle (ground track heading) \(\sigma_g\), is the horizontal angle between true North and the projection of the flightpath on the horizontal plane. Positive rotation is from north to east.
 
 Flightpath elevation angle; *γ*, is the vertical angle between the flightpath and the horizontal plane. Positive rotation is up. During a descent, this parameter is commonly known as glide path angle.
 
-Flightpath bank angle; *$\mu$*, is the angle between the plane formed by the velocity vector and the lift vector and the vertical plane containing the velocity vector. Positive rotation is clockwise about the velocity vector, looking forward.
+Flightpath bank angle; \(\mu\), is the angle between the plane formed by the velocity vector and the lift vector and the vertical plane containing the velocity vector. Positive rotation is clockwise about the velocity vector, looking forward.
 
 Fuselage reference station (FRS), Water line (WL), and Buttock line (BL) are reference coordinates established by the design group.
 
