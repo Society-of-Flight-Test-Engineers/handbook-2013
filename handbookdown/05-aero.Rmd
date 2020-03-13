@@ -124,49 +124,45 @@ To compare test day and standard day aircraft or to match wind tunnel \(C_F\) da
 <!--- FIXME: Define these subscripts --->
 \[\frac{L_A}{q_A S_A} = C_L = \frac{L_M}{q_M S_M} \]
 
+
 <!--- FIXME: update references to dynamic cross references--->
 ## General Aerodynamic Relations (refs 5.1, 5.2, 5.10)
 
 Lift & Drag forces can be described using two approaches:
 
-1. Change in momentum of airstream, *F = d{mv\]/dt*
+1. Change in momentum of airstream, \(F=d[mv]/dt\)
 2. "Bernoulli" approach which requires the continuity and conservation of energy equations
 
 **Continuity Equation**
 
-Fluid M ass in = Fluid Mass out
+Fluid Mass in = Fluid Mass out
 
-ρ ~1~*V* ~1~*A* ~1~ = ρ ~2~*V* ~2~*A* ~2~
+\[\rho_1 V_1 A_1 = \rho_2 V_2 A_2\]
 
-For subsonic (incompressible) flow ρ ~1~ = ρ ~2~
+<!--- FIXME: Subsonic doesn't equate to incompressible --->
+For subsonic (incompressible) flow \(\rho_1 = \rho_2\)
 
-*V* ~1~*A* ~1~ = *V* ~2~*A* ~2~
-
+\[V_1 A_1 = V_2 A_2\]
 
 **Conservation of Energy** (Bernoulli) **Equation:**
 
 Potential + Kinetic + Pressure = constant
-
 (changes in Potential energy are negligible)
-
 Energy per unit volume is pressure then
-
 Dynamic Pressure + Static Pressure = Total Pressure
 
-![][05010]
-
+<!---- TODO: Remove reference to 05010 --->
 
 * This classic approach only applies in the "potential flow" region and not in the boundary layer where energy losses occur
 * Pressures around a surface can be calculated or measured from tests and converted into pressure coefficients,
 
-*c~p~* = (*p*~local~-*p*~ambient~)/dynamic pressure = *∆p/q*
+\[c_p = \left( p_{local} - p_{ambient} \right) / \textrm{dynamic pressure} = \Delta p/q \]
 
-* *c~p~* values can be mapped out for all surfaces
+* \(c_p\) values can be mapped out for all surfaces
 
 ![][05011]
 
 * Summation of all pressures perpendicular to surface yield the pitching moments and the "**Resultant Aerodynamic Force**" which is broken into lift and drag components
-
 
 ![][05012]
 

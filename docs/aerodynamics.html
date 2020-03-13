@@ -498,30 +498,25 @@
 <h2><span class="header-section-number">5.2</span> General Aerodynamic Relations (refs 5.1, 5.2, 5.10)</h2>
 <p>Lift &amp; Drag forces can be described using two approaches:</p>
 <ol style="list-style-type: decimal">
-<li>Change in momentum of airstream, <em>F = d{mv]/dt</em></li>
+<li>Change in momentum of airstream, <span class="math inline">\(F=d[mv]/dt\)</span></li>
 <li>“Bernoulli” approach which requires the continuity and conservation of energy equations</li>
 </ol>
 <p><strong>Continuity Equation</strong></p>
-<p>Fluid M ass in = Fluid Mass out</p>
-<p>ρ <sub>1</sub><em>V</em> <sub>1</sub><em>A</em> <sub>1</sub> = ρ <sub>2</sub><em>V</em> <sub>2</sub><em>A</em> <sub>2</sub></p>
-<p>For subsonic (incompressible) flow ρ <sub>1</sub> = ρ <sub>2</sub></p>
-<p><em>V</em> <sub>1</sub><em>A</em> <sub>1</sub> = <em>V</em> <sub>2</sub><em>A</em> <sub>2</sub></p>
+<p>Fluid Mass in = Fluid Mass out</p>
+<p><span class="math display">\[\rho_1 V_1 A_1 = \rho_2 V_2 A_2\]</span></p>
+<!--- FIXME: Subsonic doesn't equate to incompressible --->
+<p>For subsonic (incompressible) flow <span class="math inline">\(\rho_1 = \rho_2\)</span></p>
+<p><span class="math display">\[V_1 A_1 = V_2 A_2\]</span></p>
 <p><strong>Conservation of Energy</strong> (Bernoulli) <strong>Equation:</strong></p>
-<p>Potential + Kinetic + Pressure = constant</p>
-<p>(changes in Potential energy are negligible)</p>
-<p>Energy per unit volume is pressure then</p>
-<p>Dynamic Pressure + Static Pressure = Total Pressure</p>
-<div class="figure">
-<img src="media/05/image10.svg" width="163" height="51" />
-
-</div>
+<p>Potential + Kinetic + Pressure = constant (changes in Potential energy are negligible) Energy per unit volume is pressure then Dynamic Pressure + Static Pressure = Total Pressure</p>
+<!---- TODO: Remove reference to 05010 --->
 <ul>
 <li>This classic approach only applies in the “potential flow” region and not in the boundary layer where energy losses occur</li>
 <li>Pressures around a surface can be calculated or measured from tests and converted into pressure coefficients,</li>
 </ul>
-<p><em>c<sub>p</sub></em> = (<em>p</em><sub>local</sub>-<em>p</em><sub>ambient</sub>)/dynamic pressure = <em>∆p/q</em></p>
+<p><span class="math display">\[c_p = \left( p_{local} - p_{ambient} \right) / \textrm{dynamic pressure} = \Delta p/q \]</span></p>
 <ul>
-<li><em>c<sub>p</sub></em> values can be mapped out for all surfaces</li>
+<li><span class="math inline">\(c_p\)</span> values can be mapped out for all surfaces</li>
 </ul>
 <div class="figure">
 <img src="media/05/image11.svg" width="255" height="222" />
