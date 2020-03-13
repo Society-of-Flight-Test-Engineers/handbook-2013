@@ -425,7 +425,7 @@ Exponent  Prefix  Abbreviation
 |\(\zeta\)       |damping ratio|
 |\(\eta\)       |efficiency|
 |\(\theta\)       |body axis/pitch angle|
-|\(\theta\)       |relative temperature ratio, *T~a~*/*T~o~*|
+|\(\theta\)       |relative temperature ratio, \(T_a / T_o\)|
 |\(\iota\)       |angle of incidence|
 |\(\iota_F\)  |thrust angle of incidence|
 |\(\iota_T\)*  |horizontal tail angle of incidence|
@@ -481,13 +481,13 @@ Exponent  Prefix  Abbreviation
 |*T* |True|
 |*t* |test day|
 
-## Common Abbreviations (raw)
+## Common Abbreviations
 
 |Abbreviation|Meaning|
 |:-|:-|
-|a |lift curve slope|
-|a |linear acceleration (ft/sec^2^ or m/sec^2^)|
-|a |speed of sound|
+|\(a\) |lift curve slope|
+|\(a\) |linear acceleration (ft/sec^2^ or m/sec^2^)|
+|\(a\) |speed of sound|
 |A/A |air-to-air|
 |a/c |aircraft|
 |AAA |anti aircraft artillery|
@@ -515,30 +515,30 @@ Exponent  Prefix  Abbreviation
 |ASPJ |airborne self protection jammer|
 |ATC |air traffic control|
 |avg |average|
-|ax |longitudinal acceleration|
-|ay |lateral acceleration|
+|\(a_x\) |longitudinal acceleration|
+|\(a_y\) |lateral acceleration|
 |AZ |azimuth|
-|b |span of wing (feet)|
+|\(b\) |span of wing (feet)|
 |B/N |bombardier/navigator|
 |bbl |barrel|
-|*BHP* |brake horsepower|
+|BHP |brake horsepower|
 |BICOMS |bistatic coherent measurement system|
 |BID |bus interface device|
 |BIT |built-in test|
-|*BSFC* |brake specific fuel consumption|
+|BSFC |brake specific fuel consumption|
 |Btu |British thermal unit|
 |BW |bandwidth|
-|^o^*C* |degrees centigrade\...see *T*
-|c |brake specific fuel consumption (BSFC)|
-|c |speed of light in a vacuum (186,282 miles/sec = 299,792,500 \[m/s\])|
-|c |mean aerodynamic chord (MAC) of a wing|
+|^o^C |degrees centigrade (see T) |
+|\(c\) |brake specific fuel consumption (BSFC)|
+|\(c\) |speed of light in a vacuum (186,282 miles/sec = 299,792,500 [m/s])|
+|\(c\) |mean aerodynamic chord (MAC) of a wing|
 |C/A |coarse acquisition|
-|C/N~o~ |carrier to noise ratio|
+|\(C/N_o\) |carrier to noise ratio|
 |CADC |central air data computer|
 |CARD |cost analysis requirement document|
-|*C~D~* |coefficient of drag|
-|*C~D~*~i~ |induced drag coefficient|
-|*C~D~*~o~ |zero lift drag coefficient (also parasitic drag coefficient for symmetric wing)|
+|\(C_D\) |coefficient of drag|
+|\(C_{D_i}\) |induced drag coefficient|
+|\(C_{D_o}\) |zero lift drag coefficient (also parasitic drag coefficient for symmetric wing)|
 |CDI |course deviation indicator|
 |CDMA |code division multiplex access|
 |CDR |critical design review|
@@ -546,33 +546,33 @@ Exponent  Prefix  Abbreviation
 |CDU |control display unit|
 |CEA |circular error average|
 |CEP |circular error probable|
-|*C~f~* |coefficient of friction|
+|\(C_f\) |coefficient of friction|
 |CFE |contractor furnished equipment|
 |CFT |conformal fuel tank|
-|*cg* |center of gravity (normally in % MAC)|
-|C~H~ |hinge moment coefficient|
+|cg |center of gravity (normally in % MAC)|
+|\(C_H\) |hinge moment coefficient|
 |cine |cinetheodolite|
-|*C~l~* |rolling moment coefficient, airfoil section lift coefficient|
-|*C~L~* |lift coefficient|
+|\(C_l\) |rolling moment coefficient, airfoil section lift coefficient|
+|\(C_L\) |lift coefficient|
 |CLHQ |closed loop handling qualities|
-|*C~lp~* |roll damping coefficient|
-|*C~lr~* |roll moment due to yaw rate coefficient|
-|*C~m~* |pitching moment coefficient|
-|*C~M~* |moment coefficient|
+|\(C_{lp}\) |roll damping coefficient|
+|\(C_{lr}\) |roll moment due to yaw rate coefficient|
+|\(C_m\) |pitching moment coefficient|
+|\(C_M\) |moment coefficient|
 |cm |centimeters|
 |cos |cosine|
 |cot |cotangent|
-|\(C_{l \beta}\) |(dihedral) rolling moment due to sideslip|
-|\(C_{l \delta a}\) |aileron power coefficient|
-|\(Cm_q\) |pitch damping coefficient|
-|\(Cm_{\alpha}\) |longitudinal static stability coefficient|
-|\(Cm_{\delta e}\) |elevator power coefficient|
-|\(Cn\) |yawing moment coefficient|
-|\(Cn_r\) |yaw damping coefficient|
+|\(C_{l_{\beta}}\) |(dihedral) rolling moment due to sideslip|
+|\(C_{l_{\delta a}}\) |aileron power coefficient|
+|\(C_{m_q}\) |pitch damping coefficient|
+|\(C{m_{\alpha}}\) |longitudinal static stability coefficient|
+|\(C{m_{\delta e}}\) |elevator power coefficient|
+|\(C_n\) |yawing moment coefficient|
+|\(C_{n_r}\) |yaw damping coefficient|
 |cnst |constant|
-|\(Cn_{\beta}\) |directional stability coefficient|
-|\(Cn_{\delta a}\) |adverse yaw coefficient|
-|\(Cn_{\delta r}\) |rudder power coefficient|
+|\(C_{n_{\beta}}\) |directional stability coefficient|
+|\(C_{n_{\delta a}}\) |adverse yaw coefficient|
+|\(C_{n_{\delta r}}\) |rudder power coefficient|
 |COTS |commercial, off--the-shelf|
 |CP |center of pressure|
 |\(C_P\) |propeller power coefficient|
@@ -627,16 +627,16 @@ Exponent  Prefix  Abbreviation
 |EOM |equations of motion|
 |EPR |engine pressure ratio|
 |EPROM |electrically programmable read only memory|
-|*Es* |specific energy|
+|\(E_s\) |specific energy|
 |ESA |European Space Agency|
 |ESD |Electronic Systems Division|
-|*ESHP* |equivalent shaft horsepower|
+|ESHP |equivalent shaft horsepower|
 |ETA |estimate time of arrival|
 |ETE |estimate time en-route|
 |EW |early warning|
 |EW |electronic warfare|
-|^o^*F* |degrees Fahrenheit|
-|*f* |frequency\...hertz (originally cycles per second)|
+|^o^F |degrees Fahrenheit|
+|\(f\) |frequency...hertz (originally cycles per second)|
 |F.S. |fuselage station|
 |\(F_a\) |aileron force|
 |FAA |Federal Aviation Administration|
@@ -653,8 +653,8 @@ Exponent  Prefix  Abbreviation
 |FMC |fully mission capable|
 |FMS |flight management system|
 |FMS |foreign military sales|
-|*Fn* |net thrust|
-|\(Fn / \delta\) |corrected thrust parameter|
+|\(F_n\) |net thrust|
+|\(F_n / \delta\) |corrected thrust parameter|
 |FOM |figure of merit|
 |FOT&E |follow-on test & evaluation|
 |FOUO |for official use only|
@@ -662,7 +662,7 @@ Exponent  Prefix  Abbreviation
 |fpm |feet per minute|
 |fps |feet per second|
 |FQT |formal qualification test|
-|*Fr* |rudder force|
+|\(F_r\) |rudder force|
 |FRD |functional requirements document|
 |FRL |fuselage reference line|
 |FRL |force, rudder, left|
@@ -674,38 +674,38 @@ Exponent  Prefix  Abbreviation
 |ft-lb |English unit of work\...foot-pound\...|
 |fwd |forward|
 |FY |fiscal year|
-|*g* |acceleration due to gravity at altitude|
-|*G* |gravitational constant = 6.6732x10^-11^ \[N m^2^/kg^2^\]|
+|\(g\) |acceleration due to gravity at altitude|
+|\(G\) |gravitational constant = 6.6732x10^-11^ [N m^2^/kg^2^]|
 |GAO |Government Accounting Office|
 |GCA |ground control approach|
 |GCI |ground controlled intercept|
 |GDOP |geometric dilution of precision|
 |GMT |Greenwich mean time|
-|*g~o~* |standard acceleration due to gravity (sea level, 46 deg latitude)|
+|\(g_o\) |standard acceleration due to gravity (sea level, 46 deg latitude)|
 |GPS |global positioning system|
 |GS |ground speed|
 |GSI |glide slope indicator|
-|*h* |% MAC|
-|*H* |altitude|
+|\(h\) |% MAC|
+|\(H\) |altitude|
 |HARM |high-speed anti-radiation missile|
-|*H~c~* |calibrated altitude (assumed to be pressure altitude in flight test)|
-|*H~D~* |density altitude|
+|\(H_c\) |calibrated altitude (assumed to be pressure altitude in flight test)|
+|\(H_D\) |density altitude|
 |HDDR |high density digital recorder|
 |HDOP |horizontal dilution of precision|
 |HF |high frequency|
-|*Hg* |mercury|
-|*H~i~* |indicated altitude|
-|*h~m~* |stick-fixed maneuver point (%MAC)|
-|*h~\'m~* |stick-free maneuver point (%MAC)|
-|*h~n\ ~* |stick-fixed neutral point (%MAC)|
-|*h~\'n\ ~* |stick-free neutral point (%MAC)|
+|Hg |mercury|
+|\(H_i\) |indicated altitude|
+|\(h_m\) |stick-fixed maneuver point (%MAC)|
+|\(h_\'m\) |stick-free maneuver point (%MAC)|
+|\(h_n\) |stick-fixed neutral point (%MAC)|
+|\(h_\'n\) |stick-free neutral point (%MAC)|
 |hp |horsepower|
 |hr |hour|
 |hrs |hours|
 |HSI |horizontal situation indicator|
 |HUD |head-up display|
 |HV |host vehicle|
-|*Hz* |hertz|
+|Hz |hertz|
 |I/O |input/output|
 |IAS |indicated airspeed|
 |IAW |in accordance with|
@@ -724,15 +724,15 @@ Exponent  Prefix  Abbreviation
 |IOC |initial operational capability|
 |IOT&E |initial operational test & evaluation|
 |IUGG |International Union of Geodesy and Geographics|
-|*I~x~, I~x~, I~z~* |moments of inertia|
-|*I~xy~, I~xz~, I~yz~* |products of inertia|
-|*J* |joules energy, (Newton-Meter)|
-|*J* |propeller advance ratio|
+|\(I_x \text{, } I_x\text{, } I_z\) |moments of inertia|
+|\(I_{xy}\text{, }I_{xz}\text{, } I_{yz}\) |products of inertia|
+|J |joules energy, (Newton-Meter)|
+|J |propeller advance ratio|
 |J&S |jamming and spoofing|
 |JCS |Joint Chiefs of Staff|
-|*K* |Kelvin (absolute temperature)|
+|K |Kelvin (absolute temperature)|
 |K |temperature probe recovery factor|
-|*K, k*1 |constants|
+|\(K\text{, }k\) |constants|
 |KCAS |knots calibrated airspeed|
 |KEAS |knots equivalent airspeed|
 |kg |kilogram, metric unit of mass|
@@ -741,9 +741,9 @@ Exponent  Prefix  Abbreviation
 |km |kilometer|
 |KTAS |knots true airspeed|
 |kt |knots|
-|*L* |Lift (lbs)|
-|*l* |length|
-|*L* |rolling moment|
+|\(L\) |Lift (lbs)|
+|\(l\) |length|
+|\(L\) |rolling moment|
 |L/D |Lift-to-drag ratio|
 |LANTIRN |low altitude navigation and targeting IR for night|
 |lat |lateral|
@@ -758,24 +758,24 @@ Exponent  Prefix  Abbreviation
 |LO |low observables|
 |Log |common log, to the base 10|
 |LOS |line of sight|
-|*l*~t~ |distance from *cg* to tail\'s aerodynamic cent|
+|\(l_t\) |distance from \(cg\) to tail's aerodynamic cent|
 |\(L_{\delta a}\) |rolling moment due to aileron deflection|
-|*M* |moment (ft-lbs)|
-|*M* |Mach number|
-|m |mass|
+|\(M\) |moment (ft-lbs)|
+|\(M\) |Mach number|
+|\(m\) |mass|
 |m |meter (length)|
-|*M* |pitching moment|
+|\(M\) |pitching moment|
 |MAG |magnetic|
 |MAP |manifold pressure|
 |mb |millibar|
 |MCA |minimum crossing altitude|
-|*M~cr~* |critical Mach number|
-|*M~d~* |drag divergence Mach number|
-|M~ac~ |mean aerodynamic cord|
-|M~GC~ |mean geometric chord|
+|\(M_{cr}\) |critical Mach number|
+|\(M_d\) |drag divergence Mach number|
+|\(M_{ac}\) |mean aerodynamic cord|
+|\(M_{GC}\) |mean geometric chord|
 |MHz |megahertz|
 |mHZ |millihertz|
-|*M~ic~* |instrument-corrected Mach number|
+|\(M_{ic}\) |instrument-corrected Mach number|
 |MilSpec |military specification|
 |MIL-STD |military standard (publication)|
 |min |minute (time)|
@@ -790,11 +790,11 @@ Exponent  Prefix  Abbreviation
 |MTTR |mean time to repair|
 |MX |maintenance|
 |N |newton (force)|
-|N |rotational speed (RPM)|
-|*n* |load factor (g\'s)|
-|N |yawing moment|
-|*N*~1~ |low pressure compressor speed|
-|*N*~2~ |high pressure compressor speed|
+|\(N\) |rotational speed (RPM)|
+|\(n\) |load factor (g\'s)|
+|\(N\) |yawing moment|
+|\(N_1\) |low pressure compressor speed|
+|\(N_2\) |high pressure compressor speed|
 |NACA |National Advisory Committee for Aeronautics|
 |NADC |Naval Air Development Center|
 |NASA |National Aeronautics and Space Administration|
@@ -806,44 +806,45 @@ Exponent  Prefix  Abbreviation
 |NOTAM |notice to airmen|
 |NRC |National Research Council (Canada)|
 |NWC |Naval Weapons Center|
-|*N~x~* |longitudinal load factor (g\'s)|
-|N~y~ |lateral load factor (g\'s)|
-|*N~z~* |normal load factor (g\'s)|
+|\(N_x\) |longitudinal load factor (g\'s)|
+|\(N_y\) |lateral load factor (g\'s)|
+|\(N_z\) |normal load factor (g\'s)|
 |OAT |outside air temperature|
 |OAT |on aircraft test|
 |OEI |One engine inoperative|
 |OPR |Office of Primary Responsibility|
 |OSD |Office of the Secretary of Defense|
 |OT&E |operational test & evaluation|
-|p |aircraft roll rate (degrees/sec)|
-|P |pressure (N/m^2^ ,pounds per square inch)|
-|P~a~ |ambient pressure|
+|\(p\) |aircraft roll rate (degrees/sec)|
+|\(P\) |pressure (N/m^2^ ,pounds per square inch)|
+|\(P_a\) |ambient pressure|
 |PCM |pulse code modulation
 |P-code |precision code|
 |PD |pulse Doppler|
 |PDM |pulse duration modulation|
 |PGM |precision guided munitions|
 |PIO |pilot induced oscillations|
-|P~iw~ |total thrust horsepower required|
+|\(P_{iw}\) |total thrust horsepower required|
 |Pk |probability of kill|
 |PLF |power for level flight|
-|P~o~ |standard atmospheric pressure (2116.22 lb/ft^2^ )|
+|\(P_o\) |standard atmospheric pressure (2116.22 lb/ft^2^ )|
 |POC |point of contact|
-|P~p~ |pitot pressure|
+|\(P_p\) |pitot pressure|
 |ppm |parts per million|
 |Prop |propeller|
-|P~s~ |static pressure|
+|\(P_s\) |specific power|
+|\(P_s\) |static pressure|
 |PS |pulse search|
 |psf |pounds per square foot|
 |psi |pounds per square inch|
-|P~T~ |total pressure|
+|\(P_T\) |total pressure|
 |PW |pulse width|
-|*Q* or *q* |dynamic pressure = \(0.5 \rho V^2\) |
+|\(Q\) or \(q\) |dynamic pressure = \(0.5 \rho V^2\) |
 |q |aircraft pitch rate|
 |Q |engine torque|
-|q~c~ |impact pressure (*P~t~* − *P~a~*)|
-|^o^*R* |degrees Rankine = ^o^*F* + 459.67|
-|R |perfect gas constant = 8314.34 \[J/kmol K\]|
+|\(q_c\) |impact pressure (\(P_t − P_a\))|
+|^o^R |degrees Rankine = ^o^F + 459.67|
+|R |perfect gas constant = 8314.34 [J/kmol K]|
 |r |aircraft yaw rate (degrees/sec)|
 |R |earth radius|
 |R |range|
@@ -868,14 +869,14 @@ Exponent  Prefix  Abbreviation
 |R/T |receiver/transmitter|
 |RTO |Rejected/refused takeoff|
 |RTO |responsible test organization|
-|S |wing area (ft^2^ or m^2^)|
-|S~a~ |horizontal distance between liftoff and specified height or between specified height and touch down|
+|\(S\) |wing area (ft^2^ or m^2^)|
+|\(S_a\) |horizontal distance between liftoff and specified height or between specified height and touch down|
 |SA |selective availability|
 |SA |situational awareness|
 |SE |specific endurance|
 |sec |seconds (time or angle)|
 |SFC |specific fuel consumption|
-|S~g~ |ground roll distance|
+|\(S_g\) |ground roll distance|
 |SHP |shaft horsepower|
 |SI |international system of units|
 |SIGINT |signal intelligence|
@@ -889,20 +890,20 @@ Exponent  Prefix  Abbreviation
 |SOW |stand-off weapon|
 |SR |specific range|
 |SRB |safety review board|
-|S~T~ |tail area|
+|\(S_T\) |tail area|
 |std |standard|
-|S~T~ |total takeoff or landing distance (S~a~ + S~g~)|
+|\(S_T\) |total takeoff or landing distance (S_a + S_g\))|
 |STOL |short takeoff and landing|
 |STOVL |short takeoff and vertical landing|
-|T |period of oscillation|
-|T |temperature|
-|t |thickness|
-|T, t |time (sec)|
+|\(T\) |period of oscillation|
+|\(T\) |temperature|
+|\(t\) |thickness|
+|\(T\text{, }t\) |time (sec)|
 |t/c |thickness-to-chord ratio|
-|T~a~ |ambient temperature|
+|\(T_a\) |ambient temperature|
 |TACAN |tactical air navigation|
 |tan |tangent|
-|T~as~ |standard temperature at altitude|
+|\(T_{as}\) |standard temperature at altitude|
 |TAS |true airspeed|
 |TBD |to be determined|
 |TD |touchdown|
@@ -912,28 +913,28 @@ Exponent  Prefix  Abbreviation
 |TER |trailing edge right|
 |TEU |trailing edge up|
 |TF |terrain following|
-|THP |Thrust Horsepower|
-|THP~alt~ |horsepower available at altitude|
-|THP~max~ |maximum horsepower available|
-|THP~min~ |minimum horsepower required|
-|THP~SL~ |horsepower required at sea level|
+|\(THP\) |Thrust Horsepower|
+|\(THP_{alt}\) |horsepower available at altitude|
+|\(THP_{max}\) |maximum horsepower available|
+|\(THP_{min}\) |minimum horsepower required|
+|\(THP_{SL}\) |horsepower required at sea level|
 |TIT |turbine inlet temperature|
 |TM |telemetry|
 |TMN |true Mach number|
 |T/O |takeoff|
-|T~o~ |standard sea level temperature (59.0 ^o^F, 15 ^o^C)|
+|\(T_o\) |standard sea level temperature (59.0 ^o^F, 15 ^o^C)|
 |TO |technical order|
 |TRB |technical review board|
 |TRD |technical requirements document|
 |TRP |technical resources plan|
 |TSFC |thrust specific fuel consumption|
 |TSPI |time, space, position information|
-|T~t~ |total temperature|
+|\(T_t\) |total temperature|
 |TV |television|
 |T/W |thrust to weight ratio|
 |TWT |track while scan|
 |TWT |traveling wave tube|
-|u |velocity along aircraft\'s x-axis|
+|\(u\) |velocity along aircraft\'s x-axis|
 |UAV |uninhabited aerial vehicle|
 |UHF |ultra high frequency|
 |UPT |undergraduate pilot training|
@@ -944,77 +945,78 @@ Exponent  Prefix  Abbreviation
 |USN |US Navy|
 |UT |universal time|
 |UV |ultraviolet|
-|v |velocity along aircraft\'s lateral axis|
-|V~H~ |horizontal tail volume coefficient|
-|V~V~ |vertical tail volume coefficient|
-|V~1~ |takeoff decision speed|
-|V~2~ |takeoff safety speed|
-|V~A~ |design maneuvering speed|
+|\(v\) |velocity along aircraft\'s lateral axis|
+|\(V_H\) |horizontal tail volume coefficient|
+|\(V_V\) |vertical tail volume coefficient|
+|\(V_1\) |takeoff decision speed|
+|\(V_2\) |takeoff safety speed|
+|\(V_A\) |design maneuvering speed|
 |VAC |volts AC|
-|V~b~ |buffet airspeed|
-|V~B~ |design speed for max gust intensity|
-|V~br~ |velocity for best range|
-|V~c~ |calibrated airspeed|
-|V~D~ |design diving speed|
+|\(V_b\) |buffet airspeed|
+|\(V_B\) |design speed for max gust intensity|
+|\(V_{br}\) |velocity for best range|
+|\(V_c\) |calibrated airspeed|
+|\(V_D\) |design diving speed|
 |VDC |volts DC|
 |VDOP |vertical dilution of precision|
-|V~e~ |equivalent velocity|
-|V~FE~ |maximum flap extended speed|
+|\(V_e\) |equivalent velocity|
+|\(V_{FE}\) |maximum flap extended speed|
 |VFR |visual flight rules|
-|V~g~| ground speed|
+|\(V_g\)| ground speed|
 |VHF |very high frequency|
-|V~i~ |indicated airspeed|
-|V~ic~ |indicated airspeed corrected for instrument error|
-|V~iw~ |velocity at sea level std day and std weight|
+|\(V_i\) |indicated airspeed|
+|\(V_{ic}\) |indicated airspeed corrected for instrument error|
+|\(V_{iw}\) |velocity at sea level std day and std weight|
 |VLE |max speed with landing gear extended|
-|V~LO~ |max speed while operating landing gear|
-|V~LOF~ |lift off speed|
+|\(V_{LO}\) |max speed while operating landing gear|
+|\(V_{LOF}\) |lift off speed|
 |VLSIC |very large scale integrated circuit|
-|V~mc~ |minimum directional control speed|
+|\(V_{mc}\) |minimum directional control speed|
 |VMC |visual meteorological conditions|
-|V~mca~ |minimum directional control speed in the air|
-|V~mcg~ |minimum directional control speed on the ground|
-|V~mo~/M~mo~ |maximum operating limit speed|
-|V~mu~ |minimum unstick speed|
-|V~NE~ |never exceed velocity|
-|V~no~ |max structural cruising speed|
-|V~opt~ |optimum velocity for endurance flight|
+|\(V_{mca}\) |minimum directional control speed in the air|
+|\(V_{mcg}\) |minimum directional control speed on the ground|
+|\(V_mo/M_mo\) |maximum operating limit speed|
+|\(V_{mu}\) |minimum unstick speed|
+|\(V_{NE}\) |never exceed velocity|
+|\(V_{no}\) |max structural cruising speed|
+|\(V_{opt}\) |optimum velocity for endurance flight|
 |VOR |VHF omni-directional range|
 |VORTAC |VOR + TACAN|
-|V~Pmin~ |velocity for minimum power|
-|V~Pmin,SL~ |velocity for minimum power at sea level|
-|V~R~ |rotation speed|
-|V~S~ |stall speed|
-|V~S0~ |stall speed in landing configuration|
-|V~S1~ |stall speed in some defined configuration|
+|\(V_{Pmin}\) |velocity for minimum power|
+|\(V_{Pmin,SL}\) |velocity for minimum power at sea level|
+|\(V_R\) |rotation speed|
+|\(V_S\) |stall speed|
+|\(V_{S0}\) |stall speed in landing configuration|
+|\(V_{S1}\) |stall speed in some defined configuration|
 |VSTOL |vertical/short takeoff and landing|
-|V~T~ |true airspeed|
+|\(V_T\) |true airspeed|
 |VTOL |vertical takeoff & landing|
 |VVI |vertical velocity indicator|
-|V~W~ |wind velocity|
-|V~X~ |speed for best angle of climb|
-|V~Y~ |speed for best rate of climb|
-|W |weight|
-|w |component of velocity along aircraft\'s Z-axis|
+|\(V_W\) |wind velocity|
+|\(V_X\) |speed for best angle of climb|
+|\(V_Y\) |speed for best rate of climb|
+|\(W\) |weight|
+|\(w\) |component of velocity along aircraft\'s Z-axis|
 |WDL |weapon data link|
 |\(W / \delta\) |weight-to-pressure ratio|
-|W~f~ |fuel weight|
+|\(W_f\) |fuel weight|
 |WGS-84 |World Geodetic System, 1984|
 |WI |watch item|
+|WIT |watch item|
 |WOD |word of day|
 |WOW |weight on wheels|
 |WPT |waypoint|
 |wrt |with respect to|
 |\(\frac{\dot{W_f}}{\delta \sqrt{\theta}}\) |corrected fuel flow parameter|
 |W/S |wing loading|
-|W~f~ |fuel flow (lb/hr)|
-|x |aircraft longitudinal axis, a line running through the nose & tail|
-|X~ac~ |distance from leading edge to aerodynamic center|
+|\(W_f\) |fuel flow (lb/hr)|
+|\(x\) |aircraft longitudinal axis, a line running through the nose & tail|
+|\(X_{ac}\) |distance from leading edge to aerodynamic center|
 |Xlink |cross link|
-|y |aircraft lateral axis, a line running the wingtips|
-|Y |force along y-axis|
+|\(y\) |aircraft lateral axis, a line running the wingtips|
+|\(Y\) |force along y-axis|
 |Y-code |encrypted P-code|
-|z |aircraft vertical or yaw axis, a line perpendicular to the longitudinal and lateral axes|
+|\(z\) |aircraft vertical or yaw axis, a line perpendicular to the longitudinal and lateral axes|
 |\(\Delta H_{ic}\) |altimeter instrument correction|
 |\(\Delta H_{pc}\) |altimeter position error correction|
 |\(\Delta P_{p}\) |pitot pressure error|
@@ -1024,7 +1026,7 @@ Exponent  Prefix  Abbreviation
 |\(\Delta V_{pc}\) |correction for airspeed position error|
 |\(\infty\) |infinity, or freestream conditions|
 
-## Sign Conventions (raw)
+## Sign Conventions
 
 (reference 1.8)
 
@@ -1036,7 +1038,7 @@ Exponent  Prefix  Abbreviation
 
 **Wind Axes Sign Convention**
 
-Winds are listed according to the direction they are coming from. Airports refer winds to magnetic North while winds at altitude are typically referred to true North. Headwind is true airspeed minus ground speed. (*V~w~=V~T~-V~g~*).
+Winds are listed according to the direction they are coming from. Airports refer winds to magnetic North while winds at altitude are typically referred to true North. Headwind is true airspeed minus ground speed. (\(V_w =V_T - V_g\)).
 
 ** **
 

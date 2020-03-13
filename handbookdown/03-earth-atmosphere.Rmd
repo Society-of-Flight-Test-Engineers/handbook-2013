@@ -46,30 +46,25 @@ The gravitational field (\(g\)) near any mass can be calculated as
 
 where \(G\) is the universal gravitational constant and \(R_A\) is the absolute distance from the center of mass \(M\)
 
- 
+## Earth Properties 
 
-**\
-**
+(references 3.9.2, 3.9.3 )
 
-## Section 3.2 Earth Properties (references 3.9.2, 3.9.3 )**
-
- 
-
-Std Earth gravitational acceleration, g_o~ = 9.8066 \(m/s^2^* = 32.174 *ft/s^2^*
-
-mass = 5.9722 × 10^24^ \(kg* = 13.22 x 10^24^ *lb*
-
-rotation rate, ω = 7.292115 × 10^−5^ \(rad/sec*
-
-average density = 5.522 \(g/cm^3^* = 344.7 *lb/ft^3^*
-
-radius average, \(R_{avg}\)* = 6,367,444 *m* = 3956.538 *st. miles* = 20,890,522 *ft*
-
-radius at the equator (\(R_e) is 6,378,137 *m* (±2)
-
-radius at the poles \(R_p = 6,356,752 \[*m*\]
-
-radius as a function of latitude, φ (assumes perfect ellipsoid):
+| Property | Symbol | Value | Units |
+|----------|--------|------|--------|
+| Std Earth gravitational acceleration | \(g_o\) | 9.8066 | m/s^2^|
+|                                      |         | 32.174 | ft/s^2^|
+| mass | | \(5.9722 \times 10^{24}\) | kg |
+|      | | \(13.22 \times 10^{24}\)    | lb|
+| rotation rate | \(\omega\) | \(7.292115 \times 10^{−5} | rad/sec |
+| average density | |\(5.522\) | g/cm^3^ |
+| | | \(344.7\) | lb/ft^3^|
+| radius average | \(R_{avg}\) |  \(6,367,444\) | m |
+| | | \(3956.538\) |st. miles |
+| | | \(20,890,522\) | ft |
+| radius at the equator | \(R_e\) | \(6,378,137\) | m |
+| radius at the poles | \(R_p\) | \(6,356,752\) | m |
+| radius as a function of latitude, \(\phi\) (assumes perfect ellipsoid) | | \[R = \sqrt{\left(\frac{\cos{\phi}}{R_e}\right)^2 + \left(\frac{\sin{\phi}}{R_p}\right)^2 \] |
 
  
 
