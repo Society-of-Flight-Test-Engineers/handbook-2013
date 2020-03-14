@@ -528,7 +528,7 @@ Exponent  Prefix  Abbreviation
 |BSFC |brake specific fuel consumption|
 |Btu |British thermal unit|
 |BW |bandwidth|
-|^o^C |degrees centigrade (see T) |
+|°C |degrees centigrade (see T) |
 |\(c\) |brake specific fuel consumption (BSFC)|
 |\(c\) |speed of light in a vacuum (186,282 miles/sec = 299,792,500 [m/s])|
 |\(c\) |mean aerodynamic chord (MAC) of a wing|
@@ -635,7 +635,7 @@ Exponent  Prefix  Abbreviation
 |ETE |estimate time en-route|
 |EW |early warning|
 |EW |electronic warfare|
-|^o^F |degrees Fahrenheit|
+|°F |degrees Fahrenheit|
 |\(f\) |frequency...hertz (originally cycles per second)|
 |F.S. |fuselage station|
 |\(F_a\) |aileron force|
@@ -843,7 +843,7 @@ Exponent  Prefix  Abbreviation
 |q |aircraft pitch rate|
 |Q |engine torque|
 |\(q_c\) |impact pressure (\(P_t − P_a\))|
-|^o^R |degrees Rankine = ^o^F + 459.67|
+|°R |degrees Rankine = °F + 459.67|
 |R |perfect gas constant = 8314.34 [J/kmol K]|
 |r |aircraft yaw rate (degrees/sec)|
 |R |earth radius|
@@ -922,7 +922,7 @@ Exponent  Prefix  Abbreviation
 |TM |telemetry|
 |TMN |true Mach number|
 |T/O |takeoff|
-|\(T_o\) |standard sea level temperature (59.0 ^o^F, 15 ^o^C)|
+|\(T_o\) |standard sea level temperature (59.0 °F, 15 °C)|
 |TO |technical order|
 |TRB |technical review board|
 |TRD |technical requirements document|

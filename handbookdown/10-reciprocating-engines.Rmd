@@ -540,7 +540,7 @@ Figure 10.3c Example Standard Day Supercharged Engine Performance Data
 
 ** **
 
-The intent is to ensure that the critical engine parts, (i.e., cylinder head and cylinder barrel) do not exceed the engine manufacturer's specified limits during worst-case climb operating conditions on a 100 ^o^F hot day.
+The intent is to ensure that the critical engine parts, (i.e., cylinder head and cylinder barrel) do not exceed the engine manufacturer's specified limits during worst-case climb operating conditions on a 100 °F hot day.
 
  
 

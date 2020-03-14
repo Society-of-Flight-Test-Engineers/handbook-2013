@@ -8,9 +8,9 @@
 | \(a_o\)                  | speed of sound at std day sea level temperature                                        |
 | \(P\)                    | ambient pressure                                                                       |
 | \(P_o\)                  | standard day seal level ambient pressure                                               |
-| \(T\)                    | absolute temperature (Rankin or Kelvin)                                                |
+| \(T\)                    | absolute temperature (Rankine or Kelvin)                                                |
 | \(T_o\)                  | standard day seal level absolute temperature                                           |
-| \(T_R\)                  | absolute temperature, Rankin scale                                                     |
+| \(T_R\)                  | absolute temperature, Rankine scale                                                     |
 | \(\rho_ο\)               | standard day seal level ambient density                                                |
 | \(rho\)                  | ambient density                                                                        |
 | \(g\)                    | acceleration due to gravity                                                            |
@@ -180,7 +180,7 @@ where \(N_z\) = normal load factor,
 |----------------------------------------------|-----------------------|----------------------|---------------------|
 | Gas constant                                 | \(R\)                 | 53.35                | ft lb/R lbm         |
 |                                              |                       | 287.074              | J/kg K              |
-|                                              |                       | 1716                 | lb(ft)/slgs(*R*)    |
+|                                              |                       | 1716                 | lb(ft)/slgs(R)    |
 |                                              |                       | 3089.7               | lb(ft)/slgs(*K*)    |
 | Speed of sound                               | \(a_o \sqrt{\theta}\) | 49.02 \(\sqrt{T_R}\) | ft/sec              |
 |                                              |                       | 33.42 \(\sqrt{T_R}\) | miles/hr            |

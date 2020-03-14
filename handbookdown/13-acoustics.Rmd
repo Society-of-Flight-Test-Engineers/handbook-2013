@@ -104,7 +104,7 @@ white noise has a constant spectrum level over the entire band of audible freque
 
 #####  [Medium]{.underline} [Approximate Velocity]{.underline}
 
-Air (20^o^ C) 343 m/s
+Air (20° C) 343 m/s
 
 Fresh water 1,480 m/s
 
