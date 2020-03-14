@@ -36,7 +36,7 @@ Exponent  Prefix  Abbreviation
 |                          | circles        | 21,600         | minutes                              |
 |                          | circles        | 2\(\pi\)             | radians                              |
 |                          | circles        | 360            | degrees                              |
-|                          | degrees        | .01111         | quadrants                            |
+|                          | degrees        |  0.01111         | quadrants                            |
 |                          | degrees        | 3600           | seconds                              |
 |                          | degrees        | 60             | minutes                              |
 |                          | mils (Army)    | 0.05625        | degrees                              |

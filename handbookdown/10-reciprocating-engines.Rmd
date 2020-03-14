@@ -136,11 +136,11 @@ Mixture Ratio
 
 Ratio of \[fuel weight/air weight\] passing through the intake manifold.
 
-• This ratio must be between .05 and .125 to burn.
+• This ratio must be between  0.05 and  0.125 to burn.
 
 • Best power typically occurs at mixture ratio of 0.075 to 0.08.
 
-• Best economy typically occurs at a ratio of .0625
+• Best economy typically occurs at a ratio of  0.0625
 
 • To provide sufficient cooling, the mixture ratio is usually greatly increased from best economy when operating at very high or very low power settings (a.k.a. auto rich).
 
@@ -256,7 +256,7 @@ where *BHP~sl\ max~* is the full-throttle sea level power at the *RPM* in questi
 
  
 
-where *T~as~* is the standard absolute ambient temperature at the test altitude, and, below the tropopause, is calculated as *T~as~* = 288.15-.0019812*H~c~* .
+where *T~as~* is the standard absolute ambient temperature at the test altitude, and, below the tropopause, is calculated as *T~as~* = 288.15- 0.0019812*H~c~* .
 
  
 

@@ -58,11 +58,11 @@ where \(G\) is the universal gravitational constant and \(R_A\) is the absolute 
 | rotation rate                                                          | \(\omega\)  | \(7.292115 \times 10^{−5}                                                                    | rad/sec   |
 | average density                                                        |             | \(5.522\)                                                                                    | g/cm^3^   |
 |                                                                        |             | \(344.7\)                                                                                    | lb/ft^3^  |
-| radius average                                                         | \(R_{avg}\) | \(6{,}367{,}444\)                                                                                | m         |
+| radius average                                                         | \(R_{avg}\) | \(6\,367\,444\)                                                                                | m         |
 |                                                                        |             | \(3956.538\)                                                                                 | st. miles |
-|                                                                        |             | \(20{,}890{,}522\)                                                                               | ft        |
-| radius at the equator                                                  | \(R_e\)     | \(6{,}378{,}137\)                                                                                | m         |
-| radius at the poles                                                    | \(R_p\)     | \(6{,}356{,}752\)                                                                                | m         |
+|                                                                        |             | \(20\,890\,522\)                                                                               | ft        |
+| radius at the equator                                                  | \(R_e\)     | \(6\,378\,137\)                                                                                | m         |
+| radius at the poles                                                    | \(R_p\)     | \(6\,356\,752\)                                                                                | m         |
 | radius as a function of latitude, \(\phi\) (assumes perfect ellipsoid) |             | \[R = \sqrt{\left(\frac{\cos{\phi}}{R_e}\right)^2 + \left(\frac{\sin{\phi}}{R_p}\right)^2} \] |           |
 
 ### Centrifugal Relief from Gravity {-}
@@ -186,13 +186,13 @@ where \(N_z\) = normal load factor,
 |                                              |                       | 33.42 \(\sqrt{T_R}\) | miles/hr            |
 |                                              |                       | 29.04 \(\sqrt{T_R}\) | knots               |
 |                                              |                       | 20.05 \(\sqrt{T_R}\) | m/sec               |
-| Density                                      | \(\rho\)              | .0023769             | slug/ft^3^          |
+| Density                                      | \(\rho\)              | 0.0023769             | slug/ft^3^          |
 |                                              |                       | 1.225                | kg/m^3^ (at 15°C) |
-| Specific weight                              | \(g_\rho\)            | .07647               | sec^2^/ft^4^        |
+| Specific weight                              | \(g_\rho\)            | 0.07647               | sec^2^/ft^4^        |
 | Specific heat capacity at 59 °F (=\(T_o\)) |                       |                      |                     |
-| at constant pressure                         | \(c_p\)               | .240                 | BTU/lb R            |
+| at constant pressure                         | \(c_p\)               | 0.240                 | BTU/lb R            |
 |                                              |                       | 1004.76              | J/kg K              |
-| at constant volume                           | \(c_v\)               | .1715                | BTU/lb R            |
+| at constant volume                           | \(c_v\)               | 0.1715                | BTU/lb R            |
 
 ### Normal Composition of clean, dry atmospheric air near sea level, by volume {-}
 
@@ -227,41 +227,41 @@ Absolute Viscosity
 +===================+=====================+====================+
 | 0                 | 1.572 x 10^-4^      | 3.737 x 10^-7^     |
 +-------------------+---------------------+--------------------+
-| 5,000             | 1.776               | 3.638              |
+| 5000             | 1.776               | 3.638              |
 +-------------------+---------------------+--------------------+
-| 10,000            | 2.013               | 3.538              |
+| 10 000            | 2.013               | 3.538              |
 +-------------------+---------------------+--------------------+
-| 15,000            | 2.293               | 3.435              |
+| 15 000            | 2.293               | 3.435              |
 +-------------------+---------------------+--------------------+
-| 20,000            | 2.625               | 3.330              |
+| 20 000            | 2.625               | 3.330              |
 +-------------------+---------------------+--------------------+
-| 25,000            | 3.019               | 3.224              |
+| 25 000            | 3.019               | 3.224              |
 +-------------------+---------------------+--------------------+
-| 30,000            | 3.493               | 3.115              |
+| 30 000            | 3.493               | 3.115              |
 +-------------------+---------------------+--------------------+
-| 35,000            | 4.065               | 3.004              |
+| 35 000            | 4.065               | 3.004              |
 +-------------------+---------------------+--------------------+
-| 40,000            | 5.074               | 2.981              |
+| 40 000            | 5.074               | 2.981              |
 +-------------------+---------------------+--------------------+
-| 45,000            | 6.453               | 2.982              |
+| 45 000            | 6.453               | 2.982              |
 +-------------------+---------------------+--------------------+
-| 50,000            | 8.206               | 2.983              |
+| 50 000            | 8.206               | 2.983              |
 +-------------------+---------------------+--------------------+
-| 55,000            | 10.44               | 2.985              |
+| 55 000            | 10.44               | 2.985              |
 +-------------------+---------------------+--------------------+
-| 60,000            | 13.27               | 2.986              |
+| 60 000            | 13.27               | 2.986              |
 +-------------------+---------------------+--------------------+
-| 70,000            | 21.69               | 3.005              |
+| 70 000            | 21.69               | 3.005              |
 +-------------------+---------------------+--------------------+
-| 80,000            | 35.75               | 3.043              |
+| 80 000            | 35.75               | 3.043              |
 +-------------------+---------------------+--------------------+
-| 90,000            | 58.53               | 3.080              |
+| 90 000            | 58.53               | 3.080              |
 +-------------------+---------------------+--------------------+
-| 100,000           | 95.19               | 3.118              |
+| 100 000           | 95.19               | 3.118              |
 +-------------------+---------------------+--------------------+
-| 150,000           | 1066                | 3.572              |
+| 150 000           | 1066                | 3.572              |
 +-------------------+---------------------+--------------------+
-| 200,000           | 6880                | 3.435              |
+| 200 000           | 6880                | 3.435              |
 +-------------------+---------------------+--------------------+
 
 ### Psychrometric Chart for Seal Level Barometric Pressure {-}
@@ -317,12 +317,12 @@ Constantly changing atmospheric conditions cannot be duplicated at will to provi
 | Acceleration Due to Gravity | \(g_o\)    | 32.174    | ft/sec^2^         |
 |                             |            | 9.80665   | m/sec^2^          |
 | Temperature Lapse Rate      | \(L\)      | 1.98      | K/kft or °C/kft |
-| (up to 36,000 ft or 11 km)  |            | 3.56      | °F/kft          |
+| (up to 36 000 ft or 11 km)  |            | 3.56      | °F/kft          |
 |                             |            | 6.49      | K/km              |
 
 ### 1976 U.S Standard Atmosphere Equations {-}
 
-Troposhere - below 36,089 ft (11,000 m) *\< 22636 Pa*
+Troposhere - below 36 089 ft (11 000 m) *\< 22636 Pa*
 
 θ = 1 − (L/*Το* ) *h* = 1-(6.8755856 x 10^-6^) *h*
 
@@ -332,7 +332,7 @@ Troposhere - below 36,089 ft (11,000 m) *\< 22636 Pa*
 
 where *n* = 5.255876, *h* = geopotential altitude (ft)
 
-Stratosphere- between 36,089 ft and 65,616 ft (20,000 m) the standard day temperature is a constant 216.65 *K*, therefore:
+Stratosphere- between 36 089 ft and 65 616 ft (20 000 m) the standard day temperature is a constant 216.65 *K*, therefore:
 
 θ = 0.751865
 \* *![][03019]![][03020]The above relations characterize the standard atmosphere table in this handbook. They may be re-written to solve for pressure altitude (*H_p) for any ambient pressure. Below the tropopause (ambient pressure greater than 472.683 psf or 22632 Pa)
@@ -457,14 +457,14 @@ The Geodetic System defines the location of any point relative to the earth usin
 
 **Figure 3.8-1 Geodetic Coordinate System**
 
-The 1984 world geodetic system, WGS84, models the earth's surface as an oblate spheroid - an ellipsoid rotated about its semi-minor axis. In this model, used by global positioning systems, the earth's semi-major axis, *a* is 6,378,137.0 meters and the semi-minor axis, *b is* 6,356,752.314 meters.
+The 1984 world geodetic system, WGS84, models the earth's surface as an oblate spheroid - an ellipsoid rotated about its semi-minor axis. In this model, used by global positioning systems, the earth's semi-major axis, *a* is 6 378 137.0 meters and the semi-minor axis, *b is* 6 356 752.314 meters.
 
 The flatness factor (*f*) is defined as:
 
 $$f = \frac{a - b}{a}$$
 
 For the WGS84 model, *f* =1/298.257223563
-Because the earth is not perfectly spherical, there are various methods for defining latitude. Unlike the geocentric latitude which uses the earth's center for determining a point's latitude, the **geodetic latitude** (used herein) is the angle between the equatorial plane and a line *normal to the reference ellipsoid*. Figure 3.8-1 exaggerates this with a normal line being well offset from the earth's center. This definition leads to a degree of latitude being longer at the pole than at the equator: 111,694 m (60.3 nm) vs. 110,574 m (59.7 nm).
+Because the earth is not perfectly spherical, there are various methods for defining latitude. Unlike the geocentric latitude which uses the earth's center for determining a point's latitude, the **geodetic latitude** (used herein) is the angle between the equatorial plane and a line *normal to the reference ellipsoid*. Figure 3.8-1 exaggerates this with a normal line being well offset from the earth's center. This definition leads to a degree of latitude being longer at the pole than at the equator: 111 694 m (60.3 nm) vs. 110 574 m (59.7 nm).
 
 The **geodetic longitude** of a point is the angle between a reference plane and a plane passing through the point, both planes being perpendicular to the equatorial plane.
 
@@ -520,7 +520,7 @@ $$N = \frac{a}{\sqrt{1 - e^{2} \bullet \sin^{2}(\phi)}}$$
 
 where,
 
-*a* = semi-major axis radius (6,378,137 m; 20,925,647 ft)
+*a* = semi-major axis radius (6 378 137 m; 20 925 647 ft)
 
 *e^2\ ^*= eccentricity squared; $e^{2} = 1 - \left( \frac{a}{b} \right)^{2} = 2 \bullet f - f^{2}$= 0.00669438002290 (Earth, per WGS84).
 
@@ -574,8 +574,8 @@ Figure 3.8-4a shows a case where the X-Y coordinate system aligns with the latit
 **Figure 3.8-4: Local X-Y Coordinate System Aligned with (a)**φ**,**λ **Grid; (b) Runway**
 
 Because each degree of latitude change is not always exactly 60 nm and because the spacing between degrees of longitude changes markedly with latitude, converting from degrees latitude & longitude change to distance requires scaling factors. First select equatorial distances for each degree change
-φ\_scale{φ=0} = 110,574 m = 362,776.6 ft = 59.70518 nm
-λ\_scale{φ=0} = 111,319.5 m = 365,221.4 ft = 60.10772 nm
+φ\_scale{φ=0} = 110 574 m = 362 776.6 ft = 59.70518 nm
+λ\_scale{φ=0} = 111 319.5 m = 365 221.4 ft = 60.10772 nm
 Use average latitude to calculate latitude and longitude scaling factors
 $\varnothing\_\text{scale} = \frac{\varnothing\_\mathrm{\text{scale}}\{\varnothing = 0\}}{\left\lbrack 1 - e^{2} \bullet \sin^{2}(\phi) \right\rbrack^{1.5}}$ $\mathrm{\lambda}\_\mathrm{\text{scale}} = \frac{\lbrack\lambda\_\text{scale}\{\varnothing = 0\}\rbrack \bullet cos\varnothing}{\sqrt{1 - e^{2} \bullet \sin^{2}(\phi)}}$
 
@@ -625,7 +625,7 @@ where
 \(T_{apt}\)* = airport temperature (Kelvin)
 
 \(T_0\) = standard day sea level temperature = 15 deg C = 288.15 K
-\(L\) = standard temperature lapse rate = -0.0065 K/m = -.0019812 K/ft
+\(L\) = standard temperature lapse rate = -0.0065 K/m = -0.0019812 K/ft
 \(Hp_{apt}\)* = airport pressure altitude ( = airport field elevation -- baro bias)
 
 \(Hp\) = aircraft pressure altitude ( = H_b~ -- baro bias)
@@ -633,10 +633,10 @@ where
 Note: ensure altitude units are consistent with lapse rate units.
 
 In lieu of the pilot adjusting the baro set knob to determine baro bias, it may be calculated using
-Baro bias = \(H_b\) - *Hp* = *H_b -- (29.92^.1903^ -- PA^.1903^)/.00001313 \[ft\]
+Baro bias = \(H_b\) - *Hp* = *H_b -- (29.92^0.1903^ -- PA^0.1903^)/0.00001313 \[ft\]
 
 where
-PA = ambient pressure = {altimeter setting \[in Hg\]^.1903^ -- *H_b(.00001313)}^1/.1903^
+PA = ambient pressure = {altimeter setting \[in Hg\]^0.1903^ -- *H_b(0.00001313)}^1/0.1903^
 
 Flight testers can use the above to verify the aircraft's temperature compensation system is working correctly. Data analysts can use these equations to more precisely determine geometric height above the ground--potentially useful for performance or pitot-static flyby testing.
 

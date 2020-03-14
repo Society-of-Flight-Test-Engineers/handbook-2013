@@ -804,7 +804,7 @@ head wind, *V~w\ ~*wing aspect ratio*, AR*
 
 net thrust, *F~n\ ~*(*F~n~ = F~g~ cosα --F~e~*) wing Oswald efficiency factor*, e*
 
-time increment, ∆*t* (.05 sec works well)
+time increment, ∆*t* ( 0.05 sec works well)
 
 height of wing above ground when on gear, *h~wing~*
 

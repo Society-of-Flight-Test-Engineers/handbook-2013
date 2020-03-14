@@ -76,7 +76,7 @@
 
 *v~o~* peak velocity
 
-*ε =ζω~n~ /ω~d~* = ζ/\[1-ζ^2^\]^.5^
+*ε =ζω~n~ /ω~d~* = ζ/\[1-ζ^2^\]^ 0.5^
 
 *φ* phase lag (radians)
 
@@ -164,7 +164,7 @@ This "force/damping" ratio is merely a scaling factor for the steady state.
 
 ![][08012]
 
-when *t* = 0.6931τ: *x = e*^−.6931^ = 0.5 (time to half amplitude)
+when *t* = 0.6931τ: *x = e*^− 0.6931^ = 0.5 (time to half amplitude)
 
 when *t* = τ: *x = e*^−1^ = 0.37
 
@@ -962,7 +962,7 @@ Determine *ω~n~* and *ζ* using sinusoidal inputs.
 
 quency as damping decreases:
 
-ω*~r~* = ω*~n~*\[1 − 2*ζ*^2^\]^.5^
+ω*~r~* = ω*~n~*\[1 − 2*ζ*^2^\]^ 0.5^
 
 • Phase shift = 90° if excited at ω*~n~*, regardless of damping ratio.
 
