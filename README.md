@@ -77,4 +77,4 @@ Here's a diagram of the process.
 
 As of 2020-02-28, the coarse conversion and "initial scrub" from the source Microsoft Publisher and/or Word documents to Markdown text files (`*.Rmd`) is complete! 
 
-![Process Diagram](handbook-port-process.png)
+![Process Diagram](images/handbook-port-process.png)
