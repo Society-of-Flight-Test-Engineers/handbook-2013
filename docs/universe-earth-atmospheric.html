@@ -1163,24 +1163,24 @@ g_{A/C} = \left[ g_{lsl} + \omega^2 R \cos{\phi} \right] \left[ \frac{R}{R + h_G
 <p>The above relations characterize the standard atmosphere table in this handbook. They may be re-written to solve for pressure altitude (<span class="math inline">\(H_p\)</span>) for any ambient pressure.</p>
 <p>Below the tropopause (ambient pressure greater than 472.683 psf or 22632 Pa)</p>
 <p><span class="math display">\[
-H_p \left[ \text{ft} \right] = \frac{ 1-\left(\frac{P_a}{P_o})^{0.190\,2632}^ }{6.875\,5856 \times 10^{-6}}
+H_p \left[ \text{ft} \right] = \frac{ 1-\left( \frac{P_a}{P_o} \right)^{0.190\,2632} }{6.875\,5856 \times 10^{-6}}
 \]</span></p>
-<p>In the troposphere (ambient pressure between 114.347 and 472.683 psf or between 5475 and 22632.1 Pascal)</p>
-<p><em>H</em><sub>p</sub> <span class="math display">\[ft\]</span> = 36,089+<span class="math display">\[ln(*P_a~/P_o)+1.498\,966\]</span>/ 0.000,048,063
- <strong><br />
-</strong></p>
-<p><img src="media/03/image22.png" style="width:5.33403in;height:5.33403in" /><strong>1976 U.S. Standard Atmosphere Graph</strong></p>
-<p><strong><br />
-</strong></p>
+<p>In the troposphere (ambient pressure between 114.347 and 472.683 psf or between 5475 and 22 632.1 Pascal)</p>
+<p><span class="math display">\[
+H_p \left[ \text{ft} \right] = 36\,089+ \frac{ \ln \left( \frac{P_a}{P_o} \right) + 1.498\,966 }{ 0.000\,048\,063 }
+\]</span></p>
+</div>
+<div id="u.s.-standard-atmosphere-graph" class="section level4 unnumbered">
+<h4>1976 U.S. Standard Atmosphere Graph</h4>
+<div class="figure">
+<img src="media/03/image22.png" style="width:5.33403in;height:5.33403in" alt="" />
+<p class="caption">1976 US Standard Atmosphere Graph</p>
+</div>
 <p><img src="media/03/image23.jpeg" style="width:6.64028in;height:7.99167in" /></p>
-<p><strong><br />
-</strong></p>
-<p><img src="media/03/image24.jpeg" style="width:6.43194in;height:9in" /><strong><br />
-</strong></p>
-<p><img src="media/03/image25.jpeg" style="width:1.98125in;height:9in" />Standard Atmosphere Calculator Website Link <a href="http://www.digitaldutch.com/atmoscalc/" class="uri">http://www.digitaldutch.com/atmoscalc/</a><strong><br />
-</strong></p>
-<p><img src="media/03/image26.jpeg" style="width:6.99028in;height:8.99514in" /><strong><br />
-</strong></p>
+<p><img src="media/03/image24.jpeg" style="width:6.43194in;height:9in" /></p>
+<p><img src="media/03/image25.jpeg" style="width:1.98125in;height:9in" /></p>
+<p><img src="media/03/image26.jpeg" style="width:6.99028in;height:8.99514in" /></p>
+<p>Standard Atmosphere Calculator Website Link <a href="http://www.digitaldutch.com/atmoscalc/" class="uri">http://www.digitaldutch.com/atmoscalc/</a></p>
 </div>
 </div>
 </div>
@@ -1354,7 +1354,7 @@ Because the earth is not perfectly spherical, there are various methods for defi
 <p>Geodetic System (lat/long/height) data converts to ECEF as follows:</p>
 <p><em>x</em> = (<em>N</em> + <em>h</em>)<span class="math inline">\(\bullet\)</span>cos(φ)<span class="math inline">\(\bullet\)</span>cos(λ)</p>
 <p><em>y</em> = (<em>N</em> + <em>h</em>)<span class="math inline">\(\bullet\)</span>cos(φ)<span class="math inline">\(\bullet\)</span>sin(λ)</p>
-<p><em>z</em> = (<em>N</em><span class="math inline">\(\bullet\)</span><em>(1-e<sup>2</sup>)</em> + <em>h</em>) <span class="math inline">\(\bullet\)</span>sin(φ)</p>
+<p><em>z</em> = (<em>N</em><span class="math inline">\(\bullet\)</span><em>(1-<sup>2</sup>)</em> + <em>h</em>) <span class="math inline">\(\bullet\)</span>sin(φ)</p>
 <p>where,</p>
 <p><em>x</em> = ECEF coordinate parallel to the X-axis
 <em>y</em> = ECEF coordinate parallel to the Y-axis
@@ -1363,13 +1363,13 @@ Because the earth is not perfectly spherical, there are various methods for defi
 <em>λ</em> = geodetic longitude
 <em>h</em> = height above geodetic (ellipsoid) surface
 <em>N</em> = Normal radius of curvature; distance from earth axis to any point on the geodetic surface at that latitude (extension of r to axis shown in Figure 3.8-3).</p>
-<p><span class="math display">\[N = \frac{a}{\sqrt{1 - e^{2} \bullet \sin^{2}(\phi)}}\]</span></p>
+<p><span class="math display">\[N = \frac{a}{\sqrt{1 - \mathrm{e}^{2} \bullet \sin^{2}(\phi)}}\]</span></p>
 <p>where,</p>
 <p><em>a</em> = semi-major axis radius (6 378 137 m; 20 925 647 ft)</p>
-<p><em>e<sup>2 </sup></em>= eccentricity squared; <span class="math inline">\(e^{2} = 1 - \left( \frac{a}{b} \right)^{2} = 2 \bullet f - f^{2}\)</span>= 0.006,694 380 02290 (Earth, per WGS84).</p>
+<p><em><sup>2 </sup></em>= eccentricity squared; <span class="math inline">\(\mathrm{e}^{2} = 1 - \left( \frac{a}{b} \right)^{2} = 2 \bullet f - f^{2}\)</span>= 0.006,694 380 02290 (Earth, per WGS84).</p>
 <p>Also useful is
 <em>M</em> = Meridian radius of curvature; distance from earth axis to any point on the geodetic surface at that longitude.</p>
-<p><span class="math display">\[M = \frac{a(1 - e^{2})}{\left\lbrack 1 - e^{2} \bullet \sin^{2}(\phi) \right\rbrack^{1.5}}\]</span></p>
+<p><span class="math display">\[M = \frac{a(1 - \mathrm{e}^{2})}{\left\lbrack 1 - \mathrm{e}^{2} \bullet \sin^{2}(\phi) \right\rbrack^{1.5}}\]</span></p>
 <p><strong><span class="underline">Great Circle Calculations</span></strong></p>
 <p>Any plane passing through the center of a spheroid traces a <strong>Great Circle</strong> around the perimeter of that spheroid. The shortest distance between two points on the surface is that portion of the great circle arc encompassing both points (Figure 3.8-3).</p>
 <p><img src="media/03/image32.svg" style="width:3.30506in;height:3.31132in" /></p>
@@ -1401,7 +1401,7 @@ Because the earth is not perfectly spherical, there are various methods for defi
 φ_scale{φ=0} = 110 574 m = 362 776.6 ft = 59.705 18 nm
 λ_scale{φ=0} = 111 319.5 m = 365 221.4 ft = 60.107 72 nm
 Use average latitude to calculate latitude and longitude scaling factors
-<span class="math inline">\(\varnothing\_\text{scale} = \frac{\varnothing\_\mathrm{\text{scale}}\{\varnothing = 0\}}{\left\lbrack 1 - e^{2} \bullet \sin^{2}(\phi) \right\rbrack^{1.5}}\)</span> <span class="math inline">\(\mathrm{\lambda}\_\mathrm{\text{scale}} = \frac{\lbrack\lambda\_\text{scale}\{\varnothing = 0\}\rbrack \bullet cos\varnothing}{\sqrt{1 - e^{2} \bullet \sin^{2}(\phi)}}\)</span></p>
+<span class="math inline">\(\varnothing\_\text{scale} = \frac{\varnothing\_\mathrm{\text{scale}}\{\varnothing = 0\}}{\left\lbrack 1 - \mathrm{e}^{2} \bullet \sin^{2}(\phi) \right\rbrack^{1.5}}\)</span> <span class="math inline">\(\mathrm{\lambda}\_\mathrm{\text{scale}} = \frac{\lbrack\lambda\_\text{scale}\{\varnothing = 0\}\rbrack \bullet cos\varnothing}{\sqrt{1 - \mathrm{e}^{2} \bullet \sin^{2}(\phi)}}\)</span></p>
 <p>Calculate X and Y components of distances aligned with the latitude &amp; longitude grid (Figure 3.8-4a)</p>
 <p>Y = <em>φ</em> _scale·(<em>φ</em> <sub>1</sub> - <em>φ</em> <sub>0</sub>)</p>
 <p>X = λ_scale·(λ<sub>1</sub> - λ<sub>0</sub>)</p>

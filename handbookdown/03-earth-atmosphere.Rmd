@@ -353,33 +353,28 @@ The above relations characterize the standard atmosphere table in this handbook.
 Below the tropopause (ambient pressure greater than 472.683 psf or 22632 Pa)
 
 \[
-H_p \left[ \text{ft} \right] = \frac{ 1-\left(\frac{P_a}{P_o})^{0.190\,2632}^ }{6.875\,5856 \times 10^{-6}}
+H_p \left[ \text{ft} \right] = \frac{ 1-\left( \frac{P_a}{P_o} \right)^{0.190\,2632} }{6.875\,5856 \times 10^{-6}}
 \]
 
-In the troposphere (ambient pressure between 114.347 and 472.683 psf or between 5475 and 22632.1 Pascal)
+In the troposphere (ambient pressure between 114.347 and 472.683 psf or between 5475 and 22 632.1 Pascal)
 
-*H*~p~ \[ft\] = 36\,089+\[ln(*P_a~/P_o)+1.498\,966\]/ 0.000\,048\,063
- **\
-**
+\[
+H_p \left[ \text{ft} \right] = 36\,089+ \frac{ \ln \left( \frac{P_a}{P_o} \right) + 1.498\,966 }{ 0.000\,048\,063 }
+\]
 
-![][03021]**1976 U.S. Standard Atmosphere Graph**
+#### 1976 U.S. Standard Atmosphere Graph {-}
 
-**\
-**
+![1976 US Standard Atmosphere Graph][03021]
 
 ![][03022]
 
-**\
-**
+![][03023]
 
-![][03023]**\
-**
+![][03024]
 
-![][03024]Standard Atmosphere Calculator Website Link <http://www.digitaldutch.com/atmoscalc/>**\
-**
+![][03025]
 
-![][03025]**\
-**
+Standard Atmosphere Calculator Website Link <http://www.digitaldutch.com/atmoscalc/>
 
 ## Section 3.5 Sea States**
 
@@ -521,7 +516,7 @@ Geodetic System (lat/long/height) data converts to ECEF as follows:
 
 *y* = (*N* + *h*)$\bullet$cos(φ)$\bullet$sin(λ)
 
-*z* = (*N*$\bullet$*(1-e^2^)* + *h*) $\bullet$sin(φ)
+*z* = (*N*$\bullet$*(1-\mathrm{e}^2^)* + *h*) $\bullet$sin(φ)
 
 where,
 
@@ -533,18 +528,18 @@ where,
 *h* = height above geodetic (ellipsoid) surface
 *N* = Normal radius of curvature; distance from earth axis to any point on the geodetic surface at that latitude (extension of r to axis shown in Figure 3.8-3).
 
-$$N = \frac{a}{\sqrt{1 - e^{2} \bullet \sin^{2}(\phi)}}$$
+$$N = \frac{a}{\sqrt{1 - \mathrm{e}^{2} \bullet \sin^{2}(\phi)}}$$
 
 where,
 
 *a* = semi-major axis radius (6 378 137 m; 20 925 647 ft)
 
-*e^2\ ^*= eccentricity squared; $e^{2} = 1 - \left( \frac{a}{b} \right)^{2} = 2 \bullet f - f^{2}$= 0.006\,694 380 02290 (Earth, per WGS84).
+*\mathrm{e}^2\ ^*= eccentricity squared; $\mathrm{e}^{2} = 1 - \left( \frac{a}{b} \right)^{2} = 2 \bullet f - f^{2}$= 0.006\,694 380 02290 (Earth, per WGS84).
 
 Also useful is
 *M* = Meridian radius of curvature; distance from earth axis to any point on the geodetic surface at that longitude.
 
-$$M = \frac{a(1 - e^{2})}{\left\lbrack 1 - e^{2} \bullet \sin^{2}(\phi) \right\rbrack^{1.5}}$$
+$$M = \frac{a(1 - \mathrm{e}^{2})}{\left\lbrack 1 - \mathrm{e}^{2} \bullet \sin^{2}(\phi) \right\rbrack^{1.5}}$$
 
 **[Great Circle Calculations]{.underline}**
 
@@ -594,7 +589,7 @@ Because each degree of latitude change is not always exactly 60 nm and because t
 φ\_scale{φ=0} = 110 574 m = 362 776.6 ft = 59.705 18 nm
 λ\_scale{φ=0} = 111 319.5 m = 365 221.4 ft = 60.107 72 nm
 Use average latitude to calculate latitude and longitude scaling factors
-$\varnothing\_\text{scale} = \frac{\varnothing\_\mathrm{\text{scale}}\{\varnothing = 0\}}{\left\lbrack 1 - e^{2} \bullet \sin^{2}(\phi) \right\rbrack^{1.5}}$ $\mathrm{\lambda}\_\mathrm{\text{scale}} = \frac{\lbrack\lambda\_\text{scale}\{\varnothing = 0\}\rbrack \bullet cos\varnothing}{\sqrt{1 - e^{2} \bullet \sin^{2}(\phi)}}$
+$\varnothing\_\text{scale} = \frac{\varnothing\_\mathrm{\text{scale}}\{\varnothing = 0\}}{\left\lbrack 1 - \mathrm{e}^{2} \bullet \sin^{2}(\phi) \right\rbrack^{1.5}}$ $\mathrm{\lambda}\_\mathrm{\text{scale}} = \frac{\lbrack\lambda\_\text{scale}\{\varnothing = 0\}\rbrack \bullet cos\varnothing}{\sqrt{1 - \mathrm{e}^{2} \bullet \sin^{2}(\phi)}}$
 
 Calculate X and Y components of distances aligned with the latitude & longitude grid (Figure 3.8-4a)
 

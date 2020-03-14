@@ -657,9 +657,9 @@ V &amp;= 2 \pi ^2 R \rho^2 \\
 <p>also defined are the following…</p>
 <p><span class="math display">\[
 \begin{align}
-\text{hyperbolic sine of } x &amp;= \sinh{x} = \frac{e^x - e^{-x}}{2} \\
-\text{hyperbolic cosine of } x &amp;= \cosh{x} = \frac{e^x + e^{-x}}{2} \\
-\text{hyperbolic tangent of } x &amp;= \tanh{x} = \frac{\sinh{x}}{\cosh{x}} = \frac{e^x - e^{-x}}{e^x + e^{-x}} \\
+\text{hyperbolic sine of } x &amp;= \sinh{x} = \frac{\mathrm{e}^x - \mathrm{e}^{-x}}{2} \\
+\text{hyperbolic cosine of } x &amp;= \cosh{x} = \frac{\mathrm{e}^x + \mathrm{e}^{-x}}{2} \\
+\text{hyperbolic tangent of } x &amp;= \tanh{x} = \frac{\sinh{x}}{\cosh{x}} = \frac{\mathrm{e}^x - \mathrm{e}^{-x}}{\mathrm{e}^x + \mathrm{e}^{-x}} \\
 \text{csch } x &amp;= \frac{1}{\sinh{x}} \\
 \text{sech } x &amp;= \frac{1}{\cosh{x}} \\
 \text{coth } x &amp;= \frac{1}{\tanh{x}} \\
@@ -1159,7 +1159,7 @@ The probability that the random variable <span class="math inline">\(X = x\)</sp
 Continuous distributions are defined for all <span class="math inline">\(x \in [a,b]\)</span>, where <span class="math inline">\(a, b \in \mathbb{R}\)</span> or for all <span class="math inline">\(x \in (-\infty, \infty)\)</span>, that is, the whole real number line. The probability for any single point is zero; that is, <span class="math inline">\(P(X=x) = 0\)</span>. Instead, one must work with probability on an interval, e.g., <span class="math inline">\(P(0 &lt; x)\)</span> or <span class="math inline">\(P(a &lt; x &lt; b)\)</span>.</p>
 <p><strong>The Normal Distribution</strong>
 The probability density function of the Normal Distribution is given by:
-<span class="math display">\[f(x) = \frac{1}{\sqrt{2 \pi \sigma}}e^{\frac{-(x-\mu)^2}{2\sigma^2}}\]</span></p>
+<span class="math display">\[f(x) = \frac{1}{\sqrt{2 \pi \sigma}}\mathrm{e}^{\frac{-(x-\mu)^2}{2\sigma^2}}\]</span></p>
 <p><strong>The Standard Normal Distribution</strong>
 The Standard Normal Distribution is simply the Normal Distribution with <span class="math inline">\(\mu = 0\)</span> and <span class="math inline">\(\sigma=1\)</span>.</p>
 <p><strong>Error Probable</strong>
@@ -1183,10 +1183,10 @@ The sample mean of data sampled from a normally distributed population is itself
 <p>The Taylor Series expansion of an <em>Exponential</em> function gives the following:
 <span class="math display">\[a^x = 1 + x \ln a + \frac{(x \ln a)^2}{2} + \frac{(x \ln a)^3}{3!} + \dots\]</span></p>
 <p>In the special case when <span class="math inline">\(a = e\)</span>:
-<span class="math display">\[e^x = 1 + x + \frac{x^2}{2} + \frac{x^3}{3!}+ \dots\]</span></p>
+<span class="math display">\[\mathrm{e}^x = 1 + x + \frac{x^2}{2} + \frac{x^3}{3!}+ \dots\]</span></p>
 <p>Hyperbolic <span class="math inline">\(\sin\)</span> and <span class="math inline">\(\cos\)</span> functions are another special case:
-<span class="math display">\[\cosh x = \frac{(e^x + e^{-x})}{2} = 1 + \frac{x^2}{2} + \frac{x^4}{4!}+ \dots\]</span>
-<span class="math display">\[\sinh x = \frac{(e^x - e^{-x})}{2} = x + \frac{x^3}{3!} + \frac{x^5}{5!}+ \dots\]</span></p>
+<span class="math display">\[\cosh x = \frac{(\mathrm{e}^x + \mathrm{e}^{-x})}{2} = 1 + \frac{x^2}{2} + \frac{x^4}{4!}+ \dots\]</span>
+<span class="math display">\[\sinh x = \frac{(\mathrm{e}^x - \mathrm{e}^{-x})}{2} = x + \frac{x^3}{3!} + \frac{x^5}{5!}+ \dots\]</span></p>
 <p>The Taylor Series expansion of an <em>Logarithmic</em> function gives the following. When <span class="math inline">\(0 &lt; x &lt; 2\)</span>:
 <span class="math display">\[\ln x = (x-1) - \frac{(x-1)^2}{2} + \frac{(x-1)^3}{3} + \dots\]</span>
 When <span class="math inline">\(x &gt; 1/2\)</span>:
@@ -1203,9 +1203,9 @@ When <span class="math inline">\(0 &lt; x\)</span>:
 <span class="math display">\[\ln(\sin x) = \ln x - \frac{x^2}{6} - \frac{x^4}{180} - \frac{x^6}{2835}- \dots \text{for } x^2 &lt; \pi^2\]</span>
 <span class="math display">\[\ln(\cos x) = - \frac{x^2}{s} - \frac{x^4}{12} - \frac{x^6}{45} - \frac{x^8}{2520} \dots \text{for } x^2 &lt; \frac{\pi^2}{4}\]</span>
 <span class="math display">\[\ln(\tan x) = \ln x + \frac{x^2}{3} - \frac{7x^4}{90} - \frac{62x^6}{2835}+ \dots \text{for } x^2 &lt; \frac{\pi^2}{4}\]</span>
-<span class="math display">\[e^{\sin x} = 1 + x + \frac{x^2}{2!} - \frac{3x^4}{4!} -\frac{8x^5}{5!} + \frac{3x^2}{6!} + \dots\]</span>
-<span class="math display">\[e^{\cos x} = e \left(1 - \frac{x^2}{2!} +\frac{4x^2}{4!} - \frac{31x^6}{6!} + \dots \right)\]</span>
-<span class="math display">\[e^{\tan x} = 1 + x + \frac{x^2}{2!} + \frac{3x^3}{3!} + \frac{9x^4}{4!} + \frac{37x^5}{5!} + \dots \text{for } x^2 &lt; \frac{\pi^2}{4}\]</span></p>
+<span class="math display">\[\mathrm{e}^{\sin x} = 1 + x + \frac{x^2}{2!} - \frac{3x^4}{4!} -\frac{8x^5}{5!} + \frac{3x^2}{6!} + \dots\]</span>
+<span class="math display">\[\mathrm{e}^{\cos x} = e \left(1 - \frac{x^2}{2!} +\frac{4x^2}{4!} - \frac{31x^6}{6!} + \dots \right)\]</span>
+<span class="math display">\[\mathrm{e}^{\tan x} = 1 + x + \frac{x^2}{2!} + \frac{3x^3}{3!} + \frac{9x^4}{4!} + \frac{37x^5}{5!} + \dots \text{for } x^2 &lt; \frac{\pi^2}{4}\]</span></p>
 </div>
 <div id="derivative-table" class="section level2">
 <h2><span class="header-section-number">2.8</span> Derivative Table</h2>
@@ -1254,7 +1254,7 @@ When <span class="math inline">\(0 &lt; x\)</span>:
 <td><span class="math display">\[\frac{d \log{u}}{dx} = \frac{\log{e}}{u}\frac{du}{dx}\]</span></td>
 </tr>
 <tr class="even">
-<td><span class="math display">\[\frac{de^x}{dx} = e^x\]</span></td>
+<td><span class="math display">\[\frac{d\mathrm{e}^x}{dx} = \mathrm{e}^x\]</span></td>
 </tr>
 <tr class="odd">
 <td><span class="math display">\[\frac{da^x}{dx} = a^x \ln{a}\]</span></td>
@@ -1357,10 +1357,10 @@ should be added to the result of every integration</li>
 <td><span class="math display">\[ \int_{}{} \frac{dx}{x} = \ln{x} \]</span></td>
 </tr>
 <tr class="odd">
-<td><span class="math display">\[ \int_{}{} e^{x} dx = e^{x} \]</span></td>
+<td><span class="math display">\[ \int_{}{} \mathrm{e}^{x} dx = \mathrm{e}^{x} \]</span></td>
 </tr>
 <tr class="even">
-<td><span class="math display">\[ \int_{}{} e^{ax} dx = \frac{e^{ax}}{a} \]</span></td>
+<td><span class="math display">\[ \int_{}{} \mathrm{e}^{ax} dx = \frac{\mathrm{e}^{ax}}{a} \]</span></td>
 </tr>
 <tr class="odd">
 <td><span class="math display">\[ \int_{}{} b^{ax} dx = \frac{b^ax}{a \ln{b}} \]</span></td>
@@ -1372,13 +1372,13 @@ should be added to the result of every integration</li>
 <td><span class="math display">\[ \int_{}{} b^{u} du = \frac{b^u}{\ln{u}} \]</span></td>
 </tr>
 <tr class="even">
-<td><span class="math display">\[ \int_{}{} x e^{ax} dx = \frac{e^ax}{a^2} \left( ax - 1 \right) \]</span></td>
+<td><span class="math display">\[ \int_{}{} x \mathrm{e}^{ax} dx = \frac{\mathrm{e}^ax}{a^2} \left( ax - 1 \right) \]</span></td>
 </tr>
 <tr class="odd">
 <td><span class="math display">\[ \int_{}{} x b^{ax} dx = \frac{x b^{ax}}{a \ln{b} } - \frac{b^{ax}}{a^2 \left( \ln{b} \right) } \]</span></td>
 </tr>
 <tr class="even">
-<td><span class="math display">\[ \int_{}{} x^2 e^{ax} dx = \frac{e^{ax}}{a^3} \left(a^2 x^2 - 2ax + 2 \right) \]</span></td>
+<td><span class="math display">\[ \int_{}{} x^2 \mathrm{e}^{ax} dx = \frac{\mathrm{e}^{ax}}{a^3} \left(a^2 x^2 - 2ax + 2 \right) \]</span></td>
 </tr>
 <tr class="odd">
 <td><span class="math display">\[ \int_{}{} \ln{ax} dx = x \ln{ax} - x \]</span></td>
@@ -1396,7 +1396,7 @@ should be added to the result of every integration</li>
 <td><span class="math display">\[ \int_{}{} \frac{dx}{x \ln{ax}} = \ln{\left( \ln{ax} \right)} \]</span></td>
 </tr>
 <tr class="even">
-<td><span class="math display">\[ \int_{}{} \frac{x^n}{\ln{ax}} dx = \frac{1}{a^{n+1}} \int_{}{} \frac{e^{y} dy}{y} \text{, where } y = \left(n + 1\right) \ln{ax} \]</span></td>
+<td><span class="math display">\[ \int_{}{} \frac{x^n}{\ln{ax}} dx = \frac{1}{a^{n+1}} \int_{}{} \frac{\mathrm{e}^{y} dy}{y} \text{, where } y = \left(n + 1\right) \ln{ax} \]</span></td>
 </tr>
 <tr class="odd">
 <td><em>Expressions Containing Trigonometric Functions</em></td>
@@ -1495,11 +1495,11 @@ should be added to the result of every integration</li>
 <td><span class="math display">\[\frac{{1 \cdot 3 \cdot 5 \cdots \left( {2n - 1} \right)\sqrt \pi  }}{{{2^n}{s^{n + \frac{1}{2}}}}} {, where } \left(s\gt 0\right) \]</span></td>
 </tr>
 <tr class="odd">
-<td><span class="math display">\[e^{at}\]</span></td>
+<td><span class="math display">\[\mathrm{e}^{at}\]</span></td>
 <td><span class="math display">\[ \frac{1}{s-a} \text{, where } \left(s\gt a \right) \]</span></td>
 </tr>
 <tr class="even">
-<td><span class="math display">\[te^{at}\]</span></td>
+<td><span class="math display">\[t\mathrm{e}^{at}\]</span></td>
 <td><span class="math display">\[\frac{1}{{\left( {s - a} \right)}^{2}} \text{, where } \left(s\gt a \right) \]</span></td>
 </tr>
 <tr class="odd">
@@ -1515,11 +1515,11 @@ should be added to the result of every integration</li>
 <td><span class="math display">\[\frac{s}{s^2 + a^2} \text{, where } \left(s\gt 0 \right) \]</span></td>
 </tr>
 <tr class="even">
-<td><span class="math display">\[e^{bt} \sin{at}\]</span></td>
+<td><span class="math display">\[\mathrm{e}^{bt} \sin{at}\]</span></td>
 <td><span class="math display">\[\frac{a}{\left(s - b \right)^2 + a^2} \text{, where } \left(s\gt b \right) \]</span></td>
 </tr>
 <tr class="odd">
-<td><span class="math display">\[e^{bt} \cos{at}\]</span></td>
+<td><span class="math display">\[\mathrm{e}^{bt} \cos{at}\]</span></td>
 <td><span class="math display">\[\frac{s-b}{\left(s - b \right)^2 + a^2} \text{, where } \left(s\gt b \right) \]</span></td>
 </tr>
 <tr class="even">
@@ -1547,11 +1547,11 @@ should be added to the result of every integration</li>
 <td><span class="math display">\[\frac{s\cos{b} - a \sin{b}}{\left(s^2  + a^2\right)^2} \]</span></td>
 </tr>
 <tr class="even">
-<td><span class="math display">\[\frac{e^{at} - e^{bt}}{a - b}\]</span></td>
+<td><span class="math display">\[\frac{\mathrm{e}^{at} - \mathrm{e}^{bt}}{a - b}\]</span></td>
 <td><span class="math display">\[\frac{1}{\left(s-a\right)\left(s-b\right)} \]</span></td>
 </tr>
 <tr class="odd">
-<td><span class="math display">\[\frac{ae^{at} - be^{bt}}{a - b}\]</span></td>
+<td><span class="math display">\[\frac{a\mathrm{e}^{at} - b\mathrm{e}^{bt}}{a - b}\]</span></td>
 <td><span class="math display">\[\frac{s}{\left(s-a\right)\left(s-b\right)} \]</span></td>
 </tr>
 <tr class="even">
@@ -1560,15 +1560,15 @@ should be added to the result of every integration</li>
 </tr>
 <tr class="odd">
 <td><span class="math display">\[\text{square wave, period }=2c\]</span></td>
-<td><span class="math display">\[\frac{1}{s \left( 1 + e^{-cs} \right)} \]</span></td>
+<td><span class="math display">\[\frac{1}{s \left( 1 + \mathrm{e}^{-cs} \right)} \]</span></td>
 </tr>
 <tr class="even">
 <td><span class="math display">\[\text{triangular wave, period }=2c\]</span></td>
-<td><span class="math display">\[\frac{1 - e^{-cs}}{s^2 \left( 1 + e^{-cs} \right)} \]</span></td>
+<td><span class="math display">\[\frac{1 - \mathrm{e}^{-cs}}{s^2 \left( 1 + \mathrm{e}^{-cs} \right)} \]</span></td>
 </tr>
 <tr class="odd">
 <td><span class="math display">\[ \begin{align} at \text{ for } 0 \leq t \lt c \\ \text{sawtooth wave, period } = c \end{align}\]</span></td>
-<td><span class="math display">\[ \frac{a \left( 1 + cs - e^{-cs} \right) }{s^2 \left( 1 - e^{-cs} \right) } \]</span></td>
+<td><span class="math display">\[ \frac{a \left( 1 + cs - \mathrm{e}^{-cs} \right) }{s^2 \left( 1 - \mathrm{e}^{-cs} \right) } \]</span></td>
 </tr>
 <tr class="even">
 <td><span class="math display">\[\sin{at} \sin{bt} \]</span></td>
