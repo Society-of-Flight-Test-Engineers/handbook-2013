@@ -8,8 +8,6 @@ Have some extra time on your hands?
 
 Join us as a collaborator over at the SFTE GitHub handbook-2013 project!
 
-https://github.com/Society-of-Flight-Test-Engineers/handbook-2013/blob/master/README.md
-
 ### How to collaborate
 
 The two primary collaboration opportunities are:
