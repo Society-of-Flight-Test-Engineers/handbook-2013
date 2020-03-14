@@ -25,11 +25,11 @@
 
 | Constant                               | Symbol  | Value                                |  Units |
 |----------------------------------------|---------|--------------------------------------|--------|
-| Avogadros number                       | \(N_o\) | \(6.022 169 \times 10^{23}\) | molecules/mole |
+| Avogadros number                       | \(N_o\) | \(6.022\,169 \times 10^{23}\) | molecules/mole |
 | Boltzmann constant                     | \(k\)   | \(1.380 \times 10^{-23}\) | J/K           |
 | electron charge                        | \(e\)   | \(1.602 \times 10^{-19}\) | Coulomb          |
 | electron mass                          | \(m_e\) | \(9.109 \times 10^{-31}\) | kg               |
-| gas constant                           | \(R\)   | \(8.314 34\) | J/K mole              |
+| gas constant                           | \(R\)   | \(8.314\,34\) | J/K mole              |
 | gravitational constant                 | \(G\)   | \(6.673 \times 10^{-11}\) | Nm^2^/kg^2^      |
 | neutron mass                           | \(m_n\) | \(1.674 \times 10^{-27}\) | kg               |
 | Planck constant                        | \(h\)   | \(6.625 \times 10^{-34}\) | J sec            |
@@ -55,7 +55,7 @@ where \(G\) is the universal gravitational constant and \(R_A\) is the absolute 
 |                                                                        |             | 32.174                                                                                       | ft/s^2^   |
 | mass                                                                   |             | \(5.9722 \times 10^{24}\)                                                                    | kg        |
 |                                                                        |             | \(13.22 \times 10^{24}\)                                                                     | lb        |
-| rotation rate                                                          | \(\omega\)  | \(7.292 115 \times 10^{−5}                                                                    | rad/sec   |
+| rotation rate                                                          | \(\omega\)  | \(7.292\,115 \times 10^{−5}                                                                    | rad/sec   |
 | average density                                                        |             | \(5.522\)                                                                                    | g/cm^3^   |
 |                                                                        |             | \(344.7\)                                                                                    | lb/ft^3^  |
 | radius average                                                         | \(R_{avg}\) | \(6\,367\,444\)                                                                                | m         |
@@ -81,7 +81,7 @@ For any centrifugal relief calculations associated with aircraft performance, it
 The International Association of Geodesy publishes the following equation (accurate to 0.005%) to calculate \(local sea level gravity including the effects of centrifugal relief for* *any point fixed to the earth\'s surface*
 
 \[
-g_{lsl} = 9.780 327 \left( 1 + 0.005 300 224 \sin^2{\phi} - 0.000 058 \sin^2{2 \phi} \right) \left[ \frac{m}{s^2} \right]
+g_{lsl} = 9.780 327 \left( 1 + 0.005 300 224 \sin^2{\phi} - 0.000\,058 \sin^2{2 \phi} \right) \left[ \frac{m}{s^2} \right]
 \]
 
 The above equation is tabulated below for quick reference.
@@ -227,7 +227,7 @@ Absolute Viscosity
 +===================+=====================+====================+
 | 0                 | 1.572 x 10^-4^      | 3.737 x 10^-7^     |
 +-------------------+---------------------+--------------------+
-| 5000             | 1.776               | 3.638              |
+| 5000              | 1.776               | 3.638              |
 +-------------------+---------------------+--------------------+
 | 10 000            | 2.013               | 3.538              |
 +-------------------+---------------------+--------------------+
@@ -302,7 +302,7 @@ Constantly changing atmospheric conditions cannot be duplicated at will to provi
 |                             |            | 14.696    | lb/in^2^          |
 |                             |            | 29.921    | in Hg             |
 |                             |            | 1013.25   | HPa (mb)          |
-|                             |            | 101325    | Pa                |
+|                             |            | 101 325    | Pa                |
 | Temperature                 | \(T_o\)    | 288.15    | K                 |
 |                             |            | 518.67    | R                 |
 |                             |            | 59        | °F              |
@@ -322,26 +322,43 @@ Constantly changing atmospheric conditions cannot be duplicated at will to provi
 
 ### 1976 U.S Standard Atmosphere Equations {-}
 
-Troposhere - below 36 089 ft (11 000 m) *\< 22636 Pa*
+#### Troposphere {-}
 
-θ = 1 − (L/*Το* ) *h* = 1-(6.875 5856 x 10^-6^) *h*
+Below 36 089 ft (11 000 m) and pressure less than 22636 Pa
 
-σ = θ^*n*-1^
+\[
+\begin{align}
+\theta &= 1 − \left( L/Τ_ο \right) h = 1 - \left( 6.875\,5856 \times 10^{-6} \right) h \\
+\sigma &= \theta^{n-1} \\
+\delta &= \theta^n \\
+\end{align}
+\]
 
-δ = θ*^n^*
+where \(n\) = 5.255 876, \(h\) = geopotential altitude [ft]
 
-where *n* = 5.255 876, *h* = geopotential altitude (ft)
+#### Stratosphere {-}
 
-Stratosphere- between 36 089 ft and 65 616 ft (20 000 m) the standard day temperature is a constant 216.65 *K*, therefore:
+Between 36 089 ft and 65 616 ft (11 0000 m and 20 000 m) the standard day temperature is a constant 216.65 K, therefore:
 
-θ = 0.751 865
-\* *![][03019]![][03020]The above relations characterize the standard atmosphere table in this handbook. They may be re-written to solve for pressure altitude (*H_p) for any ambient pressure. Below the tropopause (ambient pressure greater than 472.683 psf or 22632 Pa)
+\[
+\begin{align}
+\theta &= 0.751\,865 \\
+\sigma &= 0.297\,076\, \mathrm{e}^{0.000\,048\,063 \left[ h - 36\,089 \right]} \\
+\delta &= 0.223\,361\, \mathrm{e}^{0.000\,048\,063 \left[ h - 36\,089 \right]} \\
+\end{align}
+\]
 
-*H*~p~ \[ft\] = \[1-(*P_a~/P_o)^0.190 2632^\]/\[6.875 5856 x 10^-6^\]
+The above relations characterize the standard atmosphere table in this handbook. They may be re-written to solve for pressure altitude (\(H_p\)) for any ambient pressure. 
+
+Below the tropopause (ambient pressure greater than 472.683 psf or 22632 Pa)
+
+\[
+H_p \left[ \text{ft} \right] = \frac{ 1-\left(\frac{P_a}{P_o})^{0.190\,2632}^ }{6.875\,5856 \times 10^{-6}}
+\]
 
 In the troposphere (ambient pressure between 114.347 and 472.683 psf or between 5475 and 22632.1 Pascal)
 
-*H*~p~ \[ft\] = 36089+\[ln(*P_a~/P_o)+1.498 966\]/ 0.000 048 063
+*H*~p~ \[ft\] = 36\,089+\[ln(*P_a~/P_o)+1.498\,966\]/ 0.000\,048\,063
  **\
 **
 
@@ -522,7 +539,7 @@ where,
 
 *a* = semi-major axis radius (6 378 137 m; 20 925 647 ft)
 
-*e^2\ ^*= eccentricity squared; $e^{2} = 1 - \left( \frac{a}{b} \right)^{2} = 2 \bullet f - f^{2}$= 0.006 694 380 02290 (Earth, per WGS84).
+*e^2\ ^*= eccentricity squared; $e^{2} = 1 - \left( \frac{a}{b} \right)^{2} = 2 \bullet f - f^{2}$= 0.006\,694 380 02290 (Earth, per WGS84).
 
 Also useful is
 *M* = Meridian radius of curvature; distance from earth axis to any point on the geodetic surface at that longitude.
