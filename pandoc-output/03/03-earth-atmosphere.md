@@ -108,13 +108,13 @@ g~o~ = standard earth acceleration due to gravity
 
 Avogadros number, *N~o~* 6.022169 x 10^23^ molecules/mole
 
-Boltzmann constant, *k* 1.380 x 10^-23^ J/^o^K
+Boltzmann constant, *k* 1.380 x 10^-23^ J/K
 
 electron charge, *e* 1,602 x 10^-19^ coulomb
 
 electron mass, *m~e~* 9.109 x 10^-31^ kg
 
-gas constant, *R* 8.31434 J/^o^K mole
+gas constant, *R* 8.31434 J/K mole
 
 gravitational constant, *G* 6.673 x 10^-11^ Nm^2^/kg^2^
 
@@ -333,13 +333,13 @@ Speed of sound = *a~o~*(*θ*) ^½^
 
  
 
-Density, *ρ* = .0023769 *slug/ft^3^ =* 1.225 *kg/m^3^ (at 15^o^ C)*
+Density, *ρ* = .0023769 *slug/ft^3^ =* 1.225 *kg/m^3^ (at 15° C)*
 
 Specific weight, *g~ρ~* = .07647 *sec^2^/ft^4^*
 
 ** **
 
-Specific heat capacity at 59*^o^F* (=*T~o~*)
+Specific heat capacity at 59*°F* (=*T~o~*)
 
 > at constant pressure, *c~p~* = .240 *BTU/lb R* = 1004.76 *J/kg K*
 >
@@ -491,7 +491,7 @@ Constantly changing atmospheric conditions cannot be duplicated at will to provi
 
 *P* = ρg*RT*
 
-where R = 53.35 ft lb/^o^R lbm
+where R = 53.35 ft lb/°R lbm
 
   3. The gravitational field decreases with altitude
 
@@ -506,11 +506,11 @@ where R = 53.35 ft lb/^o^R lbm
 
 = 1013.25 HPa (mb) = 101325 Pa
 
-*T~o~ =* 288.15 *K =* 518.67 *R =* 59 ^o^*F* *=* 15 ^o^*C*
+*T~o~ =* 288.15 *K =* 518.67 *R =* 59 °*F* *=* 15 °C
 
  
 
-ρ*~o~* = 0.0023769 slgs/ft^3^ = 0.07647 lbm/in^3^ = 1.255 kg/m^3^ (at 15^o^ *C* )
+ρ*~o~* = 0.0023769 slgs/ft^3^ = 0.07647 lbm/in^3^ = 1.255 kg/m^3^ (at 15° C )
 
  
 

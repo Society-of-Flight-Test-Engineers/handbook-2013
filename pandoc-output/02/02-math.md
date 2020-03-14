@@ -162,7 +162,7 @@ special cases...
 
 if (b^2^/4 + a^3^/27 \<0), then the real roots are
 
-*x*~1,2,3~ = 2\[-a/3\]^1/2^cos(φ/3 + 120^o^k)
+*x*~1,2,3~ = 2\[-a/3\]^1/2^cos(φ/3 + 120K)
 
 where k = 0,1,2
 
@@ -310,11 +310,11 @@ x, y, z = distances along orthogonal coordinate system
 
 triangle: A = bh/2
 
-sum of interior angles = 180^o^
+sum of interior angles = 180°
 
 rectangle: A = bh
 
-sum of interior angles = 360^o^
+sum of interior angles = 360°
 
 parallelogram (opposite sides parallel):
 
@@ -326,15 +326,15 @@ A = h(a+b)/2
 
 pentagon, hexagon, and other *n*-sided polygons:
 
-A = {(na^2^)cot (180^o^/n)}/4
+A = {(na^2^)cot (180°/n)}/4
 
-R = radius of circumscribed circle = {a csc(180^o^/n)}/2
+R = radius of circumscribed circle = {a csc(180°/n)}/2
 
-r = radius of inscribed circle = {a cot(180^o^/n)}/2
+r = radius of inscribed circle = {a cot(180°/n)}/2
 
-β = 180^o^ --(360^o^/n)
+β = 180° --(360°/n)
 
-sum of interior angles = *n*180^o^-360^o^
+sum of interior angles = *n*180°-360°
 
 circle: A = πR^2^
 

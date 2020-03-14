@@ -80,7 +80,7 @@ Hertz frequency in cycles/second.
 
 narrow band band whose width is less than one-third octave but less than 1% of the center frequency near field range within a distance equal to the wavelength of the lowest frequency emitted or twice the greatest dimension of the subject.
 
-octave a band with the upper freq exactly twice the lower freq. (common octaves include .0375-.075, .075-.15, 15-.3, .6-1.2, 1.2-2.4, 2.4-4.8, 4.8-9.6 k*Hz*).
+octave a band with the upper freq exactly twice the lower freq. (common octaves include  0.0375- 0.075,  0.075- 0.15, 15- 0.3,  0.6-1.2, 1.2-2.4, 2.4-4.8, 4.8-9.6 k*Hz*).
 
 pink noise has equal energy in each octave from 20 to 20,000 Hz, or with an energy content inversely
 
@@ -104,7 +104,7 @@ white noise has a constant spectrum level over the entire band of audible freque
 
 #####  [Medium]{.underline} [Approximate Velocity]{.underline}
 
-Air (20^o^ C) 343 m/s
+Air (20° C) 343 m/s
 
 Fresh water 1,480 m/s
 
@@ -294,25 +294,25 @@ Nominal Exact A B C
 
 160 158.5 -13.2 -2.9 -0.1
 
-200 199.5 -10.8 -2.0 .0
+200 199.5 -10.8 -2.0  0.0
 
-250 251.2 -8.7 -1.4 .0
+250 251.2 -8.7 -1.4  0.0
 
-315 316.2 -6.6 -0.9 .0
+315 316.2 -6.6 -0.9  0.0
 
-400 398.1 -4.8 -0.5 .0
+400 398.1 -4.8 -0.5  0.0
 
-500 501.2 -3.2 -0.3 .0
+500 501.2 -3.2 -0.3  0.0
 
-630 631.0 -1.9 -0.1 .0
+630 631.0 -1.9 -0.1  0.0
 
-800 794.3 -0.8 .0 .0
+800 794.3 -0.8  0.0  0.0
 
-1,000 1,000 .0 .0 .0
+1,000 1,000  0.0  0.0  0.0
 
-1,250 1,259 0.6 .0 .0
+1,250 1,259 0.6  0.0  0.0
 
-1,600 1,585 1.0 .0 -0.1
+1,600 1,585 1.0  0.0 -0.1
 
 2,000 1,995 1.2 -0.1 -0.2
 
