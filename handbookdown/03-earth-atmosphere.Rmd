@@ -26,10 +26,10 @@
 | Constant                               | Symbol  | Value                                |  Units |
 |----------------------------------------|---------|--------------------------------------|--------|
 | Avogadros number                       | \(N_o\) | \(6.022169 \times 10^{23}\) | molecules/mole |
-| Boltzmann constant                     | \(k\)   | \(1.380 \times 10^{-23}\) | J/^o^K           |
+| Boltzmann constant                     | \(k\)   | \(1.380 \times 10^{-23}\) | J/K           |
 | electron charge                        | \(e\)   | \(1.602 \times 10^{-19}\) | Coulomb          |
 | electron mass                          | \(m_e\) | \(9.109 \times 10^{-31}\) | kg               |
-| gas constant                           | \(R\)   | \(8.31434\) | J/^o^K mole              |
+| gas constant                           | \(R\)   | \(8.31434\) | J/K mole              |
 | gravitational constant                 | \(G\)   | \(6.673 \times 10^{-11}\) | Nm^2^/kg^2^      |
 | neutron mass                           | \(m_n\) | \(1.674 \times 10^{-27}\) | kg               |
 | Planck constant                        | \(h\)   | \(6.625 \times 10^{-34}\) | J sec            |
@@ -41,36 +41,34 @@
 ### Newtonian Gravity {-}
 
 The gravitational field (\(g\)) near any mass can be calculated as
-
 \[ g = \frac{GM}{R_A^2} \]
 
 where \(G\) is the universal gravitational constant and \(R_A\) is the absolute distance from the center of mass \(M\)
 
-## Earth Properties 
+## Earth Properties
 
 (references 3.9.2, 3.9.3 )
 
-| Property | Symbol | Value | Units |
-|----------|--------|------|--------|
-| Std Earth gravitational acceleration | \(g_o\) | 9.8066 | m/s^2^|
-|                                      |         | 32.174 | ft/s^2^|
-| mass | | \(5.9722 \times 10^{24}\) | kg |
-|      | | \(13.22 \times 10^{24}\)    | lb|
-| rotation rate | \(\omega\) | \(7.292115 \times 10^{−5} | rad/sec |
-| average density | |\(5.522\) | g/cm^3^ |
-| | | \(344.7\) | lb/ft^3^|
-| radius average | \(R_{avg}\) |  \(6,367,444\) | m |
-| | | \(3956.538\) |st. miles |
-| | | \(20,890,522\) | ft |
-| radius at the equator | \(R_e\) | \(6,378,137\) | m |
-| radius at the poles | \(R_p\) | \(6,356,752\) | m |
-| radius as a function of latitude, \(\phi\) (assumes perfect ellipsoid) | | \[R = \sqrt{\left(\frac{\cos{\phi}}{R_e}\right)^2 + \left(\frac{\sin{\phi}}{R_p}\right)^2 \] |
+| Property                                                               | Symbol      | Value                                                                                        | Units     |
+|------------------------------------------------------------------------|-------------|----------------------------------------------------------------------------------------------|-----------|
+| Std Earth gravitational acceleration                                   | \(g_o\)     | 9.8066                                                                                       | m/s^2^    |
+|                                                                        |             | 32.174                                                                                       | ft/s^2^   |
+| mass                                                                   |             | \(5.9722 \times 10^{24}\)                                                                    | kg        |
+|                                                                        |             | \(13.22 \times 10^{24}\)                                                                     | lb        |
+| rotation rate                                                          | \(\omega\)  | \(7.292115 \times 10^{−5}                                                                    | rad/sec   |
+| average density                                                        |             | \(5.522\)                                                                                    | g/cm^3^   |
+|                                                                        |             | \(344.7\)                                                                                    | lb/ft^3^  |
+| radius average                                                         | \(R_{avg}\) | \(6{,}367{,}444\)                                                                                | m         |
+|                                                                        |             | \(3956.538\)                                                                                 | st. miles |
+|                                                                        |             | \(20{,}890{,}522\)                                                                               | ft        |
+| radius at the equator                                                  | \(R_e\)     | \(6{,}378{,}137\)                                                                                | m         |
+| radius at the poles                                                    | \(R_p\)     | \(6{,}356{,}752\)                                                                                | m         |
+| radius as a function of latitude, \(\phi\) (assumes perfect ellipsoid) |             | \[R = \sqrt{\left(\frac{\cos{\phi}}{R_e}\right)^2 + \left(\frac{\sin{\phi}}{R_p}\right)^2} \] |           |
 
-### Centrifugal Relief from Gravity
+### Centrifugal Relief from Gravity {-}
 
 The earth's "normal" gravity field includes both the Newtonian Law and a correction for the centrifugal force caused by the earth's rotation. The centrifugal relief correction is
-
-\[ 
+\[
 \Delta C R = -\frac{V^2}{R_x} = -\frac{\left( R_x \omega \right)^2}{R_x} = R_x \omega^2
 \]
 
@@ -88,11 +86,9 @@ g_{lsl} = 9.780327 \left( 1 + 0.005300224 \sin^2{\phi} - 0.000058 \sin^2{2 \phi}
 
 The above equation is tabulated below for quick reference.
 
-  
-
   ---------------------------------------------------------
-  **Latitude\   **Normal**   
-  (deg)**       \(g_{local}\)         
+  **Latitude\   **Normal**
+  (deg)**       \(g_{local}\)
   ------------- ----------------------- -------------------
                 \((m/s^2)\)             \((ft/s^2)\)
 
@@ -111,15 +107,11 @@ The above equation is tabulated below for quick reference.
   **90**        9.832185                32.258
   ---------------------------------------------------------
 
-  
-
 The standard acceleration (\(g_o\)) corresponds to a latitude of 46.0625°.
 
 \(g_{lsl}\)* at the equator and the poles varies ±0.27% from \(g_o\).
 
- 
-
-### Altitude Effect on Gravitational Acceleration
+### Altitude Effect on Gravitational Acceleration {-}
 
 \(R_A\) is the sum of the earth's local radius and the geometric distance, \(h_G\) above the surface: \(R_A = R + h_G\)
 
@@ -129,11 +121,8 @@ g_{alt} = g_{sls}\left( \frac{R}{R + h_G} \right)^2
 
 Gravitational acceleration at any geometric altitude:
 
- 
-
 +-----------+-------------------+
-| *h_G      |\(g_{alt}/g_{lsl}\)|
-|           |                   |
+| \(h_G\)   |\(g_{alt}/g_{lsl}\)|
 | (1000 ft) |                   |
 +===========+===================+
 | 0         | 1                 |
@@ -151,17 +140,16 @@ Gravitational acceleration at any geometric altitude:
 | 100       | 0.99049           |
 +-----------+-------------------+
 
-### Actual Gravitational Pull on an Aircraft
+### Actual Gravitational Pull on an Aircraft {-}
 
 Adding a centrifugal relief correction due to the aircraft's velocity, a complete calculation for its gravitational acceleration is
-
 \[
 g_{A/C} = \left[ g_{lsl} + \omega^2 R \cos{\phi} \right] \left[ \frac{R}{R + h_G} \right]^2 - \left( \omega + \frac{V_G \sin{\sigma}}{R + h_G} \right)^2 \left(R + h_G\right) \cos{\phi}
 \]
 
 where \(V_G\) = ground speed and \(\sigma\) = ground track angle (0° = true North, 90° = East, etc.).
 
-### Gravity Influence on Aircraft Cruise Performance
+### Gravity Influence on Aircraft Cruise Performance {-}
 
 Even at the same altitude, changes in gravity due to latitude or centrifugal relief directly alter the required lift, drag, and fuel flow. For example, with sufficiently precise instrumentation, data collected heading West could show about 0.5% more drag and fuel flow than data collected heading East (centrifugal relief effect). After determining test and standard (or mission) values for *g*, flight test values for *C_L, *C_D, drag, and fuel flow can be corrected to standard as follows:
 
@@ -182,59 +170,53 @@ where \(N_z\) = normal load factor,
 \(\Delta D\) = change in drag force,
 
 \(TSFC\) = thrust specific fuel consumption, and
-
 \(\dot{W}_{f_{std}}\) = standard day fuel flow
 
 ## General Properties of Air
 
 (reference 3.9.1)
 
-| Property                                     | Symbol              | Value            | Unit                |
-|----------------------------------------------|---------------------|------------------|---------------------|
-| Gas constant                                 | \(R\)               | 53.35            | ft lb/R lbm         |
-|                                              |                     | 287.074          | J/kg K              |
-|                                              |                     | 1716             | lb(ft)/slgs(*R*)    |
-|                                              |                     | 3089.7           | lb(ft)/slgs(*K*)    |
+| Property                                     | Symbol                | Value                | Unit                |
+|----------------------------------------------|-----------------------|----------------------|---------------------|
+| Gas constant                                 | \(R\)                 | 53.35                | ft lb/R lbm         |
+|                                              |                       | 287.074              | J/kg K              |
+|                                              |                       | 1716                 | lb(ft)/slgs(*R*)    |
+|                                              |                       | 3089.7               | lb(ft)/slgs(*K*)    |
 | Speed of sound                               | \(a_o \sqrt{\theta}\) | 49.02 \(\sqrt{T_R}\) | ft/sec              |
-|                                              |                     | 33.42 \(\sqrt{T_R}\) | miles/hr            |
-|                                              |                     | 29.04 \(\sqrt{T_R}\) | knots               |
-|                                              |                     | 20.05 \(\sqrt{T_R}\) | m/sec               |
-| Density                                      | \(\rho\)            | .0023769         | slug/ft^3^          |
-|                                              |                     | 1.225            | kg/m^3^ (at 15^o^C) |
-| Specific weight                              | \(g_\rho\)          | .07647           | sec^2^/ft^4^        |
-| Specific heat capacity at 59 ^o^F (=\(T_o\)) |                     |                  |                     |
-| at constant pressure                         | \(c_p\)             | .240             | BTU/lb R            |
-|                                              |                     | 1004.76          | J/kg K              |
-| at constant volume                           | \(c_v\)             | .1715 | BTU/lb R   |
-
- 
+|                                              |                       | 33.42 \(\sqrt{T_R}\) | miles/hr            |
+|                                              |                       | 29.04 \(\sqrt{T_R}\) | knots               |
+|                                              |                       | 20.05 \(\sqrt{T_R}\) | m/sec               |
+| Density                                      | \(\rho\)              | .0023769             | slug/ft^3^          |
+|                                              |                       | 1.225                | kg/m^3^ (at 15°C) |
+| Specific weight                              | \(g_\rho\)            | .07647               | sec^2^/ft^4^        |
+| Specific heat capacity at 59 °F (=\(T_o\)) |                       |                      |                     |
+| at constant pressure                         | \(c_p\)               | .240                 | BTU/lb R            |
+|                                              |                       | 1004.76              | J/kg K              |
+| at constant volume                           | \(c_v\)               | .1715                | BTU/lb R            |
 
 ### Normal Composition of clean, dry atmospheric air near sea level, by volume {-}
 
-| Gas | Symbol | Proportion |
-|-----|--------|------------|
-| Nitrogen | N~2~ | 78.084 % |
-| Oxygen | O~2~ | 0.948 % |
-| Argon | A | 0.934 %|
-|Carbon Dioxide|CO~2~ | 0.031 %|
-|Neon| Ne | 0.002 %|
-| total || 99.9988 %|
+| Gas            | Symbol | Proportion |
+|----------------|--------|------------|
+| Nitrogen       | N~2~   | 78.084 %   |
+| Oxygen         | O~2~   | 0.948 %    |
+| Argon          | A      | 0.934 %    |
+| Carbon Dioxide | CO~2~  | 0.031 %    |
+| Neon           | Ne     | 0.002 %    |
+| **TOTAL**      |        | 99.9988 %  |
 
 plus traces of helium, kryton, xenon, hydrogen, methane, nitrous oxide, ozone, sulfur dioxide, nitrogen dioxide, ammonia, carbon monoxide, and iodine.
 
 ### Viscosities of Air {-}
 
 Coefficient of Viscosity
-
-\[ \mu_c = \frac{7.3025 \times 10^{-7} \left(T_R \right)^{3/2}}{T_R + 198.72} \text{lb/ft sec}\]
+\[ \mu_c = \frac{7.3025 \times 10^{-7} \left(T_R \right)^{3/2}}{T_R + 198.72} \text{ lb/ft sec}\]
 
 Kinematic viscosity
-
-\[ \nu = \frac{\mu_c}{g\rho} \text{ft^2^/sec} \]
+\[ \nu = \frac{\mu_c}{g\rho} \text{ ft}^{2}\text{/sec} \]
 
 Absolute Viscosity
-
-\[ \mu = \rho\nu = \left[ 0.317 \left(T_R\right)^{3/2} \left( \frac{734.7}{T_R + 216} \right) \right] \times 10^{-10} \text{lb sec/ft^2^} \]
+\[ \mu = \rho\nu = \left[ 0.317 \left(T_R\right)^{3/2} \left( \frac{734.7}{T_R + 216} \right) \right] \times 10^{-10} \text{ lb sec/ft}^{2} \]
 
 ### Atmospheric Viscosity (U.S. Standard Atmosphere) {-}
 
@@ -286,93 +268,59 @@ Absolute Viscosity
 
 ![][03016]
 
-![][03017] 
+![][03017]
 
-## Section 3.4 Standard Atmosphere**
+## Standard Atmosphere
 
-** Divisions of the Atmosphere**
+### Divisions of the Atmosphere {-}
 
-![][03018] 
-
-**\
-**
+![Divisions of the Atmosphere][03018]
 
 Constantly changing atmospheric conditions cannot be duplicated at will to provide the exact environment in which a flight takes place. A standard atmosphere provides a common basis to relate all flight test, wind tunnel results, aircraft design and general performance. Several models of "standard atmosphere" exist with minor differences based on mathematical constants used in the calculations.
 
- 
+| Type of Altitude | Symbol  | Definition                                                                                                                                                                                                              |
+|------------------|---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Geometric        | \(h_G\) | The height of an aircraft above sea level (also called **tapeline** altitude)                                                                                                                                           |
+| Absolute         | \(h_a\) | The height of an aircraft above the center of the earth: (geometric altitude + radius of the earth)                                                                                                                     |
+| Geopotential     | \(h\)   | Required because \(g\) changes with height. If potential energy is calculated using sea level weight ( \(W_{SL} = mg_o\)) instead of actual weight (\(W = mg\)), then the altitude must be lower. \(h = W/W_{SL} h_G \) |
+| Pressure         | \(H_p\) | The altitude, on a standard day, at which the test day pressure would be found                                                                                                                                          |
+| Density          | \(H_D\) | The altitude, on a standard day, at which the test day density would be found                                                                                                                                           |
+| Temperature      |         | The altitude, on a standard day, at which the test day temperature would be found                                                                                                                                       |
 
-**Geometric altitude,** *h_G\ ~*, is defined as the height of an aircraft above sea level (also called **tapeline** altitude)
+### Assumptions on which the standard atmosphere is built {-}
 
- 
+1. The air is dry (only 0.4% per volume of water vapor)
+1. The air is a perfect gas and obeys the equation of state, \(P = \rho gRT\), where \(R\) = 53.35 ft lb/°R lbm
+1. The gravitational field decreases with altitude
+1. Hydrostatic equilibrium exists (\(\Delta p = −\rho g_o \Delta h\))
 
-**Absolute altitude,** *h_a, is defined as the height of an aircraft above the center of the earth: (geometric altitude + radius of the earth).
+### Standard Day Sea Level Atmospheric Conditions {-}
 
- 
+| Parameter                   | Symbol     | Value     | Unit              |
+|-----------------------------|------------|-----------|-------------------|
+| Pressure                    | \(P_o\)    | 2116.22   | lb/ft^2^          |
+|                             |            | 14.696    | lb/in^2^          |
+|                             |            | 29.921    | in Hg             |
+|                             |            | 1013.25   | HPa (mb)          |
+|                             |            | 101325    | Pa                |
+| Temperature                 | \(T_o\)    | 288.15    | K                 |
+|                             |            | 518.67    | R                 |
+|                             |            | 59        | °F              |
+|                             |            | 15        | °C              |
+| Density                     | \(\rho_o\) | 0.0023769 | slgs/ft^3^        |
+| (at 15°C)                 |            | 0.07647   | lbm/in^3^         |
+|                             |            | 1.255     | kg/m^3^           |
+| Speed of Sound              | \(a_o\)    | 1116.45   | ft/sec            |
+|                             |            | 661.478   | KTAS              |
+|                             |            | 761.14    | mph               |
+|                             |            | 340.294   | m/sec             |
+| Acceleration Due to Gravity | \(g_o\)    | 32.174    | ft/sec^2^         |
+|                             |            | 9.80665   | m/sec^2^          |
+| Temperature Lapse Rate      | \(L\)      | 1.98      | K/kft or °C/kft |
+| (up to 36,000 ft or 11 km)  |            | 3.56      | °F/kft          |
+|                             |            | 6.49      | K/km              |
 
-**Geopotential altitude,** *h*, is required because *g* changes with height.If potential energy is calculated using sea level weight (*W_{SL}* = *mg_o) instead of actual weight (*W* = *mg*), then the altitude must be lower.
-
-*W h_G~ = W_{SL}  h*
-
-\* *
-
-**Pressure altitude, *H_p** is the altitude, on a standard day, at which the test day pressure would be found
-
- 
-
-**Density altitude** is the altitude, on a standard day, at which the test day density would be found
-
- 
-
-**Temperature altitude** is the altitude, on a standard day, at which the test day temperature would be found
-
- 
-
-**Assumptions on which the standard atmosphere is built**
-
- 1. The air is dry (only 0.4% per volume of water vapor)
-
- 2. The air is a perfect gas and obeys the equation of state,
-
-*P* = \rhog*RT*
-
-where R = 53.35 ft lb/^o^R lbm
-
-  3. The gravitational field decreases with altitude
-
-  4. Hydrostatic equilibrium exists (∆*p=* −\rho*g_o∆*h*)
-
- **\
-**
-
-**Standard Day Sea Level Atmospheric Conditions**
-
-** ***P_o = 2116.22 lb/ft^2^ = 14.696 lb/in^2^ = 29.921 in *Hg*
-
-= 1013.25 HPa (mb) = 101325 Pa
-
-*T_o~ =* 288.15 *K =* 518.67 *R =* 59 ^o^*F* *=* 15 ^o^*C*
-
- 
-
-\rho*~o = 0.0023769 slgs/ft^3^ = 0.07647 lbm/in^3^ = 1.255 kg/m^3^ (at 15^o^ *C* )
-
- 
-
-*a_o = 1116.45 ft/sec = 661.478 KTAS = 761.14 mph = 340.294 m/sec
-
- 
-
-*g_o = 32.174 ft/sec^2^ = 9.80665 m/sec^2^
-
- 
-
-*L* = standard temperature lapse rate = 0.0019812 *K* /ft
-
- 
-
- 
-
-### 1976 U.S Standard Atmosphere Equations**
+### 1976 U.S Standard Atmosphere Equations {-}
 
 Troposhere - below 36,089 ft (11,000 m) *\< 22636 Pa*
 
@@ -387,23 +335,17 @@ where *n* = 5.255876, *h* = geopotential altitude (ft)
 Stratosphere- between 36,089 ft and 65,616 ft (20,000 m) the standard day temperature is a constant 216.65 *K*, therefore:
 
 θ = 0.751865
-
 \* *![][03019]![][03020]The above relations characterize the standard atmosphere table in this handbook. They may be re-written to solve for pressure altitude (*H_p) for any ambient pressure. Below the tropopause (ambient pressure greater than 472.683 psf or 22632 Pa)
 
 *H*~p~ \[ft\] = \[1-(*P_a~/P_o)^0.1902632^\]/\[6.8755856 x 10^-6^\]
 
- 
-
 In the troposphere (ambient pressure between 114.347 and 472.683 psf or between 5475 and 22632.1 Pascal)
 
 *H*~p~ \[ft\] = 36089+\[ln(*P_a~/P_o)+1.498966\]/ 0.000048063
-
  **\
 **
 
 ![][03021]**1976 U.S. Standard Atmosphere Graph**
-
- 
 
 **\
 **
@@ -425,9 +367,7 @@ In the troposphere (ambient pressure between 114.347 and 472.683 psf or between 
 ## Section 3.5 Sea States**
 
 (ref 3.3) Sea Stale
-
 International Swell Scale
-
 +------+----------------------------------------------+----------------------+
 | Code | Sea                                          | Wave Height,         |
 |      |                                              |                      |
@@ -457,16 +397,15 @@ International Swell Scale
   Code   Swell                                          In Open Sea
   ------ ---------------------------------------------- -----------------
   0      None                                           low
-  1      Short or average                                
-  2      Long                                            
+  1      Short or average
+  2      Long
   3      Short                                          Moderate height
-  4      Average                                         
-  5      Long                                            
+  4      Average
+  5      Long
   6      Short                                          heavy
-  7      Average                                         
-  8      Long                                            
-  9      Confused, Used as additional description 1-8   
-
+  7      Average
+  8      Long
+  9      Confused, Used as additional description 1-8
 **\
 **
 
@@ -484,50 +423,30 @@ International Swell Scale
 
 ## Section 3.8 Geodetic Measurements**
 
-### Acronyms, Abbreviations and Symbols**
+### Acronyms, Abbreviations and Symbols {-}
 
 DGPS Differential Global Positioning System
-
 ECEF Earth Centered Earth Fixed coordinate system
-
 GPS Global Positioning System
-
 INS Inertial Navigation System
-
 WGS84 World Geodetic System 1984
-
 *a* Earth's semi-major axis radius
-
 *b* Earth's semi-minor axis radius
-
 *D* Great circle distance between two points
-
 *e* eccentricity of the Earth square
-
 *f* Earth's flatness factor
-
 *h* geodetic height
-
 *N* radius of curvature in prime vertical
-
 *P* radius of curvature in prime vertical
-
 $\overset{\rightarrow}{P}$ Vector from earth center extending to coordinates
-
 *r* Earth's radius
-
 *X* ECEF x coordinate
-
 *Y* ECEF y coordinate
-
 *Z* ECEF z coordinate
-
 φ Geodetic latitude
-
 ϕ Angle between the two $\overset{\rightarrow}{P}$ vectors originating at the Earth's center and extending to their respective coordinates at the start and end points.
 
 λ Geodetic longitude
-
 ψ Runway heading with respect to true North.
 
 **[Earth Modeling]{.underline}**
@@ -545,7 +464,6 @@ The flatness factor (*f*) is defined as:
 $$f = \frac{a - b}{a}$$
 
 For the WGS84 model, *f* =1/298.257223563
-
 Because the earth is not perfectly spherical, there are various methods for defining latitude. Unlike the geocentric latitude which uses the earth's center for determining a point's latitude, the **geodetic latitude** (used herein) is the angle between the equatorial plane and a line *normal to the reference ellipsoid*. Figure 3.8-1 exaggerates this with a normal line being well offset from the earth's center. This definition leads to a degree of latitude being longer at the pole than at the equator: 111,694 m (60.3 nm) vs. 110,574 m (59.7 nm).
 
 The **geodetic longitude** of a point is the angle between a reference plane and a plane passing through the point, both planes being perpendicular to the equatorial plane.
@@ -591,17 +509,11 @@ Geodetic System (lat/long/height) data converts to ECEF as follows:
 where,
 
 *x* = ECEF coordinate parallel to the X-axis
-
 *y* = ECEF coordinate parallel to the Y-axis
-
 *z* = ECEF coordinate parallel to the Z-axis
-
 *φ* = geodetic latitude
-
 *λ* = geodetic longitude
-
 *h* = height above geodetic (ellipsoid) surface
-
 *N* = Normal radius of curvature; distance from earth axis to any point on the geodetic surface at that latitude (extension of r to axis shown in Figure 3.8-3).
 
 $$N = \frac{a}{\sqrt{1 - e^{2} \bullet \sin^{2}(\phi)}}$$
@@ -613,7 +525,6 @@ where,
 *e^2\ ^*= eccentricity squared; $e^{2} = 1 - \left( \frac{a}{b} \right)^{2} = 2 \bullet f - f^{2}$= 0.00669438002290 (Earth, per WGS84).
 
 Also useful is
-
 *M* = Meridian radius of curvature; distance from earth axis to any point on the geodetic surface at that longitude.
 
 $$M = \frac{a(1 - e^{2})}{\left\lbrack 1 - e^{2} \bullet \sin^{2}(\phi) \right\rbrack^{1.5}}$$
@@ -628,16 +539,11 @@ Any plane passing through the center of a spheroid traces a **Great Circle** aro
 
 Except when moving around the equator, navigating along a great circle route has the characteristic of intercepting longitude lines at different angles. In other words, the heading (or bearing) changes along the route. Analysis shows bearing [change]{.underline} along a great circle route:
 
--   Is never greater than the longitude difference between the end points.
-
--   Approaches the value of the longitude change as the final latitude approaches a pole (regardless of initial latitude).
-
--   Is smallest when the final latitude is at the equator
-
-> (for this case, bearing change ≈ longitude change x initial latitude/100).
+- Is never greater than the longitude difference between the end points.
+- Approaches the value of the longitude change as the final latitude approaches a pole (regardless of initial latitude).
+- Is smallest when the final latitude is at the equator (for this case, bearing change ≈ longitude change x initial latitude/100).
 
 Calculate the **great circle distance (D)** between points (subscripts 1 and 2) as
-
 > $P_{1} = \sqrt{x_{1}^{2} + y_{1}^{2} + z_{1}^{2}}$, $\text{\ \ P}_{2} = \sqrt{x_{2}^{2} + y_{2}^{2} + z_{2}^{2}}$
 
 $${\overset{\rightarrow}{P}}_{1} \bullet {\overset{\rightarrow}{P}}_{2} = P_{1} \bullet P_{2}\cos\varphi = x_{1} \bullet x_{2} + y_{1} \bullet y_{2} + z_{1} \bullet z_{2}$$
@@ -647,13 +553,11 @@ $$\varphi = \arccos\left( \frac{x_{1} \bullet x_{2} + y_{1} \bullet y_{2} + z_{1
 $$D = P_{\text{avg}} \bullet \varphi$$
 
 where
-
 *P* = distance from earth center to any point (including height above the spheroid surface).
 
 $\overset{\rightarrow}{P}$ = Vector from the Earth's center to point P.
 
 ϕ = Angle between the two $\overset{\rightarrow}{P}$ vectors
-
 \<<http://www.movable-type.co.uk/scripts/latlong.html>\> provides equations an online tool for calculating great circle initial & final bearings (headings).
 
 **[\
@@ -670,13 +574,9 @@ Figure 3.8-4a shows a case where the X-Y coordinate system aligns with the latit
 **Figure 3.8-4: Local X-Y Coordinate System Aligned with (a)**φ**,**λ **Grid; (b) Runway**
 
 Because each degree of latitude change is not always exactly 60 nm and because the spacing between degrees of longitude changes markedly with latitude, converting from degrees latitude & longitude change to distance requires scaling factors. First select equatorial distances for each degree change
-
 φ\_scale{φ=0} = 110,574 m = 362,776.6 ft = 59.70518 nm
-
 λ\_scale{φ=0} = 111,319.5 m = 365,221.4 ft = 60.10772 nm
-
 Use average latitude to calculate latitude and longitude scaling factors
-
 $\varnothing\_\text{scale} = \frac{\varnothing\_\mathrm{\text{scale}}\{\varnothing = 0\}}{\left\lbrack 1 - e^{2} \bullet \sin^{2}(\phi) \right\rbrack^{1.5}}$ $\mathrm{\lambda}\_\mathrm{\text{scale}} = \frac{\lbrack\lambda\_\text{scale}\{\varnothing = 0\}\rbrack \bullet cos\varnothing}{\sqrt{1 - e^{2} \bullet \sin^{2}(\phi)}}$
 
 Calculate X and Y components of distances aligned with the latitude & longitude grid (Figure 3.8-4a)
@@ -686,19 +586,15 @@ Y = *φ* \_scale·(*φ* ~1~ - *φ* ~0~)
 X = λ\_scale·(λ~1~ - λ~0~)
 
 The 2-D *local* (vice great circle) distance between any two points on the X-Y plane is
-
 D = (X^2^ + Y^2^)^1/2^
 
 For field performance work, it is preferable to align X & Y with the runway as shown in Figure 3.8-4b. To convert from grid-aligned to runway-aligned coordinates, apply a rotation matrix that ensures X remains positive when going from point \[*φ* ~0~, λ~0~\] towards \[*φ* ~1~, λ~1~\]. The rotation angle, *ψ*, is positive counter-clockwise from true East to the direction of the runway. \[Note: do not confuse *ψ* with runway heading measured relative to magnetic north\]. The function
-
 *ψ* = atan2(X, Y)
 
 returns rotation angles from - π to π, so that rotating to headings between 90° and 270° results in
-
 negative rotation angles.
 
 For any point \[*φ*, λ\], calculate runway-aligned X & Y distances using
-
 X = *φ* \_scale·(* φ* - *φ* ~0~)·sin(*ψ*) + λ\_scale·(λ - λ~0~)·cos(*ψ*)
 
 Y = *φ* \_scale·(* φ* - *φ* ~0~)·cos(*ψ*) -- λ\_scale·(λ - λ~0~)·sin(*ψ*)
@@ -708,14 +604,13 @@ This provides a right-handed rectangular coordinate system where X is positive f
 Calculating aircraft height Z above the X-Y plane requires defining where the X-Y plane lies. An analyst may define Z=0 at some arbitrary height (i.e. GPS altitude at the beginning of a maneuver) and consider only changes from that reference.
 
 For field performance, it is typical to use the runway altitude as the reference. Because runway altitudes vary however, height should be surveyed and modeled or tabulated as a function runway centerline position, H{X}. For best accuracy, the runway survey accounts for GPS antenna height above the surface. Airplane height above the X-Y plane (Z) is then
-
 Z = ζ -- H{X}
 
 where ζ is the test GPS antenna's altitude.
 
 > .
 
-### 3.9 Temperature Compensated Barometric Altitude**
+## Temperature Compensated Barometric Altitude
 
 **Background:** Pressure altitude is the geopotential height above mean sea level (MSL) associated with atmospheric pressure on a theoretical standard day. Geopotential height is almost identical to geometric (a.k.a. tapeline) altitude, as seen in page 03-5. Altimeters set at 29.92 in Hg (or 1013 HPa) display pressure altitude. An altimeter's baro-set knob allows pilots to bias the pressure vs. altitude relation so it matches sea level pressure for non-standard conditions. Matching the local altimeter setting (known as setting QNH in many parts of the world) adjusts the altimeter so it displays nearly the same altitude above MSL for non-standard pressure conditions. The correct setting is critical for terrain & obstacle clearance when the pilot's visibility is low.
 
@@ -724,17 +619,13 @@ Although the long-used practice of matching the local altimeter setting has been
 *h_G = *H_b + \[(*T_{ap}*~t~ -- *T_0)/*L* -- *Hp_{apt}*\]ln\[1 + *L*(*Hp* -- *Hp_{apt}*)/(*T_0 + *L\*Hp_{apt}*)\]
 
 where
-
 \(h_G\) = temperature-compensated altitude
-
 \(H_b\) = baro altitude (displayed when altimeter is set to local value)
 
 \(T_{apt}\)* = airport temperature (Kelvin)
 
 \(T_0\) = standard day sea level temperature = 15 deg C = 288.15 K
-
 \(L\) = standard temperature lapse rate = -0.0065 K/m = -.0019812 K/ft
-
 \(Hp_{apt}\)* = airport pressure altitude ( = airport field elevation -- baro bias)
 
 \(Hp\) = aircraft pressure altitude ( = H_b~ -- baro bias)
@@ -742,11 +633,9 @@ where
 Note: ensure altitude units are consistent with lapse rate units.
 
 In lieu of the pilot adjusting the baro set knob to determine baro bias, it may be calculated using
-
 Baro bias = \(H_b\) - *Hp* = *H_b -- (29.92^.1903^ -- PA^.1903^)/.00001313 \[ft\]
 
 where
-
 PA = ambient pressure = {altimeter setting \[in Hg\]^.1903^ -- *H_b(.00001313)}^1/.1903^
 
 Flight testers can use the above to verify the aircraft's temperature compensation system is working correctly. Data analysts can use these equations to more precisely determine geometric height above the ground--potentially useful for performance or pitot-static flyby testing.
@@ -756,32 +645,18 @@ Flight testers can use the above to verify the aircraft's temperature compensati
 ** **
 
 3.1 Anon., "Aeronautical Vestpocket Handbook" ,Part No. P&W
-
 079500, United Technologies Pratt & Whitney, Canada, 1990.
-
- 
 
 3.2 Lawless, Alan. R. et al, "Aerodynamics for Flight Testers", National Test Pilot School, P.O. Box 658, Mojave CA, 93501, 1999.
 
- 
-
 3.3 Denno, Richard R., et al "AIAA Aerospace Design Engineers Guide" ISBN 0-930403-21-5, AIAA, 1987.
 
- 
-
 3.4 Global Positioning System Overview, Peter H. Dana, Department of Geography, University of Texas
-
 at Austin, 1994. ([[www.colorado.edu/geography/gcraft/notes/gps/gps\_f.html]{.underline}])
-
- 
 
 3.5 Charles D Ghilani, Penn State College of Engineering, 2008 (http://surveying.wb.psu.edu/sur351/georef/ Ellip4.htm) \<[[www.colorado.edu/geography/gcraft/notes/gps/gps\_f.html]{.underline}]\>
 
- 
-
 3.6 Standard Atmosphere Calculator Website Link [[http://www.digitaldutch.com/atmoscalc/]{.underline}].
-
- 
 
 3.7 Movable Type Scripts. \<[<http://www.movable-type.co.uk/scripts/latlong.html>\>]{.underline}
 

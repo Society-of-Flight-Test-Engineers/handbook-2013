@@ -2726,13 +2726,13 @@ Development of **Specific Heat Relations**
 
 specific heat at constant pressure
 
-(for air = 1004.76 J/\[kg ^o^K\])
+(for air = 1004.76 J/\[kg K\])
 
  
 
 ![][10] specific heat at constant volume
 
-(for air = 717.986 J/\[kg ^o^K\])
+(for air = 717.986 J/\[kg K\])
 
  
 

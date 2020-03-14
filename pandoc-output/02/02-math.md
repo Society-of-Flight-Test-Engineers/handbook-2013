@@ -162,7 +162,7 @@ special cases...
 
 if (b^2^/4 + a^3^/27 \<0), then the real roots are
 
-*x*~1,2,3~ = 2\[-a/3\]^1/2^cos(φ/3 + 120^o^k)
+*x*~1,2,3~ = 2\[-a/3\]^1/2^cos(φ/3 + 120K)
 
 where k = 0,1,2
 

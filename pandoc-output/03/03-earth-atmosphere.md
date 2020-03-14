@@ -108,13 +108,13 @@ g~o~ = standard earth acceleration due to gravity
 
 Avogadros number, *N~o~* 6.022169 x 10^23^ molecules/mole
 
-Boltzmann constant, *k* 1.380 x 10^-23^ J/^o^K
+Boltzmann constant, *k* 1.380 x 10^-23^ J/K
 
 electron charge, *e* 1,602 x 10^-19^ coulomb
 
 electron mass, *m~e~* 9.109 x 10^-31^ kg
 
-gas constant, *R* 8.31434 J/^o^K mole
+gas constant, *R* 8.31434 J/K mole
 
 gravitational constant, *G* 6.673 x 10^-11^ Nm^2^/kg^2^
 
