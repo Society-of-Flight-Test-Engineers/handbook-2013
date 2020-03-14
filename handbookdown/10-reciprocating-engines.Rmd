@@ -256,7 +256,7 @@ where *BHP~sl\ max~* is the full-throttle sea level power at the *RPM* in questi
 
  
 
-where *T~as~* is the standard absolute ambient temperature at the test altitude, and, below the tropopause, is calculated as *T~as~* = 288.15- 0.0019812*H~c~* .
+where *T~as~* is the standard absolute ambient temperature at the test altitude, and, below the tropopause, is calculated as *T~as~* = 288.15- 0.001 9812*H~c~* .
 
  
 

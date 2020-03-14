@@ -36,23 +36,23 @@ Exponent  Prefix  Abbreviation
 |                          | circles        | 21,600         | minutes                              |
 |                          | circles        | 2\(\pi\)             | radians                              |
 |                          | circles        | 360            | degrees                              |
-|                          | degrees        |  0.01111         | quadrants                            |
+|                          | degrees        |  0.011 11         | quadrants                            |
 |                          | degrees        | 3600           | seconds                              |
 |                          | degrees        | 60             | minutes                              |
-|                          | mils (Army)    | 0.05625        | degrees                              |
-|                          | mils (Navy)    | 0.05729        | degrees                              |
+|                          | mils (Army)    | 0.056 25        | degrees                              |
+|                          | mils (Navy)    | 0.057 29        | degrees                              |
 |                          | quadrants      | 90             | degrees                              |
 |                          | radians        | 57.2958        | degrees                              |
 |                          | revolutions    | 360            | degrees                              |
 |^[solid angle measurement]| sphere         | 4\(\pi\)         | steradians |
 |                          |                |                |                                      |
-| **Angular Acceleration** | rev/min^2^     | 0.001745       | rad/sec^2^                           |
+| **Angular Acceleration** | rev/min^2^     | 0.001 745       | rad/sec^2^                           |
 |                          |                |                |                                      |
 | **Angular Velocity**     | **cycles/sec** | **6.2814**     | **rads/sec**                         |
 |                          | **rads/sec**   | **0.1592**     | **rev/sec (cycles/sec)**             |
 |                          | rads/sec       | 9.549          | rpm                                  |
 |                          | **rad/sec**    | **57.296**     | **deg/sec**                          |
-|                          | rpm            | 0.01667        | rev/sec                              |
+|                          | rpm            | 0.016 67        | rev/sec                              |
 |                          |                |                |                                      |
 | **Area**                 | acres          | 43,560         | ft^2^                                |
 |                          | ares           | 100            | m^2^                                 |
@@ -61,7 +61,7 @@ Exponent  Prefix  Abbreviation
 |                          | circular mils  | 7.854 x 10^-7^ | in^2^                                |
 |                          | cm^2^          | 100            | mm^2^                                |
 |                          | **ft^2^**      | **144**        | **in^2^**                            |
-|                          | **ft^2^**      | **0.09290304** | **m^2^**                             |
+|                          | **ft^2^**      | **0.092 903 04** | **m^2^**                             |
 |                          | in^2^          | 6.452          | cm^2^                                |
 |                          | in^2^          | 10^6^          | mils^2^                              |
 |                          | m^2^           | 10.76          | ft^2^                                |
@@ -72,9 +72,9 @@ Exponent  Prefix  Abbreviation
 |                          | yd^2^          | 9              | ft^2^                                |
 |                          | yd^2^          | 0.8361         | m^2^                                 |
 |                           |                  |               |                    |
-| **Density**               | grams/cm^3^      | 0.03613       | pounds/in^3^       |
+| **Density**               | grams/cm^3^      | 0.036 13       | pounds/in^3^       |
 |                           | grams/cm^3^      | 62.43         | pounds/ft^3^       |
-|                           | kg/m^3^          | 16.018463     | pounds/ft^3^       |
+|                           | kg/m^3^          | 16.018 463     | pounds/ft^3^       |
 |                           | **slugs/ft^3^**  | **515.4**     | **kg/m^3^**        |
 |                           | **pounds/in^3^** | **1728**      | **pounds/ft^3^**   |
 |                           | slugs/ft^3^      | 1.94          | grams/cm^3^        |
@@ -106,7 +106,7 @@ Exponent  Prefix  Abbreviation
 |                           | ohms             | 1.113x10^12^  | statohms           |
 |                           | ohm-cm           | 6.015x10^6^   | circ mil-ohms/ft   |
 |                           | volts            | 10^8^         | abvolts            |
-|                           | volts            | 0.003336      | statvolts          |
+|                           | volts            | 0.003 336      | statvolts          |
 |                           |                  |               |                    |
 | **Energy & Work** | Btu                | 1.055x10^10^  | ergs             |
 |                   | Btu                | 1055.1        | Joules (N-m)     |
@@ -123,19 +123,19 @@ Exponent  Prefix  Abbreviation
 |                   | foot-pounds        | 5.051x10^-7^  | horsepower-hours |
 |                   | hp-hours           | 0.7457        | kilowatt-hours   |
 |                   | hp-hours           | 2546.1        | Btu              |
-|                   | Joules             | 0.23889       | calories         |
+|                   | Joules             | 0.238 89       | calories         |
 |                   | Joules             | 1             | Newton-meters    |
 |                   | Joules             | 1             | watt-seconds     |
 |                   | Joules             | 10^7^         | ergs             |
 |                   | **kilowatt-hours** | **3.6x10^6^** | **Joules**       |
 |                   | thermies           | 4.1868x10^6^  | Joules           |
-|                   | watt-seconds       | 0.73756       | foot-pounds      |
+|                   | watt-seconds       | 0.737 56       | foot-pounds      |
 |                   |                    |               |                  |
 | **Force**^[Converting between force and mass (e.g. kg force to kg mass or pound force to pound mass) uses \(g = 32.174 \frac{ft}{s^2}\)] | dynes                 | 3.597x10^-5^    | ounces       |
-|                   | **kilograms-force**   | **9.80665**     | **Newtons**  |
-|                   | kiloponds             | 9.80665         | Newtons      |
+|                   | **kilograms-force**   | **9.806 65**     | **Newtons**  |
+|                   | kiloponds             | 9.806 65         | Newtons      |
 |                   | kip (kilopound-force) | 4,448.221       | Newtons      |
-|                   | **Newtons**           | **0.224808931** | **pounds**   |
+|                   | **Newtons**           | **0.224 808 931** | **pounds**   |
 |                   | Newtons               | 100,000         | dynes        |
 |                   | ounces                | 20              | pennyweights |
 |                   | ounces (troy)         | 480             | grains       |
@@ -153,7 +153,7 @@ Exponent  Prefix  Abbreviation
 |                                                     | foot-lamberts     | 1         | lumen/ft^2^           |
 |                                                     | lamberts          | 295.72    | candles/ft^2^         |
 |                                                     | lamberts          | 929.03    | lumens/ft^2^          |
-|                                                     | lumens            | 0.001496  | watts                 |
+|                                                     | lumens            | 0.001 496  | watts                 |
 |                                                     | lumens/in^2^      | 1         | fots                  |
 |                                                     | lumens/m^2^       | 1         | lux                   |
 |                                                     | lux               | 1         | meter-candles         |
@@ -178,36 +178,36 @@ Exponent  Prefix  Abbreviation
 |                                                                                                                 | hands              | 4                | inches             |
 |                                                                                                                 | **inches**         | **2.54**         | **cm**             |
 |                                                                                                                 | **kilometers**     | **3281**         | **feet**           |
-|                                                                                                                 | **kilometers**     | **0.53996**      | **nautical miles** |
+|                                                                                                                 | **kilometers**     | **0.539 96**      | **nautical miles** |
 |                                                                                                                 | leagues (U.S.)     | 3                | nautical miles     |
 |                                                                                                                 | light years        | 5.88x10^12^      | statute miles      |
 |                                                                                                                 | links (engnr's)    | 12               | inches             |
 |                                                                                                                 | links (srvyr's)    | 7.92             | inches             |
-|                                                                                                                 | **meters**         | **3.28084**      | **feet**           |
-|                                                                                                                 | **meters**         | **39.370079**    | **inches**         |
+|                                                                                                                 | **meters**         | **3.280 84**      | **feet**           |
+|                                                                                                                 | **meters**         | **39.370 079**    | **inches**         |
 |                                                                                                                 | microns            | 10^-6^           | meters             |
 |                                                                                                                 | mils               | 10^-3^           | inches             |
-|                                                                                                                 | **nautical miles** | **1.15078**      | **statute miles**  |
+|                                                                                                                 | **nautical miles** | **1.150 78**      | **statute miles**  |
 | ^[The SI defines the nautical mile as exactly 1852 meters. <https://www.bipm.org/en/publications/si-brochure/>] | **nautical miles** | **1,852**        | **meters**         |
-|                                                                                                                 | **nautical miles** | **6,076.115486** | **feet**           |
+|                                                                                                                 | **nautical miles** | **6,076.115 486** | **feet**           |
 |                                                                                                                 | paces              | 0.762            | meters             |
 |                                                                                                                 | parsec             | 1.9163x10^13^    | statute miles      |
 |                                                                                                                 | perch              | 5.0292           | meters             |
-|                                                                                                                 | pica (printers)    | 0.0042175176     | meters             |
-|                                                                                                                 | point (printers)   | 0.0003514598     | meters             |
+|                                                                                                                 | pica (printers)    | 0.004 217 5176     | meters             |
+|                                                                                                                 | point (printers)   | 0.000 351 4598     | meters             |
 |                                                                                                                 | pole (=rod)        | 5.0292           | meters             |
 |                                                                                                                 | skein              | 109.728          | meters             |
 |                                                                                                                 | **statute miles**  | **5,280**        | **feet**           |
-|                                                                                                                 | **statute miles**  | **1.609344**     | **kilometers**     |
+|                                                                                                                 | **statute miles**  | **1.609 344**     | **kilometers**     |
 |                                                                                                                 | statute miles      | 8                | furlongs           |
 |                                                                                                                 | yards              | 3                | feet               |
 |                                                                                                                 |                    |                  |                    |
 |                         |                |               |                   |
-| **Linear Acceleration** | feet/sec^2^    | 1.09728       | kilometers/hr/sec |
+| **Linear Acceleration** | feet/sec^2^    | 1.097 28       | kilometers/hr/sec |
 |                         | feet/sec^2^    | 0.3048        | meters/sec^2^     |
 |                         | feet/sec^2^    | 0.6818        | mph/sec           |
-|                         | **g**          | **32.174049** | **feet/sec^2^**   |
-|                         | **g**          | **9.80665**   | **meters/sec^2^** |
+|                         | **g**          | **32.174 049** | **feet/sec^2^**   |
+|                         | **g**          | **9.806 65**   | **meters/sec^2^** |
 |                         | gals (Galileo) | 0.01          | meters/sec^2^     |
 |                         | knots/sec      | 1.6878        | feet/sec^2^       |
 |                         | meters/sec^2^  | 3.6           | kilometers/hr/sec |
@@ -215,39 +215,39 @@ Exponent  Prefix  Abbreviation
 |                         | mph/sec        | 1.609         | kilometers/hr/sec |
 |          |                                  |                 |                   |
 | **Mass** | carats                           | 200             | milligrams        |
-|          | grams                            | 0.035274        | ounces            |
-|          | grains                           | 6.479891x10^-5^ | kilograms         |
+|          | grams                            | 0.035 274        | ounces            |
+|          | grains                           | 6.479 891x10^-5^ | kilograms         |
 |          | hundredweight (long or Imperial) | 50.80           | kilograms         |
-|          | hundredweight (short)            | 45.359237       | kilograms         |
-|          | **kilograms**                    | **0.06852**     | **slugs**         |
+|          | hundredweight (short)            | 45.359 237       | kilograms         |
+|          | **kilograms**                    | **0.068 52**     | **slugs**         |
 |          | kilograms                        | 6.024x10^26^    | atomic mass units |
 |          | **kilograms**                    | **2.2046**      | **pounds**        |
-|          | ounces (avd)                     | 28.349523125    | grams             |
-|          | ounces (troy)                    | 31.1034768      | grams             |
+|          | ounces (avd)                     | 28.349 523 125    | grams             |
+|          | ounces (troy)                    | 31.103 4768      | grams             |
 |          | pounds (mass)                    | 1               | pounds (force)    |
-|          | **pounds (mass)**                | **0.45359237**  | **kilograms**     |
-|          | **pounds (mass)**                | **0.031081**    | **slugs**         |
-|          | scruples (apoth)                 | 0.0012959782    | kilograms         |
+|          | **pounds (mass)**                | **0.453 592 37**  | **kilograms**     |
+|          | **pounds (mass)**                | **0.031 081**    | **slugs**         |
+|          | scruples (apoth)                 | 0.001 295 9782    | kilograms         |
 |          | **slugs**                        | **32.174**      | **pounds**        |
 |          | **slugs**                        | **14.594**      | **kilograms**     |
 |          | tons (long)                      | 1016.047        | kilograms         |
-|          | tons (assay)                     | 0.02916         | kilograms         |
+|          | tons (assay)                     | 0.029 16         | kilograms         |
 |          | tons (metric)                    | 1000            | kilograms         |
 |          | tons (short)                     | 907.1847        | kilograms         |
 |                        |                |              |                   |
 | **Moments of Inertia** | gram-cm^2^     | 0.737x10^-7^ | slug-ft^2^        |
-|                        | pound-ft^2^    | 0.031081     | slug-ft^2^        |
-|                        | slug-in^2^     | 0.0069444    | slug-ft^2^        |
+|                        | pound-ft^2^    | 0.031 081     | slug-ft^2^        |
+|                        | slug-in^2^     | 0.006 9444    | slug-ft^2^        |
 |                        | **slug-ft^2^** | **1.3546**   | **kg-m^2^**       |
 |                        | **slug-ft^2^** | **32.174**   | **pound-ft^2^**   |
 |                        | slug-ft^2^     | 12.00        | pound-inch-sec^2^ |
 |                        | slug-ft^2^     | 192.00       | ounce-inch-sec^2^ |
 |           |                         |              |                         |
-| **Power** | btu/min                 | 0.01758      | kilowatts               |
+| **Power** | btu/min                 | 0.017 58      | kilowatts               |
 |           | calories(kg)/min        | 3087.46      | foot-pounds/min         |
 |           | ergs/sec                | 7.376x10^-8^ | foot-pounds/sec         |
 |           | ft(lbs)/min             | 2.260x10-^5^ | kilowatts               |
-|           | ft(lbs)/sec             | 0.07712      | btu/min                 |
+|           | ft(lbs)/sec             | 0.077 12      | btu/min                 |
 |           | ft(lbs)/sec             | 1.356        | watts                   |
 |           | **horsepower**          | **550**      | **ft(lb)/sec**          |
 |           | **horsepower**          | **33,000**   | **ft(lbs)/min**         |
@@ -266,22 +266,22 @@ Exponent  Prefix  Abbreviation
 |              | **bars**            | **29.52**      | **inches of Hg** |
 |              | **barye**           | **0.1**        | **Newtons/m^2^** |
 |              | dynes/cm^2^         | 10             | Newtons/m^2^     |
-|              | **inches of H~2~O** | **5.20237**    | **pound/ft^2^**  |
-|              | **inches of Hg**    | **70.72619**   | **pounds/ft^2^** |
-|              | inches of Hg        | 0.491154       | pounds/in^2^     |
+|              | **inches of H~2~O** | **5.202 37**    | **pound/ft^2^**  |
+|              | **inches of Hg**    | **70.726 19**   | **pounds/ft^2^** |
+|              | inches of Hg        | 0.491 154       | pounds/in^2^     |
 |              | inches of Hg        | 13.595         | inches of H~2~O  |
 |              | **kiloPascals**     | **100**        | **bars**         |
 |              | **hectoPascals**    | **1**          | **millibars**    |
-|              | **millibars**       | **0.02953**    | **inches of Hg** |
-|              | mm of Hg            | 0.019337       | pounds/in^2^     |
+|              | **millibars**       | **0.029 53**    | **inches of Hg** |
+|              | mm of Hg            | 0.019 337       | pounds/in^2^     |
 |              | mm of Hg            | 133.32         | Newtons/m^2^     |
 |              | **Pascals**         | **1**          | **Newton/m^2^**  |
 |              | pieze               | 1000           | Newtons/m^2^     |
-|              | **pounds/ft^2^**    | **0.01414**    | **inches of Hg** |
+|              | **pounds/ft^2^**    | **0.014 14**    | **inches of Hg** |
 |              | **pounds/ft^2^**    | **47.88**      | **Newtons/m^2^** |
 |              | **pounds/in^2^**    | **2.036**      | **inches of Hg** |
 |              | pounds/in^2^        | 27.681         | inches of H~2~O  |
-|              | **pounds/in^2^**    | **6894.75728** | **Pascal**       |
+|              | **pounds/in^2^**    | **6894.757 28** | **Pascal**       |
 |              | torrs               | 133.32         | Newtons/m^2^     |
 |                 |                   |                                  |                 |
 | **Temperature** | **Kelvin**        | **Celsius + 273.15**             |                 |
@@ -296,7 +296,7 @@ Exponent  Prefix  Abbreviation
 |                 | minutes           | 60                               | seconds         |
 |                 | months (sidereal) | 27d + 7hr + 43min + 11.47sec     |                 |
 |                 | months (lunar)    | 29d + 12hr + 44min + 2.78sec     |                 |
-|                 | year              | 365.24219879                     | days            |
+|                 | year              | 365.242 198 79                     | days            |
 |            |                 |            |                   |
 | **Torque** | **foot-pounds** | **1.3558** | **Newton-meters** |
 |            | foot-pounds     | 0.1383     | kilogram-meters   |
@@ -304,20 +304,20 @@ Exponent  Prefix  Abbreviation
 |            | pound-inches    | 1129800    | dyne-centimeters  |
 |              |                 |              |                |
 | **Velocity** | inches/sec      | 0.0254       | meters/sec     |
-|              | **km/hr**       | **0.621371** | **mph**        |
+|              | **km/hr**       | **0.621 371** | **mph**        |
 |              | **km/hr**       | **0.9113**   | **feet/sec**   |
-|              | **knots**       | **1.68781**  | **feet/sec**   |
-|              | **knots (kts)** | **1.15078**  | **mph**        |
+|              | **knots**       | **1.687 81**  | **feet/sec**   |
+|              | **knots (kts)** | **1.150 78**  | **mph**        |
 |              | **knots (kts)** | **1.852**    | **km/hr**      |
-|              | **knots (kts)** | **0.51444**  | **meters/sec** |
+|              | **knots (kts)** | **0.514 44**  | **meters/sec** |
 |              | meters/sec      | 3.281        | ft/sec         |
 |              | **meters/sec**  | **3.6**      | **km/hr**      |
 |              | **meters/sec**  | **196.85**   | **feet/min**   |
-|              | mph             | 1.466667     | feet/sec       |
+|              | mph             | 1.466 667     | feet/sec       |
 |               |                  |           |                    |
 | **Viscosity** | centistokes      | 10^-6^    | m^2^/sec           |
 |               | ft^2^/sec        | 0.0929    | m^2^/sec           |
-|               | pound sec/ ft^2^ | 47.880258 | Newton secs/m^2^   |
+|               | pound sec/ ft^2^ | 47.880 258 | Newton secs/m^2^   |
 |               | poise            | 0.1       | Newton secs/m^2^   |
 |               | rhe              | 10        | m^2^/Newton second |
 |            |                     |                |                 |
@@ -330,13 +330,13 @@ Exponent  Prefix  Abbreviation
 |            | bushels             | 32             | quarts (dry)    |
 |            | bushels             | 4              | pecks           |
 |            | cm^3^               | 0.001          | liters          |
-|            | cm^3^               | 0.03381        | fluid ounces    |
-|            | cm^3^               | 0.06102        | in^3^           |
+|            | cm^3^               | 0.033 81        | fluid ounces    |
+|            | cm^3^               | 0.061 02        | in^3^           |
 |            | cord-feet           | 4x4x1          | ft^3^           |
 |            | cords               | 128            | ft^3^           |
 |            | cups                | 0.5            | pints (liquid)  |
-|            | dram (fluid)        | 3.69669x10^-6^ | m^3^            |
-|            | **ft^3^**           | **0.0283167**  | **m^3^**        |
+|            | dram (fluid)        | 3.696 69x10^-6^ | m^3^            |
+|            | **ft^3^**           | **0.028 3167**  | **m^3^**        |
 |            | ft^3^               | 1728           | in^3^           |
 |            | ft^3^               | 28.32          | liters          |
 |            | **ft^3^**           | **7.481**      | **gals (U.S.)** |
@@ -344,14 +344,14 @@ Exponent  Prefix  Abbreviation
 |            | gals (Imperial)     | 277.42         | in^3^           |
 |            | gals (U.K.)         | 4546.1         | cm^3^           |
 |            | **gals (U.S.)**     | **231**        | **in^3^**       |
-|            | **gals (U.S.)**     | **0.003785**   | **m^3^**        |
+|            | **gals (U.S.)**     | **0.003 785**   | **m^3^**        |
 |            | **gals (U.S.)**     | **3.785**      | **liters**      |
 |            | gals (U.S.)         | 4              | quarts (liquid) |
-|            | gals (U.S.)         | 0.0238095      | barrels (U.S.)  |
+|            | gals (U.S.)         | 0.023 8095      | barrels (U.S.)  |
 |            | gills               | 7.219          | in^3^           |
 |            | hogshead            | 2              | barrels         |
 |            | in^3^               | 16.39          | cm^3^           |
-|            | liters              | 0.02838        | bushels         |
+|            | liters              | 0.028 38        | bushels         |
 |            | liters              | 0.9081         | quarts (dry)    |
 |            | liters              | 1.057          | quarts (liquid) |
 |            | liters              | 1000           | cm^3^           |
@@ -359,8 +359,8 @@ Exponent  Prefix  Abbreviation
 |            | m^3^                | 1.308          | yd^3^           |
 |            | m^3^                | 1000           | liters          |
 |            | m^3^                | 264.2          | gals (U.S.)     |
-|            | **m^3^**            | **35.314667**  | **ft^3^**       |
-|            | mil-feet (circ.)    | 0.0001545      | cm^3^           |
+|            | **m^3^**            | **35.314 667**  | **ft^3^**       |
+|            | mil-feet (circ.)    | 0.000 1545      | cm^3^           |
 |            | ounces (U.K.)       | 28.413         | cm^3^           |
 |            | ounces (U.S.)       | 29.574         | cm^3^           |
 |            | pecks               | 8              | quarts (dry)    |
@@ -605,7 +605,7 @@ Exponent  Prefix  Abbreviation
 |DTC |data transfer cartridge|
 |DTIC |Defense Technical Information Center|
 |\(e\) |Oswald efficiency factor|
-|\(e\) |natural mathematical constant = 2.718281828459|
+|\(e\) |natural mathematical constant = 2.718 281 828 459|
 |E |energy|
 |E |lift-to-drag ratio ( \(C_L / C_D\) , \(L/D\) )|
 |EAS |equivalent airspeed|

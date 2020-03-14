@@ -25,11 +25,11 @@
 
 | Constant                               | Symbol  | Value                                |  Units |
 |----------------------------------------|---------|--------------------------------------|--------|
-| Avogadros number                       | \(N_o\) | \(6.022169 \times 10^{23}\) | molecules/mole |
+| Avogadros number                       | \(N_o\) | \(6.022 169 \times 10^{23}\) | molecules/mole |
 | Boltzmann constant                     | \(k\)   | \(1.380 \times 10^{-23}\) | J/K           |
 | electron charge                        | \(e\)   | \(1.602 \times 10^{-19}\) | Coulomb          |
 | electron mass                          | \(m_e\) | \(9.109 \times 10^{-31}\) | kg               |
-| gas constant                           | \(R\)   | \(8.31434\) | J/K mole              |
+| gas constant                           | \(R\)   | \(8.314 34\) | J/K mole              |
 | gravitational constant                 | \(G\)   | \(6.673 \times 10^{-11}\) | Nm^2^/kg^2^      |
 | neutron mass                           | \(m_n\) | \(1.674 \times 10^{-27}\) | kg               |
 | Planck constant                        | \(h\)   | \(6.625 \times 10^{-34}\) | J sec            |
@@ -55,7 +55,7 @@ where \(G\) is the universal gravitational constant and \(R_A\) is the absolute 
 |                                                                        |             | 32.174                                                                                       | ft/s^2^   |
 | mass                                                                   |             | \(5.9722 \times 10^{24}\)                                                                    | kg        |
 |                                                                        |             | \(13.22 \times 10^{24}\)                                                                     | lb        |
-| rotation rate                                                          | \(\omega\)  | \(7.292115 \times 10^{−5}                                                                    | rad/sec   |
+| rotation rate                                                          | \(\omega\)  | \(7.292 115 \times 10^{−5}                                                                    | rad/sec   |
 | average density                                                        |             | \(5.522\)                                                                                    | g/cm^3^   |
 |                                                                        |             | \(344.7\)                                                                                    | lb/ft^3^  |
 | radius average                                                         | \(R_{avg}\) | \(6\,367\,444\)                                                                                | m         |
@@ -76,12 +76,12 @@ where \(\omega\) is the earth's rotation rate and \(R_x\) is the perpendicular d
 
 ![Rx determination][03004]
 
-For any centrifugal relief calculations associated with aircraft performance, it is sufficiently exact (g ±0.00004 *m*/*s*^2^) to use the average earth radius. An aircraft flying eastward contributes to centrifugal relief while a westbound aircraft diminishes it.
+For any centrifugal relief calculations associated with aircraft performance, it is sufficiently exact (g ±0.000 04 *m*/*s*^2^) to use the average earth radius. An aircraft flying eastward contributes to centrifugal relief while a westbound aircraft diminishes it.
 
 The International Association of Geodesy publishes the following equation (accurate to 0.005%) to calculate \(local sea level gravity including the effects of centrifugal relief for* *any point fixed to the earth\'s surface*
 
 \[
-g_{lsl} = 9.780327 \left( 1 + 0.005300224 \sin^2{\phi} - 0.000058 \sin^2{2 \phi} \right) \left[ \frac{m}{s^2} \right]
+g_{lsl} = 9.780 327 \left( 1 + 0.005 300 224 \sin^2{\phi} - 0.000 058 \sin^2{2 \phi} \right) \left[ \frac{m}{s^2} \right]
 \]
 
 The above equation is tabulated below for quick reference.
@@ -92,19 +92,19 @@ The above equation is tabulated below for quick reference.
   ------------- ----------------------- -------------------
                 \((m/s^2)\)             \((ft/s^2)\)
 
-  **0**         9.780327                32.088
+  **0**         9.780 327                32.088
 
-  **15**        9.783659                32.098
+  **15**        9.783 659                32.098
 
-  **30**        9.792866                32.188
+  **30**        9.792 866                32.188
 
-  **45**        9.805689                32.171
+  **45**        9.805 689                32.171
 
-  **60**        9.818795                32.214
+  **60**        9.818 795                32.214
 
-  **75**        9.828569                32.249
+  **75**        9.828 569                32.249
 
-  **90**        9.832185                32.258
+  **90**        9.832 185                32.258
   ---------------------------------------------------------
 
 The standard acceleration (\(g_o\)) corresponds to a latitude of 46.0625°.
@@ -127,17 +127,17 @@ Gravitational acceleration at any geometric altitude:
 +===========+===================+
 | 0         | 1                 |
 +-----------+-------------------+
-| 10        | 0.99904           |
+| 10        | 0.999 04           |
 +-----------+-------------------+
-| 20        | 0.99809           |
+| 20        | 0.998 09           |
 +-----------+-------------------+
-| 40        | 0.99618           |
+| 40        | 0.996 18           |
 +-----------+-------------------+
-| 60        | 0.99428           |
+| 60        | 0.994 28           |
 +-----------+-------------------+
-| 80        | 0.99238           |
+| 80        | 0.992 38           |
 +-----------+-------------------+
-| 100       | 0.99049           |
+| 100       | 0.990 49           |
 +-----------+-------------------+
 
 ### Actual Gravitational Pull on an Aircraft {-}
@@ -186,9 +186,9 @@ where \(N_z\) = normal load factor,
 |                                              |                       | 33.42 \(\sqrt{T_R}\) | miles/hr            |
 |                                              |                       | 29.04 \(\sqrt{T_R}\) | knots               |
 |                                              |                       | 20.05 \(\sqrt{T_R}\) | m/sec               |
-| Density                                      | \(\rho\)              | 0.0023769             | slug/ft^3^          |
+| Density                                      | \(\rho\)              | 0.002 3769             | slug/ft^3^          |
 |                                              |                       | 1.225                | kg/m^3^ (at 15°C) |
-| Specific weight                              | \(g_\rho\)            | 0.07647               | sec^2^/ft^4^        |
+| Specific weight                              | \(g_\rho\)            | 0.076 47               | sec^2^/ft^4^        |
 | Specific heat capacity at 59 °F (=\(T_o\)) |                       |                      |                     |
 | at constant pressure                         | \(c_p\)               | 0.240                 | BTU/lb R            |
 |                                              |                       | 1004.76              | J/kg K              |
@@ -307,15 +307,15 @@ Constantly changing atmospheric conditions cannot be duplicated at will to provi
 |                             |            | 518.67    | R                 |
 |                             |            | 59        | °F              |
 |                             |            | 15        | °C              |
-| Density                     | \(\rho_o\) | 0.0023769 | slgs/ft^3^        |
-| (at 15°C)                 |            | 0.07647   | lbm/in^3^         |
+| Density                     | \(\rho_o\) | 0.002 3769 | slgs/ft^3^        |
+| (at 15°C)                 |            | 0.076 47   | lbm/in^3^         |
 |                             |            | 1.255     | kg/m^3^           |
 | Speed of Sound              | \(a_o\)    | 1116.45   | ft/sec            |
 |                             |            | 661.478   | KTAS              |
 |                             |            | 761.14    | mph               |
 |                             |            | 340.294   | m/sec             |
 | Acceleration Due to Gravity | \(g_o\)    | 32.174    | ft/sec^2^         |
-|                             |            | 9.80665   | m/sec^2^          |
+|                             |            | 9.806 65   | m/sec^2^          |
 | Temperature Lapse Rate      | \(L\)      | 1.98      | K/kft or °C/kft |
 | (up to 36 000 ft or 11 km)  |            | 3.56      | °F/kft          |
 |                             |            | 6.49      | K/km              |
@@ -324,24 +324,24 @@ Constantly changing atmospheric conditions cannot be duplicated at will to provi
 
 Troposhere - below 36 089 ft (11 000 m) *\< 22636 Pa*
 
-θ = 1 − (L/*Το* ) *h* = 1-(6.8755856 x 10^-6^) *h*
+θ = 1 − (L/*Το* ) *h* = 1-(6.875 5856 x 10^-6^) *h*
 
 σ = θ^*n*-1^
 
 δ = θ*^n^*
 
-where *n* = 5.255876, *h* = geopotential altitude (ft)
+where *n* = 5.255 876, *h* = geopotential altitude (ft)
 
 Stratosphere- between 36 089 ft and 65 616 ft (20 000 m) the standard day temperature is a constant 216.65 *K*, therefore:
 
-θ = 0.751865
+θ = 0.751 865
 \* *![][03019]![][03020]The above relations characterize the standard atmosphere table in this handbook. They may be re-written to solve for pressure altitude (*H_p) for any ambient pressure. Below the tropopause (ambient pressure greater than 472.683 psf or 22632 Pa)
 
-*H*~p~ \[ft\] = \[1-(*P_a~/P_o)^0.1902632^\]/\[6.8755856 x 10^-6^\]
+*H*~p~ \[ft\] = \[1-(*P_a~/P_o)^0.190 2632^\]/\[6.875 5856 x 10^-6^\]
 
 In the troposphere (ambient pressure between 114.347 and 472.683 psf or between 5475 and 22632.1 Pascal)
 
-*H*~p~ \[ft\] = 36089+\[ln(*P_a~/P_o)+1.498966\]/ 0.000048063
+*H*~p~ \[ft\] = 36089+\[ln(*P_a~/P_o)+1.498 966\]/ 0.000 048 063
  **\
 **
 
@@ -463,7 +463,7 @@ The flatness factor (*f*) is defined as:
 
 $$f = \frac{a - b}{a}$$
 
-For the WGS84 model, *f* =1/298.257223563
+For the WGS84 model, *f* =1/298.257 223 563
 Because the earth is not perfectly spherical, there are various methods for defining latitude. Unlike the geocentric latitude which uses the earth's center for determining a point's latitude, the **geodetic latitude** (used herein) is the angle between the equatorial plane and a line *normal to the reference ellipsoid*. Figure 3.8-1 exaggerates this with a normal line being well offset from the earth's center. This definition leads to a degree of latitude being longer at the pole than at the equator: 111 694 m (60.3 nm) vs. 110 574 m (59.7 nm).
 
 The **geodetic longitude** of a point is the angle between a reference plane and a plane passing through the point, both planes being perpendicular to the equatorial plane.
@@ -522,7 +522,7 @@ where,
 
 *a* = semi-major axis radius (6 378 137 m; 20 925 647 ft)
 
-*e^2\ ^*= eccentricity squared; $e^{2} = 1 - \left( \frac{a}{b} \right)^{2} = 2 \bullet f - f^{2}$= 0.00669438002290 (Earth, per WGS84).
+*e^2\ ^*= eccentricity squared; $e^{2} = 1 - \left( \frac{a}{b} \right)^{2} = 2 \bullet f - f^{2}$= 0.006 694 380 02290 (Earth, per WGS84).
 
 Also useful is
 *M* = Meridian radius of curvature; distance from earth axis to any point on the geodetic surface at that longitude.
@@ -574,8 +574,8 @@ Figure 3.8-4a shows a case where the X-Y coordinate system aligns with the latit
 **Figure 3.8-4: Local X-Y Coordinate System Aligned with (a)**φ**,**λ **Grid; (b) Runway**
 
 Because each degree of latitude change is not always exactly 60 nm and because the spacing between degrees of longitude changes markedly with latitude, converting from degrees latitude & longitude change to distance requires scaling factors. First select equatorial distances for each degree change
-φ\_scale{φ=0} = 110 574 m = 362 776.6 ft = 59.70518 nm
-λ\_scale{φ=0} = 111 319.5 m = 365 221.4 ft = 60.10772 nm
+φ\_scale{φ=0} = 110 574 m = 362 776.6 ft = 59.705 18 nm
+λ\_scale{φ=0} = 111 319.5 m = 365 221.4 ft = 60.107 72 nm
 Use average latitude to calculate latitude and longitude scaling factors
 $\varnothing\_\text{scale} = \frac{\varnothing\_\mathrm{\text{scale}}\{\varnothing = 0\}}{\left\lbrack 1 - e^{2} \bullet \sin^{2}(\phi) \right\rbrack^{1.5}}$ $\mathrm{\lambda}\_\mathrm{\text{scale}} = \frac{\lbrack\lambda\_\text{scale}\{\varnothing = 0\}\rbrack \bullet cos\varnothing}{\sqrt{1 - e^{2} \bullet \sin^{2}(\phi)}}$
 
@@ -625,7 +625,7 @@ where
 \(T_{apt}\)* = airport temperature (Kelvin)
 
 \(T_0\) = standard day sea level temperature = 15 deg C = 288.15 K
-\(L\) = standard temperature lapse rate = -0.0065 K/m = -0.0019812 K/ft
+\(L\) = standard temperature lapse rate = -0.0065 K/m = -0.001 9812 K/ft
 \(Hp_{apt}\)* = airport pressure altitude ( = airport field elevation -- baro bias)
 
 \(Hp\) = aircraft pressure altitude ( = H_b~ -- baro bias)
@@ -633,10 +633,10 @@ where
 Note: ensure altitude units are consistent with lapse rate units.
 
 In lieu of the pilot adjusting the baro set knob to determine baro bias, it may be calculated using
-Baro bias = \(H_b\) - *Hp* = *H_b -- (29.92^0.1903^ -- PA^0.1903^)/0.00001313 \[ft\]
+Baro bias = \(H_b\) - *Hp* = *H_b -- (29.92^0.1903^ -- PA^0.1903^)/0.000 013 13 \[ft\]
 
 where
-PA = ambient pressure = {altimeter setting \[in Hg\]^0.1903^ -- *H_b(0.00001313)}^1/0.1903^
+PA = ambient pressure = {altimeter setting \[in Hg\]^0.1903^ -- *H_b(0.000 013 13)}^1/0.1903^
 
 Flight testers can use the above to verify the aircraft's temperature compensation system is working correctly. Data analysts can use these equations to more precisely determine geometric height above the ground--potentially useful for performance or pitot-static flyby testing.
 
