@@ -376,14 +376,16 @@ H_p \left[ \text{ft} \right] = 36\,089+ \frac{ \ln \left( \frac{P_a}{P_o} \right
 
 Standard Atmosphere Calculator Website Link <http://www.digitaldutch.com/atmoscalc/>
 
-## Section 3.5 Sea States**
+## Sea States
 
-(ref 3.3) Sea Stale
-International Swell Scale
+(ref 3.3) 
+
+### Sea Scale {-}
+
 +------+----------------------------------------------+----------------------+
 | Code | Sea                                          | Wave Height,         |
 |      |                                              |                      |
-|      |                                              | Crest to Trough (ft) |
+|      |                                              | Crest to Trough [ft] |
 +======+==============================================+======================+
 | 0    | Calm                                         | 0                    |
 +------+----------------------------------------------+----------------------+
@@ -406,6 +408,8 @@ International Swell Scale
 | 9    | Confused, Used as additional description 1-8 |                      |
 +------+----------------------------------------------+----------------------+
 
+### International Swell Scale {-}
+
   Code   Swell                                          In Open Sea
   ------ ---------------------------------------------- -----------------
   0      None                                           low
@@ -418,20 +422,15 @@ International Swell Scale
   7      Average
   8      Long
   9      Confused, Used as additional description 1-8
-**\
-**
 
-![][03026]## Section 3.6 Sunrise Sunset Times**
 
-**\
-**
+## Sunrise Sunset Times
 
-## Section 3.7 Crosswind Components**
+![Sunrise Sunset Times][03026]
 
-![][03027]
+## Crosswind Components
 
-**\
-**
+![Crosswind Components][03027]
 
 ## Section 3.8 Geodetic Measurements**
 
