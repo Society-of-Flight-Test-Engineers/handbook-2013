@@ -628,7 +628,7 @@ where ζ is the test GPS antenna's altitude.
 
 Although the long-used practice of matching the local altimeter setting has been sufficiently safe in the vast majority of operations, it in fact does not account for temperature deviation from standard conditions. Extreme temperature deviations cause a classic mechanical altimeter to display an MSL altitude erring by hundreds of feet. Modern technology allows calculating and displaying a more accurate altitude that corrects for temperature deviations. The following equation yields temperature-compensated altitude which better estimates geometric altitude above MSL, \(h_G. Calculations require knowledge of aircraft's baro and pressure altitudes and the terminal airport's temperature and pressure altitude. In lieu of pressure altitudes, calculations allow for implementing the field elevation (depicted on airport approach plates, etc.) and so-called baro bias. Baro bias is the displayed altitude shift when switching from local to standard altimeter setting.
 
-*h_G = *H_b + \[(*T_{ap}*~t~ -- *T_0)/*L* -- *Hp_{apt}*\]ln\[1 + *L*(*Hp* -- *Hp_{apt}*)/(*T_0 + *L\*Hp_{apt}*)\]
+*h_G = *H_b + \[(*T_{ap}*~t~ -- *T_0)/*L* -- *Hp_{apt}*\]\ln\[1 + *L*(*Hp* -- *Hp_{apt}*)/(*T_0 + *L\*Hp_{apt}*)\]
 
 where
 \(h_G\) = temperature-compensated altitude

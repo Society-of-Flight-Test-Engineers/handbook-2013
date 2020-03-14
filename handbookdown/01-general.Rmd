@@ -605,7 +605,7 @@ Exponent  Prefix  Abbreviation
 |DTC |data transfer cartridge|
 |DTIC |Defense Technical Information Center|
 |\(e\) |Oswald efficiency factor|
-|\(e\) |natural mathematical constant = 2.718 281 828 459|
+|\(\mathrm{e}\) |natural mathematical constant = 2.718 281 828 459|
 |E |energy|
 |E |lift-to-drag ratio ( \(C_L / C_D\) , \(L/D\) )|
 |EAS |equivalent airspeed|
@@ -754,7 +754,7 @@ Exponent  Prefix  Abbreviation
 |LCD |liquid crystal display|
 |LED |light emitting diode|
 |LLH |latitude, longitude, height|
-|ln |natural log, log to the base e|
+|\(\ln\) |natural log, log to the base \(\mathrm{e}\)|
 |LO |low observables|
 |Log |common log, to the base 10|
 |LOS |line of sight|
@@ -1526,9 +1526,9 @@ Development of **Poisson's Equation**:
 
 5) Substitution gives: \[dS = c_v\frac{dT}{T} + R \frac{dV}{V}\]
 
-6) Assume constant specific heat and integrate: \[s_2 - s_1 = c_v\,ln \frac{T_2}{T_1} + R\,ln \frac{V_2}{V_1}\]
+6) Assume constant specific heat and integrate: \[s_2 - s_1 = c_v\,\ln \frac{T_2}{T_1} + R\,\ln \frac{V_2}{V_1}\]
 
-7) Assuming a reversible adiabatic process: \[c_v\,ln \frac{T_2}{T_1} = - R\,ln \frac{V_2}{V_1}\]
+7) Assuming a reversible adiabatic process: \[c_v\,\ln \frac{T_2}{T_1} = - R\,\ln \frac{V_2}{V_1}\]
 
 8) Substitute \[c_v = R\frac{1}{\kappa - 1}\] to get: \[\frac{T_2}{T_1} = \Big( \frac{V_1}{V_2} \Big)^{\kappa -1}\]
 
@@ -1536,9 +1536,9 @@ Development of **Poisson's Equation**:
 
 10) Substitution into step \#2: \[T\,dS = dH - V\,dP\]
 
-11) Integrate: \[s_2 - s_1 = c_p\,ln \frac{T_2}{T_1} + R\,ln \frac{P_2}{P_1}\]
+11) Integrate: \[s_2 - s_1 = c_p\,\ln \frac{T_2}{T_1} + R\,\ln \frac{P_2}{P_1}\]
 
-12) Assuming a reversible adiabatic process: \[c_p\,ln \frac{T_2}{T_1} = - R\,ln \frac{P_2}{P_1}\]
+12) Assuming a reversible adiabatic process: \[c_p\,\ln \frac{T_2}{T_1} = - R\,\ln \frac{P_2}{P_1}\]
 
 13) Substitute \[c_v = R\frac{\kappa}{\kappa - 1}\] to get: \[\frac{T_2}{T_1} = \Big( \frac{P_2}{P_1} \Big)^{\frac{\kappa -1}{\kappa}}\]
 
