@@ -148,7 +148,7 @@ The *principle axes* are those about which the products of inertia are zero. The
 
 ![][06010]
 
-## 6.3 Euler Angles
+## Euler Angles
 (Reference 6.6.1)
 
 *Euler angles* are expressed as yaw, pitch, and roll.  The sequence--first yaw, then pitch, then roll--must be maintained to arrive at the proper orientation angles.  The Euler angles are defined as follows:
@@ -164,47 +164,36 @@ Bank Angle
 
 ![][06011]
 
-** 6.4 Flight Path Angles** (ref 6.6.3)
+## 6.4 Flight Path Angles
+(Reference 6.6.3)
 
-Just as the Euler angles define the attitude of the aircraft with respect to the Earth, three flightpath angles describe the vehicle\'s *cg* trajectory relative to the Earth (not the air mass).
+Just as the Euler angles define the attitude of the aircraft with respect to the Earth, three flight path angles describe the vehicle's *cg* trajectory relative to the Earth, not the air mass.
 
-*σ*  = Flight path heading angle; also known as ground track heading, is the horizontal angle between some reference direction (usually North) and the projection of the velocity vector on the horizontal plane. Positive rotation is from North to East.
+Flight path heading angle
+: \(\sigma\) - This angle, also known as ground track heading, is the horizontal angle between some reference direction (usually North) and the projection of the velocity vector on the horizontal plane.  Positive rotation is clockwise, from North to East.
 
-*γ* = Flightpath elevation angle; the vertical angle between the flightpath and the horizontal plane. Positive rotation is up. During a descent, this parameter is commonly known as glide path angle.
+Flight path elevation angle
+: \(\gamma\) - The vertical angle between the flightpath and the horizontal plane.  Positive angle is above the horizon. During a descent, this is commonly referred to as *glide path angle*.
 
-*μ*    = Flightpath bank angle; the angle between the plane formed by the velocity vector and the lift vector and the vertical plane containing the velocity vector. Positive rotation is clockwise about the velocity vector, looking forward.
+Flight path bank angle
+: \(\mu\) - The angle between the plane formed by the velocity vector and the lift vector and the vertical plane containing the velocity vector. Positive angle is clockwise about the velocity vector, looking forward.
 
->  
+The first two angles above are easily measured using ground-based radar, onboard GPS, or inertial reference systems.  If only \(\alpha, \beta\), andthe Euler angles are available, then we can calculate the flightpath angles, assuming zero wind, as follows.
+\[
+\begin{align}
+\gamma =& \arcsin [(\sin\theta  \cos\alpha - \cos\theta  \cos\phi  \sin\alpha) \cos\beta - \cos\theta  \sin\phi  \sin\beta] \\
+\sigma =& \psi + \arcsin \left[\frac{\cos\phi \sin\beta - \sin\phi \sin\alpha \cos\beta}{\cos\gamma} \right]\\
+\mu =& \arcsin\left[ \frac{\cos\theta \sin\phi \cos\beta + 
+(\sin\theta \cos\alpha -\cos\theta \cos\phi \sin\alpha)}{\cos\gamma}  \right]
+\end{align}
+\]
 
-The first two parameters above are easily measured using ground-based radar, or onboard GPS or inertial reference systems. If only *α*, *β*, and the Euler angles are available, then **assuming zero winds**, the flightpath angles can be calculated as
+Technically, the above equations describe the *velocity vector*, that is, the angles relative to the air mass. If the air mass is moving relative to the Earth, as is usually the case, the above equations *do not* describe the true flight path.
 
- 
+Ignorance of the difference between flight path and velocity vector angles can cause considerable confusion when analyzing data from different sources.
 
- 
-
-![][06012]![][06013] ![][06014]
-
- 
-
- 
-
- 
-
- 
-
-Technically, the above equations describe the **velocity vector** (angles relative to the air mass). If the air mass is moving relative to the Earth, as is usually the case, the above equations [do not]{.underline} describe the flight path.
-
- 
-
-*Editor's note: not knowing the difference between flightpath and velocity vector angles can cause considerable confusion when analyzing data from different sources.*
-
- 
-
- 
-
-**6.5 Axis System Transformations** (ref 6.6.2)
-
- 
+## 6.5 Axis System Transformations
+(Reference 6.6.2)
 
 Transformation matrix for converting forces, velocities or accelerations **from inertial (X, Y, Z) to body (*x, y, z*) axes**
 
