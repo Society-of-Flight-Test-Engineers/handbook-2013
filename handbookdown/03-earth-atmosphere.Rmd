@@ -76,7 +76,7 @@ where \(\omega\) is the earth's rotation rate and \(R_x\) is the perpendicular d
 
 ![Rx determination][03004]
 
-For any centrifugal relief calculations associated with aircraft performance, it is sufficiently exact (g ±0.000 04 *m*/*s*^2^) to use the average earth radius. An aircraft flying eastward contributes to centrifugal relief while a westbound aircraft diminishes it.
+For any centrifugal relief calculations associated with aircraft performance, it is sufficiently exact (g ±0.000 04 [m/s^2^]) to use the average earth radius. An aircraft flying eastward contributes to centrifugal relief while a westbound aircraft diminishes it.
 
 The International Association of Geodesy publishes the following equation (accurate to 0.005%) to calculate \(local sea level gravity including the effects of centrifugal relief for* *any point fixed to the earth\'s surface*
 
@@ -151,7 +151,7 @@ where \(V_G\) = ground speed and \(\sigma\) = ground track angle (0° = true Nor
 
 ### Gravity Influence on Aircraft Cruise Performance {-}
 
-Even at the same altitude, changes in gravity due to latitude or centrifugal relief directly alter the required lift, drag, and fuel flow. For example, with sufficiently precise instrumentation, data collected heading West could show about 0.5% more drag and fuel flow than data collected heading East (centrifugal relief effect). After determining test and standard (or mission) values for *g*, flight test values for *C_L, *C_D, drag, and fuel flow can be corrected to standard as follows:
+Even at the same altitude, changes in gravity due to latitude or centrifugal relief directly alter the required lift, drag, and fuel flow. For example, with sufficiently precise instrumentation, data collected heading West could show about 0.5% more drag and fuel flow than data collected heading East (centrifugal relief effect). After determining test and standard (or mission) values for \(g\), flight test values for *C_L, *C_D, drag, and fuel flow can be corrected to standard as follows:
 
 \[C_{L_{std}} = C_{L_i} \frac{N_{z_{\omega_{std}}}}{N_{Z_{\omega_i}}} \left[\frac{g_{std}}{g_{A/C}} \right] \]
 
@@ -181,7 +181,7 @@ where \(N_z\) = normal load factor,
 | Gas constant                                 | \(R\)                 | 53.35                | ft lb/R lbm         |
 |                                              |                       | 287.074              | J/kg K              |
 |                                              |                       | 1716                 | lb(ft)/slgs(R)    |
-|                                              |                       | 3089.7               | lb(ft)/slgs(*K*)    |
+|                                              |                       | 3089.7               | lb(ft)/slgs(K)    |
 | Speed of sound                               | \(a_o \sqrt{\theta}\) | 49.02 \(\sqrt{T_R}\) | ft/sec              |
 |                                              |                       | 33.42 \(\sqrt{T_R}\) | miles/hr            |
 |                                              |                       | 29.04 \(\sqrt{T_R}\) | knots               |
@@ -432,74 +432,80 @@ Standard Atmosphere Calculator Website Link <http://www.digitaldutch.com/atmosca
 
 ![Crosswind Components][03027]
 
-## Section 3.8 Geodetic Measurements**
+## Geodetic Measurements
 
 ### Acronyms, Abbreviations and Symbols {-}
 
-DGPS Differential Global Positioning System
-ECEF Earth Centered Earth Fixed coordinate system
-GPS Global Positioning System
-INS Inertial Navigation System
-WGS84 World Geodetic System 1984
-*a* Earth's semi-major axis radius
-*b* Earth's semi-minor axis radius
-*D* Great circle distance between two points
-*e* eccentricity of the Earth square
-*f* Earth's flatness factor
-*h* geodetic height
-*N* radius of curvature in prime vertical
-*P* radius of curvature in prime vertical
-$\overset{\rightarrow}{P}$ Vector from earth center extending to coordinates
-*r* Earth's radius
-*X* ECEF x coordinate
-*Y* ECEF y coordinate
-*Z* ECEF z coordinate
-φ Geodetic latitude
-ϕ Angle between the two $\overset{\rightarrow}{P}$ vectors originating at the Earth's center and extending to their respective coordinates at the start and end points.
+| Notation | Definition |
+|----------|------------|
+|DGPS| Differential Global Positioning System|
+|ECEF| Earth Centered Earth Fixed coordinate system|
+|GPS| Global Positioning System|
+|INS| Inertial Navigation System|
+|WGS84| World Geodetic System 1984|
+|\(a\) | Earth's semi-major axis radius|
+|\(b\) | Earth's semi-minor axis radius|
+|\(D\) | Great circle distance between two points|
+|\(e\) | eccentricity of the Earth square|
+|\(f\) | Earth's flatness factor|
+|\(h\) | geodetic height|
+|\(N\) | radius of curvature in prime vertical|
+|\(P\) | radius of curvature in prime vertical|
+|\(\overset{\rightarrow}{P}\)|  Vector from earth center extending to coordinates|
+|\(r\) | Earth's radius|
+|\(X\) | ECEF x coordinate|
+|\(Y\) | ECEF y coordinate|
+|\(Z\) | ECEF z coordinate|
+|\(\phi\)| Geodetic latitude|
+|\(\varphi\)| Angle between the two \(\overset{\rightarrow}{P}\) vectors originating at the Earth's center and extending to their respective coordinates at the start and end points.|
+|\(\lambda\)| Geodetic longitude|
+|\(\psi\)| Runway heading with respect to true North.|
 
-λ Geodetic longitude
-ψ Runway heading with respect to true North.
+### Earth Modeling {-}
 
-**[Earth Modeling]{.underline}**
+The Geodetic System defines the location of any point relative to the earth using latitude, longitude and height (Figure 3.8-1, point P). Longitude and latitude are expressed in degrees, minutes, seconds. Longitude lines extend \(\pm\) 180 degrees from the Prime Meridian, run north to south, and converge at the poles. Latitude lines are parallel to the equator and extend \(\pm\) 90°.
 
-The Geodetic System defines the location of any point relative to the earth using latitude, longitude and height (Figure 3.8-1, point P). Longitude and latitude are expressed in degrees, minutes, seconds. Longitude lines extend $\pm$ 180 degrees from the Prime Meridian, run north to south, and converge at the poles. Latitude lines are parallel to the equator and extend $\pm$ 90°.
+![][03100]
 
-![http://www.colorado.edu/geography/gcraft/notes/coordsys/gif/latlon2.gif]
+`http://www.colorado.edu/geography/gcraft/notes/coordsys/gif/latlon2.gif`
 
 **Figure 3.8-1 Geodetic Coordinate System**
 
-The 1984 world geodetic system, WGS84, models the earth's surface as an oblate spheroid - an ellipsoid rotated about its semi-minor axis. In this model, used by global positioning systems, the earth's semi-major axis, *a* is 6 378 137.0 meters and the semi-minor axis, *b is* 6 356 752.314 meters.
+The 1984 world geodetic system, WGS84, models the earth's surface as an oblate spheroid - an ellipsoid rotated about its semi-minor axis. In this model, used by global positioning systems, the earth's semi-major axis, \(a\) is 6 378 137.0 meters and the semi-minor axis, *b is* 6 356 752.314 meters.
 
-The flatness factor (*f*) is defined as:
+The flatness factor (\(f\)) is defined as:
 
-$$f = \frac{a - b}{a}$$
+\[f = \frac{a - b}{a}\]
 
-For the WGS84 model, *f* =1/298.257 223 563
+For the WGS84 model, \(f = \frac{1}{298.257\,223\,563}\)
+
 Because the earth is not perfectly spherical, there are various methods for defining latitude. Unlike the geocentric latitude which uses the earth's center for determining a point's latitude, the **geodetic latitude** (used herein) is the angle between the equatorial plane and a line *normal to the reference ellipsoid*. Figure 3.8-1 exaggerates this with a normal line being well offset from the earth's center. This definition leads to a degree of latitude being longer at the pole than at the equator: 111 694 m (60.3 nm) vs. 110 574 m (59.7 nm).
 
 The **geodetic longitude** of a point is the angle between a reference plane and a plane passing through the point, both planes being perpendicular to the equatorial plane.
 
-**Mathematically, the geodetic surface is a smooth ellipsoid modeling the earth's surface. Clearly, the topography (actual surface height) deviates from this model whenever land is above or below sea level. Less evident is that the actual sea level also deviates from the geodetic model due to local changes in the earth's gravity. Specifically, mass variations caused by changes in earth density and topography, such as mountains or trenches, change local gravity vectors and therefore sea level relative to the ellipsoid.**
+Mathematically, the geodetic surface is a smooth ellipsoid modeling the earth's surface. Clearly, the topography (actual surface height) deviates from this model whenever land is above or below sea level. Less evident is that the actual sea level also deviates from the geodetic model due to local changes in the earth's gravity. Specifically, mass variations caused by changes in earth density and topography, such as mountains or trenches, change local gravity vectors and therefore sea level relative to the ellipsoid.
 
 Reference to **Mean Sea Level** (MSL) served as the traditional way to express topographic or bathymetric height. Geodesists once considered the sea in balance with the earth\'s gravity and formed a perfectly regular figure. MSL is usually described as a tidal datum that is the arithmetic mean of hourly water elevations observed over a 19-year (Metonic) cycle. This definition averages out tidal highs and lows caused by the changing effects of the gravitational forces from the moon and sun. MSL defines the zero elevation (vertical datum) for a local area. Because the sea surface conforms to the earth\'s gravitational field, MSL also has slight hills and valleys similar to the land surface but much smoother. Zero elevation as defined by one nation is often not the same zero elevation defined by another, thus locally defined vertical datums differ from each other.
 
-**The Geoid is the equipotential surface in the earth's gravity field that coincides most closely with the mean sea level extended continuously under the continents. In other words, it approximates the level of any non-flowing water connected (actually or theoretically) to the seas by waterway or via trenches or tunnels.** The geoid s**urface** undulates relative to the geodetic ellipsoid and **is perpendicular to the local gravity vector -- as seen with a plumb line. Similarly, a spirit level defines the local surface parallel to the geoid, which is tangent to the local horizon. Because the geoid is an equipotential surface, it is the best datum for measuring potential energy** and is the true zero surface for measuring elevations**.** Previously, there was no way to accurately measure the geoid, so heights were measured relative to the similar MSL. **EGM96 (Earth Gravity Model 1996) represents the best geoid model currently available and shows smoothly changing surface undulations ranging from +85 to -107 meters relative to the WGS84 ellipsoid.**
+The **Geoid** is the equipotential surface in the earth's gravity field that coincides most closely with the mean sea level extended continuously under the continents. In other words, it approximates the level of any non-flowing water connected (actually or theoretically) to the seas by waterway or via trenches or tunnels. The geoid surface undulates relative to the geodetic ellipsoid and is perpendicular to the local gravity vector -- as seen with a plumb line. Similarly, a spirit level defines the local surface parallel to the geoid, which is tangent to the local horizon. Because the geoid is an equipotential surface, it is the best datum for measuring potential energy and is the true zero surface for measuring elevations. Previously, there was no way to accurately measure the geoid, so heights were measured relative to the similar MSL. **EGM96** (Earth Gravity Model 1996) represents the best geoid model currently available and shows smoothly changing surface undulations ranging from +85 to -107 meters relative to the WGS84 ellipsoid.
 
 The geoid surface cannot be directly observed, thus heights above or below it can\'t be directly measured. Instead the geoid surface is modeled mathematically using gravitational measurements. Although for practical purposes, at the coastline the geoid and MSL surfaces are assumed to be essentially the same, at some spots the geoid can actually differ from MSL by several meters.
 
-![http://principles.ou.edu/earth\_figure\_gravity/geoid/geoid-ellipsoidal-orthometric\_height.jpg]
+![][03101]
+
+`http://principles.ou.edu/earth\_figure\_gravity/geoid/geoid-ellipsoidal-orthometric\_height.jpg`
 
 **Figure 3.8-2 Height Comparisons**
 
-**Ellipsoidal height (h) is the same as geodetic height and is the geometric distance between an object and the earth ellipsoid (Figure 3.8-2). This may be a GPS output.**
+**Ellipsoidal height (h)** is the same as geodetic height and is the geometric distance between an object and the earth ellipsoid (Figure 3.8-2). This may be a GPS output.
 
-**Geoid height (N) is the height of the geoid above or below the ellipsoid. Some GPS devices output this undulation value in the data stream.**
+**Geoid height (N)** is the height of the geoid above or below the ellipsoid. Some GPS devices output this undulation value in the data stream.
 
 **Orthometric height (H)** is the geometric distance along a gravitational force line from a given point P to the geoid. This is essentially the conventional height measurement because the geoid approximates MSL- the traditional method for determining height.
 
 Modern GPS units typically include a geoid model (e.g. EGM-96) that provides N (geoid height over the WGS ellipsoid) at the current position. Such a unit can provide the height above geoid. If GPS height output is only available relative to the ellipsoid (h), then traditional Orthometric height (H) above the geoid can be obtained by subtracting the geoid height above the ellipsoid. \[http://www.esri.com/news/arcuser/0703/geoid1of3.html\]
 
-**[ECEF Transformations]{.underline}**
+### ECEF Transformations {-}
 
 For the purpose of performance, navigation, or noise analysis, flight testers may require distances between two points (the shortest being along the great circle arc) and the average heading of that arc. Calculating these from typical Geodetic System Lat/Long inputs requires conversion to the Earth Centered Earth Fixed (ECEF) coordinate system as shown in Figure 3.8-3.
 
@@ -511,36 +517,45 @@ The ECEF coordinate system is a Cartesian system with the origin at the earth's 
 
 Geodetic System (lat/long/height) data converts to ECEF as follows:
 
-*x* = (*N* + *h*)$\bullet$cos(φ)$\bullet$cos(λ)
-
-*y* = (*N* + *h*)$\bullet$cos(φ)$\bullet$sin(λ)
-
-*z* = (*N*$\bullet$*(1-\mathrm{e}^2^)* + *h*) $\bullet$sin(φ)
-
-where,
-
-*x* = ECEF coordinate parallel to the X-axis
-*y* = ECEF coordinate parallel to the Y-axis
-*z* = ECEF coordinate parallel to the Z-axis
-*φ* = geodetic latitude
-*λ* = geodetic longitude
-*h* = height above geodetic (ellipsoid) surface
-*N* = Normal radius of curvature; distance from earth axis to any point on the geodetic surface at that latitude (extension of r to axis shown in Figure 3.8-3).
-
-$$N = \frac{a}{\sqrt{1 - \mathrm{e}^{2} \bullet \sin^{2}(\phi)}}$$
+\[
+\begin{align}
+x &= \left(N + h \right)\cos{\varphi}\cos{\lambda} \\
+y &= \left(N + h \right)\cos{\varphi}\sin{\lambda} \\
+z &= \left(N \left[ 1-e^2 \right] + h \right) \sin{\varphi} \\
+\end{align}
+\]
 
 where,
 
-*a* = semi-major axis radius (6 378 137 m; 20 925 647 ft)
+\(x\) = ECEF coordinate parallel to the X-axis
 
-*\mathrm{e}^2\ ^*= eccentricity squared; $\mathrm{e}^{2} = 1 - \left( \frac{a}{b} \right)^{2} = 2 \bullet f - f^{2}$= 0.006\,694 380 02290 (Earth, per WGS84).
+\(y\) = ECEF coordinate parallel to the Y-axis
+
+\(z\) = ECEF coordinate parallel to the Z-axis
+
+\(\varphi\) = geodetic latitude
+
+\(\lambda\) = geodetic longitude
+
+\(h\) = height above geodetic (ellipsoid) surface
+
+\(N\) = Normal radius of curvature; distance from earth axis to any point on the geodetic surface at that latitude (extension of r to axis shown in Figure 3.8-3).
+
+\[N = \frac{a}{\sqrt{ \left(1 - e^2 \right) \sin^{2}{\phi}}}\]
+
+where,
+
+\(a\) = semi-major axis radius (6 378 137 m; 20 925 647 ft)
+
+\(e^2\) = eccentricity squared; \(e^{2} = 1 - \left( \frac{a}{b} \right)^{2} = 2f - f^{2}\) = 0.006 694 380 02290 (Earth, per WGS84).
 
 Also useful is
-*M* = Meridian radius of curvature; distance from earth axis to any point on the geodetic surface at that longitude.
 
-$$M = \frac{a(1 - \mathrm{e}^{2})}{\left\lbrack 1 - \mathrm{e}^{2} \bullet \sin^{2}(\phi) \right\rbrack^{1.5}}$$
+\(M\) = Meridian radius of curvature; distance from earth axis to any point on the geodetic surface at that longitude.
 
-**[Great Circle Calculations]{.underline}**
+\[M = \frac{a \left(1 - e^{2} \right)}{\left\lbrack \left( 1 - e^{2} \right)  \sin^{2}(\phi) \right\rbrack^{1.5}}\]
+
+### Great Circle Calculations {-}
 
 Any plane passing through the center of a spheroid traces a **Great Circle** around the perimeter of that spheroid. The shortest distance between two points on the surface is that portion of the great circle arc encompassing both points (Figure 3.8-3).
 
@@ -550,128 +565,164 @@ Any plane passing through the center of a spheroid traces a **Great Circle** aro
 
 Except when moving around the equator, navigating along a great circle route has the characteristic of intercepting longitude lines at different angles. In other words, the heading (or bearing) changes along the route. Analysis shows bearing [change]{.underline} along a great circle route:
 
-- Is never greater than the longitude difference between the end points.
-- Approaches the value of the longitude change as the final latitude approaches a pole (regardless of initial latitude).
-- Is smallest when the final latitude is at the equator (for this case, bearing change ≈ longitude change x initial latitude/100).
+* Is never greater than the longitude difference between the end points.
+* Approaches the value of the longitude change as the final latitude approaches a pole (regardless of initial latitude).
+* Is smallest when the final latitude is at the equator (for this case, bearing change ≈ longitude change x initial latitude/100).
 
 Calculate the **great circle distance (D)** between points (subscripts 1 and 2) as
-> $P_{1} = \sqrt{x_{1}^{2} + y_{1}^{2} + z_{1}^{2}}$, $\text{\ \ P}_{2} = \sqrt{x_{2}^{2} + y_{2}^{2} + z_{2}^{2}}$
 
-$${\overset{\rightarrow}{P}}_{1} \bullet {\overset{\rightarrow}{P}}_{2} = P_{1} \bullet P_{2}\cos\varphi = x_{1} \bullet x_{2} + y_{1} \bullet y_{2} + z_{1} \bullet z_{2}$$
-
-$$\varphi = \arccos\left( \frac{x_{1} \bullet x_{2} + y_{1} \bullet y_{2} + z_{1} \bullet \text{Zz}_{2}}{P_{1} \bullet P_{2}} \right)$$
-
-$$D = P_{\text{avg}} \bullet \varphi$$
+\[
+\begin{align}
+P_{1} &= \sqrt{x_{1}^{2} + y_{1}^{2} + z_{1}^{2}} \\
+P_{2} &= \sqrt{x_{2}^{2} + y_{2}^{2} + z_{2}^{2}} \\
+\overset{\rightarrow}{P}_{1}  \overset{\rightarrow}P_{2} &= P_{1} P_{2}\cos{\varphi} = x_{1} \cdot x_{2} + y_{1} \cdot y_{2} + z_{1} \cdot z_{2} \\
+\varphi &= \arccos\left( \frac{x_{1} \cdot x_{2} + y_{1} \cdot y_{2} + z_{1} \cdot z_{2}}{P_{1} \cdot P_{2}} \right) \\
+D &= P_{\text{avg}} \cdot \varphi
+\end{align}
+\]
 
 where
-*P* = distance from earth center to any point (including height above the spheroid surface).
+\(P\) = distance from earth center to any point (including height above the spheroid surface).
 
 $\overset{\rightarrow}{P}$ = Vector from the Earth's center to point P.
 
 ϕ = Angle between the two $\overset{\rightarrow}{P}$ vectors
-\<<http://www.movable-type.co.uk/scripts/latlong.html>\> provides equations an online tool for calculating great circle initial & final bearings (headings).
 
-**[\
-]{.underline}**
+<http://www.movable-type.co.uk/scripts/latlong.html> provides equations an online tool for calculating great circle initial & final bearings (headings).
 
-**[Local Distance Transformation]{.underline}**
+For shorter distances typical of local flight testing, the Great Circle model matches the following two-dimensional approximations.
 
-Latitude *φ*, longitude λ, and height (typical GPS output data) can be transformed into rectangular (X,Y,Z) coordinates. The following presents a method for applying this to two different coordinate systems, both with the X-Y axes defining the horizontal plane. This is useful when working with local distances associated with typical flight testing such as noise measurement, local navigation, or field performance.
+---------------------------------------------------- ------------------------------------------------
+Distance North-South (Northing)                      \(dy = N \cdot \sin\left( \Delta\phi \right)\)
+Earth’s radius East-West                             \(r = N \cdot \cos{\phi}\)
+Distance East-West (Easting)                         \(dx = r \cdot \sin\left(\Delta\lambda\right)\)
+2-D distance between two points                      \(D = \sqrt{dx^2 + dy^2}\)
+Heading between two points (relative to true north)  \(\Phi = \arctan \left( dy/dx \right) \)
+---------------------------------------------------- ------------------------------------------------
 
-Figure 3.8-4a shows a case where the X-Y coordinate system aligns with the latitude & longitude grid. Figure 3.8-4b shows a case where the X-Y coordinate system aligns with a runway, with Y=0 defining the centerline. In both cases, a designated primary reference datum \[*φ*~0~, λ~0~\], such as the runway centerline threshold, coincides with X=0, Y=0. With the example shown in Figure 3.8-4b, the opposite end of the runway centerline \[*φ*~1~, λ~1~\], coincides with X= *runway length* and Y= 0.
+An error analysis of the above 2-D **heading** approximation shows it consistently lies between the initial and final headings transpiring during great circle navigation and is closest to the final heading. This occurs when considering up to 10 degrees longitude change and is therefore sufficiently accurate for lesser changes that arise in flight testing (e.g. radial from a navigation transmitter).
+
+An error analysis of the above 2-D **distance** approximation shows accuracy within 0.6% of the great circle distance when changing latitude and longitude 1 degree, and within 3% when changing latitude and longitude 10 degrees. It is accurate to within 0.4% when changing only latitude or longitude 10 degrees.
+
+### Local Distance Transformation {-}
+
+Latitude \(\phi\), longitude \(\lambda\), and height (typical GPS output data) can be transformed into rectangular (X,Y,Z) coordinates. The following presents a method for applying this to two different coordinate systems, both with the X-Y axes defining the horizontal plane. This is useful when working with local distances associated with typical flight testing such as noise measurement, local navigation, or field performance.
+
+Figure 3.8-4a shows a case where the X-Y coordinate system aligns with the latitude & longitude grid. Figure 3.8-4b shows a case where the X-Y coordinate system aligns with a runway, with Y=0 defining the centerline. In both cases, a designated primary reference datum \(\phi_0, \lambda_0\), such as the runway centerline threshold, coincides with X=0, Y=0. With the example shown in Figure 3.8-4b, the opposite end of the runway centerline \(\phi_1, \lambda_1\), coincides with X = runway length and Y = 0.
 
 ![][03030]
 
-**Figure 3.8-4: Local X-Y Coordinate System Aligned with (a)**φ**,**λ **Grid; (b) Runway**
+**Figure 3.8-4: Local X-Y Coordinate System Aligned with (a) \(\phi\), \(\lambda\) Grid; (b) Runway**
 
 Because each degree of latitude change is not always exactly 60 nm and because the spacing between degrees of longitude changes markedly with latitude, converting from degrees latitude & longitude change to distance requires scaling factors. First select equatorial distances for each degree change
-φ\_scale{φ=0} = 110 574 m = 362 776.6 ft = 59.705 18 nm
-λ\_scale{φ=0} = 111 319.5 m = 365 221.4 ft = 60.107 72 nm
+
+\[
+\begin{align}
+\phi_{\text{scale}} \left\{ \phi = 0 \right\} &= 110\,574 \text{m} = 362\,776.6 \text{ft} = 59.705\,18 \text{nm} \\
+\lambda_{\text{scale}} \left\{ \phi = 0 \right\} &= 111\,319.5 \text{m} = 365\,221.4 \text{ft} = 60.107\,72 \text{nm} \\
+\end{align}
+\]
+
 Use average latitude to calculate latitude and longitude scaling factors
-$\varnothing\_\text{scale} = \frac{\varnothing\_\mathrm{\text{scale}}\{\varnothing = 0\}}{\left\lbrack 1 - \mathrm{e}^{2} \bullet \sin^{2}(\phi) \right\rbrack^{1.5}}$ $\mathrm{\lambda}\_\mathrm{\text{scale}} = \frac{\lbrack\lambda\_\text{scale}\{\varnothing = 0\}\rbrack \bullet cos\varnothing}{\sqrt{1 - \mathrm{e}^{2} \bullet \sin^{2}(\phi)}}$
+
+\[
+\begin{align}
+\phi_{\text{scale}} &= \frac{\phi_{\text{scale}} \left\{ \phi = 0 \right\} }{ \left\lbrack \left( 1 - e^{2} \right)  \sin^{2}(\phi) \right\rbrack^{1.5} } \\
+\\
+\lambda_{\text{scale}} &= \frac{\lbrack \lambda_{\text{scale}} \left\{ \phi = 0 \right\} \rbrack \cdot \cos{\phi}}{\sqrt{ \left(1 - e^2 \right) \sin^{2}{\phi}}} \\
+\end{align}
+\]
 
 Calculate X and Y components of distances aligned with the latitude & longitude grid (Figure 3.8-4a)
 
-Y = *φ* \_scale·(*φ* ~1~ - *φ* ~0~)
-
-X = λ\_scale·(λ~1~ - λ~0~)
+\[
+\begin{align}
+Y = \phi_{\text{scale}} \left(\phi_1 - \phi_0 \right) \\
+X = \lambda_{\text{scale}} \left(\lambda_1 - \lambda_0 \right) \\
+\end{align}
+\]
 
 The 2-D *local* (vice great circle) distance between any two points on the X-Y plane is
-D = (X^2^ + Y^2^)^1/2^
 
-For field performance work, it is preferable to align X & Y with the runway as shown in Figure 3.8-4b. To convert from grid-aligned to runway-aligned coordinates, apply a rotation matrix that ensures X remains positive when going from point \[*φ* ~0~, λ~0~\] towards \[*φ* ~1~, λ~1~\]. The rotation angle, *ψ*, is positive counter-clockwise from true East to the direction of the runway. \[Note: do not confuse *ψ* with runway heading measured relative to magnetic north\]. The function
-*ψ* = atan2(X, Y)
+\[D = \sqrt{X^2 + Y^2} \]
 
-returns rotation angles from - π to π, so that rotating to headings between 90° and 270° results in
-negative rotation angles.
+For field performance work, it is preferable to align X & Y with the runway as shown in Figure 3.8-4b. To convert from grid-aligned to runway-aligned coordinates, apply a rotation matrix that ensures X remains positive when going from point \(\phi_0, \lambda_0\) towards \(\phi_1, \lambda_1\). The rotation angle, \(\psi\), is positive counter-clockwise from true East to the direction of the runway. [Note: do not confuse \(\psi\) with runway heading measured relative to magnetic north]. 
 
-For any point \[*φ*, λ\], calculate runway-aligned X & Y distances using
-X = *φ* \_scale·(* φ* - *φ* ~0~)·sin(*ψ*) + λ\_scale·(λ - λ~0~)·cos(*ψ*)
+The function \(\psi = \mathrm{atan2} \left( X,Y \right) \) returns rotation angles from \(-\pi\) to \(\pi\), so that rotating to headings between 90° and 270° results in negative rotation angles.
 
-Y = *φ* \_scale·(* φ* - *φ* ~0~)·cos(*ψ*) -- λ\_scale·(λ - λ~0~)·sin(*ψ*)
+For any point (\(\phi, \lambda\)), calculate runway-aligned X & Y distances using
 
-This provides a right-handed rectangular coordinate system where X is positive from \[*φ* ~0~, λ~0~\] towards \[*φ*~1~, λ~1~\] and Y is positive left of the runway centerline (Figure 3.8-4b).
+\[
+\begin{align}
+X &= \phi_{\text{scale}} \left(\phi - \phi_0 \right)\sin{\psi} + \lambda_{\text{scale}} \left(\lambda - \lambda_0 \right)\cos{\psi} \\
+Y &= \phi_{\text{scale}} \left(\phi - \phi_0 \right)\cos{\psi} - \lambda_{\text{scale}} \left(\lambda - \lambda_0 \right)\sin{\psi} \\
+\end{align}
+\]
+
+This provides a right-handed rectangular coordinate system where X is positive from (\(\phi_0, \lambda_0\)) towards (\(\phi_1, \lambda_1\)) and Y is positive left of the runway centerline (Figure 3.8-4b).
 
 Calculating aircraft height Z above the X-Y plane requires defining where the X-Y plane lies. An analyst may define Z=0 at some arbitrary height (i.e. GPS altitude at the beginning of a maneuver) and consider only changes from that reference.
 
 For field performance, it is typical to use the runway altitude as the reference. Because runway altitudes vary however, height should be surveyed and modeled or tabulated as a function runway centerline position, H{X}. For best accuracy, the runway survey accounts for GPS antenna height above the surface. Airplane height above the X-Y plane (Z) is then
-Z = ζ -- H{X}
 
-where ζ is the test GPS antenna's altitude.
+\[Z = \zeta - H\{X\}\]
 
-> .
+where \(\zeta\) is the test GPS antenna's altitude.
+
+Note: Analysts can determine Z using either Orthometric height above the geoid (H) or above the geodetic surface (h) – as long as the runway surface model H{X} uses the same reference.
 
 ## Temperature Compensated Barometric Altitude
 
 **Background:** Pressure altitude is the geopotential height above mean sea level (MSL) associated with atmospheric pressure on a theoretical standard day. Geopotential height is almost identical to geometric (a.k.a. tapeline) altitude, as seen in page 03-5. Altimeters set at 29.92 in Hg (or 1013 HPa) display pressure altitude. An altimeter's baro-set knob allows pilots to bias the pressure vs. altitude relation so it matches sea level pressure for non-standard conditions. Matching the local altimeter setting (known as setting QNH in many parts of the world) adjusts the altimeter so it displays nearly the same altitude above MSL for non-standard pressure conditions. The correct setting is critical for terrain & obstacle clearance when the pilot's visibility is low.
 
+Note: When operating well above terrain and obstacles, it is more critical to ensure all aircraft use the same altimeter setting so they de-conflict with each other. Because chances are high that pilots might not know of or properly re-set the altimeter numerous times during high altitude flights, aviation authorities established transition altitudes. When climbing above the transition altitude, all pilots must set altimeters to read pressure altitude (baro setting at 29.92 or 10113 HPa, known as QNE or standard baro setting). Different countries use different transition altitudes (e.g. 18,000 ft MSL in U.S. and Canada; 14,000 ft MSL in Japan; 3,000 ft MSL in The Netherlands). Regardless of the transition altitude, pilots and air traffic controllers refer to altitudes above it as a “Flight Level.” Flight level is abbreviated as FL and is quoted in hundreds of feet above MSL. For example operating at 36,000 ft (always pressure altitude above MSL) is abbreviated as FL360. 
+
 Although the long-used practice of matching the local altimeter setting has been sufficiently safe in the vast majority of operations, it in fact does not account for temperature deviation from standard conditions. Extreme temperature deviations cause a classic mechanical altimeter to display an MSL altitude erring by hundreds of feet. Modern technology allows calculating and displaying a more accurate altitude that corrects for temperature deviations. The following equation yields temperature-compensated altitude which better estimates geometric altitude above MSL, \(h_G. Calculations require knowledge of aircraft's baro and pressure altitudes and the terminal airport's temperature and pressure altitude. In lieu of pressure altitudes, calculations allow for implementing the field elevation (depicted on airport approach plates, etc.) and so-called baro bias. Baro bias is the displayed altitude shift when switching from local to standard altimeter setting.
 
-*h_G = *H_b + \[(*T_{ap}*~t~ -- *T_0)/*L* -- *Hp_{apt}*\]\ln\[1 + *L*(*Hp* -- *Hp_{apt}*)/(*T_0 + *L\*Hp_{apt}*)\]
+\[h_G = H_b + \frac{T_{\text{apt}} - T_0}{L - Hp_{\text{apt}} } \ln \left[ 1 + \frac{L \left( H_p - H_{p_{\text{apt}}} \right) }{T_0 + L H_{p_{\text{apt}}}} \right]\]
 
 where
 \(h_G\) = temperature-compensated altitude
+
 \(H_b\) = baro altitude (displayed when altimeter is set to local value)
 
-\(T_{apt}\)* = airport temperature (Kelvin)
+\(T_{\text{apt}}\) = airport temperature (Kelvin)
 
 \(T_0\) = standard day sea level temperature = 15 deg C = 288.15 K
-\(L\) = standard temperature lapse rate = -0.0065 K/m = -0.001 9812 K/ft
-\(Hp_{apt}\)* = airport pressure altitude ( = airport field elevation -- baro bias)
 
-\(Hp\) = aircraft pressure altitude ( = H_b~ -- baro bias)
+\(L\) = standard temperature lapse rate = -0.0065 K/m = -0.001 9812 K/ft
+
+\(H_{p_{\text{apt}}}\) = airport pressure altitude ( = airport field elevation - baro bias)
+
+\(H_p\) = aircraft pressure altitude ( = H_b - baro bias)
 
 Note: ensure altitude units are consistent with lapse rate units.
 
 In lieu of the pilot adjusting the baro set knob to determine baro bias, it may be calculated using
-Baro bias = \(H_b\) - *Hp* = *H_b -- (29.92^0.1903^ -- PA^0.1903^)/0.000 013 13 \[ft\]
+
+Baro bias = \(H_b - H_p = H_b - \frac{29.92^{0.1903} - PA^{0.1903}}{0.000\,013\,13}\) [ft]
 
 where
-PA = ambient pressure = {altimeter setting \[in Hg\]^0.1903^ -- *H_b(0.000 013 13)}^1/0.1903^
+
+PA = ambient pressure = {altimeter setting [in Hg]^0.1903^ - \(H_b\)(0.000 013 13)}^1/0.1903^
 
 Flight testers can use the above to verify the aircraft's temperature compensation system is working correctly. Data analysts can use these equations to more precisely determine geometric height above the ground--potentially useful for performance or pitot-static flyby testing.
 
-## Section 3.10 References**
+## References
 
-** **
-
-3.1 Anon., "Aeronautical Vestpocket Handbook" ,Part No. P&W
-079500, United Technologies Pratt & Whitney, Canada, 1990.
+3.1 Anon., "Aeronautical Vestpocket Handbook" ,Part No. P&W 079500, United Technologies Pratt & Whitney, Canada, 1990.
 
 3.2 Lawless, Alan. R. et al, "Aerodynamics for Flight Testers", National Test Pilot School, P.O. Box 658, Mojave CA, 93501, 1999.
 
 3.3 Denno, Richard R., et al "AIAA Aerospace Design Engineers Guide" ISBN 0-930403-21-5, AIAA, 1987.
 
-3.4 Global Positioning System Overview, Peter H. Dana, Department of Geography, University of Texas
-at Austin, 1994. ([[www.colorado.edu/geography/gcraft/notes/gps/gps\_f.html]{.underline}])
+3.4 Global Positioning System Overview, Peter H. Dana, Department of Geography, University of Texas at Austin, 1994. [[www.colorado.edu/geography/gcraft/notes/gps/gps_f.html](www.colorado.edu/geography/gcraft/notes/gps/gps_f.html)]
 
-3.5 Charles D Ghilani, Penn State College of Engineering, 2008 (http://surveying.wb.psu.edu/sur351/georef/ Ellip4.htm) \<[[www.colorado.edu/geography/gcraft/notes/gps/gps\_f.html]{.underline}]\>
+3.5 Charles D Ghilani, Penn State College of Engineering, 2008 [[http://surveying.wb.psu.edu/sur351/georef/Ellip4.htm](http://surveying.wb.psu.edu/sur351/georef/Ellip4.htm)] [[www.colorado.edu/geography/gcraft/notes/gps/gps_f.html](www.colorado.edu/geography/gcraft/notes/gps/gps_f.html)]
 
-3.6 Standard Atmosphere Calculator Website Link [[http://www.digitaldutch.com/atmoscalc/]{.underline}].
+3.6 Standard Atmosphere Calculator Website Link [[http://www.digitaldutch.com/atmoscalc/](http://www.digitaldutch.com/atmoscalc/)].
 
-3.7 Movable Type Scripts. \<[<http://www.movable-type.co.uk/scripts/latlong.html>\>]{.underline}
-
-**\[**Calculate distance, bearing and more between Latitude/Longitude points**\]**
+3.7 Movable Type Scripts. [[http://www.movable-type.co.uk/scripts/latlong.html](http://www.movable-type.co.uk/scripts/latlong.html)]. [Calculate distance, bearing and more between Latitude/Longitude points]
 
   [03001]: media/03/image1.svg {width="0.6673611111111111in" height="0.4583333333333333in"}
   [03002]: media/03/image2.svg {width="1.7416666666666667in" height="0.6805555555555556in"}
@@ -700,8 +751,8 @@ at Austin, 1994. ([[www.colorado.edu/geography/gcraft/notes/gps/gps\_f.html]{.un
   [03025]: media/03/image26.jpeg {width="6.990277777777778in" height="8.995138888888889in"}
   [03026]: media/03/image27.png {width="6.999305555555556in" height="8.748611111111112in"}
   [03027]: media/03/image28.png {width="6.999305555555556in" height="6.999305555555556in"}
-  [http://www.colorado.edu/geography/gcraft/notes/coordsys/gif/latlon2.gif]: media/03/image29.gif {width="4.71665135608049in" height="3.3229166666666665in"}
-  [http://principles.ou.edu/earth\_figure\_gravity/geoid/geoid-ellipsoidal-orthometric\_height.jpg]: media/03/image30.jpeg {width="4.69963145231846in" height="2.632075678040245in"}
+  [03100]: media/03/image29.gif {width="4.71665135608049in" height="3.3229166666666665in"}
+  [03101]: media/03/image30.jpeg {width="4.69963145231846in" height="2.632075678040245in"}
   [03028]: media/03/image31.svg {width="4.3740780839895015in" height="4.462264873140858in"}
   [03029]: media/03/image32.svg {width="3.3050623359580054in" height="3.3113199912510938in"}
   [03030]: media/03/image33.png {width="6.0in" height="2.441666666666667in"}
