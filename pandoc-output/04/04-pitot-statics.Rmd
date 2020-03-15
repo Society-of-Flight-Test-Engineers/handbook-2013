@@ -73,7 +73,7 @@ T~a~ = ambient temperature (absolute scale)
 
 T~o~ =ambient temperature at sea level on a std day
 
-(=288.15 ^o^K = 15 ^o^C = 518.7 ^o^R = 59 ^o^F)
+(=288.15 K = 15 °C = 518.7 °R = 59 °F)
 
 T~T~ = total temperature (absolute scale)
 

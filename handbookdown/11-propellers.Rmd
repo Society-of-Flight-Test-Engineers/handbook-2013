@@ -178,11 +178,11 @@ total width ratio (*TWR*) measured as \[*WR* x *B*\]
 
  
 
-thickness ratio (*TR*) blade thicknessmeasured locally or at .75*R* to represent entire prop.
+thickness ratio (*TR*) blade thicknessmeasured locally or at  0.75*R* to represent entire prop.
 
  
 
-width ratio (*WR*) calculated as {*b* @ .75*R* } / *D*
+width ratio (*WR*) calculated as {*b* @  0.75*R* } / *D*
 
  
 

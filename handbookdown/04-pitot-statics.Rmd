@@ -36,7 +36,7 @@
 | \(\Delta V_{pc}\) | airspeed position error correction                                                                               |
 | \(\delta\)        | pressure ratio between ambient and sea level std (\(=P_a/P_0\))                                                  |
 | \(\theta\)        | temperature ratio between ambient and sea level std (\(=T_a/T_0\))                                               |
-| \(\rho_0\)        | ambient density at sea level on a std day (\(=0.002377 slg/ft^3\))                                               |
+| \(\rho_0\)        | ambient density at sea level on a std day (\(=0.002 377 slg/ft^3\))                                               |
 | \(\sigma\)        | density ratio between ambient and sea level std (\(=P_a/P_0\))                                                   |
 | \(\gamma\)        | ratio of specific heats (\(=1.4\) for air)                                                                       |
 
@@ -117,7 +117,7 @@ True Airspeed
 
 \[ \frac{P_T' - P_a}{P_a} = \frac{q_c}{P_a} = \left[ \frac{\gamma + 1}{2} \left(  \frac{V}{a} \right)^2  \right]^\frac{\gamma}{\gamma-1} \left[ \frac{1}{ \frac{2\gamma}{\gamma+1} \left( \frac{V}{a} \right)^2 - \frac{\gamma-1}{\gamma+1} }  \right]^\frac{1}{\gamma-1} - 1 \]
 
-Equivalent Airspeed (valid if \(q_c/P_a > 0.892929158 \))
+Equivalent Airspeed (valid if \(q_c/P_a > 0.892 929 158 \))
 
 \[ \frac{q_c}{P_a} = \frac{166.92 \left[ \frac{V_e}{a_0 \sqrt{\sigma}} \right]^7} {\left( 7 \left[ \frac{V_e}{a_0 \sqrt{\sigma}} \right]^2 - 1 \right)^{2.5}} - 1 \]
 
@@ -159,9 +159,9 @@ Plot \(T_i\) vs \(M^2\)
 
 ## Altimeter Equation
 
-\(P_a = P_0 \left(1-6.87535 \times 10^{-6} H\right)^{5.256}\) below 36,089 ft
+\(P_a = P_0 \left(1-6.875 35 \times 10^{-6} H\right)^{5.256}\) below 36,089 ft
 
-\(P_a = P_0 \left(0.22335 \right) \textrm{e}^{-0.00004806[H-36089]}\) above 36,089 ft
+\(P_a = P_0 \left(0.223 35 \right) \textrm{e}^{-0.000 048 06[H-36089]}\) above 36,089 ft
 
 <!--- FIXME: This figure really tells you nothing --->
 ![][04015]

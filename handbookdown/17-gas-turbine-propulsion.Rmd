@@ -197,7 +197,7 @@ where
 
 $$\varphi = \frac{718.2\left( \theta_{2} \right)^{3/2}}{T_{t2} + 199.5},\ \delta_{2} = \frac{P_{t2}}{2116},\ \theta_{2} = \frac{T_{t2}}{518.7}$$
 
-Here, P~t2~ is in psf, and T~t2~ is in degrees Rankin.
+Here, P~t2~ is in psf, and T~t2~ is in degrees Rankine.
 
 P~t2~ and T~t2~ are assumed to be equal to aircraft total pressure and temperature. The actual in-flight Reynolds Number Index depends on inlet recovery losses, since these are the conditions in which the engine is operating.
 

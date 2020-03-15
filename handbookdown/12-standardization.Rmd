@@ -464,7 +464,7 @@ GE~CL~ *\<* 1
 
  
 
-where the ground effect factor, GE~CD~ = \[0.2412 ln(*h/b*)+1.0829\] The above correction is *not used* above the height that predicts
+where the ground effect factor, GE~CD~ = \[0.2412 \ln(*h/b*)+1.0829\] The above correction is *not used* above the height that predicts
 
 GE~CD~ *\>* 1
 
@@ -804,7 +804,7 @@ head wind, *V~w\ ~*wing aspect ratio*, AR*
 
 net thrust, *F~n\ ~*(*F~n~ = F~g~ cosα --F~e~*) wing Oswald efficiency factor*, e*
 
-time increment, ∆*t* (.05 sec works well)
+time increment, ∆*t* ( 0.05 sec works well)
 
 height of wing above ground when on gear, *h~wing~*
 
@@ -838,7 +838,7 @@ initial trim speed, *V~T\ ~*=\[2*N~z~W*/*ρC~L~S*\]^1/2^
 
 7\) *h* = (*h*dot + \[*h*dot\]')∆*t/*2 + *h*'
 
-8\) *C~Di~*~IGE~ = *C~Di~*~OGE~ GE~CD~ = \[*C~L~*^2^/π*AR*e\]\[0.2412 ln(*h/b*)+1.0829\]
+8\) *C~Di~*~IGE~ = *C~Di~*~OGE~ GE~CD~ = \[*C~L~*^2^/π*AR*e\]\[0.2412 \ln(*h/b*)+1.0829\]
 
 9\) *C~D~* = *C~Do~* +*C~Di~*~IGE~
 

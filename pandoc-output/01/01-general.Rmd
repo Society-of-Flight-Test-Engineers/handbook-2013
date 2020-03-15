@@ -654,13 +654,13 @@ pounds/in^2^ 27.681 inches of H~2~O
 >
 >  
 
-**Temperature Kelvin = ^o^*C*+273.15^o^**
+**Temperature Kelvin = °C+273.15°**
 
-**Rankin = ^o^*F* + 459.67^o^**
+**Rankin = °*F* + 459.67°**
 
-**^o^Centigrade = \[^o^*F* − 32^o^\] 5/9**
+**°Centigrade = \[°*F* − 32°\] 5/9**
 
-> ^o^Fahrenheit = (9/5)^o^*C* + 32
+> °Fahrenheit = (9/5)°C + 32
 
 ** **
 
@@ -1134,7 +1134,7 @@ Btu British thermal unit
 
 BW bandwidth
 
-^o^*C* degrees centigrade\...see *T*
+°C degrees centigrade\...see *T*
 
 c brake specific fuel consumption (BSFC)
 
@@ -1352,7 +1352,7 @@ EW early warning
 
 EW electronic warfare
 
-^o^*F* degrees Fahrenheit
+°*F* degrees Fahrenheit
 
 *f* frequency\...hertz (originally cycles per second)
 
@@ -1770,7 +1770,7 @@ Q engine torque
 
 q~c~ impact pressure (*P~t~* − *P~a~*)
 
-^o^*R* degrees Rankine = ^o^*F* + 459.67
+°*R* degrees Rankine = °*F* + 459.67
 
 R perfect gas constant = 8314.34 \[J/kmol K\]
 
@@ -1928,7 +1928,7 @@ TMN true Mach number
 
 T/O takeoff
 
-T~o~ standard sea level temperature (59.0 ^o^F, 15 ^o^C)
+T~o~ standard sea level temperature (59.0 °F, 15 °C)
 
 TO technical order
 
@@ -2726,13 +2726,13 @@ Development of **Specific Heat Relations**
 
 specific heat at constant pressure
 
-(for air = 1004.76 J/\[kg ^o^K\])
+(for air = 1004.76 J/\[kg K\])
 
  
 
 ![][10] specific heat at constant volume
 
-(for air = 717.986 J/\[kg ^o^K\])
+(for air = 717.986 J/\[kg K\])
 
  
 
