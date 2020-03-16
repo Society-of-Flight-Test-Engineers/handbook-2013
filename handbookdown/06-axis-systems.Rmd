@@ -195,69 +195,163 @@ Ignorance of the difference between flight path and velocity vector angles can c
 ## 6.5 Axis System Transformations
 (Reference 6.6.2)
 
-Transformation matrix for converting forces, velocities or accelerations **from inertial (X, Y, Z) to body (*x, y, z*) axes**
+Transformation matrix for converting forces, velocities or accelerations from *earth axis system*, also known as inertial, \([X, Y, Z]\), to body coordinates \( [x, y, z] \).
+\[
+\begin{bmatrix}
+x_b \\
+y_b \\
+z_b
+\end{bmatrix} = 
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & \cos\phi & \sin\phi \\
+0 & -\sin\phi & \cos\phi
+\end{bmatrix}
+\begin{bmatrix}
+\cos\theta & 0 & -\sin\theta \\
+0 & 1 & 0 \\
+\sin\theta & 0 & \cos\theta
+\end{bmatrix}
+\begin{bmatrix}
+\cos\psi & \sin\psi & 0 \\
+-\sin\psi & \cos\psi & 0 \\
+0 & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+X \\
+Y \\
+Z 
+\end{bmatrix}
+\]
 
-![][06015] 
+This yields
+\[
+\begin{bmatrix}
+x_b \\
+y_b \\
+z_b
+\end{bmatrix} = 
+\begin{bmatrix}
+\cos\theta \cos\psi & \cos\theta \sin\psi & -\sin\theta \\
+-\cos\theta \sin\psi + \sin\phi \sin\theta \cos\psi & \cos\phi \cos\psi + \sin\phi \sin\theta \sin\psi  & \sin\phi \cos\theta \\
+\sin\phi \sin\psi + \cos\phi \sin\theta \cos\psi & -\sin\phi \cos\psi + \cos\phi \sin\theta \sin\psi & \cos\phi \cos\theta
+\end{bmatrix}
+\begin{bmatrix}
+X \\
+Y \\
+Z 
+\end{bmatrix}
+\]
 
- 
+The inverse of the above transform matrix converts from the body axis to the inertial axis coordinate system.
+\[
+\begin{bmatrix}
+X \\
+Y \\
+Z
+\end{bmatrix} = 
+\begin{bmatrix}
+\cos\theta \cos\psi & - \cos\phi \sin\psi + \sin\phi \sin\theta \cos\psi & \sin\phi \sin\psi + \cos\phi \sin\theta \cos\psi \\
+\cos\theta \sin\psi & \cos\phi \cos\psi + \sin\phi \sin\theta \sin\psi & -\sin\phi \cos\psi + \cos\phi \sin\theta \sin\psi  \\
+-\sin\theta & \sin\phi \cos\theta & \cos\phi \cos\theta
+\end{bmatrix}
+\begin{bmatrix}
+x_b \\
+y_b \\
+z_b 
+\end{bmatrix}
+\]
 
- 
+### Acceleration Transformations
 
- 
+First, we convert body-axis angular rates and linear accelerations into total accelerations along the body axes.
+\[
+\begin{align}
+a_x =& \dot{u} + qw - rv \\
+a_y =& \dot{v} + ru -pw \\
+a_z =& \dot{w} + pv - qu
+\end{align}
+\]
 
- 
+![][06019]
 
-Expanding gives:
+We also convert the location and rates of mass elements, \(m_1\), into specific angular momentum.
+\[
+\begin{align}
+\frac{H}{m_1} =& \, r_1 \times [\bar{\omega} \times \bar{r_1}] \\
+=& \, p(y^2 + z^2) - q(xy) - r(xz)\\
+=& \, q(x^2+z^2) - r(yz) - p(xy)\\
+=& \, r(x^2+y^2) - p(xz) - q(yz)
+\end{align}
+\]
 
- 
+### Transformations between body axis rates and Euler angle rates
+\[
+\begin{align}
+p =& \, \dot{\phi} -\dot{\psi} \sin\theta\\
+q =& \, \dot{\theta} \cos\phi + \dot{\psi} \cos{\theta} \sin{\phi}\\
+r =& \, \dot{\psi} \cos\theta \cos\phi - \dot{\theta} \sin\phi\\
+\dot{\phi} =& \, p + \tan\theta(q \sin\phi + r\cos\phi) \\
+\dot{\theta}=& \, q \cos\phi - r\sin\phi\\
+\dot{\psi} =& \frac{q \sin\phi + r \cos\phi}{\cos\theta} \, 
+\end{align}
+\]
 
- ![][06016]
+### Transformations from aerodynamic angles to aircraft stability axis angular rates
+Subscripts \(b, s,\) and \(w\) denote the body, stability and wind axis systems.
+\[
+\begin{align}
+p_s =& p_b \cos\alpha + r_b \sin\alpha\, \\
+q_s =& \, q_b\\
+r_s =& \, r_b \cos\alpha - p_b \sin\alpha
+\end{align}
+\]
 
- 
+### Transformations from aerodynamic angles to the aircraft wind axis angular rates
+Subscripts \(b, s,\) and \(w\) denote the body, stability and wind axis systems.
+\[
+\begin{align}
+p_w =& p_s \cos\beta + q_s \sin\beta\, \\
+q_w =& \, q_s \cos\beta - p_s\sin\beta\\
+r_w =& \, r_s
+\end{align}
+\]
 
- The inverse of the above transform matrix converts
+### Transformations from Euler angles to aircraft body axis angular rates
+(Reference 6.6.3)
+\[
+\begin{align}
+\dot{p_b} =& \, \ddot{\phi} - \ddot{\psi}\sin\theta - \dot{\psi} \, \dot{\theta} \cos\theta  \\
+\dot{q_b} =& \, \ddot{\theta} \cos\phi - \dot{\theta} \, \dot{\phi} \sin{\phi} + \ddot{\phi} \cos\theta \sin\phi - \dot{\psi} \, \dot{\theta} \sin\theta \sin\phi + \dot{\psi} \, \dot{phi} \cos\theta \cos\phi \\
+\dot{r_b} =& \, \ddot{\psi} \cos\theta \cos\phi - \dot{\psi} \, \dot{\theta} \sin\theta \cos\phi - \dot{\psi} \, \dot{\theta} \cos\theta \sin\phi - \ddot{\theta} \sin\phi - \dot{\theta} \, \dot{\phi} \cos\phi
+\end{align}
+\]
 
-**from the body axis to the inertial axis** coordinate system
+### Transformations from aerodynamic angles and body axis angular rates to aircraft stability axis angular rates
+\[
+\begin{align}
+\dot{p_s} =& \, \dot{p_b} \cos\alpha + \dot{\alpha} \, p_b \sin\alpha + \dot{r_b}\sin\alpha + \dot{\alpha} \, r_b \cos\alpha  \\
+\dot{q_s} =& \, \dot{q_b} \\
+\dot{r_s} =& \, \dot{r_b} \cos\alpha - \dot{\alpha} \, r_b \sin\alpha - \dot{p_b}\sin\alpha - \dot{\alpha} \, p_b \cos\alpha
+\end{align}
+\]
 
-![][06017] 
+### Transformations from aerodynamic angles and aircraft stability axis to aircraft wind axis angular rates
+\[
+\begin{align}
+\dot{p_w} =& \, \dot{p_b} \cos\beta + \dot{\beta} \, p_s \sin\beta + \dot{q_s}\sin\beta + \dot{\beta} \, q_s \cos\beta  \\
+\dot{q_w} =& \,  \dot{q_s} \cos\beta - \dot{\beta} \, q_s \sin\beta - \dot{p_s} \sin\beta - \dot{\beta} \, p_s \cos\beta\\
+\dot{r_w} =& \, \dot{r_s}
+\end{align}
+\]
 
-**Acceleration Transformations**
-
-• Convert body-axis angular rates & linear accelerations into total
-
-accelerations along body axes.
-
-![][06018]![][06019]![][06020]![][06021]• Convert element (*m~1~*) location & rates into specific angular momentum
-
- 
-
-**Transformations between body axis rates and Euler angle rates**
-
-![][06022]** **
-
-![][06023]![][06024] **Transformations from Euler & aerodynamic angles to the aircraft stability and wind axis angular rates.** Subscripts *b*, *s*, and *w* denote the body, stability and relative wind axis systems.
-
-![][06025] 
-
-**Transformations from Euler angles to the three aircraft axis angular accelerations** (ref 6.6.3)
-
- 
-
- 
-
- ![][06026]![][06027]![][06028]![][06029]
-
-**6.6 References**
-
- 
-
+## References
 6.6.1 Lawless, Alan R., *Math and Physics for Flight Testers* "Chapter 7, Axis Systems and Transformations", National Test Pilot School, Mojave CA, 1998.
 
 6.6.2 Anon., *Aircraft Flying Qualities, Chapter 4, Equations of Motion*, USAF TestPilot School notes, AFFTC Edwards AFB CA, March 1991.
 
 6.6.3 Kalviste, Juri, *Flight Dynamics Reference Handbook*, Northrop Corp. Aircraft Division, April 1988.
 
- 
 
   [06001]: media/06/image1.svg {width="4.709027777777778in" height="3.839583333333333in"}
   [06002]: media/06/image2.svg {width="3.65625in" height="3.03125in"}
