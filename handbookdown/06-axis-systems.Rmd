@@ -278,10 +278,10 @@ a_z =& \dot{w} + pv - qu
 We also convert the location and rates of mass elements, \(m_1\), into specific angular momentum.
 \[
 \begin{align}
-\frac{H}{m_1} =& \, r_1 \times [\bar{\omega} \times \bar{r_1}] \\
-=& \, p(y^2 + z^2) - q(xy) - r(xz)\\
-=& \, q(x^2+z^2) - r(yz) - p(xy)\\
-=& \, r(x^2+y^2) - p(xz) - q(yz)
+\frac{H}{m_1} =& \, \bar{r_1} \times [\bar{\omega} \times \bar{r_1}] \\
+\left[ \frac{H}{m_1} \right]\hat{i} =& \, p(y^2 + z^2) - q(xy) - r(xz)\\
+\left[ \frac{H}{m_1} \right]\hat{j} =& \, q(x^2+z^2) - r(yz) - p(xy)\\
+\left[ \frac{H}{m_1} \right] \hat{k} =& \, r(x^2+y^2) - p(xz) - q(yz)
 \end{align}
 \]
 
