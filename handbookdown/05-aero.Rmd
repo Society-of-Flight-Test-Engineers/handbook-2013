@@ -217,37 +217,44 @@ Dynamic Pressure + Static Pressure = Total Pressure
 
 ![][05023]
 
+
 ## Elements of Drag (refs 5.1, 5.2, 5.10)
 
 ![][05024]
 
 * Skin friction shear stress is a function of velocity profile at surface
 
+   ```{block, type='FIXME', echo=FALSE}
+    The following images are not rendering very clearly.  Additionally, some labels are missing from the figure (delta, dy, dv/dy)
+    ```
 ![][05025]
 
-![][05026]
 
-![][05027]
+<!--- FIXME: Remove reference to 05026 and 05027 --->
 
-*Viscosity** (μ) increases with temperature (ref 5.9)
+<!--- Tau needs to be defined at the beginning of the section --->
+Shear stress \(\tau_w = \mu \left( \frac{dv}{dy} \right)_{y=0} \)
 
-Sutherland law:
+* Viscosity \(\mu\) increases with temperature (ref 5.9)
 
-![][05028]
+Sutherland law: \(\mu = \mu_0 \frac{\left( \frac{T}{T_0} \right)^{1.5} \left( T_0 + S \right)}{\left( T + S \right)} \)
 
-Power law:
+<!--- FIXME: remove reference to 05028 --->
 
-![][05029]
+Power law: \(\mu = \mu_0 \left( \frac{T}{T_0} \right)^n \)
 
-****Where *T~o~* = 273.15 *K* = 518.67 *R*.
+<!--- FIXME: remove reference to 05029 --->
 
-For air: *S* =110.4 *K* = 199 *R; n=.67*
+<!--- TODO: check to make sure the unit formatting is consistent with the style guide --->
+Where \(T_0 = 273.15 K = 518.67 R \)
 
-For air at 273 K: μ~o~= 1.717x10^-5^ \[kg/m s\] = 3.59x10^-7^ \[slug/ft s\]
+For air: \(S = 110.4 K = 199 R \textrm{; n=0.67} \) 
 
-Inserting air values (*T~K~*=Kelvin and T*~R~*=Rankin) into Sutherland law gives
+For air at 273 K: \(\mu_0 = 1.717 \times 10^{-5} \textrm{[kg/m s]} = 3.59 \times 10^{-7} \textrm{[slug/ft s]} \)
 
-![][05030]
+Inserting air values (\(T_K=\)Kelvin and \(T_R=\)Rankin) into Sutherland law gives
+
+\[\mu = 1.458 \times 10^{-6} \frac{T_K^{1.5}}{T_K+110.4} \left[\frac{\textrm{kg}}{\textrm{s m}}\right] = 2.2 \times 10^{-8} \frac{T_R^{1.5}}{T_R+199} \left[\frac{\text{slg}}{\text{s ft}}\right]\]
 
 ### Reynolds Number Effects (ref 5.10) {-}
 

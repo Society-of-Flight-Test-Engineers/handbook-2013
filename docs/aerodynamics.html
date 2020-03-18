@@ -619,33 +619,22 @@
 <img src="media/05/image25.svg" width="375" height="156" />
 
 </div>
-<div class="figure">
-<img src="media/05/image33.svg" width="374" height="156" />
-
-</div>
-<div class="figure">
-<img src="media/05/image34.svg" width="229" height="54" />
-
-</div>
-<p>*Viscosity** (μ) increases with temperature (ref 5.9)</p>
-<p>Sutherland law:</p>
-<div class="figure">
-<img src="media/05/image35.svg" width="125" height="63" />
-
-</div>
-<p>Power law:</p>
-<div class="figure">
-<img src="media/05/image36.svg" width="74" height="44" />
-
-</div>
-<p>****Where <em>T<sub>o</sub></em> = 273.15 <em>K</em> = 518.67 <em>R</em>.</p>
-<p>For air: <em>S</em> =110.4 <em>K</em> = 199 <em>R; n=.67</em></p>
-<p>For air at 273 K: μ<sub>o</sub>= 1.717x10<sup>-5</sup> <span class="math display">\[kg/m s\]</span> = 3.59x10<sup>-7</sup> <span class="math display">\[slug/ft s\]</span></p>
-<p>Inserting air values (<em>T<sub>K</sub></em>=Kelvin and T<em><sub>R</sub></em>=Rankin) into Sutherland law gives</p>
-<div class="figure">
-<img src="media/05/image37.svg" width="360" height="48" />
-
-</div>
+<!--- FIXME: Remove reference to 05026 and 05027 --->
+<!--- Tau needs to be defined at the beginning of the section --->
+<p>Shear stress <span class="math inline">\(\tau_w = \mu \left( \frac{dv}{dy} \right)_{y=0} \)</span></p>
+<ul>
+<li>Viscosity <span class="math inline">\(\mu\)</span> increases with temperature (ref 5.9)</li>
+</ul>
+<p>Sutherland law: <span class="math inline">\(\mu = \mu_0 \frac{\left( \frac{T}{T_0} \right)^{1.5} \left( T_0 + S \right)}{\left( T + S \right)} \)</span></p>
+<!--- FIXME: remove reference to 05028 --->
+<p>Power law: <span class="math inline">\(\mu = \mu_0 \left( \frac{T}{T_0} \right)^n \)</span></p>
+<!--- FIXME: remove reference to 05029 --->
+<!--- TODO: check to make sure the unit formatting is consistent with the style guide --->
+<p>Where <span class="math inline">\(T_0 = 273.15 K = 518.67 R \)</span></p>
+<p>For air: <span class="math inline">\(S = 110.4 K = 199 R \textrm{; n=0.67} \)</span></p>
+<p>For air at 273 K: <span class="math inline">\(\mu_0 = 1.717 \times 10^{-5} \textrm{[kg/m s]} = 3.59 \times 10^{-7} \textrm{[slug/ft s]} \)</span></p>
+<p>Inserting air values (<span class="math inline">\(T_K=\)</span>Kelvin and <span class="math inline">\(T_R=\)</span>Rankin) into Sutherland law gives</p>
+<p><span class="math display">\[\mu = 1.458 \times 10^{-6} \frac{T_K^{1.5}}{T_K+110.4} \left[\frac{\textrm{kg}}{\textrm{s m}}\right] = 2.2 \times 10^{-8} \frac{T_R^{1.5}}{T_R+199} \left[\frac{\text{slg}}{\text{s ft}}\right]\]</span></p>
 <div id="reynolds-number-effects-ref-5.10" class="section level3 unnumbered">
 <h3>Reynolds Number Effects (ref 5.10)</h3>
 <ul>
