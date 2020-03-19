@@ -202,7 +202,18 @@
 <li class="chapter" data-level="6.2.4" data-path="axis-systems-and-transformations-raw.html"><a href="axis-systems-and-transformations-raw.html#wind-body-axis-transformations"><i class="fa fa-check"></i><b>6.2.4</b> Wind-Body Axis Transformations</a></li>
 <li class="chapter" data-level="6.2.5" data-path="axis-systems-and-transformations-raw.html"><a href="axis-systems-and-transformations-raw.html#principle-axes"><i class="fa fa-check"></i><b>6.2.5</b> Principle Axes</a></li>
 </ul></li>
-<li class="chapter" data-level="6.3" data-path="axis-systems-and-transformations-raw.html"><a href="axis-systems-and-transformations-raw.html#euler-angles"><i class="fa fa-check"></i><b>6.3</b> 6.3 Euler Angles</a></li>
+<li class="chapter" data-level="6.3" data-path="axis-systems-and-transformations-raw.html"><a href="axis-systems-and-transformations-raw.html#euler-angles"><i class="fa fa-check"></i><b>6.3</b> Euler Angles</a></li>
+<li class="chapter" data-level="6.4" data-path="axis-systems-and-transformations-raw.html"><a href="axis-systems-and-transformations-raw.html#flight-path-angles"><i class="fa fa-check"></i><b>6.4</b> 6.4 Flight Path Angles</a></li>
+<li class="chapter" data-level="6.5" data-path="axis-systems-and-transformations-raw.html"><a href="axis-systems-and-transformations-raw.html#axis-system-transformations"><i class="fa fa-check"></i><b>6.5</b> 6.5 Axis System Transformations</a><ul>
+<li class="chapter" data-level="6.5.1" data-path="axis-systems-and-transformations-raw.html"><a href="axis-systems-and-transformations-raw.html#acceleration-transformations"><i class="fa fa-check"></i><b>6.5.1</b> Acceleration Transformations</a></li>
+<li class="chapter" data-level="6.5.2" data-path="axis-systems-and-transformations-raw.html"><a href="axis-systems-and-transformations-raw.html#transformations-between-body-axis-rates-and-euler-angle-rates"><i class="fa fa-check"></i><b>6.5.2</b> Transformations between body axis rates and Euler angle rates</a></li>
+<li class="chapter" data-level="6.5.3" data-path="axis-systems-and-transformations-raw.html"><a href="axis-systems-and-transformations-raw.html#transformations-from-aerodynamic-angles-to-aircraft-stability-axis-angular-rates"><i class="fa fa-check"></i><b>6.5.3</b> Transformations from aerodynamic angles to aircraft stability axis angular rates</a></li>
+<li class="chapter" data-level="6.5.4" data-path="axis-systems-and-transformations-raw.html"><a href="axis-systems-and-transformations-raw.html#transformations-from-aerodynamic-angles-to-the-aircraft-wind-axis-angular-rates"><i class="fa fa-check"></i><b>6.5.4</b> Transformations from aerodynamic angles to the aircraft wind axis angular rates</a></li>
+<li class="chapter" data-level="6.5.5" data-path="axis-systems-and-transformations-raw.html"><a href="axis-systems-and-transformations-raw.html#transformations-from-euler-angles-to-aircraft-body-axis-angular-rates"><i class="fa fa-check"></i><b>6.5.5</b> Transformations from Euler angles to aircraft body axis angular rates</a></li>
+<li class="chapter" data-level="6.5.6" data-path="axis-systems-and-transformations-raw.html"><a href="axis-systems-and-transformations-raw.html#transformations-from-aerodynamic-angles-and-body-axis-angular-rates-to-aircraft-stability-axis-angular-rates"><i class="fa fa-check"></i><b>6.5.6</b> Transformations from aerodynamic angles and body axis angular rates to aircraft stability axis angular rates</a></li>
+<li class="chapter" data-level="6.5.7" data-path="axis-systems-and-transformations-raw.html"><a href="axis-systems-and-transformations-raw.html#transformations-from-aerodynamic-angles-and-aircraft-stability-axis-to-aircraft-wind-axis-angular-rates"><i class="fa fa-check"></i><b>6.5.7</b> Transformations from aerodynamic angles and aircraft stability axis to aircraft wind axis angular rates</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="axis-systems-and-transformations-raw.html"><a href="axis-systems-and-transformations-raw.html#references-2"><i class="fa fa-check"></i><b>6.6</b> References</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="mass-properties.html"><a href="mass-properties.html"><i class="fa fa-check"></i><b>7</b> 7 Mass Properties**</a></li>
 <li class="chapter" data-level="8" data-path="motionvibration-analysis.html"><a href="motionvibration-analysis.html"><i class="fa fa-check"></i><b>8</b> 8 Motion/Vibration Analysis**</a></li>
@@ -382,7 +393,7 @@ z_w =&amp; x_b \sin \alpha + z_b \cos \alpha
 </div>
 </div>
 <div id="euler-angles" class="section level2">
-<h2><span class="header-section-number">6.3</span> 6.3 Euler Angles</h2>
+<h2><span class="header-section-number">6.3</span> Euler Angles</h2>
 <p>(Reference 6.6.1)</p>
 <p><em>Euler angles</em> are expressed as yaw, pitch, and roll. The sequence–first yaw, then pitch, then roll–must be maintained to arrive at the proper orientation angles. The Euler angles are defined as follows:</p>
 <dl>
@@ -397,61 +408,194 @@ z_w =&amp; x_b \sin \alpha + z_b \cos \alpha
 </dd>
 </dl>
 <p><img src="media/06/image12.svg" style="width:4in;height:4.125in" /></p>
-<p><strong> 6.4 Flight Path Angles</strong> (ref 6.6.3)</p>
-<p>Just as the Euler angles define the attitude of the aircraft with respect to the Earth, three flightpath angles describe the vehicle's <em>cg</em> trajectory relative to the Earth (not the air mass).</p>
-<p><em>σ</em>  = Flight path heading angle; also known as ground track heading, is the horizontal angle between some reference direction (usually North) and the projection of the velocity vector on the horizontal plane. Positive rotation is from North to East.</p>
-<p><em>γ</em> = Flightpath elevation angle; the vertical angle between the flightpath and the horizontal plane. Positive rotation is up. During a descent, this parameter is commonly known as glide path angle.</p>
-<p><em>μ</em>    = Flightpath bank angle; the angle between the plane formed by the velocity vector and the lift vector and the vertical plane containing the velocity vector. Positive rotation is clockwise about the velocity vector, looking forward.</p>
-<blockquote>
-<p> </p>
-</blockquote>
-<p>The first two parameters above are easily measured using ground-based radar, or onboard GPS or inertial reference systems. If only <em>α</em>, <em>β</em>, and the Euler angles are available, then <strong>assuming zero winds</strong>, the flightpath angles can be calculated as</p>
-<p> </p>
-<p> </p>
-<p><img src="media/06/image13.svg" style="width:4.34236in;height:0.45833in" /><img src="media/06/image14.svg" style="width:3in;height:0.75in" /> <img src="media/06/image15.svg" style="width:4.5125in;height:0.29792in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>Technically, the above equations describe the <strong>velocity vector</strong> (angles relative to the air mass). If the air mass is moving relative to the Earth, as is usually the case, the above equations <span class="underline">do not</span> describe the flight path.</p>
-<p> </p>
-<p><em>Editor’s note: not knowing the difference between flightpath and velocity vector angles can cause considerable confusion when analyzing data from different sources.</em></p>
-<p> </p>
-<p> </p>
-<p><strong>6.5 Axis System Transformations</strong> (ref 6.6.2)</p>
-<p> </p>
-<p>Transformation matrix for converting forces, velocities or accelerations <strong>from inertial (X, Y, Z) to body (<em>x, y, z</em>) axes</strong></p>
-<p><img src="media/06/image16.svg" style="width:4.86042in;height:0.62361in" /> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>Expanding gives:</p>
-<p> </p>
-<p> <img src="media/06/image17.svg" style="width:5.61944in;height:0.62847in" /></p>
-<p> </p>
-<p> The inverse of the above transform matrix converts</p>
-<p><strong>from the body axis to the inertial axis</strong> coordinate system</p>
-<p><img src="media/06/image18.svg" style="width:5.06875in;height:0.61528in" /> </p>
-<p><strong>Acceleration Transformations</strong></p>
-<p>• Convert body-axis angular rates &amp; linear accelerations into total</p>
-<p>accelerations along body axes.</p>
-<p><img src="media/06/image19.svg" style="width:1.70833in;height:1.27083in" /><img src="media/06/image20.svg" style="width:2.39931in;height:0.7125in" /><img src="media/06/image21.svg" style="width:2.5625in;height:0.75278in" /><img src="media/06/image22.svg" style="width:1.05417in;height:0.72153in" />• Convert element (<em>m<sub>1</sub></em>) location &amp; rates into specific angular momentum</p>
-<p> </p>
-<p><strong>Transformations between body axis rates and Euler angle rates</strong></p>
-<p><img src="media/06/image23.svg" style="width:2.28611in;height:1.41181in" /><strong> </strong></p>
-<p><img src="media/06/image24.svg" style="width:1.65903in;height:0.75in" /><img src="media/06/image25.svg" style="width:2.80069in;height:0.25in" /> <strong>Transformations from Euler &amp; aerodynamic angles to the aircraft stability and wind axis angular rates.</strong> Subscripts <em>b</em>, <em>s</em>, and <em>w</em> denote the body, stability and relative wind axis systems.</p>
-<p><img src="media/06/image26.svg" style="width:1.59236in;height:0.75in" /> </p>
-<p><strong>Transformations from Euler angles to the three aircraft axis angular accelerations</strong> (ref 6.6.3)</p>
-<p> </p>
-<p> </p>
-<p> <img src="media/06/image27.svg" style="width:4.59236in;height:0.26389in" /><img src="media/06/image28.svg" style="width:4.53403in;height:0.81944in" /><img src="media/06/image29.svg" style="width:3.09236in;height:0.75in" /><img src="media/06/image30.svg" style="width:3.26736in;height:0.79167in" /></p>
-<p><strong>6.6 References</strong></p>
-<p> </p>
+</div>
+<div id="flight-path-angles" class="section level2">
+<h2><span class="header-section-number">6.4</span> 6.4 Flight Path Angles</h2>
+<p>(Reference 6.6.3)</p>
+<p>Just as the Euler angles define the attitude of the aircraft with respect to the Earth, three flight path angles describe the vehicle’s <em>cg</em> trajectory relative to the Earth, not the air mass.</p>
+<dl>
+<dt>Flight path heading angle</dt>
+<dd><span class="math inline">\(\sigma\)</span> - This angle, also known as ground track heading, is the horizontal angle between some reference direction (usually North) and the projection of the velocity vector on the horizontal plane. Positive rotation is clockwise, from North to East.
+</dd>
+<dt>Flight path elevation angle</dt>
+<dd><span class="math inline">\(\gamma\)</span> - The vertical angle between the flightpath and the horizontal plane. Positive angle is above the horizon. During a descent, this is commonly referred to as <em>glide path angle</em>.
+</dd>
+<dt>Flight path bank angle</dt>
+<dd><span class="math inline">\(\mu\)</span> - The angle between the plane formed by the velocity vector and the lift vector and the vertical plane containing the velocity vector. Positive angle is clockwise about the velocity vector, looking forward.
+</dd>
+</dl>
+<p>The first two angles above are easily measured using ground-based radar, onboard GPS, or inertial reference systems. If only <span class="math inline">\(\alpha, \beta\)</span>, andthe Euler angles are available, then we can calculate the flightpath angles, assuming zero wind, as follows.
+<span class="math display">\[
+\begin{align}
+\gamma =&amp; \arcsin [(\sin\theta  \cos\alpha - \cos\theta  \cos\phi  \sin\alpha) \cos\beta - \cos\theta  \sin\phi  \sin\beta] \\
+\sigma =&amp; \psi + \arcsin \left[\frac{\cos\phi \sin\beta - \sin\phi \sin\alpha \cos\beta}{\cos\gamma} \right]\\
+\mu =&amp; \arcsin\left[ \frac{\cos\theta \sin\phi \cos\beta + 
+(\sin\theta \cos\alpha -\cos\theta \cos\phi \sin\alpha)}{\cos\gamma}  \right]
+\end{align}
+\]</span></p>
+<p>Technically, the above equations describe the <em>velocity vector</em>, that is, the angles relative to the air mass. If the air mass is moving relative to the Earth, as is usually the case, the above equations <em>do not</em> describe the true flight path.</p>
+<p>Ignorance of the difference between flight path and velocity vector angles can cause considerable confusion when analyzing data from different sources.</p>
+</div>
+<div id="axis-system-transformations" class="section level2">
+<h2><span class="header-section-number">6.5</span> 6.5 Axis System Transformations</h2>
+<p>(Reference 6.6.2)</p>
+<p>Transformation matrix for converting forces, velocities or accelerations from <em>earth axis system</em>, also known as inertial, <span class="math inline">\([X, Y, Z]\)</span>, to body coordinates <span class="math inline">\([x, y, z]\)</span>.
+<span class="math display">\[
+\begin{bmatrix}
+x_b \\
+y_b \\
+z_b
+\end{bmatrix} = 
+\begin{bmatrix}
+1 &amp; 0 &amp; 0 \\
+0 &amp; \cos\phi &amp; \sin\phi \\
+0 &amp; -\sin\phi &amp; \cos\phi
+\end{bmatrix}
+\begin{bmatrix}
+\cos\theta &amp; 0 &amp; -\sin\theta \\
+0 &amp; 1 &amp; 0 \\
+\sin\theta &amp; 0 &amp; \cos\theta
+\end{bmatrix}
+\begin{bmatrix}
+\cos\psi &amp; \sin\psi &amp; 0 \\
+-\sin\psi &amp; \cos\psi &amp; 0 \\
+0 &amp; 0 &amp; 1
+\end{bmatrix}
+\begin{bmatrix}
+X \\
+Y \\
+Z 
+\end{bmatrix}
+\]</span></p>
+<p>This yields
+<span class="math display">\[
+\begin{bmatrix}
+x_b \\
+y_b \\
+z_b
+\end{bmatrix} = 
+\begin{bmatrix}
+\cos\theta \cos\psi &amp; \cos\theta \sin\psi &amp; -\sin\theta \\
+-\cos\theta \sin\psi + \sin\phi \sin\theta \cos\psi &amp; \cos\phi \cos\psi + \sin\phi \sin\theta \sin\psi  &amp; \sin\phi \cos\theta \\
+\sin\phi \sin\psi + \cos\phi \sin\theta \cos\psi &amp; -\sin\phi \cos\psi + \cos\phi \sin\theta \sin\psi &amp; \cos\phi \cos\theta
+\end{bmatrix}
+\begin{bmatrix}
+X \\
+Y \\
+Z 
+\end{bmatrix}
+\]</span></p>
+<p>The inverse of the above transform matrix converts from the body axis to the inertial axis coordinate system.
+<span class="math display">\[
+\begin{bmatrix}
+X \\
+Y \\
+Z
+\end{bmatrix} = 
+\begin{bmatrix}
+\cos\theta \cos\psi &amp; - \cos\phi \sin\psi + \sin\phi \sin\theta \cos\psi &amp; \sin\phi \sin\psi + \cos\phi \sin\theta \cos\psi \\
+\cos\theta \sin\psi &amp; \cos\phi \cos\psi + \sin\phi \sin\theta \sin\psi &amp; -\sin\phi \cos\psi + \cos\phi \sin\theta \sin\psi  \\
+-\sin\theta &amp; \sin\phi \cos\theta &amp; \cos\phi \cos\theta
+\end{bmatrix}
+\begin{bmatrix}
+x_b \\
+y_b \\
+z_b 
+\end{bmatrix}
+\]</span></p>
+<div id="acceleration-transformations" class="section level3">
+<h3><span class="header-section-number">6.5.1</span> Acceleration Transformations</h3>
+<p>First, we convert body-axis angular rates and linear accelerations into total accelerations along the body axes.
+<span class="math display">\[
+\begin{align}
+a_x =&amp; \dot{u} + qw - rv \\
+a_y =&amp; \dot{v} + ru -pw \\
+a_z =&amp; \dot{w} + pv - qu
+\end{align}
+\]</span></p>
+<p><img src="media/06/image20.svg" style="width:2.39931in;height:0.7125in" /></p>
+<p>We also convert the location and rates of mass elements, <span class="math inline">\(m_1\)</span>, into specific angular momentum.
+<span class="math display">\[
+\begin{align}
+\frac{H}{m_1} =&amp; \, \bar{r_1} \times [\bar{\omega} \times \bar{r_1}] \\
+\left[ \frac{H}{m_1} \right]\hat{i} =&amp; \, p(y^2 + z^2) - q(xy) - r(xz)\\
+\left[ \frac{H}{m_1} \right]\hat{j} =&amp; \, q(x^2+z^2) - r(yz) - p(xy)\\
+\left[ \frac{H}{m_1} \right] \hat{k} =&amp; \, r(x^2+y^2) - p(xz) - q(yz)
+\end{align}
+\]</span></p>
+</div>
+<div id="transformations-between-body-axis-rates-and-euler-angle-rates" class="section level3">
+<h3><span class="header-section-number">6.5.2</span> Transformations between body axis rates and Euler angle rates</h3>
+<p><span class="math display">\[
+\begin{align}
+p =&amp; \, \dot{\phi} -\dot{\psi} \sin\theta\\
+q =&amp; \, \dot{\theta} \cos\phi + \dot{\psi} \cos{\theta} \sin{\phi}\\
+r =&amp; \, \dot{\psi} \cos\theta \cos\phi - \dot{\theta} \sin\phi\\
+\dot{\phi} =&amp; \, p + \tan\theta(q \sin\phi + r\cos\phi) \\
+\dot{\theta}=&amp; \, q \cos\phi - r\sin\phi\\
+\dot{\psi} =&amp; \frac{q \sin\phi + r \cos\phi}{\cos\theta} \, 
+\end{align}
+\]</span></p>
+</div>
+<div id="transformations-from-aerodynamic-angles-to-aircraft-stability-axis-angular-rates" class="section level3">
+<h3><span class="header-section-number">6.5.3</span> Transformations from aerodynamic angles to aircraft stability axis angular rates</h3>
+<p>Subscripts <span class="math inline">\(b, s,\)</span> and <span class="math inline">\(w\)</span> denote the body, stability and wind axis systems.
+<span class="math display">\[
+\begin{align}
+p_s =&amp; p_b \cos\alpha + r_b \sin\alpha\, \\
+q_s =&amp; \, q_b\\
+r_s =&amp; \, r_b \cos\alpha - p_b \sin\alpha
+\end{align}
+\]</span></p>
+</div>
+<div id="transformations-from-aerodynamic-angles-to-the-aircraft-wind-axis-angular-rates" class="section level3">
+<h3><span class="header-section-number">6.5.4</span> Transformations from aerodynamic angles to the aircraft wind axis angular rates</h3>
+<p>Subscripts <span class="math inline">\(b, s,\)</span> and <span class="math inline">\(w\)</span> denote the body, stability and wind axis systems.
+<span class="math display">\[
+\begin{align}
+p_w =&amp; p_s \cos\beta + q_s \sin\beta\, \\
+q_w =&amp; \, q_s \cos\beta - p_s\sin\beta\\
+r_w =&amp; \, r_s
+\end{align}
+\]</span></p>
+</div>
+<div id="transformations-from-euler-angles-to-aircraft-body-axis-angular-rates" class="section level3">
+<h3><span class="header-section-number">6.5.5</span> Transformations from Euler angles to aircraft body axis angular rates</h3>
+<p>(Reference 6.6.3)
+<span class="math display">\[
+\begin{align}
+\dot{p_b} =&amp; \, \ddot{\phi} - \ddot{\psi}\sin\theta - \dot{\psi} \, \dot{\theta} \cos\theta  \\
+\dot{q_b} =&amp; \, \ddot{\theta} \cos\phi - \dot{\theta} \, \dot{\phi} \sin{\phi} + \ddot{\phi} \cos\theta \sin\phi - \dot{\psi} \, \dot{\theta} \sin\theta \sin\phi + \dot{\psi} \, \dot{phi} \cos\theta \cos\phi \\
+\dot{r_b} =&amp; \, \ddot{\psi} \cos\theta \cos\phi - \dot{\psi} \, \dot{\theta} \sin\theta \cos\phi - \dot{\psi} \, \dot{\theta} \cos\theta \sin\phi - \ddot{\theta} \sin\phi - \dot{\theta} \, \dot{\phi} \cos\phi
+\end{align}
+\]</span></p>
+</div>
+<div id="transformations-from-aerodynamic-angles-and-body-axis-angular-rates-to-aircraft-stability-axis-angular-rates" class="section level3">
+<h3><span class="header-section-number">6.5.6</span> Transformations from aerodynamic angles and body axis angular rates to aircraft stability axis angular rates</h3>
+<p><span class="math display">\[
+\begin{align}
+\dot{p_s} =&amp; \, \dot{p_b} \cos\alpha + \dot{\alpha} \, p_b \sin\alpha + \dot{r_b}\sin\alpha + \dot{\alpha} \, r_b \cos\alpha  \\
+\dot{q_s} =&amp; \, \dot{q_b} \\
+\dot{r_s} =&amp; \, \dot{r_b} \cos\alpha - \dot{\alpha} \, r_b \sin\alpha - \dot{p_b}\sin\alpha - \dot{\alpha} \, p_b \cos\alpha
+\end{align}
+\]</span></p>
+</div>
+<div id="transformations-from-aerodynamic-angles-and-aircraft-stability-axis-to-aircraft-wind-axis-angular-rates" class="section level3">
+<h3><span class="header-section-number">6.5.7</span> Transformations from aerodynamic angles and aircraft stability axis to aircraft wind axis angular rates</h3>
+<p><span class="math display">\[
+\begin{align}
+\dot{p_w} =&amp; \, \dot{p_b} \cos\beta + \dot{\beta} \, p_s \sin\beta + \dot{q_s}\sin\beta + \dot{\beta} \, q_s \cos\beta  \\
+\dot{q_w} =&amp; \,  \dot{q_s} \cos\beta - \dot{\beta} \, q_s \sin\beta - \dot{p_s} \sin\beta - \dot{\beta} \, p_s \cos\beta\\
+\dot{r_w} =&amp; \, \dot{r_s}
+\end{align}
+\]</span></p>
+</div>
+</div>
+<div id="references-2" class="section level2">
+<h2><span class="header-section-number">6.6</span> References</h2>
 <p>6.6.1 Lawless, Alan R., <em>Math and Physics for Flight Testers</em> “Chapter 7, Axis Systems and Transformations”, National Test Pilot School, Mojave CA, 1998.</p>
 <p>6.6.2 Anon., <em>Aircraft Flying Qualities, Chapter 4, Equations of Motion</em>, USAF TestPilot School notes, AFFTC Edwards AFB CA, March 1991.</p>
 <p>6.6.3 Kalviste, Juri, <em>Flight Dynamics Reference Handbook</em>, Northrop Corp. Aircraft Division, April 1988.</p>
-<p> </p>
 
 </div>
 </div>
