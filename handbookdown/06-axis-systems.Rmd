@@ -1,4 +1,4 @@
-# Axis Systems and Transformations** (raw)
+# Axis Systems and Transformations
 
 ## Earth Axis Systems
 (Reference 6.6.1)
@@ -13,7 +13,7 @@ Both fixed-earth and moving-earth axis systems keep constant *orientation* with 
 (Reference 6.6.2)
 
 ### Body Axis System
-The *body axis* system, denoted by a subscript \(b\,) originates at the aircraft center of gravity. The positive direction of the \(x_b\)-axis is towards the front. The positive direction of the \(y_b\)-axis is towards the right wing tip, and the positive direction of the \(z_b\)-axis is towards the bottom of the aircraft. 
+The *body axis* system, denoted by a subscript \(b\), originates at the aircraft center of gravity. The positive direction of the \(x_b\)-axis is towards the front. The positive direction of the \(y_b\)-axis is towards the right wing tip, and the positive direction of the \(z_b\)-axis is towards the bottom of the aircraft. 
 
 ![][06002]
 
@@ -164,7 +164,8 @@ Bank Angle
 
 ![][06011]
 
-## 6.4 Flight Path Angles
+## Flight Path Angles
+
 (Reference 6.6.3)
 
 Just as the Euler angles define the attitude of the aircraft with respect to the Earth, three flight path angles describe the vehicle's *cg* trajectory relative to the Earth, not the air mass.
@@ -192,7 +193,8 @@ Technically, the above equations describe the *velocity vector*, that is, the an
 
 Ignorance of the difference between flight path and velocity vector angles can cause considerable confusion when analyzing data from different sources.
 
-## 6.5 Axis System Transformations
+## Axis System Transformations
+
 (Reference 6.6.2)
 
 Transformation matrix for converting forces, velocities or accelerations from *earth axis system*, also known as inertial, \([X, Y, Z]\), to body coordinates \( [x, y, z] \).
