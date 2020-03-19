@@ -13,7 +13,7 @@ Both fixed-earth and moving-earth axis systems keep constant *orientation* with 
 (Reference 6.6.2)
 
 ### Body Axis System
-The *body axis* system, denoted by a subscript \(b\,) originates at the aircraft center of gravity. The positive direction of the \(x_b\)-axis is towards the front. The positive direction of the \(y_b\)-axis is towards the right wing tip, and the positive direction of the \(z_b\)-axis is towards the bottom of the aircraft. 
+The *body axis* system, denoted by a subscript \(b\), originates at the aircraft center of gravity. The positive direction of the \(x_b\)-axis is towards the front. The positive direction of the \(y_b\)-axis is towards the right wing tip, and the positive direction of the \(z_b\)-axis is towards the bottom of the aircraft. 
 
 ![][06002]
 
