@@ -1,4 +1,4 @@
-# Axis Systems and Transformations** (raw)
+# Axis Systems and Transformations
 
 ## Earth Axis Systems
 (Reference 6.6.1)
