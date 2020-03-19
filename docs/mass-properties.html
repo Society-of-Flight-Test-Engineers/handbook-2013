@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>7 7 Mass Properties** | Flight Test Engineering Reference Handbook</title>
-  <meta name="description" content="7 7 Mass Properties** | Flight Test Engineering Reference Handbook" />
+  <title>7 Mass Properties | Flight Test Engineering Reference Handbook</title>
+  <meta name="description" content="7 Mass Properties | Flight Test Engineering Reference Handbook" />
   <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="7 7 Mass Properties** | Flight Test Engineering Reference Handbook" />
+  <meta property="og:title" content="7 Mass Properties | Flight Test Engineering Reference Handbook" />
   <meta property="og:type" content="book" />
   
   <meta property="og:image" content="media/media/image1.jpg" />
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="7 7 Mass Properties** | Flight Test Engineering Reference Handbook" />
+  <meta name="twitter:title" content="7 Mass Properties | Flight Test Engineering Reference Handbook" />
   
   
   <meta name="twitter:image" content="media/media/image1.jpg" />
@@ -215,7 +215,11 @@
 </ul></li>
 <li class="chapter" data-level="6.6" data-path="axis-systems-and-transformations.html"><a href="axis-systems-and-transformations.html#references-2"><i class="fa fa-check"></i><b>6.6</b> References</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="mass-properties.html"><a href="mass-properties.html"><i class="fa fa-check"></i><b>7</b> 7 Mass Properties**</a></li>
+<li class="chapter" data-level="7" data-path="mass-properties.html"><a href="mass-properties.html"><i class="fa fa-check"></i><b>7</b> Mass Properties</a><ul>
+<li class="chapter" data-level="7.1" data-path="mass-properties.html"><a href="mass-properties.html#abbreviations-and-terminology-abbreviations"><i class="fa fa-check"></i><b>7.1</b> Abbreviations and Terminology Abbreviations</a><ul>
+<li class="chapter" data-level="" data-path="mass-properties.html"><a href="mass-properties.html#terminology"><i class="fa fa-check"></i>Terminology</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="8" data-path="motionvibration-analysis.html"><a href="motionvibration-analysis.html"><i class="fa fa-check"></i><b>8</b> 8 Motion/Vibration Analysis**</a></li>
 <li class="chapter" data-level="9" data-path="material-strength.html"><a href="material-strength.html"><i class="fa fa-check"></i><b>9</b> 9 Material Strength**</a></li>
 <li class="chapter" data-level="10" data-path="reciprocating-engines.html"><a href="reciprocating-engines.html"><i class="fa fa-check"></i><b>10</b> 10 Reciprocating Engines**</a></li>
@@ -254,98 +258,246 @@
 
             <section class="normal" id="section-">
 <div id="mass-properties" class="section level1">
-<h1><span class="header-section-number">7</span> 7 Mass Properties**</h1>
-<p><strong> </strong></p>
-<p><strong> </strong></p>
-<p> </p>
-<p>7.1 Abbreviations and Terminology</p>
-<p> </p>
-<p>7.2 Longitudinal &amp; Lateral Center of Gravity Measurement</p>
-<p> </p>
-<p>7.3 Vertical Center of Gravity Measurement</p>
-<p> </p>
-<p>7.4 Moment &amp; Product of Inertia Measurement</p>
-<p>7.4.1 Radius of Gyration</p>
-<p>Aircraft moment of inertia summary</p>
-<p>7.4.2 Parallel Axis Theorem Applications</p>
-<p>determine modified moment of inertia,</p>
-<p>determine modified products of inertia,</p>
-<p>correct the moment of inertia to the actual <em>cg</em> axis</p>
-<p>7.4.3 Measuring Roll Inertia, <em>I<sub>xb</sub></em></p>
-<p>7.4.4 Measuring Pitch Inertia, <em>I<sub>yb</sub></em></p>
-<p>7.4.5 Measuring Yaw Inertia, <em>I<sub>zb</sub></em></p>
-<p>7.4.6 Measuring Axis of Inclination and <em>I<sub>xz</sub></em></p>
-<p>7.4.7 Guidelines for Spring Oscillation Method</p>
-<p>7.4.8 Swing Method</p>
-<p> </p>
-<p>7.5 References</p>
-<p> </p>
-<p><strong>7.1 Abbreviations and Terminology Abbreviations</strong></p>
-<p>* *</p>
-<p><em>a</em> perpendicular distance from the spring line of action to the oscillation axis (<em>ft</em>).</p>
-<p><em>cg</em> center of gravity</p>
-<p><em>f</em> measured frequency of oscillation (cycles/sec)</p>
-<p><em>g</em> Earth’s acceleration due to gravity (<em>g</em> = 32.172 ft/sec<sup>2</sup>)</p>
-<p><em>h</em> vertical component of the perpendicular distance from the <em>cg</em> to the oscillation axis.</p>
-<p><em>I<sub>cg </sub></em>moment of inertia any axis passing through the <em>cg</em></p>
-<p><em>I<sub>xb</sub></em> moment of inertia about aircraft body x-axis</p>
-<p><em>I<sub>yb</sub></em> moment of inertia about aircraft body y-axis</p>
-<p><em>I<sub>zb</sub></em> moment of inertia about aircraft body z-axis</p>
-<p><em>I<sub>xz</sub></em> product of inertia in aircraft body x-z plane</p>
-<p><em>I<sub>o</sub></em> moment of inertia about oscillation axis</p>
-<p><em>K<sub>o</sub></em> component of spring stiffness perpendicular to vehicle motion.</p>
-<p><em>k</em> spring constant (<em>lb/ft</em>)</p>
-<p><em>K<sub>tot</sub></em> total radius of gyration (includes effect of offset pivot)</p>
-<p>L rolling moment</p>
-<p><em>l<sub>eff</sub></em> effective pendulum length</p>
-<p><em>MAC</em> mean aerodynamic chord</p>
-<p><em>METO</em> maximum power (except for takeoff)</p>
-<p><em>m</em> mass</p>
-<p>N yawing moment</p>
-<p><em>T</em> period of oscillation</p>
-<p><em>p</em> roll rate</p>
-<p><em>r</em> yaw rate</p>
-<p>∆<em>I<sub>te</sub></em> correction for test equipment mass (slug-<em>ft</em>2)</p>
-<p>∆<em>I<sub>am</sub></em> equivalent moment of inertia contribution of the air</p>
-<p>(slug-<em>ft</em>2)</p>
-<p><em>δ</em> tilt of spring assembly (measured positive if tilted nose-down relative to local horizontal).</p>
-<p><em>ε</em> inclination of principle axis (positive if tilted down).</p>
-<p><em>φ</em> angle between aircraft y-axis and line connecting aircraft <em>cg</em> with spring attach points.</p>
-<p><em>ω<sub>d</sub></em> damped frequency of oscillation (rad/sec) =2<em>πf</em></p>
-<p><em>ω<sub>n </sub></em> natural frequency of oscillation (rad/sec)</p>
-<p> </p>
-<p><strong>Terminology</strong></p>
-<p> </p>
-<p>Allowable <em>cg</em> range Documented on Type Certificate Data Sheet. May be different for takeoff vs landing. Forward limit usually determined by control power limitations, aft limit usually deter mined by stability requirements.</p>
-<p> </p>
-<p>datum The manufacturer defined reference plane used for distance calculations.</p>
-<p> </p>
-<p>empty weight Basic aircraft weight with only equipment on board. (without crew, passengers, or fuel). This weight may or may not inlcude oil weight, depending on civil certification date.</p>
-<p> </p>
-<p>empty weight <em>cg</em> range The allowable <em>cg</em> locations for an empty aircraft. This is defined by the manufacturer to help assure that a normally loaded aircraft will have an acceptable total <em>cg</em> location.</p>
-<p> </p>
-<p>lateral Along the aircraft y-axis.</p>
-<p> </p>
-<p>longitudinal Along the aircraft x-axis</p>
-<p> </p>
-<p>maximum weight Maximum allowable weight. Usually implies takeoff weight, but may apply to landing or in-flight weight. conditions after aerial refueling.</p>
-<p> </p>
-<p>minimum fuel A calculated value that represents the minimum amount of fuel any airplane should have while retaining appropriate flight reserves. Calculated as</p>
-<p>min fuel <span class="math display">\[*lbs*\]</span> = 0.5<em>METO</em> <span class="math display">\[*hp*\]</span></p>
-<p> </p>
-<p>moment arm Distance between datum plane and <em>cg</em> of object.</p>
-<p> </p>
-<p>moment Product of moment arm and force (weight)</p>
-<p> </p>
-<p>tare The bias in weight scales due to test equipment weight or due to scale calibration errors.</p>
-<p> </p>
-<p>useful load Maximum takeoff weight minus empty weight.</p>
-<p> </p>
-<p>weighing point Location where aircraft is supported during the <em>cg</em> measurement.</p>
-<p> </p>
+<h1><span class="header-section-number">7</span> Mass Properties</h1>
+<div id="abbreviations-and-terminology-abbreviations" class="section level2">
+<h2><span class="header-section-number">7.1</span> Abbreviations and Terminology Abbreviations</h2>
+<table>
+<colgroup>
+<col width="14%" />
+<col width="74%" />
+<col width="10%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>Definition</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\Delta I_{am}\)</span></td>
+<td>equivalent moment of inertia contribution of the air</td>
+<td>[slug-ft<sup>2</sup>]</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\Delta I_{te}\)</span></td>
+<td>correction for test equipment mass</td>
+<td>[slug-ft<sup>2</sup>]</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\delta\)</span></td>
+<td>tilt of spring assembly (measured positive if tilted nose-down relative to local horizontal).</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\varepsilon\)</span></td>
+<td>inclination of principle axis (positive if tilted down).</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\omega_d\)</span></td>
+<td>damped frequency of oscillation</td>
+<td>[rad/sec]</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\omega_n\)</span></td>
+<td>natural frequency of oscillation</td>
+<td>[rad/sec]</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\phi\)</span></td>
+<td>angle between aircraft y-axis and line connecting aircraft <span class="math inline">\(cg\)</span> with spring attach points.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(a\)</span></td>
+<td>perpendicular distance from the spring line of action to the oscillation axis</td>
+<td>[ft]</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(cg\)</span></td>
+<td>center of gravity</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(f\)</span></td>
+<td>measured frequency of oscillation</td>
+<td>[cycles/sec]</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(g\)</span></td>
+<td>Earth’s acceleration due to gravity</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(h\)</span></td>
+<td>vertical component of the perpendicular distance from the <span class="math inline">\(cg\)</span> to the oscillation axis.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(I_{cg}\)</span></td>
+<td>moment of inertia any axis passing through the <span class="math inline">\(cg\)</span></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(I_{xb}\)</span></td>
+<td>moment of inertia about aircraft body x-axis</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(I_{xz}\)</span></td>
+<td>product of inertia in aircraft body x-z plane</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(I_{yb}\)</span></td>
+<td>moment of inertia about aircraft body y-axis</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(I_{zb}\)</span></td>
+<td>moment of inertia about aircraft body z-axis</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(I_o\)</span></td>
+<td>moment of inertia about oscillation axis</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(K_{tot}\)</span></td>
+<td>total radius of gyration (includes effect of offset pivot)</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(K_o\)</span></td>
+<td>component of spring stiffness perpendicular to vehicle motion</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(k\)</span></td>
+<td>spring constant</td>
+<td>[lb/ft]</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(L\)</span></td>
+<td>rolling moment</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(l_{eff}\)</span></td>
+<td>effective pendulum length</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(m\)</span></td>
+<td>mass</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(MAC\)</span></td>
+<td>mean aerodynamic chord</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(METO\)</span></td>
+<td>maximum power (except for takeoff)</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(N\)</span></td>
+<td>yawing moment</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(p\)</span></td>
+<td>roll rate</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(r\)</span></td>
+<td>yaw rate</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(T\)</span></td>
+<td>period of oscillation</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div id="terminology" class="section level3 unnumbered">
+<h3>Terminology</h3>
+<table>
+<colgroup>
+<col width="42%" />
+<col width="57%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>allowable <span class="math inline">\(cg\)</span> range</td>
+<td>Documented on Type Certificate Data Sheet. May be different for takeoff vs landing. Forward limit usually determined by control power limitations, aft limit usually deter mined by stability requirements.</td>
+</tr>
+<tr class="even">
+<td>datum</td>
+<td>The manufacturer defined reference plane used for distance calculations.</td>
+</tr>
+<tr class="odd">
+<td>empty weight</td>
+<td>Basic aircraft weight with only equipment on board. (without crew, passengers, or fuel). This weight may or may not inlcude oil weight, depending on civil certification date.</td>
+</tr>
+<tr class="even">
+<td>empty weight <span class="math inline">\(cg\)</span> range</td>
+<td>The allowable <span class="math inline">\(cg\)</span> locations for an empty aircraft. This is defined by the manufacturer to help assure that a normally loaded aircraft will have an acceptable total <span class="math inline">\(cg\)</span> location.</td>
+</tr>
+<tr class="odd">
+<td>lateral</td>
+<td>Along the aircraft y-axis.</td>
+</tr>
+<tr class="even">
+<td>longitudinal</td>
+<td>Along the aircraft x-axis</td>
+</tr>
+<tr class="odd">
+<td>maximum weight</td>
+<td>Maximum allowable weight. Usually implies takeoff weight, but may apply to landing or in-flight weight. conditions after aerial refueling.</td>
+</tr>
+<tr class="even">
+<td>minimum fuel</td>
+<td>A calculated value that represents the minimum amount of fuel any airplane should have while retaining appropriate flight reserves. Calculated as: min fuel [lbs] = <span class="math inline">\(0.5 \, METO\)</span> [hp]</td>
+</tr>
+<tr class="odd">
+<td>moment arm</td>
+<td>Distance between datum plane and <span class="math inline">\(cg\)</span> of object</td>
+</tr>
+<tr class="even">
+<td>moment</td>
+<td>Product of moment arm and force (weight)</td>
+</tr>
+<tr class="odd">
+<td>tare</td>
+<td>The bias in weight scales due to test equipment weight or due to scale calibration errors</td>
+</tr>
+<tr class="even">
+<td>useful load</td>
+<td>Maximum takeoff weight minus empty weight</td>
+</tr>
+<tr class="odd">
+<td>weighing point</td>
+<td>Location where aircraft is supported during the <span class="math inline">\(cg\)</span> measurement.</td>
+</tr>
+</tbody>
+</table>
 <p><strong>7.2 Longitudinal &amp; Lateral Center of Gravity Measurement</strong></p>
 <p> </p>
-<p><strong>Test set-up procedures for empty weight <em>cg</em> determination</strong></p>
+<p><strong>Test set-up procedures for empty weight <span class="math inline">\(cg\)</span> determination</strong></p>
 <blockquote>
 <p>1. Clean aircraft including any mud or water seepage.</p>
 <p>2. Ensure all aircraft equipment in place.</p>
@@ -366,30 +518,30 @@
 <p>13. Sum the moments in step 12.</p>
 <p>14. Sum the corrected weights.</p>
 <p>15. Divide the total moment by the total weight <span class="math display">\[step 13/step 14\]</span> to</p>
-<p>obtain the distance from the datum to the <em>cg.</em> Some aircraft use this distance for all <em>cg</em> references (typically presented in inches).</p>
-<p>16. Other aircraft refer <em>cg</em> location to a percent of the mean aerodynamic chord (<em>MAC</em>). In this case, subtract the distance between the datum and the leading edge of the <em>MAC</em> from the distance in step 15.</p>
+<p>obtain the distance from the datum to the <em>cg.</em> Some aircraft use this distance for all <span class="math inline">\(cg\)</span> references (typically presented in inches).</p>
+<p>16. Other aircraft refer <span class="math inline">\(cg\)</span> location to a percent of the mean aerodynamic chord (<em>MAC</em>). In this case, subtract the distance between the datum and the leading edge of the <em>MAC</em> from the distance in step 15.</p>
 <p>17. Divide the distance in step 16 by the length of the MAC. This number is the fraction of the cg location along the MAC.</p>
 <p>18 To present the above fraction in terms of % <em>MAC</em>, multiply by 100.</p>
 </blockquote>
 <p> </p>
-<p><img src="media/07/image1.svg" style="width:3.38889in;height:1.77083in" /><strong>Example <em>cg</em> calculations</strong></p>
+<p><img src="media/07/image1.svg" style="width:3.38889in;height:1.77083in" /><strong>Example <span class="math inline">\(cg\)</span> calculations</strong></p>
 <p> </p>
 <p>320 <em>lbs</em></p>
 <p>  816 <em>lbs</em> right</p>
 <p>810 <em>lbs</em> left</p>
 <p> <img src="media/07/image2.svg" style="width:2.84236in;height:1.39861in" /><img src="media/07/image3.svg" style="width:2.95972in;height:1.44792in" /><img src="media/07/image4.svg" style="width:2.94792in;height:1.44306in" /></p>
-<p><strong>Correcting empty weight <em>cg</em> for changes in fuel, passengers,</strong></p>
+<p><strong>Correcting empty weight <span class="math inline">\(cg\)</span> for changes in fuel, passengers,</strong></p>
 <p><strong>equipment or stores.</strong></p>
 <p> </p>
-<p>1. Note aircraft empty weight &amp; empty weight <em>cg</em>. Multiply these</p>
+<p>1. Note aircraft empty weight &amp; empty weight <span class="math inline">\(cg\)</span>. Multiply these</p>
 <p>values to obtain the empty weight moment.</p>
 <p>2. Note the weight and moment arm for each item added to or subtracted from the aircraft (items subtracted are listed as negative weights).</p>
 <p>3. Multiply each item’s weight and arm to determine its moment.</p>
 <p>4. Sum each item’s moment in step 3 with the aircraft empty weight moment.</p>
 <p>5. Sum each item’s weight with the aircraft empty weight.</p>
-<p>6. Calculate the new <em>cg</em> as <span class="math display">\[step 4/step 5\]</span>.</p>
-<p><strong>Example <em>cg</em> corrections:</strong></p>
-<p>Given aircraft with empty weight = 1,075 <em>lbs</em> and <em>cg</em> @ 84 inches. Add pilot (170 <em>lbs</em>, @85.5“), fuel (75 <em>lbs</em> @94”), and oil (15 <em>lbs</em> @ 31.7").</p>
+<p>6. Calculate the new <span class="math inline">\(cg\)</span> as <span class="math display">\[step 4/step 5\]</span>.</p>
+<p><strong>Example <span class="math inline">\(cg\)</span> corrections:</strong></p>
+<p>Given aircraft with empty weight = 1,075 <em>lbs</em> and <span class="math inline">\(cg\)</span> @ 84 inches. Add pilot (170 <em>lbs</em>, @85.5“), fuel (75 <em>lbs</em> @94”), and oil (15 <em>lbs</em> @ 31.7").</p>
 <p> </p>
 <p> </p>
 <p> </p>
@@ -401,12 +553,12 @@
 <p> </p>
 <p><img src="media/07/image5.svg" style="width:2.825in;height:1.63056in" /> </p>
 <p> </p>
-<p>Given aircraft with empty weight = 1,220 <em>lbs</em> and <em>cg</em> @ 25 inches. Add radio (15 <em>lbs</em>, @ 65“), and replace 11 <em>lb</em> generator with 14 <em>lb</em> generator at same 21.5” location (in front of datum-located on firewall).</p>
+<p>Given aircraft with empty weight = 1,220 <em>lbs</em> and <span class="math inline">\(cg\)</span> @ 25 inches. Add radio (15 <em>lbs</em>, @ 65“), and replace 11 <em>lb</em> generator with 14 <em>lb</em> generator at same 21.5” location (in front of datum-located on firewall).</p>
 <p><img src="media/07/image6.svg" style="width:3.29167in;height:1.72153in" /> </p>
 <p><strong>7.3 Vertical Center of Gravity Measurement</strong></p>
 <p><strong> </strong></p>
 <p>1. Drain or block landing gear struts to keep distances <em>G</em>, <em>J</em>, and <em>V</em> constant.</p>
-<p>2. Level the fuselage and measure the weight on the nose wheel (<em>F<sub>o</sub></em>).</p>
+<p>2. Level the fuselage and measure the weight on the nose wheel (<em>F_o</em>).</p>
 <p>3. Tilt the aircraft at various (<em>θ</em>) measure nose wheel weight (<em>F</em>).</p>
 <p>The change in nose wheel force can be written as</p>
 <p> </p>
@@ -414,16 +566,16 @@
 <p> <img src="media/07/image7.png" style="width:6.5in;height:2.58542in" /></p>
 <p> <img src="media/07/image8.svg" style="width:2.0375in;height:0.41597in" /></p>
 <p> </p>
-<p>4. Plot (<em>F<sub>o</sub>-F</em>) vs the term in</p>
+<p>4. Plot (<em>F_o-F</em>) vs the term in</p>
 <p>parenthesis.</p>
 <p>5. Slope of line equals term in brackets.</p>
 <p>6. Solve for <em>V</em> after measuring <em>B</em>, <em>C</em>, <em>G,</em></p>
 <p>and the slope.</p>
 <p>• This method</p>
 <p>applies to "gear</p>
-<p>down" <em>cg</em> .</p>
+<p>down" <span class="math inline">\(cg\)</span> .</p>
 <p>• For “gear up” add the manufacturer's</p>
-<p>prediction of the <em>cg</em> shift to this result.</p>
+<p>prediction of the <span class="math inline">\(cg\)</span> shift to this result.</p>
 <p> </p>
 <p><img src="media/07/image9.svg" style="width:3.17083in;height:2.69792in" /></p>
 <p><strong>7.4 Moment &amp; Product of Inertia Measurement</strong></p>
@@ -464,9 +616,9 @@
 <p> <img src="media/07/image18.svg" style="width:1.88542in;height:0.34028in" /></p>
 <p> </p>
 <p><strong>Aircraft moment of inertia summary</strong></p>
-<p>I<sub>zb</sub> is always the largest value<em>.</em></p>
-<p><em>I<sub>yb</sub>&gt; I<sub>xb</sub></em> for fuselage-loaded aircraft</p>
-<p><em>I<sub>xb</sub>&gt; I<sub>yb </sub></em>for wing-loaded aircraft.</p>
+<p>I_zb~ is always the largest value<em>.</em></p>
+<p><em>I_{yb}&gt; I_xb~</em> for fuselage-loaded aircraft</p>
+<p><em>I_{xb}&gt; I_yb ~</em>for wing-loaded aircraft.</p>
 <p><strong> </strong></p>
 <p><strong> </strong></p>
 <p><strong> </strong><img src="media/07/image19.svg" style="width:4.5in;height:2.375in" /></p>
@@ -492,37 +644,37 @@
 <p><strong> 7.4.2 Parallel Axis Theorem Applications</strong></p>
 <p><strong> </strong></p>
 <p>Shows how to <strong>determine modified moment of inertia</strong> after some</p>
-<p>component alterations. Example: Correct original aircraft roll inertia, <em>I<sub>xb</sub></em><sub>,</sub> to a modified value that accounts for the addition of wingtip fuel tanks.</p>
+<p>component alterations. Example: Correct original aircraft roll inertia, <em>I_xb~</em><sub>,</sub> to a modified value that accounts for the addition of wingtip fuel tanks.</p>
 <p><img src="media/07/image20.svg" style="width:1.68403in;height:0.28611in" /> </p>
 <p> </p>
 <p> </p>
-<p>• ∆<em>I<sub>x comp</sub></em> is composed of two components</p>
+<p>• I_x comp~* is composed of two components</p>
 <p><img src="media/07/image21.svg" style="width:2.09028in;height:0.32847in" /> </p>
 <p> </p>
 <p> </p>
 <p> </p>
-<p>• <em>I<sub>x comp</sub></em> is the moment of inertia of just the new component about an axis which is parallel to the aircraft axis in question (this axis should run through the component’s <em>cg</em>)<em>.</em></p>
-<p>• <em>I<sub>x comp</sub></em> can be determined analytically by summing the inertias of every mass element throughout the component (documented for simple shapes in various engineering handbooks).</p>
-<p>• <em>I<sub>x comp</sub></em> can be determined experimentally by “swinging,” (sect’n 7.4.8).</p>
-<p>• <em>I<sub>x comp</sub></em> is usually much smaller than <em>m<sub>comp</sub> r<sup>2</sup></em> and can often be omitted.</p>
-<p>• <em>m<sub>comp</sub></em> is the component’s mass</p>
-<p>•  <em>r</em> is the distance from the axis in question to the component’s <em>cg</em>.</p>
+<p>• <em>I_x comp~</em> is the moment of inertia of just the new component about an axis which is parallel to the aircraft axis in question (this axis should run through the component’s <span class="math inline">\(cg\)</span>)<em>.</em></p>
+<p>• <em>I_x comp~</em> can be determined analytically by summing the inertias of every mass element throughout the component (documented for simple shapes in various engineering handbooks).</p>
+<p>• <em>I_x comp~</em> can be determined experimentally by “swinging,” (sect’n 7.4.8).</p>
+<p>• <em>I_x comp~</em> is usually much smaller than <em>m_comp~ r<sup>2</sup></em> and can often be omitted.</p>
+<p>• <em>m_comp~</em> is the component’s mass</p>
+<p>•  <em>r</em> is the distance from the axis in question to the component’s <span class="math inline">\(cg\)</span>.</p>
 <p> </p>
 <p>Similarly, the parallel axis theorem shows how to <strong>determine modified products of inertia</strong> after some component alterations</p>
 <p><img src="media/07/image22.svg" style="width:2.45069in;height:0.27222in" /> </p>
 <p>* *</p>
-<p><em>x</em> and <em>z</em> are the distances from the component <em>cg</em> to the reference axes.</p>
+<p><em>x</em> and <em>z</em> are the distances from the component <span class="math inline">\(cg\)</span> to the reference axes.</p>
 <p> </p>
-<p>Moments of inertia are calculated about a set of reference axes which all intersect at the reference <em>cg</em>. In general, however, the actual <em>cg</em> does not lie exactly at this reference <em>cg.</em> The parallel axis theorem shows how to <strong>correct the moment of inertia to the actual <em>cg</em> axis</strong><em>.</em> As an example, the rolling moment of inertia about the actual <em>cg</em> (<em>I<sub>xcg</sub></em>) is calculated from the reference <em>I<sub>xb</sub></em> as follows.</p>
+<p>Moments of inertia are calculated about a set of reference axes which all intersect at the reference <span class="math inline">\(cg\)</span>. In general, however, the actual <span class="math inline">\(cg\)</span> does not lie exactly at this reference <em>cg.</em> The parallel axis theorem shows how to <strong>correct the moment of inertia to the actual <span class="math inline">\(cg\)</span> axis</strong><em>.</em> As an example, the rolling moment of inertia about the actual <span class="math inline">\(cg\)</span> (<em>I_xcg<sub><em>) is calculated from the reference </em>I_xb</sub></em> as follows.</p>
 <p><img src="media/07/image23.svg" style="width:1.43403in;height:0.25139in" /> </p>
 <p> </p>
 <p> </p>
 <p>where <em>m</em> = total mass</p>
-<p><em>y</em> = lateral distance between <em>cg</em> and aircraft x-axis.</p>
-<p><em>z</em> = vertical distance between <em>cg</em> and aircraft x-axis.</p>
+<p><em>y</em> = lateral distance between <span class="math inline">\(cg\)</span> and aircraft x-axis.</p>
+<p><em>z</em> = vertical distance between <span class="math inline">\(cg\)</span> and aircraft x-axis.</p>
 <p> </p>
 <p> </p>
-<p><strong>7.4.3 Measuring Roll Inertia, <em>I<sub>xb</sub></em></strong> (spring oscillation method)</p>
+<p><strong>7.4.3 Measuring Roll Inertia, <em>I_xb~</em></strong> (spring oscillation method)</p>
 <p><strong> </strong></p>
 <p>1. Balance aircraft on prism-like “knife edges” that support wooden</p>
 <p>cradles that conform to aircraft shape.</p>
@@ -564,44 +716,44 @@
 <p> </p>
 <p><strong>Measuring Roll Inertia (continued)</strong></p>
 <p><strong> </strong></p>
-<p>9. Measure the spring’s stiffness (<em>K<sub>o</sub></em>)</p>
+<p>9. Measure the spring’s stiffness (<em>K_o</em>)</p>
 <p> </p>
-<p>10. Calculate inertia about oscillation axis (<em>I<sub>o</sub></em>) as</p>
+<p>10. Calculate inertia about oscillation axis (<em>I_o</em>) as</p>
 <p> </p>
 <p> <img src="media/07/image28.svg" style="width:2.52917in;height:0.48958in" /><img src="media/07/image29.svg" style="width:0.63889in;height:0.51736in" /><img src="media/07/image30.svg" style="width:1.5in;height:0.375in" /></p>
-<p>11. Use parallel axis theorem to correct <em>I<sub>o</sub></em> to a parallel axis passing through the <em>cg.</em></p>
-<p>12. Springs, cradles and attachments hardware will change the moment of inertia. Sum their total into a combined “test equipment inertia” (∆<em>I<sub>te</sub></em>) and subtract this from the above result.</p>
+<p>11. Use parallel axis theorem to correct <em>I_o</em> to a parallel axis passing through the <em>cg.</em></p>
+<p>12. Springs, cradles and attachments hardware will change the moment of inertia. Sum their total into a combined “test equipment inertia” (I_te~*) and subtract this from the above result.</p>
 <p> </p>
 <p>Combining steps 10-12 gives the complete <strong>moment of inertia equation</strong></p>
 <p> </p>
 <p><img src="media/07/image31.svg" style="width:0.59722in;height:0.48333in" /> </p>
 <p> </p>
-<p>where <em>h</em> is the vertical distance between the <em>cg</em> and axis of oscillation and <em>d</em> is the total distance between the <em>cg</em> and the axis of oscillation (<em>d</em> = <em>h</em> in the illustrated roll inertia test setup).</p>
+<p>where <em>h</em> is the vertical distance between the <span class="math inline">\(cg\)</span> and axis of oscillation and <em>d</em> is the total distance between the <span class="math inline">\(cg\)</span> and the axis of oscillation (<em>d</em> = <em>h</em> in the illustrated roll inertia test setup).</p>
 <p><strong> </strong></p>
 <p><strong>If automatic recording is not available...</strong></p>
 <p>Accomplish steps 1-3 as described for automatic recording case.</p>
-<p>4. Use a stopwatch to time several oscillations and calculate <em>ω<sub>d</sub></em> as before</p>
-<p>5. Measure the spring’s rotational stiffness (<em>K<sub>o</sub></em>)</p>
+<p>4. Use a stopwatch to time several oscillations and calculate *_d* as before</p>
+<p>5. Measure the spring’s rotational stiffness (<em>K_o</em>)</p>
 <p>6. Approximate inertia using the damped frequency using</p>
 <p> </p>
-<p>7. Use parallel axis theorem to correct <em>I<sub>o</sub></em> to a parallel axis</p>
+<p>7. Use parallel axis theorem to correct <em>I_o</em> to a parallel axis</p>
 <p>passing through the <em>cg.</em></p>
 <p>* *</p>
-<p>8<em>.</em> Correct for effects of test hardware moment of inertia (∆<em>I<sub>te</sub></em>).</p>
-<p>9. To correct for errors in the <em>I<sub>o</sub></em> approximation, apply an "additional mass correction" (∆<em>I<sub>am</sub></em>) which equates the flate plate area damping effect to additional inertia. This correction is detailed in ref. 7.5.3.</p>
+<p>8<em>.</em> Correct for effects of test hardware moment of inertia (I_te~*).</p>
+<p>9. To correct for errors in the <em>I_o</em> approximation, apply an "additional mass correction" (I_am~*) which equates the flate plate area damping effect to additional inertia. This correction is detailed in ref. 7.5.3.</p>
 <p> </p>
 <p> </p>
 <p>Combining steps 6-9 gives</p>
 <p> <img src="media/07/image28.svg" style="width:2.52917in;height:0.48958in" /></p>
-<p>Above methods can also be used to determine <em>I<sub>yb</sub></em> and <em>I<sub>zb</sub></em></p>
+<p>Above methods can also be used to determine <em>I_yb~</em> and <em>I_zb~</em></p>
 <p> </p>
 <p><strong> </strong></p>
 <p><strong> </strong></p>
-<p><strong> 7.4.4 Measuring Pitch Inertia, <em>I<sub>yb</sub></em></strong> (spring oscillation method)</p>
+<p><strong> 7.4.4 Measuring Pitch Inertia, <em>I_yb~</em></strong> (spring oscillation method)</p>
 <p><strong> </strong></p>
 <p>1. Balance aircraft on knife edges as shown.</p>
 <p> </p>
-<p>2. Attach spring perpendicular to line <em>a</em>. Only one spring is required since the aircraft <em>cg</em> is off-center. Spring must be stiff enough to hold the aircraft in equilibrium as well as provide a restoring moment during oscillations.</p>
+<p>2. Attach spring perpendicular to line <em>a</em>. Only one spring is required since the aircraft <span class="math inline">\(cg\)</span> is off-center. Spring must be stiff enough to hold the aircraft in equilibrium as well as provide a restoring moment during oscillations.</p>
 <p> </p>
 <p> </p>
 <p> <img src="media/07/image32.svg" style="width:4.5in;height:1.66667in" /></p>
@@ -623,7 +775,7 @@
 <p> </p>
 <p> </p>
 <p> </p>
-<p>Repeat steps 3-12 and apply the moment of inertia equation to determine <em>I<sub>yb</sub></em></p>
+<p>Repeat steps 3-12 and apply the moment of inertia equation to determine <em>I_yb~</em></p>
 <p><em><sub> </sub></em></p>
 <p><em><sub> </sub></em></p>
 <p><em><sub> </sub></em></p>
@@ -632,11 +784,11 @@
 <p> </p>
 <p><strong> </strong></p>
 <p><strong> </strong></p>
-<p><strong> 7.4.5 Measuring Yaw Inertia, <em>I<sub>zb</sub></em></strong> (spring oscillation method)</p>
+<p><strong> 7.4.5 Measuring Yaw Inertia, <em>I_zb~</em></strong> (spring oscillation method)</p>
 <p><strong> </strong></p>
 <p>1. Suspend aircraft as shown: fuselage reference line parallel with floor,</p>
 <p><em>z-</em>body axis coincides with the oscillation axis (<em>h</em> = <em>d</em> = 0).</p>
-<p>For <em>I<sub>zb</sub></em> test, set spring assembly tilt angle parallel to floor (<em>δ </em>= 0).</p>
+<p>For <em>I_zb~</em> test, set spring assembly tilt angle parallel to floor (<em> </em>= 0).</p>
 <p> </p>
 <p> </p>
 <p><img src="media/07/image36.svg" style="width:4.5in;height:2.57292in" /> </p>
@@ -655,14 +807,14 @@
 <p> </p>
 <p> </p>
 <p> </p>
-<p><img src="media/07/image37.svg" style="width:3.83194in;height:3.08333in" />2. Ideal case is where the wing attach points are in line with the aircraft <em>cg</em> as shown. Springs are perpendicular to the AB line and are parallel.</p>
+<p><img src="media/07/image37.svg" style="width:3.83194in;height:3.08333in" />2. Ideal case is where the wing attach points are in line with the aircraft <span class="math inline">\(cg\)</span> as shown. Springs are perpendicular to the AB line and are parallel.</p>
 <p> </p>
 <p> </p>
 <p><strong> Measuring Yaw Inertia (continued)</strong></p>
 <p><strong> </strong></p>
-<p>If not possible to rig wing attach points in line with the <em>cg</em>, then keep the springs parallel to each other and measure the angle φ.  </p>
+<p>If not possible to rig wing attach points in line with the <span class="math inline">\(cg\)</span>, then keep the springs parallel to each other and measure the angle .  </p>
 <p>€</p>
-<p>• Calculate <em>K<sub>o</sub></em> = <em>k</em> cos <em>φ   </em>where <em>k</em> is the actual spring constant</p>
+<p>• Calculate <em>K_o</em> = <em>k</em> cos <em>   </em>where <em>k</em> is the actual spring constant</p>
 <p> </p>
 <p> </p>
 <p> </p>
@@ -682,7 +834,7 @@
 <p> </p>
 <p> </p>
 <p> </p>
-<p>Repeat steps 3-12 and apply the moment of inertia equation to determine <em>I<sub>zb. </sub></em>Note that distances <em>h</em> and <em>d</em> are zero for a properly suspended aircraft.</p>
+<p>Repeat steps 3-12 and apply the moment of inertia equation to determine <em>I_zb. ~</em>Note that distances <em>h</em> and <em>d</em> are zero for a properly suspended aircraft.</p>
 <p> </p>
 <p> </p>
 <p><img src="media/07/image39.svg" style="width:1.36736in;height:0.48958in" /> </p>
@@ -693,11 +845,11 @@
 <p> </p>
 <p><strong> </strong><img src="media/07/image40.svg" style="width:1.98194in;height:0.50764in" /></p>
 <p><strong> </strong></p>
-<p><strong> 7.4.6 Measuring Axis of Inclination and <em>I<sub>xz</sub></em></strong></p>
+<p><strong> 7.4.6 Measuring Axis of Inclination and <em>I_xz~</em></strong></p>
 <p><strong> </strong></p>
-<p>• Inclination of principle axis (<em>ε</em>) is positive if it lies in the +<em>xz</em> plane as shown.</p>
+<p>• Inclination of principle axis (<em>) is positive if it lies in the +</em>xz* plane as shown.</p>
 <p> </p>
-<p>• <em>I<sub>xz</sub></em> positive if <em>ε</em> is positive.</p>
+<p>• <em>I_xz~</em> positive if *is positive.</p>
 <p> </p>
 <p> </p>
 <p> </p>
@@ -723,20 +875,20 @@
 <p><img src="media/07/image44.svg" style="width:1.19583in;height:0.23264in" /> negligible, giving</p>
 <p>and</p>
 <p><img src="media/07/image45.svg" style="width:1.03542in;height:0.26528in" /> </p>
-<p>• If <em>ε</em> (and therefore <em>I<sub>xz </sub></em>) is positive, then yawing to the right will</p>
+<p>• If <em>(and therefore </em>I_xz ~*) is positive, then yawing to the right will</p>
 <p>generate a left rolling moment.</p>
 <p> </p>
-<p>• If <em>ε</em> and <em>I<sub>xz</sub></em> are negative, a right yaw will generate a <em>right</em> moment.</p>
+<p>• If <em>and </em>I_xz~* are negative, a right yaw will generate a <em>right</em> moment.</p>
 <p> </p>
 <p><strong> </strong></p>
-<p><strong> Measuring Axis of Inclination and <em>I<sub>xz </sub></em>(continued)</strong></p>
+<p><strong> Measuring Axis of Inclination and <em>I_xz ~</em>(continued)</strong></p>
 <p><strong> </strong></p>
-<p>1. Determine <em>I<sub>xz</sub></em> and <em>ε</em> by repeating yaw experiment for different spring</p>
-<p>angles (δ). Use instrumentation to note for each δ.</p>
+<p>1. Determine <em>I_xz~</em> and *by repeating yaw experiment for different spring</p>
+<p>angles (). Use instrumentation to note for each .</p>
 <p> </p>
-<p>2 Graphically determine the angle δ<sub>o</sub> at which the restoring vector</p>
+<p>2 Graphically determine the angle _o at which the restoring vector</p>
 <p>produced by the springs completely counteracts the roll motion.</p>
-<p><img src="media/07/image46.svg" style="width:0.125in;height:0.27222in" /> Plot <span class="math display">\[tan *δ*\]</span> vs as shown.</p>
+<p><img src="media/07/image46.svg" style="width:0.125in;height:0.27222in" /> Plot <span class="math display">\[tan *\delta*\]</span> vs as shown.</p>
 <p> </p>
 <p> </p>
 <p> </p>
@@ -752,7 +904,7 @@
 <p> </p>
 <p> </p>
 <p> </p>
-<p>3. Determine the point where <img src="media/07/image49.svg" style="width:0.14861in;height:0.32639in" /> equals zero. This occurs at tan<em>δ<sub>o</sub>.</em></p>
+<p>3. Determine the point where <img src="media/07/image49.svg" style="width:0.14861in;height:0.32639in" /> equals zero. This occurs at tan*_o.*</p>
 <p>* *</p>
 <p><img src="media/07/image50.svg" style="width:0.875in;height:0.23889in" />4. Calculate the product of inertia using</p>
 <p> </p>
@@ -761,7 +913,7 @@
 <p> <img src="media/07/image51.svg" style="width:1.13264in;height:0.45486in" /></p>
 <p> </p>
 <p> </p>
-<p><img src="media/07/image52.svg" style="width:0.125in;height:0.25in" />Note: Since the <em>I<sub>xz</sub></em> test objective is to interpolate to a condition where equals zero, only the ratio is necessary</p>
+<p><img src="media/07/image52.svg" style="width:0.125in;height:0.25in" />Note: Since the <em>I_xz~</em> test objective is to interpolate to a condition where equals zero, only the ratio is necessary</p>
 <p>and the absolute magnitudes of the accelerations are not reuired. In other words, the roll acceleration sensitivity can be increased to allow for easier measurement of the ratio.</p>
 <p> </p>
 <p><strong>7.4.7 Guidelines for Spring Oscillation Method</strong></p>
@@ -816,13 +968,13 @@
 <p> </p>
 <p> </p>
 <p> </p>
-<p>• This effective length is the total radius of gyration <em>l<sub>eff</sub></em> = <em>K<sub>tot </sub></em></p>
+<p>• This effective length is the total radius of gyration <em>l_eff~</em> = <em>K_tot ~</em></p>
 <p> </p>
-<p>• The total moment of inertia about the pivot point is the product of mass and radius of gyration squared. The parallel axis theorem states that this also is the sum of the component’s moment of inertia about its <em>cg</em> plus its mass times the distance between the pivot and the component’s <em>cg</em>.</p>
+<p>• The total moment of inertia about the pivot point is the product of mass and radius of gyration squared. The parallel axis theorem states that this also is the sum of the component’s moment of inertia about its <span class="math inline">\(cg\)</span> plus its mass times the distance between the pivot and the component’s <span class="math inline">\(cg\)</span>.</p>
 <p> </p>
 <p> <img src="media/07/image58.svg" style="width:1.70833in;height:0.27847in" /></p>
 <p> </p>
-<p>3. Solving for the component’s moment of inertia about its own <em>cg</em> gives</p>
+<p>3. Solving for the component’s moment of inertia about its own <span class="math inline">\(cg\)</span> gives</p>
 <p><img src="media/07/image59.svg" style="width:3.36458in;height:0.52917in" /> </p>
 <p><strong> 7.5 References</strong></p>
 <p><strong> </strong></p>
@@ -857,6 +1009,8 @@
 <p> </p>
 <p> </p>
 
+</div>
+</div>
 </div>
             </section>
 
