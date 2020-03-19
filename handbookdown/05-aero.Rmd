@@ -258,30 +258,39 @@ Inserting air values (\(T_K=\)Kelvin and \(T_R=\)Rankin) into Sutherland law giv
 
 ### Reynolds Number Effects (ref 5.10) {-}
 
-* Laminar boundary layers have more gradual change in
+* Laminar boundary layers have more gradual change in velocity near surface than turbulent boundary layers.
+* High Reynolds numbers help propagate turbulent flow.
 
-velocity near surface than
+   ```{block, type='FIXME', echo=FALSE}
+    FIXME: This figure (05031) needs work
+    ```
+![][05031] 
 
-turbulent boundary layers.
+Shearing stress: \(\tau_w = \mu \left(\frac{dv}{dy}\right)_{y=0}\)
 
-* High Reynolds numbers help
+Skin friction coefficient: \(C_f = \frac{\tau_w}{\frac{1}{2}\rho_{\infty} V_{\infty}^2} = \frac{\tau_w}{q_{\infty}} \)
 
-![][05031] propagate turbulent flow.
+Laminar boundary layer: \(\textrm{Total } C_f = \frac{1.328}{\left(Re_L \right)^{1/2}} \)
 
-![][05032]
+Turbulent boundary layer: \(\textrm{Total } C_f = \frac{0.455}{\left(\log(Re_L)\right)^{2.58}} \approx \frac{0.074}{\left(Re_L\right)^{1/5}} \) 
+
+   ```{block, type='FIXME', echo=FALSE}
+   FIXME: remove references to 05032 and resize 05033
+   ```
 
 ![][05033]
 
-*Re~L~* based on total length of flat plate
+\(Re_L\) based on total length of flat plate
 
-* Depth of boundary layer (δ) depends on local Reynolds number (Re~x~) and whether the flow is turbulent or laminar.
+* Depth of boundary layer \((\delta)\) depends on local Reynolds number \((Re_x)\) and whether the flow is turbulent or laminar.
 
-![][05034]
+\[Re_x = \frac{\rho_{\infty} V_{\infty} x}{\mu_{\infty}} \equiv \frac{\textrm{Intertia Forces}}{\textrm{Viscous Forces}} \]
 
-![][05035]
+\(x = \) distance traveled to point in question
 
-*x*= distance traveled to point in question
+\[\delta_{lam} = \frac{5.2x}{\sqrt{Re_x}} \]
 
+\[\delta_{turb} = \frac{0.37x}{Re_x^{0.2}} \]
 
 ### Pressure Drag
 
