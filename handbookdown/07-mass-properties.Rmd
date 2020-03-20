@@ -157,7 +157,7 @@ Given aircraft with empty weight = \(1220\) lbs and \(\mathrm{cg}\) @ 25 inches.
 
 \[\frac{31\,417.5 \text{ in-lb}}{1238 \text{ lbs}} = 25.38 \text{ in} \]
 
-**7.3 Vertical Center of Gravity Measurement**
+## Vertical Center of Gravity Measurement
 
 ** **
 
