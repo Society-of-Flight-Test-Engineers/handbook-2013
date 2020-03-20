@@ -172,7 +172,7 @@
 <li class="chapter" data-level="5.4.2" data-path="aerodynamics.html"><a href="aerodynamics.html#interference-drag"><i class="fa fa-check"></i><b>5.4.2</b> Interference Drag</a></li>
 <li class="chapter" data-level="5.4.3" data-path="aerodynamics.html"><a href="aerodynamics.html#induced-drag"><i class="fa fa-check"></i><b>5.4.3</b> Induced Drag</a></li>
 </ul></li>
-<li class="chapter" data-level="5.5" data-path="aerodynamics.html"><a href="aerodynamics.html#aerodynamic-compressibility-relations-reference-5.8"><i class="fa fa-check"></i><b>5.5</b> Aerodynamic Compressibility Relations** (reference 5.8)</a><ul>
+<li class="chapter" data-level="5.5" data-path="aerodynamics.html"><a href="aerodynamics.html#aerodynamic-compressibility-relations-reference-5.8"><i class="fa fa-check"></i><b>5.5</b> Aerodynamic Compressibility Relations (reference 5.8)</a><ul>
 <li class="chapter" data-level="5.5.1" data-path="aerodynamics.html"><a href="aerodynamics.html#oblique-shocks"><i class="fa fa-check"></i><b>5.5.1</b> Oblique Shocks</a></li>
 <li class="chapter" data-level="5.5.2" data-path="aerodynamics.html"><a href="aerodynamics.html#supersonic-isentropic-expansion-relation"><i class="fa fa-check"></i><b>5.5.2</b> Supersonic Isentropic Expansion Relation</a></li>
 <li class="chapter" data-level="5.5.3" data-path="aerodynamics.html"><a href="aerodynamics.html#two-dimensional-supersonic-airfoil-approximations"><i class="fa fa-check"></i><b>5.5.3</b> Two-Dimensional Supersonic Airfoil Approximations</a></li>
@@ -713,47 +713,43 @@
 <li>Local lift vector is therefore tilted back relative to freestream lift</li>
 <li>Induced drag defined as rearward component of local lift vector</li>
 </ul>
+<!--- This image has an equation in it that should be cropped and put into the text --->
 <div class="figure">
 <img src="media/05/image51.svg" width="422" height="204" />
 
 </div>
-<div class="figure">
-<img src="media/05/image52.svg" width="288" height="142" />
-
-</div>
-<p>Oswald efficiency factor, <em>e</em>, accounts for losses in excess of those predicted above (due to uneven downwash and changing interference drag effects).</p>
-<div class="figure">
-<img src="media/05/image53.svg" width="120" height="54" />
-
-</div>
+<!--- Remove 05042 --->
+<p>Induced Drag <span class="math display">\[\left(D_i\right)=L\left(\alpha_i\right)\]</span></p>
+<p>For elliptical lift distributions <span class="math inline">\(\alpha_i = \frac{C_L}{\pi AR} \)</span></p>
+<p><span class="math display">\[\therefore D_i = L \left(\frac{C_L}{\pi AR}\right) \textrm{ but } L=qSC_L \]</span></p>
+<p><span class="math display">\[C_{D_i} = \frac{D_i}{qS} = \frac{C_L^2}{\pi AR}\]</span></p>
+<p>Oswald efficiency factor, <span class="math inline">\(e\)</span>, accounts for losses in excess of those predicted above (due to uneven downwash and changing interference drag effects).</p>
+<!--- Remove 05043 --->
+<p><span class="math display">\[\therefore C_{D_i} = \frac{C_L^2}{\pi ARe}\]</span></p>
 </div>
 </div>
 <div id="aerodynamic-compressibility-relations-reference-5.8" class="section level2">
-<h2><span class="header-section-number">5.5</span> Aerodynamic Compressibility Relations** (reference 5.8)</h2>
+<h2><span class="header-section-number">5.5</span> Aerodynamic Compressibility Relations (reference 5.8)</h2>
 <p><strong>Prandtl/Glauert Approximation</strong></p>
 <p>Approximates Mach effects on aerodynamics below critical Mach</p>
-<div class="figure">
-<img src="media/05/image54.svg" width="222" height="50" />
-
-</div>
+<p><span class="math display">\[C_{P_{compressible}} = \frac{1}{\sqrt{1-M^2}}C_{P_{incompressible}} \]</span> <!--- Remove 05044 ---></p>
 <p><strong>Total vs Ambient Property Relations for Adiabatic Flow</strong></p>
-<div class="figure">
-<img src="media/05/image55.svg" width="372" height="138" />
-
-</div>
+<p><span class="math display">\[\frac{T_T}{T} = 1 + \frac{\gamma -1}{2}M^2 \textrm{   Isentropic flow not required}\]</span> <span class="math display">\[\frac{P_T}{P} = \left[1 + \frac{\gamma - 1}{2}M^2 \right]^{\frac{\gamma}{\gamma-1}} \textrm{   Isentropic (shockless) flow required}\]</span> <span class="math display">\[\frac{\rho_T}{\rho} = \left[1 + \frac{\gamma - 1}{2} M^2 \right]^{\frac{1}{\gamma -1}} \textrm{   Isentropic flow required} \]</span></p>
+<!--- Remove 05045 --->
 <p><strong>Normal Shock Relations</strong></p>
-<p>Assumes isentropic flow on each side of the shock</p>
-<p>Assumes flow across shock is adiabatic</p>
-<p>Property changes occur in a constant area (throat)</p>
-<div class="figure">
-<img src="media/05/image57.svg" width="194" height="198" />
-
-</div>
+<p>Assumes isentropic flow on each side of the shock Assumes flow across shock is adiabatic Property changes occur in a constant area (throat)</p>
+<p><span class="math display">\[\frac{P_2}{P_1} = \frac{1 - \gamma + 2\gamma M_1^2}{1+\gamma} \]</span> <!--- Check this exponent in the following equation ---> <span class="math display">\[\frac{\rho_2}{\rho_1} = \left[\frac{2 + \left(\gamma - 1\right) M_1^2}{\left(\gamma+1\right) M_1^2} \right]^{-1} \]</span> <span class="math display">\[\frac{T_2}{T_1} = \left[\frac{1 - \gamma + 2\gamma M_1^2}{1 + \gamma} \right]\left[\frac{2 + \left(\gamma - 1\right) M_1^2}{\left(1 + \gamma\right) M_1^2} \right] \]</span> <span class="math display">\[M_2^2 = \frac{M_1^2 + \frac{2}{\gamma - 1}}{\frac{2\gamma}{\gamma-1} M_1^2-1} \]</span></p>
+<!--- Remove 05046 --->
 <p>Normal shock summary</p>
-<div class="figure">
-<img src="media/05/image58.svg" width="312" height="50" />
-
-</div>
+<p><span class="math inline">\(P_{T_1} &gt; P_{T_2}\)</span></p>
+<p><span class="math inline">\(P_{1} &lt; P_{2}\)</span></p>
+<p><span class="math inline">\(\rho_{T_1} &gt; \rho_{T_2}\)</span></p>
+<p><span class="math inline">\(\rho_{1} &lt; \rho_{2}\)</span></p>
+<p><span class="math inline">\(T_{T_1} &gt; T_{T_2}\)</span></p>
+<p><span class="math inline">\(T_{1} &lt; T_{2}\)</span></p>
+<p><span class="math inline">\(M_1 &gt; M_2 \)</span></p>
+<p><span class="math inline">\(s_1 &lt; s_2 \)</span></p>
+<!--- Remove 05047 --->
 <div id="oblique-shocks" class="section level3">
 <h3><span class="header-section-number">5.5.1</span> Oblique Shocks</h3>
 <p><strong>Oblique Shock Description</strong></p>

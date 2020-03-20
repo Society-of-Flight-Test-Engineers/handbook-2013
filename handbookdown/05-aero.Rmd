@@ -302,6 +302,10 @@ Turbulent boundary layer: \(\textrm{Total } C_f = \frac{0.455}{\left(\log(Re_L)\
 
 * Imbalance of pressures on surfaces causes pressure drag
 
+  ```{block, type='FIXME', echo=FALSE}
+  The following figures have (a), (b), (b), and (c) that not only don't really have any meaning, but also has a repeated (b)
+  ```
+
 ![][05037]
 
 ![][05038]
@@ -326,40 +330,78 @@ Turbulent boundary layer: \(\textrm{Total } C_f = \frac{0.455}{\left(\log(Re_L)\
 * Local lift vector is therefore tilted back relative to freestream lift
 * Induced drag defined as rearward component of local lift vector
 
+<!--- This image has an equation in it that should be cropped and put into the text --->
 ![][05041]
 
-![][05042]
+<!--- Remove 05042 --->
+Induced Drag \[\left(D_i\right)=L\left(\alpha_i\right)\]
 
-Oswald efficiency factor, *e*, accounts for losses in excess of those predicted above (due to uneven downwash and changing interference drag effects).
+For elliptical lift distributions \(\alpha_i = \frac{C_L}{\pi AR} \)
 
-![][05043]
+\[\therefore D_i = L \left(\frac{C_L}{\pi AR}\right) \textrm{ but } L=qSC_L \]
 
-## Aerodynamic Compressibility Relations** (reference 5.8)
+\[C_{D_i} = \frac{D_i}{qS} = \frac{C_L^2}{\pi AR}\]
+
+Oswald efficiency factor, \(e\), accounts for losses in excess of those predicted above (due to uneven downwash and changing interference drag effects).
+
+<!--- Remove 05043 --->
+\[\therefore C_{D_i} = \frac{C_L^2}{\pi ARe}\]
+
+## Aerodynamic Compressibility Relations (reference 5.8)
+  ```{block, type='FIXME', echo=FALSE}
+  This whole section and it's formatting and numbering really need to be re-done.  Normal shocks don't have a subsection, but obliques do for instance.  Needs consistency
+  ```
 
 **Prandtl/Glauert Approximation**
 
 Approximates Mach effects on aerodynamics below critical Mach
 
-![][05044]
+\[C_{P_{compressible}} = \frac{1}{\sqrt{1-M^2}}C_{P_{incompressible}} \]
+<!--- Remove 05044 --->
 
 **Total vs Ambient Property Relations for Adiabatic Flow**
 
-![][05045]
+\[\frac{T_T}{T} = 1 + \frac{\gamma -1}{2}M^2 \textrm{   Isentropic flow not required}\]
+\[\frac{P_T}{P} = \left[1 + \frac{\gamma - 1}{2}M^2 \right]^{\frac{\gamma}{\gamma-1}} \textrm{   Isentropic (shockless) flow required}\]
+\[\frac{\rho_T}{\rho} = \left[1 + \frac{\gamma - 1}{2} M^2 \right]^{\frac{1}{\gamma -1}} \textrm{   Isentropic flow required} \]
+
+<!--- Remove 05045 --->
 
 **Normal Shock Relations**
 
 Assumes isentropic flow on each side of the shock
-
 Assumes flow across shock is adiabatic
-
 Property changes occur in a constant area (throat)
 
-![][05046]
+\[\frac{P_2}{P_1} = \frac{1 - \gamma + 2\gamma M_1^2}{1+\gamma} \]
+<!--- Check this exponent in the following equation --->
+\[\frac{\rho_2}{\rho_1} = \left[\frac{2 + \left(\gamma - 1\right) M_1^2}{\left(\gamma+1\right) M_1^2} \right]^{-1} \]
+\[\frac{T_2}{T_1} = \left[\frac{1 - \gamma + 2\gamma M_1^2}{1 + \gamma} \right]\left[\frac{2 + \left(\gamma - 1\right) M_1^2}{\left(1 + \gamma\right) M_1^2} \right] \]
+\[M_2^2 = \frac{M_1^2 + \frac{2}{\gamma - 1}}{\frac{2\gamma}{\gamma-1} M_1^2-1} \]
+
+<!--- Remove 05046 --->
 
 Normal shock summary
+  ```{block, type='FIXME', echo=FALSE}
+  These aren't all defined (i.e. what is s?)
+  ```
+\(P_{T_1} > P_{T_2}\)
 
+\(P_{1} < P_{2}\)
 
-![][05047]
+\(\rho_{T_1} > \rho_{T_2}\)
+
+\(\rho_{1} < \rho_{2}\)
+
+\(T_{T_1} > T_{T_2}\)
+
+\(T_{1} < T_{2}\)
+
+\(M_1 > M_2 \)
+
+\(s_1 < s_2 \)
+
+<!--- Remove 05047 --->
 
 ### Oblique Shocks
 
