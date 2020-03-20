@@ -10,13 +10,13 @@
 | \(\varepsilon\)      | inclination of principle axis (positive if tilted down).                                      |              |
 | \(\omega_d\)      | damped frequency of oscillation                                                               | [rad/sec]    |
 | \(\omega_n\)      | natural frequency of oscillation                                                              | [rad/sec]    |
-| \(\phi\)          | angle between aircraft y-axis and line connecting aircraft \(cg\) with spring attach points.  |              |
+| \(\phi\)          | angle between aircraft y-axis and line connecting aircraft \(\mathrm{cg}\) with spring attach points.  |              |
 | \(a\)             | perpendicular distance from the spring line of action to the oscillation axis                 | [ft]         |
-| \(cg\)            | center of gravity                                                                             |              |
+| \(\mathrm{cg}\)            | center of gravity                                                                             |              |
 | \(f\)             | measured frequency of oscillation                                                             | [cycles/sec] |
 | \(g\)             | Earth's acceleration due to gravity                                                           |              |
-| \(h\)             | vertical component of the perpendicular distance from the \(cg\) to the oscillation axis.     |              |
-| \(I_{cg}\)        | moment of inertia any axis passing through the \(cg\)                                         |              |
+| \(h\)             | vertical component of the perpendicular distance from the \(\mathrm{cg}\) to the oscillation axis.     |              |
+| \(I_{cg}\)        | moment of inertia any axis passing through the \(\mathrm{cg}\)                                         |              |
 | \(I_{xb}\)        | moment of inertia about aircraft body x-axis                                                  |              |
 | \(I_{xz}\)        | product of inertia in aircraft body x-z plane                                                 |              |
 | \(I_{yb}\)        | moment of inertia about aircraft body y-axis                                                  |              |
@@ -28,8 +28,8 @@
 | \(L\)             | rolling moment                                                                                |              |
 | \(l_{eff}\)       | effective pendulum length                                                                     |              |
 | \(m\)             | mass                                                                                          |              |
-| \(MAC\)           | mean aerodynamic chord                                                                        |              |
-| \(METO\)          | maximum power (except for takeoff)                                                            |              |
+| \(\mathrm{MAC}\)           | mean aerodynamic chord                                                                        |              |
+| \(\mathrm{METO}\)          | maximum power (except for takeoff)                                                            |              |
 | \(N\)             | yawing moment                                                                                 |              |
 | \(p\)             | roll rate                                                                                     |              |
 | \(r\)             | yaw rate                                                                                      |              |
@@ -37,137 +37,125 @@
 
 ### Terminology {-}
 
-Term | Definition
------------|---------------
-allowable \(cg\) range  | Documented on Type Certificate Data Sheet. May be different for takeoff vs landing. Forward limit usually determined by control power limitations, aft limit usually deter mined by stability requirements.
-datum | The manufacturer defined reference plane used for distance calculations.
-empty weight | Basic aircraft weight with only equipment on board. (without crew, passengers, or fuel). This weight may or may not inlcude oil weight, depending on civil certification date.
-empty weight \(cg\) range | The allowable \(cg\) locations for an empty aircraft. This is defined by the manufacturer to help assure that a normally loaded aircraft will have an acceptable total \(cg\) location.
-lateral | Along the aircraft y-axis.
-longitudinal | Along the aircraft x-axis
-maximum weight | Maximum allowable weight. Usually implies takeoff weight, but may apply to landing or in-flight weight. conditions after aerial refueling.
-minimum fuel | A calculated value that represents the minimum amount of fuel any airplane should have while retaining appropriate flight reserves. Calculated as: min fuel [lbs] = \(0.5 \, METO\) [hp]
-moment arm | Distance between datum plane and \(cg\) of object
-moment | Product of moment arm and force (weight)
-tare | The bias in weight scales due to test equipment weight or due to scale calibration errors
-useful load | Maximum takeoff weight minus empty weight
-weighing point | Location where aircraft is supported during the \(cg\) measurement.
+| Term                      | Definition                                                                                                                                                                                                  |
+|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| allowable \(\mathrm{cg}\) range    | Documented on Type Certificate Data Sheet. May be different for takeoff vs landing. Forward limit usually determined by control power limitations, aft limit usually deter mined by stability requirements. |
+| datum                     | The manufacturer defined reference plane used for distance calculations.                                                                                                                                    |
+| empty weight              | Basic aircraft weight with only equipment on board. (without crew, passengers, or fuel). This weight may or may not inlcude oil weight, depending on civil certification date.                              |
+| empty weight \(\mathrm{cg}\) range | The allowable \(\mathrm{cg}\) locations for an empty aircraft. This is defined by the manufacturer to help assure that a normally loaded aircraft will have an acceptable total \(\mathrm{cg}\) location.                     |
+| lateral                   | Along the aircraft y-axis.                                                                                                                                                                                  |
+| longitudinal              | Along the aircraft x-axis                                                                                                                                                                                   |
+| maximum weight            | Maximum allowable weight. Usually implies takeoff weight, but may apply to landing or in-flight weight. conditions after aerial refueling.                                                                  |
+| minimum fuel              | A calculated value that represents the minimum amount of fuel any airplane should have while retaining appropriate flight reserves. Calculated as: min fuel [lbs] = \(0.5 \, \mathrm{METO}\) [hp]                    |
+| moment arm                | Distance between datum plane and \(\mathrm{cg}\) of object                                                                                                                                                           |
+| moment                    | Product of moment arm and force (weight)                                                                                                                                                                    |
+| tare                      | The bias in weight scales due to test equipment weight or due to scale calibration errors                                                                                                                   |
+| useful load               | Maximum takeoff weight minus empty weight                                                                                                                                                                   |
+| weighing point            | Location where aircraft is supported during the \(\mathrm{cg}\) measurement.                                                                                                                                         |
 
-**7.2 Longitudinal & Lateral Center of Gravity Measurement**
+## Longitudinal & Lateral Center of Gravity Measurement
 
- 
+### Test set-up procedures for empty weight \(\mathrm{cg}\) determination {-}
 
-**Test set-up procedures for empty weight \(cg\) determination**
+1. Clean aircraft including any mud or water seepage.
+1. Ensure all aircraft equipment in place.
+1. Drain to only residual oil (for older aircraft that include only residual oil as part of empty weight calculations) or fill to full oil (newer aircraft include full oil for calculations).
+1. Drain to residual fuel only.
+1. Rig all equipment in a closed building to eliminate wind effects.
+1. Calibrate scales.
+1. Record tare (bias in scale readings, may be due to wheel chocks, jack stands, or other test equipment)
+1. Place aircraft on scales and level according to manufacturer's specifications.
+1. Measure longitudinal and lateral distances between scale centers and datum. NOTE: distances behind datum are positive, distances ahead of datum are negative.
+1. Record each scale weight
 
-> 1\. Clean aircraft including any mud or water seepage.
->
-> 2\. Ensure all aircraft equipment in place.
->
-> 3\. Drain to only residual oil (for older aircraft that include only
->
-> residual oil as part of empty weight calculations) or fill to full oil (newer aircraft include full oil for calculations).
->
-> 4\. Drain to residual fuel only.
->
-> 5\. Rig all equipment in a closed building to eliminate wind effects.
->
-> 6 Calibrate scales.
->
-> 7\. Record tare (bias in scale readings, may be due to wheel chocks, jack stands, or other test equipment)
->
-> 8\. Place aircraft on scales and level according to manufacturer's specifications.
->
-> 9\. Measure longitudinal and lateral distances between scale centers and datum. NOTE: distances behind datum are positive, distances ahead of datum are negative.
->
-> 10\. Record each scale weight
->
->  
->
-> **Calculating longitudinal center of gravity**
->
-> 11\. Subtract the tare from each scale reading to get the correct weight.
->
-> 12\. Multiply each scale's corrected weight by its distance to the
->
-> datum. This product is the moment for each scale.
->
-> 13\. Sum the moments in step 12.
->
-> 14\. Sum the corrected weights.
->
-> 15\. Divide the total moment by the total weight \[step 13/step 14\] to
->
-> obtain the distance from the datum to the *cg.* Some aircraft use this distance for all \(cg\) references (typically presented in inches).
->
-> 16\. Other aircraft refer \(cg\) location to a percent of the mean aerodynamic chord (*MAC*). In this case, subtract the distance between the datum and the leading edge of the *MAC* from the distance in step 15.
->
-> 17\. Divide the distance in step 16 by the length of the MAC. This number is the fraction of the cg location along the MAC.
->
-> 18 To present the above fraction in terms of % *MAC*, multiply by 100.
+### Calculating longitudinal center of gravity {-}
 
- 
+11. Subtract the tare from each scale reading to get the correct weight.
+1. Multiply each scale's corrected weight by its distance to the datum. This product is the moment for each scale.
+1. Sum the moments in step 12.
+1. Sum the corrected weights.
+1. Divide the total moment by the total weight,step 13/step 14, to obtain the distance from the datum to the \(\mathrm{cg}\). Some aircraft use this distance for all \(\mathrm{cg}\) references (typically presented in inches).
+1. Other aircraft refer \(\mathrm{cg}\) location to a percent of the mean aerodynamic chord, \(\mathrm{MAC}\). In this case, subtract the distance between the datum and the leading edge of the \(\mathrm{MAC}\) from the distance in step 15.
+1. Divide the distance in step 16 by the length of the \(\mathrm{MAC}\). This number is the fraction of the \(\mathrm{cg}\) location along the \(\mathrm{MAC}\).
+1. To present the above fraction in terms of % \(\mathrm{MAC}\), multiply by 100.
 
-![][07001]**Example \(cg\) calculations**
+#### Example \(\mathrm{cg}\) calculations {-}
 
- 
+![Example \(\mathrm{cg}\) calculations][07001]
 
-320 *lbs*
+Scales read:
 
-  816 *lbs* right
+* \(320\) lbs @ Nose wheel
+* \(816\) lbs @ Right main 
+* \(810\) lbs @ Left main
 
-810 *lbs* left
+##### Example Using Datum at Main Landing Gear {-}
 
- ![][07002]![][07003]![][07004]
+| Item | Weight | \(\times\) | Arm | \(=\) | Moment |
+|------|-------:|-----------:|----:|------:|-------:|
+| Right Wheel | \(816\) lbs | \(\times\) | \(0\) in | \(=\) | \(0\) in-lb |
+| Left  Wheel | \(810\) lbs | \(\times\) | \(0\) in | \(=\) | \(0\) in-lb |
+| Nose  Wheel | \(320\) lbs | \(\times\) | \(-75\) in | \(=\) | \(-24\,000\) in-lb |
+| **Total** | **\(1946\) lbs** |  | |  | **\(-24\,000\) in-lb** |
 
-**Correcting empty weight \(cg\) for changes in fuel, passengers,**
+\[\frac{-24\,000 \text{ in-lb}}{1946 \text{ lbs}} = 12.33 \text{ in (Forward of Main Wheel Centerline)} \]
 
-**equipment or stores.**
+##### Example Using Datum at Prop Spinner {-}
 
- 
+| Item | Weight | \(\times\) | Arm | \(=\) | Moment |
+|------|-------:|-----------:|----:|------:|-------:|
+| Right Wheel | \(816\) lbs | \(\times\) | \(115\) in | \(=\) | \(93\,840\) in-lb |
+| Left  Wheel | \(810\) lbs | \(\times\) | \(115\) in | \(=\) | \(93\,150\) in-lb |
+| Nose  Wheel | \(320\) lbs | \(\times\) | \(40\) in | \(=\) | \(12\,800\) in-lb |
+| **Total** | **\(1946\) lbs** |  | |  | **\(199\,790\) in-lb** |
 
-1\. Note aircraft empty weight & empty weight \(cg\). Multiply these
+\[\frac{199\,790 \text{ in-lb}}{1946 \text{ lbs}} = 102.67 \text{ in (Aft of Prop Spinner)} \]
 
-values to obtain the empty weight moment.
+##### Example Lateral \(\mathrm{cg}\) Calculation {-}
 
-2\. Note the weight and moment arm for each item added to or subtracted from the aircraft (items subtracted are listed as negative weights).
+| Item | Weight | \(\times\) | Arm | \(=\) | Moment |
+|------|-------:|-----------:|----:|------:|-------:|
+| Right Wheel | \(816\) lbs | \(\times\) | \(+70 \) in | \(=\) | \(57\,120\) in-lb |
+| Left  Wheel | \(810\) lbs | \(\times\) | \(-70\) in | \(=\) | \(-56\,700\) in-lb |
+| Nose  Wheel | \(320\) lbs | \(\times\) | \(0\) in | \(=\) | \(0\) in-lb |
+| **Total** | **\(1946\) lbs** |  | |  | **\(420\) in-lb** |
 
-3\. Multiply each item's weight and arm to determine its moment.
+\[\frac{420 \text{ in-lb}}{1946 \text{ lbs}} = 0.216 \text{ in (Right of Centerline)} \]
 
-4\. Sum each item's moment in step 3 with the aircraft empty weight moment.
+### Correcting empty weight \(\mathrm{cg}\) for changes in fuel, passengers, equipment or stores. {-}
 
-5\. Sum each item's weight with the aircraft empty weight.
+1. Note aircraft empty weight & empty weight \(\mathrm{cg}\). Multiply these values to obtain the empty weight moment.
+1. Note the weight and moment arm for each item added to or subtracted from the aircraft (items subtracted are listed as negative weights).
+1. Multiply each item's weight and arm to determine its moment.
+1. Sum each item's moment in step 3 with the aircraft empty weight moment.
+1. Sum each item's weight with the aircraft empty weight.
+1. Calculate the new \(\mathrm{cg}\), step 4/step 5.
 
-6\. Calculate the new \(cg\) as \[step 4/step 5\].
+#### Example \(\mathrm{cg}\) corrections {-}
 
-**Example \(cg\) corrections:**
+Given aircraft with empty weight = \(1075\) lbs and \(\mathrm{cg}\) @ \(84\) inches. Add pilot (\(170\) lbs @ \(85.5\)"), fuel ( \(75\) lbs @ \(94\)"), and oil (\(15\) lbs @ \(31.7\)").
 
-Given aircraft with empty weight = 1,075 *lbs* and \(cg\) @ 84 inches. Add pilot (170 *lbs*, \@85.5"), fuel (75 *lbs* \@94"), and oil (15 *lbs* @ 31.7").
+| Item | Weight | \(\times\) | Arm | \(=\) | Moment |
+|------|-------:|-----------:|-----:|------:|-------:|
+| Airplane~(empty)~ | \(1075\) lbs  | \(\times\) | \(84.0\) in    | \(=\) | \(90\,300.0\) in-lb |
+| Pilot             | \(170\) lbs   | \(\times\) | \(85.5\) in  | \(=\) | \(14\,535.0\) in-lb |
+| Fuel              | \(75\) lbs    | \(\times\) | \(94.0\) in    | \(=\) | \(7050.0\) in-lb |
+| Oil               | \(15\) lbs    | \(\times\) | \(31.7\) in  | \(=\) | \(475.5\) in-lb |
+| **Total** | **\(1335\) lbs** |  | |  | **\(112\,360.5\) in-lb** |
 
- 
+\[\frac{112\,360.5 \text{ in-lb}}{1335 \text{ lbs}} = 84.16 \text{ in} \]
 
- 
+Given aircraft with empty weight = \(1220\) lbs and \(\mathrm{cg}\) @ 25 inches. Add radio (\(15\) lbs @ \(65\)"), and replace \(11\) lb generator with \(14\) lb generator at same \(21.5\)" location (in front of datum-located on firewall).
 
- 
+| Item | Weight | \(\times\) | Arm | \(=\) | Moment |
+|------|-------:|-----------:|-----:|------:|-------:|
+| Airplane~(empty)~     | \(1220\) lbs | \(\times\) | \(25.0\) in    | \(=\) | \(30\,500.0\) in-lb |
+| Pilot                 | \(15\) lbs   | \(\times\) | \(65.0\) in  | \(=\) | \(975.0\) in-lb |
+| Generator~(removed)~  | \(-11\) lbs  | \(\times\) | \(-21.5\) in    | \(=\) | \(236.5\) in-lb |
+| Generator~(installed)~| \(+14\) lbs  | \(\times\) | \(-21.5\) in  | \(=\) | \(-294.0\) in-lb |
+| **Total** | **\(1238\) lbs** |  | |  | **\(31\,417.5\) in-lb** |
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-![][07005] 
-
- 
-
-Given aircraft with empty weight = 1,220 *lbs* and \(cg\) @ 25 inches. Add radio (15 *lbs*, @ 65"), and replace 11 *lb* generator with 14 *lb* generator at same 21.5" location (in front of datum-located on firewall).
-
-![][07006] 
+\[\frac{31\,417.5 \text{ in-lb}}{1238 \text{ lbs}} = 25.38 \text{ in} \]
 
 **7.3 Vertical Center of Gravity Measurement**
 
@@ -205,11 +193,11 @@ and the slope.
 
 applies to "gear
 
-down" \(cg\) .
+down" \(\mathrm{cg}\) .
 
 • For "gear up" add the manufacturer\'s
 
-prediction of the \(cg\) shift to this result.
+prediction of the \(\mathrm{cg}\) shift to this result.
 
  
 
@@ -365,7 +353,7 @@ component alterations. Example: Correct original aircraft roll inertia, *I_xb~*~
 
  
 
-• *I_x\ comp~* is the moment of inertia of just the new component about an axis which is parallel to the aircraft axis in question (this axis should run through the component's \(cg\))*.*
+• *I_x\ comp~* is the moment of inertia of just the new component about an axis which is parallel to the aircraft axis in question (this axis should run through the component's \(\mathrm{cg}\))*.*
 
 • *I_x\ comp~* can be determined analytically by summing the inertias of every mass element throughout the component (documented for simple shapes in various engineering handbooks).
 
@@ -375,7 +363,7 @@ component alterations. Example: Correct original aircraft roll inertia, *I_xb~*~
 
 • *m_comp~* is the component's mass
 
-•  *r* is the distance from the axis in question to the component's \(cg\).
+•  *r* is the distance from the axis in question to the component's \(\mathrm{cg}\).
 
  
 
@@ -385,11 +373,11 @@ Similarly, the parallel axis theorem shows how to **determine modified products 
 
 \* *
 
-*x* and *z* are the distances from the component \(cg\) to the reference axes.
+*x* and *z* are the distances from the component \(\mathrm{cg}\) to the reference axes.
 
  
 
-Moments of inertia are calculated about a set of reference axes which all intersect at the reference \(cg\). In general, however, the actual \(cg\) does not lie exactly at this reference *cg.* The parallel axis theorem shows how to **correct the moment of inertia to the actual \(cg\) axis***.* As an example, the rolling moment of inertia about the actual \(cg\) (*I_xcg~*) is calculated from the reference *I_xb~* as follows.
+Moments of inertia are calculated about a set of reference axes which all intersect at the reference \(\mathrm{cg}\). In general, however, the actual \(\mathrm{cg}\) does not lie exactly at this reference *cg.* The parallel axis theorem shows how to **correct the moment of inertia to the actual \(\mathrm{cg}\) axis***.* As an example, the rolling moment of inertia about the actual \(\mathrm{cg}\) (*I_xcg~*) is calculated from the reference *I_xb~* as follows.
 
 ![][07020] 
 
@@ -399,9 +387,9 @@ Moments of inertia are calculated about a set of reference axes which all inters
 
 where *m* = total mass
 
-*y* = lateral distance between \(cg\) and aircraft x-axis.
+*y* = lateral distance between \(\mathrm{cg}\) and aircraft x-axis.
 
-*z* = vertical distance between \(cg\) and aircraft x-axis.
+*z* = vertical distance between \(\mathrm{cg}\) and aircraft x-axis.
 
  
 
@@ -515,7 +503,7 @@ Combining steps 10-12 gives the complete **moment of inertia equation**
 
  
 
-where *h* is the vertical distance between the \(cg\) and axis of oscillation and *d* is the total distance between the \(cg\) and the axis of oscillation (*d* = *h* in the illustrated roll inertia test setup).
+where *h* is the vertical distance between the \(\mathrm{cg}\) and axis of oscillation and *d* is the total distance between the \(\mathrm{cg}\) and the axis of oscillation (*d* = *h* in the illustrated roll inertia test setup).
 
 ** **
 
@@ -565,7 +553,7 @@ Above methods can also be used to determine *I_yb~* and *I_zb~*
 
  
 
-2\. Attach spring perpendicular to line *a*. Only one spring is required since the aircraft \(cg\) is off-center. Spring must be stiff enough to hold the aircraft in equilibrium as well as provide a restoring moment during oscillations.
+2\. Attach spring perpendicular to line *a*. Only one spring is required since the aircraft \(\mathrm{cg}\) is off-center. Spring must be stiff enough to hold the aircraft in equilibrium as well as provide a restoring moment during oscillations.
 
  
 
@@ -673,7 +661,7 @@ For *I_zb~* test, set spring assembly tilt angle parallel to floor (*\delta *= 
 
  
 
-![][07034]2. Ideal case is where the wing attach points are in line with the aircraft \(cg\) as shown. Springs are perpendicular to the AB line and are parallel.
+![][07034]2. Ideal case is where the wing attach points are in line with the aircraft \(\mathrm{cg}\) as shown. Springs are perpendicular to the AB line and are parallel.
 
  
 
@@ -683,7 +671,7 @@ For *I_zb~* test, set spring assembly tilt angle parallel to floor (*\delta *= 
 
 ** **
 
-If not possible to rig wing attach points in line with the \(cg\), then keep the springs parallel to each other and measure the angle \phi.  
+If not possible to rig wing attach points in line with the \(\mathrm{cg}\), then keep the springs parallel to each other and measure the angle \phi.  
 
 €
 
@@ -999,7 +987,7 @@ or
 
  
 
-• The total moment of inertia about the pivot point is the product of mass and radius of gyration squared. The parallel axis theorem states that this also is the sum of the component's moment of inertia about its \(cg\) plus its mass times the distance between the pivot and the component's \(cg\).
+• The total moment of inertia about the pivot point is the product of mass and radius of gyration squared. The parallel axis theorem states that this also is the sum of the component's moment of inertia about its \(\mathrm{cg}\) plus its mass times the distance between the pivot and the component's \(\mathrm{cg}\).
 
  
 
@@ -1007,7 +995,7 @@ or
 
  
 
-3\. Solving for the component's moment of inertia about its own \(cg\) gives
+3\. Solving for the component's moment of inertia about its own \(\mathrm{cg}\) gives
 
 ![][07056] 
 
