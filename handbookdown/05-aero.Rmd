@@ -409,80 +409,70 @@ Normal shock summary
 
 ![][05048]
 
-δ = surface turning angle
+\[\delta = \textrm{surface turning angle}\]
 
-θ = shock wave angle
+\[\theta = \textrm{shock wave angle}\]
 
-Subscript 1 denotes upstream conditions
+\[\textrm{Subscript 1 denotes upstream conditions}\]
 
-Subscript 2 denotes downstream conditions
+\[\textrm{Subscript 2 denotes downstream conditions}\]
 
 **Oblique Shock Relations**
 
-* Calculate *P~2~/P~1~, T~2~/T~1~*, and *ρ~2~/ρ~1~* across oblique shocks by using normal shock equations and substituting *M~1~ sinθ* in place of *M~1~*
-
+* Calculate \(P_2/P_1\), \(T_2/T_1\), and \(\rho_2/\rho_1\) across oblique shocks by using normal shock equations and substituting \(M_1 \sin\theta\) in place of \(M_1\)
 * Calculate total pressure loss across oblique shock as
+
+\[\frac{P_{T_2}}{P_{T_1}} = \left[\left[\frac{\gamma - 1}{\gamma + 1} + \frac{2}{{\left(\gamma + 1\right)M_1^2\sin^2\theta}}\right]^{\gamma} \left[\frac{2\gamma}{\gamma+1} M_1^2\sin^2\theta - \frac{\gamma - 1}{\gamma + 1} \right]\right]^{\frac{1}{1 - \gamma}}  \]
+
 * Calculate relation between Mach number and angles as
 
-![][05049]
+\[M_2^2\sin^2\left(\delta - \theta\right) = \frac{M_1^2 \sin^2\theta + \frac{2}{\gamma-1}}{\frac{2\gamma}{\gamma - 1} M_1^2\sin^2\theta - 1} \]
 
-![][05050]
+<!--- FIXME: Remove 05049, 05050 --->
 
 **Oblique Shock Turning Angle as a Function of Wave Angle**
 
 ![][05051]
 
-* Two θ solutions exist for every M~1~ & *δ* combination
-
-These represent the strong and weak shock solutions
-
-Weak shocks normally occur in nature
-
+* Two \(\theta\) solutions exist for every \(M_1\) & \(\delta\) combination
+    * These represent the strong and weak shock solutions
+    * Weak shocks normally occur in nature
 * There is a minimum Mach number for each turning angle
-
 * The wave angle of a weak shock decreases with increased Mach
-
-* For a given Mach number, *θ* approaches *μ* as *δ* decreases
+* For a given Mach number, \(\theta\) approaches \(\mu\) as \(\delta\) decreases
 
 **Mach Cone Angle**
 
 ![][05052]
 
-Minimum Wave Angle
-
-μ=sin^−1^(1/Μ)
+Minimum Wave Angle: \(\mu = \sin^{-1}\left(1/M\right) \)
 
 ### Supersonic Isentropic Expansion Relation
 
 ![][05053]
 
-* The wave angle *μ* determines where the lower pressure can be felt and thus where the flow can be accelerated
-
+* The wave angle \(\mu\) determines where the lower pressure can be felt and thus where the flow can be accelerated
 * As the flow accelerates, a new wave angle forms and the subsequent lower pressure further accelerates the flow
-
 * Results in a series of Mach waves forming a "fan" until the flow turns and accelerates so that it is parallel to the new boundary
 
 **Prandtl-Meyer Function**
 
-Shows flow's required turning angle (ν) to accelerate from one Mach number to another
+Shows flow's required turning angle (\(\nu\)) to accelerate from one Mach number to another
 
-![][05054]
+\[\nu_M = \sqrt{\frac{\gamma + 1}{\gamma - 1}} \left[\tan^{-1}\sqrt{\frac{\gamma - 1}{\gamma + 1} \left(M^2 - 1\right)} \right] - \tan^{-1}\sqrt{M^2-1} \]
 
-* If upstream Mach (M~1~) =1, then ν~1~ = 0, and equation directly relates downstream Mach (M~2~) to surface turning angle (∆ν)
+<!--- Remove 05054 --->
 
-* If M~1~\>1, determine M~2~ as follows:
-
-Calculate upstream ν~1~ from above equation
-
-Calculate ν~2~ = ν~1~ + ∆ν
-
-Reverse above equation to obtain corresponding M~2~
-
+* If upstream Mach \((M_1) = 1\), then \(\nu_1 = 0\), and equation directly relates downstream Mach (\(M_2\)) to surface turning angle (\(\Delta \nu\))
+* If \(M_1 > 1\), determine \(M_2\) as follows:
+    * Calculate upstream ν~1~ from above equation
+    * Calculate \(\nu_2 = \nu_1 + \Delta \nu \)
+    * Reverse above equation to obtain corresponding \(M_2\)
 * Above equation is tabulated in NACA TR 1135 and is plotted below
 
 ![][05055]
 
-Example: Flow initially at *M~1~* = 2.0 accelerates through an expansion corner of 24 *deg*. Exit Mach number is 3.0
+Example: Flow initially at \(M_1 = 2.0\) accelerates through an expansion corner of 24 deg. Exit Mach number is 3.0
 
 ### Two-Dimensional Supersonic Airfoil Approximations
 
@@ -492,19 +482,35 @@ Example: Flow initially at *M~1~* = 2.0 accelerates through an expansion corner 
 
 * Ackert approximations for thin wings are based on
 
-![][05057]
+   ```{block, type='FIXME', echo=FALSE}
+   I'm not sure if the "congruent" sign is the best symbol to use here.  Maybe approximately equal for consistency?
+   ```
 
-![][05058]
+\[C_p = \frac{\Delta P}{q} \cong \pm\frac{2 \delta}{\sqrt{M^2 - 1}} \]
+
+<!--- Remove ![][05057] ---->
+
 
 * Double wedge airfoil approximations
 
-![][05059]
+![][05058]
+
+\[C_L \cong \frac{4 \alpha}{\sqrt{M^2 - 1} }\]
+
+\[C_D \cong \frac{4 \alpha^2}{\sqrt{M^2 - 1}} + \frac{4}{\sqrt{M^2 - 1}}\left(\frac{t}{c}\right)^2\]
+
+<!--- Remove ![][05059] --->
 
 * Biconvex wing approximations
 
-![][05060]
-
 ![][05061]
+
+\[C_L \cong \frac{4 \alpha}{\sqrt{M^2 - 1} }\]
+
+\[C_D \cong \frac{4 \alpha^2}{\sqrt{M^2 - 1}} + \frac{5.33}{\sqrt{M^2 - 1}}\left(\frac{t}{c}\right)^2\]
+
+<!--- Remove ![][05060] --->
+
 
 ## Drag Polars (ref 5.2)
 

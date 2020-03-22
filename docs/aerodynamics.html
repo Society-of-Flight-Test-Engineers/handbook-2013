@@ -757,46 +757,42 @@
 <img src="media/05/image59.svg" width="341" height="216" />
 
 </div>
-<p>δ = surface turning angle</p>
-<p>θ = shock wave angle</p>
-<p>Subscript 1 denotes upstream conditions</p>
-<p>Subscript 2 denotes downstream conditions</p>
+<p><span class="math display">\[\delta = \textrm{surface turning angle}\]</span></p>
+<p><span class="math display">\[\theta = \textrm{shock wave angle}\]</span></p>
+<p><span class="math display">\[\textrm{Subscript 1 denotes upstream conditions}\]</span></p>
+<p><span class="math display">\[\textrm{Subscript 2 denotes downstream conditions}\]</span></p>
 <p><strong>Oblique Shock Relations</strong></p>
 <ul>
-<li><p>Calculate <em>P<sub>2</sub>/P<sub>1</sub>, T<sub>2</sub>/T<sub>1</sub></em>, and <em>ρ<sub>2</sub>/ρ<sub>1</sub></em> across oblique shocks by using normal shock equations and substituting <em>M<sub>1</sub> sinθ</em> in place of <em>M<sub>1</sub></em></p></li>
+<li>Calculate <span class="math inline">\(P_2/P_1\)</span>, <span class="math inline">\(T_2/T_1\)</span>, and <span class="math inline">\(\rho_2/\rho_1\)</span> across oblique shocks by using normal shock equations and substituting <span class="math inline">\(M_1 \sin\theta\)</span> in place of <span class="math inline">\(M_1\)</span></li>
 <li>Calculate total pressure loss across oblique shock as</li>
-<li><p>Calculate relation between Mach number and angles as</p></li>
 </ul>
-<div class="figure">
-<img src="media/05/image60.svg" width="243" height="76" />
-
-</div>
-<div class="figure">
-<img src="media/05/image61.svg" width="397" height="66" />
-
-</div>
+<p><span class="math display">\[\frac{P_{T_2}}{P_{T_1}} = \left[\left[\frac{\gamma - 1}{\gamma + 1} + \frac{2}{{\left(\gamma + 1\right)M_1^2\sin^2\theta}}\right]^{\gamma} \left[\frac{2\gamma}{\gamma+1} M_1^2\sin^2\theta - \frac{\gamma - 1}{\gamma + 1} \right]\right]^{\frac{1}{1 - \gamma}}  \]</span></p>
+<ul>
+<li>Calculate relation between Mach number and angles as</li>
+</ul>
+<p><span class="math display">\[M_2^2\sin^2\left(\delta - \theta\right) = \frac{M_1^2 \sin^2\theta + \frac{2}{\gamma-1}}{\frac{2\gamma}{\gamma - 1} M_1^2\sin^2\theta - 1} \]</span></p>
+<!--- FIXME: Remove 05049, 05050 --->
 <p><strong>Oblique Shock Turning Angle as a Function of Wave Angle</strong></p>
 <div class="figure">
 <img src="media/05/image62.svg" width="422" height="336" />
 
 </div>
 <ul>
-<li>Two θ solutions exist for every M<sub>1</sub> &amp; <em>δ</em> combination</li>
-</ul>
-<p>These represent the strong and weak shock solutions</p>
-<p>Weak shocks normally occur in nature</p>
+<li>Two <span class="math inline">\(\theta\)</span> solutions exist for every <span class="math inline">\(M_1\)</span> &amp; <span class="math inline">\(\delta\)</span> combination
 <ul>
-<li><p>There is a minimum Mach number for each turning angle</p></li>
-<li><p>The wave angle of a weak shock decreases with increased Mach</p></li>
-<li><p>For a given Mach number, <em>θ</em> approaches <em>μ</em> as <em>δ</em> decreases</p></li>
+<li>These represent the strong and weak shock solutions</li>
+<li>Weak shocks normally occur in nature</li>
+</ul></li>
+<li>There is a minimum Mach number for each turning angle</li>
+<li>The wave angle of a weak shock decreases with increased Mach</li>
+<li>For a given Mach number, <span class="math inline">\(\theta\)</span> approaches <span class="math inline">\(\mu\)</span> as <span class="math inline">\(\delta\)</span> decreases</li>
 </ul>
 <p><strong>Mach Cone Angle</strong></p>
 <div class="figure">
 <img src="media/05/image63.svg" width="247" height="195" />
 
 </div>
-<p>Minimum Wave Angle</p>
-<p>μ=sin<sup>−1</sup>(1/Μ)</p>
+<p>Minimum Wave Angle: <span class="math inline">\(\mu = \sin^{-1}\left(1/M\right) \)</span></p>
 </div>
 <div id="supersonic-isentropic-expansion-relation" class="section level3">
 <h3><span class="header-section-number">5.5.2</span> Supersonic Isentropic Expansion Relation</h3>
@@ -805,31 +801,29 @@
 
 </div>
 <ul>
-<li><p>The wave angle <em>μ</em> determines where the lower pressure can be felt and thus where the flow can be accelerated</p></li>
-<li><p>As the flow accelerates, a new wave angle forms and the subsequent lower pressure further accelerates the flow</p></li>
-<li><p>Results in a series of Mach waves forming a “fan” until the flow turns and accelerates so that it is parallel to the new boundary</p></li>
+<li>The wave angle <span class="math inline">\(\mu\)</span> determines where the lower pressure can be felt and thus where the flow can be accelerated</li>
+<li>As the flow accelerates, a new wave angle forms and the subsequent lower pressure further accelerates the flow</li>
+<li>Results in a series of Mach waves forming a “fan” until the flow turns and accelerates so that it is parallel to the new boundary</li>
 </ul>
 <p><strong>Prandtl-Meyer Function</strong></p>
-<p>Shows flow’s required turning angle (ν) to accelerate from one Mach number to another</p>
-<div class="figure">
-<img src="media/05/image65.svg" width="338" height="53" />
-
-</div>
+<p>Shows flow’s required turning angle (<span class="math inline">\(\nu\)</span>) to accelerate from one Mach number to another</p>
+<p><span class="math display">\[\nu_M = \sqrt{\frac{\gamma + 1}{\gamma - 1}} \left[\tan^{-1}\sqrt{\frac{\gamma - 1}{\gamma + 1} \left(M^2 - 1\right)} \right] - \tan^{-1}\sqrt{M^2-1} \]</span></p>
+<!--- Remove 05054 --->
 <ul>
-<li><p>If upstream Mach (M<sub>1</sub>) =1, then ν<sub>1</sub> = 0, and equation directly relates downstream Mach (M<sub>2</sub>) to surface turning angle (∆ν)</p></li>
-<li><p>If M<sub>1</sub>&gt;1, determine M<sub>2</sub> as follows:</p></li>
-</ul>
-<p>Calculate upstream ν<sub>1</sub> from above equation</p>
-<p>Calculate ν<sub>2</sub> = ν<sub>1</sub> + ∆ν</p>
-<p>Reverse above equation to obtain corresponding M<sub>2</sub></p>
+<li>If upstream Mach <span class="math inline">\((M_1) = 1\)</span>, then <span class="math inline">\(\nu_1 = 0\)</span>, and equation directly relates downstream Mach (<span class="math inline">\(M_2\)</span>) to surface turning angle (<span class="math inline">\(\Delta \nu\)</span>)</li>
+<li>If <span class="math inline">\(M_1 &gt; 1\)</span>, determine <span class="math inline">\(M_2\)</span> as follows:
 <ul>
+<li>Calculate upstream ν<sub>1</sub> from above equation</li>
+<li>Calculate <span class="math inline">\(\nu_2 = \nu_1 + \Delta \nu \)</span></li>
+<li>Reverse above equation to obtain corresponding <span class="math inline">\(M_2\)</span></li>
+</ul></li>
 <li>Above equation is tabulated in NACA TR 1135 and is plotted below</li>
 </ul>
 <div class="figure">
 <img src="media/05/image66.svg" width="422" height="360" />
 
 </div>
-<p>Example: Flow initially at <em>M<sub>1</sub></em> = 2.0 accelerates through an expansion corner of 24 <em>deg</em>. Exit Mach number is 3.0</p>
+<p>Example: Flow initially at <span class="math inline">\(M_1 = 2.0\)</span> accelerates through an expansion corner of 24 deg. Exit Mach number is 3.0</p>
 </div>
 <div id="two-dimensional-supersonic-airfoil-approximations" class="section level3">
 <h3><span class="header-section-number">5.5.3</span> Two-Dimensional Supersonic Airfoil Approximations</h3>
@@ -843,32 +837,28 @@
 <ul>
 <li>Ackert approximations for thin wings are based on</li>
 </ul>
-<div class="figure">
-<img src="media/05/image68.svg" width="147" height="36" />
-
-</div>
-<div class="figure">
-<img src="media/05/image69.svg" width="169" height="48" />
-
-</div>
+<p><span class="math display">\[C_p = \frac{\Delta P}{q} \cong \pm\frac{2 \delta}{\sqrt{M^2 - 1}} \]</span></p>
+<!--- Remove ![][05057] ---->
 <ul>
 <li>Double wedge airfoil approximations</li>
 </ul>
 <div class="figure">
-<img src="media/05/image70.svg" width="222" height="87" />
+<img src="media/05/image69.svg" width="169" height="48" />
 
 </div>
+<p><span class="math display">\[C_L \cong \frac{4 \alpha}{\sqrt{M^2 - 1} }\]</span></p>
+<p><span class="math display">\[C_D \cong \frac{4 \alpha^2}{\sqrt{M^2 - 1}} + \frac{4}{\sqrt{M^2 - 1}}\left(\frac{t}{c}\right)^2\]</span></p>
+<!--- Remove ![][05059] --->
 <ul>
 <li>Biconvex wing approximations</li>
 </ul>
 <div class="figure">
-<img src="media/05/image71.svg" width="214" height="90" />
-
-</div>
-<div class="figure">
 <img src="media/05/image72.svg" width="220" height="69" />
 
 </div>
+<p><span class="math display">\[C_L \cong \frac{4 \alpha}{\sqrt{M^2 - 1} }\]</span></p>
+<p><span class="math display">\[C_D \cong \frac{4 \alpha^2}{\sqrt{M^2 - 1}} + \frac{5.33}{\sqrt{M^2 - 1}}\left(\frac{t}{c}\right)^2\]</span></p>
+<!--- Remove ![][05060] --->
 </div>
 </div>
 <div id="drag-polars-ref-5.2" class="section level2">
