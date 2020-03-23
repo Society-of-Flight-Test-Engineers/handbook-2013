@@ -865,36 +865,33 @@
 <h2><span class="header-section-number">5.6</span> Drag Polars (ref 5.2)</h2>
 <div id="drag-polar-construction-and-terminology" class="section level3">
 <h3><span class="header-section-number">5.6.1</span> Drag Polar Construction and Terminology</h3>
-<p><em>C<sub>L</sub></em> = lift coefficient</p>
-<p><em>C<sub>D</sub></em> = drag coefficient</p>
-<p><em>C<sub>Di</sub></em> = induced drag coefficient</p>
-<p><em>C<sub>Do</sub></em> = parasitic drag coefficient</p>
-<p>AR = aspect ratio</p>
-<p><em>e</em> = Oswald efficiency factor</p>
-<p><em>l</em> = length flow has traveled</p>
-<p><em>S<sub>wet</sub></em> = wetted area of surface</p>
-<p><em>S</em> = reference wing area</p>
+<p><span class="math inline">\(C_L = \textrm{lift coefficient}\)</span></p>
+<p><span class="math inline">\(C_D = \textrm{drag coefficient}\)</span></p>
+<p><span class="math inline">\(C_{D_i} = \textrm{induced drag coefficient}\)</span></p>
+<p><span class="math inline">\(C_{D_0} = \textrm{parasitic drag coefficient}\)</span></p>
+<p><span class="math inline">\(AR = \textrm{aspect ratio}\)</span></p>
+<p><span class="math inline">\(e = \textrm{Oswald efficiency factor}\)</span></p>
+<p><span class="math inline">\(l = \textrm{length flow has traveled}\)</span></p>
+<p><span class="math inline">\(S_{wet} = \textrm{wetted area of surface}\)</span></p>
+<p><span class="math inline">\(S = \textrm{reference wing area}\)</span></p>
 <p><strong>Simple Drag Polar Equation Limitations</strong></p>
 <ul>
-<li><p>No separated flow losses</p></li>
-<li><p>Symmetric Camber</p></li>
-<li><p>Applies at one Mach, Altitude, <em>cg</em></p></li>
+<li>No separated flow losses</li>
+<li>Symmetric Camber</li>
+<li>Applies at one Mach, Altitude, <em>cg</em></li>
 </ul>
+<p><span class="math display">\[C_D = C_{D_0} + \frac{C_L^2}{\pi ARe} = C_{D_0} + C_{D_i}\]</span></p>
+<p>“Polar” form of simple drag polar:</p>
 <div class="figure">
 <img src="media/05/image73.svg" width="201" height="168" />
 
 </div>
-<div class="figure">
-<img src="media/05/image74.svg" width="198" height="42" />
-
-</div>
+<!--- FIXME Remove ![][05063] --->
+<p>Linearized form of simple drag polar:</p>
 <div class="figure">
 <img src="media/05/image75.svg" width="205" height="178" />
 
 </div>
-<p>“Polar” form of simple drag polar</p>
-<p>Linearized form of</p>
-<p>simple drag polar</p>
 </div>
 <div id="complicating-factors" class="section level3">
 <h3><span class="header-section-number">5.6.2</span> Complicating Factors</h3>
@@ -904,51 +901,44 @@
 
 </div>
 <p>Drag Polar Equation Accounting for Flow Separation:</p>
-<div class="figure">
-<img src="media/05/image77.svg" width="290" height="48" />
-
-</div>
+<p><span class="math display">\[C_D = C_{D_{min}} + \frac{\left(C_L - C_{L_{min}}\right)^2}{\pi ARe} +k_2\left(C_L - C_{L_{break}}\right)\]</span></p>
+<!--- FIXME: Remove ![][05066] --->
 <ul>
-<li><p>Delete last term if <em>C<sub>L</sub>&lt;C<sub>lbreak</sub></em></p></li>
-<li><p>Determine <em>k</em><sub>2</sub> from flight test</p></li>
+<li>Delete last term if <span class="math inline">\(C_L &lt; C_{L_{break}} \)</span></li>
+<li>Determine <span class="math inline">\(k_2\)</span> from flight test</li>
 </ul>
 <p><strong>Reynolds Number Effects</strong> (refs 5.4, 5.11)</p>
 <ul>
-<li>Calculate length <em>Re<sub>L</sub></em> and friction coefficient (<em>c<sub>f </sub></em>) for each surface as</li>
+<li>Calculate length <span class="math inline">\(Re_L\)</span> and friction coefficient (<span class="math inline">\(c_f\)</span>) for each surface as</li>
 </ul>
-<p><em>T<sub>K</sub></em> = Kelvin<em>,</em></p>
-<p><em>l=</em> total length<em>,</em> ft)</p>
-<div class="figure">
-<img src="media/05/image78.svg" width="492" height="162" />
-
-</div>
+<p><span class="math display">\[Re_L = \frac{\rho Vl}{\mu} = 7.101 \times10^6 \left[\frac{\delta}{\theta^2} \right]\left[\frac{T_K + 110}{398}\right] l \]</span></p>
+<p><span class="math inline">\(T_K = \textrm{Kelvin} \)</span></p>
+<p><span class="math inline">\(l = \textrm{total length, ft}\)</span></p>
+<p><span class="math display">\[c_f = \left[\frac{1.328}{\sqrt{Re_L}}\right] \left[1 + 0.1305 M^2 \right]^{-0.12} \textrm{ laminar}\]</span> or <span class="math display">\[c_f = \left[\frac{0.074}{\left(Re_L\right)^2} - \frac{1700}{Re_L}  \right] \textrm{ transition}\]</span> or <span class="math display">\[c_f = 0.455\left[\log Re_L\right]^{-258} \left[1 + 0.144 M^2\right]^{-0.65} \textrm{ turbulent}\]</span></p>
+<!--- Remove ![][05067] --->
 <ul>
-<li><p>In general<em>, c<sub>f </sub></em> decreases as <em>R<sub>n </sub></em>increases (unless transitioning from laminar to turbulent flow)</p></li>
-<li><p>Friction drag <em>= c<sub>f</sub> q S<sub>wet</sub></em> for each component (<em>S<sub>wet</sub></em> = wetted area)</p></li>
-<li><p>Correct from test day to standard day aircraft drag coefficient by summing differences of each component’s drag change</p></li>
+<li>In general, <span class="math inline">\(c_f\)</span> decreases as <span class="math inline">\(R_n\)</span> increases (unless transitioning from laminar to turbulent flow)</li>
+<li>Friction drag <span class="math inline">\(= c_f q S_{wet}\)</span> for each component (<span class="math inline">\(S_{wet} = \textrm{wetted area}\)</span>)</li>
+<li>Correct from test day to standard day aircraft drag coefficient by summing differences of each component’s drag change</li>
 </ul>
-<div class="figure">
-<img src="media/05/image79.svg" width="169" height="50" />
-
-</div>
+<p><span class="math display">\[\Delta C_D = \frac{\sum\left(c_{f_s} - c_{f_t} \right) S_{wet}}{S} \]</span></p>
+<!--- Remove ![][05068] --->
 <p><strong>Wing Camber or Incidence Angle Effects</strong></p>
+<p>Note slight increase in drag as lift decreases towards zero</p>
 <div class="figure">
 <img src="media/05/image80.svg" width="252" height="330" />
 
 </div>
-<p>Note slight increase in drag as lift decreases towards zero</p>
 <p>Linearized drag polar for aircraft with wing camber and/or incidence</p>
 <div class="figure">
 <img src="media/05/image81.svg" width="303" height="157" />
 
 </div>
 <p>Revised drag polar equation accounting for wing camber or incidence</p>
-<div class="figure">
-<img src="media/05/image82.svg" width="174" height="49" />
-
-</div>
+<p><span class="math display">\[C_D = C_{D_{min}} + \frac{\left(C_L - C_{L_{min}} \right)^2}{\pi AR e} \]</span></p>
+<!--- Remove ![][05071] --->
 <ul>
-<li>Generally not necessary since most flight occurs above <em>C<sub>Lmin</sub></em></li>
+<li>Generally not necessary since most flight occurs above <span class="math inline">\(C_{L_{min}}\)</span></li>
 </ul>
 <p><strong>Mach Number Effects</strong></p>
 <ul>
@@ -969,43 +959,39 @@
 <ul>
 <li>a.k.a “scrubbing” drag</li>
 <li>Propwash increases flow speed over surface within slipstream</li>
-<li>More drag is created by higher <em>q</em> and vorticity.</li>
-<li>Function of prop speed and power absorbed (<em>C<sub>p</sub></em>)or thrust (<em>C<sub>T</sub></em>)</li>
+<li>More drag is created by higher <span class="math inline">\(q\)</span> and vorticity.</li>
+<li>Function of prop speed and power absorbed (<span class="math inline">\(C_p\)</span>)or thrust (<span class="math inline">\(C_T\)</span>)</li>
 <li>Problem should be addressed in airframe or propeller models</li>
 </ul>
 <p><strong>Trim Drag Effects</strong> (reference 5.4)</p>
-<p>e = wing Oswald efficiency factor</p>
-<p>e<sub>t</sub> = tail Oswald efficiency factor</p>
-<p>b = span, b<sub>t</sub> = tail span</p>
-<p><em>x</em> = wing <em>ac-</em>to-<em>cg</em> distance</p>
-<p><em>l</em>= wing <em>ac</em>-to tail <em>ac</em> dist.</p>
-<p>S = Area</p>
+<p><span class="math inline">\(e = \textrm{wing Oswald efficiency factor} \)</span></p>
+<p><span class="math inline">\(e_t = \textrm{tail Oswald efficiency factor} \)</span></p>
+<p><span class="math inline">\(b = \textrm{span} \)</span></p>
+<p><span class="math inline">\(b_t = \textrm{tail span} \)</span></p>
+<p><span class="math inline">\(x = \textrm{wing ac-to-cg distance} \)</span></p>
+<p><span class="math inline">\(l = \textrm{wing ac to tail ac distance} \)</span></p>
+<p><span class="math inline">\(S = \textrm{Area} \)</span></p>
 <div class="figure">
 <img src="media/05/image86.svg" width="372" height="136" />
 
 </div>
-<div class="figure">
-<img src="media/05/image87.svg" width="384" height="54" />
-
-</div>
-<p>Trim drag change relative to</p>
-<p>total induced drag:</p>
-<div class="figure">
-<img src="media/05/image88.svg" width="175" height="53" />
-
-</div>
+<p><span class="math display">\[C_{D_{trim}} = \frac{W^2}{\pi q^2 Sb^2e} \left[\frac{2}{lW}\left[x_0 - x_1\right] + \frac{1}{l^2} \left[1 + \frac{S}{S_t} \frac{e}{e_t} \left(\frac{b}{b_t}\right)^2\right] \left[x_0^2 - x_1^2\right] \right]\]</span></p>
+<!--- Remove ![][05075] --->
+<p>Trim drag change relative to total induced drag:</p>
+<p><span class="math display">\[\frac{\Delta C_{D_{trim}}}{\Delta C_{D_i}} = \frac{x}{l} \left[\frac{x}{l} \left(\frac{b}{b_t}\right)^2 \frac{e}{e_t} - 2 \right] \]</span></p>
+<!--- Remove ![][05076] --->
 <p>Plot of above equation</p>
 <div class="figure">
 <img src="media/05/image89.svg" width="312" height="360" />
 
 </div>
+</div>
+<div id="drag-polar-analysis" class="section level3">
+<h3><span class="header-section-number">5.6.3</span> Drag Polar Analysis</h3>
 <div class="figure">
 <img src="media/05/image93.svg" width="422" height="48" />
 
 </div>
-</div>
-<div id="drag-polar-analysis" class="section level3">
-<h3><span class="header-section-number">5.6.3</span> Drag Polar Analysis</h3>
 <ul>
 <li>For a given configuration (<em>C<sub>Do</sub>, S, AR, e</em>)</li>
 </ul>

@@ -516,43 +516,44 @@ Example: Flow initially at \(M_1 = 2.0\) accelerates through an expansion corner
 
 ### Drag Polar Construction and Terminology
 
-*C~L~* = lift coefficient
+   ```{block, type='TODO', echo=FALSE}
+   These really should be defined at the beginning of the section
+   ```
+\(C_L = \textrm{lift coefficient}\)
 
-*C~D~* = drag coefficient
+\(C_D = \textrm{drag coefficient}\)
 
-*C~Di~* = induced drag coefficient
+\(C_{D_i} = \textrm{induced drag coefficient}\)
 
-*C~Do~* = parasitic drag coefficient
+\(C_{D_0} = \textrm{parasitic drag coefficient}\)
 
-AR = aspect ratio
+\(AR = \textrm{aspect ratio}\)
 
-*e* = Oswald efficiency factor
+\(e = \textrm{Oswald efficiency factor}\)
 
-*l* = length flow has traveled
+\(l = \textrm{length flow has traveled}\)
 
-*S~wet~* = wetted area of surface
+\(S_{wet} = \textrm{wetted area of surface}\)
 
-*S* = reference wing area
+\(S = \textrm{reference wing area}\)
 
 **Simple Drag Polar Equation Limitations**
 
 * No separated flow losses
-
 * Symmetric Camber
-
 * Applies at one Mach, Altitude, *cg*
+
+\[C_D = C_{D_0} + \frac{C_L^2}{\pi ARe} = C_{D_0} + C_{D_i}\]
+
+"Polar" form of simple drag polar:
 
 ![][05062]
 
-![][05063]
+<!--- FIXME Remove ![][05063] --->
+
+Linearized form of simple drag polar:
 
 ![][05064]
-
-"Polar" form of simple drag polar
-
-Linearized form of
-
-simple drag polar
 
 ### Complicating Factors
 
@@ -562,37 +563,47 @@ simple drag polar
 
 Drag Polar Equation Accounting for Flow Separation:
 
-![][05066]
+\[C_D = C_{D_{min}} + \frac{\left(C_L - C_{L_{min}}\right)^2}{\pi ARe} +k_2\left(C_L - C_{L_{break}}\right)\]
 
-* Delete last term if *C~L~\<C~lbreak~*
+<!--- FIXME: Remove ![][05066] --->
 
-* Determine *k*~2~ from flight test
-
+* Delete last term if \(C_L < C_{L_{break}} \)
+* Determine \(k_2\) from flight test
 
 **Reynolds Number Effects** (refs 5.4, 5.11)
 
-* Calculate length *Re~L~* and friction coefficient (*c~f\ ~*) for each surface as
+* Calculate length \(Re_L\) and friction coefficient (\(c_f\)) for each surface as
 
-*T~K~* = Kelvin*,*
+\[Re_L = \frac{\rho Vl}{\mu} = 7.101 \times10^6 \left[\frac{\delta}{\theta^2} \right]\left[\frac{T_K + 110}{398}\right] l \]
 
-*l=* total length*,* ft)
+\(T_K = \textrm{Kelvin} \)
 
-![][05067]
+\(l = \textrm{total length, ft}\)
 
-* In general*, c~f\ ~* decreases as *R~n\ ~*increases (unless transitioning from laminar to turbulent flow)
+\[c_f = \left[\frac{1.328}{\sqrt{Re_L}}\right] \left[1 + 0.1305 M^2 \right]^{-0.12} \textrm{ laminar}\]
+or
+\[c_f = \left[\frac{0.074}{\left(Re_L\right)^2} - \frac{1700}{Re_L}  \right] \textrm{ transition}\]
+or
+\[c_f = 0.455\left[\log Re_L\right]^{-258} \left[1 + 0.144 M^2\right]^{-0.65} \textrm{ turbulent}\]
 
-* Friction drag *= c~f~ q S~wet~* for each component (*S~wet~* = wetted area)
-
+<!--- Remove ![][05067] --->
+   ```{block, type='FIXME', echo=FALSE}
+   Inconsistent use of R_L and R_n for Reynolds number
+   Wetted area is already defined above and doesn't need to be redefined below
+   ```
+* In general, \(c_f\) decreases as \(R_n\) increases (unless transitioning from laminar to turbulent flow)
+* Friction drag \(= c_f q S_{wet}\) for each component (\(S_{wet} = \textrm{wetted area}\))
 * Correct from test day to standard day aircraft drag coefficient by summing differences of each component's drag change
 
-![][05068]
+\[\Delta C_D = \frac{\sum\left(c_{f_s} - c_{f_t} \right) S_{wet}}{S} \]
+
+<!--- Remove ![][05068] --->
 
 **Wing Camber or Incidence Angle Effects**
 
-![][05069]
-
 Note slight increase in drag as lift decreases towards zero
 
+![][05069]
 
 Linearized drag polar for aircraft with wing camber and/or incidence
 
@@ -600,9 +611,11 @@ Linearized drag polar for aircraft with wing camber and/or incidence
 
 Revised drag polar equation accounting for wing camber or incidence
 
-![][05071]
+\[C_D = C_{D_{min}} + \frac{\left(C_L - C_{L_{min}} \right)^2}{\pi AR e} \]
 
-* Generally not necessary since most flight occurs above *C~Lmin~*
+<!--- Remove ![][05071] --->
+
+* Generally not necessary since most flight occurs above \(C_{L_{min}}\)
 
 **Mach Number Effects**
 
@@ -618,41 +631,47 @@ Revised drag polar equation accounting for wing camber or incidence
 
 *  a.k.a "scrubbing" drag
 *  Propwash increases flow speed over surface within slipstream
-*  More drag is created by higher *q* and vorticity.
-*  Function of prop speed and power absorbed (*C~p~*)or thrust (*C~T~*)
+*  More drag is created by higher \(q\) and vorticity.
+*  Function of prop speed and power absorbed (\(C_p\))or thrust (\(C_T\))
 * Problem should be addressed in airframe or propeller models
 
 **Trim Drag Effects** (reference 5.4)
+   ```{block, type='FIXME', echo=FALSE}
+   Why are the following being re-defined?
+   ```
+\(e = \textrm{wing Oswald efficiency factor} \)
 
-e = wing Oswald efficiency factor
+\(e_t = \textrm{tail Oswald efficiency factor} \)
 
-e~t~ = tail Oswald efficiency factor
+\(b = \textrm{span} \)
 
-b = span, b~t~ = tail span
+\(b_t = \textrm{tail span} \)
 
-*x* = wing *ac-*to-*cg* distance
+\(x = \textrm{wing ac-to-cg distance} \)
 
-*l*= wing *ac*-to tail *ac* dist.
+\(l = \textrm{wing ac to tail ac distance} \)
 
-S = Area
+\(S = \textrm{Area} \)
 
 ![][05074]
 
-![][05075]
+\[C_{D_{trim}} = \frac{W^2}{\pi q^2 Sb^2e} \left[\frac{2}{lW}\left[x_0 - x_1\right] + \frac{1}{l^2} \left[1 + \frac{S}{S_t} \frac{e}{e_t} \left(\frac{b}{b_t}\right)^2\right] \left[x_0^2 - x_1^2\right] \right]\]
 
-Trim drag change relative to
+<!--- Remove ![][05075] --->
 
-total induced drag:
+Trim drag change relative to total induced drag:
 
-![][05076]
+\[\frac{\Delta C_{D_{trim}}}{\Delta C_{D_i}} = \frac{x}{l} \left[\frac{x}{l} \left(\frac{b}{b_t}\right)^2 \frac{e}{e_t} - 2 \right] \]
+
+<!--- Remove ![][05076] --->
 
 Plot of above equation
 
 ![][05077]
 
-![][05078]
-
 ### Drag Polar Analysis
+
+![][05078]
 
 * For a given configuration (*C~Do~, S, AR, e*)
 
