@@ -1,1285 +1,766 @@
-# 5 Aerodynamics**
-
-** **
-
-5.1 Dimensional Analysis Interpretations
-
-*Dynamic Pressure, Force Coefficients*
-
- 
-
-5.2 General Aerodynamic Relations
-
-*Continuity Equation, Conservation of Energy Equation, Resultant Aerodynamic Force*
-
- 
-
-5.3 Wing Design Effects on Lift Curve Slope
-
-*Aspect Ratio, Leading Edge Flap, Boundry Layer*
-
-*Control & Trailing Edge Flap Effects*
-
- 
-
-5.4 Elements of Drag
-
-5.4.1 Skin Friction Drag
-
-*Viscosity, Reynolds Number Effects*
-
-5.4.2 Pressure Drag
-
-5.4.3 Interference Drag
-
-5.4.4 Induced Drag
-
- 
-
-5.5 Aerodynamic Compressibility Relations
-
-*Prandtl/Glauert, Total vs Ambient Property Relations for Adiabatic Flow, Normal Shock Rela tions*
-
-5.5.1 Oblique Shocks
-
-*Oblique Shock Relations, Mach Cone Angle*
-
-5.5.2 Supersonic Isentropic Expansion Relations
-
-*Prandtl-Meyer Function*
-
-5.5.3 Two-Dimensional Supersonic Airfoil Approximations
-
- 
-
-5.6 Drag Polars
-
-5.6.1 Drag Polar Construction and Terminology
-
-*Simple Drag Polar Equation Limitations*
-
-5.6.2 Complicating Effects
-
-*Airflow Separation, Reynolds Number, Wing Camber or Incidence Angle, Mach Number,*
-
-*Propeller Slipstream, and Trim Drag Effects*
-
-5.6.3 Drag Polar Analysis
-
-*Optimum Aerodynamic Flight Conditions*
-
- 
-
-5.7 References
-
- 
-
- 
-
-**5.0 Recurring Terminology**
-
-** **
-
-*a* slope of lift curve, *dC~L~/dα*
-
-*a.c*. aerodynamic center, location along the chord where pitching moments about this center do not change with angle of attack (25% MAC for airfoils in subsonic flow, 50% MAC for airfoils in supersonic flow)
-
-*AOA* angle of attack
-
-AR aspect ratio = \[wing span\]^2^/ \[reference wing area\] = *b^2^/S*
-
-B wing span
-
-b~t~ horizontal tail span
-
-*C* coefficient, a non-dimensional representation of an aerodynamic property
-
-*c* wing chord length Camber maximum curvature of an airfoil, measured at maximum distance between chord line and amber line, expressed in % of MAC.Camber line theoretical line extending from an air foil's leading edge to the trailing edge, located halfway between the upper and lower surfaces.
-
-*C~D~* drag coefficient
-
-*C~Di~* induced drag coefficient
-
-*C~Do,~C~Dpe~* parasitic drag coefficient
-
-*c~f~* friction coefficient
-
-Chord straight-line distance from an airfoil's leading edge to its trailing edge.
-
-*C~L~* lift coefficient
-
-*Cp* pressure coefficient = *∆p/q*
-
-*e* Oswald efficiency factor
-
-*l* distance traveled by flow, or characteristic length of surface
-
-*M* Mach number
-
-MAC mean aerodynamic chord, chord length of location on wing where total aerodynamic forces can be concentrated.
-
-MGC mean geometric chord, the average chord length, derived only from a plan form view of a wing (similar to MAC if wing has no twist and constant cross section & thickness-to-chord ratio).
-
-*P* pressure
-
-*P~req'd~* power required
-
-*q* dynamic pressure = *½ ρ~a~ V~T~^2^ = ½ ρ~o~ V~T~^2^*
-
-*R* gas constant
-
-*R~n~,R~e~* Reynolds number
-
-*S* reference wing area, includes extension of wing to fuselage centerline.
-
-*S~t\ ~*horizontal tail surface area
-
-*S~W~* wetted area of surface
-
-*T* temperature
-
-*V* true velocity
-
-*V~e~* equivalent velocity
-
-*α* angle of attack
-
-*α~i~* induced angle of attack
-
-δ depth of boundary layer, or surface wedge angle
-
-*μ* viscosity, or wave angle
-
-ν flow turning angle
-
-*θ* shock wave angle
-
-*ρ* density
-
- 
-
- 
-
-• Perfect Fluid
-
-> \~  incompressible, inelastic, and non-viscous
->
-> \~  used in flow outside of boundary layers at M \<  0.7
-
-• Incompressible, inelastic, viscous
-
-> \~  used for boundary layer studies at M \<  0.7
-
-• Compressible, non-viscous, elastic fluid
-
-\~ used outside boundary layers up to M = 5
-
- 
-
- 
-
-**5.1 Dimensional Analysis Interpretations** (ref 5.2)
-
- 
+# Aerodynamics
+
+<!--- FIXME: This section header should be made consistent with the rest of the document (Section 4 uses "Common Nomenclature") --->
+## Recurring Terminology {-}
+
+<!--- FIXME: not very consistent with these definitions.  Sometimes full sentences with periods, sometimes not --->
+<!--- FIXME: MAC definition could use some work.  Total aero force concentrated without changing pitching moment as f(AOA)? --->
+<!--- FIXME: Should 'P' for pressure be lower case? Confusing with Power. --->
+| Symbol       | Definition                                   |
+|:-------------|:---------------------------------------------|
+| \(a\)                  | slope of lift curve, \(dC_L/d\alpha\)                                                                         |
+| \(a.c.\)               | aerodynamic center, location along the chord where pitching moments about this center do not change with angle of attack (25% MAC for airfoils in subsonic flow, 50% MAC for airfoils in supersonic flow)  |
+| \(AOA\)                | angle of attack                                                                                               |
+| \(AR\)                 | aspect ratio \(= [\textrm{wing span}]^2 / [\textrm{reference wing area}] = b^2/S \)                           |
+| \(B\)                  | wing span                                                                                                     |
+| \(b_t\)                | horizontal tail span                                                                                          |
+| \(C\)                  | coefficient, a non-dimensional representation of an aerodynamic property                                      |
+| \(c\)                  | wing chord length Camber maximum curvature of an airfoil, measured at maximum distance between chord line and amber line, expressed in % of MAC.  Camber line theoretical line extending from an airfoil's leading edge to the trailing edge, located halfway between the upper and lower surfaces. |
+| \(C_D\)                | drag coefficient                                                                                              |
+| \(C_{Di}\)             | induced drag coefficient                                                                                      |
+| \(C_{D0}, C_{D_{PE}}\) | parasitic drag coefficient                                                                                    |
+| \(c_f\)                | friction coefficient                                                                                          |
+| \(Chord\)              | straight-line distance from an airfoil's leading edge to its trailing edge                                    |
+| \(C_L\)                | lift coefficient                                                                                              |
+| \(C_p\)                | pressure coefficient = \(\Delta p/q\)                                                                         |
+| \(e\)                  | Oswald efficiency factor                                                                                      |
+| \(l\)                  | distance traveled by flow, or characteristic length of surface                                                |
+| \(M\)                  | Mach number                                                                                                   |
+| \(MAC\)                | mean aerodynamic chord, chord length of location on wing where total aerodynamic forces can be concentrated.  |
+| \(MGC\)                | mean geometric chord, the average chord length, derived only from a plan form view of a wing (similar to MAC if wing has no twist and constant cross section & thickness-to-chord ratio).  |
+| \(P\)                  | pressure                                                                                                      |
+| \(P_{req'd}\)          | power required                                                                                                |
+| \(q\)                  | dynamic pressure = \(\frac{1}{2} \rho_a V_T^2 = \frac{1}{2} \rho_0 V_T^2\)                                    |
+| \(R\)                  | gas constant                                                                                                  |
+| \(R_n,R_e\)            | Reynolds number                                                                                               |
+| \(S\)                  | reference wing area, includes extension of wing to fuselage centerline.                                       |
+| \(S_t\)                | horizontal tail surface area                                                                                  |
+| \(S_W\)                | wetted area of surface                                                                                        |
+| \(T\)                  | temperature                                                                                                   |
+| \(V\)                  | true velocity                                                                                                 |
+| \(V_e\)                | equivalent velocity                                                                                           |
+| \(\alpha\)             | angle of attack                                                                                               |
+| \(\alpha_i\)           | induced angle of attack                                                                                       |
+| \(\delta\)             | depth of boundary layer, or surface wedge angle                                                               |
+| \(\mu\)                | viscosity, or wave angle                                                                                      |
+| \(\nu\)                | flow turning angle                                                                                            |
+| \(\theta\)             | shock wave angle                                                                                              |
+| \(\rho\)               | density                                                                                                       |
+
+* Perfect Fluid
+    * incompressible, inelastic, and non-viscous
+    * used in flow outside of boundary layers at M < .7
+* Incompressible, inelastic, viscous
+    * used for boundary layer studies at M < .7
+* Compressible, non-viscous, elastic fluid
+    * used outside boundary layers up to M = 5
+
+<!--- FIXME: Reference should be replaced with linked cross reference --->
+## Dimensional Analysis Interpretations (ref 5.2)
 
 Aerodynamic force = *F*
 
- 
+<!--- Fixme: what is the second bullet point referring to?  What is K? --->
+* \(F = f(\rho, \mu, T, V, \textrm{shape}, \textrm{orientation}, \textrm{size}, \textrm{roughness}, \textrm{gravity}) \)
+* For aircraft ignore *R*, *K* & hypersonic effects
 
-• *F = f* *(ρ, μ, T*, *V*, shape, orientation, size, roughness, gravity)
+![][05001]
 
-• For aircraft ignore *R*, *K* & hypersonic effects
-
-  
-
-![][05001]• Initially assume similar body orientations, shapes & roughness.
-
- 
-
-• Dimensional Analysis reveals four non-dimensional (π) parameters:
-
- 
-
-  Force Coefficient
-
- ![][05002]![][05003] Reynolds Number
-
-  Mach Number
-
-  Froude Number
-
- 
+<!--- TODO: align the non-dimensional parameters (align equals sign) --->
+* Initially assume similar body orientations, shapes & roughness.
+* Dimensional Analysis reveals four non-dimensional (\(\pi\)) parameters:
+    * Force Coefficient  \(\pi_1 = \frac{F}{\rho V^2 l^2} \)
+    * Reynolds Number \(\pi_2 = \frac{\rho V l}{\mu} \)
+    * Mach Number \(\pi_3 = \frac{V}{a} \)
+    * Froude Number \(\pi_4 = \frac{V}{\sqrt{lg}} \)
 
 A closer look at the force coefficient:
 
- 
+<!--- This force coefficient should probably be defined at the beginning of the section --->
+\[C_F = \frac{F}{\rho V^2 l^2} => \frac{F}{\frac{1}{2} \rho V^2 S} \]
 
-![][05004]
+<!--- This doesn't really make sense.  What is "S" the same as? --->
+where \(\frac{1}{2} \rho_a V_T^2 = \frac{1}{2} \rho_0 V_e^2 = \textrm{dynamic pressure}, q \)
+dimensions of reference wing area, \(S\) are the same
 
- where ^1^/~2~ ρ*~a~V~T~*^2^ = ^1^/~2~ ρ*~o~V~e~*^2^ =dynamic pressure, *q* dimensions of reference wing area, *S* are the same as *l*^2^
+<!--- FIXME: m is not defined --->
+<!--- FIXME: q doesn't need quotes --->
+> **A feel for *q***
+>
+> * Kinetic energy of a moving object = \(\frac{1}{2} m V_T^2 \)
+> * Block of moving air kinetic energy = \(\frac{1}{2} \rho \textrm{ (volume) } V_T^2 \)
+> * Dividing through by volume yields KE per volume of moving air = \(\frac{1}{2} \rho V_T^2 \)
+> * "Dynamic pressure" or "\(q\)" = potential for converting each cubic foot of the airflow's kinetic energy into frontal stagnation pressure
+> * Feel \(q\) by extending your hand out the window of a moving car
 
- 
+> **A feel for coefficients**
+> 
+> * \(C_F = (F/S)/q\) = the ratio between the total force pressure and the flow's dynamic pressure
+> * Lift is the component of the total force perpendicular to the free stream flow
+> * Drag is the component along the flow
+> * Break total into lift and drag coefficients:
+>     * \(C_L = (L/S)/q\)
+>     * \(C_D = (D/S)/q\)
+> * Increasing dynamic pressure generates a larger total force, lift and drag
 
- **A feel for *q***
+![][05005]
 
-• Kinetic energy of a moving object = ½ mV~T~^2^
+* Froude number is not significant in aerodynamic phenomena
+* Recall that forces are also a function of angle of attack, shape & surface roughness, therefore
 
-• Block of moving air kinetic energy = ½ ρ (volume) V ~T~^2^
-
-• Dividing through by volume yields KE per volume of moving air = ½ ρ V ~T~^2^
-
-• \"Dynamic pressure" or "*q*" = potential for converting each cubic foot of the airflow\'s kinetic energy into frontal stagnation pressure
-
-• Feel *q* by extending your hand out the window of a moving car
-
- 
-
- **A feel for coefficients**
-
-• *C ~F~* = (*F /S)/q* = the ratio between the total force pressure and the flow \'s dynamic pressure
-
-• Lift is the component of the total force perpendicular to the free stream flow
-
-• Drag is the component along the flow
-
-• Break total into lift and drag coefficients:
-
-*C ~L~ = (L/S)/q CD = (D/S)/q*
-
-• Increasing dynamic pressure generates a larger total force, lift and drag
-
- 
-
- ![][05005]
-
-• Froude number is not significant in aerodynamic phenomena
-
- 
-
-• Recall that forces are aslo a function of angle of attack, shape & surface roughness, therefore
-
- 
-
-![][05006]
-
-Effects are exaggerated
-
- 
+\[C_L,C_D = f[M, Re, \alpha] \textrm{ for a given shape, roughness} \]
 
 ![][05007]
 
-To compare test day and standard day aircraft or to match wind tunnel *C~F~* data to actual aircraft; the shape, roughness, *M, R~n~* and *α* must be equal for both aircraft
+*Note in the figure above the Reynolds effects are exaggerated*
 
- 
+<!--- FIXME: I don't like the inconcistent use of Rn and Re for Reynolds number --->
+To compare test day and standard day aircraft or to match wind tunnel \(C_F\) data to actual aircraft; the shape, roughness, \(M\), \(R_n\) and \(\alpha\) must be equal for both aircraft
 
-![][05008]![][05009]
+![][05009]
 
- 
+<!--- FIXME: Define these subscripts --->
+\[\frac{L_A}{q_A S_A} = C_L = \frac{L_M}{q_M S_M} \]
 
-**5.2 General Aerodynamic Relations** (refs 5.1, 5.2, 5.10)
 
-** **
+<!--- FIXME: update references to dynamic cross references--->
+## General Aerodynamic Relations (refs 5.1, 5.2, 5.10)
 
 Lift & Drag forces can be described using two approaches:
 
-1\) Change in momentum of airstream, *F = d{mv\]/dt*
-
-2\) "Bernoulli" approach which requires the continuity and conservation of energy equations
-
- 
+1. Change in momentum of airstream, \(F=d[mv]/dt\)
+2. "Bernoulli" approach which requires the continuity and conservation of energy equations
 
 **Continuity Equation**
 
-Fluid M ass in = Fluid Mass out
+Fluid Mass in = Fluid Mass out
 
-ρ ~1~*V* ~1~*A* ~1~ = ρ ~2~*V* ~2~*A* ~2~
+\[\rho_1 V_1 A_1 = \rho_2 V_2 A_2\]
 
-For subsonic (incompressible) flow ρ ~1~ = ρ ~2~
+<!--- FIXME: Subsonic doesn't equate to incompressible --->
+For subsonic (incompressible) flow \(\rho_1 = \rho_2\)
 
-> *V* ~1~*A* ~1~ = *V* ~2~*A* ~2~
->
-> ~ ~
+\[V_1 A_1 = V_2 A_2\]
 
 **Conservation of Energy** (Bernoulli) **Equation:**
 
-Potential + Kinetic + Pressure = constant
+Potential + Kinetic + Pressure = constant (changes in Potential energy are negligible)
 
-(changes in Potential energy are negligible)
+Energy per unit volume is pressure then Dynamic Pressure + Static Pressure = Total Pressure
 
-Energy per unit volume is pressure then
+\[\frac{1}{2}\rho V^2 + p_s = \textrm{constant} \]
+\[\frac{1}{2}\rho V^2 + p_s = p_t \]
 
-Dynamic Pressure + Static Pressure = Total Pressure
+* This classic approach only applies in the "potential flow" region and not in the boundary layer where energy losses occur
+* Pressures around a surface can be calculated or measured from tests and converted into pressure coefficients,
 
-![][05010] 
+\[c_p = \left( p_{local} - p_{ambient} \right) / \textrm{dynamic pressure} = \Delta p/q \]
 
- 
+* \(c_p\) values can be mapped out for all surfaces
 
-• This classic approach only applies in the "potential flow" region and not in the boundary layer where energy losses occur
+![][05011]
 
- 
-
-• Pressures around a surface can be calculated or measured from tests and converted into pressure coefficients,
-
- 
-
-*c~p~* = (*p*~local~-*p*~ambient~)/dynamic pressure = *∆p/q*
-
- 
-
-• *c~p~* values can be mapped out for all surfaces
-
- 
-
- 
-
- ![][05011]
-
- • Summation of all pressures perpendicular to surface yield the pitching moments and the "**Resultant Aerodynamic Force**" which is broken into lift and drag components
-
- 
+* Summation of all pressures perpendicular to surface yield the pitching moments and the "**Resultant Aerodynamic Force**" which is broken into lift and drag components
 
 ![][05012]
 
- 
+* Lift & drag forces are referred to the aerodynamic center (*ac*) where the pitching moment is constant for reasonable angles of attack.
+* Pitching moments increase with airfoil camber, are zero if symmetric.
+* Aerodynamic center is located at 25% MAC for fully subsonic flow and at 50% MAC for fully supersonic flow.
 
- • Lift & drag forces are referred to the aerodynamic center (*ac*) where the pitching moment is constant for reasonable angles of attack.
 
-• Pitching moments increase with airfoil camber, are zero if symmetric.
+## Wing Design Effects on Lift Curve Slope (refs 5.1, 5.2, 5.10)
 
-• Aerodynamic center is located at 25% MAC for fully subsonic flow and at 50% MAC for fully supersonic flow.
+### Aspect Ratio Effect {-}
 
- 
-
-**5.3 Wing Design Effects on Lift Curve Slope** (refs 5.1, 5.2, 5.10)
-
- 
-
-**Aspect Ratio Effect**
-
-• Pressure differential at wingtip causes tip vortex
-
- 
+* Pressure differential at wingtip causes tip vortex
 
 ![][05013]
 
- 
+![][05014]
 
- ![][05014] 
-
-• Vortex creates flow field that reduces AOA across wingspan
-
- 
+* Vortex creates flow field that reduces AOA across wingspan
 
 ![][05015]
 
- 
+* Local AOA reductions decrease average lift curve slope
 
- 
+![][05016]
 
- 
+*2D wing = wind tunnel airfoil extending to walls (infinite aspect ratio).*
 
- 
+\(a_0 = \textrm{Lift curve slope for an infinite wing} \)
 
- 
+\(a = \textrm{Lift curve slope for a finite wing}\)
 
- 
+* Above relationship estimated as \(\alpha = \frac{dC_L}{d \alpha} = \frac{a_0}{1+\frac{57.3 a_0}{\pi AR}} \)
 
- 
+### Trailing Edge Flap Effects {-}
 
- • Local AOA reductions decrease average lift curve slope
+![][05018]
 
-![][05016] 
+![][05019]
 
-2D wing = wind tunnel
-
-airfoil extending to walls (infinite aspect ratio).
-
- 
-
-*a~o~* = Lift curve slope for
-
-an infinite wing
-
- 
-
-*a* = Lift curve slope for
-
-a finite wing
-
- 
-
- • Above relationship estimated as
-
- 
-
-![][05017]
-
- 
-
-**Trailing Edge Flap Effects**
-
-** **
-
-** **
-
-** **![][05018]
-
-** **
-
-![][05019]** **
-
-** **
-
-** **
-
-** **
-
-** Leading Edge Flap Effects**
-
- 
+### Leading Edge Flap Effects {-}
 
 ![][05020]
 
-** **
+![][05021]
 
-** **![][05021]
+### Boundary Layer Control Effects {-}
 
-** Boundary Layer Control Effects**
+![][05022]
 
- 
+![][05023]
 
- 
 
-** **
+## Elements of Drag (refs 5.1, 5.2, 5.10)
 
-** **
+![][05024]
 
-![][05022]** **
+* Skin friction shear stress is a function of velocity profile at surface
 
-** **![][05023]
+   ```{block, type='FIXME', echo=FALSE}
+    The following images are not rendering very clearly.  Additionally, some labels are missing from the figure (delta, dy, dv/dy)
+    ```
+![][05025]
 
-** **
+<!--- Tau needs to be defined at the beginning of the section --->
+Shear stress \(\tau_w = \mu \left( \frac{dv}{dy} \right)_{y=0} \)
 
-** **
+* Viscosity \(\mu\) increases with temperature (ref 5.9)
 
-** **
+Sutherland law: \(\mu = \mu_0 \frac{\left( \frac{T}{T_0} \right)^{1.5} \left( T_0 + S \right)}{\left( T + S \right)} \)
 
-** **
+Power law: \(\mu = \mu_0 \left( \frac{T}{T_0} \right)^n \)
 
-** **
+<!--- TODO: check to make sure the unit formatting is consistent with the style guide --->
+Where \(T_0 = 273.15 K = 518.67 R \)
 
-** **
+For air: \(S = 110.4 K = 199 R \textrm{; n=0.67} \) 
 
-** **
+For air at 273 K: \(\mu_0 = 1.717 \times 10^{-5} \textrm{[kg/m s]} = 3.59 \times 10^{-7} \textrm{[slug/ft s]} \)
 
-** **
+Inserting air values (\(T_K=\)Kelvin and \(T_R=\)Rankin) into Sutherland law gives
 
-** **
+\[\mu = 1.458 \times 10^{-6} \frac{T_K^{1.5}}{T_K+110.4} \left[\frac{\textrm{kg}}{\textrm{s m}}\right] = 2.2 \times 10^{-8} \frac{T_R^{1.5}}{T_R+199} \left[\frac{\text{slg}}{\text{s ft}}\right]\]
 
-** **
+### Reynolds Number Effects (ref 5.10)
 
-** **
+* Laminar boundary layers have more gradual change in velocity near surface than turbulent boundary layers.
+* High Reynolds numbers help propagate turbulent flow.
 
-** **
+   ```{block, type='FIXME', echo=FALSE}
+    FIXME: This figure (05031) needs work
+    ```
+![][05031] 
 
-** **
+Shearing stress: \(\tau_w = \mu \left(\frac{dv}{dy}\right)_{y=0}\)
 
-** 5.4 Elements of Drag** (refs 5.1, 5.2, 5.10)
+Skin friction coefficient: \(C_f = \frac{\tau_w}{\frac{1}{2}\rho_{\infty} V_{\infty}^2} = \frac{\tau_w}{q_{\infty}} \)
 
-** **
+Laminar boundary layer: \(\textrm{Total } C_f = \frac{1.328}{\left(Re_L \right)^{1/2}} \)
 
-** **
-
-** **![][05024]
-
-** **• Skin friction shear stress is a function of velocity profile at surface
-
- 
-
-** **![][05025]![][05026]
-
-** **
-
-![][05027]** **
-
-** **
-
-** **
-
-** **
-
-** **•  **Viscosity** (μ) increases with temperature (ref 5.9)
-
- 
-
-Sutherland law:
-
- 
-
- 
-
-![][05028]
-
-** **
-
-** **Power law:
-
- 
-
-![][05029]
-
-** **Where *T~o~* = 273.15 *K* = 518.67 R.
-
-For air: *S* =110.4 *K* = 199 *R; n= 0.67*
-
-For air at 273 K: μ~o~= 1.717x10^-5^ \[kg/m s\] = 3.59x10^-7^ \[slug/ft s\]
-
-Inserting air values (*T~K~*=Kelvin and T*~R~*=Rankine) into Sutherland law gives
-
- 
-
- 
-
- ![][05030]
-
- 
-
- **Reynolds Number Effects** (ref 5.10)
-
- 
-
-• Laminar boundary layers have more gradual change in
-
-velocity near surface than
-
-turbulent boundary layers.
-
-• High Reynolds numbers help
-
-![][05031] propagate turbulent flow.
-
- 
-
- 
-
-![][05032]
+Turbulent boundary layer: \(\textrm{Total } C_f = \frac{0.455}{\left(\log(Re_L)\right)^{2.58}} \approx \frac{0.074}{\left(Re_L\right)^{1/5}} \) 
 
 ![][05033]
 
-*Re~L~* based on total length of flat plate
+\(Re_L\) based on total length of flat plate
 
- 
+* Depth of boundary layer \((\delta)\) depends on local Reynolds number \((Re_x)\) and whether the flow is turbulent or laminar.
 
-• Depth of boundary layer (δ) depends on local Reynolds number (Re~x~) and whether the flow is turbulent or laminar.
+\[Re_x = \frac{\rho_{\infty} V_{\infty} x}{\mu_{\infty}} \equiv \frac{\textrm{Intertia Forces}}{\textrm{Viscous Forces}} \]
 
- 
+\(x = \) distance traveled to point in question
 
-![][05034]
+\[\delta_{lam} = \frac{5.2x}{\sqrt{Re_x}} \]
 
-![][05035]*x*= distance traveled to point in question
+\[\delta_{turb} = \frac{0.37x}{Re_x^{0.2}} \]
 
- 
+### Pressure Drag
 
-**5.4.2 Pressure Drag**
-
-** **
-
-• Ideal frictionless flow has no losses and leads to zero pressure drag
-
- 
-
-• Real fluids have friction and energy losses along surface
-
- 
-
-• Energy losses negate total pressure recovery, lead to decreasing total pressure along surface
-
- 
+* Ideal frictionless flow has no losses and leads to zero pressure drag
+* Real fluids have friction and energy losses along surface
+* Energy losses negate total pressure recovery, lead to decreasing total pressure along surface
 
 ![][05036]
 
-• Imbalance of pressures on surfaces causes pressure drag
+* Imbalance of pressures on surfaces causes pressure drag
 
-![][05037]![][05038] 
+  ```{block, type='FIXME', echo=FALSE}
+  The following figures have (a), (b), (b), and (c) that not only don't really have any meaning, but also has a repeated (b)
+  ```
 
-• Profile streamlining reduces pressure drag
+![][05037]
 
-![][05039] 
+![][05038]
 
-**5.4.3 Interference Drag**
+* Profile streamlining reduces pressure drag
 
- 
+![][05039]
 
-• Occurs with multiple surfaces approximately parallel to flow
+### Interference Drag
 
- 
-
-• Caused by flow's interference with itself or by excessive adverse pressure gradient due to rapidly decreasing vehicle cross section
-
- 
-
-• Most severe with surfaces at acute angles to each other
-
- 
-
-• Effects often reduced by fillets around contracting surfaces
-
- 
+* Occurs with multiple surfaces approximately parallel to flow
+* Caused by flow's interference with itself or by excessive adverse pressure gradient due to rapidly decreasing vehicle cross section
+* Most severe with surfaces at acute angles to each other
+* Effects often reduced by fillets around contracting surfaces
 
 ![][05040]
 
-**5.4.4 Induced Drag**
+### Induced Drag
 
-** **
+* Wingtip vortex reduces local AOA at each station along wing
+* Local lift vector is perpendicular to local AOA
+* Local lift vector is therefore tilted back relative to freestream lift
+* Induced drag defined as rearward component of local lift vector
 
-• Wingtip vortex reduces local AOA at each station along wing
+<!--- This image has an equation in it that should be cropped and put into the text --->
+![][05041]
 
- 
+Induced Drag \[\left(D_i\right)=L\left(\alpha_i\right)\]
 
-• Local lift vector is perpendicular to local AOA
+For elliptical lift distributions \(\alpha_i = \frac{C_L}{\pi AR} \)
 
- 
+\[\therefore D_i = L \left(\frac{C_L}{\pi AR}\right) \textrm{ but } L=qSC_L \]
 
-• Local lift vector is therefore tilted back relative to freestream lift
+\[C_{D_i} = \frac{D_i}{qS} = \frac{C_L^2}{\pi AR}\]
 
- 
+Oswald efficiency factor, \(e\), accounts for losses in excess of those predicted above (due to uneven downwash and changing interference drag effects).
 
-• Induced drag defined as rearward component of local lift vector
+\[\therefore C_{D_i} = \frac{C_L^2}{\pi ARe}\]
 
-![][05041] 
-
-![][05042]
-
-Oswald efficiency factor, *e*, accounts for losses in excess of those predicted above (due to uneven downwash and changing interference drag effects).
-
- 
-
- 
-
-![][05043]
-
-**5.5 Aerodynamic Compressibility Relations** (reference 5.8)
-
-** **
+## Aerodynamic Compressibility Relations (reference 5.8)
+  ```{block, type='FIXME', echo=FALSE}
+  This whole section and it's formatting and numbering really need to be re-done.  Normal shocks don't have a subsection, but obliques do for instance.  Needs consistency
+  ```
 
 **Prandtl/Glauert Approximation**
 
 Approximates Mach effects on aerodynamics below critical Mach
 
- 
-
-![][05044]
+\[C_{P_{compressible}} = \frac{1}{\sqrt{1-M^2}}C_{P_{incompressible}} \]
 
 **Total vs Ambient Property Relations for Adiabatic Flow**
 
-![][05045] 
+\[\frac{T_T}{T} = 1 + \frac{\gamma -1}{2}M^2 \textrm{   Isentropic flow not required}\]
+\[\frac{P_T}{P} = \left[1 + \frac{\gamma - 1}{2}M^2 \right]^{\frac{\gamma}{\gamma-1}} \textrm{   Isentropic (shockless) flow required}\]
+\[\frac{\rho_T}{\rho} = \left[1 + \frac{\gamma - 1}{2} M^2 \right]^{\frac{1}{\gamma -1}} \textrm{   Isentropic flow required} \]
+
 
 **Normal Shock Relations**
 
 Assumes isentropic flow on each side of the shock
-
 Assumes flow across shock is adiabatic
-
 Property changes occur in a constant area (throat)
 
-• 
-
-• 
-
- 
-
-![][05046]
+\[\frac{P_2}{P_1} = \frac{1 - \gamma + 2\gamma M_1^2}{1+\gamma} \]
+<!--- Check this exponent in the following equation --->
+\[\frac{\rho_2}{\rho_1} = \left[\frac{2 + \left(\gamma - 1\right) M_1^2}{\left(\gamma+1\right) M_1^2} \right]^{-1} \]
+\[\frac{T_2}{T_1} = \left[\frac{1 - \gamma + 2\gamma M_1^2}{1 + \gamma} \right]\left[\frac{2 + \left(\gamma - 1\right) M_1^2}{\left(1 + \gamma\right) M_1^2} \right] \]
+\[M_2^2 = \frac{M_1^2 + \frac{2}{\gamma - 1}}{\frac{2\gamma}{\gamma-1} M_1^2-1} \]
 
 Normal shock summary
+  ```{block, type='FIXME', echo=FALSE}
+  These aren't all defined (i.e. what is s?)
+  ```
+\(P_{T_1} > P_{T_2}\)
 
- 
+\(P_{1} < P_{2}\)
 
-![][05047]
+\(\rho_{T_1} > \rho_{T_2}\)
 
-**5.5.1 Oblique Shocks**
+\(\rho_{1} < \rho_{2}\)
 
- 
+\(T_{T_1} > T_{T_2}\)
+
+\(T_{1} < T_{2}\)
+
+\(M_1 > M_2 \)
+
+\(s_1 < s_2 \)
+
+
+### Oblique Shocks
 
 **Oblique Shock Description**
 
-![][05048] 
+![][05048]
 
-δ = surface turning angle
+\[\delta = \textrm{surface turning angle}\]
 
- 
+\[\theta = \textrm{shock wave angle}\]
 
-θ = shock wave angle
+\[\textrm{Subscript 1 denotes upstream conditions}\]
 
- 
-
-Subscript 1 denotes upstream conditions
-
- 
-
-Subscript 2 denotes downstream conditions
-
- 
+\[\textrm{Subscript 2 denotes downstream conditions}\]
 
 **Oblique Shock Relations**
 
-• Calculate *P~2~/P~1~, T~2~/T~1~*, and *ρ~2~/ρ~1~* across oblique shocks by using normal shock equations and substituting *M~1~ sinθ* in place of *M~1~*
+* Calculate \(P_2/P_1\), \(T_2/T_1\), and \(\rho_2/\rho_1\) across oblique shocks by using normal shock equations and substituting \(M_1 \sin\theta\) in place of \(M_1\)
+* Calculate total pressure loss across oblique shock as
 
-• Calculate total pressure loss across oblique shock as
+\[\frac{P_{T_2}}{P_{T_1}} = \left[\left[\frac{\gamma - 1}{\gamma + 1} + \frac{2}{{\left(\gamma + 1\right)M_1^2\sin^2\theta}}\right]^{\gamma} \left[\frac{2\gamma}{\gamma+1} M_1^2\sin^2\theta - \frac{\gamma - 1}{\gamma + 1} \right]\right]^{\frac{1}{1 - \gamma}}  \]
 
-• Calculate relation between Mach number and angles as
+* Calculate relation between Mach number and angles as
 
- 
-
-![][05049]![][05050]
+\[M_2^2\sin^2\left(\delta - \theta\right) = \frac{M_1^2 \sin^2\theta + \frac{2}{\gamma-1}}{\frac{2\gamma}{\gamma - 1} M_1^2\sin^2\theta - 1} \]
 
 **Oblique Shock Turning Angle as a Function of Wave Angle**
 
- 
-
 ![][05051]
 
-• Two θ solutions exist for every M~1~ & *δ* combination
-
-These represent the strong and weak shock solutions
-
-Weak shocks normally occur in nature
-
-• There is a minimum Mach number for each turning angle
-
-• The wave angle of a weak shock decreases with increased Mach
-
-• For a given Mach number, *θ* approaches *μ* as *δ* decreases
-
- 
-
- 
+* Two \(\theta\) solutions exist for every \(M_1\) & \(\delta\) combination
+    * These represent the strong and weak shock solutions
+    * Weak shocks normally occur in nature
+* There is a minimum Mach number for each turning angle
+* The wave angle of a weak shock decreases with increased Mach
+* For a given Mach number, \(\theta\) approaches \(\mu\) as \(\delta\) decreases
 
 **Mach Cone Angle**
 
- 
-
- 
-
 ![][05052]
 
-Minimum Wave Angle
+Minimum Wave Angle: \(\mu = \sin^{-1}\left(1/M\right) \)
 
-μ = sin^−1 ^(1/Μ)
-
- 
-
-**5.5.2 Supersonic Isentropic Expansion Relations**
-
- 
+### Supersonic Isentropic Expansion Relation
 
 ![][05053]
 
-• The wave angle *μ* determines where the lower pressure can be felt and thus where the flow can be accelerated
-
-• As the flow accelerates, a new wave angle forms and the subsequent lower pressure further accelerates the flow
-
-• Results in a series of Mach waves forming a "fan" until the flow turns and accelerates so that it is parallel to the new boundary
-
- 
+* The wave angle \(\mu\) determines where the lower pressure can be felt and thus where the flow can be accelerated
+* As the flow accelerates, a new wave angle forms and the subsequent lower pressure further accelerates the flow
+* Results in a series of Mach waves forming a "fan" until the flow turns and accelerates so that it is parallel to the new boundary
 
 **Prandtl-Meyer Function**
 
-Shows flow's required turning angle (ν) to accelerate from one Mach number to another
+Shows flow's required turning angle (\(\nu\)) to accelerate from one Mach number to another
 
- 
+\[\nu_M = \sqrt{\frac{\gamma + 1}{\gamma - 1}} \left[\tan^{-1}\sqrt{\frac{\gamma - 1}{\gamma + 1} \left(M^2 - 1\right)} \right] - \tan^{-1}\sqrt{M^2-1} \]
 
-![][05054]
+* If upstream Mach \((M_1) = 1\), then \(\nu_1 = 0\), and equation directly relates downstream Mach (\(M_2\)) to surface turning angle (\(\Delta \nu\))
+* If \(M_1 > 1\), determine \(M_2\) as follows:
+    * Calculate upstream ν~1~ from above equation
+    * Calculate \(\nu_2 = \nu_1 + \Delta \nu \)
+    * Reverse above equation to obtain corresponding \(M_2\)
+* Above equation is tabulated in NACA TR 1135 and is plotted below
 
-• If upstream Mach (M~1~) =1, then ν~1~ = 0, and equation directly relates downstream Mach (M~2~) to surface turning angle (∆ν)
+![][05055]
 
-• If M~1~\>1, determine M~2~ as follows:
+> Example: Flow initially at \(M_1 = 2.0\) accelerates through an expansion corner of 24 deg. Exit Mach number is 3.0
 
-Calculate upstream ν~1~ from above equation
+### Two-Dimensional Supersonic Airfoil Approximations
 
-Calculate ν~2~ = ν~1~ + ∆ν
+* Determine surface static pressures by calculating changes through obliques shocks and expansion fans
 
-Reverse above equation to obtain corresponding M~2~
+![][05056]
 
-• Above equation is tabulated in NACA TR 1135 and is plotted below
+* Ackert approximations for thin wings are based on
 
-![][05055] 
+   ```{block, type='FIXME', echo=FALSE}
+   I'm not sure if the "congruent" sign is the best symbol to use here.  Maybe approximately equal for consistency?
+   ```
 
-Example: Flow initially at *M~1~* = 2.0 accelerates through an expansion corner of 24 *deg*. Exit Mach number is 3.0
+\[C_p = \frac{\Delta P}{q} \cong \pm\frac{2 \delta}{\sqrt{M^2 - 1}} \]
 
- 
+* Double wedge airfoil approximations
 
-**5.5.3 Two-Dimensional Supersonic Airfoil Approximations**
+![][05058]
 
- 
+\[C_L \cong \frac{4 \alpha}{\sqrt{M^2 - 1} }\]
 
-• Determine surface static pressures by calculating changes through obliques shocks and expansion fans
+\[C_D \cong \frac{4 \alpha^2}{\sqrt{M^2 - 1}} + \frac{4}{\sqrt{M^2 - 1}}\left(\frac{t}{c}\right)^2\]
 
-![][05056] 
+* Biconvex wing approximations
 
- 
+![][05061]
 
- 
+\[C_L \cong \frac{4 \alpha}{\sqrt{M^2 - 1} }\]
 
- 
+\[C_D \cong \frac{4 \alpha^2}{\sqrt{M^2 - 1}} + \frac{5.33}{\sqrt{M^2 - 1}}\left(\frac{t}{c}\right)^2\]
 
- 
 
-• Ackert approximations for thin wings are based on
+## Drag Polars (ref 5.2)
 
- 
+### Drag Polar Construction and Terminology
 
-![][05057]![][05058] 
+   ```{block, type='TODO', echo=FALSE}
+   These really should be defined at the beginning of the section
+   ```
+\(C_L = \textrm{lift coefficient}\)
 
- 
+\(C_D = \textrm{drag coefficient}\)
 
- 
+\(C_{D_i} = \textrm{induced drag coefficient}\)
 
-• Double wedge airfoil approximations
+\(C_{D_0} = \textrm{parasitic drag coefficient}\)
 
-![][05059] 
+\(AR = \textrm{aspect ratio}\)
 
- 
+\(e = \textrm{Oswald efficiency factor}\)
 
- 
+\(l = \textrm{length flow has traveled}\)
 
-• Biconvex wing approximations
+\(S_{wet} = \textrm{wetted area of surface}\)
 
- 
-
-![][05060]![][05061]
-
-**5.6 Drag Polars** (ref 5.2)
-
- 
-
-**5.6.1 Drag Polar Construction and Terminology**
-
-*C~L~* = lift coefficient
-
-*C~D~* = drag coefficient
-
-*C~Di~* = induced drag coefficient
-
-*C~Do~* = parasitic drag coefficient
-
-AR = aspect ratio
-
-*e* = Oswald efficiency factor
-
-*l* = length flow has traveled
-
-*S~wet~* = wetted area of surface
-
-*S* = reference wing area
-
- 
+\(S = \textrm{reference wing area}\)
 
 **Simple Drag Polar Equation Limitations**
 
-• No separated flow losses
+* No separated flow losses
+* Symmetric Camber
+* Applies at one Mach, Altitude, *cg*
 
-• Symmetric Camber
+\[C_D = C_{D_0} + \frac{C_L^2}{\pi ARe} = C_{D_0} + C_{D_i}\]
 
-• Applies at one Mach, Altitude, *cg*
+"Polar" form of simple drag polar:
 
-![][05062]![][05063] 
+![][05062]
 
-![][05064]"Polar" form of simple drag polar
+Linearized form of simple drag polar:
 
- Linearized form of
+![][05064]
 
-simple drag polar
-
- 
-
-**5.6.2 Complicating Factors**
-
- 
+### Complicating Factors
 
 **Airflow Separation Effects**
-
- 
 
 ![][05065]
 
 Drag Polar Equation Accounting for Flow Separation:
 
- 
+\[C_D = C_{D_{min}} + \frac{\left(C_L - C_{L_{min}}\right)^2}{\pi ARe} +k_2\left(C_L - C_{L_{break}}\right)\]
 
-![][05066]• Delete last term if *C~L~\<C~lbreak~*
-
-• Determine *k*~2~ from flight test
-
- 
+* Delete last term if \(C_L < C_{L_{break}} \)
+* Determine \(k_2\) from flight test
 
 **Reynolds Number Effects** (refs 5.4, 5.11)
 
-• Calculate length *Re~L~* and friction coefficient (*c~f\ ~*) for each surface as
+* Calculate length \(Re_L\) and friction coefficient (\(c_f\)) for each surface as
 
- *T~K~* = Kelvin*,*
+\[Re_L = \frac{\rho Vl}{\mu} = 7.101 \times10^6 \left[\frac{\delta}{\theta^2} \right]\left[\frac{T_K + 110}{398}\right] l \]
 
-*l=* total length*,* ft)
+\(T_K = \textrm{Kelvin} \)
 
-![][05067] 
+\(l = \textrm{total length, ft}\)
 
-• In general*, c~f\ ~* decreases as *R~n\ ~*increases (unless transitioning from laminar to turbulent flow)
+\[c_f = \left[\frac{1.328}{\sqrt{Re_L}}\right] \left[1 + 0.1305 M^2 \right]^{-0.12} \textrm{ laminar}\]
+or
+\[c_f = \left[\frac{0.074}{\left(Re_L\right)^2} - \frac{1700}{Re_L}  \right] \textrm{ transition}\]
+or
+\[c_f = 0.455\left[\log Re_L\right]^{-258} \left[1 + 0.144 M^2\right]^{-0.65} \textrm{ turbulent}\]
 
-• Friction drag *= c~f~ q S~wet~* for each component (*S~wet~* = wetted area)
+   ```{block, type='FIXME', echo=FALSE}
+   Inconsistent use of R_L and R_n for Reynolds number
+   Wetted area is already defined above and doesn't need to be redefined below
+   ```
+* In general, \(c_f\) decreases as \(R_n\) increases (unless transitioning from laminar to turbulent flow)
+* Friction drag \(= c_f q S_{wet}\) for each component (\(S_{wet} = \textrm{wetted area}\))
+* Correct from test day to standard day aircraft drag coefficient by summing differences of each component's drag change
 
-• Correct from test day to standard day aircraft drag coefficient by summing differences of each component's drag change
-
-![][05068] 
+\[\Delta C_D = \frac{\sum\left(c_{f_s} - c_{f_t} \right) S_{wet}}{S} \]
 
 **Wing Camber or Incidence Angle Effects**
 
- 
+Note slight increase in drag as lift decreases towards zero
 
 ![][05069]
 
-Note slight increase in drag as lift decreases towards zero
-
- 
-
-Linearized drag polafor aircraft with
-
-wing camber and/or
-
-incidence
-
- 
+Linearized drag polar for aircraft with wing camber and/or incidence
 
 ![][05070]
 
 Revised drag polar equation accounting for wing camber or incidence
 
- 
+\[C_D = C_{D_{min}} + \frac{\left(C_L - C_{L_{min}} \right)^2}{\pi AR e} \]
 
- 
+* Generally not necessary since most flight occurs above \(C_{L_{min}}\)
 
- ![][05071]
+**Mach Number Effects**
 
- 
+* Aircraft with low parasitic drag coefficients and high fineness ratios pay a relatively small "wave drag" penalty.
 
-• Generally not necessary since most flight occurs above *C~Lmin~*
+![][05072]
 
- 
+* With external stores, same aircraft pays larger Mach penalty
 
- **Mach Number Effects**
+![][05073]
 
-** **
+**Propeller Slipstream Effects**
 
-• Aircraft with
-
-low parasitic drag
-
-coefficients and
-
-high fineness ratios
-
-pay a relatively
-
-small "wave drag"
-
-![][05072] penalty.
-
- 
-
-• With external stores, same aircraft pays larger Mach penalty
-
- 
-
- ![][05073]
-
- 
-
- **Propeller Slipstream Effects**
-
-•  a.k.a "scrubbing" drag
-
-•  Propwash increases flow speed over surface within slipstream
-
-•  More drag is created by higher *q* and vorticity.
-
-•  Function of prop speed and power absorbed (*C~p~*)or thrust (*C~T~*)
-
-• Problem should be addressed in airframe or propeller models
-
- 
+*  a.k.a "scrubbing" drag
+*  Propwash increases flow speed over surface within slipstream
+*  More drag is created by higher \(q\) and vorticity.
+*  Function of prop speed and power absorbed (\(C_p\))or thrust (\(C_T\))
+* Problem should be addressed in airframe or propeller models
 
 **Trim Drag Effects** (reference 5.4)
+   ```{block, type='FIXME', echo=FALSE}
+   Why are the following being re-defined?
+   ```
+\(e = \textrm{wing Oswald efficiency factor} \)
 
- 
+\(e_t = \textrm{tail Oswald efficiency factor} \)
 
-e = wing Oswald efficiency factor
+\(b = \textrm{span} \)
 
-e~t~ = tail Oswald efficiency factor
+\(b_t = \textrm{tail span} \)
 
-b = span, b~t~ = tail span
+\(x = \textrm{wing ac-to-cg distance} \)
 
-*x* = wing *ac-*to-*cg* distance
+\(l = \textrm{wing ac to tail ac distance} \)
 
-*l*= wing *ac*-to tail *ac* dist.
-
-S = Area
-
- 
+\(S = \textrm{Area} \)
 
 ![][05074]
 
-![][05075] 
+\[C_{D_{trim}} = \frac{W^2}{\pi q^2 Sb^2e} \left[\frac{2}{lW}\left[x_0 - x_1\right] + \frac{1}{l^2} \left[1 + \frac{S}{S_t} \frac{e}{e_t} \left(\frac{b}{b_t}\right)^2\right] \left[x_0^2 - x_1^2\right] \right]\]
 
-Trim drag change relative to
+Trim drag change relative to total induced drag:
 
-total induced drag:
-
- ![][05076]
+\[\frac{\Delta C_{D_{trim}}}{\Delta C_{D_i}} = \frac{x}{l} \left[\frac{x}{l} \left(\frac{b}{b_t}\right)^2 \frac{e}{e_t} - 2 \right] \]
 
 Plot of above equation
 
- 
-
 ![][05077]
 
-![][05078]**5.6.3 Drag Polar Analysis**
+### Drag Polar Analysis
 
- 
+\[D = \bar{q}SC_D = \bar{q}S \left[C_{D_0} + \frac{C_L^2}{\pi ARe} \right] = \frac{1}{2}\rho_0 V_e^2 S\left[C_{D_0} + \frac{W^2}{\pi AR e \left(\frac{1}{2} \rho_0 V_e^2 S \right)^2} \right]\]
 
-• For a given configuration (*C~Do~, S, AR, e*)
+* For a given configuration (\(C_{D_0}, S, AR, e\))
 
- 
+\[D = k_1 V_e^2 + k_2 \frac{W^2}{V_e^2} \]
 
-![][05079]
+first term = parasitic drag, second term = induced drag
 
-first term *=* parasitic drag,
-
-second term = induced drag
-
- 
-
-• For any given weight, *D* = *f*(equivalent airspeed) only
-
- 
+* For any given weight, \(D = f(\textrm{equivalent airspeed})\) only
 
 ![][05080]
 
-• Minimum total drag occurs when *D~induced~ = D~parasitic~*
-
-same as speed where *C~Di~ = C~Do~*
-
-occurs at max *C~L~ /C~D~* ratio (same as max *L/D* ratio)
-
-• Minimum drag/velocity occurs at min slope of Drag vs V curve
-
-same as speed where 3*C~Di~ =C~Do~*
-
-occurs at max *C~L~ ^1/2^ /C~D~* ratio
-
- 
+* Minimum total drag occurs when \(D_{induced} = D_{parasitic}\)
+    * same as speed where \(C_{D_i} = C_{D_0}\)
+    * occurs at max \(C_L/C_D\) ratio (same as max \(L/D\) ratio)
+* Minimum drag/velocity occurs at min slope of Drag vs V curve
+    * same as speed where \(3C_{D_i} = C_{D_0}\)
+    * occurs at max \(C_L^{1/2}/C_D\) ratio
 
 Power required = drag x true airspeed
 
- 
+\[P_{req} = DV_T = D\frac{V_e}{\sqrt{\sigma}} = k_1\frac{V_e^3}{\sqrt{\sigma}} + k_2\frac{W^2}{\sqrt{\sigma}V_e} \]
 
-![][05081]
+   ```{block, type='FIXME', echo=FALSE}
+   Inconsistent use of 'req'd' and 'req'.  The following P_induced and P_parasitic    should be D for drag (not power)
+   ```
 
-Minimum total *P~req'd~* occurs when *P~induced~ = P~parasitic~*
+Minimum total \(P_{req'd}\) occurs when \(P_{induced} = P_{parasitic}\)
 
-•  same as speed where *C~Di~ = 3C~Do~*
+*  same as speed where \(C_{D_i} = 3C_{D_0} \)
+*  occurs at max \(C_L^{3/2}/C_D\) ratio
 
-•  occurs at max *C~L~ ^3/2^ /C~D~* ratio
+Minimum power/velocity occurs at min slope of \(P_{req'd}\) vs \(V\) curve
 
-Minimum power/velocity occurs at min slope of *P~req'd~* vs *V* curve
-
-•  same as speed where *C~Di~ =C~Do~*
-
-•  occurs at max *C~L~ /C~D~* ratio
-
- 
+*  same as speed where \(C_{D_i} = C_{D_0}\)
+*  occurs at max \(C_L /C_D\) ratio
 
 **Optimum Aerodynamic Flight Conditions**
 
-** **
-
 *Gliders/ Engine-Out Flight*
 
-• Max range (minimum glide slope) occurs at max *C~L~/C~D~*
+* Max range (minimum glide slope) occurs at max \(C_L/C_D\)
+    * same as condition where \(C_{D_0} = C_{D_i}\) *if* drag polar is parabolic
+* Min sink rate (minimum power req'd) occurs at max \(C_L^{3/2} /C_D\) ratio same as condition where \(3C_{D_0} = C_{D_i}\) *if* drag polar is parabolic
 
-same as condition where *C~Do~* = *C~Di~* *if* drag polar is parabolic
+*Reciprocating Engine Aircraft (assuming constant BSFC & prop \(\eta\))*
 
-• Min sink rate (minimum power req'd) occurs at max *C~L~^3/2^ /C~D~* ratio same as condition where 3*C~Do~* = *C~Di~* *if* drag polar is parabolic
-
- 
-
-*Reciprocating Engine Aircraft (assuming constant BSFC & prop η)*
-
-• Max range (minimum power/velocity) occurs at max *C~L~/C~D~* ratio
-
-same as condition where *C~Do~* = *C~Di~* *if* drag polar is parabolic
-
-• Max endurance (minimum power req'd) occurs at max *C~L~^3/2^ /C~D~*
-
-same as condition where 3*C~Do~* = *C~Di~* *if* drag polar is parabolic
-
- 
+* Max range (minimum power/velocity) occurs at max \(C_L/C_D\) ratio
+    * same as condition where \(C_{D_0} = C_{D_i}\) *if* drag polar is parabolic
+* Max endurance (minimum power req'd) occurs at max \(C_L^{3/2} / C_D\)
+    * same as condition where \(3C_{D_0} = C_{D_i}\) *if* drag polar is parabolic
 
 *Turbine Jet Engine Aircraft (assuming constant TSFC)*
 
-• Max range at constant altitude (minimum drag/velocity)
-
-occurs at max *C~L~ ^1/2^ /C~D~* ratio
-
-same as condition where *C~Do~* = 3*C~Di~* *if* drag polar is parabolic
-
-• Best cruise/climb range (maximum \[*M* x *L/D*\] ratio)
-
-occurs at max *C~L~/C~D~ ^3/2\ ^*ratio
-
-same as condition where *C~Do~* = 2*C~Di~* *if* drag polar is parabolic
-
-• Best endurance (minimum drag)
-
-occurs at max *C~L~/C~D~* ratio
-
-same as condition where *C~Do~* = *C~Di~* *if* drag polar is parabolic
-
- 
+* Max range at constant altitude (minimum drag/velocity)
+    * occurs at max \(C_L^{1/2} / C_D\) ratio
+    * same as condition where \(C_{D_0} = 3C_{D_i}\) *if* drag polar is parabolic
+* Best cruise/climb range (\(\textrm{maximum}[M \times L/D]\) ratio)
+    * occurs at max \(C_L/C_D^{3/2}\) ratio
+    * same as condition where \(C_{D_0} = 2C_{D_i}\) *if* drag polar is parabolic
+* Best endurance (minimum drag)
+    * occurs at max \(C_L/C_D\) ratio
+    * same as condition where \(C_{D_0} = C_{D_i}\) *if* drag polar is parabolic
 
 ![][05082]
 
-To calculate optimum speed *V*~2~ for configuration~2~ & weight~2~ based on optimum speed *V*~1~ at configuration~1~ & weight~1~
+To calculate optimum speed \(V_2\) for \(\textrm{configuration}_2\) & \(\textrm{weight}_2\) based on optimum speed \(V_1\) at \(\textrm{configuration}_1\) & \(\textrm{weight}_1\)
 
- 
-
-![][05083]
-
-**5.7 References**
-
- 
+## References
 
 5.1 Roberts, Sean "Aerodynamics for Flight Testers" *Chapter 3, Subsonic Aerodynamics*, National Test Pilot School, Mojave, CA, 1999
 
- 
-
-5.2 Lawless, Alan R., et al, "Aerodynamics for Flight Testers" *Chptr 4, Drag Polars*, National Test Pilot School, Mojave ,CA, 1999
-
- 
+5.2 Lawless, Alan R., et al, "Aerodynamics for Flight Testers" *Chapter 4, Drag Polars*, National Test Pilot School, Mojave ,CA, 1999
 
 5.3 Hurt Hugh H., "Aerodynamics for Naval Aviators", University of Southern California, Los Angeles, CA, 1959.
 
- 
-
 5.4 McCormick, Barnes W., "Aerodynamics, Aeronautics, and Flight Mechanics", Wilet &Sons, 1979
-
- 
 
 5.5 Stinton, Darryl, "The Design of the Aeroplane", BSP Professional Books, Oxford, 1983
 
- 
-
 5.6 Roskam, Jan Dr., "Airplane Design, Part VI", Roskam Aviation and Engineering Corp. 1990
-
- 
 
 5.7 Anon, "Equations, Tables, and Charts for Compressible Flow" NACA Report 1135, 1953
 
- 
-
 5.8 Lewis, Gregory, "Aerodynamics for Flight Testers" *Chapter 6, Supersonic Aerodynamics*, National Test Pilot School, Mojave CA, 1999
-
- 
 
 5.9 White, Frank M. "Fluid Mechanics" pg 29, McGraw-Hill, 1979, ISBN 0-07-069667-5.
 
- 
-
 5.10 Anderson, John D. Jr, "Introduction to Flight" pg 142, Mcraw-Hill, 1989, ISBN 0-07-001641-0.
-
- 
 
 5.11 Twaites, Bryan, Editor, "Incompressible Aerodynamics: An Account of the steady flow of incompressible Fluid Past Aerofoils, Wings, and Other Bodies," Dover Publications, 1960.
 
- 
-
-  [05001]: media/05/image1.svg {width="2.9in" height="1.7402777777777778in"}
-  [05002]: media/05/image2.svg {width="0.8444444444444444in" height="0.5125in"}
-  [05003]: media/05/image3.svg {width="0.8125in" height="1.625in"}
-  [05004]: media/05/image4.svg {width="1.4381944444444446in" height="0.4583333333333333in"}
-  [05005]: media/05/image5.svg {width="1.729861111111111in" height="1.375in"}
+  [05001]: media/05/image1.svg {width="5.800in" height="3.481in"}
+  [05005]: media/05/image5.svg {width=3.460in" height="2.750in"}
   [05006]: media/05/image6.svg {width="4.4in" height="1.25in"}
-  [05007]: media/05/image7.svg {width="2.9270833333333335in" height="1.93125in"}
-  [05008]: media/05/image8.svg {width="1.5770833333333334in" height="0.6298611111111111in"}
-  [05009]: media/05/image9.svg {width="4.4in" height="1.125in"}
-  [05010]: media/05/image10.svg {width="1.6979166666666667in" height="0.5361111111111111in"}
-  [05011]: media/05/image11.svg {width="2.6666666666666665in" height="2.3125in"}
-  [05012]: media/05/image12.svg {width="3.55in" height="1.7201388888888889in"}
-  [05013]: media/05/image13.svg {width="2.1152777777777776in" height="1.1875in"}
-  [05014]: media/05/image14.svg {width="1.9375in" height="1.1243055555555554in"}
-  [05015]: media/05/image15.svg {width="4.4in" height="1.4409722222222223in"}
-  [05016]: media/05/image16.svg {width="2.857638888888889in" height="2.5118055555555556in"}
-  [05017]: media/05/image17.svg {width="1.3763888888888889in" height="0.6in"}
-  [05018]: media/05/image18.svg {width="3.5in" height="1.71875in"}
-  [05019]: media/05/image19.svg {width="2.65in" height="2.65in"}
-  [05020]: media/05/image20.svg {width="3.192361111111111in" height="0.6965277777777777in"}
-  [05021]: media/05/image21.svg {width="2.7in" height="2.645138888888889in"}
-  [05022]: media/05/image22.svg {width="3.147222222222222in" height="1.1743055555555555in"}
-  [05023]: media/05/image23.svg {width="2.3125in" height="1.86875in"}
-  [05024]: media/05/image24.svg {width="4.4in" height="1.75in"}
-  [05025]: media/05/image25.svg {width="3.9125in" height="1.625in"}
-  [05026]: media/05/image33.svg {width="3.9055555555555554in" height="1.625in"}
-  [05027]: media/05/image34.svg {width="2.3916666666666666in" height="0.5625in"}
-  [05028]: media/05/image35.svg {width="1.304861111111111in" height="0.6611111111111111in"}
-  [05029]: media/05/image36.svg {width="0.7708333333333334in" height="0.46805555555555556in"}
-  [05030]: media/05/image37.svg {width="3.75in" height="0.5048611111111111in"}
-  [05031]: media/05/image38.svg {width="2.0166666666666666in" height="0.8125in"}
-  [05032]: media/05/image39.svg {width="3.4270833333333335in" height="1.7291666666666667in"}
-  [05033]: media/05/image43.svg {width="3.3493055555555555in" height="1.9527777777777777in"}
-  [05034]: media/05/image44.svg {width="2.045138888888889in" height="0.4479166666666667in"}
-  [05035]: media/05/image45.svg {width="1.0486111111111112in" height="0.9375in"}
-  [05036]: media/05/image46.svg {width="4.4in" height="1.4375in"}
-  [05037]: media/05/image47.svg {width="2.75in" height="1.3222222222222222in"}
-  [05038]: media/05/image48.svg {width="2.595833333333333in" height="1.375in"}
-  [05039]: media/05/image49.svg {width="4.4in" height="3.0in"}
-  [05040]: media/05/image50.svg {width="2.78125in" height="1.25in"}
-  [05041]: media/05/image51.svg {width="4.4in" height="2.125in"}
-  [05042]: media/05/image52.svg {width="3.0in" height="1.4819444444444445in"}
-  [05043]: media/05/image53.svg {width="1.2527777777777778in" height="0.5625in"}
-  [05044]: media/05/image54.svg {width="2.3125in" height="0.5215277777777778in"}
-  [05045]: media/05/image55.svg {width="3.875in" height="1.4375in"}
-  [05046]: media/05/image57.svg {width="2.029166666666667in" height="2.0625in"}
-  [05047]: media/05/image58.svg {width="3.25in" height="0.5215277777777778in"}
-  [05048]: media/05/image59.svg {width="3.5618055555555554in" height="2.25in"}
-  [05049]: media/05/image60.svg {width="2.5340277777777778in" height="0.8013888888888889in"}
-  [05050]: media/05/image61.svg {width="4.145833333333333in" height="0.6875in"}
-  [05051]: media/05/image62.svg {width="4.4in" height="3.5in"}
-  [05052]: media/05/image63.svg {width="2.58125in" height="2.0340277777777778in"}
-  [05053]: media/05/image64.svg {width="3.6in" height="2.6555555555555554in"}
-  [05054]: media/05/image65.svg {width="3.5215277777777776in" height="0.5555555555555556in"}
-  [05055]: media/05/image66.svg {width="4.4in" height="3.75in"}
-  [05056]: media/05/image67.svg {width="2.5375in" height="2.125in"}
-  [05057]: media/05/image68.svg {width="1.5347222222222223in" height="0.375in"}
-  [05058]: media/05/image69.svg {width="1.7652777777777777in" height="0.5in"}
-  [05059]: media/05/image70.svg {width="2.3125in" height="0.9090277777777778in"}
-  [05060]: media/05/image71.svg {width="2.2354166666666666in" height="0.9375in"}
-  [05061]: media/05/image72.svg {width="2.2979166666666666in" height="0.7222222222222222in"}
-  [05062]: media/05/image73.svg {width="2.1013888888888888in" height="1.75625in"}
-  [05063]: media/05/image74.svg {width="2.0631944444444446in" height="0.4375in"}
-  [05064]: media/05/image75.svg {width="2.136111111111111in" height="1.8625in"}
-  [05065]: media/05/image76.svg {width="2.375in" height="1.729861111111111in"}
-  [05066]: media/05/image77.svg {width="3.027083333333333in" height="0.5104166666666666in"}
-  [05067]: media/05/image78.svg {width="5.125in" height="1.6875in"}
-  [05068]: media/05/image79.svg {width="1.7645833333333334in" height="0.5215277777777778in"}
-  [05069]: media/05/image80.svg {width="2.6354166666666665in" height="3.4375in"}
-  [05070]: media/05/image81.svg {width="3.1625in" height="1.6368055555555556in"}
-  [05071]: media/05/image82.svg {width="1.8125in" height="0.5159722222222223in"}
-  [05072]: media/05/image83.svg {width="2.9256944444444444in" height="3.0375in"}
-  [05073]: media/05/image84.svg {width="3.263888888888889in" height="3.1145833333333335in"}
-  [05074]: media/05/image86.svg {width="3.875in" height="1.4222222222222223in"}
-  [05075]: media/05/image87.svg {width="4.0in" height="0.5659722222222222in"}
-  [05076]: media/05/image88.svg {width="1.8298611111111112in" height="0.5520833333333334in"}
-  [05077]: media/05/image89.svg {width="3.25in" height="3.7534722222222223in"}
-  [05078]: media/05/image93.svg {width="4.4in" height="0.5in"}
-  [05079]: media/05/image94.svg {width="1.25in" height="0.5625in"}
-  [05080]: media/05/image95.svg {width="3.3569444444444443in" height="1.9375in"}
-  [05081]: media/05/image96.svg {width="2.604861111111111in" height="0.5in"}
-  [05082]: media/05/image97.svg {width="2.875in" height="2.0868055555555554in"}
-  [05083]: media/05/image98.svg {width="1.5in" height="0.5277777777777778in"}
+  [05007]: media/05/image7.svg {width="5.854in" height="3.863in"}
+  [05009]: media/05/image9.svg {width="8.8in" height="2.250in"}
+  [05011]: media/05/image11.svg {width="5.333in" height="4.625in"}
+  [05012]: media/05/image12.svg {width="7.1in" height="3.440in"}
+  [05013]: media/05/image13.svg {width="4.231in" height="2.375in"}
+  [05014]: media/05/image14.svg {width="3.875in" height="2.249in"}
+  [05015]: media/05/image15.svg {width="8.8in" height="2.882in"}
+  [05016]: media/05/image16.svg {width="5.715in" height="5.024in"}
+  [05018]: media/05/image18.svg {width="7.0in" height="3.438in"}
+  [05019]: media/05/image19.svg {width="5.3in" height="5.3in"}
+  [05020]: media/05/image20.svg {width="6.385in" height="1.393in"}
+  [05021]: media/05/image21.svg {width="5.4in" height="5.290in"}
+  [05022]: media/05/image22.svg {width="6.294in" height="2.349in"}
+  [05023]: media/05/image23.svg {width="4.625in" height="3.738in"}
+  [05024]: media/05/image24.svg {width="8.8in" height="3.5in"}
+  [05025]: media/05/image25.svg {width="7.825in" height="3.250in"}
+  [05026]: media/05/image33.svg {width="7.811in" height="3.250in"}
+  [05031]: media/05/image38.svg {width="4.033in" height="1.625in"}
+  [05033]: media/05/image43.svg {width="6.699in" height="3.906in"}
+  [05036]: media/05/image46.svg {width="8.8in" height="2.875in"}
+  [05037]: media/05/image47.svg {width="5.5in" height="2.644in"}
+  [05038]: media/05/image48.svg {width="5.192in" height="2.750in"}
+  [05039]: media/05/image49.svg {width="8.8in" height="6.0in"}
+  [05040]: media/05/image50.svg {width="5.563in" height="2.500in"}
+  [05041]: media/05/image51.svg {width="8.8in" height="4.250in"}
+  [05048]: media/05/image59.svg {width="7.124in" height="4.500in"}
+  [05051]: media/05/image62.svg {width="8.8in" height="7.0in"}
+  [05052]: media/05/image63.svg {width="5.163in" height="4.068in"}
+  [05053]: media/05/image64.svg {width="7.2in" height="5.311in"}
+  [05055]: media/05/image66.svg {width="8.8in" height="7.5in"}
+  [05056]: media/05/image67.svg {width="5.075in" height="4.250in"}
+  [05058]: media/05/image69.svg {width="3.531in" height="1.0in"}
+  [05061]: media/05/image72.svg {width="4.596in" height="1.444in"}
+  [05062]: media/05/image73.svg {width="4.203in" height="3.513in"}
+  [05064]: media/05/image75.svg {width="4.272in" height="3.725in"}
+  [05065]: media/05/image76.svg {width="4.750in" height="3.460in"}
+  [05069]: media/05/image80.svg {width="5.271in" height="6.875in"}
+  [05070]: media/05/image81.svg {width="6.325in" height="3.274in"}
+  [05072]: media/05/image83.svg {width="5.851in" height="6.075in"}
+  [05073]: media/05/image84.svg {width="6.528in" height="6.229in"}
+  [05074]: media/05/image86.svg {width="7.750in" height="2.844in"}
+  [05077]: media/05/image89.svg {width="6.5in" height="7.507in"}
+  [05080]: media/05/image95.svg {width="6.7143in" height="3.875in"}
+  [05082]: media/05/image97.svg {width="5.750in" height="4.174in"}
