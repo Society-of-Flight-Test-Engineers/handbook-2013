@@ -167,10 +167,10 @@
 <li class="chapter" data-level="" data-path="aerodynamics.html"><a href="aerodynamics.html#boundary-layer-control-effects"><i class="fa fa-check"></i>Boundary Layer Control Effects</a></li>
 </ul></li>
 <li class="chapter" data-level="5.4" data-path="aerodynamics.html"><a href="aerodynamics.html#elements-of-drag-refs-5.1-5.2-5.10"><i class="fa fa-check"></i><b>5.4</b> Elements of Drag (refs 5.1, 5.2, 5.10)</a><ul>
-<li class="chapter" data-level="" data-path="aerodynamics.html"><a href="aerodynamics.html#reynolds-number-effects-ref-5.10"><i class="fa fa-check"></i>Reynolds Number Effects (ref 5.10)</a></li>
-<li class="chapter" data-level="5.4.1" data-path="aerodynamics.html"><a href="aerodynamics.html#pressure-drag"><i class="fa fa-check"></i><b>5.4.1</b> Pressure Drag</a></li>
-<li class="chapter" data-level="5.4.2" data-path="aerodynamics.html"><a href="aerodynamics.html#interference-drag"><i class="fa fa-check"></i><b>5.4.2</b> Interference Drag</a></li>
-<li class="chapter" data-level="5.4.3" data-path="aerodynamics.html"><a href="aerodynamics.html#induced-drag"><i class="fa fa-check"></i><b>5.4.3</b> Induced Drag</a></li>
+<li class="chapter" data-level="5.4.1" data-path="aerodynamics.html"><a href="aerodynamics.html#reynolds-number-effects-ref-5.10"><i class="fa fa-check"></i><b>5.4.1</b> Reynolds Number Effects (ref 5.10)</a></li>
+<li class="chapter" data-level="5.4.2" data-path="aerodynamics.html"><a href="aerodynamics.html#pressure-drag"><i class="fa fa-check"></i><b>5.4.2</b> Pressure Drag</a></li>
+<li class="chapter" data-level="5.4.3" data-path="aerodynamics.html"><a href="aerodynamics.html#interference-drag"><i class="fa fa-check"></i><b>5.4.3</b> Interference Drag</a></li>
+<li class="chapter" data-level="5.4.4" data-path="aerodynamics.html"><a href="aerodynamics.html#induced-drag"><i class="fa fa-check"></i><b>5.4.4</b> Induced Drag</a></li>
 </ul></li>
 <li class="chapter" data-level="5.5" data-path="aerodynamics.html"><a href="aerodynamics.html#aerodynamic-compressibility-relations-reference-5.8"><i class="fa fa-check"></i><b>5.5</b> Aerodynamic Compressibility Relations (reference 5.8)</a><ul>
 <li class="chapter" data-level="5.5.1" data-path="aerodynamics.html"><a href="aerodynamics.html#oblique-shocks"><i class="fa fa-check"></i><b>5.5.1</b> Oblique Shocks</a></li>
@@ -423,10 +423,9 @@
 <li>For aircraft ignore <em>R</em>, <em>K</em> &amp; hypersonic effects</li>
 </ul>
 <div class="figure">
-<img src="media/05/image1.svg" width="278" height="167" />
+<img src="media/05/image1.svg" width="556" height="334" />
 
 </div>
-<!--- TODO: Remove the following figures: 05002, 05003, 05004 (replaced with LaTex) --->
 <!--- TODO: align the non-dimensional parameters (align equals sign) --->
 <ul>
 <li>Initially assume similar body orientations, shapes &amp; roughness.</li>
@@ -449,8 +448,8 @@
 <p><strong>A feel for <em>q</em></strong></p>
 <ul>
 <li>Kinetic energy of a moving object = <span class="math inline">\(\frac{1}{2} m V_T^2 \)</span></li>
-<li>Block of moving air kinetic energy = <span class="math inline">\(\frac{1}{2} \rho \textrm{volume} V_T^2 \)</span></li>
-<li>Dividing through by volume yields KE per volume of moving air = <span class="math inline">\(\frac{1}{2} \rho V V_T^2 \)</span></li>
+<li>Block of moving air kinetic energy = <span class="math inline">\(\frac{1}{2} \rho \textrm{ (volume) } V_T^2 \)</span></li>
+<li>Dividing through by volume yields KE per volume of moving air = <span class="math inline">\(\frac{1}{2} \rho V_T^2 \)</span></li>
 <li>“Dynamic pressure” or “<span class="math inline">\(q\)</span>” = potential for converting each cubic foot of the airflow’s kinetic energy into frontal stagnation pressure</li>
 <li>Feel <span class="math inline">\(q\)</span> by extending your hand out the window of a moving car</li>
 </ul>
@@ -470,24 +469,23 @@
 </ul>
 </blockquote>
 <div class="figure">
-<img src="media/05/image5.svg" width="166" height="132" />
+<img src="media/05/image5.svg" height="264" />
 
 </div>
 <ul>
 <li>Froude number is not significant in aerodynamic phenomena</li>
-<li>Recall that forces are aslo a function of angle of attack, shape &amp; surface roughness, therefore</li>
+<li>Recall that forces are also a function of angle of attack, shape &amp; surface roughness, therefore</li>
 </ul>
-<p><span class="math display">\[C_L,C_D = f[M, Re, \alpha] \]</span></p>
+<p><span class="math display">\[C_L,C_D = f[M, Re, \alpha] \textrm{ for a given shape, roughness} \]</span></p>
 <div class="figure">
-<img src="media/05/image7.svg" width="281" height="185" />
+<img src="media/05/image7.svg" width="561" height="370" />
 
 </div>
 <p><em>Note in the figure above the Reynolds effects are exaggerated</em></p>
 <!--- FIXME: I don't like the inconcistent use of Rn and Re for Reynolds number --->
-<!--- TODO: Removed 05008 and replaced with latex --->
 <p>To compare test day and standard day aircraft or to match wind tunnel <span class="math inline">\(C_F\)</span> data to actual aircraft; the shape, roughness, <span class="math inline">\(M\)</span>, <span class="math inline">\(R_n\)</span> and <span class="math inline">\(\alpha\)</span> must be equal for both aircraft</p>
 <div class="figure">
-<img src="media/05/image9.svg" width="422" height="108" />
+<img src="media/05/image9.svg" width="844" height="216" />
 
 </div>
 <!--- FIXME: Define these subscripts --->
@@ -508,8 +506,9 @@
 <p>For subsonic (incompressible) flow <span class="math inline">\(\rho_1 = \rho_2\)</span></p>
 <p><span class="math display">\[V_1 A_1 = V_2 A_2\]</span></p>
 <p><strong>Conservation of Energy</strong> (Bernoulli) <strong>Equation:</strong></p>
-<p>Potential + Kinetic + Pressure = constant (changes in Potential energy are negligible) Energy per unit volume is pressure then Dynamic Pressure + Static Pressure = Total Pressure</p>
-<!---- TODO: Remove reference to 05010 --->
+<p>Potential + Kinetic + Pressure = constant (changes in Potential energy are negligible)</p>
+<p>Energy per unit volume is pressure then Dynamic Pressure + Static Pressure = Total Pressure</p>
+<p><span class="math display">\[\frac{1}{2}\rho V^2 + p_s = \textrm{constant} \]</span> <span class="math display">\[\frac{1}{2}\rho V^2 + p_s = p_t \]</span></p>
 <ul>
 <li>This classic approach only applies in the “potential flow” region and not in the boundary layer where energy losses occur</li>
 <li>Pressures around a surface can be calculated or measured from tests and converted into pressure coefficients,</li>
@@ -519,14 +518,14 @@
 <li><span class="math inline">\(c_p\)</span> values can be mapped out for all surfaces</li>
 </ul>
 <div class="figure">
-<img src="media/05/image11.svg" width="255" height="222" />
+<img src="media/05/image11.svg" width="511" height="444" />
 
 </div>
 <ul>
 <li>Summation of all pressures perpendicular to surface yield the pitching moments and the “<strong>Resultant Aerodynamic Force</strong>” which is broken into lift and drag components</li>
 </ul>
 <div class="figure">
-<img src="media/05/image12.svg" width="340" height="165" />
+<img src="media/05/image12.svg" width="681" height="330" />
 
 </div>
 <ul>
@@ -543,25 +542,25 @@
 <li>Pressure differential at wingtip causes tip vortex</li>
 </ul>
 <div class="figure">
-<img src="media/05/image13.svg" width="203" height="114" />
+<img src="media/05/image13.svg" width="406" height="228" />
 
 </div>
 <div class="figure">
-<img src="media/05/image14.svg" width="186" height="107" />
+<img src="media/05/image14.svg" width="372" height="215" />
 
 </div>
 <ul>
 <li>Vortex creates flow field that reduces AOA across wingspan</li>
 </ul>
 <div class="figure">
-<img src="media/05/image15.svg" width="422" height="138" />
+<img src="media/05/image15.svg" width="844" height="276" />
 
 </div>
 <ul>
 <li>Local AOA reductions decrease average lift curve slope</li>
 </ul>
 <div class="figure">
-<img src="media/05/image16.svg" width="274" height="241" />
+<img src="media/05/image16.svg" width="548" height="482" />
 
 </div>
 <p><em>2D wing = wind tunnel airfoil extending to walls (infinite aspect ratio).</em></p>
@@ -570,38 +569,37 @@
 <ul>
 <li>Above relationship estimated as <span class="math inline">\(\alpha = \frac{dC_L}{d \alpha} = \frac{a_0}{1+\frac{57.3 a_0}{\pi AR}} \)</span></li>
 </ul>
-<!--- TODO: Remove reference to 05017 --->
 </div>
 <div id="trailing-edge-flap-effects" class="section level3 unnumbered">
 <h3>Trailing Edge Flap Effects</h3>
 <div class="figure">
-<img src="media/05/image18.svg" width="336" height="165" />
+<img src="media/05/image18.svg" width="672" height="330" />
 
 </div>
 <div class="figure">
-<img src="media/05/image19.svg" width="254" height="254" />
+<img src="media/05/image19.svg" width="508" height="508" />
 
 </div>
 </div>
 <div id="leading-edge-flap-effects" class="section level3 unnumbered">
 <h3>Leading Edge Flap Effects</h3>
 <div class="figure">
-<img src="media/05/image20.svg" width="306" height="66" />
+<img src="media/05/image20.svg" width="612" height="133" />
 
 </div>
 <div class="figure">
-<img src="media/05/image21.svg" width="259" height="253" />
+<img src="media/05/image21.svg" width="518" height="507" />
 
 </div>
 </div>
 <div id="boundary-layer-control-effects" class="section level3 unnumbered">
 <h3>Boundary Layer Control Effects</h3>
 <div class="figure">
-<img src="media/05/image22.svg" width="302" height="112" />
+<img src="media/05/image22.svg" width="604" height="225" />
 
 </div>
 <div class="figure">
-<img src="media/05/image23.svg" width="222" height="179" />
+<img src="media/05/image23.svg" width="444" height="358" />
 
 </div>
 </div>
@@ -609,40 +607,37 @@
 <div id="elements-of-drag-refs-5.1-5.2-5.10" class="section level2">
 <h2><span class="header-section-number">5.4</span> Elements of Drag (refs 5.1, 5.2, 5.10)</h2>
 <div class="figure">
-<img src="media/05/image24.svg" width="422" height="168" />
+<img src="media/05/image24.svg" width="844" height="336" />
 
 </div>
 <ul>
 <li>Skin friction shear stress is a function of velocity profile at surface</li>
 </ul>
 <div class="figure">
-<img src="media/05/image25.svg" width="375" height="156" />
+<img src="media/05/image25.svg" width="751" height="312" />
 
 </div>
-<!--- FIXME: Remove reference to 05026 and 05027 --->
 <!--- Tau needs to be defined at the beginning of the section --->
 <p>Shear stress <span class="math inline">\(\tau_w = \mu \left( \frac{dv}{dy} \right)_{y=0} \)</span></p>
 <ul>
 <li>Viscosity <span class="math inline">\(\mu\)</span> increases with temperature (ref 5.9)</li>
 </ul>
 <p>Sutherland law: <span class="math inline">\(\mu = \mu_0 \frac{\left( \frac{T}{T_0} \right)^{1.5} \left( T_0 + S \right)}{\left( T + S \right)} \)</span></p>
-<!--- FIXME: remove reference to 05028 --->
 <p>Power law: <span class="math inline">\(\mu = \mu_0 \left( \frac{T}{T_0} \right)^n \)</span></p>
-<!--- FIXME: remove reference to 05029 --->
 <!--- TODO: check to make sure the unit formatting is consistent with the style guide --->
 <p>Where <span class="math inline">\(T_0 = 273.15 K = 518.67 R \)</span></p>
 <p>For air: <span class="math inline">\(S = 110.4 K = 199 R \textrm{; n=0.67} \)</span></p>
 <p>For air at 273 K: <span class="math inline">\(\mu_0 = 1.717 \times 10^{-5} \textrm{[kg/m s]} = 3.59 \times 10^{-7} \textrm{[slug/ft s]} \)</span></p>
 <p>Inserting air values (<span class="math inline">\(T_K=\)</span>Kelvin and <span class="math inline">\(T_R=\)</span>Rankin) into Sutherland law gives</p>
 <p><span class="math display">\[\mu = 1.458 \times 10^{-6} \frac{T_K^{1.5}}{T_K+110.4} \left[\frac{\textrm{kg}}{\textrm{s m}}\right] = 2.2 \times 10^{-8} \frac{T_R^{1.5}}{T_R+199} \left[\frac{\text{slg}}{\text{s ft}}\right]\]</span></p>
-<div id="reynolds-number-effects-ref-5.10" class="section level3 unnumbered">
-<h3>Reynolds Number Effects (ref 5.10)</h3>
+<div id="reynolds-number-effects-ref-5.10" class="section level3">
+<h3><span class="header-section-number">5.4.1</span> Reynolds Number Effects (ref 5.10)</h3>
 <ul>
 <li>Laminar boundary layers have more gradual change in velocity near surface than turbulent boundary layers.</li>
 <li>High Reynolds numbers help propagate turbulent flow.</li>
 </ul>
 <div class="figure">
-<img src="media/05/image38.svg" width="193" height="78" />
+<img src="media/05/image38.svg" width="387" height="156" />
 
 </div>
 <p>Shearing stress: <span class="math inline">\(\tau_w = \mu \left(\frac{dv}{dy}\right)_{y=0}\)</span></p>
@@ -650,7 +645,7 @@
 <p>Laminar boundary layer: <span class="math inline">\(\textrm{Total } C_f = \frac{1.328}{\left(Re_L \right)^{1/2}} \)</span></p>
 <p>Turbulent boundary layer: <span class="math inline">\(\textrm{Total } C_f = \frac{0.455}{\left(\log(Re_L)\right)^{2.58}} \approx \frac{0.074}{\left(Re_L\right)^{1/5}} \)</span></p>
 <div class="figure">
-<img src="media/05/image43.svg" width="321" height="187" />
+<img src="media/05/image43.svg" width="643" height="374" />
 
 </div>
 <p><span class="math inline">\(Re_L\)</span> based on total length of flat plate</p>
@@ -663,37 +658,37 @@
 <p><span class="math display">\[\delta_{turb} = \frac{0.37x}{Re_x^{0.2}} \]</span></p>
 </div>
 <div id="pressure-drag" class="section level3">
-<h3><span class="header-section-number">5.4.1</span> Pressure Drag</h3>
+<h3><span class="header-section-number">5.4.2</span> Pressure Drag</h3>
 <ul>
 <li>Ideal frictionless flow has no losses and leads to zero pressure drag</li>
 <li>Real fluids have friction and energy losses along surface</li>
 <li>Energy losses negate total pressure recovery, lead to decreasing total pressure along surface</li>
 </ul>
 <div class="figure">
-<img src="media/05/image46.svg" width="422" height="138" />
+<img src="media/05/image46.svg" width="844" height="276" />
 
 </div>
 <ul>
 <li>Imbalance of pressures on surfaces causes pressure drag</li>
 </ul>
 <div class="figure">
-<img src="media/05/image47.svg" width="264" height="126" />
+<img src="media/05/image47.svg" width="528" height="253" />
 
 </div>
 <div class="figure">
-<img src="media/05/image48.svg" width="249" height="132" />
+<img src="media/05/image48.svg" width="498" height="264" />
 
 </div>
 <ul>
 <li>Profile streamlining reduces pressure drag</li>
 </ul>
 <div class="figure">
-<img src="media/05/image49.svg" width="422" height="288" />
+<img src="media/05/image49.svg" width="844" height="576" />
 
 </div>
 </div>
 <div id="interference-drag" class="section level3">
-<h3><span class="header-section-number">5.4.2</span> Interference Drag</h3>
+<h3><span class="header-section-number">5.4.3</span> Interference Drag</h3>
 <ul>
 <li>Occurs with multiple surfaces approximately parallel to flow</li>
 <li>Caused by flow’s interference with itself or by excessive adverse pressure gradient due to rapidly decreasing vehicle cross section</li>
@@ -701,12 +696,12 @@
 <li>Effects often reduced by fillets around contracting surfaces</li>
 </ul>
 <div class="figure">
-<img src="media/05/image50.svg" width="267" height="120" />
+<img src="media/05/image50.svg" width="534" height="240" />
 
 </div>
 </div>
 <div id="induced-drag" class="section level3">
-<h3><span class="header-section-number">5.4.3</span> Induced Drag</h3>
+<h3><span class="header-section-number">5.4.4</span> Induced Drag</h3>
 <ul>
 <li>Wingtip vortex reduces local AOA at each station along wing</li>
 <li>Local lift vector is perpendicular to local AOA</li>
@@ -715,16 +710,14 @@
 </ul>
 <!--- This image has an equation in it that should be cropped and put into the text --->
 <div class="figure">
-<img src="media/05/image51.svg" width="422" height="204" />
+<img src="media/05/image51.svg" width="844" height="408" />
 
 </div>
-<!--- Remove 05042 --->
 <p>Induced Drag <span class="math display">\[\left(D_i\right)=L\left(\alpha_i\right)\]</span></p>
 <p>For elliptical lift distributions <span class="math inline">\(\alpha_i = \frac{C_L}{\pi AR} \)</span></p>
 <p><span class="math display">\[\therefore D_i = L \left(\frac{C_L}{\pi AR}\right) \textrm{ but } L=qSC_L \]</span></p>
 <p><span class="math display">\[C_{D_i} = \frac{D_i}{qS} = \frac{C_L^2}{\pi AR}\]</span></p>
 <p>Oswald efficiency factor, <span class="math inline">\(e\)</span>, accounts for losses in excess of those predicted above (due to uneven downwash and changing interference drag effects).</p>
-<!--- Remove 05043 --->
 <p><span class="math display">\[\therefore C_{D_i} = \frac{C_L^2}{\pi ARe}\]</span></p>
 </div>
 </div>
@@ -732,14 +725,12 @@
 <h2><span class="header-section-number">5.5</span> Aerodynamic Compressibility Relations (reference 5.8)</h2>
 <p><strong>Prandtl/Glauert Approximation</strong></p>
 <p>Approximates Mach effects on aerodynamics below critical Mach</p>
-<p><span class="math display">\[C_{P_{compressible}} = \frac{1}{\sqrt{1-M^2}}C_{P_{incompressible}} \]</span> <!--- Remove 05044 ---></p>
+<p><span class="math display">\[C_{P_{compressible}} = \frac{1}{\sqrt{1-M^2}}C_{P_{incompressible}} \]</span></p>
 <p><strong>Total vs Ambient Property Relations for Adiabatic Flow</strong></p>
 <p><span class="math display">\[\frac{T_T}{T} = 1 + \frac{\gamma -1}{2}M^2 \textrm{   Isentropic flow not required}\]</span> <span class="math display">\[\frac{P_T}{P} = \left[1 + \frac{\gamma - 1}{2}M^2 \right]^{\frac{\gamma}{\gamma-1}} \textrm{   Isentropic (shockless) flow required}\]</span> <span class="math display">\[\frac{\rho_T}{\rho} = \left[1 + \frac{\gamma - 1}{2} M^2 \right]^{\frac{1}{\gamma -1}} \textrm{   Isentropic flow required} \]</span></p>
-<!--- Remove 05045 --->
 <p><strong>Normal Shock Relations</strong></p>
 <p>Assumes isentropic flow on each side of the shock Assumes flow across shock is adiabatic Property changes occur in a constant area (throat)</p>
 <p><span class="math display">\[\frac{P_2}{P_1} = \frac{1 - \gamma + 2\gamma M_1^2}{1+\gamma} \]</span> <!--- Check this exponent in the following equation ---> <span class="math display">\[\frac{\rho_2}{\rho_1} = \left[\frac{2 + \left(\gamma - 1\right) M_1^2}{\left(\gamma+1\right) M_1^2} \right]^{-1} \]</span> <span class="math display">\[\frac{T_2}{T_1} = \left[\frac{1 - \gamma + 2\gamma M_1^2}{1 + \gamma} \right]\left[\frac{2 + \left(\gamma - 1\right) M_1^2}{\left(1 + \gamma\right) M_1^2} \right] \]</span> <span class="math display">\[M_2^2 = \frac{M_1^2 + \frac{2}{\gamma - 1}}{\frac{2\gamma}{\gamma-1} M_1^2-1} \]</span></p>
-<!--- Remove 05046 --->
 <p>Normal shock summary</p>
 <p><span class="math inline">\(P_{T_1} &gt; P_{T_2}\)</span></p>
 <p><span class="math inline">\(P_{1} &lt; P_{2}\)</span></p>
@@ -749,12 +740,11 @@
 <p><span class="math inline">\(T_{1} &lt; T_{2}\)</span></p>
 <p><span class="math inline">\(M_1 &gt; M_2 \)</span></p>
 <p><span class="math inline">\(s_1 &lt; s_2 \)</span></p>
-<!--- Remove 05047 --->
 <div id="oblique-shocks" class="section level3">
 <h3><span class="header-section-number">5.5.1</span> Oblique Shocks</h3>
 <p><strong>Oblique Shock Description</strong></p>
 <div class="figure">
-<img src="media/05/image59.svg" width="341" height="216" />
+<img src="media/05/image59.svg" width="683" height="432" />
 
 </div>
 <p><span class="math display">\[\delta = \textrm{surface turning angle}\]</span></p>
@@ -771,10 +761,9 @@
 <li>Calculate relation between Mach number and angles as</li>
 </ul>
 <p><span class="math display">\[M_2^2\sin^2\left(\delta - \theta\right) = \frac{M_1^2 \sin^2\theta + \frac{2}{\gamma-1}}{\frac{2\gamma}{\gamma - 1} M_1^2\sin^2\theta - 1} \]</span></p>
-<!--- FIXME: Remove 05049, 05050 --->
 <p><strong>Oblique Shock Turning Angle as a Function of Wave Angle</strong></p>
 <div class="figure">
-<img src="media/05/image62.svg" width="422" height="336" />
+<img src="media/05/image62.svg" width="844" height="672" />
 
 </div>
 <ul>
@@ -789,7 +778,7 @@
 </ul>
 <p><strong>Mach Cone Angle</strong></p>
 <div class="figure">
-<img src="media/05/image63.svg" width="247" height="195" />
+<img src="media/05/image63.svg" width="495" height="390" />
 
 </div>
 <p>Minimum Wave Angle: <span class="math inline">\(\mu = \sin^{-1}\left(1/M\right) \)</span></p>
@@ -797,7 +786,7 @@
 <div id="supersonic-isentropic-expansion-relation" class="section level3">
 <h3><span class="header-section-number">5.5.2</span> Supersonic Isentropic Expansion Relation</h3>
 <div class="figure">
-<img src="media/05/image64.svg" width="345" height="254" />
+<img src="media/05/image64.svg" width="691" height="509" />
 
 </div>
 <ul>
@@ -808,7 +797,6 @@
 <p><strong>Prandtl-Meyer Function</strong></p>
 <p>Shows flow’s required turning angle (<span class="math inline">\(\nu\)</span>) to accelerate from one Mach number to another</p>
 <p><span class="math display">\[\nu_M = \sqrt{\frac{\gamma + 1}{\gamma - 1}} \left[\tan^{-1}\sqrt{\frac{\gamma - 1}{\gamma + 1} \left(M^2 - 1\right)} \right] - \tan^{-1}\sqrt{M^2-1} \]</span></p>
-<!--- Remove 05054 --->
 <ul>
 <li>If upstream Mach <span class="math inline">\((M_1) = 1\)</span>, then <span class="math inline">\(\nu_1 = 0\)</span>, and equation directly relates downstream Mach (<span class="math inline">\(M_2\)</span>) to surface turning angle (<span class="math inline">\(\Delta \nu\)</span>)</li>
 <li>If <span class="math inline">\(M_1 &gt; 1\)</span>, determine <span class="math inline">\(M_2\)</span> as follows:
@@ -820,10 +808,12 @@
 <li>Above equation is tabulated in NACA TR 1135 and is plotted below</li>
 </ul>
 <div class="figure">
-<img src="media/05/image66.svg" width="422" height="360" />
+<img src="media/05/image66.svg" width="844" height="720" />
 
 </div>
+<blockquote>
 <p>Example: Flow initially at <span class="math inline">\(M_1 = 2.0\)</span> accelerates through an expansion corner of 24 deg. Exit Mach number is 3.0</p>
+</blockquote>
 </div>
 <div id="two-dimensional-supersonic-airfoil-approximations" class="section level3">
 <h3><span class="header-section-number">5.5.3</span> Two-Dimensional Supersonic Airfoil Approximations</h3>
@@ -831,34 +821,31 @@
 <li>Determine surface static pressures by calculating changes through obliques shocks and expansion fans</li>
 </ul>
 <div class="figure">
-<img src="media/05/image67.svg" width="243" height="204" />
+<img src="media/05/image67.svg" width="487" height="408" />
 
 </div>
 <ul>
 <li>Ackert approximations for thin wings are based on</li>
 </ul>
 <p><span class="math display">\[C_p = \frac{\Delta P}{q} \cong \pm\frac{2 \delta}{\sqrt{M^2 - 1}} \]</span></p>
-<!--- Remove ![][05057] ---->
 <ul>
 <li>Double wedge airfoil approximations</li>
 </ul>
 <div class="figure">
-<img src="media/05/image69.svg" width="169" height="48" />
+<img src="media/05/image69.svg" width="338" height="96" />
 
 </div>
 <p><span class="math display">\[C_L \cong \frac{4 \alpha}{\sqrt{M^2 - 1} }\]</span></p>
 <p><span class="math display">\[C_D \cong \frac{4 \alpha^2}{\sqrt{M^2 - 1}} + \frac{4}{\sqrt{M^2 - 1}}\left(\frac{t}{c}\right)^2\]</span></p>
-<!--- Remove ![][05059] --->
 <ul>
 <li>Biconvex wing approximations</li>
 </ul>
 <div class="figure">
-<img src="media/05/image72.svg" width="220" height="69" />
+<img src="media/05/image72.svg" width="441" height="138" />
 
 </div>
 <p><span class="math display">\[C_L \cong \frac{4 \alpha}{\sqrt{M^2 - 1} }\]</span></p>
 <p><span class="math display">\[C_D \cong \frac{4 \alpha^2}{\sqrt{M^2 - 1}} + \frac{5.33}{\sqrt{M^2 - 1}}\left(\frac{t}{c}\right)^2\]</span></p>
-<!--- Remove ![][05060] --->
 </div>
 </div>
 <div id="drag-polars-ref-5.2" class="section level2">
@@ -883,13 +870,12 @@
 <p><span class="math display">\[C_D = C_{D_0} + \frac{C_L^2}{\pi ARe} = C_{D_0} + C_{D_i}\]</span></p>
 <p>“Polar” form of simple drag polar:</p>
 <div class="figure">
-<img src="media/05/image73.svg" width="201" height="168" />
+<img src="media/05/image73.svg" width="403" height="337" />
 
 </div>
-<!--- FIXME Remove ![][05063] --->
 <p>Linearized form of simple drag polar:</p>
 <div class="figure">
-<img src="media/05/image75.svg" width="205" height="178" />
+<img src="media/05/image75.svg" width="410" height="357" />
 
 </div>
 </div>
@@ -897,12 +883,11 @@
 <h3><span class="header-section-number">5.6.2</span> Complicating Factors</h3>
 <p><strong>Airflow Separation Effects</strong></p>
 <div class="figure">
-<img src="media/05/image76.svg" width="228" height="166" />
+<img src="media/05/image76.svg" width="456" height="332" />
 
 </div>
 <p>Drag Polar Equation Accounting for Flow Separation:</p>
 <p><span class="math display">\[C_D = C_{D_{min}} + \frac{\left(C_L - C_{L_{min}}\right)^2}{\pi ARe} +k_2\left(C_L - C_{L_{break}}\right)\]</span></p>
-<!--- FIXME: Remove ![][05066] --->
 <ul>
 <li>Delete last term if <span class="math inline">\(C_L &lt; C_{L_{break}} \)</span></li>
 <li>Determine <span class="math inline">\(k_2\)</span> from flight test</li>
@@ -915,28 +900,25 @@
 <p><span class="math inline">\(T_K = \textrm{Kelvin} \)</span></p>
 <p><span class="math inline">\(l = \textrm{total length, ft}\)</span></p>
 <p><span class="math display">\[c_f = \left[\frac{1.328}{\sqrt{Re_L}}\right] \left[1 + 0.1305 M^2 \right]^{-0.12} \textrm{ laminar}\]</span> or <span class="math display">\[c_f = \left[\frac{0.074}{\left(Re_L\right)^2} - \frac{1700}{Re_L}  \right] \textrm{ transition}\]</span> or <span class="math display">\[c_f = 0.455\left[\log Re_L\right]^{-258} \left[1 + 0.144 M^2\right]^{-0.65} \textrm{ turbulent}\]</span></p>
-<!--- Remove ![][05067] --->
 <ul>
 <li>In general, <span class="math inline">\(c_f\)</span> decreases as <span class="math inline">\(R_n\)</span> increases (unless transitioning from laminar to turbulent flow)</li>
 <li>Friction drag <span class="math inline">\(= c_f q S_{wet}\)</span> for each component (<span class="math inline">\(S_{wet} = \textrm{wetted area}\)</span>)</li>
 <li>Correct from test day to standard day aircraft drag coefficient by summing differences of each component’s drag change</li>
 </ul>
 <p><span class="math display">\[\Delta C_D = \frac{\sum\left(c_{f_s} - c_{f_t} \right) S_{wet}}{S} \]</span></p>
-<!--- Remove ![][05068] --->
 <p><strong>Wing Camber or Incidence Angle Effects</strong></p>
 <p>Note slight increase in drag as lift decreases towards zero</p>
 <div class="figure">
-<img src="media/05/image80.svg" width="252" height="330" />
+<img src="media/05/image80.svg" width="506" height="660" />
 
 </div>
 <p>Linearized drag polar for aircraft with wing camber and/or incidence</p>
 <div class="figure">
-<img src="media/05/image81.svg" width="303" height="157" />
+<img src="media/05/image81.svg" width="607" height="314" />
 
 </div>
 <p>Revised drag polar equation accounting for wing camber or incidence</p>
 <p><span class="math display">\[C_D = C_{D_{min}} + \frac{\left(C_L - C_{L_{min}} \right)^2}{\pi AR e} \]</span></p>
-<!--- Remove ![][05071] --->
 <ul>
 <li>Generally not necessary since most flight occurs above <span class="math inline">\(C_{L_{min}}\)</span></li>
 </ul>
@@ -945,14 +927,14 @@
 <li>Aircraft with low parasitic drag coefficients and high fineness ratios pay a relatively small “wave drag” penalty.</li>
 </ul>
 <div class="figure">
-<img src="media/05/image83.svg" width="280" height="291" />
+<img src="media/05/image83.svg" width="561" height="583" />
 
 </div>
 <ul>
 <li>With external stores, same aircraft pays larger Mach penalty</li>
 </ul>
 <div class="figure">
-<img src="media/05/image84.svg" width="313" height="299" />
+<img src="media/05/image84.svg" width="626" height="597" />
 
 </div>
 <p><strong>Propeller Slipstream Effects</strong></p>
@@ -972,35 +954,31 @@
 <p><span class="math inline">\(l = \textrm{wing ac to tail ac distance} \)</span></p>
 <p><span class="math inline">\(S = \textrm{Area} \)</span></p>
 <div class="figure">
-<img src="media/05/image86.svg" width="372" height="136" />
+<img src="media/05/image86.svg" width="744" height="273" />
 
 </div>
 <p><span class="math display">\[C_{D_{trim}} = \frac{W^2}{\pi q^2 Sb^2e} \left[\frac{2}{lW}\left[x_0 - x_1\right] + \frac{1}{l^2} \left[1 + \frac{S}{S_t} \frac{e}{e_t} \left(\frac{b}{b_t}\right)^2\right] \left[x_0^2 - x_1^2\right] \right]\]</span></p>
-<!--- Remove ![][05075] --->
 <p>Trim drag change relative to total induced drag:</p>
 <p><span class="math display">\[\frac{\Delta C_{D_{trim}}}{\Delta C_{D_i}} = \frac{x}{l} \left[\frac{x}{l} \left(\frac{b}{b_t}\right)^2 \frac{e}{e_t} - 2 \right] \]</span></p>
-<!--- Remove ![][05076] --->
 <p>Plot of above equation</p>
 <div class="figure">
-<img src="media/05/image89.svg" width="312" height="360" />
+<img src="media/05/image89.svg" width="624" height="720" />
 
 </div>
 </div>
 <div id="drag-polar-analysis" class="section level3">
 <h3><span class="header-section-number">5.6.3</span> Drag Polar Analysis</h3>
-<!--- Remove ![][05078] --->
 <p><span class="math display">\[D = \bar{q}SC_D = \bar{q}S \left[C_{D_0} + \frac{C_L^2}{\pi ARe} \right] = \frac{1}{2}\rho_0 V_e^2 S\left[C_{D_0} + \frac{W^2}{\pi AR e \left(\frac{1}{2} \rho_0 V_e^2 S \right)^2} \right]\]</span></p>
 <ul>
 <li>For a given configuration (<span class="math inline">\(C_{D_0}, S, AR, e\)</span>)</li>
 </ul>
-<!--- Remove ![][05079] --->
 <p><span class="math display">\[D = k_1 V_e^2 + k_2 \frac{W^2}{V_e^2} \]</span></p>
 <p>first term = parasitic drag, second term = induced drag</p>
 <ul>
 <li>For any given weight, <span class="math inline">\(D = f(\textrm{equivalent airspeed})\)</span> only</li>
 </ul>
 <div class="figure">
-<img src="media/05/image95.svg" width="322" height="186" />
+<img src="media/05/image95.svg" width="644" height="372" />
 
 </div>
 <ul>
@@ -1016,7 +994,7 @@
 </ul></li>
 </ul>
 <p>Power required = drag x true airspeed</p>
-<p><span class="math display">\[P_{req} = DV_T = D\frac{V_e}{\sqrt{\sigma}} = k_1\frac{V_e^3}{\sqrt{\sigma}} + k_2\frac{W^2}{\sqrt{\sigma}V_e} \]</span> <!--- Remove ![][05081] ---></p>
+<p><span class="math display">\[P_{req} = DV_T = D\frac{V_e}{\sqrt{\sigma}} = k_1\frac{V_e^3}{\sqrt{\sigma}} + k_2\frac{W^2}{\sqrt{\sigma}V_e} \]</span></p>
 <p>Minimum total <span class="math inline">\(P_{req&#39;d}\)</span> occurs when <span class="math inline">\(P_{induced} = P_{parasitic}\)</span></p>
 <ul>
 <li>same as speed where <span class="math inline">\(C_{D_i} = 3C_{D_0} \)</span></li>
@@ -1066,14 +1044,10 @@
 </ul></li>
 </ul>
 <div class="figure">
-<img src="media/05/image97.svg" width="276" height="200" />
+<img src="media/05/image97.svg" width="552" height="400" />
 
 </div>
 <p>To calculate optimum speed <span class="math inline">\(V_2\)</span> for <span class="math inline">\(\textrm{configuration}_2\)</span> &amp; <span class="math inline">\(\textrm{weight}_2\)</span> based on optimum speed <span class="math inline">\(V_1\)</span> at <span class="math inline">\(\textrm{configuration}_1\)</span> &amp; <span class="math inline">\(\textrm{weight}_1\)</span></p>
-<div class="figure">
-<img src="media/05/image98.svg" width="144" height="50" />
-
-</div>
 </div>
 </div>
 <div id="references-1" class="section level2">

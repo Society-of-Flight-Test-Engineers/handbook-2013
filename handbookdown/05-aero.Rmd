@@ -66,7 +66,6 @@ Aerodynamic force = *F*
 
 ![][05001]
 
-<!--- TODO: Remove the following figures: 05002, 05003, 05004 (replaced with LaTex) --->
 <!--- TODO: align the non-dimensional parameters (align equals sign) --->
 * Initially assume similar body orientations, shapes & roughness.
 * Dimensional Analysis reveals four non-dimensional (\(\pi\)) parameters:
@@ -89,8 +88,8 @@ dimensions of reference wing area, \(S\) are the same
 > **A feel for *q***
 >
 > * Kinetic energy of a moving object = \(\frac{1}{2} m V_T^2 \)
-> * Block of moving air kinetic energy = \(\frac{1}{2} \rho \textrm{volume} V_T^2 \)
-> * Dividing through by volume yields KE per volume of moving air = \(\frac{1}{2} \rho V V_T^2 \)
+> * Block of moving air kinetic energy = \(\frac{1}{2} \rho \textrm{ (volume) } V_T^2 \)
+> * Dividing through by volume yields KE per volume of moving air = \(\frac{1}{2} \rho V_T^2 \)
 > * "Dynamic pressure" or "\(q\)" = potential for converting each cubic foot of the airflow's kinetic energy into frontal stagnation pressure
 > * Feel \(q\) by extending your hand out the window of a moving car
 
@@ -107,16 +106,15 @@ dimensions of reference wing area, \(S\) are the same
 ![][05005]
 
 * Froude number is not significant in aerodynamic phenomena
-* Recall that forces are aslo a function of angle of attack, shape & surface roughness, therefore
+* Recall that forces are also a function of angle of attack, shape & surface roughness, therefore
 
-\[C_L,C_D = f[M, Re, \alpha] \]
+\[C_L,C_D = f[M, Re, \alpha] \textrm{ for a given shape, roughness} \]
 
 ![][05007]
 
 *Note in the figure above the Reynolds effects are exaggerated*
 
 <!--- FIXME: I don't like the inconcistent use of Rn and Re for Reynolds number --->
-<!--- TODO: Removed 05008 and replaced with latex --->
 To compare test day and standard day aircraft or to match wind tunnel \(C_F\) data to actual aircraft; the shape, roughness, \(M\), \(R_n\) and \(\alpha\) must be equal for both aircraft
 
 ![][05009]
@@ -146,12 +144,12 @@ For subsonic (incompressible) flow \(\rho_1 = \rho_2\)
 
 **Conservation of Energy** (Bernoulli) **Equation:**
 
-Potential + Kinetic + Pressure = constant
-(changes in Potential energy are negligible)
-Energy per unit volume is pressure then
-Dynamic Pressure + Static Pressure = Total Pressure
+Potential + Kinetic + Pressure = constant (changes in Potential energy are negligible)
 
-<!---- TODO: Remove reference to 05010 --->
+Energy per unit volume is pressure then Dynamic Pressure + Static Pressure = Total Pressure
+
+\[\frac{1}{2}\rho V^2 + p_s = \textrm{constant} \]
+\[\frac{1}{2}\rho V^2 + p_s = p_t \]
 
 * This classic approach only applies in the "potential flow" region and not in the boundary layer where energy losses occur
 * Pressures around a surface can be calculated or measured from tests and converted into pressure coefficients,
@@ -197,8 +195,6 @@ Dynamic Pressure + Static Pressure = Total Pressure
 
 * Above relationship estimated as \(\alpha = \frac{dC_L}{d \alpha} = \frac{a_0}{1+\frac{57.3 a_0}{\pi AR}} \)
 
-<!--- TODO: Remove reference to 05017 --->
-
 ### Trailing Edge Flap Effects {-}
 
 ![][05018]
@@ -229,9 +225,6 @@ Dynamic Pressure + Static Pressure = Total Pressure
     ```
 ![][05025]
 
-
-<!--- FIXME: Remove reference to 05026 and 05027 --->
-
 <!--- Tau needs to be defined at the beginning of the section --->
 Shear stress \(\tau_w = \mu \left( \frac{dv}{dy} \right)_{y=0} \)
 
@@ -239,11 +232,7 @@ Shear stress \(\tau_w = \mu \left( \frac{dv}{dy} \right)_{y=0} \)
 
 Sutherland law: \(\mu = \mu_0 \frac{\left( \frac{T}{T_0} \right)^{1.5} \left( T_0 + S \right)}{\left( T + S \right)} \)
 
-<!--- FIXME: remove reference to 05028 --->
-
 Power law: \(\mu = \mu_0 \left( \frac{T}{T_0} \right)^n \)
-
-<!--- FIXME: remove reference to 05029 --->
 
 <!--- TODO: check to make sure the unit formatting is consistent with the style guide --->
 Where \(T_0 = 273.15 K = 518.67 R \)
@@ -256,7 +245,7 @@ Inserting air values (\(T_K=\)Kelvin and \(T_R=\)Rankin) into Sutherland law giv
 
 \[\mu = 1.458 \times 10^{-6} \frac{T_K^{1.5}}{T_K+110.4} \left[\frac{\textrm{kg}}{\textrm{s m}}\right] = 2.2 \times 10^{-8} \frac{T_R^{1.5}}{T_R+199} \left[\frac{\text{slg}}{\text{s ft}}\right]\]
 
-### Reynolds Number Effects (ref 5.10) {-}
+### Reynolds Number Effects (ref 5.10)
 
 * Laminar boundary layers have more gradual change in velocity near surface than turbulent boundary layers.
 * High Reynolds numbers help propagate turbulent flow.
@@ -273,10 +262,6 @@ Skin friction coefficient: \(C_f = \frac{\tau_w}{\frac{1}{2}\rho_{\infty} V_{\in
 Laminar boundary layer: \(\textrm{Total } C_f = \frac{1.328}{\left(Re_L \right)^{1/2}} \)
 
 Turbulent boundary layer: \(\textrm{Total } C_f = \frac{0.455}{\left(\log(Re_L)\right)^{2.58}} \approx \frac{0.074}{\left(Re_L\right)^{1/5}} \) 
-
-   ```{block, type='FIXME', echo=FALSE}
-   FIXME: remove references to 05032 and resize 05033
-   ```
 
 ![][05033]
 
@@ -333,7 +318,6 @@ Turbulent boundary layer: \(\textrm{Total } C_f = \frac{0.455}{\left(\log(Re_L)\
 <!--- This image has an equation in it that should be cropped and put into the text --->
 ![][05041]
 
-<!--- Remove 05042 --->
 Induced Drag \[\left(D_i\right)=L\left(\alpha_i\right)\]
 
 For elliptical lift distributions \(\alpha_i = \frac{C_L}{\pi AR} \)
@@ -344,7 +328,6 @@ For elliptical lift distributions \(\alpha_i = \frac{C_L}{\pi AR} \)
 
 Oswald efficiency factor, \(e\), accounts for losses in excess of those predicted above (due to uneven downwash and changing interference drag effects).
 
-<!--- Remove 05043 --->
 \[\therefore C_{D_i} = \frac{C_L^2}{\pi ARe}\]
 
 ## Aerodynamic Compressibility Relations (reference 5.8)
@@ -357,7 +340,6 @@ Oswald efficiency factor, \(e\), accounts for losses in excess of those predicte
 Approximates Mach effects on aerodynamics below critical Mach
 
 \[C_{P_{compressible}} = \frac{1}{\sqrt{1-M^2}}C_{P_{incompressible}} \]
-<!--- Remove 05044 --->
 
 **Total vs Ambient Property Relations for Adiabatic Flow**
 
@@ -365,7 +347,6 @@ Approximates Mach effects on aerodynamics below critical Mach
 \[\frac{P_T}{P} = \left[1 + \frac{\gamma - 1}{2}M^2 \right]^{\frac{\gamma}{\gamma-1}} \textrm{   Isentropic (shockless) flow required}\]
 \[\frac{\rho_T}{\rho} = \left[1 + \frac{\gamma - 1}{2} M^2 \right]^{\frac{1}{\gamma -1}} \textrm{   Isentropic flow required} \]
 
-<!--- Remove 05045 --->
 
 **Normal Shock Relations**
 
@@ -378,8 +359,6 @@ Property changes occur in a constant area (throat)
 \[\frac{\rho_2}{\rho_1} = \left[\frac{2 + \left(\gamma - 1\right) M_1^2}{\left(\gamma+1\right) M_1^2} \right]^{-1} \]
 \[\frac{T_2}{T_1} = \left[\frac{1 - \gamma + 2\gamma M_1^2}{1 + \gamma} \right]\left[\frac{2 + \left(\gamma - 1\right) M_1^2}{\left(1 + \gamma\right) M_1^2} \right] \]
 \[M_2^2 = \frac{M_1^2 + \frac{2}{\gamma - 1}}{\frac{2\gamma}{\gamma-1} M_1^2-1} \]
-
-<!--- Remove 05046 --->
 
 Normal shock summary
   ```{block, type='FIXME', echo=FALSE}
@@ -401,7 +380,6 @@ Normal shock summary
 
 \(s_1 < s_2 \)
 
-<!--- Remove 05047 --->
 
 ### Oblique Shocks
 
@@ -427,8 +405,6 @@ Normal shock summary
 * Calculate relation between Mach number and angles as
 
 \[M_2^2\sin^2\left(\delta - \theta\right) = \frac{M_1^2 \sin^2\theta + \frac{2}{\gamma-1}}{\frac{2\gamma}{\gamma - 1} M_1^2\sin^2\theta - 1} \]
-
-<!--- FIXME: Remove 05049, 05050 --->
 
 **Oblique Shock Turning Angle as a Function of Wave Angle**
 
@@ -461,8 +437,6 @@ Shows flow's required turning angle (\(\nu\)) to accelerate from one Mach number
 
 \[\nu_M = \sqrt{\frac{\gamma + 1}{\gamma - 1}} \left[\tan^{-1}\sqrt{\frac{\gamma - 1}{\gamma + 1} \left(M^2 - 1\right)} \right] - \tan^{-1}\sqrt{M^2-1} \]
 
-<!--- Remove 05054 --->
-
 * If upstream Mach \((M_1) = 1\), then \(\nu_1 = 0\), and equation directly relates downstream Mach (\(M_2\)) to surface turning angle (\(\Delta \nu\))
 * If \(M_1 > 1\), determine \(M_2\) as follows:
     * Calculate upstream ν~1~ from above equation
@@ -472,7 +446,7 @@ Shows flow's required turning angle (\(\nu\)) to accelerate from one Mach number
 
 ![][05055]
 
-Example: Flow initially at \(M_1 = 2.0\) accelerates through an expansion corner of 24 deg. Exit Mach number is 3.0
+> Example: Flow initially at \(M_1 = 2.0\) accelerates through an expansion corner of 24 deg. Exit Mach number is 3.0
 
 ### Two-Dimensional Supersonic Airfoil Approximations
 
@@ -488,9 +462,6 @@ Example: Flow initially at \(M_1 = 2.0\) accelerates through an expansion corner
 
 \[C_p = \frac{\Delta P}{q} \cong \pm\frac{2 \delta}{\sqrt{M^2 - 1}} \]
 
-<!--- Remove ![][05057] ---->
-
-
 * Double wedge airfoil approximations
 
 ![][05058]
@@ -499,8 +470,6 @@ Example: Flow initially at \(M_1 = 2.0\) accelerates through an expansion corner
 
 \[C_D \cong \frac{4 \alpha^2}{\sqrt{M^2 - 1}} + \frac{4}{\sqrt{M^2 - 1}}\left(\frac{t}{c}\right)^2\]
 
-<!--- Remove ![][05059] --->
-
 * Biconvex wing approximations
 
 ![][05061]
@@ -508,8 +477,6 @@ Example: Flow initially at \(M_1 = 2.0\) accelerates through an expansion corner
 \[C_L \cong \frac{4 \alpha}{\sqrt{M^2 - 1} }\]
 
 \[C_D \cong \frac{4 \alpha^2}{\sqrt{M^2 - 1}} + \frac{5.33}{\sqrt{M^2 - 1}}\left(\frac{t}{c}\right)^2\]
-
-<!--- Remove ![][05060] --->
 
 
 ## Drag Polars (ref 5.2)
@@ -549,8 +516,6 @@ Example: Flow initially at \(M_1 = 2.0\) accelerates through an expansion corner
 
 ![][05062]
 
-<!--- FIXME Remove ![][05063] --->
-
 Linearized form of simple drag polar:
 
 ![][05064]
@@ -564,8 +529,6 @@ Linearized form of simple drag polar:
 Drag Polar Equation Accounting for Flow Separation:
 
 \[C_D = C_{D_{min}} + \frac{\left(C_L - C_{L_{min}}\right)^2}{\pi ARe} +k_2\left(C_L - C_{L_{break}}\right)\]
-
-<!--- FIXME: Remove ![][05066] --->
 
 * Delete last term if \(C_L < C_{L_{break}} \)
 * Determine \(k_2\) from flight test
@@ -586,7 +549,6 @@ or
 or
 \[c_f = 0.455\left[\log Re_L\right]^{-258} \left[1 + 0.144 M^2\right]^{-0.65} \textrm{ turbulent}\]
 
-<!--- Remove ![][05067] --->
    ```{block, type='FIXME', echo=FALSE}
    Inconsistent use of R_L and R_n for Reynolds number
    Wetted area is already defined above and doesn't need to be redefined below
@@ -596,8 +558,6 @@ or
 * Correct from test day to standard day aircraft drag coefficient by summing differences of each component's drag change
 
 \[\Delta C_D = \frac{\sum\left(c_{f_s} - c_{f_t} \right) S_{wet}}{S} \]
-
-<!--- Remove ![][05068] --->
 
 **Wing Camber or Incidence Angle Effects**
 
@@ -612,8 +572,6 @@ Linearized drag polar for aircraft with wing camber and/or incidence
 Revised drag polar equation accounting for wing camber or incidence
 
 \[C_D = C_{D_{min}} + \frac{\left(C_L - C_{L_{min}} \right)^2}{\pi AR e} \]
-
-<!--- Remove ![][05071] --->
 
 * Generally not necessary since most flight occurs above \(C_{L_{min}}\)
 
@@ -657,13 +615,9 @@ Revised drag polar equation accounting for wing camber or incidence
 
 \[C_{D_{trim}} = \frac{W^2}{\pi q^2 Sb^2e} \left[\frac{2}{lW}\left[x_0 - x_1\right] + \frac{1}{l^2} \left[1 + \frac{S}{S_t} \frac{e}{e_t} \left(\frac{b}{b_t}\right)^2\right] \left[x_0^2 - x_1^2\right] \right]\]
 
-<!--- Remove ![][05075] --->
-
 Trim drag change relative to total induced drag:
 
 \[\frac{\Delta C_{D_{trim}}}{\Delta C_{D_i}} = \frac{x}{l} \left[\frac{x}{l} \left(\frac{b}{b_t}\right)^2 \frac{e}{e_t} - 2 \right] \]
-
-<!--- Remove ![][05076] --->
 
 Plot of above equation
 
@@ -671,12 +625,10 @@ Plot of above equation
 
 ### Drag Polar Analysis
 
-<!--- Remove ![][05078] --->
 \[D = \bar{q}SC_D = \bar{q}S \left[C_{D_0} + \frac{C_L^2}{\pi ARe} \right] = \frac{1}{2}\rho_0 V_e^2 S\left[C_{D_0} + \frac{W^2}{\pi AR e \left(\frac{1}{2} \rho_0 V_e^2 S \right)^2} \right]\]
 
 * For a given configuration (\(C_{D_0}, S, AR, e\))
 
-<!--- Remove ![][05079] --->
 \[D = k_1 V_e^2 + k_2 \frac{W^2}{V_e^2} \]
 
 first term = parasitic drag, second term = induced drag
@@ -695,7 +647,6 @@ first term = parasitic drag, second term = induced drag
 Power required = drag x true airspeed
 
 \[P_{req} = DV_T = D\frac{V_e}{\sqrt{\sigma}} = k_1\frac{V_e^3}{\sqrt{\sigma}} + k_2\frac{W^2}{\sqrt{\sigma}V_e} \]
-<!--- Remove ![][05081] --->
 
    ```{block, type='FIXME', echo=FALSE}
    Inconsistent use of 'req'd' and 'req'.  The following P_induced and P_parasitic    should be D for drag (not power)
@@ -742,8 +693,6 @@ Minimum power/velocity occurs at min slope of \(P_{req'd}\) vs \(V\) curve
 
 To calculate optimum speed \(V_2\) for \(\textrm{configuration}_2\) & \(\textrm{weight}_2\) based on optimum speed \(V_1\) at \(\textrm{configuration}_1\) & \(\textrm{weight}_1\)
 
-![][05083]
-
 ## References
 
 5.1 Roberts, Sean "Aerodynamics for Flight Testers" *Chapter 3, Subsonic Aerodynamics*, National Test Pilot School, Mojave, CA, 1999
@@ -768,86 +717,50 @@ To calculate optimum speed \(V_2\) for \(\textrm{configuration}_2\) & \(\textrm{
 
 5.11 Twaites, Bryan, Editor, "Incompressible Aerodynamics: An Account of the steady flow of incompressible Fluid Past Aerofoils, Wings, and Other Bodies," Dover Publications, 1960.
 
-  [05001]: media/05/image1.svg {width="2.9in" height="1.7402777777777778in"}
-  [05002]: media/05/image2.svg {width="0.8444444444444444in" height="0.5125in"}
-  [05003]: media/05/image3.svg {width="0.8125in" height="1.625in"}
-  [05004]: media/05/image4.svg {width="1.4381944444444446in" height="0.4583333333333333in"}
-  [05005]: media/05/image5.svg {width="1.729861111111111in" height="1.375in"}
+  [05001]: media/05/image1.svg {width="5.800in" height="3.481in"}
+  [05005]: media/05/image5.svg {width=3.460in" height="2.750in"}
   [05006]: media/05/image6.svg {width="4.4in" height="1.25in"}
-  [05007]: media/05/image7.svg {width="2.9270833333333335in" height="1.93125in"}
-  [05008]: media/05/image8.svg {width="1.5770833333333334in" height="0.6298611111111111in"}
-  [05009]: media/05/image9.svg {width="4.4in" height="1.125in"}
-  [05010]: media/05/image10.svg {width="1.6979166666666667in" height="0.5361111111111111in"}
-  [05011]: media/05/image11.svg {width="2.6666666666666665in" height="2.3125in"}
-  [05012]: media/05/image12.svg {width="3.55in" height="1.7201388888888889in"}
-  [05013]: media/05/image13.svg {width="2.1152777777777776in" height="1.1875in"}
-  [05014]: media/05/image14.svg {width="1.9375in" height="1.1243055555555554in"}
-  [05015]: media/05/image15.svg {width="4.4in" height="1.4409722222222223in"}
-  [05016]: media/05/image16.svg {width="2.857638888888889in" height="2.5118055555555556in"}
-  [05017]: media/05/image17.svg {width="1.3763888888888889in" height="0.6in"}
-  [05018]: media/05/image18.svg {width="3.5in" height="1.71875in"}
-  [05019]: media/05/image19.svg {width="2.65in" height="2.65in"}
-  [05020]: media/05/image20.svg {width="3.192361111111111in" height="0.6965277777777777in"}
-  [05021]: media/05/image21.svg {width="2.7in" height="2.645138888888889in"}
-  [05022]: media/05/image22.svg {width="3.147222222222222in" height="1.1743055555555555in"}
-  [05023]: media/05/image23.svg {width="2.3125in" height="1.86875in"}
-  [05024]: media/05/image24.svg {width="4.4in" height="1.75in"}
-  [05025]: media/05/image25.svg {width="3.9125in" height="1.625in"}
-  [05026]: media/05/image33.svg {width="3.9055555555555554in" height="1.625in"}
-  [05027]: media/05/image34.svg {width="2.3916666666666666in" height="0.5625in"}
-  [05028]: media/05/image35.svg {width="1.304861111111111in" height="0.6611111111111111in"}
-  [05029]: media/05/image36.svg {width="0.7708333333333334in" height="0.46805555555555556in"}
-  [05030]: media/05/image37.svg {width="3.75in" height="0.5048611111111111in"}
-  [05031]: media/05/image38.svg {width="2.0166666666666666in" height="0.8125in"}
-  [05032]: media/05/image39.svg {width="3.4270833333333335in" height="1.7291666666666667in"}
-  [05033]: media/05/image43.svg {width="3.3493055555555555in" height="1.9527777777777777in"}
-  [05034]: media/05/image44.svg {width="2.045138888888889in" height="0.4479166666666667in"}
-  [05035]: media/05/image45.svg {width="1.0486111111111112in" height="0.9375in"}
-  [05036]: media/05/image46.svg {width="4.4in" height="1.4375in"}
-  [05037]: media/05/image47.svg {width="2.75in" height="1.3222222222222222in"}
-  [05038]: media/05/image48.svg {width="2.595833333333333in" height="1.375in"}
-  [05039]: media/05/image49.svg {width="4.4in" height="3.0in"}
-  [05040]: media/05/image50.svg {width="2.78125in" height="1.25in"}
-  [05041]: media/05/image51.svg {width="4.4in" height="2.125in"}
-  [05042]: media/05/image52.svg {width="3.0in" height="1.4819444444444445in"}
-  [05043]: media/05/image53.svg {width="1.2527777777777778in" height="0.5625in"}
-  [05044]: media/05/image54.svg {width="2.3125in" height="0.5215277777777778in"}
-  [05045]: media/05/image55.svg {width="3.875in" height="1.4375in"}
-  [05046]: media/05/image57.svg {width="2.029166666666667in" height="2.0625in"}
-  [05047]: media/05/image58.svg {width="3.25in" height="0.5215277777777778in"}
-  [05048]: media/05/image59.svg {width="3.5618055555555554in" height="2.25in"}
-  [05049]: media/05/image60.svg {width="2.5340277777777778in" height="0.8013888888888889in"}
-  [05050]: media/05/image61.svg {width="4.145833333333333in" height="0.6875in"}
-  [05051]: media/05/image62.svg {width="4.4in" height="3.5in"}
-  [05052]: media/05/image63.svg {width="2.58125in" height="2.0340277777777778in"}
-  [05053]: media/05/image64.svg {width="3.6in" height="2.6555555555555554in"}
-  [05054]: media/05/image65.svg {width="3.5215277777777776in" height="0.5555555555555556in"}
-  [05055]: media/05/image66.svg {width="4.4in" height="3.75in"}
-  [05056]: media/05/image67.svg {width="2.5375in" height="2.125in"}
-  [05057]: media/05/image68.svg {width="1.5347222222222223in" height="0.375in"}
-  [05058]: media/05/image69.svg {width="1.7652777777777777in" height="0.5in"}
-  [05059]: media/05/image70.svg {width="2.3125in" height="0.9090277777777778in"}
-  [05060]: media/05/image71.svg {width="2.2354166666666666in" height="0.9375in"}
-  [05061]: media/05/image72.svg {width="2.2979166666666666in" height="0.7222222222222222in"}
-  [05062]: media/05/image73.svg {width="2.1013888888888888in" height="1.75625in"}
-  [05063]: media/05/image74.svg {width="2.0631944444444446in" height="0.4375in"}
-  [05064]: media/05/image75.svg {width="2.136111111111111in" height="1.8625in"}
-  [05065]: media/05/image76.svg {width="2.375in" height="1.729861111111111in"}
-  [05066]: media/05/image77.svg {width="3.027083333333333in" height="0.5104166666666666in"}
-  [05067]: media/05/image78.svg {width="5.125in" height="1.6875in"}
-  [05068]: media/05/image79.svg {width="1.7645833333333334in" height="0.5215277777777778in"}
-  [05069]: media/05/image80.svg {width="2.6354166666666665in" height="3.4375in"}
-  [05070]: media/05/image81.svg {width="3.1625in" height="1.6368055555555556in"}
-  [05071]: media/05/image82.svg {width="1.8125in" height="0.5159722222222223in"}
-  [05072]: media/05/image83.svg {width="2.9256944444444444in" height="3.0375in"}
-  [05073]: media/05/image84.svg {width="3.263888888888889in" height="3.1145833333333335in"}
-  [05074]: media/05/image86.svg {width="3.875in" height="1.4222222222222223in"}
-  [05075]: media/05/image87.svg {width="4.0in" height="0.5659722222222222in"}
-  [05076]: media/05/image88.svg {width="1.8298611111111112in" height="0.5520833333333334in"}
-  [05077]: media/05/image89.svg {width="3.25in" height="3.7534722222222223in"}
-  [05078]: media/05/image93.svg {width="4.4in" height="0.5in"}
-  [05079]: media/05/image94.svg {width="1.25in" height="0.5625in"}
-  [05080]: media/05/image95.svg {width="3.3569444444444443in" height="1.9375in"}
-  [05081]: media/05/image96.svg {width="2.604861111111111in" height="0.5in"}
-  [05082]: media/05/image97.svg {width="2.875in" height="2.0868055555555554in"}
-  [05083]: media/05/image98.svg {width="1.5in" height="0.5277777777777778in"}
+  [05007]: media/05/image7.svg {width="5.854in" height="3.863in"}
+  [05009]: media/05/image9.svg {width="8.8in" height="2.250in"}
+  [05011]: media/05/image11.svg {width="5.333in" height="4.625in"}
+  [05012]: media/05/image12.svg {width="7.1in" height="3.440in"}
+  [05013]: media/05/image13.svg {width="4.231in" height="2.375in"}
+  [05014]: media/05/image14.svg {width="3.875in" height="2.249in"}
+  [05015]: media/05/image15.svg {width="8.8in" height="2.882in"}
+  [05016]: media/05/image16.svg {width="5.715in" height="5.024in"}
+  [05018]: media/05/image18.svg {width="7.0in" height="3.438in"}
+  [05019]: media/05/image19.svg {width="5.3in" height="5.3in"}
+  [05020]: media/05/image20.svg {width="6.385in" height="1.393in"}
+  [05021]: media/05/image21.svg {width="5.4in" height="5.290in"}
+  [05022]: media/05/image22.svg {width="6.294in" height="2.349in"}
+  [05023]: media/05/image23.svg {width="4.625in" height="3.738in"}
+  [05024]: media/05/image24.svg {width="8.8in" height="3.5in"}
+  [05025]: media/05/image25.svg {width="7.825in" height="3.250in"}
+  [05026]: media/05/image33.svg {width="7.811in" height="3.250in"}
+  [05031]: media/05/image38.svg {width="4.033in" height="1.625in"}
+  [05033]: media/05/image43.svg {width="6.699in" height="3.906in"}
+  [05036]: media/05/image46.svg {width="8.8in" height="2.875in"}
+  [05037]: media/05/image47.svg {width="5.5in" height="2.644in"}
+  [05038]: media/05/image48.svg {width="5.192in" height="2.750in"}
+  [05039]: media/05/image49.svg {width="8.8in" height="6.0in"}
+  [05040]: media/05/image50.svg {width="5.563in" height="2.500in"}
+  [05041]: media/05/image51.svg {width="8.8in" height="4.250in"}
+  [05048]: media/05/image59.svg {width="7.124in" height="4.500in"}
+  [05051]: media/05/image62.svg {width="8.8in" height="7.0in"}
+  [05052]: media/05/image63.svg {width="5.163in" height="4.068in"}
+  [05053]: media/05/image64.svg {width="7.2in" height="5.311in"}
+  [05055]: media/05/image66.svg {width="8.8in" height="7.5in"}
+  [05056]: media/05/image67.svg {width="5.075in" height="4.250in"}
+  [05058]: media/05/image69.svg {width="3.531in" height="1.0in"}
+  [05061]: media/05/image72.svg {width="4.596in" height="1.444in"}
+  [05062]: media/05/image73.svg {width="4.203in" height="3.513in"}
+  [05064]: media/05/image75.svg {width="4.272in" height="3.725in"}
+  [05065]: media/05/image76.svg {width="4.750in" height="3.460in"}
+  [05069]: media/05/image80.svg {width="5.271in" height="6.875in"}
+  [05070]: media/05/image81.svg {width="6.325in" height="3.274in"}
+  [05072]: media/05/image83.svg {width="5.851in" height="6.075in"}
+  [05073]: media/05/image84.svg {width="6.528in" height="6.229in"}
+  [05074]: media/05/image86.svg {width="7.750in" height="2.844in"}
+  [05077]: media/05/image89.svg {width="6.5in" height="7.507in"}
+  [05080]: media/05/image95.svg {width="6.7143in" height="3.875in"}
+  [05082]: media/05/image97.svg {width="5.750in" height="4.174in"}
