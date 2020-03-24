@@ -988,90 +988,88 @@
 </div>
 <div id="drag-polar-analysis" class="section level3">
 <h3><span class="header-section-number">5.6.3</span> Drag Polar Analysis</h3>
-<div class="figure">
-<img src="media/05/image93.svg" width="422" height="48" />
-
-</div>
+<!--- Remove ![][05078] --->
+<p><span class="math display">\[D = \bar{q}SC_D = \bar{q}S \left[C_{D_0} + \frac{C_L^2}{\pi ARe} \right] = \frac{1}{2}\rho_0 V_e^2 S\left[C_{D_0} + \frac{W^2}{\pi AR e \left(\frac{1}{2} \rho_0 V_e^2 S \right)^2} \right]\]</span></p>
 <ul>
-<li>For a given configuration (<em>C<sub>Do</sub>, S, AR, e</em>)</li>
+<li>For a given configuration (<span class="math inline">\(C_{D_0}, S, AR, e\)</span>)</li>
 </ul>
-<div class="figure">
-<img src="media/05/image94.svg" width="120" height="54" />
-
-</div>
-<p>first term <em>=</em> parasitic drag,</p>
-<p>second term = induced drag</p>
+<!--- Remove ![][05079] --->
+<p><span class="math display">\[D = k_1 V_e^2 + k_2 \frac{W^2}{V_e^2} \]</span></p>
+<p>first term = parasitic drag, second term = induced drag</p>
 <ul>
-<li>For any given weight, <em>D</em> = <em>f</em>(equivalent airspeed) only</li>
+<li>For any given weight, <span class="math inline">\(D = f(\textrm{equivalent airspeed})\)</span> only</li>
 </ul>
 <div class="figure">
 <img src="media/05/image95.svg" width="322" height="186" />
 
 </div>
 <ul>
-<li>Minimum total drag occurs when <em>D<sub>induced</sub> = D<sub>parasitic</sub></em></li>
-</ul>
-<p>same as speed where <em>C<sub>Di</sub> = C<sub>Do</sub></em></p>
-<p>occurs at max <em>C<sub>L</sub> /C<sub>D</sub></em> ratio (same as max <em>L/D</em> ratio)</p>
+<li>Minimum total drag occurs when <span class="math inline">\(D_{induced} = D_{parasitic}\)</span>
 <ul>
-<li>Minimum drag/velocity occurs at min slope of Drag vs V curve</li>
+<li>same as speed where <span class="math inline">\(C_{D_i} = C_{D_0}\)</span></li>
+<li>occurs at max <span class="math inline">\(C_L/C_D\)</span> ratio (same as max <span class="math inline">\(L/D\)</span> ratio)</li>
+</ul></li>
+<li>Minimum drag/velocity occurs at min slope of Drag vs V curve
+<ul>
+<li>same as speed where <span class="math inline">\(3C_{D_i} = C_{D_0}\)</span></li>
+<li>occurs at max <span class="math inline">\(C_L^{1/2}/C_D\)</span> ratio</li>
+</ul></li>
 </ul>
-<p>same as speed where 3<em>C<sub>Di</sub> =C<sub>Do</sub></em></p>
-<p>occurs at max <em>C<sub>L</sub> <sup>1/2</sup> /C<sub>D</sub></em> ratio</p>
 <p>Power required = drag x true airspeed</p>
-<div class="figure">
-<img src="media/05/image96.svg" width="250" height="48" />
-
-</div>
-<p>Minimum total <em>P<sub>req’d</sub></em> occurs when <em>P<sub>induced</sub> = P<sub>parasitic</sub></em></p>
+<p><span class="math display">\[P_{req} = DV_T = D\frac{V_e}{\sqrt{\sigma}} = k_1\frac{V_e^3}{\sqrt{\sigma}} + k_2\frac{W^2}{\sqrt{\sigma}V_e} \]</span> <!--- Remove ![][05081] ---></p>
+<p>Minimum total <span class="math inline">\(P_{req&#39;d}\)</span> occurs when <span class="math inline">\(P_{induced} = P_{parasitic}\)</span></p>
 <ul>
-<li><p>same as speed where <em>C<sub>Di</sub> = 3C<sub>Do</sub></em></p></li>
-<li><p>occurs at max <em>C<sub>L</sub> <sup>3/2</sup> /C<sub>D</sub></em> ratio</p></li>
+<li>same as speed where <span class="math inline">\(C_{D_i} = 3C_{D_0} \)</span></li>
+<li>occurs at max <span class="math inline">\(C_L^{3/2}/C_D\)</span> ratio</li>
 </ul>
-<p>Minimum power/velocity occurs at min slope of <em>P<sub>req’d</sub></em> vs <em>V</em> curve</p>
+<p>Minimum power/velocity occurs at min slope of <span class="math inline">\(P_{req&#39;d}\)</span> vs <span class="math inline">\(V\)</span> curve</p>
 <ul>
-<li><p>same as speed where <em>C<sub>Di</sub> =C<sub>Do</sub></em></p></li>
-<li><p>occurs at max <em>C<sub>L</sub> /C<sub>D</sub></em> ratio</p></li>
+<li>same as speed where <span class="math inline">\(C_{D_i} = C_{D_0}\)</span></li>
+<li>occurs at max <span class="math inline">\(C_L /C_D\)</span> ratio</li>
 </ul>
 <p><strong>Optimum Aerodynamic Flight Conditions</strong></p>
 <p><em>Gliders/ Engine-Out Flight</em></p>
 <ul>
-<li>Max range (minimum glide slope) occurs at max <em>C<sub>L</sub>/C<sub>D</sub></em></li>
-</ul>
-<p>same as condition where <em>C<sub>Do</sub></em> = <em>C<sub>Di</sub></em> <em>if</em> drag polar is parabolic</p>
+<li>Max range (minimum glide slope) occurs at max <span class="math inline">\(C_L/C_D\)</span>
 <ul>
-<li>Min sink rate (minimum power req’d) occurs at max <em>C<sub>L</sub><sup>3/2</sup> /C<sub>D</sub></em> ratio same as condition where 3<em>C<sub>Do</sub></em> = <em>C<sub>Di</sub></em> <em>if</em> drag polar is parabolic</li>
+<li>same as condition where <span class="math inline">\(C_{D_0} = C_{D_i}\)</span> <em>if</em> drag polar is parabolic</li>
+</ul></li>
+<li>Min sink rate (minimum power req’d) occurs at max <span class="math inline">\(C_L^{3/2} /C_D\)</span> ratio same as condition where <span class="math inline">\(3C_{D_0} = C_{D_i}\)</span> <em>if</em> drag polar is parabolic</li>
 </ul>
-<p><em>Reciprocating Engine Aircraft (assuming constant BSFC &amp; prop η)</em></p>
+<p><em>Reciprocating Engine Aircraft (assuming constant BSFC &amp; prop <span class="math inline">\(\eta\)</span>)</em></p>
 <ul>
-<li>Max range (minimum power/velocity) occurs at max <em>C<sub>L</sub>/C<sub>D</sub></em> ratio</li>
-</ul>
-<p>same as condition where <em>C<sub>Do</sub></em> = <em>C<sub>Di</sub></em> <em>if</em> drag polar is parabolic</p>
+<li>Max range (minimum power/velocity) occurs at max <span class="math inline">\(C_L/C_D\)</span> ratio
 <ul>
-<li>Max endurance (minimum power req’d) occurs at max <em>C<sub>L</sub><sup>3/2</sup> /C<sub>D</sub></em></li>
+<li>same as condition where <span class="math inline">\(C_{D_0} = C_{D_i}\)</span> <em>if</em> drag polar is parabolic</li>
+</ul></li>
+<li>Max endurance (minimum power req’d) occurs at max <span class="math inline">\(C_L^{3/2} / C_D\)</span>
+<ul>
+<li>same as condition where <span class="math inline">\(3C_{D_0} = C_{D_i}\)</span> <em>if</em> drag polar is parabolic</li>
+</ul></li>
 </ul>
-<p>same as condition where 3<em>C<sub>Do</sub></em> = <em>C<sub>Di</sub></em> <em>if</em> drag polar is parabolic</p>
 <p><em>Turbine Jet Engine Aircraft (assuming constant TSFC)</em></p>
 <ul>
-<li>Max range at constant altitude (minimum drag/velocity)</li>
-</ul>
-<p>occurs at max <em>C<sub>L</sub> <sup>1/2</sup> /C<sub>D</sub></em> ratio</p>
-<p>same as condition where <em>C<sub>Do</sub></em> = 3<em>C<sub>Di</sub></em> <em>if</em> drag polar is parabolic</p>
+<li>Max range at constant altitude (minimum drag/velocity)
 <ul>
-<li>Best cruise/climb range (maximum <span class="math display">\[*M* x *L/D*\]</span> ratio)</li>
-</ul>
-<p>occurs at max <em>C<sub>L</sub>/C<sub>D</sub> <sup>3/2 </sup></em>ratio</p>
-<p>same as condition where <em>C<sub>Do</sub></em> = 2<em>C<sub>Di</sub></em> <em>if</em> drag polar is parabolic</p>
+<li>occurs at max <span class="math inline">\(C_L^{1/2} / C_D\)</span> ratio</li>
+<li>same as condition where <span class="math inline">\(C_{D_0} = 3C_{D_i}\)</span> <em>if</em> drag polar is parabolic</li>
+</ul></li>
+<li>Best cruise/climb range (<span class="math inline">\(\textrm{maximum}[M \times L/D]\)</span> ratio)
 <ul>
-<li>Best endurance (minimum drag)</li>
+<li>occurs at max <span class="math inline">\(C_L/C_D^{3/2}\)</span> ratio</li>
+<li>same as condition where <span class="math inline">\(C_{D_0} = 2C_{D_i}\)</span> <em>if</em> drag polar is parabolic</li>
+</ul></li>
+<li>Best endurance (minimum drag)
+<ul>
+<li>occurs at max <span class="math inline">\(C_L/C_D\)</span> ratio</li>
+<li>same as condition where <span class="math inline">\(C_{D_0} = C_{D_i}\)</span> <em>if</em> drag polar is parabolic</li>
+</ul></li>
 </ul>
-<p>occurs at max <em>C<sub>L</sub>/C<sub>D</sub></em> ratio</p>
-<p>same as condition where <em>C<sub>Do</sub></em> = <em>C<sub>Di</sub></em> <em>if</em> drag polar is parabolic</p>
 <div class="figure">
 <img src="media/05/image97.svg" width="276" height="200" />
 
 </div>
-<p>To calculate optimum speed <em>V</em><sub>2</sub> for configuration<sub>2</sub> &amp; weight<sub>2</sub> based on optimum speed <em>V</em><sub>1</sub> at configuration<sub>1</sub> &amp; weight<sub>1</sub></p>
+<p>To calculate optimum speed <span class="math inline">\(V_2\)</span> for <span class="math inline">\(\textrm{configuration}_2\)</span> &amp; <span class="math inline">\(\textrm{weight}_2\)</span> based on optimum speed <span class="math inline">\(V_1\)</span> at <span class="math inline">\(\textrm{configuration}_1\)</span> &amp; <span class="math inline">\(\textrm{weight}_1\)</span></p>
 <div class="figure">
 <img src="media/05/image98.svg" width="144" height="50" />
 
@@ -1081,7 +1079,7 @@
 <div id="references-1" class="section level2">
 <h2><span class="header-section-number">5.7</span> References</h2>
 <p>5.1 Roberts, Sean “Aerodynamics for Flight Testers” <em>Chapter 3, Subsonic Aerodynamics</em>, National Test Pilot School, Mojave, CA, 1999</p>
-<p>5.2 Lawless, Alan R., et al, “Aerodynamics for Flight Testers” <em>Chptr 4, Drag Polars</em>, National Test Pilot School, Mojave ,CA, 1999</p>
+<p>5.2 Lawless, Alan R., et al, “Aerodynamics for Flight Testers” <em>Chapter 4, Drag Polars</em>, National Test Pilot School, Mojave ,CA, 1999</p>
 <p>5.3 Hurt Hugh H., “Aerodynamics for Naval Aviators”, University of Southern California, Los Angeles, CA, 1959.</p>
 <p>5.4 McCormick, Barnes W., “Aerodynamics, Aeronautics, and Flight Mechanics”, Wilet &amp;Sons, 1979</p>
 <p>5.5 Stinton, Darryl, “The Design of the Aeroplane”, BSP Professional Books, Oxford, 1983</p>

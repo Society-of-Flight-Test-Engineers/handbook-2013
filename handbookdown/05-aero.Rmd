@@ -19,8 +19,8 @@
 | \(C_D\)                | drag coefficient                                                                                              |
 | \(C_{Di}\)             | induced drag coefficient                                                                                      |
 | \(C_{D0}, C_{D_{PE}}\) | parasitic drag coefficient                                                                                    |
-| \(c_f\)               | friction coefficient                                                                                          |
-| \(Chord\)             | straight-line distance from an airfoil's leading edge to its trailing edge                                    |
+| \(c_f\)                | friction coefficient                                                                                          |
+| \(Chord\)              | straight-line distance from an airfoil's leading edge to its trailing edge                                    |
 | \(C_L\)                | lift coefficient                                                                                              |
 | \(C_p\)                | pressure coefficient = \(\Delta p/q\)                                                                         |
 | \(e\)                  | Oswald efficiency factor                                                                                      |
@@ -671,95 +671,76 @@ Plot of above equation
 
 ### Drag Polar Analysis
 
-![][05078]
+<!--- Remove ![][05078] --->
+\[D = \bar{q}SC_D = \bar{q}S \left[C_{D_0} + \frac{C_L^2}{\pi ARe} \right] = \frac{1}{2}\rho_0 V_e^2 S\left[C_{D_0} + \frac{W^2}{\pi AR e \left(\frac{1}{2} \rho_0 V_e^2 S \right)^2} \right]\]
 
-* For a given configuration (*C~Do~, S, AR, e*)
+* For a given configuration (\(C_{D_0}, S, AR, e\))
 
-![][05079]
+<!--- Remove ![][05079] --->
+\[D = k_1 V_e^2 + k_2 \frac{W^2}{V_e^2} \]
 
-first term *=* parasitic drag,
+first term = parasitic drag, second term = induced drag
 
-second term = induced drag
-
-* For any given weight, *D* = *f*(equivalent airspeed) only
+* For any given weight, \(D = f(\textrm{equivalent airspeed})\) only
 
 ![][05080]
 
-* Minimum total drag occurs when *D~induced~ = D~parasitic~*
-
-same as speed where *C~Di~ = C~Do~*
-
-occurs at max *C~L~ /C~D~* ratio (same as max *L/D* ratio)
-
+* Minimum total drag occurs when \(D_{induced} = D_{parasitic}\)
+    * same as speed where \(C_{D_i} = C_{D_0}\)
+    * occurs at max \(C_L/C_D\) ratio (same as max \(L/D\) ratio)
 * Minimum drag/velocity occurs at min slope of Drag vs V curve
-
-same as speed where 3*C~Di~ =C~Do~*
-
-occurs at max *C~L~ ^1/2^ /C~D~* ratio
-
+    * same as speed where \(3C_{D_i} = C_{D_0}\)
+    * occurs at max \(C_L^{1/2}/C_D\) ratio
 
 Power required = drag x true airspeed
 
-![][05081]
+\[P_{req} = DV_T = D\frac{V_e}{\sqrt{\sigma}} = k_1\frac{V_e^3}{\sqrt{\sigma}} + k_2\frac{W^2}{\sqrt{\sigma}V_e} \]
+<!--- Remove ![][05081] --->
 
-Minimum total *P~req'd~* occurs when *P~induced~ = P~parasitic~*
+   ```{block, type='FIXME', echo=FALSE}
+   Inconsistent use of 'req'd' and 'req'.  The following P_induced and P_parasitic    should be D for drag (not power)
+   ```
 
-*  same as speed where *C~Di~ = 3C~Do~*
+Minimum total \(P_{req'd}\) occurs when \(P_{induced} = P_{parasitic}\)
 
-*  occurs at max *C~L~ ^3/2^ /C~D~* ratio
+*  same as speed where \(C_{D_i} = 3C_{D_0} \)
+*  occurs at max \(C_L^{3/2}/C_D\) ratio
 
-Minimum power/velocity occurs at min slope of *P~req'd~* vs *V* curve
+Minimum power/velocity occurs at min slope of \(P_{req'd}\) vs \(V\) curve
 
-*  same as speed where *C~Di~ =C~Do~*
-
-*  occurs at max *C~L~ /C~D~* ratio
-
+*  same as speed where \(C_{D_i} = C_{D_0}\)
+*  occurs at max \(C_L /C_D\) ratio
 
 **Optimum Aerodynamic Flight Conditions**
 
-
 *Gliders/ Engine-Out Flight*
 
-* Max range (minimum glide slope) occurs at max *C~L~/C~D~*
+* Max range (minimum glide slope) occurs at max \(C_L/C_D\)
+    * same as condition where \(C_{D_0} = C_{D_i}\) *if* drag polar is parabolic
+* Min sink rate (minimum power req'd) occurs at max \(C_L^{3/2} /C_D\) ratio same as condition where \(3C_{D_0} = C_{D_i}\) *if* drag polar is parabolic
 
-same as condition where *C~Do~* = *C~Di~* *if* drag polar is parabolic
+*Reciprocating Engine Aircraft (assuming constant BSFC & prop \(\eta\))*
 
-* Min sink rate (minimum power req'd) occurs at max *C~L~^3/2^ /C~D~* ratio same as condition where 3*C~Do~* = *C~Di~* *if* drag polar is parabolic
-
-
-*Reciprocating Engine Aircraft (assuming constant BSFC & prop η)*
-
-* Max range (minimum power/velocity) occurs at max *C~L~/C~D~* ratio
-
-same as condition where *C~Do~* = *C~Di~* *if* drag polar is parabolic
-
-* Max endurance (minimum power req'd) occurs at max *C~L~^3/2^ /C~D~*
-
-same as condition where 3*C~Do~* = *C~Di~* *if* drag polar is parabolic
+* Max range (minimum power/velocity) occurs at max \(C_L/C_D\) ratio
+    * same as condition where \(C_{D_0} = C_{D_i}\) *if* drag polar is parabolic
+* Max endurance (minimum power req'd) occurs at max \(C_L^{3/2} / C_D\)
+    * same as condition where \(3C_{D_0} = C_{D_i}\) *if* drag polar is parabolic
 
 *Turbine Jet Engine Aircraft (assuming constant TSFC)*
 
 * Max range at constant altitude (minimum drag/velocity)
-
-occurs at max *C~L~ ^1/2^ /C~D~* ratio
-
-same as condition where *C~Do~* = 3*C~Di~* *if* drag polar is parabolic
-
-* Best cruise/climb range (maximum \[*M* x *L/D*\] ratio)
-
-occurs at max *C~L~/C~D~ ^3/2\ ^*ratio
-
-same as condition where *C~Do~* = 2*C~Di~* *if* drag polar is parabolic
-
+    * occurs at max \(C_L^{1/2} / C_D\) ratio
+    * same as condition where \(C_{D_0} = 3C_{D_i}\) *if* drag polar is parabolic
+* Best cruise/climb range (\(\textrm{maximum}[M \times L/D]\) ratio)
+    * occurs at max \(C_L/C_D^{3/2}\) ratio
+    * same as condition where \(C_{D_0} = 2C_{D_i}\) *if* drag polar is parabolic
 * Best endurance (minimum drag)
-
-occurs at max *C~L~/C~D~* ratio
-
-same as condition where *C~Do~* = *C~Di~* *if* drag polar is parabolic
+    * occurs at max \(C_L/C_D\) ratio
+    * same as condition where \(C_{D_0} = C_{D_i}\) *if* drag polar is parabolic
 
 ![][05082]
 
-To calculate optimum speed *V*~2~ for configuration~2~ & weight~2~ based on optimum speed *V*~1~ at configuration~1~ & weight~1~
+To calculate optimum speed \(V_2\) for \(\textrm{configuration}_2\) & \(\textrm{weight}_2\) based on optimum speed \(V_1\) at \(\textrm{configuration}_1\) & \(\textrm{weight}_1\)
 
 ![][05083]
 
@@ -767,7 +748,7 @@ To calculate optimum speed *V*~2~ for configuration~2~ & weight~2~ based on opti
 
 5.1 Roberts, Sean "Aerodynamics for Flight Testers" *Chapter 3, Subsonic Aerodynamics*, National Test Pilot School, Mojave, CA, 1999
 
-5.2 Lawless, Alan R., et al, "Aerodynamics for Flight Testers" *Chptr 4, Drag Polars*, National Test Pilot School, Mojave ,CA, 1999
+5.2 Lawless, Alan R., et al, "Aerodynamics for Flight Testers" *Chapter 4, Drag Polars*, National Test Pilot School, Mojave ,CA, 1999
 
 5.3 Hurt Hugh H., "Aerodynamics for Naval Aviators", University of Southern California, Los Angeles, CA, 1959.
 
