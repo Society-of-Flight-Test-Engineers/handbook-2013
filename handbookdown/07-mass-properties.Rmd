@@ -159,13 +159,9 @@ Given aircraft with empty weight = \(1220\) lbs and \(\mathrm{cg}\) @ 25 inches.
 
 ## Vertical Center of Gravity Measurement
 
-** **
-
-1\. Drain or block landing gear struts to keep distances *G*, *J*, and *V* constant.
-
-2. Level the fuselage and measure the weight on the nose wheel (*F_o*).
-
-3. Tilt the aircraft at various (*θ*) measure nose wheel weight (*F*).
+1. Drain or block landing gear struts to keep distances \(G*, \(J*, and \(V* constant.
+1. Level the fuselage and measure the weight on the nose wheel (*F_o*).
+1. Tilt the aircraft at various (\(θ*) measure nose wheel weight (\(F*).
 
 The change in nose wheel force can be written as
 
@@ -185,7 +181,7 @@ parenthesis.
 
 5\. Slope of line equals term in brackets.
 
-6\. Solve for *V* after measuring *B*, *C*, *G,*
+6\. Solve for \(V* after measuring \(B*, \(C*, *G,*
 
 and the slope.
 
@@ -255,19 +251,19 @@ within about
 
 ![][07014] 1-5% of actual.
 
-** **
+
 
 ** 7.4.1 Radius of Gyration**
 
 \* *
 
-• Dimensions of all *I* terms are \[slugs-*ft^2^*\].
+• Dimensions of all \(I* terms are \[slugs-*ft^2^*\].
 
 • Aircraft moments & products of inertia are generally assumed to be constant.
 
-• For moments of inertia, mathematically replace *I* with the product of total mass times some constant with the dimensions of square feet.
+• For moments of inertia, mathematically replace \(I* with the product of total mass times some constant with the dimensions of square feet.
 
-• This constant is called the "radius of gyration" (*k*)
+• This constant is called the "radius of gyration" (\(k*)
 
 • If all the mass were concentrated at this radius, it would have the same moment of inertia as the actual body.
 
@@ -285,37 +281,37 @@ I_zb~ is always the largest value*.*
 
 *I_{xb}\> I_yb\ ~*for wing-loaded aircraft.
 
-** **
 
-** **
 
-** **![][07016]
 
-** **
 
-** **
+![][07016]
 
-** **
 
-** **
 
-** **
 
-** **
 
-** **
 
-** **
 
-** **
 
-** **
 
-** **
 
-** **
 
-** **
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 • Vehicle mass distribution can be represented with concentrated "dumbbell" masses.
 
@@ -325,13 +321,13 @@ I_zb~ is always the largest value*.*
 
 • If the orientation of the principle axes and the moments of inertia about theses axes are known, then the moments of inertia about any other axis system can be calculated.
 
-** **
+
 
  
 
 ** 7.4.2 Parallel Axis Theorem Applications**
 
-** **
+
 
 Shows how to **determine modified moment of inertia** after some
 
@@ -363,7 +359,7 @@ component alterations. Example: Correct original aircraft roll inertia, *I_xb~*~
 
 • *m_comp~* is the component's mass
 
-•  *r* is the distance from the axis in question to the component's \(\mathrm{cg}\).
+•  \(r* is the distance from the axis in question to the component's \(\mathrm{cg}\).
 
  
 
@@ -371,9 +367,9 @@ Similarly, the parallel axis theorem shows how to **determine modified products 
 
 ![][07019] 
 
-\* *
+\\( *
 
-*x* and *z* are the distances from the component \(\mathrm{cg}\) to the reference axes.
+\(x* and \(z* are the distances from the component \(\mathrm{cg}\) to the reference axes.
 
  
 
@@ -385,11 +381,11 @@ Moments of inertia are calculated about a set of reference axes which all inters
 
  
 
-where *m* = total mass
+where \(m* = total mass
 
-*y* = lateral distance between \(\mathrm{cg}\) and aircraft x-axis.
+\(y* = lateral distance between \(\mathrm{cg}\) and aircraft x-axis.
 
-*z* = vertical distance between \(\mathrm{cg}\) and aircraft x-axis.
+\(z* = vertical distance between \(\mathrm{cg}\) and aircraft x-axis.
 
  
 
@@ -397,7 +393,7 @@ where *m* = total mass
 
 **7.4.3 Measuring Roll Inertia, *I_xb~*** (spring oscillation method)
 
-** **
+
 
 1\. Balance aircraft on prism-like "knife edges" that support wooden
 
@@ -405,7 +401,7 @@ cradles that conform to aircraft shape.
 
 2\. Attach springs (tension springs illustrated here) so they are parallel to
 
-line *a* as shown.
+line \(a* as shown.
 
  
 
@@ -451,7 +447,7 @@ line *a* as shown.
 
 3\. Allow aircraft to oscillate freely in roll after a small disturbance.
 
-4\. Use **automatic recording** to determine period of oscillations (*T*).
+4\. Use **automatic recording** to determine period of oscillations (\(T*).
 
 5\. Calculate damped frequency as
 
@@ -477,7 +473,7 @@ line *a* as shown.
 
 **Measuring Roll Inertia (continued)**
 
-** **
+
 
 9\. Measure the spring's stiffness (*K_o*)
 
@@ -503,9 +499,9 @@ Combining steps 10-12 gives the complete **moment of inertia equation**
 
  
 
-where *h* is the vertical distance between the \(\mathrm{cg}\) and axis of oscillation and *d* is the total distance between the \(\mathrm{cg}\) and the axis of oscillation (*d* = *h* in the illustrated roll inertia test setup).
+where \(h* is the vertical distance between the \(\mathrm{cg}\) and axis of oscillation and \(d* is the total distance between the \(\mathrm{cg}\) and the axis of oscillation (\(d* = \(h* in the illustrated roll inertia test setup).
 
-** **
+
 
 **If automatic recording is not available\...**
 
@@ -541,19 +537,19 @@ Above methods can also be used to determine *I_yb~* and *I_zb~*
 
  
 
-** **
 
-** **
+
+
 
 ** 7.4.4 Measuring Pitch Inertia, *I_yb~*** (spring oscillation method)
 
-** **
+
 
 1\. Balance aircraft on knife edges as shown.
 
  
 
-2\. Attach spring perpendicular to line *a*. Only one spring is required since the aircraft \(\mathrm{cg}\) is off-center. Spring must be stiff enough to hold the aircraft in equilibrium as well as provide a restoring moment during oscillations.
+2\. Attach spring perpendicular to line \(a*. Only one spring is required since the aircraft \(\mathrm{cg}\) is off-center. Spring must be stiff enough to hold the aircraft in equilibrium as well as provide a restoring moment during oscillations.
 
  
 
@@ -599,29 +595,29 @@ Above methods can also be used to determine *I_yb~* and *I_zb~*
 
 Repeat steps 3-12 and apply the moment of inertia equation to determine *I_yb~*
 
-*~ ~*
 
-*~ ~*
 
-*~ ~*
 
-*~ ~*
+
+
+
+
 
 or, for an uninstrumented aircraft,
 
- 
+ \*(?=\D{1}\*)
 
-** **
 
-** **
+
+
 
 ** 7.4.5 Measuring Yaw Inertia, *I_zb~*** (spring oscillation method)
 
-** **
+
 
 1\. Suspend aircraft as shown: fuselage reference line parallel with floor,
 
-*z-*body axis coincides with the oscillation axis (*h* = *d* = 0).
+*z-*body axis coincides with the oscillation axis (\(h* = \(d* = 0).
 
 For *I_zb~* test, set spring assembly tilt angle parallel to floor (*\delta *= 0).
 
@@ -669,13 +665,13 @@ For *I_zb~* test, set spring assembly tilt angle parallel to floor (*\delta *= 
 
 ** Measuring Yaw Inertia (continued)**
 
-** **
+
 
 If not possible to rig wing attach points in line with the \(\mathrm{cg}\), then keep the springs parallel to each other and measure the angle \phi.  
 
 €
 
-• Calculate *K_o* = *k* cos *\phi   *where *k* is the actual spring constant
+• Calculate *K_o* = \(k* cos *\phi   *where \(k* is the actual spring constant
 
  
 
@@ -715,7 +711,7 @@ If not possible to rig wing attach points in line with the \(\mathrm{cg}\), then
 
  
 
-Repeat steps 3-12 and apply the moment of inertia equation to determine *I_zb.\ ~*Note that distances *h* and *d* are zero for a properly suspended aircraft.
+Repeat steps 3-12 and apply the moment of inertia equation to determine *I_zb.\ ~*Note that distances \(h* and \(d* are zero for a properly suspended aircraft.
 
  
 
@@ -733,13 +729,13 @@ or, for an uninstrumented aircraft,
 
  
 
-** **![][07037]
+![][07037]
 
-** **
+
 
 ** 7.4.6 Measuring Axis of Inclination and *I_xz~***
 
-** **
+
 
 • Inclination of principle axis (*\epsilon*) is positive if it lies in the +*xz* plane as shown.
 
@@ -807,11 +803,11 @@ generate a left rolling moment.
 
  
 
-** **
+
 
 ** Measuring Axis of Inclination and *I_xz\ ~*(continued)**
 
-** **
+
 
 1\. Determine *I_xz~* and *\epsilon* by repeating yaw experiment for different spring
 
@@ -905,7 +901,7 @@ instrumentation limits.
 
  
 
-• If using a hand recorded stopwatch, best spring stiffness gives about one cycle per second (*f* = 1).
+• If using a hand recorded stopwatch, best spring stiffness gives about one cycle per second (\(f* = 1).
 
  
 
@@ -925,21 +921,21 @@ instrumentation limits.
 
  
 
-** **
 
-** **
 
-** **
+
+
+
 
 ** 7.4.8 Swing Method**
 
-** **
+
 
 1\. Suspend component as shown.
 
 ![][07051] 
 
-2\. Measure pendulum length (*l*), component mass (*m ),* and the period of oscillation (*T*).
+2\. Measure pendulum length (\(l*), component mass (*m ),* and the period of oscillation (\(T*).
 
  
 
@@ -1001,7 +997,7 @@ or
 
 ** 7.5 References**
 
-** **
+
 
 7.5.1 Lawless, Alan R. et al, "Special Topics and Aircraft Subsystems Flight Testing," *Chapter 1, Mass Properties*, National Test Pilot School, Mojave, CA, 1999.
 
@@ -1033,9 +1029,9 @@ or
 
  
 
-** **
 
-** **
+
+
 
  
 
