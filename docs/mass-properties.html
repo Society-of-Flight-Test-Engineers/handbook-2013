@@ -254,6 +254,13 @@
 <li class="chapter" data-level="7.3" data-path="mass-properties.html"><a href="mass-properties.html#vertical-center-of-gravity-measurement"><i class="fa fa-check"></i><b>7.3</b> Vertical Center of Gravity Measurement</a></li>
 <li class="chapter" data-level="7.4" data-path="mass-properties.html"><a href="mass-properties.html#moment-product-of-inertia-measurement"><i class="fa fa-check"></i><b>7.4</b> Moment &amp; Product of Inertia Measurement </a><ul>
 <li class="chapter" data-level="7.4.1" data-path="mass-properties.html"><a href="mass-properties.html#radius-of-gyration"><i class="fa fa-check"></i><b>7.4.1</b> Radius of Gyration</a></li>
+<li class="chapter" data-level="7.4.2" data-path="mass-properties.html"><a href="mass-properties.html#parallel-axis-theorem-applications"><i class="fa fa-check"></i><b>7.4.2</b> Parallel Axis Theorem Applications</a></li>
+<li class="chapter" data-level="7.4.3" data-path="mass-properties.html"><a href="mass-properties.html#measuring-roll-inertia-i_x_b-spring-oscillation-method"><i class="fa fa-check"></i><b>7.4.3</b> Measuring Roll Inertia, <span class="math inline">\(I_{x_b}\)</span> (spring oscillation method)</a></li>
+<li class="chapter" data-level="7.4.4" data-path="mass-properties.html"><a href="mass-properties.html#measuring-pitch-inertia-i_y_b-spring-oscillation-method"><i class="fa fa-check"></i><b>7.4.4</b> Measuring Pitch Inertia, <span class="math inline">\(I_{y_b}\)</span> (spring oscillation method)</a></li>
+<li class="chapter" data-level="7.4.5" data-path="mass-properties.html"><a href="mass-properties.html#measuring-yaw-inertia-i_z_b-spring-oscillation-method"><i class="fa fa-check"></i><b>7.4.5</b> Measuring Yaw Inertia, <span class="math inline">\(I_{z_b}\)</span> (spring oscillation method)</a></li>
+<li class="chapter" data-level="7.4.6" data-path="mass-properties.html"><a href="mass-properties.html#measuring-axis-of-inclination-and-i_xz"><i class="fa fa-check"></i><b>7.4.6</b> Measuring Axis of Inclination and <span class="math inline">\(I_xz\)</span></a></li>
+<li class="chapter" data-level="7.4.7" data-path="mass-properties.html"><a href="mass-properties.html#guidelines-for-spring-oscillation-method"><i class="fa fa-check"></i><b>7.4.7</b> Guidelines for Spring Oscillation Method</a></li>
+<li class="chapter" data-level="7.4.8" data-path="mass-properties.html"><a href="mass-properties.html#swing-method"><i class="fa fa-check"></i><b>7.4.8</b> Swing Method</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="motionvibration-analysis.html"><a href="motionvibration-analysis.html"><i class="fa fa-check"></i><b>8</b> 8 Motion/Vibration Analysis**</a></li>
@@ -878,82 +885,82 @@
 <div id="moment-product-of-inertia-measurement" class="section level2">
 <h2><span class="header-section-number">7.4</span> Moment &amp; Product of Inertia Measurement </h2>
 <p>The moment of inertia about any axis of a body is the summation of the product of every element’s mass and distance squared. Moments of inertia represent the resistance to rotational momentum changes.</p>
-<p><img src="media/07/image13.svg" style="width:2.16458in;height:1.28264in" /> <img src="media/07/image14.svg" style="width:1.20347in;height:0.92708in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
+<p><img src="media/07/image13.svg" style="width:2.16458in;height:1.28264in" /> </p>
+<p><span class="math display">\[
+\begin{align}
+I_{x_b} &amp;= \int \left( y^2 + z^2 \right) dm \\
+I_{y_b} &amp;= \int \left( x^2 + z^2 \right) dm \\
+I_{z_b} &amp;= \int \left( x^2 + y^2 \right) dm \\
+\end{align}
+\]</span></p>
 <p>Products of inertia are also calculated about any body axes. They represent the symmetry of mass distribution (comparing opposing quadrants).</p>
-<p> </p>
-<p> </p>
-<p> <img src="media/07/image15.svg" style="width:1.22917in;height:0.97917in" /><img src="media/07/image16.svg" style="width:1.79236in;height:1.07083in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>• Aircraft moments and products of inertia are calculated using body axes as the reference system.</p>
-<p> </p>
-<p>• Careful</p>
-<p>Documentation can yield</p>
-<p>inertial</p>
-<p>predictions</p>
-<p>within about</p>
-<p><img src="media/07/image17.svg" style="width:3.37222in;height:2.33681in" /> 1-5% of actual.</p>
+<p><img src="media/07/image16.svg" style="width:1.79236in;height:1.07083in" /></p>
+<p><span class="math display">\[
+\begin{align}
+I_{xy} &amp;= I_{yx} \equiv \int xy dm \\
+I_{yz} &amp;= I_{zy} \equiv \int yz dm \\
+I_{zx} &amp;= I_{xz} \equiv \int zx dm \\
+\end{align}
+\]</span></p>
+<ul>
+<li>Aircraft moments and products of inertia are calculated using body axes as the reference system.</li>
+<li>Careful documentation can yield inertial predictions within about 1-5% of actual.</li>
+</ul>
+<p><img src="media/07/image17.svg" style="width:3.37222in;height:2.33681in" /></p>
 <div id="radius-of-gyration" class="section level3">
 <h3><span class="header-section-number">7.4.1</span> Radius of Gyration</h3>
 <ul>
-<li>Dimensions of all <span class="math inline">\(I\)</span> terms are <span class="math display">\[slugs-*ft^2^*\]</span>.</li>
+<li>Dimensions of all <span class="math inline">\(I\)</span> terms are [slugs-ft<sup>2</sup>]</li>
+<li>Aircraft moments &amp; products of inertia are generally assumed to be constant.</li>
+<li>For moments of inertia, mathematically replace <span class="math inline">\(I\)</span> with the product of total mass times some constant with the dimensions of square feet.</li>
+<li>This constant is called the “radius of gyration” (<span class="math inline">\(k\)</span>).</li>
+<li>If all the mass were concentrated at this radius, it would have the same moment of inertia as the actual body.</li>
 </ul>
-<p>• Aircraft moments &amp; products of inertia are generally assumed to be constant.</p>
-<p>• For moments of inertia, mathematically replace <span class="math inline">\(I\)</span> with the product of total mass times some constant with the dimensions of square feet.</p>
-<p>• This constant is called the “radius of gyration” (<span class="math inline">\(k\)</span>)</p>
-<p>• If all the mass were concentrated at this radius, it would have the same moment of inertia as the actual body.</p>
-<p> </p>
-<p> <img src="media/07/image18.svg" style="width:1.88542in;height:0.34028in" /></p>
-<p> </p>
+<p><span class="math display">\[ I_x \equiv \int \left( y^2 + z^2 \right) dm = mk^2_{yz} \]</span></p>
 <p><strong>Aircraft moment of inertia summary</strong></p>
 <p><span class="math inline">\(I_{z_b}\)</span> is always the largest value.</p>
 <p><span class="math inline">\(I_{y_b} \gt I_{x_b}\)</span> for fuselage-loaded aircraft.</p>
 <p><span class="math inline">\(I_{x_b} \gt I_{y_b}\ \)</span>for wing-loaded aircraft.</p>
 <p><img src="media/07/image19.svg" style="width:4.5in;height:2.375in" /></p>
-<p>• Vehicle mass distribution can be represented with concentrated “dumbbell” masses.</p>
-<p>• The lines connecting the opposing dumbbells are the <strong>principle axes</strong>.</p>
-<p>• When the principle axis lies along some line different from the body axis, the products of inertia are non-zero.</p>
-<p>• If the orientation of the principle axes and the moments of inertia about theses axes are known, then the moments of inertia about any other axis system can be calculated.</p>
-<p> </p>
-<p><strong> 7.4.2 Parallel Axis Theorem Applications</strong></p>
-<p>Shows how to <strong>determine modified moment of inertia</strong> after some</p>
-<p>component alterations. Example: Correct original aircraft roll inertia, (I_xb<sub>(</sub>,~ to a modified value that accounts for the addition of wingtip fuel tanks.</p>
-<p><img src="media/07/image20.svg" style="width:1.68403in;height:0.28611in" /> </p>
-<p> </p>
-<p> </p>
-<p>• <span class="math inline">\(I_x\ comp\)</span> is composed of two components</p>
+<ul>
+<li>Vehicle mass distribution can be represented with concentrated “dumbbell” masses.</li>
+<li>The lines connecting the opposing dumbbells are the <strong>principle axes</strong>.</li>
+<li>When the principle axis lies along some line different from the body axis, the products of inertia are non-zero.</li>
+<li>If the orientation of the principle axes and the moments of inertia about theses axes are known, then the moments of inertia about any other axis system can be calculated.</li>
+</ul>
+</div>
+<div id="parallel-axis-theorem-applications" class="section level3">
+<h3><span class="header-section-number">7.4.2</span> Parallel Axis Theorem Applications</h3>
+<p>Shows how to <strong>determine modified moment of inertia</strong> after some component alterations.</p>
+<p>Example: Correct original aircraft roll inertia, <span class="math inline">\(I_{x_b}\)</span>, to a modified value that accounts for the addition of wingtip fuel tanks.</p>
+<p><span class="math display">\[ I_{x_{b_{\text{mod}}}} = I_{x_{b_{\text{orig}}}} + \Delta I_{x_{\text{comp}}} \]</span></p>
+<p>* <span class="math inline">\(\Delta I_{x_{\text{comp}}}\)</span> is composed of two components</p>
+<p><span class="math display">\[ \Delta I_{x_{\text{comp}}} = I_{x_{\text{comp}}} + m_{\text{comp}} r^2 \]</span></p>
 <p><img src="media/07/image21.svg" style="width:2.09028in;height:0.32847in" /> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>• <span class="math inline">\(I_x\ comp\)</span> is the moment of inertia of just the new component about an axis which is parallel to the aircraft axis in question (this axis should run through the component’s <span class="math inline">\(\mathrm{cg}\)</span>)<em>.</em></p>
-<p>• <span class="math inline">\(I_x\ comp\)</span> can be determined analytically by summing the inertias of every mass element throughout the component (documented for simple shapes in various engineering handbooks).</p>
-<p>• <span class="math inline">\(I_x\ comp\)</span> can be determined experimentally by “swinging,” (sect’n 7.4.8).</p>
-<p>• (I_x comp~( is usually much smaller than (m_comp~ r<sup>2</sup>* and can often be omitted.</p>
-<p>• <span class="math inline">\(m_comp\)</span> is the component’s mass</p>
-<p>•  <span class="math inline">\(r\)</span> is the distance from the axis in question to the component’s <span class="math inline">\(\mathrm{cg}\)</span>.</p>
-<p> </p>
-<p>Similarly, the parallel axis theorem shows how to <strong>determine modified products of inertia</strong> after some component alterations</p>
-<p><img src="media/07/image22.svg" style="width:2.45069in;height:0.27222in" /> </p>
-<p>\( )</p>
+<ul>
+<li><span class="math inline">\(I_{x_{\text{comp}}}\)</span> is the moment of inertia of just the new component about an axis which is parallel to the aircraft axis in question (this axis should run through the component’s <span class="math inline">\(\mathrm{cg}\)</span>).</li>
+<li><span class="math inline">\(I_{x_{\text{comp}}}\)</span> can be determined analytically by summing the inertias of every mass element throughout the component (documented for simple shapes in various engineering handbooks).</li>
+<li><span class="math inline">\(I_{x_{\text{comp}}}\)</span> can be determined experimentally by “swinging.” (<a href="mass-properties.html#swing-method">Swing Method</a>)</li>
+<li><span class="math inline">\(I_{x_{\text{comp}}}\)</span> is usually much smaller than <span class="math inline">\(m_{\text{comp}} r^2\)</span> and can often be omitted.</li>
+<li><span class="math inline">\(m_{\text{comp}}\)</span> is the component’s mass</li>
+<li><span class="math inline">\(r\)</span> is the distance from the axis in question to the component’s <span class="math inline">\(\mathrm{cg}\)</span>.</li>
+</ul>
+<p>Similarly, the parallel axis theorem shows how to <strong>determine modified products of inertia</strong> after some component alterations.</p>
+<p><span class="math display">\[ I_{xz_{\text{mod}}} = I_{xz_{\text{orig}}} + \left[ I_{xz_{\text{comp}}} + m_{\text{comp}} xz \right] \]</span></p>
 <p><span class="math inline">\(x\)</span> and <span class="math inline">\(z\)</span> are the distances from the component <span class="math inline">\(\mathrm{cg}\)</span> to the reference axes.</p>
+<p>Moments of inertia are calculated about a set of reference axes which all intersect at the reference <span class="math inline">\(\mathrm{cg}\)</span>. In general, however, the actual <span class="math inline">\(\mathrm{cg}\)</span> does not lie exactly at this reference <span class="math inline">\(cg\)</span>. The parallel axis theorem shows how to <strong>correct the moment of inertia to the actual <span class="math inline">\(\mathrm{cg}\)</span> axis</strong>. As an example, the rolling moment of inertia about the actual <span class="math inline">\(\mathrm{cg}\)</span> ( <span class="math inline">\(I_{x_{\mathrm{cg}}}\)</span> ) is calculated from the reference <span class="math inline">\(I_{x_b}\)</span> as follows.</p>
+<p><span class="math display">\[ I_{x_{\mathrm{cg}}} = I_{x_b} - m \left[ y^2 + z^2 \right] \]</span></p>
+<p>where</p>
+<ul>
+<li><span class="math inline">\(m\)</span> = total mass</li>
+<li><span class="math inline">\(y\)</span> = lateral distance between <span class="math inline">\(\mathrm{cg}\)</span> and aircraft x-axis.</li>
+<li><span class="math inline">\(z\)</span> = vertical distance between <span class="math inline">\(\mathrm{cg}\)</span> and aircraft x-axis.</li>
+</ul>
 <p> </p>
-<p>Moments of inertia are calculated about a set of reference axes which all intersect at the reference <span class="math inline">\(\mathrm{cg}\)</span>. In general, however, the actual <span class="math inline">\(\mathrm{cg}\)</span> does not lie exactly at this reference <span class="math inline">\(cg\)</span>. The parallel axis theorem shows how to <strong>correct the moment of inertia to the actual <span class="math inline">\(\mathrm{cg}\)</span> axis</strong><em>.</em> As an example, the rolling moment of inertia about the actual <span class="math inline">\(\mathrm{cg}\)</span> (<span class="math inline">\(I_xcg\)</span>) is calculated from the reference <span class="math inline">\(I_xb\)</span> as follows.</p>
-<p><img src="media/07/image23.svg" style="width:1.43403in;height:0.25139in" /> </p>
 <p> </p>
-<p> </p>
-<p>where <span class="math inline">\(m\)</span> = total mass</p>
-<p><span class="math inline">\(y\)</span> = lateral distance between <span class="math inline">\(\mathrm{cg}\)</span> and aircraft x-axis.</p>
-<p><span class="math inline">\(z\)</span> = vertical distance between <span class="math inline">\(\mathrm{cg}\)</span> and aircraft x-axis.</p>
-<p> </p>
-<p> </p>
-<p><strong>7.4.3 Measuring Roll Inertia, <span class="math inline">\(I_xb\)</span></strong> (spring oscillation method)</p>
+</div>
+<div id="measuring-roll-inertia-i_x_b-spring-oscillation-method" class="section level3">
+<h3><span class="header-section-number">7.4.3</span> Measuring Roll Inertia, <span class="math inline">\(I_{x_b}\)</span> (spring oscillation method)</h3>
 <p>1. Balance aircraft on prism-like “knife edges” that support wooden</p>
 <p>cradles that conform to aircraft shape.</p>
 <p>2. Attach springs (tension springs illustrated here) so they are parallel to</p>
@@ -1023,7 +1030,9 @@
 <p> <img src="media/07/image28.svg" style="width:2.52917in;height:0.48958in" /></p>
 <p>Above methods can also be used to determine <span class="math inline">\(I_yb\)</span> and <span class="math inline">\(I_zb\)</span></p>
 <p> </p>
-<p><strong> 7.4.4 Measuring Pitch Inertia, <span class="math inline">\(I_yb\)</span></strong> (spring oscillation method)</p>
+</div>
+<div id="measuring-pitch-inertia-i_y_b-spring-oscillation-method" class="section level3">
+<h3><span class="header-section-number">7.4.4</span> Measuring Pitch Inertia, <span class="math inline">\(I_{y_b}\)</span> (spring oscillation method)</h3>
 <p>1. Balance aircraft on knife edges as shown.</p>
 <p> </p>
 <p>2. Attach spring perpendicular to line <span class="math inline">\(a\)</span>. Only one spring is required since the aircraft <span class="math inline">\(\mathrm{cg}\)</span> is off-center. Spring must be stiff enough to hold the aircraft in equilibrium as well as provide a restoring moment during oscillations.</p>
@@ -1051,7 +1060,9 @@
 <p>Repeat steps 3-12 and apply the moment of inertia equation to determine <span class="math inline">\(I_yb\)</span></p>
 <p>or, for an uninstrumented aircraft,</p>
 <p> *(?=*)</p>
-<p><strong> 7.4.5 Measuring Yaw Inertia, <span class="math inline">\(I_zb\)</span></strong> (spring oscillation method)</p>
+</div>
+<div id="measuring-yaw-inertia-i_z_b-spring-oscillation-method" class="section level3">
+<h3><span class="header-section-number">7.4.5</span> Measuring Yaw Inertia, <span class="math inline">\(I_{z_b}\)</span> (spring oscillation method)</h3>
 <p>1. Suspend aircraft as shown: fuselage reference line parallel with floor,</p>
 <p><em>z-</em>body axis coincides with the oscillation axis (<span class="math inline">\(h\)</span> = <span class="math inline">\(d\)</span> = 0).</p>
 <p>For <span class="math inline">\(I_zb\)</span> test, set spring assembly tilt angle parallel to floor (<em> </em>= 0).</p>
@@ -1109,7 +1120,9 @@
 <p> </p>
 <p> </p>
 <p><img src="media/07/image40.svg" style="width:1.98194in;height:0.50764in" /></p>
-<p><strong> 7.4.6 Measuring Axis of Inclination and <span class="math inline">\(I_xz\)</span></strong></p>
+</div>
+<div id="measuring-axis-of-inclination-and-i_xz" class="section level3">
+<h3><span class="header-section-number">7.4.6</span> Measuring Axis of Inclination and <span class="math inline">\(I_xz\)</span></h3>
 <p>• Inclination of principle axis (<em>) is positive if it lies in the +</em>xz* plane as shown.</p>
 <p> </p>
 <p>• <span class="math inline">\(I_xz\)</span> positive if *is positive.</p>
@@ -1177,7 +1190,9 @@
 <p><img src="media/07/image52.svg" style="width:0.125in;height:0.25in" />Note: Since the <span class="math inline">\(I_xz\)</span> test objective is to interpolate to a condition where equals zero, only the ratio is necessary</p>
 <p>and the absolute magnitudes of the accelerations are not reuired. In other words, the roll acceleration sensitivity can be increased to allow for easier measurement of the ratio.</p>
 <p> </p>
-<p><strong>7.4.7 Guidelines for Spring Oscillation Method</strong></p>
+</div>
+<div id="guidelines-for-spring-oscillation-method" class="section level3">
+<h3><span class="header-section-number">7.4.7</span> Guidelines for Spring Oscillation Method</h3>
 <p> </p>
 <p> </p>
 <p>• Use only small magnitude oscillations</p>
@@ -1200,7 +1215,9 @@
 <p> </p>
 <p>• The purpose of instrumentation is to provide a means for measuring frequency and magnitude. Any of several parameters will be sufficient, including angular displacement, rate or acceleration; or linear acceleration.</p>
 <p> </p>
-<p><strong> 7.4.8 Swing Method</strong></p>
+</div>
+<div id="swing-method" class="section level3">
+<h3><span class="header-section-number">7.4.8</span> Swing Method</h3>
 <p>1. Suspend component as shown.</p>
 <p><img src="media/07/image54.svg" style="width:2.98264in;height:2.15625in" /> </p>
 <p>2. Measure pendulum length (<span class="math inline">\(l\)</span>), component mass (<em>m ),</em> and the period of oscillation (<span class="math inline">\(T\)</span>).</p>

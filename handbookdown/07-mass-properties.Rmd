@@ -181,67 +181,43 @@ The change in nose wheel force can be written as
 
 The moment of inertia about any axis of a body is the summation of the product of every element's mass and distance squared. Moments of inertia represent the resistance to rotational momentum changes.
 
-![][07010] ![][07011]
+![][07010] 
 
- 
-
- 
-
- 
-
- 
-
- 
+\[
+\begin{align}
+I_{x_b} &= \int \left( y^2 + z^2 \right) dm \\
+I_{y_b} &= \int \left( x^2 + z^2 \right) dm \\
+I_{z_b} &= \int \left( x^2 + y^2 \right) dm \\
+\end{align}
+\]
 
 Products of inertia are also calculated about any body axes. They represent the symmetry of mass distribution (comparing opposing quadrants).
 
- 
+![][07013]
 
- 
-
- ![][07012]![][07013]
-
- 
-
- 
-
- 
-
-• Aircraft moments and products of inertia are calculated using body axes as the reference system.
-
- 
-
-• Careful
-
-Documentation can yield
-
-inertial
-
-predictions
-
-within about
-
-![][07014] 1-5% of actual.
+\[
+\begin{align}
+I_{xy} &= I_{yx} \equiv \int xy dm \\
+I_{yz} &= I_{zy} \equiv \int yz dm \\
+I_{zx} &= I_{xz} \equiv \int zx dm \\
+\end{align}
+\]
 
 
+* Aircraft moments and products of inertia are calculated using body axes as the reference system.
+* Careful documentation can yield inertial predictions within about 1-5% of actual.
+
+![][07014]
 
 ### Radius of Gyration
 
-* Dimensions of all \(I\) terms are \[slugs-*ft^2^*\].
+* Dimensions of all \(I\) terms are [slugs-ft^2^]
+* Aircraft moments & products of inertia are generally assumed to be constant.
+* For moments of inertia, mathematically replace \(I\) with the product of total mass times some constant with the dimensions of square feet.
+* This constant is called the "radius of gyration" (\(k\)).
+* If all the mass were concentrated at this radius, it would have the same moment of inertia as the actual body.
 
-• Aircraft moments & products of inertia are generally assumed to be constant.
-
-• For moments of inertia, mathematically replace \(I\) with the product of total mass times some constant with the dimensions of square feet.
-
-• This constant is called the "radius of gyration" (\(k\))
-
-• If all the mass were concentrated at this radius, it would have the same moment of inertia as the actual body.
-
- 
-
- ![][07015]
-
- 
+\[ I_x \equiv \int \left( y^2 + z^2 \right) dm = mk^2_{yz} \]
 
 **Aircraft moment of inertia summary**
 
@@ -251,117 +227,55 @@ within about
 
 \(I_{x_b} \gt I_{y_b}\ \)for wing-loaded aircraft.
 
-
-
-
-
 ![][07016]
 
+* Vehicle mass distribution can be represented with concentrated "dumbbell" masses.
+* The lines connecting the opposing dumbbells are the **principle axes**.
+* When the principle axis lies along some line different from the body axis, the products of inertia are non-zero.
+* If the orientation of the principle axes and the moments of inertia about theses axes are known, then the moments of inertia about any other axis system can be calculated.
 
+### Parallel Axis Theorem Applications
 
+Shows how to **determine modified moment of inertia** after some component alterations. 
 
+Example: Correct original aircraft roll inertia, \(I_{x_b}\), to a modified value that accounts for the addition of wingtip fuel tanks.
 
+\[ I_{x_{b_{\text{mod}}}} = I_{x_{b_{\text{orig}}}} + \Delta I_{x_{\text{comp}}} \]
 
+* \( \Delta I_{x_{\text{comp}}} \) is composed of two components
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-• Vehicle mass distribution can be represented with concentrated "dumbbell" masses.
-
-• The lines connecting the opposing dumbbells are the **principle axes**.
-
-• When the principle axis lies along some line different from the body axis, the products of inertia are non-zero.
-
-• If the orientation of the principle axes and the moments of inertia about theses axes are known, then the moments of inertia about any other axis system can be calculated.
-
-
-
- 
-
-** 7.4.2 Parallel Axis Theorem Applications**
-
-
-
-Shows how to **determine modified moment of inertia** after some
-
-component alterations. Example: Correct original aircraft roll inertia, \(I_xb~\(~,~ to a modified value that accounts for the addition of wingtip fuel tanks.
-
-![][07017] 
-
- 
-
- 
-
-• \Delta\(I_x\ comp\) is composed of two components
+\[ \Delta I_{x_{\text{comp}}} = I_{x_{\text{comp}}} + m_{\text{comp}} r^2 \]
 
 ![][07018] 
 
- 
+* \( I_{x_{\text{comp}}} \) is the moment of inertia of just the new component about an axis which is parallel to the aircraft axis in question (this axis should run through the component's \(\mathrm{cg}\)).
+* \( I_{x_{\text{comp}}} \) can be determined analytically by summing the inertias of every mass element throughout the component (documented for simple shapes in various engineering handbooks).
+* \( I_{x_{\text{comp}}} \) can be determined experimentally by "swinging." ([Swing Method])
+* \( I_{x_{\text{comp}}} \) is usually much smaller than \( m_{\text{comp}} r^2 \) and can often be omitted.
+* \( m_{\text{comp}} \) is the component's mass
+* \(r\) is the distance from the axis in question to the component's \(\mathrm{cg}\).
 
- 
+Similarly, the parallel axis theorem shows how to **determine modified products of inertia** after some component alterations.
 
- 
-
-• \(I_x\ comp\) is the moment of inertia of just the new component about an axis which is parallel to the aircraft axis in question (this axis should run through the component's \(\mathrm{cg}\))*.*
-
-• \(I_x\ comp\) can be determined analytically by summing the inertias of every mass element throughout the component (documented for simple shapes in various engineering handbooks).
-
-• \(I_x\ comp\) can be determined experimentally by "swinging," (sect'n 7.4.8).
-
-• \(I_x\ comp~\( is usually much smaller than \(m_comp~ r^2^* and can often be omitted.
-
-• \(m_comp\) is the component's mass
-
-•  \(r\) is the distance from the axis in question to the component's \(\mathrm{cg}\).
-
- 
-
-Similarly, the parallel axis theorem shows how to **determine modified products of inertia** after some component alterations
-
-![][07019] 
-
-\\( \)
+\[ I_{xz_{\text{mod}}} = I_{xz_{\text{orig}}} + \left[ I_{xz_{\text{comp}}} + m_{\text{comp}} xz \right] \]
 
 \(x\) and \(z\) are the distances from the component \(\mathrm{cg}\) to the reference axes.
 
- 
+Moments of inertia are calculated about a set of reference axes which all intersect at the reference \(\mathrm{cg}\). In general, however, the actual \(\mathrm{cg}\) does not lie exactly at this reference \(cg\). The parallel axis theorem shows how to **correct the moment of inertia to the actual \(\mathrm{cg}\) axis**. As an example, the rolling moment of inertia about the actual \(\mathrm{cg}\) ( \( I_{x_{\mathrm{cg}}} \) ) is calculated from the reference \(I_{x_b}\) as follows.
 
-Moments of inertia are calculated about a set of reference axes which all intersect at the reference \(\mathrm{cg}\). In general, however, the actual \(\mathrm{cg}\) does not lie exactly at this reference \(cg\). The parallel axis theorem shows how to **correct the moment of inertia to the actual \(\mathrm{cg}\) axis***.* As an example, the rolling moment of inertia about the actual \(\mathrm{cg}\) (\(I_xcg\)) is calculated from the reference \(I_xb\) as follows.
+\[ I_{x_{\mathrm{cg}}} = I_{x_b} - m \left[ y^2 + z^2 \right] \]
 
-![][07020] 
+where 
 
- 
-
- 
-
-where \(m\) = total mass
-
-\(y\) = lateral distance between \(\mathrm{cg}\) and aircraft x-axis.
-
-\(z\) = vertical distance between \(\mathrm{cg}\) and aircraft x-axis.
+* \(m\) = total mass
+* \(y\) = lateral distance between \(\mathrm{cg}\) and aircraft x-axis.
+* \(z\) = vertical distance between \(\mathrm{cg}\) and aircraft x-axis.
 
  
 
  
 
-**7.4.3 Measuring Roll Inertia, \(I_xb\)** (spring oscillation method)
+### Measuring Roll Inertia, \(I_{x_b}\) (spring oscillation method)
 
 
 
@@ -511,7 +425,7 @@ Above methods can also be used to determine \(I_yb\) and \(I_zb\)
 
 
 
-** 7.4.4 Measuring Pitch Inertia, \(I_yb\)** (spring oscillation method)
+### Measuring Pitch Inertia, \(I_{y_b}\) (spring oscillation method)
 
 
 
@@ -581,7 +495,7 @@ or, for an uninstrumented aircraft,
 
 
 
-** 7.4.5 Measuring Yaw Inertia, \(I_zb\)** (spring oscillation method)
+### Measuring Yaw Inertia, \(I_{z_b}\) (spring oscillation method)
 
 
 
@@ -703,7 +617,7 @@ or, for an uninstrumented aircraft,
 
 
 
-** 7.4.6 Measuring Axis of Inclination and \(I_xz\)**
+### Measuring Axis of Inclination and \(I_xz\)
 
 
 
@@ -845,7 +759,7 @@ and the absolute magnitudes of the accelerations are not reuired. In other words
 
  
 
-**7.4.7 Guidelines for Spring Oscillation Method**
+### Guidelines for Spring Oscillation Method
 
  
 
@@ -897,7 +811,7 @@ instrumentation limits.
 
 
 
-** 7.4.8 Swing Method**
+### Swing Method
 
 
 
