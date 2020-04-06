@@ -4,8 +4,8 @@
 
 | Symbol            | Definition                                                                                    | Unit         |
 |-------------------|-----------------------------------------------------------------------------------------------|--------------|
-| \(\Delta I_{am}\) | equivalent moment of inertia contribution of the air                                          | [slug-ft^2^] |
-| \(\Delta I_{te}\) | correction for test equipment mass                                                            | [slug-ft^2^] |
+| \(\Delta I_{\text{am}}\) | equivalent moment of inertia contribution of the air                                          | [slug-ft^2^] |
+| \(\Delta I_{\text{te}}\) | correction for test equipment mass                                                            | [slug-ft^2^] |
 | \(\delta\)        | tilt of spring assembly (measured positive if tilted nose-down relative to local horizontal). |              |
 | \(\varepsilon\)      | inclination of principle axis (positive if tilted down).                                      |              |
 | \(\omega_d\)      | damped frequency of oscillation                                                               | [rad/sec]    |
@@ -16,17 +16,17 @@
 | \(f\)             | measured frequency of oscillation                                                             | [cycles/sec] |
 | \(g\)             | Earth's acceleration due to gravity                                                           |              |
 | \(h\)             | vertical component of the perpendicular distance from the \(\mathrm{cg}\) to the oscillation axis.     |              |
-| \(I_{cg}\)        | moment of inertia any axis passing through the \(\mathrm{cg}\)                                         |              |
-| \(I_{xb}\)        | moment of inertia about aircraft body x-axis                                                  |              |
+| \(I_{\mathrm{cg}}\)        | moment of inertia any axis passing through the \(\mathrm{cg}\)                                         |              |
+| \(I_{x_b}\)        | moment of inertia about aircraft body x-axis                                                  |              |
 | \(I_{xz}\)        | product of inertia in aircraft body x-z plane                                                 |              |
-| \(I_{yb}\)        | moment of inertia about aircraft body y-axis                                                  |              |
-| \(I_{zb}\)        | moment of inertia about aircraft body z-axis                                                  |              |
+| \(I_{y_b}\)        | moment of inertia about aircraft body y-axis                                                  |              |
+| \(I_{z_b}\)        | moment of inertia about aircraft body z-axis                                                  |              |
 | \(I_o\)           | moment of inertia about oscillation axis                                                      |              |
-| \(K_{tot}\)       | total radius of gyration (includes effect of offset pivot)                                    |              |
+| \(K_{\text{tot}}\)       | total radius of gyration (includes effect of offset pivot)                                    |              |
 | \(K_o\)           | component of spring stiffness perpendicular to vehicle motion                                 |              |
 | \(k\)             | spring constant                                                                               | [lb/ft]      |
 | \(L\)             | rolling moment                                                                                |              |
-| \(l_{eff}\)       | effective pendulum length                                                                     |              |
+| \(l_{\text{eff}}\)       | effective pendulum length                                                                     |              |
 | \(m\)             | mass                                                                                          |              |
 | \(\mathrm{MAC}\)           | mean aerodynamic chord                                                                        |              |
 | \(\mathrm{METO}\)          | maximum power (except for takeoff)                                                            |              |
@@ -159,55 +159,27 @@ Given aircraft with empty weight = \(1220\) lbs and \(\mathrm{cg}\) @ 25 inches.
 
 ## Vertical Center of Gravity Measurement
 
-1. Drain or block landing gear struts to keep distances \(G*, \(J*, and \(V* constant.
-1. Level the fuselage and measure the weight on the nose wheel (*F_o*).
-1. Tilt the aircraft at various (\(θ*) measure nose wheel weight (\(F*).
-
-The change in nose wheel force can be written as
-
- 
-
- 
+1. Drain or block landing gear struts to keep distances \(G\), \(J\), and \(V\) constant.
+1. Level the fuselage and measure the weight on the nose wheel (\(F_o\)).
+1. Tilt the aircraft at various (\(\theta\)) measure nose wheel weight (\(F\)).
 
  ![][07007]
 
- ![][07008]
+The change in nose wheel force can be written as
 
+\[ F_0 - F = \left[ V + \frac{B G}{C} \right] \left( \frac{W}{C \cot \theta + G}  \right)\]
+
+4. Plot (\(F_o-F\)) vs the term in parenthesis.
+1. Slope of line equals term in brackets.
+1. Solve for \(V\) after measuring \(B\), \(C\), \(G\), and the slope.
+   * This method applies to "gear down" \(\mathrm{cg}\).
+   * For "gear up" add the manufacturer's prediction of the \(\mathrm{cg}\) shift to this result.
  
-
-4\. Plot (*F_o-F*) vs the term in
-
-parenthesis.
-
-5\. Slope of line equals term in brackets.
-
-6\. Solve for \(V* after measuring \(B*, \(C*, *G,*
-
-and the slope.
-
-• This method
-
-applies to "gear
-
-down" \(\mathrm{cg}\) .
-
-• For "gear up" add the manufacturer\'s
-
-prediction of the \(\mathrm{cg}\) shift to this result.
-
- 
-
 ![][07009]
 
-**7.4 Moment & Product of Inertia Measurement**
-
- 
+## Moment & Product of Inertia Measurement 
 
 The moment of inertia about any axis of a body is the summation of the product of every element's mass and distance squared. Moments of inertia represent the resistance to rotational momentum changes.
-
- 
-
- 
 
 ![][07010] ![][07011]
 
@@ -253,17 +225,15 @@ within about
 
 
 
-** 7.4.1 Radius of Gyration**
+### Radius of Gyration
 
-\* *
-
-• Dimensions of all \(I* terms are \[slugs-*ft^2^*\].
+* Dimensions of all \(I\) terms are \[slugs-*ft^2^*\].
 
 • Aircraft moments & products of inertia are generally assumed to be constant.
 
-• For moments of inertia, mathematically replace \(I* with the product of total mass times some constant with the dimensions of square feet.
+• For moments of inertia, mathematically replace \(I\) with the product of total mass times some constant with the dimensions of square feet.
 
-• This constant is called the "radius of gyration" (\(k*)
+• This constant is called the "radius of gyration" (\(k\))
 
 • If all the mass were concentrated at this radius, it would have the same moment of inertia as the actual body.
 
@@ -275,11 +245,11 @@ within about
 
 **Aircraft moment of inertia summary**
 
-I_zb~ is always the largest value*.*
+\(I_{z_b}\) is always the largest value.
 
-*I_{yb}\> I_xb~* for fuselage-loaded aircraft
+\(I_{y_b} \gt I_{x_b}\) for fuselage-loaded aircraft.
 
-*I_{xb}\> I_yb\ ~*for wing-loaded aircraft.
+\(I_{x_b} \gt I_{y_b}\ \)for wing-loaded aircraft.
 
 
 
@@ -331,7 +301,7 @@ I_zb~ is always the largest value*.*
 
 Shows how to **determine modified moment of inertia** after some
 
-component alterations. Example: Correct original aircraft roll inertia, *I_xb~*~,~ to a modified value that accounts for the addition of wingtip fuel tanks.
+component alterations. Example: Correct original aircraft roll inertia, \(I_xb~\(~,~ to a modified value that accounts for the addition of wingtip fuel tanks.
 
 ![][07017] 
 
@@ -339,7 +309,7 @@ component alterations. Example: Correct original aircraft roll inertia, *I_xb~*~
 
  
 
-• \Delta*I_x\ comp~* is composed of two components
+• \Delta\(I_x\ comp\) is composed of two components
 
 ![][07018] 
 
@@ -349,17 +319,17 @@ component alterations. Example: Correct original aircraft roll inertia, *I_xb~*~
 
  
 
-• *I_x\ comp~* is the moment of inertia of just the new component about an axis which is parallel to the aircraft axis in question (this axis should run through the component's \(\mathrm{cg}\))*.*
+• \(I_x\ comp\) is the moment of inertia of just the new component about an axis which is parallel to the aircraft axis in question (this axis should run through the component's \(\mathrm{cg}\))*.*
 
-• *I_x\ comp~* can be determined analytically by summing the inertias of every mass element throughout the component (documented for simple shapes in various engineering handbooks).
+• \(I_x\ comp\) can be determined analytically by summing the inertias of every mass element throughout the component (documented for simple shapes in various engineering handbooks).
 
-• *I_x\ comp~* can be determined experimentally by "swinging," (sect'n 7.4.8).
+• \(I_x\ comp\) can be determined experimentally by "swinging," (sect'n 7.4.8).
 
-• *I_x\ comp~* is usually much smaller than *m_comp~ r^2^* and can often be omitted.
+• \(I_x\ comp~\( is usually much smaller than \(m_comp~ r^2^* and can often be omitted.
 
-• *m_comp~* is the component's mass
+• \(m_comp\) is the component's mass
 
-•  \(r* is the distance from the axis in question to the component's \(\mathrm{cg}\).
+•  \(r\) is the distance from the axis in question to the component's \(\mathrm{cg}\).
 
  
 
@@ -367,13 +337,13 @@ Similarly, the parallel axis theorem shows how to **determine modified products 
 
 ![][07019] 
 
-\\( *
+\\( \)
 
-\(x* and \(z* are the distances from the component \(\mathrm{cg}\) to the reference axes.
+\(x\) and \(z\) are the distances from the component \(\mathrm{cg}\) to the reference axes.
 
  
 
-Moments of inertia are calculated about a set of reference axes which all intersect at the reference \(\mathrm{cg}\). In general, however, the actual \(\mathrm{cg}\) does not lie exactly at this reference *cg.* The parallel axis theorem shows how to **correct the moment of inertia to the actual \(\mathrm{cg}\) axis***.* As an example, the rolling moment of inertia about the actual \(\mathrm{cg}\) (*I_xcg~*) is calculated from the reference *I_xb~* as follows.
+Moments of inertia are calculated about a set of reference axes which all intersect at the reference \(\mathrm{cg}\). In general, however, the actual \(\mathrm{cg}\) does not lie exactly at this reference \(cg\). The parallel axis theorem shows how to **correct the moment of inertia to the actual \(\mathrm{cg}\) axis***.* As an example, the rolling moment of inertia about the actual \(\mathrm{cg}\) (\(I_xcg\)) is calculated from the reference \(I_xb\) as follows.
 
 ![][07020] 
 
@@ -381,17 +351,17 @@ Moments of inertia are calculated about a set of reference axes which all inters
 
  
 
-where \(m* = total mass
+where \(m\) = total mass
 
-\(y* = lateral distance between \(\mathrm{cg}\) and aircraft x-axis.
+\(y\) = lateral distance between \(\mathrm{cg}\) and aircraft x-axis.
 
-\(z* = vertical distance between \(\mathrm{cg}\) and aircraft x-axis.
-
- 
+\(z\) = vertical distance between \(\mathrm{cg}\) and aircraft x-axis.
 
  
 
-**7.4.3 Measuring Roll Inertia, *I_xb~*** (spring oscillation method)
+ 
+
+**7.4.3 Measuring Roll Inertia, \(I_xb\)** (spring oscillation method)
 
 
 
@@ -401,7 +371,7 @@ cradles that conform to aircraft shape.
 
 2\. Attach springs (tension springs illustrated here) so they are parallel to
 
-line \(a* as shown.
+line \(a\) as shown.
 
  
 
@@ -447,7 +417,7 @@ line \(a* as shown.
 
 3\. Allow aircraft to oscillate freely in roll after a small disturbance.
 
-4\. Use **automatic recording** to determine period of oscillations (\(T*).
+4\. Use **automatic recording** to determine period of oscillations (\(T\)).
 
 5\. Calculate damped frequency as
 
@@ -475,19 +445,19 @@ line \(a* as shown.
 
 
 
-9\. Measure the spring's stiffness (*K_o*)
+9\. Measure the spring's stiffness (\(K_o\))
 
  
 
-10\. Calculate inertia about oscillation axis (*I_o*) as
+10\. Calculate inertia about oscillation axis (\(I_o\)) as
 
  
 
  ![][07025]![][07026]![][07027]
 
-11\. Use parallel axis theorem to correct *I_o* to a parallel axis passing through the *cg.*
+11\. Use parallel axis theorem to correct \(I_o\) to a parallel axis passing through the \(cg\).
 
-12\. Springs, cradles and attachments hardware will change the moment of inertia. Sum their total into a combined "test equipment inertia" (\Delta*I_te~*) and subtract this from the above result.
+12\. Springs, cradles and attachments hardware will change the moment of inertia. Sum their total into a combined "test equipment inertia" (\Delta\(I_te\)) and subtract this from the above result.
 
  
 
@@ -499,7 +469,7 @@ Combining steps 10-12 gives the complete **moment of inertia equation**
 
  
 
-where \(h* is the vertical distance between the \(\mathrm{cg}\) and axis of oscillation and \(d* is the total distance between the \(\mathrm{cg}\) and the axis of oscillation (\(d* = \(h* in the illustrated roll inertia test setup).
+where \(h\) is the vertical distance between the \(\mathrm{cg}\) and axis of oscillation and \(d\) is the total distance between the \(\mathrm{cg}\) and the axis of oscillation (\(d\) = \(h\) in the illustrated roll inertia test setup).
 
 
 
@@ -509,21 +479,21 @@ Accomplish steps 1-3 as described for automatic recording case.
 
 4\. Use a stopwatch to time several oscillations and calculate *\omega_d* as before
 
-5\. Measure the spring's rotational stiffness (*K_o*)
+5\. Measure the spring's rotational stiffness (\(K_o\))
 
 6\. Approximate inertia using the damped frequency using
 
  
 
-7\. Use parallel axis theorem to correct *I_o* to a parallel axis
+7\. Use parallel axis theorem to correct \(I_o\) to a parallel axis
 
-passing through the *cg.*
+passing through the \(cg\).
 
 \* *
 
-8*.* Correct for effects of test hardware moment of inertia (\Delta*I_te~*).
+8*.* Correct for effects of test hardware moment of inertia (\Delta\(I_te\)).
 
-9\. To correct for errors in the *I_o* approximation, apply an \"additional mass correction\" (\Delta*I_am~*) which equates the flate plate area damping effect to additional inertia. This correction is detailed in ref. 7.5.3.
+9\. To correct for errors in the \(I_o\) approximation, apply an \"additional mass correction\" (\Delta\(I_am\)) which equates the flate plate area damping effect to additional inertia. This correction is detailed in ref. 7.5.3.
 
  
 
@@ -533,7 +503,7 @@ Combining steps 6-9 gives
 
  ![][07025]
 
-Above methods can also be used to determine *I_yb~* and *I_zb~*
+Above methods can also be used to determine \(I_yb\) and \(I_zb\)
 
  
 
@@ -541,7 +511,7 @@ Above methods can also be used to determine *I_yb~* and *I_zb~*
 
 
 
-** 7.4.4 Measuring Pitch Inertia, *I_yb~*** (spring oscillation method)
+** 7.4.4 Measuring Pitch Inertia, \(I_yb\)** (spring oscillation method)
 
 
 
@@ -549,7 +519,7 @@ Above methods can also be used to determine *I_yb~* and *I_zb~*
 
  
 
-2\. Attach spring perpendicular to line \(a*. Only one spring is required since the aircraft \(\mathrm{cg}\) is off-center. Spring must be stiff enough to hold the aircraft in equilibrium as well as provide a restoring moment during oscillations.
+2\. Attach spring perpendicular to line \(a\). Only one spring is required since the aircraft \(\mathrm{cg}\) is off-center. Spring must be stiff enough to hold the aircraft in equilibrium as well as provide a restoring moment during oscillations.
 
  
 
@@ -593,7 +563,7 @@ Above methods can also be used to determine *I_yb~* and *I_zb~*
 
  
 
-Repeat steps 3-12 and apply the moment of inertia equation to determine *I_yb~*
+Repeat steps 3-12 and apply the moment of inertia equation to determine \(I_yb\)
 
 
 
@@ -611,15 +581,15 @@ or, for an uninstrumented aircraft,
 
 
 
-** 7.4.5 Measuring Yaw Inertia, *I_zb~*** (spring oscillation method)
+** 7.4.5 Measuring Yaw Inertia, \(I_zb\)** (spring oscillation method)
 
 
 
 1\. Suspend aircraft as shown: fuselage reference line parallel with floor,
 
-*z-*body axis coincides with the oscillation axis (\(h* = \(d* = 0).
+*z-*body axis coincides with the oscillation axis (\(h\) = \(d\) = 0).
 
-For *I_zb~* test, set spring assembly tilt angle parallel to floor (*\delta *= 0).
+For \(I_zb\) test, set spring assembly tilt angle parallel to floor (*\delta *= 0).
 
  
 
@@ -671,7 +641,7 @@ If not possible to rig wing attach points in line with the \(\mathrm{cg}\), then
 
 €
 
-• Calculate *K_o* = \(k* cos *\phi   *where \(k* is the actual spring constant
+• Calculate \(K_o\) = \(k\) cos *\phi   *where \(k\) is the actual spring constant
 
  
 
@@ -711,7 +681,7 @@ If not possible to rig wing attach points in line with the \(\mathrm{cg}\), then
 
  
 
-Repeat steps 3-12 and apply the moment of inertia equation to determine *I_zb.\ ~*Note that distances \(h* and \(d* are zero for a properly suspended aircraft.
+Repeat steps 3-12 and apply the moment of inertia equation to determine \(I_zb\). Note that distances \(h\) and \(d\) are zero for a properly suspended aircraft.
 
  
 
@@ -733,7 +703,7 @@ or, for an uninstrumented aircraft,
 
 
 
-** 7.4.6 Measuring Axis of Inclination and *I_xz~***
+** 7.4.6 Measuring Axis of Inclination and \(I_xz\)**
 
 
 
@@ -741,7 +711,7 @@ or, for an uninstrumented aircraft,
 
  
 
-• *I_xz~* positive if *\epsilon* is positive.
+• \(I_xz\) positive if *\epsilon* is positive.
 
  
 
@@ -793,23 +763,23 @@ and
 
 ![][07042] 
 
-• If *\epsilon* (and therefore *I_xz\ ~*) is positive, then yawing to the right will
+• If *\epsilon* (and therefore \(I_xz\)) is positive, then yawing to the right will
 
 generate a left rolling moment.
 
  
 
-• If *\epsilon* and *I_xz~* are negative, a right yaw will generate a *right* moment.
+• If *\epsilon* and \(I_xz\) are negative, a right yaw will generate a *right* moment.
 
  
 
 
 
-** Measuring Axis of Inclination and *I_xz\ ~*(continued)**
+** Measuring Axis of Inclination and \(I_xz\) (continued)**
 
 
 
-1\. Determine *I_xz~* and *\epsilon* by repeating yaw experiment for different spring
+1\. Determine \(I_xz\) and *\epsilon* by repeating yaw experiment for different spring
 
 angles (\delta). Use instrumentation to note for each \delta.
 
@@ -869,7 +839,7 @@ produced by the springs completely counteracts the roll motion.
 
  
 
-![][07049]Note: Since the *I_xz~* test objective is to interpolate to a condition where equals zero, only the ratio is necessary
+![][07049]Note: Since the \(I_xz\) test objective is to interpolate to a condition where equals zero, only the ratio is necessary
 
 and the absolute magnitudes of the accelerations are not reuired. In other words, the roll acceleration sensitivity can be increased to allow for easier measurement of the ratio.
 
@@ -901,7 +871,7 @@ instrumentation limits.
 
  
 
-• If using a hand recorded stopwatch, best spring stiffness gives about one cycle per second (\(f* = 1).
+• If using a hand recorded stopwatch, best spring stiffness gives about one cycle per second (\(f\) = 1).
 
  
 
@@ -935,7 +905,7 @@ instrumentation limits.
 
 ![][07051] 
 
-2\. Measure pendulum length (\(l*), component mass (*m ),* and the period of oscillation (\(T*).
+2\. Measure pendulum length (\(l\)), component mass (*m ),* and the period of oscillation (\(T\)).
 
  
 
@@ -979,7 +949,7 @@ or
 
  
 
-• This effective length is the total radius of gyration *l_eff~* = *K_tot\ ~*
+• This effective length is the total radius of gyration \(l_eff\) = \(K_tot\ \)
 
  
 
