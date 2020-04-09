@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="axis-systems-and-transformations.html"/>
-<link rel="next" href="motionvibration-analysis.html"/>
+<link rel="next" href="motion-and-vibration-analysis.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -263,7 +263,7 @@
 <li class="chapter" data-level="7.4.8" data-path="mass-properties.html"><a href="mass-properties.html#swing-method"><i class="fa fa-check"></i><b>7.4.8</b> Swing Method</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="motionvibration-analysis.html"><a href="motionvibration-analysis.html"><i class="fa fa-check"></i><b>8</b> 8 Motion/Vibration Analysis**</a></li>
+<li class="chapter" data-level="8" data-path="motion-and-vibration-analysis.html"><a href="motion-and-vibration-analysis.html"><i class="fa fa-check"></i><b>8</b> Motion and Vibration Analysis</a></li>
 <li class="chapter" data-level="9" data-path="material-strength.html"><a href="material-strength.html"><i class="fa fa-check"></i><b>9</b> 9 Material Strength**</a></li>
 <li class="chapter" data-level="10" data-path="reciprocating-engines.html"><a href="reciprocating-engines.html"><i class="fa fa-check"></i><b>10</b> 10 Reciprocating Engines**</a></li>
 <li class="chapter" data-level="11" data-path="propellers.html"><a href="propellers.html"><i class="fa fa-check"></i><b>11</b> 11 Propellers**</a></li>
@@ -956,80 +956,55 @@ I_{zx} &amp;= I_{xz} \equiv \int zx dm \\
 <li><span class="math inline">\(y\)</span> = lateral distance between <span class="math inline">\(\mathrm{cg}\)</span> and aircraft x-axis.</li>
 <li><span class="math inline">\(z\)</span> = vertical distance between <span class="math inline">\(\mathrm{cg}\)</span> and aircraft x-axis.</li>
 </ul>
-<p> </p>
-<p> </p>
 </div>
 <div id="measuring-roll-inertia-i_x_b-spring-oscillation-method" class="section level3">
 <h3><span class="header-section-number">7.4.3</span> Measuring Roll Inertia, <span class="math inline">\(I_{x_b}\)</span> (spring oscillation method)</h3>
-<p>1. Balance aircraft on prism-like “knife edges” that support wooden</p>
-<p>cradles that conform to aircraft shape.</p>
-<p>2. Attach springs (tension springs illustrated here) so they are parallel to</p>
-<p>line <span class="math inline">\(a\)</span> as shown.</p>
-<p> </p>
-<p> </p>
+<ol style="list-style-type: decimal">
+<li>Balance aircraft on prism-like “knife edges” that support wooden cradles that conform to aircraft shape.</li>
+<li>Attach springs (tension springs illustrated here) so they are parallel to line <span class="math inline">\(a\)</span> as shown.</li>
+</ol>
 <p><img src="media/07/image24.svg" style="width:4.47917in;height:1.52847in" /> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
 <p><img src="media/07/image25.svg" style="width:4.45278in;height:1.69375in" /> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>3. Allow aircraft to oscillate freely in roll after a small disturbance.</p>
-<p>4. Use <strong>automatic recording</strong> to determine period of oscillations (<span class="math inline">\(T\)</span>).</p>
-<p>5. Calculate damped frequency as</p>
-<p><img src="media/07/image26.svg" style="width:0.62639in;height:0.42361in" /> </p>
-<p> </p>
-<p> </p>
-<p>6. Record peak magnitude of each oscillation.</p>
-<p>7. Calculate ζ using transient peak ratio method (see “Motion Analy sis,” Section 8 of this handbook).</p>
-<p>8. Calculate natural frequency as</p>
-<p><img src="media/07/image27.svg" style="width:0.90764in;height:0.50347in" /> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p><strong>Measuring Roll Inertia (continued)</strong></p>
-<p>9. Measure the spring’s stiffness (<span class="math inline">\(K_o\)</span>)</p>
-<p> </p>
-<p>10. Calculate inertia about oscillation axis (<span class="math inline">\(I_o\)</span>) as</p>
-<p> </p>
-<p> <img src="media/07/image28.svg" style="width:2.52917in;height:0.48958in" /><img src="media/07/image29.svg" style="width:0.63889in;height:0.51736in" /><img src="media/07/image30.svg" style="width:1.5in;height:0.375in" /></p>
-<p>11. Use parallel axis theorem to correct <span class="math inline">\(I_o\)</span> to a parallel axis passing through the <span class="math inline">\(cg\)</span>.</p>
-<p>12. Springs, cradles and attachments hardware will change the moment of inertia. Sum their total into a combined “test equipment inertia” (<span class="math inline">\(I_te\)</span>) and subtract this from the above result.</p>
-<p> </p>
+<ol start="3" style="list-style-type: decimal">
+<li>Allow aircraft to oscillate freely in roll after a small disturbance.</li>
+<li>Use <strong>automatic recording</strong> to determine period of oscillations (<span class="math inline">\(T\)</span>).</li>
+<li>Calculate damped frequency as</li>
+</ol>
+<p><span class="math display">\[ \omega_d = \frac{2\pi}{T} \]</span></p>
+<ol start="6" style="list-style-type: decimal">
+<li>Record peak magnitude of each oscillation.</li>
+<li>Calculate <span class="math inline">\(\zeta\)</span> using transient peak ratio method (see <a href="motion-and-vibration-analysis.html#motion-and-vibration-analysis">Motion and Vibration Analysis</a>).</li>
+<li>Calculate natural frequency as</li>
+</ol>
+<p><span class="math display">\[ \omega_n = \frac{\omega_d}{\sqrt{1 - \zeta^2}} \]</span></p>
+<ol start="9" style="list-style-type: decimal">
+<li>Measure the spring’s stiffness (<span class="math inline">\(K_0\)</span>)</li>
+<li>Calculate inertia about oscillation axis (<span class="math inline">\(I_0\)</span>) as</li>
+</ol>
+<p><span class="math display">\[ I_o = \frac{K_o}{\omega_n^2} \]</span></p>
+<ol start="11" style="list-style-type: decimal">
+<li>Use parallel axis theorem to correct <span class="math inline">\(I_o\)</span> to a parallel axis passing through the <span class="math inline">\(cg\)</span>.</li>
+<li>Springs, cradles and attachments hardware will change the moment of inertia. Sum their total into a combined “test equipment inertia” (<span class="math inline">\(I_{\mathrm{te}}\)</span>) and subtract this from the above result.</li>
+</ol>
 <p>Combining steps 10-12 gives the complete <strong>moment of inertia equation</strong></p>
-<p> </p>
-<p><img src="media/07/image31.svg" style="width:0.59722in;height:0.48333in" /> </p>
-<p> </p>
+<p><span class="math display">\[ I_{\mathrm{cg}} = \frac{K_o a^2 - mgh}{\omega_n^2} - md^2 - \Delta I_{\mathrm{te}} \]</span></p>
 <p>where <span class="math inline">\(h\)</span> is the vertical distance between the <span class="math inline">\(\mathrm{cg}\)</span> and axis of oscillation and <span class="math inline">\(d\)</span> is the total distance between the <span class="math inline">\(\mathrm{cg}\)</span> and the axis of oscillation (<span class="math inline">\(d\)</span> = <span class="math inline">\(h\)</span> in the illustrated roll inertia test setup).</p>
 <p><strong>If automatic recording is not available...</strong></p>
 <p>Accomplish steps 1-3 as described for automatic recording case.</p>
-<p>4. Use a stopwatch to time several oscillations and calculate *_d* as before</p>
-<p>5. Measure the spring’s rotational stiffness (<span class="math inline">\(K_o\)</span>)</p>
-<p>6. Approximate inertia using the damped frequency using</p>
-<p> </p>
-<p>7. Use parallel axis theorem to correct <span class="math inline">\(I_o\)</span> to a parallel axis</p>
-<p>passing through the <span class="math inline">\(cg\)</span>.</p>
-<p>* *</p>
-<p>8<em>.</em> Correct for effects of test hardware moment of inertia (<span class="math inline">\(I_te\)</span>).</p>
-<p>9. To correct for errors in the <span class="math inline">\(I_o\)</span> approximation, apply an "additional mass correction" (<span class="math inline">\(I_am\)</span>) which equates the flate plate area damping effect to additional inertia. This correction is detailed in ref. 7.5.3.</p>
-<p> </p>
-<p> </p>
+<ol start="4" style="list-style-type: decimal">
+<li>Use a stopwatch to time several oscillations and calculate <span class="math inline">\(\omega_d\)</span> as before</li>
+<li>Measure the spring’s rotational stiffness (<span class="math inline">\(K_o\)</span>)</li>
+<li>Approximate inertia using the damped frequency using</li>
+</ol>
+<p><span class="math display">\[ I_o \approx \frac{K_o}{\omega_d^2}  \]</span></p>
+<ol start="7" style="list-style-type: decimal">
+<li>Use parallel axis theorem to correct <span class="math inline">\(I_o\)</span> to a parallel axis passing through the <span class="math inline">\(cg\)</span>.</li>
+<li>Correct for effects of test hardware moment of inertia (<span class="math inline">\(I_{\mathrm{te}}\)</span>).</li>
+<li>To correct for errors in the <span class="math inline">\(I_o\)</span> approximation, apply an "additional mass correction" (<span class="math inline">\(I_{\mathrm{am}}\)</span>) which equates the flate plate area damping effect to additional inertia. This correction is detailed in ref. 7.5.3.</li>
+</ol>
 <p>Combining steps 6-9 gives</p>
-<p> <img src="media/07/image28.svg" style="width:2.52917in;height:0.48958in" /></p>
-<p>Above methods can also be used to determine <span class="math inline">\(I_yb\)</span> and <span class="math inline">\(I_zb\)</span></p>
-<p> </p>
+<p><span class="math display">\[ I_{\mathrm{cg}} = \frac{K_o a^2 - mgh}{\omega_d^2} - md^2 - \left(\Delta I_{\mathrm{te}} + \Delta I_{\mathrm{am}} \right) \]</span></p>
+<p>Above methods can also be used to determine <span class="math inline">\(I_{y_b}\)</span> and <span class="math inline">\(I_{z_b}\)</span></p>
 </div>
 <div id="measuring-pitch-inertia-i_y_b-spring-oscillation-method" class="section level3">
 <h3><span class="header-section-number">7.4.4</span> Measuring Pitch Inertia, <span class="math inline">\(I_{y_b}\)</span> (spring oscillation method)</h3>
@@ -1057,7 +1032,7 @@ I_{zx} &amp;= I_{xz} \equiv \int zx dm \\
 <p> </p>
 <p> </p>
 <p> </p>
-<p>Repeat steps 3-12 and apply the moment of inertia equation to determine <span class="math inline">\(I_yb\)</span></p>
+<p>Repeat steps 3-12 and apply the moment of inertia equation to determine <span class="math inline">\(I_{y_b}\)</span></p>
 <p>or, for an uninstrumented aircraft,</p>
 <p> *(?=*)</p>
 </div>
@@ -1065,7 +1040,7 @@ I_{zx} &amp;= I_{xz} \equiv \int zx dm \\
 <h3><span class="header-section-number">7.4.5</span> Measuring Yaw Inertia, <span class="math inline">\(I_{z_b}\)</span> (spring oscillation method)</h3>
 <p>1. Suspend aircraft as shown: fuselage reference line parallel with floor,</p>
 <p><em>z-</em>body axis coincides with the oscillation axis (<span class="math inline">\(h\)</span> = <span class="math inline">\(d\)</span> = 0).</p>
-<p>For <span class="math inline">\(I_zb\)</span> test, set spring assembly tilt angle parallel to floor (<em> </em>= 0).</p>
+<p>For <span class="math inline">\(I_{z_b}\)</span> test, set spring assembly tilt angle parallel to floor (<em> </em>= 0).</p>
 <p> </p>
 <p> </p>
 <p><img src="media/07/image36.svg" style="width:4.5in;height:2.57292in" /> </p>
@@ -1110,7 +1085,7 @@ I_{zx} &amp;= I_{xz} \equiv \int zx dm \\
 <p> </p>
 <p> </p>
 <p> </p>
-<p>Repeat steps 3-12 and apply the moment of inertia equation to determine <span class="math inline">\(I_zb\)</span>. Note that distances <span class="math inline">\(h\)</span> and <span class="math inline">\(d\)</span> are zero for a properly suspended aircraft.</p>
+<p>Repeat steps 3-12 and apply the moment of inertia equation to determine <span class="math inline">\(I_{z_b}\)</span>. Note that distances <span class="math inline">\(h\)</span> and <span class="math inline">\(d\)</span> are zero for a properly suspended aircraft.</p>
 <p> </p>
 <p> </p>
 <p><img src="media/07/image39.svg" style="width:1.36736in;height:0.48958in" /> </p>
@@ -1289,7 +1264,7 @@ I_{zx} &amp;= I_{xz} \equiv \int zx dm \\
         </div>
       </div>
 <a href="axis-systems-and-transformations.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="motionvibration-analysis.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="motion-and-vibration-analysis.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

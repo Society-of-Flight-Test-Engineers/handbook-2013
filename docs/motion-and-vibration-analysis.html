@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>19 19 - The Electromagnetic Spectrum** | Flight Test Engineering Reference Handbook</title>
-  <meta name="description" content="19 19 - The Electromagnetic Spectrum** | Flight Test Engineering Reference Handbook" />
+  <title>8 Motion and Vibration Analysis | Flight Test Engineering Reference Handbook</title>
+  <meta name="description" content="8 Motion and Vibration Analysis | Flight Test Engineering Reference Handbook" />
   <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="19 19 - The Electromagnetic Spectrum** | Flight Test Engineering Reference Handbook" />
+  <meta property="og:title" content="8 Motion and Vibration Analysis | Flight Test Engineering Reference Handbook" />
   <meta property="og:type" content="book" />
   
   <meta property="og:image" content="media/media/image1.jpg" />
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="19 19 - The Electromagnetic Spectrum** | Flight Test Engineering Reference Handbook" />
+  <meta name="twitter:title" content="8 Motion and Vibration Analysis | Flight Test Engineering Reference Handbook" />
   
   
   <meta name="twitter:image" content="media/media/image1.jpg" />
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="telemetry-control-room-and-radio-communications.html"/>
-<link rel="next" href="communication-systems-testing.html"/>
+<link rel="prev" href="mass-properties.html"/>
+<link rel="next" href="material-strength.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -300,231 +300,739 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="the-electromagnetic-spectrum" class="section level1">
-<h1><span class="header-section-number">19</span> 19 - The Electromagnetic Spectrum**</h1>
-<p><strong>19.1 Electromagnetic Waves</strong></p>
-<p>All energy in the universe radiates in waves. Figure 1 depicts an electromagnetic wave, characterized by an electric field vector (E) and a magnetic field vector (H) oscillating orthogonal to each other. The electromagnetic wave propagation direction is determined by the right-hand rule and crossing the electric field into the magnetic field as illustrated. The electromagnetic wavelength (λ) is the distance between two consecutive electric field peaks. The electromagnetic wave frequency (f or ν) is inversely proportional to its wavelength. The product of any electromagnetic radiation’s frequency and wavelength equals the speed of light (C=λν).</p>
-<p>.</p>
-<div class="figure">
-<img src="media/19/image1.jpeg" style="width:4.84043in;height:2.40625in" alt="" />
-<p class="caption">4-3</p>
-</div>
-<p><strong>Figure 1 - The Electromagnetic Spectrum</strong></p>
-<p><strong>19.2 The Electromagnetic Spectrum</strong></p>
-<p>Figure 2 illustrates several concepts related to the electromagnetic spectrum</p>
-<ul>
-<li><p>Size reference for various wavelengths.</p></li>
-<li><p>Numerical relation between wavelength (meters between peaks), wave number (peaks per cm), energy (electron volts), and frequency (Hz).</p></li>
-<li><p>Separate frequency bands identified within the overall spectrum.</p></li>
-<li><p>Common sources &amp; uses within frequency bands.</p></li>
-</ul>
+<div id="motion-and-vibration-analysis" class="section level1">
+<h1><span class="header-section-number">8</span> Motion and Vibration Analysis</h1>
+<p>8.1 Recurring Abbreviations</p>
+<p>8.2 First Order Motion</p>
 <blockquote>
-<p>Many aircraft and spacecraft systems operate within limited regions of the electromagnetic spectrum. Common examples include radar, electro-optical sensors, radios, data links, electronic warfare, and navigation systems.</p>
+<p>8.2.1 Elements of First Order Motion</p>
+<p>8.2.2 First Order Motion Descriptive Parameters</p>
+<p>8.2.3 Determining Descriptive Parameter <em>τ</em></p>
 </blockquote>
-<p><img src="media/19/image2.jpeg" style="width:9.27749in;height:6.9492in" /></p>
-<p><strong>19.3 Radio Frequency Electromagnetic Radiation</strong></p>
-<p>One of the most heavily used regions of the electromagnetic spectrum is the radio frequency or RF spectrum, from ~3 kilohertz to ~ 300 gigahertz. The RF Spectrum encompasses an array of telecommunications devices including radios, television, satellite communications, data links, radio-navigation aids, and radar. Table 1 shows how the RF Spectrum is subdivided into frequency bands.</p>
-<table>
-<tbody>
-<tr class="odd">
-<td align="left"><strong>Band Designation</strong></td>
-<td align="left"><strong>Label</strong></td>
-<td align="left"><strong>Frequency Spread</strong></td>
-</tr>
-<tr class="even">
-<td align="left">Extremely Low Frequency</td>
-<td align="left">ELF</td>
-<td align="left">3 - 30 Hz</td>
-</tr>
-<tr class="odd">
-<td align="left">Super Low Frequency</td>
-<td align="left">SLF</td>
-<td align="left">30 - 300 Hz</td>
-</tr>
-<tr class="even">
-<td align="left">Ultra Low (Voice) Frequency</td>
-<td align="left">ULF or VF</td>
-<td align="left">300 Hz - 3 KHz</td>
-</tr>
-<tr class="odd">
-<td align="left">Very Low Frequency</td>
-<td align="left">VLF</td>
-<td align="left">3 - 30 KHz</td>
-</tr>
-<tr class="even">
-<td align="left">Low Frequency</td>
-<td align="left">LF</td>
-<td align="left">30 - 300 KHz</td>
-</tr>
-<tr class="odd">
-<td align="left">Medium Frequency</td>
-<td align="left">MF</td>
-<td align="left">300 KHz - 3 MHz</td>
-</tr>
-<tr class="even">
-<td align="left">High Frequency</td>
-<td align="left">HF</td>
-<td align="left">3 - 30 MHz</td>
-</tr>
-<tr class="odd">
-<td align="left">Very High Frequency</td>
-<td align="left">VHF</td>
-<td align="left">30 - 300 MHz</td>
-</tr>
-<tr class="even">
-<td align="left">Ultra High Frequency</td>
-<td align="left">UHF</td>
-<td align="left">300 MHz - 3 GHz</td>
-</tr>
-<tr class="odd">
-<td align="left">Super High Frequency</td>
-<td align="left">SHF</td>
-<td align="left">3 - 30 GHz</td>
-</tr>
-<tr class="even">
-<td align="left">Extremely High Frequency</td>
-<td align="left">EHF</td>
-<td align="left">30 - 300 GHz</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Table 1 - Radio Frequency Band Designations</strong></p>
-<p>Depending on the type of RF system, additional subdivisions of the bands also exist. Table 2 applies to radar systems.</p>
-<table style="width:100%;">
-<colgroup>
-<col width="18%" />
-<col width="33%" />
-<col width="15%" />
-<col width="13%" />
-<col width="18%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p><strong>IEEE US</strong></p>
-(Old RADAR Designation)</th>
-<th><strong>Origin</strong></th>
-<th><strong>Frequency Range</strong></th>
-<th><strong>Wavelength</strong></th>
-<th><p><strong>NATO, US ECM</strong></p>
-(New RADAR Designation)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>W</td>
-<td>W follows V in alphabet</td>
-<td>75-111 GHz</td>
-<td>400 mm-270 mm</td>
-<td>M (60-100 GHz)</td>
-</tr>
-<tr class="even">
-<td>V</td>
-<td>Very Short</td>
-<td>40-75 GHz</td>
-<td>700 mm – 400 mm</td>
-<td>L (40-60 GHz)</td>
-</tr>
-<tr class="odd">
-<td>K<sub>A</sub></td>
-<td>Kurtz (above)</td>
-<td>26-40 GHz</td>
-<td>1.1 cm - 0.7 cm</td>
-<td><div class="line-block">K (20-40 GHz)</div></td>
-</tr>
-<tr class="even">
-<td>K</td>
-<td>Kurtz</td>
-<td>18-26 GHz</td>
-<td>1.6 cm – 1.1 cm</td>
-<td>J (10-20 GHz)</td>
-</tr>
-<tr class="odd">
-<td>K<sub>U</sub></td>
-<td>Kurtz (under)</td>
-<td>12.4-18 GHz</td>
-<td>2.5 cm – 1.6 cm</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>X</td>
-<td>WWII fire control - as an “X” for crosshairs</td>
-<td>8-12.4 GHz</td>
-<td>3.7 cm -2.5 cm</td>
-<td>I (8-10 GHz)</td>
-</tr>
-<tr class="odd">
-<td>C</td>
-<td>Compromise between S and X</td>
-<td>4-8 GHz</td>
-<td>7.5 cm -3.7 cm</td>
-<td><p>H (6-8 GHz)</p>
-<p>G (4-6 GHz)</p></td>
-</tr>
-<tr class="even">
-<td>S</td>
-<td>Short Wave</td>
-<td>2-4 GHz</td>
-<td>15 cm – 7.5 cm</td>
-<td><p>F (3-4 GHz)</p>
-<p>E (2-3 GHz)</p></td>
-</tr>
-<tr class="odd">
-<td>L</td>
-<td>Long Wave</td>
-<td>1-2 GHz</td>
-<td>30 cm – 15 cm</td>
-<td>D (1-2 GHz)</td>
-</tr>
-<tr class="even">
-<td>UHF</td>
-<td></td>
-<td>0.3-1 GHz</td>
-<td><div class="line-block">&lt;1 m – 30 cm</div></td>
-<td><div class="line-block">C ( 0.5-1 GHz)</div></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Table 2 - Radar Frequency Band Designations</strong></p>
-<p>Electromagnetic wave propagation does not stop at national boundaries. Most governments regulate radio frequency band use via <strong>frequency</strong> or <strong>spectrum allocation</strong>. For technical and economic reasons, governments try to harmonize and standardize RF band allocation. A number of forums and standards bodies address frequency allocation. The International Telecommunication Union (ITU) is the United Nations agency for information and communication technologies. The ITU allocates global radio spectrum and satellite orbits and develops technical standards that ensure networks and technologies seamlessly interconnect. There are numerous users and spectrum allocation is complicated to implement and regulate. Figure 3 illustrates the United States frequency allocations.</p>
-<p><span class="math display">\[Editor&#39;s Note: Figure 3 is highly detailed and not legible in either 8.5 x 11&quot; or 11 x 17&quot; format. Posters may be purchased via &lt;http://bookstore.gpo.gov/products/sku/003-000-00694-8&gt;. A high resolution online version is available at &lt;http://www.ntia.doc.gov/files/ntia/publications/spectrum_wall_chart_aug2011.pdf&gt; \]</span></p>
-<p><img src="media/19/image3.jpeg" style="width:9.25068in;height:5.90597in" /></p>
-<p><strong>19.4 Optical Frequency Electromagnetic Radiation</strong></p>
-<p>Optical frequency electromagnetic radiation includes ultraviolet (UV), visible, and infrared (IR) light ranging from about 0.01 microns (µm) out to about 1000 µm wavelength. These comprise the optical spectrum as shown in Figure 4.</p>
-<p>Optical Spectrum</p>
-<p><img src="media/19/image4.png" style="width:6.5in;height:3.47778in" /></p>
-<p><strong>Figure 4 - The Optical Spectrum and the Visible Spectrum</strong></p>
-<p>Just as the RF spectrum can be subdivided into various special bands, Table 3 shows bands in the optical spectrum. The visible, near infrared (NIR), mid wave IR (MWIR), and long wave IR (LWIR) bands are most commonly used for airborne electro-optical sensor systems. All bands can be useful, depending on the specific mission and operational requirements. <span class="math display">\[Editor&#39;s Note: Some band nomenclature and boundaries depend on author and text. SFTE has not established standards on this subject\]</span></p>
-<p>The most familiar example of electromagnetic radiation is the light spectrum humans see. Different colors of visible light have different wavelengths, ranging from violet at the shorter wavelengths (0.4 µm) to red at the longer wavelengths (0.7 µm). Aerospace vehicles employ many visible light sensor systems. Visible light sensors provide useful and highly recognizable images, but logically enough, do not work well in poor visibility or at night without some sort of artificial illumination or image intensification.</p>
-<p><img src="media/19/image5.png" style="width:6.33303in;height:4.26563in" /></p>
-<p><strong>Table 3 - Optical Spectrum Bands</strong></p>
-<p>Infrared radiation refers to the optical spectrum between ~0.7 µm and ~1000 µm. Infrared radiation is popularly known as "heat or thermal radiation", but light and electromagnetic waves of any frequency will heat surfaces that absorb them. Infrared light from the sun accounts for ~49% of earth heating, the rest is by visible light that is absorbed then re-radiated at longer wavelengths. Objects at room temperature emit radiation mostly concentrated in the 8 to 25 µm region.</p>
-<p>Infrared sensors are useful in numerous civil and military remote sensing applications. At wavelengths beyond about 14 microns, infrared radiation is not useful for most airborne remote sensing applications due to the earth’s atmosphere attenuation. This is especially true in hot and humid atmospheric conditions with extreme infrared radiation attenuation.</p>
-<p><strong>19.5 Atmospheric Transmission Windows</strong></p>
-<p>The sun is the earth’s major source of natural energy across the electromagnetic spectrum and its radiation bombards the atmosphere constantly. The earth's atmosphere protects its life from excessive exposure to a range of higher energy waves such as Gamma rays, x-rays, and some ultraviolet waves. These are "ionizing" radiation because they have sufficiently high energy to knock electrons out of atoms, alter atoms and molecules, and damage organic cells. Figure 5 shows atmospheric opacity (blocking) across a wide wavelength spectrum.</p>
-<p><img src="media/19/image6.png" style="width:6.75in;height:3.18938in" alt="http://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Atmospheric\_electromagnetic\_opacity.svg/2000px-Atmospheric\_electromagnetic\_opacity.svg.png" /><strong>Figure 5 - Atmospheric Opacity vs. Wavelength</strong></p>
-<p>The opposite of opacity is transmission. The earth’s atmosphere absorbs, reflects, refracts, or allows electromagnetic radiation transmission. Suspended particles such as dust and raindrops can reflect and refract radiation. Figure 6 shows electromagnetic radiation transmission through the atmosphere across the visible and infrared wavelength spectrum (subset of the Figure 5 spectrum). Some radiation bands, including visible light and some infrared pass through the earth’s atmosphere with little to no attenuation. Such “atmospheric windows” or “transmission windows” allow infrared remote sensing from standoff distances. The bottom scale of Figure 6 shows which molecules are primary absorbers at various infrared radiation wavelengths. The most important absorbers are water vapor (H<sup>2</sup>O), carbon dioxide (CO<sup>2</sup>), and ozone (O<sup>3</sup>). Flight testers should understand wavelengths, absorption, refraction and atmospheric windows when designing tests to evaluate sensors.</p>
-<p><img src="media/19/image7.png" style="width:5.86458in;height:3.2563in" /></p>
-<p><strong>Figure 6 - Infrared Atmospheric Transmission Windows</strong></p>
-<p>19.6 References**</p>
-<p>19.1 Thermal Imaging Systems by J.M. Lloyd, C 1975, Plenum Press, New York &amp; London, 451 pages.</p>
-<p>19.2 Infrared Systems Engineering by Richard D. Hudson Jr., C  1969, John Wiley &amp; Sons Inc. 642 Pages.</p>
-<p>19.3 Electro-Optical Systems Analysis 3rd edition, C 1985, Electro-Optical Research Company, Los Angeles, 356 pages.</p>
-<p>19.4 Light, The Mystery of the Universe by Khalil Seyrafi C 1986 by Electro-Optical Research Company, Los Angeles, 240 Pages.</p>
-<p>19.5 Test and Evaluation of Infrared Imaging Systems 2nd edition by Gerald Holst, C 1998, JCD Publishing, Winter Park, Fl., 422 pages.</p>
-<p>19.6 Electro-Optical Imaging Systems Performance by Gerald Holst, C 1995, JCD Publishing, Winter Park, Fl., 468 pages.</p>
-<p>19.7 Infrared Technology and Fundamentals by Spiro &amp; Schlessinger, C 1989, Marcel Dekker Inc.</p>
-<p>19.8 The Infrared and Electro-Optical Systems Handbook, C 1993, The Infrared Information and Analysis Center and the Society of Photo-Optical Instrumentation Engineers (SPIE), 8 Volumes.</p>
-<p>10.9 Electro-Optical Surveillance by Gene Adcock, C 1999, CCS Security Publishing Ltd.</p>
-<p><strong>NOTES</strong></p>
+<p>8.3 Second Order Motion</p>
+<blockquote>
+<p>8.3.1 Elements of Second Order Motion</p>
+<p>8.3.2 Second Order Motion Descriptive Parameters</p>
+<p>8.3.3 Determining Descriptive Parameters</p>
+</blockquote>
+<p>8.4 Complex Plane</p>
+<p>8.5 Parameter Conversions</p>
+<p>8.6 Vibration Nomograph</p>
+<p>8.7 References</p>
+<p><strong>8.1 Recurring Abbreviations</strong></p>
+<div id="c-1x-number-of-cycles-to-achieve-1x-amplitude" class="section level6">
+<h6><span class="header-section-number">8.0.0.0.0.1</span> <em>C <sub>1/x</sub></em> number of cycles to achieve 1/<em>x</em> amplitude</h6>
+</div>
+<div id="d-damping" class="section level6">
+<h6><span class="header-section-number">8.0.0.0.0.2</span> <em>D</em> damping</h6>
+<p><em>D<sub>1</sub>,D<sub>2</sub></em> peak-to-peak displacement (subsequent)</p>
+<p><em>FV</em> final value</p>
+<p><em>F(t) forcing function</em></p>
+<p><em>f</em> frequency, cycles/sec = ω/(2π)</p>
+<p><em>HCAR</em> half cycle amplitude ratio (i.e., <em>x<sub>2</sub>/x<sub>1</sub></em>, <em>x<sub>3</sub>/x<sub>2</sub></em>, etc.)</p>
+<p><em>Im</em> imaginary axis</p>
+<p><em>M</em> mass</p>
+<p><em>MP</em> peak overshoot</p>
+<p><em>Re</em> real axis</p>
+<p><em>rms</em> root mean square</p>
+<p><em>s</em><sub>1</sub>, <em>s</em><sub>2</sub> equation roots of second order</p>
+<p><em>T</em> period = 1/<em>f</em> = 2π/ω<sub>d</sub> (seconds)</p>
+<p><em>T<sub>d</sub></em> delay time (i.e., time to 50% of FV)</p>
+<p><em>T<sub>r</sub></em> rise time (i.e., time from 10% to 90% of FV)</p>
+<p><em>T<sub>p</sub></em> time to peak amplitude</p>
+<p><em>TPR</em> transient peak ratio</p>
+<p><em>T<sub>s</sub></em> settling time (time to settle within <em>x</em>% of FV)</p>
+<p><em>T <sub>1/2</sub></em> time to achieve 1/<em>x</em> amplitude</p>
+<p><em>x</em> displacement</p>
+<p><em>x<sub>1</sub>,x<sub>2</sub></em> peak displacements (subsequent)</p>
+<p><em>v</em> velocity</p>
+<p><em>v<sub>o</sub></em> peak velocity</p>
+<p><em>ε =ζω<sub>n</sub> /ω<sub>d</sub></em> = ζ/<span class="math display">\[1-ζ^2^\]</span>^ 0.5^</p>
+<p><em>φ</em> phase lag (radians)</p>
+<p><em>ζ</em> damping coefficient (non-dimensional)</p>
+<p><em>σ</em> damping rate <em>=ζω<sub>n</sub></em> = 1/<em>τ</em></p>
+<p><em>τ</em> time constant =1/<em>ζω<sub>n</sub></em></p>
+<p>ω  frequency, radians/sec</p>
+<p><em>ω<sub>d</sub></em> damped natural frequency (rad/sec)</p>
+<p><em>ω<sub>n</sub></em> natural frequency (rad/sec)</p>
+<p><strong>8.2 First Order Motion</strong></p>
+<p>Found in classical aircraft roll and spiral modes. Named first-order because the motions are described by mathematics using the first derivative of a parameter.</p>
+<p><strong>8.2.1 Elements of First Order Motion</strong></p>
+<p>Mechanical analogy contains elements of mass, damping and</p>
+<p>sometimes a forcing function.</p>
+<p>Example: Determine the vertical velocity of a diver as she hits the water at 10 ft/s (assume constant body position &amp; neutral buoyancy)</p>
+<p>Summing vertical forces gives</p>
+<p><img src="media/08/image1.svg" /> </p>
+<p>Since <em>D</em> &amp; <em>M</em> are constant</p>
+<p> </p>
+<p><img src="media/08/image2.svg" /><img src="media/08/image3.png" /></p>
+<p>Apply initial condition</p>
+<p> </p>
+<p><img src="media/08/image4.png" /></p>
+<p>Plot response over time</p>
+<p> </p>
+<p><img src="media/08/image5.png" /></p>
+<p>• Exponential rate of decay described by <em>D/M</em> ratio</p>
+<p> </p>
+<p>• Example 2: Diver with 20 lb submerged weight releases from zero velocity at top of pool (quiescent condition).</p>
+<p>Solve using Laplace analysis methods:</p>
+<p> </p>
+<p><img src="media/08/image6.png" /></p>
+<p><img src="media/08/image7.png" /></p>
+<p><img src="media/08/image8.png" /></p>
+<p>This “force/damping” ratio is merely a scaling factor for the steady state.</p>
+<p> </p>
+<p><img src="media/08/image9.png" /></p>
+<p>• Several methods can be used to describe the quickness of convergence toward steady state (i.e., time to 99.999 % of <em>V<sub>ss</sub></em>, time to 1/2 <em>V<sub>ss</sub></em>).</p>
+<p>• By convention, we use a % that directly reflects the exponent.</p>
+<p>• Establish a time constant <em>τ</em> based on <em>D/M</em>.</p>
+<p> </p>
+<p><img src="media/08/image10.png" /></p>
+<p><strong>8.2.2 First Order Motion Descriptive Parameters</strong></p>
+<p><img src="media/08/image11.png" /></p>
+<p><img src="media/08/image12.png" /></p>
+<p>when <em>t</em> = 0.6931τ: <em>x = e</em>^− 0.6931^ = 0.5 (time to half amplitude)</p>
+<p>when <em>t</em> = τ: <em>x = e</em><sup>−1</sup> = 0.37</p>
+<p>when <em>t</em> = 3τ     <em>x = e</em><sup>−3</sup> = 0.05</p>
+<p>when <em>t</em> = 4τ: <em>x = e</em><sup>−4</sup> = 0.02</p>
+<p>If exponent &gt; 0, then motion is divergent.</p>
+<p><img src="media/08/image13.svg" /><img src="media/08/image14.png" /></p>
+<p><img src="media/08/image15.png" /></p>
+<p>• <em>τ </em>again describes the exponential rate of divergence.</p>
+<p>• By convention, the “time to double amplitude” (<em>t<sub>2</sub></em>) is usually applied as the evaluation metric.</p>
+<p>• <em>x</em><sub>(t2)</sub> = 2<em>x</em><sub>(0)</sub> where <em>x</em><sub>(0)</sub> = <em>c<sup>m</sup></em><sup>0</sup></p>
+<p> </p>
+<p><img src="media/08/image16.png" /></p>
+<p><img src="media/08/image17.png" /></p>
+<p><strong>8.2.3 Determining <em>τ</em> from Step Input Time History</strong></p>
+<p><strong>Method #1</strong></p>
+<p>τ = time to reach 0.632 <em>x<sub>ss</sub></em></p>
+<p><img src="media/08/image18.png" /></p>
+<p><strong>Method #2</strong></p>
+<p><img src="media/08/image19.png" /></p>
+<p><img src="media/08/image20.png" /></p>
+<p><img src="media/08/image21.png" /></p>
+<p><strong>Method #3</strong></p>
+<p> </p>
+<p>1. Pick any time <em>t<sub>1</sub></em>.</p>
+<p>2. Draw tangent at <em>t<sub>1</sub></em>.</p>
+<p>3. Note <em>t<sub>2</sub></em> where tangent intercepts x<sub>ss</sub>.</p>
+<p>4. <em>τ</em> = <em>t<sub>2</sub></em>-<em>t<sub>1</sub></em></p>
+<p> </p>
+<p><img src="media/08/image22.png" /></p>
+<p><strong>Method #4</strong> When <em>X<sub>SS</sub></em> is unknown use</p>
+<p> </p>
+<p><img src="media/08/image23.png" /></p>
+<p><img src="media/08/image24.png" /></p>
+<p><strong>Method #5</strong> When <em>Xss</em> is known, use</p>
+<p> </p>
+<p><img src="media/08/image25.png" /></p>
+<p><strong>Linearity check:</strong></p>
+<p>Note parameter change between even time increments.</p>
+<p> </p>
+<p>Plot parameter changes vs elapsed time on semi-log scale</p>
+<p> </p>
+<p><img src="media/08/image26.png" /></p>
+<p>Slope of line equals <em>τ</em></p>
+<p> </p>
+<p>Dp</p>
+<p><img src="media/08/image27.png" /></p>
+<p><strong>8.3 Second Order Motion</strong></p>
+<p>Found in classical aircraft phugoid, Dutch roll and short period modes as well as noise filter and vibration testing. Named second-order because the motions are described by mathematics using the second derivative of a parameter.</p>
+<p><strong>8.3.1 Elements of Second Order Motion</strong></p>
+<p>Mechanical systems have elements of spring, mass, and usually damping. Forcing functions can be included (see illustration).</p>
+<p><img src="media/08/image28.png" /></p>
+<p><em>K</em> = spring stiffness (<em>F</em>/<em>x</em>)</p>
+<p><em>x</em> = displacement from equilibrium</p>
+<p><em>M</em> = mass</p>
+<p><em>F</em><sub>(<em>t</em>)</sub> = forcing function</p>
+<p><em>D</em> = damping</p>
+<p> </p>
+</div>
+<div id="section" class="section level4">
+<h4><span class="header-section-number">8.0.0.1</span> </h4>
+</div>
+<div id="section-1" class="section level4">
+<h4><span class="header-section-number">8.0.0.2</span> </h4>
+</div>
+<div id="section-2" class="section level4">
+<h4><span class="header-section-number">8.0.0.3</span> </h4>
+</div>
+<div id="natural-character-is-observed-when-system-is-allowed-to-move-with-no-external-input-ft-0" class="section level4">
+<h4><span class="header-section-number">8.0.0.4</span> Natural character is observed when system is allowed to move with no external input <span class="math display">\[*F*(*t*) = 0\]</span></h4>
+</div>
+<div id="section-3" class="section level4">
+<h4><span class="header-section-number">8.0.0.5</span> </h4>
+</div>
+<div id="section-4" class="section level4">
+<h4><span class="header-section-number">8.0.0.6</span> <img src="media/08/image29.png" /></h4>
+</div>
+<div id="section-5" class="section level4">
+<h4><span class="header-section-number">8.0.0.7</span> </h4>
+</div>
+<div id="apply-operator-technique" class="section level4">
+<h4><span class="header-section-number">8.0.0.8</span> Apply operator technique:</h4>
+</div>
+<div id="section-6" class="section level4">
+<h4><span class="header-section-number">8.0.0.9</span> </h4>
+</div>
+<div id="section-7" class="section level4">
+<h4><span class="header-section-number">8.0.0.10</span> <img src="media/08/image30.png" /></h4>
+<p>Divide out <em><sup>st</sup></em>, since it never equals zero, the characteristic equation remains:</p>
+<p><img src="media/08/image31.png" /></p>
+<p>The values of <em>s</em> that satisfy this equation are called the roots</p>
+<p><img src="media/08/image32.png" /></p>
+<p>Solve for the roots using the quadratic equation</p>
+<p><img src="media/08/image33.png" /></p>
+<p><strong>8.3.2 Second Order Motion Descriptive Parameters</strong></p>
+<p> </p>
+<p>Solution (<em>x</em>) calculated as</p>
+<p> </p>
+<p> <img src="media/08/image34.png" /></p>
+<p> </p>
+<p> </p>
+<p>Apply Euler’s identity for complex conjugate roots</p>
+<p> </p>
+<p> <img src="media/08/image35.png" /></p>
+<p> </p>
+<p>• φ defines the <strong>phase shift</strong>.</p>
+<p>•  <em>A</em> defines the <strong>initial amplitude</strong>.</p>
+<p>•  The real part of the root <span class="math display">\[*D*/2*M*\]</span> defines the <strong>envelope</strong> of the motion.</p>
+<p>•  The imaginary part of the root identifies the <strong>damped frequency</strong></p>
+<p>of the oscillations, ω<em><sub>d</sub></em> (rad/sec).</p>
+<p> </p>
+<p><img src="media/08/image36.png" /></p>
+<p> </p>
+<p> <img src="media/08/image37.png" /></p>
+<p>• If damping is reduced to <em>D</em> = 0 then only <span class="math display">\[*K/M*\]</span><sup>1/2</sup> remains.</p>
+<p>This is the undamped or <strong>“natural” frequency</strong> (ω<sub>η</sub>).</p>
+<p> </p>
+<p> <img src="media/08/image38.png" /></p>
+<p> </p>
+<p>•  If</p>
+<p><img src="media/08/image39.png" /></p>
+<p>then <em>D</em> is conisidered to be critical <span class="math display">\[just enough to prevent oscillations\]</span></p>
+<p> </p>
+<p> <img src="media/08/image40.png" /></p>
+<p> </p>
+<p> </p>
+<p>• For oscillatory motion, actual system damping is typically expressed as a fraction critical damping. Define <strong>damping ratio</strong> as</p>
+<p> </p>
+<p> <img src="media/08/image41.png" /></p>
+<p><img src="media/08/image42.png" /></p>
+<p><img src="media/08/image43.png" /></p>
+<p><img src="media/08/image44.png" /></p>
+<p><img src="media/08/image45.png" /></p>
+<p><img src="media/08/image46.png" /></p>
+<p>Possible Solutions:</p>
+<p> <img src="media/08/image47.png" /></p>
+<p>• The various combination of <em>K</em>, <em>M</em>, and <em>D</em> and their effects on system response can be related to damping ratio <em>ζ</em> as follows:</p>
+<p> </p>
+<p>   ζ &gt; 1 Real &amp; unequal roots exponential, convergent</p>
+<p> </p>
+<p>  ζ =  ± 1 Real &amp; equal roots exponential, conv or div</p>
+<p> 0 &lt; ζ &lt; 1  Complex pair roots sinusoidal, convergent</p>
+<p> </p>
+<p>     ζ = 0 Imaginary pair roots sinusoidal, neutral</p>
+<p>€</p>
+<p>−1 &lt; ζ &lt; 0 Complex pair roots sinusoidal, divergent</p>
+<p> </p>
+<p> ζ &lt; − 1 Real &amp; unequal roots exponential, divergent</p>
+<p> </p>
+<p><img src="media/08/image48.svg" /><img src="media/08/image49.png" /></p>
+<p><strong>Damping ratio effect on second order system</strong></p>
+<p>  </p>
+<p> </p>
+<p>Response of various second order systems to an impulse input.</p>
+<p> </p>
+<p> </p>
+<p>Second-order systems are oscillatory if</p>
+<p>-1 &gt; <em>ζ</em> &gt; 1.</p>
+<p> </p>
+<p> </p>
+<p>Motion typically</p>
+<p>described by</p>
+<p><em>ω<sub>n</sub></em> and <em>ζ</em></p>
+<p> </p>
+<p> </p>
+<p><em>T</em>, <em>ω<sub>d</sub></em>, <em>ω<sub>n</sub></em> and <em>ζ </em>are linked such that knowledge of any two will yield</p>
+<p>the other two.</p>
+<p> </p>
+<p> <img src="media/08/image50.png" /></p>
+<p> </p>
+<p><img src="media/08/image51.png" /></p>
+<p><img src="media/08/image52.png" /></p>
+<p>2nd order system response to <strong>unit step input</strong> for <strong>underdamped systems</strong></p>
+<p><strong> </strong></p>
+<p>(0 &gt; <em>ζ</em> &gt; 1)</p>
+<p> </p>
+<p><img src="media/08/image53.png" /></p>
+<p><strong>Decay rates (for 0 &lt; ζ &lt;1) and Useful Insights</strong></p>
+<p> </p>
+<p><img src="media/08/image54.png" /></p>
+<p><strong>8.3.3 Determining Descriptive Parameters</strong></p>
+<p><strong> </strong></p>
+<p>Time domain metrics</p>
+<p> </p>
+<p> <img src="media/08/image55.png" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>Peak Value, <em>MP</em>: largest value</p>
+<p> </p>
+<p>Final Value, <em>FV</em>: steady state value</p>
+<p> </p>
+<p>Delay Time, <em>T<sub>d</sub></em>: 50% of final value</p>
+<p> </p>
+<p>Rise Time, <em>T<sub>r</sub></em>: 10% - 90% of FV</p>
+<p> </p>
+<p>Peak Time, <em>T<sub>p</sub></em>: time to MP</p>
+<p> </p>
+<p>Settling Time, <em>T<sub>s</sub></em>: time to reach some defined % of final value</p>
+<p> </p>
+<p>% Overshoot, <em>PO</em>:</p>
+<p> </p>
+<p><img src="media/08/image56.png" /></p>
+<p><em>target value = unity</em></p>
+<p> </p>
+<p><strong>Method #1</strong> Basic Analysis</p>
+<p> </p>
+<p> </p>
+<p>Note</p>
+<p> <img src="media/08/image57.png" /></p>
+<p><img src="media/08/image58.png" /></p>
+<p><img src="media/08/image59.png" /></p>
+<p><img src="media/08/image60.png" /></p>
+<p><img src="media/08/image61.png" /></p>
+<p>Easily measured values: can use any points on envelope</p>
+<p> </p>
+<p><img src="media/08/image62.png" /></p>
+<p><img src="media/08/image63.png" /></p>
+<p><img src="media/08/image64.png" /></p>
+<p><img src="media/08/image65.png" /></p>
+<p><img src="media/08/image66.png" /></p>
+<p><strong>Method #2</strong> Transient Peak Ratio Analysis</p>
+<p> </p>
+<p>1) Measure either <em>D</em> or <em>x</em> distances as shown.</p>
+<p> </p>
+<p> <img src="media/08/image67.png" /></p>
+<p> </p>
+<p>Example Calculation</p>
+<p> </p>
+<p> <img src="media/08/image68.png" /></p>
+<p> </p>
+<p> <img src="media/08/image69.png" /></p>
+<p> </p>
+<p> Average TPR = 0.8409</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>2) Note ratio of adjacent peak values (transient peak ratios).</p>
+<p>3) Average several TPRs.</p>
+<p>4) Use equation to find <em>ζ</em>:</p>
+<p> </p>
+<p> <img src="media/08/image70.png" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>4a) Can use</p>
+<p><em>D<sub>1</sub>/D<sub>2</sub></em> or <em>x<sub>1</sub>/x<sub>2</sub></em></p>
+<p>ratios in above equation.</p>
+<p> </p>
+<p>4b) In lieu of equation, use</p>
+<p>adjacent look-up curve to find <em>ζ</em>.</p>
+<p> </p>
+<p>4c) Time ratio method works better with heavy damping.</p>
+<p> </p>
+<p> </p>
+<p><img src="media/08/image71.png" /></p>
+<p><strong>Method #3</strong> Multiple <em>TPR</em> Analysis</p>
+<p> </p>
+<p><img src="media/08/image72.png" /></p>
+<p>To determine damping ratio</p>
+<blockquote>
+<p>~  Use the <em>m</em> = 1 line when comparing the next ratio.</p>
+<p> ~  Use the <em>m</em> = 2 line for comparing every other</p>
+<p>peak ratio.</p>
+</blockquote>
+<p> </p>
+<p> </p>
+<p> <img src="media/08/image73.png" /></p>
+<p> <img src="media/08/image74.png" /></p>
+<p><strong>Method #4</strong> Time Ratio Analysis</p>
+<p> </p>
+<p>• If the damping ratio is between 0.5 and 1.0 (two or less overshoots), then the time ratio method can be used to determine frequency and damping ratio. Select a peak where the response if free.</p>
+<p> </p>
+<p>• Note times for amplitude to reduce to 73.6%, 40.9%, and 19.9% of the peak value.</p>
+<p> </p>
+<p> </p>
+<p> <img src="media/08/image75.png" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>•  Form the time ratios <em>t<sub>2</sub>/t<sub>1</sub></em>, <em>t<sub>3</sub>/t<sub>1</sub></em>, and <span class="math display">\[*t~3~-t~2~*\]</span>/<span class="math display">\[*t~2~-t~1~*\]</span></p>
+<p> </p>
+<p>•  Enter the next figure at the time ratio side to find ζ for each time ratio.</p>
+<p> </p>
+<p>•  This technique is valid if the system transfer function has no zeros.</p>
+<p> </p>
+<p> </p>
+<p>• If recorded measurements are not available and if the number of overshoots is between 2 and 6, then</p>
+<p> </p>
+<p><img src="media/08/image76.png" /></p>
+<p><img src="media/08/image77.png" /></p>
+<p><strong>Frequency Time Products (wnDt3), (wnDt2), (wnDt1)</strong></p>
+<p><img src="media/08/image78.png" /></p>
+<p><img src="media/08/image79.png" /></p>
+<p><img src="media/08/image80.png" /></p>
+<p>• Calculation of <em>ζ</em> somewhat sensitive to ∆<em>x</em><sub>1</sub> measurement</p>
+<p><sub> </sub></p>
+<p>•  ω<em><sub>n</sub></em> = <img src="media/08/image81.png" /> not too sensitive to ∆<em>x</em><sub>1</sub></p>
+<p><sub> </sub></p>
+<p>• Best if 0.5 ≤ ζ ≤ 1.4</p>
+<p> </p>
+<p>• Initial overshoot approximation: let (step inputs only)</p>
+<p> </p>
+<p><img src="media/08/image82.png" /></p>
+<p><img src="media/08/image83.png" /></p>
+<p><strong>Method #6</strong> Separated Real Root Analysis (when ζ&gt;1)</p>
+<p> </p>
+<p>1) Determine several steady state ∆<em>X</em>(<em>t</em>) values from time history</p>
+<p> </p>
+<p> </p>
+<p> <img src="media/08/image84.png" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>2) Plot ∆<em>X</em> vs <em>t</em> on semi-log scale</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> <img src="media/08/image85.png" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>3) After the faster root has decayed, the semi-log plot will be a straight line whose slope determines the slower root (1/τ<sub>1</sub>)</p>
+<p> </p>
+<p> </p>
+<p> <img src="media/08/image86.png" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>4) Determine by extrapolating the straight line portion of the response to establish the values</p>
+<p> </p>
+<p><img src="media/08/image87.png" /></p>
+<p><img src="media/08/image88.png" /></p>
+<p><img src="media/08/image89.png" /></p>
+<p><img src="media/08/image90.png" /></p>
+<p><strong>Method #7</strong> Modified Separated Real Root Analysis</p>
+<p> </p>
+<p>•  Method #6 is sensitive to errors in determining steady state values</p>
+<p>•  Alternate method is to avoid need for steady state value</p>
+<p>•  Define ∆<em>X</em>(<em>t</em>) ≡ <span class="math display">\[ *x*(*t*+ ∆*T*) -*x*(*t*)\]</span> where ∆<em>T</em> is a time increment</p>
+<p>1) From time history, measure ∆<em>X</em> values according to definition</p>
+<p>€<img src="media/08/image91.png" /></p>
+<p>€</p>
+<p>∆T = (t<sub>1</sub>-t<sub>o</sub>) = (t<sub>2</sub>-t<sub>1</sub>), etc.</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>2) Plot ∆<em>X</em> (<em>t</em>) vs time on semi-log scale</p>
+<p> </p>
+<p> </p>
+<p><img src="media/08/image92.png" /></p>
+<p>3) Use previous method to determine roots and characteristics</p>
+<p> </p>
+<p>• Gross error will result if ζ is actually &lt;1</p>
+<p> </p>
+<p>• If ζ is near 1, check results using time ratio or slope method</p>
+<p> </p>
+<p><strong>Method # 8</strong> Frequency Sweep Analysis</p>
+<p>Determine <em>ω<sub>n</sub></em> and <em>ζ</em> using sinusoidal inputs.</p>
+<p>• This “forced response” method most useful when damping is heavy.</p>
+<p>• For a second order system, output/input amplitude ratio and phase shift are a function of input frequency.</p>
+<p> </p>
+<p> </p>
+<p> <img src="media/08/image93.png" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><sub> </sub></p>
+<p>• Amplitude ratio peaks at “resonant” frequency, ω<em><sub>r.</sub></em></p>
+<p>• Resonant peaks increase as <em>ζ</em> decreases below 0.707.</p>
+<p>• Peak amplitude ratio “rolls off” as <em>ζ</em> increases above 0.707.</p>
+<p>• Resonant frequency approaches natural fre</p>
+<p>quency as damping decreases:</p>
+<p>ω<em><sub>r</sub></em> = ω<em><sub>n</sub></em><span class="math display">\[1 − 2*ζ*^2^\]</span>^ 0.5^</p>
+<p>• Phase shift = 90° if excited at ω<em><sub>n</sub></em>, regardless of damping ratio.</p>
+<p> ζ = 0.5(ω<sub>2</sub> – ω<sub>1</sub>)/ω<sub>n</sub></p>
+<p> </p>
+<p><img src="media/08/image94.png" /></p>
+<p>Frequency Sweep Analysis (continued)</p>
+<p>1. Using sinusoidal inputs excite system @ ω near ω<em><sub>n</sub></em></p>
+<p> </p>
+<p>2. Measure phase lag (<em>φ</em>) of</p>
+<p> </p>
+<p> <img src="media/08/image95.png" /></p>
+<p> </p>
+<p> <img src="media/08/image96.png" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>3. Excite system @ another ω near ω<em><sub>n</sub></em></p>
+<p> </p>
+<p>4. Again Measure phase lag <em>φ</em></p>
+<p><em>€</em></p>
+<p><em>€</em><img src="media/08/image97.png" /></p>
+<p><em>€</em></p>
+<p><em>€</em></p>
+<p><em>€</em></p>
+<p><em>€</em></p>
+<p><em>€</em></p>
+<p><em>€</em></p>
+<p>5. Plot φ vs input frequency</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>6. ω<em><sub>n</sub></em> occurs at φ = 90°</p>
+<p> </p>
+<p><img src="media/08/image98.png" /></p>
+<p><strong>Linearity Check /Accuracy Improvement</strong></p>
+<p><strong> </strong></p>
+<p>1) On semi-log scale, plot ratio of initial amplitude to subsequent peak</p>
+<p>amplitudes at each half cycle (points <em>a-e</em>).</p>
+<p> </p>
+<p>2) Fair straight line (<em>f</em>) through these points.</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> <img src="media/08/image99.png" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>3) Draw line (<em>g</em>) parallel (<em>f</em>) intercepting the ordinate at <em>TPR</em>=1</p>
+<p> </p>
+<p>4) Average <em>TPR</em> occurs at <em>T</em>/2 on line <em>g</em></p>
+<p> </p>
+<p><strong>8.4 Complex Plane</strong></p>
+<p><strong> </strong></p>
+<p>Begin with sum of forces in spring-mass-damper example</p>
+<p> </p>
+<p> </p>
+<p> Apply quadratic equation to solve for roots</p>
+<p> </p>
+<p> <img src="media/08/image100.png" /></p>
+<p> </p>
+<p> </p>
+<p> Recall previous analogy</p>
+<p> </p>
+<p><img src="media/08/image101.png" /></p>
+<p> </p>
+<p> <img src="media/08/image102.png" /></p>
+<p> </p>
+<p> <img src="media/08/image103.png" /></p>
+<p> </p>
+<p> <img src="media/08/image104.png" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>Location of Roots on Complex Plane</p>
+<blockquote>
+<p>1. Line of constant damping ratio ζ − varying <em>C</em><sub>1/<em>n</em></sub> and ω<em><sub>n</sub></em></p>
+<p>2. Line of constant ω<em><sub>n</sub></em> − varying ζ</p>
+<p>3. Line of constant ω<em><sub>d</sub></em> and period (<em>T</em>)</p>
+<p>4. Line of constant real part (ζω<em><sub>n</sub></em>) and time to damp (<em>T</em><sub>1/<em>n</em></sub>)</p>
+</blockquote>
+<p> </p>
+<p><img src="media/08/image105.png" /></p>
+<p><em>σ</em> = ζω<em><sub>n</sub></em> = 1/<em>τ</em> = damping rate</p>
+<p> </p>
+<p><img src="media/08/image106.png" /></p>
+<p><strong>Sample second order root plots and corresponding time histories</strong></p>
+<p> </p>
+<p>(time histories represent trends only)</p>
+<p> </p>
+<p> </p>
+<p>Examples of “two real roots”</p>
+<p> </p>
+<p><img src="media/08/image107.png" /></p>
+<p><strong>More sample second order root plots and corresponding time histories</strong></p>
+<p> </p>
+<p>Examples of “imaginary roots”</p>
+<p> </p>
+<p> </p>
+<p><img src="media/08/image108.png" /></p>
+<p><strong>8.5 Parameter Conversions</strong></p>
+<p> </p>
+<p>For conversion of accelerometer measurements.</p>
+<p>• For magnitude conversion substitute 2<em>πf</em> for <em>jω</em>.</p>
+<p>• Assumes linear spectra.</p>
+<p>• Conversion factor should be squared for power spectra.</p>
+<p> </p>
+<p><em>Acceleration to velocity</em></p>
+<blockquote>
+<p><span class="underline">to convert from to multiply by</span></p>
+<p><em>ft/s<sup>2</sup> rms ft/s rms</em> 1<em>/jω</em></p>
+<p><em>ft/s<sup>2</sup> rms in/s rms</em> 12<em>/jω</em></p>
+<p><em>ft/s<sup>2</sup> rms in/s peak</em> 16.97/<em>jω</em></p>
+<p><em>g rms in/s rms</em> 386<em>/jω</em></p>
+<p><em>g rms in/s peak</em> 545.8/<em>jω</em></p>
+<p><em>m/s<sup>2</sup> rms mm/s rms</em> 1000/<em>jω</em></p>
+<p><em>m/s<sup>2</sup> rms mm/s peak</em> 1414<em>/jω</em></p>
+<p><em>g rms mm/s rms</em> 9806<em>/jω</em></p>
+<p><em>g rms mm/s peak</em> 13865.7/<em>jω</em></p>
+<p>* *</p>
+</blockquote>
+<p><em>Acceleration to Displacement</em></p>
+<blockquote>
+<p><span class="underline">to convert from to multiply by</span></p>
+<p><em>ft/s<sup>2</sup> rms in rms</em> 12/(jω)<sup>2</sup></p>
+<p><em>ft/s<sup>2</sup> rms in p-p</em> 33.9/(jω)<sup>2</sup></p>
+<p><em>ft/s<sup>2</sup> rms mil p-p</em> 33.9 <em>E</em> 03/(jω)<sup>2</sup></p>
+<p><em>g rms in rms</em> 386/(jω)<sup>2</sup></p>
+<p><em>g rms in p-p</em> 1091.6 <em>E</em> 03/(jω)<sup>2</sup></p>
+<p><em>g rms mil p-p</em> 1091.6 <em>E</em> 03/(jω)<sup>2</sup></p>
+<p><em>m/s<sup>2</sup> rms mm rms</em> 1000/(jω)<sup>2</sup></p>
+<p><em>m/s<sup>2</sup> rms mm p-p</em> 2828/(jω)<sup>2</sup></p>
+<p><em>m/s<sup>2</sup> rms</em> micron <em>p-p</em> 2828 <em>E</em> 03/(jω)<sup>2</sup></p>
+</blockquote>
+<p>* *</p>
+<p><em>E</em>= engineering exponent (x10 __)</p>
+<p><em>g</em> = 32.174 ft/sec2</p>
+<p><em>in</em>= inches</p>
+<p><em>mil</em> = thousandths of an inch</p>
+<p><em>mm</em> = milimeters</p>
+<p><em>p-p</em> = peak-to-peak</p>
+<p><em>rms</em> = root mean square</p>
+<p> </p>
+<p><strong>8.6 Vibration Nomographs</strong></p>
+<p><strong>Vibration Nomograph equations</strong></p>
+<p> </p>
+<p><strong>For British</strong> <span class="math display">\[V in inches/sec\]</span>, <span class="math display">\[d in inches\]</span></p>
+<p> </p>
+<p><em>V =</em> 386<em>g /</em> 2π<em>f</em></p>
+<p> </p>
+<p><em>d</em> = 386<em>g</em> / (2π<em>f</em>)<sup>2</sup></p>
+<p> </p>
+<p>where 386 = earth's gravitational pull <span class="math display">\[in/sec^2^\]</span></p>
+<p> </p>
+<p> </p>
+<p><strong>For metric</strong> <span class="math display">\[V in mm/sec\]</span> , <span class="math display">\[d in mm\]</span></p>
+<p> </p>
+<p><em>V =</em> 9800<em>g /</em> 2π<em>f</em></p>
+<p> </p>
+<p><em>d</em> = 9800<em>g</em> / (2π<em>f</em>)<sup>2</sup></p>
+<p>where 9800 = earth's gravitational pull <span class="math display">\[mm/sec^2^\]</span></p>
+<p> </p>
+<p><strong>Nomograph - British Units</strong></p>
+<p> </p>
+<p><img src="media/08/image109.png" /></p>
+<p><strong>Nomograph - Metric Units</strong></p>
+<p> </p>
+<p><img src="media/08/image110.png" /></p>
+<p><strong>8.7 References</strong></p>
+<p>8.7.1 Lawless, Alan R., <em>Math and Physics for Flight Testers</em>, “Chapter 9, Motion Analysis,” National Test Pilot School, Mojave CA, 1999.</p>
+<p>8.7.2 Ward, Don, <em>Introduction to Flight Testing</em>, Texas A&amp;M, Elsevier, 1993.</p>
+<p>8.7.3 Lang, George F., <em>Understanding Vibration Measurements</em>,</p>
+<p>Application Note 9, Rockland Scientific Corporation, Rockleigh, New Jersey, December 1978.</p>
+<p>8.7.4 <em>The Fundamentals of Modal Testing</em>, Application Note 243-3,</p>
+<p>Hewlett-Packard Company,</p>
+<div id="additional-reading" class="section level7">
+<p class="heading"><span class="header-section-number">8.0.0.10.0.0.1</span> Additional Reading</p>
+<p>Hartog, J.P. Den, <em>Mechanical Vibrations</em>, Dover Publications, New York, New York, 1984.</p>
+<p>Jacobsen, Ludik S. and Ayre, Robert S., <em>Engineering Vibrations</em>, McGraw-Hill Book Company, New York, New York, 1958.</p>
+<p>Meirovitch, Leonard, <em>Elements of Vibration Analysis</em>, McGraw-Hill Book Company, New York, New York, 1986.</p>
+<p>Meirovitch, Leonard, <em>Analytical Methods in Vibrations</em>, Macmillan Publishing Company, New York, New York, 1967.</p>
+<p>Myklestad, N.O., <em>Vibration Analysis</em>, McGraw-Hill Book</p>
+<p>Company, New York, New York, 1944.</p>
 
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="telemetry-control-room-and-radio-communications.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="communication-systems-testing.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="mass-properties.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="material-strength.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

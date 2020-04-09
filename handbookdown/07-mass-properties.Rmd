@@ -271,159 +271,59 @@ where
 * \(y\) = lateral distance between \(\mathrm{cg}\) and aircraft x-axis.
 * \(z\) = vertical distance between \(\mathrm{cg}\) and aircraft x-axis.
 
- 
-
- 
-
 ### Measuring Roll Inertia, \(I_{x_b}\) (spring oscillation method)
-
-
-
-1\. Balance aircraft on prism-like "knife edges" that support wooden
-
-cradles that conform to aircraft shape.
-
-2\. Attach springs (tension springs illustrated here) so they are parallel to
-
-line \(a\) as shown.
-
- 
-
- 
+1. Balance aircraft on prism-like "knife edges" that support wooden cradles that conform to aircraft shape.
+1. Attach springs (tension springs illustrated here) so they are parallel to line \(a\) as shown.
 
 ![][07021] 
 
- 
-
- 
-
- 
-
- 
-
 ![][07022] 
 
- 
+3. Allow aircraft to oscillate freely in roll after a small disturbance.
+1. Use **automatic recording** to determine period of oscillations (\(T\)).
+1. Calculate damped frequency as
 
- 
+\[ \omega_d = \frac{2\pi}{T} \]
 
- 
+6. Record peak magnitude of each oscillation.
+1. Calculate \(\zeta\) using transient peak ratio method (see [Motion and Vibration Analysis]).
+1. Calculate natural frequency as
 
- 
+\[ \omega_n = \frac{\omega_d}{\sqrt{1 - \zeta^2}} \]
 
- 
+9. Measure the spring's stiffness (\(K_0\))
+1. Calculate inertia about oscillation axis (\(I_0\)) as
 
- 
+\[ I_o = \frac{K_o}{\omega_n^2} \]
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-3\. Allow aircraft to oscillate freely in roll after a small disturbance.
-
-4\. Use **automatic recording** to determine period of oscillations (\(T\)).
-
-5\. Calculate damped frequency as
-
-![][07023] 
-
- 
-
- 
-
-6\. Record peak magnitude of each oscillation.
-
-7\. Calculate ζ using transient peak ratio method (see "Motion Analy sis," Section 8 of this handbook).
-
-8\. Calculate natural frequency as
-
-![][07024] 
-
- 
-
- 
-
- 
-
-**Measuring Roll Inertia (continued)**
-
-
-
-9\. Measure the spring's stiffness (\(K_o\))
-
- 
-
-10\. Calculate inertia about oscillation axis (\(I_o\)) as
-
- 
-
- ![][07025]![][07026]![][07027]
-
-11\. Use parallel axis theorem to correct \(I_o\) to a parallel axis passing through the \(cg\).
-
-12\. Springs, cradles and attachments hardware will change the moment of inertia. Sum their total into a combined "test equipment inertia" (\Delta\(I_te\)) and subtract this from the above result.
-
- 
+11. Use parallel axis theorem to correct \(I_o\) to a parallel axis passing through the \(cg\).
+1. Springs, cradles and attachments hardware will change the moment of inertia. Sum their total into a combined "test equipment inertia" (\Delta\(I_{\mathrm{te}}\)) and subtract this from the above result.
 
 Combining steps 10-12 gives the complete **moment of inertia equation**
 
- 
-
-![][07028] 
-
- 
+\[ I_{\mathrm{cg}} = \frac{K_o a^2 - mgh}{\omega_n^2} - md^2 - \Delta I_{\mathrm{te}} \]
 
 where \(h\) is the vertical distance between the \(\mathrm{cg}\) and axis of oscillation and \(d\) is the total distance between the \(\mathrm{cg}\) and the axis of oscillation (\(d\) = \(h\) in the illustrated roll inertia test setup).
-
-
 
 **If automatic recording is not available\...**
 
 Accomplish steps 1-3 as described for automatic recording case.
 
-4\. Use a stopwatch to time several oscillations and calculate *\omega_d* as before
+4. Use a stopwatch to time several oscillations and calculate \(\omega_d\) as before
+1. Measure the spring's rotational stiffness (\(K_o\))
+1. Approximate inertia using the damped frequency using
 
-5\. Measure the spring's rotational stiffness (\(K_o\))
+\[ I_o \approx \frac{K_o}{\omega_d^2}  \]
 
-6\. Approximate inertia using the damped frequency using
-
- 
-
-7\. Use parallel axis theorem to correct \(I_o\) to a parallel axis
-
-passing through the \(cg\).
-
-\* *
-
-8*.* Correct for effects of test hardware moment of inertia (\Delta\(I_te\)).
-
-9\. To correct for errors in the \(I_o\) approximation, apply an \"additional mass correction\" (\Delta\(I_am\)) which equates the flate plate area damping effect to additional inertia. This correction is detailed in ref. 7.5.3.
-
- 
-
- 
+7. Use parallel axis theorem to correct \(I_o\) to a parallel axis passing through the \(cg\).
+1. Correct for effects of test hardware moment of inertia (\Delta\(I_{\mathrm{te}}\)).
+1. To correct for errors in the \(I_o\) approximation, apply an \"additional mass correction\" (\Delta\(I_{\mathrm{am}}\)) which equates the flate plate area damping effect to additional inertia. This correction is detailed in ref. 7.5.3.
 
 Combining steps 6-9 gives
 
- ![][07025]
+\[ I_{\mathrm{cg}} = \frac{K_o a^2 - mgh}{\omega_d^2} - md^2 - \left(\Delta I_{\mathrm{te}} + \Delta I_{\mathrm{am}} \right) \]
 
-Above methods can also be used to determine \(I_yb\) and \(I_zb\)
-
- 
-
-
-
-
+Above methods can also be used to determine \(I_{y_b}\) and \(I_{z_b}\)
 
 ### Measuring Pitch Inertia, \(I_{y_b}\) (spring oscillation method)
 
@@ -477,7 +377,7 @@ Above methods can also be used to determine \(I_yb\) and \(I_zb\)
 
  
 
-Repeat steps 3-12 and apply the moment of inertia equation to determine \(I_yb\)
+Repeat steps 3-12 and apply the moment of inertia equation to determine \(I_{y_b}\)
 
 
 
@@ -503,7 +403,7 @@ or, for an uninstrumented aircraft,
 
 *z-*body axis coincides with the oscillation axis (\(h\) = \(d\) = 0).
 
-For \(I_zb\) test, set spring assembly tilt angle parallel to floor (*\delta *= 0).
+For \(I_{z_b}\) test, set spring assembly tilt angle parallel to floor (*\delta *= 0).
 
  
 
@@ -595,7 +495,7 @@ If not possible to rig wing attach points in line with the \(\mathrm{cg}\), then
 
  
 
-Repeat steps 3-12 and apply the moment of inertia equation to determine \(I_zb\). Note that distances \(h\) and \(d\) are zero for a properly suspended aircraft.
+Repeat steps 3-12 and apply the moment of inertia equation to determine \(I_{z_b}\). Note that distances \(h\) and \(d\) are zero for a properly suspended aircraft.
 
  
 
