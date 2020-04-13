@@ -181,13 +181,13 @@ The change in nose wheel force can be written as
 
 The moment of inertia about any axis of a body is the summation of the product of every element's mass and distance squared. Moments of inertia represent the resistance to rotational momentum changes.
 
-![][07010] 
+![][07010]
 
 \[
 \begin{align}
-I_{x_b} &= \int \left( y^2 + z^2 \right) dm \\
-I_{y_b} &= \int \left( x^2 + z^2 \right) dm \\
-I_{z_b} &= \int \left( x^2 + y^2 \right) dm \\
+I_{x_b} &\equiv \int \left( y^2 + z^2 \right) dm \\
+I_{y_b} &\equiv \int \left( x^2 + z^2 \right) dm \\
+I_{z_b} &\equiv \int \left( x^2 + y^2 \right) dm \\
 \end{align}
 \]
 
@@ -316,8 +316,8 @@ Accomplish steps 1-3 as described for automatic recording case.
 \[ I_o \approx \frac{K_o}{\omega_d^2}  \]
 
 7. Use parallel axis theorem to correct \(I_o\) to a parallel axis passing through the \(cg\).
-1. Correct for effects of test hardware moment of inertia (\Delta\(I_{\mathrm{te}}\)).
-1. To correct for errors in the \(I_o\) approximation, apply an \"additional mass correction\" (\Delta\(I_{\mathrm{am}}\)) which equates the flate plate area damping effect to additional inertia. This correction is detailed in ref. 7.5.3.
+1. Correct for effects of test hardware moment of inertia (\(\Delta I_{\mathrm{te}}\)).
+1. To correct for errors in the \(I_o\) approximation, apply an \"additional mass correction\" (\(\Delta I_{\mathrm{am}}\)) which equates the flate plate area damping effect to additional inertia. This correction is detailed in ref. 7.5.3.
 
 Combining steps 6-9 gives
 
@@ -327,72 +327,20 @@ Above methods can also be used to determine \(I_{y_b}\) and \(I_{z_b}\)
 
 ### Measuring Pitch Inertia, \(I_{y_b}\) (spring oscillation method)
 
+1. Balance aircraft on knife edges as shown.
+1. Attach spring perpendicular to line \(a\). Only one spring is required since the aircraft \(\mathrm{cg}\) is off-center. Spring must be stiff enough to hold the aircraft in equilibrium as well as provide a restoring moment during oscillations.
 
+![][07029]
 
-1\. Balance aircraft on knife edges as shown.
-
- 
-
-2\. Attach spring perpendicular to line \(a\). Only one spring is required since the aircraft \(\mathrm{cg}\) is off-center. Spring must be stiff enough to hold the aircraft in equilibrium as well as provide a restoring moment during oscillations.
-
- 
-
- 
-
- ![][07029]
-
- 
-
- 
-
- 
-
- 
-
- ![][07030]
-
- 
-
- 
-
- 
-
- 
-
- 
-
- ![][07031]![][07032]
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
+![][07030]
 
 Repeat steps 3-12 and apply the moment of inertia equation to determine \(I_{y_b}\)
 
-
-
-
-
-
-
-
+\[ I_{\mathrm{cg}} = \frac{K_o a^2 - mgh}{\omega_n^2} - md^2 - \Delta I_{\mathrm{te}} \]
 
 or, for an uninstrumented aircraft,
 
- \*(?=\D{1}\*)
-
-
-
+\[ I_{\mathrm{cg}} = \frac{K_o a^2 - mgh}{\omega_d^2} - md^2 - \left(\Delta I_{\mathrm{te}} + \Delta I_{\mathrm{am}} \right) \]
 
 
 ### Measuring Yaw Inertia, \(I_{z_b}\) (spring oscillation method)
