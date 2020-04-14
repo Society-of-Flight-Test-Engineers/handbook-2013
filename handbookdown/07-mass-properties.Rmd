@@ -380,8 +380,7 @@ or, for an uninstrumented aircraft,
 
 \[ 
 \begin{align}
-L &= I_x \dot{p} - I_{xz} \left( \dot{r} + pq \right) + \left( I_z - I_y \right) qr \\
-&\text{and} \\
+L &= I_x \dot{p} - I_{xz} \left( \dot{r} + pq \right) + \left( I_z - I_y \right) qr \text{and} \\
 N &= I_z \dot{r} - I_{xz} \left( \dot{p} - qr \right) + \left( I_y - I_x \right) pq \\
 \end{align}
 \]
@@ -390,8 +389,7 @@ N &= I_z \dot{r} - I_{xz} \left( \dot{p} - qr \right) + \left( I_y - I_x \right)
 
 \[ 
 \begin{align}
-L &= I_x \dot{p} - I_{xz} \dot{r} \\
-&\text{and} \\
+L &= I_x \dot{p} - I_{xz} \dot{r} \text{and} \\
 N &=  I_z \dot{r} - I_{xz} \dot{p} \\
 \end{align}
 \]
@@ -419,55 +417,16 @@ Note: Since the \(I_{xz}\) test objective is to interpolate to a condition where
 
 ### Guidelines for Spring Oscillation Method
 
- 
+* Use only small magnitude oscillations.
+* Keep size and radius of knife edges as small as practical.
+* Springs are typically linear except around zero load. Best results occur if springs are pre-loaded.
+* Choose spring stiffness so oscillation frequency will be within instrumentation limits.
+* If using a hand recorded stopwatch, best spring stiffness gives about one cycle per second (\(f = 1\)).
+* Estimate the desired spring rate using
 
- 
+\[ k = \frac{ \left( I_{\mathrm{cg}} + md^2 \right) \left( 2 \pi f \right)^2 + hmg}{a^2} \]
 
-• Use only small magnitude oscillations
-
- 
-
-• Keep size and radius of knife edges as small as practical.
-
- 
-
-• Springs are typically linear except around zero load. Best results
-
-occur if springs are pre-loaded.
-
- 
-
-• Choose spring stiffness so oscillation frequency will be within
-
-instrumentation limits.
-
- 
-
-• If using a hand recorded stopwatch, best spring stiffness gives about one cycle per second (\(f\) = 1).
-
- 
-
-∗ Estimate the desired spring rate using
-
- 
-
- ![][07050]
-
- 
-
- 
-
- 
-
-• The purpose of instrumentation is to provide a means for measuring frequency and magnitude. Any of several parameters will be sufficient, including angular displacement, rate or acceleration; or linear acceleration.
-
- 
-
-
-
-
-
-
+* The purpose of instrumentation is to provide a means for measuring frequency and magnitude. Any of several parameters will be sufficient, including angular displacement, rate or acceleration, or linear acceleration.
 
 ### Swing Method
 
