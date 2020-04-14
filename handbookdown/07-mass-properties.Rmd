@@ -342,128 +342,29 @@ or, for an uninstrumented aircraft,
 
 \[ I_{\mathrm{cg}} = \frac{K_o a^2 - mgh}{\omega_d^2} - md^2 - \left(\Delta I_{\mathrm{te}} + \Delta I_{\mathrm{am}} \right) \]
 
-
 ### Measuring Yaw Inertia, \(I_{z_b}\) (spring oscillation method)
 
-
-
-1\. Suspend aircraft as shown: fuselage reference line parallel with floor,
-
-*z-*body axis coincides with the oscillation axis (\(h\) = \(d\) = 0).
-
-For \(I_{z_b}\) test, set spring assembly tilt angle parallel to floor (*\delta *= 0).
-
- 
-
- 
+1. Suspend aircraft as shown: fuselage reference line parallel with floor, \(z\)-body axis coincides with the oscillation axis (\(h = d = 0\)). For \(I_{z_b}\) test, set spring assembly tilt angle parallel to floor (\(\delta = 0\)).
 
 ![][07033] 
 
- 
+2. Ideal case is where the wing attach points are in line with the aircraft \(\mathrm{cg}\) as shown. Springs are perpendicular to the AB line and are parallel.
 
- 
+![][07034]
 
- 
+If not possible to rig wing attach points in line with the \(\mathrm{cg}\), then keep the springs parallel to each other and measure the angle \(\phi\).  
 
- 
+• Calculate \(K_o = k \cos{\phi}\), where \(k\) is the actual spring constant
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-![][07034]2. Ideal case is where the wing attach points are in line with the aircraft \(\mathrm{cg}\) as shown. Springs are perpendicular to the AB line and are parallel.
-
- 
-
- 
-
-** Measuring Yaw Inertia (continued)**
-
-
-
-If not possible to rig wing attach points in line with the \(\mathrm{cg}\), then keep the springs parallel to each other and measure the angle \phi.  
-
-€
-
-• Calculate \(K_o\) = \(k\) cos *\phi   *where \(k\) is the actual spring constant
-
- 
-
- 
-
- 
-
- 
-
- 
-
- ![][07035]
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
+![][07035]
 
 Repeat steps 3-12 and apply the moment of inertia equation to determine \(I_{z_b}\). Note that distances \(h\) and \(d\) are zero for a properly suspended aircraft.
 
- 
-
- 
-
-![][07036] 
-
- 
-
- 
+\[ I_{\mathrm{cg}} = \frac{K_o a^2 - mgh}{\omega_n^2} - md^2 - \Delta I_{\mathrm{te}} \]
 
 or, for an uninstrumented aircraft,
 
- 
-
- 
-
-![][07037]
-
-
+\[ I_{\mathrm{cg}} = \frac{K_o a^2 - mgh}{\omega_d^2} - md^2 - \left(\Delta I_{\mathrm{te}} + \Delta I_{\mathrm{am}} \right) \]
 
 ### Measuring Axis of Inclination and \(I_xz\)
 
