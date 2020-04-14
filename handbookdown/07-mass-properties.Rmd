@@ -366,147 +366,56 @@ or, for an uninstrumented aircraft,
 
 \[ I_{\mathrm{cg}} = \frac{K_o a^2 - mgh}{\omega_d^2} - md^2 - \left(\Delta I_{\mathrm{te}} + \Delta I_{\mathrm{am}} \right) \]
 
-### Measuring Axis of Inclination and \(I_xz\)
+### Measuring Axis of Inclination and \(I_{xz}\)
 
+<!-- FIXME The inconsistency in unordered and ordered lists is disruptive -->
+<!-- FIXME The inconsistency in narrative and nonnarrative content is disruptive -->
 
+* Inclination of principle axis (\(\varepsilon\)) is positive if it lies in the \(+xz\) plane as shown.
+* \(I_{xz}\) positive if \(\varepsilon\) is positive.
 
-• Inclination of principle axis (*\epsilon*) is positive if it lies in the +*xz* plane as shown.
+![][07038]
 
- 
+* From equations of motion
 
-• \(I_xz\) positive if *\epsilon* is positive.
+\[ 
+\begin{align}
+L &= I_x \dot{p} - I_{xz} \left( \dot{r} + pq \right) + \left( I_z - I_y \right) qr \\
+&\text{and} \\
+N &= I_z \dot{r} - I_{xz} \left( \dot{p} - qr \right) + \left( I_y - I_x \right) pq \\
+\end{align}
+\]
 
- 
+* When forcing small motions about only the yaw axis, \(pq\) and \(qr\) are negligible, giving
 
- 
+\[ 
+\begin{align}
+L &= I_x \dot{p} - I_{xz} \dot{r} \\
+&\text{and} \\
+N &=  I_z \dot{r} - I_{xz} \dot{p} \\
+\end{align}
+\]
 
- 
+* If \(\varepsilon\) (and therefore \(I_{xz}\)) is positive, then yawing to the right will generate a left rolling moment.
+* If \(\varepsilon\) and \(I_{xz}\) are negative, a right yaw will generate a *right* moment.
 
- ![][07038]
+<!-- FIXME "Use instrumentation to note for each delta" ??? -->
+1. Determine \(I_{xz}\) and \(\varepsilon\) by repeating yaw experiment for different spring angles (\(\delta\)). Use instrumentation to note for each \(\delta\).
+1. Graphically determine the angle \(\delta_0\) at which the restoring vector produced by the springs completely counteracts the roll motion.
 
- 
+Plot \(\tan{\delta}\) vs \(\frac{\dot{p}}{\dot{r}} \) as shown.
+![][07044] 
 
- 
+3. Determine the point where \(\frac{\dot{p}}{\dot{r}} \) equals zero. This occurs at \( \tan{\delta_0} \).
+1. Calculate the product of inertia using
 
- 
+\[ I_{xz} = I_z \tan{\delta_0} \]
 
- 
+5. Calculate the inclination of the principle axis using
 
- 
+\[ \tan{2\varepsilon} = \frac{2I_{xz}}{I_{z_b} - I_{x_b}} \]
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-![][07039]•  From equations of motion
-
- 
-
-and
-
-![][07040]
-
-• When forcing small motions about only the yaw axis, *pq* and *qr* are
-
-![][07041] negligible, giving
-
-and
-
-![][07042] 
-
-• If *\epsilon* (and therefore \(I_xz\)) is positive, then yawing to the right will
-
-generate a left rolling moment.
-
- 
-
-• If *\epsilon* and \(I_xz\) are negative, a right yaw will generate a *right* moment.
-
- 
-
-
-
-** Measuring Axis of Inclination and \(I_xz\) (continued)**
-
-
-
-1\. Determine \(I_xz\) and *\epsilon* by repeating yaw experiment for different spring
-
-angles (\delta). Use instrumentation to note for each \delta.
-
- 
-
-2 Graphically determine the angle \delta_o at which the restoring vector
-
-produced by the springs completely counteracts the roll motion.
-
-![][07043] Plot \[tan *\delta*\] vs as shown.
-
- 
-
- 
-
- 
-
-![][07044] ![][07045]
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-3\. Determine the point where ![][07046] equals zero. This occurs at tan*\delta_o.*
-
-\* *
-
-![][07047]4. Calculate the product of inertia using
-
- 
-
-5\. Calculate the inclination of the principle axis using
-
- 
-
- ![][07048]
-
- 
-
- 
-
-![][07049]Note: Since the \(I_xz\) test objective is to interpolate to a condition where equals zero, only the ratio is necessary
-
-and the absolute magnitudes of the accelerations are not reuired. In other words, the roll acceleration sensitivity can be increased to allow for easier measurement of the ratio.
-
- 
+Note: Since the \(I_{xz}\) test objective is to interpolate to a condition where \(\frac{\dot{p}}{\dot{r}} \) equals zero, only the ratio is necessary and the absolute magnitudes of the accelerations are not required. In other words, the roll acceleration sensitivity can be increased to allow for easier measurement of the ratio.
 
 ### Guidelines for Spring Oscillation Method
 
