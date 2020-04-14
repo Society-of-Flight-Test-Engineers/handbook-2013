@@ -430,71 +430,24 @@ Note: Since the \(I_{xz}\) test objective is to interpolate to a condition where
 
 ### Swing Method
 
-
-
-1\. Suspend component as shown.
+1. Suspend component as shown.
 
 ![][07051] 
 
-2\. Measure pendulum length (\(l\)), component mass (*m ),* and the period of oscillation (\(T\)).
+2. Measure pendulum length (\(l\)), component mass (\(m\) ), and the period of oscillation (\(T\)).
+ 
+ * The observed period is a function of the effective pendulum length.
 
- 
+\[ \omega = \sqrt{\frac{g}{l_{\mathrm{eff}}}} \;\;\;\;\text{and}\;\;\;\; T = \frac{2 \pi}{\omega} = 2 \pi \sqrt{\frac{l_{\mathrm{eff}}}{g}} \;\;\;\;\text{or}\;\;\;\; l_{\mathrm{eff}} = \left( \frac{T}{2 \pi} \right)^2 g \]
 
- 
+* This effective length is the total radius of gyration \(l_{\mathrm{eff}} = K_{\mathrm{tot}} \)
+* The total moment of inertia about the pivot point is the product of mass and radius of gyration squared. The parallel axis theorem states that this also is the sum of the component's moment of inertia about its \(\mathrm{cg}\) plus its mass times the distance between the pivot and the component's \(\mathrm{cg}\).
 
- 
+\[ I_{\mathrm{eff}} = m K_{\mathrm{tot}}^2 = I_{\mathrm{cg}} + ml^2 \]
 
- 
+3. Solving for the component's moment of inertia about its own \(\mathrm{cg}\) gives
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-![][07052]• The observed period is a function of the effective pendulum length.
-
-![][07053] and
-
-or
-
-![][07054]
-
- 
-
- 
-
- 
-
-• This effective length is the total radius of gyration \(l_eff\) = \(K_tot\ \)
-
- 
-
-• The total moment of inertia about the pivot point is the product of mass and radius of gyration squared. The parallel axis theorem states that this also is the sum of the component's moment of inertia about its \(\mathrm{cg}\) plus its mass times the distance between the pivot and the component's \(\mathrm{cg}\).
-
- 
-
- ![][07055]
-
- 
-
-3\. Solving for the component's moment of inertia about its own \(\mathrm{cg}\) gives
-
-![][07056] 
+\[ I_{\mathrm{cg}} = m K_{\mathrm{tot}}^2 - ml^2 = m \left( K_{\mathrm{tot}}^2 - l^2 \right) = m \left( \left[ \left( \frac{T}{2 \pi} \right)^2 g \right]^2 - l^2 \right) \]
 
 ** 7.5 References**
 
