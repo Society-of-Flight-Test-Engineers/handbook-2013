@@ -449,70 +449,22 @@ Note: Since the \(I_{xz}\) test objective is to interpolate to a condition where
 
 \[ I_{\mathrm{cg}} = m K_{\mathrm{tot}}^2 - ml^2 = m \left( K_{\mathrm{tot}}^2 - l^2 \right) = m \left( \left[ \left( \frac{T}{2 \pi} \right)^2 g \right]^2 - l^2 \right) \]
 
-** 7.5 References**
+## References
 
-
-
-7.5.1 Lawless, Alan R. et al, "Special Topics and Aircraft Subsystems Flight Testing," *Chapter 1, Mass Properties*, National Test Pilot School, Mojave, CA, 1999.
-
- 
-
-7.5.2 Bradfield, Edward N., \"Experimental Determination of the Moments of Inertia, Product of Inertia, and Inclination of the Principle Axis of Conventional Aircraft by the Spring Oscillation Method\" FTC-TIM- 1001, AFFTC, Edwards AFB, CA, 1971.
-
- 
-
-7.5.3 Malvestuto, S. F., et al, \"Formulas for Additional Mass Corrections to the Moments of Inertia of Air planes\" TN 1187, Langley Memorial Aeronautical Laboratory, Langley Field Virginia, 1947.
-
- 
-
-7.5.4 Lawless, Alan R., \"Fixed Wing Flying Qualities Flight Testing\" *Chapter 7, Equations of Motion*, Na tional Test Pilot School Mojave CA, 1998.
-
- 
-
- 
+|||
+|-|-----------------|
+|7.5.1 |Lawless, Alan R. et al, "Special Topics and Aircraft Subsystems Flight Testing," *Chapter 1, Mass Properties*, National Test Pilot School, Mojave, CA, 1999.|
+|7.5.2 |Bradfield, Edward N., "Experimental Determination of the Moments of Inertia, Product of Inertia, and Inclination of the Principle Axis of Conventional Aircraft by the Spring Oscillation Method" FTC-TIM-1001, AFFTC, Edwards AFB, CA, 1971.|
+|7.5.3 |Malvestuto, S. F., et al, "Formulas for Additional Mass Corrections to the Moments of Inertia of Airplanes" TN 1187, Langley Memorial Aeronautical Laboratory, Langley Field Virginia, 1947.|
+|7.5.4 |Lawless, Alan R., "Fixed Wing Flying Qualities Flight Testing" *Chapter 7, Equations of Motion*, National Test Pilot School Mojave CA, 1998.|
 
 **Additional Reading**
 
- 
-
-7.5.5 Tanner H.L., \"Measurement of the Moments of Inertia of an Airplane by a Simplified Method\" NACA2201, Ames Aeronautical Laboratory, Moffet Field, CA, 1950.
-
- 
-
-7.5.6 Woodward, C.R., et al \"Handbook of Instructions for Experimentally Determining the Moments of Iner tia of Aircraft by the Spring Oscillation Method\" TB-822-F-2, ASTIA AD97104, Cornell Aeronautical Laboratory, Buffalo, New York, 1955.
-
- 
-
-
-
-
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
+|||
+|-|-----------------|
+|7.5.5 |Tanner H.L., "Measurement of the Moments of Inertia of an Airplane by a Simplified Method" NACA2201, Ames Aeronautical Laboratory, Moffet Field, CA, 1950.|
+|7.5.6 |Woodward, C.R., et al "Handbook of Instructions for Experimentally Determining the Moments of Inertia of Aircraft by the Spring Oscillation Method" TB-822-F-2, ASTIA AD97104, Cornell Aeronautical Laboratory, Buffalo, New York, 1955.|
+  
   [07001]: media/07/image1.svg {width="3.388888888888889in" height="1.7708333333333333in"}
   [07002]: media/07/image2.svg {width="2.842361111111111in" height="1.398611111111111in"}
   [07003]: media/07/image3.svg {width="2.959722222222222in" height="1.4479166666666667in"}
