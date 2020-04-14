@@ -148,5 +148,5 @@ The opposite of opacity is transmission. The earth's atmosphere absorbs, reflect
   [19002]: media/19/image3.jpeg {width="9.250678040244969in" height="5.905972222222222in"}
   [19003]: media/19/image4.png {width="6.5in" height="3.477777777777778in"}
   [19004]: media/19/image5.png {width="6.3330314960629925in" height="4.265625546806649in"}
-  [http://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Atmospheric\_electromagnetic\_opacity.svg/2000px-Atmospheric\_electromagnetic\_opacity.svg.png]: media/19/image6.png {width="6.75in" height="3.1893755468066494in"}
+  [http://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Atmospheric\_electromagnetic\_opacity.svg/2000px-Atmospheric\_electromagnetic\_0pacity.svg.png]: media/19/image6.png {width="6.75in" height="3.1893755468066494in"}
   [19005]: media/19/image7.png {width="5.864583333333333in" height="3.25629593175853in"}

@@ -136,7 +136,7 @@ J Propeller advance ratio *=V~T~/nD* (nondimensional)
 
 *θ *^3/4^ propeller blade twist angle at *x* =3/4 (degrees), same as *β ^3^*^/4^
 
-*σ* ratio of operating density to sea level standard density = *ρ*~a~/*ρ*~o.~
+*σ* ratio of operating density to sea level standard density = *ρ*~a~/*ρ*~0.~
 
 ω propeller rotation speed (radians/second)
 

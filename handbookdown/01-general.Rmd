@@ -425,7 +425,7 @@ Exponent  Prefix  Abbreviation
 |\(\zeta\)       |damping ratio|
 |\(\eta\)       |efficiency|
 |\(\theta\)       |body axis/pitch angle|
-|\(\theta\)       |relative temperature ratio, \(T_a / T_o\)|
+|\(\theta\)       |relative temperature ratio, \(T_a / T_0\)|
 |\(\iota\)       |angle of incidence|
 |\(\iota_F\)  |thrust angle of incidence|
 |\(\iota_T\)*  |horizontal tail angle of incidence|
@@ -438,7 +438,7 @@ Exponent  Prefix  Abbreviation
 |\(\rho\)       |density|
 |\(\rho_a\)  |ambient air density|
 |\(\rho_0\)  |standard atmospheric density (slugs/ft^3 )|
-|\(\sigma\)       |air density ratio \((\rho_{\alpha} / \rho_o)\)|
+|\(\sigma\)       |air density ratio \((\rho_{\alpha} / \rho_0)\)|
 |\(\sigma_{cr}\)   |critical density|
 |\(\tau\)       |shear stress (pounds per square inch) psi|
 |\(\tau_R\)    |Roll Mode Time Constant (sec)|
@@ -471,8 +471,8 @@ Exponent  Prefix  Abbreviation
 |*m* |pitching moment|
 |*n* |yawing moment|
 |*O* |outbound leg of mission|
-|*o* |sea-level standard day|
-|*o* |sea level|
+|*0* |sea-level standard day|
+|*0* |sea level|
 |*r* |reserve leg of mission|
 |*r* |rudder|
 |*S* |standard day|
@@ -533,12 +533,12 @@ Exponent  Prefix  Abbreviation
 |\(c\) |speed of light in a vacuum (186,282 miles/sec = 299,792,500 [m/s])|
 |\(c\) |mean aerodynamic chord (MAC) of a wing|
 |C/A |coarse acquisition|
-|\(C/N_o\) |carrier to noise ratio|
+|\(C/N_0\) |carrier to noise ratio|
 |CADC |central air data computer|
 |CARD |cost analysis requirement document|
 |\(C_D\) |coefficient of drag|
 |\(C_{D_i}\) |induced drag coefficient|
-|\(C_{D_o}\) |zero lift drag coefficient (also parasitic drag coefficient for symmetric wing)|
+|\(C_{D_0}\) |zero lift drag coefficient (also parasitic drag coefficient for symmetric wing)|
 |CDI |course deviation indicator|
 |CDMA |code division multiplex access|
 |CDR |critical design review|
@@ -681,7 +681,7 @@ Exponent  Prefix  Abbreviation
 |GCI |ground controlled intercept|
 |GDOP |geometric dilution of precision|
 |GMT |Greenwich mean time|
-|\(g_o\) |standard acceleration due to gravity (sea level, 46 deg latitude)|
+|\(g_0\) |standard acceleration due to gravity (sea level, 46 deg latitude)|
 |GPS |global positioning system|
 |GS |ground speed|
 |GSI |glide slope indicator|
@@ -827,7 +827,7 @@ Exponent  Prefix  Abbreviation
 |\(P_{iw}\) |total thrust horsepower required|
 |Pk |probability of kill|
 |PLF |power for level flight|
-|\(P_o\) |standard atmospheric pressure (2116.22 lb/ft^2^ )|
+|\(P_0\) |standard atmospheric pressure (2116.22 lb/ft^2^ )|
 |POC |point of contact|
 |\(P_p\) |pitot pressure|
 |ppm |parts per million|
@@ -922,7 +922,7 @@ Exponent  Prefix  Abbreviation
 |TM |telemetry|
 |TMN |true Mach number|
 |T/O |takeoff|
-|\(T_o\) |standard sea level temperature (59.0 °F, 15 °C)|
+|\(T_0\) |standard sea level temperature (59.0 °F, 15 °C)|
 |TO |technical order|
 |TRB |technical review board|
 |TRD |technical requirements document|
@@ -1572,7 +1572,7 @@ Development of **Poisson's Equation**:
 | \(s\)        | seconds                                                         |
 | \(t\)        | time                                                            |
 | \(V\)        | true inertial velocity                                          |
-| \(V_o\)     | initial inertial velocity                                       |
+| \(V_0\)     | initial inertial velocity                                       |
 | \(W\)        | work                                 |
 | \(q\)        | angular displacement                                            |
 | \(\mathit{Vol}\)    | volume                                                          |

@@ -60,7 +60,7 @@
 
 *x* RMS value of quantity
 
-*x~o~* reference value of quantity
+*x~0~* reference value of quantity
 
 *μPa* 10^-6^ Pascals
 
@@ -150,9 +150,9 @@ Human hearing range is approximately 20 to 20,000 *Hz*
 
 [Quantity]{.underline} [Formula]{.underline}
 
-Velocity (*L~v~*) 20log(*v/v~0~*) *v~o~* = 10 *nm/s^2^*
+Velocity (*L~v~*) 20log(*v/v~0~*) *v~0~* = 10 *nm/s^2^*
 
-Intensity (*L~I~*) 10log(*I/I~0~*) *I~o~*= 1 *pW/m^2^*
+Intensity (*L~I~*) 10log(*I/I~0~*) *I~0~*= 1 *pW/m^2^*
 
 Sound Power Level (*L~W~*) 10log(*P/P~0~*) *Po* = 1 *pW*
 
@@ -244,7 +244,7 @@ Intensity level of a sound contained within a band 1*Hz* wide
 
 *ISL* = 10 *log \_[I\_]{.underline}* = *IL* -- 10 *log∆f* (*dB*)
 
-*I~o~∆f*
+*I~0~∆f*
 
  
 
@@ -252,7 +252,7 @@ where *f* = center frequency of band
 
 *I* = sound intensity (watts/*m*^2^)
 
-*I~o~* = 10^-12^ watt/m^2^ reference intensity
+*I~0~* = 10^-12^ watt/m^2^ reference intensity
 
 *∆f* = bandwidth (*Hz*)
 
