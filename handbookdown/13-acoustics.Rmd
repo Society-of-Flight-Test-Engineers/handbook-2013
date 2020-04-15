@@ -438,26 +438,15 @@ Nominal Exact A B C
 
 **13.6 References**
 
- 
+|||
+|-|---------------|
+|13.1| Beranek, Leo L., *Acoustic Measurements*, John Wiley & Sons, New York, New York, 1956.|
+|13.2| Peterson, Arnold P.G. and Gross, Ervin E., Jr., *Handbook of Noise Measurement*, GenRag Incorporated, Concord, Massachusetts, 1978.|
+|13.3| *Measuring Sound*, (Pamphlet), Bruel & Kjaer, Naerum, Denmark, September 1984.|
+|13.4| *Pocket Handbook, Noise, Vibration, Light, Thermal Comfort*, Bruel & Kjaer, Naerum, Denmark, 1986.|
 
-13.1 Beranek, Leo L., *Acoustic Measurements*, John Wiley & Sons, New York, New York, 1956.
+**Additional Reading**
 
- 
-
-13.2 Peterson, Arnold P.G. and Gross, Ervin E., Jr., *Handbook of Noise Measurement*, GenRag Incorporated, Concord, Massachusetts, 1978.
-
- 
-
-13.3 *Measuring Sound*, (Pamphlet), Bruel & Kjaer, Naerum, Denmark, September 1984.
-
- 
-
-13.4 *Pocket Handbook, Noise, Vibration, Light, Thermal Comfort*, Bruel & Kjaer, Naerum, Denmark, 1986.
-
- 
-
-####### Additional Reading 
-
- 
-
-Hunter, Joseph L., *Acoustics*, Prentice-Hall Incorporated, Englewood Cliffs, New Jersey, 1957.
+||
+|-|
+|Hunter, Joseph L., *Acoustics*, Prentice-Hall Incorporated, Englewood Cliffs, New Jersey, 1957.|

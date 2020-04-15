@@ -1744,25 +1744,13 @@ ambient temperature.
 
 **12.9 References**
 
-12.1 Lawless, Alan R, "Fixed Wing Aircraft Performance Testing," Volume III, Professional Textbook Series, National Test Pilot School, Mojave CA, 1998.
-
- 
-
-12.2 anon, "Performance Flight Testing Phase" notes, USAF TPS , Edwards AFB, CA, 1991.
-
- 
-
-12.3 Lush, Kenneth J "Standardization of Take-Off Performance Measuresments for Airplanes," AFFTC Technical Note R-12, USAF Air Research and Development Command, Edwards AFB, CA, circa 1955.
-
- 
-
-12.4 Roberts, S.C., *Light Aircraft Performance for Test Pilots and Flight Test Engineers*, NTPS publication
-
- 
-
-12.5 Olson, Wayne, "Performance Testing Handbook,"
-
-(publication number pending ) AFFTC, Edwards AFB, CA, 1999.
+|||
+|-|---------------|
+|12.1| Lawless, Alan R, "Fixed Wing Aircraft Performance Testing," Volume III, Professional Textbook Series, National Test Pilot School, Mojave CA, 1998.|
+|12.2| anon, "Performance Flight Testing Phase" notes, USAF TPS , Edwards AFB, CA, 1991.|
+|12.3| Lush, Kenneth J "Standardization of Take-Off Performance Measuresments for Airplanes," AFFTC Technical Note R-12, USAF Air Research and Development Command, Edwards AFB, CA, circa 1955.|
+|12.4| Roberts, S.C., *Light Aircraft Performance for Test Pilots and Flight Test Engineers*, NTPS publication|
+|12.5| Olson, Wayne, "Performance Testing Handbook," (publication number pending ) AFFTC, Edwards AFB, CA, 1999.|
 
  
 

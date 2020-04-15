@@ -123,23 +123,17 @@ The opposite of opacity is transmission. The earth's atmosphere absorbs, reflect
 
 19.6 References**
 
-19.1 Thermal Imaging Systems by J.M. Lloyd, C 1975, Plenum Press, New York & London, 451 pages.
-
-19.2 Infrared Systems Engineering by Richard D. Hudson Jr., C  1969, John Wiley & Sons Inc. 642 Pages.
-
-19.3 Electro-Optical Systems Analysis 3rd edition, C 1985, Electro-Optical Research Company, Los Angeles, 356 pages.
-
-19.4 Light, The Mystery of the Universe by Khalil Seyrafi C 1986 by Electro-Optical Research Company, Los Angeles, 240 Pages.
-
-19.5 Test and Evaluation of Infrared Imaging Systems 2nd edition by Gerald Holst, C 1998, JCD Publishing, Winter Park, Fl., 422 pages.
-
-19.6 Electro-Optical Imaging Systems Performance by Gerald Holst, C 1995, JCD Publishing, Winter Park, Fl., 468 pages.
-
-19.7 Infrared Technology and Fundamentals by Spiro & Schlessinger, C 1989, Marcel Dekker Inc.
-
-19.8 The Infrared and Electro-Optical Systems Handbook, C 1993, The Infrared Information and Analysis Center and the Society of Photo-Optical Instrumentation Engineers (SPIE), 8 Volumes.
-
-10.9 Electro-Optical Surveillance by Gene Adcock, C 1999, CCS Security Publishing Ltd.
+|||
+|-|---------------|
+|19.1 |Thermal Imaging Systems by J.M. Lloyd, C 1975, Plenum Press, New York & London, 451 pages.|
+|19.2 |Infrared Systems Engineering by Richard D. Hudson Jr., C  1969, John Wiley & Sons Inc. 642 Pages.|
+|19.3 |Electro-Optical Systems Analysis 3rd edition, C 1985, Electro-Optical Research Company, Los Angeles, 356 pages.|
+|19.4 |Light, The Mystery of the Universe by Khalil Seyrafi C 1986 by Electro-Optical Research Company, Los Angeles, 240 Pages.|
+|19.5 |Test and Evaluation of Infrared Imaging Systems 2nd edition by Gerald Holst, C 1998, JCD Publishing, Winter Park, Fl., 422 pages.|
+|19.6 |Electro-Optical Imaging Systems Performance by Gerald Holst, C 1995, JCD Publishing, Winter Park, Fl., 468 pages.|
+|19.7 |Infrared Technology and Fundamentals by Spiro & Schlessinger, C 1989, Marcel Dekker Inc.|
+|19.8 |The Infrared and Electro-Optical Systems Handbook, C 1993, The Infrared Information and Analysis Center and the Society of Photo-Optical Instrumentation Engineers (SPIE), 8 Volumes.|
+|19.9 |Electro-Optical Surveillance by Gene Adcock, C 1999, CCS Security Publishing Ltd.|
 
 **NOTES**
 

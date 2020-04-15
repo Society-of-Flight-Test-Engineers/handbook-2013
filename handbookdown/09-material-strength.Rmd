@@ -501,26 +501,17 @@ To accurately measure the very small resistance changes in a strain gage, a *Whe
 **9.5 References**
 
  
+|||
+|-|---------------|
+|9.1| Dole, Charles E., *Fundamentals of Aircraft Material Factors*, University of Southern California, Los Angeles, California, 1987.|
+|9.2| Norton, William J., *Structures Flight Test Handbook*, AFFTC-TIH-90-001, Air Force Flight Test Cen ter, Edwards AFB, California, November 1990.|
 
-####### 9.1 Dole, Charles E., *Fundamentals of Aircraft Material Factors*, University of Southern California, Los Angeles, California, 1987.
+**Additional Reading**
 
- 
-
-9.2 Norton, William J., *Structures Flight Test Handbook*, AFFTC-TIH-90-001, Air Force Flight Test Cen ter, Edwards AFB, California, November 1990.
-
- 
-
-#######  
-
-####### Additional Reading 
-
- 
-
-*Military Specification Airplane Strength and Rigidity - General Specification*, MIL-A-8860.
-
- 
-
-*Military Specification Airplane Strength and Rigidity, Sonic Fatigue*, MIL-A-008893.
+||
+|-|
+|*Military Specification Airplane Strength and Rigidity - General Specification*, MIL-A-8860.|
+|*Military Specification Airplane Strength and Rigidity, Sonic Fatigue*, MIL-A-008893.|
 
  
 

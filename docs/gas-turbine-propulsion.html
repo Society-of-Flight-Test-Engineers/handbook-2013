@@ -449,17 +449,17 @@
 <tr class="odd">
 <td align="left"><strong>Air mass flow rate</strong></td>
 <td align="left"><span class="math display">\[{\dot{m}}_{i}\]</span></td>
-<td align="left"><span class="math display">\[{\dot{m}}_{\text{ci}} = \frac{{\dot{m}}_{i}\sqrt{\theta_{i}}}{\delta_{i}}\]</span></td>
+<td align="left"><span class="math display">\[{\dot{m}}_{\mathrm{ci}} = \frac{{\dot{m}}_{i}\sqrt{\theta_{i}}}{\delta_{i}}\]</span></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Fuel flow rate</strong></td>
 <td align="left"><span class="math display">\[{\dot{m}}_{f}\]</span></td>
-<td align="left"><span class="math display">\[{\dot{m}}_{\text{fc}} = \frac{{\dot{m}}_{f}}{\delta_{2}\sqrt{\theta_{2}}}\]</span></td>
+<td align="left"><span class="math display">\[{\dot{m}}_{\mathrm{fc}} = \frac{{\dot{m}}_{f}}{\delta_{2}\sqrt{\theta_{2}}}\]</span></td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>Rotational speed</strong></td>
 <td align="left"><span class="math display">\[N\]</span></td>
-<td align="left"><span class="math display">\[N_{\text{ci}} = \frac{N}{\sqrt{\theta_{i}}}\]</span></td>
+<td align="left"><span class="math display">\[N_{\mathrm{ci}} = \frac{N}{\sqrt{\theta_{i}}}\]</span></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Thrust</strong></td>
@@ -468,7 +468,7 @@
 </tr>
 </tbody>
 </table>
-<p><em>θ<sub>i</sub></em>=total temperature ratio (<span class="math inline">\(\theta_{i} = \frac{T_{\text{ti}}}{T_{\text{ref}}}\)</span>) and <em>δ<sub>i</sub></em>=total pressure ratio (<span class="math inline">\(\delta_{i} = \frac{P_{\text{ti}}}{P_{\text{ref}}}\)</span>)</p>
+<p><em>θ<sub>i</sub></em>=total temperature ratio (<span class="math inline">\(\theta_{i} = \frac{T_{\mathrm{ti}}}{T_{\mathrm{ref}}}\)</span>) and <em>δ<sub>i</sub></em>=total pressure ratio (<span class="math inline">\(\delta_{i} = \frac{P_{\mathrm{ti}}}{P_{\mathrm{ref}}}\)</span>)</p>
 <p><span class="math display">\[Values can also be found in the standard atmosphere table, Section 3-14. Reference is sea-level, standard day. These values are also corrected for Mach number in Figure x-11.\]</span></p>
 <p><strong>17.2.2 Pressure and Temperature Relationships with Flight Parameters</strong></p>
 <p>Two of the main inputs to a propulsion system are engine face pressure and temperature (P­<sub>t2</sub> and T<sub>t2</sub> respectively), yet the flight envelope is defined in altitude, airspeed, and Mach number. Consequently, it is helpful to be able to translate from one to the other. Unfortunately, because many engine inlets are variable, and therefore introduce varying pressure and temperature losses, the handbook assumes P­<sub>t2</sub>=P­<sub>t0</sub> and T<sub>t2</sub>= T<sub>t0</sub>. The following chart is useful when describing the engine operating conditions relative to flight conditions.</p>
@@ -476,7 +476,7 @@
 </strong><img src="media/17/image12.jpg" style="width:6.79167in;height:9.33333in" /></p>
 <p><strong>17.2.3 Reynolds Number Index</strong></p>
 <p>Assuming the characteristic length of an engine is constant in differing operating environments, another way of describing the pressure and temperature relationship is with the Reynolds number index. Similar to standard day corrections, the Reynolds Number Index provides a method of comparing engine operation across varying inlet-pressure loses, inlet temperatures, flight speeds, and altitudes. The Reynolds Number Index is:</p>
-<p><span class="math display">\[\text{Re}_{i} = \frac{\delta_{2}}{\varphi\sqrt{\theta_{2}}}\]</span></p>
+<p><span class="math display">\[\mathrm{Re}_{i} = \frac{\delta_{2}}{\varphi\sqrt{\theta_{2}}}\]</span></p>
 <p>where</p>
 <p><span class="math display">\[\varphi = \frac{718.2\left( \theta_{2} \right)^{3/2}}{T_{t2} + 199.5},\ \delta_{2} = \frac{P_{t2}}{2116},\ \theta_{2} = \frac{T_{t2}}{518.7}\]</span></p>
 <p>Here, P<sub>t2</sub> is in psf, and T<sub>t2</sub> is in degrees Rankine.</p>
@@ -487,7 +487,7 @@
 </strong></p>
 <p><strong>17.2.4 Thrust Calculations</strong></p>
 <p>Various formulae exist to calculate gross engine thrust (Fg). However, modern engines are too complex for standard textbook formulas to accurately predict thrust; this is normally left to complex computer algorithms. The current standard for new models is the Numerical Propulsion System Simulation (NPSS). Despite this, a control volume approach relying on conservation of momentum will provide gross engine thrust if the required parameters are known.</p>
-<p><span class="math display">\[Thrust = \frac{\left( {\dot{m}}_{9} + {\dot{m}}_{\text{fuel}} \right)V_{9} - {\dot{m}}_{0}V_{0}}{g_{c}} + (P_{9} - P_{0})A_{9}\]</span></p>
+<p><span class="math display">\[Thrust = \frac{\left( {\dot{m}}_{9} + {\dot{m}}_{\mathrm{fuel}} \right)V_{9} - {\dot{m}}_{0}V_{0}}{g_{c}} + (P_{9} - P_{0})A_{9}\]</span></p>
 <p>Where subscript 9 represents the nozzle exit and subscript 0 represents the freestream conditions. <span class="math inline">\(\dot{m}\)</span>, V, and, P represent mass flow rate, velocity, and static pressure respectively.</p>
 <p>Variations and simplifications of this formula exist:</p>
 <table>
@@ -506,7 +506,7 @@
 <tbody>
 <tr class="odd">
 <td>High Bypass Turbofan (Separate Streams)</td>
-<td><span class="math display">\[Thrust = \frac{{\dot{m}}_{\text{fan}}}{g_{c}}(V_{\text{fan}} - V_{0}) + \frac{{\dot{m}}_{\text{core}}}{g_{c}}(V_{9} - V_{0})\]</span></td>
+<td><span class="math display">\[Thrust = \frac{{\dot{m}}_{\mathrm{fan}}}{g_{c}}(V_{\mathrm{fan}} - V_{0}) + \frac{{\dot{m}}_{\mathrm{core}}}{g_{c}}(V_{9} - V_{0})\]</span></td>
 </tr>
 </tbody>
 </table>
@@ -579,7 +579,7 @@
 <p><strong>Compressor Loading</strong> -The general ratio of work across the compressor stages. Forward compressor loading indicates the forward stages are more loaded (higher pressure ratio) than the aft stages.</p>
 <p><strong>Compressor Map</strong> - A compressor’s total pressure ratio defined by corrected airflow and corrected rotation speed.</p>
 <p><strong>Corrected</strong> - An adjustment for standard day temperature and/or pressure (at an engine station) to an engine parameter (like rotational speed, air flow or fuel flow). Also see referred.</p>
-<p><strong>Delta</strong> - Pressure ratio, <span class="math inline">\(\delta_{i} = \frac{P_{\text{ti}}}{P_{0}}\)</span>, where i is the reference station.</p>
+<p><strong>Delta</strong> - Pressure ratio, <span class="math inline">\(\delta_{i} = \frac{P_{\mathrm{ti}}}{P_{0}}\)</span>, where i is the reference station.</p>
 <p><strong>Flame-out -</strong> Can be synonymous with blow-out; however, it is more typically used in reference to the main combustor flame extinguishing.</p>
 <p><strong>Gross Thrust</strong> - The momentum change at the nozzle exit or aft side of the propeller. The first term in the thrust equation.</p>
 <p><strong>Horsepower Extraction -</strong> Any form of removal of power (bleed or mechanical) from a turbomachine other than for the generation of thrust.</p>
@@ -601,7 +601,7 @@
 <p><strong>Stator</strong> - The non-rotating blades of a stage within a turbomachine compressor or turbine.</p>
 <p><strong>Swirl</strong> - Non-axial vector of inlet airflow.</p>
 <p><strong>Temperature Profile</strong> - Usually used in reference to the span wise temperature distribution across the turbine inlet guide vanes.</p>
-<p><strong>Theta</strong> -Temperature ratio, <span class="math inline">\(\theta_{i} = \frac{T_{\text{ti}}}{T_{0}}\)</span>, where i is the reference station</p>
+<p><strong>Theta</strong> -Temperature ratio, <span class="math inline">\(\theta_{i} = \frac{T_{\mathrm{ti}}}{T_{0}}\)</span>, where i is the reference station</p>
 <p><strong>Thrust Specific Fuel Consumption</strong> - The amount of fuel required to produce a unit of thrust,</p>
 <p>TFSC =</p>
 <p><strong>Total Accumulated Cycles - A conglomerate measurement (based on an empirical relationship) of the number of cycles an engine has experienced. It is used as a measure of engine health or life.</strong></p>

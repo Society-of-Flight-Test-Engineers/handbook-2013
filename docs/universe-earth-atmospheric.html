@@ -567,7 +567,7 @@
 </tr>
 <tr class="odd">
 <td>radius average</td>
-<td><span class="math inline">\(R_{avg}\)</span></td>
+<td><span class="math inline">\(R_{\mathrm{avg}}\)</span></td>
 <td><span class="math inline">\(6\,367\,444\)</span></td>
 <td>m</td>
 </tr>
@@ -617,7 +617,7 @@
 <p>For any centrifugal relief calculations associated with aircraft performance, it is sufficiently exact (g ±0.000 04 [m/s<sup>2</sup>]) to use the average earth radius. An aircraft flying eastward contributes to centrifugal relief while a westbound aircraft diminishes it.</p>
 <p>The International Association of Geodesy publishes the following equation (accurate to 0.005%) to calculate (local sea level gravity including the effects of centrifugal relief for* <em>any point fixed to the earth's surface</em></p>
 <p><span class="math display">\[
-g_{lsl} = 9.780 327 \left( 1 + 0.005 300 224 \sin^2{\phi} - 0.000\,058 \sin^2{2 \phi} \right) \left[ \frac{m}{s^2} \right]
+g_{\mathrm{lsl}} = 9.780 327 \left( 1 + 0.005 300 224 \sin^2{\phi} - 0.000\,058 \sin^2{2 \phi} \right) \left[ \frac{m}{s^2} \right]
 \]</span></p>
 <p>The above equation is tabulated below for quick reference.</p>
 <table style="width:81%;">
@@ -631,7 +631,7 @@ g_{lsl} = 9.780 327 \left( 1 + 0.005 300 224 \sin^2{\phi} - 0.000\,058 \sin^2{2 
 <th align="left"><strong>Latitude<br />
 (deg)</strong></th>
 <th align="left"><strong>Normal</strong>
-<span class="math inline">\(g_{local}\)</span></th>
+<span class="math inline">\(g_{\mathrm{local}}\)</span></th>
 <th></th>
 </tr>
 </thead>
@@ -679,13 +679,13 @@ g_{lsl} = 9.780 327 \left( 1 + 0.005 300 224 \sin^2{\phi} - 0.000\,058 \sin^2{2 
 </tbody>
 </table>
 <p>The standard acceleration (<span class="math inline">\(g_0\)</span>) corresponds to a latitude of 46.0625°.</p>
-<p><span class="math inline">\(g_{lsl}\)</span>* at the equator and the poles varies ±0.27% from <span class="math inline">\(g_0\)</span>.</p>
+<p><span class="math inline">\(g_{\mathrm{lsl}}\)</span>* at the equator and the poles varies ±0.27% from <span class="math inline">\(g_0\)</span>.</p>
 </div>
 <div id="altitude-effect-on-gravitational-acceleration" class="section level3 unnumbered" number="">
 <h3>Altitude Effect on Gravitational Acceleration</h3>
 <p><span class="math inline">\(R_A\)</span> is the sum of the earth’s local radius and the geometric distance, <span class="math inline">\(h_G\)</span> above the surface: <span class="math inline">\(R_A = R + h_G\)</span></p>
 <p><span class="math display">\[
-g_{alt} = g_{sls}\left( \frac{R}{R + h_G} \right)^2
+g_{\mathrm{alt}} = g_{\mathrm{lsl}}\left( \frac{R}{R + h_G} \right)^2
 \]</span></p>
 <p>Gravitational acceleration at any geometric altitude:</p>
 <table style="width:44%;">
@@ -697,7 +697,7 @@ g_{alt} = g_{sls}\left( \frac{R}{R + h_G} \right)^2
 <tr class="header">
 <th><span class="math inline">\(h_G\)</span>
 (1000 ft)</th>
-<th><span class="math inline">\(g_{alt}/g_{lsl}\)</span></th>
+<th><span class="math inline">\(g_{\mathrm{alt}}/g_{\mathrm{lsl}}\)</span></th>
 </tr>
 </thead>
 <tbody>
@@ -736,23 +736,23 @@ g_{alt} = g_{sls}\left( \frac{R}{R + h_G} \right)^2
 <h3>Actual Gravitational Pull on an Aircraft</h3>
 <p>Adding a centrifugal relief correction due to the aircraft’s velocity, a complete calculation for its gravitational acceleration is
 <span class="math display">\[
-g_{A/C} = \left[ g_{lsl} + \omega^2 R \cos{\phi} \right] \left[ \frac{R}{R + h_G} \right]^2 - \left( \omega + \frac{V_G \sin{\sigma}}{R + h_G} \right)^2 \left(R + h_G\right) \cos{\phi}
+g_{A/C} = \left[ g_{\mathrm{lsl}} + \omega^2 R \cos{\phi} \right] \left[ \frac{R}{R + h_G} \right]^2 - \left( \omega + \frac{V_G \sin{\sigma}}{R + h_G} \right)^2 \left(R + h_G\right) \cos{\phi}
 \]</span></p>
 <p>where <span class="math inline">\(V_G\)</span> = ground speed and <span class="math inline">\(\sigma\)</span> = ground track angle (0° = true North, 90° = East, etc.).</p>
 </div>
 <div id="gravity-influence-on-aircraft-cruise-performance" class="section level3 unnumbered" number="">
 <h3>Gravity Influence on Aircraft Cruise Performance</h3>
 <p>Even at the same altitude, changes in gravity due to latitude or centrifugal relief directly alter the required lift, drag, and fuel flow. For example, with sufficiently precise instrumentation, data collected heading West could show about 0.5% more drag and fuel flow than data collected heading East (centrifugal relief effect). After determining test and standard (or mission) values for <span class="math inline">\(g\)</span>, flight test values for <em>C_L, </em>C_D, drag, and fuel flow can be corrected to standard as follows:</p>
-<p><span class="math display">\[C_{L_{std}} = C_{L_i} \frac{N_{z_{\omega_{std}}}}{N_{Z_{\omega_i}}} \left[\frac{g_{std}}{g_{A/C}} \right] \]</span></p>
-<p><span class="math display">\[C_{D_{std}} = \frac{C^2_{L_{std}}}{\pi A \text{Re}} \]</span></p>
-<p><span class="math display">\[\Delta D = D_{std} - D_t = qS\left[C_{D_{i_{std}}} - C_{D_{i_t}} \right] \]</span></p>
-<p><span class="math display">\[\dot{W}_{f_{std}} = \dot{W}_{f_i} + \Delta D \cdot TFSC \]</span></p>
+<p><span class="math display">\[C_{L_{\mathrm{std}}} = C_{L_i} \frac{N_{z_{\omega_{\mathrm{std}}}}}{N_{Z_{\omega_i}}} \left[\frac{g_{\mathrm{std}}}{g_{A/C}} \right] \]</span></p>
+<p><span class="math display">\[C_{D_{\mathrm{std}}} = \frac{C^2_{L_{\mathrm{std}}}}{\pi A \text{Re}} \]</span></p>
+<p><span class="math display">\[\Delta D = D_{\mathrm{std}} - D_t = qS\left[C_{D_{i_{\mathrm{std}}}} - C_{D_{i_t}} \right] \]</span></p>
+<p><span class="math display">\[\dot{W}_{f_{\mathrm{std}}} = \dot{W}_{f_i} + \Delta D \cdot TFSC \]</span></p>
 <p>where <span class="math inline">\(N_z\)</span> = normal load factor,</p>
 <p><span class="math inline">\(C_L\)</span> = lift coefficient, <span class="math inline">\(C_D\)</span> = drag coefficient,</p>
 <p><span class="math inline">\(AR\)</span> = aspect ratio, <span class="math inline">\(e\)</span> = Oswald efficiency factor,</p>
 <p><span class="math inline">\(\Delta D\)</span> = change in drag force,</p>
 <p><span class="math inline">\(TSFC\)</span> = thrust specific fuel consumption, and
-<span class="math inline">\(\dot{W}_{f_{std}}\)</span> = standard day fuel flow</p>
+<span class="math inline">\(\dot{W}_{f_{\mathrm{std}}}\)</span> = standard day fuel flow</p>
 </div>
 </div>
 <div id="general-properties-of-air" class="section level2" number="3.3">
@@ -1073,7 +1073,7 @@ g_{A/C} = \left[ g_{lsl} + \omega^2 R \cos{\phi} \right] \left[ \frac{R}{R + h_G
 <tr class="odd">
 <td>Geopotential</td>
 <td><span class="math inline">\(h\)</span></td>
-<td>Required because <span class="math inline">\(g\)</span> changes with height. If potential energy is calculated using sea level weight ( <span class="math inline">\(W_{SL} = mg_0\)</span>) instead of actual weight (<span class="math inline">\(W = mg\)</span>), then the altitude must be lower. <span class="math inline">\(h = W/W_{SL} h_G\)</span></td>
+<td>Required because <span class="math inline">\(g\)</span> changes with height. If potential energy is calculated using sea level weight ( <span class="math inline">\(W_{\mathrm{SL}} = mg_0\)</span>) instead of actual weight (<span class="math inline">\(W = mg\)</span>), then the altitude must be lower. <span class="math inline">\(h = W/W_{\mathrm{SL}} h_G\)</span></td>
 </tr>
 <tr class="even">
 <td>Pressure</td>
@@ -1622,7 +1622,7 @@ P_{1} &amp;= \sqrt{x_{1}^{2} + y_{1}^{2} + z_{1}^{2}} \\
 P_{2} &amp;= \sqrt{x_{2}^{2} + y_{2}^{2} + z_{2}^{2}} \\
 \overset{\rightarrow}{P}_{1}  \overset{\rightarrow}P_{2} &amp;= P_{1} P_{2}\cos{\varphi} = x_{1} \cdot x_{2} + y_{1} \cdot y_{2} + z_{1} \cdot z_{2} \\
 \varphi &amp;= \arccos\left( \frac{x_{1} \cdot x_{2} + y_{1} \cdot y_{2} + z_{1} \cdot z_{2}}{P_{1} \cdot P_{2}} \right) \\
-D &amp;= P_{\text{avg}} \cdot \varphi
+D &amp;= P_{\mathrm{avg}} \cdot \varphi
 \end{align}
 \]</span></p>
 <p>where
@@ -1667,23 +1667,23 @@ D &amp;= P_{\text{avg}} \cdot \varphi
 <p>Because each degree of latitude change is not always exactly 60 nm and because the spacing between degrees of longitude changes markedly with latitude, converting from degrees latitude &amp; longitude change to distance requires scaling factors. First select equatorial distances for each degree change</p>
 <p><span class="math display">\[
 \begin{align}
-\phi_{\text{scale}} \left\{ \phi = 0 \right\} &amp;= 110\,574 \text{m} = 362\,776.6 \text{ft} = 59.705\,18 \text{nm} \\
-\lambda_{\text{scale}} \left\{ \phi = 0 \right\} &amp;= 111\,319.5 \text{m} = 365\,221.4 \text{ft} = 60.107\,72 \text{nm} \\
+\phi_{\mathrm{scale}} \left\{ \phi = 0 \right\} &amp;= 110\,574 \text{m} = 362\,776.6 \text{ft} = 59.705\,18 \text{nm} \\
+\lambda_{\mathrm{scale}} \left\{ \phi = 0 \right\} &amp;= 111\,319.5 \text{m} = 365\,221.4 \text{ft} = 60.107\,72 \text{nm} \\
 \end{align}
 \]</span></p>
 <p>Use average latitude to calculate latitude and longitude scaling factors</p>
 <p><span class="math display">\[
 \begin{align}
-\phi_{\text{scale}} &amp;= \frac{\phi_{\text{scale}} \left\{ \phi = 0 \right\} }{ \left\lbrack \left( 1 - e^{2} \right)  \sin^{2}(\phi) \right\rbrack^{1.5} } \\
+\phi_{\mathrm{scale}} &amp;= \frac{\phi_{\mathrm{scale}} \left\{ \phi = 0 \right\} }{ \left\lbrack \left( 1 - e^{2} \right)  \sin^{2}(\phi) \right\rbrack^{1.5} } \\
 \\
-\lambda_{\text{scale}} &amp;= \frac{\lbrack \lambda_{\text{scale}} \left\{ \phi = 0 \right\} \rbrack \cdot \cos{\phi}}{\sqrt{ \left(1 - e^2 \right) \sin^{2}{\phi}}} \\
+\lambda_{\mathrm{scale}} &amp;= \frac{\lbrack \lambda_{\mathrm{scale}} \left\{ \phi = 0 \right\} \rbrack \cdot \cos{\phi}}{\sqrt{ \left(1 - e^2 \right) \sin^{2}{\phi}}} \\
 \end{align}
 \]</span></p>
 <p>Calculate X and Y components of distances aligned with the latitude &amp; longitude grid (Figure 3.8-4a)</p>
 <p><span class="math display">\[
 \begin{align}
-Y = \phi_{\text{scale}} \left(\phi_1 - \phi_0 \right) \\
-X = \lambda_{\text{scale}} \left(\lambda_1 - \lambda_0 \right) \\
+Y = \phi_{\mathrm{scale}} \left(\phi_1 - \phi_0 \right) \\
+X = \lambda_{\mathrm{scale}} \left(\lambda_1 - \lambda_0 \right) \\
 \end{align}
 \]</span></p>
 <p>The 2-D <em>local</em> (vice great circle) distance between any two points on the X-Y plane is</p>
@@ -1693,8 +1693,8 @@ X = \lambda_{\text{scale}} \left(\lambda_1 - \lambda_0 \right) \\
 <p>For any point (<span class="math inline">\(\phi, \lambda\)</span>), calculate runway-aligned X &amp; Y distances using</p>
 <p><span class="math display">\[
 \begin{align}
-X &amp;= \phi_{\text{scale}} \left(\phi - \phi_0 \right)\sin{\psi} + \lambda_{\text{scale}} \left(\lambda - \lambda_0 \right)\cos{\psi} \\
-Y &amp;= \phi_{\text{scale}} \left(\phi - \phi_0 \right)\cos{\psi} - \lambda_{\text{scale}} \left(\lambda - \lambda_0 \right)\sin{\psi} \\
+X &amp;= \phi_{\mathrm{scale}} \left(\phi - \phi_0 \right)\sin{\psi} + \lambda_{\mathrm{scale}} \left(\lambda - \lambda_0 \right)\cos{\psi} \\
+Y &amp;= \phi_{\mathrm{scale}} \left(\phi - \phi_0 \right)\cos{\psi} - \lambda_{\mathrm{scale}} \left(\lambda - \lambda_0 \right)\sin{\psi} \\
 \end{align}
 \]</span></p>
 <p>This provides a right-handed rectangular coordinate system where X is positive from (<span class="math inline">\(\phi_0, \lambda_0\)</span>) towards (<span class="math inline">\(\phi_1, \lambda_1\)</span>) and Y is positive left of the runway centerline (Figure 3.8-4b).</p>
@@ -1710,14 +1710,14 @@ Y &amp;= \phi_{\text{scale}} \left(\phi - \phi_0 \right)\cos{\psi} - \lambda_{\t
 <p><strong>Background:</strong> Pressure altitude is the geopotential height above mean sea level (MSL) associated with atmospheric pressure on a theoretical standard day. Geopotential height is almost identical to geometric (a.k.a. tapeline) altitude, as seen in page 03-5. Altimeters set at 29.92 in Hg (or 1013 HPa) display pressure altitude. An altimeter’s baro-set knob allows pilots to bias the pressure vs. altitude relation so it matches sea level pressure for non-standard conditions. Matching the local altimeter setting (known as setting QNH in many parts of the world) adjusts the altimeter so it displays nearly the same altitude above MSL for non-standard pressure conditions. The correct setting is critical for terrain &amp; obstacle clearance when the pilot’s visibility is low.</p>
 <p>Note: When operating well above terrain and obstacles, it is more critical to ensure all aircraft use the same altimeter setting so they de-conflict with each other. Because chances are high that pilots might not know of or properly re-set the altimeter numerous times during high altitude flights, aviation authorities established transition altitudes. When climbing above the transition altitude, all pilots must set altimeters to read pressure altitude (baro setting at 29.92 or 10113 HPa, known as QNE or standard baro setting). Different countries use different transition altitudes (e.g. 18,000 ft MSL in U.S. and Canada; 14,000 ft MSL in Japan; 3,000 ft MSL in The Netherlands). Regardless of the transition altitude, pilots and air traffic controllers refer to altitudes above it as a “Flight Level.” Flight level is abbreviated as FL and is quoted in hundreds of feet above MSL. For example operating at 36,000 ft (always pressure altitude above MSL) is abbreviated as FL360.</p>
 <p>Although the long-used practice of matching the local altimeter setting has been sufficiently safe in the vast majority of operations, it in fact does not account for temperature deviation from standard conditions. Extreme temperature deviations cause a classic mechanical altimeter to display an MSL altitude erring by hundreds of feet. Modern technology allows calculating and displaying a more accurate altitude that corrects for temperature deviations. The following equation yields temperature-compensated altitude which better estimates geometric altitude above MSL, (h_G. Calculations require knowledge of aircraft’s baro and pressure altitudes and the terminal airport’s temperature and pressure altitude. In lieu of pressure altitudes, calculations allow for implementing the field elevation (depicted on airport approach plates, etc.) and so-called baro bias. Baro bias is the displayed altitude shift when switching from local to standard altimeter setting.</p>
-<p><span class="math display">\[h_G = H_b + \frac{T_{\text{apt}} - T_0}{L - Hp_{\text{apt}} } \ln \left[ 1 + \frac{L \left( H_p - H_{p_{\text{apt}}} \right) }{T_0 + L H_{p_{\text{apt}}}} \right]\]</span></p>
+<p><span class="math display">\[h_G = H_b + \frac{T_{\mathrm{apt}} - T_0}{L - Hp_{\mathrm{apt}} } \ln \left[ 1 + \frac{L \left( H_p - H_{p_{\mathrm{apt}}} \right) }{T_0 + L H_{p_{\mathrm{apt}}}} \right]\]</span></p>
 <p>where
 <span class="math inline">\(h_G\)</span> = temperature-compensated altitude</p>
 <p><span class="math inline">\(H_b\)</span> = baro altitude (displayed when altimeter is set to local value)</p>
-<p><span class="math inline">\(T_{\text{apt}}\)</span> = airport temperature (Kelvin)</p>
+<p><span class="math inline">\(T_{\mathrm{apt}}\)</span> = airport temperature (Kelvin)</p>
 <p><span class="math inline">\(T_0\)</span> = standard day sea level temperature = 15 deg C = 288.15 K</p>
 <p><span class="math inline">\(L\)</span> = standard temperature lapse rate = -0.0065 K/m = -0.001 9812 K/ft</p>
-<p><span class="math inline">\(H_{p_{\text{apt}}}\)</span> = airport pressure altitude ( = airport field elevation - baro bias)</p>
+<p><span class="math inline">\(H_{p_{\mathrm{apt}}}\)</span> = airport pressure altitude ( = airport field elevation - baro bias)</p>
 <p><span class="math inline">\(H_p\)</span> = aircraft pressure altitude ( = H_b - baro bias)</p>
 <p>Note: ensure altitude units are consistent with lapse rate units.</p>
 <p>In lieu of the pilot adjusting the baro set knob to determine baro bias, it may be calculated using</p>
@@ -1728,13 +1728,42 @@ Y &amp;= \phi_{\text{scale}} \left(\phi - \phi_0 \right)\cos{\psi} - \lambda_{\t
 </div>
 <div id="references-1" class="section level2" number="3.10">
 <h2><span class="header-section-number">3.10</span> References</h2>
-<p>3.1 Anon., “Aeronautical Vestpocket Handbook” ,Part No. P&amp;W 079500, United Technologies Pratt &amp; Whitney, Canada, 1990.</p>
-<p>3.2 Lawless, Alan. R. et al, “Aerodynamics for Flight Testers”, National Test Pilot School, P.O. Box 658, Mojave CA, 93501, 1999.</p>
-<p>3.3 Denno, Richard R., et al “AIAA Aerospace Design Engineers Guide” ISBN 0-930403-21-5, AIAA, 1987.</p>
-<p>3.4 Global Positioning System Overview, Peter H. Dana, Department of Geography, University of Texas at Austin, 1994. [<a href="www.colorado.edu/geography/gcraft/notes/gps/gps_f.html">www.colorado.edu/geography/gcraft/notes/gps/gps_f.html</a>]</p>
-<p>3.5 Charles D Ghilani, Penn State College of Engineering, 2008 [<a href="http://surveying.wb.psu.edu/sur351/georef/Ellip4.htm">http://surveying.wb.psu.edu/sur351/georef/Ellip4.htm</a>] [<a href="www.colorado.edu/geography/gcraft/notes/gps/gps_f.html">www.colorado.edu/geography/gcraft/notes/gps/gps_f.html</a>]</p>
-<p>3.6 Standard Atmosphere Calculator Website Link [<a href="http://www.digitaldutch.com/atmoscalc/">http://www.digitaldutch.com/atmoscalc/</a>].</p>
-<p>3.7 Movable Type Scripts. [<a href="http://www.movable-type.co.uk/scripts/latlong.html">http://www.movable-type.co.uk/scripts/latlong.html</a>]. [Calculate distance, bearing and more between Latitude/Longitude points]</p>
+<table>
+<colgroup>
+<col width="6%" />
+<col width="93%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>3.1</td>
+<td>Anon., “Aeronautical Vestpocket Handbook” ,Part No. P&amp;W 079500, United Technologies Pratt &amp; Whitney, Canada, 1990.</td>
+</tr>
+<tr class="even">
+<td>3.2</td>
+<td>Lawless, Alan. R. et al, “Aerodynamics for Flight Testers”, National Test Pilot School, P.O. Box 658, Mojave CA, 93501, 1999.</td>
+</tr>
+<tr class="odd">
+<td>3.3</td>
+<td>Denno, Richard R., et al “AIAA Aerospace Design Engineers Guide” ISBN 0-930403-21-5, AIAA, 1987.</td>
+</tr>
+<tr class="even">
+<td>3.4</td>
+<td>Global Positioning System Overview, Peter H. Dana, Department of Geography, University of Texas at Austin, 1994. [<a href="www.colorado.edu/geography/gcraft/notes/gps/gps_f.html">www.colorado.edu/geography/gcraft/notes/gps/gps_f.html</a>]</td>
+</tr>
+<tr class="odd">
+<td>3.5</td>
+<td>Charles D Ghilani, Penn State College of Engineering, 2008 [<a href="http://surveying.wb.psu.edu/sur351/georef/Ellip4.htm">http://surveying.wb.psu.edu/sur351/georef/Ellip4.htm</a>] [<a href="www.colorado.edu/geography/gcraft/notes/gps/gps_f.html">www.colorado.edu/geography/gcraft/notes/gps/gps_f.html</a>]</td>
+</tr>
+<tr class="even">
+<td>3.6</td>
+<td>Standard Atmosphere Calculator Website Link [<a href="http://www.digitaldutch.com/atmoscalc/">http://www.digitaldutch.com/atmoscalc/</a>].</td>
+</tr>
+<tr class="odd">
+<td>3.7</td>
+<td>Movable Type Scripts. [<a href="http://www.movable-type.co.uk/scripts/latlong.html">http://www.movable-type.co.uk/scripts/latlong.html</a>]. [Calculate distance, bearing and more between Latitude/Longitude points]</td>
+</tr>
+</tbody>
+</table>
 
 </div>
 </div>
