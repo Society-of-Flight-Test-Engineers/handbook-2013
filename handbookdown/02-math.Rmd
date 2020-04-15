@@ -228,11 +228,11 @@ or
 
 Present value of an annuity, \(A\) is the sum of the present values of all the future payments. \(A = R\,r_{n}\)
 
-Monthly interest rate = \(MIR = \frac{ \text{annual interest rate} }{12} \)
+Monthly interest rate = \(\mathrm{MIR} = \frac{ \text{annual interest rate} }{12} \)
 
 Month Term = \# months in loan
 
-Monthly payment = \( \left[ \text{amount financed} \right] \left[ \frac{MIR}{1 - \left( 1 + MIR \right)^{-\#months}} \right] \)
+Monthly payment = \( \left[ \text{amount financed} \right] \left[ \frac{\mathrm{MIR}}{1 - \left( 1 + \mathrm{MIR} \right)^{-\#months}} \right] \)
 
 Final value (\(FV\)) of an investment is a function of the initial principal invested (P), interest rate (\(r\) expressed as \( 0.05\) for \(5%\), \( 0.1\) for \(10%\), etc.), time invested (\(Y\) typically years), and compounding periods per year (\(n\) typically \(n = 1\) for yearly or \(n = 12\) for monthly).
 
@@ -1164,19 +1164,15 @@ Time Domain \(f(t) = \mathcal{L}^{-1} \left\{ F \left( s \right) \right\} \)    
 
 ## References
 
-2.1 Burington, Richard S., "Handbook of Mathematical Tables and Formulas", McGraw-Hill Inc., 1973.
-
-2.2 Ayers, F., Moyer, R., "Trigonometry", Schaum's Outline series, McGraw-Hill Inc., 1990.
-
-2.3 Esbach, Ovid W., "Handbook of Engineering Fundamentals", John Wiley and Sons Inc., 1963.
-
-2.4 Hudson, Ralph G., "The Engineers' Manual", John Wiley and Sons Inc., 1944.
-
-2.5 Jones, G., *Chapter 14, Vectors and Matrices*, from "Flying Qualities Testing, Vol II" , National Test Pilot School, P.O. Box 658, Mojave CA, 93501.
-
-2.6 "Flying Qualities Testing, Vol II", 1997, National Test Pilot School, P.O. Box 658, Mojave CA, 93501.
-
-2.7 Lewis, G., *Chapter 2, Data Analysis*, from "Crew station Evaluation and Data Analysis, Vol IV", 1997, National Test Pilot School, P.O. Box 658, Mojave CA, 93501.
+|||
+|-|---------------|
+|2.1 |Burington, Richard S., "Handbook of Mathematical Tables and Formulas", McGraw-Hill Inc., 1973.|
+|2.2 |Ayers, F., Moyer, R., "Trigonometry", Schaum's Outline series, McGraw-Hill Inc., 1990.|
+|2.3 |Esbach, Ovid W., "Handbook of Engineering Fundamentals", John Wiley and Sons Inc., 1963.|
+|2.4 |Hudson, Ralph G., "The Engineers' Manual", John Wiley and Sons Inc., 1944.|
+|2.5 |Jones, G., *Chapter 14, Vectors and Matrices*, from "Flying Qualities Testing, Vol II" , National Test Pilot School, P.O. Box 658, Mojave CA, 93501.|
+|2.6 |"Flying Qualities Testing, Vol II", 1997, National Test Pilot School, P.O. Box 658, Mojave CA, 93501.|
+|2.7 |Lewis, G., *Chapter 2, Data Analysis*, from "Crew station Evaluation and Data Analysis, Vol IV", 1997, National Test Pilot School, P.O. Box 658, Mojave CA, 93501.|
 
   [02021]: media/02/image22.png
   [02022]: media/02/image23.png

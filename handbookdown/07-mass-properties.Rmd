@@ -4,8 +4,8 @@
 
 | Symbol            | Definition                                                                                    | Unit         |
 |-------------------|-----------------------------------------------------------------------------------------------|--------------|
-| \(\Delta I_{am}\) | equivalent moment of inertia contribution of the air                                          | [slug-ft^2^] |
-| \(\Delta I_{te}\) | correction for test equipment mass                                                            | [slug-ft^2^] |
+| \(\Delta I_{\mathrm{am}}\) | equivalent moment of inertia contribution of the air                                          | [slug-ft^2^] |
+| \(\Delta I_{\mathrm{te}}\) | correction for test equipment mass                                                            | [slug-ft^2^] |
 | \(\delta\)        | tilt of spring assembly (measured positive if tilted nose-down relative to local horizontal). |              |
 | \(\varepsilon\)      | inclination of principle axis (positive if tilted down).                                      |              |
 | \(\omega_d\)      | damped frequency of oscillation                                                               | [rad/sec]    |
@@ -16,17 +16,17 @@
 | \(f\)             | measured frequency of oscillation                                                             | [cycles/sec] |
 | \(g\)             | Earth's acceleration due to gravity                                                           |              |
 | \(h\)             | vertical component of the perpendicular distance from the \(\mathrm{cg}\) to the oscillation axis.     |              |
-| \(I_{cg}\)        | moment of inertia any axis passing through the \(\mathrm{cg}\)                                         |              |
+| \(I_{\mathrm{cg}}\)        | moment of inertia any axis passing through the \(\mathrm{cg}\)                                         |              |
 | \(I_{xb}\)        | moment of inertia about aircraft body x-axis                                                  |              |
 | \(I_{xz}\)        | product of inertia in aircraft body x-z plane                                                 |              |
 | \(I_{yb}\)        | moment of inertia about aircraft body y-axis                                                  |              |
 | \(I_{zb}\)        | moment of inertia about aircraft body z-axis                                                  |              |
 | \(I_o\)           | moment of inertia about oscillation axis                                                      |              |
-| \(K_{tot}\)       | total radius of gyration (includes effect of offset pivot)                                    |              |
+| \(K_{\mathrm{tot}}\)       | total radius of gyration (includes effect of offset pivot)                                    |              |
 | \(K_o\)           | component of spring stiffness perpendicular to vehicle motion                                 |              |
 | \(k\)             | spring constant                                                                               | [lb/ft]      |
 | \(L\)             | rolling moment                                                                                |              |
-| \(l_{eff}\)       | effective pendulum length                                                                     |              |
+| \(l_{\mathrm{eff}}\)       | effective pendulum length                                                                     |              |
 | \(m\)             | mass                                                                                          |              |
 | \(\mathrm{MAC}\)           | mean aerodynamic chord                                                                        |              |
 | \(\mathrm{METO}\)          | maximum power (except for takeoff)                                                            |              |

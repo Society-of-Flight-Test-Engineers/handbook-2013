@@ -159,7 +159,7 @@ Energy per unit volume is pressure then Dynamic Pressure + Static Pressure = Tot
 * This classic approach only applies in the "potential flow" region and not in the boundary layer where energy losses occur
 * Pressures around a surface can be calculated or measured from tests and converted into pressure coefficients,
 
-\[c_p = \left( p_{\text{local}} - p_{\text{ambient}} \right) / \text{dynamic pressure} = \Delta p/q \]
+\[c_p = \left( p_{\mathrm{local}} - p_{\mathrm{ambient}} \right) / \text{dynamic pressure} = \Delta p/q \]
 
 * \(c_p\) values can be mapped out for all surfaces
 
@@ -284,9 +284,9 @@ Turbulent boundary layer: \(\text{Total } C_f = \frac{0.455}{\left(\log(\mathrm{
 
 \(x = \) distance traveled to point in question
 
-\[\delta_{lam} = \frac{5.2x}{\sqrt{\mathrm{Re}_x}} \]
+\[\delta_{\mathrm{lam}} = \frac{5.2x}{\sqrt{\mathrm{Re}_x}} \]
 
-\[\delta_{turb} = \frac{0.37x}{\mathrm{Re}_x^{0.2}} \]
+\[\delta_{\mathrm{turb}} = \frac{0.37x}{\mathrm{Re}_x^{0.2}} \]
 
 ### Pressure Drag
 
@@ -353,7 +353,7 @@ Oswald efficiency factor, \(e\), accounts for losses in excess of those predicte
 
 Approximates Mach effects on aerodynamics below critical Mach
 
-\[C_{P_{\text{compressible}}} = \frac{1}{\sqrt{1-M^2}}C_{P_{\text{incompressible}}} \]
+\[C_{P_{\mathrm{compressible}}} = \frac{1}{\sqrt{1-M^2}}C_{P_{\mathrm{incompressible}}} \]
 
 **Total vs Ambient Property Relations for Adiabatic Flow**
 
@@ -516,7 +516,7 @@ Example: Flow initially at \(M_1 = 2.0\) accelerates through an expansion corner
 
 \(l = \text{length flow has traveled}\)
 
-\(S_{\text{wet}} = \text{wetted area of surface}\)
+\(S_{\mathrm{wet}} = \text{wetted area of surface}\)
 
 \(S = \text{reference wing area}\)
 
@@ -544,9 +544,9 @@ Linearized form of simple drag polar:
 
 Drag Polar Equation Accounting for Flow Separation:
 
-\[C_D = C_{D_{\text{min}}} + \frac{\left(C_L - C_{L_{\text{min}}}\right)^2}{\pi \mathrm{AR} e} +k_2\left(C_L - C_{L_{\text{break}}}\right)\]
+\[C_D = C_{D_{\mathrm{min}}} + \frac{\left(C_L - C_{L_{\mathrm{min}}}\right)^2}{\pi \mathrm{AR} e} +k_2\left(C_L - C_{L_{\mathrm{break}}}\right)\]
 
-* Delete last term if \(C_L < C_{L_{\text{break}}} \)
+* Delete last term if \(C_L < C_{L_{\mathrm{break}}} \)
 * Determine \(k_2\) from flight test
 
 #### Reynolds Number Effects {-}
@@ -572,10 +572,10 @@ or
    Wetted area is already defined above and doesn't need to be redefined below
    ```
 * In general, \(c_f\) decreases as \(\mathrm{Rn}\) increases (unless transitioning from laminar to turbulent flow)
-* Friction drag \(= c_f q S_{\text{wet}}\) for each component (\(S_{\text{wet}} = \text{wetted area}\))
+* Friction drag \(= c_f q S_{\mathrm{wet}}\) for each component (\(S_{\mathrm{wet}} = \text{wetted area}\))
 * Correct from test day to standard day aircraft drag coefficient by summing differences of each component's drag change
 
-\[\Delta C_D = \frac{\sum\left(c_{f_s} - c_{f_t} \right) S_{\text{wet}}}{S} \]
+\[\Delta C_D = \frac{\sum\left(c_{f_s} - c_{f_t} \right) S_{\mathrm{wet}}}{S} \]
 
 #### Wing Camber or Incidence Angle Effects {-}
 
@@ -589,9 +589,9 @@ Linearized drag polar for aircraft with wing camber and/or incidence
 
 Revised drag polar equation accounting for wing camber or incidence
 
-\[C_D = C_{D_{\text{min}}} + \frac{\left(C_L - C_{L_{\text{min}}} \right)^2}{\pi \mathrm{AR} e} \]
+\[C_D = C_{D_{\mathrm{min}}} + \frac{\left(C_L - C_{L_{\mathrm{min}}} \right)^2}{\pi \mathrm{AR} e} \]
 
-* Generally not necessary since most flight occurs above \(C_{L_{\text{min}}}\)
+* Generally not necessary since most flight occurs above \(C_{L_{\mathrm{min}}}\)
 
 #### Mach Number Effects {-}
 
@@ -634,11 +634,11 @@ Revised drag polar equation accounting for wing camber or incidence
 
 ![][05074]
 
-\[C_{D_{\text{trim}}} = \frac{W^2}{\pi q^2 Sb^2e} \left[\frac{2}{lW}\left[x_0 - x_1\right] + \frac{1}{l^2} \left[1 + \frac{S}{S_t} \frac{e}{e_t} \left(\frac{b}{b_t}\right)^2\right] \left[x_0^2 - x_1^2\right] \right]\]
+\[C_{D_{\mathrm{trim}}} = \frac{W^2}{\pi q^2 Sb^2e} \left[\frac{2}{lW}\left[x_0 - x_1\right] + \frac{1}{l^2} \left[1 + \frac{S}{S_t} \frac{e}{e_t} \left(\frac{b}{b_t}\right)^2\right] \left[x_0^2 - x_1^2\right] \right]\]
 
 Trim drag change relative to total induced drag:
 
-\[\frac{\Delta C_{D_{\text{trim}}}}{\Delta C_{D_i}} = \frac{x}{l} \left[\frac{x}{l} \left(\frac{b}{b_t}\right)^2 \frac{e}{e_t} - 2 \right] \]
+\[\frac{\Delta C_{D_{\mathrm{trim}}}}{\Delta C_{D_i}} = \frac{x}{l} \left[\frac{x}{l} \left(\frac{b}{b_t}\right)^2 \frac{e}{e_t} - 2 \right] \]
 
 Plot of above equation
 
@@ -658,7 +658,7 @@ first term = parasitic drag, second term = induced drag
 
 ![][05080]
 
-* Minimum total drag occurs when \(D_{\text{induced}} = D_{\text{parasitic}}\)
+* Minimum total drag occurs when \(D_{\mathrm{induced}} = D_{\mathrm{parasitic}}\)
     * same as speed where \(C_{D_i} = C_{D_0}\)
     * occurs at max \(C_L/C_D\) ratio (same as max \(L/D\) ratio)
 * Minimum drag/velocity occurs at min slope of Drag vs V curve
@@ -667,18 +667,18 @@ first term = parasitic drag, second term = induced drag
 
 Power required = drag x true airspeed
 
-\[P_{req} = DV_T = D\frac{V_e}{\sqrt{\sigma}} = k_1\frac{V_e^3}{\sqrt{\sigma}} + k_2\frac{W^2}{\sqrt{\sigma}V_e} \]
+\[P_{\mathrm{req}} = DV_T = D\frac{V_e}{\sqrt{\sigma}} = k_1\frac{V_e^3}{\sqrt{\sigma}} + k_2\frac{W^2}{\sqrt{\sigma}V_e} \]
 
    ```{block, type='FIXME', echo=FALSE}
    Inconsistent use of 'req'd' and 'req'.  The following P_induced and P_parasitic    should be D for drag (not power)
    ```
 
-Minimum total \(P_{\text{req'd}}\) occurs when \(P_{\text{induced}} = P_{\text{parasitic}}\)
+Minimum total \(P_{\mathrm{req'd}}\) occurs when \(P_{\mathrm{induced}} = P_{\mathrm{parasitic}}\)
 
 *  same as speed where \(C_{D_i} = 3C_{D_0} \)
 *  occurs at max \(C_L^{3/2}/C_D\) ratio
 
-Minimum power/velocity occurs at min slope of \(P_{\text{req'd}}\) vs \(V\) curve
+Minimum power/velocity occurs at min slope of \(P_{\mathrm{req'd}}\) vs \(V\) curve
 
 *  same as speed where \(C_{D_i} = C_{D_0}\)
 *  occurs at max \(C_L /C_D\) ratio
@@ -716,27 +716,19 @@ To calculate optimum speed \(V_2\) for configuration~2~ & weight~2~ based on opt
 
 ## References
 
-5.1 Roberts, Sean "Aerodynamics for Flight Testers" *Chapter 3, Subsonic Aerodynamics*, National Test Pilot School, Mojave, CA, 1999
-
-5.2 Lawless, Alan R., et al, "Aerodynamics for Flight Testers" *Chapter 4, Drag Polars*, National Test Pilot School, Mojave ,CA, 1999
-
-5.3 Hurt Hugh H., "Aerodynamics for Naval Aviators", University of Southern California, Los Angeles, CA, 1959.
-
-5.4 McCormick, Barnes W., "Aerodynamics, Aeronautics, and Flight Mechanics", Wilet &Sons, 1979
-
-5.5 Stinton, Darryl, "The Design of the Aeroplane", BSP Professional Books, Oxford, 1983
-
-5.6 Roskam, Jan Dr., "Airplane Design, Part VI", Roskam Aviation and Engineering Corp. 1990
-
-5.7 Anon, "Equations, Tables, and Charts for Compressible Flow" NACA Report 1135, 1953
-
-5.8 Lewis, Gregory, "Aerodynamics for Flight Testers" *Chapter 6, Supersonic Aerodynamics*, National Test Pilot School, Mojave CA, 1999
-
-5.9 White, Frank M. "Fluid Mechanics" pg 29, McGraw-Hill, 1979, ISBN 0-07-069667-5.
-
-5.10 Anderson, John D. Jr, "Introduction to Flight" pg 142, Mcraw-Hill, 1989, ISBN 0-07-001641-0.
-
-5.11 Twaites, Bryan, Editor, "Incompressible Aerodynamics: An Account of the steady flow of incompressible Fluid Past Aerofoils, Wings, and Other Bodies," Dover Publications, 1960.
+|||
+|-|---------------|
+|5.1 |Roberts, Sean "Aerodynamics for Flight Testers" *Chapter 3, Subsonic Aerodynamics*, National Test Pilot School, Mojave, CA, 1999|
+|5.2 |Lawless, Alan R., et al, "Aerodynamics for Flight Testers" *Chapter 4, Drag Polars*, National Test Pilot School, Mojave ,CA, 1999|
+|5.3 |Hurt Hugh H., "Aerodynamics for Naval Aviators", University of Southern California, Los Angeles, CA, 1959.|
+|5.4 |McCormick, Barnes W., "Aerodynamics, Aeronautics, and Flight Mechanics", Wilet &Sons, 1979|
+|5.5 |Stinton, Darryl, "The Design of the Aeroplane", BSP Professional Books, Oxford, 1983|
+|5.6 |Roskam, Jan Dr., "Airplane Design, Part VI", Roskam Aviation and Engineering Corp. 1990|
+|5.7 |Anon, "Equations, Tables, and Charts for Compressible Flow" NACA Report 1135, 1953|
+|5.8 |Lewis, Gregory, "Aerodynamics for Flight Testers" *Chapter 6, Supersonic Aerodynamics*, National Test Pilot School, Mojave CA, 1999|
+|5.9 |White, Frank M. "Fluid Mechanics" pg 29, McGraw-Hill, 1979, ISBN 0-07-069667-5.|
+|5.10| Anderson, John D. Jr, "Introduction to Flight" pg 142, Mcraw-Hill, 1989, ISBN 0-07-001641-0.|
+|5.11| Twaites, Bryan, Editor, "Incompressible Aerodynamics: An Account of the steady flow of incompressible Fluid Past Aerofoils, Wings, and Other Bodies," Dover Publications, 1960.|
 
   [05001]: media/05/image1.svg {width="5.800in" height="3.481in"}
   [05005]: media/05/image5.svg {width=3.460in" height="2.750in"}

@@ -439,7 +439,7 @@ Exponent  Prefix  Abbreviation
 |\(\rho_a\)  |ambient air density|
 |\(\rho_0\)  |standard atmospheric density (slugs/ft^3 )|
 |\(\sigma\)       |air density ratio \((\rho_{\alpha} / \rho_0)\)|
-|\(\sigma_{cr}\)   |critical density|
+|\(\sigma_{\mathrm{cr}}\)   |critical density|
 |\(\tau\)       |shear stress (pounds per square inch) psi|
 |\(\tau_R\)    |Roll Mode Time Constant (sec)|
 |\(\phi\)       |bank angle (degrees)|
@@ -455,8 +455,8 @@ Exponent  Prefix  Abbreviation
 |:-|:-|
 |*a* |aileron|
 |*a* |ambient|
-|*alt* |at test altitude|
-|*avg* |average|
+|\(\mathrm{alt}\) |at test altitude|
+|\(\mathrm{avg}\) |average|
 |*c* |calibrated|
 |*e* |elevator|
 |*e* |equivalent|
@@ -465,7 +465,7 @@ Exponent  Prefix  Abbreviation
 |*I* |initial|
 |*i* |inbound leg of mission|
 |*i* |indicated|
-|*ic* |instrument corrected|
+|\(\mathrm{ic}\) |instrument corrected|
 |*l* |subscript for coefficient of rolling moment|
 |*m* |mission conditions|
 |*m* |pitching moment|
@@ -477,7 +477,7 @@ Exponent  Prefix  Abbreviation
 |*r* |rudder|
 |*S* |standard day|
 |*s* |standard day at altitude|
-|*SL* |sea level|
+|\(\mathrm{SL}\) |sea level|
 |*T* |True|
 |*t* |test day|
 
@@ -555,15 +555,15 @@ Exponent  Prefix  Abbreviation
 |\(C_l\) |rolling moment coefficient, airfoil section lift coefficient|
 |\(C_L\) |lift coefficient|
 |CLHQ |closed loop handling qualities|
-|\(C_{lp}\) |roll damping coefficient|
-|\(C_{lr}\) |roll moment due to yaw rate coefficient|
+|\(C_{\mathrm{lp}}\) |roll damping coefficient|
+|\(C_{\mathrm{lr}}\) |roll moment due to yaw rate coefficient|
 |\(C_m\) |pitching moment coefficient|
 |\(C_M\) |moment coefficient|
 |cm |centimeters|
 |cos |cosine|
 |cot |cotangent|
 |\(C_{l_{\beta}}\) |(dihedral) rolling moment due to sideslip|
-|\(C_{l_{\delta a}}\) |aileron power coefficient|
+|\(C_{l_{\delta_a}}\) |aileron power coefficient|
 |\(C_{m_q}\) |pitch damping coefficient|
 |\(C{m_{\alpha}}\) |longitudinal static stability coefficient|
 |\(C{m_{\delta e}}\) |elevator power coefficient|
@@ -619,7 +619,7 @@ Exponent  Prefix  Abbreviation
 |ELINT |electronic intelligence|
 |ELV |expendable launch vehicle|
 |EM |electromagnetic|
-|\(E_{\rm{max}}\) |maximum lift-to-drag ratio|
+|\(E_{\mathrm{max}}\) |maximum lift-to-drag ratio|
 |EMC |electromagnetic compatibility|
 |EMI |electromagnetic interference|
 |EMP |electromagnetic pulse|
@@ -644,7 +644,7 @@ Exponent  Prefix  Abbreviation
 |FCF |functional check flight|
 |FDC |flight data computer|
 |\(F_e\) |elevator force|
-|\(F_{ex}\) |excess thrust|
+|\(F_{\mathrm{ex}}\) |excess thrust|
 |\(F_g\) |gross thrust|
 |FL |flight level|
 |FLIP |flight information publication|
@@ -696,9 +696,9 @@ Exponent  Prefix  Abbreviation
 |Hg |mercury|
 |\(H_i\) |indicated altitude|
 |\(h_m\) |stick-fixed maneuver point (%MAC)|
-|\(h_\'m\) |stick-free maneuver point (%MAC)|
+|\(h_{'m}\) |stick-free maneuver point (%MAC)|
 |\(h_n\) |stick-fixed neutral point (%MAC)|
-|\(h_\'n\) |stick-free neutral point (%MAC)|
+|\(h_{'n}\) |stick-free neutral point (%MAC)|
 |hp |horsepower|
 |hr |hour|
 |hrs |hours|
@@ -769,13 +769,13 @@ Exponent  Prefix  Abbreviation
 |MAP |manifold pressure|
 |mb |millibar|
 |MCA |minimum crossing altitude|
-|\(M_{cr}\) |critical Mach number|
+|\(M_{\mathrm{cr}}\) |critical Mach number|
 |\(M_d\) |drag divergence Mach number|
-|\(M_{ac}\) |mean aerodynamic cord|
-|\(M_{GC}\) |mean geometric chord|
+|\(M_{\mathrm{ac}}\) |mean aerodynamic cord|
+|\(M_{\mathrm{GC}}\) |mean geometric chord|
 |MHz |megahertz|
 |mHZ |millihertz|
-|\(M_{ic}\) |instrument-corrected Mach number|
+|\(M_{\mathrm{ic}}\) |instrument-corrected Mach number|
 |MilSpec |military specification|
 |MIL-STD |military standard (publication)|
 |min |minute (time)|
@@ -824,7 +824,7 @@ Exponent  Prefix  Abbreviation
 |PDM |pulse duration modulation|
 |PGM |precision guided munitions|
 |PIO |pilot induced oscillations|
-|\(P_{iw}\) |total thrust horsepower required|
+|\(P_{\mathrm{iw}}\) |total thrust horsepower required|
 |Pk |probability of kill|
 |PLF |power for level flight|
 |\(P_0\) |standard atmospheric pressure (2116.22 lb/ft^2^ )|
@@ -903,7 +903,7 @@ Exponent  Prefix  Abbreviation
 |\(T_a\) |ambient temperature|
 |TACAN |tactical air navigation|
 |tan |tangent|
-|\(T_{as}\) |standard temperature at altitude|
+|\(T_{\mathrm{as}}\) |standard temperature at altitude|
 |TAS |true airspeed|
 |TBD |to be determined|
 |TD |touchdown|
@@ -913,11 +913,11 @@ Exponent  Prefix  Abbreviation
 |TER |trailing edge right|
 |TEU |trailing edge up|
 |TF |terrain following|
-|\(THP\) |Thrust Horsepower|
-|\(THP_{alt}\) |horsepower available at altitude|
-|\(THP_{max}\) |maximum horsepower available|
-|\(THP_{min}\) |minimum horsepower required|
-|\(THP_{SL}\) |horsepower required at sea level|
+|\({\mathrm{THP}}\) |Thrust Horsepower|
+|\({\mathrm{THP}}_{\mathrm{alt}}\) |horsepower available at altitude|
+|\({\mathrm{THP}}_{\mathrm{max}}\) |maximum horsepower available|
+|\({\mathrm{THP}}_{\mathrm{min}}\) |minimum horsepower required|
+|\({\mathrm{THP}}_{\mathrm{SL}}\) |horsepower required at sea level|
 |TIT |turbine inlet temperature|
 |TM |telemetry|
 |TMN |true Mach number|
@@ -954,40 +954,40 @@ Exponent  Prefix  Abbreviation
 |VAC |volts AC|
 |\(V_b\) |buffet airspeed|
 |\(V_B\) |design speed for max gust intensity|
-|\(V_{br}\) |velocity for best range|
+|\(V_{\mathrm{br}}\) |velocity for best range|
 |\(V_c\) |calibrated airspeed|
 |\(V_D\) |design diving speed|
 |VDC |volts DC|
 |VDOP |vertical dilution of precision|
 |\(V_e\) |equivalent velocity|
-|\(V_{FE}\) |maximum flap extended speed|
+|\(V_{\mathrm{FE}}\) |maximum flap extended speed|
 |VFR |visual flight rules|
 |\(V_g\)| ground speed|
 |VHF |very high frequency|
 |\(V_i\) |indicated airspeed|
-|\(V_{ic}\) |indicated airspeed corrected for instrument error|
-|\(V_{iw}\) |velocity at sea level std day and std weight|
+|\(V_{\mathrm{ic}}\) |indicated airspeed corrected for instrument error|
+|\(V_{\mathrm{iw}}\) |velocity at sea level std day and std weight|
 |VLE |max speed with landing gear extended|
-|\(V_{LO}\) |max speed while operating landing gear|
-|\(V_{LOF}\) |lift off speed|
+|\(V_{\mathrm{LO}}\) |max speed while operating landing gear|
+|\(V_{\mathrm{LOF}}\) |lift off speed|
 |VLSIC |very large scale integrated circuit|
-|\(V_{mc}\) |minimum directional control speed|
+|\(V_{\mathrm{mc}}\) |minimum directional control speed|
 |VMC |visual meteorological conditions|
-|\(V_{mca}\) |minimum directional control speed in the air|
-|\(V_{mcg}\) |minimum directional control speed on the ground|
+|\(V_{\mathrm{mca}}\) |minimum directional control speed in the air|
+|\(V_{\mathrm{mcg}}\) |minimum directional control speed on the ground|
 |\(V_mo/M_mo\) |maximum operating limit speed|
-|\(V_{mu}\) |minimum unstick speed|
-|\(V_{NE}\) |never exceed velocity|
-|\(V_{no}\) |max structural cruising speed|
-|\(V_{opt}\) |optimum velocity for endurance flight|
+|\(V_{\mathrm{mu}}\) |minimum unstick speed|
+|\(V_{\mathrm{NE}}\) |never exceed velocity|
+|\(V_{\mathrm{no}}\) |max structural cruising speed|
+|\(V_{\mathrm{opt}}\) |optimum velocity for endurance flight|
 |VOR |VHF omni-directional range|
 |VORTAC |VOR + TACAN|
-|\(V_{Pmin}\) |velocity for minimum power|
-|\(V_{Pmin,SL}\) |velocity for minimum power at sea level|
+|\(V_{P_{\mathrm{min}}}\) |velocity for minimum power|
+|\(V_{P_{\mathrm{min}_{\mathrm{SL}}}}\) |velocity for minimum power at sea level|
 |\(V_R\) |rotation speed|
 |\(V_S\) |stall speed|
-|\(V_{S0}\) |stall speed in landing configuration|
-|\(V_{S1}\) |stall speed in some defined configuration|
+|\(V_{S_0}\) |stall speed in landing configuration|
+|\(V_{S_1}\) |stall speed in some defined configuration|
 |VSTOL |vertical/short takeoff and landing|
 |\(V_T\) |true airspeed|
 |VTOL |vertical takeoff & landing|
@@ -1011,19 +1011,19 @@ Exponent  Prefix  Abbreviation
 |W/S |wing loading|
 |\(W_f\) |fuel flow (lb/hr)|
 |\(x\) |aircraft longitudinal axis, a line running through the nose & tail|
-|\(X_{ac}\) |distance from leading edge to aerodynamic center|
+|\(X_{\mathrm{ac}}\) |distance from leading edge to aerodynamic center|
 |Xlink |cross link|
 |\(y\) |aircraft lateral axis, a line running the wingtips|
 |\(Y\) |force along y-axis|
 |Y-code |encrypted P-code|
 |\(z\) |aircraft vertical or yaw axis, a line perpendicular to the longitudinal and lateral axes|
-|\(\Delta H_{ic}\) |altimeter instrument correction|
-|\(\Delta H_{pc}\) |altimeter position error correction|
+|\(\Delta H_{\mathrm{ic}}\) |altimeter instrument correction|
+|\(\Delta H_{\mathrm{pc}}\) |altimeter position error correction|
 |\(\Delta P_{p}\) |pitot pressure error|
 |\(\Delta P_{s}\) |static pressure error|
 |\(\Delta V_{c}\) |scale attitude correction to airspeed|
-|\(\Delta V_{ic}\) |instrument correction to airspeed indicator|
-|\(\Delta V_{pc}\) |correction for airspeed position error|
+|\(\Delta V_{\mathrm{ic}}\) |instrument correction to airspeed indicator|
+|\(\Delta V_{\mathrm{pc}}\) |correction for airspeed position error|
 |\(\infty\) |infinity, or freestream conditions|
 
 ## Sign Conventions
@@ -1146,13 +1146,13 @@ The rationale within the wind tunnel community is also logical: any control surf
 
 Since the above rationale defines downward deflection as positive for both ailerons, a measurement of rolling moments requires calculation of the differential aileron deflection. This rationale does not, however, specifically dictate whether a "positive" differential deflection should generate right wing down (RWD) or left wing down (LWD) moments. Differential aileron can be calculated as either.
 
- $\delta_{a} = \frac{\delta_{\text{aR}} - \delta_{\text{aL}}}{2}\) or \(\delta_{a} = \frac{\delta_{\text{aL}} - \delta_{\text{aR}}}{2}\)
+\( \delta_{a} = \frac{\delta_{\mathrm{a_R}} - \delta_{\mathrm{a_L}}}{2}\) or \(\delta_{a} = \frac{\delta_{\mathrm{a_L}} - \delta_{\mathrm{a_R}}}{2}\)
 
 Selection of the RWD convention is obvious from the flight tester's viewpoint since deflections that generate right rolls are positive. An alternative interpretation is that a positive differential aileron deflection is one that lifts the positive (right) wing lifts more than the left (LWD).
 
 Another common convention for ailerons is one that gives the same sign to both ailerons for any input. The "right hand screw" convention is opposite to the flight tester's convention, but may be more common:
 
-δ*~aR~* = +TED, δ~*aL*~ = +TEU.
+\( \delta_{a_R} = +\mathrm{TED}\), \(\delta_{a_L} = +\mathrm{TEU}\).
 
 The above wind tunnel rationale dictates only the polarity for individual control surface deflections, and leaves open the sign convention debate about controller (inceptor) input forces & displacements. One approach is that positive inputs should generate positive *motions* while an alternate approach is that positive inputs generate positive *surface deflections*. Only the flight tester's convention states that positive inputs yield positive motions *and* deflections. All approaches are mathematically connected to the hinge moment sign convention discussed below.
 
@@ -1575,7 +1575,7 @@ Development of **Poisson's Equation**:
 | \(V_0\)     | initial inertial velocity                                       |
 | \(W\)        | work                                 |
 | \(q\)        | angular displacement                                            |
-| \(\mathit{Vol}\)    | volume                                                          |
+| \(\mathrm{Vol}\)    | volume                                                          |
 | \(\omega\)        | angular velocity (radians/second)                               |
 | \(\dot{\omega}\)        | angular acceleration                                            |
 
@@ -1644,12 +1644,12 @@ For constant mass distribution in curvilinear motion: \[G = \dot{\omega} I\]
 
 |                                                                   |
 |:---------------------------------------------------------------------------------------:|
-| \(N_{zw}\) = load factor normal to flight path                                                  |
+| \(N_{z_w}\) = load factor normal to flight path                                                  |
 | \(r\) = turn radius                                       |
 | \(\Omega\) = turn rate (rad/sec)                                 |
-| \[r = \frac{V^{2}}{g\sqrt{N_{\text{zw}}^{2} - 1}}\]                                            |
-| \[\omega = \frac{g\sqrt{N_{\text{zw}}^{2} - 1}}{V}\]           |
-| \[N_{zw} = \sqrt{\frac{\omega V}{g} + 1}\] |
+| \[r = \frac{V^{2}}{g\sqrt{N_{\mathrm{zw}}^{2} - 1}}\]                                            |
+| \[\omega = \frac{g\sqrt{N_{\mathrm{zw}}^{2} - 1}}{V}\]           |
+| \[N_{z_w} = \sqrt{\frac{\omega V}{g} + 1}\] |
 | \[V = \mathrm{inertial velocity} \]                               | 
 
 ### Level Turn Kinematics Character
@@ -1670,7 +1670,7 @@ For bodies spinning about an axisymmetric axis
 ||
 |\(I_z\) = moment of inertia about spin axis |
 |\(I_t\) = transverse moment of inertia about the spin point (perpendicular to spin axis) |
-|\(I_{cg}\) = moment of inertia about the *cg* (perpendicular to spin axis) |
+|\(I_{\mathrm{cg}}\) = moment of inertia about the \(\mathrm{cg}\) (perpendicular to spin axis) |
 |\(M_x\) = moment about spin point (acting along plane that defines \(\theta\) ) |
 
 For steady precession (constant \(\dot{\theta}\), \(\dot{\phi}\) , \(\dot{\psi}\) )
@@ -1679,11 +1679,11 @@ For steady precession (constant \(\dot{\theta}\), \(\dot{\phi}\) , \(\dot{\psi}\
 
 For torque free motion (gravity is only external force)
 
-\[\dot{\psi} = \frac{I_{cg} - I_{z}}{I_{z}}\dot{\phi}\cos\theta\]
+\[\dot{\psi} = \frac{I_{\mathrm{cg}} - I_{z}}{I_{z}}\dot{\phi}\cos\theta\]
 
-note that \(I_{cg} > I_z\) yields regular precession
+note that \(I_{\mathrm{cg}} > I_z\) yields regular precession
 
-while \(I_{cg} < I_z\) yields retrograde precession
+while \(I_{\mathrm{cg}} < I_z\) yields retrograde precession
 
 ## International Phonetic Alphabet and Morse Code
 
@@ -1716,7 +1716,7 @@ while \(I_{cg} < I_z\) yields retrograde precession
 |  Y|   Yankee     |▬ • ▬ ▬|
 |  Z|   Zulu       |▬ ▬ • •|
 ||||
-|  1|   One        |• ▬ ▬ ▬|
+|  1|   One        |• ▬ ▬ ▬ ▬|
 |  2|   Two        |• • ▬ ▬ ▬|
 |  3|   Tree       |• • • ▬ ▬|
 |  4|   Four       |• • • • ▬|
@@ -1731,23 +1731,17 @@ while \(I_{cg} < I_z\) yields retrograde precession
 
 <http://www.onlineconversion.com/>
 
-1.1 Anon., "Weight Engineers Handbook", Society of Weight Engineers, P.O.Box 60024 Los Angeles, CA 90060,1976.
-
-1.2 Anon., "Aeronautical Vestpocket Handbook", United Technologies Pratt & Whitney Canada, 1000 Marie Victorin Blvd. E. P.O.B. 10 Longueuil, Quebec Canada J4K 4X9.
-
-1.3 Jones, J. P., Hawkins, G.A., "Engineering Thermodynamics" John Wiley & Sons, 1960.
-
-1.4 Esbach, Ovid W., "Handbook of Engineering Fundamentals", John Wiley and Sons Inc., 1963.
-
-1.5 Potter, M.C., Somerton, C.W., "Engineering Thermodynamics" Shaum's Outline Series, McGraw-Hill, Inc.,1993.
-
-1.6 Abbott, M. M., Van Ness, H. C., "Thermodynamics", Shaum's Outline Series, McGraw-Hill, Inc., 1989.
-
-1.7 Halliday, D., Resnick, R., "Fundamentals of Physics", John Wiley & Sons, New York, 1981.
-
-1.8 Roberts, S.C., *Chapter 3 Aircraft Control Sytems* , "Aircraft Flying Qualities Testing", National Test Pilot School, 1997. P.O.B. 658, Mojave, CA, 93501.
-
-1.9 Unit Conversion Website Link <http://www.digitaldutch.com/atmoscalc/>.
+| | |
+|-|--------------|
+|1.1 |Anon., "Weight Engineers Handbook", Society of Weight Engineers, P.O.Box 60024 Los Angeles, CA 90060,1976.|
+|1.2 |Anon., "Aeronautical Vestpocket Handbook", United Technologies Pratt & Whitney Canada, 1000 Marie Victorin Blvd. E. P.O.B. 10 Longueuil, Quebec Canada J4K 4X9.|
+|1.3 |Jones, J. P., Hawkins, G.A., "Engineering Thermodynamics" John Wiley & Sons, 1960.|
+|1.4 |Esbach, Ovid W., "Handbook of Engineering Fundamentals", John Wiley and Sons Inc., 1963.|
+|1.5 |Potter, M.C., Somerton, C.W., "Engineering Thermodynamics" Shaum's Outline Series, McGraw-Hill, Inc.,1993.|
+|1.6 |Abbott, M. M., Van Ness, H. C., "Thermodynamics", Shaum's Outline Series, McGraw-Hill, Inc., 1989.|
+|1.7 |Halliday, D., Resnick, R., "Fundamentals of Physics", John Wiley & Sons, New York, 1981.|
+|1.8 |Roberts, S.C., *Chapter 3 Aircraft Control Sytems* , "Aircraft Flying Qualities Testing", National Test Pilot School, 1997. P.O.B. 658, Mojave, CA, 93501.|
+|1.9 |Unit Conversion Website Link <http://www.digitaldutch.com/atmoscalc/>.|
 
   [01002]:  media/01/image2.png {width="6.5in" height="3.4063156167979in"}
   [01003]:  media/01/image3.png {width="6.5in" height="4.874305555555556in"}

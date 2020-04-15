@@ -359,17 +359,12 @@ Typical causes are access panels (composite and metal), cowling and fairings tha
 
 Reference Material
 
-
-10.1) Paul, C. R., "Introduction to Electromagnetic Compatibility", John Wiley & Sons Publishing, 1992
-
-10.2) Ott, H. W, "Noise Reduction Techniques in Electronic Systems", John Wiley & Sons Publishing, 1988
-
-10.3) Hrehov, D. W. and Walen, D. B., "What Flight Test Crews Need to Know About EMI/EMC", *34^th^ Annual SFTE Symposium Workshop,* 2003
-
-10.4) Federal Aviation Regulations, Part 25
-
-10.5) RTCA DO160D, "Environmental Conditions and Test Procedures for Airborne Equipment", 1997
-
-10.6) Hrehov, D. W., "What Instrumentation Engineers Need to Know About Lightning", *31^st^ Annual SFTE Symposium,* 2000
-
-10.7) Fisher, F. A., Perala, F. A., and Plumer, J A., "Lightning Protection for Aircraft", Lightning Technologies Inc., 1990
+|||
+|-|---------------|
+|10.1| Paul, C. R., "Introduction to Electromagnetic Compatibility", John Wiley & Sons Publishing, 1992|
+|10.2| Ott, H. W, "Noise Reduction Techniques in Electronic Systems", John Wiley & Sons Publishing, 1988|
+|10.3| Hrehov, D. W. and Walen, D. B., "What Flight Test Crews Need to Know About EMI/EMC", *34^th^ Annual SFTE Symposium Workshop,* 2003|
+|10.4| Federal Aviation Regulations, Part 25|
+|10.5| RTCA DO160D, "Environmental Conditions and Test Procedures for Airborne Equipment", 1997|
+|10.6| Hrehov, D. W., "What Instrumentation Engineers Need to Know About Lightning", *31^st^ Annual SFTE Symposium,* 2000|
+|10.7| Fisher, F. A., Perala, F. A., and Plumer, J A., "Lightning Protection for Aircraft", Lightning Technologies Inc., 1990|

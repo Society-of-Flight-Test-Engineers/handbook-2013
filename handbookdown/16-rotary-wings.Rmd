@@ -184,11 +184,11 @@
 
 **16.3 References:**
 
-Padfield, G.D., (2007), *Helicopter Flight Dynamics*, 2^nd^ Edition, Blackwell Publishing, UK.
-
-Cooke, A., Fitzpatrick, E., (2002), *Helicopter Test and Evaluation*, Wiley Blackwell, UK.
-
-Leishman, J.G., (2006), *Principles of Helicopter Aerodynamics*, 2^nd^ Edition, Cambridge University Press, UK.
+||
+|-|
+|Cooke, A., Fitzpatrick, E., (2002), *Helicopter Test and Evaluation*, Wiley Blackwell, UK.|
+|Leishman, J.G., (2006), *Principles of Helicopter Aerodynamics*, 2^nd^ Edition, Cambridge University Press, UK.|
+|Padfield, G.D., (2007), *Helicopter Flight Dynamics*, 2^nd^ Edition, Blackwell Publishing, UK.|
 
  
 

@@ -676,17 +676,11 @@ engine power model, a load cell and a small drag device.
 
 **11.8 References**
 
-** **
-
-11.8.1 Roberts, Sean, "Light Aircraft Performance for Test Pilots and Flight Test Engineers," Flight Research Inc., Mojave CA, 1982.
-
- 
-
-11.8.2 anon., Hamilton Standard Propeller Efficiency Charts (a.k.a.Redbook), PDB 6101.
-
- 
-
-11.8.3 Von Mises, Richard, "Theory of Flight," McGraw-Hill, 1945.
+|||
+|-|---------------| 
+|11.8.1| Roberts, Sean, "Light Aircraft Performance for Test Pilots and Flight Test Engineers," Flight Research Inc., Mojave CA, 1982.|
+|11.8.2| anon., Hamilton Standard Propeller Efficiency Charts (a.k.a.Redbook), PDB 6101.|
+|11.8.3| Von Mises, Richard, "Theory of Flight," McGraw-Hill, 1945.|
 
  
 
