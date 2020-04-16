@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>4 Pitot Statics | Flight Test Engineering Reference Handbook</title>
-  <meta name="description" content="4 Pitot Statics | Flight Test Engineering Reference Handbook" />
+  <title>8 Motion and Vibration Analysis | Flight Test Engineering Reference Handbook</title>
+  <meta name="description" content="8 Motion and Vibration Analysis | Flight Test Engineering Reference Handbook" />
   <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="4 Pitot Statics | Flight Test Engineering Reference Handbook" />
+  <meta property="og:title" content="8 Motion and Vibration Analysis | Flight Test Engineering Reference Handbook" />
   <meta property="og:type" content="book" />
   
   <meta property="og:image" content="media/media/image1.jpg" />
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="4 Pitot Statics | Flight Test Engineering Reference Handbook" />
+  <meta name="twitter:title" content="8 Motion and Vibration Analysis | Flight Test Engineering Reference Handbook" />
   
   
   <meta name="twitter:image" content="media/media/image1.jpg" />
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="universe-earth-atmospheric.html"/>
-<link rel="next" href="aerodynamics.html"/>
+<link rel="prev" href="mass-properties.html"/>
+<link rel="next" href="material-strength.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <script src="libs/elevate-section-attrs-2.0/elevate-section-attrs.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -334,522 +334,730 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="pitot-statics" class="section level1" number="4">
-<h1><span class="header-section-number">4</span> Pitot Statics</h1>
-<p><em>Editor’s Note</em></p>
-<p><em>In an effort to reduce confusion and conflict regarding pitot and static pressure nomenclature, SFTE has elected to change two definitions and symbols since the first edition of this handbook was released. Henceforth, <span class="math inline">\(\Delta Ps\)</span> shall indicate static pressure ERROR (<span class="math inline">\(\Delta P_s = P_s - P_a)\)</span> and <span class="math inline">\(\Delta P_T\)</span> shall indicate total (i.e. pitot) pressure ERROR (<span class="math inline">\(\Delta P_T = P_p - P_T\)</span>). This nomenclature eliminates the <span class="math inline">\(\Delta P_p\)</span> symbol and confusion as to whether it indicates position error or pitot error.</em></p>
-<div id="common-nomenclature" class="section level2 unnumbered" number="">
-<h2>Common Nomenclature</h2>
-<table>
-<colgroup>
-<col width="23%" />
-<col width="76%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Symbol</th>
-<th align="left">Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><span class="math inline">\(a\)</span></td>
-<td align="left">speed of sound</td>
-</tr>
-<tr class="even">
-<td align="left"><span class="math inline">\(a_0\)</span></td>
-<td align="left">speed of sound at sea level on a standard day</td>
-</tr>
-<tr class="odd">
-<td align="left"><span class="math inline">\(M\)</span></td>
-<td align="left">Mach number</td>
-</tr>
-<tr class="even">
-<td align="left"><span class="math inline">\(P_a\)</span></td>
-<td align="left">ambient pressure</td>
-</tr>
-<tr class="odd">
-<td align="left"><span class="math inline">\(P_0\)</span></td>
-<td align="left">ambient pressure at sea level on a standard day (<span class="math inline">\(=2116.2 lb/ft^2 = 29.92 in Hg\)</span>)</td>
-</tr>
-<tr class="even">
-<td align="left"><span class="math inline">\(P_p\)</span></td>
-<td align="left">pitot pressure corrected for instrument error only</td>
-</tr>
-<tr class="odd">
-<td align="left"><span class="math inline">\(P_s\)</span></td>
-<td align="left">static pressure (indicated at static port)</td>
-</tr>
-<tr class="even">
-<td align="left"><span class="math inline">\(P_T\)</span></td>
-<td align="left">total pressure</td>
-</tr>
-<tr class="odd">
-<td align="left"><span class="math inline">\(q\)</span></td>
-<td align="left">incompressible dynamic pressure</td>
-</tr>
-<tr class="even">
-<td align="left"><span class="math inline">\(q_c\)</span></td>
-<td align="left">compressible dynamic pressure (<span class="math inline">\(=P_T-P_a\)</span>)</td>
-</tr>
-<tr class="odd">
-<td align="left"><span class="math inline">\(q_{\mathrm{cic}}\)</span></td>
-<td align="left">instrument corrected differential pressure (<span class="math inline">\(=P_p-P_s\)</span>)</td>
-</tr>
-<tr class="even">
-<td align="left"><span class="math inline">\(T_a\)</span></td>
-<td align="left">ambient temperature (absolute scale)</td>
-</tr>
-<tr class="odd">
-<td align="left"><span class="math inline">\(T_0\)</span></td>
-<td align="left">ambient temperature at sea level on a standard day (<span class="math inline">\(=288.15 K = 15^{\circ} C = 518.7^{\circ}R=59.0^{\circ}F\)</span>)</td>
-</tr>
-<tr class="even">
-<td align="left"><span class="math inline">\(T_T\)</span></td>
-<td align="left">total temperature (absolute scale)</td>
-</tr>
-<tr class="odd">
-<td align="left"><span class="math inline">\(V_c\)</span></td>
-<td align="left">calibrated airspeed</td>
-</tr>
-<tr class="even">
-<td align="left"><span class="math inline">\(V_e\)</span></td>
-<td align="left">equivalent airspeed</td>
-</tr>
-<tr class="odd">
-<td align="left"><span class="math inline">\(V_g\)</span></td>
-<td align="left">ground speed</td>
-</tr>
-<tr class="even">
-<td align="left"><span class="math inline">\(V_i\)</span></td>
-<td align="left">indicated airspeed</td>
-</tr>
-<tr class="odd">
-<td align="left"><span class="math inline">\(V_T\)</span></td>
-<td align="left">true airspeed</td>
-</tr>
-<tr class="even">
-<td align="left"><span class="math inline">\(\Delta H_{\mathrm{ic}}\)</span></td>
-<td align="left">altimeter instrument correction</td>
-</tr>
-<tr class="odd">
-<td align="left"><span class="math inline">\(\Delta H_{\mathrm{pc}}\)</span></td>
-<td align="left">altimeter position error correction</td>
-</tr>
-<tr class="even">
-<td align="left"><span class="math inline">\(\Delta P_D\)</span></td>
-<td align="left">dynamic pressure error (<span class="math inline">\(=P_T-\Delta P_s\)</span>)</td>
-</tr>
-<tr class="odd">
-<td align="left"><span class="math inline">\(\Delta P_T\)</span></td>
-<td align="left">total (pitot) pressure error (<span class="math inline">\(=P_P-P_T\)</span>)</td>
-</tr>
-<tr class="even">
-<td align="left"><span class="math inline">\(\Delta P_s\)</span></td>
-<td align="left">static pressure error (<span class="math inline">\(=P_s-P_a\)</span>)</td>
-</tr>
-<tr class="odd">
-<td align="left"><span class="math inline">\(\Delta V_{\mathrm{ic}}\)</span></td>
-<td align="left">airspeed instrument correction</td>
-</tr>
-<tr class="even">
-<td align="left"><span class="math inline">\(\Delta V_{\mathrm{pc}}\)</span></td>
-<td align="left">airspeed position error correction</td>
-</tr>
-<tr class="odd">
-<td align="left"><span class="math inline">\(\delta\)</span></td>
-<td align="left">pressure ratio between ambient and sea level std (<span class="math inline">\(=P_a/P_0\)</span>)</td>
-</tr>
-<tr class="even">
-<td align="left"><span class="math inline">\(\theta\)</span></td>
-<td align="left">temperature ratio between ambient and sea level std (<span class="math inline">\(=T_a/T_0\)</span>)</td>
-</tr>
-<tr class="odd">
-<td align="left"><span class="math inline">\(\rho_0\)</span></td>
-<td align="left">ambient density at sea level on a std day (<span class="math inline">\(=0.002 377 slg/ft^3\)</span>)</td>
-</tr>
-<tr class="even">
-<td align="left"><span class="math inline">\(\sigma\)</span></td>
-<td align="left">density ratio between ambient and sea level std (<span class="math inline">\(=P_a/P_0\)</span>)</td>
-</tr>
-<tr class="odd">
-<td align="left"><span class="math inline">\(\gamma\)</span></td>
-<td align="left">ratio of specific heats (<span class="math inline">\(=1.4\)</span> for air)</td>
-</tr>
-</tbody>
-</table>
+<div id="motion-and-vibration-analysis" class="section level1" number="8">
+<h1><span class="header-section-number">8</span> Motion and Vibration Analysis</h1>
+<p>8.1 Recurring Abbreviations</p>
+<p>8.2 First Order Motion</p>
+<blockquote>
+<p>8.2.1 Elements of First Order Motion</p>
+<p>8.2.2 First Order Motion Descriptive Parameters</p>
+<p>8.2.3 Determining Descriptive Parameter <em>τ</em></p>
+</blockquote>
+<p>8.3 Second Order Motion</p>
+<blockquote>
+<p>8.3.1 Elements of Second Order Motion</p>
+<p>8.3.2 Second Order Motion Descriptive Parameters</p>
+<p>8.3.3 Determining Descriptive Parameters</p>
+</blockquote>
+<p>8.4 Complex Plane</p>
+<p>8.5 Parameter Conversions</p>
+<p>8.6 Vibration Nomograph</p>
+<p>8.7 References</p>
+<p><strong>8.1 Recurring Abbreviations</strong></p>
+<div id="c-1x-number-of-cycles-to-achieve-1x-amplitude" class="section level6" number="8.0.0.0.0.1">
+<h6><span class="header-section-number">8.0.0.0.0.1</span> <em>C <sub>1/x</sub></em> number of cycles to achieve 1/<em>x</em> amplitude</h6>
 </div>
-<div id="subsonic-airspeed-and-mach-equation" class="section level2" number="4.1">
-<h2><span class="header-section-number">4.1</span> Subsonic Airspeed and Mach Equation</h2>
-<p>True Airspeed</p>
-<p><span class="math display">\[V_{T} = \left\lbrack \frac{2\gamma}{\gamma-1} \frac{P_a}{\rho_a} \left( \left\lbrack \frac{P_T - P_a}{P_a} + 1 \right\rbrack^\frac{\gamma-1}{\gamma} - 1 \right) \right\rbrack ^{1/2}\]</span></p>
-<p>Equivalent Airspeed</p>
-<p>(= <span class="math inline">\(V_T\)</span> equation with assumption of std day sea level density)</p>
-<p><span class="math display">\[V_{e} = \sqrt{7\frac{P_{a}}{\rho_0}\left( \left\lbrack \frac{P_{T} - P_{a}}{P_{a}} + 1 \right\rbrack^{\frac{2}{7}} - 1 \right)} = V_{T}\sqrt{\frac{\rho_{a}}{\rho_0}} = V_{T}\sqrt{\sigma}\]</span></p>
-<p>Calibrated Airspeed</p>
-<p>(= <span class="math inline">\(V_e\)</span> equation with assumption of std day sea level pressure)</p>
-<p><span class="math display">\[V_{c} = \left\lbrack \frac{2\gamma}{\gamma - 1}\frac{P_0}{\rho_0}\left( \left\lbrack \frac{P_{T} - P_{a}}{P_0} + 1 \right\rbrack^{\frac{\gamma - 1}{\gamma}} - 1 \right) \right\rbrack^{\frac{1}{2}}\]</span></p>
-<p><span class="math display">\[\sqrt{7 \frac{P_0}{\rho_0}\left( \left\lbrack \frac{q_c}{P_0} + 1 \right\rbrack^{0.2857} - 1 \right)}\]</span></p>
-<p>Applying British units (<span class="math inline">\(lb/ft^2\)</span>) and converting from <em>ft/sec</em> to knots yields</p>
-<p><span class="math display">\[ V_{c} = 1479\sqrt{\left\lbrack \frac{P_{T} - P_{a}}{2116} + 1 \right\rbrack^{\frac{2}{7}} - 1} ~(kts)\]</span></p>
-<p>Mach Number</p>
-<p><span class="math display">\[M = \frac{V_{T}}{a} = \sqrt{\frac{2}{\gamma - 1}\left\lbrack \left( \frac{P_{T} - P_{a}}{P_{a}} + 1 \right)^{\frac{\gamma - 1}{\gamma}} - 1 \right\rbrack} = \sqrt{5\left( \left\lbrack \frac{q_{c}}{P_{a}} + 1 \right\rbrack^{\frac{2}{7}} - 1 \right)}\]</span></p>
+<div id="d-damping" class="section level6" number="8.0.0.0.0.2">
+<h6><span class="header-section-number">8.0.0.0.0.2</span> <em>D</em> damping</h6>
+<p><em>D<sub>1</sub>,D<sub>2</sub></em> peak-to-peak displacement (subsequent)</p>
+<p><em>FV</em> final value</p>
+<p><em>F(t) forcing function</em></p>
+<p><em>f</em> frequency, cycles/sec = ω/(2π)</p>
+<p><em>HCAR</em> half cycle amplitude ratio (i.e., <em>x<sub>2</sub>/x<sub>1</sub></em>, <em>x<sub>3</sub>/x<sub>2</sub></em>, etc.)</p>
+<p><em>Im</em> imaginary axis</p>
+<p><em>M</em> mass</p>
+<p><em>MP</em> peak overshoot</p>
+<p><em>Re</em> real axis</p>
+<p><em>rms</em> root mean square</p>
+<p><em>s</em><sub>1</sub>, <em>s</em><sub>2</sub> equation roots of second order</p>
+<p><em>T</em> period = 1/<em>f</em> = 2π/ω<sub>d</sub> (seconds)</p>
+<p><em>T<sub>d</sub></em> delay time (i.e., time to 50% of FV)</p>
+<p><em>T<sub>r</sub></em> rise time (i.e., time from 10% to 90% of FV)</p>
+<p><em>T<sub>p</sub></em> time to peak amplitude</p>
+<p><em>TPR</em> transient peak ratio</p>
+<p><em>T<sub>s</sub></em> settling time (time to settle within <em>x</em>% of FV)</p>
+<p><em>T <sub>1/2</sub></em> time to achieve 1/<em>x</em> amplitude</p>
+<p><em>x</em> displacement</p>
+<p><em>x<sub>1</sub>,x<sub>2</sub></em> peak displacements (subsequent)</p>
+<p><em>v</em> velocity</p>
+<p><em>v<sub>0</sub></em> peak velocity</p>
+<p><em>ε =ζω<sub>n</sub> /ω<sub>d</sub></em> = ζ/<span class="math display">\[1-ζ^2^\]</span>^ 0.5^</p>
+<p><em>φ</em> phase lag (radians)</p>
+<p><em>ζ</em> damping coefficient (non-dimensional)</p>
+<p><em>σ</em> damping rate <em>=ζω<sub>n</sub></em> = 1/<em>τ</em></p>
+<p><em>τ</em> time constant =1/<em>ζω<sub>n</sub></em></p>
+<p>ω  frequency, radians/sec</p>
+<p><em>ω<sub>d</sub></em> damped natural frequency (rad/sec)</p>
+<p><em>ω<sub>n</sub></em> natural frequency (rad/sec)</p>
+<p><strong>8.2 First Order Motion</strong></p>
+<p>Found in classical aircraft roll and spiral modes. Named first-order because the motions are described by mathematics using the first derivative of a parameter.</p>
+<p><strong>8.2.1 Elements of First Order Motion</strong></p>
+<p>Mechanical analogy contains elements of mass, damping and</p>
+<p>sometimes a forcing function.</p>
+<p>Example: Determine the vertical velocity of a diver as she hits the water at 10 ft/s (assume constant body position &amp; neutral buoyancy)</p>
+<p>Summing vertical forces gives</p>
+<p><img src="media/08/image1.svg" /> </p>
+<p>Since <em>D</em> &amp; <em>M</em> are constant</p>
+<p> </p>
+<p><img src="media/08/image2.svg" /><img src="media/08/image3.png" /></p>
+<p>Apply initial condition</p>
+<p> </p>
+<p><img src="media/08/image4.png" /></p>
+<p>Plot response over time</p>
+<p> </p>
+<p><img src="media/08/image5.png" /></p>
+<p>• Exponential rate of decay described by <em>D/M</em> ratio</p>
+<p> </p>
+<p>• Example 2: Diver with 20 lb submerged weight releases from zero velocity at top of pool (quiescent condition).</p>
+<p>Solve using Laplace analysis methods:</p>
+<p> </p>
+<p><img src="media/08/image6.png" /></p>
+<p><img src="media/08/image7.png" /></p>
+<p><img src="media/08/image8.png" /></p>
+<p>This “force/damping” ratio is merely a scaling factor for the steady state.</p>
+<p> </p>
+<p><img src="media/08/image9.png" /></p>
+<p>• Several methods can be used to describe the quickness of convergence toward steady state (i.e., time to 99.999 % of <em>V<sub>ss</sub></em>, time to 1/2 <em>V<sub>ss</sub></em>).</p>
+<p>• By convention, we use a % that directly reflects the exponent.</p>
+<p>• Establish a time constant <em>τ</em> based on <em>D/M</em>.</p>
+<p> </p>
+<p><img src="media/08/image10.png" /></p>
+<p><strong>8.2.2 First Order Motion Descriptive Parameters</strong></p>
+<p><img src="media/08/image11.png" /></p>
+<p><img src="media/08/image12.png" /></p>
+<p>when <em>t</em> = 0.6931τ: <em>x = e</em>^− 0.6931^ = 0.5 (time to half amplitude)</p>
+<p>when <em>t</em> = τ: <em>x = e</em><sup>−1</sup> = 0.37</p>
+<p>when <em>t</em> = 3τ     <em>x = e</em><sup>−3</sup> = 0.05</p>
+<p>when <em>t</em> = 4τ: <em>x = e</em><sup>−4</sup> = 0.02</p>
+<p>If exponent &gt; 0, then motion is divergent.</p>
+<p><img src="media/08/image13.svg" /><img src="media/08/image14.png" /></p>
+<p><img src="media/08/image15.png" /></p>
+<p>• <em>τ </em>again describes the exponential rate of divergence.</p>
+<p>• By convention, the “time to double amplitude” (<em>t<sub>2</sub></em>) is usually applied as the evaluation metric.</p>
+<p>• <em>x</em><sub>(t2)</sub> = 2<em>x</em><sub>(0)</sub> where <em>x</em><sub>(0)</sub> = <em>c<sup>m</sup></em><sup>0</sup></p>
+<p> </p>
+<p><img src="media/08/image16.png" /></p>
+<p><img src="media/08/image17.png" /></p>
+<p><strong>8.2.3 Determining <em>τ</em> from Step Input Time History</strong></p>
+<p><strong>Method #1</strong></p>
+<p>τ = time to reach 0.632 <em>x<sub>ss</sub></em></p>
+<p><img src="media/08/image18.png" /></p>
+<p><strong>Method #2</strong></p>
+<p><img src="media/08/image19.png" /></p>
+<p><img src="media/08/image20.png" /></p>
+<p><img src="media/08/image21.png" /></p>
+<p><strong>Method #3</strong></p>
+<p> </p>
+<p>1. Pick any time <em>t<sub>1</sub></em>.</p>
+<p>2. Draw tangent at <em>t<sub>1</sub></em>.</p>
+<p>3. Note <em>t<sub>2</sub></em> where tangent intercepts x<sub>ss</sub>.</p>
+<p>4. <em>τ</em> = <em>t<sub>2</sub></em>-<em>t<sub>1</sub></em></p>
+<p> </p>
+<p><img src="media/08/image22.png" /></p>
+<p><strong>Method #4</strong> When <em>X<sub>SS</sub></em> is unknown use</p>
+<p> </p>
+<p><img src="media/08/image23.png" /></p>
+<p><img src="media/08/image24.png" /></p>
+<p><strong>Method #5</strong> When <em>Xss</em> is known, use</p>
+<p> </p>
+<p><img src="media/08/image25.png" /></p>
+<p><strong>Linearity check:</strong></p>
+<p>Note parameter change between even time increments.</p>
+<p> </p>
+<p>Plot parameter changes vs elapsed time on semi-log scale</p>
+<p> </p>
+<p><img src="media/08/image26.png" /></p>
+<p>Slope of line equals <em>τ</em></p>
+<p> </p>
+<p>Dp</p>
+<p><img src="media/08/image27.png" /></p>
+<p><strong>8.3 Second Order Motion</strong></p>
+<p>Found in classical aircraft phugoid, Dutch roll and short period modes as well as noise filter and vibration testing. Named second-order because the motions are described by mathematics using the second derivative of a parameter.</p>
+<p><strong>8.3.1 Elements of Second Order Motion</strong></p>
+<p>Mechanical systems have elements of spring, mass, and usually damping. Forcing functions can be included (see illustration).</p>
+<p><img src="media/08/image28.png" /></p>
+<p><em>K</em> = spring stiffness (<em>F</em>/<em>x</em>)</p>
+<p><em>x</em> = displacement from equilibrium</p>
+<p><em>M</em> = mass</p>
+<p><em>F</em><sub>(<em>t</em>)</sub> = forcing function</p>
+<p><em>D</em> = damping</p>
+<p> </p>
 </div>
-<div id="scale-altitude-compressibility-correction" class="section level2" number="4.2">
-<h2><span class="header-section-number">4.2</span> Scale Altitude (Compressibility ) Correction</h2>
-<p>The name comes from the fact that although the equivalent airspeed equation does correct for compressibility, the sea level pressure assumption used for calibrated airspeed makes the compressibility correction valid only for that (sea level) pressure. Above sea level, the calibrated airspeed must be re-scaled for pressure effects on compressibility. The mathematical method for determining <span class="math inline">\(V_e\)</span> from <span class="math inline">\(V_c\)</span> is to first solve the calibrated airspeed equation for <span class="math inline">\(q_c\)</span>.</p>
-<p><span class="math display">\[q_c = P_0  \left\lbrack \left( \frac{\rho_0}{P_0} \frac{V_c^2}{7} + 1 \right)^{3.5} - 1 \right\rbrack\]</span></p>
-<p>Next, substitute this value and the ambient pressure (<span class="math inline">\(P_a\)</span> into the equivalent airspeed equation. (<span class="math inline">\(q_c = P_T - P_a\)</span>)</p>
-<p><span class="math display">\[V_e = \sqrt{7 \frac{P_a}{\rho_0} \left( \left\lbrack \frac{q_c}{P_a}+1 \right\rbrack^{2/7} - 1 \right) } \]</span></p>
-<p>The adjacent chart does this graphically for all subsonic airspeeds.</p>
-<p><span class="math display">\[V_e = V_c + \Delta V_c\]</span></p>
-<p><img src="media/04/image3.svg" style="width:8.91528in;height:6.20764in" /></p>
+<div id="section" class="section level4" number="8.0.0.1">
+<h4><span class="header-section-number">8.0.0.1</span> </h4>
 </div>
-<div id="subsonic-relations-between-compressible-and-incompressible-dynamic-pressure" class="section level2" number="4.3">
-<h2><span class="header-section-number">4.3</span> Subsonic Relations Between Compressible and Incompressible Dynamic Pressure</h2>
-<p>For constant density (incompressible) flow Bernoulli’s equation reduces to</p>
-<p><span class="math display">\[V_T = \sqrt{\frac{2}{\rho_a}(P_T - P_a)} = \sqrt{\frac{2q}{\rho_a}} \]</span></p>
-<p>Where incompressible dynamic pressure <span class="math inline">\(q\)</span> is defined as <span class="math inline">\(P_T-P_a\)</span>.</p>
-<p>As airflow speed increases, its density at the stagnation point increases thereby increasing the sensed pressure. The ratio between compressible &amp; incompressible dynamic pressure can be written as a function of Mach number</p>
-<p><span class="math display">\[q_c = q \left\lbrack 1 + \frac{M^2}{4} + \frac{M^4}{40} + \frac{M^6}{1600} + ... \right\rbrack \]</span></p>
-<p>True dynamic pressure <span class="math inline">\(q\)</span> (as used in modeling) is defined in dimensional analysis as:</p>
-<p><span class="math display">\[q = \frac{1}{2} \rho_a V_T^2 = \frac{1}{2}\rho_0V_e^2\]</span></p>
-<p>This value for <span class="math inline">\(q\)</span> should not be confused with compressible (a.k.a. impact or differential) pressure, <span class="math inline">\(q_c (= P_T - P_a)\)</span></p>
-<p><img src="media/04/image8.png" style="width:8.99861in;height:5.29097in" /></p>
+<div id="section-1" class="section level4" number="8.0.0.2">
+<h4><span class="header-section-number">8.0.0.2</span> </h4>
 </div>
-<div id="supersonic-airspeed-and-mach-equations" class="section level2" number="4.4">
-<h2><span class="header-section-number">4.4</span> Supersonic Airspeed and Mach Equations</h2>
-<p><span class="math inline">\(P_T&#39;\)</span> denotes pitot pressure behind shock wave</p>
-<p>True Airspeed</p>
-<p><span class="math display">\[ \frac{P_T&#39; - P_a}{P_a} = \frac{q_c}{P_a} = \left[ \frac{\gamma + 1}{2} \left(  \frac{V}{a} \right)^2  \right]^\frac{\gamma}{\gamma-1} \left[ \frac{1}{ \frac{2\gamma}{\gamma+1} \left( \frac{V}{a} \right)^2 - \frac{\gamma-1}{\gamma+1} }  \right]^\frac{1}{\gamma-1} - 1 \]</span></p>
-<p>Equivalent Airspeed (valid if <span class="math inline">\(q_c/P_a &gt; 0.892 929 158\)</span>)</p>
-<p><span class="math display">\[ \frac{q_c}{P_a} = \frac{166.92 \left[ \frac{V_e}{a_0 \sqrt{\sigma}} \right]^7} {\left( 7 \left[ \frac{V_e}{a_0 \sqrt{\sigma}} \right]^2 - 1 \right)^{2.5}} - 1 \]</span></p>
-<p>Calibrated Airspeed (valid if <span class="math inline">\(V_c &gt; a_0\)</span>)</p>
-<p><span class="math display">\[ \frac{q_c}{P_0} = \frac{166.92 \left[ \frac{V_c}{a_0} \right]^7} {\left( 7 \left[ \frac{V_c}{a_0} \right]^2 - 1 \right)^{2.5}} - 1\]</span></p>
-<p>Mach Number</p>
-<p><span class="math display">\[ \frac{q_c}{P_a} = \frac{166.92 M^7} {\left( 7 M^2 - 1 \right)^{2.5}} -1 \]</span></p>
+<div id="section-2" class="section level4" number="8.0.0.3">
+<h4><span class="header-section-number">8.0.0.3</span> </h4>
 </div>
-<div id="total-temperature-equation" class="section level2" number="4.5">
-<h2><span class="header-section-number">4.5</span> Total Temperature Equation</h2>
-<p>Since stagnation exists at the probe, it absorbs the energy of the air</p>
-<p><img src="media/04/image13.png" style="width:5in;height:0.82in" /></p>
-<p>Apply Bernoulli:</p>
-<p><span class="math display">\[ \frac{V^2}{2} + \frac{\gamma}{\gamma - 1}  \frac{P_s}{\rho_s} = \frac{\gamma}{\gamma - 1} \frac{P_p}{\rho_p} \]</span></p>
-<p>Also <span class="math inline">\(\frac{P}{\rho} = RT\)</span> and <span class="math inline">\(a^2 = \gamma RT\)</span> therefore</p>
-<p><span class="math display">\[ \frac{T_T}{T_a} = 1 + \left[ \frac{\gamma - 1}{2} \right] M^2 \]</span></p>
-<p>Use <em>K</em> (probe recovery factor) to account for heat losses:</p>
-<p><span class="math display">\[ \frac{T_T}{T_a} = 1 + \left[ \frac{K(\gamma - 1)}{2} \right] M^2 \]</span></p>
-<p>During position error flight testing, measure <span class="math inline">\(T_i\)</span>. From <span class="math inline">\(V_c\)</span> and <span class="math inline">\(H_{\mathrm{pc}}\)</span> determine M</p>
-<p><span class="math display">\[ T_i + \Delta T_{\mathrm{ic}} = T_T = T_a + T_aKM^2 \]</span></p>
-<p>Plot <span class="math inline">\(T_i\)</span> vs <span class="math inline">\(M^2\)</span></p>
-<p><img src="media/04/image14.svg" style="width:4.3125in;height:3in" /></p>
+<div id="natural-character-is-observed-when-system-is-allowed-to-move-with-no-external-input-ft-0" class="section level4" number="8.0.0.4">
+<h4><span class="header-section-number">8.0.0.4</span> Natural character is observed when system is allowed to move with no external input <span class="math display">\[*F*(*t*) = 0\]</span></h4>
 </div>
-<div id="altimeter-equation" class="section level2" number="4.6">
-<h2><span class="header-section-number">4.6</span> Altimeter Equation</h2>
-<p><span class="math inline">\(P_a = P_0 \left(1-6.875 35 \times 10^{-6} H\right)^{5.256}\)</span> below 36,089 ft</p>
-<p><span class="math inline">\(P_a = P_0 \left(0.223 35 \right) \textrm{e}^{-0.000 048 06[H-36089]}\)</span> above 36,089 ft</p>
-<!--- FIXME: This figure really tells you nothing --->
-<p><img src="media/04/image15.png" style="width:4.20347in;height:4.11319in" /></p>
-<!--- FIXME: The following equations aren't really referenced anywhere in this section.  Some are defined at the section beginning --->
-<table>
-<thead>
-<tr class="header">
-<th align="left">Symbol</th>
-<th align="left">Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><span class="math inline">\(H_i\)</span></td>
-<td align="left">indicated pressure altituide (29.92" Hg)</td>
-</tr>
-<tr class="even">
-<td align="left"><span class="math inline">\(\Delta H_{\mathrm{ic}}\)</span></td>
-<td align="left">instrument error correction</td>
-</tr>
-<tr class="odd">
-<td align="left"><span class="math inline">\(H_{\mathrm{ic}}\)</span></td>
-<td align="left">altimeter corrected of instrument error</td>
-</tr>
-<tr class="even">
-<td align="left"><span class="math inline">\(\Delta H_{\mathrm{pc}}\)</span></td>
-<td align="left">position error correction</td>
-</tr>
-<tr class="odd">
-<td align="left"><span class="math inline">\(H_c\)</span></td>
-<td align="left">calibrated pressure altitude</td>
-</tr>
-</tbody>
-</table>
+<div id="section-3" class="section level4" number="8.0.0.5">
+<h4><span class="header-section-number">8.0.0.5</span> </h4>
 </div>
-<div id="position-error-test-methods" class="section level2" number="4.7">
-<h2><span class="header-section-number">4.7</span> Position Error Test Methods</h2>
-<div id="fly-by" class="section level3" number="4.7.1">
-<h3><span class="header-section-number">4.7.1</span> Fly-by</h3>
-<p>As depicted below, the flyby method originally used some sort of viewing platform with surveyed distances and a grid or other device for determining the aircraft’s relative angle above the platform’s altimeter. This information combined to give the aircraft’s actual pressure altitude. Modern methods replace the tower system with a radar altimeter or GPS unit to determine tapeline height above the flyby line (<span class="math inline">\(H_g\)</span>). This geometric height is converted to a pressure altitude change using a temperature correction. When added to the aircraft’s pressure altitude on the runway, this change provides the actual pressure altitude during the flyby (<span class="math inline">\(\textrm{Actual } H_c = \textrm{runway pressure altitude} + H_g (T_s/T_t)\)</span>). <!--- This nomenclature is inconsistent with the rest of the section ---></p>
-<p><img src="media/04/image17.png" style="width:5.28681in;height:1.76042in" /></p>
-<p><span class="math display">\[\text{Actual } H_{c} = H_{c_{\mathrm{tower}}} + \left( D\tan\theta \cdot \frac{T_{s}}{T_{t}} \right) \]</span></p>
-<p><span class="math display">\[ \Delta H_{\mathrm{pc}} = \text{Actual } H_c - \left( H_i + \Delta H_{\mathrm{ic}} \right) \]</span></p>
-<!--- Changing capital subscript 's' to lower-case to make more consistent with rest of the handbook --->
-<p><span class="math display">\[ \Delta P_s = \rho g \Delta H_{\mathrm{pc}} \]</span></p>
-<p><span class="math display">\[ \Delta P_{S} = q_{c} - q_{\mathrm{cic}} \]</span></p>
-<p><span class="math display">\[ \Delta P_{S} = \frac{1}{2}\rho_{0}{V_{c}^{2} - \frac{1}{2}\rho_{0}{V_{\mathrm{ic}}}^{2} \text{ (low Mach only)}} \]</span></p>
-<p>Solve for <span class="math inline">\(V_c\)</span></p>
-<p><span class="math display">\[ \Delta V_{\mathrm{pc}} = V_c - V_{\mathrm{ic}} \]</span></p>
-<!--- FIXME: What flow chart is this referring to??? --->
-<p>See flowchart for high mach or <span class="math inline">\(P_T \ne 0\)</span> cases.</p>
-<p><img src="media/04/image18.svg" style="width:5.1875in;height:3.15in" /></p>
-<p>Note: A check on basic instrument calibration is easily accomplished using a “ground block” where a parked test aircraft compares altimeters with tower. Any error can be treated as a bias.</p>
-<p>This altitude-based test method determines altimeter corrections and therefore static error directly. Accurately converting this static source error to an airspeed correction also requires knowledge of the test pitot tube’s total pressure error (<span class="math inline">\(\Delta P_T\)</span> ). This can be determined either through direct comparison with a calibrated noseboom pitot pressure or from one of the airspeed-based methods that directly yield airspeed corrections (pace, ground course, GPS). In lieu of these options, the pitot error may assumed to be zero, but this will reduce confidence in the calculated value for airspeed correction.</p>
+<div id="section-4" class="section level4" number="8.0.0.6">
+<h4><span class="header-section-number">8.0.0.6</span> <img src="media/08/image29.png" /></h4>
 </div>
-<div id="ground-course-method" class="section level3" number="4.7.2">
-<h3><span class="header-section-number">4.7.2</span> Ground Course Method</h3>
-<!--- This figure doesn't add much value --->
-<p><img src="media/04/image19.svg" style="width:4.5625in;height:4.0625in" /></p>
-<p>Fly known course at constant <span class="math inline">\(V_i\)</span></p>
-<p>Elapsed time = <span class="math inline">\(\Delta T\)</span>, therefore <span class="math inline">\(V_T = \frac{\Delta S}{\Delta T}\)</span></p>
-<p>Use <span class="math inline">\(H_i\)</span> and <span class="math inline">\(T_i\)</span> to compute <span class="math inline">\(V_e = V_T \left(\sqrt{\sigma} \right) = V_c\)</span> for low altitude</p>
-<p>Correct <span class="math inline">\(V_i\)</span> for instrument error corrections (<span class="math inline">\(\Delta V_{\mathrm{ic}}\)</span>) using</p>
-<p><span class="math display">\[V_{\mathrm{ic}} = V_i + \Delta V_{\mathrm{ic}} \]</span></p>
-<p><span class="math display">\[\Delta V_{\mathrm{pc}} = V_c - V_{\mathrm{ic}} \]</span></p>
-<p>To determine altimeter error assume <span class="math inline">\(\Delta P_T = 0\)</span></p>
-<p><span class="math display">\[\frac{1}{2} \rho_0 \left[ V_c^2 - V_{\mathrm{ic}}^2 \right] = +\Delta P_s \]</span></p>
-<p><span class="math display">\[\Delta P_s = +\rho g \Delta H \]</span></p>
-<p>If <span class="math inline">\(\Delta P_T \ne 0\)</span>, then <span class="math inline">\(\Delta H_{\mathrm{pc}} = + \frac{\Delta P_s - \Delta P_T}{\rho g}\)</span></p>
-<!--- FIXME: This is a poor place to label a figure --->
-<p>Error resulting from a <span class="math inline">\(\frac{1}{2}\)</span> sec timing error</p>
-<!--- FIXME: This image should probably be split into two with consistent axes and font sizes --->
-<p><img src="media/04/image21.svg" style="width:5.5125in;height:6.4625in" /></p>
-<p>This airspeed-based test method determines airspeed corrections directly. Accurately converting this airspeed error to a static source error requires knowledge of the test pitot tube’s total pressure error (<span class="math inline">\(\Delta P_T\)</span>). This can be determined using one of the altitude-based methods that directly yield altitude corrections (tower fly-by, trailing cone or bomb). In lieu of these options, the pitot error may assumed to be zero, but this will reduce confidence in the calculated values for static pressure error and altimeter correction.</p>
+<div id="section-5" class="section level4" number="8.0.0.7">
+<h4><span class="header-section-number">8.0.0.7</span> </h4>
 </div>
-<div id="trailing-conebomb-method" class="section level3" number="4.7.3">
-<h3><span class="header-section-number">4.7.3</span> Trailing Cone/Bomb Method</h3>
-<p><img src="media/04/image23.svg" style="width:5.9375in;height:3in" /></p>
-<ol style="list-style-type: decimal">
-<li>Measure <span class="math inline">\(P_s\)</span> (ref) away from pressure field of aircraft</li>
-<li>Cone is used to stabilize static line</li>
-<li>No speed limitations</li>
-<li>Inexpensive—can be trailed on landing</li>
-<li>Consider lag effects during rapid altitude changes</li>
-</ol>
-<p><span class="math inline">\(\Delta P_s = \Delta P_{s_{\mathrm{A/C}}} - \Delta P_{s_{\mathrm{REF}}}\)</span></p>
-<p><span class="math inline">\(\Delta H_{\mathrm{pc}} = +\frac{\Delta P_s}{\rho g} = \textrm{altimeter correction}\)</span> <!--- Probably not needed to define this here again ---></p>
-<p><span class="math inline">\(\Delta P_T - \Delta P_s = \Delta P_D = q_{\mathrm{ic}} - q_c \text{ assuming } \Delta P_T = 0 \text{ , } M &lt; 0.2\)</span> <!--- Unclear ---></p>
-<p>If pitot errors do exist, then they must be included in calculations for <span class="math inline">\(\Delta V_{\mathrm{pc}}\)</span> (see flowchart). <!--- which one??? ---></p>
-<p>Using a trailing cone during stall testing may give airspeed errors due to lag errors during the deceleration.</p>
-<p>This altitude-based test method determines altimeter corrections and therefore static error directly. Accurately converting this static source error to an airspeed correction also requires knowledge of the test pitot tube’s total pressure error (<span class="math inline">\(\Delta P_T\)</span>). This can be determined either through direct comparison with a calibrated noseboom pitot pressure or from one of the airspeed-based methods that directly yield airspeed corrections (pace, ground course, GPS). In lieu of these options, the pitot error may assumed to be zero, but this will reduce confidence in the calculated value for airspeed correction.</p>
+<div id="apply-operator-technique" class="section level4" number="8.0.0.8">
+<h4><span class="header-section-number">8.0.0.8</span> Apply operator technique:</h4>
 </div>
-<div id="gps-methods" class="section level3" number="4.7.4">
-<h3><span class="header-section-number">4.7.4</span> GPS Methods</h3>
-<!--- FIXME: This whole subsection needs to be reworked to make more consistent with the rest of the Section and handbook.  Particularly formatting and use of unordered lists to introduce each chapter --->
-<!--- The following list should probably be turned into a paragraph rather than a bullet list --->
-<p>The attraction</p>
-<ul>
-<li>no aircraft modifcations required
-<ul>
-<li>no trailing cone or aircraft plumbing mod</li>
-<li>no flight test boom</li>
-</ul></li>
-<li>no limitation on speed or altitude
-<ul>
-<li>can be done down to near stall</li>
-<li>any altitude</li>
-</ul></li>
-<li>easy data reduction
-<ul>
-<li>no correlation with pace aircraft, ground radar, or other references required</li>
-</ul></li>
-</ul>
-<p>Various methods available, all assume <strong>steady</strong> winds and ambient temperature. You must determine wind speed and direction to calculate <span class="math inline">\(V_T\)</span> and <span class="math inline">\(T_0\)</span> and to ensure steady winds existed during test series.</p>
-<p>GPS accuracies are variable. Know tolerances before accepting GPS as a truth model.</p>
-<p>If exact (<span class="math inline">\(\pm 10^{\circ}\)</span>) winds are calculated inflight, you can fly one pass directly into/away from the wind</p>
-<p><span class="math display">\[V_T = V_G + V_{Headwind}\]</span></p>
-<p>This airspeed-based test method determines airspeed corrections directly. Accurately converting this airspeed error to a static source error requires knowledge of the test pitot tube’s total pressure error (<span class="math inline">\(\Delta P_T\)</span>). This can be determined using one of the altitude-based methods that directly yield altitude corrections (tower fly-by, trailing cone or bomb). In lieu of these options, the pitot error may assumed to be zero, but this will reduce confidence in the calculated values for static pressure error and altimeter correction.</p>
-<!--- FIXME: set up cross-reference to Section 4.11 and the "last chart on Page 04-29" below.  Also there is no Page 04-29 in the handbook--->
-<p><em>Graphs in Section 4.11 separately show the effect of measurement errors in <span class="math inline">\(\Delta P_T\)</span>, air temperature, or true airspeed on <span class="math inline">\(\Delta V_c\)</span> calculations . The last chart of this Section shows how each knot of accumulated <span class="math inline">\(\Delta V_c\)</span> uncertainty affects the <span class="math inline">\(\Delta H_c\)</span> uncertainty at various altitudes and temperatures.</em></p>
-<p>Flying four legs instead of three allows four separate calculations of wind speed &amp; direction to confirm stable winds at that test airspeed. If several real-time calculations of winds confirm constant direction and velocity, then testing may be shortened by flying only one pass directly into or away from the wind. If this is done, an end-of-test wind calibration must be performed to confirm steady winds throughout the test series. To minimize temperature and wind variations, testing should be accomplished within a relatively small area.</p>
-<div id="horseshoe-track-gps-method" class="section level4 unnumbered" number="">
-<h4>Horseshoe Track GPS Method</h4>
-<ul>
-<li>Horseshoe track method
-<ul>
-<li>fly three legs with each perpedicular ground tracks, noting GPS ground speed on each</li>
-<li>determine true airspeed by solving three equations in three unknowns</li>
-</ul></li>
-<li>Practical problem
-<ul>
-<li>need to fly close to the ground, tracking perpendicular ground references</li>
-</ul></li>
-</ul>
-<p><img src="media/04/image28.svg" style="width:2.7in;height:2.49514in" /></p>
-<p>True airspeed: <span class="math inline">\(V_T = \frac{1}{2} \sqrt{V_1^2 + V_2^2 + V_3^2 + V_1^2 \times \frac{V_3^2}{V_2^2}}\)</span></p>
-<p>Wind velocity: <span class="math inline">\(V_W = \sqrt{\left( \frac{V_1 - V_3}{2} \right)^2 + \left( \frac{V_2 - V_1 \times V_3 / V_2}{2} \right) ^2 }\)</span></p>
-<p>Wind direction: <span class="math inline">\(\psi_W = \tan^{-1} \frac{V_2 - V_1 \times V_3 / V_2}{V_1 - V_3}\)</span></p>
+<div id="section-6" class="section level4" number="8.0.0.9">
+<h4><span class="header-section-number">8.0.0.9</span> </h4>
 </div>
-<div id="horseshoe-heading-gps-method" class="section level4 unnumbered" number="">
-<h4>Horseshoe Heading GPS Method</h4>
-<ul>
-<li>Horseshoe Heading Method
-<ul>
-<li>Fly three legs with perpendicular headings, noting GPS ground speed on each</li>
-<li>Determine true airspeed by solving three equations in three unknowns</li>
-</ul></li>
-</ul>
-<p><img src="media/04/image31.svg" style="width:5.0625in;height:2.6875in" /></p>
-<!--- FIXME: the wind direction (psi) below doesn't use the "W" subscript as it did above.  Intentional? --->
-<p>Wind direction: <span class="math inline">\(\psi = \tan^{-1} \frac{-V_{G1}^2 + 2V_{G2}^2 - V_{G3}^2}{V_{G3}^2 - V_{G1}^2}\)</span></p>
-<p>Wind velocity: <span class="math inline">\(V_W = \frac{1}{2} \left[ V_{G3}^2 + V_{G1}^2 \pm \sqrt{ \left(V_{G3}^2 + V_{G1}^2 \right)^2 \pm \left( \frac{-V_{G1}^2 + 2V_{G2}^2 - V_{G3}^2}{\sin{\psi}} \right)^2 } \right]^{1/2}\)</span></p>
-<p>True airspeed: <span class="math inline">\(V_T = \sqrt{\frac{V_{G3}^2 + V_{G1}^2}{2} - V_W^2}\)</span></p>
-<p>The “Windbox” method consists of flying four legs instead of three. The extra leg provides a fourfold increase in wind calculations to improve result confidence. The “Orbis” method extends this advantage by collecting data at every heading throughout a level turn.</p>
-</div>
-<div id="cloverleaf-method" class="section level4 unnumbered" number="">
-<h4>Cloverleaf Method</h4>
-<p>(Microsoft Excel spreadsheet adapted from Doug Gray, NSW Australia)</p>
-<ul>
-<li>Fly three legs with approximately 90-120 degree difference between headings.
-<ul>
-<li>Can be accomplished in a broad turn as with the horseshoe method, or</li>
-<li>Directly over a single point (cloverleaf maneuver).</li>
-</ul></li>
-<li>Accurate results require
-<ul>
-<li>Identical values for indicated airspeed (and TAS) for all legs.</li>
-<li>Constant winds throughout data collection (single W/S vector in figure).</li>
-<li>Approx. 10 seconds stable ground speed, Vg, (G/S in figure) during each leg.</li>
-</ul></li>
-<li>Aircraft heading results for each leg entail an airborne compass swing.</li>
-</ul>
-<!--- FIXME: The following is mean to represent Excel spreadsheet formulas, but they either need to copy-and-pastable for Excel, or the basic formulas consistent with the rest of the Handbook should be presented --->
-<table>
-<thead>
-<tr class="header">
-<th align="left">Inputs for each 3-leg data set</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><span class="math inline">\(V_{g_1}\)</span> <span class="math inline">\(V_{g_2}\)</span> <span class="math inline">\(V_{g_3}\)</span></td>
-</tr>
-<tr class="even">
-<td align="left"><span class="math inline">\(Trk_{1}\)</span> <span class="math inline">\(Trk_{2}\)</span> <span class="math inline">\(Trk_{3}\)</span></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Intermediate calculations</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><span class="math inline">\(X_1 = V_{g_1} * \sin(\pi * (360 - Trk_1) / 180)\)</span></td>
-</tr>
-<tr class="even">
-<td align="left"><span class="math inline">\(Y_1 = V_{g_1} * \cos(\pi * (360 - Trk_1) / 180)\)</span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span class="math inline">\(X_2 = V_{g_2} * \sin(\pi * (360 - Trk_2) / 180)\)</span></td>
-</tr>
-<tr class="even">
-<td align="left"><span class="math inline">\(Y_2 = V_{g_2} * \cos(\pi * (360 - Trk_2) / 180)\)</span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span class="math inline">\(X_3 = V_{g_3} * \sin(\pi * (360 - Trk_3) / 180)\)</span></td>
-</tr>
-<tr class="even">
-<td align="left"><span class="math inline">\(Y_3 = V_{g_3} * \cos(\pi * (360 - Trk_3) / 180)\)</span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span class="math inline">\(M_1 = -(X_2 - X_1) / (Y_2 - Y_1)\)</span></td>
-</tr>
-<tr class="even">
-<td align="left"><span class="math inline">\(M_2 = -(X_3 - X_1) / (Y_3 - Y_1)\)</span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span class="math inline">\(B_1 = (Y_1 + Y_2)/2 - M_1 * (X_1 + X_2) / 2\)</span></td>
-</tr>
-<tr class="even">
-<td align="left"><span class="math inline">\(B_2 = (Y_1 + Y_3)/2 - M_2 * (X_1 + X_3) / 2\)</span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span class="math inline">\(V_{W_x} = (B_1 - B_2) / (M_2 - M_1)\)</span></td>
-</tr>
-<tr class="even">
-<td align="left"><span class="math inline">\(V_{w_y} = M_1 * V_{W_x} + B_1\)</span></td>
-</tr>
-</tbody>
-</table>
-<p><img src="media/04/image32.png" style="width:5in;height:3.4in" /></p>
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Results</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Aircraft true airspeed <span class="math inline">\(= V_T = \left[\left(X_1 - V_{W_x}\right)^2 + \left(Y_1 - V_{W_y}\right)^2 \right]^{0.5}\)</span></td>
-</tr>
-<tr class="even">
-<td align="left">Total wind speed <span class="math inline">\(= V_W = \left[\left(V_{W_x}^2 + V_{W_y}^2\right)\right]^{0.5}\)</span></td>
-</tr>
-<tr class="odd">
-<td align="left">Wind direction <span class="math inline">\(= \psi_W = Psi_W = \mod(540 - (180/\pi * \textrm{ATAN2}(V_{W_y}, V_{W_x})), 360)\)</span></td>
-</tr>
-<tr class="even">
-<td align="left">1<sup>st</sup> leg a/c heading <span class="math inline">\(= \psi_1 = Psi_1 = \mod(540 - (180/\pi * \textrm{ATAN2}(V_{W_y}-Y_1, V_{W_x}-X_1)), 360)\)</span></td>
-</tr>
-<tr class="odd">
-<td align="left">2<sup>nd</sup> leg a/c heading <span class="math inline">\(= \psi_2 = Psi_2 = \mod(540 - (180/\pi * \textrm{ATAN2}(V_{W_y}-Y_2, V_{W_x}-X_2)), 360)\)</span></td>
-</tr>
-<tr class="even">
-<td align="left">3<sup>rd</sup> leg a/c heading <span class="math inline">\(= \psi_3 = Psi_3 = \mod(540 - (180/\pi * \textrm{ATAN2}(V_{W_y}-Y_3, V_{W_x}-X_3)), 360)\)</span></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-<div id="position-error-far-2325.1323-and-.1325jar-certification" class="section level2" number="4.8">
-<h2><span class="header-section-number">4.8</span> Position Error FAR 23/25.1323 and .1325/JAR Certification</h2>
-<p><img src="media/04/image47.svg" /></p>
-<!--- FIXME: This should be defined elsewhere --->
-<ul>
-<li>Requirements
-<ul>
-<li>Maximum error at sea level must be less than <span class="math inline">\(\pm 30 \text{ft}/100 \text{kts}\)</span> between <span class="math inline">\(1.3 V_{\mathrm{SO}}\)</span> and <span class="math inline">\(1.8 V_{S1}\)</span></li>
-<li><span class="math inline">\(V_{S0} =\)</span> Full flap, gear down, power off, stall speed )</li>
-<li><span class="math inline">\(V_{S1} =\)</span> Stall speed in a specific configuration )</li>
-</ul></li>
-</ul>
-<p><img src="media/04/image48.svg" /></p>
-<p>Errors must be equal to or less than <span class="math inline">\(\pm3\%\)</span> of <span class="math inline">\(V_c\)</span> or <span class="math inline">\(\pm5\text{kts}\)</span> whichever is greater</p>
-<div id="mil-spec-p-26292-c-usaf" class="section level4" number="4.8.0.1">
-<h4><span class="header-section-number">4.8.0.1</span> Mil Spec P-26292 C (USAF)</h4>
-<p>Landing configuration: <span class="math inline">\(\Delta H_{\mathrm{pc}} \pm 30\)</span> ft.</p>
-<p><img src="media/04/image50.svg" style="width:5.75in;height:2.6875in" /></p>
-</div>
-</div>
-<div id="pec-correction-process-flow-chart" class="section level2" number="4.9">
-<h2><span class="header-section-number">4.9</span> PEC Correction Process Flow Chart</h2>
-<p><img src="media/04/image52.svg" style="width:8.63072in;height:6.4465in" /></p>
-</div>
-<div id="airspeedaltitudemach-graphic-relation" class="section level2" number="4.10">
-<h2><span class="header-section-number">4.10</span> Airspeed/Altitude/Mach Graphic Relation</h2>
-<p><img src="media/04/image53.png" style="width:8.68611in;height:6.31181in" /></p>
-<p><img src="media/04/image54.svg" style="width:9.31667in;height:6.42153in" /></p>
-</div>
-<div id="effect-of-errors-on-calibrated-airspeed-and-altitude" class="section level2" number="4.11">
-<h2><span class="header-section-number">4.11</span> Effect of Errors on Calibrated Airspeed and Altitude</h2>
-<p><img src="media/04/image55.png" style="width:8.6875in;height:5.73819in" /></p>
-<p><img src="media/04/image56.svg" style="width:9in;height:5.74444in" /></p>
-<p><img src="media/04/image57.png" style="width:9in;height:5.33889in" /></p>
-<p><img src="media/04/image58.svg" style="width:9in;height:6.51111in" /></p>
+<div id="section-7" class="section level4" number="8.0.0.10">
+<h4><span class="header-section-number">8.0.0.10</span> <img src="media/08/image30.png" /></h4>
+<p>Divide out <em><sup>st</sup></em>, since it never equals zero, the characteristic equation remains:</p>
+<p><img src="media/08/image31.png" /></p>
+<p>The values of <em>s</em> that satisfy this equation are called the roots</p>
+<p><img src="media/08/image32.png" /></p>
+<p>Solve for the roots using the quadratic equation</p>
+<p><img src="media/08/image33.png" /></p>
+<p><strong>8.3.2 Second Order Motion Descriptive Parameters</strong></p>
+<p> </p>
+<p>Solution (<em>x</em>) calculated as</p>
+<p> </p>
+<p> <img src="media/08/image34.png" /></p>
+<p> </p>
+<p> </p>
+<p>Apply Euler’s identity for complex conjugate roots</p>
+<p> </p>
+<p> <img src="media/08/image35.png" /></p>
+<p> </p>
+<p>• φ defines the <strong>phase shift</strong>.</p>
+<p>•  <em>A</em> defines the <strong>initial amplitude</strong>.</p>
+<p>•  The real part of the root <span class="math display">\[*D*/2*M*\]</span> defines the <strong>envelope</strong> of the motion.</p>
+<p>•  The imaginary part of the root identifies the <strong>damped frequency</strong></p>
+<p>of the oscillations, ω<em><sub>d</sub></em> (rad/sec).</p>
+<p> </p>
+<p><img src="media/08/image36.png" /></p>
+<p> </p>
+<p> <img src="media/08/image37.png" /></p>
+<p>• If damping is reduced to <em>D</em> = 0 then only <span class="math display">\[*K/M*\]</span><sup>1/2</sup> remains.</p>
+<p>This is the undamped or <strong>“natural” frequency</strong> (ω<sub>η</sub>).</p>
+<p> </p>
+<p> <img src="media/08/image38.png" /></p>
+<p> </p>
+<p>•  If</p>
+<p><img src="media/08/image39.png" /></p>
+<p>then <em>D</em> is conisidered to be critical <span class="math display">\[just enough to prevent oscillations\]</span></p>
+<p> </p>
+<p> <img src="media/08/image40.png" /></p>
+<p> </p>
+<p> </p>
+<p>• For oscillatory motion, actual system damping is typically expressed as a fraction critical damping. Define <strong>damping ratio</strong> as</p>
+<p> </p>
+<p> <img src="media/08/image41.png" /></p>
+<p><img src="media/08/image42.png" /></p>
+<p><img src="media/08/image43.png" /></p>
+<p><img src="media/08/image44.png" /></p>
+<p><img src="media/08/image45.png" /></p>
+<p><img src="media/08/image46.png" /></p>
+<p>Possible Solutions:</p>
+<p> <img src="media/08/image47.png" /></p>
+<p>• The various combination of <em>K</em>, <em>M</em>, and <em>D</em> and their effects on system response can be related to damping ratio <em>ζ</em> as follows:</p>
+<p> </p>
+<p>   ζ &gt; 1 Real &amp; unequal roots exponential, convergent</p>
+<p> </p>
+<p>  ζ =  ± 1 Real &amp; equal roots exponential, conv or div</p>
+<p> 0 &lt; ζ &lt; 1  Complex pair roots sinusoidal, convergent</p>
+<p> </p>
+<p>     ζ = 0 Imaginary pair roots sinusoidal, neutral</p>
+<p>€</p>
+<p>−1 &lt; ζ &lt; 0 Complex pair roots sinusoidal, divergent</p>
+<p> </p>
+<p> ζ &lt; − 1 Real &amp; unequal roots exponential, divergent</p>
+<p> </p>
+<p><img src="media/08/image48.svg" /><img src="media/08/image49.png" /></p>
+<p><strong>Damping ratio effect on second order system</strong></p>
+<p>  </p>
+<p> </p>
+<p>Response of various second order systems to an impulse input.</p>
+<p> </p>
+<p> </p>
+<p>Second-order systems are oscillatory if</p>
+<p>-1 &gt; <em>ζ</em> &gt; 1.</p>
+<p> </p>
+<p> </p>
+<p>Motion typically</p>
+<p>described by</p>
+<p><em>ω<sub>n</sub></em> and <em>ζ</em></p>
+<p> </p>
+<p> </p>
+<p><em>T</em>, <em>ω<sub>d</sub></em>, <em>ω<sub>n</sub></em> and <em>ζ </em>are linked such that knowledge of any two will yield</p>
+<p>the other two.</p>
+<p> </p>
+<p> <img src="media/08/image50.png" /></p>
+<p> </p>
+<p><img src="media/08/image51.png" /></p>
+<p><img src="media/08/image52.png" /></p>
+<p>2nd order system response to <strong>unit step input</strong> for <strong>underdamped systems</strong></p>
+<p><strong> </strong></p>
+<p>(0 &gt; <em>ζ</em> &gt; 1)</p>
+<p> </p>
+<p><img src="media/08/image53.png" /></p>
+<p><strong>Decay rates (for 0 &lt; ζ &lt;1) and Useful Insights</strong></p>
+<p> </p>
+<p><img src="media/08/image54.png" /></p>
+<p><strong>8.3.3 Determining Descriptive Parameters</strong></p>
+<p><strong> </strong></p>
+<p>Time domain metrics</p>
+<p> </p>
+<p> <img src="media/08/image55.png" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>Peak Value, <em>MP</em>: largest value</p>
+<p> </p>
+<p>Final Value, <em>FV</em>: steady state value</p>
+<p> </p>
+<p>Delay Time, <em>T<sub>d</sub></em>: 50% of final value</p>
+<p> </p>
+<p>Rise Time, <em>T<sub>r</sub></em>: 10% - 90% of FV</p>
+<p> </p>
+<p>Peak Time, <em>T<sub>p</sub></em>: time to MP</p>
+<p> </p>
+<p>Settling Time, <em>T<sub>s</sub></em>: time to reach some defined % of final value</p>
+<p> </p>
+<p>% Overshoot, <em>PO</em>:</p>
+<p> </p>
+<p><img src="media/08/image56.png" /></p>
+<p><em>target value = unity</em></p>
+<p> </p>
+<p><strong>Method #1</strong> Basic Analysis</p>
+<p> </p>
+<p> </p>
+<p>Note</p>
+<p> <img src="media/08/image57.png" /></p>
+<p><img src="media/08/image58.png" /></p>
+<p><img src="media/08/image59.png" /></p>
+<p><img src="media/08/image60.png" /></p>
+<p><img src="media/08/image61.png" /></p>
+<p>Easily measured values: can use any points on envelope</p>
+<p> </p>
+<p><img src="media/08/image62.png" /></p>
+<p><img src="media/08/image63.png" /></p>
+<p><img src="media/08/image64.png" /></p>
+<p><img src="media/08/image65.png" /></p>
+<p><img src="media/08/image66.png" /></p>
+<p><strong>Method #2</strong> Transient Peak Ratio Analysis</p>
+<p> </p>
+<p>1) Measure either <em>D</em> or <em>x</em> distances as shown.</p>
+<p> </p>
+<p> <img src="media/08/image67.png" /></p>
+<p> </p>
+<p>Example Calculation</p>
+<p> </p>
+<p> <img src="media/08/image68.png" /></p>
+<p> </p>
+<p> <img src="media/08/image69.png" /></p>
+<p> </p>
+<p> Average TPR = 0.8409</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>2) Note ratio of adjacent peak values (transient peak ratios).</p>
+<p>3) Average several TPRs.</p>
+<p>4) Use equation to find <em>ζ</em>:</p>
+<p> </p>
+<p> <img src="media/08/image70.png" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>4a) Can use</p>
+<p><em>D<sub>1</sub>/D<sub>2</sub></em> or <em>x<sub>1</sub>/x<sub>2</sub></em></p>
+<p>ratios in above equation.</p>
+<p> </p>
+<p>4b) In lieu of equation, use</p>
+<p>adjacent look-up curve to find <em>ζ</em>.</p>
+<p> </p>
+<p>4c) Time ratio method works better with heavy damping.</p>
+<p> </p>
+<p> </p>
+<p><img src="media/08/image71.png" /></p>
+<p><strong>Method #3</strong> Multiple <em>TPR</em> Analysis</p>
+<p> </p>
+<p><img src="media/08/image72.png" /></p>
+<p>To determine damping ratio</p>
+<blockquote>
+<p>~  Use the <em>m</em> = 1 line when comparing the next ratio.</p>
+<p> ~  Use the <em>m</em> = 2 line for comparing every other</p>
+<p>peak ratio.</p>
+</blockquote>
+<p> </p>
+<p> </p>
+<p> <img src="media/08/image73.png" /></p>
+<p> <img src="media/08/image74.png" /></p>
+<p><strong>Method #4</strong> Time Ratio Analysis</p>
+<p> </p>
+<p>• If the damping ratio is between 0.5 and 1.0 (two or less overshoots), then the time ratio method can be used to determine frequency and damping ratio. Select a peak where the response if free.</p>
+<p> </p>
+<p>• Note times for amplitude to reduce to 73.6%, 40.9%, and 19.9% of the peak value.</p>
+<p> </p>
+<p> </p>
+<p> <img src="media/08/image75.png" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>•  Form the time ratios <em>t<sub>2</sub>/t<sub>1</sub></em>, <em>t<sub>3</sub>/t<sub>1</sub></em>, and <span class="math display">\[*t~3~-t~2~*\]</span>/<span class="math display">\[*t~2~-t~1~*\]</span></p>
+<p> </p>
+<p>•  Enter the next figure at the time ratio side to find ζ for each time ratio.</p>
+<p> </p>
+<p>•  This technique is valid if the system transfer function has no zeros.</p>
+<p> </p>
+<p> </p>
+<p>• If recorded measurements are not available and if the number of overshoots is between 2 and 6, then</p>
+<p> </p>
+<p><img src="media/08/image76.png" /></p>
+<p><img src="media/08/image77.png" /></p>
+<p><strong>Frequency Time Products (wnDt3), (wnDt2), (wnDt1)</strong></p>
+<p><img src="media/08/image78.png" /></p>
+<p><img src="media/08/image79.png" /></p>
+<p><img src="media/08/image80.png" /></p>
+<p>• Calculation of <em>ζ</em> somewhat sensitive to ∆<em>x</em><sub>1</sub> measurement</p>
+<p><sub> </sub></p>
+<p>•  ω<em><sub>n</sub></em> = <img src="media/08/image81.png" /> not too sensitive to ∆<em>x</em><sub>1</sub></p>
+<p><sub> </sub></p>
+<p>• Best if 0.5 ≤ ζ ≤ 1.4</p>
+<p> </p>
+<p>• Initial overshoot approximation: let (step inputs only)</p>
+<p> </p>
+<p><img src="media/08/image82.png" /></p>
+<p><img src="media/08/image83.png" /></p>
+<p><strong>Method #6</strong> Separated Real Root Analysis (when ζ&gt;1)</p>
+<p> </p>
+<p>1) Determine several steady state ∆<em>X</em>(<em>t</em>) values from time history</p>
+<p> </p>
+<p> </p>
+<p> <img src="media/08/image84.png" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>2) Plot ∆<em>X</em> vs <em>t</em> on semi-log scale</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> <img src="media/08/image85.png" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>3) After the faster root has decayed, the semi-log plot will be a straight line whose slope determines the slower root (1/τ<sub>1</sub>)</p>
+<p> </p>
+<p> </p>
+<p> <img src="media/08/image86.png" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>4) Determine by extrapolating the straight line portion of the response to establish the values</p>
+<p> </p>
+<p><img src="media/08/image87.png" /></p>
+<p><img src="media/08/image88.png" /></p>
+<p><img src="media/08/image89.png" /></p>
+<p><img src="media/08/image90.png" /></p>
+<p><strong>Method #7</strong> Modified Separated Real Root Analysis</p>
+<p> </p>
+<p>•  Method #6 is sensitive to errors in determining steady state values</p>
+<p>•  Alternate method is to avoid need for steady state value</p>
+<p>•  Define ∆<em>X</em>(<em>t</em>) ≡ <span class="math display">\[ *x*(*t*+ ∆*T*) -*x*(*t*)\]</span> where ∆<em>T</em> is a time increment</p>
+<p>1) From time history, measure ∆<em>X</em> values according to definition</p>
+<p>€<img src="media/08/image91.png" /></p>
+<p>€</p>
+<p>∆T = (t<sub>1</sub>-t<sub>0</sub>) = (t<sub>2</sub>-t<sub>1</sub>), etc.</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>2) Plot ∆<em>X</em> (<em>t</em>) vs time on semi-log scale</p>
+<p> </p>
+<p> </p>
+<p><img src="media/08/image92.png" /></p>
+<p>3) Use previous method to determine roots and characteristics</p>
+<p> </p>
+<p>• Gross error will result if ζ is actually &lt;1</p>
+<p> </p>
+<p>• If ζ is near 1, check results using time ratio or slope method</p>
+<p> </p>
+<p><strong>Method # 8</strong> Frequency Sweep Analysis</p>
+<p>Determine <em>ω<sub>n</sub></em> and <em>ζ</em> using sinusoidal inputs.</p>
+<p>• This “forced response” method most useful when damping is heavy.</p>
+<p>• For a second order system, output/input amplitude ratio and phase shift are a function of input frequency.</p>
+<p> </p>
+<p> </p>
+<p> <img src="media/08/image93.png" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><sub> </sub></p>
+<p>• Amplitude ratio peaks at “resonant” frequency, ω<em><sub>r.</sub></em></p>
+<p>• Resonant peaks increase as <em>ζ</em> decreases below 0.707.</p>
+<p>• Peak amplitude ratio “rolls off” as <em>ζ</em> increases above 0.707.</p>
+<p>• Resonant frequency approaches natural fre</p>
+<p>quency as damping decreases:</p>
+<p>ω<em><sub>r</sub></em> = ω<em><sub>n</sub></em><span class="math display">\[1 − 2*ζ*^2^\]</span>^ 0.5^</p>
+<p>• Phase shift = 90° if excited at ω<em><sub>n</sub></em>, regardless of damping ratio.</p>
+<p> ζ = 0.5(ω<sub>2</sub> – ω<sub>1</sub>)/ω<sub>n</sub></p>
+<p> </p>
+<p><img src="media/08/image94.png" /></p>
+<p>Frequency Sweep Analysis (continued)</p>
+<p>1. Using sinusoidal inputs excite system @ ω near ω<em><sub>n</sub></em></p>
+<p> </p>
+<p>2. Measure phase lag (<em>φ</em>) of</p>
+<p> </p>
+<p> <img src="media/08/image95.png" /></p>
+<p> </p>
+<p> <img src="media/08/image96.png" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>3. Excite system @ another ω near ω<em><sub>n</sub></em></p>
+<p> </p>
+<p>4. Again Measure phase lag <em>φ</em></p>
+<p><em>€</em></p>
+<p><em>€</em><img src="media/08/image97.png" /></p>
+<p><em>€</em></p>
+<p><em>€</em></p>
+<p><em>€</em></p>
+<p><em>€</em></p>
+<p><em>€</em></p>
+<p><em>€</em></p>
+<p>5. Plot φ vs input frequency</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>6. ω<em><sub>n</sub></em> occurs at φ = 90°</p>
+<p> </p>
+<p><img src="media/08/image98.png" /></p>
+<p><strong>Linearity Check /Accuracy Improvement</strong></p>
+<p><strong> </strong></p>
+<p>1) On semi-log scale, plot ratio of initial amplitude to subsequent peak</p>
+<p>amplitudes at each half cycle (points <em>a-e</em>).</p>
+<p> </p>
+<p>2) Fair straight line (<em>f</em>) through these points.</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> <img src="media/08/image99.png" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>3) Draw line (<em>g</em>) parallel (<em>f</em>) intercepting the ordinate at <em>TPR</em>=1</p>
+<p> </p>
+<p>4) Average <em>TPR</em> occurs at <em>T</em>/2 on line <em>g</em></p>
+<p> </p>
+<p><strong>8.4 Complex Plane</strong></p>
+<p><strong> </strong></p>
+<p>Begin with sum of forces in spring-mass-damper example</p>
+<p> </p>
+<p> </p>
+<p> Apply quadratic equation to solve for roots</p>
+<p> </p>
+<p> <img src="media/08/image100.png" /></p>
+<p> </p>
+<p> </p>
+<p> Recall previous analogy</p>
+<p> </p>
+<p><img src="media/08/image101.png" /></p>
+<p> </p>
+<p> <img src="media/08/image102.png" /></p>
+<p> </p>
+<p> <img src="media/08/image103.png" /></p>
+<p> </p>
+<p> <img src="media/08/image104.png" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>Location of Roots on Complex Plane</p>
+<blockquote>
+<p>1. Line of constant damping ratio ζ − varying <em>C</em><sub>1/<em>n</em></sub> and ω<em><sub>n</sub></em></p>
+<p>2. Line of constant ω<em><sub>n</sub></em> − varying ζ</p>
+<p>3. Line of constant ω<em><sub>d</sub></em> and period (<em>T</em>)</p>
+<p>4. Line of constant real part (ζω<em><sub>n</sub></em>) and time to damp (<em>T</em><sub>1/<em>n</em></sub>)</p>
+</blockquote>
+<p> </p>
+<p><img src="media/08/image105.png" /></p>
+<p><em>σ</em> = ζω<em><sub>n</sub></em> = 1/<em>τ</em> = damping rate</p>
+<p> </p>
+<p><img src="media/08/image106.png" /></p>
+<p><strong>Sample second order root plots and corresponding time histories</strong></p>
+<p> </p>
+<p>(time histories represent trends only)</p>
+<p> </p>
+<p> </p>
+<p>Examples of “two real roots”</p>
+<p> </p>
+<p><img src="media/08/image107.png" /></p>
+<p><strong>More sample second order root plots and corresponding time histories</strong></p>
+<p> </p>
+<p>Examples of “imaginary roots”</p>
+<p> </p>
+<p> </p>
+<p><img src="media/08/image108.png" /></p>
+<p><strong>8.5 Parameter Conversions</strong></p>
+<p> </p>
+<p>For conversion of accelerometer measurements.</p>
+<p>• For magnitude conversion substitute 2<em>πf</em> for <em>jω</em>.</p>
+<p>• Assumes linear spectra.</p>
+<p>• Conversion factor should be squared for power spectra.</p>
+<p> </p>
+<p><em>Acceleration to velocity</em></p>
+<blockquote>
+<p><span class="underline">to convert from to multiply by</span></p>
+<p><em>ft/s<sup>2</sup> rms ft/s rms</em> 1<em>/jω</em></p>
+<p><em>ft/s<sup>2</sup> rms in/s rms</em> 12<em>/jω</em></p>
+<p><em>ft/s<sup>2</sup> rms in/s peak</em> 16.97/<em>jω</em></p>
+<p><em>g rms in/s rms</em> 386<em>/jω</em></p>
+<p><em>g rms in/s peak</em> 545.8/<em>jω</em></p>
+<p><em>m/s<sup>2</sup> rms mm/s rms</em> 1000/<em>jω</em></p>
+<p><em>m/s<sup>2</sup> rms mm/s peak</em> 1414<em>/jω</em></p>
+<p><em>g rms mm/s rms</em> 9806<em>/jω</em></p>
+<p><em>g rms mm/s peak</em> 13865.7/<em>jω</em></p>
+<p>* *</p>
+</blockquote>
+<p><em>Acceleration to Displacement</em></p>
+<blockquote>
+<p><span class="underline">to convert from to multiply by</span></p>
+<p><em>ft/s<sup>2</sup> rms in rms</em> 12/(jω)<sup>2</sup></p>
+<p><em>ft/s<sup>2</sup> rms in p-p</em> 33.9/(jω)<sup>2</sup></p>
+<p><em>ft/s<sup>2</sup> rms mil p-p</em> 33.9 <em>E</em> 03/(jω)<sup>2</sup></p>
+<p><em>g rms in rms</em> 386/(jω)<sup>2</sup></p>
+<p><em>g rms in p-p</em> 1091.6 <em>E</em> 03/(jω)<sup>2</sup></p>
+<p><em>g rms mil p-p</em> 1091.6 <em>E</em> 03/(jω)<sup>2</sup></p>
+<p><em>m/s<sup>2</sup> rms mm rms</em> 1000/(jω)<sup>2</sup></p>
+<p><em>m/s<sup>2</sup> rms mm p-p</em> 2828/(jω)<sup>2</sup></p>
+<p><em>m/s<sup>2</sup> rms</em> micron <em>p-p</em> 2828 <em>E</em> 03/(jω)<sup>2</sup></p>
+</blockquote>
+<p>* *</p>
+<p><em>E</em>= engineering exponent (x10 __)</p>
+<p><em>g</em> = 32.174 ft/sec2</p>
+<p><em>in</em>= inches</p>
+<p><em>mil</em> = thousandths of an inch</p>
+<p><em>mm</em> = milimeters</p>
+<p><em>p-p</em> = peak-to-peak</p>
+<p><em>rms</em> = root mean square</p>
+<p> </p>
+<p><strong>8.6 Vibration Nomographs</strong></p>
+<p><strong>Vibration Nomograph equations</strong></p>
+<p> </p>
+<p><strong>For British</strong> <span class="math display">\[V in inches/sec\]</span>, <span class="math display">\[d in inches\]</span></p>
+<p> </p>
+<p><em>V =</em> 386<em>g /</em> 2π<em>f</em></p>
+<p> </p>
+<p><em>d</em> = 386<em>g</em> / (2π<em>f</em>)<sup>2</sup></p>
+<p> </p>
+<p>where 386 = earth's gravitational pull <span class="math display">\[in/sec^2^\]</span></p>
+<p> </p>
+<p> </p>
+<p><strong>For metric</strong> <span class="math display">\[V in mm/sec\]</span> , <span class="math display">\[d in mm\]</span></p>
+<p> </p>
+<p><em>V =</em> 9800<em>g /</em> 2π<em>f</em></p>
+<p> </p>
+<p><em>d</em> = 9800<em>g</em> / (2π<em>f</em>)<sup>2</sup></p>
+<p>where 9800 = earth's gravitational pull <span class="math display">\[mm/sec^2^\]</span></p>
+<p> </p>
+<p><strong>Nomograph - British Units</strong></p>
+<p> </p>
+<p><img src="media/08/image109.png" /></p>
+<p><strong>Nomograph - Metric Units</strong></p>
+<p> </p>
+<p><img src="media/08/image110.png" /></p>
+<p><strong>8.7 References</strong></p>
+<p>8.7.1 Lawless, Alan R., <em>Math and Physics for Flight Testers</em>, “Chapter 9, Motion Analysis,” National Test Pilot School, Mojave CA, 1999.</p>
+<p>8.7.2 Ward, Don, <em>Introduction to Flight Testing</em>, Texas A&amp;M, Elsevier, 1993.</p>
+<p>8.7.3 Lang, George F., <em>Understanding Vibration Measurements</em>,</p>
+<p>Application Note 9, Rockland Scientific Corporation, Rockleigh, New Jersey, December 1978.</p>
+<p>8.7.4 <em>The Fundamentals of Modal Testing</em>, Application Note 243-3,</p>
+<p>Hewlett-Packard Company,</p>
+<div id="additional-reading" class="section level7" number="8.0.0.10.0.0.1">
+<p class="heading" number="8.0.0.10.0.0.1"><span class="header-section-number">8.0.0.10.0.0.1</span> Additional Reading</p>
+<p>Hartog, J.P. Den, <em>Mechanical Vibrations</em>, Dover Publications, New York, New York, 1984.</p>
+<p>Jacobsen, Ludik S. and Ayre, Robert S., <em>Engineering Vibrations</em>, McGraw-Hill Book Company, New York, New York, 1958.</p>
+<p>Meirovitch, Leonard, <em>Elements of Vibration Analysis</em>, McGraw-Hill Book Company, New York, New York, 1986.</p>
+<p>Meirovitch, Leonard, <em>Analytical Methods in Vibrations</em>, Macmillan Publishing Company, New York, New York, 1967.</p>
+<p>Myklestad, N.O., <em>Vibration Analysis</em>, McGraw-Hill Book</p>
+<p>Company, New York, New York, 1944.</p>
 
+</div>
 </div>
 </div>
             </section>
@@ -857,8 +1065,8 @@
           </div>
         </div>
       </div>
-<a href="universe-earth-atmospheric.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="aerodynamics.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="mass-properties.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="material-strength.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
