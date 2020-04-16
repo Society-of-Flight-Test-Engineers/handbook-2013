@@ -586,19 +586,49 @@ V(t) &amp;= \left\{ \frac{20}{D} -\frac{20}{D}e^{-\frac{D}{M}t} \right\} + V(0)e
 </div>
 <div id="first-order-motion-descriptive-parameters" class="section level3" number="8.2.2">
 <h3><span class="header-section-number">8.2.2</span> First Order Motion Descriptive Parameters</h3>
-<p><img src="media/08/image11.png" /></p>
+<p><span class="math display">\[ x(t) = e^{-\zeta \omega_n t} = e^{-\frac{t}{\tau}} \]</span></p>
 <p><img src="media/08/image12.png" /></p>
-<p>when <em>t</em> = 0.6931τ: <em>x = e</em>^− 0.6931^ = 0.5 (time to half amplitude)</p>
-<p>when <em>t</em> = τ: <em>x = e</em><sup>−1</sup> = 0.37</p>
-<p>when <em>t</em> = 3τ     <em>x = e</em><sup>−3</sup> = 0.05</p>
-<p>when <em>t</em> = 4τ: <em>x = e</em><sup>−4</sup> = 0.02</p>
-<p>If exponent &gt; 0, then motion is divergent.</p>
-<p><img src="media/08/image13.svg" /><img src="media/08/image14.png" /></p>
+<table>
+<tbody>
+<tr class="odd">
+<td>when <span class="math inline">\(t = 0.6931\tau\)</span>:</td>
+<td><span class="math inline">\(x = e^{−0.6931}\)</span></td>
+<td><span class="math inline">\(= 0.5\)</span> (time to half amplitude)</td>
+</tr>
+<tr class="even">
+<td>when <span class="math inline">\(t = \tau\)</span>:</td>
+<td><span class="math inline">\(x = e^{−1}\)</span></td>
+<td><span class="math inline">\(= 0.37\)</span></td>
+</tr>
+<tr class="odd">
+<td>when <span class="math inline">\(t = 3\tau\)</span>:    </td>
+<td><span class="math inline">\(x = e^{−3}\)</span></td>
+<td><span class="math inline">\(= 0.05\)</span></td>
+</tr>
+<tr class="even">
+<td>when <span class="math inline">\(t = 4\tau\)</span>:</td>
+<td><span class="math inline">\(x = e^{−4}\)</span></td>
+<td><span class="math inline">\(= 0.02\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>If exponent <span class="math inline">\(\gt 0\)</span>, then motion is divergent.</p>
+<p><span class="math display">\[x(t) = ce^{mt}\]</span></p>
+<p>where <span class="math inline">\(m \gt 0\)</span></p>
 <p><img src="media/08/image15.png" /></p>
-<p>• <em>τ </em>again describes the exponential rate of divergence.</p>
-<p>• By convention, the “time to double amplitude” (*t_2)) is usually applied as the evaluation metric.</p>
-<p>• <em>x</em><sub>(t2)</sub> = 2<em>x</em><sub>(0)</sub> where <em>x</em><sub>(0)</sub> = <em>c<sup>m</sup></em><sup>0</sup></p>
-<p> </p>
+<p><span class="math inline">\(\tau\)</span> again describes the exponential rate of divergence.</p>
+<p>By convention, the “time to double amplitude” (<span class="math inline">\(t_2\)</span>) is usually applied as the evaluation metric.</p>
+<p><span class="math inline">\(x_{t_2} = 2x_0\)</span> where <span class="math inline">\(x_0 = ce^{m\cdot 0}\)</span></p>
+<p>Therefore</p>
+<p><span class="math display">\[
+\begin{align}
+x_2 &amp;= 2c \\
+2c &amp;= ce^{mt_2} \\
+2 &amp;= e^{mt_2} \\
+\ln 2 &amp;= mt_2 \\
+\therefore \text{Time to double amplitude } \frac{0.6931}{m} = t_2 = 0.693\tau \\
+\end{align}
+\]</span></p>
 <p><img src="media/08/image16.png" /></p>
 <p><img src="media/08/image17.png" /></p>
 </div>
@@ -1324,7 +1354,7 @@ gitbook.start({
 },
 "download": null,
 "toc": {
-"collapse": "subsection"
+"collapse": "section"
 }
 });
 });

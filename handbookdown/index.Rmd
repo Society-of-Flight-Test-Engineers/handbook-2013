@@ -5,7 +5,10 @@ date: "2013"
 site: "bookdown::bookdown_site"
 cover-image: "media/media/image1.jpg"
 output:
-  bookdown::gitbook: default
+  bookdown::gitbook:
+    config:
+      toc:
+        collapse: section
 documentclass: book
 bibliography: []
 biblio-style: apalike

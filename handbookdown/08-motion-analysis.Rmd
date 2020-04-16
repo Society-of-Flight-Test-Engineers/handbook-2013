@@ -173,31 +173,42 @@ so, after \(\frac{M}{D}\) seconds have elapsed, \(V =  V_{\mathrm{ss}} \left[1  
 
 ### First Order Motion Descriptive Parameters
 
-![][08011]
+\[ x(t) = e^{-\zeta \omega_n t} = e^{-\frac{t}{\tau}} \]
 
 ![][08012]
 
-when *t* = 0.6931τ: *x = e*^− 0.6931^ = 0.5 (time to half amplitude)
+||||
+|-|-|-|
+|when \(t = 0.6931\tau\): |\(x = e^{−0.6931}\) |\(= 0.5 \)  (time to half amplitude)|
+|when \(t = \tau\):       |\(x = e^{−1}     \) |\(= 0.37\)|
+|when \(t = 3\tau\):      |\(x = e^{−3}     \) |\(= 0.05\)|
+|when \(t = 4\tau\):      |\(x = e^{−4}     \) |\(= 0.02\)|
 
-when *t* = τ: *x = e*^−1^ = 0.37
+If exponent \(\gt 0\), then motion is divergent.
 
-when *t* = 3τ     *x = e*^−3^ = 0.05
+\[x(t) = ce^{mt}\]
 
-when *t* = 4τ: *x = e*^−4^ = 0.02
-
-If exponent \> 0, then motion is divergent.
-
-![][08013]![][08014]
+where \(m \gt 0\)
 
 ![][08015]
 
-• *τ *again describes the exponential rate of divergence.
+\(\tau\) again describes the exponential rate of divergence.
 
-• By convention, the "time to double amplitude" (*t_2\)) is usually applied as the evaluation metric.
+By convention, the "time to double amplitude" (\(t_2\)) is usually applied as the evaluation metric.
 
-• *x*~(t2)~ = 2*x*~(0)~ where *x*~(0)~ = *c\mathrm{e}^m^*^0^
+\(x_{t_2} = 2x_0\) where \(x_0 = ce^{m\cdot 0}\)
 
- 
+Therefore
+
+\[
+\begin{align}
+x_2 &= 2c \\
+2c &= ce^{mt_2} \\
+2 &= e^{mt_2} \\
+\ln 2 &= mt_2 \\
+\therefore \text{Time to double amplitude } \frac{0.6931}{m} = t_2 = 0.693\tau \\
+\end{align}
+\]
 
 ![][08016]
 
