@@ -171,12 +171,12 @@ Due to varying atmospheric conditions, engine tests are rarely conducted at the 
 
   **Quantity**             **Normal**          **Corrected**
   ------------------------ ------------------- -------------------------------------------------------------------------------
-  **Air mass flow rate**   $${\dot{m}}_{i}$$   $${\dot{m}}_{\text{ci}} = \frac{{\dot{m}}_{i}\sqrt{\theta_{i}}}{\delta_{i}}$$
-  **Fuel flow rate**       $${\dot{m}}_{f}$$   $${\dot{m}}_{\text{fc}} = \frac{{\dot{m}}_{f}}{\delta_{2}\sqrt{\theta_{2}}}$$
-  **Rotational speed**     $$N$$               $$N_{\text{ci}} = \frac{N}{\sqrt{\theta_{i}}}$$
+  **Air mass flow rate**   $${\dot{m}}_{i}$$   $${\dot{m}}_{\mathrm{ci}} = \frac{{\dot{m}}_{i}\sqrt{\theta_{i}}}{\delta_{i}}$$
+  **Fuel flow rate**       $${\dot{m}}_{f}$$   $${\dot{m}}_{\mathrm{fc}} = \frac{{\dot{m}}_{f}}{\delta_{2}\sqrt{\theta_{2}}}$$
+  **Rotational speed**     $$N$$               $$N_{\mathrm{ci}} = \frac{N}{\sqrt{\theta_{i}}}$$
   **Thrust**               $$F$$               $$F_{c} = \frac{F}{\delta_{0}}$$
 
-*θ~i~*=total temperature ratio ($\theta_{i} = \frac{T_{\text{ti}}}{T_{\text{ref}}}$) and *δ~i~*=total pressure ratio ($\delta_{i} = \frac{P_{\text{ti}}}{P_{\text{ref}}}$)
+*θ~i~*=total temperature ratio ($\theta_{i} = \frac{T_{\mathrm{ti}}}{T_{\mathrm{ref}}}$) and *δ~i~*=total pressure ratio ($\delta_{i} = \frac{P_{\mathrm{ti}}}{P_{\mathrm{ref}}}$)
 
 \[Values can also be found in the standard atmosphere table, Section 3-14. Reference is sea-level, standard day. These values are also corrected for Mach number in Figure x-11.\]
 
@@ -191,7 +191,7 @@ Two of the main inputs to a propulsion system are engine face pressure and tempe
 
 Assuming the characteristic length of an engine is constant in differing operating environments, another way of describing the pressure and temperature relationship is with the Reynolds number index. Similar to standard day corrections, the Reynolds Number Index provides a method of comparing engine operation across varying inlet-pressure loses, inlet temperatures, flight speeds, and altitudes. The Reynolds Number Index is:
 
-$$\text{Re}_{i} = \frac{\delta_{2}}{\varphi\sqrt{\theta_{2}}}$$
+$$\mathrm{Re}_{i} = \frac{\delta_{2}}{\varphi\sqrt{\theta_{2}}}$$
 
 where
 
@@ -212,7 +212,7 @@ Reynolds Number Index versus Altitude and Mach Number
 
 Various formulae exist to calculate gross engine thrust (Fg). However, modern engines are too complex for standard textbook formulas to accurately predict thrust; this is normally left to complex computer algorithms. The current standard for new models is the Numerical Propulsion System Simulation (NPSS). Despite this, a control volume approach relying on conservation of momentum will provide gross engine thrust if the required parameters are known.
 
-$$Thrust = \frac{\left( {\dot{m}}_{9} + {\dot{m}}_{\text{fuel}} \right)V_{9} - {\dot{m}}_{0}V_{0}}{g_{c}} + (P_{9} - P_{0})A_{9}$$
+$$Thrust = \frac{\left( {\dot{m}}_{9} + {\dot{m}}_{\mathrm{fuel}} \right)V_{9} - {\dot{m}}_{0}V_{0}}{g_{c}} + (P_{9} - P_{0})A_{9}$$
 
 Where subscript 9 represents the nozzle exit and subscript 0 represents the freestream conditions. $\dot{m}$, V, and, P represent mass flow rate, velocity, and static pressure respectively.
 
@@ -221,7 +221,7 @@ Variations and simplifications of this formula exist:
 +----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
 | > Turbojet and Low Bypass Turbofan (Mixed Streams) | $$Thrust = \frac{{\dot{m}}_{0}(V_{9} - V_{0})}{g_{c}}$$                                                                          |
 +====================================================+==================================================================================================================================+
-| High Bypass Turbofan (Separate Streams)            | $$Thrust = \frac{{\dot{m}}_{\text{fan}}}{g_{c}}(V_{\text{fan}} - V_{0}) + \frac{{\dot{m}}_{\text{core}}}{g_{c}}(V_{9} - V_{0})$$ |
+| High Bypass Turbofan (Separate Streams)            | $$Thrust = \frac{{\dot{m}}_{\mathrm{fan}}}{g_{c}}(V_{\mathrm{fan}} - V_{0}) + \frac{{\dot{m}}_{\mathrm{core}}}{g_{c}}(V_{9} - V_{0})$$ |
 +----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
 
 Atmospheric temperature, Mach, and altitude also significantly affect engine thrust and efficiency.
@@ -341,7 +341,7 @@ Notes:
 
 **Corrected** - An adjustment for standard day temperature and/or pressure (at an engine station) to an engine parameter (like rotational speed, air flow or fuel flow). Also see referred.
 
-**Delta** - Pressure ratio, $\delta_{i} = \frac{P_{\text{ti}}}{P_{0}}$, where i is the reference station.
+**Delta** - Pressure ratio, $\delta_{i} = \frac{P_{\mathrm{ti}}}{P_{0}}$, where i is the reference station.
 
 **Flame-out -** Can be synonymous with blow-out; however, it is more typically used in reference to the main combustor flame extinguishing.
 
@@ -385,7 +385,7 @@ Notes:
 
 **Temperature Profile** - Usually used in reference to the span wise temperature distribution across the turbine inlet guide vanes.
 
-**Theta** -Temperature ratio, $\theta_{i} = \frac{T_{\text{ti}}}{T_{0}}$, where i is the reference station
+**Theta** -Temperature ratio, $\theta_{i} = \frac{T_{\mathrm{ti}}}{T_{0}}$, where i is the reference station
 
 **Thrust Specific Fuel Consumption** - The amount of fuel required to produce a unit of thrust,
 

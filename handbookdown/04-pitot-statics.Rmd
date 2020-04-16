@@ -18,7 +18,7 @@
 | \(P_T\)           | total pressure                                                                                                   |
 | \(q\)             | incompressible dynamic pressure                                                                                  |
 | \(q_c\)           | compressible dynamic pressure (\(=P_T-P_a\))                                                                     |
-| \(q_{cic}\)       | instrument corrected differential pressure (\(=P_p-P_s\))                                                        |
+| \(q_{\mathrm{cic}}\)       | instrument corrected differential pressure (\(=P_p-P_s\))                                                        |
 | \(T_a\)           | ambient temperature (absolute scale)                                                                             |
 | \(T_0\)           | ambient temperature at sea level on a standard day (\(=288.15 K = 15^{\circ} C = 518.7^{\circ}R=59.0^{\circ}F\)) |
 | \(T_T\)           | total temperature (absolute scale)                                                                               |
@@ -27,13 +27,13 @@
 | \(V_g\)           | ground speed                                                                                                     |
 | \(V_i\)           |indicated airspeed                                                                                                |
 | \(V_T\)           | true airspeed                                                                                                    |
-| \(\Delta H_{ic}\) | altimeter instrument correction                                                                                  |
-| \(\Delta H_{pc}\) | altimeter position error correction                                                                              |
+| \(\Delta H_{\mathrm{ic}}\) | altimeter instrument correction                                                                                  |
+| \(\Delta H_{\mathrm{pc}}\) | altimeter position error correction                                                                              |
 | \(\Delta P_D\)    | dynamic pressure error (\(=P_T-\Delta P_s\))                                                                     |
 | \(\Delta P_T\)    |total (pitot) pressure error (\(=P_P-P_T\))                                                                       |
 | \(\Delta P_s\)    | static pressure error (\(=P_s-P_a\))                                                                             |
-| \(\Delta V_{ic}\) | airspeed instrument correction                                                                                   |
-| \(\Delta V_{pc}\) | airspeed position error correction                                                                               |
+| \(\Delta V_{\mathrm{ic}}\) | airspeed instrument correction                                                                                   |
+| \(\Delta V_{\mathrm{pc}}\) | airspeed position error correction                                                                               |
 | \(\delta\)        | pressure ratio between ambient and sea level std (\(=P_a/P_0\))                                                  |
 | \(\theta\)        | temperature ratio between ambient and sea level std (\(=T_a/T_0\))                                               |
 | \(\rho_0\)        | ambient density at sea level on a std day (\(=0.002 377 slg/ft^3\))                                               |
@@ -51,16 +51,16 @@ Equivalent Airspeed
 
 (= \(V_T\) equation with assumption of std day sea level density)
 
-\[V_{e} = \sqrt{7\frac{P_{a}}{\rho_{o}}\left( \left\lbrack \frac{P_{T} - P_{a}}{P_{a}} + 1 \right\rbrack^{\frac{2}{7}} - 1 \right)} = V_{T}\sqrt{\frac{\rho_{a}}{\rho_{o}}} = V_{T}\sqrt{\sigma}\]
+\[V_{e} = \sqrt{7\frac{P_{a}}{\rho_0}\left( \left\lbrack \frac{P_{T} - P_{a}}{P_{a}} + 1 \right\rbrack^{\frac{2}{7}} - 1 \right)} = V_{T}\sqrt{\frac{\rho_{a}}{\rho_0}} = V_{T}\sqrt{\sigma}\]
 
 Calibrated Airspeed
 
 (= \(V_e\) equation with assumption of std day sea level pressure)
 
-\[V_{c} = \left\lbrack \frac{2\gamma}{\gamma - 1}\frac{P_{o}}{\rho_{o}}\left( \left\lbrack \frac{P_{T} - P_{a}}{P_{o}} + 1 \right\rbrack^{\frac{\gamma - 1}{\gamma}} - 1 \right) \right\rbrack^{\frac{1}{2}}\]
+\[V_{c} = \left\lbrack \frac{2\gamma}{\gamma - 1}\frac{P_0}{\rho_0}\left( \left\lbrack \frac{P_{T} - P_{a}}{P_0} + 1 \right\rbrack^{\frac{\gamma - 1}{\gamma}} - 1 \right) \right\rbrack^{\frac{1}{2}}\]
 
 
-\[\sqrt{\mathrm{7}\frac{\mathrm{P}_{\mathrm{o}}}{\mathrm{\rho}_{\mathrm{o}}}\left( \left\lbrack \frac{\mathrm{q}_{\mathrm{c}}}{\mathrm{P}_{\mathrm{o}}}\mathrm{+ 1} \right\rbrack^{\mathrm{0.2857}}\mathrm{- 1} \right)}\]
+\[\sqrt{7 \frac{P_0}{\rho_0}\left( \left\lbrack \frac{q_c}{P_0} + 1 \right\rbrack^{0.2857} - 1 \right)}\]
 
 Applying British units (\(lb/ft^2\)) and converting from *ft/sec* to knots yields
 
@@ -148,9 +148,9 @@ Use *K* (probe recovery factor) to account for heat losses:
 
 \[ \frac{T_T}{T_a} = 1 + \left[ \frac{K(\gamma - 1)}{2} \right] M^2 \]
 
-During position error flight testing, measure \(T_i\).  From \(V_c\) and \(H_{pc}\) determine M
+During position error flight testing, measure \(T_i\).  From \(V_c\) and \(H_{\mathrm{pc}}\) determine M
 
-\[ T_i + \Delta T_{ic} = T_T = T_a + T_aKM^2 \]
+\[ T_i + \Delta T_{\mathrm{ic}} = T_T = T_a + T_aKM^2 \]
 
 Plot \(T_i\) vs \(M^2\)
 
@@ -170,9 +170,9 @@ Plot \(T_i\) vs \(M^2\)
 | Symbol       | Definition                                   |
 |:-------------|:---------------------------------------------|
 | \(H_i\)                     | indicated pressure altituide (29.92" Hg)     |
-| \(\Delta H_{ic}\)           | instrument error correction                  | <!--- already defined at the beginning of the section --->
-| \(H_{ic}\)                  | altimeter corrected of instrument error      |
-| \(\Delta H_{pc}\)           | position error correction                    | <!--- already defined at the beginning of the section --->
+| \(\Delta H_{\mathrm{ic}}\)           | instrument error correction                  | <!--- already defined at the beginning of the section --->
+| \(H_{\mathrm{ic}}\)                  | altimeter corrected of instrument error      |
+| \(\Delta H_{\mathrm{pc}}\)           | position error correction                    | <!--- already defined at the beginning of the section --->
 | \(H_c\)                     | calibrated pressure altitude                 |
 
 
@@ -184,20 +184,20 @@ As depicted below, the flyby method originally used some sort of viewing platfor
 
 ![][04017]
 
-\[\textrm{Actual } H_{c} = H_{c_{tower}} + \left( D\tan\theta \cdot \frac{T_{s}}{T_{t}} \right) \]
+\[\text{Actual } H_{c} = H_{c_{\mathrm{tower}}} + \left( D\tan\theta \cdot \frac{T_{s}}{T_{t}} \right) \]
 
-\[ \Delta H_{pc} = \textrm{Actual } H_c - \left( H_i + \Delta H_{ic} \right) \]
+\[ \Delta H_{\mathrm{pc}} = \text{Actual } H_c - \left( H_i + \Delta H_{\mathrm{ic}} \right) \]
 
 <!--- Changing capital subscript 's' to lower-case to make more consistent with rest of the handbook --->
-\[ \Delta P_s = \rho g \Delta H_{pc} \]
+\[ \Delta P_s = \rho g \Delta H_{\mathrm{pc}} \]
 
-\[ \Delta P_{S} = q_{c} - q_{cic} \]
+\[ \Delta P_{S} = q_{c} - q_{\mathrm{cic}} \]
 
-\[ \Delta P_{S} = \frac{1}{2}\rho_{0}{V_{c}^{2} - \frac{1}{2}\rho_{0}{V_{ic}}^{2} \text{ (low Mach only)}} \]
+\[ \Delta P_{S} = \frac{1}{2}\rho_{0}{V_{c}^{2} - \frac{1}{2}\rho_{0}{V_{\mathrm{ic}}}^{2} \text{ (low Mach only)}} \]
 
 Solve for \(V_c\)
 
-\[ \Delta V_{pc} = V_c - V_{ic} \]
+\[ \Delta V_{\mathrm{pc}} = V_c - V_{\mathrm{ic}} \]
 
 <!--- FIXME: What flow chart is this referring to??? --->
 See flowchart for high mach or \(P_T \ne 0\) cases.
@@ -219,19 +219,19 @@ Elapsed time = \(\Delta T\), therefore \(V_T = \frac{\Delta S}{\Delta T} \)
 
 Use \(H_i\) and \(T_i\) to compute \(V_e = V_T \left(\sqrt{\sigma} \right) = V_c\) for low altitude
 
-Correct \(V_i\) for instrument error corrections (\(\Delta V_{ic} \)) using
+Correct \(V_i\) for instrument error corrections (\(\Delta V_{\mathrm{ic}} \)) using
 
-\[V_{ic} = V_i + \Delta V_{ic} \]
+\[V_{\mathrm{ic}} = V_i + \Delta V_{\mathrm{ic}} \]
 
-\[\Delta V_{pc} = V_c - V_{ic} \]
+\[\Delta V_{\mathrm{pc}} = V_c - V_{\mathrm{ic}} \]
 
 To determine altimeter error assume \(\Delta P_T = 0\)
 
-\[\frac{1}{2} \rho_0 \left[ V_c^2 - V_{ic}^2 \right] = +\Delta P_s \]
+\[\frac{1}{2} \rho_0 \left[ V_c^2 - V_{\mathrm{ic}}^2 \right] = +\Delta P_s \]
 
 \[\Delta P_s = +\rho g \Delta H \]
 
-If \(\Delta P_T \ne 0\), then \(\Delta H_{pc} = + \frac{\Delta P_s - \Delta P_T}{\rho g} \)
+If \(\Delta P_T \ne 0\), then \(\Delta H_{\mathrm{pc}} = + \frac{\Delta P_s - \Delta P_T}{\rho g} \)
 
 <!--- FIXME: This is a poor place to label a figure --->
 Error resulting from a \(\frac{1}{2}\) sec timing error
@@ -252,13 +252,13 @@ This airspeed-based test method determines airspeed corrections directly. Accura
 4. Inexpensive---can be trailed on landing
 5. Consider lag effects during rapid altitude changes
 
-\(\Delta P_s = \Delta P_{s_{A/C}} - \Delta P_{s_{REF}} \)
+\(\Delta P_s = \Delta P_{s_{\mathrm{A/C}}} - \Delta P_{s_{\mathrm{REF}}} \)
 
-\(\Delta H_{pc} = +\frac{\Delta P_s}{\rho g} = \textrm{altimeter correction} \)  <!--- Probably not needed to define this here again --->
+\(\Delta H_{\mathrm{pc}} = +\frac{\Delta P_s}{\rho g} = \textrm{altimeter correction} \)  <!--- Probably not needed to define this here again --->
 
-\(\Delta P_T - \Delta P_s = \Delta P_D = q_{ic} - q_c \textrm{ assuming } \Delta P_T = 0 \textrm{ , } M < 0.2 \)  <!--- Unclear --->
+\(\Delta P_T - \Delta P_s = \Delta P_D = q_{\mathrm{ic}} - q_c \text{ assuming } \Delta P_T = 0 \text{ , } M < 0.2 \)  <!--- Unclear --->
 
-If pitot errors do exist, then they must be included in calculations for \(\Delta V_{pc}\) (see flowchart). <!--- which one??? --->
+If pitot errors do exist, then they must be included in calculations for \(\Delta V_{\mathrm{pc}}\) (see flowchart). <!--- which one??? --->
 
 Using a trailing cone during stall testing may give airspeed errors due to lag errors during the deceleration.
 
@@ -379,16 +379,16 @@ The "Windbox" method consists of flying four legs instead of three. The extra le
 
 <!--- FIXME: This should be defined elsewhere --->
   * Requirements
-    * Maximum error at sea level must be less than \(\pm 30 \textrm{ft}/100 \textrm{kts}\) between \(1.3 V_{SO}\) and \(1.8 V_{S1}\) 
+    * Maximum error at sea level must be less than \(\pm 30 \text{ft}/100 \text{kts}\) between \(1.3 V_{\mathrm{SO}}\) and \(1.8 V_{S1}\) 
     * \(V_{S0} = \) Full flap, gear down, power off, stall speed \)
     * \(V_{S1} = \) Stall speed in a specific configuration \)
 
 ![][04048]
 
-Errors must be equal to or less than \(\pm3\%\) of \(V_c\) or \(\pm5\textrm{kts}\) whichever is greater
+Errors must be equal to or less than \(\pm3\%\) of \(V_c\) or \(\pm5\text{kts}\) whichever is greater
 
 #### Mil Spec P-26292 C (USAF)
-Landing configuration: \(\Delta H_{pc} \pm 30\) ft.
+Landing configuration: \(\Delta H_{\mathrm{pc}} \pm 30\) ft.
 
 ![][04034]
 

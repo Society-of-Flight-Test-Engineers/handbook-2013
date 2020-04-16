@@ -5,18 +5,18 @@
 | Symbol                   | Definition                                                                             |
 |--------------------------|----------------------------------------------------------------------------------------|
 | \(H_p\)                  | pressure altitude. The pressure associate with geopotential altitude on a standard day |
-| \(a_o\)                  | speed of sound at std day sea level temperature                                        |
+| \(a_0\)                  | speed of sound at std day sea level temperature                                        |
 | \(P\)                    | ambient pressure                                                                       |
-| \(P_o\)                  | standard day seal level ambient pressure                                               |
+| \(P_0\)                  | standard day seal level ambient pressure                                               |
 | \(T\)                    | absolute temperature (Rankine or Kelvin)                                                |
-| \(T_o\)                  | standard day seal level absolute temperature                                           |
+| \(T_0\)                  | standard day seal level absolute temperature                                           |
 | \(T_R\)                  | absolute temperature, Rankine scale                                                     |
 | \(\rho_ο\)               | standard day seal level ambient density                                                |
 | \(rho\)                  | ambient density                                                                        |
 | \(g\)                    | acceleration due to gravity                                                            |
-| \(g_o\)                  | standard earth acceleration due to gravity                                             |
-| \(\delta = P/P_o\)       | atmospheric pressure/std day sea level pressure                                        |
-| \(\theta = T/T_o\)       | atmospheric absolute temp/std day sea level absolute temp                              |
+| \(g_0\)                  | standard earth acceleration due to gravity                                             |
+| \(\delta = P/P_0\)       | atmospheric pressure/std day sea level pressure                                        |
+| \(\theta = T/T_0\)       | atmospheric absolute temp/std day sea level absolute temp                              |
 | \(\sigma = \rho/\rho_ο\) | atmospheric density/std day sea level density                                          |
 
 ## Universal Constants
@@ -25,7 +25,7 @@
 
 | Constant                               | Symbol  | Value                                |  Units |
 |----------------------------------------|---------|--------------------------------------|--------|
-| Avogadros number                       | \(N_o\) | \(6.022\,169 \times 10^{23}\) | molecules/mole |
+| Avogadros number                       | \(N_0\) | \(6.022\,169 \times 10^{23}\) | molecules/mole |
 | Boltzmann constant                     | \(k\)   | \(1.380 \times 10^{-23}\) | J/K           |
 | electron charge                        | \(e\)   | \(1.602 \times 10^{-19}\) | Coulomb          |
 | electron mass                          | \(m_e\) | \(9.109 \times 10^{-31}\) | kg               |
@@ -51,14 +51,14 @@ where \(G\) is the universal gravitational constant and \(R_A\) is the absolute 
 
 | Property                                                               | Symbol      | Value                                                                                        | Units     |
 |------------------------------------------------------------------------|-------------|----------------------------------------------------------------------------------------------|-----------|
-| Std Earth gravitational acceleration                                   | \(g_o\)     | 9.8066                                                                                       | m/s^2^    |
+| Std Earth gravitational acceleration                                   | \(g_0\)     | 9.8066                                                                                       | m/s^2^    |
 |                                                                        |             | 32.174                                                                                       | ft/s^2^   |
 | mass                                                                   |             | \(5.9722 \times 10^{24}\)                                                                    | kg        |
 |                                                                        |             | \(13.22 \times 10^{24}\)                                                                     | lb        |
 | rotation rate                                                          | \(\omega\)  | \(7.292\,115 \times 10^{−5}                                                                    | rad/sec   |
 | average density                                                        |             | \(5.522\)                                                                                    | g/cm^3^   |
 |                                                                        |             | \(344.7\)                                                                                    | lb/ft^3^  |
-| radius average                                                         | \(R_{avg}\) | \(6\,367\,444\)                                                                                | m         |
+| radius average                                                         | \(R_{\mathrm{avg}}\) | \(6\,367\,444\)                                                                                | m         |
 |                                                                        |             | \(3956.538\)                                                                                 | st. miles |
 |                                                                        |             | \(20\,890\,522\)                                                                               | ft        |
 | radius at the equator                                                  | \(R_e\)     | \(6\,378\,137\)                                                                                | m         |
@@ -81,14 +81,14 @@ For any centrifugal relief calculations associated with aircraft performance, it
 The International Association of Geodesy publishes the following equation (accurate to 0.005%) to calculate \(local sea level gravity including the effects of centrifugal relief for* *any point fixed to the earth\'s surface*
 
 \[
-g_{lsl} = 9.780 327 \left( 1 + 0.005 300 224 \sin^2{\phi} - 0.000\,058 \sin^2{2 \phi} \right) \left[ \frac{m}{s^2} \right]
+g_{\mathrm{lsl}} = 9.780 327 \left( 1 + 0.005 300 224 \sin^2{\phi} - 0.000\,058 \sin^2{2 \phi} \right) \left[ \frac{m}{s^2} \right]
 \]
 
 The above equation is tabulated below for quick reference.
 
   ---------------------------------------------------------
   **Latitude\   **Normal**
-  (deg)**       \(g_{local}\)
+  (deg)**       \(g_{\mathrm{local}}\)
   ------------- ----------------------- -------------------
                 \((m/s^2)\)             \((ft/s^2)\)
 
@@ -107,22 +107,22 @@ The above equation is tabulated below for quick reference.
   **90**        9.832 185                32.258
   ---------------------------------------------------------
 
-The standard acceleration (\(g_o\)) corresponds to a latitude of 46.0625°.
+The standard acceleration (\(g_0\)) corresponds to a latitude of 46.0625°.
 
-\(g_{lsl}\)* at the equator and the poles varies ±0.27% from \(g_o\).
+\(g_{\mathrm{lsl}}\)* at the equator and the poles varies ±0.27% from \(g_0\).
 
 ### Altitude Effect on Gravitational Acceleration {-}
 
 \(R_A\) is the sum of the earth's local radius and the geometric distance, \(h_G\) above the surface: \(R_A = R + h_G\)
 
 \[
-g_{alt} = g_{sls}\left( \frac{R}{R + h_G} \right)^2
+g_{\mathrm{alt}} = g_{\mathrm{lsl}}\left( \frac{R}{R + h_G} \right)^2
 \]
 
 Gravitational acceleration at any geometric altitude:
 
 +-----------+-------------------+
-| \(h_G\)   |\(g_{alt}/g_{lsl}\)|
+| \(h_G\)   |\(g_{\mathrm{alt}}/g_{\mathrm{lsl}}\)|
 | (1000 ft) |                   |
 +===========+===================+
 | 0         | 1                 |
@@ -144,7 +144,7 @@ Gravitational acceleration at any geometric altitude:
 
 Adding a centrifugal relief correction due to the aircraft's velocity, a complete calculation for its gravitational acceleration is
 \[
-g_{A/C} = \left[ g_{lsl} + \omega^2 R \cos{\phi} \right] \left[ \frac{R}{R + h_G} \right]^2 - \left( \omega + \frac{V_G \sin{\sigma}}{R + h_G} \right)^2 \left(R + h_G\right) \cos{\phi}
+g_{A/C} = \left[ g_{\mathrm{lsl}} + \omega^2 R \cos{\phi} \right] \left[ \frac{R}{R + h_G} \right]^2 - \left( \omega + \frac{V_G \sin{\sigma}}{R + h_G} \right)^2 \left(R + h_G\right) \cos{\phi}
 \]
 
 where \(V_G\) = ground speed and \(\sigma\) = ground track angle (0° = true North, 90° = East, etc.).
@@ -153,13 +153,13 @@ where \(V_G\) = ground speed and \(\sigma\) = ground track angle (0° = true Nor
 
 Even at the same altitude, changes in gravity due to latitude or centrifugal relief directly alter the required lift, drag, and fuel flow. For example, with sufficiently precise instrumentation, data collected heading West could show about 0.5% more drag and fuel flow than data collected heading East (centrifugal relief effect). After determining test and standard (or mission) values for \(g\), flight test values for *C_L, *C_D, drag, and fuel flow can be corrected to standard as follows:
 
-\[C_{L_{std}} = C_{L_i} \frac{N_{z_{\omega_{std}}}}{N_{Z_{\omega_i}}} \left[\frac{g_{std}}{g_{A/C}} \right] \]
+\[C_{L_{\mathrm{std}}} = C_{L_i} \frac{N_{z_{\omega_{\mathrm{std}}}}}{N_{Z_{\omega_i}}} \left[\frac{g_{\mathrm{std}}}{g_{A/C}} \right] \]
 
-\[C_{D_{std}} = \frac{C^2_{L_{std}}}{\pi A \text{Re}} \]
+\[C_{D_{\mathrm{std}}} = \frac{C^2_{L_{\mathrm{std}}}}{\pi A \text{Re}} \]
 
-\[\Delta D = D_{std} - D_t = qS\left[C_{D_{i_{std}}} - C_{D_{i_t}} \right] \]
+\[\Delta D = D_{\mathrm{std}} - D_t = qS\left[C_{D_{i_{\mathrm{std}}}} - C_{D_{i_t}} \right] \]
 
-\[\dot{W}_{f_{std}} = \dot{W}_{f_i} + \Delta D \cdot TFSC \]
+\[\dot{W}_{f_{\mathrm{std}}} = \dot{W}_{f_i} + \Delta D \cdot TFSC \]
 
 where \(N_z\) = normal load factor,
 
@@ -170,7 +170,7 @@ where \(N_z\) = normal load factor,
 \(\Delta D\) = change in drag force,
 
 \(TSFC\) = thrust specific fuel consumption, and
-\(\dot{W}_{f_{std}}\) = standard day fuel flow
+\(\dot{W}_{f_{\mathrm{std}}}\) = standard day fuel flow
 
 ## General Properties of Air
 
@@ -182,14 +182,14 @@ where \(N_z\) = normal load factor,
 |                                              |                       | 287.074              | J/kg K              |
 |                                              |                       | 1716                 | lb(ft)/slgs(R)    |
 |                                              |                       | 3089.7               | lb(ft)/slgs(K)    |
-| Speed of sound                               | \(a_o \sqrt{\theta}\) | 49.02 \(\sqrt{T_R}\) | ft/sec              |
+| Speed of sound                               | \(a_0 \sqrt{\theta}\) | 49.02 \(\sqrt{T_R}\) | ft/sec              |
 |                                              |                       | 33.42 \(\sqrt{T_R}\) | miles/hr            |
 |                                              |                       | 29.04 \(\sqrt{T_R}\) | knots               |
 |                                              |                       | 20.05 \(\sqrt{T_R}\) | m/sec               |
 | Density                                      | \(\rho\)              | 0.002 3769             | slug/ft^3^          |
 |                                              |                       | 1.225                | kg/m^3^ (at 15°C) |
 | Specific weight                              | \(g_\rho\)            | 0.076 47               | sec^2^/ft^4^        |
-| Specific heat capacity at 59 °F (=\(T_o\)) |                       |                      |                     |
+| Specific heat capacity at 59 °F (=\(T_0\)) |                       |                      |                     |
 | at constant pressure                         | \(c_p\)               | 0.240                 | BTU/lb R            |
 |                                              |                       | 1004.76              | J/kg K              |
 | at constant volume                           | \(c_v\)               | 0.1715                | BTU/lb R            |
@@ -282,7 +282,7 @@ Constantly changing atmospheric conditions cannot be duplicated at will to provi
 |------------------|---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Geometric        | \(h_G\) | The height of an aircraft above sea level (also called **tapeline** altitude)                                                                                                                                           |
 | Absolute         | \(h_a\) | The height of an aircraft above the center of the earth: (geometric altitude + radius of the earth)                                                                                                                     |
-| Geopotential     | \(h\)   | Required because \(g\) changes with height. If potential energy is calculated using sea level weight ( \(W_{SL} = mg_o\)) instead of actual weight (\(W = mg\)), then the altitude must be lower. \(h = W/W_{SL} h_G \) |
+| Geopotential     | \(h\)   | Required because \(g\) changes with height. If potential energy is calculated using sea level weight ( \(W_{\mathrm{SL}} = mg_0\)) instead of actual weight (\(W = mg\)), then the altitude must be lower. \(h = W/W_{\mathrm{SL}} h_G \) |
 | Pressure         | \(H_p\) | The altitude, on a standard day, at which the test day pressure would be found                                                                                                                                          |
 | Density          | \(H_D\) | The altitude, on a standard day, at which the test day density would be found                                                                                                                                           |
 | Temperature      |         | The altitude, on a standard day, at which the test day temperature would be found                                                                                                                                       |
@@ -292,29 +292,29 @@ Constantly changing atmospheric conditions cannot be duplicated at will to provi
 1. The air is dry (only 0.4% per volume of water vapor)
 1. The air is a perfect gas and obeys the equation of state, \(P = \rho gRT\), where \(R\) = 53.35 ft lb/°R lbm
 1. The gravitational field decreases with altitude
-1. Hydrostatic equilibrium exists (\(\Delta p = −\rho g_o \Delta h\))
+1. Hydrostatic equilibrium exists (\(\Delta p = −\rho g_0 \Delta h\))
 
 ### Standard Day Sea Level Atmospheric Conditions {-}
 
 | Parameter                   | Symbol     | Value     | Unit              |
 |-----------------------------|------------|-----------|-------------------|
-| Pressure                    | \(P_o\)    | 2116.22   | lb/ft^2^          |
+| Pressure                    | \(P_0\)    | 2116.22   | lb/ft^2^          |
 |                             |            | 14.696    | lb/in^2^          |
 |                             |            | 29.921    | in Hg             |
 |                             |            | 1013.25   | HPa (mb)          |
 |                             |            | 101 325    | Pa                |
-| Temperature                 | \(T_o\)    | 288.15    | K                 |
+| Temperature                 | \(T_0\)    | 288.15    | K                 |
 |                             |            | 518.67    | R                 |
 |                             |            | 59        | °F              |
 |                             |            | 15        | °C              |
-| Density                     | \(\rho_o\) | 0.002 3769 | slgs/ft^3^        |
+| Density                     | \(\rho_0\) | 0.002 3769 | slgs/ft^3^        |
 | (at 15°C)                 |            | 0.076 47   | lbm/in^3^         |
 |                             |            | 1.255     | kg/m^3^           |
-| Speed of Sound              | \(a_o\)    | 1116.45   | ft/sec            |
+| Speed of Sound              | \(a_0\)    | 1116.45   | ft/sec            |
 |                             |            | 661.478   | KTAS              |
 |                             |            | 761.14    | mph               |
 |                             |            | 340.294   | m/sec             |
-| Acceleration Due to Gravity | \(g_o\)    | 32.174    | ft/sec^2^         |
+| Acceleration Due to Gravity | \(g_0\)    | 32.174    | ft/sec^2^         |
 |                             |            | 9.806 65   | m/sec^2^          |
 | Temperature Lapse Rate      | \(L\)      | 1.98      | K/kft or °C/kft |
 | (up to 36 000 ft or 11 km)  |            | 3.56      | °F/kft          |
@@ -353,13 +353,13 @@ The above relations characterize the standard atmosphere table in this handbook.
 Below the tropopause (ambient pressure greater than 472.683 psf or 22632 Pa)
 
 \[
-H_p \left[ \text{ft} \right] = \frac{ 1-\left( \frac{P_a}{P_o} \right)^{0.190\,2632} }{6.875\,5856 \times 10^{-6}}
+H_p \left[ \text{ft} \right] = \frac{ 1-\left( \frac{P_a}{P_0} \right)^{0.190\,2632} }{6.875\,5856 \times 10^{-6}}
 \]
 
 In the troposphere (ambient pressure between 114.347 and 472.683 psf or between 5475 and 22 632.1 Pascal)
 
 \[
-H_p \left[ \text{ft} \right] = 36\,089+ \frac{ \ln \left( \frac{P_a}{P_o} \right) + 1.498\,966 }{ 0.000\,048\,063 }
+H_p \left[ \text{ft} \right] = 36\,089+ \frac{ \ln \left( \frac{P_a}{P_0} \right) + 1.498\,966 }{ 0.000\,048\,063 }
 \]
 
 #### 1976 U.S. Standard Atmosphere Graph {-}
@@ -577,7 +577,7 @@ P_{1} &= \sqrt{x_{1}^{2} + y_{1}^{2} + z_{1}^{2}} \\
 P_{2} &= \sqrt{x_{2}^{2} + y_{2}^{2} + z_{2}^{2}} \\
 \overset{\rightarrow}{P}_{1}  \overset{\rightarrow}P_{2} &= P_{1} P_{2}\cos{\varphi} = x_{1} \cdot x_{2} + y_{1} \cdot y_{2} + z_{1} \cdot z_{2} \\
 \varphi &= \arccos\left( \frac{x_{1} \cdot x_{2} + y_{1} \cdot y_{2} + z_{1} \cdot z_{2}}{P_{1} \cdot P_{2}} \right) \\
-D &= P_{\text{avg}} \cdot \varphi
+D &= P_{\mathrm{avg}} \cdot \varphi
 \end{align}
 \]
 
@@ -618,8 +618,8 @@ Because each degree of latitude change is not always exactly 60 nm and because t
 
 \[
 \begin{align}
-\phi_{\text{scale}} \left\{ \phi = 0 \right\} &= 110\,574 \text{m} = 362\,776.6 \text{ft} = 59.705\,18 \text{nm} \\
-\lambda_{\text{scale}} \left\{ \phi = 0 \right\} &= 111\,319.5 \text{m} = 365\,221.4 \text{ft} = 60.107\,72 \text{nm} \\
+\phi_{\mathrm{scale}} \left\{ \phi = 0 \right\} &= 110\,574 \text{m} = 362\,776.6 \text{ft} = 59.705\,18 \text{nm} \\
+\lambda_{\mathrm{scale}} \left\{ \phi = 0 \right\} &= 111\,319.5 \text{m} = 365\,221.4 \text{ft} = 60.107\,72 \text{nm} \\
 \end{align}
 \]
 
@@ -627,9 +627,9 @@ Use average latitude to calculate latitude and longitude scaling factors
 
 \[
 \begin{align}
-\phi_{\text{scale}} &= \frac{\phi_{\text{scale}} \left\{ \phi = 0 \right\} }{ \left\lbrack \left( 1 - e^{2} \right)  \sin^{2}(\phi) \right\rbrack^{1.5} } \\
+\phi_{\mathrm{scale}} &= \frac{\phi_{\mathrm{scale}} \left\{ \phi = 0 \right\} }{ \left\lbrack \left( 1 - e^{2} \right)  \sin^{2}(\phi) \right\rbrack^{1.5} } \\
 \\
-\lambda_{\text{scale}} &= \frac{\lbrack \lambda_{\text{scale}} \left\{ \phi = 0 \right\} \rbrack \cdot \cos{\phi}}{\sqrt{ \left(1 - e^2 \right) \sin^{2}{\phi}}} \\
+\lambda_{\mathrm{scale}} &= \frac{\lbrack \lambda_{\mathrm{scale}} \left\{ \phi = 0 \right\} \rbrack \cdot \cos{\phi}}{\sqrt{ \left(1 - e^2 \right) \sin^{2}{\phi}}} \\
 \end{align}
 \]
 
@@ -637,8 +637,8 @@ Calculate X and Y components of distances aligned with the latitude & longitude�
 
 \[
 \begin{align}
-Y = \phi_{\text{scale}} \left(\phi_1 - \phi_0 \right) \\
-X = \lambda_{\text{scale}} \left(\lambda_1 - \lambda_0 \right) \\
+Y = \phi_{\mathrm{scale}} \left(\phi_1 - \phi_0 \right) \\
+X = \lambda_{\mathrm{scale}} \left(\lambda_1 - \lambda_0 \right) \\
 \end{align}
 \]
 
@@ -654,8 +654,8 @@ For any point (\(\phi, \lambda\)), calculate runway-aligned X & Y distances usi
 
 \[
 \begin{align}
-X &= \phi_{\text{scale}} \left(\phi - \phi_0 \right)\sin{\psi} + \lambda_{\text{scale}} \left(\lambda - \lambda_0 \right)\cos{\psi} \\
-Y &= \phi_{\text{scale}} \left(\phi - \phi_0 \right)\cos{\psi} - \lambda_{\text{scale}} \left(\lambda - \lambda_0 \right)\sin{\psi} \\
+X &= \phi_{\mathrm{scale}} \left(\phi - \phi_0 \right)\sin{\psi} + \lambda_{\mathrm{scale}} \left(\lambda - \lambda_0 \right)\cos{\psi} \\
+Y &= \phi_{\mathrm{scale}} \left(\phi - \phi_0 \right)\cos{\psi} - \lambda_{\mathrm{scale}} \left(\lambda - \lambda_0 \right)\sin{\psi} \\
 \end{align}
 \]
 
@@ -679,20 +679,20 @@ Note: When operating well above terrain and obstacles, it is more critical to en
 
 Although the long-used practice of matching the local altimeter setting has been sufficiently safe in the vast majority of operations, it in fact does not account for temperature deviation from standard conditions. Extreme temperature deviations cause a classic mechanical altimeter to display an MSL altitude erring by hundreds of feet. Modern technology allows calculating and displaying a more accurate altitude that corrects for temperature deviations. The following equation yields temperature-compensated altitude which better estimates geometric altitude above MSL, \(h_G. Calculations require knowledge of aircraft's baro and pressure altitudes and the terminal airport's temperature and pressure altitude. In lieu of pressure altitudes, calculations allow for implementing the field elevation (depicted on airport approach plates, etc.) and so-called baro bias. Baro bias is the displayed altitude shift when switching from local to standard altimeter setting.
 
-\[h_G = H_b + \frac{T_{\text{apt}} - T_0}{L - Hp_{\text{apt}} } \ln \left[ 1 + \frac{L \left( H_p - H_{p_{\text{apt}}} \right) }{T_0 + L H_{p_{\text{apt}}}} \right]\]
+\[h_G = H_b + \frac{T_{\mathrm{apt}} - T_0}{L - Hp_{\mathrm{apt}} } \ln \left[ 1 + \frac{L \left( H_p - H_{p_{\mathrm{apt}}} \right) }{T_0 + L H_{p_{\mathrm{apt}}}} \right]\]
 
 where
 \(h_G\) = temperature-compensated altitude
 
 \(H_b\) = baro altitude (displayed when altimeter is set to local value)
 
-\(T_{\text{apt}}\) = airport temperature (Kelvin)
+\(T_{\mathrm{apt}}\) = airport temperature (Kelvin)
 
 \(T_0\) = standard day sea level temperature = 15 deg C = 288.15 K
 
 \(L\) = standard temperature lapse rate = -0.0065 K/m = -0.001 9812 K/ft
 
-\(H_{p_{\text{apt}}}\) = airport pressure altitude ( = airport field elevation - baro bias)
+\(H_{p_{\mathrm{apt}}}\) = airport pressure altitude ( = airport field elevation - baro bias)
 
 \(H_p\) = aircraft pressure altitude ( = H_b - baro bias)
 
@@ -710,19 +710,15 @@ Flight testers can use the above to verify the aircraft's temperature compensati
 
 ## References
 
-3.1 Anon., "Aeronautical Vestpocket Handbook" ,Part No. P&W 079500, United Technologies Pratt & Whitney, Canada, 1990.
-
-3.2 Lawless, Alan. R. et al, "Aerodynamics for Flight Testers", National Test Pilot School, P.O. Box 658, Mojave CA, 93501, 1999.
-
-3.3 Denno, Richard R., et al "AIAA Aerospace Design Engineers Guide" ISBN 0-930403-21-5, AIAA, 1987.
-
-3.4 Global Positioning System Overview, Peter H. Dana, Department of Geography, University of Texas at Austin, 1994. [[www.colorado.edu/geography/gcraft/notes/gps/gps_f.html](www.colorado.edu/geography/gcraft/notes/gps/gps_f.html)]
-
-3.5 Charles D Ghilani, Penn State College of Engineering, 2008 [[http://surveying.wb.psu.edu/sur351/georef/Ellip4.htm](http://surveying.wb.psu.edu/sur351/georef/Ellip4.htm)] [[www.colorado.edu/geography/gcraft/notes/gps/gps_f.html](www.colorado.edu/geography/gcraft/notes/gps/gps_f.html)]
-
-3.6 Standard Atmosphere Calculator Website Link [[http://www.digitaldutch.com/atmoscalc/](http://www.digitaldutch.com/atmoscalc/)].
-
-3.7 Movable Type Scripts. [[http://www.movable-type.co.uk/scripts/latlong.html](http://www.movable-type.co.uk/scripts/latlong.html)]. [Calculate distance, bearing and more between Latitude/Longitude points]
+|||
+|-|--------------|
+|3.1 |Anon., "Aeronautical Vestpocket Handbook" ,Part No. P&W 079500, United Technologies Pratt & Whitney, Canada, 1990.|
+|3.2 |Lawless, Alan. R. et al, "Aerodynamics for Flight Testers", National Test Pilot School, P.O. Box 658, Mojave CA, 93501, 1999.|
+|3.3 |Denno, Richard R., et al "AIAA Aerospace Design Engineers Guide" ISBN 0-930403-21-5, AIAA, 1987.|
+|3.4 |Global Positioning System Overview, Peter H. Dana, Department of Geography, University of Texas at Austin, 1994. [[www.colorado.edu/geography/gcraft/notes/gps/gps_f.html](www.colorado.edu/geography/gcraft/notes/gps/gps_f.html)]|
+|3.5 |Charles D Ghilani, Penn State College of Engineering, 2008 [[http://surveying.wb.psu.edu/sur351/georef/Ellip4.htm](http://surveying.wb.psu.edu/sur351/georef/Ellip4.htm)] [[www.colorado.edu/geography/gcraft/notes/gps/gps_f.html](www.colorado.edu/geography/gcraft/notes/gps/gps_f.html)]|
+|3.6 |Standard Atmosphere Calculator Website Link [[http://www.digitaldutch.com/atmoscalc/](http://www.digitaldutch.com/atmoscalc/)].|
+|3.7 |Movable Type Scripts. [[http://www.movable-type.co.uk/scripts/latlong.html](http://www.movable-type.co.uk/scripts/latlong.html)]. [Calculate distance, bearing and more between Latitude/Longitude points]|
 
   [03001]: media/03/image1.svg {width="0.6673611111111111in" height="0.4583333333333333in"}
   [03002]: media/03/image2.svg {width="1.7416666666666667in" height="0.6805555555555556in"}

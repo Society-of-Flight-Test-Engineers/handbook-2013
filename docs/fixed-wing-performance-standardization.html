@@ -403,7 +403,7 @@
 <p><em>N<sub>zw</sub></em>, <em>n<sub>z</sub></em> load factor normal to flight path</p>
 <p><em>P</em> power output</p>
 <p><em>P<sub>a</sub></em> ambient pressure</p>
-<p><em>P<sub>o</sub></em> std ambient pressure sea level (2116.22 lb/ft² = 29.921 in Hg)</p>
+<p><em>P<sub>0</sub></em> std ambient pressure sea level (2116.22 lb/ft² = 29.921 in Hg)</p>
 <p><em>P<sub>iw</sub></em> standard day sea-level power required</p>
 <p><em>P<sub>m</sub></em> mission-day power required</p>
 <p><em>P<sub>s</sub></em> specific excess power</p>
@@ -422,7 +422,7 @@
 <p><em>S<sub>TO </sub></em>total takeoff distance</p>
 <p><em>T</em> ambient air temperature (absolute)</p>
 <p><em>T</em> thrust</p>
-<p><em>T<sub>o</sub></em> ambient temperature sea level standard (288.15 °K=15.0 °C)</p>
+<p><em>T<sub>0</sub></em> ambient temperature sea level standard (288.15 °K=15.0 °C)</p>
 <p><em>V</em> inertial speed</p>
 <p><em>V<sub>c</sub></em> calibrated airspeed</p>
 <p><em>V<sub>e</sub></em> equivalent airspeed</p>
@@ -756,8 +756,8 @@
 <p><span class="underline">Fixed inputs</span> <span class="underline">Initial inputs</span></p>
 <p>angle of attack, α initial ground speed, <em>V<sub>go</sub></em></p>
 <p>wing area, <em>S</em> initial air distance, <em>S<sub>ao </sub></em>= 0</p>
-<p>air density, <em>ρ</em> initial altitude, <em>h<sub>o </sub></em></p>
-<p>weight, <em>W</em> initial sink rate, <em>h<sub>o</sub></em>dot</p>
+<p>air density, <em>ρ</em> initial altitude, <em>h<sub>0 </sub></em></p>
+<p>weight, <em>W</em> initial sink rate, <em>h<sub>0</sub></em>dot</p>
 <p>wingspan, <em>b</em> initial lift coefficient, <em>C<sub>LOGE </sub></em></p>
 <p>head wind, <em>V<sub>w </sub></em>wing aspect ratio<em>, AR</em></p>
 <p>net thrust, <em>F<sub>n </sub></em>(<em>F<sub>n</sub> = F<sub>g</sub> cosα –F<sub>e</sub></em>) wing Oswald efficiency factor<em>, e</em></p>
@@ -765,8 +765,8 @@
 <p>height of wing above ground when on gear, <em>h<sub>wing</sub></em></p>
 <p>* *</p>
 <p><span class="underline">Initial calculations</span> initial true airspeed, <em>V<sub>To</sub></em> = <em>V<sub>go</sub></em> + <em>V<sub>w</sub></em></p>
-<p>initial glide slope, γ<sub>o</sub> =sin<sup>-1</sup> <span class="math display">\[*h~o~*dot\]</span><em>/</em> <em>V<sub>To</sub></em></p>
-<p>initial load factor, <em>N<sub>z</sub></em> = cosγ<sub>o</sub> (assumes <em>dγ<sub>o</sub>/dt</em> =0)</p>
+<p>initial glide slope, γ<sub>0</sub> =sin<sup>-1</sup> <span class="math display">\[*h~0~*dot\]</span><em>/</em> <em>V<sub>To</sub></em></p>
+<p>initial load factor, <em>N<sub>z</sub></em> = cosγ<sub>0</sub> (assumes <em>dγ<sub>0</sub>/dt</em> =0)</p>
 <p>initial trim speed, <em>V<sub>T </sub></em>=<span class="math display">\[2*N~z~W*/*ρC~L~S*\]</span><sup>1/2</sup></p>
 <p><span class="underline">Incremental calculations</span></p>
 <p>(values with prime symbols represent the result of the previous iteration).</p>
@@ -1231,16 +1231,34 @@
 <p>ambient temperature.</p>
 <p> </p>
 <p><strong>12.9 References</strong></p>
-<p>12.1 Lawless, Alan R, “Fixed Wing Aircraft Performance Testing,” Volume III, Professional Textbook Series, National Test Pilot School, Mojave CA, 1998.</p>
-<p> </p>
-<p>12.2 anon, “Performance Flight Testing Phase” notes, USAF TPS , Edwards AFB, CA, 1991.</p>
-<p> </p>
-<p>12.3 Lush, Kenneth J “Standardization of Take-Off Performance Measuresments for Airplanes,” AFFTC Technical Note R-12, USAF Air Research and Development Command, Edwards AFB, CA, circa 1955.</p>
-<p> </p>
-<p>12.4 Roberts, S.C., <em>Light Aircraft Performance for Test Pilots and Flight Test Engineers</em>, NTPS publication</p>
-<p> </p>
-<p>12.5 Olson, Wayne, “Performance Testing Handbook,”</p>
-<p>(publication number pending ) AFFTC, Edwards AFB, CA, 1999.</p>
+<table>
+<colgroup>
+<col width="6%" />
+<col width="93%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>12.1</td>
+<td>Lawless, Alan R, “Fixed Wing Aircraft Performance Testing,” Volume III, Professional Textbook Series, National Test Pilot School, Mojave CA, 1998.</td>
+</tr>
+<tr class="even">
+<td>12.2</td>
+<td>anon, “Performance Flight Testing Phase” notes, USAF TPS , Edwards AFB, CA, 1991.</td>
+</tr>
+<tr class="odd">
+<td>12.3</td>
+<td>Lush, Kenneth J “Standardization of Take-Off Performance Measuresments for Airplanes,” AFFTC Technical Note R-12, USAF Air Research and Development Command, Edwards AFB, CA, circa 1955.</td>
+</tr>
+<tr class="even">
+<td>12.4</td>
+<td>Roberts, S.C., <em>Light Aircraft Performance for Test Pilots and Flight Test Engineers</em>, NTPS publication</td>
+</tr>
+<tr class="odd">
+<td>12.5</td>
+<td>Olson, Wayne, “Performance Testing Handbook,” (publication number pending ) AFFTC, Edwards AFB, CA, 1999.</td>
+</tr>
+</tbody>
+</table>
 <p> </p>
 
 <p><strong> </strong></p>
