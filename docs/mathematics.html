@@ -374,35 +374,35 @@
 <tbody>
 <tr class="odd">
 <td align="center"><span class="math display">\[a^x a^y = a^{x+y}\]</span></td>
-<td align="center"><span class="math display">\[log_b{b} = 1\]</span></td>
+<td align="center"><span class="math display">\[\log_b{b} = 1\]</span></td>
 </tr>
 <tr class="even">
 <td align="center"><span class="math display">\[\left( ab \right) ^x = a^x b^x \]</span></td>
-<td align="center"><span class="math display">\[log_b{1} = 0\]</span></td>
+<td align="center"><span class="math display">\[\log_b{1} = 0\]</span></td>
 </tr>
 <tr class="odd">
 <td align="center"><span class="math display">\[\left( a^x \right) y = a^xy \]</span></td>
-<td align="center"><span class="math display">\[ log_b \left( MN \right) = log_b{M} + log_b{N}\]</span></td>
+<td align="center"><span class="math display">\[ \log_b \left( MN \right) = log_b{M} + log_b{N}\]</span></td>
 </tr>
 <tr class="even">
 <td align="center"><span class="math display">\[a^{mn}  = \left( a^m \right) ^n \]</span></td>
-<td align="center"><span class="math display">\[log_b \left( \frac{M}{N} \right) = log_b{M} - log_b{N}\]</span></td>
+<td align="center"><span class="math display">\[\log_b \left( \frac{M}{N} \right) = \log_b{M} - \log_b{N}\]</span></td>
 </tr>
 <tr class="odd">
-<td align="center"><span class="math display">\[a^0 = 1\]</span><a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a></td>
-<td align="center"><span class="math display">\[log_b \left( M^p \right)   = p log_b{M}\]</span></td>
+<td align="center"><span class="math display">\[a^0 = 1\]</span> If <span class="math inline">\(a \neq 0\)</span></td>
+<td align="center"><span class="math display">\[\log_b \left( M^p \right)   = p \log_b{M}\]</span></td>
 </tr>
 <tr class="even">
-<td align="center"><span class="math display">\[a^{-x} = \frac{1}{a^x} = \left( \frac{1}{a} \right)\]</span></td>
-<td align="center"><span class="math display">\[log_b \left( \frac{1}{M} \right) = -log_b{M} \]</span></td>
+<td align="center"><span class="math display">\[a^{-x} = \frac{1}{a^x} \]</span></td>
+<td align="center"><span class="math display">\[\log_b \left( \frac{1}{M} \right) = -\log_b{M} \]</span></td>
 </tr>
 <tr class="odd">
 <td align="center"><span class="math display">\[ \frac{a^x}{a^y} = a^{x-y} \]</span></td>
-<td align="center"><span class="math display">\[ log_b{\sqrt[q]{M}} = \frac{1}{q} log_b{M} \]</span></td>
+<td align="center"><span class="math display">\[ \log_b{\sqrt[q]{M}} = \frac{1}{q} \log_b{M} \]</span></td>
 </tr>
 <tr class="even">
 <td align="center"><span class="math display">\[ \sqrt[x]{ab} = \left( \sqrt[x]{a} \right) \left( \sqrt[x]{b} \right) \]</span></td>
-<td align="center"><span class="math display">\[ log_b{M} = \left(log_c{M} \right) \left(log_b{c} \right)= \frac{log_c{M}}{log_c{b}} \]</span></td>
+<td align="center"><span class="math display">\[ \log_b{M} = \left(\log_c{M} \right) \left(\log_b{c} \right)= \frac{\log_c{M}}{\log_c{b}} \]</span></td>
 </tr>
 <tr class="odd">
 <td align="center"><span class="math display">\[ a^{\frac{x}{y}} = \sqrt[y]{a^x} = \left( \sqrt[y]{a} \right)^x \]</span></td>
@@ -425,10 +425,10 @@
 <p>Examples:
 <span class="math display">\[
 \begin{array}{lllll}
-log (6.54) =  0.8156 &amp;&amp;&amp;&amp;\\
-&amp; log (6540) &amp;= log (6.54 \times 10^3 ) &amp;=  0.8156 + 3 &amp;= \fbox{3.8156}&amp;\\
-&amp; log ( 0.6540) &amp;= log (6.54 \times 10^{-1}) &amp;=  0.8156 - 1 &amp;= \fbox{9.8156 - 10}&amp;\\
-&amp; log ( 0.000 6540) &amp;= log (6.54 \times 10^{-4}) &amp;=  0.8156 - 4 &amp;= \fbox{6.8156 - 10}&amp;
+\log (6.54) =  0.8156 &amp;&amp;&amp;&amp;\\
+&amp; \log (6540) &amp;= \log (6.54 \times 10^3 ) &amp;=  0.8156 + 3 &amp;= \fbox{3.8156}&amp;\\
+&amp; \log ( 0.6540) &amp;= \log (6.54 \times 10^{-1}) &amp;=  0.8156 - 1 &amp;= \fbox{9.8156 - 10}&amp;\\
+&amp; \log ( 0.000 6540) &amp;= \log (6.54 \times 10^{-4}) &amp;=  0.8156 - 4 &amp;= \fbox{6.8156 - 10}&amp;
 \end{array}
 \]</span></p>
 <p><span class="math display">\[
@@ -1227,7 +1227,8 @@ velocity:
 <p>Population: The set of all possible observations</p>
 <p>Sample: Any subset of a population</p>
 <p>Homogeneous Sample: The sample comes from 1 population only</p>
-<p>Random Sample: Equal probability of selecting any member of the population Independence (of events A and B): P(A and B) = P(A)*P(B)</p>
+<p>Random Sample: Equal probability of selecting any member of the population</p>
+<p>Independence (of events A and B): P(A and B) = P(A)*P(B)</p>
 <p>Sample and Population Mean (Average value):
 <span class="math display">\[\mu = \bar{x} = \frac{1}{N} \sum_{i=1}^N{x_i} \]</span></p>
 <p>Mode (Most commonly occurring value in a sample)</p>
@@ -1247,14 +1248,37 @@ The probability of any outcome in a given set is the same. If there are <span cl
 The probability that the random variable <span class="math inline">\(X = x\)</span> in <span class="math inline">\(N\)</span> independent events, each having probability <span class="math inline">\(p\)</span> of success, and <span class="math inline">\(1-p\)</span> of failure.
 <span class="math display">\[P(X = k) = \binom{N}{k}p^x (1-p)^{N-x}\]</span> where
 <span class="math display">\[\binom{N}{k} = \frac{N!}{k!(N-k)!}.\]</span></p>
-<p>For example, tossing a fair coin N times where <span class="math inline">\(p = 1/2\)</span> is the probability of getting a head on any toss. If <span class="math inline">\(X\)</span> indicates the number of heads in <span class="math inline">\(N\)</span> tosses, then we have <span class="math inline">\(P(X = x) = (1/2)^x (1/2)^{N-x}\)</span>. For <span class="math inline">\(N = 4\)</span> we have the following table:
-|x |P(X=x)|
-|:-|:-|
-|<span class="math inline">\(0\)</span>| <span class="math inline">\(1/16\)</span>|
-|<span class="math inline">\(1\)</span>| <span class="math inline">\(1/4\)</span>|
-|<span class="math inline">\(3\)</span>| <span class="math inline">\(3/8\)</span>|
-|<span class="math inline">\(3\)</span>| <span class="math inline">\(1/4\)</span>|
-|<span class="math inline">\(4\)</span>| <span class="math inline">\(1/16\)</span>|</p>
+<p>For example, tossing a fair coin N times where <span class="math inline">\(p = 1/2\)</span> is the probability of getting a head on any toss. If <span class="math inline">\(X\)</span> indicates the number of heads in <span class="math inline">\(N\)</span> tosses, then we have <span class="math inline">\(P(X = x) = (1/2)^x (1/2)^{N-x}\)</span>. For <span class="math inline">\(N = 4\)</span> we have the following table:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">x</th>
+<th align="center">P(X=x)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math inline">\(0\)</span></td>
+<td align="center"><span class="math inline">\(1/16\)</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(1\)</span></td>
+<td align="center"><span class="math inline">\(1/4\)</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(2\)</span></td>
+<td align="center"><span class="math inline">\(3/8\)</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(3\)</span></td>
+<td align="center"><span class="math inline">\(1/4\)</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(4\)</span></td>
+<td align="center"><span class="math inline">\(1/16\)</span></td>
+</tr>
+</tbody>
+</table>
 <p><strong>Continuous Distributions</strong>
 Continuous distributions are defined for all <span class="math inline">\(x \in [a,b]\)</span>, where <span class="math inline">\(a, b \in \mathbb{R}\)</span> or for all <span class="math inline">\(x \in (-\infty, \infty)\)</span>, that is, the whole real number line. The probability for any single point is zero; that is, <span class="math inline">\(P(X=x) = 0\)</span>. Instead, one must work with probability on an interval, e.g., <span class="math inline">\(P(0 &lt; x)\)</span> or <span class="math inline">\(P(a &lt; x &lt; b)\)</span>.</p>
 <p><strong>The Normal Distribution</strong>
@@ -1270,7 +1294,7 @@ A circle centered at the mean, in a bivariate normal distribution, that contains
 An interval estimate of a statistic.</p>
 <p><strong>Central Limit Theorem</strong>
 The sample mean of data sampled from a normally distributed population is itself normally distributed with mean, <span class="math inline">\(\mu\)</span>, and variance, <span class="math inline">\(\sigma^2/\sqrt{n}\)</span>, where the population distribution is <span class="math inline">\(N(\mu,\sigma^2)\)</span> and <span class="math inline">\(n\)</span> is the sample size and usually <span class="math inline">\(n \geq 30\)</span>.</p>
-<p><strong>Hypothesis Testing</strong> Begins with an assumption (hypothesis), usually about the underlying population distribution of some measured quantity or computed error. Select values for the hypothesis and alternate hypothesis(es) that partition the sample space. Collect N samples of the population test statistic or parameter. There are two types of errors: Type 1 errors reject the hypothesis when it is true; Type II accept the hypothesis when in is false.</p>
+<p><strong>Hypothesis Testing</strong> Begins with an assumption (hypothesis), usually about the underlying population distribution of some measured quantity or computed error. Select values for the hypothesis and alternate hypothesis(es) that partition the sample space. Collect N samples of the population test statistic or parameter. There are two types of errors: Type 1 errors reject the hypothesis when it is true; Type II accept the hypothesis when it is false.</p>
 </div>
 <div id="standard-series" class="section level2" number="2.7">
 <h2><span class="header-section-number">2.7</span> Standard Series</h2>
@@ -1321,28 +1345,34 @@ When <span class="math inline">\(0 &lt; x\)</span>:
 <table>
 <tbody>
 <tr class="odd">
+<td><em>Fundamental Derivatives</em></td>
+</tr>
+<tr class="even">
 <td><span class="math display">\[\frac{da}{dx} = 0\]</span></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><span class="math display">\[\frac{d\left(ax\right)}{dx} = a\]</span></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><span class="math display">\[\frac{dx^n}{dx} = nx^{n-1}\]</span></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><span class="math display">\[\frac{d\left(u + v \right)}{dx} = \frac{du}{dx} + \frac{dv}{dx}\]</span></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><span class="math display">\[\frac{d\left(uv \right)}{dx} = u\frac{dv}{dx} + v\frac{du}{dx}\]</span></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><span class="math display">\[\frac{d\left(\frac{u}{v} \right)}{dx} = \frac{1}{v^2} \left( v\frac{du}{dx} - u\frac{dv}{dx} \right)\]</span></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><span class="math display">\[\frac{dw}{dx} = \frac{dw}{du}\frac{du}{dx}\]</span></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><span class="math display">\[\frac{du^n}{dx} = nu^{n-1}\frac{du}{dx}\]</span></td>
+</tr>
+<tr class="even">
+<td><em>Expressions Containing Exponential and Logarithmic Functions</em></td>
 </tr>
 <tr class="odd">
 <td><span class="math display">\[\frac{d \ln{x}}{dx} = \frac{1}{x}\]</span></td>
@@ -1366,30 +1396,33 @@ When <span class="math inline">\(0 &lt; x\)</span>:
 <td><span class="math display">\[\frac{du^v}{dx} = vu^{v-1}\frac{du}{dx} + u^v \ln{u}\frac{dv}{dx}\]</span></td>
 </tr>
 <tr class="even">
+<td><em>Expressions Containing Trigonometric Functions</em></td>
+</tr>
+<tr class="odd">
 <td><span class="math display">\[\frac{d \sin{x}}{dx} = \cos{x} \text{ or } \frac{d \sin{u}}{dx} = \cos{u}\frac{du}{dx}\]</span></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><span class="math display">\[\frac{d \cos{x}}{dx} = -\sin{x} \text{ or } \frac{d \cos{u}}{dx} = -\sin{u}\frac{du}{dx}\]</span></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><span class="math display">\[\frac{d \tan{x}}{dx} = \sec^2{x} \text{ or } \frac{d \tan{u}}{dx} = \sec^2{u}\frac{du}{dx}\]</span></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><span class="math display">\[\frac{d \sec{x}}{dx} = \sec{x}\tan{x} \text{ or } \frac{d \sec{u}}{dx} = \sec{u}\tan{u}\frac{du}{dx}\]</span></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><span class="math display">\[\frac{d \cot{x}}{dx} = -\csc^2{x} \text{ or } \frac{d \cot{u}}{dx} = -\csc^2{u}\frac{du}{dx}\]</span></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><span class="math display">\[\frac{d \sin^{-1}{x}}{dx} = \frac{1}{\sqrt{1-x^2}} \text{ or } \frac{d \sin^{-1}{u}}{dx} = \frac{1}{\sqrt{1-u^2}}\frac{du}{dx}\]</span></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><span class="math display">\[\frac{d \cos^{-1}{x}}{dx} = -\frac{1}{\sqrt{1-x^2}} \text{ or } \frac{d \cos^{-1}{u}}{dx} = -\frac{1}{\sqrt{1-u^2}}\frac{du}{dx}\]</span></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><span class="math display">\[\frac{d \tan^{-1}{x}}{dx} = \frac{1}{1+x^2} \text{ or } \frac{d \tan^{-1}{u}}{dx} = \frac{1}{1+u^2}\frac{du}{dx}\]</span></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><span class="math display">\[\frac{d \cot^{-1}{x}}{dx} = -\frac{1}{1+x^2} \text{ or } \frac{d \cot^{-1}{u}}{dx} = -\frac{1}{1+u^2}\frac{du}{dx}\]</span></td>
 </tr>
 </tbody>
@@ -1734,7 +1767,6 @@ should be added to the result of every integration</li>
 <hr />
 <ol start="7">
 <li id="fn7"><p>If M, N,b are positive<a href="mathematics.html#fnref7" class="footnote-back">↩︎</a></p></li>
-<li id="fn8"><p>If <span class="math inline">\(a \neq 0\)</span><a href="mathematics.html#fnref8" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
