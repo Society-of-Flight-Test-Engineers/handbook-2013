@@ -16,14 +16,14 @@
 
 |Exponents|Logarithms^[If M, N,b are positive]|
 |:-:|:-:|
-|\[a^x a^y = a^{x+y}\]| \[log_b{b} = 1\]|
-|\[\left( ab \right) ^x = a^x b^x \]|\[log_b{1} = 0\]|
-|\[\left( a^x \right) y = a^xy \]|\[ log_b \left( MN \right) = log_b{M} + log_b{N}\]|
-|\[a^{mn}  = \left( a^m \right) ^n \]|\[log_b \left( \frac{M}{N} \right) = log_b{M} - log_b{N}\]|
-|\[a^0 = 1\]^[If \(a \neq 0\)] |\[log_b \left( M^p \right)   = p log_b{M}\]|
-|\[a^{-x} = \frac{1}{a^x} \]|\[log_b \left( \frac{1}{M} \right) = -log_b{M} \]|
-|\[ \frac{a^x}{a^y} = a^{x-y} \]|\[ log_b{\sqrt[q]{M}} = \frac{1}{q} log_b{M} \]|
-|\[ \sqrt[x]{ab} = \left( \sqrt[x]{a} \right) \left( \sqrt[x]{b} \right) \]|\[ log_b{M} = \left(log_c{M} \right) \left(log_b{c} \right)= \frac{log_c{M}}{log_c{b}} \]|
+|\[a^x a^y = a^{x+y}\]| \[\log_b{b} = 1\]|
+|\[\left( ab \right) ^x = a^x b^x \]|\[\log_b{1} = 0\]|
+|\[\left( a^x \right) y = a^xy \]|\[ \log_b \left( MN \right) = log_b{M} + log_b{N}\]|
+|\[a^{mn}  = \left( a^m \right) ^n \]|\[\log_b \left( \frac{M}{N} \right) = \log_b{M} - \log_b{N}\]|
+|\[a^0 = 1\] If \(a \neq 0\) |\[\log_b \left( M^p \right)   = p \log_b{M}\]|
+|\[a^{-x} = \frac{1}{a^x} \]|\[\log_b \left( \frac{1}{M} \right) = -\log_b{M} \]|
+|\[ \frac{a^x}{a^y} = a^{x-y} \]|\[ \log_b{\sqrt[q]{M}} = \frac{1}{q} \log_b{M} \]|
+|\[ \sqrt[x]{ab} = \left( \sqrt[x]{a} \right) \left( \sqrt[x]{b} \right) \]|\[ \log_b{M} = \left(\log_c{M} \right) \left(\log_b{c} \right)= \frac{\log_c{M}}{\log_c{b}} \]|
 |\[ a^{\frac{x}{y}} = \sqrt[y]{a^x} = \left( \sqrt[y]{a} \right)^x \]| |
 |\[ a^{\frac{1}{y}} = \sqrt[y]{a} \]||
 |\[ \left( \sqrt[x]{a} \right) \left( \sqrt[y]{a} \right) = a^{\left( \frac{1}{x} + \frac{1}{y} \right)} = \sqrt[xy]{a^{x+y}} \]||
@@ -32,10 +32,10 @@
 Examples:
 \[
 \begin{array}{lllll}
-log (6.54) =  0.8156 &&&&\\
-& log (6540) &= log (6.54 \times 10^3 ) &=  0.8156 + 3 &= \fbox{3.8156}&\\
-& log ( 0.6540) &= log (6.54 \times 10^{-1}) &=  0.8156 - 1 &= \fbox{9.8156 - 10}&\\
-& log ( 0.000 6540) &= log (6.54 \times 10^{-4}) &=  0.8156 - 4 &= \fbox{6.8156 - 10}&
+\log (6.54) =  0.8156 &&&&\\
+& \log (6540) &= \log (6.54 \times 10^3 ) &=  0.8156 + 3 &= \fbox{3.8156}&\\
+& \log ( 0.6540) &= \log (6.54 \times 10^{-1}) &=  0.8156 - 1 &= \fbox{9.8156 - 10}&\\
+& \log ( 0.000 6540) &= \log (6.54 \times 10^{-4}) &=  0.8156 - 4 &= \fbox{6.8156 - 10}&
 \end{array}
 \]
 
