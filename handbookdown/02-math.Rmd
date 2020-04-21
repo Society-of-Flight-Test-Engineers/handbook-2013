@@ -21,7 +21,7 @@
 |\[\left( a^x \right) y = a^xy \]|\[ log_b \left( MN \right) = log_b{M} + log_b{N}\]|
 |\[a^{mn}  = \left( a^m \right) ^n \]|\[log_b \left( \frac{M}{N} \right) = log_b{M} - log_b{N}\]|
 |\[a^0 = 1\]^[If \(a \neq 0\)] |\[log_b \left( M^p \right)   = p log_b{M}\]|
-|\[a^{-x} = \frac{1}{a^x} = \left( \frac{1}{a} \right)\]|\[log_b \left( \frac{1}{M} \right) = -log_b{M} \]|
+|\[a^{-x} = \frac{1}{a^x} \]|\[log_b \left( \frac{1}{M} \right) = -log_b{M} \]|
 |\[ \frac{a^x}{a^y} = a^{x-y} \]|\[ log_b{\sqrt[q]{M}} = \frac{1}{q} log_b{M} \]|
 |\[ \sqrt[x]{ab} = \left( \sqrt[x]{a} \right) \left( \sqrt[x]{b} \right) \]|\[ log_b{M} = \left(log_c{M} \right) \left(log_b{c} \right)= \frac{log_c{M}}{log_c{b}} \]|
 |\[ a^{\frac{x}{y}} = \sqrt[y]{a^x} = \left( \sqrt[y]{a} \right)^x \]| |
