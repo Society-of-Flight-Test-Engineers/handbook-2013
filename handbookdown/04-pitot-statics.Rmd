@@ -77,7 +77,7 @@ The name comes from the fact that although the equivalent airspeed equation does
 
 \[q_c = P_0  \left\lbrack \left( \frac{\rho_0}{P_0} \frac{V_c^2}{7} + 1 \right)^{3.5} - 1 \right\rbrack\]
 
-Next, substitute this value and the ambient pressure (\(P_a\) into the equivalent airspeed equation. (\(q_c = P_T - P_a\))
+Next, substitute this value and the ambient pressure (\(P_a\)) into the equivalent airspeed equation. (\(q_c = P_T - P_a\))
 
 \[V_e = \sqrt{7 \frac{P_a}{\rho_0} \left( \left\lbrack \frac{q_c}{P_a}+1 \right\rbrack^{2/7} - 1 \right) } \]
 
