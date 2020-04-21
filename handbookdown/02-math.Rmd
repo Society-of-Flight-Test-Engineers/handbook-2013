@@ -1032,6 +1032,7 @@ The following are Taylor Series expansion of *Trigonometric* functions:
 * \(\ln{x}\) is logarithm to the base \(e\), \(\log_e{x}\)
 
 ------
+*Fundamental Derivatives*
 \[\frac{da}{dx} = 0\]
 \[\frac{d\left(ax\right)}{dx} = a\]
 \[\frac{dx^n}{dx} = nx^{n-1}\]
@@ -1040,6 +1041,7 @@ The following are Taylor Series expansion of *Trigonometric* functions:
 \[\frac{d\left(\frac{u}{v} \right)}{dx} = \frac{1}{v^2} \left( v\frac{du}{dx} - u\frac{dv}{dx} \right)\]
 \[\frac{dw}{dx} = \frac{dw}{du}\frac{du}{dx}\]
 \[\frac{du^n}{dx} = nu^{n-1}\frac{du}{dx}\]
+*Expressions Containing Exponential and Logarithmic Functions*
 \[\frac{d \ln{x}}{dx} = \frac{1}{x}\]
 \[\frac{d \ln{u}}{dx} = \frac{1}{u}\frac{du}{dx}\]
 \[\frac{d \log{u}}{dx} = \frac{\log{e}}{u}\frac{du}{dx}\]
@@ -1047,6 +1049,7 @@ The following are Taylor Series expansion of *Trigonometric* functions:
 \[\frac{da^x}{dx} = a^x \ln{a}\]
 \[\frac{da^u}{dx} = a^u \ln{a}\frac{du}{dx}\]
 \[\frac{du^v}{dx} = vu^{v-1}\frac{du}{dx} + u^v \ln{u}\frac{dv}{dx}\]
+*Expressions Containing Trigonometric Functions*
 \[\frac{d \sin{x}}{dx} = \cos{x} \text{ or } \frac{d \sin{u}}{dx} = \cos{u}\frac{du}{dx}\]
 \[\frac{d \cos{x}}{dx} = -\sin{x} \text{ or } \frac{d \cos{u}}{dx} = -\sin{u}\frac{du}{dx}\]
 \[\frac{d \tan{x}}{dx} = \sec^2{x} \text{ or } \frac{d \tan{u}}{dx} = \sec^2{u}\frac{du}{dx}\]
