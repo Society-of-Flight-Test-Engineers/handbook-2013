@@ -975,7 +975,7 @@ An interval estimate of a statistic.
 **Central Limit Theorem**
 The sample mean of data sampled from a normally distributed population is itself normally distributed with mean, \(\mu\), and variance, \(\sigma^2/\sqrt{n}\), where the population distribution is \(N(\mu,\sigma^2)\) and \(n\) is the sample size and usually \(n \geq 30\).
 
-**Hypothesis Testing** Begins with an assumption (hypothesis), usually about the underlying population distribution of some measured quantity or computed error. Select values for the hypothesis and alternate hypothesis(es) that partition the sample space. Collect N samples of the population test statistic or parameter. There are two types of errors: Type 1 errors reject the hypothesis when it is true; Type II accept the hypothesis when in is false.
+**Hypothesis Testing** Begins with an assumption (hypothesis), usually about the underlying population distribution of some measured quantity or computed error. Select values for the hypothesis and alternate hypothesis(es) that partition the sample space. Collect N samples of the population test statistic or parameter. There are two types of errors: Type 1 errors reject the hypothesis when it is true; Type II accept the hypothesis when it is false.
 
 ## Standard Series
 
