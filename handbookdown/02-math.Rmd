@@ -913,7 +913,9 @@ Sample: Any subset of a population
 
 Homogeneous Sample: The sample comes from 1 population only
 
-Random Sample: Equal probability of selecting any member of the population Independence (of events A and B): P(A and B) = P(A)\*P(B)
+Random Sample: Equal probability of selecting any member of the population 
+
+Independence (of events A and B): P(A and B) = P(A)\*P(B)
 
 Sample and Population Mean (Average value):
 \[\mu = \bar{x} = \frac{1}{N} \sum_{i=1}^N{x_i} \]
