@@ -1,4 +1,4 @@
-# 8 Motion/Vibration Analysis**
+# Motion and Vibration Analysis
 
 8.1 Recurring Abbreviations
 
@@ -74,7 +74,7 @@
 
 *v* velocity
 
-*v~o~* peak velocity
+*v~0~* peak velocity
 
 *ε =ζω~n~ /ω~d~* = ζ/\[1-ζ^2^\]^ 0.5^
 
@@ -870,7 +870,7 @@ To determine damping ratio
 
 €
 
-∆T = (t~1~-t~o~) = (t~2~-t~1~), etc.
+∆T = (t~1~-t~0~) = (t~2~-t~1~), etc.
 
  
 

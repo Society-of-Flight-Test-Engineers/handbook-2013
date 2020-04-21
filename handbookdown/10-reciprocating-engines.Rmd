@@ -586,51 +586,23 @@ This method is known to be quite conservative More satisfactory temperatures may
 
 **10.5 References**
 
-** **
-
-10.5.1 Roberts, Sean C. "Light Aircraft Performance," Flight Research Inc. Mojave, CA, 1982.
-
- 
-
-10.5.2 Lawless, Alan R, "Fixed Wing Aircraft Performance Testing" Chapters 3 and 4, National Test Pilot School, Mojave CA, 1996.
-
- 
-
-10.5.3 Baughn, J. W., "A Method for computing Brake Horsepower from the Performance Charts of Reciprocating Aircraft Engines," AIAA- 94-2148-CP, from 7th Biennial AIAA Flight Test Conf., 1994.
-
- 
-
-10.5.4 Herrington, R. M. Major, USAF, et al, "Flight Test Engineering Handbook," USAF Technical report No. 6273, AFFTC, Edwards AFB, CA, May 1951.
-
- 
-
-10.5.5 Chatfield, C. H., et al, "The Airplane and its Engine," McGraw Hill, 1949.
-
- 
-
-10.5.6 Gagg, R.F., and Farrar, E.V., "Altitude Performance of Aircraft Engines Equipped with Gear-Driven Superchargers," SAE Transcripts, Vol 29, pg 217-223, 1934.
-
- 
-
-10.5.7 anon., "Flight Test Guide for Certification of Part 23 Air planes," U.S. Department of Transportation Advisory Circu- lar 23-8A, 1989.
-
- 
+|||
+|-|---------------|
+|10.5.1 |Roberts, Sean C. "Light Aircraft Performance," Flight Research Inc. Mojave, CA, 1982.|
+|10.5.2 |Lawless, Alan R, "Fixed Wing Aircraft Performance Testing" Chapters 3 and 4, National Test Pilot School, Mojave CA, 1996.|
+|10.5.3 |Baughn, J. W., "A Method for computing Brake Horsepower from the Performance Charts of Reciprocating Aircraft Engines," AIAA- 94-2148-CP, from 7th Biennial AIAA Flight Test Conf., 1994.|
+|10.5.4 |Herrington, R. M. Major, USAF, et al, "Flight Test Engineering Handbook," USAF Technical report No. 6273, AFFTC, Edwards AFB, CA, May 1951.|
+|10.5.5 |Chatfield, C. H., et al, "The Airplane and its Engine," McGraw Hill, 1949.|
+|10.5.6 |Gagg, R.F., and Farrar, E.V., "Altitude Performance of Aircraft Engines Equipped with Gear-Driven Superchargers," SAE Transcripts, Vol 29, pg 217-223, 1934.|
+|10.5.7 |anon., "Flight Test Guide for Certification of Part 23 Air planes," U.S. Department of Transportation Advisory Circu- lar 23-8A, 1989.|
 
 **Additional Reading and Second Generation References**
 
- 
-
-10.5.8 Smith, H. C., and Dreier M. E., "A computer Technique for the Determination of Brake Horsepower Output of Normally Aspirated Reciprocating Aircraft Engines," SAE paper No. 770465,
-
-March 1977.
-
- 
-
-10.5.9 Hamlin, B., "Flight Testing Conventional and Jet-Propelled Airplanes," The Macmillan Co., New York, NY, 1946.
-
- 
-
-10.5.10 Operators Manual for Series IO-360 Aircraft Engines, form No. X-30032, FAA Approved March 1979.
+|||
+|-|---------------|
+|10.5.8| Smith, H. C., and Dreier M. E., "A computer Technique for the Determination of Brake Horsepower Output of Normally Aspirated Reciprocating Aircraft Engines," SAE paper No. 770465, March 1977.|
+|10.5.9| Hamlin, B., "Flight Testing Conventional and Jet-Propelled Airplanes," The Macmillan Co., New York, NY, 1946.|
+|10.5.10| Operators Manual for Series IO-360 Aircraft Engines, form No. X-30032, FAA Approved March 1979.|
 
  
 

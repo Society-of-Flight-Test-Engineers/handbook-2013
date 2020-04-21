@@ -484,11 +484,11 @@ d.  Consider individual FTE qualifications. If, after taking all of the above co
 
 <!-- -->
 
-1.  "Color Vision Deficiency", Glossary of Common Eye & Vision Conditions, American Optometric Association, <https://www.aoa.org/patients-and-public/eye-and-vision-problems/glossary-of-eye-and-vision-conditions/color-deficiency>
-
-2.  C. Ludwig, Display Design for Critical Monitoring, Society of Flight Test Engineers
-
-3.  Dept of Defense Design Criteria Standard -- Human Engineering, MIL-STD-1472G, Dept of Defense, 2012
+|||
+|-|---------------|
+|1. | "Color Vision Deficiency", Glossary of Common Eye & Vision Conditions, American Optometric Association, <https://www.aoa.org/patients-and-public/eye-and-vision-problems/glossary-of-eye-and-vision-conditions/color-deficiency>|
+|2. | C. Ludwig, Display Design for Critical Monitoring, Society of Flight Test Engineers|
+|3. | Dept of Defense Design Criteria Standard -- Human Engineering, MIL-STD-1472G, Dept of Defense, 2012|
 
   [21001]: media/21/image1.png {width="4.370138888888889in" height="2.7909722222222224in"}
   [21002]: media/21/image2.png {width="4.6097222222222225in" height="1.8888888888888888in"}

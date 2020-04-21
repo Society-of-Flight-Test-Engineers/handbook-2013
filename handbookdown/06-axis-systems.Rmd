@@ -63,7 +63,7 @@ If \(\beta\) is small, then \(\sin \alpha = w/V_T\) and \(\beta = V / V_T\). If 
 ![][06005]
 
 Most aircraft sideslip vanes do not measure \(\beta\) directly. They measure the flanking angle, which is the projection of the relative wind into the aircraft's \(x-y\) plane. The difference between these two angles increases with angle of attack.  Ignoring upwash, boom bending, and body axis rate corrections, calculate true sideslip as a function of vane \(\alpha\) and \(\beta\) as follows:
-\[\beta_{true} = \tan^{-1} (an\beta_{vane})).\]
+\[\beta_{\mathrm{true}} = \tan^{-1} (an\beta_{\mathrm{vane}})).\]
 
 ### Wind-Body Axis Transformations
 (Reference 6.6.1)
@@ -348,11 +348,12 @@ r_w =& \, r_s
 \]
 
 ## References
-6.6.1 Lawless, Alan R., *Math and Physics for Flight Testers* "Chapter 7, Axis Systems and Transformations", National Test Pilot School, Mojave CA, 1998.
 
-6.6.2 Anon., *Aircraft Flying Qualities, Chapter 4, Equations of Motion*, USAF TestPilot School notes, AFFTC Edwards AFB CA, March 1991.
-
-6.6.3 Kalviste, Juri, *Flight Dynamics Reference Handbook*, Northrop Corp. Aircraft Division, April 1988.
+|||
+|-|---------------|
+|6.6.1| Lawless, Alan R., *Math and Physics for Flight Testers* "Chapter 7, Axis Systems and Transformations", National Test Pilot School, Mojave CA, 1998.|
+|6.6.2| Anon., *Aircraft Flying Qualities, Chapter 4, Equations of Motion*, USAF TestPilot School notes, AFFTC Edwards AFB CA, March 1991.|
+|6.6.3| Kalviste, Juri, *Flight Dynamics Reference Handbook*, Northrop Corp. Aircraft Division, April 1988.|
 
 
   [06001]: media/06/image1.svg {width="4.709027777777778in" height="3.839583333333333in"}
