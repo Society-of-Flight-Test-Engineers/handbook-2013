@@ -387,7 +387,8 @@ The "Windbox" method consists of flying four legs instead of three. The extra le
 
 Errors must be equal to or less than \(\pm3\%\) of \(V_c\) or \(\pm5\text{kts}\) whichever is greater
 
-#### Mil Spec P-26292 C (USAF)
+#### Mil Spec P-26292 C (USAF) {-}
+
 Landing configuration: \(\Delta H_{\mathrm{pc}} \pm 30\) ft.
 
 ![][04034]
