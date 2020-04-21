@@ -945,11 +945,12 @@ The probability that the random variable \(X = x\) in \(N\) independent events, 
 \[\binom{N}{k} = \frac{N!}{k!(N-k)!}.\]
 
 For example, tossing a fair coin N times where \(p = 1/2\) is the probability of getting a head on any toss.  If \(X\) indicates the number of heads in \(N\) tosses, then we have  \(P(X = x) = (1/2)^x (1/2)^{N-x}\). For \(N = 4\) we have the following table:
+
 |x |P(X=x)|
-|:-|:-|
+|:-:|:-:|
 |\(0\)| \(1/16\)|
 |\(1\)| \(1/4\)|
-|\(3\)| \(3/8\)|
+|\(2\)| \(3/8\)|
 |\(3\)| \(1/4\)|
 |\(4\)| \(1/16\)|
 
