@@ -2,10 +2,6 @@
 .Rhistory
 .RData
 .Ruserdata
-vscode-notes.md
-*.ps1
-*.r
-*.py
 *.drawio
 /.vscode
-subsections.txt
+

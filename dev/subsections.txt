@@ -1,0 +1,95 @@
+03.01 Universal Constants
+03.02 Earth Properties
+03.03 General Properties of Air
+03.04 Standard Atmosphere
+03.05 Sea States
+03.06 Sunrise and Sunset Times
+03.07 Crosswind Components
+03.08 Geodetic Measurements
+04.01 Subsonic Airspeed and Mach Equations
+04.02 Subsonic Scale Altitude (Compressibility) Correction Chart
+04.03 Subsonic Relations Between Compressible and Incompressible Dynamic Pressure
+04.04 Supersonic Airspeed and Mach Equations
+04.05 Total Temperature Equation
+04.06 Altimeter Equation
+04.07 PEC Test Methods
+04.08 Postion Error Correction Certification Requirements
+04.09 PEC Correction Process Flow Chart
+04.10 Airspeed/Altitude/Mach Graphic Relations
+04.11 Effect of Errors on Calibrated Airspeed and Altitude
+05.01 Dimensional Analysis Interpretations
+05.02 General Aerodynamic Relations
+05.03 Wing Design Effects on Lift Curve Slope
+05.04 Elements of Drag
+05.05 Aerodynamic Compressibility Relations
+05.06 Drag Polars
+06.01 Earth Axis Systems
+06.02 Aircraft Axis Systems
+06.03 Euler Angles
+06.04 Flight Path Angles
+06.05 Axis System Transformations
+07.01 Abbreviations and Terminology
+07.02 Longitudinal & Lateral Center of Gravity Measurement
+07.03 Vertical Center of Gravity Measurement
+07.04 Moment & Product of Inertia Measurement
+08.01 Recurring Abbreviations
+08.02 First Order Motion
+08.03 Second Order Motion
+08.04 Complex Plane
+08.05 Parameter Conversions
+08.06 Vibration Nomograph
+09.01 Terminology
+09.02 Material Stress and Strain
+09.03 V-n Diagram
+09.04 Strain Gauges
+10.01 Recurring Abbreviations and Terminology
+10.02 Reciprocating Engine Modeling
+10.03 Reciprocating Engine Power Standardization
+10.04 FAA Approved Engine Temperature Corrections
+11.01 Abbreviations and Terminology
+11.02 Propeller Geometry
+11.03 Propeller Coefficients
+11.04 Propeller Efficiency and States
+11.05 Propeller Theory
+11.06 Propeller Modeling Examples
+11.07 Propeller Flight Test
+12.01 Recurring Abbreviations
+12.02 Standardization Techniques
+12.03 Takeoff Distance
+12.04 Landing Distance
+12.05 Climb/Descent Acceleration
+12.06 Level Turn Performance
+12.07 Reciprocating Engine Cruise Performance
+12.08 Jet Aircraft Cruise Performance
+13.01 Abbreviations and Terminology
+13.02 Velocities, Spectrum and Reference Levels
+13.03 Pressure, Intensity
+13.04 Weighting Curves
+13.05 1/3 Octave Center Frequencies
+14.01 Electromagnetic Compatibility (EMC)
+14.02 Abbreviations
+14.03 Terms
+14.04 Fundamentals
+14.05 Electromagnetic Interference (EMI)
+14.06 Testing
+14.07 Lightning
+14.08 High Intensity Radiated Fields (HIRF)
+14.09 Precipitation Static (Pstatic)
+15.01 Cooper-Harper Rating Related Figures
+16.01 Principal Aeroderivatives
+16.02 Forward Flight Static And Dynamic Stability
+17.01 Turbine Engine Basics
+17.02 Propulsion System Analysis
+17.03 Turbine Engine Operation
+17.04 Additional Information
+18 TM Control Room and Radio Communications
+19.01 Electromagnetic Waves
+19.02 The Electromagnetic Spectrum
+19.03 Radio Frequency Electromagnetic Radiation
+19.04 Optical Frequency Electromagnetic Radiation
+19.05 Atmospheric Transmission Windows
+20.01 VHF Radios
+20.02 HF Radios
+20.03 SATCOM
+20.04 Other Communication Systems
+21 Real-Time Data Display Guidelines
