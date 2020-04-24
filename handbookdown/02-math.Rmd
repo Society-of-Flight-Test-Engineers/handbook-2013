@@ -16,14 +16,14 @@
 
 |Exponents|Logarithms^[If M, N,b are positive]|
 |:-:|:-:|
-|\[a^x a^y = a^{x+y}\]| \[log_b{b} = 1\]|
-|\[\left( ab \right) ^x = a^x b^x \]|\[log_b{1} = 0\]|
-|\[\left( a^x \right) y = a^xy \]|\[ log_b \left( MN \right) = log_b{M} + log_b{N}\]|
-|\[a^{mn}  = \left( a^m \right) ^n \]|\[log_b \left( \frac{M}{N} \right) = log_b{M} - log_b{N}\]|
-|\[a^0 = 1\]^[If \(a \neq 0\)] |\[log_b \left( M^p \right)   = p log_b{M}\]|
-|\[a^{-x} = \frac{1}{a^x} = \left( \frac{1}{a} \right)\]|\[log_b \left( \frac{1}{M} \right) = -log_b{M} \]|
-|\[ \frac{a^x}{a^y} = a^{x-y} \]|\[ log_b{\sqrt[q]{M}} = \frac{1}{q} log_b{M} \]|
-|\[ \sqrt[x]{ab} = \left( \sqrt[x]{a} \right) \left( \sqrt[x]{b} \right) \]|\[ log_b{M} = \left(log_c{M} \right) \left(log_b{c} \right)= \frac{log_c{M}}{log_c{b}} \]|
+|\[a^x a^y = a^{x+y}\]| \[\log_b{b} = 1\]|
+|\[\left( ab \right) ^x = a^x b^x \]|\[\log_b{1} = 0\]|
+|\[\left( a^x \right) y = a^xy \]|\[ \log_b \left( MN \right) = log_b{M} + log_b{N}\]|
+|\[a^{mn}  = \left( a^m \right) ^n \]|\[\log_b \left( \frac{M}{N} \right) = \log_b{M} - \log_b{N}\]|
+|\[a^0 = 1\] If \(a \neq 0\) |\[\log_b \left( M^p \right)   = p \log_b{M}\]|
+|\[a^{-x} = \frac{1}{a^x} \]|\[\log_b \left( \frac{1}{M} \right) = -\log_b{M} \]|
+|\[ \frac{a^x}{a^y} = a^{x-y} \]|\[ \log_b{\sqrt[q]{M}} = \frac{1}{q} \log_b{M} \]|
+|\[ \sqrt[x]{ab} = \left( \sqrt[x]{a} \right) \left( \sqrt[x]{b} \right) \]|\[ \log_b{M} = \left(\log_c{M} \right) \left(\log_b{c} \right)= \frac{\log_c{M}}{\log_c{b}} \]|
 |\[ a^{\frac{x}{y}} = \sqrt[y]{a^x} = \left( \sqrt[y]{a} \right)^x \]| |
 |\[ a^{\frac{1}{y}} = \sqrt[y]{a} \]||
 |\[ \left( \sqrt[x]{a} \right) \left( \sqrt[y]{a} \right) = a^{\left( \frac{1}{x} + \frac{1}{y} \right)} = \sqrt[xy]{a^{x+y}} \]||
@@ -32,10 +32,10 @@
 Examples:
 \[
 \begin{array}{lllll}
-log (6.54) =  0.8156 &&&&\\
-& log (6540) &= log (6.54 \times 10^3 ) &=  0.8156 + 3 &= \fbox{3.8156}&\\
-& log ( 0.6540) &= log (6.54 \times 10^{-1}) &=  0.8156 - 1 &= \fbox{9.8156 - 10}&\\
-& log ( 0.000 6540) &= log (6.54 \times 10^{-4}) &=  0.8156 - 4 &= \fbox{6.8156 - 10}&
+\log (6.54) =  0.8156 &&&&\\
+& \log (6540) &= \log (6.54 \times 10^3 ) &=  0.8156 + 3 &= \fbox{3.8156}&\\
+& \log ( 0.6540) &= \log (6.54 \times 10^{-1}) &=  0.8156 - 1 &= \fbox{9.8156 - 10}&\\
+& \log ( 0.000 6540) &= \log (6.54 \times 10^{-4}) &=  0.8156 - 4 &= \fbox{6.8156 - 10}&
 \end{array}
 \]
 
@@ -562,7 +562,7 @@ b_{21} & b_{22}
 = 
 \begin{bmatrix} 
 a_{11}b_{11}+a_{12}b_{21} & a_{11}b_{12}+a_{12}b_{22} \\ 
-a_{21}b_{11}+a_{22}b_{21} & a_{21}b_{12}+a_{12}b_{22} 
+a_{21}b_{11}+a_{22}b_{21} & a_{21}b_{12}+a_{22}b_{22} 
 \end{bmatrix} 
 \]
 
@@ -913,7 +913,9 @@ Sample: Any subset of a population
 
 Homogeneous Sample: The sample comes from 1 population only
 
-Random Sample: Equal probability of selecting any member of the population Independence (of events A and B): P(A and B) = P(A)\*P(B)
+Random Sample: Equal probability of selecting any member of the population 
+
+Independence (of events A and B): P(A and B) = P(A)\*P(B)
 
 Sample and Population Mean (Average value):
 \[\mu = \bar{x} = \frac{1}{N} \sum_{i=1}^N{x_i} \]
@@ -945,11 +947,12 @@ The probability that the random variable \(X = x\) in \(N\) independent events, 
 \[\binom{N}{k} = \frac{N!}{k!(N-k)!}.\]
 
 For example, tossing a fair coin N times where \(p = 1/2\) is the probability of getting a head on any toss.  If \(X\) indicates the number of heads in \(N\) tosses, then we have  \(P(X = x) = (1/2)^x (1/2)^{N-x}\). For \(N = 4\) we have the following table:
+
 |x |P(X=x)|
-|:-|:-|
+|:-:|:-:|
 |\(0\)| \(1/16\)|
 |\(1\)| \(1/4\)|
-|\(3\)| \(3/8\)|
+|\(2\)| \(3/8\)|
 |\(3\)| \(1/4\)|
 |\(4\)| \(1/16\)|
 
@@ -975,7 +978,7 @@ An interval estimate of a statistic.
 **Central Limit Theorem**
 The sample mean of data sampled from a normally distributed population is itself normally distributed with mean, \(\mu\), and variance, \(\sigma^2/\sqrt{n}\), where the population distribution is \(N(\mu,\sigma^2)\) and \(n\) is the sample size and usually \(n \geq 30\).
 
-**Hypothesis Testing** Begins with an assumption (hypothesis), usually about the underlying population distribution of some measured quantity or computed error. Select values for the hypothesis and alternate hypothesis(es) that partition the sample space. Collect N samples of the population test statistic or parameter. There are two types of errors: Type 1 errors reject the hypothesis when it is true; Type II accept the hypothesis when in is false.
+**Hypothesis Testing** Begins with an assumption (hypothesis), usually about the underlying population distribution of some measured quantity or computed error. Select values for the hypothesis and alternate hypothesis(es) that partition the sample space. Collect N samples of the population test statistic or parameter. There are two types of errors: Type 1 errors reject the hypothesis when it is true; Type II accept the hypothesis when it is false.
 
 ## Standard Series
 
@@ -1032,6 +1035,7 @@ The following are Taylor Series expansion of *Trigonometric* functions:
 * \(\ln{x}\) is logarithm to the base \(e\), \(\log_e{x}\)
 
 ------
+*Fundamental Derivatives*
 \[\frac{da}{dx} = 0\]
 \[\frac{d\left(ax\right)}{dx} = a\]
 \[\frac{dx^n}{dx} = nx^{n-1}\]
@@ -1040,6 +1044,7 @@ The following are Taylor Series expansion of *Trigonometric* functions:
 \[\frac{d\left(\frac{u}{v} \right)}{dx} = \frac{1}{v^2} \left( v\frac{du}{dx} - u\frac{dv}{dx} \right)\]
 \[\frac{dw}{dx} = \frac{dw}{du}\frac{du}{dx}\]
 \[\frac{du^n}{dx} = nu^{n-1}\frac{du}{dx}\]
+*Expressions Containing Exponential and Logarithmic Functions*
 \[\frac{d \ln{x}}{dx} = \frac{1}{x}\]
 \[\frac{d \ln{u}}{dx} = \frac{1}{u}\frac{du}{dx}\]
 \[\frac{d \log{u}}{dx} = \frac{\log{e}}{u}\frac{du}{dx}\]
@@ -1047,6 +1052,7 @@ The following are Taylor Series expansion of *Trigonometric* functions:
 \[\frac{da^x}{dx} = a^x \ln{a}\]
 \[\frac{da^u}{dx} = a^u \ln{a}\frac{du}{dx}\]
 \[\frac{du^v}{dx} = vu^{v-1}\frac{du}{dx} + u^v \ln{u}\frac{dv}{dx}\]
+*Expressions Containing Trigonometric Functions*
 \[\frac{d \sin{x}}{dx} = \cos{x} \text{ or } \frac{d \sin{u}}{dx} = \cos{u}\frac{du}{dx}\]
 \[\frac{d \cos{x}}{dx} = -\sin{x} \text{ or } \frac{d \cos{u}}{dx} = -\sin{u}\frac{du}{dx}\]
 \[\frac{d \tan{x}}{dx} = \sec^2{x} \text{ or } \frac{d \tan{u}}{dx} = \sec^2{u}\frac{du}{dx}\]

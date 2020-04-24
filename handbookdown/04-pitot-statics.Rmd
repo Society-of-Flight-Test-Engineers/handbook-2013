@@ -60,7 +60,7 @@ Calibrated Airspeed
 \[V_{c} = \left\lbrack \frac{2\gamma}{\gamma - 1}\frac{P_0}{\rho_0}\left( \left\lbrack \frac{P_{T} - P_{a}}{P_0} + 1 \right\rbrack^{\frac{\gamma - 1}{\gamma}} - 1 \right) \right\rbrack^{\frac{1}{2}}\]
 
 
-\[\sqrt{7 \frac{P_0}{\rho_0}\left( \left\lbrack \frac{q_c}{P_0} + 1 \right\rbrack^{0.2857} - 1 \right)}\]
+\[\sqrt{7 \frac{P_0}{\rho_0}\left( \left\lbrack \frac{q_c}{P_0} + 1 \right\rbrack^{\frac{2}{7}} - 1 \right)}\]
 
 Applying British units (\(lb/ft^2\)) and converting from *ft/sec* to knots yields
 
@@ -77,7 +77,7 @@ The name comes from the fact that although the equivalent airspeed equation does
 
 \[q_c = P_0  \left\lbrack \left( \frac{\rho_0}{P_0} \frac{V_c^2}{7} + 1 \right)^{3.5} - 1 \right\rbrack\]
 
-Next, substitute this value and the ambient pressure (\(P_a\) into the equivalent airspeed equation. (\(q_c = P_T - P_a\))
+Next, substitute this value and the ambient pressure (\(P_a\)) into the equivalent airspeed equation. (\(q_c = P_T - P_a\))
 
 \[V_e = \sqrt{7 \frac{P_a}{\rho_0} \left( \left\lbrack \frac{q_c}{P_a}+1 \right\rbrack^{2/7} - 1 \right) } \]
 
@@ -387,7 +387,8 @@ The "Windbox" method consists of flying four legs instead of three. The extra le
 
 Errors must be equal to or less than \(\pm3\%\) of \(V_c\) or \(\pm5\text{kts}\) whichever is greater
 
-#### Mil Spec P-26292 C (USAF)
+#### Mil Spec P-26292 C (USAF) {-}
+
 Landing configuration: \(\Delta H_{\mathrm{pc}} \pm 30\) ft.
 
 ![][04034]
