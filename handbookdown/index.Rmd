@@ -6,6 +6,9 @@ site: "bookdown::bookdown_site"
 cover-image: "media/media/image1.jpg"
 output:
   bookdown::gitbook: default
+  html_document:
+    toc: true
+    toc_depth: 1
 documentclass: book
 bibliography: []
 biblio-style: apalike

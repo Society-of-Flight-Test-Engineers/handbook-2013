@@ -33,3 +33,21 @@ bookdown::serve_book(dir = ".", output_dir = "_book", preview = TRUE, in_session
 bookdown::serve_book(dir = ".", output_dir = "../docs", preview = TRUE, in_session = TRUE, quiet = FALSE, daemon = TRUE)
 bookdown::serve_book(dir = ".", preview = TRUE, in_session = TRUE, quiet = FALSE, daemon = TRUE)
 ```
+
+## Fresh install
+
+I'm working on an Ubuntu hobby machine.
+
+Installed
+
+- VS Code
+- r-base
+- RStudio
+- r package tinytex
+- git
+- r package bookdown
+- pandoc
+- pandoc-citeproc
+- r package servr
+
+
