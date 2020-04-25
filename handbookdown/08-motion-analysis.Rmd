@@ -214,65 +214,54 @@ x_2 &= 2c \\
 
 **Method \#1**
 
-\(\tau\) = time to reach 0.632 *x~ss~*
+\(\tau\) = time to reach \(0.632 x_{\mathrm{ss}}\)
 
 ![][08018]
 
 **Method \#2**
 
-![][08019]
+1. Define \(x_{\mathrm{ss}}\)
+1. Measure \(x_1\) at some time \(t_1\)
+1. Calculate \(x_2 = 0.632 \left( x_{\mathrm{ss}} + 0.58 x_1 \right) \) 
+1. Find \(t_2\) corresponding to \(x_2\)
+1. \(t_2 - t_1 = \tau \)
 
-![][08020]
-
+<!-- x_2 is mislabeled in figure -->
 ![][08021]
 
 **Method \#3**
 
- 
-
-1\. Pick any time *t_1\).
-
-2\. Draw tangent at *t_1\).
-
-3\. Note *t_2\) where tangent intercepts x~ss~.
-
-4\. *τ* = *t_2\)-*t_1\)
-
- 
+1. Pick any time \(t_1\).
+1. Draw tangent at \(t_1\).
+1. Note \(t_2\) where tangent intercepts \(x_{\mathrm{ss}}\).
+1. \( \tau = t_2 -t_1 \)
 
 ![][08022]
 
-**Method \#4** When *X~SS~* is unknown use
+**Method \#4** 
 
- 
+<!-- Why do we suddenly switch to caps? -->
+When \(X_{\mathrm{SS}}\) is unknown use
 
-![][08023]
+\[\tau = \frac{\Delta t}{\ln \left( \frac{A_1}{A_2} \right)} \]
 
 ![][08024]
 
-**Method \#5** When *Xss* is known, use
+**Method \#5** 
 
- 
+When \(X_{\mathrm{SS}}\) is known, use
 
-![][08025]
+\[\tau = \frac{-\Delta t}{\ln \left[ \frac{X_{\mathrm{SS}} - X_1}{X_{\mathrm{SS}} - X_2} \right]} \]
 
 **Linearity check:**
 
 Note parameter change between even time increments.
 
- 
-
 Plot parameter changes vs elapsed time on semi-log scale
-
- 
 
 ![][08026]
 
-Slope of line equals *τ*
-
- 
-
-Dp
+Slope of line equals \(\tau\)
 
 ![][08027]
 

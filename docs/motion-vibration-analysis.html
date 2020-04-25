@@ -269,7 +269,7 @@
 <li class="chapter" data-level="8.2" data-path="motion-vibration-analysis.html"><a href="motion-vibration-analysis.html#first-order-motion"><i class="fa fa-check"></i><b>8.2</b> First Order Motion</a><ul>
 <li class="chapter" data-level="8.2.1" data-path="motion-vibration-analysis.html"><a href="motion-vibration-analysis.html#elements-of-first-order-motion"><i class="fa fa-check"></i><b>8.2.1</b> Elements of First Order Motion</a></li>
 <li class="chapter" data-level="8.2.2" data-path="motion-vibration-analysis.html"><a href="motion-vibration-analysis.html#first-order-motion-descriptive-parameters"><i class="fa fa-check"></i><b>8.2.2</b> First Order Motion Descriptive Parameters</a></li>
-<li class="chapter" data-level="8.2.3" data-path="motion-vibration-analysis.html"><a href="motion-vibration-analysis.html#determining-τ-from-step-input-time-history"><i class="fa fa-check"></i><b>8.2.3</b> Determining <em>τ</em> from Step Input Time History</a></li>
+<li class="chapter" data-level="8.2.3" data-path="motion-vibration-analysis.html"><a href="motion-vibration-analysis.html#determining-tau-from-step-input-time-history"><i class="fa fa-check"></i><b>8.2.3</b> Determining <span class="math inline">\(\tau\)</span> from Step Input Time History</a></li>
 </ul></li>
 <li class="chapter" data-level="8.3" data-path="motion-vibration-analysis.html"><a href="motion-vibration-analysis.html#second-order-motion"><i class="fa fa-check"></i><b>8.3</b> Second Order Motion</a><ul>
 <li class="chapter" data-level="8.3.1" data-path="motion-vibration-analysis.html"><a href="motion-vibration-analysis.html#elements-of-second-order-motion"><i class="fa fa-check"></i><b>8.3.1</b> Elements of Second Order Motion</a></li>
@@ -593,42 +593,43 @@ x_2 &amp;= 2c \\
 \therefore \text{Time to double amplitude } \frac{0.6931}{m} = t_2 = 0.693\tau \\
 \end{align}
 \]</span></p>
-<p><img src="media/08/image16.png" /></p>
-<p><img src="media/08/image17.png" /></p>
 </div>
-<div id="determining-τ-from-step-input-time-history" class="section level3">
-<h3><span class="header-section-number">8.2.3</span> Determining <em>τ</em> from Step Input Time History</h3>
+<div id="determining-tau-from-step-input-time-history" class="section level3">
+<h3><span class="header-section-number">8.2.3</span> Determining <span class="math inline">\(\tau\)</span> from Step Input Time History</h3>
 <p><strong>Method #1</strong></p>
-<p>τ = time to reach 0.632 <em>x<sub>ss</sub></em></p>
+<p><span class="math inline">\(\tau\)</span> = time to reach <span class="math inline">\(0.632 x_{\mathrm{ss}}\)</span></p>
 <p><img src="media/08/image18.png" /></p>
 <p><strong>Method #2</strong></p>
-<p><img src="media/08/image19.png" /></p>
-<p><img src="media/08/image20.png" /></p>
+<ol style="list-style-type: decimal">
+<li>Define <span class="math inline">\(x_{\mathrm{ss}}\)</span></li>
+<li>Measure <span class="math inline">\(x_1\)</span> at some time <span class="math inline">\(t_1\)</span></li>
+<li>Calculate <span class="math inline">\(x_2 = 0.632 \left( x_{\mathrm{ss}} + 0.58 x_1 \right)\)</span></li>
+<li>Find <span class="math inline">\(t_2\)</span> corresponding to <span class="math inline">\(x_2\)</span></li>
+<li><span class="math inline">\(t_2 - t_1 = \tau\)</span></li>
+</ol>
+<!-- x_2 is mislabeled in figure -->
 <p><img src="media/08/image21.png" /></p>
 <p><strong>Method #3</strong></p>
-<p> </p>
-<p>1. Pick any time *t_1).</p>
-<p>2. Draw tangent at *t_1).</p>
-<p>3. Note *t_2) where tangent intercepts x<sub>ss</sub>.</p>
-<p>4. <em>τ</em> = <em>t_2)-</em>t_1)</p>
-<p> </p>
+<ol style="list-style-type: decimal">
+<li>Pick any time <span class="math inline">\(t_1\)</span>.</li>
+<li>Draw tangent at <span class="math inline">\(t_1\)</span>.</li>
+<li>Note <span class="math inline">\(t_2\)</span> where tangent intercepts <span class="math inline">\(x_{\mathrm{ss}}\)</span>.</li>
+<li><span class="math inline">\(\tau = t_2 -t_1\)</span></li>
+</ol>
 <p><img src="media/08/image22.png" /></p>
-<p><strong>Method #4</strong> When <em>X<sub>SS</sub></em> is unknown use</p>
-<p> </p>
-<p><img src="media/08/image23.png" /></p>
+<p><strong>Method #4</strong></p>
+<!-- Why do we suddenly switch to caps? -->
+<p>When <span class="math inline">\(X_{\mathrm{SS}}\)</span> is unknown use</p>
+<p><span class="math display">\[\tau = \frac{\Delta t}{\ln \left( \frac{A_1}{A_2} \right)} \]</span></p>
 <p><img src="media/08/image24.png" /></p>
-<p><strong>Method #5</strong> When <em>Xss</em> is known, use</p>
-<p> </p>
-<p><img src="media/08/image25.png" /></p>
+<p><strong>Method #5</strong></p>
+<p>When <span class="math inline">\(X_{\mathrm{SS}}\)</span> is known, use</p>
+<p><span class="math display">\[\tau = \frac{-\Delta t}{\ln \left[ \frac{X_{\mathrm{SS}} - X_1}{X_{\mathrm{SS}} - X_2} \right]} \]</span></p>
 <p><strong>Linearity check:</strong></p>
 <p>Note parameter change between even time increments.</p>
-<p> </p>
 <p>Plot parameter changes vs elapsed time on semi-log scale</p>
-<p> </p>
 <p><img src="media/08/image26.png" /></p>
-<p>Slope of line equals <em>τ</em></p>
-<p> </p>
-<p>Dp</p>
+<p>Slope of line equals <span class="math inline">\(\tau\)</span></p>
 <p><img src="media/08/image27.png" /></p>
 </div>
 </div>
