@@ -275,7 +275,7 @@ Mechanical systems have elements of spring, mass, and usually damping. Forcing f
 
 ![][08028]
 
-*K* = spring stiffness (*F*/*x*)
+\(K\)= spring stiffness (*F*/*x*)
 
 *x* = displacement from equilibrium
 
