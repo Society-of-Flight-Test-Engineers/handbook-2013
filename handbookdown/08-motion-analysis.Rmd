@@ -210,10 +210,6 @@ x_2 &= 2c \\
 \end{align}
 \]
 
-![][08016]
-
-![][08017]
-
 ### Determining *τ* from Step Input Time History
 
 **Method \#1**
