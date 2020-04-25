@@ -7,6 +7,7 @@ cover-image: "media/media/image1.jpg"
 output:
   bookdown::gitbook:
     config:
+      toc_depth: 1
       toc:
         collapse: section
 documentclass: book

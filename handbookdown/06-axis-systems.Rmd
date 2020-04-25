@@ -275,8 +275,6 @@ a_z =& \dot{w} + pv - qu
 \end{align}
 \]
 
-![][06019]
-
 We also convert the location and rates of mass elements, \(m_1\), into specific angular momentum.
 \[
 \begin{align}
