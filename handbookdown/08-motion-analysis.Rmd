@@ -1,164 +1,177 @@
-# Motion and Vibration Analysis
+# Motion & Vibration Analysis
 
-8.1 Recurring Abbreviations
+## Recurring Abbreviations
 
-8.2 First Order Motion
+|                     |                                                                   |
+|-|-------------------------------------------------------------------|
+| \(C_{\frac{1}{x}}\) | number of cycles to achieve \(\frac{1}{x}\) amplitude             |
+| \(D\)               | damping                                                           |
+| \(D_1,D_2\)         | peak-to-peak displacement (subsequent)                            |
+| \(\mathrm{FV}\)     | final value                                                       |
+| \(F(t)\)            | forcing function                                                  |
+| \(f\)               | frequency, cycles/sec = \(\omega / \left( 2\pi \right) \)         |
+| \(\mathrm{HCAR}\)   | half cycle amplitude ratio (i.e., \(x_2/x_1\), \(x_3/x_2\), etc.) |
+| \(\mathrm{Im}\)     | imaginary axis                                                    |
+| \(M\)               | mass                                                              |
+| \(\mathrm{MP}\)     | peak overshoot                                                    |
+| \(\mathrm{Re}\)     | real axis                                                         |
+| \(\mathrm{rms}\)    | root mean square                                                  |
+| \(s_1\), \(s_2\)    | equation roots of second order                                    |
+| \(T\)               | period = \(1/f\) = \(2\pi/\omega_d\) (seconds)                    |
+| \(T_d\)             | delay time (i.e., time to 50% of \(\mathrm{FV}\) )                |
+| \(T_r\)             | rise time (i.e., time from 10% to 90% of \(\mathrm{FV}\) )        |
+| \(T_p\)             | time to peak amplitude                                            |
+| \(\mathrm{TPR}\)    | transient peak ratio                                              |
+| \(T_s\)             | settling time (time to settle within \(x\%\) of \(\mathrm{FV}\) )  |
+| \(T_{\frac{1}{x}}\)         | time to achieve \(\frac{1}{x}\) amplitude                                 |
+| \(x\)               | displacement                                                      |
+| \(x_1\), \(x_2\)    | peak displacements (subsequent)                                   |
+| \(v\)               | velocity                                                          |
+| \(v_0\)             | peak velocity                                                     |
+| \(\varepsilon\)     | \(= \zeta \omega_n / \omega_d = \zeta / \sqrt{1 - \zeta^2} \)     |
+| \(\phi\)            | phase lag (radians)                                               |
+| \(\zeta\)           | damping coefficient (non-dimensional)                             |
+| \(\sigma\)          | damping rate \(=\zeta \omega_n = 1/\tau\)                         |
+| \(\tau\)            | time constant \(=1/\zeta \omega_n\)                               |
+| \(\omega\)          | frequency, radians/sec                                            |
+| \(\omega_d\)        | damped natural frequency (rad/sec)                                |
+| \(\omega_n\)        | natural frequency (rad/sec)                                       |
 
-> 8.2.1 Elements of First Order Motion
->
-> 8.2.2 First Order Motion Descriptive Parameters
->
-> 8.2.3 Determining Descriptive Parameter *τ*
-
-8.3 Second Order Motion
-
-> 8.3.1 Elements of Second Order Motion
->
-> 8.3.2 Second Order Motion Descriptive Parameters
->
-> 8.3.3 Determining Descriptive Parameters
-
-8.4 Complex Plane
-
-8.5 Parameter Conversions
-
-8.6 Vibration Nomograph
-
-8.7 References
-
-**8.1 Recurring Abbreviations**
-
-###### *C ~1/x~* number of cycles to achieve 1/*x* amplitude
-
-###### *D* damping
-
-*D~1~,D~2~* peak-to-peak displacement (subsequent)
-
-*FV* final value
-
-*F(t) forcing function*
-
-*f* frequency, cycles/sec = ω/(2π)
-
-*HCAR* half cycle amplitude ratio (i.e., *x~2~/x~1~*, *x~3~/x~2~*, etc.)
-
-*Im* imaginary axis
-
-*M* mass
-
-*MP* peak overshoot
-
-*Re* real axis
-
-*rms* root mean square
-
-*s*~1~, *s*~2~ equation roots of second order
-
-*T* period = 1/*f* = 2π/ω~d~ (seconds)
-
-*T~d~* delay time (i.e., time to 50% of FV)
-
-*T~r~* rise time (i.e., time from 10% to 90% of FV)
-
-*T~p~* time to peak amplitude
-
-*TPR* transient peak ratio
-
-*T~s~* settling time (time to settle within *x*% of FV)
-
-*T ~1/2~* time to achieve 1/*x* amplitude
-
-*x* displacement
-
-*x~1~,x~2~* peak displacements (subsequent)
-
-*v* velocity
-
-*v~0~* peak velocity
-
-*ε =ζω~n~ /ω~d~* = ζ/\[1-ζ^2^\]^ 0.5^
-
-*φ* phase lag (radians)
-
-*ζ* damping coefficient (non-dimensional)
-
-*σ* damping rate *=ζω~n~* = 1/*τ*
-
-*τ* time constant =1/*ζω~n~*
-
-ω  frequency, radians/sec
-
-*ω~d~* damped natural frequency (rad/sec)
-
-*ω~n~* natural frequency (rad/sec)
-
-**8.2 First Order Motion**
+## First Order Motion
 
 Found in classical aircraft roll and spiral modes. Named first-order because the motions are described by mathematics using the first derivative of a parameter.
 
-**8.2.1 Elements of First Order Motion**
+### Elements of First Order Motion
 
-Mechanical analogy contains elements of mass, damping and
+Mechanical analogy contains elements of mass, damping and sometimes a forcing function.
 
-sometimes a forcing function.
-
-Example: Determine the vertical velocity of a diver as she hits the water at 10 ft/s (assume constant body position & neutral buoyancy)
+**Example 1:** Determine the vertical velocity of a diver as she hits the water at \(10\) ft/s (assume constant body position & neutral buoyancy)
 
 Summing vertical forces gives
 
-![][08001] 
+\[ 
+\begin{align}
+\sum F_{\mathrm{vert}} : &M \frac{dV}{dt} + DV = 0 \\
+&\frac{dV}{V} + \frac{D}{M} dt = 0 \\
+&\int{}{} \frac{dV}{V} = -\int{}{} \frac{D}{M} dt
+\end{align}
+\]
 
-Since *D* & *M* are constant
+Since \(D\) & \(M\) are constant
 
+\[ 
+\begin{align}
+\ln V &= -\frac{D}{M} t + C =  -\frac{D}{M} t + \ln c\\
+V_c &= c e^{-\frac{D}{M} t} \;\;\text{complementary solution}\\
+\end{align}
+\]
  
-
-![][08002]![][08003]
-
 Apply initial condition
 
- 
-
-![][08004]
+\[ 
+\begin{align}
+V(t=0) &= 10 \mathrm{ft/s} \Rightarrow \\
+10 &= C \\
+V_T &= 10 e^{-\frac{D}{M} t}
+\end{align}
+\]
 
 Plot response over time
 
- 
-
 ![][08005]
 
-• Exponential rate of decay described by *D/M* ratio
+Exponential rate of decay described by \(\frac{D}{M}\) ratio
 
  
 
-• Example 2: Diver with 20 lb submerged weight releases from zero velocity at top of pool (quiescent condition).
+**Example 2:** Diver with \(20\) lb submerged weight releases from zero velocity at top of pool (quiescent condition).
 
 Solve using Laplace analysis methods:
 
- 
+\[
+\begin{align}
+M\dot{V} + DV &= 20 \;\;\text{step input} \\
+M\left[ sV(s) - V(0) \right] + D V(s) &= \frac{20}{s} \\
+sV(s) - V(0) + \frac{D}{M} V(s) &= \frac{20}{M} \frac{1}{s} \\
+V(s) \left(s + \frac{D}{M} \right) &= \frac{20}{M} \frac{1}{s} + V(0) \\
+V(s) &= \frac{ \frac{20}{M} \frac{1}{s} + V(0) }{s + \frac{D}{M} } \\
+&= \left\{
+          \frac{
+                \frac{20}{M}
+                }
+                {s \left(
+                          s + \frac{D}{M}
+                        \right)
+                } 
+  \right\} + \frac{V(0)}{s + \frac{D}{M}} \\
+\end{align}
+\]
 
-![][08006]
+Use partial fraction:
 
-![][08007]
+\[
+\begin{align}
+\frac{ \frac{20}{M} }{s \left( s + \frac{D}{M} \right) } &= \frac{A}{s} + \frac{B}{s + \frac{D}{M}}\\
+&= \frac{A \left( s + \frac{D}{M} \right)}{s \left( s + \frac{D}{M} \right) } + \frac{B s}{s \left( s + \frac{D}{M} \right) }\\
+&= \frac{A \left( s + \frac{D}{M} \right) + B s}{s \left( s + \frac{D}{M} \right) }\\
+\therefore \frac{20}{M} &= A \left( s + \frac{D}{M} \right) + B s
+\end{align}  
+\]
 
-![][08008]
+let \(s = -\frac{D}{M}\):
+
+\[\frac{20}{M} = 0 + B \left(-\frac{D}{M}\right) \Rightarrow B = -\frac{20}{D} \]
+
+let \(s = 0\):
+
+\[\frac{20}{M} = A \left( 0 + \frac{D}{M} \right) + 0 \Rightarrow A = \frac{20}{D} \]
+
+\[
+\begin{align}
+V(s) &= \left\{ \frac{A}{s} + \frac{B}{s + \frac{D}{M}} \right\} + \frac{V(0)}{s + \frac{D}{M}} \\
+&= \left\{ \frac{\frac{20}{D}}{s} + \frac{-\frac{20}{D}}{s + \frac{D}{M}} \right\} + \frac{V(0)}{s + \frac{D}{M}} \\
+V(t) &= \left\{ \frac{20}{D} -\frac{20}{D}e^{-\frac{D}{M}t} \right\} + V(0)e^{-\frac{D}{M}t} \\
+\end{align}
+\]
+
+since \(V(0) = 0\) then
+
+\[ V(t) = \frac{20}{D} \left[ 1  -e^{-\frac{D}{M}t} \right] \]
+
+Note that the steady state value, \(V_{\mathrm{ss}} = \frac{20}{D}\), i.e.
+
+\[ V(t) = V_{\mathrm{ss}} \left[1  -e^{-\frac{D}{M}t} \right] \]
 
 This "force/damping" ratio is merely a scaling factor for the steady state.
 
- 
-
 ![][08009]
 
-• Several methods can be used to describe the quickness of convergence toward steady state (i.e., time to 99.999 % of *V~ss~*, time to 1/2 *V~ss~*).
+Several methods can be used to describe the quickness of convergence toward steady state (e.g., time to \(99.999\%\) of \(V_{\mathrm{ss}}\), time to \(1/2\) \(V_{\mathrm{ss}}\)).
 
-• By convention, we use a % that directly reflects the exponent.
+By convention, we use a \(\%\) that directly reflects the exponent.
 
-• Establish a time constant *τ* based on *D/M*.
+Establish a time constant \(\tau\) based on \(\frac{D}{M}\).
 
- 
+\[\frac{D}{M} \equiv \frac{1}{\tau} \]
 
-![][08010]
+so 
 
-**8.2.2 First Order Motion Descriptive Parameters**
+\[e^{-\frac{D}{M}t} = e^{-\frac{t}{\tau}}\]
+
+when 
+
+\[t = \tau\]
+
+then
+
+\[e^{-\frac{t}{\tau}} = e^{-\frac{\tau}{\tau}} = e^{-1} = 0.36788\]
+
+so, after \(\frac{M}{D}\) seconds have elapsed, \(V =  V_{\mathrm{ss}} \left[1  0.36788 \right] = 63.212\% V_{\mathrm{ss}} \)
+
+\(\tau =\) time constant (time for parameter to reach \(~63\%\) of it's steady state value)
+
+
+### First Order Motion Descriptive Parameters
 
 ![][08011]
 
@@ -180,7 +193,7 @@ If exponent \> 0, then motion is divergent.
 
 • *τ *again describes the exponential rate of divergence.
 
-• By convention, the "time to double amplitude" (*t~2~*) is usually applied as the evaluation metric.
+• By convention, the "time to double amplitude" (*t_2\)) is usually applied as the evaluation metric.
 
 • *x*~(t2)~ = 2*x*~(0)~ where *x*~(0)~ = *c\mathrm{e}^m^*^0^
 
@@ -190,7 +203,7 @@ If exponent \> 0, then motion is divergent.
 
 ![][08017]
 
-**8.2.3 Determining *τ* from Step Input Time History**
+### Determining *τ* from Step Input Time History
 
 **Method \#1**
 
@@ -210,13 +223,13 @@ If exponent \> 0, then motion is divergent.
 
  
 
-1\. Pick any time *t~1~*.
+1\. Pick any time *t_1\).
 
-2\. Draw tangent at *t~1~*.
+2\. Draw tangent at *t_1\).
 
-3\. Note *t~2~* where tangent intercepts x~ss~.
+3\. Note *t_2\) where tangent intercepts x~ss~.
 
-4\. *τ* = *t~2~*-*t~1~*
+4\. *τ* = *t_2\)-*t_1\)
 
  
 
@@ -256,11 +269,11 @@ Dp
 
 ![][08027]
 
-**8.3 Second Order Motion**
+## Second Order Motion
 
 Found in classical aircraft phugoid, Dutch roll and short period modes as well as noise filter and vibration testing. Named second-order because the motions are described by mathematics using the second derivative of a parameter.
 
-**8.3.1 Elements of Second Order Motion**
+### Elements of Second Order Motion
 
 Mechanical systems have elements of spring, mass, and usually damping. Forcing functions can be included (see illustration).
 
@@ -310,7 +323,7 @@ Solve for the roots using the quadratic equation
 
 ![][08033]
 
-**8.3.2 Second Order Motion Descriptive Parameters**
+### Second Order Motion Descriptive Parameters
 
  
 
@@ -482,7 +495,7 @@ the other two.
 
 ![][08054]
 
-**8.3.3 Determining Descriptive Parameters**
+### Determining Descriptive Parameters
 
 ** **
 
@@ -534,19 +547,19 @@ Final Value, *FV*: steady state value
 
  
 
-Delay Time, *T~d~*: 50% of final value
+Delay Time, *T_d\): 50% of final value
 
  
 
-Rise Time, *T~r~*: 10% - 90% of FV
+Rise Time, *T_r\): 10% - 90% of FV
 
  
 
-Peak Time, *T~p~*: time to MP
+Peak Time, *T_p\): time to MP
 
  
 
-Settling Time, *T~s~*: time to reach some defined % of final value
+Settling Time, *T_s\): time to reach some defined % of final value
 
  
 
@@ -650,7 +663,7 @@ Example Calculation
 
 4a) Can use
 
-*D~1~/D~2~* or *x~1~/x~2~*
+*D_1~/D_2\) or *x_1~/x_2\)
 
 ratios in above equation.
 
@@ -726,7 +739,7 @@ To determine damping ratio
 
  
 
-•  Form the time ratios *t~2~/t~1~*, *t~3~/t~1~*, and \[*t~3~-t~2~*\]/\[*t~2~-t~1~*\]
+•  Form the time ratios *t_2~/t_1\), *t_3~/t_1\), and \[*t_3~-t_2\)\]/\[*t_2~-t_1\)\]
 
  
 
@@ -870,7 +883,7 @@ To determine damping ratio
 
 €
 
-∆T = (t~1~-t~0~) = (t~2~-t~1~), etc.
+∆T = (t_1~-t_0~) = (t_2~-t_1), etc.
 
  
 
@@ -1110,7 +1123,7 @@ amplitudes at each half cycle (points *a-e*).
 
  
 
-**8.4 Complex Plane**
+## Complex Plane
 
 ** **
 
@@ -1212,7 +1225,7 @@ Examples of "imaginary roots"
 
 ![][08108]
 
-**8.5 Parameter Conversions**
+## Parameter Conversions
 
  
 
@@ -1290,7 +1303,7 @@ For conversion of accelerometer measurements.
 
  
 
-**8.6 Vibration Nomographs**
+## Vibration Nomographs
 
 **Vibration Nomograph equations**
 
@@ -1340,33 +1353,24 @@ where 9800 = earth\'s gravitational pull \[mm/sec^2^\]
 
 ![][08110]
 
-**8.7 References**
+## References
 
-8.7.1 Lawless, Alan R., *Math and Physics for Flight Testers*, "Chapter 9, Motion Analysis," National Test Pilot School, Mojave CA, 1999.
+|||
+|-|---------------|
+|8.7.1 |Lawless, Alan R., *Math and Physics for Flight Testers*, "Chapter 9, Motion Analysis," National Test Pilot School, Mojave CA, 1999.|
+|8.7.2 |Ward, Don, *Introduction to Flight Testing*, Texas A&M, Elsevier, 1993.|
+|8.7.3 |Lang, George F., *Understanding Vibration Measurements*, Application Note 9, Rockland Scientific Corporation, Rockleigh, New Jersey, December 1978.|
+|8.7.4 |*The Fundamentals of Modal Testing*, Application Note 243-3, Hewlett-Packard Company,|
 
-8.7.2 Ward, Don, *Introduction to Flight Testing*, Texas A&M, Elsevier, 1993.
+**Additional Reading**
 
-8.7.3 Lang, George F., *Understanding Vibration Measurements*,
-
-Application Note 9, Rockland Scientific Corporation, Rockleigh, New Jersey, December 1978.
-
-8.7.4 *The Fundamentals of Modal Testing*, Application Note 243-3,
-
-Hewlett-Packard Company,
-
-####### Additional Reading 
-
-Hartog, J.P. Den, *Mechanical Vibrations*, Dover Publications, New York, New York, 1984.
-
-Jacobsen, Ludik S. and Ayre, Robert S., *Engineering Vibrations*, McGraw-Hill Book Company, New York, New York, 1958.
-
-Meirovitch, Leonard, *Elements of Vibration Analysis*, McGraw-Hill Book Company, New York, New York, 1986.
-
-Meirovitch, Leonard, *Analytical Methods in Vibrations*, Macmillan Publishing Company, New York, New York, 1967.
-
-Myklestad, N.O., *Vibration Analysis*, McGraw-Hill Book
-
-Company, New York, New York, 1944.
+||
+|-|
+|Hartog, J.P. Den, *Mechanical Vibrations*, Dover Publications, New York, New York, 1984.|
+|Jacobsen, Ludik S. and Ayre, Robert S., *Engineering Vibrations*, McGraw-Hill Book Company, New York, New York, 1958.|
+|Meirovitch, Leonard, *Elements of Vibration Analysis*, McGraw-Hill Book Company, New York, New York, 1986.|
+|Meirovitch, Leonard, *Analytical Methods in Vibrations*, Macmillan Publishing Company, New York, New York, 1967.|
+|Myklestad, N.O., *Vibration Analysis*, McGraw-Hill Book Company, New York, New York, 1944.|
 
   [08001]: media/08/image1.svg
   [08002]: media/08/image2.svg

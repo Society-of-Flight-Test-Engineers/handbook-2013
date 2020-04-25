@@ -1727,7 +1727,7 @@ while \(I_{\mathrm{cg}} < I_z\) yields retrograde precession
 |  9|   Niner      |▬ ▬ ▬ ▬ •|
 |  0|   Zee-ro     |▬ ▬ ▬ ▬ ▬|
 
-## Section 1 References
+## References
 
 <http://www.onlineconversion.com/>
 
