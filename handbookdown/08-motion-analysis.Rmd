@@ -210,11 +210,11 @@ x_2 &= 2c \\
 \end{align}
 \]
 
-### Determining *τ* from Step Input Time History
+### Determining \(\tau\) from Step Input Time History
 
 **Method \#1**
 
-τ = time to reach 0.632 *x~ss~*
+\(\tau\) = time to reach 0.632 *x~ss~*
 
 ![][08018]
 
