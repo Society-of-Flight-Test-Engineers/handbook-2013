@@ -655,7 +655,7 @@ x_2 &amp;= 2c \\
 <td>mass</td>
 </tr>
 <tr class="even">
-<td><span class="math inline">\(F_t\)</span></td>
+<td><span class="math inline">\(F\left(t\right)\)</span></td>
 <td>forcing function</td>
 </tr>
 <tr class="odd">
@@ -683,45 +683,54 @@ M s^2 + D s + K = 0 \text{ or } s^2 + \frac{D}{M} s + \frac{K}{M} = 0\\
 </div>
 <div id="second-order-motion-descriptive-parameters" class="section level3">
 <h3><span class="header-section-number">8.3.2</span> Second Order Motion Descriptive Parameters</h3>
-<p> </p>
-<p>Solution (<em>x</em>) calculated as</p>
-<p> </p>
-<p> <img src="media/08/image34.png" /></p>
-<p> </p>
-<p> </p>
+<p>Solution (<span class="math inline">\(x\)</span>) calculated as</p>
+<p><span class="math display">\[ x = c_1 e^{s_1 t} + c_2 e^{s_2 t} \text{ where } s_1,s_2 = -\frac{D}{2M} \pm j \sqrt{\frac{K}{M} - \left( \frac{D}{2M} \right)^2} \]</span></p>
 <p>Apply Euler’s identity for complex conjugate roots</p>
+<p><span class="math display">\[ x = A e^{-\frac{D}{2M}} \sin \left( \sqrt{\frac{K}{M} - \left( \frac{D}{2M} \right)^2} t + \phi \right) \]</span></p>
 <p> </p>
-<p> <img src="media/08/image35.png" /></p>
-<p> </p>
-<p>• φ defines the <strong>phase shift</strong>.</p>
-<p>•  <em>A</em> defines the <strong>initial amplitude</strong>.</p>
-<p>•  The real part of the root <span class="math display">\[*D*/2*M*\]</span> defines the <strong>envelope</strong> of the motion.</p>
-<p>•  The imaginary part of the root identifies the <strong>damped frequency</strong></p>
-<p>of the oscillations, ω<em><sub>d</sub></em> (rad/sec).</p>
-<p> </p>
-<p><img src="media/08/image36.png" /></p>
-<p> </p>
-<p> <img src="media/08/image37.png" /></p>
-<p>• If damping is reduced to <em>D</em> = 0 then only <span class="math display">\[*K/M*\]</span><sup>1/2</sup> remains.</p>
-<p>This is the undamped or <strong>“natural” frequency</strong> (ω<sub>η</sub>).</p>
-<p> </p>
-<p> <img src="media/08/image38.png" /></p>
-<p> </p>
-<p>•  If</p>
-<p><img src="media/08/image39.png" /></p>
-<p>then <em>D</em> is conisidered to be critical <span class="math display">\[just enough to prevent oscillations\]</span></p>
-<p> </p>
-<p> <img src="media/08/image40.png" /></p>
-<p> </p>
-<p> </p>
-<p>• For oscillatory motion, actual system damping is typically expressed as a fraction critical damping. Define <strong>damping ratio</strong> as</p>
-<p> </p>
-<p> <img src="media/08/image41.png" /></p>
-<p><img src="media/08/image42.png" /></p>
+<ul>
+<li><span class="math inline">\(\phi\)</span> defines the <strong>phase shift</strong>.</li>
+<li><span class="math inline">\(A\)</span> defines the <strong>initial amplitude</strong>.</li>
+<li>The real part of the root, <span class="math inline">\(\frac{D}{2M}\)</span>, defines the <strong>envelope</strong> of the motion.</li>
+<li>The imaginary part of the root identifies the <strong>damped frequency</strong> of the oscillations, <span class="math inline">\(\omega_d\)</span> [rad/sec].</li>
+</ul>
+<p><span class="math display">\[ \omega_d = \sqrt{\frac{K}{M} - \left( \frac{D}{2M} \right)^2} \]</span></p>
+<ul>
+<li>If damping is reduced to <span class="math inline">\(D = 0\)</span> then only <span class="math inline">\(\sqrt{\frac{K}{M}}\)</span> remains. This is the undamped or <strong>“natural” frequency</strong> ( <span class="math inline">\(\omega_n\)</span> ).</li>
+</ul>
+<p><span class="math display">\[ \omega_n \equiv  \sqrt{\frac{K}{M}}\]</span></p>
+<ul>
+<li>If <span class="math inline">\(\left( \frac{D}{2M} \right)^2 = \frac{K}{M}\)</span> then <span class="math inline">\(D\)</span> is considered to be critical [just enough to prevent oscillations]</li>
+</ul>
+<p><span class="math display">\[ D_{\mathrm{crit}} = \sqrt{\frac{K}{M}} 2 M = 2 \sqrt{KM} \]</span></p>
+<ul>
+<li>For oscillatory motion, actual system damping is typically expressed as a fraction of critical damping. Define <strong>damping ratio</strong> as</li>
+</ul>
+<p><span class="math display">\[ \zeta \equiv \frac{D}{D_{\mathrm{crit}}} = \frac{D}{2 \sqrt{KM}} \]</span></p>
+<p>Combining</p>
+<p><span class="math display">\[ \omega_d = \sqrt{\frac{K}{M} - \left( \frac{D}{2M} \right)^2} \]</span></p>
+<p>with</p>
+<p><span class="math display">\[ \omega_n \equiv  \sqrt{\frac{K}{M}}\]</span></p>
+<p>and</p>
+<p><span class="math display">\[ \zeta = \frac{D}{2 \sqrt{KM}} \]</span></p>
+<p>gives</p>
+<p><span class="math display">\[ \omega_d = \omega_n \sqrt{1 - \zeta^2} \]</span></p>
+<p>and</p>
+<p><span class="math display">\[ \frac{D}{2M} = \zeta \omega_n \]</span></p>
+<p>The values can be substituted to gives</p>
+<p><span class="math display">\[
+\begin{align}
+x &amp;= A e^{-\frac{D}{2M}} \sin \left( \sqrt{\frac{K}{M} - \left( \frac{D}{2M} \right)^2} t + \phi \right) \\
+&amp;= A e^{-\zeta \omega_n t} \sin \left( \omega_d + \phi \right) \\
+&amp;= A e^{-\zeta \omega_n t} \sin \left( \omega_n \sqrt{1 - \zeta^2} + \phi \right) \\
+\text{where}\;\;\; \phi &amp;= \tan^{-1} \frac{\omega_d}{\zeta \omega_n} = \tan^{-1} \frac{\omega_n \sqrt{1 - \zeta^2}}{\zeta \omega_n} = \tan^{-1} \frac{\sqrt{1 - \zeta^2}}{\zeta} \\
+\end{align}
+\]</span></p>
+<!-- Don't think we need this labeled equation...? -->
 <p><img src="media/08/image43.png" /></p>
 <p><img src="media/08/image44.png" /></p>
 <p><img src="media/08/image45.png" /></p>
-<p><img src="media/08/image46.png" /></p>
+<p><span class="math display">\[\text{Roots } s_{1,2} = -\frac{D}{2M} \pm j \sqrt{\frac{K}{M} - \left( \frac{D}{2M} \right)^2} = -\zeta \omega_n \pm j\omega_n\sqrt{1 - \zeta^2} \]</span></p>
 <p>Possible Solutions:</p>
 <p> <img src="media/08/image47.png" /></p>
 <p>• The various combination of <em>K</em>, <em>M</em>, and <em>D</em> and their effects on system response can be related to damping ratio <em>ζ</em> as follows:</p>

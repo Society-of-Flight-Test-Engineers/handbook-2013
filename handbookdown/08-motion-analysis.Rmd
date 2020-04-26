@@ -280,7 +280,7 @@ Mechanical systems have elements of spring, mass, and usually damping. Forcing f
 |\(K\) | spring stiffness ( \(F/x\) ) |
 |\(x\) | displacement from equilibrium |
 |\(M\) | mass|
-|\(F_t\)| forcing function|
+|\(F\left(t\right)\)| forcing function|
 |\(D\)| damping|
 
 \[\sum{}{} F_{\mathrm{vert}} : M\ddot{x} + D\dot{x} + Kx = F(t) \]
@@ -312,83 +312,75 @@ Solve for the roots using the quadratic equation
 
 ### Second Order Motion Descriptive Parameters
 
- 
+Solution (\(x\)) calculated as
 
-Solution (*x*) calculated as
-
- 
-
- ![][08034]
-
- 
-
- 
+\[ x = c_1 e^{s_1 t} + c_2 e^{s_2 t} \text{ where } s_1,s_2 = -\frac{D}{2M} \pm j \sqrt{\frac{K}{M} - \left( \frac{D}{2M} \right)^2} \]
 
 Apply Euler's identity for complex conjugate roots
 
- 
-
- ![][08035]
+\[ x = A e^{-\frac{D}{2M}} \sin \left( \sqrt{\frac{K}{M} - \left( \frac{D}{2M} \right)^2} t + \phi \right) \]
 
  
 
-• φ defines the **phase shift**.
+* \(\phi\) defines the **phase shift**.
+* \(A\) defines the **initial amplitude**.
+* The real part of the root, \(\frac{D}{2M}\), defines the **envelope** of the motion.
+* The imaginary part of the root identifies the **damped frequency** of the oscillations, \(\omega_d\) [rad/sec].
 
-•  *A* defines the **initial amplitude**.
+\[ \omega_d = \sqrt{\frac{K}{M} - \left( \frac{D}{2M} \right)^2} \]
 
-•  The real part of the root \[*D*/2*M*\] defines the **envelope** of the motion.
+* If damping is reduced to \(D = 0\) then only \(\sqrt{\frac{K}{M}}\) remains. This is the undamped or **"natural" frequency** ( \(\omega_n\) ).
 
-•  The imaginary part of the root identifies the **damped frequency**
+\[ \omega_n \equiv  \sqrt{\frac{K}{M}}\]
 
-of the oscillations, ω*~d~* (rad/sec).
+* If \( \left( \frac{D}{2M} \right)^2 = \frac{K}{M}  \) then \(D\) is considered to be critical [just enough to prevent oscillations]
 
- 
+\[ D_{\mathrm{crit}} = \sqrt{\frac{K}{M}} 2 M = 2 \sqrt{KM} \]
 
-![][08036]
+* For oscillatory motion, actual system damping is typically expressed as a fraction of critical damping. Define **damping ratio** as
 
- 
+\[ \zeta \equiv \frac{D}{D_{\mathrm{crit}}} = \frac{D}{2 \sqrt{KM}} \]
 
- ![][08037]
+Combining
 
-• If damping is reduced to *D* = 0 then only \[*K/M*\]^1/2^ remains.
+\[ \omega_d = \sqrt{\frac{K}{M} - \left( \frac{D}{2M} \right)^2} \]
 
-This is the undamped or **"natural" frequency** (ω~η~).
+with
 
- 
+\[ \omega_n \equiv  \sqrt{\frac{K}{M}}\]
 
- ![][08038]
+and
 
- 
+\[ \zeta = \frac{D}{2 \sqrt{KM}} \]
 
-•  If
+gives
 
-![][08039]
+\[ \omega_d = \omega_n \sqrt{1 - \zeta^2} \]
 
-then *D* is conisidered to be critical \[just enough to prevent oscillations\]
+and
 
- 
+\[ \frac{D}{2M} = \zeta \omega_n \]
 
- ![][08040]
+The values can be substituted to gives
 
- 
+\[
+\begin{align}
+x &= A e^{-\frac{D}{2M}} \sin \left( \sqrt{\frac{K}{M} - \left( \frac{D}{2M} \right)^2} t + \phi \right) \\
+&= A e^{-\zeta \omega_n t} \sin \left( \omega_d + \phi \right) \\
+&= A e^{-\zeta \omega_n t} \sin \left( \omega_n \sqrt{1 - \zeta^2} + \phi \right) \\
+\text{where}\;\;\; \phi &= \tan^{-1} \frac{\omega_d}{\zeta \omega_n} = \tan^{-1} \frac{\omega_n \sqrt{1 - \zeta^2}}{\zeta \omega_n} = \tan^{-1} \frac{\sqrt{1 - \zeta^2}}{\zeta} \\
+\end{align}
+\]
 
- 
-
-• For oscillatory motion, actual system damping is typically expressed as a fraction critical damping. Define **damping ratio** as
-
- 
-
- ![][08041]
-
-![][08042]
-
+<!-- Don't think we need this labeled equation...? -->
 ![][08043]
 
 ![][08044]
 
+
 ![][08045]
 
-![][08046]
+\[\text{Roots } s_{1,2} = -\frac{D}{2M} \pm j \sqrt{\frac{K}{M} - \left( \frac{D}{2M} \right)^2} = -\zeta \omega_n \pm j\omega_n\sqrt{1 - \zeta^2} \]
 
 Possible Solutions:
 
