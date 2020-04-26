@@ -640,48 +640,46 @@ x_2 &amp;= 2c \\
 <h3><span class="header-section-number">8.3.1</span> Elements of Second Order Motion</h3>
 <p>Mechanical systems have elements of spring, mass, and usually damping. Forcing functions can be included (see illustration).</p>
 <p><img src="media/08/image28.png" /></p>
-<p><em>K</em> = spring stiffness (<em>F</em>/<em>x</em>)</p>
-<p><em>x</em> = displacement from equilibrium</p>
-<p><em>M</em> = mass</p>
-<p><em>F</em><sub>(<em>t</em>)</sub> = forcing function</p>
-<p><em>D</em> = damping</p>
-<p> </p>
-<div id="section" class="section level4">
-<h4><span class="header-section-number">8.3.1.1</span> </h4>
-</div>
-<div id="section-1" class="section level4">
-<h4><span class="header-section-number">8.3.1.2</span> </h4>
-</div>
-<div id="section-2" class="section level4">
-<h4><span class="header-section-number">8.3.1.3</span> </h4>
-</div>
-<div id="natural-character-is-observed-when-system-is-allowed-to-move-with-no-external-input-ft-0" class="section level4">
-<h4><span class="header-section-number">8.3.1.4</span> Natural character is observed when system is allowed to move with no external input <span class="math display">\[*F*(*t*) = 0\]</span></h4>
-</div>
-<div id="section-3" class="section level4">
-<h4><span class="header-section-number">8.3.1.5</span> </h4>
-</div>
-<div id="section-4" class="section level4">
-<h4><span class="header-section-number">8.3.1.6</span> <img src="media/08/image29.png" /></h4>
-</div>
-<div id="section-5" class="section level4">
-<h4><span class="header-section-number">8.3.1.7</span> </h4>
-</div>
-<div id="apply-operator-technique" class="section level4">
-<h4><span class="header-section-number">8.3.1.8</span> Apply operator technique:</h4>
-</div>
-<div id="section-6" class="section level4">
-<h4><span class="header-section-number">8.3.1.9</span> </h4>
-</div>
-<div id="section-7" class="section level4">
-<h4><span class="header-section-number">8.3.1.10</span> <img src="media/08/image30.png" /></h4>
-<p>Divide out <em><sup>st</sup></em>, since it never equals zero, the characteristic equation remains:</p>
-<p><img src="media/08/image31.png" /></p>
-<p>The values of <em>s</em> that satisfy this equation are called the roots</p>
-<p><img src="media/08/image32.png" /></p>
+<table>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(K\)</span></td>
+<td>spring stiffness ( <span class="math inline">\(F/x\)</span> )</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(x\)</span></td>
+<td>displacement from equilibrium</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(M\)</span></td>
+<td>mass</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(F_t\)</span></td>
+<td>forcing function</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(D\)</span></td>
+<td>damping</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[\sum{}{} F_{\mathrm{vert}} : M\ddot{x} + D\dot{x} + Kx = F(t) \]</span></p>
+<p>Natural character is observed when system is allowed to move with no external input [<span class="math inline">\(F(t) = 0\)</span>]</p>
+<p><span class="math display">\[\sum{}{} F_{\mathrm{vert}} : M\ddot{x} + D\dot{x} + Kx = 0 \]</span></p>
+<p>Apply operator technique:</p>
+<p>Let</p>
+<p><span class="math display">\[
+x = e^{st} \text{, } \dot{x} = s e^{st} \text{, } \ddot{x} = s^2 e^{st} \\
+\Rightarrow e^{st} \left( M s^2 + D s + K \right) = 0 \\
+\]</span></p>
+<p>Divide out <span class="math inline">\(e^{st}\)</span>, since it never equals zero, the characteristic equation remains:</p>
+<p><span class="math display">\[
+M s^2 + D s + K = 0 \text{ or } s^2 + \frac{D}{M} s + \frac{K}{M} = 0\\
+\]</span></p>
+<p>The values of <span class="math inline">\(s\)</span> that satisfy this equation are called the roots</p>
+<p><span class="math display">\[ x = c_1 e^{s_1 t} + c_2 e^{s_2 t} \]</span></p>
 <p>Solve for the roots using the quadratic equation</p>
-<p><img src="media/08/image33.png" /></p>
-</div>
 </div>
 <div id="second-order-motion-descriptive-parameters" class="section level3">
 <h3><span class="header-section-number">8.3.2</span> Second Order Motion Descriptive Parameters</h3>

@@ -275,49 +275,40 @@ Mechanical systems have elements of spring, mass, and usually damping. Forcing f
 
 ![][08028]
 
-\(K\)= spring stiffness (*F*/*x*)
+| | |
+|-|----------------------------------------|
+|\(K\) | spring stiffness ( \(F/x\) ) |
+|\(x\) | displacement from equilibrium |
+|\(M\) | mass|
+|\(F_t\)| forcing function|
+|\(D\)| damping|
 
-*x* = displacement from equilibrium
+\[\sum{}{} F_{\mathrm{vert}} : M\ddot{x} + D\dot{x} + Kx = F(t) \]
 
-*M* = mass
+Natural character is observed when system is allowed to move with no external input [\(F(t) = 0 \)] 
 
-*F*~(*t*)~ = forcing function
+\[\sum{}{} F_{\mathrm{vert}} : M\ddot{x} + D\dot{x} + Kx = 0 \]
 
-*D* = damping
+Apply operator technique:
 
- 
+Let 
 
-#### 
+\[
+x = e^{st} \text{, } \dot{x} = s e^{st} \text{, } \ddot{x} = s^2 e^{st} \\
+\Rightarrow e^{st} \left( M s^2 + D s + K \right) = 0 \\
+\]
 
-#### 
+Divide out \(e^{st}\), since it never equals zero, the characteristic equation remains:
 
-#### 
+\[
+M s^2 + D s + K = 0 \text{ or } s^2 + \frac{D}{M} s + \frac{K}{M} = 0\\
+\]
 
-#### Natural character is observed when system is allowed to move with no external input \[*F*(*t*) = 0\] 
+The values of \(s\) that satisfy this equation are called the roots
 
-#### 
-
-#### ![][08029]
-
-#### 
-
-#### Apply operator technique:
-
-#### 
-
-#### ![][08030]
-
-Divide out *\mathrm{e}^st^*, since it never equals zero, the characteristic equation remains:
-
-![][08031]
-
-The values of *s* that satisfy this equation are called the roots
-
-![][08032]
+\[ x = c_1 e^{s_1 t} + c_2 e^{s_2 t} \]
 
 Solve for the roots using the quadratic equation
-
-![][08033]
 
 ### Second Order Motion Descriptive Parameters
 
