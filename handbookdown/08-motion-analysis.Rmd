@@ -377,101 +377,50 @@ x &= A e^{-\frac{D}{2M}} \sin \left( \sqrt{\frac{K}{M} - \left( \frac{D}{2M} \ri
 
 ![][08044]
 
-
 ![][08045]
 
 \[\text{Roots } s_{1,2} = -\frac{D}{2M} \pm j \sqrt{\frac{K}{M} - \left( \frac{D}{2M} \right)^2} = -\zeta \omega_n \pm j\omega_n\sqrt{1 - \zeta^2} \]
 
 Possible Solutions:
 
- ![][08047]
+<!-- Eventually convert to an actual table -->
+![][08047]
 
-• The various combination of *K*, *M*, and *D* and their effects on system response can be related to damping ratio *ζ* as follows:
+• The various combination of \(K\), \(M\), and \(D\) and their effects on system response can be related to damping ratio \(\zeta\) as follows:
 
- 
-
-   ζ \> 1 Real & unequal roots exponential, convergent
-
- 
-
-  ζ =  ± 1 Real & equal roots exponential, conv or div
-
- 0 \< ζ \< 1  Complex pair roots sinusoidal, convergent
-
- 
-
-     ζ = 0 Imaginary pair roots sinusoidal, neutral
-
-€
-
-−1 \< ζ \< 0 Complex pair roots sinusoidal, divergent
-
- 
-
- ζ \< − 1 Real & unequal roots exponential, divergent
-
- 
-
-![][08048]![][08049]
+| | | |
+|-|---|---|
+| \(+1 \lt \zeta\)        | Real & unequal roots: exponential, convergent | \[ x\left(t\right) = c_1 e^{-\omega_n \left( \zeta + \sqrt{\zeta^2 - 1} \right)t} + c_2 e^{-\omega_n \left( \zeta - \sqrt{\zeta^2 - 1} \right)t} \] |
+| \(\zeta = +1\)          | Real & equal roots: exponential, convergent   | \[ x\left(t\right) = c_1 e^{-\omega_n \zeta t} + c_2 t e^{-\omega_n \zeta t} \] |
+| \(0 \lt \zeta \lt +1 \) | Complex pair roots: sinusoidal, convergent    | \[ x\left(t\right) =  A e^{-\zeta \omega_n t} \sin \left( \omega_d + \phi \right) \] |
+| \(\zeta = 0 \)          | Imaginary pair roots: sinusoidal, neutral     | \[\begin{align} x\left(t\right) &=  A \sin \left( \omega_n t + \phi \right) \\ &= A \cos \left( \omega_n t \right) \end{align} \] |
+| \(-1 \lt \zeta \lt 0 \) | Complex pair roots: sinusoidal, divergent     | \[ x\left(t\right) =  A e^{-\zeta \omega_n t} \sin \left( \omega_d + \phi \right) \] |
+| \(\zeta = -1 \)         | Real & equal roots: exponential, divergent    | \[ x\left(t\right) = c_1 e^{-\omega_n \zeta t} + c_2 t e^{-\omega_n \zeta t} \] |
+| \(\zeta \lt -1 \)       | Real & unequal roots: exponential, divergent  | \[ x\left(t\right) = c_1 e^{-\omega_n \left( \zeta + \sqrt{\zeta^2 - 1} \right)t} + c_2 e^{-\omega_n \left( \zeta - \sqrt{\zeta^2 - 1} \right)t} \] |
 
 **Damping ratio effect on second order system**
 
-  
-
- 
-
 Response of various second order systems to an impulse input.
 
- 
+Second-order systems are oscillatory if \( -1 \lt \zeta \lt +1 \).
 
- 
+Motion typically described by \(\omega_n\) and \(\zeta\)
 
-Second-order systems are oscillatory if
+\(T\), \(\omega_d\), \(\omega_n\), and \(\zeta\) are linked such that knowledge of any two will yield the other two.
 
--1 \> *ζ* \> 1.
-
- 
-
- 
-
-Motion typically
-
-described by
-
-*ω~n~* and *ζ*
-
- 
-
- 
-
-*T*, *ω~d~*, *ω~n~* and *ζ *are linked such that knowledge of any two will yield
-
-the other two.
-
- 
-
- ![][08050]
-
- 
+![][08050]
 
 ![][08051]
 
 ![][08052]
 
-2nd order system response to **unit step input** for **underdamped systems**
-
-** **
-
-(0 \> *ζ* \> 1)
-
- 
+2nd order system response to **unit step input** for **underdamped systems** ( \(0 \lt \zeta \lt +1 \) )
 
 ![][08053]
 
-**Decay rates (for 0 \< ζ \<1) and Useful Insights**
+**Decay rates (for \(0 \lt \zeta \lt +1\) ) and Useful Insights**
 
- 
-
+<!-- STOPPED HERE -->
 ![][08054]
 
 ### Determining Descriptive Parameters

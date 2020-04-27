@@ -732,50 +732,65 @@ x &amp;= A e^{-\frac{D}{2M}} \sin \left( \sqrt{\frac{K}{M} - \left( \frac{D}{2M}
 <p><img src="media/08/image45.png" /></p>
 <p><span class="math display">\[\text{Roots } s_{1,2} = -\frac{D}{2M} \pm j \sqrt{\frac{K}{M} - \left( \frac{D}{2M} \right)^2} = -\zeta \omega_n \pm j\omega_n\sqrt{1 - \zeta^2} \]</span></p>
 <p>Possible Solutions:</p>
-<p> <img src="media/08/image47.png" /></p>
-<p>• The various combination of <em>K</em>, <em>M</em>, and <em>D</em> and their effects on system response can be related to damping ratio <em>ζ</em> as follows:</p>
-<p> </p>
-<p>   ζ &gt; 1 Real &amp; unequal roots exponential, convergent</p>
-<p> </p>
-<p>  ζ =  ± 1 Real &amp; equal roots exponential, conv or div</p>
-<p> 0 &lt; ζ &lt; 1  Complex pair roots sinusoidal, convergent</p>
-<p> </p>
-<p>     ζ = 0 Imaginary pair roots sinusoidal, neutral</p>
-<p>€</p>
-<p>−1 &lt; ζ &lt; 0 Complex pair roots sinusoidal, divergent</p>
-<p> </p>
-<p> ζ &lt; − 1 Real &amp; unequal roots exponential, divergent</p>
-<p> </p>
-<p><img src="media/08/image48.svg" /><img src="media/08/image49.png" /></p>
+<!-- Eventually convert to an actual table -->
+<p><img src="media/08/image47.png" /></p>
+<p>• The various combination of <span class="math inline">\(K\)</span>, <span class="math inline">\(M\)</span>, and <span class="math inline">\(D\)</span> and their effects on system response can be related to damping ratio <span class="math inline">\(\zeta\)</span> as follows:</p>
+<table>
+<colgroup>
+<col width="14%" />
+<col width="42%" />
+<col width="42%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(+1 \lt \zeta\)</span></td>
+<td>Real &amp; unequal roots: exponential, convergent</td>
+<td><span class="math display">\[ x\left(t\right) = c_1 e^{-\omega_n \left( \zeta + \sqrt{\zeta^2 - 1} \right)t} + c_2 e^{-\omega_n \left( \zeta - \sqrt{\zeta^2 - 1} \right)t} \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\zeta = +1\)</span></td>
+<td>Real &amp; equal roots: exponential, convergent</td>
+<td><span class="math display">\[ x\left(t\right) = c_1 e^{-\omega_n \zeta t} + c_2 t e^{-\omega_n \zeta t} \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(0 \lt \zeta \lt +1\)</span></td>
+<td>Complex pair roots: sinusoidal, convergent</td>
+<td><span class="math display">\[ x\left(t\right) =  A e^{-\zeta \omega_n t} \sin \left( \omega_d + \phi \right) \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\zeta = 0\)</span></td>
+<td>Imaginary pair roots: sinusoidal, neutral</td>
+<td><span class="math display">\[\begin{align} x\left(t\right) &amp;=  A \sin \left( \omega_n t + \phi \right) \\ &amp;= A \cos \left( \omega_n t \right) \end{align} \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(-1 \lt \zeta \lt 0\)</span></td>
+<td>Complex pair roots: sinusoidal, divergent</td>
+<td><span class="math display">\[ x\left(t\right) =  A e^{-\zeta \omega_n t} \sin \left( \omega_d + \phi \right) \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\zeta = -1\)</span></td>
+<td>Real &amp; equal roots: exponential, divergent</td>
+<td><span class="math display">\[ x\left(t\right) = c_1 e^{-\omega_n \zeta t} + c_2 t e^{-\omega_n \zeta t} \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\zeta \lt -1\)</span></td>
+<td>Real &amp; unequal roots: exponential, divergent</td>
+<td><span class="math display">\[ x\left(t\right) = c_1 e^{-\omega_n \left( \zeta + \sqrt{\zeta^2 - 1} \right)t} + c_2 e^{-\omega_n \left( \zeta - \sqrt{\zeta^2 - 1} \right)t} \]</span></td>
+</tr>
+</tbody>
+</table>
 <p><strong>Damping ratio effect on second order system</strong></p>
-<p>  </p>
-<p> </p>
 <p>Response of various second order systems to an impulse input.</p>
-<p> </p>
-<p> </p>
-<p>Second-order systems are oscillatory if</p>
-<p>-1 &gt; <em>ζ</em> &gt; 1.</p>
-<p> </p>
-<p> </p>
-<p>Motion typically</p>
-<p>described by</p>
-<p><em>ω<sub>n</sub></em> and <em>ζ</em></p>
-<p> </p>
-<p> </p>
-<p><em>T</em>, <em>ω<sub>d</sub></em>, <em>ω<sub>n</sub></em> and <em>ζ </em>are linked such that knowledge of any two will yield</p>
-<p>the other two.</p>
-<p> </p>
-<p> <img src="media/08/image50.png" /></p>
-<p> </p>
+<p>Second-order systems are oscillatory if <span class="math inline">\(-1 \lt \zeta \lt +1\)</span>.</p>
+<p>Motion typically described by <span class="math inline">\(\omega_n\)</span> and <span class="math inline">\(\zeta\)</span></p>
+<p><span class="math inline">\(T\)</span>, <span class="math inline">\(\omega_d\)</span>, <span class="math inline">\(\omega_n\)</span>, and <span class="math inline">\(\zeta\)</span> are linked such that knowledge of any two will yield the other two.</p>
+<p><img src="media/08/image50.png" /></p>
 <p><img src="media/08/image51.png" /></p>
 <p><img src="media/08/image52.png" /></p>
-<p>2nd order system response to <strong>unit step input</strong> for <strong>underdamped systems</strong></p>
-<p><strong> </strong></p>
-<p>(0 &gt; <em>ζ</em> &gt; 1)</p>
-<p> </p>
+<p>2nd order system response to <strong>unit step input</strong> for <strong>underdamped systems</strong> ( <span class="math inline">\(0 \lt \zeta \lt +1\)</span> )</p>
 <p><img src="media/08/image53.png" /></p>
-<p><strong>Decay rates (for 0 &lt; ζ &lt;1) and Useful Insights</strong></p>
-<p> </p>
+<p><strong>Decay rates (for <span class="math inline">\(0 \lt \zeta \lt +1\)</span> ) and Useful Insights</strong></p>
+<!-- STOPPED HERE -->
 <p><img src="media/08/image54.png" /></p>
 </div>
 <div id="determining-descriptive-parameters" class="section level3">
