@@ -453,91 +453,25 @@ This can be applied in graphical form (transient peak ratio method)
 
 ### Determining Descriptive Parameters
 
-** **
-
 Time domain metrics
 
- 
+![][08055]
 
- ![][08055]
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-Peak Value, *MP*: largest value
-
- 
-
-Final Value, *FV*: steady state value
-
- 
-
-Delay Time, *T_d\): 50% of final value
-
- 
-
-Rise Time, *T_r\): 10% - 90% of FV
-
- 
-
-Peak Time, *T_p\): time to MP
-
- 
-
-Settling Time, *T_s\): time to reach some defined % of final value
-
- 
-
-\% Overshoot, *PO*:
-
- 
-
-![][08056]
-
-*target value = unity*
-
- 
+||||
+|-|-|-|
+|Peak Value   | \(\mathrm{MP}\)  | largest value |
+|Final Value  | \(\mathrm{FV}\)  | steady state value|
+|Delay Time   | \(T_d\) | \(50%\) of final value|
+|Rise Time    | \(T_r\) | \(10% - 90%\) of FV|
+|Peak Time    | \(T_p\) | time to MP|
+|\% Overshoot | \(\mathrm{PO}\)  | \( \frac{\mathrm{MP} - 1}{1} \times 100% \text{target value} = \text{unity} \) *target value = unity*|
 
 **Method \#1** Basic Analysis
 
- 
-
- 
-
+<!-- HERE -->
 Note
 
- ![][08057]
+![][08057]
 
 ![][08058]
 
