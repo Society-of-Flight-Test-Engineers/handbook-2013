@@ -471,29 +471,39 @@ Time domain metrics
 <!-- HERE -->
 Note
 
-![][08057]
+\[ x\left(t\right) = A e^{-\zeta \omega_n t} \sin \left( \omega_d t + 0 \right) \]
+
+\(\zeta \omega_n \) and \(\omega_d\) describe a time history
 
 ![][08058]
 
-![][08059]
+\[f_d = \frac{1}{T}\]
 
-![][08060]
+\[\omega_d = \frac{2\pi}{T} \]
 
-![][08061]
+\[\zeta \omega_n = \frac{\ln \frac{x_1}{x_2}}{\left(t_2 - t_1 \right)} \]
 
 Easily measured values: can use any points on envelope
 
- 
+Define
 
-![][08062]
+\[\varepsilon \equiv \frac{\zeta \omega_n}{\omega_d} = \frac{\frac{\ln \frac{x_1}{x_2}}{\left(t_2 - t_1 \right)} }{\frac{2\pi}{T}} = \frac{T\ln \frac{x_1}{x_2}}{2\pi \left(t_2 - t_1 \right)} \]
 
-![][08063]
+where
 
-![][08064]
+\[ \left(t_2 - t_1 \right) = \frac{T}{2} \Rightarrow \frac{\zeta \omega_n}{\omega_d} = \frac{\ln \frac{x_1}{x_2}}{\pi} = \varepsilon = \ln \left[ x_1 / x_2 \right] / \pi \]
 
-![][08065]
+recall
 
-![][08066]
+\[\omega_d = \omega_n \sqrt{1 - \zeta^2} \]
+
+\[\varepsilon = \frac{\zeta \omega_n}{\omega_n \sqrt{1 - \zeta^2}} =  \frac{\zeta}{ \sqrt{1 - \zeta^2}} \Rightarrow \varepsilon^2 = \frac{\zeta^2}{ 1 - \zeta^2} \Rightarrow \varepsilon^2 \left( 1 - \zeta^2 \right) = \zeta^2 \Rightarrow \varepsilon^2 = \zeta^2 \left[ 1 + \varepsilon^2 \right] \]
+
+\[ \zeta = \sqrt{\frac{\varepsilon^2}{1 + \varepsilon^2}} \]
+
+\[\omega_n = \frac{\zeta \omega_n}{\zeta} = \frac{\omega_d}{\sqrt{1 - \zeta^2}} \]
+
+\[ \left| \frac{x_1}{x_2} \right| = \text{Half-Cycle Amplitude Ratio } \left( \mathrm{HCAR} \right) = e^{\zeta \omega_n \left(t_2 - t_1\right)}\]
 
 **Method \#2** Transient Peak Ratio Analysis
 

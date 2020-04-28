@@ -846,60 +846,67 @@ x &amp;= A e^{-\frac{D}{2M}} \sin \left( \sqrt{\frac{K}{M} - \left( \frac{D}{2M}
 </div>
 <div id="determining-descriptive-parameters" class="section level3">
 <h3><span class="header-section-number">8.3.3</span> Determining Descriptive Parameters</h3>
-<p><strong> </strong></p>
 <p>Time domain metrics</p>
-<p> </p>
-<p> <img src="media/08/image55.png" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>Peak Value, <em>MP</em>: largest value</p>
-<p> </p>
-<p>Final Value, <em>FV</em>: steady state value</p>
-<p> </p>
-<p>Delay Time, *T_d): 50% of final value</p>
-<p> </p>
-<p>Rise Time, *T_r): 10% - 90% of FV</p>
-<p> </p>
-<p>Peak Time, *T_p): time to MP</p>
-<p> </p>
-<p>Settling Time, *T_s): time to reach some defined % of final value</p>
-<p> </p>
-<p>% Overshoot, <em>PO</em>:</p>
-<p> </p>
-<p><img src="media/08/image56.png" /></p>
-<p><em>target value = unity</em></p>
-<p> </p>
+<p><img src="media/08/image55.png" /></p>
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Peak Value</td>
+<td><span class="math inline">\(\mathrm{MP}\)</span></td>
+<td>largest value</td>
+</tr>
+<tr class="even">
+<td>Final Value</td>
+<td><span class="math inline">\(\mathrm{FV}\)</span></td>
+<td>steady state value</td>
+</tr>
+<tr class="odd">
+<td>Delay Time</td>
+<td><span class="math inline">\(T_d\)</span></td>
+<td><span class="math inline">\(50%\)</span> of final value</td>
+</tr>
+<tr class="even">
+<td>Rise Time</td>
+<td><span class="math inline">\(T_r\)</span></td>
+<td><span class="math inline">\(10% - 90%\)</span> of FV</td>
+</tr>
+<tr class="odd">
+<td>Peak Time</td>
+<td><span class="math inline">\(T_p\)</span></td>
+<td>time to MP</td>
+</tr>
+<tr class="even">
+<td>% Overshoot</td>
+<td><span class="math inline">\(\mathrm{PO}\)</span></td>
+<td><span class="math inline">\(\frac{\mathrm{MP} - 1}{1} \times 100% \text{target value} = \text{unity}\)</span> <em>target value = unity</em></td>
+</tr>
+</tbody>
+</table>
 <p><strong>Method #1</strong> Basic Analysis</p>
-<p> </p>
-<p> </p>
+<!-- HERE -->
 <p>Note</p>
-<p> <img src="media/08/image57.png" /></p>
+<p><span class="math display">\[ x\left(t\right) = A e^{-\zeta \omega_n t} \sin \left( \omega_d t + 0 \right) \]</span></p>
+<p><span class="math inline">\(\zeta \omega_n\)</span> and <span class="math inline">\(\omega_d\)</span> describe a time history</p>
 <p><img src="media/08/image58.png" /></p>
-<p><img src="media/08/image59.png" /></p>
-<p><img src="media/08/image60.png" /></p>
-<p><img src="media/08/image61.png" /></p>
+<p><span class="math display">\[f_d = \frac{1}{T}\]</span></p>
+<p><span class="math display">\[\omega_d = \frac{2\pi}{T} \]</span></p>
+<p><span class="math display">\[\zeta \omega_n = \frac{\ln \frac{x_1}{x_2}}{\left(t_2 - t_1 \right)} \]</span></p>
 <p>Easily measured values: can use any points on envelope</p>
-<p> </p>
-<p><img src="media/08/image62.png" /></p>
-<p><img src="media/08/image63.png" /></p>
-<p><img src="media/08/image64.png" /></p>
-<p><img src="media/08/image65.png" /></p>
-<p><img src="media/08/image66.png" /></p>
+<p>Define</p>
+<p><span class="math display">\[\varepsilon \equiv \frac{\zeta \omega_n}{\omega_d} = \frac{\frac{\ln \frac{x_1}{x_2}}{\left(t_2 - t_1 \right)} }{\frac{2\pi}{T}} = \frac{T\ln \frac{x_1}{x_2}}{2\pi \left(t_2 - t_1 \right)} \]</span></p>
+<p>where</p>
+<p><span class="math display">\[ \left(t_2 - t_1 \right) = \frac{T}{2} \Rightarrow \frac{\zeta \omega_n}{\omega_d} = \frac{\ln \frac{x_1}{x_2}}{\pi} = \varepsilon = \ln \left[ x_1 / x_2 \right] / \pi \]</span></p>
+<p>recall</p>
+<p><span class="math display">\[\omega_d = \omega_n \sqrt{1 - \zeta^2} \]</span></p>
+<p><span class="math display">\[\varepsilon = \frac{\zeta \omega_n}{\omega_n \sqrt{1 - \zeta^2}} =  \frac{\zeta}{ \sqrt{1 - \zeta^2}} \Rightarrow \varepsilon^2 = \frac{\zeta^2}{ 1 - \zeta^2} \Rightarrow \varepsilon^2 \left( 1 - \zeta^2 \right) = \zeta^2 \Rightarrow \varepsilon^2 = \zeta^2 \left[ 1 + \varepsilon^2 \right] \]</span></p>
+<p><span class="math display">\[ \zeta = \sqrt{\frac{\varepsilon^2}{1 + \varepsilon^2}} \]</span></p>
+<p><span class="math display">\[\omega_n = \frac{\zeta \omega_n}{\zeta} = \frac{\omega_d}{\sqrt{1 - \zeta^2}} \]</span></p>
+<p><span class="math display">\[ \left| \frac{x_1}{x_2} \right| = \text{Half-Cycle Amplitude Ratio } \left( \mathrm{HCAR} \right) = e^{\zeta \omega_n \left(t_2 - t_1\right)}\]</span></p>
 <p><strong>Method #2</strong> Transient Peak Ratio Analysis</p>
 <p> </p>
 <p>1) Measure either <em>D</em> or <em>x</em> distances as shown.</p>
