@@ -790,8 +790,59 @@ x &amp;= A e^{-\frac{D}{2M}} \sin \left( \sqrt{\frac{K}{M} - \left( \frac{D}{2M}
 <p>2nd order system response to <strong>unit step input</strong> for <strong>underdamped systems</strong> ( <span class="math inline">\(0 \lt \zeta \lt +1\)</span> )</p>
 <p><img src="media/08/image53.png" /></p>
 <p><strong>Decay rates (for <span class="math inline">\(0 \lt \zeta \lt +1\)</span> ) and Useful Insights</strong></p>
-<!-- STOPPED HERE -->
-<p><img src="media/08/image54.png" /></p>
+<table>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Time to decay</strong></td>
+<td align="left"><span class="math display">\[\zeta \omega_n = \frac{\ln \frac{x_1}{x_2} }{t_2 - t_1} \Rightarrow \Delta t = \frac{\ln \frac{x_1}{x_2}}{\zeta \omega_n} \]</span></td>
+</tr>
+<tr class="even">
+<td>Time to <span class="math inline">\(\frac{1}{2}\)</span> amplitude</td>
+<td align="left"><span class="math display">\[ \equiv \Delta t_{\frac{1}{2}} = \frac{\ln \frac{2}{1}}{\zeta \omega_n} = \frac{0.6931}{\zeta \omega_n}  \]</span></td>
+</tr>
+<tr class="odd">
+<td>Time to <span class="math inline">\(\frac{1}{10}\)</span> amplitude</td>
+<td align="left"><span class="math display">\[ \equiv \Delta t_{\frac{1}{10}} = \frac{\ln \frac{10}{1}}{\zeta \omega_n} = \frac{2.3026}{\zeta \omega_n}  \]</span></td>
+</tr>
+<tr class="even">
+<td>Time to <span class="math inline">\(\frac{1}{x}\)</span> amplitude</td>
+<td align="left"><span class="math display">\[ \equiv \Delta t_{\frac{1}{x}} = \frac{\ln x }{\zeta \omega_n}  \]</span></td>
+</tr>
+<tr class="odd">
+<td><strong># cycles to decay</strong></td>
+<td align="left"><span class="math display">\[\text{# cycles} = \frac{\Delta t }{T} = \frac{\Delta t \omega_d}{2 \pi} \]</span></td>
+</tr>
+<tr class="even">
+<td># cycles to <span class="math inline">\(\frac{1}{2}\)</span> amplitude</td>
+<td align="left"><span class="math display">\[\equiv C_{\frac{1}{2}} = \frac{0.6931}{\zeta \omega_n}\frac{\omega_d}{2 \pi} = \frac{0.6931}{2 \pi  }\frac{\omega_d}{\zeta \omega_n} = \frac{0.1103}{\varepsilon} \]</span></td>
+</tr>
+<tr class="odd">
+<td># cycles to <span class="math inline">\(\frac{1}{10}\)</span> amplitude</td>
+<td align="left"><span class="math display">\[\equiv C_{\frac{1}{10}} = \frac{2.3026}{\zeta \omega_n}\frac{\omega_d}{2 \pi} = \frac{2.3026}{2 \pi  }\frac{\omega_d}{\zeta \omega_n} = \frac{0.3665}{\varepsilon} \]</span></td>
+</tr>
+<tr class="even">
+<td># cycles to <span class="math inline">\(\frac{1}{x}\)</span> amplitude</td>
+<td align="left"><span class="math display">\[\equiv C_{\frac{1}{x}} = \frac{\ln x }{2 \pi }\frac{\omega_d}{\zeta \omega_n} \]</span></td>
+</tr>
+</tbody>
+</table>
+<p>Same analysis applies for exponential growth</p>
+<p>For same <span class="math inline">\(\Delta t\)</span></p>
+<p><span class="math display">\[ \frac{x_1}{x_2} = \frac{x_2}{x_3} = \frac{x_3}{x_4} = \dots \]</span></p>
+<p>Therefore</p>
+<p><span class="math display">\[ \frac{x_1}{x_3} = \frac{x_1}{x_2} \frac{x_2}{x_3} = \left( \frac{x_1}{x_2} \right)^2 \Rightarrow \mathrm{HCAR} = \sqrt{\text{full cycle amplitude ratio}}\]</span></p>
+<p><span class="math display">\[
+\begin{align}
+\mathrm{HCAR} &amp;\equiv \frac{x_1}{x_2} =  e^{\zeta \omega_n \left( t_2 - t_1 \right)} =  e^{\zeta \omega_n \left( \Delta t \right)} =  e^{\zeta \omega_n \left( \frac{T}{2} \right)} =  e^{\zeta \omega_n \left( \frac{2\pi}{2\omega_d} \right)} \\
+&amp;=  e^{\zeta \omega_n \left( \frac{\pi}{\omega_n \sqrt{1 - \zeta^2}} \right)} =  e^{\zeta \omega_n \left( \frac{\pi \zeta}{ \sqrt{1 - \zeta^2}} \right)} \\
+&amp;\Rightarrow \ln \frac{x_1}{x_2} = \frac{\pi \zeta}{ \sqrt{1 - \zeta^2}} \Rightarrow \zeta = \sqrt{\frac{\left( \ln \frac{x_1}{x_2} \right)^2}{\pi^2 + \left( \ln \frac{x_1}{x_2} \right)^2}} \\
+\end{align}
+\]</span></p>
+<p>This can be applied in graphical form (transient peak ratio method)</p>
 </div>
 <div id="determining-descriptive-parameters" class="section level3">
 <h3><span class="header-section-number">8.3.3</span> Determining Descriptive Parameters</h3>

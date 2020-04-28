@@ -420,8 +420,36 @@ Motion typically described by \(\omega_n\) and \(\zeta\)
 
 **Decay rates (for \(0 \lt \zeta \lt +1\) ) and Useful Insights**
 
-<!-- STOPPED HERE -->
-![][08054]
+| | |
+|-|:--|
+|**Time to decay** | \[\zeta \omega_n = \frac{\ln \frac{x_1}{x_2} }{t_2 - t_1} \Rightarrow \Delta t = \frac{\ln \frac{x_1}{x_2}}{\zeta \omega_n} \] |
+|Time to \(\frac{1}{2}\) amplitude | \[ \equiv \Delta t_{\frac{1}{2}} = \frac{\ln \frac{2}{1}}{\zeta \omega_n} = \frac{0.6931}{\zeta \omega_n}  \] |
+|Time to \(\frac{1}{10}\) amplitude | \[ \equiv \Delta t_{\frac{1}{10}} = \frac{\ln \frac{10}{1}}{\zeta \omega_n} = \frac{2.3026}{\zeta \omega_n}  \] |
+|Time to \(\frac{1}{x}\) amplitude | \[ \equiv \Delta t_{\frac{1}{x}} = \frac{\ln x }{\zeta \omega_n}  \] |
+|**\# cycles to decay** | \[\text{# cycles} = \frac{\Delta t }{T} = \frac{\Delta t \omega_d}{2 \pi} \] |
+|\# cycles to \(\frac{1}{2}\) amplitude  | \[\equiv C_{\frac{1}{2}} = \frac{0.6931}{\zeta \omega_n}\frac{\omega_d}{2 \pi} = \frac{0.6931}{2 \pi  }\frac{\omega_d}{\zeta \omega_n} = \frac{0.1103}{\varepsilon} \] |
+|\# cycles to \(\frac{1}{10}\) amplitude  | \[\equiv C_{\frac{1}{10}} = \frac{2.3026}{\zeta \omega_n}\frac{\omega_d}{2 \pi} = \frac{2.3026}{2 \pi  }\frac{\omega_d}{\zeta \omega_n} = \frac{0.3665}{\varepsilon} \] |
+|\# cycles to \(\frac{1}{x}\) amplitude  | \[\equiv C_{\frac{1}{x}} = \frac{\ln x }{2 \pi }\frac{\omega_d}{\zeta \omega_n} \] |
+
+Same analysis applies for exponential growth
+
+For same \(\Delta t \)
+
+\[ \frac{x_1}{x_2} = \frac{x_2}{x_3} = \frac{x_3}{x_4} = \dots \]
+
+Therefore
+
+\[ \frac{x_1}{x_3} = \frac{x_1}{x_2} \frac{x_2}{x_3} = \left( \frac{x_1}{x_2} \right)^2 \Rightarrow \mathrm{HCAR} = \sqrt{\text{full cycle amplitude ratio}}\]
+
+\[
+\begin{align}
+\mathrm{HCAR} &\equiv \frac{x_1}{x_2} =  e^{\zeta \omega_n \left( t_2 - t_1 \right)} =  e^{\zeta \omega_n \left( \Delta t \right)} =  e^{\zeta \omega_n \left( \frac{T}{2} \right)} =  e^{\zeta \omega_n \left( \frac{2\pi}{2\omega_d} \right)} \\
+&=  e^{\zeta \omega_n \left( \frac{\pi}{\omega_n \sqrt{1 - \zeta^2}} \right)} =  e^{\zeta \omega_n \left( \frac{\pi \zeta}{ \sqrt{1 - \zeta^2}} \right)} \\
+&\Rightarrow \ln \frac{x_1}{x_2} = \frac{\pi \zeta}{ \sqrt{1 - \zeta^2}} \Rightarrow \zeta = \sqrt{\frac{\left( \ln \frac{x_1}{x_2} \right)^2}{\pi^2 + \left( \ln \frac{x_1}{x_2} \right)^2}} \\
+\end{align}
+\]
+
+This can be applied in graphical form (transient peak ratio method)
 
 ### Determining Descriptive Parameters
 
