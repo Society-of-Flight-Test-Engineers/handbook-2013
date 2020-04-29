@@ -468,7 +468,6 @@ Time domain metrics
 
 **Method \#1** Basic Analysis
 
-<!-- HERE -->
 Note
 
 \[ x\left(t\right) = A e^{-\zeta \omega_n t} \sin \left( \omega_d t + 0 \right) \]
@@ -507,79 +506,35 @@ recall
 
 **Method \#2** Transient Peak Ratio Analysis
 
- 
+1. Measure either *\(D\) or \(x\) distances as shown.
 
-1\) Measure either *D* or *x* distances as shown.
-
- 
-
- ![][08067]
-
- 
+![][08067]
 
 Example Calculation
 
- 
+![][08068]
 
- ![][08068]
+2. Note ratio of adjacent peak values (transient peak ratios).
 
- 
+|||
+|-:|:---|
+| First \(\mathrm{TPR}\) | \[\frac{D_2}{D_1} = \frac{117-86}{117-80}=\frac{31}{37}=0.8378\] |
+| Second \(\mathrm{TPR}\) | \[\frac{D_3}{D_2} = \frac{112-86}{117-86}=\frac{26}{31}=0.8387\] |
+| Third \(\mathrm{TPR}\) | \[\frac{D_4}{D_3} = \frac{112-90}{112-86}=\frac{22}{26}=0.8462\] |
 
- ![][08069]
+3. Average several TPRs.
 
- 
+Average \(\mathrm{TPR} = 0.8409\)
 
- Average TPR = 0.8409
+4. Use equation to find \(\zeta\):
 
- 
+\[ \zeta = \sqrt{\frac{\left( \ln \frac{x_1}{x_2} \right)^2}{\pi^2 + \left( \ln \frac{x_1}{x_2} \right)^2}} \] 
 
- 
+   a. Can use \(D_1/D_2\) or \(x_1/x_2\) ratios in above equation.
 
- 
+   b. In lieu of equation, use adjacent look-up curve to find \(\zeta\).
 
- 
-
-2\) Note ratio of adjacent peak values (transient peak ratios).
-
-3\) Average several TPRs.
-
-4\) Use equation to find *ζ*:
-
- 
-
- ![][08070]
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-4a) Can use
-
-*D_1~/D_2\) or *x_1~/x_2\)
-
-ratios in above equation.
-
- 
-
-4b) In lieu of equation, use
-
-adjacent look-up curve to find *ζ*.
-
- 
-
-4c) Time ratio method works better with heavy damping.
-
- 
-
- 
+   c. Time ratio method works better with heavy damping.
 
 ![][08071]
 

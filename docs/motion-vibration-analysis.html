@@ -888,7 +888,6 @@ x &amp;= A e^{-\frac{D}{2M}} \sin \left( \sqrt{\frac{K}{M} - \left( \frac{D}{2M}
 </tbody>
 </table>
 <p><strong>Method #1</strong> Basic Analysis</p>
-<!-- HERE -->
 <p>Note</p>
 <p><span class="math display">\[ x\left(t\right) = A e^{-\zeta \omega_n t} \sin \left( \omega_d t + 0 \right) \]</span></p>
 <p><span class="math inline">\(\zeta \omega_n\)</span> and <span class="math inline">\(\omega_d\)</span> describe a time history</p>
@@ -908,43 +907,48 @@ x &amp;= A e^{-\frac{D}{2M}} \sin \left( \sqrt{\frac{K}{M} - \left( \frac{D}{2M}
 <p><span class="math display">\[\omega_n = \frac{\zeta \omega_n}{\zeta} = \frac{\omega_d}{\sqrt{1 - \zeta^2}} \]</span></p>
 <p><span class="math display">\[ \left| \frac{x_1}{x_2} \right| = \text{Half-Cycle Amplitude Ratio } \left( \mathrm{HCAR} \right) = e^{\zeta \omega_n \left(t_2 - t_1\right)}\]</span></p>
 <p><strong>Method #2</strong> Transient Peak Ratio Analysis</p>
-<p> </p>
-<p>1) Measure either <em>D</em> or <em>x</em> distances as shown.</p>
-<p> </p>
-<p> <img src="media/08/image67.png" /></p>
-<p> </p>
+<ol style="list-style-type: decimal">
+<li>Measure either *<span class="math inline">\(D\)</span> or <span class="math inline">\(x\)</span> distances as shown.</li>
+</ol>
+<p><img src="media/08/image67.png" /></p>
 <p>Example Calculation</p>
-<p> </p>
-<p> <img src="media/08/image68.png" /></p>
-<p> </p>
-<p> <img src="media/08/image69.png" /></p>
-<p> </p>
-<p> Average TPR = 0.8409</p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>2) Note ratio of adjacent peak values (transient peak ratios).</p>
-<p>3) Average several TPRs.</p>
-<p>4) Use equation to find <em>ζ</em>:</p>
-<p> </p>
-<p> <img src="media/08/image70.png" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>4a) Can use</p>
-<p><em>D_1~/D_2) or </em>x_1~/x_2)</p>
-<p>ratios in above equation.</p>
-<p> </p>
-<p>4b) In lieu of equation, use</p>
-<p>adjacent look-up curve to find <em>ζ</em>.</p>
-<p> </p>
-<p>4c) Time ratio method works better with heavy damping.</p>
-<p> </p>
-<p> </p>
+<p><img src="media/08/image68.png" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Note ratio of adjacent peak values (transient peak ratios).</li>
+</ol>
+<table>
+<colgroup>
+<col width="33%" />
+<col width="66%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="right">First <span class="math inline">\(\mathrm{TPR}\)</span></td>
+<td align="left"><span class="math display">\[\frac{D_2}{D_1} = \frac{117-86}{117-80}=\frac{31}{37}=0.8378\]</span></td>
+</tr>
+<tr class="even">
+<td align="right">Second <span class="math inline">\(\mathrm{TPR}\)</span></td>
+<td align="left"><span class="math display">\[\frac{D_3}{D_2} = \frac{112-86}{117-86}=\frac{26}{31}=0.8387\]</span></td>
+</tr>
+<tr class="odd">
+<td align="right">Third <span class="math inline">\(\mathrm{TPR}\)</span></td>
+<td align="left"><span class="math display">\[\frac{D_4}{D_3} = \frac{112-90}{112-86}=\frac{22}{26}=0.8462\]</span></td>
+</tr>
+</tbody>
+</table>
+<ol start="3" style="list-style-type: decimal">
+<li>Average several TPRs.</li>
+</ol>
+<p>Average <span class="math inline">\(\mathrm{TPR} = 0.8409\)</span></p>
+<ol start="4" style="list-style-type: decimal">
+<li>Use equation to find <span class="math inline">\(\zeta\)</span>:</li>
+</ol>
+<p><span class="math display">\[ \zeta = \sqrt{\frac{\left( \ln \frac{x_1}{x_2} \right)^2}{\pi^2 + \left( \ln \frac{x_1}{x_2} \right)^2}} \]</span> </p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Can use <span class="math inline">\(D_1/D_2\)</span> or <span class="math inline">\(x_1/x_2\)</span> ratios in above equation.</p></li>
+<li><p>In lieu of equation, use adjacent look-up curve to find <span class="math inline">\(\zeta\)</span>.</p></li>
+<li><p>Time ratio method works better with heavy damping.</p></li>
+</ol>
 <p><img src="media/08/image71.png" /></p>
 <p><strong>Method #3</strong> Multiple <em>TPR</em> Analysis</p>
 <p> </p>
