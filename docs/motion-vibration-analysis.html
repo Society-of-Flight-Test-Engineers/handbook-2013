@@ -691,7 +691,7 @@ x_2 &amp;= 2c \\
 <td>mass</td>
 </tr>
 <tr class="even">
-<td><span class="math inline">\(F_t\)</span></td>
+<td><span class="math inline">\(F\left(t\right)\)</span></td>
 <td>forcing function</td>
 </tr>
 <tr class="odd">
@@ -787,148 +787,225 @@ x &amp;= A e^{-\frac{D}{2M} t} \sin \left( \sqrt{\frac{K}{M} - \left(\frac{D}{2M
 <p><img src="media/08/image43.png" /></p>
 <p><img src="media/08/image44.png" /></p>
 <p><img src="media/08/image45.png" /></p>
-<p><img src="media/08/image46.png" /></p>
+<p><span class="math display">\[\text{Roots } s_{1,2} = -\frac{D}{2M} \pm j \sqrt{\frac{K}{M} - \left( \frac{D}{2M} \right)^2} = -\zeta \omega_n \pm j\omega_n\sqrt{1 - \zeta^2} \]</span></p>
 <p>Possible Solutions:</p>
-<p> <img src="media/08/image47.png" /></p>
-<p>• The various combination of <em>K</em>, <em>M</em>, and <em>D</em> and their effects on system response can be related to damping ratio <em>ζ</em> as follows:</p>
-<p> </p>
-<p>   ζ &gt; 1 Real &amp; unequal roots exponential, convergent</p>
-<p> </p>
-<p>  ζ =  ± 1 Real &amp; equal roots exponential, conv or div</p>
-<p> 0 &lt; ζ &lt; 1  Complex pair roots sinusoidal, convergent</p>
-<p> </p>
-<p>     ζ = 0 Imaginary pair roots sinusoidal, neutral</p>
-<p>€</p>
-<p>−1 &lt; ζ &lt; 0 Complex pair roots sinusoidal, divergent</p>
-<p> </p>
-<p> ζ &lt; − 1 Real &amp; unequal roots exponential, divergent</p>
-<p> </p>
-<p><img src="media/08/image48.svg" /><img src="media/08/image49.png" /></p>
+<!-- Eventually convert to an actual table -->
+<p><img src="media/08/image47.png" /></p>
+<p>• The various combination of <span class="math inline">\(K\)</span>, <span class="math inline">\(M\)</span>, and <span class="math inline">\(D\)</span> and their effects on system response can be related to damping ratio <span class="math inline">\(\zeta\)</span> as follows:</p>
+<table>
+<colgroup>
+<col width="14%" />
+<col width="42%" />
+<col width="42%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(+1 \lt \zeta\)</span></td>
+<td>Real &amp; unequal roots: exponential, convergent</td>
+<td><span class="math display">\[ x\left(t\right) = c_1 e^{-\omega_n \left( \zeta + \sqrt{\zeta^2 - 1} \right)t} + c_2 e^{-\omega_n \left( \zeta - \sqrt{\zeta^2 - 1} \right)t} \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\zeta = +1\)</span></td>
+<td>Real &amp; equal roots: exponential, convergent</td>
+<td><span class="math display">\[ x\left(t\right) = c_1 e^{-\omega_n \zeta t} + c_2 t e^{-\omega_n \zeta t} \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(0 \lt \zeta \lt +1\)</span></td>
+<td>Complex pair roots: sinusoidal, convergent</td>
+<td><span class="math display">\[ x\left(t\right) =  A e^{-\zeta \omega_n t} \sin \left( \omega_d + \phi \right) \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\zeta = 0\)</span></td>
+<td>Imaginary pair roots: sinusoidal, neutral</td>
+<td><span class="math display">\[\begin{align} x\left(t\right) &amp;=  A \sin \left( \omega_n t + \phi \right) \\ &amp;= A \cos \left( \omega_n t \right) \end{align} \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(-1 \lt \zeta \lt 0\)</span></td>
+<td>Complex pair roots: sinusoidal, divergent</td>
+<td><span class="math display">\[ x\left(t\right) =  A e^{-\zeta \omega_n t} \sin \left( \omega_d + \phi \right) \]</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\zeta = -1\)</span></td>
+<td>Real &amp; equal roots: exponential, divergent</td>
+<td><span class="math display">\[ x\left(t\right) = c_1 e^{-\omega_n \zeta t} + c_2 t e^{-\omega_n \zeta t} \]</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\zeta \lt -1\)</span></td>
+<td>Real &amp; unequal roots: exponential, divergent</td>
+<td><span class="math display">\[ x\left(t\right) = c_1 e^{-\omega_n \left( \zeta + \sqrt{\zeta^2 - 1} \right)t} + c_2 e^{-\omega_n \left( \zeta - \sqrt{\zeta^2 - 1} \right)t} \]</span></td>
+</tr>
+</tbody>
+</table>
 <p><strong>Damping ratio effect on second order system</strong></p>
-<p>  </p>
-<p> </p>
 <p>Response of various second order systems to an impulse input.</p>
-<p> </p>
-<p> </p>
-<p>Second-order systems are oscillatory if</p>
-<p>-1 &gt; <em>ζ</em> &gt; 1.</p>
-<p> </p>
-<p> </p>
-<p>Motion typically</p>
-<p>described by</p>
-<p><em>ω<sub>n</sub></em> and <em>ζ</em></p>
-<p> </p>
-<p> </p>
-<p><em>T</em>, <em>ω<sub>d</sub></em>, <em>ω<sub>n</sub></em> and <em>ζ </em>are linked such that knowledge of any two will yield</p>
-<p>the other two.</p>
-<p> </p>
-<p> <img src="media/08/image50.png" /></p>
-<p> </p>
+<p>Second-order systems are oscillatory if <span class="math inline">\(-1 \lt \zeta \lt +1\)</span>.</p>
+<p>Motion typically described by <span class="math inline">\(\omega_n\)</span> and <span class="math inline">\(\zeta\)</span></p>
+<p><span class="math inline">\(T\)</span>, <span class="math inline">\(\omega_d\)</span>, <span class="math inline">\(\omega_n\)</span>, and <span class="math inline">\(\zeta\)</span> are linked such that knowledge of any two will yield the other two.</p>
+<p><img src="media/08/image50.png" /></p>
 <p><img src="media/08/image51.png" /></p>
 <p><img src="media/08/image52.png" /></p>
-<p>2nd order system response to <strong>unit step input</strong> for <strong>underdamped systems</strong></p>
-<p><strong> </strong></p>
-<p>(0 &gt; <em>ζ</em> &gt; 1)</p>
-<p> </p>
+<p>2nd order system response to <strong>unit step input</strong> for <strong>underdamped systems</strong> ( <span class="math inline">\(0 \lt \zeta \lt +1\)</span> )</p>
 <p><img src="media/08/image53.png" /></p>
-<p><strong>Decay rates (for 0 &lt; ζ &lt;1) and Useful Insights</strong></p>
-<p> </p>
-<p><img src="media/08/image54.png" /></p>
+<p><strong>Decay rates (for <span class="math inline">\(0 \lt \zeta \lt +1\)</span> ) and Useful Insights</strong></p>
+<table>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Time to decay</strong></td>
+<td align="left"><span class="math display">\[\zeta \omega_n = \frac{\ln \frac{x_1}{x_2} }{t_2 - t_1} \Rightarrow \Delta t = \frac{\ln \frac{x_1}{x_2}}{\zeta \omega_n} \]</span></td>
+</tr>
+<tr class="even">
+<td>Time to <span class="math inline">\(\frac{1}{2}\)</span> amplitude</td>
+<td align="left"><span class="math display">\[ \equiv \Delta t_{\frac{1}{2}} = \frac{\ln \frac{2}{1}}{\zeta \omega_n} = \frac{0.6931}{\zeta \omega_n}  \]</span></td>
+</tr>
+<tr class="odd">
+<td>Time to <span class="math inline">\(\frac{1}{10}\)</span> amplitude</td>
+<td align="left"><span class="math display">\[ \equiv \Delta t_{\frac{1}{10}} = \frac{\ln \frac{10}{1}}{\zeta \omega_n} = \frac{2.3026}{\zeta \omega_n}  \]</span></td>
+</tr>
+<tr class="even">
+<td>Time to <span class="math inline">\(\frac{1}{x}\)</span> amplitude</td>
+<td align="left"><span class="math display">\[ \equiv \Delta t_{\frac{1}{x}} = \frac{\ln x }{\zeta \omega_n}  \]</span></td>
+</tr>
+<tr class="odd">
+<td><strong># cycles to decay</strong></td>
+<td align="left"><span class="math display">\[\text{# cycles} = \frac{\Delta t }{T} = \frac{\Delta t \omega_d}{2 \pi} \]</span></td>
+</tr>
+<tr class="even">
+<td># cycles to <span class="math inline">\(\frac{1}{2}\)</span> amplitude</td>
+<td align="left"><span class="math display">\[\equiv C_{\frac{1}{2}} = \frac{0.6931}{\zeta \omega_n}\frac{\omega_d}{2 \pi} = \frac{0.6931}{2 \pi  }\frac{\omega_d}{\zeta \omega_n} = \frac{0.1103}{\varepsilon} \]</span></td>
+</tr>
+<tr class="odd">
+<td># cycles to <span class="math inline">\(\frac{1}{10}\)</span> amplitude</td>
+<td align="left"><span class="math display">\[\equiv C_{\frac{1}{10}} = \frac{2.3026}{\zeta \omega_n}\frac{\omega_d}{2 \pi} = \frac{2.3026}{2 \pi  }\frac{\omega_d}{\zeta \omega_n} = \frac{0.3665}{\varepsilon} \]</span></td>
+</tr>
+<tr class="even">
+<td># cycles to <span class="math inline">\(\frac{1}{x}\)</span> amplitude</td>
+<td align="left"><span class="math display">\[\equiv C_{\frac{1}{x}} = \frac{\ln x }{2 \pi }\frac{\omega_d}{\zeta \omega_n} \]</span></td>
+</tr>
+</tbody>
+</table>
+<p>Same analysis applies for exponential growth</p>
+<p>For same <span class="math inline">\(\Delta t\)</span></p>
+<p><span class="math display">\[ \frac{x_1}{x_2} = \frac{x_2}{x_3} = \frac{x_3}{x_4} = \dots \]</span></p>
+<p>Therefore</p>
+<p><span class="math display">\[ \frac{x_1}{x_3} = \frac{x_1}{x_2} \frac{x_2}{x_3} = \left( \frac{x_1}{x_2} \right)^2 \Rightarrow \mathrm{HCAR} = \sqrt{\text{full cycle amplitude ratio}}\]</span></p>
+<p><span class="math display">\[
+\begin{align}
+\mathrm{HCAR} &amp;\equiv \frac{x_1}{x_2} =  e^{\zeta \omega_n \left( t_2 - t_1 \right)} =  e^{\zeta \omega_n \left( \Delta t \right)} =  e^{\zeta \omega_n \left( \frac{T}{2} \right)} =  e^{\zeta \omega_n \left( \frac{2\pi}{2\omega_d} \right)} \\
+&amp;=  e^{\zeta \omega_n \left( \frac{\pi}{\omega_n \sqrt{1 - \zeta^2}} \right)} =  e^{\zeta \omega_n \left( \frac{\pi \zeta}{ \sqrt{1 - \zeta^2}} \right)} \\
+&amp;\Rightarrow \ln \frac{x_1}{x_2} = \frac{\pi \zeta}{ \sqrt{1 - \zeta^2}} \Rightarrow \zeta = \sqrt{\frac{\left( \ln \frac{x_1}{x_2} \right)^2}{\pi^2 + \left( \ln \frac{x_1}{x_2} \right)^2}} \\
+\end{align}
+\]</span></p>
+<p>This can be applied in graphical form (transient peak ratio method)</p>
 </div>
 <div id="determining-descriptive-parameters" class="section level3" number="8.3.3">
 <h3><span class="header-section-number">8.3.3</span> Determining Descriptive Parameters</h3>
-<p><strong> </strong></p>
 <p>Time domain metrics</p>
-<p> </p>
-<p> <img src="media/08/image55.png" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>Peak Value, <em>MP</em>: largest value</p>
-<p> </p>
-<p>Final Value, <em>FV</em>: steady state value</p>
-<p> </p>
-<p>Delay Time, *T_d): 50% of final value</p>
-<p> </p>
-<p>Rise Time, *T_r): 10% - 90% of FV</p>
-<p> </p>
-<p>Peak Time, *T_p): time to MP</p>
-<p> </p>
-<p>Settling Time, *T_s): time to reach some defined % of final value</p>
-<p> </p>
-<p>% Overshoot, <em>PO</em>:</p>
-<p> </p>
-<p><img src="media/08/image56.png" /></p>
-<p><em>target value = unity</em></p>
-<p> </p>
+<p><img src="media/08/image55.png" /></p>
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Peak Value</td>
+<td><span class="math inline">\(\mathrm{MP}\)</span></td>
+<td>largest value</td>
+</tr>
+<tr class="even">
+<td>Final Value</td>
+<td><span class="math inline">\(\mathrm{FV}\)</span></td>
+<td>steady state value</td>
+</tr>
+<tr class="odd">
+<td>Delay Time</td>
+<td><span class="math inline">\(T_d\)</span></td>
+<td><span class="math inline">\(50%\)</span> of final value</td>
+</tr>
+<tr class="even">
+<td>Rise Time</td>
+<td><span class="math inline">\(T_r\)</span></td>
+<td><span class="math inline">\(10% - 90%\)</span> of FV</td>
+</tr>
+<tr class="odd">
+<td>Peak Time</td>
+<td><span class="math inline">\(T_p\)</span></td>
+<td>time to MP</td>
+</tr>
+<tr class="even">
+<td>% Overshoot</td>
+<td><span class="math inline">\(\mathrm{PO}\)</span></td>
+<td><span class="math inline">\(\frac{\mathrm{MP} - 1}{1} \times 100% \text{target value} = \text{unity}\)</span> <em>target value = unity</em></td>
+</tr>
+</tbody>
+</table>
 <p><strong>Method #1</strong> Basic Analysis</p>
-<p> </p>
-<p> </p>
 <p>Note</p>
-<p> <img src="media/08/image57.png" /></p>
+<p><span class="math display">\[ x\left(t\right) = A e^{-\zeta \omega_n t} \sin \left( \omega_d t + 0 \right) \]</span></p>
+<p><span class="math inline">\(\zeta \omega_n\)</span> and <span class="math inline">\(\omega_d\)</span> describe a time history</p>
 <p><img src="media/08/image58.png" /></p>
-<p><img src="media/08/image59.png" /></p>
-<p><img src="media/08/image60.png" /></p>
-<p><img src="media/08/image61.png" /></p>
+<p><span class="math display">\[f_d = \frac{1}{T}\]</span></p>
+<p><span class="math display">\[\omega_d = \frac{2\pi}{T} \]</span></p>
+<p><span class="math display">\[\zeta \omega_n = \frac{\ln \frac{x_1}{x_2}}{\left(t_2 - t_1 \right)} \]</span></p>
 <p>Easily measured values: can use any points on envelope</p>
-<p> </p>
-<p><img src="media/08/image62.png" /></p>
-<p><img src="media/08/image63.png" /></p>
-<p><img src="media/08/image64.png" /></p>
-<p><img src="media/08/image65.png" /></p>
-<p><img src="media/08/image66.png" /></p>
+<p>Define</p>
+<p><span class="math display">\[\varepsilon \equiv \frac{\zeta \omega_n}{\omega_d} = \frac{\frac{\ln \frac{x_1}{x_2}}{\left(t_2 - t_1 \right)} }{\frac{2\pi}{T}} = \frac{T\ln \frac{x_1}{x_2}}{2\pi \left(t_2 - t_1 \right)} \]</span></p>
+<p>where</p>
+<p><span class="math display">\[ \left(t_2 - t_1 \right) = \frac{T}{2} \Rightarrow \frac{\zeta \omega_n}{\omega_d} = \frac{\ln \frac{x_1}{x_2}}{\pi} = \varepsilon = \ln \left[ x_1 / x_2 \right] / \pi \]</span></p>
+<p>recall</p>
+<p><span class="math display">\[\omega_d = \omega_n \sqrt{1 - \zeta^2} \]</span></p>
+<p><span class="math display">\[\varepsilon = \frac{\zeta \omega_n}{\omega_n \sqrt{1 - \zeta^2}} =  \frac{\zeta}{ \sqrt{1 - \zeta^2}} \Rightarrow \varepsilon^2 = \frac{\zeta^2}{ 1 - \zeta^2} \Rightarrow \varepsilon^2 \left( 1 - \zeta^2 \right) = \zeta^2 \Rightarrow \varepsilon^2 = \zeta^2 \left[ 1 + \varepsilon^2 \right] \]</span></p>
+<p><span class="math display">\[ \zeta = \sqrt{\frac{\varepsilon^2}{1 + \varepsilon^2}} \]</span></p>
+<p><span class="math display">\[\omega_n = \frac{\zeta \omega_n}{\zeta} = \frac{\omega_d}{\sqrt{1 - \zeta^2}} \]</span></p>
+<p><span class="math display">\[ \left| \frac{x_1}{x_2} \right| = \text{Half-Cycle Amplitude Ratio } \left( \mathrm{HCAR} \right) = e^{\zeta \omega_n \left(t_2 - t_1\right)}\]</span></p>
 <p><strong>Method #2</strong> Transient Peak Ratio Analysis</p>
-<p> </p>
-<p>1) Measure either <em>D</em> or <em>x</em> distances as shown.</p>
-<p> </p>
-<p> <img src="media/08/image67.png" /></p>
-<p> </p>
+<ol style="list-style-type: decimal">
+<li>Measure either *<span class="math inline">\(D\)</span> or <span class="math inline">\(x\)</span> distances as shown.</li>
+</ol>
+<p><img src="media/08/image67.png" /></p>
 <p>Example Calculation</p>
-<p> </p>
-<p> <img src="media/08/image68.png" /></p>
-<p> </p>
-<p> <img src="media/08/image69.png" /></p>
-<p> </p>
-<p> Average TPR = 0.8409</p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>2) Note ratio of adjacent peak values (transient peak ratios).</p>
-<p>3) Average several TPRs.</p>
-<p>4) Use equation to find <em>ζ</em>:</p>
-<p> </p>
-<p> <img src="media/08/image70.png" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>4a) Can use</p>
-<p><em>D_1~/D_2) or </em>x_1~/x_2)</p>
-<p>ratios in above equation.</p>
-<p> </p>
-<p>4b) In lieu of equation, use</p>
-<p>adjacent look-up curve to find <em>ζ</em>.</p>
-<p> </p>
-<p>4c) Time ratio method works better with heavy damping.</p>
-<p> </p>
-<p> </p>
+<p><img src="media/08/image68.png" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Note ratio of adjacent peak values (transient peak ratios).</li>
+</ol>
+<table>
+<colgroup>
+<col width="33%" />
+<col width="66%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="right">First <span class="math inline">\(\mathrm{TPR}\)</span></td>
+<td align="left"><span class="math display">\[\frac{D_2}{D_1} = \frac{117-86}{117-80}=\frac{31}{37}=0.8378\]</span></td>
+</tr>
+<tr class="even">
+<td align="right">Second <span class="math inline">\(\mathrm{TPR}\)</span></td>
+<td align="left"><span class="math display">\[\frac{D_3}{D_2} = \frac{112-86}{117-86}=\frac{26}{31}=0.8387\]</span></td>
+</tr>
+<tr class="odd">
+<td align="right">Third <span class="math inline">\(\mathrm{TPR}\)</span></td>
+<td align="left"><span class="math display">\[\frac{D_4}{D_3} = \frac{112-90}{112-86}=\frac{22}{26}=0.8462\]</span></td>
+</tr>
+</tbody>
+</table>
+<ol start="3" style="list-style-type: decimal">
+<li>Average several TPRs.</li>
+</ol>
+<p>Average <span class="math inline">\(\mathrm{TPR} = 0.8409\)</span></p>
+<ol start="4" style="list-style-type: decimal">
+<li>Use equation to find <span class="math inline">\(\zeta\)</span>:</li>
+</ol>
+<p><span class="math display">\[ \zeta = \sqrt{\frac{\left( \ln \frac{x_1}{x_2} \right)^2}{\pi^2 + \left( \ln \frac{x_1}{x_2} \right)^2}} \]</span> </p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Can use <span class="math inline">\(D_1/D_2\)</span> or <span class="math inline">\(x_1/x_2\)</span> ratios in above equation.</p></li>
+<li><p>In lieu of equation, use adjacent look-up curve to find <span class="math inline">\(\zeta\)</span>.</p></li>
+<li><p>Time ratio method works better with heavy damping.</p></li>
+</ol>
 <p><img src="media/08/image71.png" /></p>
 <p><strong>Method #3</strong> Multiple <em>TPR</em> Analysis</p>
 <p> </p>

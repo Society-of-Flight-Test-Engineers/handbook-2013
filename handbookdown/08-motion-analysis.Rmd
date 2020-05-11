@@ -280,7 +280,7 @@ Mechanical systems have elements of spring, mass, and usually damping. Forcing f
 |\(K\) | spring stiffness ( \(F/x\) ) |
 |\(x\) | displacement from equilibrium |
 |\(M\) | mass|
-|\(F_t\)| forcing function|
+|\(F\left(t\right)\)| forcing function|
 |\(D\)| damping|
 
 \[\sum{}{} F_{\mathrm{vert}} : M\ddot{x} + D\dot{x} + Kx = F(t) \]
@@ -393,291 +393,169 @@ x &= A e^{-\frac{D}{2M} t} \sin \left( \sqrt{\frac{K}{M} - \left(\frac{D}{2M} \r
 \end{align}
 \]
 
+<!-- Don't think we need this labeled equation...? -->
 ![][08043]
 
 ![][08044]
 
 ![][08045]
 
-![][08046]
+\[\text{Roots } s_{1,2} = -\frac{D}{2M} \pm j \sqrt{\frac{K}{M} - \left( \frac{D}{2M} \right)^2} = -\zeta \omega_n \pm j\omega_n\sqrt{1 - \zeta^2} \]
 
 Possible Solutions:
 
- ![][08047]
+<!-- Eventually convert to an actual table -->
+![][08047]
 
-• The various combination of *K*, *M*, and *D* and their effects on system response can be related to damping ratio *ζ* as follows:
+• The various combination of \(K\), \(M\), and \(D\) and their effects on system response can be related to damping ratio \(\zeta\) as follows:
 
- 
-
-   ζ \> 1 Real & unequal roots exponential, convergent
-
- 
-
-  ζ =  ± 1 Real & equal roots exponential, conv or div
-
- 0 \< ζ \< 1  Complex pair roots sinusoidal, convergent
-
- 
-
-     ζ = 0 Imaginary pair roots sinusoidal, neutral
-
-€
-
-−1 \< ζ \< 0 Complex pair roots sinusoidal, divergent
-
- 
-
- ζ \< − 1 Real & unequal roots exponential, divergent
-
- 
-
-![][08048]![][08049]
+| | | |
+|-|---|---|
+| \(+1 \lt \zeta\)        | Real & unequal roots: exponential, convergent | \[ x\left(t\right) = c_1 e^{-\omega_n \left( \zeta + \sqrt{\zeta^2 - 1} \right)t} + c_2 e^{-\omega_n \left( \zeta - \sqrt{\zeta^2 - 1} \right)t} \] |
+| \(\zeta = +1\)          | Real & equal roots: exponential, convergent   | \[ x\left(t\right) = c_1 e^{-\omega_n \zeta t} + c_2 t e^{-\omega_n \zeta t} \] |
+| \(0 \lt \zeta \lt +1 \) | Complex pair roots: sinusoidal, convergent    | \[ x\left(t\right) =  A e^{-\zeta \omega_n t} \sin \left( \omega_d + \phi \right) \] |
+| \(\zeta = 0 \)          | Imaginary pair roots: sinusoidal, neutral     | \[\begin{align} x\left(t\right) &=  A \sin \left( \omega_n t + \phi \right) \\ &= A \cos \left( \omega_n t \right) \end{align} \] |
+| \(-1 \lt \zeta \lt 0 \) | Complex pair roots: sinusoidal, divergent     | \[ x\left(t\right) =  A e^{-\zeta \omega_n t} \sin \left( \omega_d + \phi \right) \] |
+| \(\zeta = -1 \)         | Real & equal roots: exponential, divergent    | \[ x\left(t\right) = c_1 e^{-\omega_n \zeta t} + c_2 t e^{-\omega_n \zeta t} \] |
+| \(\zeta \lt -1 \)       | Real & unequal roots: exponential, divergent  | \[ x\left(t\right) = c_1 e^{-\omega_n \left( \zeta + \sqrt{\zeta^2 - 1} \right)t} + c_2 e^{-\omega_n \left( \zeta - \sqrt{\zeta^2 - 1} \right)t} \] |
 
 **Damping ratio effect on second order system**
 
-  
-
- 
-
 Response of various second order systems to an impulse input.
 
- 
+Second-order systems are oscillatory if \( -1 \lt \zeta \lt +1 \).
 
- 
+Motion typically described by \(\omega_n\) and \(\zeta\)
 
-Second-order systems are oscillatory if
+\(T\), \(\omega_d\), \(\omega_n\), and \(\zeta\) are linked such that knowledge of any two will yield the other two.
 
--1 \> *ζ* \> 1.
-
- 
-
- 
-
-Motion typically
-
-described by
-
-*ω~n~* and *ζ*
-
- 
-
- 
-
-*T*, *ω~d~*, *ω~n~* and *ζ *are linked such that knowledge of any two will yield
-
-the other two.
-
- 
-
- ![][08050]
-
- 
+![][08050]
 
 ![][08051]
 
 ![][08052]
 
-2nd order system response to **unit step input** for **underdamped systems**
-
-** **
-
-(0 \> *ζ* \> 1)
-
- 
+2nd order system response to **unit step input** for **underdamped systems** ( \(0 \lt \zeta \lt +1 \) )
 
 ![][08053]
 
-**Decay rates (for 0 \< ζ \<1) and Useful Insights**
+**Decay rates (for \(0 \lt \zeta \lt +1\) ) and Useful Insights**
 
- 
+| | |
+|-|:--|
+|**Time to decay** | \[\zeta \omega_n = \frac{\ln \frac{x_1}{x_2} }{t_2 - t_1} \Rightarrow \Delta t = \frac{\ln \frac{x_1}{x_2}}{\zeta \omega_n} \] |
+|Time to \(\frac{1}{2}\) amplitude | \[ \equiv \Delta t_{\frac{1}{2}} = \frac{\ln \frac{2}{1}}{\zeta \omega_n} = \frac{0.6931}{\zeta \omega_n}  \] |
+|Time to \(\frac{1}{10}\) amplitude | \[ \equiv \Delta t_{\frac{1}{10}} = \frac{\ln \frac{10}{1}}{\zeta \omega_n} = \frac{2.3026}{\zeta \omega_n}  \] |
+|Time to \(\frac{1}{x}\) amplitude | \[ \equiv \Delta t_{\frac{1}{x}} = \frac{\ln x }{\zeta \omega_n}  \] |
+|**\# cycles to decay** | \[\text{# cycles} = \frac{\Delta t }{T} = \frac{\Delta t \omega_d}{2 \pi} \] |
+|\# cycles to \(\frac{1}{2}\) amplitude  | \[\equiv C_{\frac{1}{2}} = \frac{0.6931}{\zeta \omega_n}\frac{\omega_d}{2 \pi} = \frac{0.6931}{2 \pi  }\frac{\omega_d}{\zeta \omega_n} = \frac{0.1103}{\varepsilon} \] |
+|\# cycles to \(\frac{1}{10}\) amplitude  | \[\equiv C_{\frac{1}{10}} = \frac{2.3026}{\zeta \omega_n}\frac{\omega_d}{2 \pi} = \frac{2.3026}{2 \pi  }\frac{\omega_d}{\zeta \omega_n} = \frac{0.3665}{\varepsilon} \] |
+|\# cycles to \(\frac{1}{x}\) amplitude  | \[\equiv C_{\frac{1}{x}} = \frac{\ln x }{2 \pi }\frac{\omega_d}{\zeta \omega_n} \] |
 
-![][08054]
+Same analysis applies for exponential growth
+
+For same \(\Delta t \)
+
+\[ \frac{x_1}{x_2} = \frac{x_2}{x_3} = \frac{x_3}{x_4} = \dots \]
+
+Therefore
+
+\[ \frac{x_1}{x_3} = \frac{x_1}{x_2} \frac{x_2}{x_3} = \left( \frac{x_1}{x_2} \right)^2 \Rightarrow \mathrm{HCAR} = \sqrt{\text{full cycle amplitude ratio}}\]
+
+\[
+\begin{align}
+\mathrm{HCAR} &\equiv \frac{x_1}{x_2} =  e^{\zeta \omega_n \left( t_2 - t_1 \right)} =  e^{\zeta \omega_n \left( \Delta t \right)} =  e^{\zeta \omega_n \left( \frac{T}{2} \right)} =  e^{\zeta \omega_n \left( \frac{2\pi}{2\omega_d} \right)} \\
+&=  e^{\zeta \omega_n \left( \frac{\pi}{\omega_n \sqrt{1 - \zeta^2}} \right)} =  e^{\zeta \omega_n \left( \frac{\pi \zeta}{ \sqrt{1 - \zeta^2}} \right)} \\
+&\Rightarrow \ln \frac{x_1}{x_2} = \frac{\pi \zeta}{ \sqrt{1 - \zeta^2}} \Rightarrow \zeta = \sqrt{\frac{\left( \ln \frac{x_1}{x_2} \right)^2}{\pi^2 + \left( \ln \frac{x_1}{x_2} \right)^2}} \\
+\end{align}
+\]
+
+This can be applied in graphical form (transient peak ratio method)
 
 ### Determining Descriptive Parameters
 
-** **
-
 Time domain metrics
 
- 
+![][08055]
 
- ![][08055]
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-Peak Value, *MP*: largest value
-
- 
-
-Final Value, *FV*: steady state value
-
- 
-
-Delay Time, *T_d\): 50% of final value
-
- 
-
-Rise Time, *T_r\): 10% - 90% of FV
-
- 
-
-Peak Time, *T_p\): time to MP
-
- 
-
-Settling Time, *T_s\): time to reach some defined % of final value
-
- 
-
-\% Overshoot, *PO*:
-
- 
-
-![][08056]
-
-*target value = unity*
-
- 
+||||
+|-|-|-|
+|Peak Value   | \(\mathrm{MP}\)  | largest value |
+|Final Value  | \(\mathrm{FV}\)  | steady state value|
+|Delay Time   | \(T_d\) | \(50%\) of final value|
+|Rise Time    | \(T_r\) | \(10% - 90%\) of FV|
+|Peak Time    | \(T_p\) | time to MP|
+|\% Overshoot | \(\mathrm{PO}\)  | \( \frac{\mathrm{MP} - 1}{1} \times 100% \text{target value} = \text{unity} \) *target value = unity*|
 
 **Method \#1** Basic Analysis
 
- 
-
- 
-
 Note
 
- ![][08057]
+\[ x\left(t\right) = A e^{-\zeta \omega_n t} \sin \left( \omega_d t + 0 \right) \]
+
+\(\zeta \omega_n \) and \(\omega_d\) describe a time history
 
 ![][08058]
 
-![][08059]
+\[f_d = \frac{1}{T}\]
 
-![][08060]
+\[\omega_d = \frac{2\pi}{T} \]
 
-![][08061]
+\[\zeta \omega_n = \frac{\ln \frac{x_1}{x_2}}{\left(t_2 - t_1 \right)} \]
 
 Easily measured values: can use any points on envelope
 
- 
+Define
 
-![][08062]
+\[\varepsilon \equiv \frac{\zeta \omega_n}{\omega_d} = \frac{\frac{\ln \frac{x_1}{x_2}}{\left(t_2 - t_1 \right)} }{\frac{2\pi}{T}} = \frac{T\ln \frac{x_1}{x_2}}{2\pi \left(t_2 - t_1 \right)} \]
 
-![][08063]
+where
 
-![][08064]
+\[ \left(t_2 - t_1 \right) = \frac{T}{2} \Rightarrow \frac{\zeta \omega_n}{\omega_d} = \frac{\ln \frac{x_1}{x_2}}{\pi} = \varepsilon = \ln \left[ x_1 / x_2 \right] / \pi \]
 
-![][08065]
+recall
 
-![][08066]
+\[\omega_d = \omega_n \sqrt{1 - \zeta^2} \]
+
+\[\varepsilon = \frac{\zeta \omega_n}{\omega_n \sqrt{1 - \zeta^2}} =  \frac{\zeta}{ \sqrt{1 - \zeta^2}} \Rightarrow \varepsilon^2 = \frac{\zeta^2}{ 1 - \zeta^2} \Rightarrow \varepsilon^2 \left( 1 - \zeta^2 \right) = \zeta^2 \Rightarrow \varepsilon^2 = \zeta^2 \left[ 1 + \varepsilon^2 \right] \]
+
+\[ \zeta = \sqrt{\frac{\varepsilon^2}{1 + \varepsilon^2}} \]
+
+\[\omega_n = \frac{\zeta \omega_n}{\zeta} = \frac{\omega_d}{\sqrt{1 - \zeta^2}} \]
+
+\[ \left| \frac{x_1}{x_2} \right| = \text{Half-Cycle Amplitude Ratio } \left( \mathrm{HCAR} \right) = e^{\zeta \omega_n \left(t_2 - t_1\right)}\]
 
 **Method \#2** Transient Peak Ratio Analysis
 
- 
+1. Measure either *\(D\) or \(x\) distances as shown.
 
-1\) Measure either *D* or *x* distances as shown.
-
- 
-
- ![][08067]
-
- 
+![][08067]
 
 Example Calculation
 
- 
+![][08068]
 
- ![][08068]
+2. Note ratio of adjacent peak values (transient peak ratios).
 
- 
+|||
+|-:|:---|
+| First \(\mathrm{TPR}\) | \[\frac{D_2}{D_1} = \frac{117-86}{117-80}=\frac{31}{37}=0.8378\] |
+| Second \(\mathrm{TPR}\) | \[\frac{D_3}{D_2} = \frac{112-86}{117-86}=\frac{26}{31}=0.8387\] |
+| Third \(\mathrm{TPR}\) | \[\frac{D_4}{D_3} = \frac{112-90}{112-86}=\frac{22}{26}=0.8462\] |
 
- ![][08069]
+3. Average several TPRs.
 
- 
+Average \(\mathrm{TPR} = 0.8409\)
 
- Average TPR = 0.8409
+4. Use equation to find \(\zeta\):
 
- 
+\[ \zeta = \sqrt{\frac{\left( \ln \frac{x_1}{x_2} \right)^2}{\pi^2 + \left( \ln \frac{x_1}{x_2} \right)^2}} \] 
 
- 
+   a. Can use \(D_1/D_2\) or \(x_1/x_2\) ratios in above equation.
 
- 
+   b. In lieu of equation, use adjacent look-up curve to find \(\zeta\).
 
- 
-
-2\) Note ratio of adjacent peak values (transient peak ratios).
-
-3\) Average several TPRs.
-
-4\) Use equation to find *ζ*:
-
- 
-
- ![][08070]
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-4a) Can use
-
-*D_1~/D_2\) or *x_1~/x_2\)
-
-ratios in above equation.
-
- 
-
-4b) In lieu of equation, use
-
-adjacent look-up curve to find *ζ*.
-
- 
-
-4c) Time ratio method works better with heavy damping.
-
- 
-
- 
+   c. Time ratio method works better with heavy damping.
 
 ![][08071]
 
