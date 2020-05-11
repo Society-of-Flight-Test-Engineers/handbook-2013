@@ -312,75 +312,86 @@ Solve for the roots using the quadratic equation
 
 ### Second Order Motion Descriptive Parameters
 
- 
+Solution (\(x\)) calculated as
 
-Solution (*x*) calculated as
-
- 
-
- ![][08034]
-
- 
-
- 
+\[
+x = c_1 e^{\tau_1 t} + c_2 e^{\tau_2 t} \text{ where } s_1\text{, } s_2 = -\frac{D}{2M} \pm j \sqrt{ \frac{K}{M} - \left( \frac{D}{2M} \right)^2 }  
+\]
 
 Apply Euler's identity for complex conjugate roots
 
- 
+\[
+x = A e^{-\frac{D}{2M} t} \sin \left( \sqrt{\frac{K}{M} - \left(\frac{D}{2M} \right)^2} t + \phi  \right)
+\]
 
- ![][08035]
+* \(\phi\) defines the **phase shift**.
+* \(A\) defines the **initial amplitude**.
+* The real part of the root \( \frac{D}{2M} \) defines the **envelope** of the motion.
+* The imaginary part of the root identifies the **damped frequency** of the oscillations, \(\omega_d\) [rad/sec].
 
- 
+\[
+\omega_d = \sqrt{\frac{K}{M} - \left(\frac{D}{2M} \right)^2}
+\]
 
-• φ defines the **phase shift**.
+* If damping is reduced to \( D= 0 \) then only \( \sqrt{\frac{K}{M}} \) remains.
+* This is the undamped or **"natural" frequency** ( \(\omega_n\) ).
 
-•  *A* defines the **initial amplitude**.
+\[
+\omega_n \equiv \sqrt{\frac{K}{M}}
+\]
 
-•  The real part of the root \[*D*/2*M*\] defines the **envelope** of the motion.
+* If \( \left( \frac{D}{2M} \right)^2 = \frac{K}{M} \) then \(D\) is considered to be critical (just enough to prevent oscillations)
 
-•  The imaginary part of the root identifies the **damped frequency**
+\[
+D_{\mathrm{crit}} = \sqrt{\frac{K}{M}} 2M = 2 \sqrt{KM}
+\]
 
-of the oscillations, ω*~d~* (rad/sec).
+* For oscillatory motion, actual system damping is typically expressed as a fraction critical damping. Define **damping ratio** as
 
- 
+\[
+\zeta \equiv \frac{D}{ D_{ \mathrm{crit} } } = \frac{D}{ 2 \sqrt{KM} }
+\]
 
-![][08036]
+Combining 
 
- 
+\[
+\omega_d \equiv \sqrt{\frac{K}{M} - \left(\frac{D}{2M} \right)^2}
+\]
 
- ![][08037]
+with 
 
-• If damping is reduced to *D* = 0 then only \[*K/M*\]^1/2^ remains.
+\[
+\omega_n \equiv \sqrt{\frac{K}{M}}
+\]
 
-This is the undamped or **"natural" frequency** (ω~η~).
+and
 
- 
+\[
+\zeta = \frac{D}{ 2 \sqrt{KM} }
+\]
 
- ![][08038]
+gives
 
- 
+\[
+\omega_d \equiv \omega_n \sqrt{1 - \zeta^2}
+\]
 
-•  If
+and
 
-![][08039]
+\[
+\frac{D}{2M} = \zeta \omega_n
+\]
 
-then *D* is conisidered to be critical \[just enough to prevent oscillations\]
+The values can be substituted to gives
 
- 
-
- ![][08040]
-
- 
-
- 
-
-• For oscillatory motion, actual system damping is typically expressed as a fraction critical damping. Define **damping ratio** as
-
- 
-
- ![][08041]
-
-![][08042]
+\[
+\begin{align}
+x &= A e^{-\frac{D}{2M} t} \sin \left( \sqrt{\frac{K}{M} - \left(\frac{D}{2M} \right)^2} t + \phi  \right) \\
+&= A e^{-\zeta \omega_n t} \sin \left( \omega_d t + \phi  \right) \\
+&= A e^{-\zeta \omega_n t} \sin \left( \omega_n \sqrt{1 - \zeta^2} t + \phi  \right) \\
+\text{where } \phi &= \tan^{-1} \frac{\omega_d}{\zeta \omega_n} =  \tan^{-1} \frac{\omega_n \sqrt{1 - \zeta^2}}{\zeta \omega_n} =  \tan^{-1} \frac{\sqrt{1 - \zeta^2}}{\zeta} \\
+\end{align}
+\]
 
 ![][08043]
 
