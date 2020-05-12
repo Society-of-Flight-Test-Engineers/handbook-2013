@@ -1009,49 +1009,47 @@ x &amp;= A e^{-\frac{D}{2M} t} \sin \left( \sqrt{\frac{K}{M} - \left(\frac{D}{2M
 </ol>
 <p><img src="media/08/image71.png" /></p>
 <p><strong>Method #3</strong> Multiple <em>TPR</em> Analysis</p>
-<p> </p>
 <p><img src="media/08/image72.png" /></p>
 <p>To determine damping ratio</p>
-<blockquote>
-<p>~  Use the <em>m</em> = 1 line when comparing the next ratio.</p>
-<p> ~  Use the <em>m</em> = 2 line for comparing every other</p>
-<p>peak ratio.</p>
-</blockquote>
-<p> </p>
-<p> </p>
-<p> <img src="media/08/image73.png" /></p>
-<p> <img src="media/08/image74.png" /></p>
+<ul>
+<li>Use the <span class="math inline">\(m = 1\)</span> line when comparing the next ratio.</li>
+</ul>
+<p><span class="math display">\[
+\begin{align}
+\frac{\Delta x_1}{\Delta x_0} &amp;= \frac{2.5}{4.5} = 0.56 &amp; \zeta = 0.16 \\
+\frac{\Delta x_2}{\Delta x_1} &amp;= \frac{1.5}{2.5} = 0.60 &amp; \zeta = 0.14 \\
+\end{align}
+\]</span></p>
+<ul>
+<li>Use the <span class="math inline">\(m = 2\)</span> line for comparing every other peak ratio.</li>
+</ul>
+<p><span class="math display">\[
+\begin{align}
+\frac{\Delta x_2}{\Delta x_0} &amp;= \frac{1.5}{4.5} = 0.33 &amp; \zeta = 0.16 \\
+\frac{\Delta x_3}{\Delta x_1} &amp;= \frac{1.0}{2.5} = 0.40 &amp; \zeta = 0.14 \\
+\end{align}
+\]</span></p>
 <p><strong>Method #4</strong> Time Ratio Analysis</p>
-<p> </p>
-<p>• If the damping ratio is between 0.5 and 1.0 (two or less overshoots), then the time ratio method can be used to determine frequency and damping ratio. Select a peak where the response if free.</p>
-<p> </p>
-<p>• Note times for amplitude to reduce to 73.6%, 40.9%, and 19.9% of the peak value.</p>
-<p> </p>
-<p> </p>
-<p> <img src="media/08/image75.png" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>•  Form the time ratios <em>t_2~/t_1), </em>t_3~/t_1), and <span class="math display">\[*t_3~-t_2\)\]</span>/<span class="math display">\[*t_2~-t_1\)\]</span></p>
-<p> </p>
-<p>•  Enter the next figure at the time ratio side to find ζ for each time ratio.</p>
-<p> </p>
-<p>•  This technique is valid if the system transfer function has no zeros.</p>
-<p> </p>
-<p> </p>
-<p>• If recorded measurements are not available and if the number of overshoots is between 2 and 6, then</p>
-<p> </p>
-<p><img src="media/08/image76.png" /></p>
-<p><img src="media/08/image77.png" /></p>
-<p><strong>Frequency Time Products (wnDt3), (wnDt2), (wnDt1)</strong></p>
-<p><img src="media/08/image78.png" /></p>
-<p><img src="media/08/image79.png" /></p>
+<ul>
+<li>If the damping ratio is between <span class="math inline">\(0.5\)</span> and <span class="math inline">\(1.0\)</span> (two or less overshoots), then the time ratio method can be used to determine frequency and damping ratio. Select a peak where the response if free.</li>
+<li>Note times for amplitude to reduce to <span class="math inline">\(73.6%\)</span>, <span class="math inline">\(40.9%\)</span>, and <span class="math inline">\(19.9%\)</span> of the peak value.</li>
+</ul>
+<p><img src="media/08/image75.png" /></p>
+<ul>
+<li>Form the time ratios <span class="math inline">\(\frac{t_2}{t_1}\)</span>, <span class="math inline">\(\frac{t_3}{t_1}\)</span>, and <span class="math inline">\(\frac{t_3 - t_2}{t_2 - t_1}\)</span></li>
+<li>Enter the next figure at the time ratio side to find <span class="math inline">\(\zeta\)</span> for each time ratio.</li>
+<li>This technique is valid if the system transfer function has no zeros.</li>
+<li>If recorded measurements are not available and if the number of overshoots is between <span class="math inline">\(2\)</span> and <span class="math inline">\(6\)</span>, then</li>
+</ul>
+<p><span class="math display">\[
+\zeta \approx \frac{7 - \mathrm{#overshoots}}{10}
+\]</span>
+ 
+Time Ratio</p>
+<p><img src="media/08/image78.png" />
+<strong>Frequency Time Products (<span class="math inline">\(\omega_n \Delta t_3\)</span>), (<span class="math inline">\(\omega_n \Delta t_2\)</span>), (<span class="math inline">\(\omega_n \Delta t_1\)</span>)</strong></p>
+<p><strong>Method #5</strong> Maximum Slope Analysis
+<img src="media/08/image79.png" /></p>
 <p><img src="media/08/image80.png" /></p>
 <p>• Calculation of <em>ζ</em> somewhat sensitive to ∆<em>x</em><sub>1</sub> measurement</p>
 <p><sub> </sub></p>

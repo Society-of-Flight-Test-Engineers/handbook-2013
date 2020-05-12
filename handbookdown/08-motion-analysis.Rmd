@@ -561,86 +561,50 @@ Average \(\mathrm{TPR} = 0.8409\)
 
 **Method \#3** Multiple *TPR* Analysis
 
- 
-
 ![][08072]
 
 To determine damping ratio
 
-> \~  Use the *m* = 1 line when comparing the next ratio.
->
->  \~  Use the *m* = 2 line for comparing every other
->
-> peak ratio.
+* Use the \(m = 1 \) line when comparing the next ratio.
 
+\[
+\begin{align}
+\frac{\Delta x_1}{\Delta x_0} &= \frac{2.5}{4.5} = 0.56 & \zeta = 0.16 \\
+\frac{\Delta x_2}{\Delta x_1} &= \frac{1.5}{2.5} = 0.60 & \zeta = 0.14 \\
+\end{align}
+\]
+
+* Use the \(m = 2 \) line for comparing every other peak ratio.
+
+\[
+\begin{align}
+\frac{\Delta x_2}{\Delta x_0} &= \frac{1.5}{4.5} = 0.33 & \zeta = 0.16 \\
+\frac{\Delta x_3}{\Delta x_1} &= \frac{1.0}{2.5} = 0.40 & \zeta = 0.14 \\
+\end{align}
+\]
+
+**Method #4** Time Ratio Analysis
+
+* If the damping ratio is between \(0.5\) and \(1.0\) (two or less overshoots), then the time ratio method can be used to determine frequency and damping ratio. Select a peak where the response if free.
+* Note times for amplitude to reduce to \(73.6%\), \(40.9%\), and \(19.9%\) of the peak value.
+
+![][08075]
+
+* Form the time ratios \( \frac{t_2}{t_1} \), \( \frac{t_3}{t_1} \), and \( \frac{t_3 - t_2}{t_2 - t_1} \)
+* Enter the next figure at the time ratio side to find \(\zeta\) for each time ratio.
+* This technique is valid if the system transfer function has no zeros.
+* If recorded measurements are not available and if the number of overshoots is between \(2\) and \(6\), then
+
+\[
+\zeta \approx \frac{7 - \mathrm{#overshoots}}{10}
+\]
  
-
- 
-
- ![][08073]
-
- ![][08074]
-
-**Method \#4** Time Ratio Analysis
-
- 
-
-• If the damping ratio is between 0.5 and 1.0 (two or less overshoots), then the time ratio method can be used to determine frequency and damping ratio. Select a peak where the response if free.
-
- 
-
-• Note times for amplitude to reduce to 73.6%, 40.9%, and 19.9% of the peak value.
-
- 
-
- 
-
- ![][08075]
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-•  Form the time ratios *t_2~/t_1\), *t_3~/t_1\), and \[*t_3~-t_2\)\]/\[*t_2~-t_1\)\]
-
- 
-
-•  Enter the next figure at the time ratio side to find ζ for each time ratio.
-
- 
-
-•  This technique is valid if the system transfer function has no zeros.
-
- 
-
- 
-
-• If recorded measurements are not available and if the number of overshoots is between 2 and 6, then
-
- 
-
-![][08076]
-
-![][08077]
-
-**Frequency Time Products (wnDt3), (wnDt2), (wnDt1)**
+Time Ratio
 
 ![][08078]
+**Frequency Time Products (\(\omega_n \Delta t_3\)), (\(\omega_n \Delta t_2\)), (\(\omega_n \Delta t_1\))**
 
+**Method #5** Maximum Slope Analysis
 ![][08079]
 
 ![][08080]
