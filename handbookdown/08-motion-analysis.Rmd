@@ -605,29 +605,19 @@ Time Ratio
 **Frequency Time Products (\(\omega_n \Delta t_3\)), (\(\omega_n \Delta t_2\)), (\(\omega_n \Delta t_1\))**
 
 **Method #5** Maximum Slope Analysis
+
 ![][08079]
 
 ![][08080]
 
-• Calculation of *ζ* somewhat sensitive to ∆*x*~1~ measurement
+* Calculation of \(\zeta\) somewhat sensitive to \(\Delta x_1\) measurement
+* \(\omega_n = \frac{\omega_n \Delta t}{\Delta t}\) not too sensitive to \(\Delta x_1\)
+* Best if \(0.5 \leq \zeta \leq 1.4\)
+* Initial overshoot approximation: let (step inputs only) \( \mathcal{K} \equiv \frac{x_{\mathrm{peak}}}{x_{\mathrm{ss}}} - 1 \)
 
-~ ~
-
-•  ω*~n~* = ![][08081] not too sensitive to ∆*x*~1~
-
-~ ~
-
-• Best if 0.5 ≤ ζ ≤ 1.4
-
- 
-
-• Initial overshoot approximation: let (step inputs only)
-
- 
-
-![][08082]
-
-![][08083]
+\[
+\zeta = \sqrt{\frac{\left( - \frac{\ln \mathcal{K}}{\pi} \right)^2}{1 + \left( - \frac{\ln \mathcal{K}}{\pi} \right)^2}}
+\]
 
 **Method \#6** Separated Real Root Analysis (when ζ\>1)
 
