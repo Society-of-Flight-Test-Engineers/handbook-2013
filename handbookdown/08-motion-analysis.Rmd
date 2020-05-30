@@ -619,73 +619,21 @@ Time Ratio
 \zeta = \sqrt{\frac{\left( - \frac{\ln \mathcal{K}}{\pi} \right)^2}{1 + \left( - \frac{\ln \mathcal{K}}{\pi} \right)^2}}
 \]
 
-**Method \#6** Separated Real Root Analysis (when ζ\>1)
+**Method #6** Separated Real Root Analysis (when \(\zeta \gt 1\))
 
- 
+1. Determine several steady state \(\Delta X \left(t\right)\) values from time history
 
-1\) Determine several steady state ∆*X*(*t*) values from time history
+![][08084]
 
- 
+2. Plot \(\Delta X \) vs \(t\) on semi-log scale
 
- 
+![][08085]
 
- ![][08084]
+3. After the faster root has decayed, the semi-log plot will be a straight line whose slope determines the slower root \(\left( \frac{1}{\tau_1} \right)\)
 
- 
+![][08086] <!-- this equation -->
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-2\) Plot ∆*X* vs *t* on semi-log scale
-
- 
-
- 
-
- 
-
- ![][08085]
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-3\) After the faster root has decayed, the semi-log plot will be a straight line whose slope determines the slower root (1/τ~1~)
-
- 
-
- 
-
- ![][08086]
-
- 
-
- 
-
- 
-
-4\) Determine by extrapolating the straight line portion of the response to establish the values
+4. Determine by extrapolating the straight line portion of the response to establish the values
 
  
 
