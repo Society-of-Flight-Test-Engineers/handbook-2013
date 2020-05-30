@@ -749,9 +749,7 @@ Determine *ω~n~* and *ζ* using sinusoidal inputs.
 
 • Peak amplitude ratio "rolls off" as *ζ* increases above 0.707.
 
-• Resonant frequency approaches natural fre
-
-quency as damping decreases:
+• Resonant frequency approaches natural frequency as damping decreases:
 
 ω*~r~* = ω*~n~*\[1 − 2*ζ*^2^\]^ 0.5^
 
@@ -1073,7 +1071,7 @@ For conversion of accelerometer measurements.
 
 *mil* = thousandths of an inch
 
-*mm* = milimeters
+*mm* = millimeters
 
 *p-p* = peak-to-peak
 
