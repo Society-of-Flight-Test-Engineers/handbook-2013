@@ -631,19 +631,19 @@ Time Ratio
 
 3. After the faster root has decayed, the semi-log plot will be a straight line whose slope determines the slower root \(\left( \frac{1}{\tau_1} \right)\)
 
-![][08086] <!-- this equation -->
+\[
+\tau_1 = \frac{t_1 - t_2}{\ln \left(\frac{\Delta X_1}{\Delta X_2} \right)}
+\]
 
-4. Determine by extrapolating the straight line portion of the response to establish the values
+4. Determine by extrapolating the straight line portion of the response to establish the values \(\left( \frac{1}{\tau_1} \right)\), \(\Delta\overline{X}_0\), & \(\Delta X_0^{\prime}\)
 
- 
+\[
+\tau_2 = \tau_1 \left( \frac{\Delta\overline{X}_0}{\Delta X_0^{\prime}} \right)
+\]
 
-![][08087]
-
-![][08088]
-
-![][08089]
-
-![][08090]
+\[
+\omega_n = \sqrt{\frac{1}{\tau_1}\frac{1}{\tau_2}} \text{ and } \zeta = - \frac{\left(\frac{1}{\tau_1} + \frac{1}{\tau_2} \right)}{2 \omega_n} = - \frac{\left( \frac{1}{\tau_1} + \frac{1}{\tau_2} \right)}{2 \sqrt{\frac{1}{\tau_1}\frac{1}{\tau_2}}}
+\]
 
 **Method \#7** Modified Separated Real Root Analysis
 

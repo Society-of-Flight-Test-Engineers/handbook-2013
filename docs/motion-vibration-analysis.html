@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>8 Motion &amp; Vibration Analysis | Flight Test Engineering Reference Handbook</title>
   <meta name="description" content="8 Motion &amp; Vibration Analysis | Flight Test Engineering Reference Handbook" />
-  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
 
   <meta property="og:title" content="8 Motion &amp; Vibration Analysis | Flight Test Engineering Reference Handbook" />
   <meta property="og:type" content="book" />
@@ -33,8 +33,8 @@
   
 <link rel="prev" href="mass-properties.html"/>
 <link rel="next" href="material-strength.html"/>
+<script src="libs/header-attrs-2.2/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
-<script src="libs/elevate-section-attrs-2.0/elevate-section-attrs.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -1072,15 +1072,18 @@ Time Ratio</p>
 <ol start="3" style="list-style-type: decimal">
 <li>After the faster root has decayed, the semi-log plot will be a straight line whose slope determines the slower root <span class="math inline">\(\left( \frac{1}{\tau_1} \right)\)</span></li>
 </ol>
-<p><img src="media/08/image86.png" /> <!-- this equation --></p>
+<p><span class="math display">\[
+\tau_1 = \frac{t_1 - t_2}{\ln \left(\frac{\Delta X_1}{\Delta X_2} \right)}
+\]</span></p>
 <ol start="4" style="list-style-type: decimal">
-<li>Determine by extrapolating the straight line portion of the response to establish the values</li>
+<li>Determine by extrapolating the straight line portion of the response to establish the values <span class="math inline">\(\left( \frac{1}{\tau_1} \right)\)</span>, <span class="math inline">\(\Delta\overline{X}_0\)</span>, &amp; <span class="math inline">\(\Delta X_0^{\prime}\)</span></li>
 </ol>
-<p> </p>
-<p><img src="media/08/image87.png" /></p>
-<p><img src="media/08/image88.png" /></p>
-<p><img src="media/08/image89.png" /></p>
-<p><img src="media/08/image90.png" /></p>
+<p><span class="math display">\[
+\tau_2 = \tau_1 \left( \frac{\Delta\overline{X}_0}{\Delta X_0^{\prime}} \right)
+\]</span></p>
+<p><span class="math display">\[
+\omega_n = \sqrt{\frac{1}{\tau_1}\frac{1}{\tau_2}} \text{ and } \zeta = - \frac{\left(\frac{1}{\tau_1} + \frac{1}{\tau_2} \right)}{2 \omega_n} = - \frac{\left( \frac{1}{\tau_1} + \frac{1}{\tau_2} \right)}{2 \sqrt{\frac{1}{\tau_1}\frac{1}{\tau_2}}}
+\]</span></p>
 <p><strong>Method #7</strong> Modified Separated Real Root Analysis</p>
 <p> </p>
 <p>•  Method #6 is sensitive to errors in determining steady state values</p>
