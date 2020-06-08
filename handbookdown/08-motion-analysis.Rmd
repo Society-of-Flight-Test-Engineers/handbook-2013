@@ -645,55 +645,28 @@ Time Ratio
 \omega_n = \sqrt{\frac{1}{\tau_1}\frac{1}{\tau_2}} \text{ and } \zeta = - \frac{\left(\frac{1}{\tau_1} + \frac{1}{\tau_2} \right)}{2 \omega_n} = - \frac{\left( \frac{1}{\tau_1} + \frac{1}{\tau_2} \right)}{2 \sqrt{\frac{1}{\tau_1}\frac{1}{\tau_2}}}
 \]
 
-**Method \#7** Modified Separated Real Root Analysis
+**Method #7** Modified Separated Real Root Analysis
 
- 
+* Method #6 is sensitive to errors in determining steady state values
+* Alternate method is to avoid need for steady state value
+* Define \( \Delta X \left(t \right) \equiv \left[ x \left(t + \Delta T \right) - x \left(t \right) \right] \) where \(\Delta T \) is a time increment
 
-•  Method \#6 is sensitive to errors in determining steady state values
+1. From time history, measure \(\Delta X \) values according to definition
 
-•  Alternate method is to avoid need for steady state value
+![][08091]
 
-•  Define ∆*X*(*t*) ≡ \[ *x*(*t*+ ∆*T*) -*x*(*t*)\] where ∆*T* is a time increment
+\[
+\Delta T = \left( t_1 - t_0 \right) = \left( t_2 - t_1 \right) \text{ , etc.}
+\]
 
-1\) From time history, measure ∆*X* values according to definition
-
-€![][08091]
-
-€
-
-∆T = (t_1~-t_0~) = (t_2~-t_1), etc.
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-2\) Plot ∆*X* (*t*) vs time on semi-log scale
-
- 
-
- 
+2. Plot\(\Delta X \left(t \right) \) vs time on semi-log scale
 
 ![][08092]
 
-3\) Use previous method to determine roots and characteristics
+3. Use previous method to determine roots and characteristics
 
- 
-
-• Gross error will result if ζ is actually \<1
-
- 
-
-• If ζ is near 1, check results using time ratio or slope method
-
- 
+* Gross error will result if \(\zeta\) is actually \(\lt 1\)
+* If \(\zeta\) is near \(1\), check results using time ratio or slope method
 
 **Method \# 8** Frequency Sweep Analysis
 
