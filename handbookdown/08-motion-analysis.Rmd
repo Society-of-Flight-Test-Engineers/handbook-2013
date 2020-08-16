@@ -712,7 +712,7 @@ Determine \(\omega_n\) and \(\zeta\) using sinusoidal inputs.
 
 **Linearity Check /Accuracy Improvement**
 
-1. On semi-log scale, plot ratio of initial amplitude to subsequent peak amplitudes at each half cycle \( \left( \text{points} a-e \right) \).
+1. On semi-log scale, plot ratio of initial amplitude to subsequent peak amplitudes at each half cycle \( \left( \text{points } a-e \right) \).
 2. Fair straight line \( \left( f \right) \) through these points.
 
 ![][08099]

@@ -1108,108 +1108,56 @@ Time Ratio</p>
 <li>Gross error will result if <span class="math inline">\(\zeta\)</span> is actually <span class="math inline">\(\lt 1\)</span></li>
 <li>If <span class="math inline">\(\zeta\)</span> is near <span class="math inline">\(1\)</span>, check results using time ratio or slope method</li>
 </ul>
-<p><strong>Method # 8</strong> Frequency Sweep Analysis</p>
-<p>Determine <em>ω<sub>n</sub></em> and <em>ζ</em> using sinusoidal inputs.</p>
-<p>• This “forced response” method most useful when damping is heavy.</p>
-<p>• For a second order system, output/input amplitude ratio and phase shift are a function of input frequency.</p>
-<p> </p>
-<p> </p>
-<p> <img src="media/08/image93.png" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p><sub> </sub></p>
-<p>• Amplitude ratio peaks at “resonant” frequency, ω<em><sub>r.</sub></em></p>
-<p>• Resonant peaks increase as <em>ζ</em> decreases below 0.707.</p>
-<p>• Peak amplitude ratio “rolls off” as <em>ζ</em> increases above 0.707.</p>
-<p>• Resonant frequency approaches natural frequency as damping decreases:</p>
-<p>ω<em><sub>r</sub></em> = ω<em><sub>n</sub></em><span class="math display">\[1 − 2*ζ*^2^\]</span>^ 0.5^</p>
-<p>• Phase shift = 90° if excited at ω<em><sub>n</sub></em>, regardless of damping ratio.</p>
-<p> ζ = 0.5(ω<sub>2</sub> – ω<sub>1</sub>)/ω<sub>n</sub></p>
-<p> </p>
+<p><strong>Method #8</strong> Frequency Sweep Analysis</p>
+<p>Determine <span class="math inline">\(\omega_n\)</span> and <span class="math inline">\(\zeta\)</span> using sinusoidal inputs.</p>
+<ul>
+<li>This “forced response” method is most useful when damping is heavy.</li>
+<li>For a second order system, output/input amplitude ratio and phase shift are a function of input frequency.</li>
+</ul>
+<p><img src="media/08/image93.png" /></p>
+<ul>
+<li>Amplitude ratio peaks at “resonant” frequency, <span class="math inline">\(\omega_r\)</span>.</li>
+<li>Resonant peaks increase as <span class="math inline">\(\zeta\)</span> decreases below <span class="math inline">\(0.707\)</span>.</li>
+<li>Peak amplitude ratio “rolls off” as <span class="math inline">\(\zeta\)</span> increases above <span class="math inline">\(0.707\)</span>.</li>
+<li>Resonant frequency approaches natural frequency as damping decreases:</li>
+</ul>
+<p><span class="math display">\[
+  \omega_r = \omega_n \sqrt{ 1 - 2 \zeta^2 }
+\]</span></p>
+<ul>
+<li>Phase shift = <span class="math inline">\(90°\)</span> if excited at <span class="math inline">\(\omega_n\)</span>, regardless of damping ratio.</li>
+</ul>
+<p><span class="math display">\[
+  \zeta = \frac{1}{2} \frac{ \left( \omega_2 - \omega_1 \right) }{\omega_n}
+\]</span></p>
 <p><img src="media/08/image94.png" /></p>
-<p>Frequency Sweep Analysis (continued)</p>
-<p>1. Using sinusoidal inputs excite system @ ω near ω<em><sub>n</sub></em></p>
-<p> </p>
-<p>2. Measure phase lag (<em>φ</em>) of</p>
-<p> </p>
-<p> <img src="media/08/image95.png" /></p>
-<p> </p>
-<p> <img src="media/08/image96.png" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>3. Excite system @ another ω near ω<em><sub>n</sub></em></p>
-<p> </p>
-<p>4. Again Measure phase lag <em>φ</em></p>
-<p><em>€</em></p>
-<p><em>€</em><img src="media/08/image97.png" /></p>
-<p><em>€</em></p>
-<p><em>€</em></p>
-<p><em>€</em></p>
-<p><em>€</em></p>
-<p><em>€</em></p>
-<p><em>€</em></p>
-<p>5. Plot φ vs input frequency</p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>6. ω<em><sub>n</sub></em> occurs at φ = 90°</p>
-<p> </p>
+<ol style="list-style-type: decimal">
+<li>Using sinusoidal inputs excite system at <span class="math inline">\(\omega\)</span> near <span class="math inline">\(\omega_n\)</span></li>
+<li>Measure phase lag <span class="math inline">\(\left( \phi \right)\)</span> of <span class="math inline">\(\frac{\text{output}}{\text{input}}\)</span></li>
+</ol>
+<p><img src="media/08/image96.png" /></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Excite system at another <span class="math inline">\(\omega\)</span> near <span class="math inline">\(\omega_n\)</span></li>
+<li>Again measure phase lag <span class="math inline">\(\left( \phi \right)\)</span></li>
+</ol>
+<p><img src="media/08/image97.png" /></p>
+<ol start="5" style="list-style-type: decimal">
+<li>Plot <span class="math inline">\(\phi\)</span> vs input frequency</li>
+</ol>
 <p><img src="media/08/image98.png" /></p>
+<ol start="6" style="list-style-type: decimal">
+<li><span class="math inline">\(\omega_n\)</span> occurs at <span class="math inline">\(\phi = 90°\)</span></li>
+</ol>
 <p><strong>Linearity Check /Accuracy Improvement</strong></p>
-<p><strong> </strong></p>
-<p>1) On semi-log scale, plot ratio of initial amplitude to subsequent peak</p>
-<p>amplitudes at each half cycle (points <em>a-e</em>).</p>
-<p> </p>
-<p>2) Fair straight line (<em>f</em>) through these points.</p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> <img src="media/08/image99.png" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>3) Draw line (<em>g</em>) parallel (<em>f</em>) intercepting the ordinate at <em>TPR</em>=1</p>
-<p> </p>
-<p>4) Average <em>TPR</em> occurs at <em>T</em>/2 on line <em>g</em></p>
-<p> </p>
+<ol style="list-style-type: decimal">
+<li>On semi-log scale, plot ratio of initial amplitude to subsequent peak amplitudes at each half cycle <span class="math inline">\(\left( \text{points } a-e \right)\)</span>.</li>
+<li>Fair straight line <span class="math inline">\(\left( f \right)\)</span> through these points.</li>
+</ol>
+<p><img src="media/08/image99.png" /></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Draw line <span class="math inline">\(\left( g \right)\)</span> parallel <span class="math inline">\(\left( f \right)\)</span> intercepting the ordinate at <span class="math inline">\(\mathrm{TPR} = 1\)</span></li>
+<li>Average <span class="math inline">\(\mathrm{TPR}\)</span> occurs at <span class="math inline">\(\frac{T}{2}\)</span> on line <span class="math inline">\(\left( g \right)\)</span></li>
+</ol>
 </div>
 </div>
 <div id="complex-plane" class="section level2" number="8.4">
