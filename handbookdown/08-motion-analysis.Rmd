@@ -668,209 +668,57 @@ Time Ratio
 * Gross error will result if \(\zeta\) is actually \(\lt 1\)
 * If \(\zeta\) is near \(1\), check results using time ratio or slope method
 
-**Method \# 8** Frequency Sweep Analysis
+**Method \#8** Frequency Sweep Analysis
 
-Determine *ω~n~* and *ζ* using sinusoidal inputs.
+Determine \(\omega_n\) and \(\zeta\) using sinusoidal inputs.
 
-• This "forced response" method most useful when damping is heavy.
+* This "forced response" method is most useful when damping is heavy.
+* For a second order system, output/input amplitude ratio and phase shift are a function of input frequency.
 
-• For a second order system, output/input amplitude ratio and phase shift are a function of input frequency.
+![][08093]
 
- 
+* Amplitude ratio peaks at "resonant" frequency, \(\omega_r\).
+* Resonant peaks increase as \(\zeta\) decreases below \(0.707\).
+* Peak amplitude ratio "rolls off" as \(\zeta\) increases above \(0.707\).
+* Resonant frequency approaches natural frequency as damping decreases:
 
- 
+\[
+  \omega_r = \omega_n \sqrt{ 1 - 2 \zeta^2 }
+\]
 
- ![][08093]
+* Phase shift = \(90°\) if excited at \(\omega_n\), regardless of damping ratio.
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-~ ~
-
-• Amplitude ratio peaks at "resonant" frequency, ω*~r.~*
-
-• Resonant peaks increase as *ζ* decreases below 0.707.
-
-• Peak amplitude ratio "rolls off" as *ζ* increases above 0.707.
-
-• Resonant frequency approaches natural frequency as damping decreases:
-
-ω*~r~* = ω*~n~*\[1 − 2*ζ*^2^\]^ 0.5^
-
-• Phase shift = 90° if excited at ω*~n~*, regardless of damping ratio.
-
- ζ = 0.5(ω~2~ -- ω~1~)/ω~n~
-
- 
+\[
+  \zeta = \frac{1}{2} \frac{ \left( \omega_2 - \omega_1 \right) }{\omega_n}
+\]
 
 ![][08094]
 
-Frequency Sweep Analysis (continued)
+1. Using sinusoidal inputs excite system at \( \omega \) near \( \omega_n \)
+2. Measure phase lag \( \left( \phi \right) \) of \( \frac{\text{output}}{\text{input}} \)
 
-1\. Using sinusoidal inputs excite system @ ω near ω*~n~*
+![][08096]
 
- 
+3. Excite system at another \( \omega \) near \( \omega_n \)
+4. Again measure phase lag \( \left( \phi \right) \)
 
-2\. Measure phase lag (*φ*) of
+![][08097]
 
- 
-
- ![][08095]
-
- 
-
- ![][08096]
-
- 
-
- 
-
- 
-
- 
-
- 
-
-3\. Excite system @ another ω near ω*~n~*
-
- 
-
-4\. Again Measure phase lag *φ*
-
-*€*
-
-*€*![][08097]
-
-*€*
-
-*€*
-
-*€*
-
-*€*
-
-*€*
-
-*€*
-
-5\. Plot φ vs input frequency
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-6\. ω*~n~* occurs at φ = 90°
-
- 
+5. Plot \( \phi \) vs input frequency
 
 ![][08098]
 
+6. \( \omega_n \) occurs at \( \phi = 90° \)
+
 **Linearity Check /Accuracy Improvement**
 
-** **
+1. On semi-log scale, plot ratio of initial amplitude to subsequent peak amplitudes at each half cycle \( \left( \text{points} a-e \right) \).
+2. Fair straight line \( \left( f \right) \) through these points.
 
-1\) On semi-log scale, plot ratio of initial amplitude to subsequent peak
+![][08099]
 
-amplitudes at each half cycle (points *a-e*).
-
- 
-
-2\) Fair straight line (*f*) through these points.
-
- 
-
- 
-
- 
-
- 
-
- ![][08099]
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-3\) Draw line (*g*) parallel (*f*) intercepting the ordinate at *TPR*=1
-
- 
-
-4\) Average *TPR* occurs at *T*/2 on line *g*
-
- 
+3. Draw line \( \left( g \right) \) parallel \( \left( f \right) \) intercepting the ordinate at \(\mathrm{TPR} = 1 \)
+4. Average \(\mathrm{TPR}\) occurs at \( \frac{T}{2} \) on line \( \left( g \right) \)
 
 ## Complex Plane
 
