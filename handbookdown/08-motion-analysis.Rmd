@@ -173,99 +173,95 @@ so, after \(\frac{M}{D}\) seconds have elapsed, \(V =  V_{\mathrm{ss}} \left[1  
 
 ### First Order Motion Descriptive Parameters
 
-![][08011]
+\[ x(t) = e^{-\zeta \omega_n t} = e^{-\frac{t}{\tau}} \]
 
 ![][08012]
 
-when *t* = 0.6931τ: *x = e*^− 0.6931^ = 0.5 (time to half amplitude)
+||||
+|-|-|-|
+|when \(t = 0.6931\tau\): |\(x = e^{−0.6931}\) |\(= 0.5 \)  (time to half amplitude)|
+|when \(t = \tau\):       |\(x = e^{−1}     \) |\(= 0.37\)|
+|when \(t = 3\tau\):      |\(x = e^{−3}     \) |\(= 0.05\)|
+|when \(t = 4\tau\):      |\(x = e^{−4}     \) |\(= 0.02\)|
 
-when *t* = τ: *x = e*^−1^ = 0.37
+If exponent \(\gt 0\), then motion is divergent.
 
-when *t* = 3τ     *x = e*^−3^ = 0.05
+\[x(t) = ce^{mt}\]
 
-when *t* = 4τ: *x = e*^−4^ = 0.02
-
-If exponent \> 0, then motion is divergent.
-
-![][08013]![][08014]
+where \(m \gt 0\)
 
 ![][08015]
 
-• *τ *again describes the exponential rate of divergence.
+\(\tau\) again describes the exponential rate of divergence.
 
-• By convention, the "time to double amplitude" (*t_2\)) is usually applied as the evaluation metric.
+By convention, the "time to double amplitude" (\(t_2\)) is usually applied as the evaluation metric.
 
-• *x*~(t2)~ = 2*x*~(0)~ where *x*~(0)~ = *c\mathrm{e}^m^*^0^
+\(x_{t_2} = 2x_0\) where \(x_0 = ce^{m\cdot 0}\)
 
- 
+Therefore
 
-![][08016]
+\[
+\begin{align}
+x_2 &= 2c \\
+2c &= ce^{mt_2} \\
+2 &= e^{mt_2} \\
+\ln 2 &= mt_2 \\
+\therefore \text{Time to double amplitude } \frac{0.6931}{m} = t_2 = 0.693\tau \\
+\end{align}
+\]
 
-![][08017]
-
-### Determining *τ* from Step Input Time History
+### Determining \(\tau\) from Step Input Time History
 
 **Method \#1**
 
-τ = time to reach 0.632 *x~ss~*
+\(\tau\) = time to reach \(0.632 x_{\mathrm{ss}}\)
 
 ![][08018]
 
 **Method \#2**
 
-![][08019]
+1. Define \(x_{\mathrm{ss}}\)
+1. Measure \(x_1\) at some time \(t_1\)
+1. Calculate \(x_2 = 0.632 \left( x_{\mathrm{ss}} + 0.58 x_1 \right) \) 
+1. Find \(t_2\) corresponding to \(x_2\)
+1. \(t_2 - t_1 = \tau \)
 
-![][08020]
-
+<!-- x_2 is mislabeled in figure -->
 ![][08021]
 
 **Method \#3**
 
- 
-
-1\. Pick any time *t_1\).
-
-2\. Draw tangent at *t_1\).
-
-3\. Note *t_2\) where tangent intercepts x~ss~.
-
-4\. *τ* = *t_2\)-*t_1\)
-
- 
+1. Pick any time \(t_1\).
+1. Draw tangent at \(t_1\).
+1. Note \(t_2\) where tangent intercepts \(x_{\mathrm{ss}}\).
+1. \( \tau = t_2 -t_1 \)
 
 ![][08022]
 
-**Method \#4** When *X~SS~* is unknown use
+**Method \#4** 
 
- 
+<!-- Why do we suddenly switch to caps? -->
+When \(X_{\mathrm{SS}}\) is unknown use
 
-![][08023]
+\[\tau = \frac{\Delta t}{\ln \left( \frac{A_1}{A_2} \right)} \]
 
 ![][08024]
 
-**Method \#5** When *Xss* is known, use
+**Method \#5** 
 
- 
+When \(X_{\mathrm{SS}}\) is known, use
 
-![][08025]
+\[\tau = \frac{-\Delta t}{\ln \left[ \frac{X_{\mathrm{SS}} - X_1}{X_{\mathrm{SS}} - X_2} \right]} \]
 
 **Linearity check:**
 
 Note parameter change between even time increments.
 
- 
-
 Plot parameter changes vs elapsed time on semi-log scale
-
- 
 
 ![][08026]
 
-Slope of line equals *τ*
-
- 
-
-Dp
+Slope of line equals \(\tau\)
 
 ![][08027]
 
@@ -279,849 +275,450 @@ Mechanical systems have elements of spring, mass, and usually damping. Forcing f
 
 ![][08028]
 
-*K* = spring stiffness (*F*/*x*)
+| | |
+|-|----------------------------------------|
+|\(K\) | spring stiffness ( \(F/x\) ) |
+|\(x\) | displacement from equilibrium |
+|\(M\) | mass|
+|\(F\left(t\right)\)| forcing function|
+|\(D\)| damping|
 
-*x* = displacement from equilibrium
+\[\sum{}{} F_{\mathrm{vert}} : M\ddot{x} + D\dot{x} + Kx = F(t) \]
 
-*M* = mass
+Natural character is observed when system is allowed to move with no external input [\(F(t) = 0 \)] 
 
-*F*~(*t*)~ = forcing function
+\[\sum{}{} F_{\mathrm{vert}} : M\ddot{x} + D\dot{x} + Kx = 0 \]
 
-*D* = damping
+Apply operator technique:
 
- 
+Let 
 
-#### 
+\[
+x = e^{st} \text{, } \dot{x} = s e^{st} \text{, } \ddot{x} = s^2 e^{st} \\
+\Rightarrow e^{st} \left( M s^2 + D s + K \right) = 0 \\
+\]
 
-#### 
+Divide out \(e^{st}\), since it never equals zero, the characteristic equation remains:
 
-#### 
+\[
+M s^2 + D s + K = 0 \text{ or } s^2 + \frac{D}{M} s + \frac{K}{M} = 0\\
+\]
 
-#### Natural character is observed when system is allowed to move with no external input \[*F*(*t*) = 0\] 
+The values of \(s\) that satisfy this equation are called the roots
 
-#### 
-
-#### ![][08029]
-
-#### 
-
-#### Apply operator technique:
-
-#### 
-
-#### ![][08030]
-
-Divide out *\mathrm{e}^st^*, since it never equals zero, the characteristic equation remains:
-
-![][08031]
-
-The values of *s* that satisfy this equation are called the roots
-
-![][08032]
+\[ x = c_1 e^{s_1 t} + c_2 e^{s_2 t} \]
 
 Solve for the roots using the quadratic equation
 
-![][08033]
-
 ### Second Order Motion Descriptive Parameters
 
- 
+Solution (\(x\)) calculated as
 
-Solution (*x*) calculated as
-
- 
-
- ![][08034]
-
- 
-
- 
+\[
+x = c_1 e^{\tau_1 t} + c_2 e^{\tau_2 t} \text{ where } s_1\text{, } s_2 = -\frac{D}{2M} \pm j \sqrt{ \frac{K}{M} - \left( \frac{D}{2M} \right)^2 }  
+\]
 
 Apply Euler's identity for complex conjugate roots
 
- 
+\[
+x = A e^{-\frac{D}{2M} t} \sin \left( \sqrt{\frac{K}{M} - \left(\frac{D}{2M} \right)^2} t + \phi  \right)
+\]
 
- ![][08035]
+* \(\phi\) defines the **phase shift**.
+* \(A\) defines the **initial amplitude**.
+* The real part of the root \( \frac{D}{2M} \) defines the **envelope** of the motion.
+* The imaginary part of the root identifies the **damped frequency** of the oscillations, \(\omega_d\) [rad/sec].
 
- 
+\[
+\omega_d = \sqrt{\frac{K}{M} - \left(\frac{D}{2M} \right)^2}
+\]
 
-• φ defines the **phase shift**.
+* If damping is reduced to \( D= 0 \) then only \( \sqrt{\frac{K}{M}} \) remains.
+* This is the undamped or **"natural" frequency** ( \(\omega_n\) ).
 
-•  *A* defines the **initial amplitude**.
+\[
+\omega_n \equiv \sqrt{\frac{K}{M}}
+\]
 
-•  The real part of the root \[*D*/2*M*\] defines the **envelope** of the motion.
+* If \( \left( \frac{D}{2M} \right)^2 = \frac{K}{M} \) then \(D\) is considered to be critical (just enough to prevent oscillations)
 
-•  The imaginary part of the root identifies the **damped frequency**
+\[
+D_{\mathrm{crit}} = \sqrt{\frac{K}{M}} 2M = 2 \sqrt{KM}
+\]
 
-of the oscillations, ω*~d~* (rad/sec).
+* For oscillatory motion, actual system damping is typically expressed as a fraction critical damping. Define **damping ratio** as
 
- 
+\[
+\zeta \equiv \frac{D}{ D_{ \mathrm{crit} } } = \frac{D}{ 2 \sqrt{KM} }
+\]
 
-![][08036]
+Combining 
 
- 
+\[
+\omega_d \equiv \sqrt{\frac{K}{M} - \left(\frac{D}{2M} \right)^2}
+\]
 
- ![][08037]
+with 
 
-• If damping is reduced to *D* = 0 then only \[*K/M*\]^1/2^ remains.
+\[
+\omega_n \equiv \sqrt{\frac{K}{M}}
+\]
 
-This is the undamped or **"natural" frequency** (ω~η~).
+and
 
- 
+\[
+\zeta = \frac{D}{ 2 \sqrt{KM} }
+\]
 
- ![][08038]
+gives
 
- 
+\[
+\omega_d \equiv \omega_n \sqrt{1 - \zeta^2}
+\]
 
-•  If
+and
 
-![][08039]
+\[
+\frac{D}{2M} = \zeta \omega_n
+\]
 
-then *D* is conisidered to be critical \[just enough to prevent oscillations\]
+The values can be substituted to gives
 
- 
+\[
+\begin{align}
+x &= A e^{-\frac{D}{2M} t} \sin \left( \sqrt{\frac{K}{M} - \left(\frac{D}{2M} \right)^2} t + \phi  \right) \\
+&= A e^{-\zeta \omega_n t} \sin \left( \omega_d t + \phi  \right) \\
+&= A e^{-\zeta \omega_n t} \sin \left( \omega_n \sqrt{1 - \zeta^2} t + \phi  \right) \\
+\text{where } \phi &= \tan^{-1} \frac{\omega_d}{\zeta \omega_n} =  \tan^{-1} \frac{\omega_n \sqrt{1 - \zeta^2}}{\zeta \omega_n} =  \tan^{-1} \frac{\sqrt{1 - \zeta^2}}{\zeta} \\
+\end{align}
+\]
 
- ![][08040]
-
- 
-
- 
-
-• For oscillatory motion, actual system damping is typically expressed as a fraction critical damping. Define **damping ratio** as
-
- 
-
- ![][08041]
-
-![][08042]
-
+<!-- Don't think we need this labeled equation...? -->
 ![][08043]
 
 ![][08044]
 
 ![][08045]
 
-![][08046]
+\[\text{Roots } s_{1,2} = -\frac{D}{2M} \pm j \sqrt{\frac{K}{M} - \left( \frac{D}{2M} \right)^2} = -\zeta \omega_n \pm j\omega_n\sqrt{1 - \zeta^2} \]
 
 Possible Solutions:
 
- ![][08047]
+<!-- Eventually convert to an actual table -->
+![][08047]
 
-• The various combination of *K*, *M*, and *D* and their effects on system response can be related to damping ratio *ζ* as follows:
+• The various combination of \(K\), \(M\), and \(D\) and their effects on system response can be related to damping ratio \(\zeta\) as follows:
 
- 
-
-   ζ \> 1 Real & unequal roots exponential, convergent
-
- 
-
-  ζ =  ± 1 Real & equal roots exponential, conv or div
-
- 0 \< ζ \< 1  Complex pair roots sinusoidal, convergent
-
- 
-
-     ζ = 0 Imaginary pair roots sinusoidal, neutral
-
-€
-
-−1 \< ζ \< 0 Complex pair roots sinusoidal, divergent
-
- 
-
- ζ \< − 1 Real & unequal roots exponential, divergent
-
- 
-
-![][08048]![][08049]
+| | | |
+|-|---|---|
+| \(+1 \lt \zeta\)        | Real & unequal roots: exponential, convergent | \[ x\left(t\right) = c_1 e^{-\omega_n \left( \zeta + \sqrt{\zeta^2 - 1} \right)t} + c_2 e^{-\omega_n \left( \zeta - \sqrt{\zeta^2 - 1} \right)t} \] |
+| \(\zeta = +1\)          | Real & equal roots: exponential, convergent   | \[ x\left(t\right) = c_1 e^{-\omega_n \zeta t} + c_2 t e^{-\omega_n \zeta t} \] |
+| \(0 \lt \zeta \lt +1 \) | Complex pair roots: sinusoidal, convergent    | \[ x\left(t\right) =  A e^{-\zeta \omega_n t} \sin \left( \omega_d + \phi \right) \] |
+| \(\zeta = 0 \)          | Imaginary pair roots: sinusoidal, neutral     | \[\begin{align} x\left(t\right) &=  A \sin \left( \omega_n t + \phi \right) \\ &= A \cos \left( \omega_n t \right) \end{align} \] |
+| \(-1 \lt \zeta \lt 0 \) | Complex pair roots: sinusoidal, divergent     | \[ x\left(t\right) =  A e^{-\zeta \omega_n t} \sin \left( \omega_d + \phi \right) \] |
+| \(\zeta = -1 \)         | Real & equal roots: exponential, divergent    | \[ x\left(t\right) = c_1 e^{-\omega_n \zeta t} + c_2 t e^{-\omega_n \zeta t} \] |
+| \(\zeta \lt -1 \)       | Real & unequal roots: exponential, divergent  | \[ x\left(t\right) = c_1 e^{-\omega_n \left( \zeta + \sqrt{\zeta^2 - 1} \right)t} + c_2 e^{-\omega_n \left( \zeta - \sqrt{\zeta^2 - 1} \right)t} \] |
 
 **Damping ratio effect on second order system**
 
-  
-
- 
-
 Response of various second order systems to an impulse input.
 
- 
+Second-order systems are oscillatory if \( -1 \lt \zeta \lt +1 \).
 
- 
+Motion typically described by \(\omega_n\) and \(\zeta\)
 
-Second-order systems are oscillatory if
+\(T\), \(\omega_d\), \(\omega_n\), and \(\zeta\) are linked such that knowledge of any two will yield the other two.
 
--1 \> *ζ* \> 1.
-
- 
-
- 
-
-Motion typically
-
-described by
-
-*ω~n~* and *ζ*
-
- 
-
- 
-
-*T*, *ω~d~*, *ω~n~* and *ζ *are linked such that knowledge of any two will yield
-
-the other two.
-
- 
-
- ![][08050]
-
- 
+![][08050]
 
 ![][08051]
 
 ![][08052]
 
-2nd order system response to **unit step input** for **underdamped systems**
-
-** **
-
-(0 \> *ζ* \> 1)
-
- 
+2nd order system response to **unit step input** for **underdamped systems** ( \(0 \lt \zeta \lt +1 \) )
 
 ![][08053]
 
-**Decay rates (for 0 \< ζ \<1) and Useful Insights**
+**Decay rates (for \(0 \lt \zeta \lt +1\) ) and Useful Insights**
 
- 
+| | |
+|-|:--|
+|**Time to decay** | \[\zeta \omega_n = \frac{\ln \frac{x_1}{x_2} }{t_2 - t_1} \Rightarrow \Delta t = \frac{\ln \frac{x_1}{x_2}}{\zeta \omega_n} \] |
+|Time to \(\frac{1}{2}\) amplitude | \[ \equiv \Delta t_{\frac{1}{2}} = \frac{\ln \frac{2}{1}}{\zeta \omega_n} = \frac{0.6931}{\zeta \omega_n}  \] |
+|Time to \(\frac{1}{10}\) amplitude | \[ \equiv \Delta t_{\frac{1}{10}} = \frac{\ln \frac{10}{1}}{\zeta \omega_n} = \frac{2.3026}{\zeta \omega_n}  \] |
+|Time to \(\frac{1}{x}\) amplitude | \[ \equiv \Delta t_{\frac{1}{x}} = \frac{\ln x }{\zeta \omega_n}  \] |
+|**\# cycles to decay** | \[\text{# cycles} = \frac{\Delta t }{T} = \frac{\Delta t \omega_d}{2 \pi} \] |
+|\# cycles to \(\frac{1}{2}\) amplitude  | \[\equiv C_{\frac{1}{2}} = \frac{0.6931}{\zeta \omega_n}\frac{\omega_d}{2 \pi} = \frac{0.6931}{2 \pi  }\frac{\omega_d}{\zeta \omega_n} = \frac{0.1103}{\varepsilon} \] |
+|\# cycles to \(\frac{1}{10}\) amplitude  | \[\equiv C_{\frac{1}{10}} = \frac{2.3026}{\zeta \omega_n}\frac{\omega_d}{2 \pi} = \frac{2.3026}{2 \pi  }\frac{\omega_d}{\zeta \omega_n} = \frac{0.3665}{\varepsilon} \] |
+|\# cycles to \(\frac{1}{x}\) amplitude  | \[\equiv C_{\frac{1}{x}} = \frac{\ln x }{2 \pi }\frac{\omega_d}{\zeta \omega_n} \] |
 
-![][08054]
+Same analysis applies for exponential growth
+
+For same \(\Delta t \)
+
+\[ \frac{x_1}{x_2} = \frac{x_2}{x_3} = \frac{x_3}{x_4} = \dots \]
+
+Therefore
+
+\[ \frac{x_1}{x_3} = \frac{x_1}{x_2} \frac{x_2}{x_3} = \left( \frac{x_1}{x_2} \right)^2 \Rightarrow \mathrm{HCAR} = \sqrt{\text{full cycle amplitude ratio}}\]
+
+\[
+\begin{align}
+\mathrm{HCAR} &\equiv \frac{x_1}{x_2} =  e^{\zeta \omega_n \left( t_2 - t_1 \right)} =  e^{\zeta \omega_n \left( \Delta t \right)} =  e^{\zeta \omega_n \left( \frac{T}{2} \right)} =  e^{\zeta \omega_n \left( \frac{2\pi}{2\omega_d} \right)} \\
+&=  e^{\zeta \omega_n \left( \frac{\pi}{\omega_n \sqrt{1 - \zeta^2}} \right)} =  e^{\zeta \omega_n \left( \frac{\pi \zeta}{ \sqrt{1 - \zeta^2}} \right)} \\
+&\Rightarrow \ln \frac{x_1}{x_2} = \frac{\pi \zeta}{ \sqrt{1 - \zeta^2}} \Rightarrow \zeta = \sqrt{\frac{\left( \ln \frac{x_1}{x_2} \right)^2}{\pi^2 + \left( \ln \frac{x_1}{x_2} \right)^2}} \\
+\end{align}
+\]
+
+This can be applied in graphical form (transient peak ratio method)
 
 ### Determining Descriptive Parameters
 
-** **
-
 Time domain metrics
 
- 
+![][08055]
 
- ![][08055]
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-Peak Value, *MP*: largest value
-
- 
-
-Final Value, *FV*: steady state value
-
- 
-
-Delay Time, *T_d\): 50% of final value
-
- 
-
-Rise Time, *T_r\): 10% - 90% of FV
-
- 
-
-Peak Time, *T_p\): time to MP
-
- 
-
-Settling Time, *T_s\): time to reach some defined % of final value
-
- 
-
-\% Overshoot, *PO*:
-
- 
-
-![][08056]
-
-*target value = unity*
-
- 
+||||
+|-|-|-|
+|Peak Value   | \(\mathrm{MP}\)  | largest value |
+|Final Value  | \(\mathrm{FV}\)  | steady state value|
+|Delay Time   | \(T_d\) | \(50%\) of final value|
+|Rise Time    | \(T_r\) | \(10% - 90%\) of FV|
+|Peak Time    | \(T_p\) | time to MP|
+|\% Overshoot | \(\mathrm{PO}\)  | \( \frac{\mathrm{MP} - 1}{1} \times 100% \text{target value} = \text{unity} \) *target value = unity*|
 
 **Method \#1** Basic Analysis
 
- 
-
- 
-
 Note
 
- ![][08057]
+\[ x\left(t\right) = A e^{-\zeta \omega_n t} \sin \left( \omega_d t + 0 \right) \]
+
+\(\zeta \omega_n \) and \(\omega_d\) describe a time history
 
 ![][08058]
 
-![][08059]
+\[f_d = \frac{1}{T}\]
 
-![][08060]
+\[\omega_d = \frac{2\pi}{T} \]
 
-![][08061]
+\[\zeta \omega_n = \frac{\ln \frac{x_1}{x_2}}{\left(t_2 - t_1 \right)} \]
 
 Easily measured values: can use any points on envelope
 
- 
+Define
 
-![][08062]
+\[\varepsilon \equiv \frac{\zeta \omega_n}{\omega_d} = \frac{\frac{\ln \frac{x_1}{x_2}}{\left(t_2 - t_1 \right)} }{\frac{2\pi}{T}} = \frac{T\ln \frac{x_1}{x_2}}{2\pi \left(t_2 - t_1 \right)} \]
 
-![][08063]
+where
 
-![][08064]
+\[ \left(t_2 - t_1 \right) = \frac{T}{2} \Rightarrow \frac{\zeta \omega_n}{\omega_d} = \frac{\ln \frac{x_1}{x_2}}{\pi} = \varepsilon = \ln \left[ x_1 / x_2 \right] / \pi \]
 
-![][08065]
+recall
 
-![][08066]
+\[\omega_d = \omega_n \sqrt{1 - \zeta^2} \]
+
+\[\varepsilon = \frac{\zeta \omega_n}{\omega_n \sqrt{1 - \zeta^2}} =  \frac{\zeta}{ \sqrt{1 - \zeta^2}} \Rightarrow \varepsilon^2 = \frac{\zeta^2}{ 1 - \zeta^2} \Rightarrow \varepsilon^2 \left( 1 - \zeta^2 \right) = \zeta^2 \Rightarrow \varepsilon^2 = \zeta^2 \left[ 1 + \varepsilon^2 \right] \]
+
+\[ \zeta = \sqrt{\frac{\varepsilon^2}{1 + \varepsilon^2}} \]
+
+\[\omega_n = \frac{\zeta \omega_n}{\zeta} = \frac{\omega_d}{\sqrt{1 - \zeta^2}} \]
+
+\[ \left| \frac{x_1}{x_2} \right| = \text{Half-Cycle Amplitude Ratio } \left( \mathrm{HCAR} \right) = e^{\zeta \omega_n \left(t_2 - t_1\right)}\]
 
 **Method \#2** Transient Peak Ratio Analysis
 
- 
+1. Measure either *\(D\) or \(x\) distances as shown.
 
-1\) Measure either *D* or *x* distances as shown.
-
- 
-
- ![][08067]
-
- 
+![][08067]
 
 Example Calculation
 
- 
+![][08068]
 
- ![][08068]
+2. Note ratio of adjacent peak values (transient peak ratios).
 
- 
+|||
+|-:|:---|
+| First \(\mathrm{TPR}\) | \[\frac{D_2}{D_1} = \frac{117-86}{117-80}=\frac{31}{37}=0.8378\] |
+| Second \(\mathrm{TPR}\) | \[\frac{D_3}{D_2} = \frac{112-86}{117-86}=\frac{26}{31}=0.8387\] |
+| Third \(\mathrm{TPR}\) | \[\frac{D_4}{D_3} = \frac{112-90}{112-86}=\frac{22}{26}=0.8462\] |
 
- ![][08069]
+3. Average several TPRs.
 
- 
+Average \(\mathrm{TPR} = 0.8409\)
 
- Average TPR = 0.8409
+4. Use equation to find \(\zeta\):
 
- 
+\[ \zeta = \sqrt{\frac{\left( \ln \frac{x_1}{x_2} \right)^2}{\pi^2 + \left( \ln \frac{x_1}{x_2} \right)^2}} \] 
 
- 
+   a. Can use \(D_1/D_2\) or \(x_1/x_2\) ratios in above equation.
 
- 
+   b. In lieu of equation, use adjacent look-up curve to find \(\zeta\).
 
- 
-
-2\) Note ratio of adjacent peak values (transient peak ratios).
-
-3\) Average several TPRs.
-
-4\) Use equation to find *ζ*:
-
- 
-
- ![][08070]
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-4a) Can use
-
-*D_1~/D_2\) or *x_1~/x_2\)
-
-ratios in above equation.
-
- 
-
-4b) In lieu of equation, use
-
-adjacent look-up curve to find *ζ*.
-
- 
-
-4c) Time ratio method works better with heavy damping.
-
- 
-
- 
+   c. Time ratio method works better with heavy damping.
 
 ![][08071]
 
 **Method \#3** Multiple *TPR* Analysis
 
- 
-
 ![][08072]
 
 To determine damping ratio
 
-> \~  Use the *m* = 1 line when comparing the next ratio.
->
->  \~  Use the *m* = 2 line for comparing every other
->
-> peak ratio.
+* Use the \(m = 1 \) line when comparing the next ratio.
 
+\[
+\begin{align}
+\frac{\Delta x_1}{\Delta x_0} &= \frac{2.5}{4.5} = 0.56 & \zeta = 0.16 \\
+\frac{\Delta x_2}{\Delta x_1} &= \frac{1.5}{2.5} = 0.60 & \zeta = 0.14 \\
+\end{align}
+\]
+
+* Use the \(m = 2 \) line for comparing every other peak ratio.
+
+\[
+\begin{align}
+\frac{\Delta x_2}{\Delta x_0} &= \frac{1.5}{4.5} = 0.33 & \zeta = 0.16 \\
+\frac{\Delta x_3}{\Delta x_1} &= \frac{1.0}{2.5} = 0.40 & \zeta = 0.14 \\
+\end{align}
+\]
+
+**Method #4** Time Ratio Analysis
+
+* If the damping ratio is between \(0.5\) and \(1.0\) (two or less overshoots), then the time ratio method can be used to determine frequency and damping ratio. Select a peak where the response if free.
+* Note times for amplitude to reduce to \(73.6%\), \(40.9%\), and \(19.9%\) of the peak value.
+
+![][08075]
+
+* Form the time ratios \( \frac{t_2}{t_1} \), \( \frac{t_3}{t_1} \), and \( \frac{t_3 - t_2}{t_2 - t_1} \)
+* Enter the next figure at the time ratio side to find \(\zeta\) for each time ratio.
+* This technique is valid if the system transfer function has no zeros.
+* If recorded measurements are not available and if the number of overshoots is between \(2\) and \(6\), then
+
+\[
+\zeta \approx \frac{7 - \mathrm{#overshoots}}{10}
+\]
  
-
- 
-
- ![][08073]
-
- ![][08074]
-
-**Method \#4** Time Ratio Analysis
-
- 
-
-• If the damping ratio is between 0.5 and 1.0 (two or less overshoots), then the time ratio method can be used to determine frequency and damping ratio. Select a peak where the response if free.
-
- 
-
-• Note times for amplitude to reduce to 73.6%, 40.9%, and 19.9% of the peak value.
-
- 
-
- 
-
- ![][08075]
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-•  Form the time ratios *t_2~/t_1\), *t_3~/t_1\), and \[*t_3~-t_2\)\]/\[*t_2~-t_1\)\]
-
- 
-
-•  Enter the next figure at the time ratio side to find ζ for each time ratio.
-
- 
-
-•  This technique is valid if the system transfer function has no zeros.
-
- 
-
- 
-
-• If recorded measurements are not available and if the number of overshoots is between 2 and 6, then
-
- 
-
-![][08076]
-
-![][08077]
-
-**Frequency Time Products (wnDt3), (wnDt2), (wnDt1)**
+Time Ratio
 
 ![][08078]
+**Frequency Time Products (\(\omega_n \Delta t_3\)), (\(\omega_n \Delta t_2\)), (\(\omega_n \Delta t_1\))**
+
+**Method #5** Maximum Slope Analysis
 
 ![][08079]
 
 ![][08080]
 
-• Calculation of *ζ* somewhat sensitive to ∆*x*~1~ measurement
+* Calculation of \(\zeta\) somewhat sensitive to \(\Delta x_1\) measurement
+* \(\omega_n = \frac{\omega_n \Delta t}{\Delta t}\) not too sensitive to \(\Delta x_1\)
+* Best if \(0.5 \leq \zeta \leq 1.4\)
+* Initial overshoot approximation: let (step inputs only) \( \mathcal{K} \equiv \frac{x_{\mathrm{peak}}}{x_{\mathrm{ss}}} - 1 \)
 
-~ ~
+\[
+\zeta = \sqrt{\frac{\left( - \frac{\ln \mathcal{K}}{\pi} \right)^2}{1 + \left( - \frac{\ln \mathcal{K}}{\pi} \right)^2}}
+\]
 
-•  ω*~n~* = ![][08081] not too sensitive to ∆*x*~1~
+**Method #6** Separated Real Root Analysis (when \(\zeta \gt 1\))
 
-~ ~
+1. Determine several steady state \(\Delta X \left(t\right)\) values from time history
 
-• Best if 0.5 ≤ ζ ≤ 1.4
+![][08084]
 
- 
+2. Plot \(\Delta X \) vs \(t\) on semi-log scale
 
-• Initial overshoot approximation: let (step inputs only)
+![][08085]
 
- 
+3. After the faster root has decayed, the semi-log plot will be a straight line whose slope determines the slower root \(\left( \frac{1}{\tau_1} \right)\)
 
-![][08082]
+\[
+\tau_1 = \frac{t_1 - t_2}{\ln \left(\frac{\Delta X_1}{\Delta X_2} \right)}
+\]
 
-![][08083]
+4. Determine by extrapolating the straight line portion of the response to establish the values \(\left( \frac{1}{\tau_1} \right)\), \(\Delta\overline{X}_0\), & \(\Delta X_0^{\prime}\)
 
-**Method \#6** Separated Real Root Analysis (when ζ\>1)
+\[
+\tau_2 = \tau_1 \left( \frac{\Delta\overline{X}_0}{\Delta X_0^{\prime}} \right)
+\]
 
- 
+\[
+\omega_n = \sqrt{\frac{1}{\tau_1}\frac{1}{\tau_2}} \text{ and } \zeta = - \frac{\left(\frac{1}{\tau_1} + \frac{1}{\tau_2} \right)}{2 \omega_n} = - \frac{\left( \frac{1}{\tau_1} + \frac{1}{\tau_2} \right)}{2 \sqrt{\frac{1}{\tau_1}\frac{1}{\tau_2}}}
+\]
 
-1\) Determine several steady state ∆*X*(*t*) values from time history
+**Method #7** Modified Separated Real Root Analysis
 
- 
+* Method #6 is sensitive to errors in determining steady state values
+* Alternate method is to avoid need for steady state value
+* Define \( \Delta X \left(t \right) \equiv \left[ x \left(t + \Delta T \right) - x \left(t \right) \right] \) where \(\Delta T \) is a time increment
 
- 
+1. From time history, measure \(\Delta X \) values according to definition
 
- ![][08084]
+![][08091]
 
- 
+\[
+\Delta T = \left( t_1 - t_0 \right) = \left( t_2 - t_1 \right) \text{ , etc.}
+\]
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-2\) Plot ∆*X* vs *t* on semi-log scale
-
- 
-
- 
-
- 
-
- ![][08085]
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-3\) After the faster root has decayed, the semi-log plot will be a straight line whose slope determines the slower root (1/τ~1~)
-
- 
-
- 
-
- ![][08086]
-
- 
-
- 
-
- 
-
-4\) Determine by extrapolating the straight line portion of the response to establish the values
-
- 
-
-![][08087]
-
-![][08088]
-
-![][08089]
-
-![][08090]
-
-**Method \#7** Modified Separated Real Root Analysis
-
- 
-
-•  Method \#6 is sensitive to errors in determining steady state values
-
-•  Alternate method is to avoid need for steady state value
-
-•  Define ∆*X*(*t*) ≡ \[ *x*(*t*+ ∆*T*) -*x*(*t*)\] where ∆*T* is a time increment
-
-1\) From time history, measure ∆*X* values according to definition
-
-€![][08091]
-
-€
-
-∆T = (t_1~-t_0~) = (t_2~-t_1), etc.
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-2\) Plot ∆*X* (*t*) vs time on semi-log scale
-
- 
-
- 
+2. Plot\(\Delta X \left(t \right) \) vs time on semi-log scale
 
 ![][08092]
 
-3\) Use previous method to determine roots and characteristics
+3. Use previous method to determine roots and characteristics
 
- 
+* Gross error will result if \(\zeta\) is actually \(\lt 1\)
+* If \(\zeta\) is near \(1\), check results using time ratio or slope method
 
-• Gross error will result if ζ is actually \<1
+**Method \#8** Frequency Sweep Analysis
 
- 
+Determine \(\omega_n\) and \(\zeta\) using sinusoidal inputs.
 
-• If ζ is near 1, check results using time ratio or slope method
+* This "forced response" method is most useful when damping is heavy.
+* For a second order system, output/input amplitude ratio and phase shift are a function of input frequency.
 
- 
+![][08093]
 
-**Method \# 8** Frequency Sweep Analysis
+* Amplitude ratio peaks at "resonant" frequency, \(\omega_r\).
+* Resonant peaks increase as \(\zeta\) decreases below \(0.707\).
+* Peak amplitude ratio "rolls off" as \(\zeta\) increases above \(0.707\).
+* Resonant frequency approaches natural frequency as damping decreases:
 
-Determine *ω~n~* and *ζ* using sinusoidal inputs.
+\[
+  \omega_r = \omega_n \sqrt{ 1 - 2 \zeta^2 }
+\]
 
-• This "forced response" method most useful when damping is heavy.
+* Phase shift = \(90°\) if excited at \(\omega_n\), regardless of damping ratio.
 
-• For a second order system, output/input amplitude ratio and phase shift are a function of input frequency.
-
- 
-
- 
-
- ![][08093]
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-~ ~
-
-• Amplitude ratio peaks at "resonant" frequency, ω*~r.~*
-
-• Resonant peaks increase as *ζ* decreases below 0.707.
-
-• Peak amplitude ratio "rolls off" as *ζ* increases above 0.707.
-
-• Resonant frequency approaches natural fre
-
-quency as damping decreases:
-
-ω*~r~* = ω*~n~*\[1 − 2*ζ*^2^\]^ 0.5^
-
-• Phase shift = 90° if excited at ω*~n~*, regardless of damping ratio.
-
- ζ = 0.5(ω~2~ -- ω~1~)/ω~n~
-
- 
+\[
+  \zeta = \frac{1}{2} \frac{ \left( \omega_2 - \omega_1 \right) }{\omega_n}
+\]
 
 ![][08094]
 
-Frequency Sweep Analysis (continued)
+1. Using sinusoidal inputs excite system at \( \omega \) near \( \omega_n \)
+2. Measure phase lag \( \left( \phi \right) \) of \( \frac{\text{output}}{\text{input}} \)
 
-1\. Using sinusoidal inputs excite system @ ω near ω*~n~*
+![][08096]
 
- 
+3. Excite system at another \( \omega \) near \( \omega_n \)
+4. Again measure phase lag \( \left( \phi \right) \)
 
-2\. Measure phase lag (*φ*) of
+![][08097]
 
- 
-
- ![][08095]
-
- 
-
- ![][08096]
-
- 
-
- 
-
- 
-
- 
-
- 
-
-3\. Excite system @ another ω near ω*~n~*
-
- 
-
-4\. Again Measure phase lag *φ*
-
-*€*
-
-*€*![][08097]
-
-*€*
-
-*€*
-
-*€*
-
-*€*
-
-*€*
-
-*€*
-
-5\. Plot φ vs input frequency
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-6\. ω*~n~* occurs at φ = 90°
-
- 
+5. Plot \( \phi \) vs input frequency
 
 ![][08098]
 
+6. \( \omega_n \) occurs at \( \phi = 90° \)
+
 **Linearity Check /Accuracy Improvement**
 
-** **
+1. On semi-log scale, plot ratio of initial amplitude to subsequent peak amplitudes at each half cycle \( \left( \text{points } a-e \right) \).
+2. Fair straight line \( \left( f \right) \) through these points.
 
-1\) On semi-log scale, plot ratio of initial amplitude to subsequent peak
+![][08099]
 
-amplitudes at each half cycle (points *a-e*).
-
- 
-
-2\) Fair straight line (*f*) through these points.
-
- 
-
- 
-
- 
-
- 
-
- ![][08099]
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-3\) Draw line (*g*) parallel (*f*) intercepting the ordinate at *TPR*=1
-
- 
-
-4\) Average *TPR* occurs at *T*/2 on line *g*
-
- 
+3. Draw line \( \left( g \right) \) parallel \( \left( f \right) \) intercepting the ordinate at \(\mathrm{TPR} = 1 \)
+4. Average \(\mathrm{TPR}\) occurs at \( \frac{T}{2} \) on line \( \left( g \right) \)
 
 ## Complex Plane
 
@@ -1295,7 +892,7 @@ For conversion of accelerometer measurements.
 
 *mil* = thousandths of an inch
 
-*mm* = milimeters
+*mm* = millimeters
 
 *p-p* = peak-to-peak
 
