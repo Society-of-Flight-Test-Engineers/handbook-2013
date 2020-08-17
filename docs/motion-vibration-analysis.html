@@ -1162,43 +1162,39 @@ Time Ratio</p>
 </div>
 <div id="complex-plane" class="section level2" number="8.4">
 <h2><span class="header-section-number">8.4</span> Complex Plane</h2>
-<p><strong> </strong></p>
 <p>Begin with sum of forces in spring-mass-damper example</p>
-<p> </p>
-<p> </p>
-<p> Apply quadratic equation to solve for roots</p>
-<p> </p>
-<p> <img src="media/08/image100.png" /></p>
-<p> </p>
-<p> </p>
-<p> Recall previous analogy</p>
-<p> </p>
-<p><img src="media/08/image101.png" /></p>
-<p> </p>
-<p> <img src="media/08/image102.png" /></p>
-<p> </p>
-<p> <img src="media/08/image103.png" /></p>
-<p> </p>
-<p> <img src="media/08/image104.png" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
+<p><span class="math display">\[
+\begin{align}
+  M \ddot{x} + D \dot{x} + K x &amp;= f \left( t \right) \\
+  \text{let } x &amp;= e^{st}, \;\; \text{find transient solution} \\
+  \left( Ms^2 + Ds + K \right) e^{st} &amp;= 0  \\
+\end{align}
+\]</span></p>
+<p>Apply quadratic equation to solve for roots</p>
+<p><span class="math display">\[
+  s_{1,2} = -\frac{D}{2M} \pm \sqrt{ \left( \frac{D}{2M} \right)^2 - \frac{K}{M} }
+\]</span></p>
+<p>Recall previous analogy</p>
+<p><span class="math display">\[
+  s_{1,2} = -\zeta \omega_n \pm j \omega_n \sqrt{ 1 - \zeta^2 }
+\]</span></p>
+<p><span class="math display">\[
+  \tau = \frac{1}{\zeta \omega_n}
+\]</span></p>
+<p><span class="math display">\[
+  - \frac{1}{\tau} \pm j \omega_d
+\]</span></p>
+<p><img src="media/08/image104.png" /></p>
 <p>Location of Roots on Complex Plane</p>
-<blockquote>
-<p>1. Line of constant damping ratio ζ − varying <em>C</em><sub>1/<em>n</em></sub> and ω<em><sub>n</sub></em></p>
-<p>2. Line of constant ω<em><sub>n</sub></em> − varying ζ</p>
-<p>3. Line of constant ω<em><sub>d</sub></em> and period (<em>T</em>)</p>
-<p>4. Line of constant real part (ζω<em><sub>n</sub></em>) and time to damp (<em>T</em><sub>1/<em>n</em></sub>)</p>
-</blockquote>
-<p> </p>
-<p><img src="media/08/image105.png" /></p>
-<p><em>σ</em> = ζω<em><sub>n</sub></em> = 1/<em>τ</em> = damping rate</p>
-<p> </p>
+<ol style="list-style-type: decimal">
+<li>Line of constant damping ratio <span class="math inline">\(\zeta\)</span>, varying <span class="math inline">\(C_{\frac{1}{n}}\)</span> and <span class="math inline">\(\omega_n\)</span></li>
+<li>Line of constant <span class="math inline">\(\omega_n\)</span>, varying <span class="math inline">\(\zeta\)</span></li>
+<li>Line of constant <span class="math inline">\(\omega_d\)</span> and period <span class="math inline">\(\left( T \right)\)</span></li>
+<li>Line of constant real part <span class="math inline">\(\left( \zeta\omega_n \right)\)</span> and time to damp <span class="math inline">\(\left( T_{\frac{1}{n}} \right)\)</span></li>
+</ol>
+<p><span class="math display">\[
+  \sigma = \zeta \omega_n = \frac{1}{\tau} = \text{ damping rate}
+\]</span></p>
 <p><img src="media/08/image106.png" /></p>
 <p><strong>Sample second order root plots and corresponding time histories</strong></p>
 <p> </p>
@@ -1225,7 +1221,7 @@ Time Ratio</p>
 <p> </p>
 <p><em>Acceleration to velocity</em></p>
 <blockquote>
-<p><span class="underline">to convert from to multiply by</span></p>
+<p><u>to convert from to multiply by</u></p>
 <p><em>ft/s<sup>2</sup> rms ft/s rms</em> 1<em>/jω</em></p>
 <p><em>ft/s<sup>2</sup> rms in/s rms</em> 12<em>/jω</em></p>
 <p><em>ft/s<sup>2</sup> rms in/s peak</em> 16.97/<em>jω</em></p>
@@ -1239,7 +1235,7 @@ Time Ratio</p>
 </blockquote>
 <p><em>Acceleration to Displacement</em></p>
 <blockquote>
-<p><span class="underline">to convert from to multiply by</span></p>
+<p><u>to convert from to multiply by</u></p>
 <p><em>ft/s<sup>2</sup> rms in rms</em> 12/(jω)<sup>2</sup></p>
 <p><em>ft/s<sup>2</sup> rms in p-p</em> 33.9/(jω)<sup>2</sup></p>
 <p><em>ft/s<sup>2</sup> rms mil p-p</em> 33.9 <em>E</em> 03/(jω)<sup>2</sup></p>

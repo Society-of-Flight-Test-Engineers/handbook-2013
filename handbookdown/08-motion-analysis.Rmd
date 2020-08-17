@@ -722,75 +722,48 @@ Determine \(\omega_n\) and \(\zeta\) using sinusoidal inputs.
 
 ## Complex Plane
 
-** **
-
 Begin with sum of forces in spring-mass-damper example
 
- 
+\[
+\begin{align}
+  M \ddot{x} + D \dot{x} + K x &= f \left( t \right) \\
+  \text{let } x &= e^{st}, \;\; \text{find transient solution} \\
+  \left( Ms^2 + Ds + K \right) e^{st} &= 0  \\
+\end{align}
+\]
 
- 
+Apply quadratic equation to solve for roots
 
- Apply quadratic equation to solve for roots
+\[
+  s_{1,2} = -\frac{D}{2M} \pm \sqrt{ \left( \frac{D}{2M} \right)^2 - \frac{K}{M} }
+\]
 
- 
+Recall previous analogy
 
- ![][08100]
+\[
+  s_{1,2} = -\zeta \omega_n \pm j \omega_n \sqrt{ 1 - \zeta^2 }
+\]
 
- 
+\[
+  \tau = \frac{1}{\zeta \omega_n}
+\]
 
- 
+\[
+  - \frac{1}{\tau} \pm j \omega_d
+\]
 
- Recall previous analogy
-
- 
-
-![][08101]
-
- 
-
- ![][08102]
-
- 
-
- ![][08103]
-
- 
-
- ![][08104]
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
+![][08104]
 
 Location of Roots on Complex Plane
 
-> 1\. Line of constant damping ratio ζ − varying *C*~1/*n*~ and ω*~n~*
->
-> 2\. Line of constant ω*~n~* − varying ζ
->
-> 3\. Line of constant ω*~d~* and period (*T*)
->
-> 4\. Line of constant real part (ζω*~n~*) and time to damp (*T*~1/*n*~)
+1. Line of constant damping ratio \(\zeta\), varying \(C_{\frac{1}{n}} \) and \(\omega_n\)
+2. Line of constant \(\omega_n\), varying \(\zeta\)
+3. Line of constant \(\omega_d\) and period \( \left( T \right) \)
+4. Line of constant real part \( \left( \zeta\omega_n \right) \) and time to damp \( \left( T_{\frac{1}{n}} \right) \)
 
- 
-
-![][08105]
-
-*σ* = ζω*~n~* = 1/*τ* = damping rate
-
- 
+\[
+  \sigma = \zeta \omega_n = \frac{1}{\tau} = \text{ damping rate}
+\]
 
 ![][08106]
 
