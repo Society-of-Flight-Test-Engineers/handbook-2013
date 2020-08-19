@@ -1196,91 +1196,171 @@ Time Ratio</p>
   \sigma = \zeta \omega_n = \frac{1}{\tau} = \text{ damping rate}
 \]</span></p>
 <p><img src="media/08/image106.png" /></p>
-<p><strong>Sample second order root plots and corresponding time histories</strong></p>
-<p> </p>
-<p>(time histories represent trends only)</p>
-<p> </p>
-<p> </p>
+<p><strong>Sample second order root plots and corresponding time histories</strong>
+(time histories represent trends only)</p>
 <p>Examples of “two real roots”</p>
-<p> </p>
 <p><img src="media/08/image107.png" /></p>
 <p><strong>More sample second order root plots and corresponding time histories</strong></p>
-<p> </p>
 <p>Examples of “imaginary roots”</p>
-<p> </p>
-<p> </p>
 <p><img src="media/08/image108.png" /></p>
 </div>
 <div id="parameter-conversions" class="section level2" number="8.5">
 <h2><span class="header-section-number">8.5</span> Parameter Conversions</h2>
-<p> </p>
 <p>For conversion of accelerometer measurements.</p>
-<p>• For magnitude conversion substitute 2<em>πf</em> for <em>jω</em>.</p>
-<p>• Assumes linear spectra.</p>
-<p>• Conversion factor should be squared for power spectra.</p>
-<p> </p>
+<ul>
+<li>For magnitude conversion substitute <span class="math inline">\(2 \pi f\)</span> for <span class="math inline">\(j \omega\)</span> .</li>
+<li>Assumes linear spectra.</li>
+<li>Conversion factor should be squared for power spectra.</li>
+</ul>
 <p><em>Acceleration to velocity</em></p>
-<blockquote>
-<p><u>to convert from to multiply by</u></p>
-<p><em>ft/s<sup>2</sup> rms ft/s rms</em> 1<em>/jω</em></p>
-<p><em>ft/s<sup>2</sup> rms in/s rms</em> 12<em>/jω</em></p>
-<p><em>ft/s<sup>2</sup> rms in/s peak</em> 16.97/<em>jω</em></p>
-<p><em>g rms in/s rms</em> 386<em>/jω</em></p>
-<p><em>g rms in/s peak</em> 545.8/<em>jω</em></p>
-<p><em>m/s<sup>2</sup> rms mm/s rms</em> 1000/<em>jω</em></p>
-<p><em>m/s<sup>2</sup> rms mm/s peak</em> 1414<em>/jω</em></p>
-<p><em>g rms mm/s rms</em> 9806<em>/jω</em></p>
-<p><em>g rms mm/s peak</em> 13865.7/<em>jω</em></p>
-<p>* *</p>
-</blockquote>
+<table>
+<colgroup>
+<col width="48%" />
+<col width="12%" />
+<col width="39%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">to convert from</th>
+<th align="left">to</th>
+<th align="left">multiply by</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\frac{\text{ft}}{\text{s}^2} \text{rms}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{\text{ft}}{\text{s}} \text{rms}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{1}{j\omega}\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\frac{\text{ft}}{\text{s}^2} \text{rms}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{\text{in}}{\text{s}} \text{rms}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{12}{j\omega}\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\frac{\text{ft}}{\text{s}^2} \text{rms}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{\text{in}}{\text{s}} \text{peak}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{16.97}{j\omega}\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\text{g rms}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{\text{in}}{\text{s}} \text{rms}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{386}{j\omega}\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\text{g rms}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{\text{in}}{\text{s}} \text{peak}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{545.8}{j\omega}\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\frac{\text{m}}{\text{s}^2} \text{rms}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{\text{mm}}{\text{s}} \text{rms}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{1000}{j\omega}\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\frac{\text{m}}{\text{s}^2} \text{rms}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{\text{mm}}{\text{s}} \text{rms}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{1414}{j\omega}\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\text{g rms}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{\text{mm}}{\text{s}} \text{peak}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{13865.7}{j\omega}\)</span></td>
+</tr>
+</tbody>
+</table>
 <p><em>Acceleration to Displacement</em></p>
-<blockquote>
-<p><u>to convert from to multiply by</u></p>
-<p><em>ft/s<sup>2</sup> rms in rms</em> 12/(jω)<sup>2</sup></p>
-<p><em>ft/s<sup>2</sup> rms in p-p</em> 33.9/(jω)<sup>2</sup></p>
-<p><em>ft/s<sup>2</sup> rms mil p-p</em> 33.9 <em>E</em> 03/(jω)<sup>2</sup></p>
-<p><em>g rms in rms</em> 386/(jω)<sup>2</sup></p>
-<p><em>g rms in p-p</em> 1091.6 <em>E</em> 03/(jω)<sup>2</sup></p>
-<p><em>g rms mil p-p</em> 1091.6 <em>E</em> 03/(jω)<sup>2</sup></p>
-<p><em>m/s<sup>2</sup> rms mm rms</em> 1000/(jω)<sup>2</sup></p>
-<p><em>m/s<sup>2</sup> rms mm p-p</em> 2828/(jω)<sup>2</sup></p>
-<p><em>m/s<sup>2</sup> rms</em> micron <em>p-p</em> 2828 <em>E</em> 03/(jω)<sup>2</sup></p>
-</blockquote>
-<p>* *</p>
-<p><em>E</em>= engineering exponent (x10 __)</p>
-<p><em>g</em> = 32.174 ft/sec2</p>
-<p><em>in</em>= inches</p>
-<p><em>mil</em> = thousandths of an inch</p>
-<p><em>mm</em> = millimeters</p>
-<p><em>p-p</em> = peak-to-peak</p>
-<p><em>rms</em> = root mean square</p>
-<p> </p>
+<table>
+<colgroup>
+<col width="48%" />
+<col width="12%" />
+<col width="39%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">to convert from</th>
+<th align="left">to</th>
+<th align="left">multiply by</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\frac{\text{ft}}{\text{s}^2} \text{rms}\)</span></td>
+<td align="left"><span class="math inline">\(\text{in rms}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{12}{ \left( j\omega \right)^2}\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\frac{\text{ft}}{\text{s}^2} \text{rms}\)</span></td>
+<td align="left"><span class="math inline">\(\text{in p-p}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{33.9}{ \left( j\omega \right)^2}\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\frac{\text{ft}}{\text{s}^2} \text{rms}\)</span></td>
+<td align="left"><span class="math inline">\(\text{mil p-p}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{33.9\mathrm{E}03}{ \left( j\omega \right)^2}\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\text{g rms}\)</span></td>
+<td align="left"><span class="math inline">\(\text{in rms}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{386}{ \left( j\omega \right)^2}\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\text{g rms}\)</span></td>
+<td align="left"><span class="math inline">\(\text{in p-p}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{1091.6\mathrm{E}03}{ \left( j\omega \right)^2}\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\text{g rms}\)</span></td>
+<td align="left"><span class="math inline">\(\text{mil p-p}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{1091.6\mathrm{E}06}{ \left( j\omega \right)^2}\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\frac{\text{m}}{\text{s}^2} \text{rms}\)</span></td>
+<td align="left"><span class="math inline">\(\text{mm rms}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{1000}{ \left( j\omega \right)^2}\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\frac{\text{m}}{\text{s}^2} \text{rms}\)</span></td>
+<td align="left"><span class="math inline">\(\text{mm p-p}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{2828}{ \left( j\omega \right)^2}\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\frac{\text{m}}{\text{s}^2} \text{rms}\)</span></td>
+<td align="left"><span class="math inline">\(\text{micron p-p}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{2828\mathrm{E}03}{ \left( j\omega \right)^2}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><span class="math inline">\(\mathrm{E} = \text{engineering exponent} \left(\times 10 \_\_ \right)\)</span></p>
+<p><span class="math inline">\(\text{g} = 32.174 \frac{\text{ft}}{\text{s}^2}\)</span></p>
+<p><span class="math inline">\(\text{in} = \text{inches}\)</span></p>
+<p><span class="math inline">\(\text{mil} = \text{thousandths of an inch}\)</span></p>
+<p><span class="math inline">\(\text{mm} = \text{millimeters}\)</span></p>
+<p><span class="math inline">\(\text{p-p} = \text{peak-to-peak}\)</span></p>
+<p><span class="math inline">\(\text{rms} = \text{root mean square}\)</span></p>
 </div>
 <div id="vibration-nomographs" class="section level2" number="8.6">
 <h2><span class="header-section-number">8.6</span> Vibration Nomographs</h2>
 <p><strong>Vibration Nomograph equations</strong></p>
-<p> </p>
-<p><strong>For British</strong> <span class="math display">\[V in inches/sec\]</span>, <span class="math display">\[d in inches\]</span></p>
-<p> </p>
-<p><em>V =</em> 386<em>g /</em> 2π<em>f</em></p>
-<p> </p>
-<p><em>d</em> = 386<em>g</em> / (2π<em>f</em>)<sup>2</sup></p>
-<p> </p>
-<p>where 386 = earth's gravitational pull <span class="math display">\[in/sec^2^\]</span></p>
-<p> </p>
-<p> </p>
-<p><strong>For metric</strong> <span class="math display">\[V in mm/sec\]</span> , <span class="math display">\[d in mm\]</span></p>
-<p> </p>
-<p><em>V =</em> 9800<em>g /</em> 2π<em>f</em></p>
-<p> </p>
-<p><em>d</em> = 9800<em>g</em> / (2π<em>f</em>)<sup>2</sup></p>
-<p>where 9800 = earth's gravitational pull <span class="math display">\[mm/sec^2^\]</span></p>
-<p> </p>
+<p><strong>For British</strong> [<span class="math inline">\(V\)</span> in <span class="math inline">\(\frac{\text{inches}}{\text{sec}}\)</span> ], [<span class="math inline">\(d\)</span> in <span class="math inline">\(\text{inches}\)</span>]</p>
+<p><span class="math display">\[
+\begin{align}
+V &amp;= \frac{386 g}{2 \pi f} \\
+d &amp;= \frac{386 g}{\left( 2 \pi f \right)^2} \\
+&amp;\text{where } 386 = \text{earth&#39;s gravitational pull} \left[ \frac{\text{in}}{\text{sec}^2}  \right] \\
+\end{align}
+\]</span></p>
+<p><strong>For metric</strong> [<span class="math inline">\(V\)</span> in <span class="math inline">\(\frac{\text{mm}}{\text{sec}}\)</span> ], [<span class="math inline">\(d\)</span> in <span class="math inline">\(\text{mm}\)</span>]</p>
+<p><span class="math display">\[
+\begin{align}
+V &amp;= \frac{9800 g}{2 \pi f} \\
+d &amp;= \frac{9800 g}{\left( 2 \pi f \right)^2} \\
+&amp;\text{where } 9800 = \text{earth&#39;s gravitational pull} \left[ \frac{\text{mm}}{\text{sec}^2}  \right] \\
+\end{align}
+\]</span></p>
 <p><strong>Nomograph - British Units</strong></p>
-<p> </p>
 <p><img src="media/08/image109.png" /></p>
 <p><strong>Nomograph - Metric Units</strong></p>
-<p> </p>
 <p><img src="media/08/image110.png" /></p>
 </div>
 <div id="references-6" class="section level2" number="8.7">

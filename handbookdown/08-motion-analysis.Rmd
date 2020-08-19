@@ -768,158 +768,97 @@ Location of Roots on Complex Plane
 ![][08106]
 
 **Sample second order root plots and corresponding time histories**
-
- 
-
 (time histories represent trends only)
 
- 
-
- 
-
 Examples of "two real roots"
-
- 
 
 ![][08107]
 
 **More sample second order root plots and corresponding time histories**
 
- 
-
 Examples of "imaginary roots"
-
- 
-
- 
 
 ![][08108]
 
 ## Parameter Conversions
 
- 
-
 For conversion of accelerometer measurements.
 
-• For magnitude conversion substitute 2*πf* for *jω*.
-
-• Assumes linear spectra.
-
-• Conversion factor should be squared for power spectra.
-
- 
+* For magnitude conversion substitute \( 2 \pi f \) for \( j \omega \) .
+* Assumes linear spectra.
+* Conversion factor should be squared for power spectra.
 
 *Acceleration to velocity*
 
-> [to convert from to multiply by]{.underline}
->
-> *ft/s^2^ rms ft/s rms* 1*/jω*
->
-> *ft/s^2^ rms in/s rms* 12*/jω*
->
-> *ft/s^2^ rms in/s peak* 16.97/*jω*
->
-> *g rms in/s rms* 386*/jω*
->
-> *g rms in/s peak* 545.8/*jω*
->
-> *m/s^2^ rms mm/s rms* 1000/*jω*
->
-> *m/s^2^ rms mm/s peak* 1414*/jω*
->
-> *g rms mm/s rms* 9806*/jω*
->
-> *g rms mm/s peak* 13865.7/*jω*
->
-> \* *
+|to convert from | to | multiply by |
+|:---------------|:---|:------------|
+|\( \frac{\text{ft}}{\text{s}^2} \text{rms} \) | \( \frac{\text{ft}}{\text{s}} \text{rms} \) | \( \frac{1}{j\omega} \) |
+|\( \frac{\text{ft}}{\text{s}^2} \text{rms} \) | \( \frac{\text{in}}{\text{s}} \text{rms} \) | \( \frac{12}{j\omega} \) |
+|\( \frac{\text{ft}}{\text{s}^2} \text{rms} \) | \( \frac{\text{in}}{\text{s}} \text{peak} \) | \( \frac{16.97}{j\omega} \) |
+|\( \text{g rms} \) | \( \frac{\text{in}}{\text{s}} \text{rms} \) | \( \frac{386}{j\omega} \) |
+|\( \text{g rms} \) | \( \frac{\text{in}}{\text{s}} \text{peak} \) | \( \frac{545.8}{j\omega} \) |
+|\( \frac{\text{m}}{\text{s}^2} \text{rms} \) | \( \frac{\text{mm}}{\text{s}} \text{rms} \) | \( \frac{1000}{j\omega} \) |
+|\( \frac{\text{m}}{\text{s}^2} \text{rms} \) | \( \frac{\text{mm}}{\text{s}} \text{rms} \) | \( \frac{1414}{j\omega} \) |
+|\( \text{g rms} \) | \( \frac{\text{mm}}{\text{s}} \text{peak} \) | \( \frac{13865.7}{j\omega} \) |
+
 
 *Acceleration to Displacement*
 
-> [to convert from to multiply by]{.underline}
->
-> *ft/s^2^ rms in rms* 12/(jω)^2^
->
-> *ft/s^2^ rms in p-p* 33.9/(jω)^2^
->
-> *ft/s^2^ rms mil p-p* 33.9 *E* 03/(jω)^2^
->
-> *g rms in rms* 386/(jω)^2^
->
-> *g rms in p-p* 1091.6 *E* 03/(jω)^2^
->
-> *g rms mil p-p* 1091.6 *E* 03/(jω)^2^
->
-> *m/s^2^ rms mm rms* 1000/(jω)^2^
->
-> *m/s^2^ rms mm p-p* 2828/(jω)^2^
->
-> *m/s^2^ rms* micron *p-p* 2828 *E* 03/(jω)^2^
+|to convert from | to | multiply by |
+|:---------------|:---|:------------|
+|\( \frac{\text{ft}}{\text{s}^2} \text{rms} \) | \( \text{in rms} \) | \( \frac{12}{ \left( j\omega \right)^2} \) |
+|\( \frac{\text{ft}}{\text{s}^2} \text{rms} \) | \( \text{in p-p} \) | \( \frac{33.9}{ \left( j\omega \right)^2} \) |
+|\( \frac{\text{ft}}{\text{s}^2} \text{rms} \) | \( \text{mil p-p} \) | \( \frac{33.9\mathrm{E}03}{ \left( j\omega \right)^2} \) |
+|\( \text{g rms} \) | \( \text{in rms} \) | \( \frac{386}{ \left( j\omega \right)^2} \) |
+|\( \text{g rms} \) | \( \text{in p-p} \) | \( \frac{1091.6\mathrm{E}03}{ \left( j\omega \right)^2} \) |
+|\( \text{g rms} \) | \( \text{mil p-p} \) | \( \frac{1091.6\mathrm{E}06}{ \left( j\omega \right)^2} \) |
+|\( \frac{\text{m}}{\text{s}^2} \text{rms} \) | \( \text{mm rms} \) | \( \frac{1000}{ \left( j\omega \right)^2} \) |
+|\( \frac{\text{m}}{\text{s}^2} \text{rms} \) | \( \text{mm p-p} \) | \( \frac{2828}{ \left( j\omega \right)^2} \) |
+|\( \frac{\text{m}}{\text{s}^2} \text{rms} \) | \( \text{micron p-p} \) | \( \frac{2828\mathrm{E}03}{ \left( j\omega \right)^2} \) |
 
-\* *
+\(\mathrm{E} = \text{engineering exponent} \left(\times 10 \_\_ \right) \)
 
-*E*= engineering exponent (x10 \_\_)
+\(\text{g} = 32.174 \frac{\text{ft}}{\text{s}^2} \)
 
-*g* = 32.174 ft/sec2
+\(\text{in} = \text{inches} \)
 
-*in*= inches
+\(\text{mil} = \text{thousandths of an inch} \)
 
-*mil* = thousandths of an inch
+\(\text{mm} = \text{millimeters} \)
 
-*mm* = millimeters
+\(\text{p-p} = \text{peak-to-peak} \)
 
-*p-p* = peak-to-peak
-
-*rms* = root mean square
-
- 
+\(\text{rms} = \text{root mean square} \)
 
 ## Vibration Nomographs
 
 **Vibration Nomograph equations**
 
- 
+**For British** [\(V\) in \( \frac{\text{inches}}{\text{sec}} \) ], [\(d\) in \( \text{inches} \)]
 
-**For British** \[V in inches/sec\], \[d in inches\]
+\[
+\begin{align}
+V &= \frac{386 g}{2 \pi f} \\
+d &= \frac{386 g}{\left( 2 \pi f \right)^2} \\
+&\text{where } 386 = \text{earth's gravitational pull} \left[ \frac{\text{in}}{\text{sec}^2}  \right] \\
+\end{align}
+\]
 
- 
+**For metric** [\(V\) in \( \frac{\text{mm}}{\text{sec}} \) ], [\(d\) in \( \text{mm} \)] 
 
-*V =* 386*g /* 2π*f*
-
- 
-
-*d* = 386*g* / (2π*f*)^2^
-
- 
-
-where 386 = earth\'s gravitational pull \[in/sec^2^\]
-
- 
-
- 
-
-**For metric** \[V in mm/sec\] , \[d in mm\]
-
- 
-
-*V =* 9800*g /* 2π*f*
-
- 
-
-*d* = 9800*g* / (2π*f*)^2^
-
-where 9800 = earth\'s gravitational pull \[mm/sec^2^\]
-
- 
+\[
+\begin{align}
+V &= \frac{9800 g}{2 \pi f} \\
+d &= \frac{9800 g}{\left( 2 \pi f \right)^2} \\
+&\text{where } 9800 = \text{earth's gravitational pull} \left[ \frac{\text{mm}}{\text{sec}^2}  \right] \\
+\end{align}
+\]
 
 **Nomograph - British Units**
-
- 
 
 ![][08109]
 
 **Nomograph - Metric Units**
-
- 
 
 ![][08110]
 
