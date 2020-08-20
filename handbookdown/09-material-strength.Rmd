@@ -48,7 +48,7 @@
 |Hardness| Resistance to plastic deformation resulting from impact loads.|
 |Impact Energy| The energy required to fracture a specimen when the load is suddenly applied.|
 |Limit Stress| The maximum stress where the Modulus of Elasticity remains constant (proportional limit).|
-|Margin of Safety| Any load-bearing capability greater that the ultimate load, calculated as \( \frac{\text{Failure load as a factor of } \mathrm{DLL}}{1.5 \mathrm{DLL}}  - 1 \)|
+|Margin of Safety| Any load-bearing capability greater that the ultimate load, calculated as \( \frac{\text{Failure load as a factor of } \mathrm{DLL}}{1.5 \mathrm{ DLL}}  - 1 \)|
 |Notch Sensitivity| Measure the effect of a notch on impact energy|
 |Plastic Deformation | Permanent deformation of a material applied load. Plasticity Material deformation characteristics beyond its elastic limit.|
 |Resilience| A measure of the amount of energy a material can absorb elastically in a unit volume of the material. |
@@ -67,45 +67,36 @@
 |Wing Loading| Aircraft weight per wing area, \(\frac{W}{S}\), a ready measure of air loads for steady level flight.|
 |Yield Stress| The stress applied to a material that just causes permanent plastic deformation.|
 
-**9.2 Material Stress & Strain**
+## Material Stress & Strain
 
- 
+**Stress** (\(\sigma\)) is the ability of a material to react a force distributed over some area. In the simple axial load case this can be presented as
 
-Stress (*σ*) is the ability of a material to react a force distributed over some area. In the simple axial load case this can be presented as
+\[
+  \sigma = \frac{P}{A}
+\]
 
-*σ = P/A*
+\[
+  \begin{align}
+  \text{where } \sigma &= \text{the applied axial load} \\
+  A &= \text{cross-sectional area over which the load is applied} \\
+  \end{align}
+\]
 
- 
+**Strain** (\(e\)) is the deformation of a material under an applied load. In the basic form this can be presented as
 
-where *P* = the applied axial load
+\[
+  e = \frac{\Delta L}{L}
+\]
 
-*A* = cross-sectional area over which the load is applied
+where \(\Delta L\) is the change in dimension due to some load, and \(L\) is the original dimension
 
- 
+The **stress-strain relationship** is linear (proportional) for a large percentage of the applied load to the maximum, as expressed by the **Modulus of Elasticity** (**Young's Modulus**)
 
-*Strain* (*e*) is the deformation of a material under an applied load. In the basic form this can be presented as
-
-\* *
-
-*e = ∆L/L*
-
- 
-
-where *∆L* is the change in dimension due to some load, and *L* is the original dimension
-
- 
-
-The *stress-strain relationship* is linear (proportional) for a large percentage of the applied load to the maximum, as expressed by the *Modulus of Elasticity* (*Young's Modulus*)
-
- 
-
-*E = σ/e*
-
- 
+\[
+  E = \frac{\sigma}{e}
+\]
 
 A typical stress & strain relationship for a material is illustrated as
-
- 
 
 ![][09002]
 
