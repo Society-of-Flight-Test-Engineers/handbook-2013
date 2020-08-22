@@ -321,6 +321,8 @@
 <li class="chapter" data-level="9.1" data-path="material-strength.html"><a href="material-strength.html#loads-terminology"><i class="fa fa-check"></i><b>9.1</b> Loads Terminology</a></li>
 <li class="chapter" data-level="9.2" data-path="material-strength.html"><a href="material-strength.html#material-stress-strain"><i class="fa fa-check"></i><b>9.2</b> Material Stress &amp; Strain</a></li>
 <li class="chapter" data-level="9.3" data-path="material-strength.html"><a href="material-strength.html#v-n-diagram"><i class="fa fa-check"></i><b>9.3</b> V-n Diagram</a></li>
+<li class="chapter" data-level="9.4" data-path="material-strength.html"><a href="material-strength.html#strain-gages"><i class="fa fa-check"></i><b>9.4</b> Strain Gages</a></li>
+<li class="chapter" data-level="9.5" data-path="material-strength.html"><a href="material-strength.html#references-7"><i class="fa fa-check"></i><b>9.5</b> References</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="reciprocating-engines.html"><a href="reciprocating-engines.html"><i class="fa fa-check"></i><b>10</b> 10 Reciprocating Engines**</a></li>
 <li class="chapter" data-level="11" data-path="propellers.html"><a href="propellers.html"><i class="fa fa-check"></i><b>11</b> 11 Propellers**</a></li>
@@ -657,7 +659,8 @@
 <p><span class="math display">\[
   \begin{align}
   N_{zb} &amp;= \left( \frac{V}{V_s} \right)^2 \\
-  \text{where } &amp;\text{both speeds must be the same units (i.e., true, equivalent, calibrated)} \\
+  \text{where } &amp;\text{both speeds must be the same units} \\
+  &amp;\text{(i.e., true, equivalent, calibrated)} \\
   V &amp;= \text{flight airspeed} \\
   V_s &amp;= \text{stall airspeed} \\
   \end{align}
@@ -695,59 +698,65 @@
   \frac{W}{S} &amp;= \text{wing loading (psf)} \\
   \end{align}
 \]</span></p>
-<p><strong>9.4 Strain Gages</strong></p>
-<p> </p>
+</div>
+<div id="strain-gages" class="section level2" number="9.4">
+<h2><span class="header-section-number">9.4</span> Strain Gages</h2>
 <p>The three strain gage configurations most commonly used are</p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> <img src="media/09/image4.png" style="width:4.36389in;height:2.02083in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>Strain (<em>e</em>) is measured using the electrical resistance measured via the strain gage in a material subject to load. For the uniaxial gauge</p>
-<p> </p>
-<p><em>K = (∆R/R)/e</em></p>
-<p>where <em>K</em> = gage factor (provided by manufacturer)</p>
-<p><em>R</em> = unstrained resistance</p>
-<p><em>∆R</em> = change in resistance due to load</p>
-<p>(+∆R for tension)</p>
-<p> </p>
-<p>• For the bi-axial gage oriented coincident with the principal axes (maximum strain), each leg of the gage is analyzed as a uniaxial gage using the above equation for the principle strains. The</p>
-<p>associated stresses are</p>
-<p> </p>
-<p><em>σ<sub>max</sub> = E</em>(<em>e<sub>max</sub> + υe<sub>min</sub></em>)/(<em>1 -υ<sup>2</sup></em>)</p>
-<p><em>σ<sub>min</sub> = E</em>(<em>e<sub>min</sub> + υe <sub>max</sub></em>)/(<em>1 - υ<sup>2</sup></em>)</p>
-<p> </p>
-<p>where <em>e<sub>max</sub></em> and <em>e<sub>min</sub></em> are the measured principal strains in the appropriate legs of the bi-axial gage, <em>E</em> is the Young’s Modulus of the material, ν is Poisson’s ratio for the material. (ratio of compression and tension strains)</p>
-<p> </p>
-<p>• For the Rosette gage, the principal strains and stresses are derived as</p>
-<p> </p>
-<p> <img src="media/09/image5.png" style="width:3.54097in;height:0.3125in" /></p>
-<p> </p>
-<p> <img src="media/09/image6.png" style="width:4.60347in;height:0.3125in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>where <em>e</em>’s denote the strains in each of the three legs of the Rosette (+ is used for the maximum and - for the minimum).</p>
-<p> </p>
-<p> </p>
+<p><img src="media/09/image4.png" style="width:4.36389in;height:2.02083in" /></p>
+<p>Strain <span class="math inline">\(\left( e \right)\)</span> is measured using the electrical resistance measured via the strain gage in a material subject to load. For the uniaxial gauge</p>
+<p><span class="math display">\[
+  \begin{align}
+  K &amp;= \frac{ \left( \frac{\Delta R}{R} \right) }{e} \\
+  \text{where } K &amp;= \text{gage factor (provided by manufacturer)} \\
+  R &amp;= \text{unstrained resistance} \\
+  \Delta R &amp;= \text{change in resistance due to load} \\
+  &amp; + \Delta R \text{ for tension} \\
+  \end{align}
+\]</span></p>
+<ul>
+<li>For the bi-axial gage oriented coincident with the principal axes (maximum strain), each leg of the gage is analyzed as a uniaxial gage using the above equation for the principle strains. The associated stresses are</li>
+</ul>
+<p><span class="math display">\[
+  \begin{align}
+  \sigma_{\text{max}} &amp;= E \frac{e_{\text{max}} + \nu e_{\text{min}}}{1 - \nu^2} \\
+  \sigma_{\text{min}} &amp;= E \frac{e_{\text{min}} + \nu e_{\text{max}}}{1 - \nu^2} \\
+  \text{where } &amp; e_{\text{max}} \text{ and } e_{\text{min}} \text{ are the measured principal strains in the appropriate legs of the bi-axial gage} \\
+  E &amp;= \text{Young&#39;s Modulus of the material} \\
+  \nu &amp;= \text{Poisson&#39;s ratio for the material (ratio of compression and tension strains)} \\
+  \end{align}
+\]</span></p>
+<ul>
+<li>For the Rosette gage, the principal strains and stresses are derived as</li>
+</ul>
+<p><span class="math display">\[
+  \begin{align}
+  e_{\text{max,min}} &amp;= 0.5 \left(e_a + e_c \right) \pm 0.5 \sqrt{\left(e_a - e_c \right)^2 + \left(2e_b - e_a - e_c \right)^2  } \\
+  \sigma_{\text{max,min}} &amp;= 0.5 E \left[ \frac{e_a + e_c}{1 - \nu} \right] \pm 0.5 \frac{\sqrt{\left(e_a - e_c \right)^2 + \left(2e_b - e_a - e_c \right)^2  }}{1 - \nu} \\
+  \text{where } &amp; e \text{ denotes the strain in each of the three legs of the Rosette} \\
+  &amp;\text{(+ is used for the maximum and - for the minimum)} \\
+\end{align}
+\]</span></p>
 <p>To accurately measure the very small resistance changes in a strain gage, a <em>Wheatstone Bridge</em> is typically used</p>
-<p> </p>
 <p><img src="media/09/image7.png" style="width:4.49931in;height:2.3125in" /></p>
-<p><strong>9.5 References</strong></p>
-<p> 
-|||
-|-|—————|
-|9.1| Dole, Charles E., <em>Fundamentals of Aircraft Material Factors</em>, University of Southern California, Los Angeles, California, 1987.|
-|9.2| Norton, William J., <em>Structures Flight Test Handbook</em>, AFFTC-TIH-90-001, Air Force Flight Test Cen ter, Edwards AFB, California, November 1990.|</p>
+</div>
+<div id="references-7" class="section level2" number="9.5">
+<h2><span class="header-section-number">9.5</span> References</h2>
+<table>
+<colgroup>
+<col width="6%" />
+<col width="93%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>9.1</td>
+<td>Dole, Charles E., <em>Fundamentals of Aircraft Material Factors</em>, University of Southern California, Los Angeles, California, 1987.</td>
+</tr>
+<tr class="even">
+<td>9.2</td>
+<td>Norton, William J., <em>Structures Flight Test Handbook</em>, AFFTC-TIH-90-001, Air Force Flight Test Center, Edwards AFB, California, November 1990.</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Additional Reading</strong></p>
 <table>
 <colgroup>
