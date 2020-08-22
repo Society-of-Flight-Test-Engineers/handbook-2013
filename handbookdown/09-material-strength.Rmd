@@ -173,107 +173,57 @@ A general normal load flight envelope (V-n diagram) would appear as
   \end{align}
 \]
 
-**9.4 Strain Gages**
-
- 
+## Strain Gages
 
 The three strain gage configurations most commonly used are
 
- 
+![][09004]
 
- 
+Strain \( \left( e \right) \) is measured using the electrical resistance measured via the strain gage in a material subject to load. For the uniaxial gauge
 
- 
+\[
+  \begin{align}
+  K &= \frac{ \left( \frac{\Delta R}{R} \right) }{e} \\
+  \text{where } K &= \text{gage factor (provided by manufacturer)} \\
+  R &= \text{unstrained resistance} \\
+  \Delta R &= \text{change in resistance due to load} \\
+  & + \Delta R \text{ for tension} \\
+  \end{align}
+\]
 
- ![][09004]
+* For the bi-axial gage oriented coincident with the principal axes (maximum strain), each leg of the gage is analyzed as a uniaxial gage using the above equation for the principle strains. The associated stresses are
 
- 
+\[
+  \begin{align}
+  \sigma_{\text{max}} &= E \frac{e_{\text{max}} + \nu e_{\text{min}}}{1 - \nu^2} \\
+  \sigma_{\text{min}} &= E \frac{e_{\text{min}} + \nu e_{\text{max}}}{1 - \nu^2} \\
+  \text{where } & e_{\text{max}} \text{ and } e_{\text{min}} \text{ are the measured principal strains in the appropriate legs of the bi-axial gage} \\
+  E &= \text{Young's Modulus of the material} \\
+  \nu &= \text{Poisson's ratio for the material (ratio of compression and tension strains)} \\
+  \end{align}
+\]
 
- 
+* For the Rosette gage, the principal strains and stresses are derived as
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-Strain (*e*) is measured using the electrical resistance measured via the strain gage in a material subject to load. For the uniaxial gauge
-
- 
-
-*K = (∆R/R)/e*
-
-where *K* = gage factor (provided by manufacturer)
-
-*R* = unstrained resistance
-
-*∆R* = change in resistance due to load
-
-(+∆R for tension)
-
- 
-
-• For the bi-axial gage oriented coincident with the principal axes (maximum strain), each leg of the gage is analyzed as a uniaxial gage using the above equation for the principle strains. The
-
-associated stresses are
-
- 
-
-*σ~max~ = E*(*e~max~ + υe~min~*)/(*1 -υ^2^*)
-
-*σ~min~ = E*(*e~min~ + υe ~max~*)/(*1 - υ^2^*)
-
- 
-
-where *e~max~* and *e~min~* are the measured principal strains in the appropriate legs of the bi-axial gage, *E* is the Young's Modulus of the material, ν is Poisson's ratio for the material. (ratio of compression and tension strains)
-
- 
-
-• For the Rosette gage, the principal strains and stresses are derived as
-
- 
-
- ![][09005]
-
- 
-
- ![][09006]
-
- 
-
- 
-
- 
-
-where *e*'s denote the strains in each of the three legs of the Rosette (+ is used for the maximum and - for the minimum).
-
- 
-
- 
+\[
+  \begin{align}
+  e_{\text{max,min}} &= 0.5 \left(e_a + e_c \right) \pm 0.5 \sqrt{\left(e_a - e_c \right)^2 + \left(2e_b - e_a - e_c \right)^2  } \\
+  \sigma_{\text{max,min}} &= 0.5 E \left[ \frac{e_a + e_c}{1 - \nu} \right] \pm 0.5 \frac{\sqrt{\left(e_a - e_c \right)^2 + \left(2e_b - e_a - e_c \right)^2  }}{1 - \nu} \\
+  \text{where } & e \text{ denotes the strain in each of the three legs of the Rosette} \\
+  &\text{(+ is used for the maximum and - for the minimum)} \\
+\end{align}
+\]
 
 To accurately measure the very small resistance changes in a strain gage, a *Wheatstone Bridge* is typically used
 
- 
-
 ![][09007]
 
-**9.5 References**
+## References
 
- 
-|||
+| | |
 |-|---------------|
 |9.1| Dole, Charles E., *Fundamentals of Aircraft Material Factors*, University of Southern California, Los Angeles, California, 1987.|
-|9.2| Norton, William J., *Structures Flight Test Handbook*, AFFTC-TIH-90-001, Air Force Flight Test Cen ter, Edwards AFB, California, November 1990.|
+|9.2| Norton, William J., *Structures Flight Test Handbook*, AFFTC-TIH-90-001, Air Force Flight Test Center, Edwards AFB, California, November 1990.|
 
 **Additional Reading**
 
@@ -288,6 +238,4 @@ To accurately measure the very small resistance changes in a strain gage, a *Whe
   [09002]: media/09/image2.png {width="4.395138888888889in" height="2.5729166666666665in"}
   [09003]: media/09/image3.png {width="4.520138888888889in" height="2.8118055555555554in"}
   [09004]: media/09/image4.png {width="4.363888888888889in" height="2.0208333333333335in"}
-  [09005]: media/09/image5.png {width="3.5409722222222224in" height="0.3125in"}
-  [09006]: media/09/image6.png {width="4.603472222222222in" height="0.3125in"}
   [09007]: media/09/image7.png {width="4.499305555555556in" height="2.3125in"}
