@@ -320,6 +320,7 @@
 <ul>
 <li class="chapter" data-level="9.1" data-path="material-strength.html"><a href="material-strength.html#loads-terminology"><i class="fa fa-check"></i><b>9.1</b> Loads Terminology</a></li>
 <li class="chapter" data-level="9.2" data-path="material-strength.html"><a href="material-strength.html#material-stress-strain"><i class="fa fa-check"></i><b>9.2</b> Material Stress &amp; Strain</a></li>
+<li class="chapter" data-level="9.3" data-path="material-strength.html"><a href="material-strength.html#v-n-diagram"><i class="fa fa-check"></i><b>9.3</b> V-n Diagram</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="reciprocating-engines.html"><a href="reciprocating-engines.html"><i class="fa fa-check"></i><b>10</b> 10 Reciprocating Engines**</a></li>
 <li class="chapter" data-level="11" data-path="propellers.html"><a href="propellers.html"><i class="fa fa-check"></i><b>11</b> 11 Propellers**</a></li>
@@ -627,71 +628,73 @@
 \]</span></p>
 <p>A typical stress &amp; strain relationship for a material is illustrated as</p>
 <p><img src="media/09/image2.png" style="width:4.39514in;height:2.57292in" /></p>
-<p><strong>9.3 V-n Diagram</strong></p>
-<p><strong> </strong></p>
-<p><strong>Flight Path Normal Load Factor</strong> (<em>N<sub>zw</sub></em>) can be expressed during level flight, as</p>
-<p> </p>
-<p><em>N<sub>zw</sub></em>= 1/<em>cosφ = L/W</em></p>
-<p>where <em>C<sub>L </sub></em>= lift coefficient</p>
-<p><em>F<sub>n</sub></em>= net thrust</p>
-<p><em>L</em> = lift force = wing lift + thrust lift = <em>C<sub>L</sub>qS +F<sub>n</sub>sinα<sub>F</sub></em></p>
-<p><em>q</em> = dynamic pressure</p>
-<p><em>S</em> = wing area</p>
-<p><em>W</em> = gross weight</p>
-<p><em>α<sub>F </sub></em>= incidence angle between thrust line and relative wind</p>
-<p><em>φ</em> = angle of bank</p>
-<p><strong> </strong></p>
-<p><strong>Body Axis Normal Load Factor</strong> (<em>N<sub>zb</sub></em>) is calculated as</p>
-<p> </p>
-<p><em>N<sub>zb</sub></em> = <span class="math display">\[*N~zw~*-*N~xb~*sinα\]</span>/cosα</p>
-<p>€</p>
-<p>where <em>N<sub>zb </sub></em>= load factor along aircraft body x-axis</p>
-<p>α = angle of attack</p>
-<p> </p>
-<p>For the simplified case of negligible thrust lift, the maximum achievable <em>N<sub>zb</sub></em> at any flight speed can be calculated as</p>
-<p> </p>
-<p><em>N<sub>zb</sub></em> = (<em>V/V<sub>s</sub></em>)<sup>2</sup></p>
-<p> </p>
-<p>where both speed must be the same units</p>
-<p>(i.e., true, equivalent, calibrated)</p>
-<p><em>V</em> = flight airspeed</p>
-<p><em>V<sub>s</sub></em> = stall speed</p>
-<p> </p>
+</div>
+<div id="v-n-diagram" class="section level2" number="9.3">
+<h2><span class="header-section-number">9.3</span> V-n Diagram</h2>
+<p><strong>Flight Path Normal Load Factor</strong> <span class="math inline">\(\left(N_{zw} \right)\)</span> can be expressed during level flight, as</p>
+<p><span class="math display">\[
+  \begin{align}
+  N_{zw} &amp;= \frac{1}{\cos \phi} = \frac{L}{W} \\
+  \text{where } C_L &amp;= \text{lift coefficient} \\
+  F_n &amp;= \text{net thrust} \\
+  L &amp;= \text{lift force} = \text{wing lift} + \text{thrust lift} = C_L qS + F_n \sin \alpha_F \\
+  q &amp;= \text{dynamic pressure} \\
+  S &amp;= \text{wing area} \\
+  W &amp;= \text{gross weight} \\
+  \alpha_F &amp;= \text{incidence angle between thrust line and relative wind} \\
+  \phi &amp;= \text{angle of bank}
+  \end{align}
+\]</span></p>
+<p><strong>Body Axis Normal Load Factor</strong> <span class="math inline">\(\left(N_{zb} \right)\)</span> is calculated as</p>
+<p><span class="math display">\[
+  \begin{align}
+  N_{zb} &amp;= \frac{N_{zw} - N_{xb} \sin \alpha}{\cos \alpha} \\
+  \text{where } N_{xb} &amp;= \text{load factor along aircraft body x-axis} \\
+  \alpha &amp;= \text{angle of attack} \\
+  \end{align}
+\]</span></p>
+<p>For the simplified case of negligible thrust lift, the maximum achievable <span class="math inline">\(N_{zb}\)</span> at any flight speed can be calculated as</p>
+<p><span class="math display">\[
+  \begin{align}
+  N_{zb} &amp;= \left( \frac{V}{V_s} \right)^2 \\
+  \text{where } &amp;\text{both speeds must be the same units (i.e., true, equivalent, calibrated)} \\
+  V &amp;= \text{flight airspeed} \\
+  V_s &amp;= \text{stall airspeed} \\
+  \end{align}
+\]</span> </p>
 <p>A general normal load flight envelope (V-n diagram) would appear as</p>
-<p>• The envelope typically varies with: asymmetric loading; aircraft configuration; for air loads other than along the normal axis; and other structural, system, and safety considerations.</p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> <img src="media/09/image3.png" style="width:4.52014in;height:2.81181in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>• It is frequently desirable to correct measured (test) <em>N<sub>zb</sub></em> data to a standard weight or design gross weight (<em>GW</em>) using the relationship</p>
-<p> </p>
-<p><em>N<sub>zb</sub></em>= (test <em>N<sub>zb</sub></em>)(<em>W</em><sub>t</sub><em>/W<sub>s</sub>)</em></p>
-<p>where <em>W</em><sub>t</sub> = test weight</p>
-<p><em>W<sub>s</sub></em> = standard weight</p>
-<p> </p>
-<p>• The increase in load factor due to a vertical gust <em>(∆n</em>) is calculated as</p>
-<p>€</p>
-<p>                        ∆n = 0.115<em>mV<sub>e</sub>(KU)/(W/S</em>)</p>
-<p> </p>
-<p>where <em>m</em> = slope of C<sub>Lα</sub> curve</p>
-<p><em>V<sub>e </sub></em> = equivalent airspeed (knots)</p>
-<p><em>KU</em> = effective gust velocity (fps)</p>
-<p><em>W/S</em> = wing loading (psf)</p>
-<p> </p>
+<ul>
+<li>The envelope typically varies with:
+<ul>
+<li>asymmetric loading</li>
+<li>aircraft configuration</li>
+<li>for air loads other than along the normal axis</li>
+<li>and other structural, system, and safety considerations.</li>
+</ul></li>
+</ul>
+<p><img src="media/09/image3.png" style="width:4.52014in;height:2.81181in" /></p>
+<ul>
+<li>It is frequently desirable to correct measured (test) <span class="math inline">\(N_{zb}\)</span> data to a standard weight or design gross weight ( <span class="math inline">\(\mathrm{GW}\)</span> ) using the relationship</li>
+</ul>
+<p><span class="math display">\[
+  \begin{align}
+  N_{zb} &amp;= N_{zw_{\text{test}}} \frac{W_t}{W_s} \\
+  \text{where } W_t &amp;= \text{test weight} \\
+  W_s &amp;= \text{standard weight} \\
+  \end{align}
+\]</span></p>
+<ul>
+<li>The increase in load factor due to a vertical gust <span class="math inline">\(\Delta n\)</span> is calculated as</li>
+</ul>
+<p><span class="math display">\[
+  \begin{align}
+  \Delta n &amp;= \frac{0.155 m V_e \left( \mathrm{KU} \right) }{\frac{W}{S}} \\
+  \text{where } m &amp;= \text{slope of } C_{L_{\alpha}} \text{ curve} \\
+  V_e &amp;= \text{equivalent airspeed (knots)} \\
+  \mathrm{KU} &amp;= \text{effective gust velocity (fps)} \\
+  \frac{W}{S} &amp;= \text{wing loading (psf)} \\
+  \end{align}
+\]</span></p>
 <p><strong>9.4 Strain Gages</strong></p>
 <p> </p>
 <p>The three strain gage configurations most commonly used are</p>

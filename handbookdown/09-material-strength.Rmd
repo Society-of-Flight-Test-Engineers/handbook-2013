@@ -100,135 +100,78 @@ A typical stress & strain relationship for a material is illustrated as
 
 ![][09002]
 
-**9.3 V-n Diagram**
+## V-n Diagram
 
-** **
+**Flight Path Normal Load Factor** \( \left(N_{zw} \right) \) can be expressed during level flight, as
 
-**Flight Path Normal Load Factor** (*N~zw~*) can be expressed during level flight, as
+\[
+  \begin{align}
+  N_{zw} &= \frac{1}{\cos \phi} = \frac{L}{W} \\
+  \text{where } C_L &= \text{lift coefficient} \\
+  F_n &= \text{net thrust} \\
+  L &= \text{lift force} = \text{wing lift} + \text{thrust lift} = C_L qS + F_n \sin \alpha_F \\
+  q &= \text{dynamic pressure} \\
+  S &= \text{wing area} \\
+  W &= \text{gross weight} \\
+  \alpha_F &= \text{incidence angle between thrust line and relative wind} \\
+  \phi &= \text{angle of bank}
+  \end{align}
+\]
 
- 
 
-*N~zw~*= 1/*cosφ = L/W*
+**Body Axis Normal Load Factor**  \( \left(N_{zb} \right) \) is calculated as
 
-where *C~L\ ~*= lift coefficient
+\[
+  \begin{align}
+  N_{zb} &= \frac{N_{zw} - N_{xb} \sin \alpha}{\cos \alpha} \\
+  \text{where } N_{xb} &= \text{load factor along aircraft body x-axis} \\
+  \alpha &= \text{angle of attack} \\
+  \end{align}
+\]
 
-*F~n~*= net thrust
+For the simplified case of negligible thrust lift, the maximum achievable \( N_{zb} \) at any flight speed can be calculated as
 
-*L* = lift force = wing lift + thrust lift = *C~L~qS +F~n~sinα~F~*
-
-*q* = dynamic pressure
-
-*S* = wing area
-
-*W* = gross weight
-
-*α~F\ ~*= incidence angle between thrust line and relative wind
-
-*φ* = angle of bank
-
-** **
-
-**Body Axis Normal Load Factor** (*N~zb~*) is calculated as
-
- 
-
-*N~zb~* = \[*N~zw~*-*N~xb~*sinα\]/cosα
-
-€
-
-where *N~zb\ ~*= load factor along aircraft body x-axis
-
-α = angle of attack
-
- 
-
-For the simplified case of negligible thrust lift, the maximum achievable *N~zb~* at any flight speed can be calculated as
-
- 
-
-*N~zb~* = (*V/V~s~*)^2^
-
- 
-
-where both speed must be the same units
-
-(i.e., true, equivalent, calibrated)
-
-*V* = flight airspeed
-
-*V~s~* = stall speed
-
- 
+\[
+  \begin{align}
+  N_{zb} &= \left( \frac{V}{V_s} \right)^2 \\
+  \text{where } &\text{both speeds must be the same units} \\
+  &\text{(i.e., true, equivalent, calibrated)} \\
+  V &= \text{flight airspeed} \\
+  V_s &= \text{stall airspeed} \\
+  \end{align}
+\] 
 
 A general normal load flight envelope (V-n diagram) would appear as
 
-• The envelope typically varies with: asymmetric loading; aircraft configuration; for air loads other than along the normal axis; and other structural, system, and safety considerations.
+* The envelope typically varies with:
+  * asymmetric loading
+  * aircraft configuration
+  * for air loads other than along the normal axis
+  * and other structural, system, and safety considerations.
 
- 
+![][09003]
 
- 
+* It is frequently desirable to correct measured (test) \( N_{zb} \) data to a standard weight or design gross weight ( \( \mathrm{GW} \) ) using the relationship
 
- 
+\[
+  \begin{align}
+  N_{zb} &= N_{zw_{\text{test}}} \frac{W_t}{W_s} \\
+  \text{where } W_t &= \text{test weight} \\
+  W_s &= \text{standard weight} \\
+  \end{align}
+\]
 
- 
+* The increase in load factor due to a vertical gust \( \Delta n \) is calculated as
 
- ![][09003]
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-• It is frequently desirable to correct measured (test) *N~zb~* data to a standard weight or design gross weight (*GW*) using the relationship
-
- 
-
-*N~zb~*= (test *N~zb~*)(*W*~t~*/W~s~)*
-
-where *W*~t~ = test weight
-
-*W~s~* = standard weight
-
- 
-
-• The increase in load factor due to a vertical gust *(∆n*) is calculated as
-
-€
-
-                        ∆n = 0.115*mV~e~(KU)/(W/S*)
-
- 
-
-where *m* = slope of C~Lα~ curve
-
-*V~e\ ~* = equivalent airspeed (knots)
-
-*KU* = effective gust velocity (fps)
-
-*W/S* = wing loading (psf)
-
- 
+\[
+  \begin{align}
+  \Delta n &= \frac{0.155 m V_e \left( \mathrm{KU} \right) }{\frac{W}{S}} \\
+  \text{where } m &= \text{slope of } C_{L_{\alpha}} \text{ curve} \\
+  V_e &= \text{equivalent airspeed (knots)} \\
+  \mathrm{KU} &= \text{effective gust velocity (fps)} \\
+  \frac{W}{S} &= \text{wing loading (psf)} \\
+  \end{align}
+\]
 
 **9.4 Strain Gages**
 
