@@ -17,3 +17,8 @@ jobs:
         
       - name: Setup R
         uses: r-lib/actions/setup-r@master
+
+      - name: Install pandoc and pandoc citeproc
+        run: |
+          brew install pandoc
+          brew install pandoc-citeproc
