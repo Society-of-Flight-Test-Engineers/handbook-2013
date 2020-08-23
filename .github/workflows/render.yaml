@@ -18,11 +18,11 @@ jobs:
       - name: Install rmarkdown
         run: |
           R -e 'install.packages("renv")'
-          R -e 'renv::restore()' #Rscript -e 'install.packages(c("rmarkdown","bookdown"))'
+          # R -e 'renv::restore()' #Rscript -e 'install.packages(c("rmarkdown","bookdown"))'
       - name: Render Book
         run: |
-          cd ./handbookdown
-          Rscript -e 'bookdown::render_book("index.Rmd")'
+          cd ./dev
+          Rscript ./bd_render.r #-e 'bookdown::render_book("index.Rmd")'
       - uses: actions/upload-artifact@v1
         with:
           name: docs
