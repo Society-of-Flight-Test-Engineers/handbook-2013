@@ -1,0 +1,19 @@
+name: Render Handbook in HTML
+on: 
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Render
+    runs-on: macOS-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@master
+        
+      - name: Setup R
+        uses: r-lib/actions/setup-r@master
