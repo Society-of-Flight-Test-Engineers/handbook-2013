@@ -6,6 +6,10 @@
 
 **Abbreviations**
 
+| | |
+|-|-|
+|r1c1|r1c2|
+
 *BHP* brake horsepower (measured at engine crankshaft)
 
 *BHP~s\ ~* brake horsepower at standard conditions
