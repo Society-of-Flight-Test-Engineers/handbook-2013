@@ -41,3 +41,8 @@ jobs:
         run: |
           R -e 'install.packages("renv")'
           R -e 'renv::restore()'
+
+      - name: Build site
+        run: |
+          cd dev
+          Rscript .\bd_render.r
