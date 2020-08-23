@@ -16,12 +16,12 @@ jobs:
       - uses: r-lib/actions/setup-r@v1
       - uses: r-lib/actions/setup-pandoc@v1
       - name: Install rmarkdown
-        run: Rscript -e 'install.packages(c("rmarkdown","bookdown"))'
+        run: R -e 'renv::restore()' #Rscript -e 'install.packages(c("rmarkdown","bookdown"))'
       - name: Render Book
         run: |
           cd ./handbookdown
           Rscript -e 'bookdown::render_book("index.Rmd")'
       - uses: actions/upload-artifact@v1
         with:
-          name: _docs
-          path: _docs/
+          name: docs
+          path: docs/
