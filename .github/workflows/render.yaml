@@ -8,42 +8,18 @@ on:
       - master
 
 jobs:
-  build:
-    name: Render
+  bookdown:
+    name: Render-Book
     runs-on: macOS-latest
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@master
-        
-      - name: Setup R
-        uses: r-lib/actions/setup-r@master
-
-      - name: Install pandoc and pandoc citeproc
-        run: |
-          brew install pandoc
-          brew install pandoc-citeproc
-          
-#      - name: Cache Renv packages
-#        uses: actions/cache@v1
-#        with:
-#          path: $HOME/.local/share/renv
-#          key: r-${{ hashFiles('renv.lock') }}
-#          restore-keys: r-   
-
-#      - name: Cache bookdown results
-#        uses: actions/cache@v1
-#        with:
-#          path: _bookdown_files
-#          key: bookdown-${{ hashFiles('**/*Rmd') }}
-#          restore-keys: bookdown-
-
-      - name: Install packages
-        run: |
-          R -e 'install.packages("renv")'
-          R -e 'source("renv/activate.R")'
-          R -e 'renv::restore()'
-
-      - name: Build site
-        run: |
-          cd dev
-          Rscript ./bd_render.r
+      - uses: actions/checkout@v1
+      - uses: r-lib/actions/setup-r@v1
+      - uses: r-lib/actions/setup-pandoc@v1
+      - name: Install rmarkdown
+        run: Rscript -e 'install.packages(c("rmarkdown","bookdown"))'
+      - name: Render Book
+        run: Rscript -e 'bookdown::render_book("index.Rmd")'
+      - uses: actions/upload-artifact@v1
+        with:
+          name: _docs
+          path: _docs/
