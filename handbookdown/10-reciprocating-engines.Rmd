@@ -1,44 +1,6 @@
-# 10 Reciprocating Engines**
+# Reciprocating Engines
 
-** **
-
-** **
-
- 
-
-10.1 Recurring Abbreviations and Terminology
-
- 
-
-10.2 Reciprocating Engine Modeling
-
-Graphic Power Model
-
-Analytic Power Model
-
-Fuel Flow Model
-
- 
-
-10.3 Reciprocating Engine Power Standardization
-
-Partial Throttle Standardization
-
-Full Throttle Standardization
-
- 
-
-10.4 FAA Approved Engine Temperature Corrections
-
- 
-
-10.5 References
-
- 
-
- 
-
-**10.1 Recurring Abbreviations and Terminology**
+## Recurring Abbreviations and Terminology
 
 (references 10.5.1-10.5.5)
 
