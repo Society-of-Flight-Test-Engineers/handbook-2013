@@ -45,4 +45,4 @@ jobs:
       - name: Build site
         run: |
           cd dev
-          Rscript .\bd_render.r
+          Rscript ./bd_render.r
