@@ -2,305 +2,150 @@
 
 ## Recurring Abbreviations and Terminology
 
-(references 10.5.1-10.5.5)
-
 **Abbreviations**
 
-*BHP* brake horsepower (measured at engine crankshaft)
-
-*BHP~s\ ~* brake horsepower at standard conditions
-
-*BHP~t~* brake horsepower at test conditions
-
-*BHP ~alt\ ~*brake horsepower at maximum altitude where test RPM and MP can be maintained.
-
-*BHP~slmax\ ~*maximum brake horsepower at standard sea level conditions (for any given RPM)
-
-*BHP~c\ ~*chart brake horsepower
-
-*BSFC* brake specific fuel consumption (fuel flow/horsepower/ hour)
-
-C manifold pressure correction factor
-
-*HP* horsepower (= 550ft-lb/sec)
-
-*M* freestream Mach number
-
-*MP* manifold pressure, also *MAP*
-
-*SHP* shaft horsepower (measured at propeller shaft)
-
-*P* power output \[ft-lb/sec or HP\]
-
-*P~a~* ambient pressure
-
-*P~ts~* standard day total (ram) pressure
-
-*P~tt~* test day total (ram) pressure
-
-*Q* torque \[ft-lbs\]
-
-*q* dynamic pressure
-
-RPM revolutions per minute
-
-*T~ct~* test day carburetor temperature (absolute)
-
-*T~cs~* standard day carburetor temperature (absolute)
-
-*T~as~* standard day ambient temperature (absolute)
-
-*T~at~* test day ambient temperature (absolute)
-
-*V~T~* freestream true velocity
-
-∆*BHP~cat\ ~*change in brake horsepower due to carb. temp. change
-
-∆*BHP~mp\ ~*change in brake horsepower due to manifold pressure change
-
-∆*MP~∆t\ ~*change in manifold pressure due to temperature change
-
-∆*t* change between test and standard temperature (*T~at~-T~as~)*
-
-*η~r~* carburetor ram inlet efficiency
-
-*ρ*~a~ ambient density
-
-In *Hg* inches of mercury (manifold pressure)
+| | |
+|:-|:-----------|
+|\(\mathrm{BHP}_{\text{alt}}\)|brake horsepower at maximum altitude where test RPM and MP can be maintained.|
+|\(\mathrm{BHP}\)|brake horsepower (measured at engine crankshaft)|
+|\(\mathrm{BHP}_{c}\)|chart brake horsepower|
+|\(\mathrm{BHP}_{s}\)|brake horsepower at standard conditions|
+|\(\mathrm{BHP}_{\text{sl max}}\)|maximum brake horsepower at standard sea level conditions (for any given RPM)|
+|\(\mathrm{BHP}_{t}\)|brake horsepower at test conditions|
+|\(\mathrm{BSFC}\)|brake specific fuel consumption (fuel flow/horsepower/ hour)|
+|\(\mathrm{HP}\)|horsepower \( \left( = 550 \frac{\text{ft-lb}}{\text{sec}} \right) \)|
+|\(M\)|freestream Mach number|
+|\(\mathrm{MP}\)|manifold pressure, also \(\mathrm{MAP}\)|
+|\(P\)|power output \( \left[ \frac{\text{ft-lb}}{\text{sec}} \text{ or HP} \right] \)|
+|\(P_a\)|ambient pressure|
+|\(P_{ts}\)|standard day total (ram) pressure|
+|\(P_{tt}\)|test day total (ram) pressure|
+|\(q\)|dynamic pressure|
+|\(Q\)|torque \( \left[ \frac{\text{ft-lb}}{\text{sec}} \right] \)|
+|\(\mathrm{SHP}\)|shaft horsepower (measured at propeller shaft)|
+|\(T_{as}\)|standard day ambient temperature (absolute)|
+|\(T_{at}\)|test day ambient temperature (absolute)|
+|\(T_{cs}\)|standard day carburetor temperature (absolute)|
+|\(T_{ct}\)|test day carburetor temperature (absolute)|
+|\(V_T\)|freestream true velocity|
+|\(\eta_r\)|carburetor ram inlet efficiency|
+|\(\rho_a\)|ambient density|
+|\(\Delta \mathrm{BHP}_{\text{cat}}\)|change in brake horsepower due to carb. temp. change|
+|\(\Delta \mathrm{BHP}_{\text{mp}}\)|change in brake horsepower due to manifold pressure change|
+|\(\Delta \mathrm{MP}_{\Delta t}\)|change in manifold pressure due to temperature change|
+|\(\Delta t\)|change between test and standard temperature \(\left( T_{at} - T_{as} \right)\) |
+|\(C\)|manifold pressure correction factor|
+|\(\text{In Hg}\)|inches of mercury (manifold pressure)|
+|\(\mathrm{RPM}\)|revolutions per minute|
 
  
 
 **Terminology**
 
-Bore Piston diameter
+| | |
+|:-|:------|
+|Bore |Piston diameter|
+|Critical Altitude|The altitude at which a supercharged (or turbocharged) engine can no longer: a) maintain sea level manifold pressure, or b) maximum allowable horsepower.|
+|Detonation|An operating condition where combinations of excessive temperature, high manifold pressure, and low RPM cause explosive fuel burn, large internal pressure pulses, and subsequent engine damage.|
+|Displacement|Total volume swept by all cylinders, measured in either cubic inches or liters.|
+|Manifold Pressure|Pressure of fuel-air mixture passing through intake manifold, typically measured in absolute gauge pressure \( \left( \text{In Hg or } \frac{\text{lb}}{\text{in}^2} \right) \).|
+|Mixture Ratio|Ratio of \( \left[ \frac{\text{fuel weight}}{\text{air weight}} \right] \) passing through the intake manifold. This ratio must be between \(0.05\) and \(0.125\) to burn. Best power typically occurs at mixture ratio of \(0.075\) to \(0.08\). Best economy typically occurs at a ratio of \(0.0625\). To provide sufficient cooling, the mixture ratio is usually greatly increased from best economy when operating at very high or very low power settings (a.k.a. auto rich). |
+|Reduction Gear|Gearing between the engine crankshaft and propeller shaft that reduces the rotation speed going to the propeller.|
+|Stroke |Linear distance traveled by piston.|
+|Supercharger|A mechanically driven compressor that boosts the ambient air pressure to provide the engine with higher power output.|
+|Turbocharger|Also known as a turbo supercharger, it is similar to a super charger except that the compressor is driven by engine exhaust pressure.|
 
-Critical Altitude
+## Reciprocating Engine Modeling
+For any given engine design, power output is primarily a function of the product of engine speed \( \left( \mathrm{RPM} \right)\) and intake manifold pressure \( \left( \mathrm{MP} \right)\). 
+Smaller but significant effects are due to the fuel/air density \( \left( \rho_{f/a} \right)\) and exhaust back pressure (which is essentially ambient pressure, \(P_a\) ). 
+Less significant effects are due to the condition of the engine itself and include such factors as ignition quality & timing, piston ring leakage, fuel grade, and oil viscosity.
+Engine models have various levels of sophistication which can account for the four most significant factors listed above. 
+These models can be presented graphically or analytically. 
+Figure 10.2a shows a typical **graphic power model** for determining reciprocating engine \(\mathrm{BHP}\).
 
-The altitude at which a supercharged (or turbocharged) engine can no longer:
-
-a\) maintain sea level manifold pressure, or
-
-b\) maximum allowable horsepower.
-
-Detonation
-
-An operating condition where combinations of excessive temperature, high manifold pressure, and l ow RPM cause explosive fuel burn, large internal pressure pulses, and subsequent engine damage.
-
-Displacement
-
-Total volume swept by all cylinders, measured in either cubic inches or liters.
-
-Manifold Pressure
-
-Pressure of fuel-air mixture passing through intake manifold, typically measured in absolute gauge pressure (inches of mercury or lb/in^2^).
-
-Mixture Ratio
-
-Ratio of \[fuel weight/air weight\] passing through the intake manifold.
-
-• This ratio must be between  0.05 and  0.125 to burn.
-
-• Best power typically occurs at mixture ratio of 0.075 to 0.08.
-
-• Best economy typically occurs at a ratio of  0.0625
-
-• To provide sufficient cooling, the mixture ratio is usually greatly increased from best economy when operating at very high or very low power settings (a.k.a. auto rich).
-
-Reduction gear
-
-Gearing between the engine crankshaft and propeller shaft that reduces the rotation speed going to the propeller.
-
-Stroke Linear distance traveled by piston.
-
-Supercharger
-
-A mechanically driven compressor that boosts the ambient air pressure to provide the engine with higher power output.
-
-Turbocharger
-
-Also known as a turbo supercharger, it is similar to a super charger except that the compressor is
-
-driven by engine exhaust pressure.
-
- 
-
-**10.2 Reciprocating Engine Modeling** (ref 10.5.3)
-
- 
-
-For any given engine design, power output is primarily a function of the product of engine speed (*RPM*) and intake manifold pressure (*MP*). Smaller but significant effects are due to the fuel/air density (*ρ~fa~*) and exhaust back pressure (which is essentially ambient pressure, *P~a~*). Less significant effects are due to the condition of the engine itself and include such factors as ignition quality & timing, piston ring leakage, fuel grade, and oil viscosity.
-
- 
-
-Engine models have various levels of sophistication which can account for the four most significant factors listed above. Theses models can be presented graphically or analytically. Figure 10.2a shows a typical
-
-**graphic power model** for determining reciprocating engine BHP.
-
-1\) The left-hand chart shows the fundamental relation between *BHP* and the product of *RPM* and *MP*. Enter with *MP* and *RPM* to obtain point "B" and the associated "base brake horse power" (*BHP~B~*) at sea level standard day pressure and temperature.
-
- 
-
-2\) Transfer this *BHP~B~* value to point "B^1^" on the ordinate of the right hand chart.
-
-3\) Enter the right hand chart with the same *MP* & *RPM* to obtain point "A" and the associated brake horsepower at altitude (*BHP~A~*) .
-
- 
-
-4\) Connect points B^1^ and A with a straight line.
-
- 
-
-5\) Enter the abscissa at the test pressure altitude, locate point "C", and read the corresponding "chart horsepower" (*BHP~C~*). *BHP~C~*. is the sea level power corrected to the reduced back pressure con ditions at altitude. It does not account for non-standard temperatures.
-
- 
-
-6\) To correct for non-standard air temperature, subtract 1% from *BHP~C\ ~*for each 6^0^C warmer than test altitude standard temperature. Conversely, add 1% to *BHP~C\ ~*for each 6^0^C cooler than standard. For convenience, the lower right hand chart of Figure 10.2a illustrates standard temperature as a function of pressure altitude.
-
- 
+1. The left-hand chart shows the fundamental relation between \(\mathrm{BHP}\) and the product of \(\mathrm{RPM}\) and \(\mathrm{MP}.\) Enter with \(\mathrm{MP}\) and \(\mathrm{RPM}\) to obtain point \(B\) and the associated "base brake horse power" \( \left( \mathrm{BHP}_B \right)\) at sea level standard day pressure and temperature.
+2. Transfer this \( \left( \mathrm{BHP}_B \right)\) value to point \(B^1\) on the ordinate of the right hand chart.
+3. Enter the right hand chart with the same \(\mathrm{MP}\) & \(\mathrm{RPM}\) to obtain point \(A\) and the associated brake horsepower at altitude \( \left( \mathrm{BHP}_A \right)\).
+4. Connect points \(B^1\) and \(A\) with a straight line.
+5. Enter the abscissa at the test pressure altitude, locate point \(C\), and read the corresponding "chart horsepower" \( \left( \mathrm{BHP}_C \right)\). \(\mathrm{BHP}_C\) is the sea level power corrected to the reduced back pressure conditions at altitude. It does not account for non-standard temperatures.
+6. To correct for non-standard air temperature, subtract \(1%\) from \(\mathrm{BHP}_C\) for each \(6^{\circ}\text{C}\) warmer than test altitude standard temperature. Conversely, add \(1%\) to \(\mathrm{BHP}_\text{C}\) for each \(6^{\circ}\text{C}\) cooler than standard. For convenience, the lower right hand chart of Figure 10.2a illustrates standard temperature as a function of pressure altitude.
 
 ![][10001]
 
 Figure 10.2a Engine Performance Chart for Continental IO360D
 
- An **analytic power model** of a reciprocating engine should match the graphic model. Its principle application is in automating the power determination process rather than manually performing graphic lookups.
+An **analytic power model** of a reciprocating engine should match the graphic model.
+Its principle application is in automating the power determination process rather than manually performing graphic lookups.
 
- 
+1. The left hand chart shows that \(\mathrm{BHP}_B\) is a linear function of \(\mathrm{MP}\), but it is not necessarily a linear function of \(\mathrm{RPM}\). 
+Extrapolating the \(\mathrm{RPM}\) curves towards low manifold pressure illustrates their convergence to a common point. 
+This left hand chart can be summarized with the equation.
 
-1\) The left hand chart shows that *BHP~B~* is a linear function of *MP*, but it is not necessarily a linear function of RPM. Extrapolating the *RPM* curves towards low manifold pressure illustrates their convergence to a common point. This left hand chart can be summarized with the equation
+\[
+\mathrm{BHP}_B = \left[ a \left( \mathrm{RPM} \right)^2 + b \left( \mathrm{RPM} \right) + c \right] \left[ \mathrm{MP} - e \right] + d
+\]
 
- 
+\(a\) through \(e\) are determined from the graph or from separate engine tests.
 
- ![][10002]
+2. In a similar fashion, calculate
 
- 
+\[
+\mathrm{BHP}_A = \left[ a \left( \mathrm{RPM} \right)^2 + b \left( \mathrm{RPM} \right) + c \right] \left[ \mathrm{MP} \right]
+\]
 
-*a* through *e* are determined from the graph or from separate engine tests.
+3. Based on the direct relation between available power and density, calculate chart horsepower as
 
- 
+\[
+\mathrm{BHP}_C = \mathrm{BHP}_B \left[\mathrm{BHP}_A + \mathrm{BHP}_B \right] \left[ \frac{1 - \sigma_A}{1 - \sigma_D} \right] 
+\]
 
-2\) In a similar fashion, calculate
+where \(\sigma_D\) is the standard atmosphere density ratio at the operating pressure altitude \(\left(H_c\right)\).
+For convenience, this calculation is presented below for flight in the tropopause, with \(H_c\) in feet
 
- ![][10003]
+\[
+\sigma_D = \left[ 1 - 6.876 \times 10^{-6} H_c \right]^{4.2558}
+\]
 
- 
+\(\sigma_A\) is the density ratio corresponding to point \(A\) and is calculated as
 
-3\) Based on the direct relation between available power and density, calculate chart horsepower as
+\[
+\sigma_A = 0.117 + \frac{\mathrm{BHP}_A}{\mathrm{BHP}_{\text{sl max}}}
+\]
 
- ![][10004]
+where \(\mathrm{BHP}_{\text{sl max}}\) is the full-throttle sea level power at the \(\mathrm{RPM}\) in question. 
+This value is located towards the right side of the \(\mathrm{BHP}_B\) chart.
 
-where *σ~D~* is the standard atmosphere density ratio at the operating pressure altitude (*H~c~*). For convenience, this calculation is presented below for flight in the tropopause
+4. The final step in determining test day power \( \left( \mathrm{BHP}_t \right) \) is to correct for non-standard ambient absolute temperature \(\left( T_a \right)\)
 
-![][10005] (*H~c~* in feet)
+\[
+\mathrm{BHP}_t = \mathrm{BHP}_C \sqrt{ \frac{T_{as}}{T_{at}} }
+\]
 
- 
+where \( T_{as} \) is the standard absolute ambient temperature at the test altitude, and, below the tropopause, is calculated as \( T_{as} = 288.15 - 0.001\,9812 H_c  \).
 
-*σ~A~* is the density ratio corresponding to point A and is calculated as
+The **fuel flow model** is centered around the brake specific fuel consumption \( \left( \mathrm{BSFC} \right) \) defined as
 
- 
+\[
+\mathrm{BSFC} \equiv \frac{\text{fuel flow}}{\text{power}} \left( \frac{ \frac{\text{lb}}{\text{hr}} }{\mathrm{BHP}} \right)
+\]
 
- ![][10006]
+Figure 10.2b shows the basic effect of \(\mathrm{RPM}\) and \(\mathrm{BHP}\) on \(\mathrm{BSFC}\) (ref 10.5.4).
 
- 
+* At any given \(\mathrm{BHP}\), operating at lower \(\mathrm{RPM}\)s reduces mechanical friction and therefore \(\mathrm{BSFC}\).
+* At any given \(\mathrm{RPM}\), operating at very low \(\mathrm{BHP}\) increases the percentage of piston work overcoming friction and therefore increases \(\mathrm{BSFC}\).
+* Operation at high \(\mathrm{BHP}\) also increases \(\mathrm{BSFC}\), but this is due to the fuel enrichment required to prevent detonation at high loads.
 
- 
+![][10009]
 
- 
-
-where *BHP~sl\ max~* is the full-throttle sea level power at the *RPM* in question. This value is located towards the right side of the *BHP~B~* chart.
-
- 
-
-4\) The final step in determining test day power (*BHP~t~*) is to correct for non-standard ambient absolute temperature (*T~a~*)
-
- 
-
- 
-
- 
-
-where *T~as~* is the standard absolute ambient temperature at the test altitude, and, below the tropopause, is calculated as *T~as~* = 288.15- 0.001 9812*H~c~* .
-
- 
-
-![][10007]
-
-The **fuel flow model** is centered around the brake specific fuel consumption (*BSFC*) defined as
-
- 
-
- ![][10008]
-
- 
-
- 
-
- 
-
-Figure 10.2b shows the basic effect of *RPM* & *BHP* on *BSFC* (ref 10.5.4).
-
-• At any given *BHP*, operating at lower *RPM*s reduces mechanical friction and therefore *BSFC*.
-
-• At any given *RPM*, operating at very low *BHP* increases the percentage of piston work overcoming friction and therefore increases *BSFC*.
-
-• Operation at high *BHP* also increases *BSFC*, but this is due to the fuel enrichment required to prevent detonation at high loads.
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- ![][10009]
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-Figure 10.2b Effect of *RPM* and *BHP* on *BSFC*
-
- 
+Figure 10.2b Effect of \(\mathrm{RPM}\) and \(\mathrm{BHP}\) on \(\mathrm{BSFC}\)
 
 The same effects can be modeled as shown in Figure 10.2c (ref 10.5.5).
 
- 
-
-• Not shown on these figures are the possible altitude and temperature effects. Flight testers rarely need to validate these models throughout the engine's working range. Instead, testers typically evaluate *BSFC* only at the combinations of *RPM* and *MP* recommended by the manufacturer to give the desired power output.
-
- 
+* Not shown on these figures are the possible altitude and temperature effects. Flight testers rarely need to validate these models throughout the engine's working range. Instead, testers typically evaluate \(\mathrm{BSFC}\) only at the combinations of \(\mathrm{RPM}\) and \(\mathrm{MP}\) recommended by the manufacturer to give the desired power output.
 
 ![][10010]
 
-Figure 10.2c BSFC Curves for a Typical Supercharged Airplane Engine
-
- 
+Figure 10.2c \(\mathrm{BSFC}\) Curves for a Typical Supercharged Airplane Engine
 
 **10.3 Reciprocating Engine Power Standardization** (ref 10.5.4)
 
@@ -312,7 +157,7 @@ several methods, depending on the test conditions.
 
 Some useful insights are summarized below.
 
-• [In all cases, test day *RPM* must equal standard day *RPM*]{.underline}. There are no corrections if this requirement is violated.
+• [In all cases, test day \(\mathrm{RPM}\) must equal standard day \(\mathrm{RPM}\)]{.underline}. There are no corrections if this requirement is violated.
 
 • The effect of density on power output at wide open throttle has been empirically shown to be
 
@@ -336,7 +181,7 @@ The different power standardization methods are described below.
 
  
 
-**Partial Throttle Standardization.** If the test engine is set at some partial throttle setting to achieve a specific manifold pressure, then the same *MP* should be achievable on standard day with a slightly different throttle setting. Calculate standard day power (*BHP~s~*) as
+**Partial Throttle Standardization.** If the test engine is set at some partial throttle setting to achieve a specific manifold pressure, then the same \(\mathrm{MP}\) should be achievable on standard day with a slightly different throttle setting. Calculate standard day power (*BHP~s~*) as
 
  
 
@@ -368,7 +213,7 @@ so *H~c\ test\ ~*= *H~c\ std\ ~* std
 
  
 
-The first correction is another form of the previous constant *MP* correction
+The first correction is another form of the previous constant \(\mathrm{MP}\) correction
 
  
 
@@ -384,7 +229,7 @@ The second (manifold pressure) correction accounts for two effects:
 
 1\) For supercharged engines, correct for the change in pressure ratio of the supercharger due to inlet temperature changes.
 
-2\) For all engines operating below maximum *MP*, correct for the change in air inlet ram pressure ratio due to flight Mach number changes.
+2\) For all engines operating below maximum \(\mathrm{MP}\), correct for the change in air inlet ram pressure ratio due to flight Mach number changes.
 
  
 
