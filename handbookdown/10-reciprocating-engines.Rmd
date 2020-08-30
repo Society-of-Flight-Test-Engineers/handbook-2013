@@ -254,79 +254,48 @@ q \left[ \frac{\text{lb}}{\text{ft}^2} \right] = \frac{1}{2} \rho_a V_T^2 = 1481
 
 ![][10021]
 
- 
-
 The final standard day power curves are presented in a form similar to that shown in Figure 10.3c
-
- 
 
 ![][10022]
 
-Figure 10.3a - Manifold Pressure Correction When Temperature is Measured After Fuel Vaporization
-
- 
+Figure 10.3a Manifold Pressure Correction When Temperature is Measured After Fuel Vaporization
 
 ![][10023]
 
-Figure 10.3b---Manifold Pressure Correction When Temperature is Measured Before Fuel Injection
-
- 
+Figure 10.3b Manifold Pressure Correction When Temperature is Measured Before Fuel Injection
 
 ![][10024]
 
 Figure 10.3c Example Standard Day Supercharged Engine Performance Data
 
- 
+## FAA Approved Engine Temperature Corrections
 
-**10.4 FAA Approved Engine Temperature Corrections**
-
-** **
-
-The intent is to ensure that the critical engine parts, (i.e., cylinder head and cylinder barrel) do not exceed the engine manufacturer's specified limits during worst-case climb operating conditions on a 100 °F hot day.
-
- 
+The intent is to ensure that the critical engine parts, (i.e., cylinder head and cylinder barrel) do not exceed the engine manufacturer's specified limits during worst-case climb operating conditions on a \(100^{\circ} \text{F}\) hot day.
 
 Test procedures are detailed in AC 23-A. The basic idea is best illustrated with the single-engine airplane procedure:
 
- 
+1. Trim in level flight at the lowest practical altitude with at least \(75%\) maximum continuous power. Allow temperatures to stabilize.
+2. Increase engine power to takeoff rating and climb at a speed not greater than \(V_y\) (best climb speed). Maintain takeoff power for one minute.
+3. At the end of one minute, reduce engine power to maximum continuous and continue climb for at least five minutes after temperatures peak or the maximum operating altitude is reached. Flight manual lean ing procedures should be used.
 
-1)  Trim in level flight at the lowest practical altitude with at least 75% maximum continuous power. Allow
+Correct the peak test day cylinder barrel temperature \( \left( T_{bt} \right) \) to hot day conditions \( \left( T_{bh} \right) \) as follows
 
-2)  temperatures to stabilize.
+\[
+T_{bh} = T_{bt} +0.7 \left[ 100 - 0.0036 H_c - T_{at} \right]
+\]
 
-2\) Increase engine power to takeoff rating and climb at a speed not greater than *V~y~* (best climb speed). Maintain takeoff power for one minute.
+Correct the peak test day cylinder head or other temperature \( \left( T_{ht} \right) \) to hot day conditions \( \left( T_{hh} \right) \) as follows
 
-3\) At the end of one minute, reduce engine power to maximum continuous and continue climb for at least five minutes after temperatures peak or the maximum operating altitude is reached. Flight manual lean ing procedures should be used.
+\[
+T_{hh} = T_{ht} + 100 - 0.0036 H_c - T_{at}
+\]
 
- 
+\(H_c\) is the pressure altitude in feet
+\(T_{at}\) is the outside air temperature in degrees \(\text{F}\)
 
-Correct the peak test day cylinder barrel temperature (*T~bt~*) to hot day conditions (*T~bh~*) as follows
+This method is known to be quite conservative. More satisfactory temperatures may be achieved by actually testing during hot weather.
 
-\* *
-
-*T~bh\ =~ T~bt~*+0.7\[100-0.0036*H~c~-T~at~*\]
-
- 
-
-Correct the peak test day cylinder head or other temperature (*T~ht~*) to hot day conditions (*T~hh~*) as follows
-
- 
-
-*T~hh\ =~ T~ht~*+100-0.0036*H~c~-T~at~*
-
- 
-
-*H~c\ ~*is the pressure altitude in feet
-
-*T~at\ ~*is the outside air temperature in degrees F
-
- 
-
-This method is known to be quite conservative More satisfactory temperatures may be achieved by actually testing during hot weather.
-
- 
-
-**10.5 References**
+## References
 
 |||
 |-|---------------|

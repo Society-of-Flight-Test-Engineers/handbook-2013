@@ -329,6 +329,8 @@
 <li class="chapter" data-level="10.1" data-path="reciprocating-engines.html"><a href="reciprocating-engines.html#recurring-abbreviations-and-terminology"><i class="fa fa-check"></i><b>10.1</b> Recurring Abbreviations and Terminology</a></li>
 <li class="chapter" data-level="10.2" data-path="reciprocating-engines.html"><a href="reciprocating-engines.html#reciprocating-engine-modeling"><i class="fa fa-check"></i><b>10.2</b> Reciprocating Engine Modeling</a></li>
 <li class="chapter" data-level="10.3" data-path="reciprocating-engines.html"><a href="reciprocating-engines.html#reciprocating-engine-power-standardization-ref-10.5.4"><i class="fa fa-check"></i><b>10.3</b> Reciprocating Engine Power Standardization (ref 10.5.4)</a></li>
+<li class="chapter" data-level="10.4" data-path="reciprocating-engines.html"><a href="reciprocating-engines.html#faa-approved-engine-temperature-corrections"><i class="fa fa-check"></i><b>10.4</b> FAA Approved Engine Temperature Corrections</a></li>
+<li class="chapter" data-level="10.5" data-path="reciprocating-engines.html"><a href="reciprocating-engines.html#references-8"><i class="fa fa-check"></i><b>10.5</b> References</a></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="propellers.html"><a href="propellers.html"><i class="fa fa-check"></i><b>11</b> 11 Propellers**</a></li>
 <li class="chapter" data-level="12" data-path="fixed-wing-performance-standardization.html"><a href="fixed-wing-performance-standardization.html"><i class="fa fa-check"></i><b>12</b> 12 Fixed-Wing Performance Standardization**</a></li>
@@ -714,43 +716,37 @@ This value is located towards the right side of the <span class="math inline">\(
 q \left[ \frac{\text{lb}}{\text{ft}^2} \right] = \frac{1}{2} \rho_a V_T^2 = 1481 \delta M^2
 \]</span></p>
 <p><img src="media/10/image21.png" style="width:1.98958in;height:0.48958in" /></p>
-<p> </p>
 <p>The final standard day power curves are presented in a form similar to that shown in Figure 10.3c</p>
-<p> </p>
 <p><img src="media/10/image22.png" style="width:4.52014in;height:3.70764in" /></p>
-<p>Figure 10.3a - Manifold Pressure Correction When Temperature is Measured After Fuel Vaporization</p>
-<p> </p>
+<p>Figure 10.3a Manifold Pressure Correction When Temperature is Measured After Fuel Vaporization</p>
 <p><img src="media/10/image23.png" style="width:6.87431in;height:4.37431in" /></p>
-<p>Figure 10.3b—Manifold Pressure Correction When Temperature is Measured Before Fuel Injection</p>
-<p> </p>
+<p>Figure 10.3b Manifold Pressure Correction When Temperature is Measured Before Fuel Injection</p>
 <p><img src="media/10/image24.png" style="width:6.24931in;height:8.62361in" /></p>
 <p>Figure 10.3c Example Standard Day Supercharged Engine Performance Data</p>
-<p> </p>
-<p><strong>10.4 FAA Approved Engine Temperature Corrections</strong></p>
-<p><strong> </strong></p>
-<p>The intent is to ensure that the critical engine parts, (i.e., cylinder head and cylinder barrel) do not exceed the engine manufacturer’s specified limits during worst-case climb operating conditions on a 100 °F hot day.</p>
-<p> </p>
+</div>
+<div id="faa-approved-engine-temperature-corrections" class="section level2" number="10.4">
+<h2><span class="header-section-number">10.4</span> FAA Approved Engine Temperature Corrections</h2>
+<p>The intent is to ensure that the critical engine parts, (i.e., cylinder head and cylinder barrel) do not exceed the engine manufacturer’s specified limits during worst-case climb operating conditions on a <span class="math inline">\(100^{\circ} \text{F}\)</span> hot day.</p>
 <p>Test procedures are detailed in AC 23-A. The basic idea is best illustrated with the single-engine airplane procedure:</p>
-<p> </p>
-<p>1)  Trim in level flight at the lowest practical altitude with at least 75% maximum continuous power. Allow</p>
-<p>2)  temperatures to stabilize.</p>
-<p>2) Increase engine power to takeoff rating and climb at a speed not greater than <em>V<sub>y</sub></em> (best climb speed). Maintain takeoff power for one minute.</p>
-<p>3) At the end of one minute, reduce engine power to maximum continuous and continue climb for at least five minutes after temperatures peak or the maximum operating altitude is reached. Flight manual lean ing procedures should be used.</p>
-<p> </p>
-<p>Correct the peak test day cylinder barrel temperature (<em>T<sub>bt</sub></em>) to hot day conditions (<em>T<sub>bh</sub></em>) as follows</p>
-<p>* *</p>
-<p><em>T<sub>bh =</sub> T<sub>bt</sub></em>+0.7<span class="math display">\[100-0.0036*H~c~-T~at~*\]</span></p>
-<p> </p>
-<p>Correct the peak test day cylinder head or other temperature (<em>T<sub>ht</sub></em>) to hot day conditions (<em>T<sub>hh</sub></em>) as follows</p>
-<p> </p>
-<p><em>T<sub>hh =</sub> T<sub>ht</sub></em>+100-0.0036<em>H<sub>c</sub>-T<sub>at</sub></em></p>
-<p> </p>
-<p><em>H<sub>c </sub></em>is the pressure altitude in feet</p>
-<p><em>T<sub>at </sub></em>is the outside air temperature in degrees F</p>
-<p> </p>
-<p>This method is known to be quite conservative More satisfactory temperatures may be achieved by actually testing during hot weather.</p>
-<p> </p>
-<p><strong>10.5 References</strong></p>
+<ol style="list-style-type: decimal">
+<li>Trim in level flight at the lowest practical altitude with at least <span class="math inline">\(75%\)</span> maximum continuous power. Allow temperatures to stabilize.</li>
+<li>Increase engine power to takeoff rating and climb at a speed not greater than <span class="math inline">\(V_y\)</span> (best climb speed). Maintain takeoff power for one minute.</li>
+<li>At the end of one minute, reduce engine power to maximum continuous and continue climb for at least five minutes after temperatures peak or the maximum operating altitude is reached. Flight manual lean ing procedures should be used.</li>
+</ol>
+<p>Correct the peak test day cylinder barrel temperature <span class="math inline">\(\left( T_{bt} \right)\)</span> to hot day conditions <span class="math inline">\(\left( T_{bh} \right)\)</span> as follows</p>
+<p><span class="math display">\[
+T_{bh} = T_{bt} +0.7 \left[ 100 - 0.0036 H_c - T_{at} \right]
+\]</span></p>
+<p>Correct the peak test day cylinder head or other temperature <span class="math inline">\(\left( T_{ht} \right)\)</span> to hot day conditions <span class="math inline">\(\left( T_{hh} \right)\)</span> as follows</p>
+<p><span class="math display">\[
+T_{hh} = T_{ht} + 100 - 0.0036 H_c - T_{at}
+\]</span></p>
+<p><span class="math inline">\(H_c\)</span> is the pressure altitude in feet
+<span class="math inline">\(T_{at}\)</span> is the outside air temperature in degrees <span class="math inline">\(\text{F}\)</span></p>
+<p>This method is known to be quite conservative. More satisfactory temperatures may be achieved by actually testing during hot weather.</p>
+</div>
+<div id="references-8" class="section level2" number="10.5">
+<h2><span class="header-section-number">10.5</span> References</h2>
 <table>
 <colgroup>
 <col width="6%" />
