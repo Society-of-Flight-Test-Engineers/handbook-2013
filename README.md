@@ -78,3 +78,9 @@ Here's a diagram of the process.
 As of 2020-02-28, the coarse conversion and "initial scrub" from the source Microsoft Publisher and/or Word documents to Markdown text files (`*.Rmd`) is complete! 
 
 ![Process Diagram](images/handbook-port-process.png)
+
+## Continuous Integration/Continuous Deployment (CI/CD)
+
+[GitHub Actions](https://github.com/features/actions) will be used to render and publish the handbook. This will allow for changes to be confirmed using a standard configuration, and for previews to be made available without having to install software on a personal device.
+
+For more details, see the [GitHub Actions Notes](dev/gh-actions.md) file in this repo.
