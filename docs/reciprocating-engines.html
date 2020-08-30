@@ -328,6 +328,7 @@
 <ul>
 <li class="chapter" data-level="10.1" data-path="reciprocating-engines.html"><a href="reciprocating-engines.html#recurring-abbreviations-and-terminology"><i class="fa fa-check"></i><b>10.1</b> Recurring Abbreviations and Terminology</a></li>
 <li class="chapter" data-level="10.2" data-path="reciprocating-engines.html"><a href="reciprocating-engines.html#reciprocating-engine-modeling"><i class="fa fa-check"></i><b>10.2</b> Reciprocating Engine Modeling</a></li>
+<li class="chapter" data-level="10.3" data-path="reciprocating-engines.html"><a href="reciprocating-engines.html#reciprocating-engine-power-standardization-ref-10.5.4"><i class="fa fa-check"></i><b>10.3</b> Reciprocating Engine Power Standardization (ref 10.5.4)</a></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="propellers.html"><a href="propellers.html"><i class="fa fa-check"></i><b>11</b> 11 Propellers**</a></li>
 <li class="chapter" data-level="12" data-path="fixed-wing-performance-standardization.html"><a href="fixed-wing-performance-standardization.html"><i class="fa fa-check"></i><b>12</b> 12 Fixed-Wing Performance Standardization**</a></li>
@@ -629,92 +630,90 @@ This value is located towards the right side of the <span class="math inline">\(
 </ul>
 <p><img src="media/10/image10.png" style="width:5.74931in;height:8.56111in" /></p>
 <p>Figure 10.2c <span class="math inline">\(\mathrm{BSFC}\)</span> Curves for a Typical Supercharged Airplane Engine</p>
-<p><strong>10.3 Reciprocating Engine Power Standardization</strong> (ref 10.5.4)</p>
-<p><strong> </strong></p>
-<p>Correcting from test day to standard day power available uses one of</p>
-<p>several methods, depending on the test conditions.</p>
+</div>
+<div id="reciprocating-engine-power-standardization-ref-10.5.4" class="section level2" number="10.3">
+<h2><span class="header-section-number">10.3</span> Reciprocating Engine Power Standardization (ref 10.5.4)</h2>
+<p>Correcting from test day to standard day power available uses one of several methods, depending on the test conditions.</p>
 <p>Some useful insights are summarized below.</p>
-<p>• <u>In all cases, test day <span class="math inline">\(\mathrm{RPM}\)</span> must equal standard day <span class="math inline">\(\mathrm{RPM}\)</span></u>. There are no corrections if this requirement is violated.</p>
-<p>• The effect of density on power output at wide open throttle has been empirically shown to be</p>
-<p>(ref. 10.5.6)</p>
-<p> </p>
-<p> <img src="media/10/image11.png" style="width:2.42708in;height:0.22917in" /></p>
-<p> </p>
-<p>• The above correction is not typically applied to test data since test and standard day pressure altitudes (<em>H<sub>c</sub></em>) are usually the same. Instead, most standardization requirements center around correcting to standard temperature.</p>
-<p>• Engine power is actually related to the carburetor air temperature. The difference between test and standard day carburetor temperature equals the difference between test and standard day ambient temperature (<em>T<sub>ct</sub>-T<sub>cs</sub> = T<sub>at</sub>-T<sub>as</sub></em>).</p>
-<p>• With proper design, most of the freestream dynamic pressure (<em>q</em>) is converted into additional pressure at the carburetor and is known as “ram” effect. Above the critical altitude (where full throttle operation does not generate maximum manifold pressure), ram effect can be used to increase manifold pressure and therefore power output.</p>
-<p> </p>
+<ul>
+<li><strong>In all cases, test day <span class="math inline">\(\mathrm{RPM}\)</span> must equal standard day <span class="math inline">\(\mathrm{RPM}\)</span>.</strong> There are no corrections if this requirement is violated.</li>
+<li>The effect of density on power output at wide open throttle has been empirically shown to be, (ref. 10.5.6)</li>
+</ul>
+<p><span class="math display">\[
+\mathrm{BHP}_{\text{alt}} = \mathrm{BHP}_{\text{sl max}} \left( 1.1324 \sigma - 0.1324 \right)
+\]</span></p>
+<ul>
+<li>The above correction is not typically applied to test data since test and standard day pressure altitudes <span class="math inline">\(\left( H_c \right)\)</span> are usually the same. Instead, most standardization requirements center around correcting to standard temperature.</li>
+<li>Engine power is actually related to the carburetor air temperature. The difference between test and standard day carburetor temperature equals the difference between test and standard day ambient temperature <span class="math inline">\(\left( T_{ct} - T_{cs} = T_{at} - T_{as} \right)\)</span>.</li>
+<li>With proper design, most of the freestream dynamic pressure <span class="math inline">\(\left( q \right)\)</span> is converted into additional pressure at the carburetor and is known as “ram” effect. Above the critical altitude (where full throttle operation does not generate maximum manifold pressure), ram effect can be used to increase manifold pressure and therefore power output.</li>
+</ul>
 <p>The different power standardization methods are described below.</p>
-<p> </p>
-<p><strong>Partial Throttle Standardization.</strong> If the test engine is set at some partial throttle setting to achieve a specific manifold pressure, then the same <span class="math inline">\(\mathrm{MP}\)</span> should be achievable on standard day with a slightly different throttle setting. Calculate standard day power (<em>BHP<sub>s</sub></em>) as</p>
-<p> </p>
-<p> </p>
-<p> <img src="media/10/image12.png" style="width:1.80208in;height:0.59375in" /></p>
-<p> </p>
-<p> </p>
-<p><em>T<sub>cs</sub></em> is the standard day carburetor absolute temperature <em>= T<sub>as</sub>-T<sub>at</sub> +T<sub>ct </sub></em></p>
-<p><em>n</em> is the power exponent, usually = 0.5</p>
-<p> </p>
-<p>This correction does not address changes in back pressure,</p>
-<p>so <em>H<sub>c test </sub></em>= <em>H<sub>c std </sub></em> std</p>
-<p> </p>
-<p><strong>Full Throttle Standardization</strong> applies only if test and standard pressure altitude are equal. If the engine is operated full throttle on a test day, then the change in ambient temperature would generate a power change due to carburetor air temperature (∆<em>BHP<sub>cat</sub></em>) and manifold pressure changes (∆<em>BHP<sub>mp</sub></em>). Calculate standard day power (<em>BHP<sub>s</sub></em>) as</p>
-<p> </p>
-<p> <img src="media/10/image13.png" style="width:2.07292in;height:0.27083in" /></p>
-<p> </p>
+<p><strong>Partial Throttle Standardization.</strong> If the test engine is set at some partial throttle setting to achieve a specific manifold pressure, then the same <span class="math inline">\(\mathrm{MP}\)</span> should be achievable on standard day with a slightly different throttle setting. Calculate standard day power <span class="math inline">\(\left( \mathrm{BHP}_s \right)\)</span> as</p>
+<p><span class="math display">\[
+\mathrm{BHP}_s = \mathrm{BHP}_t \left( \frac{T_{ct}}{T_{cs}} \right)^n
+\]</span></p>
+<ul>
+<li><span class="math inline">\(T_{cs}\)</span> is the standard day carburetor absolute temperature, <span class="math inline">\(T_{cs} = T_{as} - T_{at} + T_{ct}\)</span></li>
+<li><span class="math inline">\(n\)</span> is the power exponent, usually <span class="math inline">\(0.5\)</span></li>
+</ul>
+<p>This correction does not address changes in back pressure, so <span class="math inline">\(H_{c \text{ test}} = H_{c \text{ std}}\)</span></p>
+<p><strong>Full Throttle Standardization</strong> applies only if test and standard pressure altitude are equal. If the engine is operated full throttle on a test day, then the change in ambient temperature would generate a power change due to carburetor air temperature <span class="math inline">\(\left( \Delta \mathrm{BHP}_{\mathrm{cat}} \right)\)</span> and manifold pressure changes <span class="math inline">\(\left( \Delta \mathrm{BHP}_{\mathrm{mp}} \right)\)</span>. Calculate standard day power <span class="math inline">\(\left( \Delta \mathrm{BHP}_s \right)\)</span> as</p>
+<p><span class="math display">\[
+\mathrm{BHP}_s = \mathrm{BHP}_t + \mathrm{BHP}_{\mathrm{cat}} + \mathrm{BHP}_{\mathrm{mp}}
+\]</span></p>
 <p>The first correction is another form of the previous constant <span class="math inline">\(\mathrm{MP}\)</span> correction</p>
-<p> </p>
-<p> <img src="media/10/image14.png" style="width:1.85417in;height:0.58333in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
+<p><span class="math display">\[
+\mathrm{BHP}_{\mathrm{cat}} = \mathrm{BHP}_t \left[ \left( \frac{T_{ct}}{T_{cs}} \right)^n - 1 \right]
+\]</span></p>
 <p>The second (manifold pressure) correction accounts for two effects:</p>
-<p>1) For supercharged engines, correct for the change in pressure ratio of the supercharger due to inlet temperature changes.</p>
-<p>2) For all engines operating below maximum <span class="math inline">\(\mathrm{MP}\)</span>, correct for the change in air inlet ram pressure ratio due to flight Mach number changes.</p>
-<p> </p>
-<p> <img src="media/10/image15.png" style="width:1.45833in;height:0.46875in" /></p>
-<p> </p>
-<p> </p>
-<p><em>MP<sub>t</sub></em> is the test manifold pressure.</p>
-<p><em>MP<sub>s</sub></em> is the manifold pressure corrected to standard temperature and flight Mach number:</p>
-<p> </p>
-<p> </p>
-<p> <img src="media/10/image16.png" style="width:0.96875in;height:0.42708in" /></p>
-<p> </p>
-<p><em>MP<sub>∆t </sub></em>is the correction of manifold pressure due to changes in ambient temperature and is approximated as</p>
-<p> </p>
-<p> <img src="media/10/image17.png" style="width:1.27083in;height:0.22917in" /></p>
-<p> </p>
-<p>C is a constant depending upon the pressure ratio (<em>P<sub>2</sub>/P<sub>1</sub></em>), carburetor air inlet temperature, and whether or not the fuel is vaporized during process.</p>
-<p>• If only the air is compressed, or if the inlet temperature is measured <em>after</em> fuel vaporization, then determine C using Figure 10.3a .</p>
-<p>• If the fuel is injected after the temperature is taken but <em>before</em> the charge is compressed, then determine C using Figure 10.3b.</p>
-<p>• By use of Figures 10.3a and 10.3b, any combination of induction processes for air only or for a fuel air mixture may be evaluated<em>.</em></p>
-<p> </p>
-<p>∆<em>t</em> is the difference between test and standard day carburetor air temperature and was previously described as the change in ambient air temperature</p>
-<p>∆<em>t</em> = <em>T<sub>at</sub>-T<sub>as</sub></em></p>
-<p> </p>
-<p><em>P<sub>ts</sub>/P<sub>tt</sub></em> is the ratio between standard and test day total (ram) inlet pressures at the standard and test Mach numbers. The first step in determining this ratio is to recognize</p>
-<p> </p>
-<p> <img src="media/10/image18.png" style="width:0.91667in;height:0.6875in" /></p>
-<p> </p>
-<p> </p>
-<p>* *</p>
-<p><em>P<sub>a</sub></em> is the pressure altitude and must be the same for test and standard days. Calculate <em>P<sub>tt</sub>/P<sub>a</sub></em> using test Mach number and the equation</p>
-<p> </p>
-<p> <img src="media/10/image19.png" style="width:1.8125in;height:0.4375in" /></p>
-<p> </p>
-<p><em>€</em></p>
-<p><em>η<sub>r</sub></em> is the carburetor inlet ram efficiency and is usually between 0.7 and 0.75. A more exact value may be calculated as</p>
-<p> </p>
-<p> <img src="media/10/image20.png" style="width:1.63542in;height:0.4375in" /></p>
-<p> </p>
-<p> </p>
-<p>Calculate <em>P<sub>ts</sub> /P<sub>a</sub></em> using the same equations and standard Mach number.</p>
-<p>• This last calculation may be iterative because standard Mach number cannot be exactly determined from the drag polar until power output is known.</p>
-<p>• This correction is not normally made unless the flight Mach number is above 0.6 and the power change causes a speed change of more than 3 knots.</p>
-<p>• To get a feel for the dynamic pressure change (and therefore ram effect change) due to Mach number change, recall</p>
-<p> </p>
-<p> <img src="media/10/image21.png" style="width:1.98958in;height:0.48958in" /></p>
+<ol style="list-style-type: decimal">
+<li>For supercharged engines, correct for the change in pressure ratio of the supercharger due to inlet temperature changes.</li>
+<li>For all engines operating below maximum <span class="math inline">\(\mathrm{MP}\)</span>, correct for the change in air inlet ram pressure ratio due to flight Mach number changes.</li>
+</ol>
+<p><span class="math display">\[
+\mathrm{BHP}_{\mathrm{mp}} = \mathrm{BHP}_t \left( \frac{\mathrm{MP}_s}{\mathrm{MP}_t} -1 \right)
+\]</span></p>
+<p><span class="math inline">\(\mathrm{MP}_t\)</span> is the test manifold pressure.</p>
+<p><span class="math inline">\(\mathrm{MP}_s\)</span> is the manifold pressure corrected to standard temperature and flight Mach number:</p>
+<p><span class="math display">\[
+\mathrm{MP}_s = \mathrm{MP}_{\Delta t} \frac{P_{ts}}{P_{tt}}
+\]</span></p>
+<p><span class="math inline">\(\mathrm{MP}_{\Delta t}\)</span> is the correction of manifold pressure due to changes in ambient temperature and is approximated as</p>
+<p><span class="math display">\[
+\mathrm{MP}_{\Delta t} = \mathrm{MP}_t C \Delta t
+\]</span></p>
+<p><span class="math inline">\(C\)</span> is a constant depending upon the pressure ratio<span class="math inline">\(\left( \frac{P_2}{P_1} \right)\)</span>, carburetor air inlet temperature, and whether or not the fuel is vaporized during process.</p>
+<ul>
+<li>If only the air is compressed, or if the inlet temperature is measured <em>after</em> fuel vaporization, then determine <span class="math inline">\(C\)</span> using Figure 10.3a.</li>
+<li>If the fuel is injected after the temperature is taken but <em>before</em> the charge is compressed, then determine <span class="math inline">\(C\)</span> using Figure 10.3b.</li>
+<li>By use of Figures 10.3a and 10.3b, any combination of induction processes for air only or for a fuel air mixture may be evaluated.</li>
+</ul>
+<p><span class="math inline">\(\Delta t\)</span> is the difference between test and standard day carburetor air temperature and was previously described as the change in ambient air temperature</p>
+<p><span class="math display">\[
+\Delta t = T_{at} - T_{as} 
+\]</span></p>
+<p><span class="math inline">\(\frac{P_{ts}}{P_{tt}}\)</span> is the ratio between standard and test day total (ram) inlet pressures at the standard and test Mach numbers. The first step in determining this ratio is to recognize</p>
+<p><span class="math display">\[
+\frac{P_{ts}}{P_{tt}} = \frac{ \frac{P_{ts}}{P_{a}} }{ \frac{P_{tt}}{P_{a}} }
+\]</span></p>
+<p><span class="math inline">\(P_a\)</span> is the pressure altitude and must be the same for test and standard days. Calculate <span class="math inline">\(\frac{P_{tt}}{P_{a}}\)</span> using test Mach number and the equation</p>
+<p><span class="math display">\[
+\frac{P_{tt}}{P_{a}} = \eta_r \left[ \left( 1 + 0.2 M^2 \right)^{3.5} -1 \right] +1
+\]</span></p>
+<p><span class="math inline">\(\eta_r\)</span> is the carburetor inlet ram efficiency and is usually between <span class="math inline">\(0.7\)</span> and <span class="math inline">\(0.75\)</span>. A more exact value may be calculated as</p>
+<p><span class="math display">\[
+\eta_r = \frac{ P_{t \left( \text{actual} \right)} - P_a }{ P_{t \left( \text{theoretical} \right)} - P_a }
+\]</span></p>
+<p>Calculate <span class="math inline">\(\frac{P_{ts}}{P_{a}}\)</span> using the same equations and standard Mach number.</p>
+<ul>
+<li>This last calculation may be iterative because standard Mach number cannot be exactly determined from the drag polar until power output is known.</li>
+<li>This correction is not normally made unless the flight Mach number is above <span class="math inline">\(0.6\)</span> and the power change causes a speed change of more than <span class="math inline">\(3\)</span> knots.</li>
+<li>To get a feel for the dynamic pressure change (and therefore ram effect change) due to Mach number change, recall</li>
+</ul>
+<p><span class="math display">\[
+q \left[ \frac{\text{lb}}{\text{ft}^2} \right] = \frac{1}{2} \rho_a V_T^2 = 1481 \delta M^2
+\]</span></p>
+<p><img src="media/10/image21.png" style="width:1.98958in;height:0.48958in" /></p>
 <p> </p>
 <p>The final standard day power curves are presented in a form similar to that shown in Figure 10.3c</p>
 <p> </p>
@@ -784,7 +783,7 @@ This value is located towards the right side of the <span class="math inline">\(
 </tr>
 <tr class="odd">
 <td>10.5.7</td>
-<td>anon., “Flight Test Guide for Certification of Part 23 Air planes,” U.S. Department of Transportation Advisory Circu- lar 23-8A, 1989.</td>
+<td>anon., “Flight Test Guide for Certification of Part 23 Air planes,” U.S. Department of Transportation Advisory Circular 23-8A, 1989.</td>
 </tr>
 </tbody>
 </table>

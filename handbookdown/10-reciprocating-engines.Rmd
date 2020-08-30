@@ -147,177 +147,112 @@ The same effects can be modeled as shown in Figure 10.2c (ref 10.5.5).
 
 Figure 10.2c \(\mathrm{BSFC}\) Curves for a Typical Supercharged Airplane Engine
 
-**10.3 Reciprocating Engine Power Standardization** (ref 10.5.4)
+## Reciprocating Engine Power Standardization (ref 10.5.4)
 
-** **
-
-Correcting from test day to standard day power available uses one of
-
-several methods, depending on the test conditions.
+Correcting from test day to standard day power available uses one of several methods, depending on the test conditions.
 
 Some useful insights are summarized below.
 
-• [In all cases, test day \(\mathrm{RPM}\) must equal standard day \(\mathrm{RPM}\)]{.underline}. There are no corrections if this requirement is violated.
+* **In all cases, test day \(\mathrm{RPM}\) must equal standard day \(\mathrm{RPM}\).** There are no corrections if this requirement is violated.
+* The effect of density on power output at wide open throttle has been empirically shown to be, (ref. 10.5.6)
 
-• The effect of density on power output at wide open throttle has been empirically shown to be
+\[
+\mathrm{BHP}_{\text{alt}} = \mathrm{BHP}_{\text{sl max}} \left( 1.1324 \sigma - 0.1324 \right)
+\]
 
-(ref. 10.5.6)
-
- 
-
- ![][10011]
-
- 
-
-• The above correction is not typically applied to test data since test and standard day pressure altitudes (*H~c~*) are usually the same. Instead, most standardization requirements center around correcting to standard temperature.
-
-• Engine power is actually related to the carburetor air temperature. The difference between test and standard day carburetor temperature equals the difference between test and standard day ambient temperature (*T~ct~-T~cs~ = T~at~-T~as~*).
-
-• With proper design, most of the freestream dynamic pressure (*q*) is converted into additional pressure at the carburetor and is known as "ram" effect. Above the critical altitude (where full throttle operation does not generate maximum manifold pressure), ram effect can be used to increase manifold pressure and therefore power output.
-
- 
+* The above correction is not typically applied to test data since test and standard day pressure altitudes \( \left( H_c \right) \) are usually the same. Instead, most standardization requirements center around correcting to standard temperature.
+* Engine power is actually related to the carburetor air temperature. The difference between test and standard day carburetor temperature equals the difference between test and standard day ambient temperature \( \left( T_{ct} - T_{cs} = T_{at} - T_{as} \right) \).
+* With proper design, most of the freestream dynamic pressure \( \left( q \right) \) is converted into additional pressure at the carburetor and is known as "ram" effect. Above the critical altitude (where full throttle operation does not generate maximum manifold pressure), ram effect can be used to increase manifold pressure and therefore power output.
 
 The different power standardization methods are described below.
 
- 
+**Partial Throttle Standardization.** If the test engine is set at some partial throttle setting to achieve a specific manifold pressure, then the same \(\mathrm{MP}\) should be achievable on standard day with a slightly different throttle setting. Calculate standard day power \( \left( \mathrm{BHP}_s \right) \) as
 
-**Partial Throttle Standardization.** If the test engine is set at some partial throttle setting to achieve a specific manifold pressure, then the same \(\mathrm{MP}\) should be achievable on standard day with a slightly different throttle setting. Calculate standard day power (*BHP~s~*) as
+\[
+\mathrm{BHP}_s = \mathrm{BHP}_t \left( \frac{T_{ct}}{T_{cs}} \right)^n
+\]
 
- 
+* \( T_{cs} \) is the standard day carburetor absolute temperature, \( T_{cs} = T_{as} - T_{at} + T_{ct} \)
+* \(n\) is the power exponent, usually \(0.5\)
 
- 
+This correction does not address changes in back pressure, so \( H_{c \text{ test}} = H_{c \text{ std}} \)
 
- ![][10012]
+**Full Throttle Standardization** applies only if test and standard pressure altitude are equal. If the engine is operated full throttle on a test day, then the change in ambient temperature would generate a power change due to carburetor air temperature \( \left( \Delta \mathrm{BHP}_{\mathrm{cat}} \right) \) and manifold pressure changes \( \left( \Delta \mathrm{BHP}_{\mathrm{mp}} \right) \). Calculate standard day power \( \left( \Delta \mathrm{BHP}_s \right) \) as
 
- 
-
- 
-
-*T~cs~* is the standard day carburetor absolute temperature *= T~as~-T~at~ +T~ct\ ~*
-
-*n* is the power exponent, usually = 0.5
-
- 
-
-This correction does not address changes in back pressure,
-
-so *H~c\ test\ ~*= *H~c\ std\ ~* std
-
- 
-
-**Full Throttle Standardization** applies only if test and standard pressure altitude are equal. If the engine is operated full throttle on a test day, then the change in ambient temperature would generate a power change due to carburetor air temperature (∆*BHP~cat~*) and manifold pressure changes (∆*BHP~mp~*). Calculate standard day power (*BHP~s~*) as
-
- 
-
- ![][10013]
-
- 
+\[
+\mathrm{BHP}_s = \mathrm{BHP}_t + \mathrm{BHP}_{\mathrm{cat}} + \mathrm{BHP}_{\mathrm{mp}}
+\]
 
 The first correction is another form of the previous constant \(\mathrm{MP}\) correction
 
- 
-
- ![][10014]
-
- 
-
- 
-
- 
+\[
+\mathrm{BHP}_{\mathrm{cat}} = \mathrm{BHP}_t \left[ \left( \frac{T_{ct}}{T_{cs}} \right)^n - 1 \right]
+\]
 
 The second (manifold pressure) correction accounts for two effects:
 
-1\) For supercharged engines, correct for the change in pressure ratio of the supercharger due to inlet temperature changes.
+1. For supercharged engines, correct for the change in pressure ratio of the supercharger due to inlet temperature changes.
+2. For all engines operating below maximum \(\mathrm{MP}\), correct for the change in air inlet ram pressure ratio due to flight Mach number changes.
 
-2\) For all engines operating below maximum \(\mathrm{MP}\), correct for the change in air inlet ram pressure ratio due to flight Mach number changes.
+\[
+\mathrm{BHP}_{\mathrm{mp}} = \mathrm{BHP}_t \left( \frac{\mathrm{MP}_s}{\mathrm{MP}_t} -1 \right)
+\]
 
- 
+\(\mathrm{MP}_t\) is the test manifold pressure.
 
- ![][10015]
+\(\mathrm{MP}_s\) is the manifold pressure corrected to standard temperature and flight Mach number:
 
- 
+\[
+\mathrm{MP}_s = \mathrm{MP}_{\Delta t} \frac{P_{ts}}{P_{tt}}
+\]
 
- 
+\(\mathrm{MP}_{\Delta t}\) is the correction of manifold pressure due to changes in ambient temperature and is approximated as
 
-*MP~t~* is the test manifold pressure.
+\[
+\mathrm{MP}_{\Delta t} = \mathrm{MP}_t C \Delta t
+\]
 
-*MP~s~* is the manifold pressure corrected to standard temperature and flight Mach number:
+\(C\) is a constant depending upon the pressure ratio\( \left( \frac{P_2}{P_1} \right) \), carburetor air inlet temperature, and whether or not the fuel is vaporized during process.
 
- 
+* If only the air is compressed, or if the inlet temperature is measured *after* fuel vaporization, then determine \(C\) using Figure 10.3a.
+* If the fuel is injected after the temperature is taken but *before* the charge is compressed, then determine \(C\) using Figure 10.3b.
+* By use of Figures 10.3a and 10.3b, any combination of induction processes for air only or for a fuel air mixture may be evaluated.
 
- 
+\(\Delta t\) is the difference between test and standard day carburetor air temperature and was previously described as the change in ambient air temperature
 
- ![][10016]
+\[
+\Delta t = T_{at} - T_{as} 
+\]
 
- 
+\(\frac{P_{ts}}{P_{tt}}\) is the ratio between standard and test day total (ram) inlet pressures at the standard and test Mach numbers. The first step in determining this ratio is to recognize
 
-*MP~∆t\ ~*is the correction of manifold pressure due to changes in ambient temperature and is approximated as
+\[
+\frac{P_{ts}}{P_{tt}} = \frac{ \frac{P_{ts}}{P_{a}} }{ \frac{P_{tt}}{P_{a}} }
+\]
 
- 
+\(P_a\) is the pressure altitude and must be the same for test and standard days. Calculate \(\frac{P_{tt}}{P_{a}}\) using test Mach number and the equation
 
- ![][10017]
+\[
+\frac{P_{tt}}{P_{a}} = \eta_r \left[ \left( 1 + 0.2 M^2 \right)^{3.5} -1 \right] +1
+\]
 
- 
+\(\eta_r\) is the carburetor inlet ram efficiency and is usually between \(0.7\) and \(0.75\). A more exact value may be calculated as
 
-C is a constant depending upon the pressure ratio (*P~2~/P~1~*), carburetor air inlet temperature, and whether or not the fuel is vaporized during process.
+\[
+\eta_r = \frac{ P_{t \left( \text{actual} \right)} - P_a }{ P_{t \left( \text{theoretical} \right)} - P_a }
+\]
 
-• If only the air is compressed, or if the inlet temperature is measured *after* fuel vaporization, then determine C using Figure 10.3a .
+Calculate \(\frac{P_{ts}}{P_{a}}\) using the same equations and standard Mach number.
 
-• If the fuel is injected after the temperature is taken but *before* the charge is compressed, then determine C using Figure 10.3b.
+* This last calculation may be iterative because standard Mach number cannot be exactly determined from the drag polar until power output is known.
+* This correction is not normally made unless the flight Mach number is above \(0.6\) and the power change causes a speed change of more than \(3\) knots.
+* To get a feel for the dynamic pressure change (and therefore ram effect change) due to Mach number change, recall
 
-• By use of Figures 10.3a and 10.3b, any combination of induction processes for air only or for a fuel air mixture may be evaluated*.*
+\[
+q \left[ \frac{\text{lb}}{\text{ft}^2} \right] = \frac{1}{2} \rho_a V_T^2 = 1481 \delta M^2
+\]
 
- 
-
-∆*t* is the difference between test and standard day carburetor air temperature and was previously described as the change in ambient air temperature
-
-∆*t* = *T~at~-T~as~*
-
- 
-
-*P~ts~/P~tt~* is the ratio between standard and test day total (ram) inlet pressures at the standard and test Mach numbers. The first step in determining this ratio is to recognize
-
- 
-
- ![][10018]
-
- 
-
- 
-
-\* *
-
-*P~a~* is the pressure altitude and must be the same for test and standard days. Calculate *P~tt~/P~a~* using test Mach number and the equation
-
- 
-
- ![][10019]
-
- 
-
-*€*
-
-*η~r~* is the carburetor inlet ram efficiency and is usually between 0.7 and 0.75. A more exact value may be calculated as
-
- 
-
- ![][10020]
-
- 
-
- 
-
-Calculate *P~ts~ /P~a~* using the same equations and standard Mach number.
-
-• This last calculation may be iterative because standard Mach number cannot be exactly determined from the drag polar until power output is known.
-
-• This correction is not normally made unless the flight Mach number is above 0.6 and the power change causes a speed change of more than 3 knots.
-
-• To get a feel for the dynamic pressure change (and therefore ram effect change) due to Mach number change, recall
-
- 
-
- ![][10021]
+![][10021]
 
  
 
@@ -401,7 +336,7 @@ This method is known to be quite conservative More satisfactory temperatures may
 |10.5.4 |Herrington, R. M. Major, USAF, et al, "Flight Test Engineering Handbook," USAF Technical report No. 6273, AFFTC, Edwards AFB, CA, May 1951.|
 |10.5.5 |Chatfield, C. H., et al, "The Airplane and its Engine," McGraw Hill, 1949.|
 |10.5.6 |Gagg, R.F., and Farrar, E.V., "Altitude Performance of Aircraft Engines Equipped with Gear-Driven Superchargers," SAE Transcripts, Vol 29, pg 217-223, 1934.|
-|10.5.7 |anon., "Flight Test Guide for Certification of Part 23 Air planes," U.S. Department of Transportation Advisory Circu- lar 23-8A, 1989.|
+|10.5.7 |anon., "Flight Test Guide for Certification of Part 23 Air planes," U.S. Department of Transportation Advisory Circular 23-8A, 1989.|
 
 **Additional Reading and Second Generation References**
 
