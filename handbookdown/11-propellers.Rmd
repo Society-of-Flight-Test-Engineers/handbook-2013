@@ -8,7 +8,7 @@
 
 |||
 |:-|:----------|
-|\(\mathrm{AF}\)|activity factor *=*\* *![][11001]|
+|\(\mathrm{AF}\)| \[ \text{activity factor } = \frac{100\,000}{16} \int_{0.15}^{1.00} \left( \frac{b}{D} \right) x^3 dx \]|
 |\(b\)|blade section width (feet)|
 |\(B\)|number of blades|
 |\(\mathrm{BHP}\)|brake horsepower (measured at engine crankshaft)|
