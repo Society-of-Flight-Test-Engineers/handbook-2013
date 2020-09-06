@@ -89,7 +89,7 @@ total width ratio (*TWR*) measured as \[*WR* x \(B\)\]
 
  
 
-thickness ratio (*TR*) blade thicknessmeasured locally or at  0.75\(R\) to represent entire prop.
+thickness ratio (*TR*) blade thickness measured locally or at  0.75\(R\) to represent entire prop.
 
  
 
@@ -421,11 +421,7 @@ Determine static \(C_T\) and \(C_P\) using "**Static Thrust Chart**" (ref 11.2)
 
  
 
-Static Thrust = where \(N\) = Propeller \(\text{RPM}\) Determine isolated propeller in-flight effi
-
- 
-
-ciency (\(\eta\)) from the appropriate **"Flight Charts."** They are typically presented in one of two forms.
+Static Thrust = where \(N\) = Propeller \(\text{RPM}\) Determine isolated propeller in-flight efficiency (\(\eta\)) from the appropriate **"Flight Charts."** They are typically presented in one of two forms.
 
  ![][11022]
 
