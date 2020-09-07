@@ -9,47 +9,47 @@
 |||
 |:-|:----------|
 |\(\mathrm{AF}\)| \[ \text{activity factor } = \frac{100\,000}{16} \int_{0.15}^{1.00} \left( \frac{b}{D} \right) x^3 dx \]|
-|\(b\)|blade section width (feet)|
+|\(b\)|blade section width \( \left[ \text{feet} \right] \)|
 |\(B\)|number of blades|
 |\(\mathrm{BHP}\)|brake horsepower (measured at engine crankshaft)|
 |\(C_{L_D}\)|blade section design lift coefficient|
-|\(C_{L_i}\)|integrated design lift coefficient = ![][11002]|
+|\(C_{L_i}\)|\[ \text{integrated design lift coefficient } = 4 \int_{0.15}^{1.00} \left( C_{L_D} \right) x^3 dx \]|
 |\(C_P\)|power (absorbed) coefficient|
 |\(C_T\)|thrust coefficient|
-|\(D\)|propeller diameter (feet)|
-|\(f_c\)|ratio of speed of sound at standard day sea level to speed of sound at operating condition \* *![][11003]|
+|\(D\)|propeller diameter \( \left[ \text{feet} \right] \)|
+|\(f_c\)|ratio of speed of sound at standard day sea level to speed of sound at operating condition \[ f_c = \frac{1}{\sqrt{\theta}} \]|
 |\(\mathrm{GR}\)|gear ratio, propeller speed/engine speed|
-|\(\mathrm{HP}\)|horsepower (1 \(\mathrm{HP}\) = 550 ft-lb/sec)|
-|\(J\)|Propeller advance ratio *=V~T~/nD* (nondimensional)|
+|\(\mathrm{HP}\)|horsepower  \( \left (1\mathrm{HP} = 550 \text{ ft-lb/sec} \right) \) |
+|\(J\)|\[ \text{Propeller advance ratio } = \frac{V_T}{nD} \left[ \text{nondimensional} \right] \]|
 |\(M\)|aircraft Mach number|
 |\(\Delta M\)|Mach number adjustment for effect of blade camber|
-|\(N\)|propeller speed, revolutions per minute (\(\text{RPM}\))|
+|\(N\)|propeller speed, revolutions per minute \( \left[ \text{RPM} \right] \)|
 |\(n\)|propeller speed, revolutions per second|
-|\(N_e\)|engine speed, \(\text{RPM}\)|
-|\(P\)|power output (ft-lb/sec)|
+|\(N_e\)|engine speed \( \left[ \text{RPM} \right] \)|
+|\(P\)|power output \( \left[ \frac{\text{ft-lb}}{\text{sec}} \right] \)|
 |\(P_a\)|ambient pressure|
 |\(q\)|dynamic pressure|
-|\(Q\)|torque (ft-lb)|
-|\(R\)|blade radius at propeller tip (feet)|
-|\(r\)|radius at blade element (feet)|
+|\(Q\)|torque \( \left[ \text{ft-lb} \right] \)|
+|\(R\)|blade radius at propeller tip \( \left[ \text{feet} \right] \)|
+|\(r\)|radius at blade element \( \left[ \text{feet} \right] \)|
 |\(\mathrm{SHP}\)|shaft horsepower (measured at propeller shaft)|
-|\(T\)|propeller thrust (pounds)|
+|\(T\)|propeller thrust \( \left[ \text{pounds} \right] \)|
 |\(T\)|thrust|
 |\(T_a\)|absolute ambient temperature|
-|\(V_K\)|freestream velocity (knots)|
+|\(V_K\)|freestream velocity \( \left[ \text{knots} \right] \)|
 |\(V_R\)|resultant velocity|
-|\(V_T\)|freestream velocity (ft/sec)|
+|\(V_T\)|freestream velocity \( \left[ \frac{\text{ft}}{\text{sec}} \right] \)|
 |\(V_{\text{tan}}\)|tangential velocity|
 |\(V_{\text{tip}}\)|tip speed|
-|\(x\)|fraction of propeller tip radius, *r/R*|
+|\(x\)|fraction of propeller tip radius, \(\frac{r}{R}\)|
 |\(\alpha\)|local angle of attack|
-|\(\beta\)|local blade twist angle, measured between chord and plane of rotation, same as *θ* (degrees).|
+|\(\beta\)|local blade twist angle, measured between chord and plane of rotation, same as \(\theta \left[ \text{degrees} \right] \).|
 |\(\eta\)|isolated propeller efficiency.|
 |\(\eta_{\text{comp}}\)|composite prop efficiency (includes tip and blockage corrections)|
-|\(\theta^{\frac{3}{4}}\)|propeller blade twist angle at \(x\) =3/4 (degrees), same as *β ^3^*^/4^|
-|\(\sigma\)|ratio of operating density to sea level standard density = *ρ*~a~/*ρ*~0.~|
+|\(\theta^{\frac{3}{4}}\)|propeller blade twist angle at \(x = \frac{3}{4} \, \left[ \text{degrees} \right] \), same as \(\beta^{\frac{3}{4}}\)|
+|\(\sigma\)|ratio of operating density to sea level standard density, \( \frac{\rho_a}{\rho_0} \)|
 |\(\phi\)|propeller disk angle of attack|
-|\(\omega\)|propeller rotation speed (radians/second)|
+|\(\omega\)|propeller rotation speed \( \left[ \frac{\text{rad}}{\text{sec}} \right] \)|
 
  
 
@@ -57,43 +57,19 @@
 
 **Terminology**
 
- ** **
 
-blade aspect ratio measured as \[\(R\) / max blade width\].
-
- 
-
-effective pitch actual advance per revolution.
-
- 
-
-experimental pitch necessary advance to generate zero thrust.
-
- 
-
-geometric pitch (*p*) advance per revolution if blade element moves
-
-according to β (i.e., with no slip).
-
-reduction gear gearing between the engine crankshaft and prop shaft that reduces the propeller rotation speed .
-
-right-handed moves clockwise (viewed from the slipstream).
-
- 
-
-solidity fraction of prop disk covered by blade area = 2π*R/Bb*.
-
- 
-
-total width ratio (*TWR*) measured as \[*WR* x \(B\)\]
-
- 
-
-thickness ratio (*TR*) blade thickness measured locally or at  0.75\(R\) to represent entire prop.
-
- 
-
-width ratio (*WR*) calculated as {\(b\) @  0.75\(R\) } / \(D\)
+|||
+|:----|:----------|
+|blade aspect ratio|measured as \( \frac{R}{\text{max blade width}} \).|
+|effective pitch | actual advance per revolution.|
+|experimental pitch| necessary advance to generate zero thrust.|
+|geometric pitch \( \left( p \right) \) | advance per revolution if blade element moves according to \(\beta\) (i.e., with no slip).|
+|reduction gear| gearing between the engine crankshaft and prop shaft that reduces the propeller rotation speed .|
+|right-handed| moves clockwise (viewed from the slipstream).|
+|solidity| fraction of prop disk covered by blade area, \( \frac{2\pi R}{Bb} \).|
+|total width ratio \( \left( \mathrm{TWR} \right) \)| measured as \( \textrm{WR} \times B \).|
+|thickness ratio \( \left( \mathrm{TR} \right) \)| blade thickness measured locally or at  \(0.75 R\) to represent entire prop.|
+|width ratio \( \left( \mathrm{WR} \right) \)| calculated as \( \frac{ \left\{ b \text{ @ }  0.75 R \right\} }{D} \) |
 
  
 
