@@ -1,0 +1,429 @@
+Return-Path: <sfte@alawless.com>
+Received: from imp04 ([10.20.200.4]) by mta62.charter.net
+          (InterMail vM.8.01.05.02 201-2260-151-103-20110920) with ESMTP
+          id <20120802042104.KLPP606.mta62.charter.net@imp04>
+          for <weavair@charter.net>; Thu, 2 Aug 2012 00:21:04 -0400
+Received: from mail-gg0-f177.google.com ([209.85.161.177])
+	by imp04 with charter.net
+	id hgM31j02z3pwwoH04gM4fs; Thu, 02 Aug 2012 00:21:04 -0400
+X-Chzlrs: ??
+X-Authority-Analysis: v=1.1 cv=qKwHuGCyOd+pVPmeGhSjky3lBlj+eYH111jxL4q6+t4=
+ c=1 sm=1 a=sA__PLLho4cA:10 a=-zUrZw4jZ6IA:10 a=xHOUUhivIviL9gTkWIsA:9
+ a=wPNLvfGTeEIA:10 a=DAWictsYkTrd4LF8EwkA:9 a=a2JC3PnaBJ+NVPNn6EIfWw==:117
+Received: by mail-gg0-f177.google.com with SMTP id s5so9997054ggc.22
+        for <weavair@charter.net>; Wed, 01 Aug 2012 21:21:04 -0700 (PDT)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :x-gm-message-state;
+        bh=eiUFknJyDbE7YHTVrOqzb4IA4KAuS3F8bObvkyR2eDs=;
+        b=JKNYd+lNaEYgdf3NITwVaUlqldqQakULNodgcDwHiyXhTjbXTPq8FvON1cOilE2Lv1
+         atc/e018BxyZ5SfY82n1a8l0zl9n4exEDI85LoNCSwdLSS/MykXEZNEvhl+DtdCNd1m8
+         OIcyKXW89ng7ciOK+X8iZOCw3D0xO9GNrWE0yj2jyRYZdtuR5Rz0x5/+GUcI8pqzwQ1c
+         Qs4s5lIlMKYCTrssemf7+8GkDO5Wy6rxximqV6Ah/+ltkAN4GPyHvbxOA3O18ZXlITUh
+         CdH3vEo5aTFu0jvD+o1oazzPu9opuAgVGBxHFI6uS74gIZCcFBQuMzoARRfuntSYpmpN
+         m3HQ==
+MIME-Version: 1.0
+Received: by 10.60.26.134 with SMTP id l6mr2991380oeg.40.1343881264583; Wed,
+ 01 Aug 2012 21:21:04 -0700 (PDT)
+Received: by 10.60.125.35 with HTTP; Wed, 1 Aug 2012 21:21:04 -0700 (PDT)
+Date: Thu, 2 Aug 2012 00:21:04 -0400
+Message-ID: <CAFWrrDkrWxfDw4f6DN0FxmqP_z0qFzbeuSs-biS3tsQQ5Nf+Fw@mail.gmail.com>
+Subject: small correction to reference handbook
+From: "SFTE@ alawless" <sfte@alawless.com>
+To: "Harold E. Weaver" <weavair@charter.net>
+Content-Type: multipart/alternative; boundary=e89a8ff1c63c65548704c640bdb8
+X-Gm-Message-State: ALoCoQkesapq192uF1OMbLPS74kyP9QWMFT6Iho6gJU+1SZN2H6nrZrHOymLLjoqpO0a82bJHIk4
+
+--e89a8ff1c63c65548704c640bdb8
+Content-Type: text/plain; charset=ISO-8859-1
+
+Harold - a sharp reader spotted an error in the performance section of the
+handbook. The followinghandbook table has  a pair  of erros in the
+definitions noted at the bottom: Pt  should be test day brake power at the
+propeller and Ps should be standard day brake power at the propeller ( not
+pressure as currently written).
+
+ ** **
+
+*Aircraft Propulsion Type*****
+
+*Standard Day Distance*****
+
+*Equation #*****
+
+*Fixed Pitch Propellers*****
+
+********
+
+(10.10)****
+
+(neglect temp correction for ****
+
+constant rpm evaluation)****
+
+********
+
+(10.11)****
+
+*Turbo-Propeller Aircraft  *****
+
+********
+
+(10.12)****
+
+(for heavy aircraft, replace 2.3 & -1.2 ****
+
+with 2.6 & -1.5 respectively)****
+
+********
+
+(10.13)****
+
+*Large Jet Aircraft * ****
+
+********
+
+(10.14)****
+
+(for lights jets, replace 2.3 & .7 exponents with 2.6 & 1 respectively)****
+
+********
+
+(10.15)****
+
+where****
+
+** **
+
+** **
+
+*P**t** * = Test day  pressure****
+
+*P**s*  = Standard day pressure****
+
+** **
+
+*F**nt* *=  T**ot *=  Avg. Test net thrust (approx .94 x static thrust @
+test conditions)****
+
+*F**ns** = T**os* =  Avg. Standard net thrust (approx .94 x static thrust @
+std.conditions)****
+
+*N**t* = test day propeller RPM****
+
+*N**s* = std day propeller RPM****
+
+** **
+
+** **
+
+** **
+
+--e89a8ff1c63c65548704c640bdb8
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Harold - a sharp reader spotted an error in the performance section of the =
+handbook. The followinghandbook table has=A0 a pair=A0 of erros in the defi=
+nitions noted at the bottom: Pt=A0 should be test day brake power at the pr=
+opeller and Ps should be standard day brake power at the propeller ( not pr=
+essure as currently written).<div class=3D"gmail_quote">
+<div class=3D"gmail_quote"><br><div><div>
+<span style=3D"color:#1f497d"></span><div class=3D"gmail_quote"><div link=
+=3D"blue" vlink=3D"purple" lang=3D"EN-US"><div>
+
+<p class=3D"MsoNormal"><span style=3D"color:#1f497d"><u></u>=A0<u></u></spa=
+n></p><table style=3D"border-collapse:collapse" cellpadding=3D"0" cellspaci=
+ng=3D"0" border=3D"0"><tbody><tr><td style=3D"width:6.65in;padding:0in 5.4p=
+t 0in 5.4pt" valign=3D"top" width=3D"638">
+
+
+<table style=3D"border-collapse:collapse;border:none;margin-left:6.75pt;mar=
+gin-right:6.75pt" cellpadding=3D"0" cellspacing=3D"0" align=3D"left" border=
+=3D"1"><tbody><tr><td style=3D"width:184.0pt;border:solid windowtext 1.0pt;=
+padding:0in 5.4pt 0in 5.4pt" valign=3D"top" width=3D"245">
+
+
+<a name=3D"138e01a9443907fe_138dae6585876b76_138bb4673f84eeea_OLE_LINK1"><s=
+pan style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-se=
+rif&quot;"><br clear=3D"all"></span></a><p class=3D"MsoNormal" style=3D"tex=
+t-align:center;line-height:18.0pt;text-autospace:none" align=3D"center">
+
+
+<b><span style=3D"font-size:10.0pt">Aircraft Propulsion Type</span></b><spa=
+n><u></u><u></u></span></p></td><td style=3D"width:207.25pt;border:solid wi=
+ndowtext 1.0pt;border-left:none;padding:0in 5.4pt 0in 5.4pt" valign=3D"top"=
+ width=3D"276">
+
+
+<p class=3D"MsoNormal" style=3D"text-align:center;line-height:18.0pt;text-a=
+utospace:none" align=3D"center"><b><span style=3D"font-size:10.0pt">Standar=
+d Day Distance</span></b><span><u></u><u></u></span></p></td><td style=3D"w=
+idth:52.1pt;border:solid windowtext 1.0pt;border-left:none;padding:0in 5.4p=
+t 0in 5.4pt" valign=3D"top" width=3D"69">
+
+
+<p class=3D"MsoNormal" style=3D"text-align:center;line-height:18.0pt;text-a=
+utospace:none" align=3D"center"><b><span style=3D"font-size:10.0pt">Equatio=
+n #</span></b><span><u></u><u></u></span></p></td></tr><tr style=3D"min-hei=
+ght:.6in">
+
+
+<td style=3D"width:184.0pt;border-top:none;border-left:solid windowtext 1.0=
+pt;border-bottom:none;border-right:solid windowtext 1.0pt;padding:0in 5.4pt=
+ 0in 5.4pt;min-height:.6in" valign=3D"top" width=3D"245"><p class=3D"MsoNor=
+mal" style=3D"text-align:center;line-height:18.0pt;text-autospace:none" ali=
+gn=3D"center">
+
+
+<b><span style=3D"font-size:10.0pt">Fixed Pitch Propellers</span></b><span>=
+<u></u><u></u></span></p></td><td style=3D"width:207.25pt;border:none;borde=
+r-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;min-height:.6in"=
+ width=3D"276">
+
+
+<p class=3D"MsoNormal" style=3D"text-align:center;line-height:18.0pt;text-a=
+utospace:none" align=3D"center"><u></u><img src=3D"" height=3D"47" hspace=
+=3D"12" align=3D"left" width=3D"175"><u></u><span style=3D"font-size:10.0pt=
+"><u></u><u></u></span></p>
+
+
+</td><td style=3D"width:52.1pt;border:none;border-right:solid windowtext 1.=
+0pt;padding:0in 5.4pt 0in 5.4pt;min-height:.6in" width=3D"69"><p class=3D"M=
+soNormal" style=3D"text-align:center;line-height:18.0pt;text-autospace:none=
+" align=3D"center">
+
+
+<span style=3D"font-size:10.0pt">(10.10)</span><span><u></u><u></u></span><=
+/p></td></tr><tr style=3D"min-height:.45in"><td style=3D"width:184.0pt;bord=
+er:solid windowtext 1.0pt;border-top:none;padding:0in 5.4pt 0in 5.4pt;min-h=
+eight:.45in" valign=3D"top" width=3D"245">
+
+
+<p class=3D"MsoNormal" style=3D"text-align:center;line-height:10.8pt;text-a=
+utospace:none" align=3D"center"><span style=3D"font-size:10.0pt">(neglect t=
+emp correction for <u></u><u></u></span></p><p class=3D"MsoNormal" style=3D=
+"text-align:center;line-height:10.8pt;text-autospace:none" align=3D"center"=
+>
+
+
+<span style=3D"font-size:10.0pt">constant rpm evaluation)</span><span><u></=
+u><u></u></span></p></td><td style=3D"width:207.25pt;border-top:none;border=
+-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowte=
+xt 1.0pt;padding:0in 5.4pt 0in 5.4pt;min-height:.45in" width=3D"276">
+
+
+<p class=3D"MsoNormal" style=3D"text-align:center;line-height:18.0pt;text-a=
+utospace:none" align=3D"center"><u></u><img src=3D"" height=3D"47" hspace=
+=3D"12" align=3D"left" width=3D"166"><u></u><span style=3D"font-size:10.0pt=
+"><u></u><u></u></span></p>
+
+
+</td><td style=3D"width:52.1pt;border-top:none;border-left:none;border-bott=
+om:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5=
+.4pt 0in 5.4pt;min-height:.45in" width=3D"69"><p class=3D"MsoNormal" style=
+=3D"text-align:center;line-height:18.0pt;text-autospace:none" align=3D"cent=
+er">
+
+
+<span style=3D"font-size:10.0pt">(10.11)</span><span><u></u><u></u></span><=
+/p></td></tr><tr style=3D"min-height:.45in"><td style=3D"width:184.0pt;bord=
+er-top:none;border-left:solid windowtext 1.0pt;border-bottom:none;border-ri=
+ght:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;min-height:.45in" va=
+lign=3D"top" width=3D"245">
+
+
+<p class=3D"MsoNormal" style=3D"text-align:center;line-height:18.0pt;text-a=
+utospace:none" align=3D"center"><b><span style=3D"font-size:10.0pt">Turbo-P=
+ropeller Aircraft=A0 </span></b><span><u></u><u></u></span></p></td><td sty=
+le=3D"width:207.25pt;border:none;border-right:solid windowtext 1.0pt;paddin=
+g:0in 5.4pt 0in 5.4pt;min-height:.45in" width=3D"276">
+
+
+<p class=3D"MsoNormal" style=3D"text-align:center;line-height:18.0pt;text-a=
+utospace:none" align=3D"center"><u></u><img src=3D"" height=3D"44" hspace=
+=3D"12" align=3D"left" width=3D"231"><u></u><span style=3D"font-size:10.0pt=
+"><u></u><u></u></span></p>
+
+
+</td><td style=3D"width:52.1pt;border:none;border-right:solid windowtext 1.=
+0pt;padding:0in 5.4pt 0in 5.4pt;min-height:.45in" width=3D"69"><p class=3D"=
+MsoNormal" style=3D"text-align:center;line-height:18.0pt;text-autospace:non=
+e" align=3D"center">
+
+
+<span style=3D"font-size:10.0pt">(10.12)</span><span><u></u><u></u></span><=
+/p></td></tr><tr style=3D"min-height:.45in"><td style=3D"width:184.0pt;bord=
+er:solid windowtext 1.0pt;border-top:none;padding:0in 5.4pt 0in 5.4pt;min-h=
+eight:.45in" valign=3D"top" width=3D"245">
+
+
+<p class=3D"MsoNormal" style=3D"text-align:center;line-height:10.8pt;text-a=
+utospace:none" align=3D"center"><span style=3D"font-size:10.0pt">(for heavy=
+ aircraft, replace 2.3 &amp; -1.2 <u></u><u></u></span></p><p class=3D"MsoN=
+ormal" style=3D"text-align:center;line-height:18.0pt;text-autospace:none" a=
+lign=3D"center">
+
+
+<span style=3D"font-size:10.0pt">with 2.6 &amp; -1.5 respectively)<u></u><u=
+></u></span></p></td><td style=3D"width:207.25pt;border-top:none;border-lef=
+t:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1=
+.0pt;padding:0in 5.4pt 0in 5.4pt;min-height:.45in" width=3D"276">
+
+
+<p class=3D"MsoNormal" style=3D"text-align:center;line-height:18.0pt;text-a=
+utospace:none" align=3D"center"><u></u><img src=3D"" height=3D"44" hspace=
+=3D"12" align=3D"left" width=3D"217"><u></u><span style=3D"font-size:10.0pt=
+"><u></u><u></u></span></p>
+
+
+</td><td style=3D"width:52.1pt;border-top:none;border-left:none;border-bott=
+om:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5=
+.4pt 0in 5.4pt;min-height:.45in" width=3D"69"><p class=3D"MsoNormal" style=
+=3D"text-align:center;line-height:18.0pt;text-autospace:none" align=3D"cent=
+er">
+
+
+<span style=3D"font-size:10.0pt">(10.13)</span><span><u></u><u></u></span><=
+/p></td></tr><tr style=3D"min-height:46.15pt"><td style=3D"width:184.0pt;bo=
+rder-top:none;border-left:solid windowtext 1.0pt;border-bottom:none;border-=
+right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;min-height:46.15pt=
+" valign=3D"top" width=3D"245">
+
+
+<p class=3D"MsoNormal" style=3D"text-align:center;line-height:18.0pt;text-a=
+utospace:none" align=3D"center"><b><span style=3D"font-size:10.0pt">Large J=
+et Aircraft </span></b><span style=3D"font-size:10.0pt">=A0</span><span><u>=
+</u><u></u></span></p>
+
+
+</td><td style=3D"width:207.25pt;border:none;border-right:solid windowtext =
+1.0pt;padding:0in 5.4pt 0in 5.4pt;min-height:46.15pt" width=3D"276"><p clas=
+s=3D"MsoNormal" style=3D"text-align:center;line-height:18.0pt;text-autospac=
+e:none" align=3D"center">
+
+
+<u></u><img src=3D"" height=3D"51" hspace=3D"12" align=3D"left" width=3D"17=
+7"><u></u><span style=3D"font-size:10.0pt"><u></u><u></u></span></p></td><t=
+d style=3D"width:52.1pt;border:none;border-right:solid windowtext 1.0pt;pad=
+ding:0in 5.4pt 0in 5.4pt;min-height:46.15pt" width=3D"69">
+
+
+<p class=3D"MsoNormal" style=3D"text-align:center;line-height:18.0pt;text-a=
+utospace:none" align=3D"center"><span style=3D"font-size:10.0pt">(10.14)</s=
+pan><span><u></u><u></u></span></p></td></tr><tr style=3D"min-height:46.65p=
+t">
+<td style=3D"width:184.0pt;border:solid windowtext 1.0pt;border-top:none;pa=
+dding:0in 5.4pt 0in 5.4pt;min-height:46.65pt" valign=3D"top" width=3D"245">=
+<p class=3D"MsoNormal" style=3D"text-align:justify;line-height:18.0pt;text-=
+autospace:none">
+
+
+<span style=3D"font-size:10.0pt">(for lights jets, replace 2.3 &amp; .7 exp=
+onents with 2.6 &amp; 1 respectively)<u></u><u></u></span></p></td><td styl=
+e=3D"width:207.25pt;border-top:none;border-left:none;border-bottom:solid wi=
+ndowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.=
+4pt;min-height:46.65pt" width=3D"276">
+
+
+<p class=3D"MsoNormal" style=3D"text-align:center;line-height:18.0pt;text-a=
+utospace:none" align=3D"center"><u></u><img src=3D"" height=3D"51" hspace=
+=3D"12" align=3D"left" width=3D"191"><u></u><span style=3D"font-size:10.0pt=
+"><u></u><u></u></span></p>
+
+
+</td><td style=3D"width:52.1pt;border-top:none;border-left:none;border-bott=
+om:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5=
+.4pt 0in 5.4pt;min-height:46.65pt" width=3D"69"><p class=3D"MsoNormal" styl=
+e=3D"text-align:center;line-height:18.0pt;text-autospace:none" align=3D"cen=
+ter">
+
+
+<span style=3D"font-size:10.0pt">(10.15)</span><span><u></u><u></u></span><=
+/p></td></tr><tr><td style=3D"width:184.0pt;border:none;border-left:solid w=
+indowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt" valign=3D"top" width=3D"245">
+<p class=3D"MsoNormal" style=3D"text-align:justify;line-height:10.8pt;text-=
+autospace:none"><span style=3D"font-size:10.0pt">where</span><span><u></u><=
+u></u></span></p></td><td style=3D"width:207.25pt;border:none;padding:0in 5=
+.4pt 0in 5.4pt" valign=3D"top" width=3D"276">
+
+
+<p class=3D"MsoNormal" style=3D"line-height:10.8pt;text-autospace:none"><sp=
+an><u></u>=A0<u></u></span></p></td><td style=3D"width:52.1pt;border:none;b=
+order-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt" valign=3D"t=
+op" width=3D"69">
+
+
+<p class=3D"MsoNormal" style=3D"text-align:center;line-height:10.8pt;text-a=
+utospace:none" align=3D"center"><span><u></u>=A0<u></u></span></p></td></tr=
+><tr><td style=3D"width:184.0pt;border:none;border-left:solid windowtext 1.=
+0pt;padding:0in 5.4pt 0in 5.4pt" valign=3D"top" width=3D"245">
+
+
+<p class=3D"MsoNormal" style=3D"text-align:justify;line-height:10.8pt;text-=
+autospace:none"><i><span style=3D"font-size:10.0pt">P</span></i><i><span st=
+yle=3D"font-size:5.5pt">t</span></i><i><span style=3D"font-size:10.0pt"> </=
+span></i><span style=3D"font-size:10.0pt">=A0=3D Test day=A0 pressure<u></u=
+><u></u></span></p>
+
+
+<p class=3D"MsoNormal" style=3D"text-align:justify;line-height:10.8pt;text-=
+autospace:none"><i><span style=3D"font-size:10.0pt">P</span></i><i><span st=
+yle=3D"font-size:5.5pt">s</span></i><span style=3D"font-size:10.0pt">=A0 =
+=3D Standard day pressure<u></u><u></u></span></p>
+
+
+<p class=3D"MsoNormal" style=3D"text-align:justify;line-height:10.8pt;text-=
+autospace:none"><span style=3D"font-size:10.0pt"><u></u>=A0<u></u></span></=
+p></td><td colspan=3D"2" style=3D"width:259.35pt;border:none;border-right:s=
+olid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt" valign=3D"top" width=3D"=
+346">
+
+
+<p class=3D"MsoNormal" style=3D"text-align:justify;line-height:10.8pt;text-=
+autospace:none"><i><span style=3D"font-size:9.0pt">F</span></i><i><span sty=
+le=3D"font-size:5.0pt">nt</span></i><span style=3D"font-size:5.0pt"> </span=
+><i><span style=3D"font-size:9.0pt">=3D=A0 T</span></i><i><span style=3D"fo=
+nt-size:5.0pt">ot </span></i><span style=3D"font-size:9.0pt">=3D=A0 Avg. Te=
+st net thrust (approx .94 x static thrust @ test conditions)<u></u><u></u><=
+/span></p>
+
+
+<p class=3D"MsoNormal" style=3D"text-align:justify;line-height:10.8pt;text-=
+autospace:none"><i><span style=3D"font-size:9.0pt">F</span></i><i><span sty=
+le=3D"font-size:5.0pt">ns</span></i><i><span style=3D"font-size:9.0pt"> =3D=
+ T</span></i><i><span style=3D"font-size:5.0pt">os</span></i><span style=3D=
+"font-size:5.0pt"> </span><span style=3D"font-size:9.0pt">=3D=A0 Avg. Stand=
+ard net thrust (approx .94 x static thrust @ std.conditions)</span><span><u=
+></u><u></u></span></p>
+
+
+</td></tr><tr><td colspan=3D"3" style=3D"width:443.35pt;border:solid window=
+text 1.0pt;border-top:none;padding:0in 5.4pt 0in 5.4pt" valign=3D"top" widt=
+h=3D"591"><p class=3D"MsoNormal" style=3D"text-align:justify;line-height:10=
+.8pt;text-autospace:none">
+
+
+<i><span style=3D"font-size:10.0pt">N</span></i><i><span style=3D"font-size=
+:5.5pt">t</span></i><span style=3D"font-size:10.0pt"> =3D test day propelle=
+r RPM<u></u><u></u></span></p><p class=3D"MsoNormal" style=3D"text-align:ju=
+stify;line-height:10.8pt;text-autospace:none">
+
+
+<i><span style=3D"font-size:10.0pt">N</span></i><i><span style=3D"font-size=
+:5.5pt">s</span></i><span style=3D"font-size:10.0pt"> =3D std day propeller=
+ RPM<u></u><u></u></span></p><p class=3D"MsoNormal" style=3D"text-align:jus=
+tify;line-height:10.8pt;text-autospace:none">
+
+
+<span style=3D"font-size:10.0pt"><u></u>=A0<u></u></span></p><p class=3D"Ms=
+oNormal" style=3D"text-align:justify;line-height:10.8pt;text-autospace:none=
+"><span><u></u>=A0<u></u></span></p></td></tr></tbody></table></td></tr></t=
+body></table>
+
+
+<p class=3D"MsoNormal"><span style=3D"color:#1f497d"><u></u>=A0<u></u></spa=
+n></p><br></div></div></div></div></div></div></div><br>
+
+--e89a8ff1c63c65548704c640bdb8--

@@ -1,0 +1,347 @@
+Return-Path: <sfte@alawless.com>
+Received: from imp07 ([10.20.200.7]) by mta32.charter.net
+          (InterMail vM.8.01.05.02 201-2260-151-103-20110920) with ESMTP
+          id <20120921095935.LOI29274.mta32.charter.net@imp07>
+          for <weavair@charter.net>; Fri, 21 Sep 2012 05:59:35 -0400
+Received: from mail-oa0-f52.google.com ([209.85.219.52])
+	by imp07 with charter.net
+	id 1lza1k04d18RWSR04lzaAG; Fri, 21 Sep 2012 05:59:35 -0400
+X-Chzlrs: ??
+X-Authority-Analysis: v=1.1 cv=Ig5vEMjI/eUOf8PM+/BjDxyf45JVXTxCk6j7mIAk2LI=
+ c=1 sm=1 a=-zUrZw4jZ6IA:10 a=R34fREkYAAAA:8 a=876exhs_AAAA:8 a=hOpmn2quAAAA:8
+ a=EjcEzsAmcBV3CtfW4fMA:9 a=wPNLvfGTeEIA:10 a=Zz2inM3TcaMA:10
+ a=Gul_sPWc450A:10 a=hUswqBWy9Q8A:10 a=Tvr4b2CMkgIvnGyl:21
+ a=LR4_bX5nAsjnG4aU:21 a=oSHHPnzYAAAA:8 a=AmZmlA5QOOd7d9KDs1QA:9
+ a=tXsnliwV7b4A:10 a=rAKAMF04uGsA:10 a=-WBOPUiFZEsszaAe:21
+ a=EMy6a21jTv--FkQL:21 a=MLmiHBlg1qRz2VwVCe6vMA==:117
+Received: by oagk1 with SMTP id k1so4536756oag.39
+        for <weavair@charter.net>; Fri, 21 Sep 2012 02:59:34 -0700 (PDT)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type:x-gm-message-state;
+        bh=lLMPTvEU+ZcuM72DV4e4XGGCkLj5FEmg4jljKcrkSY4=;
+        b=B/cdlmBLEH8UtRA/Y7WBQFnKawEn7UBUO7sRSI4Vssf9k/mqBI/AChxYFcrXp+odmg
+         YbqB7HazTLD8skbwJR6m+dOzRxI7FlTPS47VokfVjP9i0VMzDaAn3ZOV757TL7jbsrqz
+         fYH656Q1JWIzkG77qqoO/3rF94Qww0yb9VXtYfyX5Dy+HgujtwQngZQm86bJcEcidcI/
+         MXR1uIJTa85owTUWkKIK0DIaBMsSp1loZS75oKQuESosD4axveGrtAOXK5e8XUnbnml4
+         946LfqdTOcUdFItdjFsYADuvjqgZrEp5tCRfz5U9zO47ecLNDkPnxnRIupjIwN3qGy9E
+         5gfg==
+MIME-Version: 1.0
+Received: by 10.60.31.170 with SMTP id b10mr3022332oei.107.1348221574255; Fri,
+ 21 Sep 2012 02:59:34 -0700 (PDT)
+Received: by 10.60.171.237 with HTTP; Fri, 21 Sep 2012 02:59:34 -0700 (PDT)
+In-Reply-To: <5B330D406C794BF38092BD219B411836@inspiron5100>
+References: <CAFWrrDkprn7NVtu64sv=paLQY3ephQqJdmGrLJHBko1jb_0P4A@mail.gmail.com>
+	<5B330D406C794BF38092BD219B411836@inspiron5100>
+Date: Fri, 21 Sep 2012 05:59:34 -0400
+Message-ID: <CAFWrrDnnq_JH-z8_nv3q4dktD4sykmE+yVuhrjX6sH1xXyB=oA@mail.gmail.com>
+Subject: Re: 28 Sept deadline
+From: "SFTE@ alawless" <sfte@alawless.com>
+To: Harold Weaver <weavair@charter.net>
+Content-Type: multipart/alternative; boundary=e89a8fb1fda40315d204ca334c8a
+X-Gm-Message-State: ALoCoQmrdUBIOaPXIkHYVnvFrsDxWKqXtNY9YM413mYupwG2jag+R9XkPDZgjfze329in7+cpxMC
+
+--e89a8fb1fda40315d204ca334c8a
+Content-Type: text/plain; charset=ISO-8859-1
+
+thanks,
+I had no problem the last time you emailed the entire document.
+
+   1. Yes, the equations definitely must be fixed - that's a show-stopper.
+   2. My bad, the conversion to Pascal should be 6894.75728.
+   3. The top of the new section 3.8 has a couple references. Please copy
+   or move these to section 3.9.
+   4. The rear cover index I see has orange  borders. I really hoped oragne
+   would work but the BoD sent me a sample cover page printed on orange paper
+   and it looked like hell after sittin gon my desk for a month. It faded and
+   looked cheap, so got agreement from the BoD to forget about orange unless
+   we find a good deal on orange binders.
+   5. add the std atmosphere calculator website address <
+   http://www.digitaldutch.com/atmoscalc/> to the ref handbook. I suggest
+   doing in in two places: first after the table on pg 3-17. there's plenty of
+   space there.  Secondly, add it to the reference section in 3.9
+   6. please add the following unit conversion website address to the top
+   of pg 01-01 or bottom of 01-12 <http://www.onlineconversion.com/>, and
+   again on the reference page 01-47.
+
+
+
+On Thu, Sep 20, 2012 at 11:34 PM, Harold Weaver <weavair@charter.net> wrote:
+
+> **
+> *Al,*
+> **
+> *It will probably be a last minute thing if I make it to the symposium.
+> In that case I will probably drive.  Will keep you posted.*
+> **
+> *I am working toward the 28 September deadline.  Do you have a site that
+> I can FTP upload it to in case I have problems again because the PDF file
+> is too large (about 14000KB) to send by e-mail?  I think I finnaly suceeded
+> the last time by using my Yahoo e-mail to your SFTE account?  The size
+> limit can be a problem from the sending e-mail program and/or from the
+> receiving program.*
+> **
+> *Attached is Section 03 with your new addition.  There are still a few
+> problems which I am working.  PDF is definitely having a problem (blurring)
+> with equations generated with Cambria Math font.  Carmen and I are
+> corresponding on a solution to this.*
+> **
+> *I have attached your request for corrections file with only the open
+> items included which I have grouped by completed, in work, and cosmetic.
+> The cosmetic ones I may not get done by the 28th.  I will send you the
+> complete HB PDF file before the 28th less the in work and cosmetic items as
+> soon as have put all of the the completed items in.  This will also let us
+> see if we have a trnsmission size problem.  As a last resort I can mail a
+> memory stick.*
+> **
+> *Harold*
+> *636-346-4761 Cell*
+>
+> ----- Original Message -----
+> *From:* SFTE@ alawless
+> *To:* Harold Weaver <weavair@charter.net>
+> *Sent:* Wednesday, September 19, 2012 12:57 PM
+> *Subject:* 28 Sept deadline
+>
+> OK then, I'll book a room with an extra bed in case you come.
+>
+> The TC will have about 30 minutes slotted to talk to symposium attendees
+> about our activities. I want to show them a copy of the Handbook, so will
+> print out whatever we have completed by the end of next week. Please do
+> what you can and send me the latest before 28 Sept. As part of this, I'd
+> like to get the BoD to commit to having new binders and CD ready to mail
+> out with membership renewal cards. I believe that happens each November.
+>
+> talk soon,
+> al
+> ============================
+>
+>
+>
+>
+>
+> On Tue, Sep 18, 2012 at 1:09 PM, Harold Weaver <weavair@charter.net>wrote:
+>
+>> **
+>> *Al,*
+>> **
+>> *I have to apoligize as I have not found much time to work on the HB,
+>> however I have gone thru your remaining requested updates once, made a few
+>> of the updates, and came up with some questions which I will try to get to
+>> you in next couple days while working on the rest plus your newest one
+>> today.  It will be easy and quick.  I have heard from Carmen and will ask
+>> her to help on a couple problems which I have had difficulty with.*
+>> **
+>> *Going to the symposium is possible.  I looked at using my AA Frequent
+>> flyer miles and that looks doable if I can get my wifes clearance to go,
+>> and yes I would need someplace to crash because our condo is about 70 miles
+>> away.  *
+>> **
+>> *We usually go to our Pensacola condo for a couple weeks the beginning
+>> of November for the annual owners association meeting, but our grandson is
+>> getting married the same day as the meeting, so I thought we might go early
+>> October so I could make the symposium, but my wife is not interested in
+>> doing that.*
+>> **
+>> *Harold*
+>> *636-236-4761 Cell*
+>>
+>> ----- Original Message -----
+>> *From:* SFTE@ alawless <SFTE@+alawless>
+>> *To:* Harold E. Weaver <weavair@charter.net>
+>> *Sent:* Tuesday, September 18, 2012 10:09 AM
+>> *Subject:* another addition to the Reference Handbook
+>>
+>> Hi Harold-
+>> based on a real need we had here at Honda, I came up with the attached
+>> pages that you should be able to drop into the handbook without too much
+>> trouble.
+>>
+>> How's all this going?
+>> Are you planning to attend the symposium and do you need a place to crash
+>> again?
+>>
+>> al
+>>
+>>
+>
+
+--e89a8fb1fda40315d204ca334c8a
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+thanks,<br>I had no problem the last time you emailed the entire document.<=
+br><ol><li>Yes, the equations definitely must be fixed - that&#39;s a show-=
+stopper.</li><li>My bad, the conversion to Pascal should be 6894.75728.</li=
+>
+<li>The top of the new section 3.8 has a couple references. Please copy or =
+move these to section 3.9.</li><li>The rear cover index I see has orange=A0=
+ borders. I really hoped oragne would work but the BoD sent me a sample cov=
+er page printed on orange paper and it looked like hell after sittin gon my=
+ desk for a month. It faded and looked cheap, so got agreement from the BoD=
+ to forget about orange unless we find a good deal on orange binders.</li>
+<li>add the std atmosphere calculator website address &lt;<a href=3D"http:/=
+/www.digitaldutch.com/atmoscalc/">http://www.digitaldutch.com/atmoscalc/</a=
+>&gt; to the ref handbook. I suggest doing in in two places: first after th=
+e table on pg 3-17. there&#39;s plenty of space there.=A0 Secondly, add it =
+to the reference section in 3.9</li>
+<li>please add the following unit conversion website address to the top of =
+pg 01-01 or bottom of 01-12 &lt;<a href=3D"http://www.onlineconversion.com/=
+">http://www.onlineconversion.com/</a>&gt;, and again on the reference page=
+ 01-47.<br>
+</li></ol>=A0<br><br><div class=3D"gmail_quote">On Thu, Sep 20, 2012 at 11:=
+34 PM, Harold Weaver <span dir=3D"ltr">&lt;<a href=3D"mailto:weavair@charte=
+r.net" target=3D"_blank">weavair@charter.net</a>&gt;</span> wrote:<br><bloc=
+kquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #cc=
+c solid;padding-left:1ex">
+<u></u>
+
+
+
+
+
+<div bgcolor=3D"#ffffff">
+<div><b><font face=3D"Arial">Al,</font></b></div>
+<div><b><font face=3D"Arial"></font></b>=A0</div>
+<div><b><font face=3D"Arial">It will probably be a last minute thing if=20
+I make it to the symposium.=A0 In that case I will probably drive.=A0 Will=
+=20
+keep you posted.</font></b></div>
+<div><b><font face=3D"Arial"></font></b>=A0</div>
+<div><b><font face=3D"Arial">I am working toward the 28 September=20
+deadline.=A0 Do you have a site that I can FTP upload it to in case I have=
+=20
+problems again because the PDF file is too large (about 14000KB) to send by=
+=20
+e-mail?=A0 I think I finnaly suceeded the last time by using my Yahoo e-mai=
+l=20
+to your SFTE account?=A0 The size limit can be a problem from the sending=
+=20
+e-mail program and/or from the receiving program.</font></b></div>
+<div><b><font face=3D"Arial"></font></b>=A0</div>
+<div><b><font face=3D"Arial">Attached is Section 03 with your new=20
+addition.=A0 There are still a few problems which I am working.=A0 PDF is=
+=20
+definitely having a problem (blurring) with equations generated with Cambri=
+a=20
+Math font.=A0 Carmen and I are corresponding on a solution to=20
+this.</font></b></div>
+<div><b><font face=3D"Arial"></font></b>=A0</div>
+<div><b><font face=3D"Arial">I have attached your request for=20
+corrections file with only the open items included which I have grouped by=
+=20
+completed, in work, and cosmetic.=A0 The cosmetic ones=A0I may=A0not=20
+get done by the 28th.=A0 I will send you the complete HB PDF file before th=
+e=20
+28th less the in work and cosmetic items as soon as have put all of the the=
+=20
+completed items in.=A0 This will also let us see if we have a trnsmission=
+=20
+size problem.=A0 As a last resort I can=A0mail a memory=20
+stick.</font></b></div>
+<div><b><font face=3D"Arial"></font></b>=A0</div>
+<div><b><font face=3D"Arial">Harold</font></b></div>
+<div><b><font face=3D"Arial"><a href=3D"tel:636-346-4761" value=3D"+1636346=
+4761" target=3D"_blank">636-346-4761</a> Cell</font></b></div>
+<blockquote style=3D"BORDER-LEFT:#000000 2px solid;PADDING-LEFT:5px;PADDING=
+-RIGHT:0px;MARGIN-LEFT:5px;MARGIN-RIGHT:0px"><div class=3D"im">
+  <div style=3D"FONT:10pt arial">----- Original Message ----- </div>
+  <div style=3D"FONT:10pt arial;BACKGROUND:#e4e4e4"><b>From:</b>=20
+  <a title=3D"sfte@alawless.com" href=3D"mailto:SFTE@+alawless" target=3D"_=
+blank">SFTE@ alawless</a>=20
+  </div>
+  </div><div><div class=3D"h5"><div style=3D"FONT:10pt arial"><b>To:</b> <a=
+ title=3D"weavair@charter.net" href=3D"mailto:weavair@charter.net" target=
+=3D"_blank">Harold Weaver</a> </div>
+  <div style=3D"FONT:10pt arial"><b>Sent:</b> Wednesday, September 19, 2012=
+ 12:57=20
+  PM</div>
+  <div style=3D"FONT:10pt arial"><b>Subject:</b> 28 Sept deadline</div>
+  <div><br></div>OK then, I&#39;ll book a room with an extra bed in case yo=
+u come.=20
+  <br><br>The TC will have about 30 minutes slotted to talk to symposium=20
+  attendees about our activities. I want to show them a copy of the Handboo=
+k, so=20
+  will print out whatever we have completed by the end of next week. Please=
+ do=20
+  what you can and send me the latest before 28 Sept. As part of this, I&#3=
+9;d like=20
+  to get the BoD to commit to having new binders and CD ready to mail out w=
+ith=20
+  membership renewal cards. I believe that happens each November.<br><br>ta=
+lk=20
+  soon,<br>al<br>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D<br><br><br><br><br><br>
+  <div class=3D"gmail_quote">On Tue, Sep 18, 2012 at 1:09 PM, Harold Weaver=
+ <span dir=3D"ltr">&lt;<a href=3D"mailto:weavair@charter.net" target=3D"_bl=
+ank">weavair@charter.net</a>&gt;</span> wrote:<br>
+  <blockquote style=3D"BORDER-LEFT:#ccc 1px solid;MARGIN:0px 0px 0px 0.8ex;=
+PADDING-LEFT:1ex" class=3D"gmail_quote"><u></u>
+    <div bgcolor=3D"#ffffff">
+    <div><b><font face=3D"Arial">Al,</font></b></div>
+    <div><b><font face=3D"Arial"></font></b>=A0</div>
+    <div><b><font face=3D"Arial">I have to apoligize as I have not=A0found =
+much=20
+    time to work on the HB, however I have gone thru your remaining request=
+ed=20
+    updates once, made a few of the updates,=A0and came up with some=20
+    questions which I will try to get to you in next couple days=A0while=20
+    working on the rest plus your newest one today.=A0 It will be easy and=
+=20
+    quick.=A0 I have heard from Carmen and will ask her to help on a couple=
+=20
+    problems which I have had difficulty with.</font></b></div>
+    <div><b><font face=3D"Arial"></font></b>=A0</div>
+    <div><b><font face=3D"Arial">Going to the symposium is possible.=A0 I l=
+ooked=20
+    at using=A0my AA Frequent flyer miles and that looks doable if I can ge=
+t=20
+    my wifes clearance to go, and yes I would need someplace to crash becau=
+se=20
+    our condo is about 70 miles away.=A0 </font></b></div>
+    <div><b><font face=3D"Arial"></font></b>=A0</div>
+    <div><b><font face=3D"Arial">We usually go to our Pensacola condo for a=
+ couple=20
+    weeks the beginning of November for the annual owners association meeti=
+ng,=20
+    but our grandson is getting married the same day as the meeting, so I=
+=20
+    thought we might go early October so I could make the symposium, but my=
+ wife=20
+    is not interested in doing that.</font></b></div>
+    <div><b><font face=3D"Arial"></font></b>=A0</div>
+    <div><b><font face=3D"Arial">Harold</font></b></div>
+    <div><b><font face=3D"Arial"><a href=3D"tel:636-236-4761" value=3D"+163=
+62364761" target=3D"_blank">636-236-4761</a> Cell</font></b></div>
+    <div>
+    <div>
+    <blockquote style=3D"BORDER-LEFT:#000000 2px solid;PADDING-LEFT:5px;PAD=
+DING-RIGHT:0px;MARGIN-LEFT:5px;MARGIN-RIGHT:0px">
+      <div style=3D"FONT:10pt arial">----- Original Message ----- </div>
+      <div style=3D"FONT:10pt arial;BACKGROUND:#e4e4e4"><b>From:</b> <a tit=
+le=3D"sfte@alawless.com" href=3D"mailto:SFTE@+alawless" target=3D"_blank">S=
+FTE@=20
+      alawless</a> </div>
+      <div style=3D"FONT:10pt arial"><b>To:</b> <a title=3D"weavair@charter=
+.net" href=3D"mailto:weavair@charter.net" target=3D"_blank">Harold E. Weave=
+r</a>=20
+</div>
+      <div style=3D"FONT:10pt arial"><b>Sent:</b> Tuesday, September 18, 20=
+12=20
+      10:09 AM</div>
+      <div style=3D"FONT:10pt arial"><b>Subject:</b> another addition to th=
+e=20
+      Reference Handbook</div>
+      <div><br></div>Hi Harold- <br>based on a real need we had here at Hon=
+da, I=20
+      came up with the attached pages that you should be able to drop into =
+the=20
+      handbook without too much trouble.<br><br>How&#39;s all this going?<b=
+r>Are you=20
+      planning to attend the symposium and do you need a place to crash=20
+      again?<br><br>al<br></blockquote></div></div></div></blockquote></div=
+><br></div></div></blockquote></div>
+</blockquote></div><br>
+
+--e89a8fb1fda40315d204ca334c8a--
