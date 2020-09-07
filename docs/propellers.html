@@ -338,7 +338,8 @@
 <li class="chapter" data-level="11.2" data-path="propellers.html"><a href="propellers.html#propeller-geometry"><i class="fa fa-check"></i><b>11.2</b> Propeller Geometry</a></li>
 <li class="chapter" data-level="11.3" data-path="propellers.html"><a href="propellers.html#propeller-coefficients"><i class="fa fa-check"></i><b>11.3</b> Propeller Coefficients</a></li>
 <li class="chapter" data-level="11.4" data-path="propellers.html"><a href="propellers.html#propeller-efficiency-and-states"><i class="fa fa-check"></i><b>11.4</b> Propeller Efficiency and States</a></li>
-<li class="chapter" data-level="11.5" data-path="propellers.html"><a href="propellers.html#references-9"><i class="fa fa-check"></i><b>11.5</b> References</a></li>
+<li class="chapter" data-level="11.5" data-path="propellers.html"><a href="propellers.html#propeller-theory"><i class="fa fa-check"></i><b>11.5</b> Propeller Theory</a></li>
+<li class="chapter" data-level="11.6" data-path="propellers.html"><a href="propellers.html#references-9"><i class="fa fa-check"></i><b>11.6</b> References</a></li>
 </ul></li>
 <li class="chapter" data-level="12" data-path="fixed-wing-performance-standardization.html"><a href="fixed-wing-performance-standardization.html"><i class="fa fa-check"></i><b>12</b> 12 Fixed-Wing Performance Standardization**</a></li>
 <li class="chapter" data-level="13" data-path="acoustics.html"><a href="acoustics.html"><i class="fa fa-check"></i><b>13</b> 13 Acoustics**</a></li>
@@ -665,32 +666,20 @@ Q &amp;= qB \int_{R_1}^{R_2} \frac{cr}{\sin^2 \phi} \left( C_L \sin \phi - C_D \
 <p>Brake state: negative thrust &amp; efficiency, power supplied by engine.</p>
 <p>Windmill state: negative thrust &amp; <span class="math inline">\(\eta\)</span>, power supplied by freestream.</p>
 <p><img src="media/11/image16.png" style="width:4.49931in;height:1.875in" /></p>
-<p><strong>11.5 Propeller Theory</strong></p>
-<p> </p>
-<p>Simple momentum theory describes pressure jump (∆<span class="math inline">\(P\)</span>) across</p>
-<p>propeller disk .</p>
-<p>• The downstream velocity increment (<em>v<sub>1</sub></em>) is twice the velocity</p>
-<p>increment at the disk (<em>v</em>) .</p>
-<p>• Thrust (∆<span class="math inline">\(P\)</span>) = ∆<span class="math inline">\(P\)</span> x disk area</p>
-<p>• Froude’s momentum theory: efficiency =</p>
-<p> </p>
-<p> <img src="media/11/image17.png" style="width:1.33333in;height:0.46875in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> <img src="media/11/image18.png" style="width:4.49931in;height:2.125in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
+</div>
+<div id="propeller-theory" class="section level2" number="11.5">
+<h2><span class="header-section-number">11.5</span> Propeller Theory</h2>
+<p>Simple momentum theory describes pressure jump, <span class="math inline">\(\Delta P\)</span>, across propeller disk.</p>
+<ul>
+<li>The downstream velocity increment, <span class="math inline">\(v_1\)</span>, is twice the velocity increment at the disk, <span class="math inline">\(v\)</span>.</li>
+<li>Thrust <span class="math inline">\(\left( \Delta P \right) = \Delta P \times \text{ disk area}\)</span></li>
+<li>Froude’s momentum theory:</li>
+</ul>
+<p><span class="math display">\[
+\text{efficiency} = \eta \equiv \frac{T V_T}{T \left( V_T + v \right)} = \frac{V_T}{V_T + v}
+\]</span></p>
+<p><img src="media/11/image18.png" style="width:4.49931in;height:2.125in" /></p>
 <p>Blade element theory tends to be more complex and may include corrections for tip swirl losses, Mach effects, nacelle blockage, etc. Below is a comparison of typical calculated and measured thrust distribution.</p>
-<p> </p>
 <p><img src="media/11/image19.png" style="width:4.00972in;height:1.59375in" /></p>
 <p><strong>11.6 Propeller Modeling</strong></p>
 <p> </p>
@@ -810,8 +799,8 @@ Q &amp;= qB \int_{R_1}^{R_2} \frac{cr}{\sin^2 \phi} \left( C_L \sin \phi - C_D \
 <p> </p>
 <p><img src="media/11/image36.png" style="width:1.1875in;height:0.40625in" /></p>
 </div>
-<div id="references-9" class="section level2" number="11.5">
-<h2><span class="header-section-number">11.5</span> References</h2>
+<div id="references-9" class="section level2" number="11.6">
+<h2><span class="header-section-number">11.6</span> References</h2>
 <p>|||
 |-|—————| 
 |11.8.1| Roberts, Sean, “Light Aircraft Performance for Test Pilots and Flight Test Engineers,” Flight Research Inc., Mojave CA, 1982.|

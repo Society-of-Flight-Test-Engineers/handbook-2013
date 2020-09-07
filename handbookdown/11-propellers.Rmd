@@ -135,57 +135,21 @@ Windmill state: negative thrust & \(\eta\), power supplied by freestream.
 
 ![][11016]
 
-**11.5 Propeller Theory**
+## Propeller Theory
 
- 
+Simple momentum theory describes pressure jump,  \(\Delta P\), across propeller disk.
 
-Simple momentum theory describes pressure jump (∆\(P\)) across
+* The downstream velocity increment, \(v_1\), is twice the velocity increment at the disk, \(v\).
+* Thrust \( \left( \Delta P \right) = \Delta P \times \text{ disk area} \)
+* Froude's momentum theory: 
 
-propeller disk .
+\[
+\text{efficiency} = \eta \equiv \frac{T V_T}{T \left( V_T + v \right)} = \frac{V_T}{V_T + v}
+\]
 
-• The downstream velocity increment (*v~1~*) is twice the velocity
-
-increment at the disk (*v*) .
-
-• Thrust (∆\(P\)) = ∆\(P\) x disk area
-
-• Froude's momentum theory: efficiency =
-
- 
-
- ![][11017]
-
- 
-
- 
-
- 
-
- ![][11018]
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
+![][11018]
 
 Blade element theory tends to be more complex and may include corrections for tip swirl losses, Mach effects, nacelle blockage, etc. Below is a comparison of typical calculated and measured thrust distribution.
-
- 
 
 ![][11019]
 
