@@ -98,45 +98,20 @@ V_R = \sqrt{V_T^2 + \left( 2 \pi r n \right)^2}
 * Lift and drag are perpendicular and parallel to \(V_R\), respectively
 * Thrust, \(T\), and torque, \(Q\), are perpendicular and parallel to the plane of rotation, respectively.
 
-**11.3 Propeller Coefficients**
+## Propeller Coefficients
 
-** **
+Integrating lift and drag along a blade gives the thrust, \(T\), and torque, \(Q\). 
+Multiply by number of blades, \(B\), to determine total \(T\) and \(Q\).
 
-Integrating lift and drag along a blade gives the thrust (\(T\)) and torque (\(Q\)). Multiply by number of blades (\(B\)) to determine total \(T\) and \(Q\).
-
- 
-
- 
-
- ![][11009]
-
-** **
-
-** **
-
-** **
-
- 
-
-Thrust Coefficient, \(C_T\)
-
- ![][11010]
-
- 
-
-Torque Coefficient, *C~Q~*
-
- ![][11011]
-
- 
-
-Power Coefficient, \(C_P\)
-
- 
-
- ![][11012]
-
- 
+\[
+\begin{align}
+T &= qB \int_{R_1}^{R_2} \frac{c}{\sin^2 \phi} \left( C_L \cos \phi - C_D \sin \phi \right) dr \\
+Q &= qB \int_{R_1}^{R_2} \frac{cr}{\sin^2 \phi} \left( C_L \sin \phi - C_D \cos \phi \right) dr \\
+\text{Thrust Coefficient, } C_T &\equiv \frac{T}{\rho n^2 D^4} \\
+\text{Torque Coefficient, } C_Q &\equiv \frac{Q}{\rho n^2 D^5} \\
+\text{Power Coefficient, } C_P &\equiv \frac{P}{\rho n^3 D^5} = \frac{Q \times \omega}{\rho n^3 D^5} = \frac{Q \times 2 \pi n}{\rho n^3 D^5} = 2 \pi \frac{Q}{\rho n^2 D^5} = 2 \pi C_Q \\
+\end{align}
+\]
 
 Typical effect of advance ratio on thrust and torque coefficients
 

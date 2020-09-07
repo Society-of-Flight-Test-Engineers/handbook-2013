@@ -336,7 +336,8 @@
 <ul>
 <li class="chapter" data-level="11.1" data-path="propellers.html"><a href="propellers.html#abbreviations-and-terminology"><i class="fa fa-check"></i><b>11.1</b> Abbreviations and Terminology</a></li>
 <li class="chapter" data-level="11.2" data-path="propellers.html"><a href="propellers.html#propeller-geometry"><i class="fa fa-check"></i><b>11.2</b> Propeller Geometry</a></li>
-<li class="chapter" data-level="11.3" data-path="propellers.html"><a href="propellers.html#references-9"><i class="fa fa-check"></i><b>11.3</b> References</a></li>
+<li class="chapter" data-level="11.3" data-path="propellers.html"><a href="propellers.html#propeller-coefficients"><i class="fa fa-check"></i><b>11.3</b> Propeller Coefficients</a></li>
+<li class="chapter" data-level="11.4" data-path="propellers.html"><a href="propellers.html#references-9"><i class="fa fa-check"></i><b>11.4</b> References</a></li>
 </ul></li>
 <li class="chapter" data-level="12" data-path="fixed-wing-performance-standardization.html"><a href="fixed-wing-performance-standardization.html"><i class="fa fa-check"></i><b>12</b> 12 Fixed-Wing Performance Standardization**</a></li>
 <li class="chapter" data-level="13" data-path="acoustics.html"><a href="acoustics.html"><i class="fa fa-check"></i><b>13</b> 13 Acoustics**</a></li>
@@ -635,26 +636,20 @@ V_R = \sqrt{V_T^2 + \left( 2 \pi r n \right)^2}
 <li>Lift and drag are perpendicular and parallel to <span class="math inline">\(V_R\)</span>, respectively</li>
 <li>Thrust, <span class="math inline">\(T\)</span>, and torque, <span class="math inline">\(Q\)</span>, are perpendicular and parallel to the plane of rotation, respectively.</li>
 </ul>
-<p><strong>11.3 Propeller Coefficients</strong></p>
-<p><strong> </strong></p>
-<p>Integrating lift and drag along a blade gives the thrust (<span class="math inline">\(T\)</span>) and torque (<span class="math inline">\(Q\)</span>). Multiply by number of blades (<span class="math inline">\(B\)</span>) to determine total <span class="math inline">\(T\)</span> and <span class="math inline">\(Q\)</span>.</p>
-<p> </p>
-<p> </p>
-<p> <img src="media/11/image9.png" style="width:2.70833in;height:0.86458in" /></p>
-<p><strong> </strong></p>
-<p><strong> </strong></p>
-<p><strong> </strong></p>
-<p> </p>
-<p>Thrust Coefficient, <span class="math inline">\(C_T\)</span></p>
-<p> <img src="media/11/image10.png" style="width:0.92708in;height:0.45833in" /></p>
-<p> </p>
-<p>Torque Coefficient, <em>C<sub>Q</sub></em></p>
-<p> <img src="media/11/image11.png" style="width:0.94792in;height:0.45833in" /></p>
-<p> </p>
-<p>Power Coefficient, <span class="math inline">\(C_P\)</span></p>
-<p> </p>
-<p> <img src="media/11/image12.png" style="width:3.05139in;height:0.36458in" /></p>
-<p> </p>
+</div>
+<div id="propeller-coefficients" class="section level2" number="11.3">
+<h2><span class="header-section-number">11.3</span> Propeller Coefficients</h2>
+<p>Integrating lift and drag along a blade gives the thrust, <span class="math inline">\(T\)</span>, and torque, <span class="math inline">\(Q\)</span>.
+Multiply by number of blades, <span class="math inline">\(B\)</span>, to determine total <span class="math inline">\(T\)</span> and <span class="math inline">\(Q\)</span>.</p>
+<p><span class="math display">\[
+\begin{align}
+T &amp;= qB \int_{R_1}^{R_2} \frac{c}{\sin^2 \phi} \left( C_L \cos \phi - C_D \sin \phi \right) dr \\
+Q &amp;= qB \int_{R_1}^{R_2} \frac{cr}{\sin^2 \phi} \left( C_L \sin \phi - C_D \cos \phi \right) dr \\
+\text{Thrust Coefficient, } C_T &amp;\equiv \frac{T}{\rho n^2 D^4} \\
+\text{Torque Coefficient, } C_Q &amp;\equiv \frac{Q}{\rho n^2 D^5} \\
+\text{Power Coefficient, } C_P &amp;\equiv \frac{P}{\rho n^3 D^5} = \frac{Q \times \omega}{\rho n^3 D^5} = \frac{Q \times 2 \pi n}{\rho n^3 D^5} = 2 \pi \frac{Q}{\rho n^2 D^5} = 2 \pi C_Q \\
+\end{align}
+\]</span></p>
 <p>Typical effect of advance ratio on thrust and torque coefficients</p>
 <p><img src="media/11/image13.png" style="width:4.49931in;height:3.62431in" /></p>
 <p><strong>11.4 Propeller Efficiency and States</strong></p>
@@ -833,8 +828,8 @@ V_R = \sqrt{V_T^2 + \left( 2 \pi r n \right)^2}
 <p> </p>
 <p><img src="media/11/image36.png" style="width:1.1875in;height:0.40625in" /></p>
 </div>
-<div id="references-9" class="section level2" number="11.3">
-<h2><span class="header-section-number">11.3</span> References</h2>
+<div id="references-9" class="section level2" number="11.4">
+<h2><span class="header-section-number">11.4</span> References</h2>
 <p>|||
 |-|—————| 
 |11.8.1| Roberts, Sean, “Light Aircraft Performance for Test Pilots and Flight Test Engineers,” Flight Research Inc., Mojave CA, 1982.|
