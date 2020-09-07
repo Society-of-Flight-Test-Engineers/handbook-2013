@@ -335,6 +335,8 @@
 <li class="chapter" data-level="11" data-path="propellers.html"><a href="propellers.html"><i class="fa fa-check"></i><b>11</b> Propellers</a>
 <ul>
 <li class="chapter" data-level="11.1" data-path="propellers.html"><a href="propellers.html#abbreviations-and-terminology"><i class="fa fa-check"></i><b>11.1</b> Abbreviations and Terminology</a></li>
+<li class="chapter" data-level="11.2" data-path="propellers.html"><a href="propellers.html#propeller-geometry"><i class="fa fa-check"></i><b>11.2</b> Propeller Geometry</a></li>
+<li class="chapter" data-level="11.3" data-path="propellers.html"><a href="propellers.html#references-9"><i class="fa fa-check"></i><b>11.3</b> References</a></li>
 </ul></li>
 <li class="chapter" data-level="12" data-path="fixed-wing-performance-standardization.html"><a href="fixed-wing-performance-standardization.html"><i class="fa fa-check"></i><b>12</b> 12 Fixed-Wing Performance Standardization**</a></li>
 <li class="chapter" data-level="13" data-path="acoustics.html"><a href="acoustics.html"><i class="fa fa-check"></i><b>13</b> 13 Acoustics**</a></li>
@@ -552,8 +554,6 @@
 </tr>
 </tbody>
 </table>
-<p> </p>
-<p> </p>
 <p><strong>Terminology</strong></p>
 <table>
 <colgroup>
@@ -603,52 +603,38 @@
 </tr>
 </tbody>
 </table>
-<p> </p>
-<p><strong>11.2 Propeller Geometry</strong></p>
-<p><strong> </strong></p>
-<p>• <em>δ<sub>r</sub></em> is the width of any element along blade radius.</p>
-<p> </p>
-<p> <img src="media/11/image4.png" style="width:2.81181in;height:1.04167in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>• <em>x = r/R,</em> the local fraction of prop tip radius</p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> <img src="media/11/image5.png" style="width:2.80139in;height:1.57292in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>• Prop blade chord extends from leading edge to trailing edge.</p>
-<p>• Blade twist angle <em>θ,</em> measured between rotation plane and local chord.</p>
-<p>• Relative wind is the resultant velocity (<span class="math inline">\(V_R\)</span>), comprised of aircraft</p>
-<p>forward speed and tangential speed at radial location along blade.</p>
-<p> </p>
-<p> <img src="media/11/image6.png" style="width:1.53125in;height:0.3125in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>• Angle <span class="math inline">\(\phi\)</span> is measured between plane of rotation and local <span class="math inline">\(V_R\)</span></p>
-<p><em><sub> </sub></em></p>
-<p><em><sub> </sub></em><img src="media/11/image7.png" style="width:4.04097in;height:0.39583in" /></p>
-<p><em><sub> </sub></em></p>
-<p><strong> </strong></p>
-<p>• Αdvance ratio (<em><span class="math inline">\(J\)</span></em>) is defined as <em><span class="math inline">\(J\)</span> = V<sub>T</sub>/nD.</em></p>
-<p>• Local angle of attack at any fraction of radius(<em>α<sup>x</sup></em>) is measured between the local chord line and relative wind</p>
-<p><img src="media/11/image8.png" style="width:3.69722in;height:0.375in" /></p>
-<p>• Lift and drag are perpendicular and parallel to <span class="math inline">\(V_R\)</span>, respectively</p>
-<p>• Thrust (<span class="math inline">\(T\)</span>) and torque (<span class="math inline">\(Q\)</span>) are perpendicular and parallel to the plane of rotation, respectively.</p>
-<p> </p>
+</div>
+<div id="propeller-geometry" class="section level2" number="11.2">
+<h2><span class="header-section-number">11.2</span> Propeller Geometry</h2>
+<p><img src="media/11/image4.png" style="width:2.81181in;height:1.04167in" /></p>
+<ul>
+<li><span class="math inline">\(\delta_r\)</span> is the width of any element along blade radius.</li>
+<li><span class="math inline">\(x = \frac{r}{R}\)</span>, the local fraction of prop tip radius</li>
+</ul>
+<p><img src="media/11/image5.png" style="width:2.80139in;height:1.57292in" /></p>
+<ul>
+<li>Prop blade chord extends from leading edge to trailing edge.</li>
+<li>Blade twist angle, <span class="math inline">\(\theta\)</span>, measured between rotation plane and local chord.</li>
+<li>Relative wind is the resultant velocity, <span class="math inline">\(V_R\)</span>, comprised of aircraft forward speed and tangential speed at radial location along blade.</li>
+</ul>
+<p><span class="math display">\[
+V_R = \sqrt{V_T^2 + \left( 2 \pi r n \right)^2}
+\]</span></p>
+<p><span class="math display">\[
+\phi = \tan^{-1} \frac{V_T}{r \omega} = \tan^{-1} \frac{V_T}{r 2 \pi n} = \tan^{-1} \frac{V_T}{x D \pi n} : \phi_{\text{tip}} = \tan^{-1} \frac{1}{\pi} \frac{V_T}{nD}
+\]</span></p>
+<ul>
+<li>Angle <span class="math inline">\(\phi\)</span> is measured between plane of rotation and local <span class="math inline">\(V_R\)</span></li>
+</ul>
+<p><span class="math display">\[
+\alpha^x = \theta^x - \phi = \theta^x - \tan^{-1} \frac{V_T}{r 2 \pi n} = \theta^x - \tan^{-1} \frac{1}{\pi} \frac{V_T}{nD} = \theta^x - \tan^{-1} \frac{J}{\pi x}
+\]</span></p>
+<ul>
+<li>Αdvance ratio, <span class="math inline">\(J\)</span>, is defined as <span class="math inline">\(J = \frac{V_T}{nD}\)</span>.</li>
+<li>Local angle of attack at any fraction of radius, <span class="math inline">\(\alpha^x\)</span>, is measured between the local chord line and relative wind.</li>
+<li>Lift and drag are perpendicular and parallel to <span class="math inline">\(V_R\)</span>, respectively</li>
+<li>Thrust, <span class="math inline">\(T\)</span>, and torque, <span class="math inline">\(Q\)</span>, are perpendicular and parallel to the plane of rotation, respectively.</li>
+</ul>
 <p><strong>11.3 Propeller Coefficients</strong></p>
 <p><strong> </strong></p>
 <p>Integrating lift and drag along a blade gives the thrust (<span class="math inline">\(T\)</span>) and torque (<span class="math inline">\(Q\)</span>). Multiply by number of blades (<span class="math inline">\(B\)</span>) to determine total <span class="math inline">\(T\)</span> and <span class="math inline">\(Q\)</span>.</p>
@@ -846,7 +832,9 @@
 <p>• This technique assumes the same <span class="math inline">\(\eta\)</span> for both tests and is valid if <em><span class="math inline">\(J\)</span></em> is constant and the <span class="math inline">\(C_P\)</span> change is small. The drag device must therefore be small enough to not violate this assumption, yet large enough for the change in <span class="math inline">\(\mathrm{SHP}\)</span> to be measurable on engine instruments.</p>
 <p> </p>
 <p><img src="media/11/image36.png" style="width:1.1875in;height:0.40625in" /></p>
-<p><strong>11.8 References</strong></p>
+</div>
+<div id="references-9" class="section level2" number="11.3">
+<h2><span class="header-section-number">11.3</span> References</h2>
 <p>|||
 |-|—————| 
 |11.8.1| Roberts, Sean, “Light Aircraft Performance for Test Pilots and Flight Test Engineers,” Flight Research Inc., Mojave CA, 1982.|

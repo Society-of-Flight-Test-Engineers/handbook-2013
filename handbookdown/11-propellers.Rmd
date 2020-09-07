@@ -51,12 +51,7 @@
 |\(\phi\)|propeller disk angle of attack|
 |\(\omega\)|propeller rotation speed \( \left[ \frac{\text{rad}}{\text{sec}} \right] \)|
 
- 
-
- 
-
 **Terminology**
-
 
 |||
 |:----|:----------|
@@ -71,97 +66,37 @@
 |thickness ratio \( \left( \mathrm{TR} \right) \)| blade thickness measured locally or at  \(0.75 R\) to represent entire prop.|
 |width ratio \( \left( \mathrm{WR} \right) \)| calculated as \( \frac{ \left\{ b \text{ @ }  0.75 R \right\} }{D} \) |
 
- 
+## Propeller Geometry
 
-**11.2 Propeller Geometry**
+![][11004]
 
-** **
+* \(\delta_r\) is the width of any element along blade radius.
+* \(x = \frac{r}{R}\), the local fraction of prop tip radius
 
-• *δ~r~* is the width of any element along blade radius.
+![][11005]
 
- 
+* Prop blade chord extends from leading edge to trailing edge.
+* Blade twist angle, \(\theta\), measured between rotation plane and local chord.
+* Relative wind is the resultant velocity, \(V_R\), comprised of aircraft forward speed and tangential speed at radial location along blade.
 
- ![][11004]
+\[
+V_R = \sqrt{V_T^2 + \left( 2 \pi r n \right)^2}
+\]
 
- 
+\[
+\phi = \tan^{-1} \frac{V_T}{r \omega} = \tan^{-1} \frac{V_T}{r 2 \pi n} = \tan^{-1} \frac{V_T}{x D \pi n} : \phi_{\text{tip}} = \tan^{-1} \frac{1}{\pi} \frac{V_T}{nD}
+\]
 
- 
+* Angle \(\phi\) is measured between plane of rotation and local \(V_R\)
 
- 
+\[
+\alpha^x = \theta^x - \phi = \theta^x - \tan^{-1} \frac{V_T}{r 2 \pi n} = \theta^x - \tan^{-1} \frac{1}{\pi} \frac{V_T}{nD} = \theta^x - \tan^{-1} \frac{J}{\pi x}
+\]
 
-• *x = r/R,* the local fraction of prop tip radius
-
- 
-
- 
-
- 
-
- ![][11005]
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-• Prop blade chord extends from leading edge to trailing edge.
-
-• Blade twist angle *θ,* measured between rotation plane and local chord.
-
-• Relative wind is the resultant velocity (\(V_R\)), comprised of aircraft
-
-forward speed and tangential speed at radial location along blade.
-
- 
-
- ![][11006]
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-• Angle \(\phi\) is measured between plane of rotation and local \(V_R\)
-
-*~ ~*
-
-*~ ~*![][11007]
-
-*~ ~*
-
-** **
-
-• Αdvance ratio (*\(J\)*) is defined as *\(J\) = V~T~/nD.*
-
-• Local angle of attack at any fraction of radius(*α^x^*) is measured between the local chord line and relative wind
-
-![][11008]
-
-• Lift and drag are perpendicular and parallel to \(V_R\), respectively
-
-• Thrust (\(T\)) and torque (\(Q\)) are perpendicular and parallel to the plane of rotation, respectively.
-
- 
+* Αdvance ratio, \(J\), is defined as \(J = \frac{V_T}{nD} \).
+* Local angle of attack at any fraction of radius, \(\alpha^x\), is measured between the local chord line and relative wind.
+* Lift and drag are perpendicular and parallel to \(V_R\), respectively
+* Thrust, \(T\), and torque, \(Q\), are perpendicular and parallel to the plane of rotation, respectively.
 
 **11.3 Propeller Coefficients**
 
@@ -557,7 +492,7 @@ engine power model, a load cell and a small drag device.
 
 ![][11036]
 
-**11.8 References**
+## References
 
 |||
 |-|---------------| 
