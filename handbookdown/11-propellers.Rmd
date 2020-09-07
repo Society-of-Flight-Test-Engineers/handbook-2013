@@ -117,65 +117,21 @@ Typical effect of advance ratio on thrust and torque coefficients
 
 ![][11013]
 
-**11.4 Propeller Efficiency and States**
-
-** **
+## Propeller Efficiency and States
 
 Propeller efficiency (\(\eta\))
 
- 
+\[
+\eta \equiv \frac{P_{\text{out}}}{P_{\text{in}}} = \frac{\text{Thrust} \times V_T}{Q \times \omega} = \frac{C_T \rho n^2 D^4 \times V_T}{C_Q \rho n^2 D^5 \times 2 \pi n} = \frac{1}{2 \pi} \frac{C_T}{C_Q} \frac{V_T}{nD} = \frac{C_T}{C_P} J
+\]
 
-![][11014]
-
- 
-
- 
-
- ![][11015]
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
+![][11015]
 
 Propeller state: positive thrust & efficiency, power supplied by engine.
 
 Brake state: negative thrust & efficiency, power supplied by engine.
 
 Windmill state: negative thrust & \(\eta\), power supplied by freestream.
-
- 
 
 ![][11016]
 
