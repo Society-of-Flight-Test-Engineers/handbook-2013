@@ -153,149 +153,85 @@ Blade element theory tends to be more complex and may include corrections for ti
 
 ![][11019]
 
-**11.6 Propeller Modeling**
+## Propeller Modeling
 
- 
+* For a specified propeller geometry; \(C_T\) , \(C_P\), \(J\), and blade angle, \(\theta\), are interrelated such that knowledge of any two defines the other two.
+* Calculate propeller efficiency as 
 
-• For a specified propeller geometry; \(C_T\) , \(C_P\), *\(J\),* and blade angle (*θ*) are interrelated such that knowledge of any two defines the other two.
+\[
+\eta = \frac{J C_T}{C_P}  
+\]
 
-• Calculate propeller efficiency as *η = JC~T~* /*C~P\ ~*.
-
-• Models assume isolated conditions, i.e., without nacelle blockage.
-
-• Models assume negligible Mach effects at propeller tips.
-
-• Different models required for static and "in-flight" conditions.
-
- 
+* Models assume isolated conditions, i.e., without nacelle blockage.
+* Models assume negligible Mach effects at propeller tips.
+* Different models required for static and "in-flight" conditions.
 
 Determine static \(C_T\) and \(C_P\) using "**Static Thrust Chart**" (ref 11.2)
 
- 
+Vertical axis is \( \frac{C_T}{C_P} \)
 
- ![][11020]
+![][11021]
 
- ![][11021]
+* Separate charts exist for each combination of \(\mathrm{AF}\) and \# of blades, \(B\).
+* Enter chart at appropriate \(J\) & \(C_{L_i}\)
 
- 
+Static Thrust = 
 
- 
+\[
+T_{\text{static}} = \frac{C_T}{C_P} \frac{\mathrm{SHP}}{ND} 33\,000
+\]
 
- 
+where \(N\) = Propeller \(\text{RPM}\)
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-∼ Separate charts exist for each combination of \(\mathrm{AF}\) and \# of blades (*B)*.
-
-∼ Enter chart at appropriate *\(J\)* & *C~li~*
-
- 
-
-Static Thrust = where \(N\) = Propeller \(\text{RPM}\) Determine isolated propeller in-flight efficiency (\(\eta\)) from the appropriate **"Flight Charts."** They are typically presented in one of two forms.
-
- ![][11022]
+Determine isolated propeller in-flight efficiency, \(\eta\), from the appropriate **"Flight Charts."** They are typically presented in one of two forms.
 
 ![][11023]
 
 Above example for AiResearch TPE331-3U-303G engines and Hartzell T10282HDB-4R 3-blade, constant speed, feathering propellers.
 
- 
-
-** **The other "in-flight \(\eta\)" format also requires calculation of \(C_P\) and *J*. Below is a typical flight chart published by Hamilton Standard (Ref 11.2). This applies to a propeller with 2 blades, \(\mathrm{AF}\)= 80, and \(C_{L_i}\) =0.5
-
- 
+The other "in-flight \(\eta\)" format also requires calculation of \(C_P\) and \(J\). Below is a typical flight chart published by Hamilton Standard (Ref 11.2). This applies to a propeller with 2 blades, \(\mathrm{AF} = 80\), and \(C_{L_i} = 0.5 \)
 
 ![][11024]
 
- 
+A **body correction factor**, \(F_{\mathrm{BC}}\), should be applied to account for reduced efficiency due to body flow blockage immediately behind the propeller. Two examples follow.
 
-A **body correction factor** (*F~BC~*) should be applied to account for reduced efficiency due to body flow blockage immediately behind the propeller. Two examples follow.
-
- ![][11025]
+![][11025]
 
 Hamilton Standard also publishes a generalized nacelle blocking correction for typical scoop and annual inlet nacelles used on typical turboprops.
 
- 
-
 ![][11026]
 
-To determine if tip compressibility corrections are appropriate, find the maximum integrated design lift coefficient, *C~Limax~* from the graph below.
+To determine if tip compressibility corrections are appropriate, find the maximum integrated design lift coefficient, \(C_{L_i \text{max}} \), from the graph below.
 
-∼ Enter at flight Mach number, and move across at appropriate *NDf~c.~*
+* Enter at flight Mach number, and move across at appropriate \(NDf_c\).
 
- 
+\[
+f_c = \frac{1}{\sqrt{\theta}}
+\]
 
-*~ ~*![][11003]
-
-*~ ~*
-
-∼ If *C~Limax~* is below calculated *C~li\ ,\ ~*then corrections are required.
-
- 
+* If \(C_{L_i \text{max}} \) is below calculated \(C_{L_i}\), then corrections are required.
 
 ![][11027]
 
 If tip compressibility corrections are necessary, then the first step is to
 
-• Determine the **Mach number adjustment for the effect of blade camber** (\(\Delta M\)) from the figure below.
-
- 
+* Determine the **Mach number adjustment for the effect of blade camber**, \(\Delta M\), from the figure below.
 
 ![][11028]
 
-• Next, add \(\Delta M\) from above to flight Mach number to get *M~eff~*.
+* Next, add \(\Delta M\) from above to flight Mach number to get \(M_{\text{eff}}\).
+* Enter adjacent **generalized compressibility correction chart** to determine propeller efficiency tip factor, \(F_t\)
+* Calculate composite propeller efficiency as
 
-• Enter adjacent **generalized compressibility correction chart** to determine propeller efficiency tip factor (*F~t~*)
+\[
+\eta_{\text{comp}} = \eta \times F_t \times F_{\mathrm{BC}}
+\]
 
-• Calculate composite propeller efficiency as
+* Calculate in-flight thrust as
 
- 
-
-\(\eta\)~comp~ = \(\eta\) x *F~t~* x *F~BC~*
-
- 
-
-• Calculate in-flight thrust as
-
- 
-
-![][11029]
+\[
+T = \frac{\eta_{\text{comp}} \mathrm{SHP}}{V_T} = \frac{326 \eta_{\text{comp}} \mathrm{SHP}}{\mathrm{KTAS}}
+\]
 
 ![][11030]
 
