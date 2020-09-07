@@ -340,7 +340,8 @@
 <li class="chapter" data-level="11.4" data-path="propellers.html"><a href="propellers.html#propeller-efficiency-and-states"><i class="fa fa-check"></i><b>11.4</b> Propeller Efficiency and States</a></li>
 <li class="chapter" data-level="11.5" data-path="propellers.html"><a href="propellers.html#propeller-theory"><i class="fa fa-check"></i><b>11.5</b> Propeller Theory</a></li>
 <li class="chapter" data-level="11.6" data-path="propellers.html"><a href="propellers.html#propeller-modeling"><i class="fa fa-check"></i><b>11.6</b> Propeller Modeling</a></li>
-<li class="chapter" data-level="11.7" data-path="propellers.html"><a href="propellers.html#references-9"><i class="fa fa-check"></i><b>11.7</b> References</a></li>
+<li class="chapter" data-level="11.7" data-path="propellers.html"><a href="propellers.html#propeller-flight-test"><i class="fa fa-check"></i><b>11.7</b> Propeller Flight Test</a></li>
+<li class="chapter" data-level="11.8" data-path="propellers.html"><a href="propellers.html#references-9"><i class="fa fa-check"></i><b>11.8</b> References</a></li>
 </ul></li>
 <li class="chapter" data-level="12" data-path="fixed-wing-performance-standardization.html"><a href="fixed-wing-performance-standardization.html"><i class="fa fa-check"></i><b>12</b> 12 Fixed-Wing Performance Standardization**</a></li>
 <li class="chapter" data-level="13" data-path="acoustics.html"><a href="acoustics.html"><i class="fa fa-check"></i><b>13</b> 13 Acoustics**</a></li>
@@ -749,58 +750,59 @@ f_c = \frac{1}{\sqrt{\theta}}
 T = \frac{\eta_{\text{comp}} \mathrm{SHP}}{V_T} = \frac{326 \eta_{\text{comp}} \mathrm{SHP}}{\mathrm{KTAS}}
 \]</span></p>
 <p><img src="media/11/image30.png" style="width:5.75972in;height:8.72778in" /></p>
-<p><strong>11.7 Propeller Flight Test</strong></p>
-<p>The best method for determining <span class="math inline">\(\eta_{\text{comp}}\)</span> is to instrument the prop shaft and/or engine mounts to measure thrust and torque.</p>
-<p> </p>
-<p> </p>
-<p> <img src="media/11/image31.png" style="width:3.22847in;height:1.88542in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>Calculate efficiency as</p>
-<p> </p>
-<p> <img src="media/11/image32.png" style="width:1.20833in;height:0.53125in" /></p>
-<p>As an alternate, the <strong>incremental drag method</strong> requires an accurate</p>
-<p>engine power model, a load cell and a small drag device.</p>
-<p> </p>
-<p>• Trim the aircraft at test <em>RPM, V<sub>T</sub> ,</em> &amp; altitude. Note <span class="math inline">\(\mathrm{SHP}\)</span> required.</p>
-<p>• Repeat above test with drag device and load cell attached. Note the power requirement change (∆<span class="math inline">\(\mathrm{SHP}\)</span> ) and load cell drag (∆<span class="math inline">\(D\)</span>).</p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> <img src="media/11/image33.png" style="width:2.14583in;height:1.16667in" /></p>
-<p> <img src="media/11/image34.png" style="width:4.37431in;height:1.75in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>• Calculate aircraft drag and prop efficiency as</p>
-<p> </p>
-<p> <img src="media/11/image35.png" style="width:0.94792in;height:0.39583in" /></p>
-<p> </p>
-<p> </p>
-<p>• This technique assumes the same <span class="math inline">\(\eta\)</span> for both tests and is valid if <em><span class="math inline">\(J\)</span></em> is constant and the <span class="math inline">\(C_P\)</span> change is small. The drag device must therefore be small enough to not violate this assumption, yet large enough for the change in <span class="math inline">\(\mathrm{SHP}\)</span> to be measurable on engine instruments.</p>
-<p> </p>
-<p><img src="media/11/image36.png" style="width:1.1875in;height:0.40625in" /></p>
 </div>
-<div id="references-9" class="section level2" number="11.7">
-<h2><span class="header-section-number">11.7</span> References</h2>
-<p>|||
-|-|—————| 
-|11.8.1| Roberts, Sean, “Light Aircraft Performance for Test Pilots and Flight Test Engineers,” Flight Research Inc., Mojave CA, 1982.|
-|11.8.2| anon., Hamilton Standard Propeller Efficiency Charts (a.k.a.Redbook), PDB 6101.|
-|11.8.3| Von Mises, Richard, “Theory of Flight,” McGraw-Hill, 1945.|</p>
+<div id="propeller-flight-test" class="section level2" number="11.7">
+<h2><span class="header-section-number">11.7</span> Propeller Flight Test</h2>
+<p>The best method for determining <span class="math inline">\(\eta_{\text{comp}}\)</span> is to instrument the prop shaft and/or engine mounts to measure thrust and torque.</p>
+<p><img src="media/11/image31.png" style="width:3.22847in;height:1.88542in" /></p>
+<p>Calculate efficiency as</p>
+<p><span class="math display">\[
+\eta_{\text{comp}} = \frac{T V_T}{Q \omega}
+\]</span></p>
+<p>As an alternate, the <strong>incremental drag method</strong> requires an accurate engine power model, a load cell and a small drag device.</p>
+<ul>
+<li>Trim the aircraft at test <span class="math inline">\(\text{RPM}\)</span>, <span class="math inline">\(V_T\)</span> , &amp; altitude. Note <span class="math inline">\(\mathrm{SHP}\)</span> required.</li>
+<li>Repeat above test with drag device and load cell attached. Note the power requirement change, <span class="math inline">\(\Delta \mathrm{SHP}\)</span>, and load cell drag, <span class="math inline">\(\Delta D\)</span>.</li>
+</ul>
+<p><span class="math display">\[
+\begin{align}
+\eta_p \cdot \mathrm{BHP}_{\mathrm{AC}} &amp;= \frac{V_T}{550}D \\
+\eta_p \cdot \mathrm{BHP}_{\mathrm{AC} + \Delta D} &amp;= \frac{V_T}{550} \left(D + \Delta D \right) \\
+\end{align}
+\]</span></p>
+<p><img src="media/11/image34.png" style="width:4.37431in;height:1.75in" /></p>
+<ul>
+<li>Calculate aircraft drag and prop efficiency as</li>
+</ul>
+<p><span class="math display">\[
+D = \frac{\Delta D \left( \mathrm{SHP} \right)}{\Delta  \mathrm{SHP} } \;\;\; \eta = \frac{V_T D}{550 \mathrm{SHP}} 
+\]</span></p>
+<ul>
+<li>This technique assumes the same <span class="math inline">\(\eta\)</span> for both tests and is valid if <span class="math inline">\(J\)</span> is constant and the <span class="math inline">\(C_P\)</span> change is small. The drag device must therefore be small enough to not violate this assumption, yet large enough for the change in <span class="math inline">\(\mathrm{SHP}\)</span> to be measurable on engine instruments.</li>
+</ul>
+</div>
+<div id="references-9" class="section level2" number="11.8">
+<h2><span class="header-section-number">11.8</span> References</h2>
+<table>
+<colgroup>
+<col width="11%" />
+<col width="88%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left">11.8.1</td>
+<td align="left">Roberts, Sean, “Light Aircraft Performance for Test Pilots and Flight Test Engineers,” Flight Research Inc., Mojave CA, 1982.</td>
+</tr>
+<tr class="even">
+<td align="left">11.8.2</td>
+<td align="left">anon., Hamilton Standard Propeller Efficiency Charts (a.k.a.Redbook), PDB 6101.</td>
+</tr>
+<tr class="odd">
+<td align="left">11.8.3</td>
+<td align="left">Von Mises, Richard, “Theory of Flight,” McGraw-Hill, 1945.</td>
+</tr>
+</tbody>
+</table>
 <p> </p>
 
 </div>

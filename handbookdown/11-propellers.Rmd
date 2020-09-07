@@ -235,98 +235,44 @@ T = \frac{\eta_{\text{comp}} \mathrm{SHP}}{V_T} = \frac{326 \eta_{\text{comp}} \
 
 ![][11030]
 
-**11.7 Propeller Flight Test**
+## Propeller Flight Test
 
 The best method for determining \(\eta_{\text{comp}}\) is to instrument the prop shaft and/or engine mounts to measure thrust and torque.
 
- 
-
- 
-
- ![][11031]
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
+![][11031]
 
 Calculate efficiency as
 
- 
+\[
+\eta_{\text{comp}} = \frac{T V_T}{Q \omega}
+\]
 
- ![][11032]
+As an alternate, the **incremental drag method** requires an accurate engine power model, a load cell and a small drag device.
 
-As an alternate, the **incremental drag method** requires an accurate
+* Trim the aircraft at test \(\text{RPM}\), \(V_T\) , & altitude. Note \(\mathrm{SHP}\) required.
+* Repeat above test with drag device and load cell attached. Note the power requirement change, \(\Delta \mathrm{SHP}\), and load cell drag, \(\Delta D\).
 
-engine power model, a load cell and a small drag device.
+\[
+\begin{align}
+\eta_p \cdot \mathrm{BHP}_{\mathrm{AC}} &= \frac{V_T}{550}D \\
+\eta_p \cdot \mathrm{BHP}_{\mathrm{AC} + \Delta D} &= \frac{V_T}{550} \left(D + \Delta D \right) \\
+\end{align}
+\]
 
- 
+![][11034]
 
-• Trim the aircraft at test *RPM, V~T~ ,* & altitude. Note \(\mathrm{SHP}\) required.
+* Calculate aircraft drag and prop efficiency as
 
-• Repeat above test with drag device and load cell attached. Note the power requirement change (∆\(\mathrm{SHP}\) ) and load cell drag (∆\(D\)).
+\[
+D = \frac{\Delta D \left( \mathrm{SHP} \right)}{\Delta  \mathrm{SHP} } \;\;\; \eta = \frac{V_T D}{550 \mathrm{SHP}} 
+\]
 
- 
-
- 
-
- 
-
- 
-
- 
-
- ![][11033]
-
- ![][11034]
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-• Calculate aircraft drag and prop efficiency as
-
- 
-
- ![][11035]
-
- 
-
- 
-
-• This technique assumes the same \(\eta\) for both tests and is valid if *\(J\)* is constant and the \(C_P\) change is small. The drag device must therefore be small enough to not violate this assumption, yet large enough for the change in \(\mathrm{SHP}\) to be measurable on engine instruments.
-
- 
-
-![][11036]
+* This technique assumes the same \(\eta\) for both tests and is valid if \(J\) is constant and the \(C_P\) change is small. The drag device must therefore be small enough to not violate this assumption, yet large enough for the change in \(\mathrm{SHP}\) to be measurable on engine instruments.
 
 ## References
 
-|||
-|-|---------------| 
+| | |
+|:-|:---------------|
 |11.8.1| Roberts, Sean, "Light Aircraft Performance for Test Pilots and Flight Test Engineers," Flight Research Inc., Mojave CA, 1982.|
 |11.8.2| anon., Hamilton Standard Propeller Efficiency Charts (a.k.a.Redbook), PDB 6101.|
 |11.8.3| Von Mises, Richard, "Theory of Flight," McGraw-Hill, 1945.|
