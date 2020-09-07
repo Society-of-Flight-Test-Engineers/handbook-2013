@@ -1,0 +1,82 @@
+Return-Path: <sfte@alawless.com>
+Received: from imp05 ([10.20.200.5]) by mta52.charter.net
+          (InterMail vM.8.01.05.02 201-2260-151-103-20110920) with ESMTP
+          id <20121003121038.MRDP14725.mta52.charter.net@imp05>
+          for <weavair@charter.net>; Wed, 3 Oct 2012 08:10:38 -0400
+Received: from mail-ob0-f171.google.com ([209.85.214.171])
+	by imp05 with charter.net
+	id 6cAe1k0853iSzcp04cAea3; Wed, 03 Oct 2012 08:10:38 -0400
+X-Chzlrs: ??
+X-Authority-Analysis: v=1.1 cv=dxSIRvYsnnpjjrpiTD0FLjiJj/LhjjTjnulGnxgGzzk=
+ c=1 sm=1 a=fjjB_Vi9re0A:10 a=-zUrZw4jZ6IA:10 a=haXFebU_Ho37K7_zAO4A:9
+ a=wPNLvfGTeEIA:10 a=DJTsKN_lm4S3BM-Cw38A:9 a=Pdf_xUd0MCfX4uun:21
+ a=bhq3n9Va5qLdRPODfS1a7Q==:117
+Received: by obc16 with SMTP id 16so16577318obc.16
+        for <weavair@charter.net>; Wed, 03 Oct 2012 05:10:35 -0700 (PDT)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type
+         :x-gm-message-state;
+        bh=1eYFdGTnikFsA90nH5+Ut8GHokJ9N65/mJkWjx4Rnxw=;
+        b=LonCrT1QxoG+tcv4F6n1fCHyyojcNyYoQg5M07ykWGEq2QmuRA8/s59v7PCU+A6h71
+         m4eLjX78f843Ssk6vC3ctB8pGFRv/9D+LNJwMf58bxAxW9OBfu7sB2fHCr8wtOFRWpee
+         Gc6VvLznSm54L4Q6NiYHjbkRUPxosFcC1VkrR8NnoYOSZy1h8a8247AXT5fVxPy4oBIG
+         /RPMUapRog6zHrhmKnPw0A95/5+B2a1h+dtOdOlLEmT37RazQDVa/o3ZJKCopHDPjaJQ
+         hyy1j8APokjbZuazqX7/chJSPbrA3lpXuudcu4qXYv5VxgU8BTOx4/oY1Zp/EaQFO6f/
+         B2jw==
+MIME-Version: 1.0
+Received: by 10.182.152.97 with SMTP id ux1mr1361879obb.13.1349266235249; Wed,
+ 03 Oct 2012 05:10:35 -0700 (PDT)
+Received: by 10.60.96.102 with HTTP; Wed, 3 Oct 2012 05:10:35 -0700 (PDT)
+Date: Wed, 3 Oct 2012 08:10:35 -0400
+Message-ID: <CAFWrrDkddkZUETFM6JyTHT3dKk8Wnx5J9bPxgQW87gZ8+zEfSQ@mail.gmail.com>
+Subject: graphics errata (almost there)
+From: "SFTE@ alawless" <sfte@alawless.com>
+To: Harold Weaver <weavair@charter.net>
+Content-Type: multipart/alternative; boundary=f46d04462c0aa8d31504cb268663
+X-Gm-Message-State: ALoCoQk3AQpDzfwhNqsg0yO2jTQtRIanhiU2frv7PF6Dn8W7X0u6h4c3B31VyVF+qMbzc/0zG+2H
+
+--f46d04462c0aa8d31504cb268663
+Content-Type: text/plain; charset=ISO-8859-1
+
+ Harold,
+I got up early and poured through the printed an pdf version and found only
+a few remaining graphical changes. I'm not so concerned about the "jaggedy"
+images, but the rest seem  important and do-able.
+
+1-28  jaggedy
+02-35  huge font
+03-9, 03-10 poor graphics
+04-15 too jaggedy
+04-22 poor quality
+08-13 jaggedy
+10-11 funny dots around units
+11-5 contour lines interrupted by text boxes
+11-9, 11-10 change to grey grid lines (not a big deal)
+12-6 table title misalignment
+12-7 eqn 12.7 needs to be centered
+12-14  list of initial inputs should be tabbed to the right a little more.
+
+ almost there man!!
+
+--f46d04462c0aa8d31504cb268663
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+
+
+Harold,<br>I got up early and poured through the printed an pdf version and=
+ found only a few remaining graphical changes. I&#39;m not so concerned abo=
+ut the &quot;jaggedy&quot; images, but the rest seem=A0 important and do-ab=
+le.<br>
+<br>1-28<span style>=A0 </span>jaggedy<br>02-35<span style>=A0 </span>huge =
+font<br>03-9, 03-10 poor graphics<br>04-15 too jaggedy<br>04-22 poor qualit=
+y<br>08-13 jaggedy<br>10-11 funny dots around units<br>11-5 contour lines i=
+nterrupted by text boxes<br>
+11-9, 11-10 change to grey grid lines (not a big deal)<br>12-6 table title =
+misalignment<br>12-7 eqn 12.7 needs to be centered<br>12-14<span style>=A0 =
+</span>list of initial
+inputs should be tabbed to the right a little more.<br><br>=A0almost there =
+man!!
+
+--f46d04462c0aa8d31504cb268663--
