@@ -1,4 +1,4 @@
-## Fixed-Wing Performance Standardization
+# Fixed-Wing Performance Standardization
 
 ## Recurring Abbreviations
 
@@ -76,35 +76,35 @@
 |\(\phi\) |bank angle|
 |\(\omega\)  |turn rate (rad/sec)|
 
-**12.2 Standardization Techniques** (ref 12.5)
+## Standardization Techniques
 
-Performance data is usually corrected to "standard" conditions which are specified values of weight, altitude, \(\mathrm{cg}\) and Mach number. The process also corrects data to some standard ambient air temperature, usually defined by the 1976 U.S. Standard Atmosphere. In some cases the data is corrected to "standard hot" day or "standard cold" day conditions which are a specified increment relative to the true standard conditions.
+(ref 12.5)
 
-The standardization process usually relies on models of drag, thrust (or power), fuel flow, and propeller efficiency if appropriate. The overall principle is to collect test data as near as practical to standard conditions (+/-10%) and correct the results to standard using the models. Even with a 10% modeling error, correcting test data that is 10% from standard leads to only 1% total error in the standard­ized results.
+Performance data is usually corrected to "standard" conditions which are specified values of weight, altitude, \(\mathrm{cg}\) and Mach number. 
+The process also corrects data to some standard ambient air temperature, usually defined by the 1976 U.S. Standard Atmosphere. 
+In some cases the data is corrected to "standard hot" day or "standard cold" day conditions which are a specified increment relative to the true standard conditions.
 
-The most common of the two standardization methods is the
+The standardization process usually relies on models of drag, thrust (or power), fuel flow, and propeller efficiency if appropriate. 
+The overall principle is to collect test data as near as practical to standard conditions (+/-10%) and correct the results to standard using the models. 
+Even with a 10% modeling error, correcting test data that is 10% from standard leads to only 1% total error in the standardized results.
 
-**difference method** which adds a correction to the test day parameter. This correction is the difference between the model predictions for standard and test conditions:
+The most common of the two standardization methods is the **difference method** which adds a correction to the test day parameter. 
+This correction is the difference between the model predictions for standard and test conditions:
 
- 
-
-*P~s~ = P~t~ +* (*P~s~' - P~t~'*) (Eq'n 12.1)
-
- 
+\[
+P_s = P_t + \left( P_s' - P_t' \right)
+\]
+(Eq'n 12.1)
 
 where
 
-\(P_s\) = standardized parameter
+* \(P_s\) = standardized parameter
+* \(P_t\) = test day parameter
+* \(P_s'\) = standard day parameter predicted by models
+* \(P_t'\) = test day parameter predicted by models
 
-\(P_t\) = test day parameter
-
-*P~s~'* = standard day parameter predicted by models
-
-*P~t~'* = test day parameter predicted by models
-
- 
-
-The parameter of interest can be one of the basic modeling values such as thrust, drag, power, or fuel flow. The parameter can also be the end result of the predictive process, and may include values like takeoff/landing distance, climb/sustained turning capability, or cruise range.
+The parameter of interest can be one of the basic modeling values such as thrust, drag, power, or fuel flow.
+The parameter can also be the end result of the predictive process, and may include values like takeoff/landing distance, climb/sustained turning capability, or cruise range.
 
 The **ratio method** is the other standardization process. It corrects to standard conditions by multiplying the test values by a correction factor. This factor is the ratio of the model predictions for standard and test
 
