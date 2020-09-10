@@ -85,8 +85,8 @@ The process also corrects data to some standard ambient air temperature, usually
 In some cases the data is corrected to "standard hot" day or "standard cold" day conditions which are a specified increment relative to the true standard conditions.
 
 The standardization process usually relies on models of drag, thrust (or power), fuel flow, and propeller efficiency if appropriate. 
-The overall principle is to collect test data as near as practical to standard conditions \( \left( \pm -10% \right) \) and correct the results to standard using the models. 
-Even with a \(10%\) modeling error, correcting test data that is \(10%\) from standard leads to only \(1%\) total error in the standardized results.
+The overall principle is to collect test data as near as practical to standard conditions \( \left( \pm 10\% \right) \) and correct the results to standard using the models. 
+Even with a \(10\%\) modeling error, correcting test data that is \(10\%\) from standard leads to only \(1\%\) total error in the standardized results.
 
 The most common of the two standardization methods is the **difference or increment method** which adds a correction to the test day parameter. 
 This correction is the difference between the model predictions for standard and test conditions:
@@ -123,74 +123,69 @@ If the prediction models are in error by approximately a constant percentage, th
 If the models are in error by approximately a constant magnitude, then the increment method yields the least error.
 Less exact empirical methods can also be used.
 
-**12.3 Takeoff Distance** (refs 12.1, 12.2, 12.5)
+## Takeoff Distance
 
+(refs 12.1, 12.2, 12.5)
 
-The total takeoff distance is the sum of the ground roll distance (\(S_g\), from brake release to main wheel liftoff) and the horizontal component of the air distance (\(S_a\), from liftoff to main gear reaching either 35 or 50 feet altitude-depending on the requirements).
+The total takeoff distance, \(S_{\mathrm{TO}}\), is the sum of the ground roll distance, \(S_g\), from brake release to main wheel liftoff, and the horizontal component of the air distance, \(S_a\), from liftoff to main gear reaching either \(35\) or \(50\) feet altitude-depending on the requirements.
 
-*~ ~S~TO~ = S~g~ + S~a~*
+\[
+\begin{equation}
+S_{\mathrm{TO}} = S_g + S_a
+(\#eq:tot-takeoff)
+\end{equation}
+\]
 
- 
+Both \(S_g\) and \(S_a\)  can be standardized using the increment or ratio method, or by empirical relations.
+The empirical methods are useful when detailed aircraft models are not available. 
+The more exact process of predicting takeoff distance using models is described in section 12.3.2.
 
-*~ ~*
+### Empirical Standardization Method
 
-Both \(S_g\) and *S~a\ ~* can be standardized using the increment or ratio method, or by empirical relations. The empirical methods are useful when detailed aircraft models are not available. The more exact process of predicting takeoff distance using models is described in section 12.3.2.
+First correct for the effects of the test day wind. 
+Define headwind velocity as \(V_w\), liftoff true airspeed as \(V_{\mathrm{LO}}\), and test day ground roll as \(S_{g_w}\).
+With a typical variation of thrust per headwind, estimate the test day zero-wind ground roll, \(S_{g_{zw}}\), using the following empirical equation:
 
-** **
+\[
+\begin{equation}
+S_{g_{zw}} = S_{g_w} \left( \frac{V_{\mathrm{LO}}}{V_g} \right)^{1.85}
+(\#eq:empirical-std)
+\end{equation}
+\]
 
-**12.3.1 Empirical Standardization Method**
+If the average thrust is not appreciably affected by velocity, then the exponent should be \(2.0\) in lieu of \(1.85\). The zero-wind air distance, \(S_{a_t}\), correction is
 
-First correct for the effects of the test day wind. Define headwind velocity as *V~w\ ~*, liftoff true airspeed as *V~LO~*, and test day ground roll as *S~gw~*. With a typical variation of thrust per headwind, estimate the test day zero-wind ground roll (*S~gzw~*) using the following empirical equation:
+\[
+\begin{equation}
+S_{a_t} = S_{a_w} + V_w t
+(\#eq:zero-wind-air-dist)
+\end{equation}
+\]
 
- 
+where \(t\) is the time from liftoff to \(35\) (or \(50\)) feet altitude.
 
-![][12003] 
+The second correction is for the effect of runway slope (\(\theta\), positive *uphill*) and therefore applies only to the ground roll.
+Correct the above zero-wind distance, \(S_{g_{zw}}\), to the test day zero-slope distance, \(S_{g_t}\), as follows:
 
- 
+\[
+\begin{equation}
+S_{g_t} = S_{g_{zw}} \left[ 1 - \frac{W \sin \theta}{\left[ F_{\text{ex}} \right]_{\text{avg}}} \right]
+(\#eq:zero-slope-air-dist)
+\end{equation}
+\]
 
- 
+If the average excess thrust is not known, then approximate \(F_{\text{ex}}\) as that at \(70\%\) of the liftoff airspeed or from the zero-wind ground roll distance:
 
- 
+\[
+\begin{equation}
+\left[ F_{\text{ex}} \right]_{\text{avg}} \approx \frac{m V_{\mathrm{LO}^2}}{2 S_{g_{zw}}}
+(\#eq:approx-fex)
+\end{equation}
+\]
 
- 
+After correcting the test day distance to zero wind and slope, use the following empirical equations to correct for non-standard weight, density, and temperature.
+Any desired values can be treated as the "standard" conditions.
 
-If the average thrust is not appreciably affected by velocity, then the exponent should be 2.0 in lieu of 1.85. The zero-wind air distance (*S~at~*) correction is
-
- 
-
- ![][12004]
-
- 
-
- 
-
- 
-
-where \(T\) is the time from liftoff to 35 (or 50) feet altitude.
-
-The second correction is for the effect of runway slope (*θ*, positive *uphill*) and therefore applies only to the ground roll. Correct the above zero-wind distance (*S~gzw~)* to the test day zero-slope distance (*S~gt~*) as follows:
-
- 
-
- ![][12005]
-
- 
-
- 
-
-If the average excess thrust is not known, then approximate *F~ex~* as that at 70% of the liftoff airspeed or from the zero-wind ground roll distance:
-
- ![][12006]
-
-After correcting the test day distance to zero wind and slope, use the following empirical equations to correct for non-standard weight, density, and temperature. Any desired values can be treated as the \"standard\" conditions.
-
- 
-
-** **
-
- 
-
- 
 
 +-----------------------------------------+---------------------------+
 | **Aircraft Propulsion Type**            | **Standard Day Distance** |
