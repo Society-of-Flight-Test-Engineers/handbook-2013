@@ -6,8 +6,6 @@
 
 |||
 |:-|:----------|
-|![][12001] Fuel Flow|
-|![][12002] standard day sea-level fuel flow|
 |\(a\) |acceleration|
 |\(\mathrm{BHP}\) |brake horsepower|
 |\(\mathrm{BSFC}\) |brake specific fuel consumption (fuel flow per horsepower per hour)|
@@ -64,6 +62,8 @@
 |\(V_T\) |true airspeed|
 |\(V_{T_s}\) |test true airspeed|
 |\(V_{T_t}\) |test true airspeed|
+|\(\dot{W}_f\) |Fuel Flow|
+|\(\dot{W}_{f_{iw}}\) |standard day sea-level fuel flow|
 |\(W_s\) |weight standard|
 |\(W_t\) |test weight|
 |\(\alpha\) |angle of attack|
@@ -81,20 +81,22 @@
 (ref 12.5)
 
 Performance data is usually corrected to "standard" conditions which are specified values of weight, altitude, \(\mathrm{cg}\) and Mach number. 
-The process also corrects data to some standard ambient air temperature, usually defined by the 1976 U.S. Standard Atmosphere. 
+The process also corrects data to some standard ambient air temperature, usually defined by the \(1976\) U.S. Standard Atmosphere. 
 In some cases the data is corrected to "standard hot" day or "standard cold" day conditions which are a specified increment relative to the true standard conditions.
 
 The standardization process usually relies on models of drag, thrust (or power), fuel flow, and propeller efficiency if appropriate. 
-The overall principle is to collect test data as near as practical to standard conditions (+/-10%) and correct the results to standard using the models. 
-Even with a 10% modeling error, correcting test data that is 10% from standard leads to only 1% total error in the standardized results.
+The overall principle is to collect test data as near as practical to standard conditions \( \left( \pm -10% \right) \) and correct the results to standard using the models. 
+Even with a \(10%\) modeling error, correcting test data that is \(10%\) from standard leads to only \(1%\) total error in the standardized results.
 
-The most common of the two standardization methods is the **difference method** which adds a correction to the test day parameter. 
+The most common of the two standardization methods is the **difference or increment method** which adds a correction to the test day parameter. 
 This correction is the difference between the model predictions for standard and test conditions:
 
 \[
+\begin{equation}
 P_s = P_t + \left( P_s' - P_t' \right)
+(\#eq:increment)
+\end{equation}
 \]
-(Eq'n 12.1)
 
 where
 
@@ -106,21 +108,23 @@ where
 The parameter of interest can be one of the basic modeling values such as thrust, drag, power, or fuel flow.
 The parameter can also be the end result of the predictive process, and may include values like takeoff/landing distance, climb/sustained turning capability, or cruise range.
 
-The **ratio method** is the other standardization process. It corrects to standard conditions by multiplying the test values by a correction factor. This factor is the ratio of the model predictions for standard and test
+The **ratio method** is the other standardization process. It corrects to standard conditions by multiplying the test values by a correction factor. 
+This factor is the ratio of the model predictions for standard and test conditions.
 
-conditions.
+\[
+\begin{equation}
+P_s = P_t  \left( \frac{P_s'}{P_t'} \right)
+(\#eq:ratio)
+\end{equation}
+\]
 
-*P~s~ = P~t~* (*P~s~' / P~t~'*) (Eq'n 12.2)
-
- 
-
- 
-
-The preferred approach is whichever gives the lowest total error. If the prediction models are in error by approximately a constant percentage, then the ratio method yields the least error. If the models are in error by approximately a constant magnitude, then the increment method yields the least error. Less exact empirical methods can also be used.
-
- 
+The preferred approach is whichever gives the lowest total error.
+If the prediction models are in error by approximately a constant percentage, then the ratio method yields the least error.
+If the models are in error by approximately a constant magnitude, then the increment method yields the least error.
+Less exact empirical methods can also be used.
 
 **12.3 Takeoff Distance** (refs 12.1, 12.2, 12.5)
+
 
 The total takeoff distance is the sum of the ground roll distance (\(S_g\), from brake release to main wheel liftoff) and the horizontal component of the air distance (\(S_a\), from liftoff to main gear reaching either 35 or 50 feet altitude-depending on the requirements).
 

@@ -393,14 +393,6 @@
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><img src="media/12/image1.svg" style="width:0.27292in;height:0.28056in" /> Fuel Flow</td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left"><img src="media/12/image2.svg" style="width:0.27292in;height:0.28056in" /> standard day sea-level fuel flow</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
 <td align="left"><span class="math inline">\(a\)</span></td>
 <td align="left">acceleration</td>
 </tr>
@@ -625,6 +617,14 @@
 <td align="left">test true airspeed</td>
 </tr>
 <tr class="odd">
+<td align="left"><span class="math inline">\(\dot{W}_f\)</span></td>
+<td align="left">Fuel Flow</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\dot{W}_{f_{iw}}\)</span></td>
+<td align="left">standard day sea-level fuel flow</td>
+</tr>
+<tr class="odd">
 <td align="left"><span class="math inline">\(W_s\)</span></td>
 <td align="left">weight standard</td>
 </tr>
@@ -675,17 +675,19 @@
 <h2><span class="header-section-number">12.2</span> Standardization Techniques</h2>
 <p>(ref 12.5)</p>
 <p>Performance data is usually corrected to “standard” conditions which are specified values of weight, altitude, <span class="math inline">\(\mathrm{cg}\)</span> and Mach number.
-The process also corrects data to some standard ambient air temperature, usually defined by the 1976 U.S. Standard Atmosphere.
+The process also corrects data to some standard ambient air temperature, usually defined by the <span class="math inline">\(1976\)</span> U.S. Standard Atmosphere.
 In some cases the data is corrected to “standard hot” day or “standard cold” day conditions which are a specified increment relative to the true standard conditions.</p>
 <p>The standardization process usually relies on models of drag, thrust (or power), fuel flow, and propeller efficiency if appropriate.
-The overall principle is to collect test data as near as practical to standard conditions (+/-10%) and correct the results to standard using the models.
-Even with a 10% modeling error, correcting test data that is 10% from standard leads to only 1% total error in the standardized results.</p>
-<p>The most common of the two standardization methods is the <strong>difference method</strong> which adds a correction to the test day parameter.
+The overall principle is to collect test data as near as practical to standard conditions <span class="math inline">\(\left( \pm -10% \right)\)</span> and correct the results to standard using the models.
+Even with a <span class="math inline">\(10%\)</span> modeling error, correcting test data that is <span class="math inline">\(10%\)</span> from standard leads to only <span class="math inline">\(1%\)</span> total error in the standardized results.</p>
+<p>The most common of the two standardization methods is the <strong>difference or increment method</strong> which adds a correction to the test day parameter.
 This correction is the difference between the model predictions for standard and test conditions:</p>
-<p><span class="math display">\[
+<p><span class="math display" id="eq:increment">\[
+\begin{equation}
 P_s = P_t + \left( P_s&#39; - P_t&#39; \right)
-\]</span>
-(Eq’n 12.1)</p>
+\tag{12.1}
+\end{equation}
+\]</span></p>
 <p>where</p>
 <ul>
 <li><span class="math inline">\(P_s\)</span> = standardized parameter</li>
@@ -695,13 +697,18 @@ P_s = P_t + \left( P_s&#39; - P_t&#39; \right)
 </ul>
 <p>The parameter of interest can be one of the basic modeling values such as thrust, drag, power, or fuel flow.
 The parameter can also be the end result of the predictive process, and may include values like takeoff/landing distance, climb/sustained turning capability, or cruise range.</p>
-<p>The <strong>ratio method</strong> is the other standardization process. It corrects to standard conditions by multiplying the test values by a correction factor. This factor is the ratio of the model predictions for standard and test</p>
-<p>conditions.</p>
-<p><em>P<sub>s</sub> = P<sub>t</sub></em> (<em>P<sub>s</sub>’ / P<sub>t</sub>’</em>) (Eq’n 12.2)</p>
-<p> </p>
-<p> </p>
-<p>The preferred approach is whichever gives the lowest total error. If the prediction models are in error by approximately a constant percentage, then the ratio method yields the least error. If the models are in error by approximately a constant magnitude, then the increment method yields the least error. Less exact empirical methods can also be used.</p>
-<p> </p>
+<p>The <strong>ratio method</strong> is the other standardization process. It corrects to standard conditions by multiplying the test values by a correction factor.
+This factor is the ratio of the model predictions for standard and test conditions.</p>
+<p><span class="math display" id="eq:ratio">\[
+\begin{equation}
+P_s = P_t  \left( \frac{P_s&#39;}{P_t&#39;} \right)
+\tag{12.2}
+\end{equation}
+\]</span></p>
+<p>The preferred approach is whichever gives the lowest total error.
+If the prediction models are in error by approximately a constant percentage, then the ratio method yields the least error.
+If the models are in error by approximately a constant magnitude, then the increment method yields the least error.
+Less exact empirical methods can also be used.</p>
 <p><strong>12.3 Takeoff Distance</strong> (refs 12.1, 12.2, 12.5)</p>
 <p>The total takeoff distance is the sum of the ground roll distance (<span class="math inline">\(S_g\)</span>, from brake release to main wheel liftoff) and the horizontal component of the air distance (<span class="math inline">\(S_a\)</span>, from liftoff to main gear reaching either 35 or 50 feet altitude-depending on the requirements).</p>
 <p><em><sub> </sub>S<sub>TO</sub> = S<sub>g</sub> + S<sub>a</sub></em></p>
