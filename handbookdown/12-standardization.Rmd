@@ -149,7 +149,7 @@ With a typical variation of thrust per headwind, estimate the test day zero-wind
 \[
 \begin{equation}
 S_{g_{zw}} = S_{g_w} \left( \frac{V_{\mathrm{LO}}}{V_g} \right)^{1.85}
-(\#eq:empirical-std)
+(\#eq:zero-wind-gnd-dist)
 \end{equation}
 \]
 
@@ -211,83 +211,82 @@ where
 
 Define
 
-> V = airspeed
->
-> V~TO~ = liftoff airspeed
->
-> S~g~ = ground roll distance
->
-> S~w~ = reference wing area
->
-> F~ex~ = excess thrust
->
-> F~n~ = net thrust
->
-> C~LIGE~ = lift coefficient in ground effect
->
-> C~DIGE~ = drag coefficient in ground effect
->
-> W = aircraft weight
->
-> m = rolling friction
->
-> g = acceleration due to gravity
-
-A = acceleration = g\*Fex/
-
- 
+* \(V\) = airspeed
+* \(V_{\mathrm{TO}}\) = liftoff airspeed
+* \(S_g\) = ground roll distance
+* \(S_w\) = reference wing area
+* \(F_{\text{ex}}\) = excess thrust
+* \(F_n\) = net thrust
+* \(C_{L_{\mathrm{IGE}}}\) = lift coefficient in ground effect
+* \(C_{D_{\mathrm{IGE}}}\) = drag coefficient in ground effect
+* \(W\) = aircraft weight
+* \(m\) = rolling friction
+* \(g\) = acceleration due to gravity
+* \(A\) = acceleration = g\*Fex/
 
 Assuming zero initial speed for takeoff run, ground roll distance
 
+\[
+\begin{equation}
+S_g = \frac{V_{\mathrm{TO}}^2 \cdot W}
+{2 \cdot g \cdot 
+  \left( 
+        T_{\text{avg}} 
+        - \mu \cdot W 
+        + \frac{1}{6} \cdot \rho \cdot S_w \cdot V_{\mathrm{TO}}^2 \cdot 
+        \left( \mu \cdot C_{L_{\mathrm{IGE}}} 
+              - C_{D_{\mathrm{IGE}}} 
+        \right) 
+  \right)
+}
+(\#eq:gnd-roll-dist)
+\end{equation}
+\]
+
+Where 
+
+* \(F_{n_{\text{avg}}}\) may be estimated as the average of static thrust and net thrust at liftoff airspeed. If the initial airspeed is non-zero, its value should be inserted into Equation \@ref(eq:zero-wind-gnd-dist) in place of \(V_{\mathrm{LO}}\) and the answer subtracted from the zero-wind case.
+* \(\mu\) is the rolling friction coefficient (typically between \(0.015\) and \(0.025\) for hard dry runways), and
+* \(C_{L_{\mathrm{IGE}}}\) is the lift coefficient in ground effect while at ground roll attitude.
+
+Estimate \(C_{L_{\mathrm{IGE}}}\) by determining the out-of-ground-effect lift coefficient, \(C_{L_{\mathrm{OGE}}}\), at the ground roll angle of attack and correcting it as follows:
+
+\[
+\begin{equation}
+C_{L_{\mathrm{IGE}}} = C_{L_{\mathrm{OGE}}} \mathrm{GE}_{C_L}
+(\#eq:est-CLIGE)
+\end{equation}
+\]
+
+where
+
+* the ground effect factor, \(\mathrm{GE}_{C_L} = 0.8609 - 0.6282 \log_{10} \left( \frac{h}{b} \right) \) and 
+* \(h\) is the wing height above the surface and 
+* \(b\) is the wingspan. 
+
+The above correction is *not used* above the height that predicts
+
+\[
+\mathrm{GE}_{C_L} \lt 1
+\]
+
+\(C_{D_{\mathrm{IGE}}}\) is the induced drag coefficient while in ground effect. Estimate this by determining the out-of-ground-effect drag coefficient, \(C_{D_{\mathrm{OGE}}}\), at the appropriate angle of attack and correcting it as follows:
+
+\[
+\begin{equation}
+C_{D_{\mathrm{IGE}}} = C_{D_{\mathrm{OGE}}} \mathrm{GE}_{C_D}
+(\#eq:est-CDIGE)
+\end{equation}
  
+where the ground effect factor, \(\mathrm{GE}_{C_D} = 0.2412 \ln \left( \frac{h}{b} \right) + 1.0829 \) 
 
- ![][12010]
+The above correction is *not used* above the height that predicts
 
- 
+\[
+\mathrm{GE}_{C_D} \gt 1
+\]
 
- 
-
- 
-
- 
-
-Where *F~navg~* may be estimated as the average of static thrust and net thrust at liftoff airspeed. If the initial airspeed is non-zero, its value should be inserted into Equation 10.3 in place of *VL/O* and the answer subtracted from the zero-wind case.
-
- 
-
-where *\(\mu\)* is the rolling friction coefficient (typically between 0.015 and 0.025 for hard dry runways), and
-
-*C~LIGE~* is the lift coefficient in ground effect while at ground roll attitude.
-
-Estimate *C~LIGE~* by determining the out-of-ground-effect lift coefficient (*C~LOGE~*) at the ground roll angle of attack and correcting it as follows: n
-
- 
-
-*C~LIGE~ = C~LOGE\ ~*GE~CL~
-
- 
-
-where the ground effect factor, GE~CL~ = \[0.8609 --0.6282 log~10~(*h/b*)\] and *h* is the wing height above the surface and *b* is the wingspan. The above correction is *not used* above the height that predicts
-
- 
-
-GE~CL~ *\<* 1
-
- 
-
-*C~DIGE~* is the induced drag coefficient while in ground effect. Estimate this by determining the out-of-ground-effect drag coefficient (\(C_{D_i \mathrm{OGE}}\) ) at the appropriate angle of attack and correcting it as follows:
-
-\(C_{D_i \mathrm{IGE}}\) = \(C_{D_i \mathrm{OGE}}\) GE~CD~
-
- 
-
-where the ground effect factor, GE~CD~ = \[0.2412 \ln(*h/b*)+1.0829\] The above correction is *not used* above the height that predicts
-
-GE~CD~ *\>* 1
-
- 
-
- A **direct approximation of** **takeoff air distance** requires the desired speeds at liftoff and at 50 feet (typically 1.1*V~s~* and 1.2*V~s~*, respectively). It also requires an estimate of the average excess thrust as the aircraft climbs out of ground effect.
+A **direct approximation of** **takeoff air distance** requires the desired speeds at liftoff and at 50 feet (typically 1.1*V~s~* and 1.2*V~s~*, respectively). It also requires an estimate of the average excess thrust as the aircraft climbs out of ground effect.
 
 ![][12011] 
 
@@ -469,7 +468,7 @@ Along with the incremental \(S_g\) and \(S_a\) calculations, the time to acceler
 
  
 
- **12.4 Landing Distance** (refs 12.1, 12.2)
+## Landing Distance** (refs 12.1, 12.2)
 
 The total landing distance (*S~LD~*) is the sum of the ground roll distance (\(S_g\), from touchdown to full stop) and the horizontal component of the air distance (\(S_a\), from the screen height to touchdown). The screen height can be either 35 or 50 feet above the surface, depending on the requirements
 
@@ -483,7 +482,7 @@ Both \(S_g\) and *S~a\ ~* can be standardized according to the increment or rati
 
 ** **
 
-**12.4.1 Empirical Standardization Method**
+### Empirical Standardization Method**
 
 First correct for the effects of the test day wind. Define headwind velocity as *V~w\ ~*, touchdown true airspeed as *V~TD~*, and test day ground roll as *S~gw~*. With a typical variation of thrust per headwind, estimate the test day zero-wind ground roll (*S~gzw~*) using the approach applied to takeoff ground roll:
 
@@ -547,7 +546,7 @@ where *h~v~* is the specific kinetic energy change during the air phase. For the
 
  
 
-**12.4.2 Landing Distance Prediction**
+### Landing Distance Prediction**
 
 With reasonably precise models available, the landing distance can be predicted through calculation. Test distances can then be standardized using either the increment or ratio method (Equations 12.1-12.2).
 
@@ -673,7 +672,7 @@ initial trim speed, *V~T\ ~*=\[2*N~z~W*/*ρC~L~S*\]^1/2^
 
  
 
-**12.5 Climb/Descent/Level Acceleration** (ref 12.4)
+## Climb/Descent/Level Acceleration** (ref 12.4)
 
 Standard performance can be determined either by *predicting*
 
@@ -687,7 +686,7 @@ Corrections to individual climb/accelerations tests require models that only sho
 
  
 
-**12.5.1 Climb/Descent/Acceleration Prediction**
+### Climb/Descent/Acceleration Prediction**
 
 According to basic energy theory, an aircraft's specific excess power (\(P_s\)) is related to the change in kinetic and potential energy as follows
 
@@ -721,7 +720,7 @@ When predicting climb performance capability using this approach, iterations may
 
  
 
-**12.5.2 Correcting to Standard Climb Rate**
+### Correcting to Standard Climb Rate**
 
 *The below sequence corrects results at the test q and (usually) pressure altitude*
 
@@ -813,7 +812,7 @@ Usually the exact wind shear profile is unknown. In this case, fly perpendicular
 
 Equation 12.27 can also be used to correct descents, level accelerations, and level decelerations to a standard climb rate. The primary difference is that for level accelerations, the accelerations factor is the dominant term while the indicated climb rate is near zero.
 
-**12.5.3 Weight/Altitude/Temperature (WAT) Limits**
+### Weight/Altitude/Temperature (WAT) Limits**
 
 To ensure safety, aviation authorities specify minimum climb gradients (\(\gamma\)~req'd~) for many aircraft operations. The most straight forward way to comply with the specified gradients is to document the maximum allowable weight at various pressure altitude/temperature combinations.
 
@@ -837,7 +836,7 @@ where ∆\(F_n\) (= *F~nstd~* -*F~ntest~* ) comes from the engine model. To ensu
 
  
 
-**12.6 Level Turn Performance** (ref 12.1)
+## Level Turn Performance** (ref 12.1)
 
 Standard level turn performance can be determined either by
 
@@ -863,7 +862,7 @@ The following sections address both the prediction and correction approaches. Fo
 
  
 
-**12.6.1 Sustained Level Turn Performance Prediction**
+### Sustained Level Turn Performance Prediction**
 
  
 
@@ -963,7 +962,7 @@ the angle of attack can be roughly estimated without significant error to the fi
 
  
 
-**12.6.2 Sustained Level Turn Performance Correction**
+### Sustained Level Turn Performance Correction**
 
 The best method for obtaining standardized sustained level turn data is to correct actual level turn results to standard conditions. It is also possible to correct level acceleration or climb data to give standard level turn results. This approach may not work as well since any drag polar or engine model errors will be magnified. Additionally, inlet distortion that accompanies actual turn thrust is different during (low angle of attack) climbs and accelerations.
 
@@ -1009,7 +1008,7 @@ The primary difference between using turn, accel, or climb test data is the domi
 
  
 
-**12.6.3 Level Limit Turn Performance Correction**
+### Level Limit Turn Performance Correction**
 
 A limit turn is one in which the aircraft performs a level turn beginning from maximum speed and maximum load factor and continues to decelerate at the *N~zb~* limit until reaching the maximum \(C_L\)~.~ At this point, the aircraft continues its level turning deceleration at the lift limit. This maneuver is also known as a "slow-down" turn.
 
@@ -1061,7 +1060,7 @@ In For the simplified case where \(\delta\)~t~ = \(\delta\)~s~, *cg~t~* = *cg~st
 
 ![][12053]
 
-**12.7 Reciprocating Engine Cruise Performance** (ref 12.1)
+## Reciprocating Engine Cruise Performance** (ref 12.1)
 
 Cruise performance standardization consists of correcting test day range and endurance results to standard conditions. Standard conditions are typically the standard aircraft weight & \(\mathrm{cg}\) location, the nearest 5,000 ft increment of pressure altitude, and standard ambient temperature at that altitude. Although not included in this section, additional corrections can be made to adjust fuel flow to a standard
 
@@ -1075,7 +1074,7 @@ It is common practice to correct test data for only minor changes in altitude & 
 
 .
 
-**12.7.1 Power Standardization**
+### Power Standardization**
 
 If fuel flow is directly proportional to power output only, the power and optimal velocity for cruise performance can be determined from a power required curve as shown below.
 
@@ -1127,7 +1126,7 @@ endurance) are determined by applying the above equations to correct the points 
 
  
 
-**12.7.2 Fuel Flow Standardization**
+### Fuel Flow Standardization**
 
 Because reciprocating engine fuel flow is essentially
 
@@ -1181,7 +1180,7 @@ If the values for *b* and \(\mathrm{BSFC}\) are known for both the test and stan
 
 Note that this correction requires only a knowledge of the *ratio* of test and standard \(\mathrm{BSFC}\) values. If both values have the same percent error, then the effect is self-canceling. The above equation also corrects for changes in fuel flow due to changing propeller efficiency.
 
- **12.7.3 Endurance Optimization and Prediction**
+### Endurance Optimization and Prediction**
 
 To determine the optimum endurance flight profile and time aloft for any condition (at the same RPM as the test condition), plot the test day specific endurance parameter (*SEP*) vs the test day lift coefficient (*C~L~*)
 
@@ -1227,7 +1226,7 @@ where the *SEP* comes from the above test day curve at whatever \(C_L\)is chosen
 
 ![][12065]
 
-**12.7.4 Range Optimization and Prediction** (ref 12.1)
+### Range Optimization and Prediction** (ref 12.1)
 
 To determine the optimum range flight profile and distance for any condition (at the same RPM as the test condition), plot the test day range factor (\(\mathrm{RF}\)) vs the test day lift coefficient (*C~L~*)
 
@@ -1275,7 +1274,7 @@ For cruise at constant *airspeed and altitude*, use the following equation and t
 
  ![][12068]
 
-**12.8 Jet Aircraft Cruise Performance** (ref 12.1)
+## Jet Aircraft Cruise Performance** (ref 12.1)
 
 Refer to section 12.7 for a general discussion of cruise
 
@@ -1283,7 +1282,7 @@ performance standardization.
 
 .
 
-**12.8.1 Thrust Standardization**
+### Thrust Standardization**
 
 If fuel flow is directly proportional to net thrust output only, the thrust and optimal velocity for cruise performance can be determined from a thrust required curve as shown below.
 
@@ -1329,7 +1328,7 @@ Although all points along the test day thrust curve can be standardized, the mos
 
  
 
-**12.8.2 Fuel Flow Standardization**
+### Fuel Flow Standardization**
 
 Both the thrust and fuel flow of a simple (fixed-geometry turbojet) turbine engine are functions of engine speed (*N*), Mach number (\(M\)), ambient pressure (\(\delta\)), and ambient temperature (*θ*). Dimensional analysis and experimental results show these parameters to be related approximately as illustrated in the figures below.
 
@@ -1435,7 +1434,7 @@ This relation allows standard fuel flow to be calculated as
 
  ![][12076]
 
-**12.8.3 Endurance Optimization and Prediction**
+### Endurance Optimization and Prediction**
 
 Test day results are corrected to standard results at the same Mach, \(C_L\)(and therefore the same *W/\(\delta\) ,* according to Eq'n 12.44) as the test condition. For each *W/\(\delta\)* ratio tested, plot the test day corrected fuel flow vs the test Mach number.
 
@@ -1499,7 +1498,7 @@ where *c* is the thrust specific fuel consumption at sea level std conditions. *
 
  
 
-**12.8.4 Range Optimization and Prediction**
+### Range Optimization and Prediction**
 
 As with endurance analysis, test day range results are
 
@@ -1559,7 +1558,7 @@ ambient temperature.
 
  
 
-**12.9 References**
+## References**
 
 |||
 |-|---------------|
