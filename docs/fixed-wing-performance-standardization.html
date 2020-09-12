@@ -350,6 +350,7 @@
 <li class="chapter" data-level="12.3" data-path="fixed-wing-performance-standardization.html"><a href="fixed-wing-performance-standardization.html#takeoff-distance"><i class="fa fa-check"></i><b>12.3</b> Takeoff Distance</a>
 <ul>
 <li class="chapter" data-level="12.3.1" data-path="fixed-wing-performance-standardization.html"><a href="fixed-wing-performance-standardization.html#empirical-standardization-method"><i class="fa fa-check"></i><b>12.3.1</b> Empirical Standardization Method</a></li>
+<li class="chapter" data-level="12.3.2" data-path="fixed-wing-performance-standardization.html"><a href="fixed-wing-performance-standardization.html#takeoff-distance-prediction"><i class="fa fa-check"></i><b>12.3.2</b> Takeoff Distance Prediction</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="13" data-path="acoustics.html"><a href="acoustics.html"><i class="fa fa-check"></i><b>13</b> 13 Acoustics**</a></li>
@@ -763,57 +764,46 @@ S_{g_t} = S_{g_{zw}} \left[ 1 - \frac{W \sin \theta}{\left[ F_{\text{ex}} \right
 \]</span></p>
 <p>After correcting the test day distance to zero wind and slope, use the following empirical equations to correct for non-standard weight, density, and temperature.
 Any desired values can be treated as the “standard” conditions.</p>
-<table style="width:97%;">
+<table>
 <colgroup>
-<col width="58%" />
-<col width="38%" />
+<col width="52%" />
+<col width="47%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th><strong>Aircraft Propulsion Type</strong></th>
-<th><strong>Standard Day Distance</strong></th>
+<th align="left"><strong>Aircraft Propulsion Type</strong></th>
+<th align="left"><strong>Standard Day Distance</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong> </strong></p>
-<p><strong>Fixed pitch propellers</strong></p>
-<p><strong> </strong></p>
-<p>(neglect temp correction for</p>
-<p>constant rpm evaluation)</p>
-<p> </p>
-<p> </p></td>
-<td> <img src="media/12/image11.svg" style="width:2.16667in;height:1.09375in" /></td>
+<td align="left">Fixed pitch propellers<a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a></td>
+<td align="left"><span class="math display">\[\begin{align} S_{gs} &amp;= S_{gt} \left( \frac{W_s}{W_t} \right)^{2.4} \left( \frac{\sigma_s}{\sigma_t} \right)^{-2.4} \left( \frac{T_{as}}{T_{at}} \right)^{0.5} \\ S_{as} &amp;= S_{at} \left( \frac{W_s}{W_t} \right)^{2.2} \left( \frac{\sigma_s}{\sigma_t} \right)^{-2.2} \left( \frac{T_{as}}{T_{at}} \right)^{0.6} \end{align} \]</span></td>
 </tr>
 <tr class="even">
-<td><p><strong> </strong></p>
-<p><strong>Turbo-propeller aircraft</strong></p>
-<p> </p>
-<p>(for heavy aircraft, replace 2.3 &amp; -1.2</p>
-<p>with 2.6 &amp; -1.5 respectively)</p>
-<p> </p>
-<p> </p></td>
-<td> <img src="media/12/image12.svg" style="width:2.69236in;height:1.05069in" /></td>
+<td align="left">Turbo-propeller aircraft<a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a></td>
+<td align="left"><span class="math display">\[\begin{align} S_{gs} &amp;= S_{gt} \left( \frac{W_s}{W_t} \right)^{2.6} \left( \frac{\sigma_s}{\sigma_t} \right)^{-1.7} \left( \frac{N_s}{N_t} \right)^{-0.7} \left( \frac{P_s}{P_t} \right)^{-0.9} \\ S_{gs} &amp;= S_{gt} \left( \frac{W_s}{W_t} \right)^{2.3} \left( \frac{\sigma_s}{\sigma_t} \right)^{-1.2} \left( \frac{N_s}{N_t} \right)^{-0.8} \left( \frac{P_s}{P_t} \right)^{-1.1} \end{align} \]</span></td>
 </tr>
 <tr class="odd">
-<td><p><strong> </strong></p>
-<p><strong>Large jet aircraft</strong></p>
-<p><strong> </strong></p>
-<p>(for lights jets, replace 2.3 &amp; 0.7</p>
-<p>exponents with 2.6 &amp; 1 respectively)</p>
-<p> </p>
-<p> </p></td>
-<td> <img src="media/12/image13.svg" style="width:2.05069in;height:1.03958in" /></td>
+<td align="left">Large jet aircraft<a href="#fn10" class="footnote-ref" id="fnref10"><sup>10</sup></a></td>
+<td align="left"><span class="math display">\[\begin{align} S_{gs} &amp;= S_{gt} \left( \frac{W_s}{W_t} \right)^{2.3} \left( \frac{\sigma_s}{\sigma_t} \right)^{-1.0} \left( \frac{F_{ns}}{F_{nt}} \right)^{-1.3}  \\ S_{gs} &amp;= S_{gt} \left( \frac{W_s}{W_t} \right)^{2.3} \left( \frac{\sigma_s}{\sigma_t} \right)^{-0.7} \left( \frac{F_{ns}}{F_{nt}} \right)^{-1.6} \end{align}\]</span></td>
 </tr>
 </tbody>
 </table>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> <strong>12.3.2 Takeoff Distance Prediction</strong> (refs 12.1, 12.5)</p>
-<p><strong> </strong></p>
-<p><u>Estimating takeoff ground roll without numerical methods</u></p>
+<p>where</p>
+<ul>
+<li><span class="math inline">\(P_t\)</span> = Test day brake power at the propeller</li>
+<li><span class="math inline">\(P_s\)</span> = Standard day brake power at the propeller</li>
+<li><span class="math inline">\(N_t\)</span> = Test day propeller <span class="math inline">\(\text{RPM}\)</span></li>
+<li><span class="math inline">\(N_s\)</span> = Standard day propeller <span class="math inline">\(\text{RPM}\)</span></li>
+<li><span class="math inline">\(F_{nt}\)</span> = <span class="math inline">\(T_{at}\)</span> = Average test net thrust (approx <span class="math inline">\(0.94 \times\)</span>static thrust @ test conditions)</li>
+<li><span class="math inline">\(F_{ns}\)</span> = <span class="math inline">\(T_{as}\)</span> = Average standard net thrust (approx <span class="math inline">\(0.94 \times\)</span>static thrust @ standard conditions)</li>
+</ul>
+</div>
+<div id="takeoff-distance-prediction" class="section level3" number="12.3.2">
+<h3><span class="header-section-number">12.3.2</span> Takeoff Distance Prediction</h3>
+<p>(refs 12.1, 12.5)</p>
+<p><strong>Estimating takeoff ground roll without numerical methods</strong></p>
 <p> </p>
 <p>Define</p>
 <blockquote>
@@ -1527,6 +1517,14 @@ Any desired values can be treated as the “standard” conditions.</p>
 <p><strong> </strong></p>
 </div>
 </div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="8">
+<li id="fn8"><p>Neglect temp correction for constant rpm evaluation<a href="fixed-wing-performance-standardization.html#fnref8" class="footnote-back">↩︎</a></p></li>
+<li id="fn9"><p>For heavy aircraft, replace <span class="math inline">\(2.3\)</span> &amp; <span class="math inline">\(-1.2\)</span> with <span class="math inline">\(2.6\)</span> &amp; <span class="math inline">\(-1.5\)</span>, respectively<a href="fixed-wing-performance-standardization.html#fnref9" class="footnote-back">↩︎</a></p></li>
+<li id="fn10"><p>For light jets, replace <span class="math inline">\(2.3\)</span> &amp; <span class="math inline">\(-0.7\)</span> with <span class="math inline">\(2.6\)</span> &amp; <span class="math inline">\(-1.0\)</span>, respectively<a href="fixed-wing-performance-standardization.html#fnref10" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
             </section>
 
