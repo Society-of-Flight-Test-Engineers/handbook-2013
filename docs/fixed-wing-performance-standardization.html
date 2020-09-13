@@ -486,8 +486,8 @@
 <td align="left">excess thrust</td>
 </tr>
 <tr class="odd">
-<td align="left"><span class="math inline">\(F_g\)</span> gross thrust</td>
-<td align="left"></td>
+<td align="left"><span class="math inline">\(F_g\)</span></td>
+<td align="left">gross thrust</td>
 </tr>
 <tr class="even">
 <td align="left"><span class="math inline">\(F_n\)</span></td>
@@ -543,7 +543,7 @@
 </tr>
 <tr class="odd">
 <td align="left"><span class="math inline">\(P_0\)</span></td>
-<td align="left">standard ambient pressure sea level <span class="math inline">\(\left( 2116.22 \frac{\text{lb}}{\text{ft}^2} = 29.921 \text{in Hg} \right)\)</span></td>
+<td align="left">standard ambient pressure sea level <span class="math inline">\(\left( 2116.22 \frac{\text{lb}}{\text{ft}^2} = 29.921 \text{ in Hg} \right)\)</span></td>
 </tr>
 <tr class="even">
 <td align="left"><span class="math inline">\(P_a\)</span></td>
@@ -623,7 +623,7 @@
 </tr>
 <tr class="odd">
 <td align="left"><span class="math inline">\(T_0\)</span></td>
-<td align="left">ambient temperature sea level standard <span class="math inline">\(\left( 288.15^{\circ}\text{K} = 15.0^{\circ}\text{C} \right)\)</span></td>
+<td align="left">ambient temperature sea level standard <span class="math inline">\(\left( 288.15\text{ K} = 15.0°\text{C} \right)\)</span></td>
 </tr>
 <tr class="even">
 <td align="left"><span class="math inline">\(V\)</span></td>
@@ -836,7 +836,6 @@ Any desired values can be treated as the “standard” conditions.</p>
 <h3><span class="header-section-number">12.3.2</span> Takeoff Distance Prediction</h3>
 <p>(refs 12.1, 12.5)</p>
 <p><strong>Estimating takeoff ground roll without numerical methods</strong></p>
-<p> </p>
 <p>Define</p>
 <ul>
 <li><span class="math inline">\(V\)</span> = airspeed</li>
@@ -876,7 +875,7 @@ S_g = \frac{V_{\mathrm{TO}}^2 \cdot W}
 <li><span class="math inline">\(C_{L_{\mathrm{IGE}}}\)</span> is the lift coefficient in ground effect while at ground roll attitude.</li>
 </ul>
 <p>Estimate <span class="math inline">\(C_{L_{\mathrm{IGE}}}\)</span> by determining the out-of-ground-effect lift coefficient, <span class="math inline">\(C_{L_{\mathrm{OGE}}}\)</span>, at the ground roll angle of attack and correcting it as follows:</p>
-<p><span class="math display" id="eq:est-CLIGE">\[
+<p><span class="math display" id="eq:est-c-l-ige">\[
 \begin{equation}
 C_{L_{\mathrm{IGE}}} = C_{L_{\mathrm{OGE}}} \mathrm{GE}_{C_L}
 \tag{12.9}
@@ -893,49 +892,67 @@ C_{L_{\mathrm{IGE}}} = C_{L_{\mathrm{OGE}}} \mathrm{GE}_{C_L}
 \mathrm{GE}_{C_L} \lt 1
 \]</span></p>
 <p><span class="math inline">\(C_{D_{\mathrm{IGE}}}\)</span> is the induced drag coefficient while in ground effect. Estimate this by determining the out-of-ground-effect drag coefficient, <span class="math inline">\(C_{D_{\mathrm{OGE}}}\)</span>, at the appropriate angle of attack and correcting it as follows:</p>
-<p>[
-<span class="math display" id="eq:est-CDIGE">\[\begin{equation}
+<p><span class="math display" id="eq:est-c-d-ige">\[
+\begin{equation}
 C_{D_{\mathrm{IGE}}} = C_{D_{\mathrm{OGE}}} \mathrm{GE}_{C_D}
 \tag{12.10}
-\end{equation}\]</span>
+\end{equation}
+\]</span>
  
 where the ground effect factor, <span class="math inline">\(\mathrm{GE}_{C_D} = 0.2412 \ln \left( \frac{h}{b} \right) + 1.0829\)</span></p>
 <p>The above correction is <em>not used</em> above the height that predicts</p>
 <p><span class="math display">\[
 \mathrm{GE}_{C_D} \gt 1
 \]</span></p>
-<p>A <strong>direct approximation of</strong> <strong>takeoff air distance</strong> requires the desired speeds at liftoff and at 50 feet (typically 1.1<em>V<sub>s</sub></em> and 1.2<em>V<sub>s</sub></em>, respectively). It also requires an estimate of the average excess thrust as the aircraft climbs out of ground effect.</p>
-<p><img src="media/12/image15.svg" style="width:3.44792in;height:0.5in" /> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>A <strong>direct approximation of</strong> <strong>the total takeoff distance</strong> (<em>S<sub>TO</sub></em>) can be calculated as the sum of the ground and air distances or can be estimated by multiplying the ground roll distance by a “planform factor” (<em>F<sub>pl</sub></em>).</p>
-<p>* *</p>
-<p><em>S<sub>TO</sub> = S<sub>g</sub>F<sub>pl</sub></em></p>
-<p><em><sub> </sub></em></p>
-<p><em>F<sub>pl</sub></em> combines the effects of wing type, thrust-to-weight ratio, and pilot technique. The following values characterize the typical aircraft.</p>
-<p> </p>
-<p>straight wing: <em>F<sub>pl </sub></em>= 1.15</p>
-<p>swept wing: <em>F<sub>pl </sub></em>= 1.36</p>
-<p>delta wing: <em>F<sub>pl</sub></em> = 1.58</p>
-<p> </p>
-<p>A more <strong>exact prediction of takeoff performance</strong> (ref 12.5) requires accurate thrust and drag models and an integration of the aircraft’s velocity over the takeoff time. This is equivalent to a double integration of the aircraft’s acceleration or its specific excess thrust.</p>
-<p> </p>
-<p><img src="media/12/image17.svg" style="width:3.91667in;height:0.43056in" /> </p>
-<p> </p>
-<p> </p>
-<p>This double integration can be performed numerically or graphically. Alternately, use planar kinematics and sum the distances required to accelerate between incremental true airspeeds from brake release (<em>V<sub>0</sub></em>) to the true airspeed when the aircraft reaches the takeoff altitude (<em>V<sub>50’</sub></em>).</p>
-<p> </p>
-<p> </p>
-<p> <img src="media/12/image19.svg" style="width:3.09583in;height:0.47778in" /></p>
-<p> </p>
-<p>Both methods above are typically split into pre-rotation ground roll,</p>
-<p>rotation/post-rotation ground roll, and airborne segments. Both methods require calculation of the excess thrust, addressed below.</p>
-<p> </p>
-<p> Solving for the excess net thrust <em>during the ground roll</em> for either takeoff or landing cases requires a simultaneous solution of the three equations of motion along the aircraft’s longitudinal &amp; vertical axes and about the pitch axis. These equations (in the above order) are as follows:</p>
-<p>* *</p>
-<p><span class="math inline">\(F_{\text{e}}\)</span>+ <em><span class="math inline">\(\mu\)</span><sub>nw</sub>R<sub>nw </sub></em>+ <em><span class="math inline">\(\mu\)</span><sub>m</sub>R<sub>m</sub></em> = <span class="math display">\[*\(F_g\)*cos\(\iota_T\) + *F~e\ ~*-- *D~wb~* -- *D~t~* -- Wsin*θ~rw~*\]</span></p>
-<p> </p>
+<p>A <strong>direct approximation of takeoff air distance</strong> requires the desired speeds at liftoff and at 50 feet (typically <span class="math inline">\(1.1 V_s\)</span> and <span class="math inline">\(1.2 V_s\)</span>, respectively).
+It also requires an estimate of the average excess thrust as the aircraft climbs out of ground effect.</p>
+<p><span class="math display" id="eq:direct-to-air">\[
+\begin{equation}
+S_a = \frac{W}{\left( T - D \right)_{\text{avg}}} \left[ \frac{V_{50}^2 - V_{\mathrm{LO}}^2}{2g} + 50 \right]
+\tag{12.11}
+\end{equation}
+\]</span></p>
+<p>A <strong>direct approximation of the total takeoff distance</strong>, <span class="math inline">\(S_{\mathrm{TO}}\)</span> can be calculated as the sum of the ground and air distances or can be estimated by multiplying the ground roll distance by a “planform factor,” <span class="math inline">\(F_{\text{pl}}\)</span>.</p>
+<p><span class="math display" id="eq:s-to-fpl">\[
+\begin{equation}
+S_{\mathrm{TO}} = S_g F_{\text{pl}}
+\tag{12.12}
+\end{equation}
+\]</span></p>
+<p><span class="math inline">\(F_{\text{pl}}\)</span> combines the effects of wing type, thrust-to-weight ratio, and pilot technique.
+The following values characterize the typical aircraft.</p>
+<ul>
+<li>straight wing: <span class="math inline">\(F_{\text{pl}} = 1.15\)</span></li>
+<li>swept wing: <span class="math inline">\(F_{\text{pl}} = 1.36\)</span></li>
+<li>delta wing: <span class="math inline">\(F_{\text{pl}} = 1.58\)</span></li>
+</ul>
+<p>A more <strong>exact prediction of takeoff performance</strong> (ref 12.5) requires accurate thrust and drag models and an integration of the aircraft’s velocity over the takeoff time.
+This is equivalent to a double integration of the aircraft’s acceleration or its specific excess thrust.</p>
+<p><span class="math display" id="eq:s-to-fpl">\[
+\begin{equation}
+S_{\mathrm{TO}} = \int V_T \mathop{dt} = \iint a \mathop{dt} = \iint \frac{F_{\text{ex}}}{m} \mathop{dt} = \frac{1}{m} \iint F_{\text{ex}} \mathop{dt}
+\tag{12.12}
+\end{equation}
+\]</span></p>
+<p>This double integration can be performed numerically or graphically.
+Alternately, use planar kinematics and sum the distances required to accelerate between incremental true airspeeds from brake release, <span class="math inline">\(V_0\)</span>, to the true airspeed when the aircraft reaches the takeoff altitude, <span class="math inline">\(V_{50&#39;}\)</span>.</p>
+<p><span class="math display" id="eq:to-dist">\[
+\begin{equation}
+S_{\mathrm{TO}} = \frac{m}{2} \sum_{V_0}^{V_{50&#39;}} \frac{V_2^2 - V_1^2}{F_{\text{ex}}}
+\tag{12.13}
+\end{equation}
+\]</span></p>
+<p>Both methods above are typically split into pre-rotation ground roll, rotation/post-rotation ground roll, and airborne segments.
+Both methods require calculation of the excess thrust, addressed below.</p>
+<p>Solving for the excess net thrust <em>during the ground roll</em> for either takeoff or landing cases requires a simultaneous solution of the three equations of motion along the aircraft’s longitudinal &amp; vertical axes and about the pitch axis.
+These equations (in the above order) are as follows:</p>
+<p><span class="math display" id="eq:eom-long">\[
+\begin{equation}
+F_{\text{ex}}+ \mu_{\text{nw}} R_{\text{nw}} + \mu_m R_m = F_g \cos \iota_T + F_e - D_{\text{wb}} - D_t - W \sin \theta_{\text{rw}}
+\tag{12.14}
+\end{equation}
+\]</span>
+ </p>
 <p><em>R<sub>nw</sub></em>+<em>R<sub>m</sub></em> = <span class="math display">\[*Wco*s*θ~rw~* -- *L~w~ -- L~t~*\]</span></p>
 <p> </p>
 <p>(<em>X<sub>1</sub></em> + <em>X<sub>2</sub></em>)<em>R<sub>nw</sub></em> = [<em>Wco</em>s<em>θ<sub>rw</sub>X<sub>2</sub></em> + <em>W</em>sin<em>θ<sub>rw</sub> Z<sub>1</sub></em> + {<em><span class="math inline">\(F_g\)</span></em>cos(θ+<span class="math inline">\(\iota_T\)</span>)-<span class="math inline">\(F_e\)</span>}<em>Z<sub>1</sub></em></p>

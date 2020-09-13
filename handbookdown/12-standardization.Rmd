@@ -20,7 +20,7 @@
 |\(\frac{F}{\delta}\) |corrected thrust|
 |\(F_e\) |ram thrust|
 |\(F_{\text{e}}\) |excess thrust|
-|\(F_g\) gross thrust|
+|\(F_g\) |gross thrust|
 |\(F_n\) |net thrust|
 |\(g\) |reference acceleration due to gravity \( \left( 32.174 \frac{\text{ft}}{\text{sec}^2} \right) \)|
 |\(\mathrm{GE}_{C_D}\) |ground effect correction factor for drag coefficient|
@@ -34,7 +34,7 @@
 |\(N_{x_w}\) |longitudinal load factor along flight path (wind axis)|
 |\(N_{z_w}\), \(n_z\) |load factor normal to flight path|
 |\(P\) |power output|
-|\(P_0\) |standard ambient pressure sea level \( \left( 2116.22 \frac{\text{lb}}{\text{ft}^2} = 29.921 \text{in Hg} \right) \)|
+|\(P_0\) |standard ambient pressure sea level \( \left( 2116.22 \frac{\text{lb}}{\text{ft}^2} = 29.921 \text{ in Hg} \right) \)|
 |\(P_a\) |ambient pressure|
 |\(P_{iw}\) |standard day sea-level power required|
 |\(P_m\) |mission-day power required|
@@ -54,7 +54,7 @@
 |\(\mathrm{SR}\) |specific range|
 |\(T\) |ambient air temperature (absolute)|
 |\(T\) |thrust|
-|\(T_0\) |ambient temperature sea level standard \( \left( 288.15^{\circ}\text{K} = 15.0^{\circ}\text{C} \right) \)|
+|\(T_0\) |ambient temperature sea level standard \( \left( 288.15\text{ K} = 15.0°\text{C} \right) \)|
 |\(V\) |inertial speed|
 |\(V_c\) |calibrated airspeed|
 |\(V_e\) |equivalent airspeed|
@@ -207,8 +207,6 @@ where
 
 **Estimating takeoff ground roll without numerical methods**
 
- 
-
 Define
 
 * \(V\) = airspeed
@@ -254,7 +252,7 @@ Estimate \(C_{L_{\mathrm{IGE}}}\) by determining the out-of-ground-effect lift c
 \[
 \begin{equation}
 C_{L_{\mathrm{IGE}}} = C_{L_{\mathrm{OGE}}} \mathrm{GE}_{C_L}
-(\#eq:est-CLIGE)
+(\#eq:est-c-l-ige)
 \end{equation}
 \]
 
@@ -275,8 +273,9 @@ The above correction is *not used* above the height that predicts
 \[
 \begin{equation}
 C_{D_{\mathrm{IGE}}} = C_{D_{\mathrm{OGE}}} \mathrm{GE}_{C_D}
-(\#eq:est-CDIGE)
+(\#eq:est-c-d-ige)
 \end{equation}
+\]
  
 where the ground effect factor, \(\mathrm{GE}_{C_D} = 0.2412 \ln \left( \frac{h}{b} \right) + 1.0829 \) 
 
@@ -286,68 +285,64 @@ The above correction is *not used* above the height that predicts
 \mathrm{GE}_{C_D} \gt 1
 \]
 
-A **direct approximation of** **takeoff air distance** requires the desired speeds at liftoff and at 50 feet (typically 1.1*V~s~* and 1.2*V~s~*, respectively). It also requires an estimate of the average excess thrust as the aircraft climbs out of ground effect.
+A **direct approximation of takeoff air distance** requires the desired speeds at liftoff and at 50 feet (typically \(1.1 V_s\) and \(1.2 V_s\), respectively).
+It also requires an estimate of the average excess thrust as the aircraft climbs out of ground effect.
 
-![][12011] 
+\[
+\begin{equation}
+S_a = \frac{W}{\left( T - D \right)_{\text{avg}}} \left[ \frac{V_{50}^2 - V_{\mathrm{LO}}^2}{2g} + 50 \right]
+(\#eq:direct-to-air)
+\end{equation}
+\]
 
- 
+A **direct approximation of the total takeoff distance**, \(S_{\mathrm{TO}}\) can be calculated as the sum of the ground and air distances or can be estimated by multiplying the ground roll distance by a "planform factor," \(F_{\text{pl}}\).
 
- 
+\[
+\begin{equation}
+S_{\mathrm{TO}} = S_g F_{\text{pl}}
+(\#eq:s-to-fpl)
+\end{equation}
+\]
 
- 
+\(F_{\text{pl}}\) combines the effects of wing type, thrust-to-weight ratio, and pilot technique.
+The following values characterize the typical aircraft.
 
-A **direct approximation of** **the total takeoff distance** (*S~TO~*) can be calculated as the sum of the ground and air distances or can be estimated by multiplying the ground roll distance by a "planform factor" (*F~pl~*).
+* straight wing: \(F_{\text{pl}} = 1.15\)
+* swept wing: \(F_{\text{pl}} = 1.36\)
+* delta wing: \(F_{\text{pl}} = 1.58\)
 
-\* *
+A more **exact prediction of takeoff performance** (ref 12.5) requires accurate thrust and drag models and an integration of the aircraft's velocity over the takeoff time.
+This is equivalent to a double integration of the aircraft's acceleration or its specific excess thrust.
 
-*S~TO~ = S~g~F~pl~*
+\[
+\begin{equation}
+S_{\mathrm{TO}} = \int V_T \mathop{dt} = \iint a \mathop{dt} = \iint \frac{F_{\text{ex}}}{m} \mathop{dt} = \frac{1}{m} \iint F_{\text{ex}} \mathop{dt}
+(\#eq:s-to-fpl)
+\end{equation}
+\]
 
-*~ ~*
+This double integration can be performed numerically or graphically.
+Alternately, use planar kinematics and sum the distances required to accelerate between incremental true airspeeds from brake release, \(V_0\), to the true airspeed when the aircraft reaches the takeoff altitude, \(V_{50'}\).
 
-*F~pl~* combines the effects of wing type, thrust-to-weight ratio, and pilot technique. The following values characterize the typical aircraft.
+\[
+\begin{equation}
+S_{\mathrm{TO}} = \frac{m}{2} \sum_{V_0}^{V_{50'}} \frac{V_2^2 - V_1^2}{F_{\text{ex}}}
+(\#eq:to-dist)
+\end{equation}
+\]
 
- 
+Both methods above are typically split into pre-rotation ground roll, rotation/post-rotation ground roll, and airborne segments.
+Both methods require calculation of the excess thrust, addressed below.
 
-straight wing: *F~pl\ ~*= 1.15
+Solving for the excess net thrust *during the ground roll* for either takeoff or landing cases requires a simultaneous solution of the three equations of motion along the aircraft's longitudinal & vertical axes and about the pitch axis.
+These equations (in the above order) are as follows:
 
-swept wing: *F~pl\ ~*= 1.36
-
-delta wing: *F~pl~* = 1.58
-
- 
-
-A more **exact prediction of takeoff performance** (ref 12.5) requires accurate thrust and drag models and an integration of the aircraft's velocity over the takeoff time. This is equivalent to a double integration of the aircraft's acceleration or its specific excess thrust.
-
- 
-
-![][12012] 
-
- 
-
- 
-
-This double integration can be performed numerically or graphically. Alternately, use planar kinematics and sum the distances required to accelerate between incremental true airspeeds from brake release (*V~0~*) to the true airspeed when the aircraft reaches the takeoff altitude (*V~50'~*).
-
- 
-
- 
-
- ![][12013]
-
- 
-
-Both methods above are typically split into pre-rotation ground roll,
-
-rotation/post-rotation ground roll, and airborne segments. Both methods require calculation of the excess thrust, addressed below.
-
- 
-
- Solving for the excess net thrust *during the ground roll* for either takeoff or landing cases requires a simultaneous solution of the three equations of motion along the aircraft's longitudinal & vertical axes and about the pitch axis. These equations (in the above order) are as follows:
-
-\* *
-
-\(F_{\text{e}}\)+ *\(\mu\)~nw~R~nw\ ~*+ *\(\mu\)~m~R~m~* = \[*\(F_g\)*cos\(\iota_T\) + *F~e\ ~*-- *D~wb~* -- *D~t~* -- Wsin*θ~rw~*\]
-
+\[
+\begin{equation}
+F_{\text{ex}}+ \mu_{\text{nw}} R_{\text{nw}} + \mu_m R_m = F_g \cos \iota_T + F_e - D_{\text{wb}} - D_t - W \sin \theta_{\text{rw}}
+(\#eq:eom-long)
+\end{equation}
+\]
  
 
 *R~nw~*+*R~m~* = \[*Wco*s*θ~rw~* -- *L~w~ -- L~t~*\]

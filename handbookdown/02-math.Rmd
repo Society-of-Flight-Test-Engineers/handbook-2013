@@ -119,7 +119,7 @@ Special cases:
 
 If \(\frac{b^2}{4} + \frac{a^3}{27} < 0\) , then the real roots are
 
-\[x_{1,2,3} = 2 \sqrt{\frac{-a}{3}} cos \left( \frac{\phi}{3} + 120^{\circ} k \right)\]
+\[x_{1,2,3} = 2 \sqrt{\frac{-a}{3}} cos \left( \frac{\phi}{3} + 120° k \right)\]
 
 where \(k = 0,1,2\)
 
@@ -263,7 +263,7 @@ Final value (\(FV\)) of an investment is a function of the initial principal inv
 \[
 \begin{align}
 A &= \frac{bh}{2}\\
-\text{sum of interior angles} &= 180^{\circ}
+\text{sum of interior angles} &= 180°
 \end{align}
 \]
 
@@ -272,7 +272,7 @@ A &= \frac{bh}{2}\\
 \[
 \begin{align}
 A &= bh\\
-\text{sum of interior angles} &= 360^{\circ}
+\text{sum of interior angles} &= 360°
 \end{align}
 \]
 
@@ -287,11 +287,11 @@ A &= bh\\
 #### Pentagon, Hexagon, and other \(n\)-sided Polygons {-}
 
 \begin{align}
-A &= \frac{1}{4} n a^2 \cot \left( \frac{180^{\circ}}{n} \right) \\
-R &= \text{radius of circumscribed circle} = \frac{1}{2} a^2 \csc \left( \frac{180^{\circ}}{n} \right) \\
-r &= \text{radius of inscribed circle} = \frac{1}{2} a \cot \left( \frac{180^{\circ}}{n} \right) \\
-\beta &= 180^{\circ} - \frac{360^{\circ}}{n} \\
-\text{sum of interior angles} &= n 180^{\circ} - 360^{\circ} \\
+A &= \frac{1}{4} n a^2 \cot \left( \frac{180°}{n} \right) \\
+R &= \text{radius of circumscribed circle} = \frac{1}{2} a^2 \csc \left( \frac{180°}{n} \right) \\
+r &= \text{radius of inscribed circle} = \frac{1}{2} a \cot \left( \frac{180°}{n} \right) \\
+\beta &= 180° - \frac{360°}{n} \\
+\text{sum of interior angles} &= n 180° - 360° \\
 \end{align}
 
 #### Circle  {-}
