@@ -946,72 +946,109 @@ S_{\mathrm{TO}} = \frac{m}{2} \sum_{V_0}^{V_{50&#39;}} \frac{V_2^2 - V_1^2}{F_{\
 Both methods require calculation of the excess thrust, addressed below.</p>
 <p>Solving for the excess net thrust <em>during the ground roll</em> for either takeoff or landing cases requires a simultaneous solution of the three equations of motion along the aircraft’s longitudinal &amp; vertical axes and about the pitch axis.
 These equations (in the above order) are as follows:</p>
-<p><span class="math display" id="eq:eom-long">\[
+<p><span class="math display" id="eq:eom-x">\[
 \begin{equation}
 F_{\text{ex}}+ \mu_{\text{nw}} R_{\text{nw}} + \mu_m R_m = F_g \cos \iota_T + F_e - D_{\text{wb}} - D_t - W \sin \theta_{\text{rw}}
 \tag{12.14}
 \end{equation}
-\]</span>
- </p>
-<p><em>R<sub>nw</sub></em>+<em>R<sub>m</sub></em> = <span class="math display">\[*Wco*s*θ~rw~* -- *L~w~ -- L~t~*\]</span></p>
-<p> </p>
-<p>(<em>X<sub>1</sub></em> + <em>X<sub>2</sub></em>)<em>R<sub>nw</sub></em> = [<em>Wco</em>s<em>θ<sub>rw</sub>X<sub>2</sub></em> + <em>W</em>sin<em>θ<sub>rw</sub> Z<sub>1</sub></em> + {<em><span class="math inline">\(F_g\)</span></em>cos(θ+<span class="math inline">\(\iota_T\)</span>)-<span class="math inline">\(F_e\)</span>}<em>Z<sub>1</sub></em></p>
-<p>+ <em>L<sub>t</sub></em>(<em>X<sub>3</sub> + X<sub>4</sub> – X<sub>2</sub></em>) - <em>L<sub>w</sub></em>(<em>X<sub>2 </sub></em>– <em>X<sub>3</sub></em>) - <em>D<sub>t</sub></em> (<em>Z<sub>1</sub></em> + <em>Z<sub>2</sub></em> )]</p>
+\]</span></p>
+<p><span class="math display" id="eq:eom-z">\[
+\begin{equation}
+R_{\text{nw}} + R_m = W \cos \theta_{\text{rw}} - L_w - L_t
+\tag{12.15}
+\end{equation}
+\]</span></p>
+<p><span class="math display" id="eq:eom-pitch">\[
+\begin{equation}
+\begin{split}
+\left( X_1 + X_2 \right) R_{\text{nw}} = W&amp; \cos \theta_{\text{rw}} X_2 \\
+&amp;+ W \sin \theta_{\text{rw}} Z_1 \\
+&amp;+ \left( F_g \cos \left( \theta + \iota_T \right) - F_e \right) Z_1 \\
+&amp;+ L_t \left( X_3 + X_4 - X_2 \right) \\&amp;- L_w \left( X_2 - X_3 \right) \\
+&amp;- D_t \left( Z_1 + Z_2 \right)
+\end{split}
+\tag{12.16}
+\end{equation}
+\]</span></p>
 <p>where</p>
-<p><span class="math inline">\(F_{\text{e}}\)</span>= excess net thrust</p>
-<p><em><span class="math inline">\(\mu\)</span><sub>nw</sub></em> = nose wheel coefficient of friction</p>
-<p>(about 0.02 for takeoff, 0.5 for maximum dry runway braking)</p>
-<p><em>R<sub>nw </sub></em>= reaction force (weight) on nose wheel (positive)</p>
-<p><em><span class="math inline">\(\mu\)</span><sub>m</sub></em> = main wheel coefficient of friction (positive)</p>
-<p><em>R<sub>m</sub></em> = reaction force (weight) on main wheel (positive)</p>
-<p><em>F<sub>g </sub></em>= gross engine thrust (positive, aligned with engine axis)</p>
-<p><span class="math inline">\(\iota_T\)</span> = thrust incidence angle (positive denotes thrust that generates lift)</p>
-<p><em>F<sub>e </sub></em>= ram thrust (or drag) due to momentum change of the air outside the engine, measured along drag axis- aligned with relative wind (typically negative at low speed, positive at high speed)</p>
-<p><em>D<sub>wb </sub></em>= aerodynamic drag of wing and body (excludes horizontal tail drag)</p>
-<p><em>D<sub>t </sub></em>= aerodynamic drag of horizontal tail (positive aft)</p>
-<p><em>W</em> = aircraft weight (positive)</p>
-<p><em>θ<sub>rw </sub></em>= runway slope (positive denotes uphill)</p>
-<p><em>L<sub>w </sub></em>= main wing lift (positive denotes up)</p>
-<p><em>L<sub>t </sub></em>= horizontal tail (positive denotes up)</p>
-<p><em>X<sub>1 </sub></em>= distance from nose gear to aircraft cg (positive)</p>
-<p><em>X<sub>2 </sub></em>= distance from the main gear to aircraft cg (positive)</p>
-<p><em>Z<sub>1</sub></em> = distance from the ground plane to the aircraft body axis (positive)</p>
-<p><em>θ</em>    = aircraft pitch attitude (positive denotes nose up)</p>
-<p><em>X<sub>3 </sub></em>= horiz. dist. from wing’s aerodynamic center to aircraft <span class="math inline">\(\mathrm{cg}\)</span> (positive)</p>
-<p><em>X<sub>4 </sub></em>= horizontal distance from the wing’s aerodynamic center to the horizontal tail’s aerodynamic center (positive)</p>
-<p><em>Z<sub>2</sub></em> = vertical distance from the horizontal tail’s aerodynamic center to the aircraft body axis (positive)</p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> The previous equations were arranged so that the right hand side of each can be abbreviated as <em>A<sub>1</sub></em>, <em>A<sub>2</sub></em>, and <em>A<sub>3</sub></em> respectively. This step allows for a compact matrix form of the equations using a 3x3 matrix</p>
-<p> </p>
-<p> </p>
-<p> <img src="media/12/image21.svg" style="width:2.25in;height:0.77847in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>Solve for <em>F<sub>ex</sub></em> by pre-multiplying both sides by the inverse of the first matrix</p>
-<p> </p>
-<p> </p>
-<p> <img src="media/12/image22.svg" style="width:2.38819in;height:0.80486in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>Although wheel reaction forces are not required for takeoff distance</p>
-<p>prediction, they are useful for accurate calculation of rotation capability and for braking effectiveness during landing ground rolls. For takeoff</p>
-<p>calculations, several simplifying assumptions can be made such as:</p>
-<p><em>€</em></p>
-<p><em><span class="math inline">\(\mu\)</span><sub>nw</sub></em> = <em><span class="math inline">\(\mu\)</span><sub>m</sub></em> = 0.02</p>
-<p><em>F<sub>g </sub></em>&gt;&gt; <em>F<sub>e </sub></em></p>
-<p><em>D<sub>t</sub> =</em> 0</p>
-<p> </p>
-<p>This above approach can be repeated for the segment between rotation and liftoff. This is slightly more complicated because the changing angle of attack alters drag and acceleration.</p>
-<p>Precise <strong>predictions of the takeoff air distance</strong> can be made by applying Equation 12.10 in small increments using accurate models that describe thrust as a function of airspeed and the lift &amp; drag changes due to climbing out of ground effect.</p>
-<p> </p>
+<ul>
+<li><span class="math inline">\(F_{\text{e}}\)</span> = excess net thrust</li>
+<li><span class="math inline">\(\mu_{\text{nw}}\)</span> = nose wheel coefficient of friction (about <span class="math inline">\(0.02\)</span> for takeoff, <span class="math inline">\(0.50\)</span> for maximum dry runway braking)</li>
+<li><span class="math inline">\(R_{\text{nw}}\)</span> = reaction force (weight) on nose wheel (positive)</li>
+<li><span class="math inline">\(\mu_m\)</span> = main wheel coefficient of friction (positive)</li>
+<li><span class="math inline">\(R_m\)</span> = reaction force (weight) on main wheel (positive)</li>
+<li><span class="math inline">\(F_g\)</span> = gross engine thrust (positive, aligned with engine axis)</li>
+<li><span class="math inline">\(\iota_T\)</span> = thrust incidence angle (positive denotes thrust that generates lift)</li>
+<li><span class="math inline">\(F_e\)</span> = ram thrust (or drag) due to momentum change of the air outside the engine, measured along drag axis- aligned with relative wind (typically negative at low speed, positive at high speed)</li>
+<li><span class="math inline">\(D_{\text{wb}}\)</span> = aerodynamic drag of wing and body (excludes horizontal tail drag)</li>
+<li><span class="math inline">\(D_t\)</span> = aerodynamic drag of horizontal tail (positive aft)</li>
+<li><span class="math inline">\(W\)</span> = aircraft weight (positive)</li>
+<li><span class="math inline">\(\theta_{\text{rw}}\)</span> = runway slope (positive denotes uphill)</li>
+<li><span class="math inline">\(L_w\)</span> = main wing lift (positive denotes up)</li>
+<li><span class="math inline">\(L_t\)</span> = horizontal tail (positive denotes up)</li>
+<li><span class="math inline">\(X_1\)</span> = distance from nose gear to aircraft cg (positive)</li>
+<li><span class="math inline">\(X_2\)</span> = distance from the main gear to aircraft cg (positive)</li>
+<li><span class="math inline">\(Z_1\)</span> = distance from the ground plane to the aircraft body axis (positive)</li>
+<li><span class="math inline">\(\theta\)</span> = aircraft pitch attitude (positive denotes nose up)</li>
+<li><span class="math inline">\(X_3\)</span> = horizontal distance from the wing’s aerodynamic center to aircraft <span class="math inline">\(\mathrm{cg}\)</span> (positive)</li>
+<li><span class="math inline">\(X_4\)</span> = horizontal distance from the wing’s aerodynamic center to the horizontal tail’s aerodynamic center (positive)</li>
+<li><span class="math inline">\(Z_2\)</span> = vertical distance from the horizontal tail’s aerodynamic center to the aircraft body axis (positive)</li>
+</ul>
+<p>The previous equations were arranged so that the right hand side of each can be abbreviated as <span class="math inline">\(A_1\)</span>, <span class="math inline">\(A_2\)</span>, and <span class="math inline">\(A_3\)</span> respectively.
+This step allows for a compact matrix form of the equations using a <span class="math inline">\(3 \times 3\)</span> matrix.</p>
+<p><span class="math display">\[
+\begin{bmatrix}
+1 &amp; \mu_{\text{mw}} &amp; \mu_m \\
+0 &amp; 1 &amp; 1 \\
+0 &amp; X_1 + X_2 &amp; 0
+\end{bmatrix}
+\begin{bmatrix}
+F_{\text{ex}} \\
+R_{\text{mw}} \\
+R_m
+\end{bmatrix}
+=
+\begin{bmatrix}
+A_1 \\
+A_2 \\
+A_3
+\end{bmatrix}
+\]</span></p>
+<p>Solve for <span class="math inline">\(F_{\text{ex}}\)</span> by pre-multiplying both sides by the inverse of the first matrix.</p>
+<p><span class="math display">\[
+\begin{bmatrix}
+F_{\text{ex}} \\
+R_{\text{mw}} \\
+R_m
+\end{bmatrix}
+=
+\begin{bmatrix}
+1 &amp; \mu_{\text{mw}} &amp; \mu_m \\
+0 &amp; 1 &amp; 1 \\
+0 &amp; X_1 + X_2 &amp; 0
+\end{bmatrix}^{-1}
+\begin{bmatrix}
+A_1 \\
+A_2 \\
+A_3
+\end{bmatrix}
+\]</span></p>
+<p>Although wheel reaction forces are not required for takeoff distance prediction, they are useful for accurate calculation of rotation capability and for braking effectiveness during landing ground rolls.
+For takeoff calculations, several simplifying assumptions can be made such as:</p>
+<p><span class="math display">\[
+\begin{align}
+\mu_{\text{nw}} &amp;= \mu_m = 0.02 \\
+F_g &amp;\gg F_e \\
+D_t &amp;= 0
+\end{align}
+\]</span></p>
+<p>This above approach can be repeated for the segment between rotation and liftoff.
+This is slightly more complicated because the changing angle of attack alters drag and acceleration.</p>
+<p>Precise <strong>predictions of the takeoff air distance</strong> can be made by applying Equation <a href="fixed-wing-performance-standardization.html#eq:direct-to-air">(12.11)</a> in small increments using accurate models that describe thrust as a function of airspeed and the lift &amp; drag changes due to climbing out of ground effect.</p>
 <p>Along with the incremental <span class="math inline">\(S_g\)</span> and <span class="math inline">\(S_a\)</span> calculations, the time to accelerate between the corresponding incremental velocities can be calculated as</p>
-<p> </p>
-<p><img src="media/12/image23.svg" style="width:0.89931in;height:0.46875in" /></p>
-<p> </p>
+<p><span class="math display">\[
+\Delta t = m \frac{V_2 - V_1}{F_{\text{ex}}}
+\]</span></p>
 </div>
 </div>
 <div id="landing-distance-refs-12.1-12.2" class="section level2" number="12.4">
@@ -1033,7 +1070,7 @@ F_{\text{ex}}+ \mu_{\text{nw}} R_{\text{nw}} + \mu_m R_m = F_g \cos \iota_T + F_
 <p>If the average thrust is not appreciably affected by velocity, then the exponent should be 2.0 in lieu of 1.85.</p>
 <p> </p>
 <p>Apply Equation 12.4 to correct to the zero-wind air distance (where <span class="math inline">\(T\)</span> is the time to descend from the screen height to touchdown).</p>
-<p>To <strong>correct to a zero-slope runway</strong>, apply Equation 12.5 to the zero-wind ground roll distance (note that <em>F<sub>ex</sub></em> is negative). If the average excess thrust is not known, then approximate <span class="math display">\[*F~ex~* \]</span><sub>avg</sub> as that at 70% of the touchdown airspeed. Alternately, approximate <span class="math display">\[*F~ex~* \]</span><sub>avg</sub> from the zero-wind ground roll distance using</p>
+<p>To <strong>correct to a zero-slope runway</strong>, apply Equation 12.5 to the zero-wind ground roll distance (note that <span class="math inline">\(F_{\text[ex}}\)</span> is negative). If the average excess thrust is not known, then approximate <span class="math display">\[\(F_{\text[ex}}\) \]</span><sub>avg</sub> as that at 70% of the touchdown airspeed. Alternately, approximate <span class="math display">\[\(F_{\text[ex}}\) \]</span><sub>avg</sub> from the zero-wind ground roll distance using</p>
 <p> </p>
 <p><img src="media/12/image25.svg" style="width:1.89583in;height:0.60417in" /></p>
 <p> </p>
@@ -1298,7 +1335,7 @@ F_{\text{ex}}+ \mu_{\text{nw}} R_{\text{nw}} + \mu_m R_m = F_g \cos \iota_T + F_
 <p> </p>
 <p> <img src="media/12/image58.svg" style="width:4.24792in;height:0.63333in" /></p>
 <p> </p>
-<p>where ∆<em>F<sub>ex</sub></em> = <em>F<sub>gstd</sub></em>(cos<em><span class="math inline">\(\alpha\)</span></em><sub>Fstd</sub>) - <em>F<sub>gt</sub></em>(cos <em><span class="math inline">\(\alpha\)</span></em><sub>Ft</sub>)</p>
+<p>where ∆<span class="math inline">\(F_{\text[ex}}\)</span> = <em>F<sub>gstd</sub></em>(cos<em><span class="math inline">\(\alpha\)</span></em><sub>Fstd</sub>) - <em>F<sub>gt</sub></em>(cos <em><span class="math inline">\(\alpha\)</span></em><sub>Ft</sub>)</p>
 <p> </p>
 <p>The primary difference between using turn, accel, or climb test data is the dominant term in the above corrections. In all cases, the test and standard day thrust values come from engine models.</p>
 <p> </p>
