@@ -107,7 +107,7 @@ The above equation is tabulated below for quick reference.
   **90**        9.832 185                32.258
   ---------------------------------------------------------
 
-The standard acceleration (\(g_0\)) corresponds to a latitude of 46.0625°.
+The standard acceleration (\(g_0\)) corresponds to a latitude of \(46.0625°\).
 
 \(g_{\mathrm{lsl}}\)* at the equator and the poles varies ±0.27% from \(g_0\).
 
@@ -147,7 +147,7 @@ Adding a centrifugal relief correction due to the aircraft's velocity, a complet
 g_{A/C} = \left[ g_{\mathrm{lsl}} + \omega^2 R \cos{\phi} \right] \left[ \frac{R}{R + h_G} \right]^2 - \left( \omega + \frac{V_G \sin{\sigma}}{R + h_G} \right)^2 \left(R + h_G\right) \cos{\phi}
 \]
 
-where \(V_G\) = ground speed and \(\sigma\) = ground track angle (0° = true North, 90° = East, etc.).
+where \(V_G\) = ground speed and \(\sigma\) = ground track angle (\(0°\) = true North, \(90°\) = East, etc.).
 
 ### Gravity Influence on Aircraft Cruise Performance {-}
 
@@ -187,9 +187,9 @@ where \(N_z\) = normal load factor,
 |                                              |                       | 29.04 \(\sqrt{T_R}\) | knots               |
 |                                              |                       | 20.05 \(\sqrt{T_R}\) | m/sec               |
 | Density                                      | \(\rho\)              | 0.002 3769             | slug/ft^3^          |
-|                                              |                       | 1.225                | kg/m^3^ (at 15°C) |
+|                                              |                       | 1.225                | kg/m^3^ (at \(15°\)C) |
 | Specific weight                              | \(g_\rho\)            | 0.076 47               | sec^2^/ft^4^        |
-| Specific heat capacity at 59 °F (=\(T_0\)) |                       |                      |                     |
+| Specific heat capacity at \(59°\)F (=\(T_0\)) |                       |                      |                     |
 | at constant pressure                         | \(c_p\)               | 0.240                 | BTU/lb R            |
 |                                              |                       | 1004.76              | J/kg K              |
 | at constant volume                           | \(c_v\)               | 0.1715                | BTU/lb R            |
@@ -290,41 +290,41 @@ Constantly changing atmospheric conditions cannot be duplicated at will to provi
 ### Assumptions on which the standard atmosphere is built {-}
 
 1. The air is dry (only 0.4% per volume of water vapor)
-1. The air is a perfect gas and obeys the equation of state, \(P = \rho gRT\), where \(R\) = 53.35 ft lb/°R lbm
+1. The air is a perfect gas and obeys the equation of state, \(P = \rho gRT\), where \(R = 53.35 \text{ft lb/°R lbm}\)
 1. The gravitational field decreases with altitude
 1. Hydrostatic equilibrium exists (\(\Delta p = −\rho g_0 \Delta h\))
 
 ### Standard Day Sea Level Atmospheric Conditions {-}
 
-| Parameter                   | Symbol     | Value     | Unit              |
-|-----------------------------|------------|-----------|-------------------|
-| Pressure                    | \(P_0\)    | 2116.22   | lb/ft^2^          |
-|                             |            | 14.696    | lb/in^2^          |
-|                             |            | 29.921    | in Hg             |
-|                             |            | 1013.25   | HPa (mb)          |
-|                             |            | 101 325    | Pa                |
-| Temperature                 | \(T_0\)    | 288.15    | K                 |
-|                             |            | 518.67    | R                 |
-|                             |            | 59        | °F              |
-|                             |            | 15        | °C              |
-| Density                     | \(\rho_0\) | 0.002 3769 | slgs/ft^3^        |
-| (at 15°C)                 |            | 0.076 47   | lbm/in^3^         |
-|                             |            | 1.255     | kg/m^3^           |
-| Speed of Sound              | \(a_0\)    | 1116.45   | ft/sec            |
-|                             |            | 661.478   | KTAS              |
-|                             |            | 761.14    | mph               |
-|                             |            | 340.294   | m/sec             |
-| Acceleration Due to Gravity | \(g_0\)    | 32.174    | ft/sec^2^         |
-|                             |            | 9.806 65   | m/sec^2^          |
-| Temperature Lapse Rate      | \(L\)      | 1.98      | K/kft or °C/kft |
-| (up to 36 000 ft or 11 km)  |            | 3.56      | °F/kft          |
-|                             |            | 6.49      | K/km              |
+| Parameter                            | Symbol       | Value           | Unit              |
+|--------------------------------------|--------------|-----------------|-------------------|
+| Pressure                             | \(P_0\)      | \(2116.22\)     | lb/ft^2^          |
+|                                      |              | \(14.696\)      | lb/in^2^          |
+|                                      |              | \(29.921\)      | in Hg             |
+|                                      |              | \(1013.25\)     | HPa (mb)          |
+|                                      |              | \(101,325\)     | Pa                |
+| Temperature                          | \(T_0\)      | \(288.15\)      | K                 |
+|                                      |              | \(518.67\)      | R                 |
+|                                      |              | \(59\)          | °F              |
+|                                      |              | \(15\)          | °C              |
+| Density                              | \(\rho_0\)   | \(0.002\,3769\) | slgs/ft^3^        |
+| (at \(15°\)C)                        |              | \(0.076\,47\)   | lbm/in^3^         |
+|                                      |              | \(1.255\)       | kg/m^3^           |
+| Speed of Sound                       | \(a_0\)      | \(1116.45\)     | ft/sec            |
+|                                      |              | \(661.478\)     | KTAS              |
+|                                      |              | \(761.14\)      | mph               |
+|                                      |              | \(340.294\)     | m/sec             |
+| Acceleration Due to Gravity          | \(g_0\)      | \(32.174\)      | ft/sec^2^         |
+|                                      |              | \(9.806,65\)    | m/sec^2^          |
+| Temperature Lapse Rate               | \(L\)        | \(1.98\)        | K/kft or °C/kft |
+| (up to \(36\,000\) ft or \(11\) km)  |              | \(3.56\)        | °F/kft          |
+|                                      |              | \(6.49\)        | K/km              |
 
 ### 1976 U.S Standard Atmosphere Equations {-}
 
 #### Troposphere {-}
 
-Below 36 089 ft (11 000 m) and pressure less than 22636 Pa
+Below \(36\,089\) ft (\(11\,000\) m) and pressure less than \(22\,636\) Pa
 
 \[
 \begin{align}
@@ -334,11 +334,11 @@ Below 36 089 ft (11 000 m) and pressure less than 22636 Pa
 \end{align}
 \]
 
-where \(n\) = 5.255 876, \(h\) = geopotential altitude [ft]
+where \(n = 5.255\,876\), \(h\) = geopotential altitude [ft]
 
 #### Stratosphere {-}
 
-Between 36 089 ft and 65 616 ft (11 0000 m and 20 000 m) the standard day temperature is a constant 216.65 K, therefore:
+Between \(36\,089\) ft and \(65\,616\) ft (\(11\,000\) m and \(20\,000\) m) the standard day temperature is a constant \(216.65\) K, therefore:
 
 \[
 \begin{align}
@@ -348,15 +348,16 @@ Between 36 089 ft and 65 616 ft (11 0000 m and 20 000 m) the standard day temper
 \end{align}
 \]
 
-The above relations characterize the standard atmosphere table in this handbook. They may be re-written to solve for pressure altitude (\(H_p\)) for any ambient pressure. 
+The above relations characterize the standard atmosphere table in this handbook.
+They may be re-written to solve for pressure altitude (\(H_p\)) for any ambient pressure. 
 
-Below the tropopause (ambient pressure greater than 472.683 psf or 22632 Pa)
+Below the tropopause (ambient pressure greater than \(472.683\) psf or \(22\,632\) Pa)
 
 \[
 H_p \left[ \text{ft} \right] = \frac{ 1-\left( \frac{P_a}{P_0} \right)^{0.190\,2632} }{6.875\,5856 \times 10^{-6}}
 \]
 
-In the troposphere (ambient pressure between 114.347 and 472.683 psf or between 5475 and 22 632.1 Pascal)
+In the troposphere (ambient pressure between \(114.347\) and \(472.683\) psf or between \(5475\) and \(22\,632.1\) Pascal)
 
 \[
 H_p \left[ \text{ft} \right] = 36\,089+ \frac{ \ln \left( \frac{P_a}{P_0} \right) + 1.498\,966 }{ 0.000\,048\,063 }
@@ -545,7 +546,7 @@ where,
 
 where,
 
-\(a\) = semi-major axis radius (6 378 137 m; 20 925 647 ft)
+\(a\) = semi-major axis radius (\(6\,378,137\) m; \(20\,925\,647\) ft)
 
 \(e^2\) = eccentricity squared; \(e^{2} = 1 - \left( \frac{a}{b} \right)^{2} = 2f - f^{2}\) = 0.006 694 380 02290 (Earth, per WGS84).
 
@@ -600,9 +601,11 @@ Distance East-West (Easting)                         \(dx = r \cdot \sin\left(\D
 Heading between two points (relative to true north)  \(\Phi = \arctan \left( dy/dx \right) \)
 ---------------------------------------------------- ------------------------------------------------
 
-An error analysis of the above 2-D **heading** approximation shows it consistently lies between the initial and final headings transpiring during great circle navigation and is closest to the final heading. This occurs when considering up to 10 degrees longitude change and is therefore sufficiently accurate for lesser changes that arise in flight testing (e.g. radial from a navigation transmitter).
+An error analysis of the above 2-D **heading** approximation shows it consistently lies between the initial and final headings transpiring during great circle navigation and is closest to the final heading.
+This occurs when considering up to \(10\) degrees longitude change and is therefore sufficiently accurate for lesser changes that arise in flight testing (e.g. radial from a navigation transmitter).
 
-An error analysis of the above 2-D **distance** approximation shows accuracy within 0.6% of the great circle distance when changing latitude and longitude 1 degree, and within 3% when changing latitude and longitude 10 degrees. It is accurate to within 0.4% when changing only latitude or longitude 10 degrees.
+An error analysis of the above 2-D **distance** approximation shows accuracy within \(0.6\%\) of the great circle distance when changing latitude and longitude \(1\) degree, and within \(3\%\) when changing latitude and longitude \(10\) degrees.
+It is accurate to within \(0.4\%\) when changing only latitude or longitude \(10\) degrees.
 
 ### Local Distance Transformation {-}
 
@@ -614,7 +617,8 @@ Figure 3.8-4a shows a case where the X-Y coordinate system aligns with the latit
 
 **Figure 3.8-4: Local X-Y Coordinate System Aligned with (a) \(\phi\), \(\lambda\) Grid; (b) Runway**
 
-Because each degree of latitude change is not always exactly 60 nm and because the spacing between degrees of longitude changes markedly with latitude, converting from degrees latitude & longitude change to distance requires scaling factors. First select equatorial distances for each degree change
+Because each degree of latitude change is not always exactly \(60\) nm and because the spacing between degrees of longitude changes markedly with latitude, converting from degrees latitude & longitude change to distance requires scaling factors.
+First select equatorial distances for each degree change
 
 \[
 \begin{align}
@@ -648,7 +652,7 @@ The 2-D *local* (vice great circle) distance between any two points on the X-Y p
 
 For field performance work, it is preferable to align X & Y with the runway as shown in Figure 3.8-4b. To convert from grid-aligned to runway-aligned coordinates, apply a rotation matrix that ensures X remains positive when going from point \(\phi_0, \lambda_0\) towards \(\phi_1, \lambda_1\). The rotation angle, \(\psi\), is positive counter-clockwise from true East to the direction of the runway. [Note: do not confuse \(\psi\) with runway heading measured relative to magnetic north]. 
 
-The function \(\psi = \mathrm{atan2} \left( X,Y \right) \) returns rotation angles from \(-\pi\) to \(\pi\), so that rotating to headings between 90° and 270° results in negative rotation angles.
+The function \(\psi = \mathrm{atan2} \left( X,Y \right) \) returns rotation angles from \(-\pi\) to \(\pi\), so that rotating to headings between \(90°\) and \(270°\) results in negative rotation angles.
 
 For any point (\(\phi, \lambda\)), calculate runway-aligned X & Y distances using
 

@@ -68,7 +68,7 @@ Figure 10.2a shows a typical **graphic power model** for determining reciprocati
 3. Enter the right hand chart with the same \(\mathrm{MP}\) & \(\mathrm{RPM}\) to obtain point \(A\) and the associated brake horsepower at altitude \( \left( \mathrm{BHP}_A \right)\).
 4. Connect points \(B^1\) and \(A\) with a straight line.
 5. Enter the abscissa at the test pressure altitude, locate point \(C\), and read the corresponding "chart horsepower" \( \left( \mathrm{BHP}_C \right)\). \(\mathrm{BHP}_C\) is the sea level power corrected to the reduced back pressure conditions at altitude. It does not account for non-standard temperatures.
-6. To correct for non-standard air temperature, subtract \(1%\) from \(\mathrm{BHP}_C\) for each \(6^{\circ}\text{C}\) warmer than test altitude standard temperature. Conversely, add \(1%\) to \(\mathrm{BHP}_\text{C}\) for each \(6^{\circ}\text{C}\) cooler than standard. For convenience, the lower right hand chart of Figure 10.2a illustrates standard temperature as a function of pressure altitude.
+6. To correct for non-standard air temperature, subtract \(1%\) from \(\mathrm{BHP}_C\) for each \(6°\text{C}\) warmer than test altitude standard temperature. Conversely, add \(1%\) to \(\mathrm{BHP}_\text{C}\) for each \(6°\text{C}\) cooler than standard. For convenience, the lower right hand chart of Figure 10.2a illustrates standard temperature as a function of pressure altitude.
 
 ![][10001]
 
@@ -270,7 +270,7 @@ Figure 10.3c Example Standard Day Supercharged Engine Performance Data
 
 ## FAA Approved Engine Temperature Corrections
 
-The intent is to ensure that the critical engine parts, (i.e., cylinder head and cylinder barrel) do not exceed the engine manufacturer's specified limits during worst-case climb operating conditions on a \(100^{\circ} \text{F}\) hot day.
+The intent is to ensure that the critical engine parts, (i.e., cylinder head and cylinder barrel) do not exceed the engine manufacturer's specified limits during worst-case climb operating conditions on a \(100° \text{F}\) hot day.
 
 Test procedures are detailed in AC 23-A. The basic idea is best illustrated with the single-engine airplane procedure:
 

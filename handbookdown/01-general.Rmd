@@ -843,8 +843,8 @@ Exponent  Prefix  Abbreviation
 |q |aircraft pitch rate|
 |Q |engine torque|
 |\(q_c\) |impact pressure (\(P_t − P_a\))|
-|°R |degrees Rankine = °F + 459.67|
-|R |perfect gas constant = 8314.34 [J/kmol K]|
+|°R |degrees Rankine = °F + \(459.67\)|
+|R |perfect gas constant = \( 8314.34 \left[ \text{J/kmol K} \right] \)|
 |r |aircraft yaw rate (degrees/sec)|
 |R |earth radius|
 |R |range|
@@ -892,7 +892,7 @@ Exponent  Prefix  Abbreviation
 |SRB |safety review board|
 |\(S_T\) |tail area|
 |std |standard|
-|\(S_T\) |total takeoff or landing distance (S_a + S_g\))|
+|\(S_T\) |total takeoff or landing distance \(S_a + S_g\))|
 |STOL |short takeoff and landing|
 |STOVL |short takeoff and vertical landing|
 |\(T\) |period of oscillation|
@@ -922,7 +922,7 @@ Exponent  Prefix  Abbreviation
 |TM |telemetry|
 |TMN |true Mach number|
 |T/O |takeoff|
-|\(T_0\) |standard sea level temperature (59.0 °F, 15 °C)|
+|\(T_0\) |standard sea level temperature ( \(59.0°\)F, \(15°\)C)|
 |TO |technical order|
 |TRB |technical review board|
 |TRD |technical requirements document|

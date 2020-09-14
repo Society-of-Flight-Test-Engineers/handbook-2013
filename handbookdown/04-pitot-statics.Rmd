@@ -20,7 +20,7 @@
 | \(q_c\)           | compressible dynamic pressure (\(=P_T-P_a\))                                                                     |
 | \(q_{\mathrm{cic}}\)       | instrument corrected differential pressure (\(=P_p-P_s\))                                                        |
 | \(T_a\)           | ambient temperature (absolute scale)                                                                             |
-| \(T_0\)           | ambient temperature at sea level on a standard day (\(=288.15 K = 15^{\circ} C = 518.7^{\circ}R=59.0^{\circ}F\)) |
+| \(T_0\)           | ambient temperature at sea level on a standard day (\(=288.15 K = 15° C = 518.7°R=59.0°F\)) |
 | \(T_T\)           | total temperature (absolute scale)                                                                               |
 | \(V_c\)           | calibrated airspeed                                                                                              |
 | \(V_e\)           | equivalent airspeed                                                                                              |
@@ -283,7 +283,7 @@ Various methods available, all assume **steady** winds and ambient temperature. 
 
 GPS accuracies are variable. Know tolerances before accepting GPS as a truth model.
 
-If exact (\(\pm 10^{\circ}\)) winds are calculated inflight, you can fly one pass directly into/away from the wind
+If exact (\(\pm 10°\)) winds are calculated inflight, you can fly one pass directly into/away from the wind
 
 \[V_T = V_G + V_{Headwind}\]
 
