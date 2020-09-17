@@ -179,7 +179,7 @@ If the average excess thrust is not known, then approximate \(F_{\text{ex}}\) as
 \[
 \begin{equation}
 \left[ F_{\text{ex}} \right]_{\text{avg}} \approx \frac{m V_{\mathrm{LO}^2}}{2 S_{g_{zw}}}
-(\#eq:approx-fex)
+(\#eq:approx-fex-lo)
 \end{equation}
 \]
 
@@ -453,83 +453,69 @@ Along with the incremental \(S_g\) and \(S_a\) calculations, the time to acceler
 \Delta t = m \frac{V_2 - V_1}{F_{\text{ex}}}
 \]
 
-## Landing Distance** (refs 12.1, 12.2)
+## Landing Distance
 
-The total landing distance (*S~LD~*) is the sum of the ground roll distance (\(S_g\), from touchdown to full stop) and the horizontal component of the air distance (\(S_a\), from the screen height to touchdown). The screen height can be either 35 or 50 feet above the surface, depending on the requirements
+(refs 12.1, 12.2)
 
- 
+The total landing distance, \(S_{\mathrm{LD}}\), is the sum of the ground roll distance (\(S_g\), from touchdown to full stop) and the horizontal component of the air distance (\(S_a\), from the screen height to touchdown).
+The screen height can be either \(35\) or \(50\) feet above the surface, depending on the requirements
 
-*S~LD~ = S~g~ + S~a~*
+\[
+S_{\mathrm{LD}} = S_g + S_a
+\]
 
-*~ ~*
+Both \(S_g\) and \(S_a\) can be standardized according to the increment or ratio methods described by equations \@ref(eq:increment) and \@ref(eq:ratio), or by empirical relations.
+The empirical methods are useful when detailed aircraft models are not available.
+The more exact process of predicting landing distance using models is described in section 12.4.2.
 
-Both \(S_g\) and *S~a\ ~* can be standardized according to the increment or ratio methods described by equations 12.1 and 12.2, or by empirical relations. The empirical methods are useful when detailed aircraft models are not available. The more exact process of predicting landing distance using models is described in section 12.4.2.
+### Empirical Standardization Method
 
-** **
+First correct for the effects of the test day wind.
+Define headwind velocity as \(V_w\), touchdown true airspeed as \(V_{\mathrm{TD}}\), and test day ground roll as \(S_{g_w}\).
+With a typical variation of thrust per headwind, estimate the test day zero-wind ground roll, \(S_{g_{zw}}\), using the approach applied to takeoff ground roll:
 
-### Empirical Standardization Method**
+\[
+\begin{equation}
+S_{g_{zw}} = S_{g_w} \left( \frac{V_{\mathrm{LO}}}{V_g} \right)^{1.85}
+(\#eq:emp-zero-wind-gnd-roll)
+\end{equation}
+\]
 
-First correct for the effects of the test day wind. Define headwind velocity as *V~w\ ~*, touchdown true airspeed as *V~TD~*, and test day ground roll as *S~gw~*. With a typical variation of thrust per headwind, estimate the test day zero-wind ground roll (*S~gzw~*) using the approach applied to takeoff ground roll:
+If the average thrust is not appreciably affected by velocity, then the exponent should be \(2.0\) in lieu of \(1.85\).
 
- 
+Apply Equation \@ref(eq:zero-wind-air-dist) to correct to the zero-wind air distance (where \(t\) is the time to descend from the screen height to touchdown).
 
- 
+To **correct to a zero-slope runway**, apply Equation \@ref(eq:zero-slope-air-dist) to the zero-wind ground roll distance (note that \(F_{\text{ex}}\) is negative).
+If the average excess thrust is not known, then approximate \( \left[ F_{\text{ex}} \right]_{\text{avg}} \) as that at \(70\%\) of the touchdown airspeed.
+Alternately, approximate \( \left[ F_{\text{ex}} \right]_{\text{avg}} \)  from the zero-wind ground roll distance using
 
- ![][12017]
-
- 
-
- 
-
-If the average thrust is not appreciably affected by velocity, then the exponent should be 2.0 in lieu of 1.85.
-
- 
-
-Apply Equation 12.4 to correct to the zero-wind air distance (where \(T\) is the time to descend from the screen height to touchdown).
-
-To **correct to a zero-slope runway**, apply Equation 12.5 to the zero-wind ground roll distance (note that \(F_{\text[ex}}\) is negative). If the average excess thrust is not known, then approximate \[\(F_{\text[ex}}\) \]~avg~ as that at 70% of the touchdown airspeed. Alternately, approximate \[\(F_{\text[ex}}\) \]~avg~ from the zero-wind ground roll distance using
-
- 
-
-![][12018]
-
- 
+\[
+\begin{equation}
+\left[ F_{\text{ex}} \right]_{\text{avg}} \approx \frac{m V_{\mathrm{TD}}^2}{2 S_{g_{zw}}}
+(\#eq:approx-fex-td)
+\end{equation}
+\]
 
 After correcting the test day distance to zero wind and slope, use the following empirical equations to correct the ground roll to standard weight and air density.
 
- 
+\[
+S_{g_s} = S_{g_t} \left[ \frac{Ws}{Wt} \right]^2 \frac{\sigma_t}{\sigma_s}
+\]
 
- 
+Any desired values can be treated as the "standard" conditions.
 
- ![][12019]
+Correct the air distance to standard weight and air density using the zero-wind air distance as follows (for a \(50\)-foot screen height)
 
- 
+\[
+S_{a_s} = S_{a_t} \left[ \frac{Ws}{Wt} \right]^{2 + \frac{h_v}{h_v + 50}} \left[ \frac{\sigma_t}{\sigma_s} \right]^{2 + \frac{h_v}{h_v + 50}}
+\]
 
- 
+where \(h_v\) is the specific kinetic energy change during the air phase.
+For the case of a \(50\)-foot screen height, this term is calculated as
 
-Any desired values can be treated as the \"standard\" conditions.
-
-Correct the air distance to standard weight and air density using the zero-wind air distance as follows (for a 50-foot screen height)
-
- 
-
- ![][12020]
-
- 
-
- 
-
-where *h~v~* is the specific kinetic energy change during the air phase. For the case of a 50-foot screen height, this term is calculated as
-
- 
-
- ![][12021]
-
- 
-
- 
-
- 
+\[
+h_v = \frac{V_{50'}^2 - V_{\mathrm{TD}}^2}{2g}
+\]
 
 ### Landing Distance Prediction**
 
