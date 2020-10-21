@@ -352,9 +352,9 @@
 <li class="chapter" data-level="12.3.1" data-path="fixed-wing-performance-standardization.html"><a href="fixed-wing-performance-standardization.html#empirical-standardization-method"><i class="fa fa-check"></i><b>12.3.1</b> Empirical Standardization Method</a></li>
 <li class="chapter" data-level="12.3.2" data-path="fixed-wing-performance-standardization.html"><a href="fixed-wing-performance-standardization.html#takeoff-distance-prediction"><i class="fa fa-check"></i><b>12.3.2</b> Takeoff Distance Prediction</a></li>
 </ul></li>
-<li class="chapter" data-level="12.4" data-path="fixed-wing-performance-standardization.html"><a href="fixed-wing-performance-standardization.html#landing-distance-refs-12.1-12.2"><i class="fa fa-check"></i><b>12.4</b> Landing Distance** (refs 12.1, 12.2)</a>
+<li class="chapter" data-level="12.4" data-path="fixed-wing-performance-standardization.html"><a href="fixed-wing-performance-standardization.html#landing-distance"><i class="fa fa-check"></i><b>12.4</b> Landing Distance</a>
 <ul>
-<li class="chapter" data-level="12.4.1" data-path="fixed-wing-performance-standardization.html"><a href="fixed-wing-performance-standardization.html#empirical-standardization-method-1"><i class="fa fa-check"></i><b>12.4.1</b> Empirical Standardization Method**</a></li>
+<li class="chapter" data-level="12.4.1" data-path="fixed-wing-performance-standardization.html"><a href="fixed-wing-performance-standardization.html#empirical-standardization-method-1"><i class="fa fa-check"></i><b>12.4.1</b> Empirical Standardization Method</a></li>
 <li class="chapter" data-level="12.4.2" data-path="fixed-wing-performance-standardization.html"><a href="fixed-wing-performance-standardization.html#landing-distance-prediction"><i class="fa fa-check"></i><b>12.4.2</b> Landing Distance Prediction**</a></li>
 </ul></li>
 <li class="chapter" data-level="12.5" data-path="fixed-wing-performance-standardization.html"><a href="fixed-wing-performance-standardization.html#climbdescentlevel-acceleration-ref-12.4"><i class="fa fa-check"></i><b>12.5</b> Climb/Descent/Level Acceleration** (ref 12.4)</a>
@@ -788,7 +788,7 @@ S_{g_t} = S_{g_{zw}} \left[ 1 - \frac{W \sin \theta}{\left[ F_{\text{ex}} \right
 \end{equation}
 \]</span></p>
 <p>If the average excess thrust is not known, then approximate <span class="math inline">\(F_{\text{ex}}\)</span> as that at <span class="math inline">\(70\%\)</span> of the liftoff airspeed or from the zero-wind ground roll distance:</p>
-<p><span class="math display" id="eq:approx-fex">\[
+<p><span class="math display" id="eq:approx-fex-lo">\[
 \begin{equation}
 \left[ F_{\text{ex}} \right]_{\text{avg}} \approx \frac{m V_{\mathrm{LO}^2}}{2 S_{g_{zw}}}
 \tag{12.7}
@@ -1051,47 +1051,53 @@ This is slightly more complicated because the changing angle of attack alters dr
 \]</span></p>
 </div>
 </div>
-<div id="landing-distance-refs-12.1-12.2" class="section level2" number="12.4">
-<h2><span class="header-section-number">12.4</span> Landing Distance** (refs 12.1, 12.2)</h2>
-<p>The total landing distance (<em>S<sub>LD</sub></em>) is the sum of the ground roll distance (<span class="math inline">\(S_g\)</span>, from touchdown to full stop) and the horizontal component of the air distance (<span class="math inline">\(S_a\)</span>, from the screen height to touchdown). The screen height can be either 35 or 50 feet above the surface, depending on the requirements</p>
-<p> </p>
-<p><em>S<sub>LD</sub> = S<sub>g</sub> + S<sub>a</sub></em></p>
-<p><em><sub> </sub></em></p>
-<p>Both <span class="math inline">\(S_g\)</span> and <em>S<sub>a </sub></em> can be standardized according to the increment or ratio methods described by equations 12.1 and 12.2, or by empirical relations. The empirical methods are useful when detailed aircraft models are not available. The more exact process of predicting landing distance using models is described in section 12.4.2.</p>
-<p><strong> </strong></p>
+<div id="landing-distance" class="section level2" number="12.4">
+<h2><span class="header-section-number">12.4</span> Landing Distance</h2>
+<p>(refs 12.1, 12.2)</p>
+<p>The total landing distance, <span class="math inline">\(S_{\mathrm{LD}}\)</span>, is the sum of the ground roll distance (<span class="math inline">\(S_g\)</span>, from touchdown to full stop) and the horizontal component of the air distance (<span class="math inline">\(S_a\)</span>, from the screen height to touchdown).
+The screen height can be either <span class="math inline">\(35\)</span> or <span class="math inline">\(50\)</span> feet above the surface, depending on the requirements</p>
+<p><span class="math display">\[
+S_{\mathrm{LD}} = S_g + S_a
+\]</span></p>
+<p>Both <span class="math inline">\(S_g\)</span> and <span class="math inline">\(S_a\)</span> can be standardized according to the increment or ratio methods described by equations <a href="fixed-wing-performance-standardization.html#eq:increment">(12.1)</a> and <a href="fixed-wing-performance-standardization.html#eq:ratio">(12.2)</a>, or by empirical relations.
+The empirical methods are useful when detailed aircraft models are not available.
+The more exact process of predicting landing distance using models is described in section 12.4.2.</p>
 <div id="empirical-standardization-method-1" class="section level3" number="12.4.1">
-<h3><span class="header-section-number">12.4.1</span> Empirical Standardization Method**</h3>
-<p>First correct for the effects of the test day wind. Define headwind velocity as <em>V<sub>w </sub></em>, touchdown true airspeed as <em>V<sub>TD</sub></em>, and test day ground roll as <em>S<sub>gw</sub></em>. With a typical variation of thrust per headwind, estimate the test day zero-wind ground roll (<em>S<sub>gzw</sub></em>) using the approach applied to takeoff ground roll:</p>
-<p> </p>
-<p> </p>
-<p> <img src="media/12/image24.svg" style="width:1.92708in;height:0.63611in" /></p>
-<p> </p>
-<p> </p>
-<p>If the average thrust is not appreciably affected by velocity, then the exponent should be 2.0 in lieu of 1.85.</p>
-<p> </p>
-<p>Apply Equation 12.4 to correct to the zero-wind air distance (where <span class="math inline">\(T\)</span> is the time to descend from the screen height to touchdown).</p>
-<p>To <strong>correct to a zero-slope runway</strong>, apply Equation 12.5 to the zero-wind ground roll distance (note that <span class="math inline">\(F_{\text[ex}}\)</span> is negative). If the average excess thrust is not known, then approximate <span class="math display">\[\(F_{\text[ex}}\) \]</span><sub>avg</sub> as that at 70% of the touchdown airspeed. Alternately, approximate <span class="math display">\[\(F_{\text[ex}}\) \]</span><sub>avg</sub> from the zero-wind ground roll distance using</p>
-<p> </p>
-<p><img src="media/12/image25.svg" style="width:1.89583in;height:0.60417in" /></p>
-<p> </p>
+<h3><span class="header-section-number">12.4.1</span> Empirical Standardization Method</h3>
+<p>First correct for the effects of the test day wind.
+Define headwind velocity as <span class="math inline">\(V_w\)</span>, touchdown true airspeed as <span class="math inline">\(V_{\mathrm{TD}}\)</span>, and test day ground roll as <span class="math inline">\(S_{g_w}\)</span>.
+With a typical variation of thrust per headwind, estimate the test day zero-wind ground roll, <span class="math inline">\(S_{g_{zw}}\)</span>, using the approach applied to takeoff ground roll:</p>
+<p><span class="math display" id="eq:emp-zero-wind-gnd-roll">\[
+\begin{equation}
+S_{g_{zw}} = S_{g_w} \left( \frac{V_{\mathrm{LO}}}{V_g} \right)^{1.85}
+\tag{12.17}
+\end{equation}
+\]</span></p>
+<p>If the average thrust is not appreciably affected by velocity, then the exponent should be <span class="math inline">\(2.0\)</span> in lieu of <span class="math inline">\(1.85\)</span>.</p>
+<p>Apply Equation <a href="fixed-wing-performance-standardization.html#eq:zero-wind-air-dist">(12.5)</a> to correct to the zero-wind air distance (where <span class="math inline">\(t\)</span> is the time to descend from the screen height to touchdown).</p>
+<p>To <strong>correct to a zero-slope runway</strong>, apply Equation <a href="fixed-wing-performance-standardization.html#eq:zero-slope-air-dist">(12.6)</a> to the zero-wind ground roll distance (note that <span class="math inline">\(F_{\text{ex}}\)</span> is negative).
+If the average excess thrust is not known, then approximate <span class="math inline">\(\left[ F_{\text{ex}} \right]_{\text{avg}}\)</span> as that at <span class="math inline">\(70\%\)</span> of the touchdown airspeed.
+Alternately, approximate <span class="math inline">\(\left[ F_{\text{ex}} \right]_{\text{avg}}\)</span> from the zero-wind ground roll distance using</p>
+<p><span class="math display" id="eq:approx-fex-td">\[
+\begin{equation}
+\left[ F_{\text{ex}} \right]_{\text{avg}} \approx \frac{m V_{\mathrm{TD}}^2}{2 S_{g_{zw}}}
+\tag{12.18}
+\end{equation}
+\]</span></p>
 <p>After correcting the test day distance to zero wind and slope, use the following empirical equations to correct the ground roll to standard weight and air density.</p>
-<p> </p>
-<p> </p>
-<p> <img src="media/12/image26.svg" style="width:1.40694in;height:0.58333in" /></p>
-<p> </p>
-<p> </p>
-<p>Any desired values can be treated as the "standard" conditions.</p>
-<p>Correct the air distance to standard weight and air density using the zero-wind air distance as follows (for a 50-foot screen height)</p>
-<p> </p>
-<p> <img src="media/12/image27.svg" style="width:2.17708in;height:0.65625in" /></p>
-<p> </p>
-<p> </p>
-<p>where <em>h<sub>v</sub></em> is the specific kinetic energy change during the air phase. For the case of a 50-foot screen height, this term is calculated as</p>
-<p> </p>
-<p> <img src="media/12/image28.svg" style="width:1.47153in;height:0.50764in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
+<p><span class="math display">\[
+S_{g_s} = S_{g_t} \left[ \frac{Ws}{Wt} \right]^2 \frac{\sigma_t}{\sigma_s}
+\]</span></p>
+<p>Any desired values can be treated as the “standard” conditions.</p>
+<p>Correct the air distance to standard weight and air density using the zero-wind air distance as follows (for a <span class="math inline">\(50\)</span>-foot screen height)</p>
+<p><span class="math display">\[
+S_{a_s} = S_{a_t} \left[ \frac{Ws}{Wt} \right]^{2 + \frac{h_v}{h_v + 50}} \left[ \frac{\sigma_t}{\sigma_s} \right]^{2 + \frac{h_v}{h_v + 50}}
+\]</span></p>
+<p>where <span class="math inline">\(h_v\)</span> is the specific kinetic energy change during the air phase.
+For the case of a <span class="math inline">\(50\)</span>-foot screen height, this term is calculated as</p>
+<p><span class="math display">\[
+h_v = \frac{V_{50&#39;}^2 - V_{\mathrm{TD}}^2}{2g}
+\]</span></p>
 </div>
 <div id="landing-distance-prediction" class="section level3" number="12.4.2">
 <h3><span class="header-section-number">12.4.2</span> Landing Distance Prediction**</h3>
