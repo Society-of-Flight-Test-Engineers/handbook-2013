@@ -59,12 +59,14 @@ What do you do?
 - 2001: First edition
 - 2013: Most recent major revision
 - 2019: 2 Addenda
-- Source
-    - Microsoft Word®
-    - Microsoft Publisher®
-- Production
-    - PDF
-    - Hardcopy
+
+Source
+- Microsoft Word®
+- Microsoft Publisher®
+
+Production
+- PDF
+- Hardcopy
 :::
 ::: {.column}
 Issues 
@@ -110,7 +112,7 @@ Production
 :::
 ::::::::::::::
 
-## 2.3 GitHub Demo
+## 2.3.1 GitHub Demo
 
 Required Tools 
 
@@ -119,12 +121,18 @@ Required Tools
 - `bookdown`
 - text editor
 - command line
+- web browser
+- GitHub account
 
 Optional Tools
 
-- Integrated Development Environment
+- An Integrated Development Environment such as...
     - VS Code
     - RStudio
+
+---
+
+![](img/github_crop.png)
 
 # 3. What it shall be
 
@@ -149,18 +157,22 @@ Next^3^: "Refactor" entirely → Handbook 2.0
 
 ## Summary
 
-- There's a lot to know
-- Modern tools allow for
-    - more ready access
-    - engagement with knowledge
-    - reproducibility
-    - fine-grained version control
-- Things of value require **cultivation**
-    - growth environment
-    - weeding
-    - pruning
-    - support
-    - attention
+There's a lot to know
+
+Modern tools allow for
+
+- more ready access
+- engagement with knowledge
+- reproducibility
+- fine-grained version control
+
+Things of value require **cultivation**
+
+- growth environment
+- weeding
+- pruning
+- support
+- attention
 
 ## References
 
