@@ -4,8 +4,6 @@ A port of the 2013 SFTE Reference Handbook to bookdown
 
 ## Join us!
 
-Have some extra time on your hands?
-
 Join us as a collaborator over at the SFTE GitHub handbook-2013 project!
 
 ### How to collaborate
