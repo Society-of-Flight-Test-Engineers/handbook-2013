@@ -184,5 +184,5 @@ Things of value require **cultivation**
 ## References
 
 
-CRC Image By NE Ent - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=24352142
-GitHub Logo, https://github.com/logos 
+1. CRC Image By NE Ent - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=24352142
+1. GitHub Logo, https://github.com/logos 
