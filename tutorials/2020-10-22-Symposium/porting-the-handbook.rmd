@@ -114,6 +114,8 @@ Production
 
 ## 2.3.1 GitHub Demo
 
+:::::::::::::: {.columns}
+::: {.column}
 Required Tools 
 
 - `git`
@@ -129,8 +131,13 @@ Optional Tools
 - An Integrated Development Environment such as...
     - VS Code
     - RStudio
+:::
+::: {.column}
+![https://github.com/Society-of-Flight-Test-Engineers/handbook-2013](img/GitHub-Mark-Light-120px-plus.png)
+:::
+::::::::::::::
 
----
+## 2.3.2 GitHub concept map
 
 ![](img/github_crop.png)
 
@@ -178,3 +185,4 @@ Things of value require **cultivation**
 
 
 CRC Image By NE Ent - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=24352142
+GitHub Logo, https://github.com/logos 
