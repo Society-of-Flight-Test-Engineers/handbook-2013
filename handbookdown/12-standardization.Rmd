@@ -237,7 +237,7 @@ S_g = \frac{V_{\mathrm{TO}}^2 \cdot W}
         \right) 
   \right)
 }
-(\#eq:gnd-roll-dist)
+(\#eq:gnd-roll-dist-to)
 \end{equation}
 \]
 
@@ -464,7 +464,7 @@ The screen height can be either \(35\) or \(50\) feet above the surface, dependi
 S_{\mathrm{LD}} = S_g + S_a
 \]
 
-Both \(S_g\) and \(S_a\) can be standardized according to the increment or ratio methods described by equations \@ref(eq:increment) and \@ref(eq:ratio), or by empirical relations.
+Both \(S_g\) and \(S_a\) can be standardized according to the increment or ratio methods described by Equations \@ref(eq:increment) and \@ref(eq:ratio), or by empirical relations.
 The empirical methods are useful when detailed aircraft models are not available.
 The more exact process of predicting landing distance using models is described in section 12.4.2.
 
@@ -477,7 +477,7 @@ With a typical variation of thrust per headwind, estimate the test day zero-wind
 \[
 \begin{equation}
 S_{g_{zw}} = S_{g_w} \left( \frac{V_{\mathrm{LO}}}{V_g} \right)^{1.85}
-(\#eq:emp-zero-wind-gnd-roll)
+(\#eq:emp-zero-wind-gnd-roll-dist-land)
 \end{equation}
 \]
 
@@ -492,14 +492,17 @@ Alternately, approximate \( \left[ F_{\text{ex}} \right]_{\text{avg}} \)  from t
 \[
 \begin{equation}
 \left[ F_{\text{ex}} \right]_{\text{avg}} \approx \frac{m V_{\mathrm{TD}}^2}{2 S_{g_{zw}}}
-(\#eq:approx-fex-td)
+(\#eq:approx-fex-td-land)
 \end{equation}
 \]
 
 After correcting the test day distance to zero wind and slope, use the following empirical equations to correct the ground roll to standard weight and air density.
 
 \[
+\begin{equation}
 S_{g_s} = S_{g_t} \left[ \frac{Ws}{Wt} \right]^2 \frac{\sigma_t}{\sigma_s}
+(\#eq:std-gnd-roll-dist-land)
+\end{equation}
 \]
 
 Any desired values can be treated as the "standard" conditions.
@@ -507,305 +510,299 @@ Any desired values can be treated as the "standard" conditions.
 Correct the air distance to standard weight and air density using the zero-wind air distance as follows (for a \(50\)-foot screen height)
 
 \[
+\begin{equation}
 S_{a_s} = S_{a_t} \left[ \frac{Ws}{Wt} \right]^{2 + \frac{h_v}{h_v + 50}} \left[ \frac{\sigma_t}{\sigma_s} \right]^{2 + \frac{h_v}{h_v + 50}}
+(\#eq:std-air-dist-land)
+\end{equation}
 \]
 
 where \(h_v\) is the specific kinetic energy change during the air phase.
-For the case of a \(50\)-foot screen height, this term is calculated as
+For the case of a \(50\text{-foot}\) screen height, this term is calculated as
 
 \[
+\begin{equation}
 h_v = \frac{V_{50'}^2 - V_{\mathrm{TD}}^2}{2g}
+(\#eq:spec-ke-chg)
+\end{equation}
 \]
 
-### Landing Distance Prediction**
+### Landing Distance Prediction
 
-With reasonably precise models available, the landing distance can be predicted through calculation. Test distances can then be standardized using either the increment or ratio method (Equations 12.1-12.2).
+With reasonably precise models available, the landing distance can be predicted 
+through calculation. Test distances can then be standardized using either the 
+increment or ratio method, Equations \@ref(eq:increment) and \@ref(eq:ratio).
 
-A **direct** **approximation of landing ground roll** can be obtained by applying the same Equation 12.7 used for the takeoff case. This method requires a value for the average net thrust (*T~avg~*) across the landing roll speed range and reasonable values for the wheel braking friction coefficient (0.35\<*\(\mu\)*\<0.5 for typical dry runway max braking). The same equations for estimating ground effect also apply.
+A **direct approximation of landing ground roll** can be obtained by applying the 
+same equation used for the takeoff case, Equation \@ref(eq:gnd-roll-dist-to). This method requires a value for 
+the average net thrust, \(T_{\text{avg}}\) across the landing roll speed range and 
+reasonable values for the wheel braking friction coefficient, 
+\( 0.35 \lt \mu \lt 0.50 \) for typical dry runway max braking. The same equations 
+for estimating ground effect also apply.
 
-A **direct approximation of** **takeoff air distance** including the flare requires the desired lift and associated drag coefficients, the thrust, and the applied normal load factor during the landing flare (*n* = 1.15).
+A **direct approximation of takeoff air distance** including the flare requires 
+the desired lift and associated drag coefficients, the thrust, and the applied 
+normal load factor during the landing flare, \( n = 1.15 \).
 
- 
+\[
+\begin{equation}
+S_a = \frac{50}{\left( \frac{C_D}{C_L} - \frac{T}{W} \right)} + \frac{ \frac{W}{S} \left( \frac{C_D}{C_L} \frac{T}{W} \right) }{T \rho_0  g \left( n - 1 \right) C_L }
+(\#eq:approx-air-dist-land)
+\end{equation}
+\]
 
-![][12022]
+A more **exact prediction of landing performance** requires accurate thrust and 
+drag models and an integration of the aircraft's velocity across the landing 
+time. This is equivalent to a double integration of the aircraft's acceleration 
+as shown in Equation \@ref(eq:s-to-fpl). This double integration can be performed
+numerically or graphically. Similarly, Equation \@ref(eq:to-dist) can be adapted 
+for landing as follows:
 
-A more **exact prediction of landing performance** requires
+\[
+\begin{equation}
+S_{\mathrm{LD}} = \frac{m}{2} \sum_{V_0}^{V_{50'}} \frac{V^2_2 - V^2_1}{F_{\text{ex}}}
+(\#eq:land-dist)
+\end{equation}
+\]
 
-accurate thrust and drag models and an integration of the aircraft's velocity across the landing time. This is equivalent to a double integration of the aircraft's acceleration as shown in Equation 12.12. This double integration can be performed numerically or graphically. Similarly, Equation 12.13 can be adapted for landing as follows:
+As with the takeoff case, this equation is usually broken into the air phase and 
+the ground roll phase. Calculation of excess thrust during the ground roll needs 
+to consider the changing weight on the wheels and associated braking force. This 
+requires a simultaneous solution of the three equations of motion along the 
+aircraft's longitudinal & vertical axes and about the pitch axis, previously 
+shown as Equations \@ref(eq:eom-x), \@ref(eq:eom-z), and \@ref(eq:eom-pitch).
 
- 
+Precise calculation of excess thrust during the air phase must consider the 
+change in normal and longitudinal load factor during the flare and the changes 
+in lift and drag coefficients due to entering ground effect (previously 
+described).
 
- 
+If the desired flare technique is some schedule of flight path angle, 
+\(\gamma\), versus altitude, then the normal load factor can be calculated from 
+\(\gamma\) and the rate of \(\gamma\) using
 
- ![][12023]
-
- 
-
- 
-
-As with the takeoff case, this equation is usually broken into the air phase and the ground roll phase. Calculation of excess thrust during the ground roll needs to consider the changing weight on the wheels and associated braking force. This requires a simultaneous solution of the three equations of motion along the aircraft's longitudinal & vertical axes and about the pitch axis, previously shown as Eq'ns 12.14-12.16.
-
-Precise calculation of excess thrust during the air phase must consider the change in normal and longitudinal load factor during the flare and the changes in lift and drag coefficients due to entering ground effect (previously described).
-
-If the desired flare technique is some schedule of flight path angle (\(\gamma\)) versus altitude, then the normal load factor can be calculated from \(\gamma\) and the rate of \(\gamma\) using
-
- 
-
- ![][12024]
-
- 
-
- 
-
- 
+\[
+N_z = \cos \gamma + \frac{\dot{\gamma} V_T}{g}
+\]
 
 The longitudinal load factor can be calculated as
 
-\* *
-
- ![][12025]
-
- 
+\[
+N_x = \frac{\dot{H}}{V_T} + \frac{\dot{V_T}}{g}
+\]
 
 where
 
-![][12026]
+\[
+\sin \gamma = \frac{\dot{H}}{V_T}
+\]
 
-An alternate method of calculating distance is the **fixed time increment approach**. The following air distance example is based on a *constant angle of attack* landing technique (ref 12.5).
 
- 
+An alternate method of calculating distance is the **fixed time increment approach**. 
+The following air distance example is based on a *constant angle of attack* 
+landing technique (ref 12.5).
 
-[Fixed inputs]{.underline} [Initial inputs]{.underline}
 
-angle of attack, \(\alpha\) initial ground speed, *V~go~*
+| Fixed inputs | Initial inputs |
+|:-----------------|:-----------|
+| angle of attack, \(\alpha\) | initial ground speed, \( V_{g_0} \) |
+| wing area, \(S\) | initial air distance, \( S_{a_0} = 0 \) |
+|air density, \(\rho\) | initial altitude, \( h_0 \) |
+|weight, \(W\) | initial sink rate, \( \dot{h}_0 \) |
+|wingspan, \(b\) | initial lift coefficient, \( C_{\mathrm{LOGE}} \)|
+|head wind, \( V_w \) | wing aspect ratio, \(\mathrm{AR}\) |
+|net thrust, \( F_n \left( F_n = F_g \cos \alpha - F_e \right) \) | wing Oswald efficiency factor, \(e\) |
+|time increment, \(\Delta t \) (\(0.05 \text{ sec} \) works well) | |
+|height of wing above ground when on gear, \(h_{\text{wing}}\) | |
 
-wing area, \(S\) initial air distance, *S~ao\ ~*= 0
-
-air density, *ρ* initial altitude, *h~0\ ~*
-
-weight, *W* initial sink rate, *h~0~*dot
-
-wingspan, *b* initial lift coefficient, *C~LOGE\ ~*
-
-head wind, *V~w\ ~*wing aspect ratio*, AR*
-
-net thrust, *F~n\ ~*(*F~n~ = \(F_g\) cos\(\alpha\) --F~e~*) wing Oswald efficiency factor*, e*
-
-time increment, ∆\(T\) ( 0.05 sec works well)
-
-height of wing above ground when on gear, *h~wing~*
-
-\* *
-
-[Initial calculations]{.underline} initial true airspeed, *V~To~* = *V~go~* + *V~w~*
-
-initial glide slope, \(\gamma\)~0~ =sin^-1^ \[*h~0~*dot\]*/* *V~To~*
-
-initial load factor, *N~z~* = cos\(\gamma\)~0~ (assumes *d\(\gamma\)~0~/dt* =0)
-
-initial trim speed, *V~T\ ~*=\[2*N~z~W*/*ρC~L~S*\]^1/2^
+| Initial calculations |
+|-|
+| initial true airspeed, \(V_{T_0} = V_{g_0} + V_w \) |
+| initial glide slope, \( \gamma_0 = \sin^{-1} \frac{ \dot{h}_0 }{V_{T_0}} \) |
+| initial load factor, \( N_z = \cos \gamma_0 \) (assumes \( \frac{d \gamma_0}{dt} = 0  \)) |
+| initial trim speed, \( V_T =\left[ \frac{2 N_z W}{\rho C_L S} \right]^{\frac{1}{2} } \) |
 
 [Incremental calculations]{.underline}
 
-(values with prime symbols represent the result of the previous iteration).
+(values with prime symbols represent the result of the previous iteration)
 
- 
+1. \(C_L = C_{\mathrm{LOGE}} \mathrm{GE}_{\mathrm{CL}} = C_{\mathrm{LOGE}} \left[0.8609 - 0.6282 \log_{10} \left( \frac{h}{b} \right) \right] \)
+2. \(L = 0.5 N_z W \rho C_L S V_T^2 \)
+3. \(N_z = \frac{L}{W} \)
+4. \(\dot{\gamma} = \frac{g \left(N_z - \cos \gamma \right)}{V_T} \)
+5. \(\gamma = \dot{\gamma}' \Delta t + \gamma' \)
+6. \(\dot{h} = V_T \sin \gamma \)
+7. \(h = \left( \dot{h} + \dot{h}' \right) \frac{\Delta t}{2} + h' \)
+8. \(C_{D_i \mathrm{IGE}} = C_{D_i \mathrm{OGE}} \mathrm{GE}{C_D} = \left[ \frac{C_L^2}{\pi \mathrm{AR} e} \right] \left[0.2412 \ln \left( \frac{h}{b} \right) + 1.0829 \right] \)
+9. \(C_D = C_{D_0} + C_{D_i \mathrm{IGE}}\)
+10. drag, \( D = \frac{C_D \rho S V_T^2}{2} \)
+11. \( F_{\text{ex}} = F_n - D \)
+12. \(N_x = \frac{F_{\text{ex}}}{W} \)
+13. \(\dot{V} = g \left( N_x - \sin \gamma \right) \)
+14. \(V_g = V_g' + \dot{V} \Delta t \)
+15. \(S_a = \left(V_g + V_g' \right) \frac{\Delta t}{2} + S_a' \)
 
-1\) \(C_L\)= *C~LOGE\ ~*GE~CL~ = *C~LOGE~*\[0.8609 --0.6282 log~10~(*h/b*)\]
+## Climb/Descent/Level Acceleration
 
-2\) \(L\) = 0.5*N~z~WρC~L~SV~T~^2^*
+(ref 12.4)
 
-3\) *N~z~* = *L/W*
+Standard performance can be determined either by *predicting* results using 
+(flight test validated) models or by *correcting* individual flight test 
+climb/acceleration results to standard conditions.
 
-4\) *\(\gamma\)*dot *= g(N~z~* --cos*\(\gamma\)*)/\(V_T\)
+Performance predictions require accurate net thrust and aerodynamic models. Net 
+thrust is the sum of the gross thrust and ram drag, while the aero model 
+includes the drag polar and lift curve.
 
-5\) *\(\gamma\)* = \[*\(\gamma\)dot*\]'∆*t +\(\gamma\)* '
+Corrections to individual climb/accelerations tests require models that only 
+show the *change* in thrust & drag between test and standard conditions. The 
+following sections address both the prediction and correction approaches.
 
-6\) *h*dot = \(V_T\) sin*\(\gamma\)*
+### Climb/Descent/Acceleration Prediction
 
-7\) *h* = (*h*dot + \[*h*dot\]')∆*t/*2 + *h*'
+According to basic energy theory, an aircraft's specific excess power, \(P_s\),
+is related to the change in kinetic and potential energy as follows:
 
-8\) \(C_{D_i \mathrm{IGE}}\) = \(C_{D_i \mathrm{OGE}}\) GE~CD~ = \[*C~L~*^2^/π*AR*e\]\[0.2412 \ln(*h/b*)+1.0829\]
+\[
+\begin{equation}
+P_s = \frac{P_{\text{ex}}}{W} = \frac{\left( F_n - D \right) V}{W} = \frac{dH}{dt} + \frac{H}{W} \frac{d W}{dt} + \frac{V}{g}\frac{dV}{dt} + \frac{V^2}{2Wg} \frac{dW}{dt}
+\end{equation}
+(\#eq:p-sub-s)
+\]
 
-9\) \(C_D\) = *C~Do~* +\(C_{D_i \mathrm{IGE}}\)
+where \(V\) is technically inertial speed. True airspeed and an assumption of 
+zero wind is usually used instead of inertial speed. Since aircraft typically 
+have negligible weight change during a maneuver, the above reduces to:
 
-10\) drag, \(D\) = *C~D~ρSV~T~^2^*/2
+\[
+\begin{equation}
+P_s = \frac{\left( F_n - D \right) V}{W} = \frac{dH}{dt} + \frac{V}{g}\frac{dV}{dt}
+(\#eq:p-sub-s-redux)
+\end{equation}
+\]
 
-11\) *F~ex~ = F~n~ - D*
+This shows not only how climb rate *or* acceleration performance can be 
+predicted, but also shows how the climb and acceleration capabilities can be 
+*exchanged* at any given specific excess power. Dividing this equation through 
+by \(V\) shows the relation between specific excess thrust and **climb angle**, 
+**\(\gamma\)**.
 
-12\) *N~x~* = *F~ex~/W*
+\[
+\begin{equation}
+\frac{P_s}{V} = {F_n - D}{W} = \frac{\dot{H}}{V} + \frac{1}{g} \frac{dV}{dt} = \sin \gamma
+(\#eq:p-sub-s-over-v)
+\end{equation}
+\]
 
-13\) \(V\)dot = \(g\)(*N~x~ - sin\(\gamma\)* )
+When predicting climb performance capability using this approach, iterations may 
+be required because the resulting climb angle affects the normal load factor,
+\( N_z = \cos \gamma \), and therefore the induced drag.
 
-14\) \(V\)~g~ = \(V\)~g~' +\(V\)dot(∆\(T\))
-
-15\) \(S_a\) = (\(V\)~g~ + \(V\)~g~')∆\(T\)/2 +\(S_a\)'
-
- 
-
-## Climb/Descent/Level Acceleration** (ref 12.4)
-
-Standard performance can be determined either by *predicting*
-
-results using (flight test validated) models or by *correcting* individual flight test climb/acceleration results to standard conditions
-
-Performance predictions require accurate net thrust and
-
-aerodynamic models. Net thrust is the sum of the gross thrust and ram drag, while the aero model includes the drag polar and lift curve.
-
-Corrections to individual climb/accelerations tests require models that only show the *change* in thrust & drag between test and standard conditions. The following sections address both the prediction and correction approaches.
-
- 
-
-### Climb/Descent/Acceleration Prediction**
-
-According to basic energy theory, an aircraft's specific excess power (\(P_s\)) is related to the change in kinetic and potential energy as follows
-
- 
-
- ![][12027]
-
- 
-
-where \(V\) is technically inertial speed. True airspeed and an assumption of zero wind is usually used instead of inertial speed. Since aircraft typically have negligible weight change during a maneuver, the above
-
-reduces to
-
- 
-
- ![][12028]
-
- 
-
-This shows not only how climb rate *or* acceleration performance can be predicted, but also shows how the climb and acceleration capabilities can be *exchanged* at any given specific excess power. Dividing this equation through by \(V\) shows the relation between specific excess thrust and **climb** **angle, \(\gamma\)**
-
- ![][12029]
-
- ![][12030]
-
- 
-
-.
-
-When predicting climb performance capability using this approach, iterations may be required because the resulting climb angle affects the normal load factor (*N~z~* = cos\(\gamma\)) and the therefore the induced drag.
-
- 
-
-### Correcting to Standard Climb Rate**
+### Correcting to Standard Climb Rate
 
 *The below sequence corrects results at the test q and (usually) pressure altitude*
 
-*(i.e., V~e\ test~ = V~e\ std~, and H~test~ =H~std~).*
+*(i.e. \(V_{e_{\text{test}}} = V_{e_{\text{std}}} \), and \( H_{\text{test}} = H_{\text{std}} \))*
 
-1\) If the test day vertical velocity is measured by timing pressure altitude changes, then first correct the altimeter readings for instrument error and then convert the indicated pressure altitude rate to geometric (tapeline) climb rate as follows
+1. If the test day vertical velocity is measured by timing pressure altitude 
+changes, then first correct the altimeter readings for instrument error and 
+then convert the indicated pressure altitude rate to geometric (tapeline) climb 
+rate as follows
 
- 
+\[
+\left. \frac{dH}{dt} \right|_t = \left( \frac{T_t}{T_s} \right) \left. \frac{dH}{dt} \right|_{\text{indicated}} 
+\]
 
- ![][12031]
+2. Equation \@ref(eq:p-sub-s-redux) yields the climb rate correction that 
+accounts for the change in power (or thrust) between test and standard days 
+(at the test weight and velocity)
 
- 
+\[
+\left. \Delta \dot{H} \right|_P = \Delta P_s = \frac{\Delta P}{W} = \frac{\Delta F_n V}{W}
+\]
 
- 
+where \(\Delta P\) or \(\Delta F_n\) comes from engine models. For reciprocating 
+engines without models that can predict this power change, estimate the 
+correction using only a standard day power chart and the following equation
 
-2\) Equation 12.25 yields the climb rate correction that accounts for the change in power (or thrust) between test and standard days (at the test weight and velocity)
+\[
+\left. \Delta \dot{H} \right|_P = \frac{500 \eta B H P_s}{W_t} \left[ 1 - \sqrt{\frac{T_s}{T_t} } \right] = \frac{\Delta F_n V}{W}
+\]
 
- 
+3. A changing horizontal headwind with altitude will alter climb results. If 
+this change, \( \frac{d V_w}{dH} \) is known, then add the following 
+correction to the tapeline climb rate
 
- 
+\[
+\left. \Delta \dot{H} \right|_{\text{hw}} = \frac{V}{g} \left( \frac{dV}{dH} \right) \left( \frac{dH}{dt} \right)_s 
+\]
 
- ![][12032]
+Usually the exact wind shear profile is unknown. In this case, fly perpendicular
+to the known crosswind direction and repeat each climb speed at the reciprocal 
+heading. After completing the remaining corrections listed below, average the 
+reciprocal results to obtain a standard climb rate.
 
- 
+4. If the climb is flown at constant indicated airspeed or Mach, then true 
+airspeed will change with air density. Correct for any change in true airspeed 
+with the following "acceleration factor" correction
 
-where ∆\(P\) or ∆\(F_n\) comes from engine models. For reciprocating engines without models that can predict this power change, estimate the correction using only a standard day power chart and the following
+\[
+\left. \Delta \dot{H} \right|_{\text{AF}} = \frac{V}{g} \frac{dV}{dt} = \frac{V}{g} \left( \frac{V_{\text{final}} - V_{\text{initial}}}{\text{time to climb}} \right)
+\]
 
-equation
+5. Combine the previous corrections then multiply this by the "inertial 
+correction" factor that accounts for the inertial effects of changing the 
+weight from test to standard conditions
 
- 
+\[
+\left. \dot{H} \right|_I = \frac{W_t}{W_s}
+\]
 
-![][12033]
+6. To the above result, add a correction for the change in induced drag due to 
+weight change.
 
- 
-
- 
-
-3\) A changing horizontal headwind with altitude will alter climb results. If this change (*dV~w~/dH*) is known, then add the following correction to the tapeline climb rate
-
- 
-
- ![][12034]
-
- 
-
- 
-
-Usually the exact wind shear profile is unknown. In this case, fly perpendicular to the known crosswind direction and repeat each climb speed at the reciprocal heading. After completing the remaining corrections listed below, average the reciprocal results to obtain a standard climb rate.
-
- 
-
-4\) If the climb is flown at constant indicated airspeed or Mach, then true airspeed will change with air density. Correct for any change in true airspeed with the following "acceleration factor" correction
-
- 
-
-![][12035]
-
-5\) Combine the previous corrections then multiply this by the "inertial correction" factor that accounts for the inertial effects of changing the weight from test to standard conditions
-
- 
-
- ![][12036]
-
- 
-
- 
-
-6\) To the above result, add a correction for the change in induced drag due to weight change.
-
- 
-
- ![][12037]
-
- 
-
- 
+\[
+\left. \dot{H} \right|_{\text{Ind}} = \frac{2}{\pi \mathrm{AR} e \rho_{\text{alt}} V_T S} \left[ \frac{W_t^2 - W_s^2}{W_s} \right]
+\]
 
 **Summary of climb rate corrections**
 
- 
+\[
+\begin{equation}
+\left. \dot{H} \right|_{\text{std}} = 
+\left\{
+      \left( \frac{T_t}{T_s}  \right)
+      \left. \frac{dH}{dt} \right|_{\text{indicated}} +
+      \left. \Delta \dot{H} \right|_P + 
+      \left. \Delta \dot{H} \right|_{\text{hw}} +
+      \left. \Delta \dot{H} \right|_{\text{AF}}   
+\right\}
+\left. \dot{H} \right|_I + 
+\Delta \left. \dot{H} \right|_{\text{Ind}}
+(\#eq:climb-rate-corr)
+\end{equation}
+\]
 
- ![][12038]
+Equation \@ref(eq:climb-rate-corr) can also be used to correct descents, level accelerations, and level decelerations to a standard climb rate. The primary difference is that for level accelerations, the accelerations factor is the dominant term while the indicated climb rate is near zero.
 
- 
+### Weight/Altitude/Temperature (WAT) Limits
 
- 
+To ensure safety, aviation authorities specify minimum climb gradients,
+\(\gamma_{\text{req'd}} \), for many aircraft operations. The most straight 
+forward way to comply with the specified gradients is to document the maximum 
+allowable weight at various pressure altitude/temperature combinations.
 
- 
+Assuming the test day \(C_L\) for best \(\gamma\) equals that for any other day,
+calculate the maximum allowable weight by applying the following correction to 
+the best test \(\gamma\) results.
 
-Equation 12.27 can also be used to correct descents, level accelerations, and level decelerations to a standard climb rate. The primary difference is that for level accelerations, the accelerations factor is the dominant term while the indicated climb rate is near zero.
+\[
+W_{\text{max}} = \frac{ \left[  \sin \gamma_t + \frac{C_{D_0}}{C_L} + \frac{C_L}{\pi \mathrm{AR} e} \right] W_t + \Delta F_n}{ \sin \gamma_{\text{req'd}} + \frac{C_{D_0}}{C_L} + \frac{C_L}{\pi \mathrm{AR} e}  }
+\]
 
-### Weight/Altitude/Temperature (WAT) Limits**
-
-To ensure safety, aviation authorities specify minimum climb gradients (\(\gamma\)~req'd~) for many aircraft operations. The most straight forward way to comply with the specified gradients is to document the maximum allowable weight at various pressure altitude/temperature combinations.
-
-Assuming the test day \(C_L\)for best \(\gamma\) equals that for any other day, calculate the maximum allowable weight by applying the following correction to the best test \(\gamma\) results.
-
- 
-
- 
-
- ![][12039]
-
- 
-
- 
-
- 
-
- 
-
-where ∆\(F_n\) (= *F~nstd~* -*F~ntest~* ) comes from the engine model. To ensure accuracy, the test configuration (i.e., one engine inoperative) must equal the standard configuration. Level acceleration results are not an acceptable substitute for actual climb data.
-
- 
+where \( \Delta F_n = F_{n_{\text{std}}} - F_{n_{\text{test}}} \) comes from the 
+engine model. To ensure accuracy, the test configuration (i.e., one engine 
+inoperative) must equal the standard configuration. Level acceleration results 
+are not an acceptable substitute for actual climb data. 
 
 ## Level Turn Performance** (ref 12.1)
 
@@ -971,7 +968,7 @@ then the above equation can be closely approximated as
 
  
 
-where ∆\(F_{\text[ex}}\) = *F~gstd~*(cos*\(\alpha\)*~Fstd~) - *F~gt~*(cos *\(\alpha\)*~Ft~)
+where ∆\(F_{\text{ex}}\) = *F~gstd~*(cos*\(\alpha\)*~Fstd~) - *F~gt~*(cos *\(\alpha\)*~Ft~)
 
  
 
