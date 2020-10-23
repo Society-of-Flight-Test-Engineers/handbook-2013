@@ -756,7 +756,6 @@ weight from test to standard conditions
 \[
 \left. \dot{H} \right|_I = \frac{W_t}{W_s}
 \]
-![][12036]
 
 6. To the above result, add a correction for the change in induced drag due to 
 weight change.
@@ -785,29 +784,25 @@ weight change.
 
 Equation \@ref(eq:climb-rate-corr) can also be used to correct descents, level accelerations, and level decelerations to a standard climb rate. The primary difference is that for level accelerations, the accelerations factor is the dominant term while the indicated climb rate is near zero.
 
-### Weight/Altitude/Temperature (WAT) Limits**
+### Weight/Altitude/Temperature (WAT) Limits
 
-To ensure safety, aviation authorities specify minimum climb gradients (\(\gamma\)~req'd~) for many aircraft operations. The most straight forward way to comply with the specified gradients is to document the maximum allowable weight at various pressure altitude/temperature combinations.
+To ensure safety, aviation authorities specify minimum climb gradients,
+\(\gamma_{\text{req'd}} \), for many aircraft operations. The most straight 
+forward way to comply with the specified gradients is to document the maximum 
+allowable weight at various pressure altitude/temperature combinations.
 
-Assuming the test day \(C_L\)for best \(\gamma\) equals that for any other day, calculate the maximum allowable weight by applying the following correction to the best test \(\gamma\) results.
+Assuming the test day \(C_L\) for best \(\gamma\) equals that for any other day,
+calculate the maximum allowable weight by applying the following correction to 
+the best test \(\gamma\) results.
 
- 
+\[
+W_{\text{max}} = \frac{ \left[  \sin \gamma_t + \frac{C_{D_0}}{C_L} + \frac{C_L}{\pi \mathrm{AR} e} \right] W_t + \Delta F_n}{ \sin \gamma_{\text{req'd}} + \frac{C_{D_0}}{C_L} + \frac{C_L}{\pi \mathrm{AR} e}  }
+\]
 
- 
-
- ![][12039]
-
- 
-
- 
-
- 
-
- 
-
-where ∆\(F_n\) (= *F~nstd~* -*F~ntest~* ) comes from the engine model. To ensure accuracy, the test configuration (i.e., one engine inoperative) must equal the standard configuration. Level acceleration results are not an acceptable substitute for actual climb data.
-
- 
+where \( \Delta F_n = F_{n_{\text{std}}} - F_{n_{\text{test}}} \) comes from the 
+engine model. To ensure accuracy, the test configuration (i.e., one engine 
+inoperative) must equal the standard configuration. Level acceleration results 
+are not an acceptable substitute for actual climb data. 
 
 ## Level Turn Performance** (ref 12.1)
 

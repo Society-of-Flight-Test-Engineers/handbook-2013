@@ -361,7 +361,7 @@
 <ul>
 <li class="chapter" data-level="12.5.1" data-path="fixed-wing-performance-standardization.html"><a href="fixed-wing-performance-standardization.html#climbdescentacceleration-prediction"><i class="fa fa-check"></i><b>12.5.1</b> Climb/Descent/Acceleration Prediction</a></li>
 <li class="chapter" data-level="12.5.2" data-path="fixed-wing-performance-standardization.html"><a href="fixed-wing-performance-standardization.html#correcting-to-standard-climb-rate"><i class="fa fa-check"></i><b>12.5.2</b> Correcting to Standard Climb Rate</a></li>
-<li class="chapter" data-level="12.5.3" data-path="fixed-wing-performance-standardization.html"><a href="fixed-wing-performance-standardization.html#weightaltitudetemperature-wat-limits"><i class="fa fa-check"></i><b>12.5.3</b> Weight/Altitude/Temperature (WAT) Limits**</a></li>
+<li class="chapter" data-level="12.5.3" data-path="fixed-wing-performance-standardization.html"><a href="fixed-wing-performance-standardization.html#weightaltitudetemperature-wat-limits"><i class="fa fa-check"></i><b>12.5.3</b> Weight/Altitude/Temperature (WAT) Limits</a></li>
 </ul></li>
 <li class="chapter" data-level="12.6" data-path="fixed-wing-performance-standardization.html"><a href="fixed-wing-performance-standardization.html#level-turn-performance-ref-12.1"><i class="fa fa-check"></i><b>12.6</b> Level Turn Performance** (ref 12.1)</a>
 <ul>
@@ -1362,8 +1362,7 @@ weight from test to standard conditions</li>
 </ol>
 <p><span class="math display">\[
 \left. \dot{H} \right|_I = \frac{W_t}{W_s}
-\]</span>
-<img src="media/12/image44.svg" style="width:0.77083in;height:0.44792in" /></p>
+\]</span></p>
 <ol start="6" style="list-style-type: decimal">
 <li>To the above result, add a correction for the change in induced drag due to
 weight change.</li>
@@ -1390,18 +1389,21 @@ weight change.</li>
 <p>Equation <a href="fixed-wing-performance-standardization.html#eq:climb-rate-corr">(12.27)</a> can also be used to correct descents, level accelerations, and level decelerations to a standard climb rate. The primary difference is that for level accelerations, the accelerations factor is the dominant term while the indicated climb rate is near zero.</p>
 </div>
 <div id="weightaltitudetemperature-wat-limits" class="section level3" number="12.5.3">
-<h3><span class="header-section-number">12.5.3</span> Weight/Altitude/Temperature (WAT) Limits**</h3>
-<p>To ensure safety, aviation authorities specify minimum climb gradients (<span class="math inline">\(\gamma\)</span><sub>req’d</sub>) for many aircraft operations. The most straight forward way to comply with the specified gradients is to document the maximum allowable weight at various pressure altitude/temperature combinations.</p>
-<p>Assuming the test day <span class="math inline">\(C_L\)</span>for best <span class="math inline">\(\gamma\)</span> equals that for any other day, calculate the maximum allowable weight by applying the following correction to the best test <span class="math inline">\(\gamma\)</span> results.</p>
-<p> </p>
-<p> </p>
-<p> <img src="media/12/image47.svg" style="width:2.47917in;height:0.80486in" /></p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>where ∆<span class="math inline">\(F_n\)</span> (= <em>F<sub>nstd</sub></em> -<em>F<sub>ntest</sub></em> ) comes from the engine model. To ensure accuracy, the test configuration (i.e., one engine inoperative) must equal the standard configuration. Level acceleration results are not an acceptable substitute for actual climb data.</p>
-<p> </p>
+<h3><span class="header-section-number">12.5.3</span> Weight/Altitude/Temperature (WAT) Limits</h3>
+<p>To ensure safety, aviation authorities specify minimum climb gradients,
+<span class="math inline">\(\gamma_{\text{req&#39;d}}\)</span>, for many aircraft operations. The most straight
+forward way to comply with the specified gradients is to document the maximum
+allowable weight at various pressure altitude/temperature combinations.</p>
+<p>Assuming the test day <span class="math inline">\(C_L\)</span> for best <span class="math inline">\(\gamma\)</span> equals that for any other day,
+calculate the maximum allowable weight by applying the following correction to
+the best test <span class="math inline">\(\gamma\)</span> results.</p>
+<p><span class="math display">\[
+W_{\text{max}} = \frac{ \left[  \sin \gamma_t + \frac{C_{D_0}}{C_L} + \frac{C_L}{\pi \mathrm{AR} e} \right] W_t + \Delta F_n}{ \sin \gamma_{\text{req&#39;d}} + \frac{C_{D_0}}{C_L} + \frac{C_L}{\pi \mathrm{AR} e}  }
+\]</span></p>
+<p>where <span class="math inline">\(\Delta F_n = F_{n_{\text{std}}} - F_{n_{\text{test}}}\)</span> comes from the
+engine model. To ensure accuracy, the test configuration (i.e., one engine
+inoperative) must equal the standard configuration. Level acceleration results
+are not an acceptable substitute for actual climb data. </p>
 </div>
 </div>
 <div id="level-turn-performance-ref-12.1" class="section level2" number="12.6">
