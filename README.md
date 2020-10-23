@@ -4,15 +4,13 @@ A port of the 2013 SFTE Reference Handbook to bookdown
 
 ## Join us!
 
-Have some extra time on your hands?
-
 Join us as a collaborator over at the SFTE GitHub handbook-2013 project!
 
 ### How to collaborate
 
 The two primary collaboration opportunities are:
 
-1. Proofreading the HTML website output at https://society-of-flight-test-engineers.github.io/handbook-2013/
+1. Proofreading the HTML website output at https://society-of-flight-test-engineers.github.io/handbook-2013/ and submitting "issues" (reporting deficiencies or proposing enhancements at https://github.com/Society-of-Flight-Test-Engineers/handbook-2013/issues
 1. Editing the Markdown text file input at https://github.com/Society-of-Flight-Test-Engineers/handbook-2013/tree/master/handbookdown
 
 ### Project organization
