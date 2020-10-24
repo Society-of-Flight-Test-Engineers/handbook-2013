@@ -92,10 +92,8 @@ The most common of the two standardization methods is the **difference or increm
 This correction is the difference between the model predictions for standard and test conditions:
 
 \[
-\begin{equation}
 P_s = P_t + \left( P_s' - P_t' \right)
 (\#eq:increment)
-\end{equation}
 \]
 
 where
@@ -112,10 +110,8 @@ The **ratio method** is the other standardization process. It corrects to standa
 This factor is the ratio of the model predictions for standard and test conditions.
 
 \[
-\begin{equation}
 P_s = P_t  \left( \frac{P_s'}{P_t'} \right)
 (\#eq:ratio)
-\end{equation}
 \]
 
 The preferred approach is whichever gives the lowest total error.
@@ -130,10 +126,8 @@ Less exact empirical methods can also be used.
 The total takeoff distance, \(S_{\mathrm{TO}}\), is the sum of the ground roll distance, \(S_g\), from brake release to main wheel liftoff, and the horizontal component of the air distance, \(S_a\), from liftoff to main gear reaching either \(35\) or \(50\) feet altitude-depending on the requirements.
 
 \[
-\begin{equation}
 S_{\mathrm{TO}} = S_g + S_a
 (\#eq:tot-takeoff)
-\end{equation}
 \]
 
 Both \(S_g\) and \(S_a\)  can be standardized using the increment or ratio method, or by empirical relations.
@@ -147,19 +141,15 @@ Define headwind velocity as \(V_w\), liftoff true airspeed as \(V_{\mathrm{LO}}\
 With a typical variation of thrust per headwind, estimate the test day zero-wind ground roll, \(S_{g_{zw}}\), using the following empirical equation:
 
 \[
-\begin{equation}
 S_{g_{zw}} = S_{g_w} \left( \frac{V_{\mathrm{LO}}}{V_g} \right)^{1.85}
 (\#eq:zero-wind-gnd-dist)
-\end{equation}
 \]
 
 If the average thrust is not appreciably affected by velocity, then the exponent should be \(2.0\) in lieu of \(1.85\). The zero-wind air distance, \(S_{a_t}\), correction is
 
 \[
-\begin{equation}
 S_{a_t} = S_{a_w} + V_w t
 (\#eq:zero-wind-air-dist)
-\end{equation}
 \]
 
 where \(t\) is the time from liftoff to \(35\) (or \(50\)) feet altitude.
@@ -168,19 +158,15 @@ The second correction is for the effect of runway slope (\(\theta\), positive *
 Correct the above zero-wind distance, \(S_{g_{zw}}\), to the test day zero-slope distance, \(S_{g_t}\), as follows:
 
 \[
-\begin{equation}
 S_{g_t} = S_{g_{zw}} \left[ 1 - \frac{W \sin \theta}{\left[ F_{\text{ex}} \right]_{\text{avg}}} \right]
 (\#eq:zero-slope-air-dist)
-\end{equation}
 \]
 
 If the average excess thrust is not known, then approximate \(F_{\text{ex}}\) as that at \(70\%\) of the liftoff airspeed or from the zero-wind ground roll distance:
 
 \[
-\begin{equation}
 \left[ F_{\text{ex}} \right]_{\text{avg}} \approx \frac{m V_{\mathrm{LO}^2}}{2 S_{g_{zw}}}
 (\#eq:approx-fex-lo)
-\end{equation}
 \]
 
 After correcting the test day distance to zero wind and slope, use the following empirical equations to correct for non-standard weight, density, and temperature.
@@ -225,7 +211,6 @@ Define
 Assuming zero initial speed for takeoff run, ground roll distance
 
 \[
-\begin{equation}
 S_g = \frac{V_{\mathrm{TO}}^2 \cdot W}
 {2 \cdot g \cdot 
   \left( 
@@ -238,7 +223,6 @@ S_g = \frac{V_{\mathrm{TO}}^2 \cdot W}
   \right)
 }
 (\#eq:gnd-roll-dist-to)
-\end{equation}
 \]
 
 Where 
@@ -250,10 +234,8 @@ Where
 Estimate \(C_{L_{\mathrm{IGE}}}\) by determining the out-of-ground-effect lift coefficient, \(C_{L_{\mathrm{OGE}}}\), at the ground roll angle of attack and correcting it as follows:
 
 \[
-\begin{equation}
 C_{L_{\mathrm{IGE}}} = C_{L_{\mathrm{OGE}}} \mathrm{GE}_{C_L}
 (\#eq:est-c-l-ige)
-\end{equation}
 \]
 
 where
@@ -271,10 +253,8 @@ The above correction is *not used* above the height that predicts
 \(C_{D_{\mathrm{IGE}}}\) is the induced drag coefficient while in ground effect. Estimate this by determining the out-of-ground-effect drag coefficient, \(C_{D_{\mathrm{OGE}}}\), at the appropriate angle of attack and correcting it as follows:
 
 \[
-\begin{equation}
 C_{D_{\mathrm{IGE}}} = C_{D_{\mathrm{OGE}}} \mathrm{GE}_{C_D}
 (\#eq:est-c-d-ige)
-\end{equation}
 \]
  
 where the ground effect factor, \(\mathrm{GE}_{C_D} = 0.2412 \ln \left( \frac{h}{b} \right) + 1.0829 \) 
@@ -289,19 +269,15 @@ A **direct approximation of takeoff air distance** requires the desired speeds a
 It also requires an estimate of the average excess thrust as the aircraft climbs out of ground effect.
 
 \[
-\begin{equation}
 S_a = \frac{W}{\left( T - D \right)_{\text{avg}}} \left[ \frac{V_{50}^2 - V_{\mathrm{LO}}^2}{2g} + 50 \right]
 (\#eq:direct-to-air)
-\end{equation}
 \]
 
 A **direct approximation of the total takeoff distance**, \(S_{\mathrm{TO}}\) can be calculated as the sum of the ground and air distances or can be estimated by multiplying the ground roll distance by a "planform factor," \(F_{\text{pl}}\).
 
 \[
-\begin{equation}
 S_{\mathrm{TO}} = S_g F_{\text{pl}}
 (\#eq:s-to-fpl)
-\end{equation}
 \]
 
 \(F_{\text{pl}}\) combines the effects of wing type, thrust-to-weight ratio, and pilot technique.
@@ -315,20 +291,16 @@ A more **exact prediction of takeoff performance** (ref 12.5) requires accurate 
 This is equivalent to a double integration of the aircraft's acceleration or its specific excess thrust.
 
 \[
-\begin{equation}
 S_{\mathrm{TO}} = \int V_T \mathop{dt} = \iint a \mathop{dt} = \iint \frac{F_{\text{ex}}}{m} \mathop{dt} = \frac{1}{m} \iint F_{\text{ex}} \mathop{dt}
 (\#eq:s-to-fpl)
-\end{equation}
 \]
 
 This double integration can be performed numerically or graphically.
 Alternately, use planar kinematics and sum the distances required to accelerate between incremental true airspeeds from brake release, \(V_0\), to the true airspeed when the aircraft reaches the takeoff altitude, \(V_{50'}\).
 
 \[
-\begin{equation}
 S_{\mathrm{TO}} = \frac{m}{2} \sum_{V_0}^{V_{50'}} \frac{V_2^2 - V_1^2}{F_{\text{ex}}}
 (\#eq:to-dist)
-\end{equation}
 \]
 
 Both methods above are typically split into pre-rotation ground roll, rotation/post-rotation ground roll, and airborne segments.
@@ -338,21 +310,16 @@ Solving for the excess net thrust *during the ground roll* for either takeoff or
 These equations (in the above order) are as follows:
 
 \[
-\begin{equation}
 F_{\text{ex}}+ \mu_{\text{nw}} R_{\text{nw}} + \mu_m R_m = F_g \cos \iota_T + F_e - D_{\text{wb}} - D_t - W \sin \theta_{\text{rw}}
 (\#eq:eom-x)
-\end{equation}
 \]
 
 \[
-\begin{equation}
 R_{\text{nw}} + R_m = W \cos \theta_{\text{rw}} - L_w - L_t
 (\#eq:eom-z)
-\end{equation}
 \]
 
 \[
-\begin{equation}
 \begin{split}
 \left( X_1 + X_2 \right) R_{\text{nw}} = W& \cos \theta_{\text{rw}} X_2 \\
 &+ W \sin \theta_{\text{rw}} Z_1 \\
@@ -361,7 +328,6 @@ R_{\text{nw}} + R_m = W \cos \theta_{\text{rw}} - L_w - L_t
 &- D_t \left( Z_1 + Z_2 \right)
 \end{split}
 (\#eq:eom-pitch)
-\end{equation}
 \]
 
 where
@@ -475,10 +441,8 @@ Define headwind velocity as \(V_w\), touchdown true airspeed as \(V_{\mathrm{TD}
 With a typical variation of thrust per headwind, estimate the test day zero-wind ground roll, \(S_{g_{zw}}\), using the approach applied to takeoff ground roll:
 
 \[
-\begin{equation}
 S_{g_{zw}} = S_{g_w} \left( \frac{V_{\mathrm{LO}}}{V_g} \right)^{1.85}
 (\#eq:emp-zero-wind-gnd-roll-dist-land)
-\end{equation}
 \]
 
 If the average thrust is not appreciably affected by velocity, then the exponent should be \(2.0\) in lieu of \(1.85\).
@@ -490,19 +454,15 @@ If the average excess thrust is not known, then approximate \( \left[ F_{\text{e
 Alternately, approximate \( \left[ F_{\text{ex}} \right]_{\text{avg}} \)  from the zero-wind ground roll distance using
 
 \[
-\begin{equation}
 \left[ F_{\text{ex}} \right]_{\text{avg}} \approx \frac{m V_{\mathrm{TD}}^2}{2 S_{g_{zw}}}
 (\#eq:approx-fex-td-land)
-\end{equation}
 \]
 
 After correcting the test day distance to zero wind and slope, use the following empirical equations to correct the ground roll to standard weight and air density.
 
 \[
-\begin{equation}
 S_{g_s} = S_{g_t} \left[ \frac{Ws}{Wt} \right]^2 \frac{\sigma_t}{\sigma_s}
 (\#eq:std-gnd-roll-dist-land)
-\end{equation}
 \]
 
 Any desired values can be treated as the "standard" conditions.
@@ -510,20 +470,16 @@ Any desired values can be treated as the "standard" conditions.
 Correct the air distance to standard weight and air density using the zero-wind air distance as follows (for a \(50\)-foot screen height)
 
 \[
-\begin{equation}
 S_{a_s} = S_{a_t} \left[ \frac{Ws}{Wt} \right]^{2 + \frac{h_v}{h_v + 50}} \left[ \frac{\sigma_t}{\sigma_s} \right]^{2 + \frac{h_v}{h_v + 50}}
 (\#eq:std-air-dist-land)
-\end{equation}
 \]
 
 where \(h_v\) is the specific kinetic energy change during the air phase.
 For the case of a \(50\text{-foot}\) screen height, this term is calculated as
 
 \[
-\begin{equation}
 h_v = \frac{V_{50'}^2 - V_{\mathrm{TD}}^2}{2g}
 (\#eq:spec-ke-chg)
-\end{equation}
 \]
 
 ### Landing Distance Prediction
@@ -544,10 +500,8 @@ the desired lift and associated drag coefficients, the thrust, and the applied
 normal load factor during the landing flare, \( n = 1.15 \).
 
 \[
-\begin{equation}
 S_a = \frac{50}{\left( \frac{C_D}{C_L} - \frac{T}{W} \right)} + \frac{ \frac{W}{S} \left( \frac{C_D}{C_L} \frac{T}{W} \right) }{T \rho_0  g \left( n - 1 \right) C_L }
 (\#eq:approx-air-dist-land)
-\end{equation}
 \]
 
 A more **exact prediction of landing performance** requires accurate thrust and 
@@ -558,10 +512,8 @@ numerically or graphically. Similarly, Equation \@ref(eq:to-dist) can be adapted
 for landing as follows:
 
 \[
-\begin{equation}
 S_{\mathrm{LD}} = \frac{m}{2} \sum_{V_0}^{V_{50'}} \frac{V^2_2 - V^2_1}{F_{\text{ex}}}
 (\#eq:land-dist)
-\end{equation}
 \]
 
 As with the takeoff case, this equation is usually broken into the air phase and 
@@ -663,9 +615,8 @@ According to basic energy theory, an aircraft's specific excess power, \(P_s\),
 is related to the change in kinetic and potential energy as follows:
 
 \[
-\begin{equation}
 P_s = \frac{P_{\text{ex}}}{W} = \frac{\left( F_n - D \right) V}{W} = \frac{dH}{dt} + \frac{H}{W} \frac{d W}{dt} + \frac{V}{g}\frac{dV}{dt} + \frac{V^2}{2Wg} \frac{dW}{dt}
-\end{equation}
+
 (\#eq:p-sub-s)
 \]
 
@@ -674,10 +625,8 @@ zero wind is usually used instead of inertial speed. Since aircraft typically
 have negligible weight change during a maneuver, the above reduces to:
 
 \[
-\begin{equation}
 P_s = \frac{\left( F_n - D \right) V}{W} = \frac{dH}{dt} + \frac{V}{g}\frac{dV}{dt}
 (\#eq:p-sub-s-redux)
-\end{equation}
 \]
 
 This shows not only how climb rate *or* acceleration performance can be 
@@ -687,10 +636,8 @@ by \(V\) shows the relation between specific excess thrust and **climb angle**,
 **\(\gamma\)**.
 
 \[
-\begin{equation}
 \frac{P_s}{V} = {F_n - D}{W} = \frac{\dot{H}}{V} + \frac{1}{g} \frac{dV}{dt} = \sin \gamma
 (\#eq:p-sub-s-over-v)
-\end{equation}
 \]
 
 When predicting climb performance capability using this approach, iterations may 
@@ -767,7 +714,6 @@ weight change.
 **Summary of climb rate corrections**
 
 \[
-\begin{equation}
 \left. \dot{H} \right|_{\text{std}} = 
 \left\{
       \left( \frac{T_t}{T_s}  \right)
@@ -779,7 +725,6 @@ weight change.
 \left. \dot{H} \right|_I + 
 \Delta \left. \dot{H} \right|_{\text{Ind}}
 (\#eq:climb-rate-corr)
-\end{equation}
 \]
 
 Equation \@ref(eq:climb-rate-corr) can also be used to correct descents, level accelerations, and level decelerations to a standard climb rate. The primary difference is that for level accelerations, the accelerations factor is the dominant term while the indicated climb rate is near zero.
@@ -804,229 +749,296 @@ engine model. To ensure accuracy, the test configuration (i.e., one engine
 inoperative) must equal the standard configuration. Level acceleration results 
 are not an acceptable substitute for actual climb data. 
 
-## Level Turn Performance** (ref 12.1)
+## Level Turn Performance
 
-Standard level turn performance can be determined either by
+(ref 12.1)
 
-*predicting* results using (flight test validated) models or by *correcting*
+Standard level turn performance can be determined either by *predicting* results 
+using (flight test validated) models or by *correcting* individual turn results 
+to standard conditions. It is possible to predict turn performance using climb 
+or level acceleration data, but this approach is not always accurate and should 
+be validated with actual turn results.
 
-individual turn results to standard conditions. It is possible to predict turn performance using climb or level acceleration data, but this approach is not always accurate and should be validated with actual turn results.
+Performance predictions require accurate net thrust and aero models (drag polar 
+and lift curve). Corrections to test day turn results require models that only 
+show the *change* in thrust & drag between test and standard conditions.
 
-Performance predictions require accurate net thrust and aero
+The following sections address both the prediction and correction approaches. 
+For either approach, load factor, \(n_{\text{zw}} \), is usually determined first, 
+then the corresponding turn rate, \(\omega \left[ \frac{\text{radians}}{\text{sec}} \right] \), 
+and radius, \(R \left[ \text{ft} \right] \), are calculated using the equations 
+below.
 
-models (drag polar and lift curve). Corrections to test day turn results
+\[
+\begin{align}
+R &= \frac{V_T^2}{g \sqrt{n_{\text{zw}}^2 - 1}} \\
+\\
+\omega &= \frac{g \sqrt{n_{\text{zw}}^2 - 1}}{V_T} \\
+\\
+n_{\text{zw}} &= \sqrt{ \left( \frac{\omega V}{g} \right)^2 + 1  } \\
+\end{align}
+(\#eq:r-omega-n-zw)
+\]
 
-require models that only show the *change* in thrust & drag between test and standard conditions.
+### Sustained Level Turn Performance Prediction
 
-The following sections address both the prediction and correction approaches. For either approach, load factor (n~zw~) is usually determined first, then the corresponding turn rate (\(\omega\)-radians/sec) and radius (\(R\)-ft) are calculated using the equations below.
+1. At the desired speed, altitude, temperature, and throttle setting use the
+engine model to determine the gross thrust, \(F_g\). Sophisticated models may 
+show this to be a function of the inlet angle of attack as well.
 
- 
+2. At the same conditions, use the engine and airframe models to determine the 
+ram drag, \(F_e\).
 
- 
+3. Calculate net thrust as \(F_n = F_g \cos \alpha_F + F_e\) where 
+\(\alpha_F = \left(\alpha + \iota_T \right) \) and \(\iota_T\) is the incidence angle of 
+the thrust line (TED positive).
 
- ![][12040]
+4. The total lift is the sum of the wing lift and the thrust lift:
 
- 
+\[
+L = L_W + F_g \sin \alpha_F
+\]
 
- 
+Since \(L = n_{\text{zw}} W \), then \(L_W = n_{\text{zw}} W - F_g \sin \alpha_F\)
 
-### Sustained Level Turn Performance Prediction**
+5. For any sustained turn, the net thrust equals the drag
 
- 
-
-1\) At the desired speed, altitude, temperature, and throttle setting use the
-
-engine model to determine the gross thrust (*\(F_g\)*). Sophisticated models may show this to be a function of the inlet angle of attack as well.
-
- 
-
-2\) At the same conditions, use the engine and airframe models to determine the ram drag (\(F_e\)).
-
- 
-
-3\) Calculate net thrust as *F~n\ ~*= *\(F_g\)* cos *\(\alpha\)*~F~ +*F~e\ ~*where *\(\alpha\)*~F~ = (*\(\alpha\)* + \(\iota_T\)) and is \(\iota_T\) the incidence angle of the thrust line (TED positive).
-
- 
-
-4\) The total lift is the sum of the wing lift and the thrust lift:
-
- 
-
-*L = L~W~* + *F~g\ ~*sin*\(\alpha\)*~F~.
-
-~ ~
-
-Since *L = n~zw~W ,* then *L~W~ = n~zw~W* - *F~g\ ~*sin*\(\alpha\)*~F~
-
- 
-
-5\) For any sustained turn, the net thrust equals the drag
-
- 
-
- ![][12041]
-
- 
-
- 
-
- 
-
- 
-
- 
+\[
+F_n = D = qSC_D = 
+qS \left[ 
+      C_{D_0} + 
+      \frac{\left( \frac{L_W}{qS} \right)^2}{\pi \mathrm{AR}e} 
+   \right] =
+qS \left[
+      C_{D_0} + 
+      \frac{\left( n_{\text{zw}} W - F_g \sin \alpha_F \right)^2}
+           {\left(qS\right)^2 \pi \mathrm{AR}e} 
+   \right]
+\]
 
 Solving for load factor gives
 
- 
+\[
+n_{\text{zw}} = \frac{1}{W}
+      \left(
+            \left\{
+                  \left[
+                        \frac{F_g \cos \left(\alpha + \iota_T \right)+F_e}
+                             {qS} -
+                        C_{D_0}
+                  \right]
+                  \left(
+                        qS
+                  \right)^2
+                  \pi \mathrm{AR} e
+            \right\}^{\frac{1}{2}} +
+            F_g \sin \left(\alpha + \iota_T \right)
+      \right)
+(\#eq:load-factor-sus-turn)
+\]
 
- ![][12042]
+For any combination of weight, altitude, and airspeed, calculation of the 
+standard sustained load factor requires knowledge of the gross thrust, ram 
+drag, drag polar (\(C_{D_0},\,e\)), and angle of attack.
 
- 
+6. To determine the standard angle of attack, start with the lift curve slope 
+model
 
- 
+\[
+C_L = C_{L_{\alpha = 0}} + \frac{dC_L}{d\alpha} \alpha = C_{L_{\alpha = 0}} + C_{L_{\alpha}}\alpha
+\]
 
-For any combination of weight, altitude, and airspeed, calculation of the standard sustained load factor requires knowledge of the gross thrust, ram drag, drag polar (*C~D0~, e*), and angle of attack.
+Rearrange to solve for \(\alpha\)
 
- 
+\[
+\alpha = \frac{C_L - C_{L_{\alpha = 0}}}{C_{L_{\alpha}}} =
+      \frac{\left(
+                  \frac{n_{\text{zw}}W - F_g \sin \left(\alpha + \iota_T \right)}
+                       {qS}
+            \right)^2 - C_{L_{\alpha = 0}}}
+           {C_{L_{\alpha}}}
+(\#eq:alpha-std)
+\]
 
-6\) To determine the standard angle of attack, start with the lift curve slope model
-
- 
-
- ![][12043]
-
- 
-
- 
-
-Rearrange to solve for *\(\alpha\)*
-
-*€*
-
-*€*
-
- ![][12044]
-
- 
-
- 
-
- 
-
-Because *\(\alpha\)* cannot be solved for explicitly, calculate it using successive iterations of Equations 12.29 and 12.30.
-
- 
-
- 
+Because \(\alpha\) cannot be solved for explicitly, calculate it using 
+successive iterations of Equations \@ref(eq:load-factor-sus-turn) and \@ref(eq:alpha-std).
 
 In cases where
 
- 
+\[
+\frac{F_g}{W} \sin \alpha_F \lt \frac{n_{\text{zw}}}{10}
+\]
 
- ![][12045]
+the angle of attack can be roughly estimated without significant error to the 
+final result.
 
-the angle of attack can be roughly estimated without significant error to the final result.
+### Sustained Level Turn Performance Correction
 
- 
+The best method for obtaining standardized sustained level turn data is to 
+correct actual level turn results to standard conditions. It is also possible 
+to correct level acceleration or climb data to give standard level turn results. 
+This approach may not work as well since any drag polar or engine model errors 
+will be magnified. Additionally, inlet distortion that accompanies actual turn 
+thrust is different during (low angle of attack) climbs and accelerations.
 
-### Sustained Level Turn Performance Correction**
+The equation below corrects any combination of test day climb, turn, and 
+acceleration to a load factor for a sustained turn at the same dynamic pressure 
+but at standard conditions.
 
-The best method for obtaining standardized sustained level turn data is to correct actual level turn results to standard conditions. It is also possible to correct level acceleration or climb data to give standard level turn results. This approach may not work as well since any drag polar or engine model errors will be magnified. Additionally, inlet distortion that accompanies actual turn thrust is different during (low angle of attack) climbs and accelerations.
-
-The equation below corrects any combination of test day climb, turn, and acceleration to a load factor for a sustained turn at the same dynamic pressure but at standard conditions.
-
- 
-
- 
-
- ![][12046]
-
- 
-
- 
-
- 
-
- ![][12047]
-
- 
-
- 
+\[
+\begin{align}
+n_{\text{zw}_{\text{std}}} = \frac{F_{g_{\text{std}}}}{W_s} \sin \alpha_{F_s} + 
+\left\{ 
+      \left(
+              n_{\text{zw}_t} \frac{W_t}{W_s} -
+                  \frac{F_{g_t}}{W_s} \sin \alpha_{F_t}
+        \right)^2 + \\
+        \frac{\pi \mathrm{AR}eqS}{W_s^2}
+        \left[
+              \frac{W_t \dot{V}_{T_t}}{g} + 
+              \frac{W_t \dot{H}_t}{V_{T_t}} + 
+              F_{g_{\text{std}}} \cos \alpha_{F_{\text{std}}} -
+              F_{g_t} \cos \alpha_{F_t}
+        \right]
+  \right\}^{\frac{1}{2}}
+\end{align}
+(\#eq:load-factor-corr)
+\]
 
 then the above equation can be closely approximated as
 
- 
+\[
+\text{If } \frac{F_g}{W} \sin \alpha_F \lt \frac{n_{\text{zw}}}{10}
+\]
 
- ![][12048]
+\[
+n_{\text{zw}_{\text{std}}} = \frac{1}{W_S}
+\sqrt{ 
+      \left(
+            n_{\text{zw}_t} W_t 
+      \right)^2 + \pi \mathrm{AR}eqS 
+      \left[
+            \frac{\dot{V}_{T_t} W_t}{g} +
+            \frac{\dot{H}_t W_t}{V_T} +
+            \Delta F_{\text{ex}}
+      \right]
+ }
+(\#eq:load-factor-std)
+\]
 
- 
+where \( \Delta F_{\text{ex}} = F_{g_{\text{std}}} \cos \left( \alpha_{F_{\text{std}}} \right) - F_{g_t} \cos \left( \alpha_{F_t} \right) \)
 
- 
+The primary difference between using turn, accel, or climb test data is the 
+dominant term in the above corrections. In all cases, the test and standard day 
+thrust values come from engine models.
 
- ![][12049]
+### Level Limit Turn Performance Correction
 
- 
+A limit turn is one in which the aircraft performs a level turn beginning from 
+maximum speed and maximum load factor and continues to decelerate at the 
+\( N_{z_b} \) limit until reaching the maximum \(C_L\). At this point, the 
+aircraft continues its level turning deceleration at the lift limit. This 
+maneuver is also known as a "slow-down" turn.
 
-where ∆\(F_{\text{ex}}\) = *F~gstd~*(cos*\(\alpha\)*~Fstd~) - *F~gt~*(cos *\(\alpha\)*~Ft~)
+Test day limit turn data is corrected to a standard specific excess power, 
+\(P_s\), for each given combination of altitude, Mach number, and load factor
+(or AOA) limit. The following correction accounts for changes in trim drag, 
+weight, and atmospheric affects on thrust.
 
- 
-
-The primary difference between using turn, accel, or climb test data is the dominant term in the above corrections. In all cases, the test and standard day thrust values come from engine models.
-
- 
-
-### Level Limit Turn Performance Correction**
-
-A limit turn is one in which the aircraft performs a level turn beginning from maximum speed and maximum load factor and continues to decelerate at the *N~zb~* limit until reaching the maximum \(C_L\)~.~ At this point, the aircraft continues its level turning deceleration at the lift limit. This maneuver is also known as a "slow-down" turn.
-
-Test day limit turn data is corrected to a standard specific excess power (\(P_s\)) for each given combination of altitude, Mach number and load factor (or AOA) limit. The following correction accounts for changes in trim drag, weight, and atmospheric affects on thrust.
-
- 
-
- 
-
- 
-
- ![][12050]
-
- 
+\[
+P_{s_s} = P_{s_t} + \Delta P_s
+(\#eq:std-p-sub-s)
+\]
 
 where
 
- 
+\[
+P_{s_t} = 
+\frac{F_{\text{ex}_t} V_{T_t}}{W_t} = 
+\frac{m_t a_{xw_t} V_{T_t}}{W_t} =
+\frac{\frac{W_t}{g} a_{xw_t} V_{T_t}}{W_t} = 
+N_{xw_t} V_{T_t} =
+M a_0 \sqrt{\theta_t} N_{xw_t}
+\]
 
 and
 
- 
-
- 
-
- ![][12051]
-
- 
-
- 
+\[
+\begin{align}
+\Delta P_s = M a_0 
+\left\{
+      \left(
+            F_{g_s} \cos \alpha_{F_s} + F_e
+      \right) \frac{\sqrt{\theta_s}}{W_s} - 
+      \left(
+            F_{g_t} \cos \alpha_{F_t} + F_e
+      \right) \frac{\sqrt{\theta_t}}{W_t} + \\
+      SC_{D_0} \left[
+                     \frac{q_t \sqrt{\theta_t}}{W_t} -
+                     \frac{q_s \sqrt{\theta_s}}{W_s}
+               \right] + \\
+      \frac{S q_t \sqrt{\theta_t}}{W_t} 
+      \left(
+            m \left[
+                  \frac{N_{\text{zw}_t} W_t - Fg_{n_t} \sin \alpha_{F_t}}{q_t S}
+            \right]^2 +
+            \Delta C_{D_{\text{trim}_t}}
+      \right) - \\
+      \frac{S q_s \sqrt{\theta_s}}{W_s} 
+      \left(
+            m \left[
+                  \frac{N_{\text{zw}_s} W_s - Fg_{n_s} \sin \alpha_{F_s}}{q_s S}
+            \right]^2 +
+            \Delta C_{D_{\text{trim}_s}}
+      \right)
+\right\}
+\end{align}
+\]
 
 where
 
- 
+\[
+\alpha_{F_t} = \iota_{T_t} - \frac{C_{L_{0_\alpha}}}{a} + \frac{N_{\text{zw}_t} W_t - F{g_t} \sin \alpha_{F_t}}{a q_t S}
+\]
 
- 
+and
 
- ![][12052]
+\[
+\alpha_{F_s} = \iota_{T_s} - \frac{C_{L_{0_\alpha}}}{a} + \frac{N_{\text{zw}_s} W_s - F{g_s} \sin \alpha_{F_s}}{a q_s S}
+\]
 
- 
+As with the sustained level turn case, one cannot solve explicitly for 
+\(\alpha_F\), so either assume an approximate value or iterate until a solution 
+converges.
 
- 
+In the simplified case where \(\delta_t = \delta_s\), \(cg_t = cg_{\text{std}},
+and \( \sin \alpha_F = 0 \), then the above equation reduces to
 
-As with the sustained level turn case, one cannot solve explicitly for *\(\alpha\)*~F~, so either assume an approximate value or iterate until a solution converges.
-
-In For the simplified case where \(\delta\)~t~ = \(\delta\)~s~, *cg~t~* = *cg~std~ ,* and sin*\(\alpha\)*~F~ = 0, then the above equation reduces to
-
- 
-
-![][12053]
+\[
+\begin{align}
+\Delta P_s = M a_0 
+\left\{
+      \frac{\sqrt{\theta_s}}{W_s}
+      \left[
+            F_{n_s} - qSC_{D_0} -
+            \frac{\left(
+                        N_{\text{zw}_s W_s}
+                  \right)^2}{
+                  qS\pi \mathrm{AR} e      
+                  }
+      \right] - \\
+      \frac{\sqrt{\theta_t}}{W_t}
+      \left[
+            F_{n_t} - qSC_{D_0} -
+            \frac{\left(
+                        N_{\text{zw}_t W_t}
+                  \right)^2}{
+                  qS\pi \mathrm{AR} e      
+                  }
+      \right]
+\right\}
+\end{align}
+\]
 
 ## Reciprocating Engine Cruise Performance** (ref 12.1)
 
