@@ -1162,7 +1162,7 @@ function of \(\mathrm{BSFC}\).
 ![](media/12/fuel-flow-power-curve.png){width="2.3854166666666665in" height="1.3354166666666667in"}
 
 \[
-\dot{W}_f = b + \(\mathrm{BSFC}\) \cdot \(\mathrm{BHP}\)
+\dot{W}_f = b + \mathrm{BSFC} \cdot \mathrm{BHP}
 \]
 
 If the values for \(b\) and \(\mathrm{BSFC}\) are known for both the test and 
@@ -1170,8 +1170,8 @@ standard conditions, then test fuel flow can be more exactly corrected to
 standard weight and density conditions as follows
 
 \[
-\dot{W}_{f_s} = b_s + \left( \dot{W}_{f_t} - b_t \right) \frac{\eta_t}{\eta_s} \frac{\(\mathrm{BSFC}_s\)}{\(\mathrm{BSFC}_t\)} \left( \frac{W_s}{W_t} \right)^{\frac{3}{2}} \left( \frac{\sigma_t}{\sigma_s} \right)^{\frac{1}{2}}\)
-(\#eq:fuel-flow-std)
+\dot{W}_{f_s} = b_s + \left( \dot{W}_{f_t} - b_t \right) \frac{\eta_t}{\eta_s} \frac{\mathrm{BSFC}_s}{\mathrm{BSFC}_t} \left( \frac{W_s}{W_t} \right)^{\frac{3}{2}} \left( \frac{\sigma_t}{\sigma_s} \right)^{\frac{1}{2}}
+(\#eq:fuel-flow-std-bsfc)
 \]
 
 Note that this correction requires only a knowledge of the *ratio* of test and 
@@ -1212,7 +1212,7 @@ the \(\mathrm{SEP}\) and test weight associated with the lift coefficient at the
 start of the endurance segment.
 
 \[
-t = \mathrm{SEP} \left( \frac{\sigma_s}{\sigma_t} \right)^{\frac{1}{2}} \left[ \frac{2}{\sqrt{W_F}} - \frac{2}{\sqrt{W_I}} \right]
+t = \frac{\mathrm{SEP}}{\sqrt{W_t}} \ln \frac{W_I}{W_F}
 (\#eq:tot-endur-time-const-sep-cl)
 \]
 
@@ -1222,7 +1222,7 @@ t = \mathrm{SEP} \left( \frac{\sigma_s}{\sigma_t} \right)^{\frac{1}{2}} \left[ \
 
 To determine the optimum range flight profile and distance for any condition (at 
 the same \(\mathrm{RPM}\) as the test condition), plot the test day range 
-factor, \(\mathrm{RF}\), vs the test day lift coefficient, \(C_L\)
+factor, \(\mathrm{RF}\), versus the test day lift coefficient, \(C_L\)
 
 ![](media/12/rng-factor-cl-curve.png){width="4in"}
 
@@ -1254,299 +1254,207 @@ R = \mathrm{RF} \cdot \tan^{-1} \left[ \frac{1 - \frac{W_F}{W_I}}{1 + \frac{W_F}
 (\#eq:const-as-alt-rng)
 \]
 
-## Jet Aircraft Cruise Performance** (ref 12.1)
-
-Refer to section 12.7 for a general discussion of cruise
-
-performance standardization.
-
-.
-
-### Thrust Standardization**
-
-If fuel flow is directly proportional to net thrust output only, the thrust and optimal velocity for cruise performance can be determined from a thrust required curve as shown below.
-
- 
-
- 
-
- ![][12054]
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-Because jet aircraft typically cruise at speeds where changes in Mach number affect the drag polar, it is customary to treat both the lift coefficient and Mach numbers as anchors (*C~L\ test\ ~*= *C~L\ std\ ~*, *M ~test\ ~*= *M~std~*). In terms of Mach number, cruise (\(n_z\) = 1) lift coefficient is calculated as
-
- 
-
- ![][12069]
-
- 
-
- 
-
-From this relation, the only way to match test & standard values for both \(C_L\)and \(M\) is to match test & standard values for *W/\(\delta\) . * In this case, the test day net thrust required curve can be corrected to standard conditions as follows
-
- 
-
- ![][12070]
-
- 
-
- 
-
-Although all points along the test day thrust curve can be standardized, the most useful points are those for best range and endurance. When corrected to standard conditions, the performance of the test aircraft can be fairly compared to that of another aircraft which has also been corrected to the same flight conditions. Additionally, once the standard thrust and velocity are known and documented, the required power and airspeed for any "mission" conditions can be predicted by reversing Equations 12.45.
-
- 
-
-### Fuel Flow Standardization**
-
-Both the thrust and fuel flow of a simple (fixed-geometry turbojet) turbine engine are functions of engine speed (*N*), Mach number (\(M\)), ambient pressure (\(\delta\)), and ambient temperature (*θ*). Dimensional analysis and experimental results show these parameters to be related approximately as illustrated in the figures below.
-
- 
-
- 
-
-![][12071] 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-Thrust specific fuel consumption (*TSFC* ) is defined as the fuel flow per thrust. At any given level of corrected fuel flow, the above figures can be cross-plotted onto a single figure that relates corrected thrust (\(\frac{F}{\delta}\)) to corrected fuel flow at various Mach numbers.
-
-.
-
-** **
-
- 
-
- ![][12072]
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-The slopes of the above figure exaggerate the typical case where *TSFC* changes with Mach number. If, at any given Mach number, steady increments of corrected fuel flow are evenly spaced vertically, then
-
- 
-
- ![][12073]
-
-Standard fuel flow can be determined from these relations. If flight test data is to be corrected from test to standard conditions at the same \(C_L\)and \(M\) , then the \(C_D\) will also be the same for both test &
-
-standard conditions. Because thrust equals drag\* during cruise, the
-
-following relations show that corrected thrust (\(\frac{F}{\delta}\)) must be the same for test and standard conditions
-
- ![][12074]
-
- 
-
- 
-
- 
-
- • technically \(F_n\) cos(\(\alpha\)+\(\iota_T\))+\(F_e\) = \(D\), where \(F_n\) = net thrust, \(F_e\) = ram thrust,
-
-and \(\iota_T\) is the thrust incidence angle
-
- 
-
- 
-
- 
-
- 
-
-If Mach number and \(\frac{F}{\delta}\) are equal for both test & standard
-
-conditions, then the previous cross plot shows that corrected fuel flow must also be the same for both conditions.
-
- 
-
- ![][12075]
-
- 
-
- 
-
- 
+## Jet Aircraft Cruise Performance
+
+(ref 12.1)
+
+Refer to section \@ref(reciprocating-engine-cruise-performance) for a general 
+discussion of cruise performance standardization.
+
+### Thrust Standardization
+
+If fuel flow is directly proportional to net thrust output only, the thrust and 
+optimal velocity for cruise performance can be determined from a thrust required 
+curve as shown below.
+
+![](media/12/thrust-speed-curve.png){width="4in"}
+
+Because jet aircraft typically cruise at speeds where changes in Mach number 
+affect the drag polar, it is customary to treat both the lift coefficient and 
+Mach numbers as anchors, \(C_{L_{\text{test}}} = C_{L_{\text{std}}}, M_{\text{test}} = M_{\text{std}} \). 
+In terms of Mach number, cruise (\(n_z = 1\)) lift coefficient is calculated as
+
+\[
+C_L = \frac{ \frac{W}{\delta} }{1481 M^2 S}
+(\#eq:cruise-cl-in-mach)
+\]
+
+From this relation, the only way to match test & standard values for both 
+\(C_L\) and \(M\) is to match test & standard values for \(\frac{W}{\delta}\).
+In this case, the test day net thrust required curve can be corrected to 
+standard conditions as follows
+
+\[
+\begin{align}
+F_{n_s} = F_{n_t} \frac{W_s}{W_t}\\
+\\
+V_{T_s} = V_{T_t} \sqrt{\frac{\theta_s}{\theta_t}}\\
+\end{align}
+(\#eq:net-thrust-speed-std)
+\]
+
+Although all points along the test day thrust curve can be standardized, the 
+most useful points are those for best range and endurance. When corrected to 
+standard conditions, the performance of the test aircraft can be fairly compared 
+to that of another aircraft which has also been corrected to the same flight 
+conditions. Additionally, once the standard thrust and velocity are known and 
+documented, the required power and airspeed for any "mission" conditions can be 
+predicted by reversing Equations \@ref(eq:net-thrust-speed-std).
+
+### Fuel Flow Standardization
+
+Both the thrust and fuel flow of a simple (fixed-geometry turbojet) turbine 
+engine are functions of engine speed, \(N\), Mach number, \(M\), ambient 
+pressure, \(\delta\), and ambient temperature, \(\theta\). Dimensional analysis 
+and experimental results show these parameters to be related approximately as 
+illustrated in the figures below.
+
+![](media/12/corr-fuel-flow-thrust-rpm-m.png){width="8in"}
+
+Thrust specific fuel consumption, \(\mathrm{TSFC}\), is defined as the fuel flow 
+per thrust. At any given level of corrected fuel flow, the above figures can be 
+cross-plotted onto a single figure that relates corrected thrust, 
+\(\frac{F}{\delta}\), to corrected fuel flow at various Mach numbers.
+
+![](media/12/corr-thrust-m.png){width="4in"}
+
+The slopes of the above figure exaggerate the typical case where 
+\(\mathrm{TSFC}\) changes with Mach number. If, at any given Mach number, steady 
+increments of corrected fuel flow are evenly spaced vertically, then
+
+\[
+\frac{\mathrm{TSFC}}{\sqrt{\theta}} \approx \text{ constant at that Mach number}
+\]
+
+Standard fuel flow can be determined from these relations. If flight test data 
+is to be corrected from test to standard conditions at the same \(C_L\) and 
+\(M\), then the \(C_D\) will also be the same for both test & standard 
+conditions. Because thrust equals drag during cruise, the following relations 
+show that corrected thrust, \(\frac{F}{\delta}\), must be the same for test and standard conditions
+
+\[
+C_D = \frac{\frac{D}{\delta}}{1481 M^2 S} = \frac{\frac{F}{\delta}}{1481 M^2 S}
+\]
+
+Technically \(F_n = \cos \left( \alpha + \iota_T \right) + F_e = D\), where 
+\(F_n\) = net thrust, \(F_e\) = ram thrust, and \(\iota_T\) is the thrust 
+incidence angle.
+
+If Mach number and \(\frac{F}{\delta}\) are equal for both test & standard 
+conditions, then the previous cross plot shows that corrected fuel flow must 
+also be the same for both conditions.
+
+\[
+\frac{\dot{W}_{f_t}}{\delta_t \sqrt{\theta_t}} = \frac{\dot{W}_{f_s}}{\delta_s \sqrt{\theta_s}}
+\]
 
 This relation allows standard fuel flow to be calculated as
 
- ![][12076]
+\[
+\begin{align}
+\dot{W}_{f_s} = \dot{W}_{f_t} \frac{\delta_s \sqrt{\theta_s}}{\delta_t \sqrt{\theta_t}} \\
+\\
+\text{if } C_{L_{\text{test}}} = C_{L_{\text{std}}}, M_{\text{test}} = M_{\text{std}} \\
+\end{align}
+(\#eq:std-fuel-flow)
+\]
 
-### Endurance Optimization and Prediction**
+### Endurance Optimization and Prediction
 
-Test day results are corrected to standard results at the same Mach, \(C_L\)(and therefore the same *W/\(\delta\) ,* according to Eq'n 12.44) as the test condition. For each *W/\(\delta\)* ratio tested, plot the test day corrected fuel flow vs the test Mach number.
+Test day results are corrected to standard results at the same Mach, \(C_L\) 
+(and therefore the same \(\frac{W}{\delta}\), according to Equation 
+\@ref(eq:cruise-cl-in-mach)) as the test condition. For each \(\frac{W}{\delta}\) 
+ratio tested, plot the test day corrected fuel flow versus the test Mach number.
 
- 
+![](media/12/test-corr-fuel-flow-m-curve.png){width="4in"} 
 
- 
+At any given \(\frac{W}{\delta}\), the maximum endurance occurs at the Mach 
+corresponding to the bottom of the curve. This optimal Mach and 
+\(\frac{W}{\delta}\) define the optimum lift coefficient for endurance 
+(Equation \@ref(eq:net-thrust-speed-std)).
 
- ![][12077]
+The corrected fuel flow for any desired Mach & \(\frac{W}{\delta}\) combination 
+can be interpolated from the above figure. Calculate the actual fuel flow using 
+Equation \@ref(eq:std-fuel-flow).
 
- 
+Even with simple turbojets, experience has shown that the above curves do not 
+generalize well if the desired standard altitudes are more than about 
+\(5\,000 \text{ ft}\) away from the test altitude.
 
- 
+If the aircraft maintains flight at any combination of constant Mach & 
+\(\frac{W}{\delta}\), then the corrected fuel flow will be constant. For flight 
+at a constant \(C_L\), endurance time can be calculated using
 
- 
+\[
+t = \frac{1}{\sqrt{\theta}} \frac{\sqrt{\theta}}{c} \frac{C_L}{C_D} \ln \frac{W_I}{W_D}
+(\#eq:endur-time-cl)
+\]
 
- 
+where \(c\) is the thrust specific fuel consumption at sea level standard 
+conditions. \(W_I\) is the total aircraft weight at the start of the endurance 
+segment and \(W_F\) is the final weight of the endurance segment. Although not 
+explicitly shown in this equation, the correction process does account for 
+changes in aircraft weight, and ambient pressure & temperature.
 
- 
+### Range Optimization and Prediction
 
- 
+As with endurance analysis, test day range results are standardized at a common 
+Mach & \(\frac{W}{\delta}\). Using the same corrected fuel flow versus Mach test 
+data illustrated in section \@ref(endurance-optimization-and-prediction), create 
+a cross plot of range factor, \(\mathrm{RF}\), versus Mach number for each 
+\(\frac{W}{\delta}\) tested.
 
- 
-
- 
-
-At any given *W/\(\delta\) ,* the maximum endurance occurs at the Mach corresponding to the bottom of the curve. This optimal Mach and *W/\(\delta\)* define the optimum lift coefficient for endurance (Eq'n 12.44).
-
-The corrected fuel flow for any desired Mach & *W/\(\delta\)* combination can be interpolated from the above
-
-figure. Calculate the actual fuel flow using Equation 12.46.
-
- 
-
- Even with simple turbojets, experience has shown that the above
-
-curves do not generalize well if the desired standard altitudes
-
-are more than about 5,000 ft away from the test alt
-
- 
-
- 
-
- 
-
- 
-
-If the aircraft maintains flight at any combination of constant Mach & *W/\(\delta\)* , then the corrected fuel flow will be constant. For flight at a constant *C~L~*, endurance time can be calculated using
-
- 
-
- 
-
- ![][12078]
-
- 
-
-\* *
-
-where *c* is the thrust specific fuel consumption at sea level std conditions. *W~I~* is the total aircraft weight at the start of the endurance segment and *W~F~* is the final weight of the endurance segment. Although not explicitly shown in this equation, the correction process does account for changes in aircraft weight, and ambient pressure & temperature.
-
- 
-
-### Range Optimization and Prediction**
-
-As with endurance analysis, test day range results are
-
-standardized at a common Mach & *W/\(\delta\)*. Using the same corrected fuel flow vs Mach test data illustrated in section 12.8.3, create a cross plot of range factor (\(\mathrm{RF}\)) vs Mach number for each *W/\(\delta\)  *tested.
-
- 
+![](media/12/rng-factor-m-curve.png){width="3in"}
 
 where range factor can be calculated as
 
- 
+\[
+\mathrm{RF} = \mathrm{SR}_t \cdot W_t = \frac{V_{T_t}}{\dot{W}_{f_t}} W_t = \frac{M}{ \frac{\dot{W}_{f_t}}{\delta_t \sqrt{\theta_t}} } \frac{W_t}{\delta_t} a_0
+(\#eq:rng-factor-w-delta)
+\]
 
- ![][12079]
+The optimum \(C_L\) for range at any given \(\frac{W}{\delta}\) occurs at the 
+Mach corresponding to the top of the curve. The best overall \(\frac{W}{\delta}\) 
+is the highest. These curves do not usually generalize well if the desired 
+standard altitudes are more than about \(5\,000 \text{ft}\) away from the test 
+altitudes.
 
- 
+If the aircraft cruises at any combination of constant Mach & \(\frac{W}{\delta}\), 
+then the range factor will be constant, and range is calculated as
 
- 
+\[
+R = \mathrm{RF} \ln \frac{W_I}{W_F}
+(\#eq:rng-factor-const-M-w-delta)
+\]
 
- 
+where \(\mathrm{RF}\) comes from the above test day figure at whatever Mach & 
+\(\frac{W}{\delta}\) is chosen. It is often reasonable to interpolate the above 
+test data to define a \(\mathrm{RF}\) for the desired standard conditions. 
+\(W_I\) and \(W_F\) are the total aircraft weights at the start and end of the 
+range segment.
 
- 
+For cruise at constant *altitude*, fly at a constant \(C_L\) by allowing the 
+airspeed to decrease with weight. Calculate range from test day results using
 
- 
+\[
+R = 2 \sqrt{W_t} \frac{V_{T_t}}{\dot{W}_{f_t}} \left( \sqrt{W_I} - \sqrt{W_F} \right)
+(\#eq:rng-const-alt)
+\]
 
- 
+For this equation to be valid, use the \(V_{T_t}\) and fuel flow corresponding 
+to the same \(C_L\) and altitude of the desired standard conditions. Both of the 
+above correction equations account for changes in aircraft weight and ambient 
+temperature.
 
- 
-
-The optimum \(C_L\)for range at any given *W/\(\delta\)* occurs at the Mach corresponding to the top of the curve. The best overall *W/\(\delta\)* is the highest. These curves do not usually generalize well if the desired standard altitudes are more than about 5,000 ft away from the test altitudes.
-
-If the aircraft cruises at any combination of constant Mach & *W/\(\delta\)* , then the range factor will be constant, and range is calculated as
-
- 
-
- ![][12080]
-
- 
-
- 
-
-where \(\mathrm{RF}\) comes from the above test day figure at whatever Mach & *W/\(\delta\)* is chosen. It is often reasonable to interpolate the above test data to define a \(\mathrm{RF}\) for the desired standard conditions. *W~I~* and *W~F~* are the total aircraft weights at the start and end of the range segment.
-
-For cruise at constant *altitude*, fly at a constant \(C_L\)by allowing the airspeed to decrease with weight. Calculate range from test day results using
-
- 
-
- ![][12081]
-
- 
-
- 
-
- 
-
-For this equation to be valid, use the *V~Tt~* and fuel flow corresponding to the same \(C_L\)and altitude of the desired standard conditions. Both of the above correction equations account for changes in aircraft weight and
-
-ambient temperature.
-
- 
-
-## References**
+## References
 
 |||
 |-|---------------|
 |12.1| Lawless, Alan R, "Fixed Wing Aircraft Performance Testing," Volume III, Professional Textbook Series, National Test Pilot School, Mojave CA, 1998.|
 |12.2| anon, "Performance Flight Testing Phase" notes, USAF TPS , Edwards AFB, CA, 1991.|
 |12.3| Lush, Kenneth J "Standardization of Take-Off Performance Measurements for Airplanes," AFFTC Technical Note R-12, USAF Air Research and Development Command, Edwards AFB, CA, circa 1955.|
-|12.4| Roberts, S.C., *Light Aircraft Performance for Test Pilots and Flight Test Engineers*, NTPS publication|
-|12.5| Olson, Wayne, "Performance Testing Handbook," (publication number pending ) AFFTC, Edwards AFB, CA, 1999.|
+|12.4| Roberts, S.C., "Light Aircraft Performance for Test Pilots and Flight Test Engineers," Flight Research, Inc., 1980.|
+|12.5| Olson, Wayne, "Performance Testing Handbook," AFFTC-TIH-99-01, AFFTC, Edwards AFB, CA, 1999.|
 
  
 
