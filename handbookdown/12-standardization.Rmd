@@ -132,7 +132,7 @@ S_{\mathrm{TO}} = S_g + S_a
 
 Both \(S_g\) and \(S_a\)  can be standardized using the increment or ratio method, or by empirical relations.
 The empirical methods are useful when detailed aircraft models are not available. 
-The more exact process of predicting takeoff distance using models is described in section 12.3.2.
+The more exact process of predicting takeoff distance using models is described in section \@ref(takeoff-distance-prediction).
 
 ### Empirical Standardization Method
 
@@ -1011,7 +1011,7 @@ As with the sustained level turn case, one cannot solve explicitly for
 \(\alpha_F\), so either assume an approximate value or iterate until a solution 
 converges.
 
-In the simplified case where \(\delta_t = \delta_s\), \(cg_t = cg_{\text{std}},
+In the simplified case where \(\delta_t = \delta_s\), \(cg_t = cg_{\text{std}} \),
 and \( \sin \alpha_F = 0 \), then the above equation reduces to
 
 \[
@@ -1038,221 +1038,221 @@ and \( \sin \alpha_F = 0 \), then the above equation reduces to
       \right]
 \right\}
 \end{align}
+(\#eq:delta-p-sub-s)
 \]
 
-## Reciprocating Engine Cruise Performance** (ref 12.1)
+## Reciprocating Engine Cruise Performance
 
-Cruise performance standardization consists of correcting test day range and endurance results to standard conditions. Standard conditions are typically the standard aircraft weight & \(\mathrm{cg}\) location, the nearest 5,000 ft increment of pressure altitude, and standard ambient temperature at that altitude. Although not included in this section, additional corrections can be made to adjust fuel flow to a standard
+(ref 12.1)
 
-heating value and to adjust the thrust and fuel flow for the slight gravity effects due to changes in latitude and centrifugal relief (see section 3.2).
+Cruise performance standardization consists of correcting test day range and 
+endurance results to standard conditions. Standard conditions are typically the 
+standard aircraft weight & \(\mathrm{cg}\) location, the nearest 
+\(5\,000 \text{ft}\) increment of pressure altitude, and standard ambient 
+temperature at that altitude. Although not included in this section, additional 
+corrections can be made to adjust fuel flow to a standard heating value and to 
+adjust the thrust and fuel flow for the slight gravity effects due to changes 
+in latitude and centrifugal relief (see section 3.2). #TODO
 
-Although any weight can be called "standard," several are quite common. General aviation aircraft typically have the test data corrected to the maximum takeoff weight. Transport aircraft often use a mid-mission weight (maximum payload and one-half fuel) as standard, and fighter/attack aircraft typically use full ordnance and half internal fuel as standard for any given configuration.
+Although any weight can be called "standard," several are quite common. General 
+aviation aircraft typically have the test data corrected to the maximum takeoff 
+weight. Transport aircraft often use a mid-mission weight (maximum payload and 
+one-half fuel) as standard, and fighter/attack aircraft typically use full 
+ordnance and half internal fuel as standard for any given configuration.
 
-Once standard cruise results are documented, mission planning can be conducted by reversing the standardization equations to the desired "mission" conditions. If desired, test day results can be directly corrected to mission conditions by simply treating the mission conditions as standard. These options are shown below.
+Once standard cruise results are documented, mission planning can be conducted 
+by reversing the standardization equations to the desired "mission" conditions. 
+If desired, test day results can be directly corrected to mission conditions by 
+simply treating the mission conditions as standard. These options are shown 
+below.
 
-It is common practice to correct test data for only minor changes in altitude & temperature conditions. Because large changes in Mach and Reynolds numbers alter drag polars and engine efficiency, it is not common practice to correct results across altitude differences of more than 5,000 feet. This leads to a series of results separated by altitude.
+It is common practice to correct test data for only minor changes in altitude & 
+temperature conditions. Because large changes in Mach and Reynolds numbers alter 
+drag polars and engine efficiency, it is not common practice to correct results 
+across altitude differences of more than 5,000 feet. This leads to a series of 
+results separated by altitude.
 
-.
+### Power Standardization
 
-### Power Standardization**
+If fuel flow is directly proportional to power output only, the power and 
+optimal velocity for cruise performance can be determined from a power required 
+curve as shown below.
 
-If fuel flow is directly proportional to power output only, the power and optimal velocity for cruise performance can be determined from a power required curve as shown below.
-
- 
-
- ![][12054]
+![](media/12/power-speed-curve.png){width="2.3854166666666665in" height="1.3354166666666667in"}
 
 To correct the power required curve to any standard altitude/weight condition, the usual approach is to treat the lift coefficient as the anchor (*C~L\ test\ ~*= *C~L\ std~*). This leads to the following power and velocity standardization equations
 
- 
-
- ![][12055]
-
- 
-
- 
-
-Because the drag polar of low performance propeller aircraft generally collapses (generalizes) well to a single curve, it is often acceptable to correct [all]{.underline} power required data to a single standard altitude/weight condition. When this condition is chosen to be standard day sea level at maximum weight, the above correction simplifies to what is known as the "*P~iw~ \~V~iw~*" values.
-
- 
-
- 
-
- ![][12056]
-
- 
-
- 
-
-Although all points along the test day power curve can be standardized, the most useful points are those for best range and endurance. When corrected to standard conditions, the performance of the test aircraft can be fairly compared to that of another aircraft which has also been corrected to the same flight conditions.
-
-Additionally, once the standard power and velocity are known and documented, the required power and airspeed for any "mission" conditions can be predicted by reversing Equations 12.36 as follows
-
- 
-
- 
-
- ![][12057]
-
- 
-
- 
-
- 
-
-The power & optimal speed for best mission range (and mission
-
-endurance) are determined by applying the above equations to correct the points noted on the above figure. To correct directly from test conditions to mission conditions, apply Equation 12.35 and substitute mission weight and density in lieu of standard values.
-
- 
-
-### Fuel Flow Standardization**
-
-Because reciprocating engine fuel flow is essentially
-
-proportional to power output, Equations 12.35 and 12.36 can be modified to correct the test fuel flow to standard values. For the following standardization equations to be accurate, the propeller efficiency and brake specific fuel consumption (\(\mathrm{BSFC}\)) must be the same for test and standard days.
-
- 
-
- 
-
- ![][12058]
-
- 
-
- 
-
- 
-
-Because \(\mathrm{BSFC}\) is affected by engine RPM (due to friction losses), fuel flow results at one engine RPM are never corrected to another RPM. Separate tests must be performed for each engine speed of interest. \(\mathrm{BSFC}\) [may]{.underline} also be affected by ambient air pressure and temperature. If the relation between fuel flow and power can be represented with a model as shown, then the fuel flow is a linear function of \(\mathrm{BSFC}\).
-
- 
-
- 
-
- ![][12059]
-
- 
-
- 
-
- 
-
- 
-
- 
-
-\* *
-
-If the values for *b* and \(\mathrm{BSFC}\) are known for both the test and standard conditions, then test fuel flow can be more exactly corrected to standard weight and density conditions as follows
-
- 
-
- 
-
- ![][12060]
-
- 
-
- 
-
- 
-
-Note that this correction requires only a knowledge of the *ratio* of test and standard \(\mathrm{BSFC}\) values. If both values have the same percent error, then the effect is self-canceling. The above equation also corrects for changes in fuel flow due to changing propeller efficiency.
-
-### Endurance Optimization and Prediction**
-
-To determine the optimum endurance flight profile and time aloft for any condition (at the same RPM as the test condition), plot the test day specific endurance parameter (*SEP*) vs the test day lift coefficient (*C~L~*)
-
- 
-
- ![][12061]
-
- 
-
-![][12062] 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- ![][12063]
-
- 
-
- 
-
-The maximum endurance occurs at the peak of the *SEP* curve. The associated lift coefficient is the optimum endurance condition for the aircraft (at that same RPM). The results of this test change with engine speed. If the aircraft operates at this optimum *C~L\ ~*or any other constant \(C_L\), then the total endurance time (\(T\)) while *at constant altitude* can be calculated from this test day data using
-
-\* *
-
- ![][12064]
-
- 
-
- 
-
- 
-
-where the *SEP* comes from the above test day curve at whatever \(C_L\)is chosen. *W~I~* is the total aircraft weight at the start of the endurance segment and *W~F~* is the final weight of the endurance segment. This equation accounts for the effect of how a change in air density alters the power required and the subsequent fuel flow, but does not account for changes in propeller efficiency, \(\mathrm{BSFC}\), or the fuel flow intercept, *b.*For endurance at a constant \(C_L\)and \(V_T\), use the following equation and the *SEP* and test weight associated with the lift coefficient at the start of the endurance segment.
-
- 
-
-![][12065]
-
-### Range Optimization and Prediction** (ref 12.1)
-
-To determine the optimum range flight profile and distance for any condition (at the same RPM as the test condition), plot the test day range factor (\(\mathrm{RF}\)) vs the test day lift coefficient (*C~L~*)
-
- 
-
- 
-
- ![][12066]
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-The maximum range occurs at the peak of the \(\mathrm{RF}\) curve. The associated lift coefficient is the optimum range condition for the aircraft (at that same RPM). The results of this test change with engine speed. If the
-
-aircraft operates at this optimum *C~L\ ~*or any other constant \(C_L\), then the range at constant *altitude* can be calculated from this test day data using
-
- 
-
- ![][12067]
-
- 
-
- 
-
-where the \(\mathrm{RF}\) comes from the above test day curve at whatever \(C_L\)is chosen. *W~I~* is the total aircraft weight at the start of the range segment and *W~F~* is the final weight of the range segment. Although not explicitly shown in this equation, the correction does account for changes in air density, but does not account for changes in propeller efficiency, \(\mathrm{BSFC}\), or the fuel flow intercept, *b.*
-
-For cruise at constant *airspeed and altitude*, use the following equation and the \(\mathrm{RF}\) associated with the lift coefficient at the start of the cruise segment.
-
- ![][12068]
+\[
+\begin{align}
+P_s = P_t \left( \frac{W_s}{W_t} \right)^{\frac{3}{2}} \left( \frac{\sigma_t}{\sigma_s} \right)^{\frac{1}{2}} \\
+\\
+V_{T_s} = V_{T_t} \left( \frac{W_s}{W_t} \frac{\sigma_t}{\sigma_s} \right)^{\frac{1}{2}}\\
+\end{align}
+(\#eq:pwr-vel-std)
+\]
+
+Because the drag polar of low performance propeller aircraft generally collapses 
+(generalizes) well to a single curve, it is often acceptable to correct 
+[all]{.underline} power required data to a single standard altitude/weight 
+condition. When this condition is chosen to be standard day sea level at maximum 
+weight, the above correction simplifies to what is known as the 
+"\(P_{\text{iw}} \sim V_{\text{iw}}\)" values.
+
+\[
+\begin{align}
+P_m = P_{\text{iw}} = P_t \left( \frac{W_s}{W_t} \right)^{\frac{3}{2}} \left( \sigma_t \right)^{\frac{1}{2}}  \\
+\\
+V_{T_s} = V_{\text{iw}}= V_{e_t} \left( \frac{W_s}{W_t} \right)^{\frac{1}{2}} \\
+\end{align}
+(\#eq:pwr-vel-std-max-wt)
+\]
+
+Although all points along the test day power curve can be standardized, the most 
+useful points are those for best range and endurance. When corrected to standard 
+conditions, the performance of the test aircraft can be fairly compared to that 
+of another aircraft which has also been corrected to the same flight conditions.
+
+Additionally, once the standard power and velocity are known and documented, the 
+required power and airspeed for any "mission" conditions can be predicted by 
+reversing Equations \@ref(eq:pwr-vel-std-max-wt) as follows
+
+\[
+\begin{align}
+P_m = P_{\text{iw}} \left( \frac{W_m}{W_s} \right)^{\frac{3}{2}} \left( \frac{1}{\sigma_m} \right)^{\frac{1}{2}} \\
+\\
+V_{T_m} = V_{\text{iw}} \left( \frac{W_s}{W_t} \right)^{\frac{1}{2}} \left( \frac{1}{\sigma_m} \right)^{\frac{1}{2}}\\
+\end{align}
+(\#eq:pwr-vel-msn)
+\]
+
+The power & optimal speed for best mission range (and mission endurance) are 
+determined by applying the above equations to correct the points noted on the 
+above figure. To correct directly from test conditions to mission conditions, 
+apply Equation \@ref(eq:pwr-vel-std) and substitute mission weight and density 
+in lieu of standard values.
+
+### Fuel Flow Standardization
+
+Because reciprocating engine fuel flow is essentially proportional to power 
+output, Equations \@ref(eq:pwr-vel-std) and \@ref(eq:pwr-vel-std-max-wt) can 
+be modified to correct the test fuel flow to standard values. For the following 
+standardization equations to be accurate, the propeller efficiency and brake 
+specific fuel consumption, \(\mathrm{BSFC}\), must be the same for test and 
+standard days.
+
+\[
+\begin{align}
+\dot{W}_{f_s} = \dot{W}_{f_t} \left( \frac{W_s}{W_t} \right)^{\frac{3}{2}} \left( \frac{\sigma_t}{\sigma_s} \right)^{\frac{1}{2}} \\
+\\
+\text{or} \\
+\\
+\dot{W}_{f_{\text{iw}}} = \dot{W}_{f_t} \left( \frac{W_s}{W_t} \right)^{\frac{3}{2}} \left( \sigma_t \right)^{\frac{1}{2}} \\
+\end{align}
+(\#eq:fuel-flow-std)
+\]
+
+Because \(\mathrm{BSFC}\) is affected by engine \(\mathrm{RPM}\) (due to 
+friction losses), fuel flow results at one engine \(\mathrm{RPM}\) are never 
+corrected to another \(\mathrm{RPM}\). Separate tests must be performed for each 
+engine speed of interest. \(\mathrm{BSFC}\) [may]{.underline} also be affected 
+by ambient air pressure and temperature. If the relation between fuel flow and 
+power can be represented with a model as shown, then the fuel flow is a linear 
+function of \(\mathrm{BSFC}\).
+
+![](media/12/fuel-flow-power-curve.png){width="2.3854166666666665in" height="1.3354166666666667in"}
+
+\[
+\dot{W}_f = b + \(\mathrm{BSFC}\) \cdot \(\mathrm{BHP}\)
+\]
+
+If the values for \(b\) and \(\mathrm{BSFC}\) are known for both the test and 
+standard conditions, then test fuel flow can be more exactly corrected to 
+standard weight and density conditions as follows
+
+\[
+\dot{W}_{f_s} = b_s + \left( \dot{W}_{f_t} - b_t \right) \frac{\eta_t}{\eta_s} \frac{\(\mathrm{BSFC}_s\)}{\(\mathrm{BSFC}_t\)} \left( \frac{W_s}{W_t} \right)^{\frac{3}{2}} \left( \frac{\sigma_t}{\sigma_s} \right)^{\frac{1}{2}}\)
+(\#eq:fuel-flow-std)
+\]
+
+Note that this correction requires only a knowledge of the *ratio* of test and 
+standard \(\mathrm{BSFC}\) values. If both values have the same percent error, 
+then the effect is self-canceling. The above equation also corrects for changes 
+in fuel flow due to changing propeller efficiency.
+
+### Endurance Optimization and Prediction
+
+To determine the optimum endurance flight profile and time aloft for any 
+condition (at the same \(\mathrm{RPM}\) as the test condition), plot the test day 
+specific endurance parameter, \(\mathrm{SEP}\), versus the test day lift 
+coefficient, \(C_L\)
+
+![](media/12/sep-c-sub-l-curve.png){width="4in"}
+
+The maximum endurance occurs at the peak of the \(\mathrm{SEP}\) curve. The 
+associated lift coefficient is the optimum endurance condition for the aircraft 
+(at that same \(\mathrm{RPM}\)). The results of this test change with engine 
+speed. If the aircraft operates at this optimum \(C_L\) or any other constant 
+\(C_L\), then the total endurance time, \(T\), while *at constant altitude* can 
+be calculated from this test day data using
+
+\[
+t = \mathrm{SEP} \left( \frac{\sigma_s}{\sigma_t} \right)^{\frac{1}{2}} \left[ \frac{2}{\sqrt{W_F}} - \frac{2}{\sqrt{W_I}} \right]
+(\#eq:tot-endur-time)
+\]
+
+where the \(\mathrm{SEP}\) comes from the above test day curve at whatever 
+\(C_L\) is chosen. \(W_I\) is the total aircraft weight at the start of the 
+endurance segment and \(W_F\) is the final weight of the endurance segment. 
+
+This equation accounts for the effect of how a change in air density alters the 
+power required and the subsequent fuel flow, but does not account for changes in 
+propeller efficiency, \(\mathrm{BSFC}\), or the fuel flow intercept, \(b\). 
+For endurance at a constant \(C_L\) and \(V_T\), use the following equation and 
+the \(\mathrm{SEP}\) and test weight associated with the lift coefficient at the 
+start of the endurance segment.
+
+\[
+t = \mathrm{SEP} \left( \frac{\sigma_s}{\sigma_t} \right)^{\frac{1}{2}} \left[ \frac{2}{\sqrt{W_F}} - \frac{2}{\sqrt{W_I}} \right]
+(\#eq:tot-endur-time-const-sep-cl)
+\]
+
+### Range Optimization and Prediction
+
+(ref 12.1)
+
+To determine the optimum range flight profile and distance for any condition (at 
+the same \(\mathrm{RPM}\) as the test condition), plot the test day range 
+factor, \(\mathrm{RF}\), vs the test day lift coefficient, \(C_L\)
+
+![](media/12/rng-factor-cl-curve.png){width="4in"}
+
+The maximum range occurs at the peak of the \(\mathrm{RF}\) curve. The 
+associated lift coefficient is the optimum range condition for the aircraft 
+(at that same \(mathrm{RPM}\)). The results of this test change with engine 
+speed. If the aircraft operates at this optimum \(C_L\) or any other constant 
+\(C_L\), then the range at constant *altitude* can be calculated from this test 
+day data using
+
+\[
+R = \mathrm{RF} \ln \frac{W_I}{W_F}
+(\#eq:const-alt-rng)
+\]
+
+where the \(\mathrm{RF}\) comes from the above test day curve at whatever 
+\(C_L\) is chosen. \(W_I\) is the total aircraft weight at the start of the 
+range segment and \(W_F\) is the final weight of the range segment. Although not 
+explicitly shown in this equation, the correction does account for changes in 
+air density, but does not account for changes in propeller efficiency, 
+\(\mathrm{BSFC}\), or the fuel flow intercept, \(b\).
+
+For cruise at constant *airspeed and altitude*, use the following equation and 
+the \(\mathrm{RF}\) associated with the lift coefficient at the start of the 
+cruise segment.
+
+\[
+R = \mathrm{RF} \cdot \tan^{-1} \left[ \frac{1 - \frac{W_F}{W_I}}{1 + \frac{W_F}{W_I}} \right]
+(\#eq:const-as-alt-rng)
+\]
 
 ## Jet Aircraft Cruise Performance** (ref 12.1)
 
