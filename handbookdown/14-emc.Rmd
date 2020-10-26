@@ -413,7 +413,7 @@ that are not properly grounded. Ground straps do a good job of not isolating
 parts. (Note: these straps should not be used for lightning protection as they 
 usually are not sized to handle the current).
 
-## Reference Material
+## References
 
 |||
 |-|---------------|
