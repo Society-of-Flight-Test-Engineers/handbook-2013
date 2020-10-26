@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>13 13 Acoustics** | Flight Test Engineering Reference Handbook</title>
-  <meta name="description" content="13 13 Acoustics** | Flight Test Engineering Reference Handbook" />
+  <title>13 Acoustics | Flight Test Engineering Reference Handbook</title>
+  <meta name="description" content="13 Acoustics | Flight Test Engineering Reference Handbook" />
   <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="13 13 Acoustics** | Flight Test Engineering Reference Handbook" />
+  <meta property="og:title" content="13 Acoustics | Flight Test Engineering Reference Handbook" />
   <meta property="og:type" content="book" />
   
   <meta property="og:image" content="media/media/image1.jpg" />
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="13 13 Acoustics** | Flight Test Engineering Reference Handbook" />
+  <meta name="twitter:title" content="13 Acoustics | Flight Test Engineering Reference Handbook" />
   
   
   <meta name="twitter:image" content="media/media/image1.jpg" />
@@ -385,7 +385,15 @@
 </ul></li>
 <li class="chapter" data-level="12.9" data-path="fixed-wing-performance-standardization.html"><a href="fixed-wing-performance-standardization.html#references-10"><i class="fa fa-check"></i><b>12.9</b> References</a></li>
 </ul></li>
-<li class="chapter" data-level="13" data-path="acoustics.html"><a href="acoustics.html"><i class="fa fa-check"></i><b>13</b> 13 Acoustics**</a></li>
+<li class="chapter" data-level="13" data-path="acoustics.html"><a href="acoustics.html"><i class="fa fa-check"></i><b>13</b> Acoustics</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="acoustics.html"><a href="acoustics.html#abbreviations-and-terminology-1"><i class="fa fa-check"></i><b>13.1</b> Abbreviations and Terminology</a></li>
+<li class="chapter" data-level="13.2" data-path="acoustics.html"><a href="acoustics.html#acoustic-velocities-spectrum-and-reference-levels"><i class="fa fa-check"></i><b>13.2</b> Acoustic Velocities, Spectrum, and Reference Levels</a></li>
+<li class="chapter" data-level="13.3" data-path="acoustics.html"><a href="acoustics.html#acoustic-pressure-and-intensity"><i class="fa fa-check"></i><b>13.3</b> Acoustic Pressure and Intensity</a></li>
+<li class="chapter" data-level="13.4" data-path="acoustics.html"><a href="acoustics.html#acoustic-weighting-curves"><i class="fa fa-check"></i><b>13.4</b> Acoustic Weighting Curves</a></li>
+<li class="chapter" data-level="13.5" data-path="acoustics.html"><a href="acoustics.html#octave-center-frequencies"><i class="fa fa-check"></i><b>13.5</b> 1/3 Octave Center Frequencies</a></li>
+<li class="chapter" data-level="13.6" data-path="acoustics.html"><a href="acoustics.html#references-11"><i class="fa fa-check"></i><b>13.6</b> References</a></li>
+</ul></li>
 <li class="chapter" data-level="14" data-path="electromagnetic-compatibility.html"><a href="electromagnetic-compatibility.html"><i class="fa fa-check"></i><b>14</b> 14 Electromagnetic Compatibility**</a>
 <ul>
 <li class="chapter" data-level="14.0.1" data-path="electromagnetic-compatibility.html"><a href="electromagnetic-compatibility.html#regulations-and-industry-guidance"><i class="fa fa-check"></i><b>14.0.1</b> Regulations and Industry Guidance</a></li>
@@ -419,241 +427,812 @@
 
             <section class="normal" id="section-">
 <div id="acoustics" class="section level1" number="13">
-<h1><span class="header-section-number">13</span> 13 Acoustics**</h1>
-<p><strong> </strong></p>
-<p><strong> </strong></p>
-<p><strong> </strong></p>
-<p> </p>
-<p>13.1 Abbreviations and Terminology</p>
-<p> </p>
-<p>13.2 Velocities, Spectrum and Reference Levels</p>
-<p> </p>
-<p>13.3 Pressure, Intensity</p>
-<p> </p>
-<p>13.4 Weighting Curves</p>
-<p> </p>
-<p>13.5 1/3 Octave Center Frequencies</p>
-<p> </p>
-<p>13.6 References</p>
-<p> </p>
-<p><strong>13.1 Abbreviations and Terminology</strong></p>
-<p><strong> </strong></p>
+<h1><span class="header-section-number">13</span> Acoustics</h1>
+<div id="abbreviations-and-terminology-1" class="section level2" number="13.1">
+<h2><span class="header-section-number">13.1</span> Abbreviations and Terminology</h2>
 <p><strong>Abbreviations</strong></p>
-<p><em>ANSI</em> American National Standards Institute</p>
-<p><em>dB</em> decibels</p>
-<p><em>f</em> frequency, cycles/sec</p>
-<div id="hz-hertz" class="section level5" number="13.0.0.0.1">
-<h5><span class="header-section-number">13.0.0.0.1</span> <em>Hz</em> Hertz</h5>
-</div>
-<div id="nm-10-9-meters" class="section level5" number="13.0.0.0.2">
-<h5><span class="header-section-number">13.0.0.0.2</span> <em>nm</em> 10<sup>-9</sup> meters</h5>
-</div>
-<div id="p-sound-power" class="section level5" number="13.0.0.0.3">
-<h5><span class="header-section-number">13.0.0.0.3</span> <em>P</em> sound power</h5>
-<p><em>p</em> pressure</p>
-<p><em>pW</em> 10<sup>-12</sup> Watts</p>
-<p><em>x</em> RMS value of quantity</p>
-<p><em>x<sub>0</sub></em> reference value of quantity</p>
-<p><em>μPa</em> 10<sup>-6</sup> Pascals</p>
-<p><strong> </strong></p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="left">ANSI</td>
+<td align="left">American National Standards Institute</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\text{dB}\)</span></td>
+<td align="left">decibels</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(f\)</span></td>
+<td align="left">frequency, cycles/sec</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(p\)</span></td>
+<td align="left">pressure</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\text{pW}\)</span></td>
+<td align="left"><span class="math inline">\(10^{-12}\)</span> Watts</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(x\)</span></td>
+<td align="left"><span class="math inline">\(\mathrm{RMS}\)</span> value of quantity</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(x_0\)</span></td>
+<td align="left">reference value of quantity</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\mu Pa\)</span></td>
+<td align="left"><span class="math inline">\(10^{-6}\)</span> Pascals</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\text{Hz}\)</span></td>
+<td align="left">Hertz</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(nm\)</span></td>
+<td align="left"><span class="math inline">\(10^{-9}\)</span> meters</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(P\)</span></td>
+<td align="left">sound power</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Terminology</strong></p>
-<p>decade band with the upper frequency x10 that of thelower.</p>
-<p>decibels measure of a magnitude, <em>dB</em> = 10<em>log</em><sub>10</sub>(mag).</p>
-<p>far field beyond the near field (region where sound level drops -6 <em>dB</em> as distance from the source</p>
-<p>doubles).</p>
-<p>Hertz frequency in cycles/second.</p>
-<p>narrow band band whose width is less than one-third octave but less than 1% of the center frequency near field range within a distance equal to the wavelength of the lowest frequency emitted or twice the greatest dimension of the subject.</p>
-<p>octave a band with the upper freq exactly twice the lower freq. (common octaves include 0.0375- 0.075, 0.075- 0.15, 15- 0.3, 0.6-1.2, 1.2-2.4, 2.4-4.8, 4.8-9.6 k<em>Hz</em>).</p>
-<p>pink noise has equal energy in each octave from 20 to 20,000 Hz, or with an energy content inversely</p>
-<p>proportional to frequency.</p>
-<p>random noise does not have a uniform frequency spectrum and has an amplitude, as a function of time, consis tent with a Gaussian distribution curve.</p>
-<p>third-octave highest frequency =1.26 x lower frequency (ratio= 2<sup>1/3</sup>)</p>
-<p>white noise has a constant spectrum level over the entire band of audible frequencies (need not be random).</p>
-<p> </p>
-<p><strong>13.2 Acoustic Velocities, Spectrum, and Reference Levels</strong></p>
-<p><strong> </strong></p>
+<table>
+<colgroup>
+<col width="22%" />
+<col width="77%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left">decade</td>
+<td align="left">band with the upper frequency x10 that of the lower</td>
+</tr>
+<tr class="even">
+<td align="left">decibels</td>
+<td align="left">measure of a magnitude, <span class="math inline">\(\text{dB} = 10 \log_{10}\)</span> (mag)</td>
+</tr>
+<tr class="odd">
+<td align="left">far field</td>
+<td align="left">beyond the near field (region where sound level drops <span class="math inline">\(-6\,\text{dB}\)</span> as distance from the source doubles).</td>
+</tr>
+<tr class="even">
+<td align="left">Hertz</td>
+<td align="left">frequency in cycles/second</td>
+</tr>
+<tr class="odd">
+<td align="left">narrow band</td>
+<td align="left">band whose width is less than one-third octave but less than <span class="math inline">\(1\%\)</span> of the center frequency near field range within a distance equal to the wavelength of the lowest frequency emitted or twice the greatest dimension of the subject</td>
+</tr>
+<tr class="even">
+<td align="left">octave</td>
+<td align="left">a band with the upper frequency exactly twice the lower frequency<a href="#fn11" class="footnote-ref" id="fnref11"><sup>11</sup></a></td>
+</tr>
+<tr class="odd">
+<td align="left">pink noise</td>
+<td align="left">has equal energy in each octave from <span class="math inline">\(20\)</span> to <span class="math inline">\(20\,000\)</span> Hz, or with an energy content inversely proportional to frequency</td>
+</tr>
+<tr class="even">
+<td align="left">random noise</td>
+<td align="left">does not have a uniform frequency spectrum and has an amplitude, as a function of time, consistent with a Gaussian distribution curve</td>
+</tr>
+<tr class="odd">
+<td align="left">third-octave</td>
+<td align="left">highest frequency <span class="math inline">\(= 1.26\)</span> x lower frequency (ratio <span class="math inline">\(= 2^{\frac{1}{3}}\)</span>)</td>
+</tr>
+<tr class="even">
+<td align="left">white noise</td>
+<td align="left">has a constant spectrum level over the entire band of audible frequencies (need not be random)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="acoustic-velocities-spectrum-and-reference-levels" class="section level2" number="13.2">
+<h2><span class="header-section-number">13.2</span> Acoustic Velocities, Spectrum, and Reference Levels</h2>
 <p><strong>Acoustic Velocity (speed of sound)</strong></p>
-<p><strong> </strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Medium</th>
+<th align="right">Approximate Velocity, <span class="math inline">\(\frac{\text{m}}{\text{s}}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Air (<span class="math inline">\(20° \text{C}\)</span>)</td>
+<td align="right"><span class="math inline">\(343\)</span></td>
+</tr>
+<tr class="even">
+<td>Fresh water</td>
+<td align="right"><span class="math inline">\(1\,480\)</span></td>
+</tr>
+<tr class="odd">
+<td>Aluminum</td>
+<td align="right"><span class="math inline">\(5\,150\)</span></td>
+</tr>
+<tr class="even">
+<td>Concrete</td>
+<td align="right"><span class="math inline">\(3\,600\)</span></td>
+</tr>
+<tr class="odd">
+<td>Glass</td>
+<td align="right"><span class="math inline">\(5\,300\)</span></td>
+</tr>
+<tr class="even">
+<td>Steel</td>
+<td align="right"><span class="math inline">\(6\,000\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[
+\text{Wavelength, } \lambda = \frac{\text{acoustic velocity}}{\text{frequency}}
+\]</span></p>
+<p>Human hearing range is approximately <span class="math inline">\(20\)</span> to <span class="math inline">\(20\,000 \text{ Hz}\)</span></p>
+<p><img src="media/13/image1.png" /></p>
+<ul>
+<li>Ultrasound lies above <span class="math inline">\(20\,000 \text{ Hz}\)</span></li>
+<li>Infrasound lies below <span class="math inline">\(20 \text{ Hz}\)</span></li>
+</ul>
+<p><strong>Acoustic Reference Levels</strong></p>
+<table style="width:100%;">
+<colgroup>
+<col width="42%" />
+<col width="28%" />
+<col width="28%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Quantity</th>
+<th align="left">Formula</th>
+<th align="left">Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Velocity <span class="math inline">\(\left( L_v \right)\)</span></td>
+<td align="left"><span class="math inline">\(20 \log \left( \frac{v}{v_0} \right)\)</span></td>
+<td align="left"><span class="math inline">\(v_0 = 10 \frac{\text{nm}}{\text{s}^2}\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Intensity <span class="math inline">\(\left( L_I \right)\)</span></td>
+<td align="left"><span class="math inline">\(10 \log \left( \frac{I}{I_0} \right)\)</span></td>
+<td align="left"><span class="math inline">\(I_0 = 1 \frac{\text{pW}}{\text{m}^2}\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Sound Power Level <span class="math inline">\(\left( L_W \right)\)</span></td>
+<td align="left"><span class="math inline">\(10 \log \left( \frac{P}{P_0} \right)\)</span></td>
+<td align="left"><span class="math inline">\(P_0 = 1 \text{ pW}\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Sound Pressure Level, <span class="math inline">\(\mathrm{SPL}\)</span> <span class="math inline">\(\left( L_p \right)\)</span></td>
+<td align="left"><span class="math inline">\(20 \log \left( \frac{p}{p_0} \right)\)</span></td>
+<td align="left"><span class="math inline">\(P_0 = 1\,\mu\text{Pa (air)}\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Pressure Spectrum Level <span class="math inline">\(\left( \mathrm{PSL} \right)\)</span><a href="#fn12" class="footnote-ref" id="fnref12"><sup>12</sup></a></td>
+<td align="left"><span class="math inline">\(\mathrm{SPL} - 10 \log \Delta f\)</span></td>
+<td align="left"><span class="math inline">\(\text{dB}\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Pressure Band Level <span class="math inline">\(\left( \mathrm{PBL} \right)\)</span></td>
+<td align="left"><span class="math inline">\(\mathrm{PSL} + 10 \log \Delta f\)</span></td>
+<td align="left"><span class="math inline">\(\text{dB}\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Overall SPL <span class="math inline">\(\left( \mathrm{OASPL} \right)\)</span></td>
+<td align="left"><span class="math inline">\(10 \log_{10} \sum 10^{\frac{\mathrm{SPL}}{10}}\)</span></td>
+<td align="left"><span class="math inline">\(20\,\mu\text{Pa (air)}\)</span></td>
+</tr>
+</tbody>
+</table>
 </div>
-<div id="medium-approximate-velocity" class="section level5" number="13.0.0.0.4">
-<h5><span class="header-section-number">13.0.0.0.4</span> <u>Medium</u> <u>Approximate Velocity</u></h5>
-<p>Air (20° C) 343 m/s</p>
-<p>Fresh water 1,480 m/s</p>
-<p>Aluminum 5,150 m/s</p>
-</div>
-<div id="concrete-3600-ms" class="section level5" number="13.0.0.0.5">
-<h5><span class="header-section-number">13.0.0.0.5</span> Concrete 3,600 m/s</h5>
-<p>Glass 5,300 m/s</p>
-<p>Steel 6,000 m/s</p>
-<p> </p>
-<p><strong>Wavelength</strong> (λ) = <u>acoustic velocity</u></p>
-<p>frequency</p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p>Human hearing range is approximately 20 to 20,000 <em>Hz</em></p>
-<p>• Ultrasound lies above 20,000 <em>Hz</em></p>
-<p>• Infrasound lies below 20 <em>Hz</em></p>
-</div>
-<div id="section" class="section level4" number="13.0.0.1">
-<h4><span class="header-section-number">13.0.0.1</span>  </h4>
-</div>
-<div id="acoustic-reference-levels" class="section level4" number="13.0.0.2">
-<h4><span class="header-section-number">13.0.0.2</span> Acoustic Reference Levels</h4>
-<p><u>Quantity</u> <u>Formula</u></p>
-<p>Velocity (<em>L<sub>v</sub></em>) 20log(<em>v/v<sub>0</sub></em>) <em>v<sub>0</sub></em> = 10 <em>nm/s<sup>2</sup></em></p>
-<p>Intensity (<em>L<sub>I</sub></em>) 10log(<em>I/I<sub>0</sub></em>) <em>I<sub>0</sub></em>= 1 <em>pW/m<sup>2</sup></em></p>
-<p>Sound Power Level (<em>L<sub>W</sub></em>) 10log(<em>P/P<sub>0</sub></em>) <em>Po</em> = 1 <em>pW</em></p>
-<p>Sound Pressure Level “<em>SPL</em>” (<em>L<sub>p</sub></em>) 20log(<em>p/p<sub>0</sub></em>) 20<em>μPa</em> (air)</p>
-<p>Pressure Spectrum Level (<em>PSL</em>)* SPL – 10<em>log∆f</em> (<em>dB</em>)</p>
-<p>Pressure Band Level (<em>PBL</em>) <em>PSL</em> + 10<em>log∆f</em> (<em>dB</em>)</p>
-<p>Overall SPL (<em>OASPL</em>) 10<em>log</em><sub>10</sub> Σ10<sup><em>SPL</em>/10</sup> 20 μ<em>Pa</em> (air)</p>
-<p> </p>
-<p>* the <em>SPL</em> contained within a band 1 <em>Hz</em> wide</p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<p><strong>13.3 Acoustic Pressure and Intensity</strong></p>
-</div>
-<div id="sound-pressure-from-sound-power" class="section level4" number="13.0.0.3">
-<h4><span class="header-section-number">13.0.0.3</span> <strong> </strong>Sound Pressure from Sound Power</h4>
-<p> </p>
-<p>Transmission Environment <em>L<sub>p</sub></em></p>
-<p>Free Field <em>L<sub>W</sub> + log Q -</em> 20 <em>log r -</em> 10.8 <em>dB</em></p>
-<p>Reflecting Plane <em>L<sub>W</sub> + log Q -</em> 20 <em>log r -</em> 7.8 <em>dB</em></p>
-<p>Reverberant Room <em>L<sub>W</sub> + log Q -</em> 20<em>l og R -</em> 6.2 <em>dB</em></p>
-<p> </p>
-<p>where <em>r</em> = distance from source</p>
-<p><em>Q</em> = directivity index of source</p>
-<p><em>R</em> = room constant</p>
-<p> </p>
-</div>
-<div id="acoustic-intensity" class="section level4" number="13.0.0.4">
-<h4><span class="header-section-number">13.0.0.4</span> Acoustic Intensity</h4>
-<p> </p>
-<p>I - <u>Imaginary<span class="math display">\[G~yx~(f)\]</span></u> = <u>Im<span class="math display">\[G~yx~(f)\]</span></u>(for air)</p>
-<p>4π<em>ρ<sub>0</sub>∆rf</em> 16.25 <em>∆rf</em></p>
-<p> </p>
-<p>where <em>ρ<sub>0 </sub></em>= fluid density = 1.293 kg/m<sup>3</sup> for air</p>
-<p><em>∆r</em> = microphone spacing (meters)</p>
-<p><em>f</em> = frequency</p>
-<p> </p>
+<div id="acoustic-pressure-and-intensity" class="section level2" number="13.3">
+<h2><span class="header-section-number">13.3</span> Acoustic Pressure and Intensity</h2>
+<p><strong>Sound Pressure from Sound Power</strong></p>
+<table>
+<tbody>
+<tr class="odd">
+<td>Transmission Environment</td>
+<td><span class="math inline">\(L_p\)</span></td>
+</tr>
+<tr class="even">
+<td>Free Field</td>
+<td><span class="math inline">\(L_W + \log Q - 20 \log r - 10.8 \text{ dB}\)</span></td>
+</tr>
+<tr class="odd">
+<td>Reflecting Plane</td>
+<td><span class="math inline">\(L_W + \log Q - 20 \log r - 7.8 \text{ dB}\)</span></td>
+</tr>
+<tr class="even">
+<td>Reverberant Room</td>
+<td><span class="math inline">\(L_W + \log Q - 20 \log R - 6.2 \text{ dB}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>where</p>
+<p><span class="math display">\[
+\begin{align}
+r &amp;= \text{distance from source}\\
+Q &amp;= \text{directivity index of source}\\
+R &amp;= \text{room constant}\\
+\end{align}
+\]</span></p>
+<p><strong>Acoustic Intensity</strong></p>
+<p><span class="math display">\[
+I - \frac{\text{Imaginary} \left[ G_{yx} \left( f \right) \right]}{4 \pi \rho_0 \Delta r f} = \frac{\text{Im} \left[ G_{yx} \left( f \right) \right]}{16.25 \Delta r f} \left( \text{for air} \right)
+\]</span></p>
+<p>where</p>
+<p><span class="math display">\[
+\begin{align}
+\rho_0 &amp;= \text{fluid density} = 1.293 \frac{\text{kg}}{\text{m^3}} \text{ for air}\\
+\Delta r &amp;= \text{microphone spacing (meters)}\\
+f &amp;= \text{frequency}\\
+\end{align}
+\]</span></p>
 <p><strong>Intensity Spectrum Level (ISL)</strong></p>
-<p> </p>
-<p>Intensity level of a sound contained within a band 1<em>Hz</em> wide</p>
-<p>* *</p>
-<p><em>ISL</em> = 10 <em>log _<u>I_</u></em> = <em>IL</em> – 10 <em>log∆f</em> (<em>dB</em>)</p>
-<p><em>I<sub>0</sub>∆f</em></p>
-<p> </p>
-<p>where <em>f</em> = center frequency of band</p>
-<p><em>I</em> = sound intensity (watts/<em>m</em><sup>2</sup>)</p>
-<p><em>I<sub>0</sub></em> = 10<sup>-12</sup> watt/m<sup>2</sup> reference intensity</p>
-<p><em>∆f</em> = bandwidth (<em>Hz</em>)</p>
-<p> </p>
-<p><strong>13.4 Acoustic Weighting Curves</strong> (ANSI S1.4 1983)</p>
+<p>Intensity level of a sound contained within a band 1 <span class="math inline">\(\text{Hz}\)</span> wide</p>
+<p><span class="math display">\[
+\mathrm{ISL} = 10 \log \frac{I}{I_0 \Delta f} = \mathrm{IL} - 10 \log \Delta f \left( \text{dB} \right)
+\]</span></p>
+<p>where</p>
+<p><span class="math display">\[
+\begin{align}
+f &amp;= \text{center frequency of band} \\
+I &amp;= \text{sound intensity} \left( \frac{\text{watts}}{\text{m}^2} \right) \\
+I_0 &amp;= 10^{-12} \frac{\text{watt}}{\text{m}^2} \text{reference intensity} \\
+\Delta f &amp;= \text{bandwidth} \left( \text{Hz} \right) \\
+\end{align}
+\]</span></p>
+</div>
+<div id="acoustic-weighting-curves" class="section level2" number="13.4">
+<h2><span class="header-section-number">13.4</span> Acoustic Weighting Curves</h2>
+<p>(ANSI S1.4 1983)</p>
 <p>Weighting for SPL</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">Nominal Freq</th>
+<th align="right">Exact Freq</th>
+<th align="right">A</th>
+<th align="right">B</th>
+<th align="right">C</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right"><span class="math inline">\(\text{Hz}\)</span></td>
+<td align="right"><span class="math inline">\(\text{Hz}\)</span></td>
+<td align="right"><span class="math inline">\(\text{dB}\)</span></td>
+<td align="right"><span class="math inline">\(\text{dB}\)</span></td>
+<td align="right"><span class="math inline">\(\text{dB}\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(10.0\)</span></td>
+<td align="right"><span class="math inline">\(10.00\)</span></td>
+<td align="right"><span class="math inline">\(-70.4\)</span></td>
+<td align="right"><span class="math inline">\(-38.2\)</span></td>
+<td align="right"><span class="math inline">\(-14.3\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(12.5\)</span></td>
+<td align="right"><span class="math inline">\(12.59\)</span></td>
+<td align="right"><span class="math inline">\(-63.6\)</span></td>
+<td align="right"><span class="math inline">\(-33.3\)</span></td>
+<td align="right"><span class="math inline">\(-11.3\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(16.0\)</span></td>
+<td align="right"><span class="math inline">\(15.85\)</span></td>
+<td align="right"><span class="math inline">\(-56.4\)</span></td>
+<td align="right"><span class="math inline">\(-28.3\)</span></td>
+<td align="right"><span class="math inline">\(-8.4\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(20.0\)</span></td>
+<td align="right"><span class="math inline">\(19.95\)</span></td>
+<td align="right"><span class="math inline">\(-50.4\)</span></td>
+<td align="right"><span class="math inline">\(-24.2\)</span></td>
+<td align="right"><span class="math inline">\(-6.2\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(25.0\)</span></td>
+<td align="right"><span class="math inline">\(25.12\)</span></td>
+<td align="right"><span class="math inline">\(-44.8\)</span></td>
+<td align="right"><span class="math inline">\(-20.5\)</span></td>
+<td align="right"><span class="math inline">\(-4.4\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(31.5\)</span></td>
+<td align="right"><span class="math inline">\(31.62\)</span></td>
+<td align="right"><span class="math inline">\(-39.5\)</span></td>
+<td align="right"><span class="math inline">\(-17.1\)</span></td>
+<td align="right"><span class="math inline">\(-3.0\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(40.0\)</span></td>
+<td align="right"><span class="math inline">\(39.81\)</span></td>
+<td align="right"><span class="math inline">\(-34.5\)</span></td>
+<td align="right"><span class="math inline">\(-14.1\)</span></td>
+<td align="right"><span class="math inline">\(-2.0\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(50.0\)</span></td>
+<td align="right"><span class="math inline">\(50.12\)</span></td>
+<td align="right"><span class="math inline">\(-30.3\)</span></td>
+<td align="right"><span class="math inline">\(-11.6\)</span></td>
+<td align="right"><span class="math inline">\(-1.3\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(63.0\)</span></td>
+<td align="right"><span class="math inline">\(63.10\)</span></td>
+<td align="right"><span class="math inline">\(-26.2\)</span></td>
+<td align="right"><span class="math inline">\(-9.4\)</span></td>
+<td align="right"><span class="math inline">\(-0.8\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(80.0\)</span></td>
+<td align="right"><span class="math inline">\(79.43\)</span></td>
+<td align="right"><span class="math inline">\(-22.4\)</span></td>
+<td align="right"><span class="math inline">\(-7.3\)</span></td>
+<td align="right"><span class="math inline">\(-0.5\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(100.0\)</span></td>
+<td align="right"><span class="math inline">\(100.00\)</span></td>
+<td align="right"><span class="math inline">\(-19.1\)</span></td>
+<td align="right"><span class="math inline">\(-5.6\)</span></td>
+<td align="right"><span class="math inline">\(-0.3\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(125.0\)</span></td>
+<td align="right"><span class="math inline">\(126.90\)</span></td>
+<td align="right"><span class="math inline">\(-16.2\)</span></td>
+<td align="right"><span class="math inline">\(-4.2\)</span></td>
+<td align="right"><span class="math inline">\(-0.2\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(160.0\)</span></td>
+<td align="right"><span class="math inline">\(158.50\)</span></td>
+<td align="right"><span class="math inline">\(-13.2\)</span></td>
+<td align="right"><span class="math inline">\(-2.9\)</span></td>
+<td align="right"><span class="math inline">\(-0.1\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(200.0\)</span></td>
+<td align="right"><span class="math inline">\(199.50\)</span></td>
+<td align="right"><span class="math inline">\(-10.8\)</span></td>
+<td align="right"><span class="math inline">\(-2.0\)</span></td>
+<td align="right"><span class="math inline">\(0.0\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(250.0\)</span></td>
+<td align="right"><span class="math inline">\(251.20\)</span></td>
+<td align="right"><span class="math inline">\(-8.7\)</span></td>
+<td align="right"><span class="math inline">\(-1.4\)</span></td>
+<td align="right"><span class="math inline">\(0.0\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(315.0\)</span></td>
+<td align="right"><span class="math inline">\(316.20\)</span></td>
+<td align="right"><span class="math inline">\(-6.6\)</span></td>
+<td align="right"><span class="math inline">\(-0.9\)</span></td>
+<td align="right"><span class="math inline">\(0.0\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(400.0\)</span></td>
+<td align="right"><span class="math inline">\(398.10\)</span></td>
+<td align="right"><span class="math inline">\(-4.8\)</span></td>
+<td align="right"><span class="math inline">\(-0.5\)</span></td>
+<td align="right"><span class="math inline">\(0.0\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(500.0\)</span></td>
+<td align="right"><span class="math inline">\(501.20\)</span></td>
+<td align="right"><span class="math inline">\(-3.2\)</span></td>
+<td align="right"><span class="math inline">\(-0.3\)</span></td>
+<td align="right"><span class="math inline">\(0.0\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(630.0\)</span></td>
+<td align="right"><span class="math inline">\(631.00\)</span></td>
+<td align="right"><span class="math inline">\(-1.9\)</span></td>
+<td align="right"><span class="math inline">\(-0.1\)</span></td>
+<td align="right"><span class="math inline">\(0.0\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(800.0\)</span></td>
+<td align="right"><span class="math inline">\(794.30\)</span></td>
+<td align="right"><span class="math inline">\(-0.8\)</span></td>
+<td align="right"><span class="math inline">\(0.0\)</span></td>
+<td align="right"><span class="math inline">\(0.0\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(1\,000.0\)</span></td>
+<td align="right"><span class="math inline">\(1\,000.00\)</span></td>
+<td align="right"><span class="math inline">\(0.0\)</span></td>
+<td align="right"><span class="math inline">\(0.0\)</span></td>
+<td align="right"><span class="math inline">\(0.0\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(1\,250.0\)</span></td>
+<td align="right"><span class="math inline">\(1\,259.00\)</span></td>
+<td align="right"><span class="math inline">\(0.6\)</span></td>
+<td align="right"><span class="math inline">\(0.0\)</span></td>
+<td align="right"><span class="math inline">\(0.0\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(1\,600.0\)</span></td>
+<td align="right"><span class="math inline">\(1\,585.00\)</span></td>
+<td align="right"><span class="math inline">\(1.0\)</span></td>
+<td align="right"><span class="math inline">\(0.0\)</span></td>
+<td align="right"><span class="math inline">\(-0.1\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(2\,000.0\)</span></td>
+<td align="right"><span class="math inline">\(1\,995.00\)</span></td>
+<td align="right"><span class="math inline">\(1.2\)</span></td>
+<td align="right"><span class="math inline">\(-0.1\)</span></td>
+<td align="right"><span class="math inline">\(-0.2\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(2\,500.0\)</span></td>
+<td align="right"><span class="math inline">\(2\,512.00\)</span></td>
+<td align="right"><span class="math inline">\(1.3\)</span></td>
+<td align="right"><span class="math inline">\(-0.2\)</span></td>
+<td align="right"><span class="math inline">\(-0.3\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(3\,150.0\)</span></td>
+<td align="right"><span class="math inline">\(3\,162.00\)</span></td>
+<td align="right"><span class="math inline">\(1.2\)</span></td>
+<td align="right"><span class="math inline">\(-0.4\)</span></td>
+<td align="right"><span class="math inline">\(-0.5\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(4\,000.0\)</span></td>
+<td align="right"><span class="math inline">\(3\,981.00\)</span></td>
+<td align="right"><span class="math inline">\(1.0\)</span></td>
+<td align="right"><span class="math inline">\(-0.7\)</span></td>
+<td align="right"><span class="math inline">\(-0.8\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(5\,000.0\)</span></td>
+<td align="right"><span class="math inline">\(5\,012.00\)</span></td>
+<td align="right"><span class="math inline">\(0.6\)</span></td>
+<td align="right"><span class="math inline">\(-1.2\)</span></td>
+<td align="right"><span class="math inline">\(-1.3\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(6\,300.0\)</span></td>
+<td align="right"><span class="math inline">\(6\,310.00\)</span></td>
+<td align="right"><span class="math inline">\(-0.1\)</span></td>
+<td align="right"><span class="math inline">\(-1.9\)</span></td>
+<td align="right"><span class="math inline">\(-2.0\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(8\,000.0\)</span></td>
+<td align="right"><span class="math inline">\(7\,943.00\)</span></td>
+<td align="right"><span class="math inline">\(-1.1\)</span></td>
+<td align="right"><span class="math inline">\(-2.9\)</span></td>
+<td align="right"><span class="math inline">\(-3.0\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(10\,000.0\)</span></td>
+<td align="right"><span class="math inline">\(10\,000.00\)</span></td>
+<td align="right"><span class="math inline">\(-2.5\)</span></td>
+<td align="right"><span class="math inline">\(-4.3\)</span></td>
+<td align="right"><span class="math inline">\(-4.4\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(12\,500.0\)</span></td>
+<td align="right"><span class="math inline">\(12\,589.00\)</span></td>
+<td align="right"><span class="math inline">\(-4.3\)</span></td>
+<td align="right"><span class="math inline">\(-6.1\)</span></td>
+<td align="right"><span class="math inline">\(-6.2\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(16\,000.0\)</span></td>
+<td align="right"><span class="math inline">\(15\,849.00\)</span></td>
+<td align="right"><span class="math inline">\(-6.7\)</span></td>
+<td align="right"><span class="math inline">\(-8.5\)</span></td>
+<td align="right"><span class="math inline">\(-8.6\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(20\,000.0\)</span></td>
+<td align="right"><span class="math inline">\(19\,953.00\)</span></td>
+<td align="right"><span class="math inline">\(-9.3\)</span></td>
+<td align="right"><span class="math inline">\(-11.2\)</span></td>
+<td align="right"><span class="math inline">\(-11.3\)</span></td>
+</tr>
+</tbody>
+</table>
 <p> </p>
-<p>Nominal Exact A B C</p>
-<p><u>Freq (<em>Hz</em>)</u> <u>Freq (<em>Hz</em>)</u> <u>(<em>dB</em>)</u> <u>(<em>dB</em>)</u> <u>(<em>dB</em>)</u></p>
-<p>10 10.00 -70.4 -38.2 -14.3</p>
-<p>12.5 12.59 -63.6 -33.3 -11.3</p>
-<p>16 15.85 -56.4 -28.3 -8.4</p>
-<p>20 19.95 -50.4 -24.2 -6.2</p>
-<p>25 25.12 -44.8 -20.5 -4.4</p>
-<p>31.5 31.62 -39.5 -17.1 -3.0</p>
-<p>40 39.81 -34.5 -14.1 -2.0</p>
-<p>50 50.12 -30.3 -11.6 -1.3</p>
-<p>63 63.10 -26.2 -9.4 -0.8</p>
-<p>80 79.43 -22.4 -7.3 -0.5</p>
-<p>100 100.0 -19.1 -5.6 -0.3</p>
-<p>125 126.9 -16.2 -4.2 -0.2</p>
-<p>160 158.5 -13.2 -2.9 -0.1</p>
-<p>200 199.5 -10.8 -2.0 0.0</p>
-<p>250 251.2 -8.7 -1.4 0.0</p>
-<p>315 316.2 -6.6 -0.9 0.0</p>
-<p>400 398.1 -4.8 -0.5 0.0</p>
-<p>500 501.2 -3.2 -0.3 0.0</p>
-<p>630 631.0 -1.9 -0.1 0.0</p>
-<p>800 794.3 -0.8 0.0 0.0</p>
-<p>1,000 1,000 0.0 0.0 0.0</p>
-<p>1,250 1,259 0.6 0.0 0.0</p>
-<p>1,600 1,585 1.0 0.0 -0.1</p>
-<p>2,000 1,995 1.2 -0.1 -0.2</p>
-<p>2,500 2,512 1.3 -0.2 -0.3</p>
-<p>3,150 3,162 1.2 -0.4 -0.5</p>
-<p>4,000 3,981 1.0 -0.7 -0.8</p>
-<p>5,000 5,012 0.6 -1.2 -1.3</p>
-<p>6,300 6,310 -0.1 -1.9 -2.0</p>
-<p>8,000 7,943 -1.1 -2.9 -3.0</p>
-<p>10,000 10,000 -2.5 -4.3 -4.4</p>
-<p>12,500 12,589 -4.3 -6.1 -6.2</p>
-<p>16,000 15,849 -6.7 -8.5 -8.6</p>
-<p>20,000 19,953 -9.3 -11.2 -11.3</p>
-<p> </p>
-<p><strong>13.5 1/3 Octave Center Frequencies</strong></p>
+</div>
+<div id="octave-center-frequencies" class="section level2" number="13.5">
+<h2><span class="header-section-number">13.5</span> 1/3 Octave Center Frequencies</h2>
 <p>(ANSI S1.6 1984)</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right"> Band No.</th>
+<th align="right">Nominal Center</th>
+<th align="right">Exact Center</th>
+<th align="right">Octave Center</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">#</td>
+<td align="right"><span class="math inline">\(\text{Hz}\)</span></td>
+<td align="right"><span class="math inline">\(\text{Hz}\)</span></td>
+<td align="right"><span class="math inline">\(\text{Hz}\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(1\)</span></td>
+<td align="right"><span class="math inline">\(1.25\)</span></td>
+<td align="right"><span class="math inline">\(1.26\)</span></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(2\)</span></td>
+<td align="right"><span class="math inline">\(1.60\)</span></td>
+<td align="right"><span class="math inline">\(1.58\)</span></td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(3\)</span></td>
+<td align="right"><span class="math inline">\(2.00\)</span></td>
+<td align="right"><span class="math inline">\(2.00\)</span></td>
+<td align="right"><span class="math inline">\(2\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(4\)</span></td>
+<td align="right"><span class="math inline">\(2.50\)</span></td>
+<td align="right"><span class="math inline">\(2.51\)</span></td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(5\)</span></td>
+<td align="right"><span class="math inline">\(3.15\)</span></td>
+<td align="right"><span class="math inline">\(3.16\)</span></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(6\)</span></td>
+<td align="right"><span class="math inline">\(4.00\)</span></td>
+<td align="right"><span class="math inline">\(3.98\)</span></td>
+<td align="right"><span class="math inline">\(4\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(7\)</span></td>
+<td align="right"><span class="math inline">\(5.00\)</span></td>
+<td align="right"><span class="math inline">\(5.01\)</span></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(8\)</span></td>
+<td align="right"><span class="math inline">\(6.30\)</span></td>
+<td align="right"><span class="math inline">\(6.31\)</span></td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(9\)</span></td>
+<td align="right"><span class="math inline">\(8.00\)</span></td>
+<td align="right"><span class="math inline">\(7.94\)</span></td>
+<td align="right"><span class="math inline">\(8\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(10\)</span></td>
+<td align="right"><span class="math inline">\(10.00\)</span></td>
+<td align="right"><span class="math inline">\(10.00\)</span></td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(11\)</span></td>
+<td align="right"><span class="math inline">\(12.50\)</span></td>
+<td align="right"><span class="math inline">\(12.59\)</span></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(12\)</span></td>
+<td align="right"><span class="math inline">\(16.00\)</span></td>
+<td align="right"><span class="math inline">\(15.58\)</span></td>
+<td align="right"><span class="math inline">\(16\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(13\)</span></td>
+<td align="right"><span class="math inline">\(20.00\)</span></td>
+<td align="right"><span class="math inline">\(19.95\)</span></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(14\)</span></td>
+<td align="right"><span class="math inline">\(25.00\)</span></td>
+<td align="right"><span class="math inline">\(25.12\)</span></td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(15\)</span></td>
+<td align="right"><span class="math inline">\(31.50\)</span></td>
+<td align="right"><span class="math inline">\(31.62\)</span></td>
+<td align="right"><span class="math inline">\(32\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(16\)</span></td>
+<td align="right"><span class="math inline">\(40.00\)</span></td>
+<td align="right"><span class="math inline">\(39.81\)</span></td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(17\)</span></td>
+<td align="right"><span class="math inline">\(50.00\)</span></td>
+<td align="right"><span class="math inline">\(50.12\)</span></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(18\)</span></td>
+<td align="right"><span class="math inline">\(63.00\)</span></td>
+<td align="right"><span class="math inline">\(63.10\)</span></td>
+<td align="right"><span class="math inline">\(63\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(19\)</span></td>
+<td align="right"><span class="math inline">\(80.00\)</span></td>
+<td align="right"><span class="math inline">\(79.43\)</span></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(20\)</span></td>
+<td align="right"><span class="math inline">\(100.00\)</span></td>
+<td align="right"><span class="math inline">\(100.00\)</span></td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(21\)</span></td>
+<td align="right"><span class="math inline">\(125.00\)</span></td>
+<td align="right"><span class="math inline">\(125.89\)</span></td>
+<td align="right"><span class="math inline">\(125\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(22\)</span></td>
+<td align="right"><span class="math inline">\(160.00\)</span></td>
+<td align="right"><span class="math inline">\(158.49\)</span></td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(23\)</span></td>
+<td align="right"><span class="math inline">\(200.00\)</span></td>
+<td align="right"><span class="math inline">\(199.53\)</span></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(24\)</span></td>
+<td align="right"><span class="math inline">\(250.00\)</span></td>
+<td align="right"><span class="math inline">\(251.19\)</span></td>
+<td align="right"><span class="math inline">\(250\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(25\)</span></td>
+<td align="right"><span class="math inline">\(315.00\)</span></td>
+<td align="right"><span class="math inline">\(316.23\)</span></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(26\)</span></td>
+<td align="right"><span class="math inline">\(400.00\)</span></td>
+<td align="right"><span class="math inline">\(398.11\)</span></td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(27\)</span></td>
+<td align="right"><span class="math inline">\(500.00\)</span></td>
+<td align="right"><span class="math inline">\(501.19\)</span></td>
+<td align="right"><span class="math inline">\(500\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(28\)</span></td>
+<td align="right"><span class="math inline">\(630.00\)</span></td>
+<td align="right"><span class="math inline">\(630.96\)</span></td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(29\)</span></td>
+<td align="right"><span class="math inline">\(800.00\)</span></td>
+<td align="right"><span class="math inline">\(794.33\)</span></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(30\)</span></td>
+<td align="right"><span class="math inline">\(1\,000.00\)</span></td>
+<td align="right"><span class="math inline">\(1\,000.00\)</span></td>
+<td align="right"><span class="math inline">\(1\,000\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(31\)</span></td>
+<td align="right"><span class="math inline">\(1\,250.00\)</span></td>
+<td align="right"><span class="math inline">\(1\,258.90\)</span></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(32\)</span></td>
+<td align="right"><span class="math inline">\(1\,600.00\)</span></td>
+<td align="right"><span class="math inline">\(1\,584.90\)</span></td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(33\)</span></td>
+<td align="right"><span class="math inline">\(2\,000.00\)</span></td>
+<td align="right"><span class="math inline">\(1\,995.30\)</span></td>
+<td align="right"><span class="math inline">\(2\,000\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(34\)</span></td>
+<td align="right"><span class="math inline">\(2\,500.00\)</span></td>
+<td align="right"><span class="math inline">\(2\,511.90\)</span></td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(35\)</span></td>
+<td align="right"><span class="math inline">\(3\,150.00\)</span></td>
+<td align="right"><span class="math inline">\(3\,162.30\)</span></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(36\)</span></td>
+<td align="right"><span class="math inline">\(4\,000.00\)</span></td>
+<td align="right"><span class="math inline">\(3\,981.10\)</span></td>
+<td align="right"><span class="math inline">\(4\,000\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(37\)</span></td>
+<td align="right"><span class="math inline">\(5\,000.00\)</span></td>
+<td align="right"><span class="math inline">\(5\,011.90\)</span></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(38\)</span></td>
+<td align="right"><span class="math inline">\(6\,300.00\)</span></td>
+<td align="right"><span class="math inline">\(6\,309.60\)</span></td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(39\)</span></td>
+<td align="right"><span class="math inline">\(8\,000.00\)</span></td>
+<td align="right"><span class="math inline">\(7\,943.30\)</span></td>
+<td align="right"><span class="math inline">\(8\,000\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(40\)</span></td>
+<td align="right"><span class="math inline">\(10\,000.00\)</span></td>
+<td align="right"><span class="math inline">\(10\,000.00\)</span></td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(41\)</span></td>
+<td align="right"><span class="math inline">\(12\,500.00\)</span></td>
+<td align="right"><span class="math inline">\(12\,589.30\)</span></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(42\)</span></td>
+<td align="right"><span class="math inline">\(16\,000.00\)</span></td>
+<td align="right"><span class="math inline">\(15\,848.90\)</span></td>
+<td align="right"><span class="math inline">\(16\,000\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(43\)</span></td>
+<td align="right"><span class="math inline">\(20\,000.00\)</span></td>
+<td align="right"><span class="math inline">\(19\,952.60\)</span></td>
+<td align="right"></td>
+</tr>
+</tbody>
+</table>
 <p> </p>
-<p> Band Nominal Exact Octave</p>
-<p><u>No.</u> <u>Center (<em>Hz</em>)</u> <u>Center (<em>Hz</em>)</u> <u>Center (<em>Hz</em>)</u></p>
-<p>1 1.25 1.26</p>
-<p>2 1.60 1.58</p>
-<p>3 2.00 2.00 2.0</p>
-<p>4 2.50 2.51</p>
-<p>5 3.15 3.16</p>
-<p>6 4.00 3.98 4.0</p>
-<p>7 5.00 5.01</p>
-<p>8 6.30 6.31</p>
-<p>9 8.00 7.94 8.0</p>
-<p>10 10.00 10.00</p>
-<p>11 12.5 12.59</p>
-<p>12 16.0 15.58 16.0</p>
-<p>13 20.0 19.95</p>
-<p>14 25.0 25.12</p>
-<p>15 31.5 31.62 31.5</p>
-<p>16 40.0 39.81</p>
-<p>17 50.0 50.12</p>
-<p>18 63.0 63.10 63.0</p>
-<p>19 80.0 79.43</p>
-<p>20 100.0 100.00</p>
-<p>21 125.0 125.89 125.0</p>
-<p>22 160.0 158.49</p>
-<p>23 200.0 199.53</p>
-<p>24 250.0 251.19 250.0</p>
-<p>25 315.0 316.23</p>
-<p>26 400.0 398.11</p>
-<p>27 500.0 501.19 500.0</p>
-<p>28 630.0 630.96</p>
-<p>29 800.0 794.33</p>
-<p>30 1,000 1,000.0 1,000</p>
-<p>31 1,250 1,258.9</p>
-<p>32  1,600 1,584.9</p>
-<p>33 2,000 1,995.3 2,000</p>
-<p>34 2,500 2,511.9</p>
-<p>35 3,150 3,162.3</p>
-<p>36 4,000 3,981.1 4,000</p>
-<p>37 5,000 5,011.9</p>
-<p>38 6,300 6,309.6</p>
-<p>39 8,000 7,943.3 8,000</p>
-<p>40 10,000 10,000.0</p>
-<p>41 12,500 12,589.3</p>
-<p>42 16,000 15,848.9 16,000</p>
-<p>43 20,000 19,952.6</p>
-<p> </p>
-<p><strong>13.6 References</strong></p>
+</div>
+<div id="references-11" class="section level2" number="13.6">
+<h2><span class="header-section-number">13.6</span> References</h2>
 <table>
 <colgroup>
 <col width="6%" />
@@ -662,19 +1241,19 @@
 <tbody>
 <tr class="odd">
 <td>13.1</td>
-<td>Beranek, Leo L., <em>Acoustic Measurements</em>, John Wiley &amp; Sons, New York, New York, 1956.</td>
+<td>Beranek, Leo L., “Acoustic Measurements,” John Wiley &amp; Sons, New York, New York, 1956.</td>
 </tr>
 <tr class="even">
 <td>13.2</td>
-<td>Peterson, Arnold P.G. and Gross, Ervin E., Jr., <em>Handbook of Noise Measurement</em>, GenRag Incorporated, Concord, Massachusetts, 1978.</td>
+<td>Peterson, Arnold P.G. and Gross, Ervin E., Jr., “Handbook of Noise Measurement,” GenRag Incorporated, Concord, Massachusetts, 1978.</td>
 </tr>
 <tr class="odd">
 <td>13.3</td>
-<td><em>Measuring Sound</em>, (Pamphlet), Bruel &amp; Kjaer, Naerum, Denmark, September 1984.</td>
+<td>“Measuring Sound,” (Pamphlet), Bruel &amp; Kjaer, Naerum, Denmark, September 1984.</td>
 </tr>
 <tr class="even">
 <td>13.4</td>
-<td><em>Pocket Handbook, Noise, Vibration, Light, Thermal Comfort</em>, Bruel &amp; Kjaer, Naerum, Denmark, 1986.</td>
+<td>“Pocket Handbook, Noise, Vibration, Light, Thermal Comfort,” Bruel &amp; Kjaer, Naerum, Denmark, 1986.</td>
 </tr>
 </tbody>
 </table>
@@ -685,12 +1264,19 @@
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>Hunter, Joseph L., <em>Acoustics</em>, Prentice-Hall Incorporated, Englewood Cliffs, New Jersey, 1957.</td>
+<td>Hunter, Joseph L., “Acoustics,” Prentice-Hall Incorporated, Englewood Cliffs, New Jersey, 1957.</td>
 </tr>
 </tbody>
 </table>
 
 </div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="11">
+<li id="fn11"><p>Common octaves include, in <span class="math inline">\(\text{kHz}\)</span> <span class="math display">\[\begin{align} 0.0375&amp;-0.0750\\0.075&amp;-0.15\\0.15&amp;-0.30\\0.30&amp;-0.60\\0.6&amp;-1.2\\1.2&amp;-2.4\\2.4&amp;-4.8\\4.8&amp;-9.6\end{align} \]</span><a href="acoustics.html#fnref11" class="footnote-back">↩︎</a></p></li>
+<li id="fn12"><p>The <span class="math inline">\(\mathrm{SPL}\)</span> contained within a band <span class="math inline">\(1 \text{ Hz}\)</span> wide<a href="acoustics.html#fnref12" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
             </section>
 
