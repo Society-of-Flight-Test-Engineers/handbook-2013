@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>16 16 Rotary Wing** | Flight Test Engineering Reference Handbook</title>
-  <meta name="description" content="16 16 Rotary Wing** | Flight Test Engineering Reference Handbook" />
+  <title>16 Rotary Wing | Flight Test Engineering Reference Handbook</title>
+  <meta name="description" content="16 Rotary Wing | Flight Test Engineering Reference Handbook" />
   <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="16 16 Rotary Wing** | Flight Test Engineering Reference Handbook" />
+  <meta property="og:title" content="16 Rotary Wing | Flight Test Engineering Reference Handbook" />
   <meta property="og:type" content="book" />
   
   <meta property="og:image" content="media/media/image1.jpg" />
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="16 16 Rotary Wing** | Flight Test Engineering Reference Handbook" />
+  <meta name="twitter:title" content="16 Rotary Wing | Flight Test Engineering Reference Handbook" />
   
   
   <meta name="twitter:image" content="media/media/image1.jpg" />
@@ -434,7 +434,18 @@
 <ul>
 <li class="chapter" data-level="15.1" data-path="handling-qualities.html"><a href="handling-qualities.html#cooper-harper-rating-related-figures"><i class="fa fa-check"></i><b>15.1</b> Cooper-Harper Rating Related Figures</a></li>
 </ul></li>
-<li class="chapter" data-level="16" data-path="rotary-wing.html"><a href="rotary-wing.html"><i class="fa fa-check"></i><b>16</b> 16 Rotary Wing**</a></li>
+<li class="chapter" data-level="16" data-path="rotary-wing.html"><a href="rotary-wing.html"><i class="fa fa-check"></i><b>16</b> Rotary Wing</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="rotary-wing.html"><a href="rotary-wing.html#principal-aeroderivatives"><i class="fa fa-check"></i><b>16.1</b> Principal Aeroderivatives</a>
+<ul>
+<li class="chapter" data-level="16.1.1" data-path="rotary-wing.html"><a href="rotary-wing.html#control-power"><i class="fa fa-check"></i><b>16.1.1</b> Control Power</a></li>
+<li class="chapter" data-level="16.1.2" data-path="rotary-wing.html"><a href="rotary-wing.html#static-stability"><i class="fa fa-check"></i><b>16.1.2</b> Static Stability</a></li>
+<li class="chapter" data-level="16.1.3" data-path="rotary-wing.html"><a href="rotary-wing.html#damping"><i class="fa fa-check"></i><b>16.1.3</b> Damping</a></li>
+<li class="chapter" data-level="16.1.4" data-path="rotary-wing.html"><a href="rotary-wing.html#cross-coupling"><i class="fa fa-check"></i><b>16.1.4</b> Cross Coupling</a></li>
+</ul></li>
+<li class="chapter" data-level="16.2" data-path="rotary-wing.html"><a href="rotary-wing.html#forward-flight-static-and-dynamic-stability"><i class="fa fa-check"></i><b>16.2</b> Forward Flight Static And Dynamic Stability </a></li>
+<li class="chapter" data-level="16.3" data-path="rotary-wing.html"><a href="rotary-wing.html#references-13"><i class="fa fa-check"></i><b>16.3</b> References</a></li>
+</ul></li>
 <li class="chapter" data-level="17" data-path="gas-turbine-propulsion.html"><a href="gas-turbine-propulsion.html"><i class="fa fa-check"></i><b>17</b> 17 Gas Turbine Propulsion**</a></li>
 <li class="chapter" data-level="18" data-path="telemetry-control-room-and-radio-communications.html"><a href="telemetry-control-room-and-radio-communications.html"><i class="fa fa-check"></i><b>18</b> 18 - Telemetry Control Room and Radio Communications**</a></li>
 <li class="chapter" data-level="19" data-path="the-electromagnetic-spectrum.html"><a href="the-electromagnetic-spectrum.html"><i class="fa fa-check"></i><b>19</b> 19 - The Electromagnetic Spectrum**</a></li>
@@ -458,386 +469,440 @@
 
             <section class="normal" id="section-">
 <div id="rotary-wing" class="section level1" number="16">
-<h1><span class="header-section-number">16</span> 16 Rotary Wing**</h1>
-<blockquote>
-<p><strong>16.1 Principal Aeroderivatives</strong></p>
-<p><strong>16.2 Forward Flight Static And Dynamic Stability</strong></p>
-</blockquote>
-<p> </p>
-<p><strong>16.1 PRINCIPAL AERODERIVATIVES</strong></p>
-<p> </p>
+<h1><span class="header-section-number">16</span> Rotary Wing</h1>
+<div id="principal-aeroderivatives" class="section level2" number="16.1">
+<h2><span class="header-section-number">16.1</span> Principal Aeroderivatives</h2>
+<div id="control-power" class="section level3" number="16.1.1">
+<h3><span class="header-section-number">16.1.1</span> Control Power</h3>
 <table>
 <colgroup>
-<col width="18%" />
-<col width="42%" />
+<col width="28%" />
 <col width="23%" />
-<col width="15%" />
+<col width="30%" />
+<col width="18%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th><strong>Derivative</strong></th>
-<th><strong>Common Name</strong></th>
-<th><strong>Principal Contributors</strong></th>
-<th><strong>Typical Sign</strong></th>
+<th align="center"><strong>Derivative</strong></th>
+<th align="left"><strong>Common Name</strong></th>
+<th align="left"><strong>Principal Contributors</strong></th>
+<th align="center"><strong>Typical Sign</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>CONTROL POWER</strong></td>
-<td></td>
-<td></td>
-<td></td>
+<td align="center"><span class="math inline">\(M_{B_1}\)</span></td>
+<td align="left">Pitch control power</td>
+<td align="left"><ul>
+<li>MR thrust vector</li>
+<li>Mast bending moment</li>
+<li>Control gearing</li>
+<li>Rotor type</li>
+<li>Effective hinge offset</li>
+</ul></td>
+<td align="center">-</td>
 </tr>
 <tr class="even">
-<td><img src="media/16/image1.svg" style="width:0.325in;height:0.25833in" /></td>
-<td>| Pitch control power</td>
-<td><p>| MR Thrust vector</p>
-<p>Mast bending moment</p>
-<p>Control gearing</p>
-<p>Rotor type</p>
-<p>Effective hinge offset</p></td>
-<td>| -</td>
+<td align="center"><span class="math inline">\(L_{A_1}\)</span></td>
+<td align="left">Roll control power</td>
+<td align="left"><ul>
+<li>MR thrust vector</li>
+<li>Mast bending moment</li>
+<li>Control gearing</li>
+<li>Rotor type</li>
+<li>Effective hinge offset</li>
+</ul></td>
+<td align="center">-</td>
 </tr>
 <tr class="odd">
-<td><img src="media/16/image2.svg" style="width:0.25in;height:0.25833in" /></td>
-<td>| Roll control power</td>
-<td><p>| MR Thrust vector</p>
-<p>Mast bending moment</p>
-<p>Control gearing</p>
-<p>Rotor type</p>
-<p>Effective hinge offset</p></td>
-<td>| -</td>
+<td align="center"><span class="math inline">\(N_{\theta_{\text{TR}}}\)</span></td>
+<td align="left">Yaw control power</td>
+<td align="left"><ul>
+<li>TR thrust</li>
+<li>TR moment arm</li>
+<li>Control gearing</li>
+</ul></td>
+<td align="center">-</td>
 </tr>
 <tr class="even">
-<td><img src="media/16/image3.svg" style="width:0.33333in;height:0.25833in" /></td>
-<td>| Yaw control power</td>
-<td><p>| TR thrust</p>
-<p>TR moment arm</p>
-<p>Control gearing</p></td>
-<td>| -</td>
-</tr>
-<tr class="odd">
-<td><img src="media/16/image4.svg" style="width:0.28333in;height:0.25833in" /></td>
-<td>| Heave control power</td>
-<td><p>| MR thrust</p>
-<p>Control gearing</p></td>
-<td>| -</td>
-</tr>
-<tr class="even">
-<td><strong>STATIC STABILITY</strong></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><img src="media/16/image5.svg" style="width:0.28333in;height:0.25in" /></td>
-<td>| Speed stability</td>
-<td><p>| MR flap back</p>
-<p>Mast bending moment</p>
-<p>Horizontal tailplane</p></td>
-<td>| +</td>
-</tr>
-<tr class="even">
-<td><img src="media/16/image6.svg" style="width:0.29167in;height:0.25in" /></td>
-<td>| Static/Incidence/Angle of Attack stability</td>
-<td><p>| MR flap back</p>
-<p>Mast bending moment</p>
-<p>Horizontal tailplane</p>
-<p>Fuselage</p></td>
-<td>|  </td>
-</tr>
-<tr class="odd">
-<td><img src="media/16/image7.svg" style="width:0.2in;height:0.25in" /></td>
-<td>| Lateral static stability (dihedral effect)</td>
-<td><p>| MR ‘flap back’</p>
-<p>TR vertical moment arm</p>
-<p>Fuselage</p></td>
-<td>| -</td>
-</tr>
-<tr class="even">
-<td><img src="media/16/image8.svg" style="width:0.24167in;height:0.25in" /></td>
-<td>| Directional static stability (weathercock effec</td>
-<td><ol start="20" style="list-style-type: lower-alpha">
-<li><div class="line-block">TR thrust</div></li>
-</ol>
-<p>Vertical tailplane</p>
-<p>Fuselage</p></td>
-<td>| +</td>
-</tr>
-<tr class="odd">
-<td><strong>DAMPING</strong></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><img src="media/16/image9.svg" style="width:0.25in;height:0.25in" /></td>
-<td>| Drag damping</td>
-<td><p>| Rotor drag</p>
-<p>Fuselage drag</p></td>
-<td>| -</td>
-</tr>
-<tr class="odd">
-<td><img src="media/16/image10.svg" style="width:0.175in;height:0.25in" /></td>
-<td>| Side force</td>
-<td><p>| Rotor drag</p>
-<p>Fuselage drag</p></td>
-<td>| -</td>
-</tr>
-<tr class="even">
-<td><img src="media/16/image11.svg" style="width:0.24167in;height:0.25in" /></td>
-<td>| Heave damping</td>
-<td>| MR characteristics</td>
-<td>| -</td>
-</tr>
-<tr class="odd">
-<td><img src="media/16/image12.svg" style="width:0.21667in;height:0.25833in" /></td>
-<td>| Roll damping</td>
-<td><p>| Main rotor</p>
-<p>Effective hinge offset</p></td>
-<td>| -</td>
-</tr>
-<tr class="even">
-<td><img src="media/16/image13.svg" style="width:0.28333in;height:0.25833in" /></td>
-<td>| Pitch damping</td>
-<td><p>| Main rotor</p>
-<p>Effective hinge offset</p>
-<p>Horizontal tailplane</p></td>
-<td>| -</td>
-</tr>
-<tr class="odd">
-<td><img src="media/16/image14.svg" style="width:0.24167in;height:0.24167in" /></td>
-<td>| Yaw damping</td>
-<td><p>| Tail rotor</p>
-<p>Vertical tailplane</p>
-<p>Fuselage</p></td>
-<td>| -</td>
+<td align="center"><span class="math inline">\(Z_{\theta_C}\)</span></td>
+<td align="left">Heave control power</td>
+<td align="left"><ul>
+<li>MR thrust</li>
+<li>Control gearing</li>
+</ul></td>
+<td align="center">-</td>
 </tr>
 </tbody>
 </table>
-<p><strong>16.1 PRINCIPAL AERODERIVATIVES (Continued)</strong></p>
-<p> </p>
-<table>
-<tbody>
-<tr class="odd">
-<td align="left"><strong>Derivative</strong></td>
-<td align="left"><strong>Common Name</strong></td>
-<td align="left"><strong>Principal Contributors</strong></td>
-<td align="left"><strong>Typical Sign</strong></td>
-</tr>
-</tbody>
-</table>
+</div>
+<div id="static-stability" class="section level3" number="16.1.2">
+<h3><span class="header-section-number">16.1.2</span> Static Stability</h3>
 <table style="width:100%;">
 <colgroup>
-<col width="25%" />
-<col width="31%" />
-<col width="37%" />
-<col width="6%" />
+<col width="17%" />
+<col width="32%" />
+<col width="30%" />
+<col width="19%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th><strong>CROSS COUPLING</strong></th>
-<th></th>
-<th></th>
-<th></th>
+<th align="center"><strong>Derivative</strong></th>
+<th align="left"><strong>Common Name</strong></th>
+<th align="left"><strong>Principal Contributors</strong></th>
+<th align="center"><strong>Typical Sign</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><img src="media/16/image15.svg" style="width:0.29167in;height:0.25833in" /></td>
-<td>| Tail rotor roll</td>
-<td>| Tail rotor vertical positio</td>
-<td>n | +</td>
+<td align="center"><span class="math inline">\(M_u\)</span></td>
+<td align="left">Speed stability</td>
+<td align="left"><ul>
+<li>MR flap back</li>
+<li>Mast bending moment</li>
+<li>Horizontal tailplane</li>
+</ul></td>
+<td align="center">+</td>
 </tr>
 <tr class="even">
-<td><img src="media/16/image16.svg" style="width:0.33333in;height:0.25833in" /></td>
-<td>| Pitch change with powe</td>
-<td><p>r | Forward speed</p>
-<p>Main rotor</p></td>
-<td>| +</td>
+<td align="center"><span class="math inline">\(M_w\)</span></td>
+<td align="left">Static / Incidence /
+Angle of Attack stability</td>
+<td align="left"><ul>
+<li>MR flap back</li>
+<li>Mast bending moment</li>
+<li>Horizontal tailplane</li>
+<li>Fuselage</li>
+</ul></td>
+<td align="center"> </td>
 </tr>
 <tr class="odd">
-<td><img src="media/16/image17.svg" style="width:0.3in;height:0.25833in" /></td>
-<td>| Torque reaction</td>
-<td>| Torque</td>
-<td>|  </td>
+<td align="center"><span class="math inline">\(L_v\)</span></td>
+<td align="left">Lateral static stability
+(dihedral effect)</td>
+<td align="left"><ul>
+<li>MR ‘flap back’</li>
+<li>TR vertical moment arm</li>
+<li>Fuselage</li>
+</ul></td>
+<td align="center">-</td>
 </tr>
 <tr class="even">
-<td><img src="media/16/image18.svg" style="width:0.28333in;height:0.25833in" /></td>
-<td>| Tail rotor drift</td>
-<td>| Tail rotor</td>
-<td>|  </td>
+<td align="center"><span class="math inline">\(N_v\)</span></td>
+<td align="left">Directional static stability
+(weathercock effect)</td>
+<td align="left"><ul>
+<li>TR thrust</li>
+<li>Vertical tailplane</li>
+<li>Fuselage</li>
+</ul></td>
+<td align="center">+</td>
 </tr>
 </tbody>
 </table>
-<p><strong>16.2 FORWARD FLIGHT STATIC AND DYNAMIC STABILITY</strong></p>
-<p> </p>
+</div>
+<div id="damping" class="section level3" number="16.1.3">
+<h3><span class="header-section-number">16.1.3</span> Damping</h3>
 <table>
 <colgroup>
-<col width="36%" />
-<col width="10%" />
-<col width="26%" />
-<col width="26%" />
+<col width="20%" />
+<col width="21%" />
+<col width="34%" />
+<col width="22%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th><strong>Stability Characteristic</strong></th>
-<th><strong>Principal Influences</strong></th>
-<th><strong>Typical Test</strong></th>
-<th><strong>Role Relation</strong></th>
+<th align="center"><strong>Derivative</strong></th>
+<th align="left"><strong>Common Name</strong></th>
+<th align="left"><strong>Principal Contributors</strong></th>
+<th align="center"><strong>Typical Sign</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Longitudinal Static Stability</td>
-<td><hr /></td>
-<td><ul>
-<li><p>Trimmed flight control positions</p></li>
-<li><p>Trimmed flight control positions - collective</p></li>
+<td align="center"><span class="math inline">\(X_u\)</span></td>
+<td align="left">Drag damping</td>
+<td align="left"><ul>
+<li>Rotor drag</li>
+<li>Fuselage drag</li>
 </ul></td>
-<td><ul>
-<li><p>Control margins</p></li>
-<li><p>Control inputs progressive, predictable, and in correct sense</p></li>
-</ul></td>
+<td align="center">-</td>
 </tr>
 <tr class="even">
-<td></td>
-<td><ul>
-<li></li>
+<td align="center"><span class="math inline">\(Y_v\)</span></td>
+<td align="left">Side force</td>
+<td align="left"><ul>
+<li>Rotor drag</li>
+<li>Fuselage drag</li>
 </ul></td>
-<td><ul>
-<li>Apparent static stability</li>
-</ul></td>
-<td><ul>
-<li>Speed selection</li>
-</ul></td>
+<td align="center">-</td>
 </tr>
 <tr class="odd">
-<td></td>
-<td><ul>
-<li></li>
+<td align="center"><span class="math inline">\(Z_w\)</span></td>
+<td align="left">Heave damping</td>
+<td align="left"><ul>
+<li>MR characteristics</li>
 </ul></td>
-<td><ul>
+<td align="center">-</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(L_p\)</span></td>
+<td align="left">Roll damping</td>
+<td align="left"><ul>
+<li>Main rotor</li>
+<li>Effective hinge offset</li>
+</ul></td>
+<td align="center">-</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(M_q\)</span></td>
+<td align="left">Pitch damping</td>
+<td align="left"><ul>
+<li>Main rotor</li>
+<li>Effective hinge offset</li>
+<li>Horizontal tailplane</li>
+</ul></td>
+<td align="center">-</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(N_r\)</span></td>
+<td align="left">Yaw damping</td>
+<td align="left"><ul>
+<li>Tail rotor</li>
+<li>Vertical tailplane</li>
+<li>Fuselage</li>
+</ul></td>
+<td align="center">-</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="cross-coupling" class="section level3" number="16.1.4">
+<h3><span class="header-section-number">16.1.4</span> Cross Coupling</h3>
+<table>
+<colgroup>
+<col width="29%" />
+<col width="18%" />
+<col width="33%" />
+<col width="19%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"><strong>Derivative</strong></th>
+<th align="left"><strong>Common Name</strong></th>
+<th align="left"><strong>Principal Contributors</strong></th>
+<th align="center"><strong>Typical Sign</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math inline">\(L_{\theta_{\text{TR}}}\)</span></td>
+<td align="left">Tail rotor roll</td>
+<td align="left"><ul>
+<li>Tail rotor vertical position</li>
+</ul></td>
+<td align="center">+</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(M_{\theta_C}\)</span></td>
+<td align="left">Pitch change
+with power</td>
+<td align="left"><ul>
+<li>Forward speed</li>
+<li>Main rotor</li>
+</ul></td>
+<td align="center">+</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(N_{\theta_C}\)</span></td>
+<td align="left">Torque reaction</td>
+<td align="left"><ul>
+<li>Torque</li>
+</ul></td>
+<td align="center"> </td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(Y_{\theta_{\text{TR}}}\)</span></td>
+<td align="left">Tail rotor drift</td>
+<td align="left"><ul>
+<li>Tail rotor</li>
+</ul></td>
+<td align="center"> </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="forward-flight-static-and-dynamic-stability" class="section level2" number="16.2">
+<h2><span class="header-section-number">16.2</span> Forward Flight Static And Dynamic Stability </h2>
+<table>
+<colgroup>
+<col width="17%" />
+<col width="15%" />
+<col width="29%" />
+<col width="37%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"><strong>Stability Characteristic</strong></th>
+<th align="left"><strong>Principal Influences</strong></th>
+<th align="left"><strong>Typical Test</strong></th>
+<th align="left"><strong>Role Relation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>Longitudinal</strong>
+Static Stability</td>
+<td align="left"><ul>
+<li><span class="math inline">\(M_w\)</span></li>
+<li><span class="math inline">\(M_u\)</span></li>
+<li><span class="math inline">\(M_{\theta_C}\)</span></li>
+<li><span class="math inline">\(M_{\theta_{TR}}\)</span></li>
+</ul></td>
+<td align="left"><ul>
+<li>Trimmed flight control positions</li>
+<li>Trimmed flight control positions - collective</li>
+<li>Apparent static stability</li>
 <li>Collective fixed static stability</li>
 </ul></td>
-<td><ul>
+<td align="left"><ul>
+<li>Control margins</li>
+<li>Control inputs progressive, predictable, and in correct sense</li>
+<li>Speed selection</li>
 <li>Speed maintenance</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Manoeuvre Stability</td>
-<td><hr /></td>
-<td><ul>
-<li><p>Apparent manoeuvre stability</p></li>
-<li><p>Collective fixed manoeuvre stability</p></li>
-<li><p>Pull-ups/push-overs</p></li>
+<td align="left"><strong>Manoeuvre</strong>
+Stability</td>
+<td align="left"><ul>
+<li><span class="math inline">\(M_w\)</span></li>
+<li><span class="math inline">\(M_q\)</span></li>
+<li><span class="math inline">\(M_{\theta_C}\)</span></li>
 </ul></td>
-<td><ul>
+<td align="left"><ul>
+<li>Apparent manoeuvre stability</li>
+<li>Collective fixed manoeuvre stability</li>
+<li>Pull-ups/push-overs</li>
+</ul></td>
+<td align="left"><ul>
 <li>Aggressive turning and manoeuvring flight</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Longitudinal Dynamic Stability</td>
-<td><hr /></td>
-<td><ul>
-<li><p>Excitation of dynamic long term mode</p></li>
-<li><p>Natural turbulence, release to trim, pulse input</p></li>
+<td align="left"><strong>Longitudinal</strong>
+Dynamic Stability</td>
+<td align="left"><ul>
+<li><span class="math inline">\(M_w\)</span></li>
+<li><span class="math inline">\(M_u\)</span></li>
+<li><span class="math inline">\(M_q\)</span></li>
 </ul></td>
-<td><ul>
-<li><p>IMC flight</p></li>
-<li><p>Transit</p></li>
-<li><p>Nuisance mode</p></li>
+<td align="left"><ul>
+<li>Excitation of dynamic long term mode</li>
+<li>Natural turbulence, release to trim, pulse input</li>
+</ul></td>
+<td align="left"><ul>
+<li>IMC flight</li>
+<li>Transit</li>
+<li>Nuisance mode</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Lateral-Directional Static Stability</td>
-<td><ul>
-<li><ul>
-<li></li>
-</ul></li>
+<td align="left"><strong>Lateral-Directional</strong>
+Static Stability</td>
+<td align="left"><ul>
+<li><span class="math inline">\(L_v\)</span></li>
+<li><span class="math inline">\(N_v\)</span></li>
+<li><span class="math inline">\(Y_v\)</span></li>
 </ul></td>
-<td><ul>
+<td align="left"><ul>
 <li>Trimmed flight control positions</li>
-</ul></td>
-<td><ul>
-<li><p>Control margins</p></li>
-<li><p>Control inputs progressive, predictable, and in correct sense</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
 <li>Steady heading sideslip (SHSS)</li>
 </ul></td>
-<td><ul>
-<li><p>Sideforce cues</p></li>
-<li><p>Maintaining balanced flight</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Lateral Static Stability (Dihedral)</td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li><p>SHSS</p></li>
-<li><p>Turns on one control – pedal</p></li>
-</ul></td>
-<td><ul>
-<li><p>Transit</p></li>
-<li><p>Lateral and out-of-wind transitions</p></li>
-<li><p>Instrument approaches</p></li>
+<td align="left"><ul>
+<li>Control margins</li>
+<li>Control inputs progressive, predictable, and in correct sense</li>
+<li>Sideforce cues</li>
+<li>Maintaining balanced flight</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Directional Static Stability</td>
-<td><ul>
-<li></li>
+<td align="left"><strong>Lateral</strong>
+Static Stability
+(Dihedral)</td>
+<td align="left"><ul>
+<li><span class="math inline">\(L_v\)</span></li>
 </ul></td>
-<td><ul>
-<li><p>SHSS</p></li>
-<li><p>Turns on one control - cyclic</p></li>
+<td align="left"><ul>
+<li>SHSS</li>
+<li>Turns on one control – pedal</li>
 </ul></td>
-<td><ul>
-<li><p>Transit</p></li>
-<li><p>Instrument approaches</p></li>
+<td align="left"><ul>
+<li>Transit</li>
+<li>Lateral and out-of-wind transitions</li>
+<li>Instrument approaches</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Lateral-Directional Dynamic Stability – Lateral-Directional Oscillations (Dutch Roll Mode</td>
-<td><ul>
-<li><ul>
-<li></li>
-</ul></li>
+<td align="left"><strong>Directional</strong>
+Static Stability</td>
+<td align="left"><ul>
+<li><span class="math inline">\(N_v\)</span></li>
 </ul></td>
-<td><ul>
-<li>Excitation of LDO via doublet, pulse, or SHSS release to trim</li>
+<td align="left"><ul>
+<li>SHSS</li>
+<li>Turns on one control - cyclic</li>
 </ul></td>
-<td><ul>
-<li><p>IMC flight</p></li>
-<li><p>Transit</p></li>
-<li><p>Nuisance mode</p></li>
+<td align="left"><ul>
+<li>Transit</li>
+<li>Instrument approaches</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Lateral-Directional Dynamic Stability – Spiral Stability</td>
-<td><hr /></td>
-<td><ul>
-<li><p>Turns on one control – cyclic</p></li>
-<li><p>Time to half/double bank angle</p></li>
+<td align="left"><strong>Lateral-Directional</strong>
+Dynamic Stability
+Oscillations
+(Dutch Roll Mode)</td>
+<td align="left"><ul>
+<li><span class="math inline">\(L_v\)</span></li>
+<li><span class="math inline">\(N_v\)</span></li>
 </ul></td>
-<td><ul>
-<li><p>IMC flight</p></li>
-<li><p>Turns</p></li>
-<li><p>Lateral gust response</p></li>
+<td align="left"><ul>
+<li>Excitation of LDO via doublet, pulse,
+or SHSS release to trim</li>
+</ul></td>
+<td align="left"><ul>
+<li>IMC flight</li>
+<li>Transit</li>
+<li>Nuisance mode</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Lateral-Directional</strong>
+Dynamic Stability
+Spiral Stability</td>
+<td align="left"><ul>
+<li><span class="math inline">\(L_v\)</span></li>
+<li><span class="math inline">\(N_r\)</span></li>
+<li><span class="math inline">\(N_v\)</span></li>
+<li><span class="math inline">\(L_r\)</span></li>
+</ul></td>
+<td align="left"><ul>
+<li>Turns on one control – cyclic</li>
+<li>Time to half/double bank angle</li>
+</ul></td>
+<td align="left"><ul>
+<li>IMC flight</li>
+<li>Turns</li>
+<li>Lateral gust response</li>
 </ul></td>
 </tr>
 </tbody>
 </table>
-<p><strong>16.3 References:</strong></p>
+</div>
+<div id="references-13" class="section level2" number="16.3">
+<h2><span class="header-section-number">16.3</span> References</h2>
 <table>
 <colgroup>
 <col width="100%" />
@@ -856,6 +921,7 @@
 </table>
 <p> </p>
 
+</div>
 </div>
             </section>
 
