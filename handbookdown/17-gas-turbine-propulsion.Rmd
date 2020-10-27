@@ -176,7 +176,7 @@ noise suppression. Large commercial jets usually have fixed nozzles that are
 optimized for one cruise condition. Fighter aircraft often have variable nozzles 
 to increase performance at all flight conditions.
 
-![](variable-nozzle.png)
+![](media/17/variable-nozzle.png)
 
 **Accessories**
 
@@ -211,7 +211,7 @@ starting, and afterburner lighting and stability.
 4. Response: The ability to change thrust conditions within a prescribed time in 
 response to a commanded change.
 5. Life/Durability: The ability to withstand extended operating conditions 
-(pressure, temperature, and rpm) over a prescribed lifetime (usually described 
+(pressure, temperature, and RPM) over a prescribed lifetime (usually described 
 in terms of engine operating hours or Total Accumulated Cycles) at a specified 
 level of performance and operability.
 
@@ -230,12 +230,12 @@ standardized to a common flight condition. By applying standard day corrections,
 the effects of changes in temperature and pressure can be removed from test 
 results.
 
-  **Quantity**             **Normal**          **Corrected**
-  ------------------------ ------------------- -------------------------------------------------------------------------------
-  **Air mass flow rate**   \[{\dot{m}}_{i}\]   \[{\dot{m}}_{\mathrm{ci}} = \frac{{\dot{m}}_{i}\sqrt{\theta_{i}}}{\delta_{i}}\]
-  **Fuel flow rate**       \[{\dot{m}}_{f}\]   \[{\dot{m}}_{\mathrm{cf}} = \frac{{\dot{m}}_{f}}{\delta_{2}\sqrt{\theta_{2}}}\]
-  **Rotational speed**     \[N\]               \[N_{\mathrm{ci}} = \frac{N}{\sqrt{\theta_{i}}}\]
-  **Thrust**               \[F\]               \[F_{c} = \frac{F}{\delta_{0}}\]
+|**Quantity**           |**Normal**         |**Corrected** |
+|-----------------------|:-----------:|:-----------:|
+|**Air mass flow rate** |\[{\dot{m}}_{i}\]  | \[{\dot{m}}_{\mathrm{ci}} = \frac{{\dot{m}}_{i}\sqrt{\theta_{i}}}{\delta_{i}}\] |
+|**Fuel flow rate**     |\[{\dot{m}}_{f}\]  | \[{\dot{m}}_{\mathrm{cf}} = \frac{{\dot{m}}_{f}}{\delta_{2}\sqrt{\theta_{2}}}\] |
+|**Rotational speed**   |\[N\]              |\[N_{\mathrm{ci}} = \frac{N}{\sqrt{\theta_{i}}}\] |
+|**Thrust**             |\[F\]              |\[F_{c} = \frac{F}{\delta_{0}}\] |
 
 \(theta_i = \) total temperature ratio 
 \( \left( \theta_i = \frac{T_{\mathrm{ti}}}{T_{\mathrm{ref}}} \right) \) and 
@@ -299,7 +299,7 @@ Variations and simplifications of this formula exist:
 +----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
 | Turbojet and Low Bypass Turbofan (Mixed Streams)   | \[\text{Thrust} = \frac{{\dot{m}}_{0}(V_{9} - V_{0})}{g_{c}}\]                                                                          |
 +----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-| High Bypass Turbofan (Separate Streams)            | \[\text{Thrust} = \frac{{\dot{m}}_{\text{fan}}}{g_{c}}(V_{\text{fan}} - V_{0}) + \frac{{\dot{m}}_{\text{core}}}{g_{c}}(V_{9} - V_{0})$$ |
+| High Bypass Turbofan (Separate Streams)            | \[\text{Thrust} = \frac{{\dot{m}}_{\text{fan}}}{g_{c}}(V_{\text{fan}} - V_{0}) + \frac{{\dot{m}}_{\text{core}}}{g_{c}}(V_{9} - V_{0})\] |
 +----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
 
 Atmospheric temperature, Mach, and altitude also significantly affect engine 
@@ -307,176 +307,209 @@ thrust and efficiency.
 
 ![][17009]![][17010]
 
-## Turbine Engine Operation**
+## Turbine Engine Operation
 
-Compressor maps allow engine operation evaluation, showing corrected engine airflow (fan or core) versus pressure ratio. It is critical to know where an engine is operating within the compressor map in order to avoid stalls and flameouts. The following sections review compressor operation during several maneuvers and geometry changes.
+Compressor maps allow engine operation evaluation, showing corrected engine 
+airflow (fan or core) versus pressure ratio. It is critical to know where an 
+engine is operating within the compressor map in order to avoid stalls and 
+flameouts. The following sections review compressor operation during several 
+maneuvers and geometry changes.
 
-### Compressor operation during accelerations**
+### Compressor operation during accelerations
 
-Above is a typical engine acceleration compressor map. As the engine accelerates from idle to maximum power, the engine follows the transient operating line scheduled by the engine controller. This usually includes surge prevention logic (e.g. pressure ratio limits as a function of airflow). Engine surge susceptibility is generally determined by either component bench tests or from altitude development tests of the full scale engine. Once the surge region is determined for the baseline engine, it can be further reduced by inlet distortion, power extraction, manufacturing tolerances, deterioration, or thermal transients, which affect compressor tip clearances. These affects are considered when determining the transient acceleration schedule needed to provide sufficient surge margin in the most demanding situations.
+![](media/17/eng-accel-compressor-map.png)
 
-### Compressor operation during decelerations**
+Above is a typical engine acceleration compressor map. As the engine accelerates 
+from idle to maximum power, the engine follows the transient operating line 
+scheduled by the engine controller. This usually includes surge prevention logic 
+(e.g. pressure ratio limits as a function of airflow). Engine surge 
+susceptibility is generally determined by either component bench tests or from 
+altitude development tests of the full scale engine. Once the surge region is 
+determined for the baseline engine, it can be further reduced by inlet 
+distortion, power extraction, manufacturing tolerances, deterioration, or 
+thermal transients, which affect compressor tip clearances. These affects are 
+considered when determining the transient acceleration schedule needed to 
+provide sufficient surge margin in the most demanding situations.
 
-Above is a typical engine deceleration compressor map. As the engine decelerates to idle power, the engine follows the transient operating line. To protect from combustor blowout during the deceleration, transient operation schedules usually include blowout prevention logic that schedules a minimum fuel to air ratio within the combustor as a function of engine airflow. This blowout region is usually determined by combustor bench tests or from altitude development tests of the full scale engine. Once the blowout region is determined, the engine schedules are set to include margin to account for engine-to-engine variability.
+### Compressor operation during decelerations
 
-### Bleed air impacts during engine starts**
+![](media/17/eng-decel-compressor-map.png)
 
-Above is a typical engine start compressor map. Turbine engines can be challenging to accelerate from off to idle power due to little stall margin at low airflow conditions. As a means to increase engine surge margin by reducing compressor back pressure and allowing quicker accelerations, engine bleed air can be removed from the engine core via a bleed valve. As the engine approaches idle power, the bleed air valve closes and the engine accelerates the remaining way to idle.
+Above is a typical engine deceleration compressor map. As the engine decelerates 
+to idle power, the engine follows the transient operating line. To protect from 
+combustor blowout during the deceleration, transient operation schedules usually 
+include blowout prevention logic that schedules a minimum fuel to air ratio 
+within the combustor as a function of engine airflow. This blowout region is 
+usually determined by combustor bench tests or from altitude development tests 
+of the full scale engine. Once the blowout region is determined, the engine 
+schedules are set to include margin to account for engine-to-engine variability.
 
-### Variable Stator vane cambering effects**
+### Bleed air impacts during engine starts
 
-Above are typical engine compressor stator and rotor velocity diagrams. Stator vanes control engine surge margin and thrust; as they are cambered closed, the throat area between the vanes is reduced, thereby decreasing airflow. Cambering the vanes also decreases the incidence angle of the rotor blade. These lower airflows and reduced incidence angles increase engine surge margin.
+![](media/17/eng-start-compressor-map.png)
 
-Above is a compressor map illustrating how variable geometry and stator vane cambering can be used to affect engine operation and performance. The solid lines show how the compressor would operate if the stator vanes remained fixed in the axial position. The dashed lines show how the compressor would operate if the stator vanes remained fixed in the cambered closed position. When the stator vanes are cambered closed, additional surge margin is provided, and when the stator vanes are axial, additional airflow capability (or thrust) is provided. As a result, engines typically camber closed stators at low airflow to increase surge margin and acceleration capability, then camber the vanes axial open to maximize performance at higher engine rpms.
+Above is a typical engine start compressor map. Turbine engines can be 
+challenging to accelerate from off to idle power due to little stall margin at 
+low airflow conditions. As a means to increase engine surge margin by reducing 
+compressor back pressure and allowing quicker accelerations, engine bleed air 
+can be removed from the engine core via a bleed valve. As the engine approaches 
+idle power, the bleed air valve closes and the engine accelerates the remaining 
+way to idle.
 
-**\
-**
+### Variable Stator vane cambering effects
 
-### Compressor impacts due to nozzle area for [turbojet]{.underline} engines**
+![](media/17/stator-rotor-velocity.png)
 
-Above is a compressor map illustrating impacts to stability margin from opening and closing the engine exhaust nozzle for a single-spool engine (e.g. J85 engine in T-38 aircraft). In this example, it is shown that stall margin is insufficient at lower airflows with the smaller nozzle area. Opening the nozzle for this single spool configuration moves the engine away from surge. As a result, a typical engine might run nozzle open at idle power to reduce thrust and keep the nozzle open until engine stability was no longer a concern.
+Above are typical engine compressor stator and rotor velocity diagrams. Stator 
+vanes control engine surge margin and thrust; as they are cambered closed, the 
+throat area between the vanes is reduced, thereby decreasing airflow. Cambering 
+the vanes also decreases the incidence angle of the rotor blade. These lower 
+airflows and reduced incidence angles increase engine surge margin.
 
-### Compressor impacts due to nozzle area for [turbofan]{.underline} engines**
+![](media/17/variable-geometry-compressor-map.png)
 
-> **(mixed flow, proximate splitter)**
+Above is a compressor map illustrating how variable geometry and stator vane 
+cambering can be used to affect engine operation and performance. The solid 
+lines show how the compressor would operate if the stator vanes remained fixed 
+in the axial position. The dashed lines show how the compressor would operate 
+if the stator vanes remained fixed in the cambered closed position. When the 
+stator vanes are cambered closed, additional surge margin is provided, and when 
+the stator vanes are axial, additional airflow capability (or thrust) is 
+provided. As a result, engines typically camber closed stators at low airflow 
+to increase surge margin and acceleration capability, then camber the vanes 
+axial open to maximize performance at higher engine RPMs.
 
-Above is a compressor map illustrating stability margin impacts from opening and closing the engine exhaust nozzle for a turbofan engine (e.g. F100 engine in F-16 aircraft). Closing the nozzle moves the fan away from surge, which is opposite from the turbojet application. The high pressure compressor (HPC) is not impacted by the nozzle opening or closing (assuming the low pressure turbine \[LPT\] is choked). The fan and compressor's independent reactions to nozzle movement allow the ability to set airflow and thrust independently. This is an important feature for flutter vibration or stability issues at particular rpm ranges.
+### Compressor impacts due to nozzle area for [turbojet]{.underline} engines
 
-**\
-**
+![](media/17/turbojet-open-close-nozzle-compressor-map.png)
 
-### Combustion Stability**
+Above is a compressor map illustrating impacts to stability margin from opening 
+and closing the engine exhaust nozzle for a single-spool engine (e.g. J85 engine 
+in T-38 aircraft). In this example, it is shown that stall margin is 
+insufficient at lower airflows with the smaller nozzle area. Opening the nozzle 
+for this single spool configuration moves the engine away from surge. As a 
+result, a typical engine might run nozzle open at idle power to reduce thrust 
+and keep the nozzle open until engine stability was no longer a concern.
 
-Above is a combustion stability plot showing engine airflow versus fuel-to-air-ratio. These plots are generally developed during component bench testing and are then used by engine designers to schedule combustor or augmentor fuel flow. The plot shows regions of stable and unstable combustion. Also, the engine operates closer to a blowout region at low air mass flow (high altitude and low Mach number \[ULHC\]). Combustion instabilities can have various effects on engine operation, including blowout, running rough, and vibrations that can reduce part life.
+### Compressor impacts due to nozzle area for [turbofan]{.underline} engines
 
-**\
-**
+(mixed flow, proximate splitter)
 
-## Additional Information**
+![](media/17/turbofan-open-close-nozzle-compressor-map.png)
 
-### Engine Stations**
+Above is a compressor map illustrating stability margin impacts from opening and 
+closing the engine exhaust nozzle for a turbofan engine (e.g. F100 engine in 
+F-16 aircraft). Closing the nozzle moves the fan away from surge, which is 
+opposite from the turbojet application. The high pressure compressor (HPC) is 
+not impacted by the nozzle opening or closing (assuming the low pressure 
+turbine, LPT, is choked). The fan and compressor's independent reactions to 
+nozzle movement allow the ability to set airflow and thrust independently. This 
+is an important feature for flutter vibration or stability issues at particular 
+RPM ranges.
 
-(Reference SAE ARP-755 *Aircraft Propulsion System Performance Station Designation and Nomenclature* for additional details)
+### Combustion Stability
 
-Engine station designations provide a consistent definition of the process the gas undergoes, regardless of the type of engine cycle
+![](media/17/combustion-stability.png)
 
-> *The six main processes specifically isolated are:*
->
-> *a. kinetic compression (inlet/diffuser)*
->
-> *b. mechanical compression/work addition/fluidic compression (compressor/propeller)*
->
-> *c. heat addition or exchange (combustor/augmentor/heat exchanger)*
->
-> *d. mechanical expansion/work extraction (turbine)*
->
-> ![][17011]*e. kinetic expansion (nozzle)*
->
-> *f. mixing (mixer/ejector/eductor).*
+Above is a combustion stability plot showing engine airflow versus 
+fuel-to-air-ratio. These plots are generally developed during component bench 
+testing and are then used by engine designers to schedule combustor or augmentor 
+fuel flow. The plot shows regions of stable and unstable combustion. Also, the 
+engine operates closer to a blowout region at low air mass flow (high altitude 
+and low Mach number, ULHC). Combustion instabilities can have various effects 
+on engine operation, including blowout, running rough, and vibrations that can 
+reduce part life.
 
-Dual Spool Turbofan With Afterburning
+## Additional Information
 
-> 0 -- Free stream air conditions
->
-> 1 -- First station of interest to the engine manufacturer. Inlet or aerodynamic interface plane (AIP).
->
-> 2 -- First compressor or fan front face
->
-> 3 -- Last compressor discharge or combustor entrance
->
-> 4 -- Combustor discharge or first turbine entrance
->
-> 5 -- Last turbine discharge
->
-> 6 -- Mixer or afterburner entrance
->
-> 7 -- Exhaust nozzle entrance
->
-> 8 -- Exhaust nozzle throat
->
-> 9 -- Exhaust nozzle discharge
+### Engine Stations
+
+(Reference SAE ARP-755 *Aircraft Propulsion System Performance Station Designation and Nomenclature* 
+for additional details)
+
+Engine station designations provide a consistent definition of the process the 
+gas undergoes, regardless of the type of engine cycle
+
+The six main processes specifically isolated are:
+
+1. kinetic compression (inlet/diffuser)
+2. mechanical compression/work addition/fluidic compression (compressor/propeller)
+3. heat addition or exchange (combustor/augmentor/heat exchanger)
+4. mechanical expansion/work extraction (turbine)
+5. kinetic expansion (nozzle)
+6. mixing (mixer/ejector/eductor)
+
+**Dual Spool Turbofan With Afterburning**
+
+![][17011]
+
+0 -- Free stream air conditions
+
+1 -- First station of interest to the engine manufacturer. Inlet or aerodynamic 
+interface plane (AIP).
+
+2 -- First compressor or fan front face
+
+3 -- Last compressor discharge or combustor entrance
+
+4 -- Combustor discharge or first turbine entrance
+
+5 -- Last turbine discharge
+
+6 -- Mixer or afterburner entrance
+
+7 -- Exhaust nozzle entrance
+
+8 -- Exhaust nozzle throat
+
+9 -- Exhaust nozzle discharge
 
 Notes:
 
-1.  Incremental (or sub) stations may be indicated with suffix nomenclature (e.g. 2.5 to indicate fan discharge on a dual spool compression system).
+1.  Incremental (or sub) stations may be indicated with suffix nomenclature 
+(e.g. 2.5 to indicate fan discharge on a dual spool compression system).
 
-2.  There are a multitude of variations on this theme. SAE ARP-755 includes descriptions for most turbine engine configurations.
+2.  There are a multitude of variations on this theme. SAE ARP-755 includes 
+descriptions for most turbine engine configurations.
 
-**\
-**
+### Key Propulsion Terminology
 
-### Key Propulsion Terminology**
+| | |
+|-|---|
+|**Aerodynamic Interface Plane** | A defined plane of intersection between the inlet and the engine.|
+|**Afterburner** | Any type of auxiliary (post turbomachine) combustion to enhance propulsion system thrust. Also known as the augmentor or reheat. |
+|**Compressor Loading** | The general ratio of work across the compressor stages. Forward compressor loading indicates the forward stages are more loaded (higher pressure ratio) than the aft stages. |
+|**Compressor Map** | A compressor's total pressure ratio defined by corrected airflow and corrected rotation speed. |
+|**Corrected** | An adjustment for standard day temperature and/or pressure (at an engine station) to an engine parameter (like rotational speed, air flow or fuel flow). Also see referred. |
+|**Delta** | Pressure ratio, \(\delta_{i} = \frac{P_{\mathrm{ti}}}{P_{0}}\), where \(i\) is the reference station. |
+|**Flame-out** | Can be synonymous with blow-out; however, it is more typically used in reference to the main combustor flame extinguishing. |
+|**Gross Thrust** | The momentum change at the nozzle exit or aft side of the propeller. The first term in the thrust equation. |
+|**Horsepower Extraction** | Any form of removal of power (bleed or mechanical) from a turbomachine other than for the generation of thrust. |
+|**Inlet Compatibility** | A type of test used to determine if the combined effects of inlet distortion and engine stability are compatible (e.g.; no stalls occur). |
+|**Inlet Distortion** | The measurement of variation in pressure, temperature, or vector at the aerodynamic interface plane. |
+|**Inlet Recovery** | The average total pressure at the Aerodynamic Interface Plane divided by the free stream total pressure. |
+|**Instability** | Can be used in many contexts. The two main contexts are in combustion stability and compressor stability. The former refers to a flame's (either combustor or augmentor) ability to stay lit and the later to compression system flow disturbance. |
+|**Operability** | The sub-discipline of propulsion related to a turbine engine's characteristic operational limits. This includes but is not limited to the regions of the flight envelope where stalls or flame-outs may occur, where augmentation is limited, or where airstarts can be accomplished. |
+|**Recycle** | A full no-light or blowout and relight sequence where the engine control continues to try to light the combustor or augmentor. Most typically refers to the augmentor. |
+|**Referred** | An adjustment for standard day temperature and/or pressure (at an engine station) to an engine parameter (like rotational speed, air flow or fuel flow). See also corrected. |
+|**Reynolds Number Index** | Ratio of actual Reynolds Number to standard atmosphere Reynolds Numbers assuming a constant length scale. |
+|**Rotating Stall** | A cyclic disruption of airflow (surge) across one or more fan or core compressor blades. May or may not be noticeable by the operator, but can produce cycle fatigue damage to the compressor blades. |
+|**Rumble** | A low frequency augmentor induced vibration. |
+|**Screech** | A combustion induced acoustic vibration in the augmentor. Usually in the several hundred Hertz frequency range |
+|**Stage** | A blade (or rotor) and stator pair. |
+|**Stagnation** | A series of stalls that have become non-recoverable (no response to engine control inputs---requires the disruption of fuel flow to clear). The series of stalls has disrupted the airflow through the compressor so severely that ram flow will not recover the engine. Characterized by no engine core response and increasing exhaust gas temperature. |
+|**Stall** | A disruption of airflow across one or more fan or core compressor blades. Also known as surge. |
+|**Station** | Defined locations within a propulsion system. See Section 20.2.1 |
+|**Stator** | The non-rotating blades of a stage within a turbomachine compressor or turbine. |
+|**Swirl** | Non-axial vector of inlet airflow. |
+|**Temperature Profile** | Usually used in reference to the span wise temperature distribution across the turbine inlet guide vanes. |
+|**Theta** | Temperature ratio, \(\theta_{i} = \frac{T_{\mathrm{ti}}}{T_{0}}\), where \(i\) is the reference station |
+|**Thrust Specific Fuel Consumption** | The amount of fuel required to produce a unit of thrust, \[\mathrm{TFSC} = \frac{W_f}{F_n}\] |
+|**Total Accumulated Cycles** | A conglomerate measurement (based on an empirical relationship) of the number of cycles an engine has experienced. It is used as a measure of engine health or life. |
+|**Upper Left Hand Corner** | An area of the flight envelope chart (Mach Number on the x-axis and altitude on the y-axis) characterized by areas of low speed and high altitude. |
+|**Windmill** | The free rotation of the rotational components of the engine driven solely by ram airflow. |
 
-**Aerodynamic Interface Plane - A defined plane of intersection between the inlet and the engine.**
-
-**Afterburner - Any type of auxiliary (post turbomachine) combustion to enhance propulsion system thrust. Also known as the augmentor or reheat.**
-
-**Compressor Loading** -The general ratio of work across the compressor stages. Forward compressor loading indicates the forward stages are more loaded (higher pressure ratio) than the aft stages.
-
-**Compressor Map** - A compressor's total pressure ratio defined by corrected airflow and corrected rotation speed.
-
-**Corrected** - An adjustment for standard day temperature and/or pressure (at an engine station) to an engine parameter (like rotational speed, air flow or fuel flow). Also see referred.
-
-**Delta** - Pressure ratio, $\delta_{i} = \frac{P_{\mathrm{ti}}}{P_{0}}$, where i is the reference station.
-
-**Flame-out -** Can be synonymous with blow-out; however, it is more typically used in reference to the main combustor flame extinguishing.
-
-**Gross Thrust** - The momentum change at the nozzle exit or aft side of the propeller. The first term in the thrust equation.
-
-**Horsepower Extraction -** Any form of removal of power (bleed or mechanical) from a turbomachine other than for the generation of thrust.
-
-**Inlet Compatibility** - A type of test used to determine if the combined effects of inlet distortion and engine stability are compatible (e.g.; no stalls occur).
-
-**Inlet Distortion** - The measurement of variation in pressure, temperature, or vector at the aerodynamic interface plane.
-
-**Inlet Recovery** - The average total pressure at the Aerodynamic Interface Plane divided by the free stream total pressure.
-
-**Instability -** Can be used in many contexts. The two main contexts are in combustion stability and compressor stability. The former refers to a flame's (either combustor or augmentor) ability to stay lit and the later to compression system flow disturbance.
-
-**Operability -** The sub-discipline of propulsion related to a turbine engine's characteristic operational limits. This includes but is not limited to the regions of the flight envelope where stalls or flame-outs may occur, where augmentation is limited, or where airstarts can be accomplished.
-
-**Recycle -** A full no-light or blowout and relight sequence where the engine control continues to try to light the combustor or augmentor. Most typically refers to the augmentor.
-
-**Referred** - An adjustment for standard day temperature and/or pressure (at an engine station) to an engine parameter (like rotational speed, air flow or fuel flow). See also corrected.
-
-**Reynolds Number Index -** Ratio of actual Reynolds Number to standard atmosphere Reynolds Numbers assuming a constant length scale.
-
-**Rotating Stall -** A cyclic disruption of airflow (surge) across one or more fan or core compressor blades. May or may not be noticeable by the operator, but can produce cycle fatigue damage to the compressor blades.
-
-**Rumble** - A low frequency augmentor induced vibration.
-
-**Screech** - A combustion induced acoustic vibration in the augmentor. Usually in the several hundred Hertz frequency range
-
-**Stagnation -** A series of stalls that have become non-recoverable (no response to engine control inputs---requires the disruption of fuel flow to clear). The series of stalls has disrupted the airflow through the compressor so severely that ram flow will not recover the engine. Characterized by no engine core response and increasing exhaust gas temperature.
-
-**Stall -** A disruption of airflow across one or more fan or core compressor blades. Also known as surge.
-
-**Stage** - A blade (or rotor) and stator pair.
-
-**Station** - Defined locations within a propulsion system. See Section 20.2.1
-
-**Stator** - The non-rotating blades of a stage within a turbomachine compressor or turbine.
-
-**Swirl** - Non-axial vector of inlet airflow.
-
-**Temperature Profile** - Usually used in reference to the span wise temperature distribution across the turbine inlet guide vanes.
-
-**Theta** -Temperature ratio, $\theta_{i} = \frac{T_{\mathrm{ti}}}{T_{0}}$, where i is the reference station
-
-**Thrust Specific Fuel Consumption** - The amount of fuel required to produce a unit of thrust,
-
-TFSC =
-
-**Total Accumulated Cycles - A conglomerate measurement (based on an empirical relationship) of the number of cycles an engine has experienced. It is used as a measure of engine health or life.**
-
-**Upper Left Hand Corner -** An area of the flight envelope chart (Mach Number on the x-axis and altitude on the y-axis) characterized by areas of low speed and high altitude.
-
-**Windmill** - The free rotation of the rotational components of the engine driven solely by ram airflow.
-
-**\
-**
-
-### Aircraft and Associated Engines**
+### Aircraft and Associated Engines
 
   **Military Aircraft**                           
   ----------------------- ----------------------- ----------------------------------------------------
@@ -543,27 +576,15 @@ TFSC =
   Airbus A340                                     CFM-56, RR-500
   Airbus A380                                     RR-900, GP-7000
 
-### Additional Propulsion Resources**
+### Additional Propulsion Resources
 
-Jack Mattingly's Engine Design Site
-
-<http://www.aircraftenginedesign.com/>
-
-NASA EngineSim
-
-<http://www.grc.nasa.gov/WWW/K-12/airplane/ngnsim.html>
-
-AeroFiles
-
-<http://www.aerofiles.com/home.html>
-
-NASM Smithsonian National Air and Space Museum
-
-<http://www.nasm.si.edu/>
-
-National Museum of the US Air Force
-
-<http://www.nationalmuseum.af.mil/>
+|||
+|-|-|
+| Jack Mattingly's Engine Design Site | <http://www.aircraftenginedesign.com/> |
+| NASA EngineSim | <http://www.grc.nasa.gov/WWW/K-12/airplane/ngnsim.html> |
+| AeroFiles | <http://www.aerofiles.com/home.html> |
+| NASM Smithsonian National Air and Space Museum | <http://www.nasm.si.edu/> |
+| National Museum of the US Air Force | <http://www.nationalmuseum.af.mil/> |
 
 **Aerospace Recommended Practices**
 
@@ -573,7 +594,10 @@ AIR1419 Inlet Total-Pressure-Distortion Considerations for Gas-Turbine Engines
 
 ARP4990 Turbine Flowmeter Fuel Flow Calculations
 
-> Additional standards for Emissions, Test Cell Correlation, Noise, Temperature Measurement, and Health Management are also available through SAE International's website: <http://standards.sae.org/power-propulsion/engines/gas-turbines/standards/>
+Additional standards for Emissions, Test Cell Correlation, Noise, Temperature 
+Measurement, and Health Management are also available through SAE 
+International's website: 
+<http://standards.sae.org/power-propulsion/engines/gas-turbines/standards/>
 
   [17001]: media/17/image1.png {width="5.138888888888889in" height="3.2909722222222224in"}
   [17002]: media/17/image5.png {width="3.798807961504812in" height="2.850989720034996in"}
