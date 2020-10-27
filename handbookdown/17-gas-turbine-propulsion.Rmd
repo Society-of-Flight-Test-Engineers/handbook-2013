@@ -1,152 +1,196 @@
-# 17 Gas Turbine Propulsion**
+# Gas Turbine Propulsion
 
-> 17.1 Turbine Engine Basics
->
-> 17.1.1 Turbine Engine Types
->
-> 17.2.2 The Brayton Cycle
->
-> 17.2.3 Component Descriptions
->
-> 17.2 Propulsion System Analysis
->
-> 17.2.1 Standard Day Corrections
->
-> 17.2.2 Pressure and Temperature Relationships with Flight Parameters
->
-> 17.2.3 Reynold's Number Index
->
-> 17.2.4 Thrust Calculations
->
-> 17.3 Turbine Engine Operation
->
-> 17.3.1 Compressor operation during accelerations
->
-> 17.3.2 Compressor operation during decelerations
->
-> 17.3.3 Bleed are impacts during engine starts
->
-> 17.3.4 Stator vane cambering effects
->
-> 17.3.5 Compressor impacts due to nozzle area for [turbojet]{.underline} engines
->
-> 17.3.6 Compressor impacts due to nozzle area for [turbofan]{.underline} engines
->
-> 17.3.7 Combustion stability
->
-> 17.4 Additional Information
->
-> 17.4.1 Engine Stations
->
-> 17.4.2 Key Propulsion Terminology
->
-> 17.4.3 Common Aircraft and Associated Engines
->
-> 17.4.4 Additional Propulsion Resources
+## Turbine Engine Basics
 
-**17.1 Turbine Engine Basics**
+### Turbine Engine Types
 
-**17.1.1 Turbine Engine Types**
+Three basic types of aircraft turbine include turbojets, turbofans, and 
+turboshafts.
 
-Three basic types of aircraft turbine include turbojets, turbofans, and Turboshafts.
++:-------------------------------------:+:--------------------------------------:+
+| Turbojet                              |  Turboprop                             |
+|                                       |                                        |
+| ![](media/17/turbojet.png)            | ![](media/17/turboprop.png)            |
++---------------------------------------+----------------------------------------+
+| Low Bypass Turbofan                   |  High Bypass Turbofan                  |
+|                                       |                                        |
+| ![](media/17/low-bypass-turbofan.png) | ![](media/17/high-bypass-turbofan.png) |
++---------------------------------------+----------------------------------------+
 
-![][17001]
+The primary advantage of turbojets is their efficiency at high speed/altitude 
+and small diameter. Turbojets are less efficient at low speed and are currently 
+only used in older aircraft (B-52, T-38, Boeing 707).
 
-The primary advantage of turbojets is their efficiency at high speed/altitude and small diameter. Turbojets are less efficient at low speed and are currently only used in older aircraft (B-52, T-38, Boeing 707).
+A turbofan engine is essentially a turbojet to which a second compression system 
+has been added. Turbofans are further divided into low bypass and high bypass 
+engines, where bypass describes the amount of air used by the fan that bypasses 
+the compressor. In low bypass (0-1 bypass ratio) engines, most of the thrust 
+comes from the nozzle. In high bypass (1-11+ bypass ratio) engines, most the 
+thrust comes from the fan. Turbofans are the most popular engine for new medium 
+and large aircraft due to the range of bypass ratios available, allowing 
+optimization for most flight regimes. Turbofan **advantages include:** 
 
-A turbofan engine is essentially a turbojet to which a second compression system has been added. Turbofans are further divided into low bypass and high bypass engines, where bypass describes the amount of air used by the fan that bypasses the compressor. In low bypass (0-1 bypass ratio) engines, most of the thrust comes from the nozzle. In high bypass (1-11+ bypass ratio) engines, most the thrust comes from the fan. Turbofans are the most popular engine for new medium and large aircraft due to the range of bypass ratios available, allowing optimization for most flight regimes. Turbofan **advantages include:** high thrust and low fuel consumption at low airspeed (subsonic), lower engine noise compared to turbojets, and generally lower operating temperatures allowing the use of lower cost materials. Turbofan **disadvantages include large engine d**iameters that can increase aircraft drag and cause ground clearance issues and slower engine response compared to turbojets.
+* high thrust and low fuel consumption at low airspeed (subsonic), 
+* lower engine noise compared to turbojets, and 
+* generally lower operating temperatures allowing the use of lower cost materials. 
 
-Turboprops generate the majority of their thrust by driving an external propeller. They generally operate at slightly higher altitudes and faster airspeeds than conventional piston driven aircraft, but performance at higher mach numbers is limited due to compressibility effects at the propeller tip. The primary advantages of turboprops compared to reciprocating engines are fuel consumption improvements and increased reliability.
+Turbofan **disadvantages include:** 
+
+* large engine diameters that can increase aircraft drag and cause ground clearance issues and 
+* slower engine response compared to turbojets.
+
+Turboprops generate the majority of their thrust by driving an external 
+propeller. They generally operate at slightly higher altitudes and faster 
+airspeeds than conventional piston driven aircraft, but performance at higher 
+Mach numbers is limited due to compressibility effects at the propeller tip. The 
+primary advantages of turboprops compared to reciprocating engines are fuel 
+consumption improvements and increased reliability.
 
 ![][17002]
 
-Engine Type Operating Envelopes
+**Engine Type Operating Envelopes**
 
-Some applications have unique flight envelopes and are required to support large horsepower extractions to power on-board sensors (e.g. Global Hawk).
+Some applications have unique flight envelopes and are required to support large 
+horsepower extractions to power on-board sensors (e.g. Global Hawk).
 
-**\
-**
+### The Brayton Cycle
 
-**17.1.2 The Brayton Cycle**
-
-Aircraft turbine engines generally operate on the Brayton thermodynamic cycle. A simplistic explanation is provided using pressure-volume (P-V) and temperature-entropy (T-S) diagrams.
+Aircraft turbine engines generally operate on the Brayton thermodynamic cycle. 
+A simplistic explanation is provided using pressure-volume (P-V) and 
+temperature-entropy (T-S) diagrams.
 
 Ideal thermodynamic cycles (dotted) are those where:
 
-1\) The inlet and compressor (engine stations 0 to 3) isentropically compress the air.
+1. The inlet and compressor (engine stations 0 to 3) isentropically compress the 
+air.
+2. The combustor (engine stations 3 to 4) provides isobaric heating.
+3. The turbine and nozzle (engine stations 4 to 9) isentropically expand the air 
+to free stream jet.
+4. Free stream exhaust jet is at a higher velocity and temperature (and entropy) 
+than the inlet.
 
-2\) The combustor (engine stations 3 to 4) provides isobaric heating.
+In the real case (solid/dashed line), the inlet and compressor induce increased 
+entropy (friction losses), the combustor has pressure losses, the turbine and 
+exhaust nozzle do not perfectly expand the air to free stream pressure, and the 
+exhaust jet is still at a higher velocity and temperature than the inlet. All of 
+these factors decrease the efficiency of real turbines.
 
-3\) The turbine and nozzle (engine stations 4 to 9) isentropically expand the air to free stream jet.
+![](media/17/p-v-t-s.png)
 
-4\) Free stream exhaust jet is at a higher velocity and temperature (and entropy) than the inlet.
+**Turbojet, Real (solid/dashed) & Ideal (dotted)**
 
-In the real case (solid/dashed line), the inlet and compressor induce increased entropy (friction losses), the combustor has pressure losses, the turbine and exhaust nozzle do not perfectly expand the air to free stream pressure, and the exhaust jet is still at a higher velocity and temperature than the inlet. All of these factors decrease the efficiency of real turbines.
+A more complex case is the two spool turbofan with afterburning. Although 
+following the same trends, the additional "reheat" from the afterburner 
+(stations 5-7) provides a significant increase in free stream exhaust jet 
+temperature and velocity. Because the increase in temperature is never recovered 
+by a turbine, actual efficiency is lower.
 
-Turbojet, Real (solid/dashed) & Ideal (dotted)
+![](media/17/p-v-t-s-ab.png)
 
-A more complex case is the two spool turbofan with afterburning. Although following the same trends, the additional "reheat" from the afterburner (stations 5-7) provides a significant increase in free stream exhaust jet temperature and velocity. Because the increase in temperature is never recovered by a turbine, actual efficiency is lower.
+**Turbofan With Afterburning, Real (solid/dashed) & Ideal (dotted)**
 
-Turbofan With Afterburning, Real (solid/dashed) & Ideal (dotted)
-
-**\
-**
-
-**17.1.3 Component Descriptions**
+### Component Descriptions
 
 (Example Axial Dual-spool Augmented Turbofan)
 
 **Inlet (Station 0 to 2)**
 
-Inlets usually provide laminar, subsonic flow with minimal total pressure loss across a variety of Mach numbers and angles of attack. Subsonic inlets are typically simple with fixed geometry and supersonic inlets range from simple to complex using variable bleeds and bypasses depending on the operating conditions.
+Inlets usually provide laminar, subsonic flow with minimal total pressure loss 
+across a variety of Mach numbers and angles of attack. Subsonic inlets are 
+typically simple with fixed geometry and supersonic inlets range from simple to 
+complex using variable bleeds and bypasses depending on the operating 
+conditions.
 
-![][17003]![C:\\Users\\Moulder Christopher\\Desktop\\inlet1.jpg]
-
-**Complex Supersonic Inlet Simple Subsonic Turbofan Inlet**
+![](media/17/inlets.png)
 
 **Compressor (Fan/Core) (Stations 2 to 3)**
 
-![][17004] The low pressure compressor, or fan, provides increased thrust and efficiency by accelerating a larger mass flow of air (compared to the high pressure compressor). It consists of stators (S) and rotor blades (R). A splitter in the duct following the fan separates airflow from the bypass duct. Below example, the fan is coupled via an inner shaft to the low pressure turbine.
+The low pressure compressor, or fan, provides increased thrust and efficiency by 
+accelerating a larger mass flow of air (compared to the high pressure 
+compressor). It consists of stators (S) and rotor blades (R). A splitter in the 
+duct following the fan separates airflow from the bypass duct. Below example, 
+the fan is coupled via an inner shaft to the low pressure turbine.
 
-**Typical Low Pressure Compressor Typical High Pressure Compressor**
+![][17004] 
 
-The high pressure compressor provides airflow to the combustor and turbines. It can have many stages, each stage consisting of a rotor and a stator. The rotors impart kinetic energy into the airflow, while the stators convert the kinetic energy to a pressure rise. For improved operation, stators can also have variable geometry. Overall compression ratios can be 10 to 40 times ambient and the temperature rise more than 600 deg F. Bleed air from later compression stages can also be extracted to cool the turbine blades and provide airflow for auxiliary power or ice protection. Shaft power is also extracted through an engine mounted gearbox attached to the high pressure spool to power electrical and hydraulic systems.
-
-**\
-**
+The high pressure compressor provides airflow to the combustor and turbines. It 
+can have many stages, each stage consisting of a rotor and a stator. The rotors 
+impart kinetic energy into the airflow, while the stators convert the kinetic 
+energy to a pressure rise. For improved operation, stators can also have variable 
+geometry. Overall compression ratios can be 10 to 40 times ambient and the 
+temperature rise more than 600 deg F. Bleed air from later compression stages 
+can also be extracted to cool the turbine blades and provide airflow for 
+auxiliary power or ice protection. Shaft power is also extracted through an 
+engine mounted gearbox attached to the high pressure spool to power electrical 
+and hydraulic systems.
 
 **Combustor (Station 3 to 4)**
 
-Fuel is injected, ignited, and burned in the combustor. Modern combustors are annular, while older designs consisted of multiple cans surrounding the shaft. Combustors slow the airflow entering the chamber to allow fuel-air mixture and prevent combustion outside the chamber. If air velocities are too great in the combustor, combustion stability is affected.
+Fuel is injected, ignited, and burned in the combustor. Modern combustors are 
+annular, while older designs consisted of multiple cans surrounding the shaft. 
+Combustors slow the airflow entering the chamber to allow fuel-air mixture and 
+prevent combustion outside the chamber. If air velocities are too great in the 
+combustor, combustion stability is affected.
 
-![Combustor.png]
+![](media/17/combustors.png)
 
 **Annular Combustor Combustor Cross-Section**
 
 Combustors induce turbulence into the air to achieve proper fuel-air mixing and even burning. Approximately half of the air entering the combustor is used for the combustion process; the remainder cools the combustor panels. The exhaust gas temperature can exceed 3,100 deg F, leading to significant material challenges within the combustor and turbine sections.
 
-![][17005]**Turbine (Station 4)**
+**Turbine (Station 4)**
 
-![][17006] Turbines extract energy from the combustor exhaust to drive the compressors. Extreme blade and vane temperatures drive special materials and/or active cooling requirements. State-of-the-art turbines may include single crystal nickel based alloys with thermal barrier coatings, internal cooling passages, and external film air cooling.
-
-The high pressure turbine powers the high pressure compressor, and the low pressure turbine powers the low pressure compressor.
++:-------------------------------------------+:-------------------------:+
+| Turbines extract energy from the combustor | ![][17005]![][17006]      |
+| exhaust to drive the compressors. Extreme  |                           |
+| blade and vane temperatures drive special  |                           |
+| materials and/or active cooling            |                           |
+| requirements. State-of-the-art turbines    |                           |
+| may include single crystal nickel based    |                           |
+| alloys with thermal barrier coatings,      |                           |
+| internal cooling passages, and external    |                           |
+| film air cooling.                          |                           |
+|                                            |                           |
+| The high pressure turbine powers the high  |                           |
+| pressure compressor, and the low pressure  |                           |
+| turbine powers the low pressure compressor.|                           |
++--------------------------------------------+---------------------------+
 
 **Augmentor (Station 6)**
 
-Afterburning burns fuel between the turbine and the exhaust nozzle to reheat the airflow. This reheat increases flow velocity and thus thrust, but because the temperature increase is not recovered as in the turbine, afterburners are very inefficient. While an increase in thrust can be obtained from a larger engine, the commensurate increase in weight and drag is not economical for short period requirements (e.g. aircraft takeoff).
+Afterburning burns fuel between the turbine and the exhaust nozzle to reheat the 
+airflow. This reheat increases flow velocity and thus thrust, but because the 
+temperature increase is not recovered as in the turbine, afterburners are very 
+inefficient. While an increase in thrust can be obtained from a larger engine, 
+the commensurate increase in weight and drag is not economical for short period 
+requirements (e.g. aircraft takeoff).
 
-**\
-**
 
 **Exhaust Nozzle (Station 7 to 9)**
 
-Air from the augmentor exits through the exhaust nozzle to provide the airplane with thrust. Efficient exhaust nozzles also reduce aircraft drag by matching exhaust pressure and ambient pressure. They can provide thrust vectoring to enhance aircraft stability, thrust reversing to improve aircraft braking, and noise suppression. Large commerical jets usually have fixed nozzles that are optimized for one cruise condition. Fighter aircraft often have variable nozzles to increase performance at all flight conditions.
+Air from the augmentor exits through the exhaust nozzle to provide the airplane 
+with thrust. Efficient exhaust nozzles also reduce aircraft drag by matching 
+exhaust pressure and ambient pressure. They can provide thrust vectoring to 
+enhance aircraft stability, thrust reversing to improve aircraft braking, and 
+noise suppression. Large commercial jets usually have fixed nozzles that are 
+optimized for one cruise condition. Fighter aircraft often have variable nozzles 
+to increase performance at all flight conditions.
+
+![](variable-nozzle.png)
 
 **Accessories**
 
-Turbine engines require a variety of accessories to support engine and aircraft functions. Engine control can be managed by hydro-mechanical, analog, digital, or a combination of the control types. Modern engines use a full authority digital engine control (FADEC) to schedule engine operation throughout its operating range. Engine or aircraft sensors (e.g. T~t2~) provide operating conditions to the engine controller. An anti-ice valve can supply bleed air to the engine face struts to prevent ice build-up. A gearbox also extracts power from the high pressure compressor shaft to run electrical generators and aircraft hydraulic systems.
+Turbine engines require a variety of accessories to support engine and aircraft 
+functions. Engine control can be managed by hydro-mechanical, analog, digital, 
+or a combination of the control types. Modern engines use a full authority 
+digital engine control (FADEC) to schedule engine operation throughout its 
+operating range. Engine or aircraft sensors (e.g. \(T_{t2}\)) provide operating 
+conditions to the engine controller. An anti-ice valve can supply bleed air to 
+the engine face struts to prevent ice build-up. A gearbox also extracts power 
+from the high pressure compressor shaft to run electrical generators and 
+aircraft hydraulic systems.
 
-**17.2 Propulsion System Analysis**
+## Propulsion System Analysis**
 
 Typically, a propulsion system's operation is segregated into the five sub-categories or disciplines.
 
@@ -165,7 +209,7 @@ A number of Aerospace Recommended Practices (ARP) exist to aid in standardizatio
 **\
 **
 
-**17.2.1 Standard Day Corrections**
+### Standard Day Corrections**
 
 Due to varying atmospheric conditions, engine tests are rarely conducted at the same flight conditions. Therefore, to compare tests results, data must be standardized to a common flight condition. By applying standard day corrections, the effects of changes in temperature and pressure can be removed from test results.
 
@@ -180,14 +224,14 @@ Due to varying atmospheric conditions, engine tests are rarely conducted at the 
 
 \[Values can also be found in the standard atmosphere table, Section 3-14. Reference is sea-level, standard day. These values are also corrected for Mach number in Figure x-11.\]
 
-**17.2.2 Pressure and Temperature Relationships with Flight Parameters**
+### Pressure and Temperature Relationships with Flight Parameters**
 
 Two of the main inputs to a propulsion system are engine face pressure and temperature (P­~t2~ and T~t2~ respectively), yet the flight envelope is defined in altitude, airspeed, and Mach number. Consequently, it is helpful to be able to translate from one to the other. Unfortunately, because many engine inlets are variable, and therefore introduce varying pressure and temperature losses, the handbook assumes P­~t2~=P­~t0~ and T~t2~= T~t0~. The following chart is useful when describing the engine operating conditions relative to flight conditions.
 
 **\
 **![][17007]
 
-**17.2.3 Reynolds Number Index**
+### Reynolds Number Index**
 
 Assuming the characteristic length of an engine is constant in differing operating environments, another way of describing the pressure and temperature relationship is with the Reynolds number index. Similar to standard day corrections, the Reynolds Number Index provides a method of comparing engine operation across varying inlet-pressure loses, inlet temperatures, flight speeds, and altitudes. The Reynolds Number Index is:
 
@@ -208,7 +252,7 @@ Reynolds Number Index versus Altitude and Mach Number
 **\
 **
 
-**17.2.4 Thrust Calculations**
+### Thrust Calculations**
 
 Various formulae exist to calculate gross engine thrust (Fg). However, modern engines are too complex for standard textbook formulas to accurately predict thrust; this is normally left to complex computer algorithms. The current standard for new models is the Numerical Propulsion System Simulation (NPSS). Despite this, a control volume approach relying on conservation of momentum will provide gross engine thrust if the required parameters are known.
 
@@ -231,23 +275,23 @@ Atmospheric temperature, Mach, and altitude also significantly affect engine thr
 **\
 **
 
-**17.3 Turbine Engine Operation**
+## Turbine Engine Operation**
 
 Compressor maps allow engine operation evaluation, showing corrected engine airflow (fan or core) versus pressure ratio. It is critical to know where an engine is operating within the compressor map in order to avoid stalls and flameouts. The following sections review compressor operation during several maneuvers and geometry changes.
 
-**17.3.1 Compressor operation during accelerations**
+### Compressor operation during accelerations**
 
 Above is a typical engine acceleration compressor map. As the engine accelerates from idle to maximum power, the engine follows the transient operating line scheduled by the engine controller. This usually includes surge prevention logic (e.g. pressure ratio limits as a function of airflow). Engine surge susceptibility is generally determined by either component bench tests or from altitude development tests of the full scale engine. Once the surge region is determined for the baseline engine, it can be further reduced by inlet distortion, power extraction, manufacturing tolerances, deterioration, or thermal transients, which affect compressor tip clearances. These affects are considered when determining the transient acceleration schedule needed to provide sufficient surge margin in the most demanding situations.
 
-**17.3.2 Compressor operation during decelerations**
+### Compressor operation during decelerations**
 
 Above is a typical engine deceleration compressor map. As the engine decelerates to idle power, the engine follows the transient operating line. To protect from combustor blowout during the deceleration, transient operation schedules usually include blowout prevention logic that schedules a minimum fuel to air ratio within the combustor as a function of engine airflow. This blowout region is usually determined by combustor bench tests or from altitude development tests of the full scale engine. Once the blowout region is determined, the engine schedules are set to include margin to account for engine-to-engine variability.
 
-**17.3.3 Bleed air impacts during engine starts**
+### Bleed air impacts during engine starts**
 
 Above is a typical engine start compressor map. Turbine engines can be challenging to accelerate from off to idle power due to little stall margin at low airflow conditions. As a means to increase engine surge margin by reducing compressor back pressure and allowing quicker accelerations, engine bleed air can be removed from the engine core via a bleed valve. As the engine approaches idle power, the bleed air valve closes and the engine accelerates the remaining way to idle.
 
-**17.3.4 Variable Stator vane cambering effects**
+### Variable Stator vane cambering effects**
 
 Above are typical engine compressor stator and rotor velocity diagrams. Stator vanes control engine surge margin and thrust; as they are cambered closed, the throat area between the vanes is reduced, thereby decreasing airflow. Cambering the vanes also decreases the incidence angle of the rotor blade. These lower airflows and reduced incidence angles increase engine surge margin.
 
@@ -256,11 +300,11 @@ Above is a compressor map illustrating how variable geometry and stator vane cam
 **\
 **
 
-**17.3.5 Compressor impacts due to nozzle area for [turbojet]{.underline} engines**
+### Compressor impacts due to nozzle area for [turbojet]{.underline} engines**
 
 Above is a compressor map illustrating impacts to stability margin from opening and closing the engine exhaust nozzle for a single-spool engine (e.g. J85 engine in T-38 aircraft). In this example, it is shown that stall margin is insufficient at lower airflows with the smaller nozzle area. Opening the nozzle for this single spool configuration moves the engine away from surge. As a result, a typical engine might run nozzle open at idle power to reduce thrust and keep the nozzle open until engine stability was no longer a concern.
 
-**17.3.6 Compressor impacts due to nozzle area for [turbofan]{.underline} engines**
+### Compressor impacts due to nozzle area for [turbofan]{.underline} engines**
 
 > **(mixed flow, proximate splitter)**
 
@@ -269,16 +313,16 @@ Above is a compressor map illustrating stability margin impacts from opening and
 **\
 **
 
-**17.3.7 Combustion Stability**
+### Combustion Stability**
 
 Above is a combustion stability plot showing engine airflow versus fuel-to-air-ratio. These plots are generally developed during component bench testing and are then used by engine designers to schedule combustor or augmentor fuel flow. The plot shows regions of stable and unstable combustion. Also, the engine operates closer to a blowout region at low air mass flow (high altitude and low Mach number \[ULHC\]). Combustion instabilities can have various effects on engine operation, including blowout, running rough, and vibrations that can reduce part life.
 
 **\
 **
 
-**17.4 Additional Information**
+## Additional Information**
 
-**17.4.1 Engine Stations**
+### Engine Stations**
 
 (Reference SAE ARP-755 *Aircraft Propulsion System Performance Station Designation and Nomenclature* for additional details)
 
@@ -329,7 +373,7 @@ Notes:
 **\
 **
 
-**17.4.2 Key Propulsion Terminology**
+### Key Propulsion Terminology**
 
 **Aerodynamic Interface Plane - A defined plane of intersection between the inlet and the engine.**
 
@@ -400,7 +444,7 @@ TFSC =
 **\
 **
 
-**17.4.3 Aircraft and Associated Engines**
+### Aircraft and Associated Engines**
 
   **Military Aircraft**                           
   ----------------------- ----------------------- ----------------------------------------------------
@@ -467,7 +511,7 @@ TFSC =
   Airbus A340                                     CFM-56, RR-500
   Airbus A380                                     RR-900, GP-7000
 
-**17.4.4 Additional Propulsion Resources**
+### Additional Propulsion Resources**
 
 Jack Mattingly's Engine Design Site
 
