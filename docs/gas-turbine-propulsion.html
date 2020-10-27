@@ -454,11 +454,11 @@
 <li class="chapter" data-level="17.1.2" data-path="gas-turbine-propulsion.html"><a href="gas-turbine-propulsion.html#the-brayton-cycle"><i class="fa fa-check"></i><b>17.1.2</b> The Brayton Cycle</a></li>
 <li class="chapter" data-level="17.1.3" data-path="gas-turbine-propulsion.html"><a href="gas-turbine-propulsion.html#component-descriptions"><i class="fa fa-check"></i><b>17.1.3</b> Component Descriptions</a></li>
 </ul></li>
-<li class="chapter" data-level="17.2" data-path="gas-turbine-propulsion.html"><a href="gas-turbine-propulsion.html#propulsion-system-analysis"><i class="fa fa-check"></i><b>17.2</b> Propulsion System Analysis**</a>
+<li class="chapter" data-level="17.2" data-path="gas-turbine-propulsion.html"><a href="gas-turbine-propulsion.html#propulsion-system-analysis"><i class="fa fa-check"></i><b>17.2</b> Propulsion System Analysis</a>
 <ul>
-<li class="chapter" data-level="17.2.1" data-path="gas-turbine-propulsion.html"><a href="gas-turbine-propulsion.html#standard-day-corrections"><i class="fa fa-check"></i><b>17.2.1</b> Standard Day Corrections**</a></li>
-<li class="chapter" data-level="17.2.2" data-path="gas-turbine-propulsion.html"><a href="gas-turbine-propulsion.html#pressure-and-temperature-relationships-with-flight-parameters"><i class="fa fa-check"></i><b>17.2.2</b> Pressure and Temperature Relationships with Flight Parameters**</a></li>
-<li class="chapter" data-level="17.2.3" data-path="gas-turbine-propulsion.html"><a href="gas-turbine-propulsion.html#reynolds-number-index"><i class="fa fa-check"></i><b>17.2.3</b> Reynolds Number Index**</a></li>
+<li class="chapter" data-level="17.2.1" data-path="gas-turbine-propulsion.html"><a href="gas-turbine-propulsion.html#standard-day-corrections"><i class="fa fa-check"></i><b>17.2.1</b> Standard Day Corrections</a></li>
+<li class="chapter" data-level="17.2.2" data-path="gas-turbine-propulsion.html"><a href="gas-turbine-propulsion.html#pressure-and-temperature-relationships-with-flight-parameters"><i class="fa fa-check"></i><b>17.2.2</b> Pressure and Temperature Relationships with Flight Parameters</a></li>
+<li class="chapter" data-level="17.2.3" data-path="gas-turbine-propulsion.html"><a href="gas-turbine-propulsion.html#reynolds-number-index"><i class="fa fa-check"></i><b>17.2.3</b> Reynolds Number Index</a></li>
 <li class="chapter" data-level="17.2.4" data-path="gas-turbine-propulsion.html"><a href="gas-turbine-propulsion.html#thrust-calculations"><i class="fa fa-check"></i><b>17.2.4</b> Thrust Calculations**</a></li>
 </ul></li>
 <li class="chapter" data-level="17.3" data-path="gas-turbine-propulsion.html"><a href="gas-turbine-propulsion.html#turbine-engine-operation"><i class="fa fa-check"></i><b>17.3</b> Turbine Engine Operation**</a>
@@ -679,21 +679,43 @@ aircraft hydraulic systems.</p>
 </div>
 </div>
 <div id="propulsion-system-analysis" class="section level2" number="17.2">
-<h2><span class="header-section-number">17.2</span> Propulsion System Analysis**</h2>
-<p>Typically, a propulsion system’s operation is segregated into the five sub-categories or disciplines.</p>
+<h2><span class="header-section-number">17.2</span> Propulsion System Analysis</h2>
+<p>Typically, a propulsion system’s operation is segregated into the five
+sub-categories or disciplines.</p>
 <ol style="list-style-type: decimal">
-<li><p>Overall: Integrated System Utility (Does it meet the users’ needs?). Topics include adequate engine bay ventilation, anti-ice, gun or gas ingestion, and inlet compatibility.</p></li>
-<li><p>Performance: The ability to produce thrust at a prescribed level with a specified fuel flow. Usually prescribed over the life of the engine and is modeled with a propulsion system simulation. If an inlet rake is used for testing, we can calculate inlet recovery, which is an integral part of engine/aircraft performance.</p></li>
-<li><p>Operability: The ability to resist or recover from an engine instability. These instabilities primarily refer to compressor stall or surge, which are aggravated by inlet temperature and pressure distortions. However, operability can include several other aspects, such as flameout, overspeed, overtemp, engine starting, and afterburner lighting and stability.</p></li>
-<li><p>Response: The ability to change thrust conditions within a prescribed time in response to a commanded change.</p></li>
-<li><p>Life/Durability: The ability to withstand extended operating conditions (pressure, temperature, and rpm) over a prescribed lifetime (usually described in terms of engine operating hours or Total Accumulated Cycles) at a specified level of performance and operability.</p></li>
+<li>Overall: Integrated System Utility (Does it meet the users’ needs?).
+Topics include adequate engine bay ventilation, anti-ice, gun or gas ingestion,
+and inlet compatibility.</li>
+<li>Performance: The ability to produce thrust at a prescribed level with a
+specified fuel flow. Usually prescribed over the life of the engine and is
+modeled with a propulsion system simulation. If an inlet rake is used for
+testing, we can calculate inlet recovery, which is an integral part of
+engine/aircraft performance.</li>
+<li>Operability: The ability to resist or recover from an engine instability.
+These instabilities primarily refer to compressor stall or surge, which are
+aggravated by inlet temperature and pressure distortions. However, operability
+can include several other aspects, such as flameout, overspeed, overtemp, engine
+starting, and afterburner lighting and stability.</li>
+<li>Response: The ability to change thrust conditions within a prescribed time in
+response to a commanded change.</li>
+<li>Life/Durability: The ability to withstand extended operating conditions
+(pressure, temperature, and rpm) over a prescribed lifetime (usually described
+in terms of engine operating hours or Total Accumulated Cycles) at a specified
+level of performance and operability.</li>
 </ol>
-<p>A number of Aerospace Recommended Practices (ARP) exist to aid in standardization of gas turbine design, testing, and analysis. Aerospace Information Reports (AIR) also provide similar guidance. This handbook scope does not include the theory and concepts of these practices, however, some of the practices most relevant to propulsion system analysis are presented in the Additional Propulsion Resources section.</p>
-<p><strong><br />
-</strong></p>
+<p>A number of Aerospace Recommended Practices (ARP) exist to aid in
+standardization of gas turbine design, testing, and analysis. Aerospace
+Information Reports (AIR) also provide similar guidance. This handbook scope
+does not include the theory and concepts of these practices, however, some of
+the practices most relevant to propulsion system analysis are presented in the
+Additional Propulsion Resources section.</p>
 <div id="standard-day-corrections" class="section level3" number="17.2.1">
-<h3><span class="header-section-number">17.2.1</span> Standard Day Corrections**</h3>
-<p>Due to varying atmospheric conditions, engine tests are rarely conducted at the same flight conditions. Therefore, to compare tests results, data must be standardized to a common flight condition. By applying standard day corrections, the effects of changes in temperature and pressure can be removed from test results.</p>
+<h3><span class="header-section-number">17.2.1</span> Standard Day Corrections</h3>
+<p>Due to varying atmospheric conditions, engine tests are rarely conducted at the
+same flight conditions. Therefore, to compare tests results, data must be
+standardized to a common flight condition. By applying standard day corrections,
+the effects of changes in temperature and pressure can be removed from test
+results.</p>
 <table>
 <thead>
 <tr class="header">
@@ -711,7 +733,7 @@ aircraft hydraulic systems.</p>
 <tr class="even">
 <td align="left"><strong>Fuel flow rate</strong></td>
 <td align="left"><span class="math display">\[{\dot{m}}_{f}\]</span></td>
-<td align="left"><span class="math display">\[{\dot{m}}_{\mathrm{fc}} = \frac{{\dot{m}}_{f}}{\delta_{2}\sqrt{\theta_{2}}}\]</span></td>
+<td align="left"><span class="math display">\[{\dot{m}}_{\mathrm{cf}} = \frac{{\dot{m}}_{f}}{\delta_{2}\sqrt{\theta_{2}}}\]</span></td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>Rotational speed</strong></td>
@@ -725,17 +747,28 @@ aircraft hydraulic systems.</p>
 </tr>
 </tbody>
 </table>
-<p><em>θ<sub>i</sub></em>=total temperature ratio (<span class="math inline">\(\theta_{i} = \frac{T_{\mathrm{ti}}}{T_{\mathrm{ref}}}\)</span>) and <em>δ<sub>i</sub></em>=total pressure ratio (<span class="math inline">\(\delta_{i} = \frac{P_{\mathrm{ti}}}{P_{\mathrm{ref}}}\)</span>)</p>
-<p><span class="math display">\[Values can also be found in the standard atmosphere table, Section 3-14. Reference is sea-level, standard day. These values are also corrected for Mach number in Figure x-11.\]</span></p>
+<p><span class="math inline">\(theta_i =\)</span> total temperature ratio
+<span class="math inline">\(\left( \theta_i = \frac{T_{\mathrm{ti}}}{T_{\mathrm{ref}}} \right)\)</span> and
+<span class="math inline">\(\delta_i =\)</span> total pressure ratio
+<span class="math inline">\(\left( \delta_{i} = \frac{P_{\mathrm{ti}}}{P_{\mathrm{ref}}} \right)\)</span></p>
+<p>Values can also be found in the standard atmosphere table, Section 3-14.
+Reference is sea-level, standard day. These values are also corrected for Mach
+number in Figure x-11.</p>
 </div>
 <div id="pressure-and-temperature-relationships-with-flight-parameters" class="section level3" number="17.2.2">
-<h3><span class="header-section-number">17.2.2</span> Pressure and Temperature Relationships with Flight Parameters**</h3>
-<p>Two of the main inputs to a propulsion system are engine face pressure and temperature (P­<sub>t2</sub> and T<sub>t2</sub> respectively), yet the flight envelope is defined in altitude, airspeed, and Mach number. Consequently, it is helpful to be able to translate from one to the other. Unfortunately, because many engine inlets are variable, and therefore introduce varying pressure and temperature losses, the handbook assumes P­<sub>t2</sub>=P­<sub>t0</sub> and T<sub>t2</sub>= T<sub>t0</sub>. The following chart is useful when describing the engine operating conditions relative to flight conditions.</p>
-<p><strong><br />
-</strong><img src="media/17/image12.jpg" style="width:6.79167in;height:9.33333in" /></p>
+<h3><span class="header-section-number">17.2.2</span> Pressure and Temperature Relationships with Flight Parameters</h3>
+<p>Two of the main inputs to a propulsion system are engine face pressure and
+temperature ( <span class="math inline">\(P­_{t2}\)</span> and <span class="math inline">\(T_{t2}\)</span> respectively), yet the flight envelope
+is defined in altitude, airspeed, and Mach number. Consequently, it is helpful
+to be able to translate from one to the other. Unfortunately, because many
+engine inlets are variable, and therefore introduce varying pressure and
+temperature losses, the handbook assumes <span class="math inline">\(P­_{t2} = P­_{t0}\)</span> and <span class="math inline">\(T_{t2} = T_{t0}\)</span>.
+The following chart is useful when describing the engine operating conditions
+relative to flight conditions.</p>
+<p><img src="media/17/image12.jpg" style="width:6.79167in;height:9.33333in" /></p>
 </div>
 <div id="reynolds-number-index" class="section level3" number="17.2.3">
-<h3><span class="header-section-number">17.2.3</span> Reynolds Number Index**</h3>
+<h3><span class="header-section-number">17.2.3</span> Reynolds Number Index</h3>
 <p>Assuming the characteristic length of an engine is constant in differing operating environments, another way of describing the pressure and temperature relationship is with the Reynolds number index. Similar to standard day corrections, the Reynolds Number Index provides a method of comparing engine operation across varying inlet-pressure loses, inlet temperatures, flight speeds, and altitudes. The Reynolds Number Index is:</p>
 <p><span class="math display">\[\mathrm{Re}_{i} = \frac{\delta_{2}}{\varphi\sqrt{\theta_{2}}}\]</span></p>
 <p>where</p>

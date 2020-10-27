@@ -190,90 +190,122 @@ the engine face struts to prevent ice build-up. A gearbox also extracts power
 from the high pressure compressor shaft to run electrical generators and 
 aircraft hydraulic systems.
 
-## Propulsion System Analysis**
+## Propulsion System Analysis
 
-Typically, a propulsion system's operation is segregated into the five sub-categories or disciplines.
+Typically, a propulsion system's operation is segregated into the five 
+sub-categories or disciplines.
 
-1.  Overall: Integrated System Utility (Does it meet the users' needs?). Topics include adequate engine bay ventilation, anti-ice, gun or gas ingestion, and inlet compatibility.
+1. Overall: Integrated System Utility (Does it meet the users' needs?). 
+Topics include adequate engine bay ventilation, anti-ice, gun or gas ingestion, 
+and inlet compatibility.
+2. Performance: The ability to produce thrust at a prescribed level with a 
+specified fuel flow. Usually prescribed over the life of the engine and is 
+modeled with a propulsion system simulation. If an inlet rake is used for 
+testing, we can calculate inlet recovery, which is an integral part of 
+engine/aircraft performance.
+3. Operability: The ability to resist or recover from an engine instability. 
+These instabilities primarily refer to compressor stall or surge, which are 
+aggravated by inlet temperature and pressure distortions. However, operability 
+can include several other aspects, such as flameout, overspeed, overtemp, engine 
+starting, and afterburner lighting and stability.
+4. Response: The ability to change thrust conditions within a prescribed time in 
+response to a commanded change.
+5. Life/Durability: The ability to withstand extended operating conditions 
+(pressure, temperature, and rpm) over a prescribed lifetime (usually described 
+in terms of engine operating hours or Total Accumulated Cycles) at a specified 
+level of performance and operability.
 
-2.  Performance: The ability to produce thrust at a prescribed level with a specified fuel flow. Usually prescribed over the life of the engine and is modeled with a propulsion system simulation. If an inlet rake is used for testing, we can calculate inlet recovery, which is an integral part of engine/aircraft performance.
+A number of Aerospace Recommended Practices (ARP) exist to aid in 
+standardization of gas turbine design, testing, and analysis. Aerospace 
+Information Reports (AIR) also provide similar guidance. This handbook scope 
+does not include the theory and concepts of these practices, however, some of 
+the practices most relevant to propulsion system analysis are presented in the 
+Additional Propulsion Resources section.
 
-3.  Operability: The ability to resist or recover from an engine instability. These instabilities primarily refer to compressor stall or surge, which are aggravated by inlet temperature and pressure distortions. However, operability can include several other aspects, such as flameout, overspeed, overtemp, engine starting, and afterburner lighting and stability.
+### Standard Day Corrections
 
-4.  Response: The ability to change thrust conditions within a prescribed time in response to a commanded change.
-
-5.  Life/Durability: The ability to withstand extended operating conditions (pressure, temperature, and rpm) over a prescribed lifetime (usually described in terms of engine operating hours or Total Accumulated Cycles) at a specified level of performance and operability.
-
-A number of Aerospace Recommended Practices (ARP) exist to aid in standardization of gas turbine design, testing, and analysis. Aerospace Information Reports (AIR) also provide similar guidance. This handbook scope does not include the theory and concepts of these practices, however, some of the practices most relevant to propulsion system analysis are presented in the Additional Propulsion Resources section.
-
-**\
-**
-
-### Standard Day Corrections**
-
-Due to varying atmospheric conditions, engine tests are rarely conducted at the same flight conditions. Therefore, to compare tests results, data must be standardized to a common flight condition. By applying standard day corrections, the effects of changes in temperature and pressure can be removed from test results.
+Due to varying atmospheric conditions, engine tests are rarely conducted at the 
+same flight conditions. Therefore, to compare tests results, data must be 
+standardized to a common flight condition. By applying standard day corrections, 
+the effects of changes in temperature and pressure can be removed from test 
+results.
 
   **Quantity**             **Normal**          **Corrected**
   ------------------------ ------------------- -------------------------------------------------------------------------------
-  **Air mass flow rate**   $${\dot{m}}_{i}$$   $${\dot{m}}_{\mathrm{ci}} = \frac{{\dot{m}}_{i}\sqrt{\theta_{i}}}{\delta_{i}}$$
-  **Fuel flow rate**       $${\dot{m}}_{f}$$   $${\dot{m}}_{\mathrm{fc}} = \frac{{\dot{m}}_{f}}{\delta_{2}\sqrt{\theta_{2}}}$$
-  **Rotational speed**     $$N$$               $$N_{\mathrm{ci}} = \frac{N}{\sqrt{\theta_{i}}}$$
-  **Thrust**               $$F$$               $$F_{c} = \frac{F}{\delta_{0}}$$
+  **Air mass flow rate**   \[{\dot{m}}_{i}\]   \[{\dot{m}}_{\mathrm{ci}} = \frac{{\dot{m}}_{i}\sqrt{\theta_{i}}}{\delta_{i}}\]
+  **Fuel flow rate**       \[{\dot{m}}_{f}\]   \[{\dot{m}}_{\mathrm{cf}} = \frac{{\dot{m}}_{f}}{\delta_{2}\sqrt{\theta_{2}}}\]
+  **Rotational speed**     \[N\]               \[N_{\mathrm{ci}} = \frac{N}{\sqrt{\theta_{i}}}\]
+  **Thrust**               \[F\]               \[F_{c} = \frac{F}{\delta_{0}}\]
 
-*θ~i~*=total temperature ratio ($\theta_{i} = \frac{T_{\mathrm{ti}}}{T_{\mathrm{ref}}}$) and *δ~i~*=total pressure ratio ($\delta_{i} = \frac{P_{\mathrm{ti}}}{P_{\mathrm{ref}}}$)
+\(theta_i = \) total temperature ratio 
+\( \left( \theta_i = \frac{T_{\mathrm{ti}}}{T_{\mathrm{ref}}} \right) \) and 
+\(\delta_i = \) total pressure ratio 
+\( \left( \delta_{i} = \frac{P_{\mathrm{ti}}}{P_{\mathrm{ref}}} \right) \)
 
-\[Values can also be found in the standard atmosphere table, Section 3-14. Reference is sea-level, standard day. These values are also corrected for Mach number in Figure x-11.\]
+Values can also be found in the standard atmosphere table, Section 3-14. 
+Reference is sea-level, standard day. These values are also corrected for Mach 
+number in Figure x-11.
 
-### Pressure and Temperature Relationships with Flight Parameters**
+### Pressure and Temperature Relationships with Flight Parameters
 
-Two of the main inputs to a propulsion system are engine face pressure and temperature (P­~t2~ and T~t2~ respectively), yet the flight envelope is defined in altitude, airspeed, and Mach number. Consequently, it is helpful to be able to translate from one to the other. Unfortunately, because many engine inlets are variable, and therefore introduce varying pressure and temperature losses, the handbook assumes P­~t2~=P­~t0~ and T~t2~= T~t0~. The following chart is useful when describing the engine operating conditions relative to flight conditions.
+Two of the main inputs to a propulsion system are engine face pressure and 
+temperature ( \(P­_{t2}\) and \(T_{t2}\) respectively), yet the flight envelope 
+is defined in altitude, airspeed, and Mach number. Consequently, it is helpful 
+to be able to translate from one to the other. Unfortunately, because many 
+engine inlets are variable, and therefore introduce varying pressure and 
+temperature losses, the handbook assumes \(P­_{t2} = P­_{t0}\) and \(T_{t2} = T_{t0}\). 
+The following chart is useful when describing the engine operating conditions 
+relative to flight conditions.
 
-**\
-**![][17007]
+![][17007]
 
-### Reynolds Number Index**
+### Reynolds Number Index
 
 Assuming the characteristic length of an engine is constant in differing operating environments, another way of describing the pressure and temperature relationship is with the Reynolds number index. Similar to standard day corrections, the Reynolds Number Index provides a method of comparing engine operation across varying inlet-pressure loses, inlet temperatures, flight speeds, and altitudes. The Reynolds Number Index is:
 
-$$\mathrm{Re}_{i} = \frac{\delta_{2}}{\varphi\sqrt{\theta_{2}}}$$
+\[\mathrm{Re}_{i} = \frac{\delta_{2}}{\varphi\sqrt{\theta_{2}}}\]
 
 where
 
-$$\varphi = \frac{718.2\left( \theta_{2} \right)^{3/2}}{T_{t2} + 199.5},\ \delta_{2} = \frac{P_{t2}}{2116},\ \theta_{2} = \frac{T_{t2}}{518.7}$$
+\[\varphi = \frac{718.2\left( \theta_{2} \right)^{3/2}}{T_{t2} + 199.5},\ \delta_{2} = \frac{P_{t2}}{2116},\ \theta_{2} = \frac{T_{t2}}{518.7}\]
 
-Here, P~t2~ is in psf, and T~t2~ is in degrees Rankine.
+Here, \(P_{t2}\) is in psf, and \(T_{t2}\) is in degrees Rankine.
 
-P~t2~ and T~t2~ are assumed to be equal to aircraft total pressure and temperature. The actual in-flight Reynolds Number Index depends on inlet recovery losses, since these are the conditions in which the engine is operating.
+\(P_{t2}\) and \(T_{t2}\) are assumed to be equal to aircraft total pressure 
+and temperature. The actual in-flight Reynolds Number Index depends on inlet 
+recovery losses, since these are the conditions in which the engine is operating.
 
 ![][17008]
 
-Reynolds Number Index versus Altitude and Mach Number
+**Reynolds Number Index versus Altitude and Mach Number**
 
-**\
-**
+### Thrust Calculations
 
-### Thrust Calculations**
+Various formulae exist to calculate gross engine thrust, \(F_g\). However, 
+modern engines are too complex for standard textbook formulas to accurately 
+predict thrust; this is normally left to complex computer algorithms. The 
+current standard for new models is the Numerical Propulsion System Simulation 
+(NPSS). Despite this, a control volume approach relying on conservation of 
+momentum will provide gross engine thrust if the required parameters are known.
 
-Various formulae exist to calculate gross engine thrust (Fg). However, modern engines are too complex for standard textbook formulas to accurately predict thrust; this is normally left to complex computer algorithms. The current standard for new models is the Numerical Propulsion System Simulation (NPSS). Despite this, a control volume approach relying on conservation of momentum will provide gross engine thrust if the required parameters are known.
+\[\text{Thrust} = \frac{\left( {\dot{m}}_{9} + {\dot{m}}_{\text{fuel}} \right)V_{9} - {\dot{m}}_{0}V_{0}}{g_{c}} + (P_{9} - P_{0})A_{9}\]
 
-$$Thrust = \frac{\left( {\dot{m}}_{9} + {\dot{m}}_{\mathrm{fuel}} \right)V_{9} - {\dot{m}}_{0}V_{0}}{g_{c}} + (P_{9} - P_{0})A_{9}$$
-
-Where subscript 9 represents the nozzle exit and subscript 0 represents the freestream conditions. $\dot{m}$, V, and, P represent mass flow rate, velocity, and static pressure respectively.
+Where subscript \(9\) represents the nozzle exit and subscript \(0\) represents 
+the freestream conditions. \(\dot{m}\), \(V\), and, \(P\) represent mass flow 
+rate, velocity, and static pressure respectively.
 
 Variations and simplifications of this formula exist:
 
-+----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
-| > Turbojet and Low Bypass Turbofan (Mixed Streams) | $$Thrust = \frac{{\dot{m}}_{0}(V_{9} - V_{0})}{g_{c}}$$                                                                          |
-+====================================================+==================================================================================================================================+
-| High Bypass Turbofan (Separate Streams)            | $$Thrust = \frac{{\dot{m}}_{\mathrm{fan}}}{g_{c}}(V_{\mathrm{fan}} - V_{0}) + \frac{{\dot{m}}_{\mathrm{core}}}{g_{c}}(V_{9} - V_{0})$$ |
-+----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
+| Turbojet and Low Bypass Turbofan (Mixed Streams)   | \[\text{Thrust} = \frac{{\dot{m}}_{0}(V_{9} - V_{0})}{g_{c}}\]                                                                          |
++----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
+| High Bypass Turbofan (Separate Streams)            | \[\text{Thrust} = \frac{{\dot{m}}_{\text{fan}}}{g_{c}}(V_{\text{fan}} - V_{0}) + \frac{{\dot{m}}_{\text{core}}}{g_{c}}(V_{9} - V_{0})$$ |
++----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
 
-Atmospheric temperature, Mach, and altitude also significantly affect engine thrust and efficiency.
+Atmospheric temperature, Mach, and altitude also significantly affect engine 
+thrust and efficiency.
 
 ![][17009]![][17010]
-
-**\
-**
 
 ## Turbine Engine Operation**
 
