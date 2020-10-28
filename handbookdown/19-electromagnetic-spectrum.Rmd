@@ -1,95 +1,126 @@
-# 19 - The Electromagnetic Spectrum**
+# The Electromagnetic Spectrum
 
-**19.1 Electromagnetic Waves**
+## Electromagnetic Waves
 
-All energy in the universe radiates in waves. Figure 1 depicts an electromagnetic wave, characterized by an electric field vector (E) and a magnetic field vector (H) oscillating orthogonal to each other. The electromagnetic wave propagation direction is determined by the right-hand rule and crossing the electric field into the magnetic field as illustrated. The electromagnetic wavelength (λ) is the distance between two consecutive electric field peaks. The electromagnetic wave frequency (f or ν) is inversely proportional to its wavelength. The product of any electromagnetic radiation's frequency and wavelength equals the speed of light (C=λν).
+All energy in the universe radiates in waves. Figure 1 depicts an 
+electromagnetic wave, characterized by an electric field vector \( \left( E \right) \) and a 
+magnetic field vector \( \left( H \right) \) oscillating orthogonal to each other. The 
+electromagnetic wave propagation direction is determined by the right-hand rule 
+and crossing the electric field into the magnetic field as illustrated. The 
+electromagnetic wavelength \( \left( \lambda \right) \) is the distance between two consecutive electric 
+field peaks. The electromagnetic wave frequency \( \left( f \text{ or } \nu \right) \) is inversely 
+proportional to its wavelength. The product of any electromagnetic radiation's 
+frequency and wavelength equals the speed of light \( \left( c = \lambda \nu \right) \).
 
-.
-
-![4-3]
+![][4-3]
 
 **Figure 1 - The Electromagnetic Spectrum**
 
-**19.2 The Electromagnetic Spectrum**
+## The Electromagnetic Spectrum
 
 Figure 2 illustrates several concepts related to the electromagnetic spectrum
 
--   Size reference for various wavelengths.
+- Size reference for various wavelengths.
+- Numerical relation between wavelength (meters between peaks), wave number 
+(peaks per cm), energy (electron volts), and frequency (Hz).
+- Separate frequency bands identified within the overall spectrum.
+- Common sources & uses within frequency bands.
 
--   Numerical relation between wavelength (meters between peaks), wave number (peaks per cm), energy (electron volts), and frequency (Hz).
-
--   Separate frequency bands identified within the overall spectrum.
-
--   Common sources & uses within frequency bands.
-
-> Many aircraft and spacecraft systems operate within limited regions of the electromagnetic spectrum. Common examples include radar, electro-optical sensors, radios, data links, electronic warfare, and navigation systems.
+Many aircraft and spacecraft systems operate within limited regions of the 
+electromagnetic spectrum. Common examples include radar, electro-optical 
+sensors, radios, data links, electronic warfare, and navigation systems.
 
 ![][19001]
 
-**19.3 Radio Frequency Electromagnetic Radiation**
+## Radio Frequency Electromagnetic Radiation
 
-One of the most heavily used regions of the electromagnetic spectrum is the radio frequency or RF spectrum, from \~3 kilohertz to \~ 300 gigahertz. The RF Spectrum encompasses an array of telecommunications devices including radios, television, satellite communications, data links, radio-navigation aids, and radar. Table 1 shows how the RF Spectrum is subdivided into frequency bands.
+One of the most heavily used regions of the electromagnetic spectrum is the 
+radio frequency or RF spectrum, from \(\sim 3 \text{ kilohertz}\) to 
+\(\sim 300 \text{ gigahertz}\). The RF Spectrum encompasses an array of 
+telecommunications devices including radios, television, satellite 
+communications, data links, radio-navigation aids, and radar. Table 1 shows how 
+the RF Spectrum is subdivided into frequency bands.
 
-  ----------------------------- ----------- ----------------------
-  **Band Designation**          **Label**   **Frequency Spread**
-  Extremely Low Frequency       ELF         3 - 30 Hz
-  Super Low Frequency           SLF         30 - 300 Hz
-  Ultra Low (Voice) Frequency   ULF or VF   300 Hz - 3 KHz
-  Very Low Frequency            VLF         3 - 30 KHz
-  Low Frequency                 LF          30 - 300 KHz
-  Medium Frequency              MF          300 KHz - 3 MHz
-  High Frequency                HF          3 - 30 MHz
-  Very High Frequency           VHF         30 - 300 MHz
-  Ultra High Frequency          UHF         300 MHz - 3 GHz
-  Super High Frequency          SHF         3 - 30 GHz
-  Extremely High Frequency      EHF         30 - 300 GHz
-  ----------------------------- ----------- ----------------------
+
+|**Band Designation**         |**Label**  |**Frequency Spread**               |
+|-----------------------------|-----------|:---------------------------------:|
+|Extremely Low Frequency      |ELF        |\(3 - 30 \text{ Hz}\)|
+|Super Low Frequency          |SLF        |\(30 - 300 \text{ Hz}\)|
+|Ultra Low (Voice) Frequency  |ULF or VF  |\(300 \text{ Hz} - 3 \text{ KHz}\)|
+|Very Low Frequency           |VLF        |\(3 - 30 \text{ KHz}\)|
+|Low Frequency                |LF         |\(30 - 300 \text{ KHz}\)|
+|Medium Frequency             |MF         |\(300 \text{ KHz} - 3 \text{ MHz}\)|
+|High Frequency               |HF         |\(3 - 30 \text{ MHz}\)|
+|Very High Frequency          |VHF        |\(30 - 300 \text{ MHz}\)|
+|Ultra High Frequency         |UHF        |\(300 \text{ MHz} - 3 \text{ GHz}\)|
+|Super High Frequency         |SHF        |\(3 - 30 \text{ GHz}\)|
+|Extremely High Frequency     |EHF        |\(30 - 300 \text{ GHz}\)|
+
 
 **Table 1 - Radio Frequency Band Designations**
 
-Depending on the type of RF system, additional subdivisions of the bands also exist. Table 2 applies to radar systems.
+Depending on the type of RF system, additional subdivisions of the bands also 
+exist. Table 2 applies to radar systems.
 
-+-------------------------+----------------------------------------------+---------------------+------------------+-------------------------+
-| **IEEE US**             | **Origin**                                   | **Frequency Range** | **Wavelength**   | **NATO, US ECM**        |
-|                         |                                              |                     |                  |                         |
-| (Old RADAR Designation) |                                              |                     |                  | (New RADAR Designation) |
-+=========================+==============================================+=====================+==================+=========================+
-| W                       | W follows V in alphabet                      | 75-111 GHz          | 400 mm-270 mm    | M (60-100 GHz)          |
-+-------------------------+----------------------------------------------+---------------------+------------------+-------------------------+
-| V                       | Very Short                                   | 40-75 GHz           | 700 mm -- 400 mm | L (40-60 GHz)           |
-+-------------------------+----------------------------------------------+---------------------+------------------+-------------------------+
-| K~A~                    | Kurtz (above)                                | 26-40 GHz           | 1.1 cm - 0.7 cm    | K (20-40 GHz)           |
-+-------------------------+----------------------------------------------+---------------------+------------------+-------------------------+
-| K                       | Kurtz                                        | 18-26 GHz           | 1.6 cm -- 1.1 cm | J (10-20 GHz)           |
-+-------------------------+----------------------------------------------+---------------------+------------------+-------------------------+
-| K~U~                    | Kurtz (under)                                | 12.4-18 GHz         | 2.5 cm -- 1.6 cm |                         |
-+-------------------------+----------------------------------------------+---------------------+------------------+-------------------------+
-| X                       | WWII fire control - as an "X" for crosshairs | 8-12.4 GHz          | 3.7 cm -2.5 cm   | I (8-10 GHz)            |
-+-------------------------+----------------------------------------------+---------------------+------------------+-------------------------+
-| C                       | Compromise between S and X                   | 4-8 GHz             | 7.5 cm -3.7 cm   | H (6-8 GHz)             |
-|                         |                                              |                     |                  |                         |
-|                         |                                              |                     |                  | G (4-6 GHz)             |
-+-------------------------+----------------------------------------------+---------------------+------------------+-------------------------+
-| S                       | Short Wave                                   | 2-4 GHz             | 15 cm -- 7.5 cm  | F (3-4 GHz)             |
-|                         |                                              |                     |                  |                         |
-|                         |                                              |                     |                  | E (2-3 GHz)             |
-+-------------------------+----------------------------------------------+---------------------+------------------+-------------------------+
-| L                       | Long Wave                                    | 1-2 GHz             | 30 cm -- 15 cm   | D (1-2 GHz)             |
-+-------------------------+----------------------------------------------+---------------------+------------------+-------------------------+
-| UHF                     |                                              |  0.3-1 GHz            | \<1 m -- 30 cm   | C ( 0.5-1 GHz)            |
-+-------------------------+----------------------------------------------+---------------------+------------------+-------------------------+
++-------------------------+----------------------------------------------+--------------------------+------------------------------------+---------------------------------------+
+| **IEEE US**             | **Origin**                                   | **Frequency Range**      | **Wavelength**                     | **NATO, US ECM**                      |
+|                         |                                              |                          |                                    |                                       |
+| (Old RADAR Designation) |                                              |                          |                                    | (New RADAR Designation)               |
++=========================+==============================================+=========================:+====================================+=========================+
+| W                       | W follows V in alphabet                      | \(75-111 \text{ GHz}\)   | \(400 \text{ mm} - 270 \text{ mm}\)| M \(\left(60-100 \text{ GHz}\right)\) |
++-------------------------+----------------------------------------------+--------------------------+------------------------------------+---------------------------------------+
+| V                       | Very Short                                   | \(40-75 \text{ GHz}\)    | \(700 \text{ mm} - 400 \text{ mm}\)| L \(\left(40-60 \text{ GHz}\right)\)  |
++-------------------------+----------------------------------------------+--------------------------+------------------------------------+---------------------------------------+
+| K~A~                    | Kurtz, German for Short (above)              | \(26-40 \text{ GHz}\)    | \(1.1 \text{ cm} - 0.7 \text{ cm}\)| K \(\left(20-40 \text{ GHz}\right)\)  |
++-------------------------+----------------------------------------------+--------------------------+------------------------------------+---------------------------------------+
+| K                       | Kurtz                                        | \(18-26 \text{ GHz}\)    | \(1.6 \text{ cm} - 1.1 \text{ cm}\)| J \(\left(10-20 \text{ GHz}\right)\)  |
++-------------------------+----------------------------------------------+--------------------------+------------------------------------+---------------------------------------+
+| K~U~                    | Kurtz (under)                                | \(12.4-18.0 \text{ GHz}\)| \(2.5 \text{ cm} - 1.6 \text{ cm}\)|                                       |
++-------------------------+----------------------------------------------+--------------------------+------------------------------------+---------------------------------------+
+| X                       | WWII fire control - as an "X" for crosshairs | \(8.0-12.4 \text{ GHz}\) | \(3.7 \text{ cm} - 2.5 \text{ cm}\)| I \(\left(8-10 \text{ GHz}\right)\)   |
++-------------------------+----------------------------------------------+--------------------------+------------------------------------+---------------------------------------+
+| C                       | Compromise between S and X                   | \(4-8 \text{ GHz}\)      | \(7.5 \text{ cm} - 3.7 \text{ cm}\)| H \(\left(6-8 \text{ GHz}\right)\)    |
+|                         |                                              |                          |                                    |                                       |
+|                         |                                              |                          |                                    | G \(\left(4-6 \text{ GHz}\right)\)    |
++-------------------------+----------------------------------------------+--------------------------+------------------------------------+---------------------------------------+
+| S                       | Short Wave                                   | \(2-4 \text{ GHz}\)      | \(15 \text{ cm} - 7.5 \text{ cm}\) | F \(\left(3-4 \text{ GHz}\right)\)    |
+|                         |                                              |                          |                                    |                                       |
+|                         |                                              |                          |                                    | E \(\left(2-3 \text{ GHz}\right)\)    |
++-------------------------+----------------------------------------------+--------------------------+------------------------------------+---------------------------------------+
+| L                       | Long Wave                                    | \(1-2 \text{ GHz}\)      | \(30 \text{ cm} - 15 \text{ cm}\)  | D \(\left(1-2 \text{ GHz}\right)\)    |
++-------------------------+----------------------------------------------+--------------------------+------------------------------------+---------------------------------------+
+| UHF                     |                                              | \(0.3-1.0 \text{ GHz}\)  | \(\lt 1 \text{ m} - 30 \text{ cm}\)| C \(\left( 0.5-1 \text{ GHz}\right)\) |
++-------------------------+----------------------------------------------+--------------------------+------------------------------------+---------------------------------------+
 
 **Table 2 - Radar Frequency Band Designations**
 
-Electromagnetic wave propagation does not stop at national boundaries. Most governments regulate radio frequency band use via **frequency** or **spectrum allocation**. For technical and economic reasons, governments try to harmonize and standardize RF band allocation. A number of forums and standards bodies address frequency allocation. The International Telecommunication Union (ITU) is the United Nations agency for information and communication technologies. The ITU allocates global radio spectrum and satellite orbits and develops technical standards that ensure networks and technologies seamlessly interconnect. There are numerous users and spectrum allocation is complicated to implement and regulate. Figure 3 illustrates the United States frequency allocations.
+Electromagnetic wave propagation does not stop at national boundaries. Most 
+governments regulate radio frequency band use via **frequency** or 
+**spectrum allocation**. For technical and economic reasons, governments try to 
+harmonize and standardize RF band allocation. A number of forums and standards 
+bodies address frequency allocation. The International Telecommunication Union 
+(ITU) is the United Nations agency for information and communication 
+technologies. The ITU allocates global radio spectrum and satellite orbits and 
+develops technical standards that ensure networks and technologies seamlessly 
+interconnect. There are numerous users and spectrum allocation is complicated to 
+implement and regulate. Figure 3 illustrates the United States frequency 
+allocations.
 
-\[Editor's Note: Figure 3 is highly detailed and not legible in either 8.5 x 11" or 11 x 17" format. Posters may be purchased via <http://bookstore.gpo.gov/products/sku/003-000-00694-8>. A high resolution online version is available at <http://www.ntia.doc.gov/files/ntia/publications/spectrum_wall_chart_aug2011.pdf> \]
+[Editor's Note: Figure 3 is highly detailed and not legible in either 8.5 x 11" 
+or 11 x 17" format. Posters may be purchased via 
+<https://bookstore.gpo.gov/products/united-states-frequency-allocations-radio-spectrum-poster>. 
+A high resolution online version is available at 
+<http://www.ntia.doc.gov/files/ntia/publications/spectrum_wall_chart_aug2011.pdf>]
 
 ![][19002]
 
-**19.4 Optical Frequency Electromagnetic Radiation**
+## Optical Frequency Electromagnetic Radiation
 
-Optical frequency electromagnetic radiation includes ultraviolet (UV), visible, and infrared (IR) light ranging from about 0.01 microns (µm) out to about 1000 µm wavelength. These comprise the optical spectrum as shown in Figure 4.
+Optical frequency electromagnetic radiation includes ultraviolet (UV), visible, 
+and infrared (IR) light ranging from about 
+\(0.01 \text{ microns} \left(\mu\text{m}\right)\) out to about 
+\(1000 \mu\text{m}\) wavelength. These comprise the optical spectrum as shown in 
+Figure 4.
 
 Optical Spectrum
 
@@ -97,31 +128,76 @@ Optical Spectrum
 
 **Figure 4 - The Optical Spectrum and the Visible Spectrum**
 
-Just as the RF spectrum can be subdivided into various special bands, Table 3 shows bands in the optical spectrum. The visible, near infrared (NIR), mid wave IR (MWIR), and long wave IR (LWIR) bands are most commonly used for airborne electro-optical sensor systems. All bands can be useful, depending on the specific mission and operational requirements. \[Editor's Note: Some band nomenclature and boundaries depend on author and text. SFTE has not established standards on this subject\]
+Just as the RF spectrum can be subdivided into various special bands, Table 3 
+shows bands in the optical spectrum. The visible, near infrared (NIR), mid wave 
+IR (MWIR), and long wave IR (LWIR) bands are most commonly used for airborne 
+electro-optical sensor systems. All bands can be useful, depending on the 
+specific mission and operational requirements. 
 
-The most familiar example of electromagnetic radiation is the light spectrum humans see. Different colors of visible light have different wavelengths, ranging from violet at the shorter wavelengths (0.4 µm) to red at the longer wavelengths (0.7 µm). Aerospace vehicles employ many visible light sensor systems. Visible light sensors provide useful and highly recognizable images, but logically enough, do not work well in poor visibility or at night without some sort of artificial illumination or image intensification.
+[Editor's Note: Some band nomenclature and boundaries depend on author and text. 
+SFTE has not established standards on this subject]
+
+The most familiar example of electromagnetic radiation is the light spectrum 
+humans see. Different colors of visible light have different wavelengths, 
+ranging from violet at the shorter wavelengths \(\left(0.4 \mu\text{m}\right)\)
+to red at the longer wavelengths \(\left(0.7 \mu\text{m}\right)\). Aerospace 
+vehicles employ many visible light sensor systems. Visible light sensors provide 
+useful and highly recognizable images, but logically enough, do not work well in 
+poor visibility or at night without some sort of artificial illumination or 
+image intensification.
 
 ![][19004]
 
 **Table 3 - Optical Spectrum Bands**
 
-Infrared radiation refers to the optical spectrum between \~0.7 µm and \~1000 µm. Infrared radiation is popularly known as \"heat or thermal radiation\", but light and electromagnetic waves of any frequency will heat surfaces that absorb them. Infrared light from the sun accounts for \~49% of earth heating, the rest is by visible light that is absorbed then re-radiated at longer wavelengths. Objects at room temperature emit radiation mostly concentrated in the 8 to 25 µm region.
+Infrared radiation refers to the optical spectrum between 
+\(\sim 0.7 \mu\text{m}\) and \(\sim 1000 \mu\text{m}\). Infrared radiation is 
+popularly known as \"heat or thermal radiation\", but light and electromagnetic 
+waves of any frequency will heat surfaces that absorb them. Infrared light from 
+the sun accounts for \(\sim 49\%\) of earth heating, the rest is by visible light 
+that is absorbed then re-radiated at longer wavelengths. Objects at room 
+temperature emit radiation mostly concentrated in the \(8\) to 
+\(25 \mu\text{m}\) region.
 
-Infrared sensors are useful in numerous civil and military remote sensing applications. At wavelengths beyond about 14 microns, infrared radiation is not useful for most airborne remote sensing applications due to the earth's atmosphere attenuation. This is especially true in hot and humid atmospheric conditions with extreme infrared radiation attenuation.
+Infrared sensors are useful in numerous civil and military remote sensing 
+applications. At wavelengths beyond about \(14 \text{ microns}\), infrared 
+radiation is not useful for most airborne remote sensing applications due to the 
+earth's atmosphere attenuation. This is especially true in hot and humid 
+atmospheric conditions with extreme infrared radiation attenuation.
 
-**19.5 Atmospheric Transmission Windows**
+## Atmospheric Transmission Windows
 
-The sun is the earth's major source of natural energy across the electromagnetic spectrum and its radiation bombards the atmosphere constantly. The earth\'s atmosphere protects its life from excessive exposure to a range of higher energy waves such as Gamma rays, x-rays, and some ultraviolet waves. These are \"ionizing\" radiation because they have sufficiently high energy to knock electrons out of atoms, alter atoms and molecules, and damage organic cells. Figure 5 shows atmospheric opacity (blocking) across a wide wavelength spectrum.
+The sun is the earth's major source of natural energy across the electromagnetic 
+spectrum and its radiation bombards the atmosphere constantly. The earth's 
+atmosphere protects its life from excessive exposure to a range of higher energy 
+waves such as Gamma rays, x-rays, and some ultraviolet waves. These are 
+\"ionizing\" radiation because they have sufficiently high energy to knock 
+electrons out of atoms, alter atoms and molecules, and damage organic cells. 
+Figure 5 shows atmospheric opacity (blocking) across a wide wavelength spectrum.
 
-![http://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Atmospheric\_electromagnetic\_opacity.svg/2000px-Atmospheric\_electromagnetic\_opacity.svg.png]**Figure 5 - Atmospheric Opacity vs. Wavelength**
+![http://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Atmospheric\_electromagnetic\_opacity.svg/2000px-Atmospheric\_electromagnetic\_opacity.svg.png]
 
-The opposite of opacity is transmission. The earth's atmosphere absorbs, reflects, refracts, or allows electromagnetic radiation transmission. Suspended particles such as dust and raindrops can reflect and refract radiation. Figure 6 shows electromagnetic radiation transmission through the atmosphere across the visible and infrared wavelength spectrum (subset of the Figure 5 spectrum). Some radiation bands, including visible light and some infrared pass through the earth's atmosphere with little to no attenuation. Such "atmospheric windows" or "transmission windows" allow infrared remote sensing from standoff distances. The bottom scale of Figure 6 shows which molecules are primary absorbers at various infrared radiation wavelengths. The most important absorbers are water vapor (H^2^O), carbon dioxide (CO^2^), and ozone (O^3^). Flight testers should understand wavelengths, absorption, refraction and atmospheric windows when designing tests to evaluate sensors.
+**Figure 5 - Atmospheric Opacity vs. Wavelength**
+
+The opposite of opacity is transmission. The earth's atmosphere absorbs, 
+reflects, refracts, or allows electromagnetic radiation transmission. Suspended 
+particles such as dust and raindrops can reflect and refract radiation. Figure 6 
+shows electromagnetic radiation transmission through the atmosphere across the 
+visible and infrared wavelength spectrum (subset of the Figure 5 spectrum). Some 
+radiation bands, including visible light and some infrared pass through the 
+earth's atmosphere with little to no attenuation. Such "atmospheric windows" or 
+"transmission windows" allow infrared remote sensing from standoff distances. 
+The bottom scale of Figure 6 shows which molecules are primary absorbers at 
+various infrared radiation wavelengths. The most important absorbers are water 
+vapor (H~2~O), carbon dioxide (CO~2~), and ozone (O~3~). Flight testers should 
+understand wavelengths, absorption, refraction and atmospheric windows when 
+designing tests to evaluate sensors.
 
 ![][19005]
 
 **Figure 6 - Infrared Atmospheric Transmission Windows**
 
-19.6 References**
+## References
 
 |||
 |-|---------------|
@@ -135,7 +211,6 @@ The opposite of opacity is transmission. The earth's atmosphere absorbs, reflect
 |19.8 |The Infrared and Electro-Optical Systems Handbook, C 1993, The Infrared Information and Analysis Center and the Society of Photo-Optical Instrumentation Engineers (SPIE), 8 Volumes.|
 |19.9 |Electro-Optical Surveillance by Gene Adcock, C 1999, CCS Security Publishing Ltd.|
 
-**NOTES**
 
   [4-3]: media/19/image1.jpeg {width="4.840425415573053in" height="2.40625in"}
   [19001]: media/19/image2.jpeg {width="9.27749343832021in" height="6.9492016622922135in"}
