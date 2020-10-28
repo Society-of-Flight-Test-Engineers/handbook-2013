@@ -1,4 +1,4 @@
-# 21. Real-Time Data Display Guidelines**
+# Real-Time Data Display Guidelines
 
 ***[Author]{.underline}:***
 
@@ -88,17 +88,17 @@ This section provides "best practice guidelines" for building real-time flight t
 
 > \***NOTE**: Limits should not be assigned arbitrarily. If no engineering guidance and/or substantiation exists for assigning a meaningful limit, the data should be displayed as Data w/no Limits.
 
-xv. Each representative color should be specifically defined for easy reproduction and consistency.
+        xv. Each representative color should be specifically defined for easy reproduction and consistency.
 
-xvi. In general, avoid superfluous or excessive use of color on a display.
+        xvi. In general, avoid superfluous or excessive use of color on a display.
 
 > **NOTE:** Random and/or excessive use of a color reduces the perception of the color as a "novelty", which dilutes its utility as a visual cue. This is especially important for colors that are used for alerting in emergency situations (ie; red).
 
-xvii. A typical display should not contain more than 4 or 5 distinct colors^1^.
+        xvii. A typical display should not contain more than 4 or 5 distinct colors^1^.
 
 > **NOTE:** "Distinct colors" are those colors which are used for the purpose of information discrimination, aside from the base background and data colors (ie; black and white).
 
-xviii.  Caution and Warning -- An automated alerting/messaging system can greatly aid the FTE in passive monitoring tasks during testing. Depending on software capabilities, the user may implement a variable color status on either the message text itself, or the message background. The following colors are suggested for the associated status levels:
+        xviii.  Caution and Warning -- An automated alerting/messaging system can greatly aid the FTE in passive monitoring tasks during testing. Depending on software capabilities, the user may implement a variable color status on either the message text itself, or the message background. The following colors are suggested for the associated status levels:
 
   Element       IADS           Hex            RGB
   ------------- -------------- -------------- ---------------
@@ -108,9 +108,9 @@ xviii.  Caution and Warning -- An automated alerting/messaging system can greatl
 
 > *^†^See Section 2.g for suggested definitions for Advisory/Caution/Warning*
 
-xix. Color fidelity, contrast, and luminance will all be impacted by the type of monitor hardware used (LED vs LCD), hardware settings, ambient lighting conditions, screen reflectivity, etc. Make sure to evaluate the suitability of the color schemes and general display design on ALL monitors which will be used during real-time flight tests. Make changes as required to accommodate insufficiencies.
+        xix. Color fidelity, contrast, and luminance will all be impacted by the type of monitor hardware used (LED vs LCD), hardware settings, ambient lighting conditions, screen reflectivity, etc. Make sure to evaluate the suitability of the color schemes and general display design on ALL monitors which will be used during real-time flight tests. Make changes as required to accommodate insufficiencies.
 
-xx. If software limitations only allow the use of a single font color against a variable color background, the following is suggested as a compromise to attempt to optimize text legibility against all the various status background colors:
+        xx. If software limitations only allow the use of a single font color against a variable color background, the following is suggested as a compromise to attempt to optimize text legibility against all the various status background colors:
 
   Element        IADS           Hex            RGB
   -------------- -------------- -------------- -----------------
@@ -119,75 +119,75 @@ xx. If software limitations only allow the use of a single font color against a 
   Caution        **0x00F0FF**   **\#FFF000**   **255,240,0**
   Warning        **0x0000FF**   **\#FF0000**   **255,0,0**
 
-f.  Text
+    f.  Text
 
-    xxi. Where it is selectable by the user, font should be a sans-serif font. Trebuchet MS regular (not bold), is a suitable choice if available.
+        xxi. Where it is selectable by the user, font should be a sans-serif font. Trebuchet MS regular (not bold), is a suitable choice if available.
 
-    xxii. Standard font size should generally be 12pt, with a minimum of 10pt (may vary depending on size and resolution of monitor).
+        xxii. Standard font size should generally be 12pt, with a minimum of 10pt (may vary depending on size and resolution of monitor).
 
-    xxiii.  Modifications such as bold, underline, etc., should generally be avoided. May be used sparingly when necessary to support legibility, convey separation of purpose (group of data versus individual labels), etc.
+        xxiii.  Modifications such as bold, underline, etc., should generally be avoided. May be used sparingly when necessary to support legibility, convey separation of purpose (group of data versus individual labels), etc.
 
-    xxiv. Acronyms, abbreviations, button labels, annunciators, etc. should always be set in ALL CAPS.
+        xxiv. Acronyms, abbreviations, button labels, annunciators, etc. should always be set in ALL CAPS.
 
-    xxv. Regular type case should be used for dialog, "lengthy" text, descriptive text, etc.
+        xxv. Regular type case should be used for dialog, "lengthy" text, descriptive text, etc.
 
-g.  Graphics -- It may be helpful to display some data graphically in order to give the user at-a-glance spatial reference for the current value of the parameter, along with trend information.
+    g.  Graphics -- It may be helpful to display some data graphically in order to give the user at-a-glance spatial reference for the current value of the parameter, along with trend information.
 
-    xxvi. Consider graphics (analog indicators - gauges, tapes, needles, etc) for use in identifying trends and relative status within a range.
+        xxvi. Consider graphics (analog indicators - gauges, tapes, needles, etc) for use in identifying trends and relative status within a range.
 
-    xxvii.  Consider numerical values for use in hard data, targeting a specific value, etc.
+        xxvii.  Consider numerical values for use in hard data, targeting a specific value, etc.
 
-    xxviii.   Graphics should always include a numerical value that is adjacent to the tape, preferably in a box and located at the origin, as practical^2^.
+        xxviii.   Graphics should always include a numerical value that is adjacent to the tape, preferably in a box and located at the origin, as practical^2^.
 
 > **NOTE:** Thoughtful combination of numerals and graphics can make for a very scan-friendly layout, which can be "flown to", and used for both low resolution and high resolution monitoring simultaneously.
 
-xxix. The variety of different styles of graphics used on a display should be kept to a minimum, with each different application of a specific style (bar, slider, dial, etc) kept consistent for its purpose, and presenting the information in a manner that is visually compelling in the most appropriate sense for the data that is being presented.
+        xxix. The variety of different styles of graphics used on a display should be kept to a minimum, with each different application of a specific style (bar, slider, dial, etc) kept consistent for its purpose, and presenting the information in a manner that is visually compelling in the most appropriate sense for the data that is being presented.
 
-xxx. Numerical values and their respective boxes should generally be stationary.
+        xxx. Numerical values and their respective boxes should generally be stationary.
 
-xxxi. For graphics that display basic quantities or relatively steady values, bar graphs/tapes should be the default as reasonable and appropriate.
+        xxxi. For graphics that display basic quantities or relatively steady values, bar graphs/tapes should be the default as reasonable and appropriate.
 
 > ![][21002]See Fig 2 below.
 
-xxxii.  For graphical displays of physical positions of components (ie; flight control surfaces), sliders with pointers may be preferred.
+        xxxii.  For graphical displays of physical positions of components (ie; flight control surfaces), sliders with pointers may be preferred.
 
-xxxiii.   In some cases, such as N1 and EGT, dials may be preferred, especially if this reflects similar implementation to the cockpit displays.
+        xxxiii.   In some cases, such as N1 and EGT, dials may be preferred, especially if this reflects similar implementation to the cockpit displays.
 
-xxxiv.  Time history charts (strip charts) can be very useful for monitoring behavior over time, spotting trends or oscillations, and monitoring proximity to limits.
+        xxxiv.  Time history charts (strip charts) can be very useful for monitoring behavior over time, spotting trends or oscillations, and monitoring proximity to limits.
 
 > **NOTE:** One very useful benefit of a time history chart is the ready ability for the FTE to visually identify an increasing trend toward a safety limit, thus allowing for proactive abort calls.
 
-xxxv. Time history charts (strip charts) may also provide the ability for real time basic analysis functions (slope calculations, fast fourier transforms, etc). The availability of these features will be software dependent.
+        xxxv. Time history charts (strip charts) may also provide the ability for real time basic analysis functions (slope calculations, fast fourier transforms, etc). The availability of these features will be software dependent.
 
     **NOTE:** Excessive use of strip charts on a display may impact computer processing performance.
 
-xxxvi.  Minimize the use of tickmarks and gridlines to avoid overpowering the data (also ref section 2.b,c -- color and contrast).
+        xxxvi.  Minimize the use of tickmarks and gridlines to avoid overpowering the data (also ref section 2.b,c -- color and contrast).
 
-xxxvii.   Create graphics that are only as complex as necessary, and are as simple as practical.
+        xxxvii.   Create graphics that are only as complex as necessary, and are as simple as practical.
 
-xxxviii.    For any graphics that change to show a component status or state (ie; open/closed), ensure that the transition or invalid signal state is also clearly conveyed.
+        xxxviii.    For any graphics that change to show a component status or state (ie; open/closed), ensure that the transition or invalid signal state is also clearly conveyed.
 
-xxxix.  Consider the use of a "synoptic" style display for intuitive display of a system, versus a graphical reproduction of the actual physical layout. (Placement of components relative to system operation, versus actual installation -- Ref Fig 3, next page).
+        xxxix.  Consider the use of a "synoptic" style display for intuitive display of a system, versus a graphical reproduction of the actual physical layout. (Placement of components relative to system operation, versus actual installation -- Ref Fig 3, next page).
 
-xl. ![][21003]Take care to create graphics which do not falsely lead the user to assume things about the system state which are not true, or are not actually being measured.
+        xl. ![][21003]Take care to create graphics which do not falsely lead the user to assume things about the system state which are not true, or are not actually being measured.
 
 > ![][21004]For graphics where verification of a response to a command is critical, consider showing the command value with a hollow or shadowed indicator, and the actual value with a solid or filled indicator. See Fig 4 below.
 
-h.  Sense and Direction -- When utilizing graphics, care should be taken to ensure that the indications on the display are intuitive and non-distracting.
+    h.  Sense and Direction -- When utilizing graphics, care should be taken to ensure that the indications on the display are intuitive and non-distracting.
 
-    xli. Tapes or bar graphs utilized on the periphery of an attitude indicator should be evaluated to ensure there is no situation where the movement of the tapes could induce a false perception of attitude changes.
+        xli. Tapes or bar graphs utilized on the periphery of an attitude indicator should be evaluated to ensure there is no situation where the movement of the tapes could induce a false perception of attitude changes.
 
-    xlii. Moving graphics should be carefully constructed to convey a correct intuitive sense of movement that correlates with the reality it is representing.
+        xlii. Moving graphics should be carefully constructed to convey a correct intuitive sense of movement that correlates with the reality it is representing.
 
-    xliii.  Increasing values should typically move: clockwise (dial), up (tape/bar graph), or right (slider/gauge)^2^.
+        xliii.  Increasing values should typically move: clockwise (dial), up (tape/bar graph), or right (slider/gauge)^2^.
 
-    xliv. When using moveable graphics, consider which elements remain fixed, and which will move. Consider the impact on the users' ability to scan the display, and quickly read and understand the data.
+        xliv. When using moveable graphics, consider which elements remain fixed, and which will move. Consider the impact on the users' ability to scan the display, and quickly read and understand the data.
 
-    xlv. In general, look for any susceptibility to misinterpretation or confusion due to the presentation method.
+        xlv. In general, look for any susceptibility to misinterpretation or confusion due to the presentation method.
 
-i.  Alerting features -- Consider the implementation of any available alerting features in order to increase the test team's ability to perform safely and efficiently. IADS©, in particular, has multiple alerting tools which can greatly increase the user's situational awareness, while allowing their attention to remain focused on more real-time critical functions.
+    i.  Alerting features -- Consider the implementation of any available alerting features in order to increase the test team's ability to perform safely and efficiently. IADS©, in particular, has multiple alerting tools which can greatly increase the user's situational awareness, while allowing their attention to remain focused on more real-time critical functions.
 
-    xlvi. The following terminology for criticality levels is suggested (*See Sec 2.c for associated color guidelines*):
+        xlvi. The following terminology for criticality levels is suggested (*See Sec 2.c for associated color guidelines*):
 
 > [Advisory]{.underline} -- Condition which represents a non-critical degradation of functionality, loss of redundancy, etc. No immediate action is required, but some minor actions may be required to continue nominal operations. No damage to aircraft or injury to personnel is expected.
 >
@@ -195,71 +195,71 @@ i.  Alerting features -- Consider the implementation of any available alerting f
 >
 > [Warning]{.underline} -- Condition which represents a critical degradation of critical functionality, total system failure, etc. Immediate action is required in order to avoid damage to aircraft and/or injury to personnel.
 
-xlvii.  Ensure that alerting functions are robust, reliable, easily recognizable, and allow the user to quickly diagnose any emerging situation.
+        xlvii.  Ensure that alerting functions are robust, reliable, easily recognizable, and allow the user to quickly diagnose any emerging situation.
 
-xlviii.   Carefully consider what items will be subject to automated alerting, and why.
+        xlviii.   Carefully consider what items will be subject to automated alerting, and why.
 
-xlix. Alerting functions should enhance the FTE's ability to focus on the important elements of a test, without being distracted by more mundane monitoring tasks.
+        xlix. Alerting functions should enhance the FTE's ability to focus on the important elements of a test, without being distracted by more mundane monitoring tasks.
 
-l.  Safety of a test can also be enhanced, particularly if the limiting criteria for a complex or dynamic test are multi-dimensional or difficult to interpret in real time.
+        l.  Safety of a test can also be enhanced, particularly if the limiting criteria for a complex or dynamic test are multi-dimensional or difficult to interpret in real time.
 
-li. Ensure that any alerting features are readily understood by any and all users of the system, and that each user can verify the status of the system prior to use.
+        li. Ensure that any alerting features are readily understood by any and all users of the system, and that each user can verify the status of the system prior to use.
 
-lii. Any alerting system should have configuration control and version monitoring which can be verified by the user prior to use.
+        lii. Any alerting system should have configuration control and version monitoring which can be verified by the user prior to use.
 
-liii. Each user should understand the automated alerting logic used in the display.
+        liii. Each user should understand the automated alerting logic used in the display.
 
-liv. Ensure that alerting functions do not produce nuisance or spurious alerts (e.g., persistent flashing, blinking, etc.).
+        liv. Ensure that alerting functions do not produce nuisance or spurious alerts (e.g., persistent flashing, blinking, etc.).
 
 <!-- -->
 
-j.  Limits on ability to absorb info
+    j.  Limits on ability to absorb info
 
-    lv. Update rates for data displays should generally be no higher than 8-10hz.
+        lv. Update rates for data displays should generally be no higher than 8-10hz.
 
-    lvi. For general numerical data, consider filtering the data down to 2-4hz to minimize flickering or dithering.
+        lvi. For general numerical data, consider filtering the data down to 2-4hz to minimize flickering or dithering.
 
-    lvii. Graphical elements (gauges, tapes, etc.), should be filtered to the lowest usable level to minimize flickering or dithering.
+        lvii. Graphical elements (gauges, tapes, etc.), should be filtered to the lowest usable level to minimize flickering or dithering.
 
-        **NOTE:** When filtering data to avoid flickering, ensure that the data can be still be verified as "alive" at a glance, and is not slowed to the point of being misleading or lagging.
+            **NOTE:** When filtering data to avoid flickering, ensure that the data can be still be verified as "alive" at a glance, and is not slowed to the point of being misleading or lagging.
 
-    lviii.  The level of significant digits shown should be the lowest that adequately displays the data for the intended purpose^5^.
+        lviii.  The level of significant digits shown should be the lowest that adequately displays the data for the intended purpose^5^.
 
-    lix. A single FTE should not have more than 4 critical parameters to monitor at a given point in time.
+        lix. A single FTE should not have more than 4 critical parameters to monitor at a given point in time.
 
 > **NOTE:** The above statement is in reference to parameters where the FTE must dedicate cognitive function to actively monitoring critical data. This does not include automated monitoring and alerting functions performed by the computer, in cases where an alert will be automatically posted in clear view of the FTE.
 
-k.  Use of control elements -- As the computing packages grow in complexity, they introduce the ability to create control elements on the displays. This gives the users the ability to interact with the displays to give numerical inputs to the system, make various selections on the screen, enable functions, etc.
+    k.  Use of control elements -- As the computing packages grow in complexity, they introduce the ability to create control elements on the displays. This gives the users the ability to interact with the displays to give numerical inputs to the system, make various selections on the screen, enable functions, etc.
 
-    lx. Care should be taken when implementing control functions to ensure that the type of control is appropriate for the use.
+        lx. Care should be taken when implementing control functions to ensure that the type of control is appropriate for the use.
 
-    lxi. Users should be able to assess the position/status of any control element by simple visual inspection.
+        lxi. Users should be able to assess the position/status of any control element by simple visual inspection.
 
-    lxii. Consider any nuances that can affect interactions with the controls (e.g., system lag when selecting a virtual button, switch, etc.).
+        lxii. Consider any nuances that can affect interactions with the controls (e.g., system lag when selecting a virtual button, switch, etc.).
 
-    lxiii.  When placing control elements on a display, carefully consider if the implementation is appropriate for how the user expects to interact with the computer, given the available equipment and operating environment.
+        lxiii.  When placing control elements on a display, carefully consider if the implementation is appropriate for how the user expects to interact with the computer, given the available equipment and operating environment.
 
-    lxiv. The user must be capable of effectively managing any inputs to the displays under any expected flight conditions, if used on board the aircraft.
+        lxiv. The user must be capable of effectively managing any inputs to the displays under any expected flight conditions, if used on board the aircraft.
 
-    lxv. For control room only displays, ensure that the users are not given so many inputs or required interactions as to be easily saturated or distracted.
+        lxv. For control room only displays, ensure that the users are not given so many inputs or required interactions as to be easily saturated or distracted.
 
-    lxvi. Utilize visual cues to give the user feedback as to the pressed status of a button (eg; text on the button changes content or color while "pressed").
+        lxvi. Utilize visual cues to give the user feedback as to the pressed status of a button (eg; text on the button changes content or color while "pressed").
 
-    lxvii.  Standardize the appearance of control elements across various displays. Square buttons are easily recognizable as buttons. They also allow for efficient placement and organization on a display.
+        lxvii.  Standardize the appearance of control elements across various displays. Square buttons are easily recognizable as buttons. They also allow for efficient placement and organization on a display.
 
-    lxviii.   Button/annunciator labels should either be verbs (commanded action), or status (commanded or present status).
+        lxviii.   Button/annunciator labels should either be verbs (commanded action), or status (commanded or present status).
 
-    lxix. Standardize the philosophy used for button/annunciator labels (e.g., normally dark, constant status indication, etc.). If the aircraft platform or the experimental equipment under test has a standard philosophy established, attempt to follow it.
+        lxix. Standardize the philosophy used for button/annunciator labels (e.g., normally dark, constant status indication, etc.). If the aircraft platform or the experimental equipment under test has a standard philosophy established, attempt to follow it.
 
-    lxx. For controls that are turning a function "on" or "off", toggle switches of some manner are preferable to buttons, as the spatial element of the switch position is more compelling than the status cues of a button.
+        lxx. For controls that are turning a function "on" or "off", toggle switches of some manner are preferable to buttons, as the spatial element of the switch position is more compelling than the status cues of a button.
 
-    lxxi. Standardize the philosophy used for switch positions (e.g., up for ON, down for OFF, normal position at 12 o'clock, etc.). If the aircraft platform or the experimental equipment under test has a standard philosophy established, attempt to follow it.
+        lxxi. Standardize the philosophy used for switch positions (e.g., up for ON, down for OFF, normal position at 12 o'clock, etc.). If the aircraft platform or the experimental equipment under test has a standard philosophy established, attempt to follow it.
 
-    lxxii.  For controls that have more than two selections available (where only one item is selectable at a time) consider a virtual dial, radio buttons, or a drop-down menu in order to give the user visibility on both the current selection, and all available selections.
+        lxxii.  For controls that have more than two selections available (where only one item is selectable at a time) consider a virtual dial, radio buttons, or a drop-down menu in order to give the user visibility on both the current selection, and all available selections.
 
-    lxxiii.   Drop-down menus and lists should be sorted alphanumerically.
+        lxxiii.   Drop-down menus and lists should be sorted alphanumerically.
 
-    lxxiv.  For user-input fields, the tab key should shift the focus from left to right and then top to bottom. Using shift-tab should move the focus in the reverse order.
+        lxxiv.  For user-input fields, the tab key should shift the focus from left to right and then top to bottom. Using shift-tab should move the focus in the reverse order.
 
 <!-- -->
 
@@ -303,25 +303,25 @@ k.  Use of control elements -- As the computing packages grow in complexity, the
 
 > **NOTE:** Version tracking and configuration control methods may be highly influenced by an individual flight test organization's IT and data management methods. Seek out cooperation from these groups to ensure successful processes are created.
 
-lxxxv.  Each user should have immediate access to verify current version of the display(s) at the start of each test session.
+        lxxxv.  Each user should have immediate access to verify current version of the display(s) at the start of each test session.
 
-lxxxvi.   Consider incorporating display/configuration revision information into the test card for each day.
+        lxxxvi.   Consider incorporating display/configuration revision information into the test card for each day.
 
-lxxxvii.    Especially for safety or test critical displays, a version history of each display should be easily accessible.
+        lxxxvii.    Especially for safety or test critical displays, a version history of each display should be easily accessible.
 
 <!-- -->
 
-o.  Validation / checkout process
+    o.  Validation / checkout process
 
-    lxxxviii.     Ensure multiple FTE's provide input and feedback during the display design, build, and validation process.
+        lxxxviii.     Ensure multiple FTE's provide input and feedback during the display design, build, and validation process.
 
-    lxxxix.   Once built, each display should be validated using previously existing data, if available.
+        lxxxix.   Once built, each display should be validated using previously existing data, if available.
 
-    xc. Displays which are used for safety or test critical monitoring should be validated thoroughly prior to use.
+        xc. Displays which are used for safety or test critical monitoring should be validated thoroughly prior to use.
 
-    xci. Consider off-nominal usage cases, and/or display behavior when aircraft is far off the conditions for which the display is intended.
+        xci. Consider off-nominal usage cases, and/or display behavior when aircraft is far off the conditions for which the display is intended.
 
-    xcii. Test results of critical displays should be documented for later reference.
+        xcii. Test results of critical displays should be documented for later reference.
 
 <!-- -->
 
@@ -403,15 +403,15 @@ o.  Validation / checkout process
 >
 > From the Display Guidelines, section 2.c. -- Color:
 
-i.  Color is a secondary visual cue...
+    i.  Color is a secondary visual cue...
 
-ii. Color should not be the only discriminator used, [especially for critical data]{.underline}.
+    ii. Color should not be the only discriminator used, [especially for critical data]{.underline}.
 
-    An especially problematic situation for CVD FTEs is when the standard green/yellow/red color scheme is used to color text or numerals against a black background. This should be avoided.
+        An especially problematic situation for CVD FTEs is when the standard green/yellow/red color scheme is used to color text or numerals against a black background. This should be avoided.
 
-    Per the guidelines above, this colored data would always be accompanied by some other discriminator. However, the benefit of this secondary cue may be effectively nullified for the CVD FTE if not implemented correctly.
+        Per the guidelines above, this colored data would always be accompanied by some other discriminator. However, the benefit of this secondary cue may be effectively nullified for the CVD FTE if not implemented correctly.
 
-    See below for an example of how this coloring might appear to a red-green CVD user^2^:
+        See below for an example of how this coloring might appear to a red-green CVD user^2^:
 
   Normal        CVD
   ------------- -------------
@@ -427,35 +427,35 @@ Consider other methods to provide status discrimination. Whatever other methods 
 
 <!-- -->
 
-a.  Utilize other/additional coloring methods to distinguish parameter status, such as background fill, a colored surrounding box, etc.
+    a.  Utilize other/additional coloring methods to distinguish parameter status, such as background fill, a colored surrounding box, etc.
 
-    a.  NOTE: if using background fill, ensure fill is not distracting, and that contrast of the text/numerals remains sufficient against the fill in all cases.
+        a.  NOTE: if using background fill, ensure fill is not distracting, and that contrast of the text/numerals remains sufficient against the fill in all cases.
 
-b.  Provide some manner of icon adjoining the text to indicate status.
+    b.  Provide some manner of icon adjoining the text to indicate status.
 
-    b.  NOTE: This option should be utilized only for data which is being actively monitored during a test, and/or in conjunction with an automated alerting scheme.
+        b.  NOTE: This option should be utilized only for data which is being actively monitored during a test, and/or in conjunction with an automated alerting scheme.
 
-c.  Do not color the text/digits at all:
+    c.  Do not color the text/digits at all:
 
-    c.  Color the data as "unlimited" (See Guidelines, Section 2.c.iv), and handle status annunciation separately.
+        c.  Color the data as "unlimited" (See Guidelines, Section 2.c.iv), and handle status annunciation separately.
 
-    d.  Leverage automated alerting for limit exceedances. Alert the user to the exceedance with the associated status word (e.g.; "WARNING" -- with appropriate color as well), and indicate by other means which parameter has tripped the limit. This could be descriptive text, a shorthand parameter name with the annunciation, an icon adjacent to the numerical data, etc.
+        d.  Leverage automated alerting for limit exceedances. Alert the user to the exceedance with the associated status word (e.g.; "WARNING" -- with appropriate color as well), and indicate by other means which parameter has tripped the limit. This could be descriptive text, a shorthand parameter name with the annunciation, an icon adjacent to the numerical data, etc.
 
-d.  Provide visual indication of proximity to the limit:
+    d.  Provide visual indication of proximity to the limit:
 
-    e.  Limit line(s) on strip chart or tape.
+        e.  Limit line(s) on strip chart or tape.
 
-    f.  Needle(s) or shape(s) on dial.
+        f.  Needle(s) or shape(s) on dial.
 
-    g.  Along with a. and b., provide an additional visual cue when past the limit (see sub-bullets above).
+        g.  Along with a. and b., provide an additional visual cue when past the limit (see sub-bullets above).
 
-e.  Consider different methods of communicating "nominal":
+    e.  Consider different methods of communicating "nominal":
 
-    h.  Excessive use of color to denote nominal dilutes the meaning and in the extreme can "clutter" a display.
+        h.  Excessive use of color to denote nominal dilutes the meaning and in the extreme can "clutter" a display.
 
-    i.  Consider the "normally dark" philosophy. Only give status alerts when parameters are off-nominal (see sub-bullets above).
+        i.  Consider the "normally dark" philosophy. Only give status alerts when parameters are off-nominal (see sub-bullets above).
 
-f.  If none of the above options are sufficient or practical, consider shifting the color definitions slightly per MIL-STD-1472, in order to aid in the differentiation between red and green^3^:
+    f.  If none of the above options are sufficient or practical, consider shifting the color definitions slightly per MIL-STD-1472, in order to aid in the differentiation between red and green^3^:
 
   Color    IADS           Hex            RGB
   -------- -------------- -------------- ----------------
@@ -464,31 +464,29 @@ f.  If none of the above options are sufficient or practical, consider shifting 
   Yellow   **0x00FFFF**   **\#FFFF00**   **255,255,0**
   Red      **0x1E41FF**   **\#FF411E**   **255,65,30**
 
-2.  **Organizational Considerations:**
+2. Organizational Considerations:
 
-<!-- -->
+    a.  While it is obviously important to respect the rights and privacy of all personnel in any organization, it is important to be aware of any CVD users that are present in an organization, so that data displays are not inadvertently designed in such a manner that would preclude their safe use by the CVD FTE.
 
-a.  While it is obviously important to respect the rights and privacy of all personnel in any organization, it is important to be aware of any CVD users that are present in an organization, so that data displays are not inadvertently designed in such a manner that would preclude their safe use by the CVD FTE.
+    b.  If CVD users are a known part of the organization's FTE population, proactively design the display to incorporate CVD accommodations, while soliciting input from the affected individual(s) during the design process in order to ensure suitability prior to fielding the display.
 
-b.  If CVD users are a known part of the organization's FTE population, proactively design the display to incorporate CVD accommodations, while soliciting input from the affected individual(s) during the design process in order to ensure suitability prior to fielding the display.
+    c.  If experimental data displays are being heavily relied upon for safety critical monitoring, and the use of color to ensure safety is presenting obstacles, take the opportunity to reconsider the test team's approach to carrying out the test. Is the monitoring scheme appropriate? Is the system under test overly immature? Is the THA written appropriately? Consider automation, CRM aspects, and other mitigations to reduce monitoring requirements in an effort to reduce the reliance on critical display monitoring.
 
-c.  If experimental data displays are being heavily relied upon for safety critical monitoring, and the use of color to ensure safety is presenting obstacles, take the opportunity to reconsider the test team's approach to carrying out the test. Is the monitoring scheme appropriate? Is the system under test overly immature? Is the THA written appropriately? Consider automation, CRM aspects, and other mitigations to reduce monitoring requirements in an effort to reduce the reliance on critical display monitoring.
-
-d.  Consider individual FTE qualifications. If, after taking all of the above considerations into account, the ability to normally discriminate color remains an integral part of safely executing certain tests, then those tests may require normal color vision as part of the qualification for FTEs executing the test.
+    d.  Consider individual FTE qualifications. If, after taking all of the above considerations into account, the ability to normally discriminate color remains an integral part of safely executing certain tests, then those tests may require normal color vision as part of the qualification for FTEs executing the test.
 
     **NOTE:** Given the myriad of available options for FTEs to design their own displays in any appropriate manner, this option should be considered in extremis.
 
 <!-- -->
 
-3.  **References:**
+3. References:
 
 <!-- -->
 
-|||
-|-|---------------|
-|1. | "Color Vision Deficiency", Glossary of Common Eye & Vision Conditions, American Optometric Association, <https://www.aoa.org/patients-and-public/eye-and-vision-problems/glossary-of-eye-and-vision-conditions/color-deficiency>|
-|2. | C. Ludwig, Display Design for Critical Monitoring, Society of Flight Test Engineers|
-|3. | Dept of Defense Design Criteria Standard -- Human Engineering, MIL-STD-1472G, Dept of Defense, 2012|
+||
+|-|
+|1. "Color Vision Deficiency", Glossary of Common Eye & Vision Conditions, American Optometric Association, <https://www.aoa.org/patients-and-public/eye-and-vision-problems/glossary-of-eye-and-vision-conditions/color-deficiency>|
+|2. C. Ludwig, Display Design for Critical Monitoring, Society of Flight Test Engineers|
+|3. Dept of Defense Design Criteria Standard -- Human Engineering, MIL-STD-1472G, Dept of Defense, 2012|
 
   [21001]: media/21/image1.png {width="4.370138888888889in" height="2.7909722222222224in"}
   [21002]: media/21/image2.png {width="4.6097222222222225in" height="1.8888888888888888in"}
