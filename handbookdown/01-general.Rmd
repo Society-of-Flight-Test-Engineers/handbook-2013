@@ -381,7 +381,7 @@ Exponent  Prefix  Abbreviation
 
 ## Greek Alphabet
 
-| Uppercase                   | \(\LaTeX{}\) Command          | Lowercase                   |   \(\LaTeX{}\) Command       | Name    | Say         |
+| Uppercase                   | LaTeX Command          | Lowercase                   |   LaTeX Command       | Name    | Say         |
 |-----------------------------|---------------------------|-----------------------------|---------------------------|---------|-------------|
 | \(Α\)                         | Α                         | \(\alpha\)                    | \\alpha                   | Alpha   | æl-fə       |
 | \(Β\)                         | Β                         | \(\beta\)                     | \\beta                    | Beta    | bei-tə      |
@@ -1396,22 +1396,22 @@ The **Second Law of Thermodynamics** states that entropy increases during any ir
 
 **Ideal Gas Equation of State** (a.k.a. Perfect gas law): 
 
-\[
 \begin{align}
 PV&=RT\\
 P &= \rho RT\\
 PV &= mRT\\
-PV &= nRT
-\end{align}\]
+PV &= nRT\\
+\end{align}
 
-\[\delta = \sigma \theta\]  
-where   
-\[
+\[\delta = \sigma \theta\]
+
+where
+
 \begin{align}
 \delta &= \frac{P_a}{P_0}\\
 \sigma &= \frac{\rho_a}{\rho_0}\\
 \theta &= \frac{T_a}{T_0}
-\end{align}\]
+\end{align}
 
 **Boyle's Law** states that when the temperature of a given mass of gas is held constant, then the volume and pressure vary inversely.
 
@@ -1431,23 +1431,19 @@ where \[V_1 = V_2\]
 
 For reversible processes:
 
-\[
 \begin{align}
 W &= −\int_{}^{}{PdV}\\
 Q &= \int_{}^{}{TdS}
 \end{align}
-\]
 
 For reversible adiabatic processes:
 
-\[
 \begin{align}
 \frac{P_1}{P_2} &= \Bigg[ \frac{V_2}{V_1} \Bigg]^{\gamma} \\
 \frac{T_1}{T_2} &= \Bigg[ \frac{V_2}{V_1} \Bigg]^{\gamma - 1} \\
 \frac{T_1}{T_2} &= \Bigg[ \frac{P_1}{P_2} \Bigg]^{\frac{\gamma - 1}{\gamma}} \\
 \frac{P_1}{P_2} &= \Bigg[ \frac{\rho_1}{\rho_2} \Bigg]^{\gamma} \\
 \end{align}
-\]
 
 Steady Flow Energy Equation
 
@@ -1496,23 +1492,19 @@ Enthalpy equation in differential form is: \[dH = du + d(PV)\]
 
 Substituting definitions and ideal gas law gives
 
-\[
 \begin{align}
 c_p \, dT &= c_v \, dT + R \, dt\\
 &\;\;\mathrm{or} \\
 c_p &= c_v + R
 \end{align}
-\]
 
 Rearranging gives
 
-\[
 \begin{align}
 c_p &= R \frac{\kappa}{\kappa - 1}\\
 &\;\;\mathrm{and} \\
 c_v &= R \frac{1}{\kappa - 1}
 \end{align}
-\]
 
 Development of **Poisson's Equation**:
 

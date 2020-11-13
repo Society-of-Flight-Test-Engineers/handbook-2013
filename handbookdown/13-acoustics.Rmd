@@ -240,5 +240,5 @@ Weighting for SPL
 |-|
 |Hunter, Joseph L., "Acoustics," Prentice-Hall Incorporated, Englewood Cliffs, New Jersey, 1957.|
 
-[^1]: Common octaves include, in \(\text{kHz}\) \[\begin{align} 0.0375&-0.0750\\0.075&-0.15\\0.15&-0.30\\0.30&-0.60\\0.6&-1.2\\1.2&-2.4\\2.4&-4.8\\4.8&-9.6\end{align} \]
+[^1]: Common octaves include, in \(\text{kHz}\) \begin{align} 0.0375&-0.0750\\0.075&-0.15\\0.15&-0.30\\0.30&-0.60\\0.6&-1.2\\1.2&-2.4\\2.4&-4.8\\4.8&-9.6\end{align}
 [^2]: The \(\mathrm{SPL}\) contained within a band \(1 \text{ Hz}\) wide
