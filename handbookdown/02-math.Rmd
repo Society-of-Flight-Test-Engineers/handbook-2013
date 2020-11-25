@@ -31,43 +31,44 @@
 
 Examples:
 
+\[
 \begin{array}{lllll}
 \log (6.54) =  0.8156 &&&&\\
-& \log (6540) &= \log (6.54 \times 10^3 ) &=  0.8156 + 3 &= \fbox{3.8156}&\\
-& \log ( 0.6540) &= \log (6.54 \times 10^{-1}) &=  0.8156 - 1 &= \fbox{9.8156 - 10}&\\
-& \log ( 0.000 6540) &= \log (6.54 \times 10^{-4}) &=  0.8156 - 4 &= \fbox{6.8156 - 10}&
+& \log (6540)         &= \log (6.54 \times 10^3 )   &=  0.8156 + 3 &= \fbox{3.8156}\\
+& \log ( 0.6540)      &= \log (6.54 \times 10^{-1}) &=  0.8156 - 1 &= \fbox{9.8156 - 10}\\
+& \log ( 0.000\,6540) &= \log (6.54 \times 10^{-4}) &=  0.8156 - 4 &= \fbox{6.8156 - 10}\\
 \end{array}
+\]
 
-
-
+\[
 \begin{array}{lllll}
 \text{calculate } 68.31 \times  0.2754 &&&&\\
-&log (68.31) &= 1.8354&&\\
-&log ( 0.2754) &= - 0.56&&\\
+&\log (68.31) &= 1.8354&&\\
+&\log ( 0.2754) &= - 0.56&&\\
 &1.8354 +(- 0.56) &= 1.2745&&\\
-&log^{-1} (1.2745) &= \fbox{18.81}&&
+&\log^{-1} (1.2745) &= \fbox{18.81}&&\\
 \end{array}
+\]
 
-
-
+\[
 \begin{array}{lllll}
 \text{calculate } ( 0.6831)^{1.53} &&&&\\
 & log ( 0.6831) &= - 0.1655&&\\
 & 1.53 \times - 0.1655 &= - 0.253&&\\
 & log^{-1} (- 0.253) &= \fbox{ 0.5582}&&
 \end{array}
+\]
 
-
-
+\[
 \begin{array}{lllll}
 \text{calculate } ( 0.6831)^{\frac{1}{5}} &&&&\\
 & log ( 0.6831) &= - 0.1655&&\\
 & \frac{1}{5} \times - 0.1655 &= - 0.0331&&\\
 & log^{-1} (- 0.0331) &= \fbox{ 0.9266}&&
 \end{array}
+\]
 
-
-
+\[
 \begin{array}{lllll}
 \text{solve for \(x\) in \( 0.6931^x = 27.54\) }&&&&\\
 & log ( 0.6931^x) &= log (27.54)&&\\
@@ -75,6 +76,7 @@ Examples:
 & x &= \frac{log (27.54 )}{log ( 0.6931)}&&\\
 & x &= \frac{1.44}{- 0.1655} &= \fbox{-8.701}
 \end{array}
+\]
 
 
 ### Equations
@@ -1059,7 +1061,7 @@ should be added to the result of every integration
 \[ \int_{}{} \frac{dx}{\sqrt{a^2 - x^2}} = \sin^{-1} \frac{x}{a} \]
 \[ \int_{}{} \frac{dx}{\sqrt{a^2 \pm x^2}} = \ln \left( x - \sqrt{a^2 \pm x^2} \right) \]
 \[ \int_{}{} \sqrt{a^2 - u^2} = \frac{1}{2} \left( u \sqrt{a^2 - x^2} + a^2 \sin^{-1} \frac{u}{a} \right) \]
-\[ \int_{}{} \frac{du}{a^2 + u^2} = \frac{1}{a} \tan^{-1} \frac{u}{a} \text{, } a \gt 0 \]
+\[ \int_{}{} \frac{du}{a^2 + u^2} = \frac{1}{a} \tan^{-1} \frac{u}{a} \text{, } a  >  0 \]
 *Expressions Containing Exponential and Logarithmic Functions*
 \[ \int_{}{} \frac{dx}{x} = \ln{x} \]
 \[ \int_{}{} \mathrm{e}^{x} dx = \mathrm{e}^{x} \]
@@ -1102,23 +1104,23 @@ should be added to the result of every integration
 
 Time Domain \(f(t) = \mathcal{L}^{-1} \left\{ F \left( s \right) \right\} \)      | Frequency Domain \(F\left( s \right) = \mathcal{L} \left\{ f \left( t \right) \right\}\)
 ---------------------------|---------------------------------
-\[1 \text{ (step function)}\]      | \[\frac{1}{s} \text{, where } \left(s\gt 0\right) \]
-\[t\]                         | \[\frac{1}{s^2} \text{, where } \left(s\gt 0\right) \]
-\[t^{n-1}\]                | \[\frac{\left( n-1 \right)!}{s^n} \text{, where } \left(s\gt 0\right) \]
-\[\sqrt{t}\]                  | \[\frac{{\sqrt \pi  }}{{2{s^{\frac{3}{2}}}}} \text{, where } \left(s\gt 0\right) \]
-\[\frac{1}{\sqrt{t}}\]         | \[\frac{{\sqrt \pi  }}{{{s^{\frac{1}{2}}}}} \text{, where } \left(s\gt 0\right) \]                            
-\[{t^{n - \frac{1}{2}}},\,\,\,\,\,n = 1,2,3, \ldots\]     | \[\frac{{1 \cdot 3 \cdot 5 \cdots \left( {2n - 1} \right)\sqrt \pi  }}{{{2^n}{s^{n + \frac{1}{2}}}}} {, where } \left(s\gt 0\right) \]
-\[\mathrm{e}^{at}\]                     | \[ \frac{1}{s-a} \text{, where } \left(s\gt a \right) \]
-\[t\mathrm{e}^{at}\]                    | \[\frac{1}{{\left( {s - a} \right)}^{2}} \text{, where } \left(s\gt a \right) \]
-\[{t^n}{{e}^{at}},\,\,\,\,\,n = 1,2,3, \ldots\] | \[\frac{{n!}}{{{{\left( {s - a} \right)}^{n + 1}}}} \text{, where } \left(s\gt a \right) \]
-\[\sin{at} \]                   | \[\frac{a}{s^2 + a^2} \text{, where } \left(s\gt 0 \right) \]
-\[\cos{at}\]                    | \[\frac{s}{s^2 + a^2} \text{, where } \left(s\gt 0 \right) \]
-\[\mathrm{e}^{bt} \sin{at}\]              | \[\frac{a}{\left(s - b \right)^2 + a^2} \text{, where } \left(s\gt b \right) \]
-\[\mathrm{e}^{bt} \cos{at}\]              | \[\frac{s-b}{\left(s - b \right)^2 + a^2} \text{, where } \left(s\gt b \right) \]
-\[t \sin{at}\]                  | \[\frac{2as}{\left(s^2  - a^2\right)^2} \text{, where } \left(s\gt a \right) \]
-\[t \cos{at}\]                  | \[\frac{s^2  - a^2}{\left(s^2  + a^2\right)^2} \text{, where } \left(s\gt 0 \right) \]
-\[\sinh{at}\]                   | \[\frac{a}{\left(s^2  - a^2\right)^2} \text{, where } \left(s\gt \lvert a \rvert \right) \]
-\[\cosh{at}\]                      |           \[\frac{s}{\left(s^2  - a^2\right)^2} \text{, where } \left(s\gt \lvert a \rvert \right) \]
+\[1 \text{ (step function)}\]      | \[\frac{1}{s} \text{, where } \left(s >  0\right) \]
+\[t\]                         | \[\frac{1}{s^2} \text{, where } \left(s >  0\right) \]
+\[t^{n-1}\]                | \[\frac{\left( n-1 \right)!}{s^n} \text{, where } \left(s >  0\right) \]
+\[\sqrt{t}\]                  | \[\frac{{\sqrt \pi  }}{{2{s^{\frac{3}{2}}}}} \text{, where } \left(s >  0\right) \]
+\[\frac{1}{\sqrt{t}}\]         | \[\frac{{\sqrt \pi  }}{{{s^{\frac{1}{2}}}}} \text{, where } \left(s >  0\right) \]                            
+\[{t^{n - \frac{1}{2}}},\,\,\,\,\,n = 1,2,3, \ldots\]     | \[\frac{{1 \cdot 3 \cdot 5 \cdots \left( {2n - 1} \right)\sqrt \pi  }}{{{2^n}{s^{n + \frac{1}{2}}}}} {, where } \left(s >  0\right) \]
+\[\mathrm{e}^{at}\]                     | \[ \frac{1}{s-a} \text{, where } \left(s >  a \right) \]
+\[t\mathrm{e}^{at}\]                    | \[\frac{1}{{\left( {s - a} \right)}^{2}} \text{, where } \left(s >  a \right) \]
+\[{t^n}{{e}^{at}},\,\,\,\,\,n = 1,2,3, \ldots\] | \[\frac{{n!}}{{{{\left( {s - a} \right)}^{n + 1}}}} \text{, where } \left(s >  a \right) \]
+\[\sin{at} \]                   | \[\frac{a}{s^2 + a^2} \text{, where } \left(s >  0 \right) \]
+\[\cos{at}\]                    | \[\frac{s}{s^2 + a^2} \text{, where } \left(s >  0 \right) \]
+\[\mathrm{e}^{bt} \sin{at}\]              | \[\frac{a}{\left(s - b \right)^2 + a^2} \text{, where } \left(s >  b \right) \]
+\[\mathrm{e}^{bt} \cos{at}\]              | \[\frac{s-b}{\left(s - b \right)^2 + a^2} \text{, where } \left(s >  b \right) \]
+\[t \sin{at}\]                  | \[\frac{2as}{\left(s^2  - a^2\right)^2} \text{, where } \left(s >  a \right) \]
+\[t \cos{at}\]                  | \[\frac{s^2  - a^2}{\left(s^2  + a^2\right)^2} \text{, where } \left(s >  0 \right) \]
+\[\sinh{at}\]                   | \[\frac{a}{\left(s^2  - a^2\right)^2} \text{, where } \left(s >  \lvert a \rvert \right) \]
+\[\cosh{at}\]                      |           \[\frac{s}{\left(s^2  - a^2\right)^2} \text{, where } \left(s >  \lvert a \rvert \right) \]
 \[\sin \left(at + b\right)\]                 |   \[\frac{s\sin{b} + a \cos{b}}{\left(s^2  + a^2\right)^2} \]
 \[\cos \left(at + b\right)\]                 |   \[\frac{s\cos{b} - a \sin{b}}{\left(s^2  + a^2\right)^2} \]
 \[\frac{\mathrm{e}^{at} - \mathrm{e}^{bt}}{a - b}\] | \[\frac{1}{\left(s-a\right)\left(s-b\right)} \]
@@ -1126,7 +1128,7 @@ Time Domain \(f(t) = \mathcal{L}^{-1} \left\{ F \left( s \right) \right\} \)    
 \[\delta \text{ (impulse function)}\]         | \[1\]
 \[\text{square wave, period }=2c\]      | \[\frac{1}{s \left( 1 + \mathrm{e}^{-cs} \right)} \]
 \[\text{triangular wave, period }=2c\]      | \[\frac{1 - \mathrm{e}^{-cs}}{s^2 \left( 1 + \mathrm{e}^{-cs} \right)} \]
-\[ \begin{align} at \text{ for } 0 \leq t \lt c \\ \text{sawtooth wave, period } = c \end{align}\]   | \[ \frac{a \left( 1 + cs - \mathrm{e}^{-cs} \right) }{s^2 \left( 1 - \mathrm{e}^{-cs} \right) } \]
+\begin{align} at \text{ for } 0 \leq t  <  c \\ \text{sawtooth wave, period } = c \end{align}   | \[ \frac{a \left( 1 + cs - \mathrm{e}^{-cs} \right) }{s^2 \left( 1 - \mathrm{e}^{-cs} \right) }\]
 \[\sin{at} \sin{bt} \]           |      \[ \frac{2abs}{\left( s^2 + \left(a+b\right)^2\right) \left( s^2 + \left(a-b\right)^2\right)} \]
 \[\frac{1 - \cos{at}}{a^2}  \]                   | \[ \frac{1}{s \left( s^2 + a^2 \right) } \]
 \[\frac{at - \sin{at}}{a^3}  \]                   | \[ \frac{1}{s^2 \left( s^2 + a^2 \right) } \]

@@ -55,7 +55,6 @@ Summing vertical forces gives
 &\frac{dV}{V} + \frac{D}{M} dt = 0 \\
 &\int{}{} \frac{dV}{V} = -\int{}{} \frac{D}{M} dt
 \end{align}
-\]
 
 Since \(D\) & \(M\) are constant
 
@@ -64,7 +63,6 @@ Since \(D\) & \(M\) are constant
 \ln V &= -\frac{D}{M} t + C =  -\frac{D}{M} t + \ln c\\
 V_c &= c e^{-\frac{D}{M} t} \;\;\text{complementary solution}\\
 \end{align}
-\]
  
 Apply initial condition
 
@@ -74,7 +72,6 @@ V(t=0) &= 10 \mathrm{ft/s} \Rightarrow \\
 10 &= C \\
 V_T &= 10 e^{-\frac{D}{M} t}
 \end{align}
-\]
 
 Plot response over time
 
@@ -88,7 +85,6 @@ Exponential rate of decay described by \(\frac{D}{M}\) ratio
 
 Solve using Laplace analysis methods:
 
-\[
 \begin{align}
 M\dot{V} + DV &= 20 \;\;\text{step input} \\
 M\left[ sV(s) - V(0) \right] + D V(s) &= \frac{20}{s} \\
@@ -105,11 +101,9 @@ V(s) &= \frac{ \frac{20}{M} \frac{1}{s} + V(0) }{s + \frac{D}{M} } \\
                 } 
   \right\} + \frac{V(0)}{s + \frac{D}{M}} \\
 \end{align}
-\]
 
 Use partial fraction:
 
-\[
 \begin{align}
 \frac{ \frac{20}{M} }{s \left( s + \frac{D}{M} \right) } &= \frac{A}{s} + \frac{B}{s + \frac{D}{M}}\\
 &= \frac{A \left( s + \frac{D}{M} \right)}{s \left( s + \frac{D}{M} \right) } + \frac{B s}{s \left( s + \frac{D}{M} \right) }\\
@@ -126,13 +120,11 @@ let \(s = 0\):
 
 \[\frac{20}{M} = A \left( 0 + \frac{D}{M} \right) + 0 \Rightarrow A = \frac{20}{D} \]
 
-\[
 \begin{align}
 V(s) &= \left\{ \frac{A}{s} + \frac{B}{s + \frac{D}{M}} \right\} + \frac{V(0)}{s + \frac{D}{M}} \\
 &= \left\{ \frac{\frac{20}{D}}{s} + \frac{-\frac{20}{D}}{s + \frac{D}{M}} \right\} + \frac{V(0)}{s + \frac{D}{M}} \\
 V(t) &= \left\{ \frac{20}{D} -\frac{20}{D}e^{-\frac{D}{M}t} \right\} + V(0)e^{-\frac{D}{M}t} \\
 \end{align}
-\]
 
 since \(V(0) = 0\) then
 
@@ -184,11 +176,11 @@ so, after \(\frac{M}{D}\) seconds have elapsed, \(V =  V_{\mathrm{ss}} \left[1  
 |when \(t = 3\tau\):      |\(x = e^{−3}     \) |\(= 0.05\)|
 |when \(t = 4\tau\):      |\(x = e^{−4}     \) |\(= 0.02\)|
 
-If exponent \(\gt 0\), then motion is divergent.
+If exponent \( >  0\), then motion is divergent.
 
 \[x(t) = ce^{mt}\]
 
-where \(m \gt 0\)
+where \(m  >  0\)
 
 ![][08015]
 
@@ -200,7 +192,6 @@ By convention, the "time to double amplitude" (\(t_2\)) is usually applied as th
 
 Therefore
 
-\[
 \begin{align}
 x_2 &= 2c \\
 2c &= ce^{mt_2} \\
@@ -208,7 +199,6 @@ x_2 &= 2c \\
 \ln 2 &= mt_2 \\
 \therefore \text{Time to double amplitude } \frac{0.6931}{m} = t_2 = 0.693\tau \\
 \end{align}
-\]
 
 ### Determining \(\tau\) from Step Input Time History
 
@@ -384,14 +374,12 @@ and
 
 The values can be substituted to gives
 
-\[
 \begin{align}
 x &= A e^{-\frac{D}{2M} t} \sin \left( \sqrt{\frac{K}{M} - \left(\frac{D}{2M} \right)^2} t + \phi  \right) \\
 &= A e^{-\zeta \omega_n t} \sin \left( \omega_d t + \phi  \right) \\
 &= A e^{-\zeta \omega_n t} \sin \left( \omega_n \sqrt{1 - \zeta^2} t + \phi  \right) \\
 \text{where } \phi &= \tan^{-1} \frac{\omega_d}{\zeta \omega_n} =  \tan^{-1} \frac{\omega_n \sqrt{1 - \zeta^2}}{\zeta \omega_n} =  \tan^{-1} \frac{\sqrt{1 - \zeta^2}}{\zeta} \\
 \end{align}
-\]
 
 <!-- Don't think we need this labeled equation...? -->
 ![][08043]
@@ -411,19 +399,19 @@ Possible Solutions:
 
 | | | |
 |-|---|---|
-| \(+1 \lt \zeta\)        | Real & unequal roots: exponential, convergent | \[ x\left(t\right) = c_1 e^{-\omega_n \left( \zeta + \sqrt{\zeta^2 - 1} \right)t} + c_2 e^{-\omega_n \left( \zeta - \sqrt{\zeta^2 - 1} \right)t} \] |
+| \(+1  <  \zeta\)        | Real & unequal roots: exponential, convergent | \[ x\left(t\right) = c_1 e^{-\omega_n \left( \zeta + \sqrt{\zeta^2 - 1} \right)t} + c_2 e^{-\omega_n \left( \zeta - \sqrt{\zeta^2 - 1} \right)t} \] |
 | \(\zeta = +1\)          | Real & equal roots: exponential, convergent   | \[ x\left(t\right) = c_1 e^{-\omega_n \zeta t} + c_2 t e^{-\omega_n \zeta t} \] |
-| \(0 \lt \zeta \lt +1 \) | Complex pair roots: sinusoidal, convergent    | \[ x\left(t\right) =  A e^{-\zeta \omega_n t} \sin \left( \omega_d + \phi \right) \] |
+| \(0  <  \zeta  <  +1 \) | Complex pair roots: sinusoidal, convergent    | \[ x\left(t\right) =  A e^{-\zeta \omega_n t} \sin \left( \omega_d + \phi \right) \] |
 | \(\zeta = 0 \)          | Imaginary pair roots: sinusoidal, neutral     | \begin{align} x\left(t\right) &=  A \sin \left( \omega_n t + \phi \right) \\ &= A \cos \left( \omega_n t \right) \end{align}  |
-| \(-1 \lt \zeta \lt 0 \) | Complex pair roots: sinusoidal, divergent     | \[ x\left(t\right) =  A e^{-\zeta \omega_n t} \sin \left( \omega_d + \phi \right) \] |
+| \(-1  <  \zeta  <  0 \) | Complex pair roots: sinusoidal, divergent     | \[ x\left(t\right) =  A e^{-\zeta \omega_n t} \sin \left( \omega_d + \phi \right) \] |
 | \(\zeta = -1 \)         | Real & equal roots: exponential, divergent    | \[ x\left(t\right) = c_1 e^{-\omega_n \zeta t} + c_2 t e^{-\omega_n \zeta t} \] |
-| \(\zeta \lt -1 \)       | Real & unequal roots: exponential, divergent  | \[ x\left(t\right) = c_1 e^{-\omega_n \left( \zeta + \sqrt{\zeta^2 - 1} \right)t} + c_2 e^{-\omega_n \left( \zeta - \sqrt{\zeta^2 - 1} \right)t} \] |
+| \(\zeta  <  -1 \)       | Real & unequal roots: exponential, divergent  | \[ x\left(t\right) = c_1 e^{-\omega_n \left( \zeta + \sqrt{\zeta^2 - 1} \right)t} + c_2 e^{-\omega_n \left( \zeta - \sqrt{\zeta^2 - 1} \right)t} \] |
 
 **Damping ratio effect on second order system**
 
 Response of various second order systems to an impulse input.
 
-Second-order systems are oscillatory if \( -1 \lt \zeta \lt +1 \).
+Second-order systems are oscillatory if \( -1  <  \zeta  <  +1 \).
 
 Motion typically described by \(\omega_n\) and \(\zeta\)
 
@@ -435,11 +423,11 @@ Motion typically described by \(\omega_n\) and \(\zeta\)
 
 ![][08052]
 
-2nd order system response to **unit step input** for **underdamped systems** ( \(0 \lt \zeta \lt +1 \) )
+2nd order system response to **unit step input** for **underdamped systems** ( \(0  <  \zeta  <  +1 \) )
 
 ![][08053]
 
-**Decay rates (for \(0 \lt \zeta \lt +1\) ) and Useful Insights**
+**Decay rates (for \(0  <  \zeta  <  +1\) ) and Useful Insights**
 
 | | |
 |-|:--|
@@ -462,13 +450,11 @@ Therefore
 
 \[ \frac{x_1}{x_3} = \frac{x_1}{x_2} \frac{x_2}{x_3} = \left( \frac{x_1}{x_2} \right)^2 \Rightarrow \mathrm{HCAR} = \sqrt{\text{full cycle amplitude ratio}}\]
 
-\[
 \begin{align}
 \mathrm{HCAR} &\equiv \frac{x_1}{x_2} =  e^{\zeta \omega_n \left( t_2 - t_1 \right)} =  e^{\zeta \omega_n \left( \Delta t \right)} =  e^{\zeta \omega_n \left( \frac{T}{2} \right)} =  e^{\zeta \omega_n \left( \frac{2\pi}{2\omega_d} \right)} \\
 &=  e^{\zeta \omega_n \left( \frac{\pi}{\omega_n \sqrt{1 - \zeta^2}} \right)} =  e^{\zeta \omega_n \left( \frac{\pi \zeta}{ \sqrt{1 - \zeta^2}} \right)} \\
 &\Rightarrow \ln \frac{x_1}{x_2} = \frac{\pi \zeta}{ \sqrt{1 - \zeta^2}} \Rightarrow \zeta = \sqrt{\frac{\left( \ln \frac{x_1}{x_2} \right)^2}{\pi^2 + \left( \ln \frac{x_1}{x_2} \right)^2}} \\
 \end{align}
-\]
 
 This can be applied in graphical form (transient peak ratio method)
 
@@ -567,21 +553,17 @@ To determine damping ratio
 
 * Use the \(m = 1 \) line when comparing the next ratio.
 
-\[
 \begin{align}
 \frac{\Delta x_1}{\Delta x_0} &= \frac{2.5}{4.5} = 0.56 & \zeta = 0.16 \\
 \frac{\Delta x_2}{\Delta x_1} &= \frac{1.5}{2.5} = 0.60 & \zeta = 0.14 \\
 \end{align}
-\]
 
 * Use the \(m = 2 \) line for comparing every other peak ratio.
 
-\[
 \begin{align}
 \frac{\Delta x_2}{\Delta x_0} &= \frac{1.5}{4.5} = 0.33 & \zeta = 0.16 \\
 \frac{\Delta x_3}{\Delta x_1} &= \frac{1.0}{2.5} = 0.40 & \zeta = 0.14 \\
 \end{align}
-\]
 
 **Method #4** Time Ratio Analysis
 
@@ -619,7 +601,7 @@ Time Ratio
 \zeta = \sqrt{\frac{\left( - \frac{\ln \mathcal{K}}{\pi} \right)^2}{1 + \left( - \frac{\ln \mathcal{K}}{\pi} \right)^2}}
 \]
 
-**Method #6** Separated Real Root Analysis (when \(\zeta \gt 1\))
+**Method #6** Separated Real Root Analysis (when \(\zeta  >  1\))
 
 1. Determine several steady state \(\Delta X \left(t\right)\) values from time history
 
@@ -665,7 +647,7 @@ Time Ratio
 
 3. Use previous method to determine roots and characteristics
 
-* Gross error will result if \(\zeta\) is actually \(\lt 1\)
+* Gross error will result if \(\zeta\) is actually \( <  1\)
 * If \(\zeta\) is near \(1\), check results using time ratio or slope method
 
 **Method \#8** Frequency Sweep Analysis
@@ -724,13 +706,11 @@ Determine \(\omega_n\) and \(\zeta\) using sinusoidal inputs.
 
 Begin with sum of forces in spring-mass-damper example
 
-\[
 \begin{align}
   M \ddot{x} + D \dot{x} + K x &= f \left( t \right) \\
   \text{let } x &= e^{st}, \;\; \text{find transient solution} \\
   \left( Ms^2 + Ds + K \right) e^{st} &= 0  \\
 \end{align}
-\]
 
 Apply quadratic equation to solve for roots
 
@@ -836,23 +816,19 @@ For conversion of accelerometer measurements.
 
 **For British** [\(V\) in \( \frac{\text{inches}}{\text{sec}} \) ], [\(d\) in \( \text{inches} \)]
 
-\[
 \begin{align}
 V &= \frac{386 g}{2 \pi f} \\
 d &= \frac{386 g}{\left( 2 \pi f \right)^2} \\
 &\text{where } 386 = \text{earth's gravitational pull} \left[ \frac{\text{in}}{\text{sec}^2}  \right] \\
 \end{align}
-\]
 
 **For metric** [\(V\) in \( \frac{\text{mm}}{\text{sec}} \) ], [\(d\) in \( \text{mm} \)] 
 
-\[
 \begin{align}
 V &= \frac{9800 g}{2 \pi f} \\
 d &= \frac{9800 g}{\left( 2 \pi f \right)^2} \\
 &\text{where } 9800 = \text{earth's gravitational pull} \left[ \frac{\text{mm}}{\text{sec}^2}  \right] \\
 \end{align}
-\]
 
 **Nomograph - British Units**
 

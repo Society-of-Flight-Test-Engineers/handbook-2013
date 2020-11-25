@@ -247,7 +247,7 @@ where
 The above correction is *not used* above the height that predicts
 
 \[
-\mathrm{GE}_{C_L} \lt 1
+\mathrm{GE}_{C_L}  <  1
 \]
 
 \(C_{D_{\mathrm{IGE}}}\) is the induced drag coefficient while in ground effect. Estimate this by determining the out-of-ground-effect drag coefficient, \(C_{D_{\mathrm{OGE}}}\), at the appropriate angle of attack and correcting it as follows:
@@ -262,7 +262,7 @@ where the ground effect factor, \(\mathrm{GE}_{C_D} = 0.2412 \ln \left( \frac{h}
 The above correction is *not used* above the height that predicts
 
 \[
-\mathrm{GE}_{C_D} \gt 1
+\mathrm{GE}_{C_D}  >  1
 \]
 
 A **direct approximation of takeoff air distance** requires the desired speeds at liftoff and at 50 feet (typically \(1.1 V_s\) and \(1.2 V_s\), respectively).
@@ -400,13 +400,11 @@ A_3
 Although wheel reaction forces are not required for takeoff distance prediction, they are useful for accurate calculation of rotation capability and for braking effectiveness during landing ground rolls.
 For takeoff calculations, several simplifying assumptions can be made such as:
 
-\[
 \begin{align}
 \mu_{\text{nw}} &= \mu_m = 0.02 \\
 F_g &\gg F_e \\
 D_t &= 0
 \end{align}
-\]
 
 This above approach can be repeated for the segment between rotation and liftoff.
 This is slightly more complicated because the changing angle of attack alters drag and acceleration.
@@ -492,7 +490,7 @@ A **direct approximation of landing ground roll** can be obtained by applying th
 same equation used for the takeoff case, Equation \@ref(eq:gnd-roll-dist-to). This method requires a value for 
 the average net thrust, \(T_{\text{avg}}\) across the landing roll speed range and 
 reasonable values for the wheel braking friction coefficient, 
-\( 0.35 \lt \mu \lt 0.50 \) for typical dry runway max braking. The same equations 
+\( 0.35  <  \mu  <  0.50 \) for typical dry runway max braking. The same equations 
 for estimating ground effect also apply.
 
 A **direct approximation of takeoff air distance** including the flare requires 
@@ -769,7 +767,6 @@ then the corresponding turn rate, \(\omega \left[ \frac{\text{radians}}{\text{se
 and radius, \(R \left[ \text{ft} \right] \), are calculated using the equations 
 below.
 
-\[
 \begin{align}
 R &= \frac{V_T^2}{g \sqrt{n_{\text{zw}}^2 - 1}} \\
 \\
@@ -866,7 +863,7 @@ successive iterations of Equations \@ref(eq:load-factor-sus-turn) and \@ref(eq:a
 In cases where
 
 \[
-\frac{F_g}{W} \sin \alpha_F \lt \frac{n_{\text{zw}}}{10}
+\frac{F_g}{W} \sin \alpha_F  <  \frac{n_{\text{zw}}}{10}
 \]
 
 the angle of attack can be roughly estimated without significant error to the 
@@ -885,7 +882,6 @@ The equation below corrects any combination of test day climb, turn, and
 acceleration to a load factor for a sustained turn at the same dynamic pressure 
 but at standard conditions.
 
-\[
 \begin{align}
 n_{\text{zw}_{\text{std}}} = \frac{F_{g_{\text{std}}}}{W_s} \sin \alpha_{F_s} + 
 \left\{ 
@@ -908,7 +904,7 @@ n_{\text{zw}_{\text{std}}} = \frac{F_{g_{\text{std}}}}{W_s} \sin \alpha_{F_s} +
 then the above equation can be closely approximated as
 
 \[
-\text{If } \frac{F_g}{W} \sin \alpha_F \lt \frac{n_{\text{zw}}}{10}
+\text{If } \frac{F_g}{W} \sin \alpha_F  <  \frac{n_{\text{zw}}}{10}
 \]
 
 \[
@@ -963,7 +959,6 @@ M a_0 \sqrt{\theta_t} N_{xw_t}
 
 and
 
-\[
 \begin{align}
 \Delta P_s = M a_0 
 \left\{
@@ -993,7 +988,6 @@ and
       \right)
 \right\}
 \end{align}
-\]
 
 where
 
@@ -1014,7 +1008,6 @@ converges.
 In the simplified case where \(\delta_t = \delta_s\), \(cg_t = cg_{\text{std}} \),
 and \( \sin \alpha_F = 0 \), then the above equation reduces to
 
-\[
 \begin{align}
 \Delta P_s = M a_0 
 \left\{
@@ -1082,7 +1075,6 @@ curve as shown below.
 
 To correct the power required curve to any standard altitude/weight condition, the usual approach is to treat the lift coefficient as the anchor (*C~L\ test\ ~*= *C~L\ std~*). This leads to the following power and velocity standardization equations
 
-\[
 \begin{align}
 P_s = P_t \left( \frac{W_s}{W_t} \right)^{\frac{3}{2}} \left( \frac{\sigma_t}{\sigma_s} \right)^{\frac{1}{2}} \\
 \\
@@ -1098,7 +1090,6 @@ condition. When this condition is chosen to be standard day sea level at maximum
 weight, the above correction simplifies to what is known as the 
 "\(P_{\text{iw}} \sim V_{\text{iw}}\)" values.
 
-\[
 \begin{align}
 P_m = P_{\text{iw}} = P_t \left( \frac{W_s}{W_t} \right)^{\frac{3}{2}} \left( \sigma_t \right)^{\frac{1}{2}}  \\
 \\
@@ -1116,7 +1107,6 @@ Additionally, once the standard power and velocity are known and documented, the
 required power and airspeed for any "mission" conditions can be predicted by 
 reversing Equations \@ref(eq:pwr-vel-std-max-wt) as follows
 
-\[
 \begin{align}
 P_m = P_{\text{iw}} \left( \frac{W_m}{W_s} \right)^{\frac{3}{2}} \left( \frac{1}{\sigma_m} \right)^{\frac{1}{2}} \\
 \\
@@ -1140,7 +1130,6 @@ standardization equations to be accurate, the propeller efficiency and brake
 specific fuel consumption, \(\mathrm{BSFC}\), must be the same for test and 
 standard days.
 
-\[
 \begin{align}
 \dot{W}_{f_s} = \dot{W}_{f_t} \left( \frac{W_s}{W_t} \right)^{\frac{3}{2}} \left( \frac{\sigma_t}{\sigma_s} \right)^{\frac{1}{2}} \\
 \\
@@ -1284,7 +1273,6 @@ From this relation, the only way to match test & standard values for both
 In this case, the test day net thrust required curve can be corrected to 
 standard conditions as follows
 
-\[
 \begin{align}
 F_{n_s} = F_{n_t} \frac{W_s}{W_t}\\
 \\
@@ -1350,7 +1338,6 @@ also be the same for both conditions.
 
 This relation allows standard fuel flow to be calculated as
 
-\[
 \begin{align}
 \dot{W}_{f_s} = \dot{W}_{f_t} \frac{\delta_s \sqrt{\theta_s}}{\delta_t \sqrt{\theta_t}} \\
 \\

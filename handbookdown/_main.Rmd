@@ -1788,43 +1788,43 @@ while \(I_{\mathrm{cg}} < I_z\) yields retrograde precession
 
 |Character| Say | Morse Code |
 |:--------|:----|:-----------|
-|  A|   Alpha      |• ▬|
-|  B|   Bravo      |▬ • • •|
-|  C|   Charlie    |▬ • ▬ •|
-|  D|   Delta      |▬ • •|
-|  E|   Echo       |●|
-|  F|   Foxtrot    |• • ▬ •|
-|  G|   Golf       |▬ ▬ •|
+|  A|   Alpha      |• —|
+|  B|   Bravo      |— • • •|
+|  C|   Charlie    |— • — •|
+|  D|   Delta      |— • •|
+|  E|   Echo       |•|
+|  F|   Foxtrot    |• • — •|
+|  G|   Golf       |— — •|
 |  H|   Hotel      |• • • •|
 |  I|   India      |• •|
-|  J|   Juliet     |• ▬ ▬ ▬|
-|  K|   Kilo       |▬ • ▬|
-|  L|   Lima       |• ▬ • •|
-|  M|   Mike       |▬ ▬|
-|  N|   November   |▬ •|
-|  O|   Oscar      |▬ ▬ ▬|
-|  P|   Papa       |• ▬ ▬ •|
-|  Q|   Quebec     |▬ ▬ • ▬|
-|  R|   Romeo      |• ▬ •|
+|  J|   Juliet     |• — — —|
+|  K|   Kilo       |— • —|
+|  L|   Lima       |• — • •|
+|  M|   Mike       |— —|
+|  N|   November   |— •|
+|  O|   Oscar      |— — —|
+|  P|   Papa       |• — — •|
+|  Q|   Quebec     |— — • —|
+|  R|   Romeo      |• — •|
 |  S|   Sierra     |• • •|
-|  T|   Tango      |▬|
-|  U|   Uniform    |• • ▬|
-|  V|   Victor     |• • • ▬|
-|  W|   Whiskey    |• ▬ ▬|
-|  X|   X-ray      |▬ • • ▬|
-|  Y|   Yankee     |▬ • ▬ ▬|
-|  Z|   Zulu       |▬ ▬ • •|
+|  T|   Tango      |—|
+|  U|   Uniform    |• • —|
+|  V|   Victor     |• • • —|
+|  W|   Whiskey    |• — —|
+|  X|   X-ray      |— • • —|
+|  Y|   Yankee     |— • — —|
+|  Z|   Zulu       |— — • •|
 ||||
-|  1|   One        |• ▬ ▬ ▬ ▬|
-|  2|   Two        |• • ▬ ▬ ▬|
-|  3|   Tree       |• • • ▬ ▬|
-|  4|   Four       |• • • • ▬|
+|  1|   One        |• — — — —|
+|  2|   Two        |• • — — —|
+|  3|   Tree       |• • • — —|
+|  4|   Four       |• • • • —|
 |  5|   Fife       |• • • • •|
-|  6|   Six        |▬ • • • •|
-|  7|   Seven      |▬ ▬ • • •|
-|  8|   Eight      |▬ ▬ ▬ • •|
-|  9|   Niner      |▬ ▬ ▬ ▬ •|
-|  0|   Zee-ro     |▬ ▬ ▬ ▬ ▬|
+|  6|   Six        |— • • • •|
+|  7|   Seven      |— — • • •|
+|  8|   Eight      |— — — • •|
+|  9|   Niner      |— — — — •|
+|  0|   Zee-ro     |— — — — —|
 
 ## References
 
@@ -1880,22 +1880,23 @@ while \(I_{\mathrm{cg}} < I_z\) yields retrograde precession
 |\[ \sqrt{a} + \sqrt{b} = \sqrt{a + b + 2\sqrt{ab}}\]||
 
 Examples:
+
 \[
 \begin{array}{lllll}
 \log (6.54) =  0.8156 &&&&\\
-& \log (6540) &= \log (6.54 \times 10^3 ) &=  0.8156 + 3 &= \fbox{3.8156}&\\
-& \log ( 0.6540) &= \log (6.54 \times 10^{-1}) &=  0.8156 - 1 &= \fbox{9.8156 - 10}&\\
-& \log ( 0.000 6540) &= \log (6.54 \times 10^{-4}) &=  0.8156 - 4 &= \fbox{6.8156 - 10}&
+& \log (6540)         &= \log (6.54 \times 10^3 )   &=  0.8156 + 3 &= \fbox{3.8156}\\
+& \log ( 0.6540)      &= \log (6.54 \times 10^{-1}) &=  0.8156 - 1 &= \fbox{9.8156 - 10}\\
+& \log ( 0.000\,6540) &= \log (6.54 \times 10^{-4}) &=  0.8156 - 4 &= \fbox{6.8156 - 10}\\
 \end{array}
 \]
 
 \[
 \begin{array}{lllll}
 \text{calculate } 68.31 \times  0.2754 &&&&\\
-&log (68.31) &= 1.8354&&\\
-&log ( 0.2754) &= - 0.56&&\\
+&\log (68.31) &= 1.8354&&\\
+&\log ( 0.2754) &= - 0.56&&\\
 &1.8354 +(- 0.56) &= 1.2745&&\\
-&log^{-1} (1.2745) &= \fbox{18.81}&&
+&\log^{-1} (1.2745) &= \fbox{18.81}&&\\
 \end{array}
 \]
 
@@ -1926,6 +1927,7 @@ Examples:
 & x &= \frac{1.44}{- 0.1655} &= \fbox{-8.701}
 \end{array}
 \]
+
 
 ### Equations
 
@@ -2909,7 +2911,7 @@ should be added to the result of every integration
 \[ \int_{}{} \frac{dx}{\sqrt{a^2 - x^2}} = \sin^{-1} \frac{x}{a} \]
 \[ \int_{}{} \frac{dx}{\sqrt{a^2 \pm x^2}} = \ln \left( x - \sqrt{a^2 \pm x^2} \right) \]
 \[ \int_{}{} \sqrt{a^2 - u^2} = \frac{1}{2} \left( u \sqrt{a^2 - x^2} + a^2 \sin^{-1} \frac{u}{a} \right) \]
-\[ \int_{}{} \frac{du}{a^2 + u^2} = \frac{1}{a} \tan^{-1} \frac{u}{a} \text{, } a \gt 0 \]
+\[ \int_{}{} \frac{du}{a^2 + u^2} = \frac{1}{a} \tan^{-1} \frac{u}{a} \text{, } a  >  0 \]
 *Expressions Containing Exponential and Logarithmic Functions*
 \[ \int_{}{} \frac{dx}{x} = \ln{x} \]
 \[ \int_{}{} \mathrm{e}^{x} dx = \mathrm{e}^{x} \]
@@ -2952,23 +2954,23 @@ should be added to the result of every integration
 
 Time Domain \(f(t) = \mathcal{L}^{-1} \left\{ F \left( s \right) \right\} \)      | Frequency Domain \(F\left( s \right) = \mathcal{L} \left\{ f \left( t \right) \right\}\)
 ---------------------------|---------------------------------
-\[1 \text{ (step function)}\]      | \[\frac{1}{s} \text{, where } \left(s\gt 0\right) \]
-\[t\]                         | \[\frac{1}{s^2} \text{, where } \left(s\gt 0\right) \]
-\[t^{n-1}\]                | \[\frac{\left( n-1 \right)!}{s^n} \text{, where } \left(s\gt 0\right) \]
-\[\sqrt{t}\]                  | \[\frac{{\sqrt \pi  }}{{2{s^{\frac{3}{2}}}}} \text{, where } \left(s\gt 0\right) \]
-\[\frac{1}{\sqrt{t}}\]         | \[\frac{{\sqrt \pi  }}{{{s^{\frac{1}{2}}}}} \text{, where } \left(s\gt 0\right) \]                            
-\[{t^{n - \frac{1}{2}}},\,\,\,\,\,n = 1,2,3, \ldots\]     | \[\frac{{1 \cdot 3 \cdot 5 \cdots \left( {2n - 1} \right)\sqrt \pi  }}{{{2^n}{s^{n + \frac{1}{2}}}}} {, where } \left(s\gt 0\right) \]
-\[\mathrm{e}^{at}\]                     | \[ \frac{1}{s-a} \text{, where } \left(s\gt a \right) \]
-\[t\mathrm{e}^{at}\]                    | \[\frac{1}{{\left( {s - a} \right)}^{2}} \text{, where } \left(s\gt a \right) \]
-\[{t^n}{{e}^{at}},\,\,\,\,\,n = 1,2,3, \ldots\] | \[\frac{{n!}}{{{{\left( {s - a} \right)}^{n + 1}}}} \text{, where } \left(s\gt a \right) \]
-\[\sin{at} \]                   | \[\frac{a}{s^2 + a^2} \text{, where } \left(s\gt 0 \right) \]
-\[\cos{at}\]                    | \[\frac{s}{s^2 + a^2} \text{, where } \left(s\gt 0 \right) \]
-\[\mathrm{e}^{bt} \sin{at}\]              | \[\frac{a}{\left(s - b \right)^2 + a^2} \text{, where } \left(s\gt b \right) \]
-\[\mathrm{e}^{bt} \cos{at}\]              | \[\frac{s-b}{\left(s - b \right)^2 + a^2} \text{, where } \left(s\gt b \right) \]
-\[t \sin{at}\]                  | \[\frac{2as}{\left(s^2  - a^2\right)^2} \text{, where } \left(s\gt a \right) \]
-\[t \cos{at}\]                  | \[\frac{s^2  - a^2}{\left(s^2  + a^2\right)^2} \text{, where } \left(s\gt 0 \right) \]
-\[\sinh{at}\]                   | \[\frac{a}{\left(s^2  - a^2\right)^2} \text{, where } \left(s\gt \lvert a \rvert \right) \]
-\[\cosh{at}\]                      |           \[\frac{s}{\left(s^2  - a^2\right)^2} \text{, where } \left(s\gt \lvert a \rvert \right) \]
+\[1 \text{ (step function)}\]      | \[\frac{1}{s} \text{, where } \left(s >  0\right) \]
+\[t\]                         | \[\frac{1}{s^2} \text{, where } \left(s >  0\right) \]
+\[t^{n-1}\]                | \[\frac{\left( n-1 \right)!}{s^n} \text{, where } \left(s >  0\right) \]
+\[\sqrt{t}\]                  | \[\frac{{\sqrt \pi  }}{{2{s^{\frac{3}{2}}}}} \text{, where } \left(s >  0\right) \]
+\[\frac{1}{\sqrt{t}}\]         | \[\frac{{\sqrt \pi  }}{{{s^{\frac{1}{2}}}}} \text{, where } \left(s >  0\right) \]                            
+\[{t^{n - \frac{1}{2}}},\,\,\,\,\,n = 1,2,3, \ldots\]     | \[\frac{{1 \cdot 3 \cdot 5 \cdots \left( {2n - 1} \right)\sqrt \pi  }}{{{2^n}{s^{n + \frac{1}{2}}}}} {, where } \left(s >  0\right) \]
+\[\mathrm{e}^{at}\]                     | \[ \frac{1}{s-a} \text{, where } \left(s >  a \right) \]
+\[t\mathrm{e}^{at}\]                    | \[\frac{1}{{\left( {s - a} \right)}^{2}} \text{, where } \left(s >  a \right) \]
+\[{t^n}{{e}^{at}},\,\,\,\,\,n = 1,2,3, \ldots\] | \[\frac{{n!}}{{{{\left( {s - a} \right)}^{n + 1}}}} \text{, where } \left(s >  a \right) \]
+\[\sin{at} \]                   | \[\frac{a}{s^2 + a^2} \text{, where } \left(s >  0 \right) \]
+\[\cos{at}\]                    | \[\frac{s}{s^2 + a^2} \text{, where } \left(s >  0 \right) \]
+\[\mathrm{e}^{bt} \sin{at}\]              | \[\frac{a}{\left(s - b \right)^2 + a^2} \text{, where } \left(s >  b \right) \]
+\[\mathrm{e}^{bt} \cos{at}\]              | \[\frac{s-b}{\left(s - b \right)^2 + a^2} \text{, where } \left(s >  b \right) \]
+\[t \sin{at}\]                  | \[\frac{2as}{\left(s^2  - a^2\right)^2} \text{, where } \left(s >  a \right) \]
+\[t \cos{at}\]                  | \[\frac{s^2  - a^2}{\left(s^2  + a^2\right)^2} \text{, where } \left(s >  0 \right) \]
+\[\sinh{at}\]                   | \[\frac{a}{\left(s^2  - a^2\right)^2} \text{, where } \left(s >  \lvert a \rvert \right) \]
+\[\cosh{at}\]                      |           \[\frac{s}{\left(s^2  - a^2\right)^2} \text{, where } \left(s >  \lvert a \rvert \right) \]
 \[\sin \left(at + b\right)\]                 |   \[\frac{s\sin{b} + a \cos{b}}{\left(s^2  + a^2\right)^2} \]
 \[\cos \left(at + b\right)\]                 |   \[\frac{s\cos{b} - a \sin{b}}{\left(s^2  + a^2\right)^2} \]
 \[\frac{\mathrm{e}^{at} - \mathrm{e}^{bt}}{a - b}\] | \[\frac{1}{\left(s-a\right)\left(s-b\right)} \]
@@ -2976,7 +2978,7 @@ Time Domain \(f(t) = \mathcal{L}^{-1} \left\{ F \left( s \right) \right\} \)    
 \[\delta \text{ (impulse function)}\]         | \[1\]
 \[\text{square wave, period }=2c\]      | \[\frac{1}{s \left( 1 + \mathrm{e}^{-cs} \right)} \]
 \[\text{triangular wave, period }=2c\]      | \[\frac{1 - \mathrm{e}^{-cs}}{s^2 \left( 1 + \mathrm{e}^{-cs} \right)} \]
-\[ \begin{align} at \text{ for } 0 \leq t \lt c \\ \text{sawtooth wave, period } = c \end{align}\]   | \[ \frac{a \left( 1 + cs - \mathrm{e}^{-cs} \right) }{s^2 \left( 1 - \mathrm{e}^{-cs} \right) } \]
+\begin{align} at \text{ for } 0 \leq t  <  c \\ \text{sawtooth wave, period } = c \end{align}   | \[ \frac{a \left( 1 + cs - \mathrm{e}^{-cs} \right) }{s^2 \left( 1 - \mathrm{e}^{-cs} \right) }\]
 \[\sin{at} \sin{bt} \]           |      \[ \frac{2abs}{\left( s^2 + \left(a+b\right)^2\right) \left( s^2 + \left(a-b\right)^2\right)} \]
 \[\frac{1 - \cos{at}}{a^2}  \]                   | \[ \frac{1}{s \left( s^2 + a^2 \right) } \]
 \[\frac{at - \sin{at}}{a^3}  \]                   | \[ \frac{1}{s^2 \left( s^2 + a^2 \right) } \]
@@ -3174,15 +3176,15 @@ where \(G\) is the universal gravitational constant and \(R_A\) is the absolute 
 |                                                                        |             | 32.174                                                                                       | ft/s^2^   |
 | mass                                                                   |             | \(5.9722 \times 10^{24}\)                                                                    | kg        |
 |                                                                        |             | \(13.22 \times 10^{24}\)                                                                     | lb        |
-| rotation rate                                                          | \(\omega\)  | \(7.292\,115 \times 10^{−5}                                                                    | rad/sec   |
+| rotation rate                                                          | \(\omega\)  | \(7.292\,115 \times 10^{−5}\)                                                                | rad/sec   |
 | average density                                                        |             | \(5.522\)                                                                                    | g/cm^3^   |
 |                                                                        |             | \(344.7\)                                                                                    | lb/ft^3^  |
-| radius average                                                         | \(R_{\mathrm{avg}}\) | \(6\,367\,444\)                                                                                | m         |
+| radius average                                                         | \(R_{\mathrm{avg}}\) | \(6\,367\,444\)                                                                     | m         |
 |                                                                        |             | \(3956.538\)                                                                                 | st. miles |
-|                                                                        |             | \(20\,890\,522\)                                                                               | ft        |
-| radius at the equator                                                  | \(R_e\)     | \(6\,378\,137\)                                                                                | m         |
-| radius at the poles                                                    | \(R_p\)     | \(6\,356\,752\)                                                                                | m         |
-| radius as a function of latitude, \(\phi\) (assumes perfect ellipsoid) |             | \[R = \sqrt{\left(\frac{\cos{\phi}}{R_e}\right)^2 + \left(\frac{\sin{\phi}}{R_p}\right)^2} \] |           |
+|                                                                        |             | \(20\,890\,522\)                                                                             | ft        |
+| radius at the equator                                                  | \(R_e\)     | \(6\,378\,137\)                                                                              | m         |
+| radius at the poles                                                    | \(R_p\)     | \(6\,356\,752\)                                                                              | m         |
+| radius as a function of latitude, \(\phi\) (assumes perfect ellipsoid) |             | \[R = \sqrt{\left(\frac{\cos{\phi}}{R_e}\right)^2 + \left(\frac{\sin{\phi}}{R_p}\right)^2} \]|           |
 
 ### Centrifugal Relief from Gravity {-}
 
@@ -3445,13 +3447,11 @@ Constantly changing atmospheric conditions cannot be duplicated at will to provi
 
 Below \(36\,089\) ft (\(11\,000\) m) and pressure less than \(22\,636\) Pa
 
-\[
 \begin{align}
 \theta &= 1 − \left( L/Τ_ο \right) h = 1 - \left( 6.875\,5856 \times 10^{-6} \right) h \\
 \sigma &= \theta^{n-1} \\
 \delta &= \theta^n \\
 \end{align}
-\]
 
 where \(n = 5.255\,876\), \(h\) = geopotential altitude [ft]
 
@@ -3459,13 +3459,11 @@ where \(n = 5.255\,876\), \(h\) = geopotential altitude [ft]
 
 Between \(36\,089\) ft and \(65\,616\) ft (\(11\,000\) m and \(20\,000\) m) the standard day temperature is a constant \(216.65\) K, therefore:
 
-\[
 \begin{align}
 \theta &= 0.751\,865 \\
 \sigma &= 0.297\,076\, \mathrm{e}^{0.000\,048\,063 \left[ h - 36\,089 \right]} \\
 \delta &= 0.223\,361\, \mathrm{e}^{0.000\,048\,063 \left[ h - 36\,089 \right]} \\
 \end{align}
-\]
 
 The above relations characterize the standard atmosphere table in this handbook.
 They may be re-written to solve for pressure altitude (\(H_p\)) for any ambient pressure. 
@@ -3637,13 +3635,11 @@ The ECEF coordinate system is a Cartesian system with the origin at the earth's 
 
 Geodetic System (lat/long/height) data converts to ECEF as follows:
 
-\[
 \begin{align}
 x &= \left(N + h \right)\cos{\varphi}\cos{\lambda} \\
 y &= \left(N + h \right)\cos{\varphi}\sin{\lambda} \\
 z &= \left(N \left[ 1-e^2 \right] + h \right) \sin{\varphi} \\
 \end{align}
-\]
 
 where,
 
@@ -3691,7 +3687,6 @@ Except when moving around the equator, navigating along a great circle route has
 
 Calculate the **great circle distance (D)** between points (subscripts 1 and 2) as
 
-\[
 \begin{align}
 P_{1} &= \sqrt{x_{1}^{2} + y_{1}^{2} + z_{1}^{2}} \\
 P_{2} &= \sqrt{x_{2}^{2} + y_{2}^{2} + z_{2}^{2}} \\
@@ -3699,7 +3694,6 @@ P_{2} &= \sqrt{x_{2}^{2} + y_{2}^{2} + z_{2}^{2}} \\
 \varphi &= \arccos\left( \frac{x_{1} \cdot x_{2} + y_{1} \cdot y_{2} + z_{1} \cdot z_{2}}{P_{1} \cdot P_{2}} \right) \\
 D &= P_{\mathrm{avg}} \cdot \varphi
 \end{align}
-\]
 
 where
 \(P\) = distance from earth center to any point (including height above the spheroid surface).
@@ -3739,31 +3733,25 @@ Figure 3.8-4a shows a case where the X-Y coordinate system aligns with the latit
 Because each degree of latitude change is not always exactly \(60\) nm and because the spacing between degrees of longitude changes markedly with latitude, converting from degrees latitude & longitude change to distance requires scaling factors.
 First select equatorial distances for each degree change
 
-\[
 \begin{align}
 \phi_{\mathrm{scale}} \left\{ \phi = 0 \right\} &= 110\,574 \text{m} = 362\,776.6 \text{ft} = 59.705\,18 \text{nm} \\
 \lambda_{\mathrm{scale}} \left\{ \phi = 0 \right\} &= 111\,319.5 \text{m} = 365\,221.4 \text{ft} = 60.107\,72 \text{nm} \\
 \end{align}
-\]
 
 Use average latitude to calculate latitude and longitude scaling factors
 
-\[
 \begin{align}
 \phi_{\mathrm{scale}} &= \frac{\phi_{\mathrm{scale}} \left\{ \phi = 0 \right\} }{ \left\lbrack \left( 1 - e^{2} \right)  \sin^{2}(\phi) \right\rbrack^{1.5} } \\
 \\
 \lambda_{\mathrm{scale}} &= \frac{\lbrack \lambda_{\mathrm{scale}} \left\{ \phi = 0 \right\} \rbrack \cdot \cos{\phi}}{\sqrt{ \left(1 - e^2 \right) \sin^{2}{\phi}}} \\
 \end{align}
-\]
 
 Calculate X and Y components of distances aligned with the latitude & longitude grid (Figure 3.8-4a)
 
-\[
 \begin{align}
 Y = \phi_{\mathrm{scale}} \left(\phi_1 - \phi_0 \right) \\
 X = \lambda_{\mathrm{scale}} \left(\lambda_1 - \lambda_0 \right) \\
 \end{align}
-\]
 
 The 2-D *local* (vice great circle) distance between any two points on the X-Y plane is
 
@@ -3775,12 +3763,10 @@ The function \(\psi = \mathrm{atan2} \left( X,Y \right) \) returns rotation angl
 
 For any point (\(\phi, \lambda\)), calculate runway-aligned X & Y distances using
 
-\[
 \begin{align}
 X &= \phi_{\mathrm{scale}} \left(\phi - \phi_0 \right)\sin{\psi} + \lambda_{\mathrm{scale}} \left(\lambda - \lambda_0 \right)\cos{\psi} \\
 Y &= \phi_{\mathrm{scale}} \left(\phi - \phi_0 \right)\cos{\psi} - \lambda_{\mathrm{scale}} \left(\lambda - \lambda_0 \right)\sin{\psi} \\
 \end{align}
-\]
 
 This provides a right-handed rectangular coordinate system where X is positive from (\(\phi_0, \lambda_0\)) towards (\(\phi_1, \lambda_1\)) and Y is positive left of the runway centerline (Figure 3.8-4b).
 
@@ -3860,7 +3846,7 @@ Flight testers can use the above to verify the aircraft's temperature compensati
   [03015]: media/03/image16.svg {width="2.1590277777777778in" height="0.4375in"}
   [03016]: media/03/image17.jpg {width="6.986805555555556in" height="9.0in"}
   [03017]: media/03/image18.jpg {width="6.986805555555556in" height="9.0in"}
-  [03018]: media/03/image19.svg {width="7.0in" height="8.25in"}
+  [03018]: media/03/image19.png {width="7.0in" height="8.25in"}
   [03019]: media/03/image20.svg {width="2.2708333333333335in" height="0.21944444444444444in"}
   [03020]: media/03/image21.svg {width="2.3381944444444445in" height="0.2465277777777778in"}
   [03021]: media/03/image22.png {width="5.334027777777778in" height="5.334027777777778in"}
@@ -3870,10 +3856,10 @@ Flight testers can use the above to verify the aircraft's temperature compensati
   [03025]: media/03/image26.jpeg {width="6.990277777777778in" height="8.995138888888889in"}
   [03026]: media/03/image27.png {width="6.999305555555556in" height="8.748611111111112in"}
   [03027]: media/03/image28.png {width="6.999305555555556in" height="6.999305555555556in"}
-  [03100]: media/03/image29.gif {width="4.71665135608049in" height="3.3229166666666665in"}
+  [03100]: media/03/image29.png {width="4.71665135608049in" height="3.3229166666666665in"}
   [03101]: media/03/image30.jpeg {width="4.69963145231846in" height="2.632075678040245in"}
-  [03028]: media/03/image31.svg {width="4.3740780839895015in" height="4.462264873140858in"}
-  [03029]: media/03/image32.svg {width="3.3050623359580054in" height="3.3113199912510938in"}
+  [03028]: media/03/image31.png {width="4.3740780839895015in" height="4.462264873140858in"}
+  [03029]: media/03/image32.png {width="3.3050623359580054in" height="3.3113199912510938in"}
   [03030]: media/03/image33.png {width="6.0in" height="2.441666666666667in"}
   [[www.colorado.edu/geography/gcraft/notes/gps/gps\_f.html]{.underline}]: http://www.colorado.edu/geography/gcraft/notes/gps/gps_f.html
   [[http://www.digitaldutch.com/atmoscalc/]{.underline}]: http://www.digitaldutch.com/atmoscalc/
@@ -4301,7 +4287,7 @@ Landing configuration: \(\Delta H_{\mathrm{pc}} \pm 30\) ft.
 
 [04001]: media/04/image1.svg {width="1.792361111111111in" height="0.6111111111111112in"}
 [04002]: media/04/image2.svg {width="1.8131944444444446in" height="0.7222222222222222in"}
-[04003]: media/04/image3.svg {width="8.915277777777778in" height="6.207638888888889in"}
+[04003]: media/04/image3.png {width="6.207638888888889in" height="8.915277777777778in"}
 [04004]: media/04/image4.svg {width="1.7715277777777778in" height="0.5277777777777778in"}
 [04005]: media/04/image5.svg {width="2.5006944444444446in" height="0.5277777777777778in"}
 [04006]: media/04/image6.svg {width="2.7631944444444443in" height="0.5in"}
@@ -4312,37 +4298,37 @@ Landing configuration: \(\Delta H_{\mathrm{pc}} \pm 30\) ft.
 [04011]: media/04/image11.svg {width="1.542361111111111in" height="1.0833333333333333in"}
 [04012]: media/04/image12.svg {width="1.4590277777777778in" height="0.5138888888888888in"}
 [04013]: media/04/image13.png {width="5.0in" height="0.82in"}
-[04014]: media/04/image14.svg {width="4.3125in" height="3.0in"}
+[04014]: media/04/image14.png {width="4.3125in" height="3.0in"}
 [04015]: media/04/image15.png {width="4.2034722222222225in" height="4.113194444444445in"}
 [04016]: media/04/image16.svg {width="4.4375in" height="1.375in"}
 [04017]: media/04/image17.png {width="5.2868055555555555in" height="1.7604166666666667in"}
-[04018]: media/04/image18.svg {width="5.1875in" height="3.15in"}
-[04019]: media/04/image19.svg {width="4.5625in" height="4.0625in"}
+[04018]: media/04/image18.png {width="5.1875in" height="3.15in"}
+[04019]: media/04/image19.png {width="4.5625in" height="4.0625in"}
 [04020]: media/04/image20.svg {width="5.3125in" height="3.9611111111111112in"}
-[04021]: media/04/image21.svg {width="5.5125in" height="6.4625in"}
+[04021]: media/04/image21.png {width="5.5125in" height="6.4625in"}
 [04022]: media/04/image22.svg {width="3.145138888888889in" height="0.24513888888888888in"}
-[04023]: media/04/image23.svg {width="5.9375in" height="3.0in"}
+[04023]: media/04/image23.png {width="5.9375in" height="3.0in"}
 [04024]: media/04/image24.svg {width="3.513888888888889in" height="0.6875in"}
 [04025]: media/04/image25.svg {width="1.4375in" height="0.28125in"}
 [04026]: media/04/image26.svg {width="4.5in" height="3.45in"}
 [04027]: media/04/image27.svg {width="3.4375in" height="1.6625in"}
-[04028]: media/04/image28.svg {width="2.7in" height="2.495138888888889in"}
+[04028]: media/04/image28.png {width="2.7in" height="2.495138888888889in"}
 [04029]: media/04/image29.svg {width="5.375in" height="2.1875in"}
 [04030]: media/04/image30.svg {width="6.951388888888889in" height="2.3125in"}
-[04031]: media/04/image31.svg {width="5.0625in" height="2.6875in"}
+[04031]: media/04/image31.png {width="5.0625in" height="2.6875in"}
 [04032]: media/04/image32.png {width="5.0in" height="3.40in"}
 [04033]: media/04/image49.svg {width="2.9in" height="0.5097222222222222in"}
-[04034]: media/04/image50.svg {width="5.75in" height="2.6875in"}
+[04034]: media/04/image50.png {width="5.75in" height="2.6875in"}
 [04035]: media/04/image51.svg {width="2.8in" height="0.4986111111111111in"}
-[04036]: media/04/image52.svg {width="8.630718503937008in" height="6.446496062992126in"}
+[04036]: media/04/image52.png {width="8.630718503937008in" height="6.446496062992126in"}
 [04037]: media/04/image53.png {width="8.686111111111112in" height="6.311805555555556in"}
-[04038]: media/04/image54.svg {width="9.316666666666666in" height="6.4215277777777775in"}
+[04038]: media/04/image54.png {width="6.4215277777777775in" height="9.316666666666666in"}
 [04039]: media/04/image55.png {width="8.6875in" height="5.738194444444445in"} 
-[04040]: media/04/image56.svg {width="9.0in" height="5.7444444444444445in"}
-[04041]: media/04/image57.png {width="9.0in" height="5.338888888888889in"}
-[04042]: media/04/image58.svg {width="9.0in" height="6.511111111111111in"}
-[04047]: media/04/image47.svg
-[04048]: media/04/image48.svg
+[04040]: media/04/image56.png {width="5.7444444444444445in" height="9.0in"}
+[04041]: media/04/image57.png {width="5.338888888888889in" height="9.0in"}
+[04042]: media/04/image58.png {width="6.511111111111111in" height="9.0in"}
+[04047]: media/04/image47.png
+[04048]: media/04/image48.png
 
 <!--chapter:end:04-pitot-statics.Rmd-->
 
@@ -5078,31 +5064,31 @@ To calculate optimum speed \(V_2\) for configuration~2~ & weight~2~ based on opt
 |5.10| Anderson, John D. Jr, "Introduction to Flight" pg 142, Mcraw-Hill, 1989, ISBN 0-07-001641-0.|
 |5.11| Twaites, Bryan, Editor, "Incompressible Aerodynamics: An Account of the steady flow of incompressible Fluid Past Aerofoils, Wings, and Other Bodies," Dover Publications, 1960.|
 
-  [05001]: media/05/image1.svg {width="5.800in" height="3.481in"}
-  [05005]: media/05/image5.svg {width=3.460in" height="2.750in"}
+  [05001]: media/05/image1.png {width="5.800in" height="3.481in"}
+  [05005]: media/05/image5.png {width=3.460in" height="2.750in"}
   [05006]: media/05/image6.svg {width="4.4in" height="1.25in"}
-  [05007]: media/05/image7.svg {width="5.854in" height="3.863in"}
-  [05009]: media/05/image9.svg {width="8.8in" height="2.250in"}
-  [05011]: media/05/image11.svg {width="5.333in" height="4.625in"}
-  [05012]: media/05/image12.svg {width="7.1in" height="3.440in"}
-  [05013]: media/05/image13.svg {width="4.231in" height="2.375in"}
-  [05014]: media/05/image14.svg {width="3.875in" height="2.249in"}
-  [05015]: media/05/image15.svg {width="8.8in" height="2.882in"}
-  [05016]: media/05/image16.svg {width="5.715in" height="5.024in"}
-  [05018]: media/05/image18.svg {width="7.0in" height="3.438in"}
-  [05019]: media/05/image19.svg {width="5.3in" height="5.3in"}
-  [05020]: media/05/image20.svg {width="6.385in" height="1.393in"}
-  [05021]: media/05/image21.svg {width="5.4in" height="5.290in"}
-  [05022]: media/05/image22.svg {width="6.294in" height="2.349in"}
-  [05023]: media/05/image23.svg {width="4.625in" height="3.738in"}
-  [05024]: media/05/image24.svg {width="8.8in" height="3.5in"}
-  [05025]: media/05/image25.svg {width="7.825in" height="3.250in"}
+  [05007]: media/05/image7.png {width="5.854in" height="3.863in"}
+  [05009]: media/05/image9.png {width="8.8in" height="2.250in"}
+  [05011]: media/05/image11.png {width="5.333in" height="4.625in"}
+  [05012]: media/05/image12.png {width="7.1in" height="3.440in"}
+  [05013]: media/05/image13.png {width="4.231in" height="2.375in"}
+  [05014]: media/05/image14.png {width="3.875in" height="2.249in"}
+  [05015]: media/05/image15.png {width="8.8in" height="2.882in"}
+  [05016]: media/05/image16.png {width="5.715in" height="5.024in"}
+  [05018]: media/05/image18.png {width="7.0in" height="3.438in"}
+  [05019]: media/05/image19.png {width="5.3in" height="5.3in"}
+  [05020]: media/05/image20.png {width="6.385in" height="1.393in"}
+  [05021]: media/05/image21.png {width="5.4in" height="5.290in"}
+  [05022]: media/05/image22.png {width="6.294in" height="2.349in"}
+  [05023]: media/05/image23.png {width="4.625in" height="3.738in"}
+  [05024]: media/05/image24.png {width="8.8in" height="3.5in"}
+  [05025]: media/05/image25.png {width="7.825in" height="3.250in"}
   [05026]: media/05/image33.svg {width="7.811in" height="3.250in"}
-  [05031]: media/05/image38.svg {width="4.033in" height="1.625in"}
-  [05033]: media/05/image43.svg {width="6.699in" height="3.906in"}
-  [05036]: media/05/image46.svg {width="8.8in" height="2.875in"}
-  [05037]: media/05/image47.svg {width="5.5in" height="2.644in"}
-  [05038]: media/05/image48.svg {width="5.192in" height="2.750in"}
+  [05031]: media/05/image38.png {width="4.033in" height="1.625in"}
+  [05033]: media/05/image43.png {width="6.699in" height="3.906in"}
+  [05036]: media/05/image46.png {width="8.8in" height="2.875in"}
+  [05037]: media/05/image47.png {width="5.5in" height="2.644in"}
+  [05038]: media/05/image48.png {width="5.192in" height="2.750in"}
   [05039]: media/05/image49.svg {width="8.8in" height="6.0in"}
   [05040]: media/05/image50.svg {width="5.563in" height="2.500in"}
   [05041]: media/05/image51.svg {width="8.8in" height="4.250in"}
@@ -5153,21 +5139,17 @@ The *stability axis* system is similar to the body axis system except that it is
 ![][06003]
 
 Forces, velocities or accelerations along the stability axes are related to the body axes as follows.
-\[
 \begin{align}
 x_b =& x_s \cos \alpha − z_s \sin \alpha \\
 y_b =& y_s \\
 z_b =& z_s \cos \alpha + x_s \sin \alpha
 \end{align}
-\]
 
 For cases where the z axis is defined positive upward (typical for normal-axis accelerometers), we have the following.
-\[
 \begin{align}
 x_b =& x_s \cos \alpha + z_s \sin \alpha \\
 z_b =& z_x \cos \alpha - x_s \sin \alpha
 \end{align}
-\]
 
 ### Wind Axis System
 The *wind axis* system is similar to the stability axis system except it is rotated about the \(z_s\)-axis through the angle of sideslip, \(\beta\).
@@ -5177,13 +5159,11 @@ The term "wind" refers to the fact that the freestream relative wind approaches 
 ![][06004]
 
 Forces, velocities, or accelerations along the wind axes are related to the stability axes as follows
-\[
 \begin{align}
 x_s =&x_w \cos \beta - y_w \sin \beta \\
 y_s =& y_w \cos \beta + x_w \sin \beta \\
 z_s =& z_w
 \end{align}
-\]
 
 The geometric relations between body, stability and wind axis velocities are defined and illustrated here. In general,
 \[ \sin \alpha = \frac{w}{V_T \cos \beta}\] and
@@ -5223,13 +5203,11 @@ z_w
 \]
 
 After expansion,
-\[
 \begin{align}
 x_b =& \cos \alpha (x_w \cos \beta - y_w \sin \beta) - z_w \sin \alpha \\
 y_b =& x_w \sin \beta + y_w \cos \beta \\
 z_b =& \sin \alpha (x_w \cos \beta - y_w \cos \beta) + z_w \cos \alpha 
-\end{align}
-\] 
+\end{align} 
 
 The inverse transform, converting from the body to the wind axis system is as follows.
 \[
@@ -5256,22 +5234,18 @@ z_b
 \]
 
 After expansion,
-\[
 \begin{align}
 x_w =& \cos \beta (x_b \cos \alpha + z_b \sin \alpha) + y_b \sin \beta \\
 y_w =& -\sin \beta(x_b \cos \alpha + z_b \sin \alpha) + y_b \cos \beta \\
 z_w =& -x_b \sin \alpha + z_b \cos \alpha 
-\end{align}
-\] 
+\end{align} 
 
 Note that these equations apply to the sign convention with z+ down. If sign convention (and instrumentation calibration) use z+ upward, then the above equations become:
-\[
 \begin{align}
 x_w =& \cos \beta (x_b \cos \alpha - z_b \sin \alpha) + y_b \sin \beta \\
 y_w =& -\sin \beta(x_b \cos \alpha + z_b \sin \alpha) + y_b \cos \beta \\
 z_w =& x_b \sin \alpha + z_b \cos \alpha 
 \end{align}
-\]
 
 ### Principle Axes
 The *principle axes* are those about which the products of inertia are zero. They can be equated to the axis of "dumbells" which represent concentrated mass elements.  Neglecting aerodynamic and gyroscopic effects, an aircraft rotating about one of its principle axes will not tend to cross-couple into motion about any other axis.
@@ -5310,14 +5284,12 @@ Flight path bank angle
 : \(\mu\) - The angle between the plane formed by the velocity vector and the lift vector and the vertical plane containing the velocity vector. Positive angle is clockwise about the velocity vector, looking forward.
 
 The first two angles above are easily measured using ground-based radar, onboard GPS, or inertial reference systems.  If only \(\alpha, \beta\), andthe Euler angles are available, then we can calculate the flightpath angles, assuming zero wind, as follows.
-\[
 \begin{align}
 \gamma =& \arcsin [(\sin\theta  \cos\alpha - \cos\theta  \cos\phi  \sin\alpha) \cos\beta - \cos\theta  \sin\phi  \sin\beta] \\
 \sigma =& \psi + \arcsin \left[\frac{\cos\phi \sin\beta - \sin\phi \sin\alpha \cos\beta}{\cos\gamma} \right]\\
 \mu =& \arcsin\left[ \frac{\cos\theta \sin\phi \cos\beta + 
 (\sin\theta \cos\alpha -\cos\theta \cos\phi \sin\alpha)}{\cos\gamma}  \right]
 \end{align}
-\]
 
 Technically, the above equations describe the *velocity vector*, that is, the angles relative to the air mass. If the air mass is moving relative to the Earth, as is usually the case, the above equations *do not* describe the true flight path.
 
@@ -5397,26 +5369,21 @@ z_b
 ### Acceleration Transformations
 
 First, we convert body-axis angular rates and linear accelerations into total accelerations along the body axes.
-\[
 \begin{align}
 a_x =& \dot{u} + qw - rv \\
 a_y =& \dot{v} + ru -pw \\
 a_z =& \dot{w} + pv - qu
 \end{align}
-\]
 
 We also convert the location and rates of mass elements, \(m_1\), into specific angular momentum.
-\[
 \begin{align}
 \frac{H}{m_1} =& \, \bar{r_1} \times [\bar{\omega} \times \bar{r_1}] \\
 \left[ \frac{H}{m_1} \right]\hat{i} =& \, p(y^2 + z^2) - q(xy) - r(xz)\\
 \left[ \frac{H}{m_1} \right]\hat{j} =& \, q(x^2+z^2) - r(yz) - p(xy)\\
 \left[ \frac{H}{m_1} \right] \hat{k} =& \, r(x^2+y^2) - p(xz) - q(yz)
 \end{align}
-\]
 
 ### Transformations between body axis rates and Euler angle rates
-\[
 \begin{align}
 p =& \, \dot{\phi} -\dot{\psi} \sin\theta\\
 q =& \, \dot{\theta} \cos\phi + \dot{\psi} \cos{\theta} \sin{\phi}\\
@@ -5425,55 +5392,44 @@ r =& \, \dot{\psi} \cos\theta \cos\phi - \dot{\theta} \sin\phi\\
 \dot{\theta}=& \, q \cos\phi - r\sin\phi\\
 \dot{\psi} =& \frac{q \sin\phi + r \cos\phi}{\cos\theta} \, 
 \end{align}
-\]
 
 ### Transformations from aerodynamic angles to aircraft stability axis angular rates
 Subscripts \(b, s,\) and \(w\) denote the body, stability and wind axis systems.
-\[
 \begin{align}
 p_s =& p_b \cos\alpha + r_b \sin\alpha\, \\
 q_s =& \, q_b\\
 r_s =& \, r_b \cos\alpha - p_b \sin\alpha
 \end{align}
-\]
 
 ### Transformations from aerodynamic angles to the aircraft wind axis angular rates
 Subscripts \(b, s,\) and \(w\) denote the body, stability and wind axis systems.
-\[
 \begin{align}
 p_w =& p_s \cos\beta + q_s \sin\beta\, \\
 q_w =& \, q_s \cos\beta - p_s\sin\beta\\
 r_w =& \, r_s
 \end{align}
-\]
 
 ### Transformations from Euler angles to aircraft body axis angular rates
 (Reference 6.6.3)
-\[
 \begin{align}
 \dot{p_b} =& \, \ddot{\phi} - \ddot{\psi}\sin\theta - \dot{\psi} \, \dot{\theta} \cos\theta  \\
 \dot{q_b} =& \, \ddot{\theta} \cos\phi - \dot{\theta} \, \dot{\phi} \sin{\phi} + \ddot{\phi} \cos\theta \sin\phi - \dot{\psi} \, \dot{\theta} \sin\theta \sin\phi + \dot{\psi} \, \dot{phi} \cos\theta \cos\phi \\
 \dot{r_b} =& \, \ddot{\psi} \cos\theta \cos\phi - \dot{\psi} \, \dot{\theta} \sin\theta \cos\phi - \dot{\psi} \, \dot{\theta} \cos\theta \sin\phi - \ddot{\theta} \sin\phi - \dot{\theta} \, \dot{\phi} \cos\phi
 \end{align}
-\]
 
 ### Transformations from aerodynamic angles and body axis angular rates to aircraft stability axis angular rates
-\[
 \begin{align}
 \dot{p_s} =& \, \dot{p_b} \cos\alpha + \dot{\alpha} \, p_b \sin\alpha + \dot{r_b}\sin\alpha + \dot{\alpha} \, r_b \cos\alpha  \\
 \dot{q_s} =& \, \dot{q_b} \\
 \dot{r_s} =& \, \dot{r_b} \cos\alpha - \dot{\alpha} \, r_b \sin\alpha - \dot{p_b}\sin\alpha - \dot{\alpha} \, p_b \cos\alpha
 \end{align}
-\]
 
 ### Transformations from aerodynamic angles and aircraft stability axis to aircraft wind axis angular rates
-\[
 \begin{align}
 \dot{p_w} =& \, \dot{p_b} \cos\beta + \dot{\beta} \, p_s \sin\beta + \dot{q_s}\sin\beta + \dot{\beta} \, q_s \cos\beta  \\
 \dot{q_w} =& \,  \dot{q_s} \cos\beta - \dot{\beta} \, q_s \sin\beta - \dot{p_s} \sin\beta - \dot{\beta} \, p_s \cos\beta\\
 \dot{r_w} =& \, \dot{r_s}
 \end{align}
-\]
 
 ## References
 
@@ -5701,25 +5657,21 @@ The moment of inertia about any axis of a body is the summation of the product o
 
 ![][07010]
 
-\[
 \begin{align}
 I_{x_b} &\equiv \int \left( y^2 + z^2 \right) dm \\
 I_{y_b} &\equiv \int \left( x^2 + z^2 \right) dm \\
 I_{z_b} &\equiv \int \left( x^2 + y^2 \right) dm \\
 \end{align}
-\]
 
 Products of inertia are also calculated about any body axes. They represent the symmetry of mass distribution (comparing opposing quadrants).
 
 ![][07013]
 
-\[
 \begin{align}
 I_{xy} &= I_{yx} \equiv \int xy dm \\
 I_{yz} &= I_{zy} \equiv \int yz dm \\
 I_{zx} &= I_{xz} \equiv \int zx dm \\
 \end{align}
-\]
 
 
 * Aircraft moments and products of inertia are calculated using body axes as the reference system.
@@ -5741,9 +5693,9 @@ I_{zx} &= I_{xz} \equiv \int zx dm \\
 
 \(I_{z_b}\) is always the largest value.
 
-\(I_{y_b} \gt I_{x_b}\) for fuselage-loaded aircraft.
+\(I_{y_b}  >  I_{x_b}\) for fuselage-loaded aircraft.
 
-\(I_{x_b} \gt I_{y_b}\ \)for wing-loaded aircraft.
+\(I_{x_b}  >  I_{y_b}\ \)for wing-loaded aircraft.
 
 ![][07016]
 
@@ -5901,7 +5853,6 @@ or, for an uninstrumented aircraft,
 L &= I_x \dot{p} - I_{xz} \left( \dot{r} + pq \right) + \left( I_z - I_y \right) qr \text{and} \\
 N &= I_z \dot{r} - I_{xz} \left( \dot{p} - qr \right) + \left( I_y - I_x \right) pq \\
 \end{align}
-\]
 
 * When forcing small motions about only the yaw axis, \(pq\) and \(qr\) are negligible, giving
 
@@ -5910,7 +5861,6 @@ N &= I_z \dot{r} - I_{xz} \left( \dot{p} - qr \right) + \left( I_y - I_x \right)
 L &= I_x \dot{p} - I_{xz} \dot{r} \text{and} \\
 N &=  I_z \dot{r} - I_{xz} \dot{p} \\
 \end{align}
-\]
 
 * If \(\varepsilon\) (and therefore \(I_{xz}\)) is positive, then yawing to the right will generate a left rolling moment.
 * If \(\varepsilon\) and \(I_{xz}\) are negative, a right yaw will generate a *right* moment.
@@ -6099,7 +6049,6 @@ Summing vertical forces gives
 &\frac{dV}{V} + \frac{D}{M} dt = 0 \\
 &\int{}{} \frac{dV}{V} = -\int{}{} \frac{D}{M} dt
 \end{align}
-\]
 
 Since \(D\) & \(M\) are constant
 
@@ -6108,7 +6057,6 @@ Since \(D\) & \(M\) are constant
 \ln V &= -\frac{D}{M} t + C =  -\frac{D}{M} t + \ln c\\
 V_c &= c e^{-\frac{D}{M} t} \;\;\text{complementary solution}\\
 \end{align}
-\]
  
 Apply initial condition
 
@@ -6118,7 +6066,6 @@ V(t=0) &= 10 \mathrm{ft/s} \Rightarrow \\
 10 &= C \\
 V_T &= 10 e^{-\frac{D}{M} t}
 \end{align}
-\]
 
 Plot response over time
 
@@ -6132,7 +6079,6 @@ Exponential rate of decay described by \(\frac{D}{M}\) ratio
 
 Solve using Laplace analysis methods:
 
-\[
 \begin{align}
 M\dot{V} + DV &= 20 \;\;\text{step input} \\
 M\left[ sV(s) - V(0) \right] + D V(s) &= \frac{20}{s} \\
@@ -6149,11 +6095,9 @@ V(s) &= \frac{ \frac{20}{M} \frac{1}{s} + V(0) }{s + \frac{D}{M} } \\
                 } 
   \right\} + \frac{V(0)}{s + \frac{D}{M}} \\
 \end{align}
-\]
 
 Use partial fraction:
 
-\[
 \begin{align}
 \frac{ \frac{20}{M} }{s \left( s + \frac{D}{M} \right) } &= \frac{A}{s} + \frac{B}{s + \frac{D}{M}}\\
 &= \frac{A \left( s + \frac{D}{M} \right)}{s \left( s + \frac{D}{M} \right) } + \frac{B s}{s \left( s + \frac{D}{M} \right) }\\
@@ -6170,13 +6114,11 @@ let \(s = 0\):
 
 \[\frac{20}{M} = A \left( 0 + \frac{D}{M} \right) + 0 \Rightarrow A = \frac{20}{D} \]
 
-\[
 \begin{align}
 V(s) &= \left\{ \frac{A}{s} + \frac{B}{s + \frac{D}{M}} \right\} + \frac{V(0)}{s + \frac{D}{M}} \\
 &= \left\{ \frac{\frac{20}{D}}{s} + \frac{-\frac{20}{D}}{s + \frac{D}{M}} \right\} + \frac{V(0)}{s + \frac{D}{M}} \\
 V(t) &= \left\{ \frac{20}{D} -\frac{20}{D}e^{-\frac{D}{M}t} \right\} + V(0)e^{-\frac{D}{M}t} \\
 \end{align}
-\]
 
 since \(V(0) = 0\) then
 
@@ -6228,11 +6170,11 @@ so, after \(\frac{M}{D}\) seconds have elapsed, \(V =  V_{\mathrm{ss}} \left[1  
 |when \(t = 3\tau\):      |\(x = e^{−3}     \) |\(= 0.05\)|
 |when \(t = 4\tau\):      |\(x = e^{−4}     \) |\(= 0.02\)|
 
-If exponent \(\gt 0\), then motion is divergent.
+If exponent \( >  0\), then motion is divergent.
 
 \[x(t) = ce^{mt}\]
 
-where \(m \gt 0\)
+where \(m  >  0\)
 
 ![][08015]
 
@@ -6244,7 +6186,6 @@ By convention, the "time to double amplitude" (\(t_2\)) is usually applied as th
 
 Therefore
 
-\[
 \begin{align}
 x_2 &= 2c \\
 2c &= ce^{mt_2} \\
@@ -6252,7 +6193,6 @@ x_2 &= 2c \\
 \ln 2 &= mt_2 \\
 \therefore \text{Time to double amplitude } \frac{0.6931}{m} = t_2 = 0.693\tau \\
 \end{align}
-\]
 
 ### Determining \(\tau\) from Step Input Time History
 
@@ -6428,14 +6368,12 @@ and
 
 The values can be substituted to gives
 
-\[
 \begin{align}
 x &= A e^{-\frac{D}{2M} t} \sin \left( \sqrt{\frac{K}{M} - \left(\frac{D}{2M} \right)^2} t + \phi  \right) \\
 &= A e^{-\zeta \omega_n t} \sin \left( \omega_d t + \phi  \right) \\
 &= A e^{-\zeta \omega_n t} \sin \left( \omega_n \sqrt{1 - \zeta^2} t + \phi  \right) \\
 \text{where } \phi &= \tan^{-1} \frac{\omega_d}{\zeta \omega_n} =  \tan^{-1} \frac{\omega_n \sqrt{1 - \zeta^2}}{\zeta \omega_n} =  \tan^{-1} \frac{\sqrt{1 - \zeta^2}}{\zeta} \\
 \end{align}
-\]
 
 <!-- Don't think we need this labeled equation...? -->
 ![][08043]
@@ -6455,19 +6393,19 @@ Possible Solutions:
 
 | | | |
 |-|---|---|
-| \(+1 \lt \zeta\)        | Real & unequal roots: exponential, convergent | \[ x\left(t\right) = c_1 e^{-\omega_n \left( \zeta + \sqrt{\zeta^2 - 1} \right)t} + c_2 e^{-\omega_n \left( \zeta - \sqrt{\zeta^2 - 1} \right)t} \] |
+| \(+1  <  \zeta\)        | Real & unequal roots: exponential, convergent | \[ x\left(t\right) = c_1 e^{-\omega_n \left( \zeta + \sqrt{\zeta^2 - 1} \right)t} + c_2 e^{-\omega_n \left( \zeta - \sqrt{\zeta^2 - 1} \right)t} \] |
 | \(\zeta = +1\)          | Real & equal roots: exponential, convergent   | \[ x\left(t\right) = c_1 e^{-\omega_n \zeta t} + c_2 t e^{-\omega_n \zeta t} \] |
-| \(0 \lt \zeta \lt +1 \) | Complex pair roots: sinusoidal, convergent    | \[ x\left(t\right) =  A e^{-\zeta \omega_n t} \sin \left( \omega_d + \phi \right) \] |
+| \(0  <  \zeta  <  +1 \) | Complex pair roots: sinusoidal, convergent    | \[ x\left(t\right) =  A e^{-\zeta \omega_n t} \sin \left( \omega_d + \phi \right) \] |
 | \(\zeta = 0 \)          | Imaginary pair roots: sinusoidal, neutral     | \begin{align} x\left(t\right) &=  A \sin \left( \omega_n t + \phi \right) \\ &= A \cos \left( \omega_n t \right) \end{align}  |
-| \(-1 \lt \zeta \lt 0 \) | Complex pair roots: sinusoidal, divergent     | \[ x\left(t\right) =  A e^{-\zeta \omega_n t} \sin \left( \omega_d + \phi \right) \] |
+| \(-1  <  \zeta  <  0 \) | Complex pair roots: sinusoidal, divergent     | \[ x\left(t\right) =  A e^{-\zeta \omega_n t} \sin \left( \omega_d + \phi \right) \] |
 | \(\zeta = -1 \)         | Real & equal roots: exponential, divergent    | \[ x\left(t\right) = c_1 e^{-\omega_n \zeta t} + c_2 t e^{-\omega_n \zeta t} \] |
-| \(\zeta \lt -1 \)       | Real & unequal roots: exponential, divergent  | \[ x\left(t\right) = c_1 e^{-\omega_n \left( \zeta + \sqrt{\zeta^2 - 1} \right)t} + c_2 e^{-\omega_n \left( \zeta - \sqrt{\zeta^2 - 1} \right)t} \] |
+| \(\zeta  <  -1 \)       | Real & unequal roots: exponential, divergent  | \[ x\left(t\right) = c_1 e^{-\omega_n \left( \zeta + \sqrt{\zeta^2 - 1} \right)t} + c_2 e^{-\omega_n \left( \zeta - \sqrt{\zeta^2 - 1} \right)t} \] |
 
 **Damping ratio effect on second order system**
 
 Response of various second order systems to an impulse input.
 
-Second-order systems are oscillatory if \( -1 \lt \zeta \lt +1 \).
+Second-order systems are oscillatory if \( -1  <  \zeta  <  +1 \).
 
 Motion typically described by \(\omega_n\) and \(\zeta\)
 
@@ -6479,11 +6417,11 @@ Motion typically described by \(\omega_n\) and \(\zeta\)
 
 ![][08052]
 
-2nd order system response to **unit step input** for **underdamped systems** ( \(0 \lt \zeta \lt +1 \) )
+2nd order system response to **unit step input** for **underdamped systems** ( \(0  <  \zeta  <  +1 \) )
 
 ![][08053]
 
-**Decay rates (for \(0 \lt \zeta \lt +1\) ) and Useful Insights**
+**Decay rates (for \(0  <  \zeta  <  +1\) ) and Useful Insights**
 
 | | |
 |-|:--|
@@ -6506,13 +6444,11 @@ Therefore
 
 \[ \frac{x_1}{x_3} = \frac{x_1}{x_2} \frac{x_2}{x_3} = \left( \frac{x_1}{x_2} \right)^2 \Rightarrow \mathrm{HCAR} = \sqrt{\text{full cycle amplitude ratio}}\]
 
-\[
 \begin{align}
 \mathrm{HCAR} &\equiv \frac{x_1}{x_2} =  e^{\zeta \omega_n \left( t_2 - t_1 \right)} =  e^{\zeta \omega_n \left( \Delta t \right)} =  e^{\zeta \omega_n \left( \frac{T}{2} \right)} =  e^{\zeta \omega_n \left( \frac{2\pi}{2\omega_d} \right)} \\
 &=  e^{\zeta \omega_n \left( \frac{\pi}{\omega_n \sqrt{1 - \zeta^2}} \right)} =  e^{\zeta \omega_n \left( \frac{\pi \zeta}{ \sqrt{1 - \zeta^2}} \right)} \\
 &\Rightarrow \ln \frac{x_1}{x_2} = \frac{\pi \zeta}{ \sqrt{1 - \zeta^2}} \Rightarrow \zeta = \sqrt{\frac{\left( \ln \frac{x_1}{x_2} \right)^2}{\pi^2 + \left( \ln \frac{x_1}{x_2} \right)^2}} \\
 \end{align}
-\]
 
 This can be applied in graphical form (transient peak ratio method)
 
@@ -6611,21 +6547,17 @@ To determine damping ratio
 
 * Use the \(m = 1 \) line when comparing the next ratio.
 
-\[
 \begin{align}
 \frac{\Delta x_1}{\Delta x_0} &= \frac{2.5}{4.5} = 0.56 & \zeta = 0.16 \\
 \frac{\Delta x_2}{\Delta x_1} &= \frac{1.5}{2.5} = 0.60 & \zeta = 0.14 \\
 \end{align}
-\]
 
 * Use the \(m = 2 \) line for comparing every other peak ratio.
 
-\[
 \begin{align}
 \frac{\Delta x_2}{\Delta x_0} &= \frac{1.5}{4.5} = 0.33 & \zeta = 0.16 \\
 \frac{\Delta x_3}{\Delta x_1} &= \frac{1.0}{2.5} = 0.40 & \zeta = 0.14 \\
 \end{align}
-\]
 
 **Method #4** Time Ratio Analysis
 
@@ -6663,7 +6595,7 @@ Time Ratio
 \zeta = \sqrt{\frac{\left( - \frac{\ln \mathcal{K}}{\pi} \right)^2}{1 + \left( - \frac{\ln \mathcal{K}}{\pi} \right)^2}}
 \]
 
-**Method #6** Separated Real Root Analysis (when \(\zeta \gt 1\))
+**Method #6** Separated Real Root Analysis (when \(\zeta  >  1\))
 
 1. Determine several steady state \(\Delta X \left(t\right)\) values from time history
 
@@ -6709,7 +6641,7 @@ Time Ratio
 
 3. Use previous method to determine roots and characteristics
 
-* Gross error will result if \(\zeta\) is actually \(\lt 1\)
+* Gross error will result if \(\zeta\) is actually \( <  1\)
 * If \(\zeta\) is near \(1\), check results using time ratio or slope method
 
 **Method \#8** Frequency Sweep Analysis
@@ -6768,13 +6700,11 @@ Determine \(\omega_n\) and \(\zeta\) using sinusoidal inputs.
 
 Begin with sum of forces in spring-mass-damper example
 
-\[
 \begin{align}
   M \ddot{x} + D \dot{x} + K x &= f \left( t \right) \\
   \text{let } x &= e^{st}, \;\; \text{find transient solution} \\
   \left( Ms^2 + Ds + K \right) e^{st} &= 0  \\
 \end{align}
-\]
 
 Apply quadratic equation to solve for roots
 
@@ -6880,23 +6810,19 @@ For conversion of accelerometer measurements.
 
 **For British** [\(V\) in \( \frac{\text{inches}}{\text{sec}} \) ], [\(d\) in \( \text{inches} \)]
 
-\[
 \begin{align}
 V &= \frac{386 g}{2 \pi f} \\
 d &= \frac{386 g}{\left( 2 \pi f \right)^2} \\
 &\text{where } 386 = \text{earth's gravitational pull} \left[ \frac{\text{in}}{\text{sec}^2}  \right] \\
 \end{align}
-\]
 
 **For metric** [\(V\) in \( \frac{\text{mm}}{\text{sec}} \) ], [\(d\) in \( \text{mm} \)] 
 
-\[
 \begin{align}
 V &= \frac{9800 g}{2 \pi f} \\
 d &= \frac{9800 g}{\left( 2 \pi f \right)^2} \\
 &\text{where } 9800 = \text{earth's gravitational pull} \left[ \frac{\text{mm}}{\text{sec}^2}  \right] \\
 \end{align}
-\]
 
 **Nomograph - British Units**
 
@@ -7120,7 +7046,6 @@ d &= \frac{9800 g}{\left( 2 \pi f \right)^2} \\
   \text{where } \sigma &= \text{the applied axial load} \\
   A &= \text{cross-sectional area over which the load is applied} \\
   \end{align}
-\]
 
 **Strain** (\(e\)) is the deformation of a material under an applied load. In the basic form this can be presented as
 
@@ -7156,7 +7081,6 @@ A typical stress & strain relationship for a material is illustrated as
   \alpha_F &= \text{incidence angle between thrust line and relative wind} \\
   \phi &= \text{angle of bank}
   \end{align}
-\]
 
 
 **Body Axis Normal Load Factor**  \( \left(N_{zb} \right) \) is calculated as
@@ -7167,7 +7091,6 @@ A typical stress & strain relationship for a material is illustrated as
   \text{where } N_{xb} &= \text{load factor along aircraft body x-axis} \\
   \alpha &= \text{angle of attack} \\
   \end{align}
-\]
 
 For the simplified case of negligible thrust lift, the maximum achievable \( N_{zb} \) at any flight speed can be calculated as
 
@@ -7178,8 +7101,7 @@ For the simplified case of negligible thrust lift, the maximum achievable \( N_{
   &\text{(i.e., true, equivalent, calibrated)} \\
   V &= \text{flight airspeed} \\
   V_s &= \text{stall airspeed} \\
-  \end{align}
-\] 
+  \end{align} 
 
 A general normal load flight envelope (V-n diagram) would appear as
 
@@ -7199,7 +7121,6 @@ A general normal load flight envelope (V-n diagram) would appear as
   \text{where } W_t &= \text{test weight} \\
   W_s &= \text{standard weight} \\
   \end{align}
-\]
 
 * The increase in load factor due to a vertical gust \( \Delta n \) is calculated as
 
@@ -7211,7 +7132,6 @@ A general normal load flight envelope (V-n diagram) would appear as
   \mathrm{KU} &= \text{effective gust velocity (fps)} \\
   \frac{W}{S} &= \text{wing loading (psf)} \\
   \end{align}
-\]
 
 ## Strain Gages
 
@@ -7229,7 +7149,6 @@ Strain \( \left( e \right) \) is measured using the electrical resistance measur
   \Delta R &= \text{change in resistance due to load} \\
   & + \Delta R \text{ for tension} \\
   \end{align}
-\]
 
 * For the bi-axial gage oriented coincident with the principal axes (maximum strain), each leg of the gage is analyzed as a uniaxial gage using the above equation for the principle strains. The associated stresses are
 
@@ -7241,7 +7160,6 @@ Strain \( \left( e \right) \) is measured using the electrical resistance measur
   E &= \text{Young's Modulus of the material} \\
   \nu &= \text{Poisson's ratio for the material (ratio of compression and tension strains)} \\
   \end{align}
-\]
 
 * For the Rosette gage, the principal strains and stresses are derived as
 
@@ -7252,7 +7170,6 @@ Strain \( \left( e \right) \) is measured using the electrical resistance measur
   \text{where } & e \text{ denotes the strain in each of the three legs of the Rosette} \\
   &\text{(+ is used for the maximum and - for the minimum)} \\
 \end{align}
-\]
 
 To accurately measure the very small resistance changes in a strain gage, a *Wheatstone Bridge* is typically used
 
@@ -7733,7 +7650,6 @@ V_R = \sqrt{V_T^2 + \left( 2 \pi r n \right)^2}
 Integrating lift and drag along a blade gives the thrust, \(T\), and torque, \(Q\). 
 Multiply by number of blades, \(B\), to determine total \(T\) and \(Q\).
 
-\[
 \begin{align}
 T &= qB \int_{R_1}^{R_2} \frac{c}{\sin^2 \phi} \left( C_L \cos \phi - C_D \sin \phi \right) dr \\
 Q &= qB \int_{R_1}^{R_2} \frac{cr}{\sin^2 \phi} \left( C_L \sin \phi - C_D \cos \phi \right) dr \\
@@ -7741,7 +7657,6 @@ Q &= qB \int_{R_1}^{R_2} \frac{cr}{\sin^2 \phi} \left( C_L \sin \phi - C_D \cos 
 \text{Torque Coefficient, } C_Q &\equiv \frac{Q}{\rho n^2 D^5} \\
 \text{Power Coefficient, } C_P &\equiv \frac{P}{\rho n^3 D^5} = \frac{Q \times \omega}{\rho n^3 D^5} = \frac{Q \times 2 \pi n}{\rho n^3 D^5} = 2 \pi \frac{Q}{\rho n^2 D^5} = 2 \pi C_Q \\
 \end{align}
-\]
 
 Typical effect of advance ratio on thrust and torque coefficients
 
@@ -7882,12 +7797,10 @@ As an alternate, the **incremental drag method** requires an accurate engine pow
 * Trim the aircraft at test \(\text{RPM}\), \(V_T\) , & altitude. Note \(\mathrm{SHP}\) required.
 * Repeat above test with drag device and load cell attached. Note the power requirement change, \(\Delta \mathrm{SHP}\), and load cell drag, \(\Delta D\).
 
-\[
 \begin{align}
 \eta_p \cdot \mathrm{BHP}_{\mathrm{AC}} &= \frac{V_T}{550}D \\
 \eta_p \cdot \mathrm{BHP}_{\mathrm{AC} + \Delta D} &= \frac{V_T}{550} \left(D + \Delta D \right) \\
 \end{align}
-\]
 
 ![][11034]
 
@@ -8197,7 +8110,7 @@ where
 The above correction is *not used* above the height that predicts
 
 \[
-\mathrm{GE}_{C_L} \lt 1
+\mathrm{GE}_{C_L}  <  1
 \]
 
 \(C_{D_{\mathrm{IGE}}}\) is the induced drag coefficient while in ground effect. Estimate this by determining the out-of-ground-effect drag coefficient, \(C_{D_{\mathrm{OGE}}}\), at the appropriate angle of attack and correcting it as follows:
@@ -8212,7 +8125,7 @@ where the ground effect factor, \(\mathrm{GE}_{C_D} = 0.2412 \ln \left( \frac{h}
 The above correction is *not used* above the height that predicts
 
 \[
-\mathrm{GE}_{C_D} \gt 1
+\mathrm{GE}_{C_D}  >  1
 \]
 
 A **direct approximation of takeoff air distance** requires the desired speeds at liftoff and at 50 feet (typically \(1.1 V_s\) and \(1.2 V_s\), respectively).
@@ -8350,13 +8263,11 @@ A_3
 Although wheel reaction forces are not required for takeoff distance prediction, they are useful for accurate calculation of rotation capability and for braking effectiveness during landing ground rolls.
 For takeoff calculations, several simplifying assumptions can be made such as:
 
-\[
 \begin{align}
 \mu_{\text{nw}} &= \mu_m = 0.02 \\
 F_g &\gg F_e \\
 D_t &= 0
 \end{align}
-\]
 
 This above approach can be repeated for the segment between rotation and liftoff.
 This is slightly more complicated because the changing angle of attack alters drag and acceleration.
@@ -8442,7 +8353,7 @@ A **direct approximation of landing ground roll** can be obtained by applying th
 same equation used for the takeoff case, Equation \@ref(eq:gnd-roll-dist-to). This method requires a value for 
 the average net thrust, \(T_{\text{avg}}\) across the landing roll speed range and 
 reasonable values for the wheel braking friction coefficient, 
-\( 0.35 \lt \mu \lt 0.50 \) for typical dry runway max braking. The same equations 
+\( 0.35  <  \mu  <  0.50 \) for typical dry runway max braking. The same equations 
 for estimating ground effect also apply.
 
 A **direct approximation of takeoff air distance** including the flare requires 
@@ -8719,7 +8630,6 @@ then the corresponding turn rate, \(\omega \left[ \frac{\text{radians}}{\text{se
 and radius, \(R \left[ \text{ft} \right] \), are calculated using the equations 
 below.
 
-\[
 \begin{align}
 R &= \frac{V_T^2}{g \sqrt{n_{\text{zw}}^2 - 1}} \\
 \\
@@ -8816,7 +8726,7 @@ successive iterations of Equations \@ref(eq:load-factor-sus-turn) and \@ref(eq:a
 In cases where
 
 \[
-\frac{F_g}{W} \sin \alpha_F \lt \frac{n_{\text{zw}}}{10}
+\frac{F_g}{W} \sin \alpha_F  <  \frac{n_{\text{zw}}}{10}
 \]
 
 the angle of attack can be roughly estimated without significant error to the 
@@ -8835,7 +8745,6 @@ The equation below corrects any combination of test day climb, turn, and
 acceleration to a load factor for a sustained turn at the same dynamic pressure 
 but at standard conditions.
 
-\[
 \begin{align}
 n_{\text{zw}_{\text{std}}} = \frac{F_{g_{\text{std}}}}{W_s} \sin \alpha_{F_s} + 
 \left\{ 
@@ -8858,7 +8767,7 @@ n_{\text{zw}_{\text{std}}} = \frac{F_{g_{\text{std}}}}{W_s} \sin \alpha_{F_s} +
 then the above equation can be closely approximated as
 
 \[
-\text{If } \frac{F_g}{W} \sin \alpha_F \lt \frac{n_{\text{zw}}}{10}
+\text{If } \frac{F_g}{W} \sin \alpha_F  <  \frac{n_{\text{zw}}}{10}
 \]
 
 \[
@@ -8913,7 +8822,6 @@ M a_0 \sqrt{\theta_t} N_{xw_t}
 
 and
 
-\[
 \begin{align}
 \Delta P_s = M a_0 
 \left\{
@@ -8943,7 +8851,6 @@ and
       \right)
 \right\}
 \end{align}
-\]
 
 where
 
@@ -8964,7 +8871,6 @@ converges.
 In the simplified case where \(\delta_t = \delta_s\), \(cg_t = cg_{\text{std}} \),
 and \( \sin \alpha_F = 0 \), then the above equation reduces to
 
-\[
 \begin{align}
 \Delta P_s = M a_0 
 \left\{
@@ -9032,7 +8938,6 @@ curve as shown below.
 
 To correct the power required curve to any standard altitude/weight condition, the usual approach is to treat the lift coefficient as the anchor (*C~L\ test\ ~*= *C~L\ std~*). This leads to the following power and velocity standardization equations
 
-\[
 \begin{align}
 P_s = P_t \left( \frac{W_s}{W_t} \right)^{\frac{3}{2}} \left( \frac{\sigma_t}{\sigma_s} \right)^{\frac{1}{2}} \\
 \\
@@ -9048,7 +8953,6 @@ condition. When this condition is chosen to be standard day sea level at maximum
 weight, the above correction simplifies to what is known as the 
 "\(P_{\text{iw}} \sim V_{\text{iw}}\)" values.
 
-\[
 \begin{align}
 P_m = P_{\text{iw}} = P_t \left( \frac{W_s}{W_t} \right)^{\frac{3}{2}} \left( \sigma_t \right)^{\frac{1}{2}}  \\
 \\
@@ -9066,7 +8970,6 @@ Additionally, once the standard power and velocity are known and documented, the
 required power and airspeed for any "mission" conditions can be predicted by 
 reversing Equations \@ref(eq:pwr-vel-std-max-wt) as follows
 
-\[
 \begin{align}
 P_m = P_{\text{iw}} \left( \frac{W_m}{W_s} \right)^{\frac{3}{2}} \left( \frac{1}{\sigma_m} \right)^{\frac{1}{2}} \\
 \\
@@ -9090,7 +8993,6 @@ standardization equations to be accurate, the propeller efficiency and brake
 specific fuel consumption, \(\mathrm{BSFC}\), must be the same for test and 
 standard days.
 
-\[
 \begin{align}
 \dot{W}_{f_s} = \dot{W}_{f_t} \left( \frac{W_s}{W_t} \right)^{\frac{3}{2}} \left( \frac{\sigma_t}{\sigma_s} \right)^{\frac{1}{2}} \\
 \\
@@ -9234,7 +9136,6 @@ From this relation, the only way to match test & standard values for both
 In this case, the test day net thrust required curve can be corrected to 
 standard conditions as follows
 
-\[
 \begin{align}
 F_{n_s} = F_{n_t} \frac{W_s}{W_t}\\
 \\
@@ -9300,7 +9201,6 @@ also be the same for both conditions.
 
 This relation allows standard fuel flow to be calculated as
 
-\[
 \begin{align}
 \dot{W}_{f_s} = \dot{W}_{f_t} \frac{\delta_s \sqrt{\theta_s}}{\delta_t \sqrt{\theta_t}} \\
 \\
@@ -9576,13 +9476,11 @@ Human hearing range is approximately \(20\) to \(20\,000 \text{ Hz}\)
 
 where 
 
-\[
 \begin{align}
 r &= \text{distance from source}\\
 Q &= \text{directivity index of source}\\
 R &= \text{room constant}\\
 \end{align}
-\]
 
 **Acoustic Intensity**
 
@@ -9592,13 +9490,11 @@ I - \frac{\text{Imaginary} \left[ G_{yx} \left( f \right) \right]}{4 \pi \rho_0 
 
 where 
 
-\[
 \begin{align}
 \rho_0 &= \text{fluid density} = 1.293 \frac{\text{kg}}{\text{m^3}} \text{ for air}\\
 \Delta r &= \text{microphone spacing (meters)}\\
 f &= \text{frequency}\\
 \end{align}
-\]
 
 **Intensity Spectrum Level (ISL)**
 
@@ -9610,14 +9506,12 @@ Intensity level of a sound contained within a band 1 \(\text{Hz}\) wide
 
 where
 
-\[
 \begin{align}
 f &= \text{center frequency of band} \\
 I &= \text{sound intensity} \left( \frac{\text{watts}}{\text{m}^2} \right) \\
 I_0 &= 10^{-12} \frac{\text{watt}}{\text{m}^2} \text{reference intensity} \\
 \Delta f &= \text{bandwidth} \left( \text{Hz} \right) \\
 \end{align}
-\]
 
 ## Acoustic Weighting Curves
 
@@ -9779,13 +9673,11 @@ Test engineers.
 
 Decibel Logarithmic (base 10) expression for amplitude ratios.
 
-\[
 \begin{align}
 \text{dB(power)} &= 10 \log_10 \left( \frac{P_1}{P_2} \right) \\
 \text{dB(voltage)} &= 20 \log_10 \left( \frac{V_1}{V_2} \right) \\
 \text{dB(current)} &= 20 \log_10 \left( \frac{I_1}{I_2} \right) \\
 \end{align}
-\]
 
 Commonly used decibels for EMC:
 

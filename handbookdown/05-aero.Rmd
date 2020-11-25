@@ -730,31 +730,31 @@ To calculate optimum speed \(V_2\) for configuration~2~ & weight~2~ based on opt
 |5.10| Anderson, John D. Jr, "Introduction to Flight" pg 142, Mcraw-Hill, 1989, ISBN 0-07-001641-0.|
 |5.11| Twaites, Bryan, Editor, "Incompressible Aerodynamics: An Account of the steady flow of incompressible Fluid Past Aerofoils, Wings, and Other Bodies," Dover Publications, 1960.|
 
-  [05001]: media/05/image1.svg {width="5.800in" height="3.481in"}
-  [05005]: media/05/image5.svg {width=3.460in" height="2.750in"}
+  [05001]: media/05/image1.png {width="5.800in" height="3.481in"}
+  [05005]: media/05/image5.png {width=3.460in" height="2.750in"}
   [05006]: media/05/image6.svg {width="4.4in" height="1.25in"}
-  [05007]: media/05/image7.svg {width="5.854in" height="3.863in"}
-  [05009]: media/05/image9.svg {width="8.8in" height="2.250in"}
-  [05011]: media/05/image11.svg {width="5.333in" height="4.625in"}
-  [05012]: media/05/image12.svg {width="7.1in" height="3.440in"}
-  [05013]: media/05/image13.svg {width="4.231in" height="2.375in"}
-  [05014]: media/05/image14.svg {width="3.875in" height="2.249in"}
-  [05015]: media/05/image15.svg {width="8.8in" height="2.882in"}
-  [05016]: media/05/image16.svg {width="5.715in" height="5.024in"}
-  [05018]: media/05/image18.svg {width="7.0in" height="3.438in"}
-  [05019]: media/05/image19.svg {width="5.3in" height="5.3in"}
-  [05020]: media/05/image20.svg {width="6.385in" height="1.393in"}
-  [05021]: media/05/image21.svg {width="5.4in" height="5.290in"}
-  [05022]: media/05/image22.svg {width="6.294in" height="2.349in"}
-  [05023]: media/05/image23.svg {width="4.625in" height="3.738in"}
-  [05024]: media/05/image24.svg {width="8.8in" height="3.5in"}
-  [05025]: media/05/image25.svg {width="7.825in" height="3.250in"}
+  [05007]: media/05/image7.png {width="5.854in" height="3.863in"}
+  [05009]: media/05/image9.png {width="8.8in" height="2.250in"}
+  [05011]: media/05/image11.png {width="5.333in" height="4.625in"}
+  [05012]: media/05/image12.png {width="7.1in" height="3.440in"}
+  [05013]: media/05/image13.png {width="4.231in" height="2.375in"}
+  [05014]: media/05/image14.png {width="3.875in" height="2.249in"}
+  [05015]: media/05/image15.png {width="8.8in" height="2.882in"}
+  [05016]: media/05/image16.png {width="5.715in" height="5.024in"}
+  [05018]: media/05/image18.png {width="7.0in" height="3.438in"}
+  [05019]: media/05/image19.png {width="5.3in" height="5.3in"}
+  [05020]: media/05/image20.png {width="6.385in" height="1.393in"}
+  [05021]: media/05/image21.png {width="5.4in" height="5.290in"}
+  [05022]: media/05/image22.png {width="6.294in" height="2.349in"}
+  [05023]: media/05/image23.png {width="4.625in" height="3.738in"}
+  [05024]: media/05/image24.png {width="8.8in" height="3.5in"}
+  [05025]: media/05/image25.png {width="7.825in" height="3.250in"}
   [05026]: media/05/image33.svg {width="7.811in" height="3.250in"}
-  [05031]: media/05/image38.svg {width="4.033in" height="1.625in"}
-  [05033]: media/05/image43.svg {width="6.699in" height="3.906in"}
-  [05036]: media/05/image46.svg {width="8.8in" height="2.875in"}
-  [05037]: media/05/image47.svg {width="5.5in" height="2.644in"}
-  [05038]: media/05/image48.svg {width="5.192in" height="2.750in"}
+  [05031]: media/05/image38.png {width="4.033in" height="1.625in"}
+  [05033]: media/05/image43.png {width="6.699in" height="3.906in"}
+  [05036]: media/05/image46.png {width="8.8in" height="2.875in"}
+  [05037]: media/05/image47.png {width="5.5in" height="2.644in"}
+  [05038]: media/05/image48.png {width="5.192in" height="2.750in"}
   [05039]: media/05/image49.svg {width="8.8in" height="6.0in"}
   [05040]: media/05/image50.svg {width="5.563in" height="2.500in"}
   [05041]: media/05/image51.svg {width="8.8in" height="4.250in"}

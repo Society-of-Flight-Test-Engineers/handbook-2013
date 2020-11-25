@@ -82,13 +82,11 @@ Human hearing range is approximately \(20\) to \(20\,000 \text{ Hz}\)
 
 where 
 
-\[
 \begin{align}
 r &= \text{distance from source}\\
 Q &= \text{directivity index of source}\\
 R &= \text{room constant}\\
 \end{align}
-\]
 
 **Acoustic Intensity**
 
@@ -98,13 +96,11 @@ I - \frac{\text{Imaginary} \left[ G_{yx} \left( f \right) \right]}{4 \pi \rho_0 
 
 where 
 
-\[
 \begin{align}
 \rho_0 &= \text{fluid density} = 1.293 \frac{\text{kg}}{\text{m^3}} \text{ for air}\\
 \Delta r &= \text{microphone spacing (meters)}\\
 f &= \text{frequency}\\
 \end{align}
-\]
 
 **Intensity Spectrum Level (ISL)**
 
@@ -116,14 +112,12 @@ Intensity level of a sound contained within a band 1 \(\text{Hz}\) wide
 
 where
 
-\[
 \begin{align}
 f &= \text{center frequency of band} \\
 I &= \text{sound intensity} \left( \frac{\text{watts}}{\text{m}^2} \right) \\
 I_0 &= 10^{-12} \frac{\text{watt}}{\text{m}^2} \text{reference intensity} \\
 \Delta f &= \text{bandwidth} \left( \text{Hz} \right) \\
 \end{align}
-\]
 
 ## Acoustic Weighting Curves
 

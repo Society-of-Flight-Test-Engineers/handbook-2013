@@ -103,7 +103,6 @@ V_R = \sqrt{V_T^2 + \left( 2 \pi r n \right)^2}
 Integrating lift and drag along a blade gives the thrust, \(T\), and torque, \(Q\). 
 Multiply by number of blades, \(B\), to determine total \(T\) and \(Q\).
 
-\[
 \begin{align}
 T &= qB \int_{R_1}^{R_2} \frac{c}{\sin^2 \phi} \left( C_L \cos \phi - C_D \sin \phi \right) dr \\
 Q &= qB \int_{R_1}^{R_2} \frac{cr}{\sin^2 \phi} \left( C_L \sin \phi - C_D \cos \phi \right) dr \\
@@ -111,7 +110,6 @@ Q &= qB \int_{R_1}^{R_2} \frac{cr}{\sin^2 \phi} \left( C_L \sin \phi - C_D \cos 
 \text{Torque Coefficient, } C_Q &\equiv \frac{Q}{\rho n^2 D^5} \\
 \text{Power Coefficient, } C_P &\equiv \frac{P}{\rho n^3 D^5} = \frac{Q \times \omega}{\rho n^3 D^5} = \frac{Q \times 2 \pi n}{\rho n^3 D^5} = 2 \pi \frac{Q}{\rho n^2 D^5} = 2 \pi C_Q \\
 \end{align}
-\]
 
 Typical effect of advance ratio on thrust and torque coefficients
 
@@ -252,12 +250,10 @@ As an alternate, the **incremental drag method** requires an accurate engine pow
 * Trim the aircraft at test \(\text{RPM}\), \(V_T\) , & altitude. Note \(\mathrm{SHP}\) required.
 * Repeat above test with drag device and load cell attached. Note the power requirement change, \(\Delta \mathrm{SHP}\), and load cell drag, \(\Delta D\).
 
-\[
 \begin{align}
 \eta_p \cdot \mathrm{BHP}_{\mathrm{AC}} &= \frac{V_T}{550}D \\
 \eta_p \cdot \mathrm{BHP}_{\mathrm{AC} + \Delta D} &= \frac{V_T}{550} \left(D + \Delta D \right) \\
 \end{align}
-\]
 
 ![][11034]
 

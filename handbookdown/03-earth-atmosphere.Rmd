@@ -55,15 +55,15 @@ where \(G\) is the universal gravitational constant and \(R_A\) is the absolute 
 |                                                                        |             | 32.174                                                                                       | ft/s^2^   |
 | mass                                                                   |             | \(5.9722 \times 10^{24}\)                                                                    | kg        |
 |                                                                        |             | \(13.22 \times 10^{24}\)                                                                     | lb        |
-| rotation rate                                                          | \(\omega\)  | \(7.292\,115 \times 10^{−5}                                                                    | rad/sec   |
+| rotation rate                                                          | \(\omega\)  | \(7.292\,115 \times 10^{−5}\)                                                                | rad/sec   |
 | average density                                                        |             | \(5.522\)                                                                                    | g/cm^3^   |
 |                                                                        |             | \(344.7\)                                                                                    | lb/ft^3^  |
-| radius average                                                         | \(R_{\mathrm{avg}}\) | \(6\,367\,444\)                                                                                | m         |
+| radius average                                                         | \(R_{\mathrm{avg}}\) | \(6\,367\,444\)                                                                     | m         |
 |                                                                        |             | \(3956.538\)                                                                                 | st. miles |
-|                                                                        |             | \(20\,890\,522\)                                                                               | ft        |
-| radius at the equator                                                  | \(R_e\)     | \(6\,378\,137\)                                                                                | m         |
-| radius at the poles                                                    | \(R_p\)     | \(6\,356\,752\)                                                                                | m         |
-| radius as a function of latitude, \(\phi\) (assumes perfect ellipsoid) |             | \[R = \sqrt{\left(\frac{\cos{\phi}}{R_e}\right)^2 + \left(\frac{\sin{\phi}}{R_p}\right)^2} \] |           |
+|                                                                        |             | \(20\,890\,522\)                                                                             | ft        |
+| radius at the equator                                                  | \(R_e\)     | \(6\,378\,137\)                                                                              | m         |
+| radius at the poles                                                    | \(R_p\)     | \(6\,356\,752\)                                                                              | m         |
+| radius as a function of latitude, \(\phi\) (assumes perfect ellipsoid) |             | \[R = \sqrt{\left(\frac{\cos{\phi}}{R_e}\right)^2 + \left(\frac{\sin{\phi}}{R_p}\right)^2} \]|           |
 
 ### Centrifugal Relief from Gravity {-}
 
@@ -326,13 +326,11 @@ Constantly changing atmospheric conditions cannot be duplicated at will to provi
 
 Below \(36\,089\) ft (\(11\,000\) m) and pressure less than \(22\,636\) Pa
 
-\[
 \begin{align}
 \theta &= 1 − \left( L/Τ_ο \right) h = 1 - \left( 6.875\,5856 \times 10^{-6} \right) h \\
 \sigma &= \theta^{n-1} \\
 \delta &= \theta^n \\
 \end{align}
-\]
 
 where \(n = 5.255\,876\), \(h\) = geopotential altitude [ft]
 
@@ -340,13 +338,11 @@ where \(n = 5.255\,876\), \(h\) = geopotential altitude [ft]
 
 Between \(36\,089\) ft and \(65\,616\) ft (\(11\,000\) m and \(20\,000\) m) the standard day temperature is a constant \(216.65\) K, therefore:
 
-\[
 \begin{align}
 \theta &= 0.751\,865 \\
 \sigma &= 0.297\,076\, \mathrm{e}^{0.000\,048\,063 \left[ h - 36\,089 \right]} \\
 \delta &= 0.223\,361\, \mathrm{e}^{0.000\,048\,063 \left[ h - 36\,089 \right]} \\
 \end{align}
-\]
 
 The above relations characterize the standard atmosphere table in this handbook.
 They may be re-written to solve for pressure altitude (\(H_p\)) for any ambient pressure. 
@@ -518,13 +514,11 @@ The ECEF coordinate system is a Cartesian system with the origin at the earth's 
 
 Geodetic System (lat/long/height) data converts to ECEF as follows:
 
-\[
 \begin{align}
 x &= \left(N + h \right)\cos{\varphi}\cos{\lambda} \\
 y &= \left(N + h \right)\cos{\varphi}\sin{\lambda} \\
 z &= \left(N \left[ 1-e^2 \right] + h \right) \sin{\varphi} \\
 \end{align}
-\]
 
 where,
 
@@ -572,7 +566,6 @@ Except when moving around the equator, navigating along a great circle route has
 
 Calculate the **great circle distance (D)** between points (subscripts 1 and 2) as
 
-\[
 \begin{align}
 P_{1} &= \sqrt{x_{1}^{2} + y_{1}^{2} + z_{1}^{2}} \\
 P_{2} &= \sqrt{x_{2}^{2} + y_{2}^{2} + z_{2}^{2}} \\
@@ -580,7 +573,6 @@ P_{2} &= \sqrt{x_{2}^{2} + y_{2}^{2} + z_{2}^{2}} \\
 \varphi &= \arccos\left( \frac{x_{1} \cdot x_{2} + y_{1} \cdot y_{2} + z_{1} \cdot z_{2}}{P_{1} \cdot P_{2}} \right) \\
 D &= P_{\mathrm{avg}} \cdot \varphi
 \end{align}
-\]
 
 where
 \(P\) = distance from earth center to any point (including height above the spheroid surface).
@@ -620,31 +612,25 @@ Figure 3.8-4a shows a case where the X-Y coordinate system aligns with the latit
 Because each degree of latitude change is not always exactly \(60\) nm and because the spacing between degrees of longitude changes markedly with latitude, converting from degrees latitude & longitude change to distance requires scaling factors.
 First select equatorial distances for each degree change
 
-\[
 \begin{align}
 \phi_{\mathrm{scale}} \left\{ \phi = 0 \right\} &= 110\,574 \text{m} = 362\,776.6 \text{ft} = 59.705\,18 \text{nm} \\
 \lambda_{\mathrm{scale}} \left\{ \phi = 0 \right\} &= 111\,319.5 \text{m} = 365\,221.4 \text{ft} = 60.107\,72 \text{nm} \\
 \end{align}
-\]
 
 Use average latitude to calculate latitude and longitude scaling factors
 
-\[
 \begin{align}
 \phi_{\mathrm{scale}} &= \frac{\phi_{\mathrm{scale}} \left\{ \phi = 0 \right\} }{ \left\lbrack \left( 1 - e^{2} \right)  \sin^{2}(\phi) \right\rbrack^{1.5} } \\
 \\
 \lambda_{\mathrm{scale}} &= \frac{\lbrack \lambda_{\mathrm{scale}} \left\{ \phi = 0 \right\} \rbrack \cdot \cos{\phi}}{\sqrt{ \left(1 - e^2 \right) \sin^{2}{\phi}}} \\
 \end{align}
-\]
 
 Calculate X and Y components of distances aligned with the latitude & longitude grid (Figure 3.8-4a)
 
-\[
 \begin{align}
 Y = \phi_{\mathrm{scale}} \left(\phi_1 - \phi_0 \right) \\
 X = \lambda_{\mathrm{scale}} \left(\lambda_1 - \lambda_0 \right) \\
 \end{align}
-\]
 
 The 2-D *local* (vice great circle) distance between any two points on the X-Y plane is
 
@@ -656,12 +642,10 @@ The function \(\psi = \mathrm{atan2} \left( X,Y \right) \) returns rotation angl
 
 For any point (\(\phi, \lambda\)), calculate runway-aligned X & Y distances using
 
-\[
 \begin{align}
 X &= \phi_{\mathrm{scale}} \left(\phi - \phi_0 \right)\sin{\psi} + \lambda_{\mathrm{scale}} \left(\lambda - \lambda_0 \right)\cos{\psi} \\
 Y &= \phi_{\mathrm{scale}} \left(\phi - \phi_0 \right)\cos{\psi} - \lambda_{\mathrm{scale}} \left(\lambda - \lambda_0 \right)\sin{\psi} \\
 \end{align}
-\]
 
 This provides a right-handed rectangular coordinate system where X is positive from (\(\phi_0, \lambda_0\)) towards (\(\phi_1, \lambda_1\)) and Y is positive left of the runway centerline (Figure 3.8-4b).
 
@@ -741,7 +725,7 @@ Flight testers can use the above to verify the aircraft's temperature compensati
   [03015]: media/03/image16.svg {width="2.1590277777777778in" height="0.4375in"}
   [03016]: media/03/image17.jpg {width="6.986805555555556in" height="9.0in"}
   [03017]: media/03/image18.jpg {width="6.986805555555556in" height="9.0in"}
-  [03018]: media/03/image19.svg {width="7.0in" height="8.25in"}
+  [03018]: media/03/image19.png {width="7.0in" height="8.25in"}
   [03019]: media/03/image20.svg {width="2.2708333333333335in" height="0.21944444444444444in"}
   [03020]: media/03/image21.svg {width="2.3381944444444445in" height="0.2465277777777778in"}
   [03021]: media/03/image22.png {width="5.334027777777778in" height="5.334027777777778in"}
@@ -751,10 +735,10 @@ Flight testers can use the above to verify the aircraft's temperature compensati
   [03025]: media/03/image26.jpeg {width="6.990277777777778in" height="8.995138888888889in"}
   [03026]: media/03/image27.png {width="6.999305555555556in" height="8.748611111111112in"}
   [03027]: media/03/image28.png {width="6.999305555555556in" height="6.999305555555556in"}
-  [03100]: media/03/image29.gif {width="4.71665135608049in" height="3.3229166666666665in"}
+  [03100]: media/03/image29.png {width="4.71665135608049in" height="3.3229166666666665in"}
   [03101]: media/03/image30.jpeg {width="4.69963145231846in" height="2.632075678040245in"}
-  [03028]: media/03/image31.svg {width="4.3740780839895015in" height="4.462264873140858in"}
-  [03029]: media/03/image32.svg {width="3.3050623359580054in" height="3.3113199912510938in"}
+  [03028]: media/03/image31.png {width="4.3740780839895015in" height="4.462264873140858in"}
+  [03029]: media/03/image32.png {width="3.3050623359580054in" height="3.3113199912510938in"}
   [03030]: media/03/image33.png {width="6.0in" height="2.441666666666667in"}
   [[www.colorado.edu/geography/gcraft/notes/gps/gps\_f.html]{.underline}]: http://www.colorado.edu/geography/gcraft/notes/gps/gps_f.html
   [[http://www.digitaldutch.com/atmoscalc/]{.underline}]: http://www.digitaldutch.com/atmoscalc/

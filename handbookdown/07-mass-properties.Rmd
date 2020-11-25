@@ -183,25 +183,21 @@ The moment of inertia about any axis of a body is the summation of the product o
 
 ![][07010]
 
-\[
 \begin{align}
 I_{x_b} &\equiv \int \left( y^2 + z^2 \right) dm \\
 I_{y_b} &\equiv \int \left( x^2 + z^2 \right) dm \\
 I_{z_b} &\equiv \int \left( x^2 + y^2 \right) dm \\
 \end{align}
-\]
 
 Products of inertia are also calculated about any body axes. They represent the symmetry of mass distribution (comparing opposing quadrants).
 
 ![][07013]
 
-\[
 \begin{align}
 I_{xy} &= I_{yx} \equiv \int xy dm \\
 I_{yz} &= I_{zy} \equiv \int yz dm \\
 I_{zx} &= I_{xz} \equiv \int zx dm \\
 \end{align}
-\]
 
 
 * Aircraft moments and products of inertia are calculated using body axes as the reference system.
@@ -223,9 +219,9 @@ I_{zx} &= I_{xz} \equiv \int zx dm \\
 
 \(I_{z_b}\) is always the largest value.
 
-\(I_{y_b} \gt I_{x_b}\) for fuselage-loaded aircraft.
+\(I_{y_b}  >  I_{x_b}\) for fuselage-loaded aircraft.
 
-\(I_{x_b} \gt I_{y_b}\ \)for wing-loaded aircraft.
+\(I_{x_b}  >  I_{y_b}\ \)for wing-loaded aircraft.
 
 ![][07016]
 
@@ -383,7 +379,6 @@ or, for an uninstrumented aircraft,
 L &= I_x \dot{p} - I_{xz} \left( \dot{r} + pq \right) + \left( I_z - I_y \right) qr \text{and} \\
 N &= I_z \dot{r} - I_{xz} \left( \dot{p} - qr \right) + \left( I_y - I_x \right) pq \\
 \end{align}
-\]
 
 * When forcing small motions about only the yaw axis, \(pq\) and \(qr\) are negligible, giving
 
@@ -392,7 +387,6 @@ N &= I_z \dot{r} - I_{xz} \left( \dot{p} - qr \right) + \left( I_y - I_x \right)
 L &= I_x \dot{p} - I_{xz} \dot{r} \text{and} \\
 N &=  I_z \dot{r} - I_{xz} \dot{p} \\
 \end{align}
-\]
 
 * If \(\varepsilon\) (and therefore \(I_{xz}\)) is positive, then yawing to the right will generate a left rolling moment.
 * If \(\varepsilon\) and \(I_{xz}\) are negative, a right yaw will generate a *right* moment.

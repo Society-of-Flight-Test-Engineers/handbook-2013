@@ -38,13 +38,11 @@ Test engineers.
 
 Decibel Logarithmic (base 10) expression for amplitude ratios.
 
-\[
 \begin{align}
 \text{dB(power)} &= 10 \log_10 \left( \frac{P_1}{P_2} \right) \\
 \text{dB(voltage)} &= 20 \log_10 \left( \frac{V_1}{V_2} \right) \\
 \text{dB(current)} &= 20 \log_10 \left( \frac{I_1}{I_2} \right) \\
 \end{align}
-\]
 
 Commonly used decibels for EMC:
 
