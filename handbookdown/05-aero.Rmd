@@ -117,7 +117,7 @@ Dimensions of reference wing area, \(S\) are the same
 
 *Note in the figure above the Reynolds effects are exaggerated*
 
-<!--- FIXME: I don't like the inconcistent use of \mathrm{Rn} and \mathrm{Re} for Reynolds number --->
+<!--- FIXME: I don't like the inconsistent use of \mathrm{Rn} and \mathrm{Re} for Reynolds number --->
 To compare test day and standard day aircraft or to match wind tunnel \(C_F\) data to actual aircraft; the shape, roughness, \(M\), \(\mathrm{Rn}\) and \(\alpha\) must be equal for both aircraft
 
 ![][05009]
@@ -280,7 +280,7 @@ Turbulent boundary layer: \(\text{Total } C_f = \frac{0.455}{\left(\log(\mathrm{
 
 * Depth of boundary layer \((\delta)\) depends on local Reynolds number \((\mathrm{Re}_x)\) and whether the flow is turbulent or laminar.
 
-\[\mathrm{Re}_x = \frac{\rho_{\infty} V_{\infty} x}{\mu_{\infty}} \equiv \frac{\text{Intertia Forces}}{\text{Viscous Forces}} \]
+\[\mathrm{Re}_x = \frac{\rho_{\infty} V_{\infty} x}{\mu_{\infty}} \equiv \frac{\text{Inertia Forces}}{\text{Viscous Forces}} \]
 
 \(x = \) distance traveled to point in question
 
@@ -727,7 +727,7 @@ To calculate optimum speed \(V_2\) for configuration~2~ & weight~2~ based on opt
 |5.7 |Anon, "Equations, Tables, and Charts for Compressible Flow" NACA Report 1135, 1953|
 |5.8 |Lewis, Gregory, "Aerodynamics for Flight Testers" *Chapter 6, Supersonic Aerodynamics*, National Test Pilot School, Mojave CA, 1999|
 |5.9 |White, Frank M. "Fluid Mechanics" pg 29, McGraw-Hill, 1979, ISBN 0-07-069667-5.|
-|5.10| Anderson, John D. Jr, "Introduction to Flight" pg 142, Mcraw-Hill, 1989, ISBN 0-07-001641-0.|
+|5.10| Anderson, John D. Jr, "Introduction to Flight" pg 142, McGraw-Hill, 1989, ISBN 0-07-001641-0.|
 |5.11| Twaites, Bryan, Editor, "Incompressible Aerodynamics: An Account of the steady flow of incompressible Fluid Past Aerofoils, Wings, and Other Bodies," Dover Publications, 1960.|
 
   [05001]: media/05/image1.png {width="5.800in" height="3.481in"}
@@ -755,25 +755,25 @@ To calculate optimum speed \(V_2\) for configuration~2~ & weight~2~ based on opt
   [05036]: media/05/image46.png {width="8.8in" height="2.875in"}
   [05037]: media/05/image47.png {width="5.5in" height="2.644in"}
   [05038]: media/05/image48.png {width="5.192in" height="2.750in"}
-  [05039]: media/05/image49.svg {width="8.8in" height="6.0in"}
-  [05040]: media/05/image50.svg {width="5.563in" height="2.500in"}
-  [05041]: media/05/image51.svg {width="8.8in" height="4.250in"}
-  [05048]: media/05/image59.svg {width="7.124in" height="4.500in"}
-  [05051]: media/05/image62.svg {width="8.8in" height="7.0in"}
-  [05052]: media/05/image63.svg {width="5.163in" height="4.068in"}
-  [05053]: media/05/image64.svg {width="7.2in" height="5.311in"}
-  [05055]: media/05/image66.svg {width="8.8in" height="7.5in"}
-  [05056]: media/05/image67.svg {width="5.075in" height="4.250in"}
-  [05058]: media/05/image69.svg {width="3.531in" height="1.0in"}
-  [05061]: media/05/image72.svg {width="4.596in" height="1.444in"}
-  [05062]: media/05/image73.svg {width="4.203in" height="3.513in"}
-  [05064]: media/05/image75.svg {width="4.272in" height="3.725in"}
-  [05065]: media/05/image76.svg {width="4.750in" height="3.460in"}
-  [05069]: media/05/image80.svg {width="5.271in" height="6.875in"}
-  [05070]: media/05/image81.svg {width="6.325in" height="3.274in"}
-  [05072]: media/05/image83.svg {width="5.851in" height="6.075in"}
-  [05073]: media/05/image84.svg {width="6.528in" height="6.229in"}
-  [05074]: media/05/image86.svg {width="7.750in" height="2.844in"}
-  [05077]: media/05/image89.svg {width="6.5in" height="7.507in"}
-  [05080]: media/05/image95.svg {width="6.7143in" height="3.875in"}
-  [05082]: media/05/image97.svg {width="5.750in" height="4.174in"}
+  [05039]: media/05/image49.png {width="8.8in" height="6.0in"}
+  [05040]: media/05/image50.png {width="5.563in" height="2.500in"}
+  [05041]: media/05/image51.png {width="8.8in" height="4.250in"}
+  [05048]: media/05/image59.png {width="7.124in" height="4.500in"}
+  [05051]: media/05/image62.png {width="8.8in" height="7.0in"}
+  [05052]: media/05/image63.png {width="5.163in" height="4.068in"}
+  [05053]: media/05/image64.png {width="7.2in" height="5.311in"}
+  [05055]: media/05/image66.png {width="8.8in" height="7.5in"}
+  [05056]: media/05/image67.png {width="5.075in" height="4.250in"}
+  [05058]: media/05/image69.png {width="3.531in" height="1.0in"}
+  [05061]: media/05/image72.png {width="4.596in" height="1.444in"}
+  [05062]: media/05/image73.png {width="4.203in" height="3.513in"}
+  [05064]: media/05/image75.png {width="4.272in" height="3.725in"}
+  [05065]: media/05/image76.png {width="4.750in" height="3.460in"}
+  [05069]: media/05/image80.png {width="5.271in" height="6.875in"}
+  [05070]: media/05/image81.png {width="6.325in" height="3.274in"}
+  [05072]: media/05/image83.png {width="5.851in" height="6.075in"}
+  [05073]: media/05/image84.png {width="6.528in" height="6.229in"}
+  [05074]: media/05/image86.png {width="7.750in" height="2.844in"}
+  [05077]: media/05/image89.png {width="6.5in" height="7.507in"}
+  [05080]: media/05/image95.png {width="6.7143in" height="3.875in"}
+  [05082]: media/05/image97.png {width="5.750in" height="4.174in"}
