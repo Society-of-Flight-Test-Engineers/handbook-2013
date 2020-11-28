@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.11.25)  28 NOV 2020 11:24
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.11.25)  28 NOV 2020 14:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2028,34 +2028,119 @@ Overfull \hbox (70.45432pt too wide) in paragraph at lines 9916--9917
 [][] 
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.2 on input line 9982.
-
 [208] [209] [210
 
 ]
 Chapter 6.
+File: media/06/image1.png Graphic file (type bmp)
+<media/06/image1.png>
 
-LaTeX Warning: File `media/06/image1.svg' not found on input line 9996.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[211]
+File: media/06/image2.png Graphic file (type bmp)
+<media/06/image2.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[212]
+File: media/06/image4.png Graphic file (type bmp)
+<media/06/image4.png>
+[213]
+File: media/06/image5.png Graphic file (type bmp)
+<media/06/image5.png>
+File: media/06/image6.png Graphic file (type bmp)
+<media/06/image6.png>
+
+Underfull \vbox (badness 3179) has occurred while \output is active []
+
+[214] [215]
+File: media/06/image11.png Graphic file (type bmp)
+<media/06/image11.png>
+[216]
+File: media/06/image12.png Graphic file (type bmp)
+<media/06/image12.png>
+[217]
+Overfull \hbox (47.39949pt too wide) detected at line 10236
+[] [] [] []
+ []
 
 
-! LaTeX Error: Cannot determine size of graphic in media/06/image1.svg (no Boun
+Overfull \hbox (49.19948pt too wide) detected at line 10255
+[] [] [] []
+ []
+
+[218] [219] [220]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 6.1 on input line 10357.
+
+[221] [222
+
+]
+Chapter 7.
+
+Overfull \hbox (3.3579pt too wide) in paragraph at lines 10409--10410
+[]\TU/lmr/m/n/10 [rad/sec]|  
+ []
+
+
+Overfull \hbox (3.3579pt too wide) in paragraph at lines 10416--10417
+[]\TU/lmr/m/n/10 [rad/sec]|  
+ []
+
+
+Overfull \hbox (14.19789pt too wide) in paragraph at lines 10444--10445
+[]\TU/lmr/m/n/10 [cycles/sec]|  
+ []
+
+[223]
+Overfull \hbox (2.04979pt too wide) in paragraph at lines 10603--10604
+[]\TU/lmr/m/n/10 allowable 
+ []
+
+
+Overfull \hbox (14.29979pt too wide) in paragraph at lines 10628--10629
+[]\TU/lmr/m/n/10 longitudinal|  
+ []
+
+
+Overfull \hbox (5.37979pt too wide) in paragraph at lines 10633--10634
+[]\TU/lmr/m/n/10 maximum 
+ []
+
+
+Overfull \hbox (3.43979pt too wide) in paragraph at lines 10638--10639
+[]\TU/lmr/m/n/10 minimum 
+ []
+
+[224]
+Overfull \hbox (27.28453pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 7.2.  LONGITUDINAL & LATERAL CENTER OF GRAVITY MEASUREMENT \TU/
+lmr/m/n/10 225
+ []
+
+[225]
+
+LaTeX Warning: File `media/07/image1.svg' not found on input line 10734.
+
+
+! LaTeX Error: Cannot determine size of graphic in media/07/image1.svg (no Boun
 dingBox).
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9996 ...n,height=3.83958in]{media/06/image1.svg}
+l.10734 ...,height=1.77083in]{media/07/image1.svg}
                                                    
 Here is how much of TeX's memory you used:
- 17061 strings out of 479393
- 304530 string characters out of 5877969
- 784118 words of memory out of 5000000
- 36124 multiletter control sequences out of 15000+600000
+ 17113 strings out of 479393
+ 305589 string characters out of 5877969
+ 784718 words of memory out of 5000000
+ 36173 multiletter control sequences out of 15000+600000
  542564 words of font info for 96 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  94i,15n,118p,1102b,595s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on _main.pdf (210 pages).
+Output written on _main.pdf (225 pages).

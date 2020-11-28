@@ -324,17 +324,17 @@ r_w =& \, r_s
 |6.6.3| Kalviste, Juri, *Flight Dynamics Reference Handbook*, Northrop Corp. Aircraft Division, April 1988.|
 
 
-  [06001]: media/06/image1.svg {width="4.709027777777778in" height="3.839583333333333in"}
-  [06002]: media/06/image2.svg {width="3.65625in" height="3.03125in"}
-  [06003]: media/06/image4.svg {width="4.5in" height="1.625in"}
-  [06004]: media/06/image5.svg {width="1.6993055555555556in" height="2.0701388888888888in"}
-  [06005]: media/06/image6.svg {width="2.4590277777777776in" height="2.21875in"}
+  [06001]: media/06/image1.png {width="4.709027777777778in" height="3.839583333333333in"}
+  [06002]: media/06/image2.png {width="3.65625in" height="3.03125in"}
+  [06003]: media/06/image4.png {width="4.5in" height="1.625in"}
+  [06004]: media/06/image5.png {width="1.6993055555555556in" height="2.0701388888888888in"}
+  [06005]: media/06/image6.png {width="2.4590277777777776in" height="2.21875in"}
   [06006]: media/06/image7.svg {width="1.8416666666666666in" height="0.44583333333333336in"}
   [06007]: media/06/image8.svg {width="2.588888888888889in" height="0.8777777777777778in"}
   [06008]: media/06/image9.svg {width="3.277083333333333in" height="0.6652777777777777in"}
   [06009]: media/06/image10.svg {width="3.3229166666666665in" height="0.6895833333333333in"}
-  [06010]: media/06/image11.svg {width="4.5in" height="2.375in"}
-  [06011]: media/06/image12.svg {width="4.0in" height="4.125in"}
+  [06010]: media/06/image11.png {width="4.5in" height="2.375in"}
+  [06011]: media/06/image12.png {width="4.0in" height="4.125in"}
   [06012]: media/06/image13.svg {width="4.342361111111111in" height="0.4583333333333333in"}
   [06013]: media/06/image14.svg {width="3.0in" height="0.75in"}
   [06014]: media/06/image15.svg {width="4.5125in" height="0.29791666666666666in"}

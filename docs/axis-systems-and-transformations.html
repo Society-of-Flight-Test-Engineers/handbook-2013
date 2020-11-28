@@ -556,7 +556,7 @@
 <p>Both fixed-earth and moving-earth axis systems keep constant <em>orientation</em> with respect to the Earth. The <span class="math inline">\(z\)</span>-axis point towards the center of the Earth.
 <em>The origin of a fixed-earth system does not move relative to the Earth (such as a ground radar site).
 </em>The origin of a moving-earth system does not move relative to its host (such as an aircraft inertial reference unit).</p>
-<p><img src="media/06/image1.svg" style="width:4.70903in;height:3.83958in" /></p>
+<p><img src="media/06/image1.png" style="width:4.70903in;height:3.83958in" /></p>
 </div>
 <div id="aircraft-axis-systems" class="section level2" number="6.2">
 <h2><span class="header-section-number">6.2</span> Aircraft Axis Systems</h2>
@@ -564,12 +564,12 @@
 <div id="body-axis-system" class="section level3" number="6.2.1">
 <h3><span class="header-section-number">6.2.1</span> Body Axis System</h3>
 <p>The <em>body axis</em> system, denoted by a subscript <span class="math inline">\(b\)</span>, originates at the aircraft center of gravity. The positive direction of the <span class="math inline">\(x_b\)</span>-axis is towards the front. The positive direction of the <span class="math inline">\(y_b\)</span>-axis is towards the right wing tip, and the positive direction of the <span class="math inline">\(z_b\)</span>-axis is towards the bottom of the aircraft.</p>
-<p><img src="media/06/image2.svg" style="width:3.65625in;height:3.03125in" /></p>
+<p><img src="media/06/image2.png" style="width:3.65625in;height:3.03125in" /></p>
 </div>
 <div id="stability-axis-system" class="section level3" number="6.2.2">
 <h3><span class="header-section-number">6.2.2</span> Stability Axis System</h3>
 <p>The <em>stability axis</em> system is similar to the body axis system except that it is rotated about the <span class="math inline">\(y\)</span>-axis through the angle of attack <span class="math inline">\(\alpha\)</span>.</p>
-<p><img src="media/06/image4.svg" style="width:4.5in;height:1.625in" /></p>
+<p><img src="media/06/image4.png" style="width:4.5in;height:1.625in" /></p>
 <p>Forces, velocities or accelerations along the stability axes are related to the body axes as follows.
 <span class="math display">\[\begin{align}
 x_b =&amp; x_s \cos \alpha − z_s \sin \alpha \\
@@ -586,7 +586,7 @@ z_b =&amp; z_x \cos \alpha - x_s \sin \alpha
 <h3><span class="header-section-number">6.2.3</span> Wind Axis System</h3>
 <p>The <em>wind axis</em> system is similar to the stability axis system except it is rotated about the <span class="math inline">\(z_s\)</span>-axis through the angle of sideslip, <span class="math inline">\(\beta\)</span>.</p>
 <p>The term “wind” refers to the fact that the freestream relative wind approaches the aircraft directly along the <span class="math inline">\(x_w\)</span>-axis. This dictates that the true airspeed also lies along the same axis.</p>
-<p><img src="media/06/image5.svg" style="width:1.69931in;height:2.07014in" /></p>
+<p><img src="media/06/image5.png" style="width:1.69931in;height:2.07014in" /></p>
 <p>Forces, velocities, or accelerations along the wind axes are related to the stability axes as follows
 <span class="math display">\[\begin{align}
 x_s =&amp;x_w \cos \beta - y_w \sin \beta \\
@@ -597,7 +597,7 @@ z_s =&amp; z_w
 <span class="math display">\[ \sin \alpha = \frac{w}{V_T \cos \beta}\]</span> and
 <span class="math display">\[\sin \beta = \frac{V}{V_T}.\]</span>
 If <span class="math inline">\(\beta\)</span> is small, then <span class="math inline">\(\sin \alpha = w/V_T\)</span> and <span class="math inline">\(\beta = V / V_T\)</span>. If <span class="math inline">\(alpha\)</span> is small, then <span class="math inline">\(\alpha = w/V_T\)</span>.</p>
-<p><img src="media/06/image6.svg" style="width:2.45903in;height:2.21875in" /></p>
+<p><img src="media/06/image6.png" style="width:2.45903in;height:2.21875in" /></p>
 <p>Most aircraft sideslip vanes do not measure <span class="math inline">\(\beta\)</span> directly. They measure the flanking angle, which is the projection of the relative wind into the aircraft’s <span class="math inline">\(x-y\)</span> plane. The difference between these two angles increases with angle of attack. Ignoring upwash, boom bending, and body axis rate corrections, calculate true sideslip as a function of vane <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> as follows:
 <span class="math display">\[\beta_{\mathrm{true}} = \tan^{-1} (an\beta_{\mathrm{vane}})).\]</span></p>
 </div>
@@ -672,7 +672,7 @@ z_w =&amp; x_b \sin \alpha + z_b \cos \alpha
 <div id="principle-axes" class="section level3" number="6.2.5">
 <h3><span class="header-section-number">6.2.5</span> Principle Axes</h3>
 <p>The <em>principle axes</em> are those about which the products of inertia are zero. They can be equated to the axis of “dumbells” which represent concentrated mass elements. Neglecting aerodynamic and gyroscopic effects, an aircraft rotating about one of its principle axes will not tend to cross-couple into motion about any other axis.</p>
-<p><img src="media/06/image11.svg" style="width:4.5in;height:2.375in" /></p>
+<p><img src="media/06/image11.png" style="width:4.5in;height:2.375in" /></p>
 </div>
 </div>
 <div id="euler-angles" class="section level2" number="6.3">
@@ -690,7 +690,7 @@ z_w =&amp; x_b \sin \alpha + z_b \cos \alpha
 <dd><span class="math inline">\(\phi\)</span> - The angle measured in the <span class="math inline">\(y-z\)</span> plane of the body-axis system between the <span class="math inline">\(y\)</span>-axis and the horizontal reference plane. Also known as the roll angle, it is a measure of the rotation about the <span class="math inline">\(x\)</span>-axis.
 </dd>
 </dl>
-<p><img src="media/06/image12.svg" style="width:4in;height:4.125in" /></p>
+<p><img src="media/06/image12.png" style="width:4in;height:4.125in" /></p>
 </div>
 <div id="flight-path-angles" class="section level2" number="6.4">
 <h2><span class="header-section-number">6.4</span> Flight Path Angles</h2>
