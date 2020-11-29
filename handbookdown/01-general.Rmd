@@ -1079,59 +1079,60 @@ Fuselage reference station (FRS), Water line (WL), and Buttock line (BL) are ref
   ------------------------------------------------------------- ------------ --------------------------------------------------------
   **Parameter Name**                                            **Symbol**   **Positive Direction**
   Translational Measurements                                                 
-  Longitudinal axis                                             x            from ref *cg* towards nose
-  Lateral axis                                                  y            from reference *cg* towards right wing tip
-  Vertical axis                                                 z            from reference *cg* towards vehicle bottom (body axis)
-  Longitudinal velocity                                         u            along +x axis
-  Lateral velocity                                              v            along +y axis
-  Vertical velocity                                             w            along +z axis
-  Long. acceleration                                            a~x~         along + x axis
-  Lateral acceleration                                          a~y~         along +y axis
-  Vertical acceleration                                         a~z~         along +z axis
-  Longitudinal load factor                                      N~x~         along +x axis
-  Lateral load factor                                           N~y~         along +y-axis
-  Normal load factor                                            N~z~         along --z axis
-  Longitudinal force                                            F~x~         along the +x axis
-  Lateral force                                                 F~y~         along the +y axis
-  Normal force                                                  F~z~         along the + z axis
-  Drag force                                                    D            along the --x axis
-  Side force                                                    Y            along the + y axis
-  Lift Force                                                    L            along the --z axis
+  Longitudinal axis                                             \(x\)        from ref *cg* towards nose
+  Lateral axis                                                  \(y\)        from reference *cg* towards right wing tip
+  Vertical axis                                                 \(z\)        from reference *cg* towards vehicle bottom (body axis)
+  Longitudinal velocity                                         \(u\)        along +x axis
+  Lateral velocity                                              \(v\)        along +y axis
+  Vertical velocity                                             \(w\)        along +z axis
+  Longitudinal acceleration                                     \(a_x\)      along +x axis
+  Lateral acceleration                                          \(a_y\)      along +y axis
+  Vertical acceleration                                         \(a_z\)      along +z axis
+  Longitudinal load factor                                      \(N_x\)      along +x axis
+  Lateral load factor                                           \(N_y\)      along +y-axis
+  Normal load factor                                            \(N_z\)      along -z axis
+  Longitudinal force                                            \(F_x\)      along the +x axis
+  Lateral force                                                 \(F_y\)      along the +y axis
+  Normal force                                                  \(F_z\)      along the + z axis
+  Drag force                                                    \(D\)        along the -x axis
+  Side force                                                    \(Y\)        along the + y axis
+  Lift Force                                                    \(L\)        along the -z axis
+
+
+**Summary of Generally Accepted Body Axes Sign Convention**
 
 +-------------------------------------------------------------+------------+-------------------------+
-| **Summary of Generally Accepted Body Axes Sign Convention** |            |                         |
-+=============================================================+============+=========================+
 | **Parameter Name**                                          | **Symbol** | **Positive Direction**  |
-+-------------------------------------------------------------+------------+-------------------------+
++=============================================================+:==========:+=========================+
 | Angular Measurements                                        |            |                         |
 +-------------------------------------------------------------+------------+-------------------------+
-| Bank angle                                                  | *φ*        | right wing down         |
+| Bank angle                                                  | \(\phi\)   | right wing down         |
 +-------------------------------------------------------------+------------+-------------------------+
-| Pitch angle                                                 | *θ*        | nose-up                 |
+| Pitch angle                                                 | \(\theta\) | nose-up                 |
 +-------------------------------------------------------------+------------+-------------------------+
-| Heading                                                     | *ψ*        | 0 North, +Eastward      |
+| Heading                                                     | \(\psi\)   | 0 North, +Eastward      |
 +-------------------------------------------------------------+------------+-------------------------+
-| Angle of attack                                             | *α*        | normal flight attitude  |
+| Angle of attack                                             | \(\alpha\) | normal flight attitude  |
 +-------------------------------------------------------------+------------+-------------------------+
-| Angle of sideslip                                           | *β*        | "wind in the right ear" |
+| Angle of sideslip                                           | \(\beta\)  | "wind in the right ear" |
 +-------------------------------------------------------------+------------+-------------------------+
-| Roll rate                                                   | p          | right wing down         |
+| Roll rate                                                   | \(p\)      | right wing down         |
 +-------------------------------------------------------------+------------+-------------------------+
-| Pitch rate                                                  | q          | nose up                 |
+| Pitch rate                                                  | \(q\)      | nose up                 |
 +-------------------------------------------------------------+------------+-------------------------+
-| Yaw rate                                                    | r          | nose right              |
+| Yaw rate                                                    | \(r\)      | nose right              |
 +-------------------------------------------------------------+------------+-------------------------+
-| Roll moment                                                 | *L*        | right wing down         |
+| Roll moment                                                 | \(L\)      | right wing down         |
 +-------------------------------------------------------------+------------+-------------------------+
-| Pitch moment                                                | *M*        | nose up                 |
+| Pitch moment                                                | \(M\)      | nose up                 |
 +-------------------------------------------------------------+------------+-------------------------+
-| Yaw moment                                                  | *N*        | nose right              |
+| Yaw moment                                                  | \(N\)      | nose right              |
 +-------------------------------------------------------------+------------+-------------------------+
-| Flightpath bank angle                                       | *$\mu$*        | right wing down         |
+| Flightpath bank angle                                       | \(\mu\)    | right wing down         |
 +-------------------------------------------------------------+------------+-------------------------+
-| Flightpath elevation                                        | *γ*        | climb                   |
+| Flightpath elevation                                        | \(\gamma\) | climb                   |
 +-------------------------------------------------------------+------------+-------------------------+
-| Flightpath heading                                          | *σ~g~*     | 0 true North, + East-   |
+| Flightpath heading                                          |\(\sigma_g\)| 0 true North, + East-   |
 |                                                             |            |                         |
 |                                                             |            | ward                    |
 +-------------------------------------------------------------+------------+-------------------------+
@@ -1216,12 +1217,8 @@ Based on the above background, the SFTE technical council proposes the following
 +---------------------------------+-----------------------+-------------------------------------------------+----------------------------------------------+
 | differential:                   | \(\Delta\delta_c\)    |\[-\frac{\delta_{cR} - \delta_{cL}}{2}\]         | \[\frac{\delta_{cR} - \delta_{cL}}{2}\]      |
 +---------------------------------+-----------------------+-------------------------------------------------+----------------------------------------------+
-| Leading edge flap               | \(\delta_{lefL}\),    | TED                                             | TED                                          |
+| Leading edge flap               | \(\delta_{lefL}\),    | Leading Edge Down                               | Leading Edge Down                            |
 |                                 | \(\delta_{lefR}\)     |                                                 |                                              |
-+---------------------------------+-----------------------+-------------------------------------------------+----------------------------------------------+
-|    average:                     | \(\delta_{lef}\)      |\[\frac{\delta_{lefR}+\delta_{lefL}}{2}\]        |                                              |
-+---------------------------------+-----------------------+-------------------------------------------------+----------------------------------------------+
-|    differential:                |\(\Delta\delta_{lef}\) | \[-\frac{\delta_{lefR} - \delta_{lefL}}{2}\]    | \[-\frac{\delta_{lefR} - \delta_{lefL}}{2}\] |
 +---------------------------------+-----------------------+-------------------------------------------------+----------------------------------------------+
 | Ruddervators                    | \(\delta_{rvL}\),     | TEU                                             | TED                                          |
 |                                 | \(\delta_{rvR}\)      |                                                 |                                              |
