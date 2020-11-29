@@ -12,7 +12,7 @@
 | \(T_0\)                  | standard day seal level absolute temperature                                           |
 | \(T_R\)                  | absolute temperature, Rankine scale                                                     |
 | \(\rho_ο\)               | standard day seal level ambient density                                                |
-| \(rho\)                  | ambient density                                                                        |
+| \(\rho\)                 | ambient density                                                                        |
 | \(g\)                    | acceleration due to gravity                                                            |
 | \(g_0\)                  | standard earth acceleration due to gravity                                             |
 | \(\delta = P/P_0\)       | atmospheric pressure/std day sea level pressure                                        |
@@ -25,7 +25,7 @@
 
 | Constant                               | Symbol  | Value                                |  Units |
 |----------------------------------------|---------|--------------------------------------|--------|
-| Avogadros number                       | \(N_0\) | \(6.022\,169 \times 10^{23}\) | molecules/mole |
+| Avogadro's number                      | \(N_A\) | \(6.022\,169 \times 10^{23}\) | molecules/mole |
 | Boltzmann constant                     | \(k\)   | \(1.380 \times 10^{-23}\) | J/K           |
 | electron charge                        | \(e\)   | \(1.602 \times 10^{-19}\) | Coulomb          |
 | electron mass                          | \(m_e\) | \(9.109 \times 10^{-31}\) | kg               |
@@ -151,21 +151,21 @@ where \(V_G\) = ground speed and \(\sigma\) = ground track angle (\(0°\) = true
 
 ### Gravity Influence on Aircraft Cruise Performance {-}
 
-Even at the same altitude, changes in gravity due to latitude or centrifugal relief directly alter the required lift, drag, and fuel flow. For example, with sufficiently precise instrumentation, data collected heading West could show about 0.5% more drag and fuel flow than data collected heading East (centrifugal relief effect). After determining test and standard (or mission) values for \(g\), flight test values for *C_L, *C_D, drag, and fuel flow can be corrected to standard as follows:
+Even at the same altitude, changes in gravity due to latitude or centrifugal relief directly alter the required lift, drag, and fuel flow. For example, with sufficiently precise instrumentation, data collected heading West could show about 0.5% more drag and fuel flow than data collected heading East (centrifugal relief effect). After determining test and standard (or mission) values for \(g\), flight test values for \(C_L\), \(C_D\), drag, and fuel flow can be corrected to standard as follows:
 
-\[C_{L_{\mathrm{std}}} = C_{L_i} \frac{N_{z_{\omega_{\mathrm{std}}}}}{N_{Z_{\omega_i}}} \left[\frac{g_{\mathrm{std}}}{g_{A/C}} \right] \]
+\[C_{L_{\mathrm{std}}} = C_{L_t} \frac{N_{z_{\omega_{\mathrm{std}}}}}{N_{Z_{\omega_t}}} \left[\frac{g_{\mathrm{std}}}{g_{A/C}} \right] \]
 
-\[C_{D_{\mathrm{std}}} = \frac{C^2_{L_{\mathrm{std}}}}{\pi A \text{Re}} \]
+\[C_{D_{\mathrm{std}}} = \frac{C^2_{L_{\mathrm{std}}}}{\pi \mathrm{AR}e} \]
 
 \[\Delta D = D_{\mathrm{std}} - D_t = qS\left[C_{D_{i_{\mathrm{std}}}} - C_{D_{i_t}} \right] \]
 
-\[\dot{W}_{f_{\mathrm{std}}} = \dot{W}_{f_i} + \Delta D \cdot TFSC \]
+\[\dot{W}_{f_{\mathrm{std}}} = \dot{W}_{f_t} + \Delta D \cdot TFSC \]
 
 where \(N_z\) = normal load factor,
 
 \(C_L\) = lift coefficient, \(C_D\) = drag coefficient,
 
-\(AR\) = aspect ratio, \(e\) = Oswald efficiency factor,
+\(\mathrm{AR}\) = aspect ratio, \(e\) = Oswald efficiency factor,
 
 \(\Delta D\) = change in drag force,
 
