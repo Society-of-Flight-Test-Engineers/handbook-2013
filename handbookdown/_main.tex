@@ -3772,147 +3772,142 @@ Fuselage reference station (FRS), Water line (WL), and Buttock line (BL) are ref
 \endhead
 \textbf{Parameter Name} & \textbf{Symbol} & \textbf{Positive Direction}\tabularnewline
 Translational Measurements & &\tabularnewline
-Longitudinal axis & x & from ref \emph{cg} towards nose\tabularnewline
-Lateral axis & y & from reference \emph{cg} towards right wing tip\tabularnewline
-Vertical axis & z & from reference \emph{cg} towards vehicle bottom (body axis)\tabularnewline
-Longitudinal velocity & u & along +x axis\tabularnewline
-Lateral velocity & v & along +y axis\tabularnewline
-Vertical velocity & w & along +z axis\tabularnewline
-Long. acceleration & a\textsubscript{x} & along + x axis\tabularnewline
-Lateral acceleration & a\textsubscript{y} & along +y axis\tabularnewline
-Vertical acceleration & a\textsubscript{z} & along +z axis\tabularnewline
-Longitudinal load factor & N\textsubscript{x} & along +x axis\tabularnewline
-Lateral load factor & N\textsubscript{y} & along +y-axis\tabularnewline
-Normal load factor & N\textsubscript{z} & along --z axis\tabularnewline
-Longitudinal force & F\textsubscript{x} & along the +x axis\tabularnewline
-Lateral force & F\textsubscript{y} & along the +y axis\tabularnewline
-Normal force & F\textsubscript{z} & along the + z axis\tabularnewline
-Drag force & D & along the --x axis\tabularnewline
-Side force & Y & along the + y axis\tabularnewline
-Lift Force & L & along the --z axis\tabularnewline
+Longitudinal axis & \(x\) & from ref \emph{cg} towards nose\tabularnewline
+Lateral axis & \(y\) & from reference \emph{cg} towards right wing tip\tabularnewline
+Vertical axis & \(z\) & from reference \emph{cg} towards vehicle bottom (body axis)\tabularnewline
+Longitudinal velocity & \(u\) & along +x axis\tabularnewline
+Lateral velocity & \(v\) & along +y axis\tabularnewline
+Vertical velocity & \(w\) & along +z axis\tabularnewline
+Longitudinal acceleration & \(a_x\) & along +x axis\tabularnewline
+Lateral acceleration & \(a_y\) & along +y axis\tabularnewline
+Vertical acceleration & \(a_z\) & along +z axis\tabularnewline
+Longitudinal load factor & \(N_x\) & along +x axis\tabularnewline
+Lateral load factor & \(N_y\) & along +y-axis\tabularnewline
+Normal load factor & \(N_z\) & along -z axis\tabularnewline
+Longitudinal force & \(F_x\) & along the +x axis\tabularnewline
+Lateral force & \(F_y\) & along the +y axis\tabularnewline
+Normal force & \(F_z\) & along the + z axis\tabularnewline
+Drag force & \(D\) & along the -x axis\tabularnewline
+Side force & \(Y\) & along the + y axis\tabularnewline
+Lift Force & \(L\) & along the -z axis\tabularnewline
 \bottomrule
 \end{longtable}
 
-\begin{longtable}[]{@{}lll@{}}
+\textbf{Summary of Generally Accepted Body Axes Sign Convention}
+
+\begin{longtable}[]{@{}lcl@{}}
 \toprule
 \begin{minipage}[b]{0.56\columnwidth}\raggedright
-\textbf{Summary of Generally Accepted Body Axes Sign Convention}\strut
-\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
-\strut
+\textbf{Parameter Name}\strut
+\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\centering
+\textbf{Symbol}\strut
 \end{minipage} & \begin{minipage}[b]{0.23\columnwidth}\raggedright
-\strut
+\textbf{Positive Direction}\strut
 \end{minipage}\tabularnewline
 \midrule
 \endhead
 \begin{minipage}[t]{0.56\columnwidth}\raggedright
-\textbf{Parameter Name}\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-\textbf{Symbol}\strut
-\end{minipage} & \begin{minipage}[t]{0.23\columnwidth}\raggedright
-\textbf{Positive Direction}\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.56\columnwidth}\raggedright
 Angular Measurements\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\centering
 \strut
 \end{minipage} & \begin{minipage}[t]{0.23\columnwidth}\raggedright
 \strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.56\columnwidth}\raggedright
 Bank angle\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-\emph{φ}\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\centering
+\(\phi\)\strut
 \end{minipage} & \begin{minipage}[t]{0.23\columnwidth}\raggedright
 right wing down\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.56\columnwidth}\raggedright
 Pitch angle\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-\emph{θ}\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\centering
+\(\theta\)\strut
 \end{minipage} & \begin{minipage}[t]{0.23\columnwidth}\raggedright
 nose-up\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.56\columnwidth}\raggedright
 Heading\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-\emph{ψ}\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\centering
+\(\psi\)\strut
 \end{minipage} & \begin{minipage}[t]{0.23\columnwidth}\raggedright
 0 North, +Eastward\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.56\columnwidth}\raggedright
 Angle of attack\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-\emph{α}\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\centering
+\(\alpha\)\strut
 \end{minipage} & \begin{minipage}[t]{0.23\columnwidth}\raggedright
 normal flight attitude\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.56\columnwidth}\raggedright
 Angle of sideslip\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-\emph{β}\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\centering
+\(\beta\)\strut
 \end{minipage} & \begin{minipage}[t]{0.23\columnwidth}\raggedright
 ``wind in the right ear''\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.56\columnwidth}\raggedright
 Roll rate\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-p\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\centering
+\(p\)\strut
 \end{minipage} & \begin{minipage}[t]{0.23\columnwidth}\raggedright
 right wing down\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.56\columnwidth}\raggedright
 Pitch rate\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-q\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\centering
+\(q\)\strut
 \end{minipage} & \begin{minipage}[t]{0.23\columnwidth}\raggedright
 nose up\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.56\columnwidth}\raggedright
 Yaw rate\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-r\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\centering
+\(r\)\strut
 \end{minipage} & \begin{minipage}[t]{0.23\columnwidth}\raggedright
 nose right\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.56\columnwidth}\raggedright
 Roll moment\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-\emph{L}\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\centering
+\(L\)\strut
 \end{minipage} & \begin{minipage}[t]{0.23\columnwidth}\raggedright
 right wing down\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.56\columnwidth}\raggedright
 Pitch moment\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-\emph{M}\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\centering
+\(M\)\strut
 \end{minipage} & \begin{minipage}[t]{0.23\columnwidth}\raggedright
 nose up\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.56\columnwidth}\raggedright
 Yaw moment\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-\emph{N}\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\centering
+\(N\)\strut
 \end{minipage} & \begin{minipage}[t]{0.23\columnwidth}\raggedright
 nose right\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.56\columnwidth}\raggedright
 Flightpath bank angle\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-\emph{\(\mu\)}\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\centering
+\(\mu\)\strut
 \end{minipage} & \begin{minipage}[t]{0.23\columnwidth}\raggedright
-\textbar{} right wing down\strut
+right wing down\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.56\columnwidth}\raggedright
 Flightpath elevation\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-\emph{γ}\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\centering
+\(\gamma\)\strut
 \end{minipage} & \begin{minipage}[t]{0.23\columnwidth}\raggedright
 climb\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.56\columnwidth}\raggedright
 Flightpath heading\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-\emph{σ\textsubscript{g}}\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\centering
+\(\sigma_g\)\strut
 \end{minipage} & \begin{minipage}[t]{0.23\columnwidth}\raggedright
 0 true North, + East-
 
@@ -4122,27 +4117,9 @@ Leading edge flap\strut
 \(\delta_{lefL}\),
 \(\delta_{lefR}\)\strut
 \end{minipage} & \begin{minipage}[t]{0.29\columnwidth}\centering
-TED\strut
+Leading Edge Down\strut
 \end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\centering
-TED\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.19\columnwidth}\raggedright
-average:\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\centering
-\(\delta_{lef}\)\strut
-\end{minipage} & \begin{minipage}[t]{0.29\columnwidth}\centering
-\[\frac{\delta_{lefR}+\delta_{lefL}}{2}\]\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\centering
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.19\columnwidth}\raggedright
-differential:\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\centering
-\(\Delta\delta_{lef}\)\strut
-\end{minipage} & \begin{minipage}[t]{0.29\columnwidth}\centering
-\[-\frac{\delta_{lefR} - \delta_{lefL}}{2}\]\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\centering
-\[-\frac{\delta_{lefR} - \delta_{lefL}}{2}\]\strut
+Leading Edge Down\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.19\columnwidth}\raggedright
 Ruddervators\strut
@@ -6673,7 +6650,7 @@ absolute temperature, Rankine scale\strut
 standard day seal level ambient density\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.21\columnwidth}\raggedright
-\(rho\)\strut
+\(\rho\)\strut
 \end{minipage} & \begin{minipage}[t]{0.73\columnwidth}\raggedright
 ambient density\strut
 \end{minipage}\tabularnewline
@@ -6715,7 +6692,7 @@ atmospheric density/std day sea level density\strut
 Constant & Symbol & Value & Units\tabularnewline
 \midrule
 \endhead
-Avogadros number & \(N_0\) & \(6.022\,169 \times 10^{23}\) & molecules/mole\tabularnewline
+Avogadro's number & \(N_A\) & \(6.022\,169 \times 10^{23}\) & molecules/mole\tabularnewline
 Boltzmann constant & \(k\) & \(1.380 \times 10^{-23}\) & J/K\tabularnewline
 electron charge & \(e\) & \(1.602 \times 10^{-19}\) & Coulomb\tabularnewline
 electron mass & \(m_e\) & \(9.109 \times 10^{-31}\) & kg\tabularnewline
@@ -7055,21 +7032,21 @@ where \(V_G\) = ground speed and \(\sigma\) = ground track angle (\(0°\) = true
 \subsection*{Gravity Influence on Aircraft Cruise Performance}\label{gravity-influence-on-aircraft-cruise-performance}}
 \addcontentsline{toc}{subsection}{Gravity Influence on Aircraft Cruise Performance}
 
-Even at the same altitude, changes in gravity due to latitude or centrifugal relief directly alter the required lift, drag, and fuel flow. For example, with sufficiently precise instrumentation, data collected heading West could show about 0.5\% more drag and fuel flow than data collected heading East (centrifugal relief effect). After determining test and standard (or mission) values for \(g\), flight test values for \emph{C\_L, }C\_D, drag, and fuel flow can be corrected to standard as follows:
+Even at the same altitude, changes in gravity due to latitude or centrifugal relief directly alter the required lift, drag, and fuel flow. For example, with sufficiently precise instrumentation, data collected heading West could show about 0.5\% more drag and fuel flow than data collected heading East (centrifugal relief effect). After determining test and standard (or mission) values for \(g\), flight test values for \(C_L\), \(C_D\), drag, and fuel flow can be corrected to standard as follows:
 
-\[C_{L_{\mathrm{std}}} = C_{L_i} \frac{N_{z_{\omega_{\mathrm{std}}}}}{N_{Z_{\omega_i}}} \left[\frac{g_{\mathrm{std}}}{g_{A/C}} \right] \]
+\[C_{L_{\mathrm{std}}} = C_{L_t} \frac{N_{z_{\omega_{\mathrm{std}}}}}{N_{Z_{\omega_t}}} \left[\frac{g_{\mathrm{std}}}{g_{A/C}} \right] \]
 
-\[C_{D_{\mathrm{std}}} = \frac{C^2_{L_{\mathrm{std}}}}{\pi A \text{Re}} \]
+\[C_{D_{\mathrm{std}}} = \frac{C^2_{L_{\mathrm{std}}}}{\pi \mathrm{AR}e} \]
 
 \[\Delta D = D_{\mathrm{std}} - D_t = qS\left[C_{D_{i_{\mathrm{std}}}} - C_{D_{i_t}} \right] \]
 
-\[\dot{W}_{f_{\mathrm{std}}} = \dot{W}_{f_i} + \Delta D \cdot TFSC \]
+\[\dot{W}_{f_{\mathrm{std}}} = \dot{W}_{f_t} + \Delta D \cdot TFSC \]
 
 where \(N_z\) = normal load factor,
 
 \(C_L\) = lift coefficient, \(C_D\) = drag coefficient,
 
-\(AR\) = aspect ratio, \(e\) = Oswald efficiency factor,
+\(\mathrm{AR}\) = aspect ratio, \(e\) = Oswald efficiency factor,
 
 \(\Delta D\) = change in drag force,
 
@@ -10731,7 +10708,7 @@ Location where aircraft is supported during the \(\mathrm{cg}\) measurement.\str
 
 \begin{figure}
 \centering
-\includegraphics[width=3.38889in,height=1.77083in]{media/07/image1.svg}
+\includegraphics[width=3.38889in,height=1.77083in]{media/07/image1.png}
 \caption{Example \(\mathrm{cg}\) calculations}
 \end{figure}
 
@@ -10898,7 +10875,7 @@ The change in nose wheel force can be written as
   \item
     For ``gear up'' add the manufacturer's prediction of the \(\mathrm{cg}\) shift to this result.
     ~
-    \includegraphics[width=3.17083in,height=2.69792in]{media/07/image9.svg}
+    \includegraphics[width=3.17083in,height=2.69792in]{media/07/image9.png}
   \end{itemize}
 \end{enumerate}
 
@@ -10907,7 +10884,7 @@ The change in nose wheel force can be written as
 
 The moment of inertia about any axis of a body is the summation of the product of every element's mass and distance squared. Moments of inertia represent the resistance to rotational momentum changes.
 
-\includegraphics[width=2.16458in,height=1.28264in]{media/07/image13.svg}
+\includegraphics[width=2.16458in,height=1.28264in]{media/07/image13.png}
 
 \begin{align}
 I_{x_b} &\equiv \int \left( y^2 + z^2 \right) dm \\
@@ -10917,7 +10894,7 @@ I_{z_b} &\equiv \int \left( x^2 + y^2 \right) dm \\
 
 Products of inertia are also calculated about any body axes. They represent the symmetry of mass distribution (comparing opposing quadrants).
 
-\includegraphics[width=1.79236in,height=1.07083in]{media/07/image16.svg}
+\includegraphics[width=1.79236in,height=1.07083in]{media/07/image16.png}
 
 \begin{align}
 I_{xy} &= I_{yx} \equiv \int xy dm \\
@@ -10933,7 +10910,7 @@ I_{zx} &= I_{xz} \equiv \int zx dm \\
   Careful documentation can yield inertial predictions within about 1-5\% of actual.
 \end{itemize}
 
-\includegraphics[width=3.37222in,height=2.33681in]{media/07/image17.svg}
+\includegraphics[width=3.37222in,height=2.33681in]{media/07/image17.png}
 
 \hypertarget{radius-of-gyration}{%
 \subsection{Radius of Gyration}\label{radius-of-gyration}}
@@ -10962,7 +10939,7 @@ I_{zx} &= I_{xz} \equiv \int zx dm \\
 
 \(I_{x_b} > I_{y_b}\ \)for wing-loaded aircraft.
 
-\includegraphics[width=4.5in,height=2.375in]{media/07/image19.svg}
+\includegraphics[width=4.5in,height=2.375in]{media/07/image19.png}
 
 \begin{itemize}
 \tightlist
@@ -10988,8 +10965,6 @@ Example: Correct original aircraft roll inertia, \(I_{x_b}\), to a modified valu
 *~\(\Delta I_{x_{\text{comp}}}\) is composed of two components
 
 \[ \Delta I_{x_{\text{comp}}} = I_{x_{\text{comp}}} + m_{\text{comp}} r^2 \]
-
-\includegraphics[width=2.09028in,height=0.32847in]{media/07/image21.svg}~
 
 \begin{itemize}
 \tightlist
@@ -11041,9 +11016,9 @@ where
   Attach springs (tension springs illustrated here) so they are parallel to line \(a\) as shown.
 \end{enumerate}
 
-\includegraphics[width=4.47917in,height=1.52847in]{media/07/image24.svg}~
+\includegraphics[width=4.47917in,height=1.52847in]{media/07/image24.png}~
 
-\includegraphics[width=4.45278in,height=1.69375in]{media/07/image25.svg}~
+\includegraphics[width=4.45278in,height=1.69375in]{media/07/image25.png}~
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -11149,9 +11124,9 @@ Above methods can also be used to determine \(I_{y_b}\) and \(I_{z_b}\)
   Attach spring perpendicular to line \(a\). Only one spring is required since the aircraft \(\mathrm{cg}\) is off-center. Spring must be stiff enough to hold the aircraft in equilibrium as well as provide a restoring moment during oscillations.
 \end{enumerate}
 
-\includegraphics[width=4.5in,height=1.66667in]{media/07/image32.svg}
+\includegraphics[width=4.5in,height=1.66667in]{media/07/image32.png}
 
-\includegraphics[width=4.5in,height=1.58333in]{media/07/image33.svg}
+\includegraphics[width=4.5in,height=1.58333in]{media/07/image33.png}
 
 Repeat steps 3-12 and apply the moment of inertia equation to determine \(I_{y_b}\)
 
@@ -11171,7 +11146,7 @@ or, for an uninstrumented aircraft,
   Suspend aircraft as shown: fuselage reference line parallel with floor, \(z\)-body axis coincides with the oscillation axis (\(h = d = 0\)). For \(I_{z_b}\) test, set spring assembly tilt angle parallel to floor (\(\delta = 0\)).
 \end{enumerate}
 
-\includegraphics[width=4.5in,height=2.57292in]{media/07/image36.svg}~
+\includegraphics[width=4.5in,height=2.57292in]{media/07/image36.png}~
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -11181,13 +11156,13 @@ or, for an uninstrumented aircraft,
   Ideal case is where the wing attach points are in line with the aircraft \(\mathrm{cg}\) as shown. Springs are perpendicular to the AB line and are parallel.
 \end{enumerate}
 
-\includegraphics[width=3.83194in,height=3.08333in]{media/07/image37.svg}
+\includegraphics[width=3.83194in,height=3.08333in]{media/07/image37.png}
 
 If not possible to rig wing attach points in line with the \(\mathrm{cg}\), then keep the springs parallel to each other and measure the angle \(\phi\).~~
 
 •~Calculate \(K_o = k \cos{\phi}\), where \(k\) is the actual spring constant
 
-\includegraphics[width=3.15625in,height=3.08333in]{media/07/image38.svg}
+\includegraphics[width=3.15625in,height=3.08333in]{media/07/image38.png}
 
 Repeat steps 3-12 and apply the moment of inertia equation to determine \(I_{z_b}\). Note that distances \(h\) and \(d\) are zero for a properly suspended aircraft.
 
@@ -11208,7 +11183,7 @@ or, for an uninstrumented aircraft,
   \(I_{xz}\) positive if \(\varepsilon\) is positive.
 \end{itemize}
 
-\includegraphics[width=4.5in,height=2.67708in]{media/07/image41.svg}
+\includegraphics[width=4.5in,height=2.67708in]{media/07/image41.png}
 
 \begin{itemize}
 \tightlist
@@ -11252,7 +11227,8 @@ N &=  I_z \dot{r} - I_{xz} \dot{p} \\
 \end{enumerate}
 
 Plot \(\tan{\delta}\) vs \(\frac{\dot{p}}{\dot{r}}\) as shown.
-\includegraphics[width=4.5in,height=2.5in]{media/07/image47.svg}
+
+\includegraphics[width=4.5in,height=2.5in]{media/07/image47.png}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -11315,7 +11291,7 @@ Note: Since the \(I_{xz}\) test objective is to interpolate to a condition where
   Suspend component as shown.
 \end{enumerate}
 
-\includegraphics[width=2.98264in,height=2.15625in]{media/07/image54.svg}~
+\includegraphics[width=2.98264in,height=2.15625in]{media/07/image54.png}~
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.11.25)  28 NOV 2020 14:59
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.11.25)  30 NOV 2020 11:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1065,395 +1065,385 @@ Overfull \hbox (259.2701pt too wide) in alignment at lines 3793--3794
  [] [] [] 
  []
 
-Missing character: There is no φ in font [lmroman10-italic]:mapping=tex-text;!
-Missing character: There is no θ in font [lmroman10-italic]:mapping=tex-text;!
-Missing character: There is no ψ in font [lmroman10-italic]:mapping=tex-text;!
-Missing character: There is no α in font [lmroman10-italic]:mapping=tex-text;!
-Missing character: There is no β in font [lmroman10-italic]:mapping=tex-text;!
-Missing character: There is no γ in font [lmroman10-italic]:mapping=tex-text;!
-Missing character: There is no σ in font [lmroman10-italic]:mapping=tex-text;!
-[37] [38] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48] [49]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[50] [51] [52] [53]
+[37] [38] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48] [49] [50] [51] [52]
 File: media/01/image24.jpeg Graphic file (type bmp)
 <media/01/image24.jpeg>
 
-Overfull \hbox (96.71962pt too wide) in paragraph at lines 4949--4950
+Overfull \hbox (96.71962pt too wide) in paragraph at lines 4926--4927
  [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[54]
+[53]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[55]
+[54]
 Overfull \vbox (118.49162pt too high) has occurred while \output is active []
 
-[56] [57] [58] [59] [60
-
-]
+[55] [56] [57] [58]
 Chapter 2.
-[61] [62]
-Overfull \hbox (51.2055pt too wide) detected at line 5208
+[59
+
+] [60]
+Overfull \hbox (51.2055pt too wide) detected at line 5185
 []
  []
 
-[63] [64] [65] [66] [67] [68]
+[61] [62] [63] [64] [65] [66]
 Underfull \vbox (badness 2409) has occurred while \output is active []
 
-[69]
-Overfull \hbox (61.45605pt too wide) detected at line 5528
+[67]
+Overfull \hbox (61.45605pt too wide) detected at line 5505
 []
  []
 
 File: media/02/image22.png Graphic file (type bmp)
 <media/02/image22.png>
 
-Overfull \hbox (39.67604pt too wide) detected at line 5547
+Overfull \hbox (39.67604pt too wide) detected at line 5524
 []
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[70]
+[68]
 File: media/02/image23.png Graphic file (type bmp)
 <media/02/image23.png>
-[71]
+[69]
 File: media/02/image24.png Graphic file (type bmp)
 <media/02/image24.png>
 
 Underfull \vbox (badness 1231) has occurred while \output is active []
 
-[72]
+[70]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[73] [74]
+[71] [72]
 Underfull \vbox (badness 7468) has occurred while \output is active []
 
-[75]
+[73]
 File: media/02/image25.png Graphic file (type bmp)
 <media/02/image25.png>
-[76] [77] [78] [79] [80]
+[74] [75] [76] [77] [78]
 File: media/02/image39.png Graphic file (type bmp)
 <media/02/image39.png>
 File: media/02/image40.png Graphic file (type bmp)
 <media/02/image40.png>
-[81] [82]
+[79] [80]
 File: media/02/image49.png Graphic file (type bmp)
 <media/02/image49.png>
-[83] [84]
+[81] [82]
 File: media/02/image52.png Graphic file (type bmp)
 <media/02/image52.png>
-[85]
+[83]
 File: media/02/image65.png Graphic file (type bmp)
 <media/02/image65.png>
-[86] [87]
+[84] [85]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[88]
-Overfull \hbox (12.7222pt too wide) detected at line 6247
+[86]
+Overfull \hbox (12.7222pt too wide) detected at line 6224
 [][][][] [] [] [] [] [][][][] [] [][][][] [] [][] [] [] [] [] [] [] [] []
  []
 
-[89] [90] [91] [92]
+[87] [88] [89] [90]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[93] [94] [95] [96] [97] [98
+[91] [92] [93] [94] [95] [96
 
 ]
 Chapter 3.
 
-Overfull \hbox (30.85771pt too wide) in alignment at lines 6713--6717
+Overfull \hbox (30.85771pt too wide) in alignment at lines 6690--6694
  [] [] [] [] 
  []
 
 
-Overfull \hbox (30.85771pt too wide) in alignment at lines 6717--6731
+Overfull \hbox (30.85771pt too wide) in alignment at lines 6694--6708
  [] [] [] [] 
  []
 
-[99]
-Overfull \hbox (11.81084pt too wide) in paragraph at lines 6752--6753
+[97]
+Overfull \hbox (11.81084pt too wide) in paragraph at lines 6729--6730
 []\TU/lmr/m/n/10 Symbol|  
  []
 
 
-Overfull \hbox (6.41895pt too wide) in paragraph at lines 6756--6757
+Overfull \hbox (6.41895pt too wide) in paragraph at lines 6733--6734
 []\TU/lmr/m/n/10 Units|  
  []
 
 
-Overfull \hbox (4.50195pt too wide) in paragraph at lines 6767--6768
+Overfull \hbox (4.50195pt too wide) in paragraph at lines 6744--6745
 []\TU/lmr/m/n/10 m/s$[]$|  
  []
 
 
-Overfull \hbox (3.12195pt too wide) in paragraph at lines 6776--6777
+Overfull \hbox (3.12195pt too wide) in paragraph at lines 6753--6754
 []\TU/lmr/m/n/10 ft/s$[]$|  
  []
 
 
-Overfull \hbox (15.04895pt too wide) in paragraph at lines 6803--6804
+Overfull \hbox (15.04895pt too wide) in paragraph at lines 6780--6781
 []\TU/lmr/m/n/10 rad/sec|  
  []
 
 
-Overfull \hbox (10.00195pt too wide) in paragraph at lines 6812--6813
+Overfull \hbox (10.00195pt too wide) in paragraph at lines 6789--6790
 []\TU/lmr/m/n/10 g/cm$[]$|  
  []
 
 
-Overfull \hbox (7.52196pt too wide) in paragraph at lines 6821--6822
+Overfull \hbox (7.52196pt too wide) in paragraph at lines 6798--6799
 []\TU/lmr/m/n/10 lb/ft$[]$|  
  []
 
 
-Overfull \hbox (5.01895pt too wide) in paragraph at lines 6839--6840
+Overfull \hbox (5.01895pt too wide) in paragraph at lines 6816--6817
 \TU/lmr/m/n/10 miles|  
  []
 
-[100]
+[98]
 File: media/03/image5.png Graphic file (type bmp)
 <media/03/image5.png>
-[101] [102] [103]
-Overfull \hbox (4.25505pt too wide) in alignment at lines 7084--7088
+[99] [100] [101]
+Overfull \hbox (4.25505pt too wide) in alignment at lines 7061--7065
  [] [] [] [] 
  []
 
 
-Overfull \hbox (4.25505pt too wide) in alignment at lines 7088--7105
+Overfull \hbox (4.25505pt too wide) in alignment at lines 7065--7082
  [] [] [] [] 
  []
 
-[104]
+[102]
 Missing character: There is no υ in font [lmroman10-italic]:mapping=tex-text;!
 Missing character: There is no μ in font [lmroman10-italic]:mapping=tex-text;!
-[105]
+[103]
 File: media/03/image17.jpg Graphic file (type bmp)
 <media/03/image17.jpg>
 
-Overfull \hbox (159.94029pt too wide) in paragraph at lines 7301--7302
+Overfull \hbox (159.94029pt too wide) in paragraph at lines 7278--7279
 [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[106]
+[104]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[107]
+[105]
 Overfull \vbox (125.30983pt too high) has occurred while \output is active []
 
-[108]
+[106]
 File: media/03/image18.jpg Graphic file (type bmp)
 <media/03/image18.jpg>
 
-Overfull \hbox (159.94029pt too wide) in paragraph at lines 7303--7304
+Overfull \hbox (159.94029pt too wide) in paragraph at lines 7280--7281
 [][] 
  []
 
 
 Overfull \vbox (100.44485pt too high) has occurred while \output is active []
 
-[109]
+[107]
 File: media/03/image19.png Graphic file (type bmp)
 <media/03/image19.png>
 
-Overfull \hbox (53.9782pt too wide) in paragraph at lines 7314--7315
+Overfull \hbox (53.9782pt too wide) in paragraph at lines 7291--7292
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 70.29044pt on input line 7316.
+LaTeX Warning: Float too large for page by 70.29044pt on input line 7293.
 
 
-Overfull \hbox (12.24748pt too wide) in paragraph at lines 7323--7324
+Overfull \hbox (12.24748pt too wide) in paragraph at lines 7300--7301
 \TU/lmr/m/n/10 Altitude|  
  []
 
 
-Overfull \hbox (22.16042pt too wide) in paragraph at lines 7325--7326
+Overfull \hbox (22.16042pt too wide) in paragraph at lines 7302--7303
 []\TU/lmr/m/n/10 Symbol|  
  []
 
 
-Overfull \hbox (20.93747pt too wide) in paragraph at lines 7332--7333
+Overfull \hbox (20.93747pt too wide) in paragraph at lines 7309--7310
 []\TU/lmr/m/n/10 Geometric|  
  []
 
 
-Overfull \hbox (2.13342pt too wide) in paragraph at lines 7334--7335
+Overfull \hbox (2.13342pt too wide) in paragraph at lines 7311--7312
 []$[][]$|  
  []
 
 
-Overfull \hbox (14.51747pt too wide) in paragraph at lines 7339--7340
+Overfull \hbox (14.51747pt too wide) in paragraph at lines 7316--7317
 []\TU/lmr/m/n/10 Absolute|  
  []
 
 
-Overfull \hbox (32.03748pt too wide) in paragraph at lines 7346--7347
+Overfull \hbox (32.03748pt too wide) in paragraph at lines 7323--7324
 []\TU/lmr/m/n/10 Geopotential|  
  []
 
 
-Overfull \hbox (12.81747pt too wide) in paragraph at lines 7353--7354
+Overfull \hbox (12.81747pt too wide) in paragraph at lines 7330--7331
 []\TU/lmr/m/n/10 Pressure|  
  []
 
 
-Overfull \hbox (2.58342pt too wide) in paragraph at lines 7355--7356
+Overfull \hbox (2.58342pt too wide) in paragraph at lines 7332--7333
 []$[][]$|  
  []
 
 
-Overfull \hbox (9.09747pt too wide) in paragraph at lines 7360--7361
+Overfull \hbox (9.09747pt too wide) in paragraph at lines 7337--7338
 []\TU/lmr/m/n/10 Density|  
  []
 
 
-Overfull \hbox (4.99841pt too wide) in paragraph at lines 7362--7363
+Overfull \hbox (4.99841pt too wide) in paragraph at lines 7339--7340
 []$[][]$|  
  []
 
 
-Overfull \hbox (32.01747pt too wide) in paragraph at lines 7367--7368
+Overfull \hbox (32.01747pt too wide) in paragraph at lines 7344--7345
 []\TU/lmr/m/n/10 Temperature|  
  []
 
-[110] [111] [112]
+[108] [109] [110]
 File: media/03/image22.png Graphic file (type bmp)
 <media/03/image22.png>
 
-Overfull \hbox (40.49011pt too wide) in paragraph at lines 7477--7478
+Overfull \hbox (40.49011pt too wide) in paragraph at lines 7454--7455
  [][] 
  []
 
 File: media/03/image23.jpeg Graphic file (type bmp)
 <media/03/image23.jpeg>
 
-Overfull \hbox (54.49518pt too wide) in paragraph at lines 7481--7482
+Overfull \hbox (54.49518pt too wide) in paragraph at lines 7458--7459
 [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[113] [114]
+[111] [112]
 Overfull \vbox (51.98836pt too high) has occurred while \output is active []
 
-[115]
+[113]
 File: media/03/image24.jpeg Graphic file (type bmp)
 <media/03/image24.jpeg>
 
-Overfull \hbox (119.85442pt too wide) in paragraph at lines 7483--7484
+Overfull \hbox (119.85442pt too wide) in paragraph at lines 7460--7461
 [][] 
  []
 
 
 Overfull \vbox (100.43997pt too high) has occurred while \output is active []
 
-[116]
+[114]
 File: media/03/image25.jpeg Graphic file (type bmp)
 <media/03/image25.jpeg>
 
 Overfull \vbox (100.48027pt too high) has occurred while \output is active []
 
-[117]
+[115]
 File: media/03/image26.jpeg Graphic file (type bmp)
 <media/03/image26.jpeg>
 
-Overfull \hbox (133.77634pt too wide) in paragraph at lines 7487--7488
+Overfull \hbox (133.77634pt too wide) in paragraph at lines 7464--7465
 [][] 
  []
 
 
 Overfull \vbox (100.09451pt too high) has occurred while \output is active []
 
-[118]
+[116]
 File: media/03/image27.png Graphic file (type bmp)
 <media/03/image27.png>
 
-Overfull \hbox (160.83325pt too wide) in paragraph at lines 7613--7614
+Overfull \hbox (160.83325pt too wide) in paragraph at lines 7590--7591
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 106.35153pt on input line 7615.
+LaTeX Warning: Float too large for page by 106.35153pt on input line 7592.
 
 File: media/03/image28.png Graphic file (type bmp)
 <media/03/image28.png>
 
-Overfull \hbox (160.8487pt too wide) in paragraph at lines 7622--7623
+Overfull \hbox (160.8487pt too wide) in paragraph at lines 7599--7600
  [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[119] [120]
+[117] [118]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[121] [122]
+[119] [120]
 File: media/03/image29.png Graphic file (type bmp)
 <media/03/image29.png>
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 7763--7764
+Overfull \hbox (27.75pt too wide) in paragraph at lines 7740--7741
 []\TU/lmtt/m/n/10 http://www.colorado.edu/geography/gcraft/notes/coordsys/gif/l
 atlon2.gif 
  []
 
-[123] [124]
+[121] [122]
 File: media/03/image30.jpeg Graphic file (type bmp)
 <media/03/image30.jpeg>
 
-Overfull \hbox (153.75pt too wide) in paragraph at lines 7789--7790
+Overfull \hbox (153.75pt too wide) in paragraph at lines 7766--7767
 []\TU/lmtt/m/n/10 http://principles.ou.edu/earth\_figure\_gravity/geoid/geoid-e
 llipsoidal-orthometric\_height.jpg 
  []
 
-[125]
+[123]
 File: media/03/image31.png Graphic file (type bmp)
 <media/03/image31.png>
-[126]
+[124]
 File: media/03/image32.png Graphic file (type bmp)
 <media/03/image32.png>
-[127]
+[125]
 Missing character: There is no ≈ in font [lmroman10-regular]:mapping=tex-text;!
-[128]
+[126]
 Missing character: There is no ϕ in font [lmroman10-regular]:mapping=tex-text;!
 File: media/03/image33.png Graphic file (type bmp)
 <media/03/image33.png>
 
-Overfull \hbox (88.57997pt too wide) in paragraph at lines 7919--7920
+Overfull \hbox (88.57997pt too wide) in paragraph at lines 7896--7897
 [][] 
  []
 
-[129] [130] [131] [132] [133] [134]
+[127] [128] [129] [130] [131] [132]
 Chapter 4.
-[135
+[133
 
-] [136]
+] [134]
 File: media/04/image3.png Graphic file (type bmp)
 <media/04/image3.png>
 
-Overfull \hbox (103.6452pt too wide) in paragraph at lines 8277--8278
+Overfull \hbox (103.6452pt too wide) in paragraph at lines 8254--8255
 [][] 
  []
 
-[137]
+[135]
 Overfull \vbox (94.3309pt too high) has occurred while \output is active []
 
-[138]
+[136]
 File: media/04/image8.png Graphic file (type bmp)
 <media/04/image8.png>
 
-Overfull \hbox (305.3471pt too wide) in paragraph at lines 8298--8299
+Overfull \hbox (305.3471pt too wide) in paragraph at lines 8275--8276
 [][] 
  []
 
@@ -1463,18 +1453,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Overfull \hbox (167.88232pt too wide) has occurred while \output is active
 \TU/lmr/m/sl/10 4.3.  SUBSONIC RELATIONS BETWEEN COMPRESSIBLE AND INCOMPRESSIBL
-E DYNAMIC PRESSURE \TU/lmr/m/n/10 139
+E DYNAMIC PRESSURE \TU/lmr/m/n/10 137
  []
 
-[139] [140]
+[137] [138]
 File: media/04/image13.png Graphic file (type bmp)
 <media/04/image13.png>
 
-Overfull \hbox (15.98308pt too wide) in paragraph at lines 8326--8327
+Overfull \hbox (15.98308pt too wide) in paragraph at lines 8303--8304
 [][] 
  []
 
-[141]
+[139]
 File: media/04/image14.png Graphic file (type bmp)
 <media/04/image14.png>
 File: media/04/image15.png Graphic file (type bmp)
@@ -1482,75 +1472,75 @@ File: media/04/image15.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[142] [143]
+[140] [141]
 File: media/04/image17.png Graphic file (type bmp)
 <media/04/image17.png>
 
-Overfull \hbox (37.08208pt too wide) in paragraph at lines 8378--8379
+Overfull \hbox (37.08208pt too wide) in paragraph at lines 8355--8356
 [][] 
  []
 
 File: media/04/image18.png Graphic file (type bmp)
 <media/04/image18.png>
 
-Overfull \hbox (29.79591pt too wide) in paragraph at lines 8396--8397
+Overfull \hbox (29.79591pt too wide) in paragraph at lines 8373--8374
 [][] 
  []
 
 
 Underfull \vbox (badness 1365) has occurred while \output is active []
 
-[144]
+[142]
 File: media/04/image19.png Graphic file (type bmp)
 <media/04/image19.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[145] [146]
+[143] [144]
 File: media/04/image21.png Graphic file (type bmp)
 <media/04/image21.png>
 
-Overfull \hbox (53.3986pt too wide) in paragraph at lines 8429--8430
+Overfull \hbox (53.3986pt too wide) in paragraph at lines 8406--8407
 [][] 
  []
 
-[147]
+[145]
 File: media/04/image23.png Graphic file (type bmp)
 <media/04/image23.png>
 
-Overfull \hbox (84.12903pt too wide) in paragraph at lines 8436--8437
+Overfull \hbox (84.12903pt too wide) in paragraph at lines 8413--8414
 [] 
  []
 
-[148] [149]
+[146] [147]
 File: media/04/image28.png Graphic file (type bmp)
 <media/04/image28.png>
-[150]
+[148]
 File: media/04/image31.png Graphic file (type bmp)
 <media/04/image31.png>
 
-Overfull \hbox (20.88208pt too wide) in paragraph at lines 8568--8569
+Overfull \hbox (20.88208pt too wide) in paragraph at lines 8545--8546
 [][] 
  []
 
 
-Overfull \hbox (2.05023pt too wide) in paragraph at lines 8572--8573
+Overfull \hbox (2.05023pt too wide) in paragraph at lines 8549--8550
 []\TU/lmr/m/n/10 Wind velocity: $[][] [] [] [][]$ 
  []
 
-[151]
+[149]
 File: media/04/image32.png Graphic file (type bmp)
 <media/04/image32.png>
 
-Overfull \hbox (16.35707pt too wide) in paragraph at lines 8642--8643
+Overfull \hbox (16.35707pt too wide) in paragraph at lines 8619--8620
 [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[152]
-Overfull \hbox (18.06529pt too wide) in paragraph at lines 8673--8673
+[150]
+Overfull \hbox (18.06529pt too wide) in paragraph at lines 8650--8650
 []\TU/lmr/bx/n/14.4 Position Error FAR 23/25.1323 and .1325/JAR
  []
 
@@ -1559,21 +1549,21 @@ File: media/04/image47.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[153]
+[151]
 File: media/04/image48.png Graphic file (type bmp)
 <media/04/image48.png>
-[154]
+[152]
 File: media/04/image50.png Graphic file (type bmp)
 <media/04/image50.png>
 
-Overfull \hbox (70.57463pt too wide) in paragraph at lines 8703--8704
+Overfull \hbox (70.57463pt too wide) in paragraph at lines 8680--8681
 [][] 
  []
 
 File: media/04/image52.png Graphic file (type bmp)
 <media/04/image52.png>
 
-Overfull \hbox (276.18858pt too wide) in paragraph at lines 8708--8709
+Overfull \hbox (276.18858pt too wide) in paragraph at lines 8685--8686
 [] 
  []
 
@@ -1583,46 +1573,73 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Overfull \hbox (11.43451pt too wide) has occurred while \output is active
 \TU/lmr/m/sl/10 4.8.  POSITION ERROR FAR 23/25.1323 AND .1325/JAR CERTIFICATION
- \TU/lmr/m/n/10 155
+ \TU/lmr/m/n/10 153
  []
 
-[155]
+[153]
 File: media/04/image53.png Graphic file (type bmp)
 <media/04/image53.png>
 
-Overfull \hbox (282.75604pt too wide) in paragraph at lines 8713--8714
+Overfull \hbox (282.75604pt too wide) in paragraph at lines 8690--8691
 [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[156]
+[154]
 File: media/04/image54.png Graphic file (type bmp)
 <media/04/image54.png>
 
-Overfull \hbox (119.08846pt too wide) in paragraph at lines 8715--8716
+Overfull \hbox (119.08846pt too wide) in paragraph at lines 8692--8693
 [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[157]
+[155]
 Overfull \vbox (123.22435pt too high) has occurred while \output is active []
 
-[158]
+[156]
 File: media/04/image55.png Graphic file (type bmp)
 <media/04/image55.png>
 
-Overfull \hbox (282.8742pt too wide) in paragraph at lines 8720--8721
+Overfull \hbox (282.8742pt too wide) in paragraph at lines 8697--8698
 [] 
  []
 
 File: media/04/image56.png Graphic file (type bmp)
 <media/04/image56.png>
 
-Overfull \hbox (70.15324pt too wide) in paragraph at lines 8722--8723
+Overfull \hbox (70.15324pt too wide) in paragraph at lines 8699--8700
+[][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (20.06232pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 4.11.  EFFECT OF ERRORS ON CALIBRATED AIRSPEED AND ALTITUDE \TU
+/lmr/m/n/10 157
+ []
+
+[157]
+Overfull \vbox (100.27634pt too high) has occurred while \output is active []
+
+[158]
+File: media/04/image57.png Graphic file (type bmp)
+<media/04/image57.png>
+
+Overfull \hbox (40.84477pt too wide) in paragraph at lines 8701--8702
+[][] 
+ []
+
+File: media/04/image58.png Graphic file (type bmp)
+<media/04/image58.png>
+
+Overfull \hbox (125.56152pt too wide) in paragraph at lines 8703--8704
 [][] 
  []
 
@@ -1636,78 +1653,70 @@ Overfull \hbox (20.06232pt too wide) has occurred while \output is active
  []
 
 [159]
-Overfull \vbox (100.27634pt too high) has occurred while \output is active []
-
-[160]
-File: media/04/image57.png Graphic file (type bmp)
-<media/04/image57.png>
-
-Overfull \hbox (40.84477pt too wide) in paragraph at lines 8724--8725
-[][] 
- []
-
-File: media/04/image58.png Graphic file (type bmp)
-<media/04/image58.png>
-
-Overfull \hbox (125.56152pt too wide) in paragraph at lines 8726--8727
-[][] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (20.06232pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 4.11.  EFFECT OF ERRORS ON CALIBRATED AIRSPEED AND ALTITUDE \TU
-/lmr/m/n/10 161
- []
-
-[161]
 Overfull \vbox (100.29619pt too high) has occurred while \output is active []
 
-[162]
+[160]
 Chapter 5.
-[163
+[161
 
-] [164]
+] [162]
 File: media/05/image1.png Graphic file (type bmp)
 <media/05/image1.png>
 
-Overfull \hbox (73.90385pt too wide) in paragraph at lines 8982--8983
+Overfull \hbox (73.90385pt too wide) in paragraph at lines 8959--8960
 [][] 
  []
 
-[165]
+[163]
 File: media/05/image5.png Graphic file (type bmp)
 <media/05/image5.png>
-[166]
+[164]
 File: media/05/image7.png Graphic file (type bmp)
 <media/05/image7.png>
 
-Overfull \hbox (78.06993pt too wide) in paragraph at lines 9064--9065
+Overfull \hbox (78.06993pt too wide) in paragraph at lines 9041--9042
 [][] 
  []
 
 File: media/05/image9.png Graphic file (type bmp)
 <media/05/image9.png>
 
-Overfull \hbox (291.01784pt too wide) in paragraph at lines 9070--9071
+Overfull \hbox (291.01784pt too wide) in paragraph at lines 9047--9048
 [][] 
  []
 
-[167]
+[165]
 File: media/05/image11.png Graphic file (type bmp)
 <media/05/image11.png>
 
-Overfull \hbox (40.44891pt too wide) in paragraph at lines 9125--9126
+Overfull \hbox (40.44891pt too wide) in paragraph at lines 9102--9103
 [][] 
  []
 
-[168]
+[166]
 File: media/05/image12.png Graphic file (type bmp)
 <media/05/image12.png>
 
-Overfull \hbox (168.15237pt too wide) in paragraph at lines 9133--9134
+Overfull \hbox (168.15237pt too wide) in paragraph at lines 9110--9111
+[][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[167]
+File: media/05/image13.png Graphic file (type bmp)
+<media/05/image13.png>
+
+Underfull \vbox (badness 7944) has occurred while \output is active []
+
+[168]
+File: media/05/image14.png Graphic file (type bmp)
+<media/05/image14.png>
+File: media/05/image15.png Graphic file (type bmp)
+<media/05/image15.png>
+
+Overfull \hbox (290.74327pt too wide) in paragraph at lines 9147--9148
 [][] 
  []
 
@@ -1715,29 +1724,32 @@ Overfull \hbox (168.15237pt too wide) in paragraph at lines 9133--9134
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [169]
-File: media/05/image13.png Graphic file (type bmp)
-<media/05/image13.png>
+File: media/05/image16.png Graphic file (type bmp)
+<media/05/image16.png>
 
-Underfull \vbox (badness 7944) has occurred while \output is active []
-
-[170]
-File: media/05/image14.png Graphic file (type bmp)
-<media/05/image14.png>
-File: media/05/image15.png Graphic file (type bmp)
-<media/05/image15.png>
-
-Overfull \hbox (290.74327pt too wide) in paragraph at lines 9170--9171
+Overfull \hbox (68.07425pt too wide) in paragraph at lines 9155--9156
 [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[171]
-File: media/05/image16.png Graphic file (type bmp)
-<media/05/image16.png>
+[170]
+File: media/05/image18.png Graphic file (type bmp)
+<media/05/image18.png>
 
-Overfull \hbox (68.07425pt too wide) in paragraph at lines 9178--9179
+Overfull \hbox (160.94415pt too wide) in paragraph at lines 9173--9174
+[] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[171]
+File: media/05/image19.png Graphic file (type bmp)
+<media/05/image19.png>
+
+Overfull \hbox (38.03108pt too wide) in paragraph at lines 9175--9176
 [][] 
  []
 
@@ -1745,216 +1757,216 @@ Overfull \hbox (68.07425pt too wide) in paragraph at lines 9178--9179
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [172]
-File: media/05/image18.png Graphic file (type bmp)
-<media/05/image18.png>
-
-Overfull \hbox (160.94415pt too wide) in paragraph at lines 9196--9197
-[] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[173]
-File: media/05/image19.png Graphic file (type bmp)
-<media/05/image19.png>
-
-Overfull \hbox (38.03108pt too wide) in paragraph at lines 9198--9199
-[][] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[174]
 File: media/05/image20.png Graphic file (type bmp)
 <media/05/image20.png>
 
-Overfull \hbox (116.49257pt too wide) in paragraph at lines 9204--9205
+Overfull \hbox (116.49257pt too wide) in paragraph at lines 9181--9182
 [] 
  []
 
 File: media/05/image21.png Graphic file (type bmp)
 <media/05/image21.png>
 
-Overfull \hbox (45.29681pt too wide) in paragraph at lines 9206--9207
+Overfull \hbox (45.29681pt too wide) in paragraph at lines 9183--9184
 [][] 
  []
 
-[175]
+[173]
 File: media/05/image22.png Graphic file (type bmp)
 <media/05/image22.png>
 
-Overfull \hbox (109.51845pt too wide) in paragraph at lines 9212--9213
+Overfull \hbox (109.51845pt too wide) in paragraph at lines 9189--9190
 [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[176]
+[174]
 File: media/05/image23.png Graphic file (type bmp)
 <media/05/image23.png>
 File: media/05/image24.png Graphic file (type bmp)
 <media/05/image24.png>
 
-Overfull \hbox (291.0053pt too wide) in paragraph at lines 9221--9222
+Overfull \hbox (291.0053pt too wide) in paragraph at lines 9198--9199
 [][] 
  []
 
-[177]
+[175]
 File: media/05/image25.png Graphic file (type bmp)
 <media/05/image25.png>
-[178]
+[176]
 File: media/05/image38.png Graphic file (type bmp)
 <media/05/image38.png>
 File: media/05/image43.png Graphic file (type bmp)
 <media/05/image43.png>
 
-Overfull \hbox (138.99117pt too wide) in paragraph at lines 9276--9277
+Overfull \hbox (138.99117pt too wide) in paragraph at lines 9253--9254
 [][] 
  []
 
-[179] [180]
+[177] [178]
 File: media/05/image46.png Graphic file (type bmp)
 <media/05/image46.png>
 
-Overfull \hbox (291.0053pt too wide) in paragraph at lines 9307--9308
+Overfull \hbox (291.0053pt too wide) in paragraph at lines 9284--9285
 [][] 
  []
 
 File: media/05/image47.png Graphic file (type bmp)
 <media/05/image47.png>
 
-Overfull \hbox (52.50327pt too wide) in paragraph at lines 9315--9316
+Overfull \hbox (52.50327pt too wide) in paragraph at lines 9292--9293
 [][] 
  []
 
 File: media/05/image48.png Graphic file (type bmp)
 <media/05/image48.png>
 
-Overfull \hbox (30.21901pt too wide) in paragraph at lines 9317--9318
+Overfull \hbox (30.21901pt too wide) in paragraph at lines 9294--9295
 [][] 
  []
 
 
 Underfull \vbox (badness 3965) has occurred while \output is active []
 
-[181]
+[179]
 File: media/05/image49.png Graphic file (type bmp)
 <media/05/image49.png>
 
-Overfull \hbox (291.0053pt too wide) in paragraph at lines 9325--9326
+Overfull \hbox (291.0053pt too wide) in paragraph at lines 9302--9303
 [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[182]
+[180]
 File: media/05/image50.png Graphic file (type bmp)
 <media/05/image50.png>
 
-Overfull \hbox (56.10165pt too wide) in paragraph at lines 9342--9343
+Overfull \hbox (56.10165pt too wide) in paragraph at lines 9319--9320
 [][] 
  []
 
-[183]
+[181]
 File: media/05/image51.png Graphic file (type bmp)
 <media/05/image51.png>
 
-Overfull \hbox (291.0053pt too wide) in paragraph at lines 9359--9360
+Overfull \hbox (291.0053pt too wide) in paragraph at lines 9336--9337
 [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[184] [185] [186]
+[182] [183] [184]
 File: media/05/image59.png Graphic file (type bmp)
 <media/05/image59.png>
 
-Overfull \hbox (169.93959pt too wide) in paragraph at lines 9424--9425
+Overfull \hbox (169.93959pt too wide) in paragraph at lines 9401--9402
 [][] 
  []
 
-[187]
+[185]
 File: media/05/image62.png Graphic file (type bmp)
 <media/05/image62.png>
 
-Overfull \hbox (290.98232pt too wide) in paragraph at lines 9456--9457
+Overfull \hbox (290.98232pt too wide) in paragraph at lines 9433--9434
 [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[188] [189]
+[186] [187]
 File: media/05/image63.png Graphic file (type bmp)
 <media/05/image63.png>
 
-Overfull \hbox (28.17857pt too wide) in paragraph at lines 9480--9481
+Overfull \hbox (28.17857pt too wide) in paragraph at lines 9457--9458
 [][] 
  []
 
 File: media/05/image64.png Graphic file (type bmp)
 <media/05/image64.png>
 
-Overfull \hbox (175.35605pt too wide) in paragraph at lines 9487--9488
+Overfull \hbox (175.35605pt too wide) in paragraph at lines 9464--9465
 [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[190] [191]
+[188] [189]
 Missing character: There is no ν in font [lmroman10-regular]:mapping=tex-text;!
 File: media/05/image66.png Graphic file (type bmp)
 <media/05/image66.png>
 
-Overfull \hbox (290.98753pt too wide) in paragraph at lines 9525--9526
+Overfull \hbox (290.98753pt too wide) in paragraph at lines 9502--9503
 [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[192]
+[190]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[193]
-Underfull \hbox (badness 1917) in paragraph at lines 9530--9530
+[191]
+Underfull \hbox (badness 1917) in paragraph at lines 9507--9507
 []\TU/lmr/bx/n/12 Two-Dimensional Supersonic Airfoil Approxima-
  []
 
 File: media/05/image67.png Graphic file (type bmp)
 <media/05/image67.png>
 
-Overfull \hbox (21.8207pt too wide) in paragraph at lines 9538--9539
+Overfull \hbox (21.8207pt too wide) in paragraph at lines 9515--9516
 [][] 
  []
 
 File: media/05/image69.png Graphic file (type bmp)
 <media/05/image69.png>
-[194]
+[192]
 File: media/05/image72.png Graphic file (type bmp)
 <media/05/image72.png>
-[195]
+[193]
 File: media/05/image73.png Graphic file (type bmp)
 <media/05/image73.png>
 File: media/05/image75.png Graphic file (type bmp)
 <media/05/image75.png>
-[196]
+[194]
 File: media/05/image76.png Graphic file (type bmp)
 <media/05/image76.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[197] [198]
+[195] [196]
 File: media/05/image80.png Graphic file (type bmp)
 <media/05/image80.png>
 
-Overfull \hbox (35.93925pt too wide) in paragraph at lines 9683--9684
+Overfull \hbox (35.93925pt too wide) in paragraph at lines 9660--9661
+[][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[197]
+File: media/05/image81.png Graphic file (type bmp)
+<media/05/image81.png>
+
+Overfull \hbox (111.99974pt too wide) in paragraph at lines 9664--9665
+[][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[198]
+File: media/05/image83.png Graphic file (type bmp)
+<media/05/image83.png>
+
+Overfull \hbox (77.79251pt too wide) in paragraph at lines 9686--9687
 [][] 
  []
 
@@ -1962,73 +1974,51 @@ Overfull \hbox (35.93925pt too wide) in paragraph at lines 9683--9684
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [199]
-File: media/05/image81.png Graphic file (type bmp)
-<media/05/image81.png>
-
-Overfull \hbox (111.99974pt too wide) in paragraph at lines 9687--9688
-[][] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[200]
-File: media/05/image83.png Graphic file (type bmp)
-<media/05/image83.png>
-
-Overfull \hbox (77.79251pt too wide) in paragraph at lines 9709--9710
-[][] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[201]
 File: media/05/image84.png Graphic file (type bmp)
 <media/05/image84.png>
 
-Overfull \hbox (125.1415pt too wide) in paragraph at lines 9717--9718
+Overfull \hbox (125.1415pt too wide) in paragraph at lines 9694--9695
 [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[202] [203]
+[200] [201]
 File: media/05/image86.png Graphic file (type bmp)
 <media/05/image86.png>
 
-Overfull \hbox (215.10545pt too wide) in paragraph at lines 9757--9758
+Overfull \hbox (215.10545pt too wide) in paragraph at lines 9734--9735
 [][] 
  []
 
 File: media/05/image89.png Graphic file (type bmp)
 <media/05/image89.png>
 
-Overfull \hbox (31.37186pt too wide) in paragraph at lines 9767--9768
+Overfull \hbox (31.37186pt too wide) in paragraph at lines 9744--9745
 [][] 
  []
 
-[204]
+[202]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[205]
+[203]
 File: media/05/image95.png Graphic file (type bmp)
 <media/05/image95.png>
 
-Overfull \hbox (140.25804pt too wide) in paragraph at lines 9790--9791
+Overfull \hbox (140.25804pt too wide) in paragraph at lines 9767--9768
 [][] 
  []
 
-[206] [207]
+[204] [205]
 File: media/05/image97.png Graphic file (type bmp)
 <media/05/image97.png>
 
-Overfull \hbox (70.45432pt too wide) in paragraph at lines 9916--9917
+Overfull \hbox (70.45432pt too wide) in paragraph at lines 9893--9894
 [][] 
  []
 
-[208] [209] [210
+[206] [207] [208
 
 ]
 Chapter 6.
@@ -2037,16 +2027,16 @@ File: media/06/image1.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[211]
+[209]
 File: media/06/image2.png Graphic file (type bmp)
 <media/06/image2.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[212]
+[210]
 File: media/06/image4.png Graphic file (type bmp)
 <media/06/image4.png>
-[213]
+[211]
 File: media/06/image5.png Graphic file (type bmp)
 <media/06/image5.png>
 File: media/06/image6.png Graphic file (type bmp)
@@ -2054,66 +2044,70 @@ File: media/06/image6.png Graphic file (type bmp)
 
 Underfull \vbox (badness 3179) has occurred while \output is active []
 
-[214] [215]
+[212] [213]
 File: media/06/image11.png Graphic file (type bmp)
 <media/06/image11.png>
-[216]
+[214]
 File: media/06/image12.png Graphic file (type bmp)
 <media/06/image12.png>
-[217]
-Overfull \hbox (47.39949pt too wide) detected at line 10236
+[215]
+Overfull \hbox (47.39949pt too wide) detected at line 10213
 [] [] [] []
  []
 
 
-Overfull \hbox (49.19948pt too wide) detected at line 10255
+Overfull \hbox (49.19948pt too wide) detected at line 10232
 [] [] [] []
  []
 
-[218] [219] [220]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 6.1 on input line 10357.
-
-[221] [222
+[216] [217] [218] [219] [220
 
 ]
 Chapter 7.
 
-Overfull \hbox (3.3579pt too wide) in paragraph at lines 10409--10410
+Overfull \hbox (3.3579pt too wide) in paragraph at lines 10386--10387
 []\TU/lmr/m/n/10 [rad/sec]|  
  []
 
 
-Overfull \hbox (3.3579pt too wide) in paragraph at lines 10416--10417
+Overfull \hbox (3.3579pt too wide) in paragraph at lines 10393--10394
 []\TU/lmr/m/n/10 [rad/sec]|  
  []
 
 
-Overfull \hbox (14.19789pt too wide) in paragraph at lines 10444--10445
+Overfull \hbox (14.19789pt too wide) in paragraph at lines 10421--10422
 []\TU/lmr/m/n/10 [cycles/sec]|  
  []
 
-[223]
-Overfull \hbox (2.04979pt too wide) in paragraph at lines 10603--10604
+[221]
+Overfull \hbox (2.04979pt too wide) in paragraph at lines 10580--10581
 []\TU/lmr/m/n/10 allowable 
  []
 
 
-Overfull \hbox (14.29979pt too wide) in paragraph at lines 10628--10629
+Overfull \hbox (14.29979pt too wide) in paragraph at lines 10605--10606
 []\TU/lmr/m/n/10 longitudinal|  
  []
 
 
-Overfull \hbox (5.37979pt too wide) in paragraph at lines 10633--10634
+Overfull \hbox (5.37979pt too wide) in paragraph at lines 10610--10611
 []\TU/lmr/m/n/10 maximum 
  []
 
 
-Overfull \hbox (3.43979pt too wide) in paragraph at lines 10638--10639
+Overfull \hbox (3.43979pt too wide) in paragraph at lines 10615--10616
 []\TU/lmr/m/n/10 minimum 
  []
 
+[222]
+Overfull \hbox (27.28453pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 7.2.  LONGITUDINAL & LATERAL CENTER OF GRAVITY MEASUREMENT \TU/
+lmr/m/n/10 223
+ []
+
+[223]
+File: media/07/image1.png Graphic file (type bmp)
+<media/07/image1.png>
 [224]
 Overfull \hbox (27.28453pt too wide) has occurred while \output is active
 \TU/lmr/m/sl/10 7.2.  LONGITUDINAL & LATERAL CENTER OF GRAVITY MEASUREMENT \TU/
@@ -2121,26 +2115,205 @@ lmr/m/n/10 225
  []
 
 [225]
+File: media/07/image7.png Graphic file (type bmp)
+<media/07/image7.png>
 
-LaTeX Warning: File `media/07/image1.svg' not found on input line 10734.
+Overfull \hbox (126.95328pt too wide) in paragraph at lines 10854--10855
+[] [] 
+ []
 
 
-! LaTeX Error: Cannot determine size of graphic in media/07/image1.svg (no Boun
-dingBox).
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.10734 ...,height=1.77083in]{media/07/image1.svg}
-                                                   
+[226]
+File: media/07/image9.png Graphic file (type bmp)
+<media/07/image9.png>
+[227]
+File: media/07/image13.png Graphic file (type bmp)
+<media/07/image13.png>
+File: media/07/image16.png Graphic file (type bmp)
+<media/07/image16.png>
+[228]
+File: media/07/image17.png Graphic file (type bmp)
+<media/07/image17.png>
+File: media/07/image19.png Graphic file (type bmp)
+<media/07/image19.png>
+
+Underfull \vbox (badness 1137) has occurred while \output is active []
+
+[229] [230]
+Underfull \hbox (badness 3240) in paragraph at lines 11008--11008
+[]\TU/lmr/bx/n/12 Measuring Roll Inertia, $[][]$ (spring oscillation
+ []
+
+File: media/07/image24.png Graphic file (type bmp)
+<media/07/image24.png>
+File: media/07/image25.png Graphic file (type bmp)
+<media/07/image25.png>
+[231]
+Missing character: There is no 𝛥 in font [lmroman10-regular]:mapping=tex-text;!
+[232]
+Underfull \hbox (badness 1838) in paragraph at lines 11116--11116
+[]\TU/lmr/bx/n/12 Measuring Pitch Inertia, $[][]$ (spring oscillation
+ []
+
+File: media/07/image32.png Graphic file (type bmp)
+<media/07/image32.png>
+[233]
+File: media/07/image33.png Graphic file (type bmp)
+<media/07/image33.png>
+
+Underfull \hbox (badness 3271) in paragraph at lines 11140--11140
+[]\TU/lmr/bx/n/12 Measuring Yaw Inertia, $[][]$ (spring oscillation
+ []
+
+File: media/07/image36.png Graphic file (type bmp)
+<media/07/image36.png>
+
+Underfull \vbox (badness 3148) has occurred while \output is active []
+
+[234]
+File: media/07/image37.png Graphic file (type bmp)
+<media/07/image37.png>
+File: media/07/image38.png Graphic file (type bmp)
+<media/07/image38.png>
+
+Underfull \vbox (badness 1454) has occurred while \output is active []
+
+[235]
+File: media/07/image41.png Graphic file (type bmp)
+<media/07/image41.png>
+
+Underfull \vbox (badness 7777) has occurred while \output is active []
+
+[236]
+File: media/07/image47.png Graphic file (type bmp)
+<media/07/image47.png>
+[237] [238]
+File: media/07/image54.png Graphic file (type bmp)
+<media/07/image54.png>
+[239]
+Overfull \hbox (3.30894pt too wide) in paragraph at lines 11339--11340
+[]\TU/lmr/m/n/10 7.5.1|  
+ []
+
+
+Overfull \hbox (3.30894pt too wide) in paragraph at lines 11344--11345
+[]\TU/lmr/m/n/10 7.5.2|  
+ []
+
+
+Overfull \hbox (3.30894pt too wide) in paragraph at lines 11349--11350
+[]\TU/lmr/m/n/10 7.5.3|  
+ []
+
+
+Overfull \hbox (3.30894pt too wide) in paragraph at lines 11354--11355
+[]\TU/lmr/m/n/10 7.5.4|  
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.8 on input line 11359.
+
+
+Overfull \hbox (3.30894pt too wide) in paragraph at lines 11367--11368
+[]\TU/lmr/m/n/10 7.5.5|  
+ []
+
+
+Overfull \hbox (3.30894pt too wide) in paragraph at lines 11372--11373
+[]\TU/lmr/m/n/10 7.5.6|  
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.9 on input line 11377.
+
+[240]
+Chapter 8.
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 8.1 on input line 11421.
+
+[241
+
+] [242]
+File: media/08/image5.png Graphic file (type bmp)
+<media/08/image5.png>
+
+Underfull \vbox (badness 1210) has occurred while \output is active []
+
+[243]
+File: media/08/image9.png Graphic file (type bmp)
+<media/08/image9.png>
+[244]
+File: media/08/image12.png Graphic file (type bmp)
+<media/08/image12.png>
+[245]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 8.2 on input line 11565.
+
+File: media/08/image15.png Graphic file (type bmp)
+<media/08/image15.png>
+File: media/08/image18.png Graphic file (type bmp)
+<media/08/image18.png>
+[246]
+File: media/08/image21.png Graphic file (type bmp)
+<media/08/image21.png>
+File: media/08/image22.png Graphic file (type bmp)
+<media/08/image22.png>
+[247]
+File: media/08/image24.png Graphic file (type bmp)
+<media/08/image24.png>
+File: media/08/image26.png Graphic file (type bmp)
+<media/08/image26.png>
+File: media/08/image27.png Graphic file (type bmp)
+<media/08/image27.png>
+
+Underfull \vbox (badness 1552) has occurred while \output is active []
+
+[248]
+File: media/08/image28.png Graphic file (type bmp)
+<media/08/image28.png>
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 8.3 on input line 11683.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[249] [250] [251]
+File: media/08/image43.png Graphic file (type bmp)
+<media/08/image43.png>
+File: media/08/image44.png Graphic file (type bmp)
+<media/08/image44.png>
+File: media/08/image45.png Graphic file (type bmp)
+<media/08/image45.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[252]
+File: media/08/image47.png Graphic file (type bmp)
+<media/08/image47.png>
+
+Overfull \hbox (51.83505pt too wide) detected at line 11836
+[] [] [] [][][][] [] [][][][]
+ []
+
+! Argument of \align has an extra }.
+<inserted text> 
+                \par 
+l.11857 \begin{align} x\left(t\right) &
+                                       =  A \sin \left( \omega_n t + \phi \r...
+ 
 Here is how much of TeX's memory you used:
- 17113 strings out of 479393
- 305589 string characters out of 5877969
- 784718 words of memory out of 5000000
- 36173 multiletter control sequences out of 15000+600000
+ 17267 strings out of 479393
+ 309938 string characters out of 5877969
+ 788287 words of memory out of 5000000
+ 36347 multiletter control sequences out of 15000+600000
  542564 words of font info for 96 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  94i,15n,118p,1102b,595s stack positions out of 5000i,500n,10000p,200000b,80000s
-
-Output written on _main.pdf (225 pages).
+Output written on _main.pdf (252 pages).
