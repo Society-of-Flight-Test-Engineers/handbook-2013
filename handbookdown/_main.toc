@@ -1,0 +1,384 @@
+\contentsline {chapter}{Preface}{9}{chapter*.2}%
+\contentsline {section}{Contributors}{10}{section*.3}%
+\contentsline {section}{Editors}{10}{section*.4}%
+\contentsline {section}{Feedback}{10}{section*.5}%
+\contentsline {section}{Publication Policy}{10}{section*.6}%
+\contentsline {section}{Section Index}{11}{section*.7}%
+\contentsline {chapter}{\numberline {1}General Information}{13}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Unit Conversions}{13}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Greek Alphabet}{22}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Greek Symbols Used for Aircraft}{23}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Common Subscripts}{24}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Common Abbreviations}{24}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Sign Conventions}{38}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Thermodynamics Relations}{47}{section.1.7}%
+\contentsline {subsection}{\numberline {1.7.1}Thermodynamic Definitions}{47}{subsection.1.7.1}%
+\contentsline {subsection}{\numberline {1.7.2}Thermodynamic Symbols}{48}{subsection.1.7.2}%
+\contentsline {subsection}{\numberline {1.7.3}Thermodynamic Laws}{49}{subsection.1.7.3}%
+\contentsline {section}{\numberline {1.8}Mechanics Relations}{53}{section.1.8}%
+\contentsline {subsection}{\numberline {1.8.1}Mechanics Symbols}{53}{subsection.1.8.1}%
+\contentsline {subsection}{\numberline {1.8.2}Newton's Laws}{54}{subsection.1.8.2}%
+\contentsline {subsection}{\numberline {1.8.3}Planar Kinetics, Work, Power and Energy}{55}{subsection.1.8.3}%
+\contentsline {subsection}{\numberline {1.8.4}Planar Kinematics at Constant Acceleration}{56}{subsection.1.8.4}%
+\contentsline {subsection}{\numberline {1.8.5}Curvilinear motion with constant acceleration and radius}{57}{subsection.1.8.5}%
+\contentsline {subsection}{\numberline {1.8.6}Aircraft in level turn}{57}{subsection.1.8.6}%
+\contentsline {subsection}{\numberline {1.8.7}Level Turn Kinematics Character}{59}{subsection.1.8.7}%
+\contentsline {subsection}{\numberline {1.8.8}Gyroscopic Motion}{60}{subsection.1.8.8}%
+\contentsline {section}{\numberline {1.9}International Phonetic Alphabet and Morse Code}{60}{section.1.9}%
+\contentsline {section}{\numberline {1.10}References}{61}{section.1.10}%
+\contentsline {chapter}{\numberline {2}Mathematics}{63}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Algebra}{63}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Laws}{63}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Identities}{63}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Equations}{66}{subsection.2.1.3}%
+\contentsline {subsubsection}{Quadratic Equation}{66}{section*.8}%
+\contentsline {subsubsection}{Cubic Equation}{66}{section*.9}%
+\contentsline {subsubsection}{Quartic (biquadratic) Equation}{68}{section*.10}%
+\contentsline {subsection}{\numberline {2.1.4}Interest And Annuities}{68}{subsection.2.1.4}%
+\contentsline {section}{\numberline {2.2}Geometry}{70}{section.2.2}%
+\contentsline {subsection}{General definitions}{70}{section*.11}%
+\contentsline {subsubsection}{Triangle}{70}{section*.12}%
+\contentsline {subsubsection}{Rectangle}{70}{section*.13}%
+\contentsline {subsubsection}{Parallelogram (opposite sides parallel)}{70}{section*.14}%
+\contentsline {subsubsection}{Trapezoid (4 sides, 2 parallel)}{71}{section*.15}%
+\contentsline {subsubsection}{Pentagon, Hexagon, and other \(n\)-sided Polygons}{71}{section*.16}%
+\contentsline {subsubsection}{Circle}{71}{section*.17}%
+\contentsline {subsubsection}{Ellipse}{72}{section*.18}%
+\contentsline {subsubsection}{Parabola}{72}{section*.19}%
+\contentsline {subsubsection}{Hyperbola}{73}{section*.20}%
+\contentsline {subsubsection}{Sphere}{73}{section*.21}%
+\contentsline {subsubsection}{Torus}{74}{section*.22}%
+\contentsline {section}{\numberline {2.3}Trigonometery}{74}{section.2.3}%
+\contentsline {subsection}{Identities}{76}{section*.23}%
+\contentsline {subsubsection}{Pythagorean Identities:}{76}{section*.24}%
+\contentsline {subsubsection}{Half Angle Identities:}{76}{section*.25}%
+\contentsline {subsubsection}{Double-Angle Identities:}{76}{section*.26}%
+\contentsline {subsubsection}{n-Angle Identities:}{76}{section*.27}%
+\contentsline {subsubsection}{Two-Angle Identities:}{77}{section*.28}%
+\contentsline {subsubsection}{Sum and Difference Identities:}{77}{section*.29}%
+\contentsline {subsubsection}{Power Identities:}{78}{section*.30}%
+\contentsline {subsubsection}{OBLIQUE TRIANGLES}{78}{section*.31}%
+\contentsline {paragraph}{Law of Sines:}{79}{section*.32}%
+\contentsline {paragraph}{Law of Cosines:}{79}{section*.33}%
+\contentsline {paragraph}{Law of Tangents:}{79}{section*.34}%
+\contentsline {paragraph}{Projection Formulas:}{79}{section*.35}%
+\contentsline {paragraph}{Mollweide's Check Formulas:}{79}{section*.36}%
+\contentsline {section}{\numberline {2.4}Matrix Algebra}{79}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Fundamentals}{79}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Cofactors and Determinants}{80}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Computing the Inverse of a Matrix}{81}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Cramer's Rule}{82}{subsection.2.4.4}%
+\contentsline {section}{\numberline {2.5}Vector Algebra}{83}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Addition}{83}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Subtraction}{83}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Scalar Multiplication}{84}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}Dot Product}{84}{subsection.2.5.4}%
+\contentsline {subsection}{\numberline {2.5.5}Norm}{85}{subsection.2.5.5}%
+\contentsline {subsection}{\numberline {2.5.6}Vector Cross Product}{85}{subsection.2.5.6}%
+\contentsline {subsection}{\numberline {2.5.7}Vector Differentiation}{86}{subsection.2.5.7}%
+\contentsline {subsection}{\numberline {2.5.8}Motion of a point using two reference systems}{87}{subsection.2.5.8}%
+\contentsline {subsection}{\numberline {2.5.9}Motion of a point using one reference system}{88}{subsection.2.5.9}%
+\contentsline {section}{\numberline {2.6}Probability and Statistics}{89}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Standard Series}{91}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Derivative Table}{93}{section.2.8}%
+\contentsline {section}{\numberline {2.9}Integral Table}{94}{section.2.9}%
+\contentsline {section}{\numberline {2.10}Laplace Table}{96}{section.2.10}%
+\contentsline {section}{\numberline {2.11}References}{99}{section.2.11}%
+\contentsline {chapter}{\numberline {3}Universe Earth Atmospheric}{101}{chapter.3}%
+\contentsline {section}{Recurring Nomenclature}{101}{section*.37}%
+\contentsline {section}{\numberline {3.1}Universal Constants}{101}{section.3.1}%
+\contentsline {subsection}{Newtonian Gravity}{102}{section*.38}%
+\contentsline {section}{\numberline {3.2}Earth Properties}{102}{section.3.2}%
+\contentsline {subsection}{Centrifugal Relief from Gravity}{103}{section*.39}%
+\contentsline {subsection}{Altitude Effect on Gravitational Acceleration}{105}{section*.40}%
+\contentsline {subsection}{Actual Gravitational Pull on an Aircraft}{105}{section*.41}%
+\contentsline {subsection}{Gravity Influence on Aircraft Cruise Performance}{106}{section*.42}%
+\contentsline {section}{\numberline {3.3}General Properties of Air}{106}{section.3.3}%
+\contentsline {subsection}{Normal Composition of clean, dry atmospheric air near sea level, by volume}{107}{section*.43}%
+\contentsline {subsection}{Viscosities of Air}{107}{section*.44}%
+\contentsline {subsection}{Atmospheric Viscosity (U.S. Standard Atmosphere)}{108}{section*.45}%
+\contentsline {subsection}{Psychrometric Chart for Seal Level Barometric Pressure}{110}{section*.46}%
+\contentsline {section}{\numberline {3.4}Standard Atmosphere}{112}{section.3.4}%
+\contentsline {subsection}{Divisions of the Atmosphere}{112}{section*.47}%
+\contentsline {subsection}{Assumptions on which the standard atmosphere is built}{112}{section*.48}%
+\contentsline {subsection}{Standard Day Sea Level Atmospheric Conditions}{112}{section*.49}%
+\contentsline {subsection}{1976 U.S Standard Atmosphere Equations}{113}{section*.50}%
+\contentsline {subsubsection}{Troposphere}{113}{section*.51}%
+\contentsline {subsubsection}{Stratosphere}{113}{section*.52}%
+\contentsline {subsubsection}{1976 U.S. Standard Atmosphere Graph}{117}{section*.53}%
+\contentsline {section}{\numberline {3.5}Sea States}{121}{section.3.5}%
+\contentsline {subsection}{Sea Scale}{121}{section*.54}%
+\contentsline {subsection}{International Swell Scale}{121}{section*.55}%
+\contentsline {section}{\numberline {3.6}Sunrise Sunset Times}{123}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Crosswind Components}{123}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Geodetic Measurements}{123}{section.3.8}%
+\contentsline {subsection}{Acronyms, Abbreviations and Symbols}{123}{section*.56}%
+\contentsline {subsection}{Earth Modeling}{125}{section*.57}%
+\contentsline {subsection}{ECEF Transformations}{127}{section*.58}%
+\contentsline {subsection}{Great Circle Calculations}{129}{section*.59}%
+\contentsline {subsection}{Local Distance Transformation}{131}{section*.60}%
+\contentsline {section}{\numberline {3.9}Temperature Compensated Barometric Altitude}{134}{section.3.9}%
+\contentsline {section}{\numberline {3.10}References}{135}{section.3.10}%
+\contentsline {chapter}{\numberline {4}Pitot Statics}{137}{chapter.4}%
+\contentsline {section}{Common Nomenclature}{137}{section*.61}%
+\contentsline {section}{\numberline {4.1}Subsonic Airspeed and Mach Equation}{138}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Scale Altitude (Compressibility ) Correction}{139}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Subsonic Relations Between Compressible and Incompressible Dynamic Pressure}{141}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Supersonic Airspeed and Mach Equations}{142}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Total Temperature Equation}{143}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Altimeter Equation}{144}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Position Error Test Methods}{145}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Fly-by}{145}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Ground Course Method}{148}{subsection.4.7.2}%
+\contentsline {subsection}{\numberline {4.7.3}Trailing Cone/Bomb Method}{150}{subsection.4.7.3}%
+\contentsline {subsection}{\numberline {4.7.4}GPS Methods}{151}{subsection.4.7.4}%
+\contentsline {subsubsection}{Horseshoe Track GPS Method}{152}{section*.62}%
+\contentsline {subsubsection}{Horseshoe Heading GPS Method}{153}{section*.63}%
+\contentsline {subsubsection}{Cloverleaf Method}{153}{section*.64}%
+\contentsline {section}{\numberline {4.8}Position Error FAR 23/25.1323 and .1325/JAR Certification}{156}{section.4.8}%
+\contentsline {subsubsection}{Mil Spec P-26292 C (USAF)}{157}{section*.65}%
+\contentsline {section}{\numberline {4.9}PEC Correction Process Flow Chart}{158}{section.4.9}%
+\contentsline {section}{\numberline {4.10}Airspeed/Altitude/Mach Graphic Relation}{159}{section.4.10}%
+\contentsline {section}{\numberline {4.11}Effect of Errors on Calibrated Airspeed and Altitude}{161}{section.4.11}%
+\contentsline {chapter}{\numberline {5}Aerodynamics}{165}{chapter.5}%
+\contentsline {section}{Recurring Terminology}{165}{section*.66}%
+\contentsline {section}{\numberline {5.1}Dimensional Analysis Interpretations}{167}{section.5.1}%
+\contentsline {section}{\numberline {5.2}General Aerodynamic Relations}{170}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Wing Design Effects on Lift Curve Slope}{172}{section.5.3}%
+\contentsline {subsection}{Aspect Ratio Effect}{172}{section*.67}%
+\contentsline {subsection}{Trailing Edge Flap Effects}{176}{section*.68}%
+\contentsline {subsection}{Leading Edge Flap Effects}{177}{section*.69}%
+\contentsline {subsection}{Boundary Layer Control Effects}{179}{section*.70}%
+\contentsline {section}{\numberline {5.4}Elements of Drag}{179}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Reynolds Number Effects}{181}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Pressure Drag}{182}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Interference Drag}{185}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.4}Induced Drag}{186}{subsection.5.4.4}%
+\contentsline {section}{\numberline {5.5}Aerodynamic Compressibility Relations}{188}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Oblique Shocks}{189}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Supersonic Isentropic Expansion Relation}{193}{subsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.5.3}Two-Dimensional Supersonic Airfoil Approximations}{196}{subsection.5.5.3}%
+\contentsline {section}{\numberline {5.6}Drag Polars}{197}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Drag Polar Construction and Terminology}{197}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Complicating Factors}{200}{subsection.5.6.2}%
+\contentsline {subsubsection}{Airflow Separation Effects}{200}{section*.71}%
+\contentsline {subsubsection}{Reynolds Number Effects}{200}{section*.72}%
+\contentsline {subsubsection}{Wing Camber or Incidence Angle Effects}{201}{section*.73}%
+\contentsline {subsubsection}{Mach Number Effects}{203}{section*.74}%
+\contentsline {subsubsection}{Propeller Slipstream Effects}{205}{section*.75}%
+\contentsline {subsubsection}{Trim Drag Effects}{206}{section*.76}%
+\contentsline {subsection}{\numberline {5.6.3}Drag Polar Analysis}{208}{subsection.5.6.3}%
+\contentsline {section}{\numberline {5.7}References}{210}{section.5.7}%
+\contentsline {chapter}{\numberline {6}Axis Systems and Transformations}{213}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Earth Axis Systems}{213}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Aircraft Axis Systems}{214}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Body Axis System}{214}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Stability Axis System}{215}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Wind Axis System}{216}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}Wind-Body Axis Transformations}{217}{subsection.6.2.4}%
+\contentsline {subsection}{\numberline {6.2.5}Principle Axes}{218}{subsection.6.2.5}%
+\contentsline {section}{\numberline {6.3}Euler Angles}{218}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Flight Path Angles}{219}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Axis System Transformations}{220}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Acceleration Transformations}{221}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}Transformations between body axis rates and Euler angle rates}{221}{subsection.6.5.2}%
+\contentsline {subsection}{\numberline {6.5.3}Transformations from aerodynamic angles to aircraft stability axis angular rates}{222}{subsection.6.5.3}%
+\contentsline {subsection}{\numberline {6.5.4}Transformations from aerodynamic angles to the aircraft wind axis angular rates}{222}{subsection.6.5.4}%
+\contentsline {subsection}{\numberline {6.5.5}Transformations from Euler angles to aircraft body axis angular rates}{222}{subsection.6.5.5}%
+\contentsline {subsection}{\numberline {6.5.6}Transformations from aerodynamic angles and body axis angular rates to aircraft stability axis angular rates}{222}{subsection.6.5.6}%
+\contentsline {subsection}{\numberline {6.5.7}Transformations from aerodynamic angles and aircraft stability axis to aircraft wind axis angular rates}{223}{subsection.6.5.7}%
+\contentsline {section}{\numberline {6.6}References}{223}{section.6.6}%
+\contentsline {chapter}{\numberline {7}Mass Properties}{225}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Abbreviations and Terminology Abbreviations}{225}{section.7.1}%
+\contentsline {subsection}{Terminology}{226}{section*.77}%
+\contentsline {section}{\numberline {7.2}Longitudinal \& Lateral Center of Gravity Measurement}{227}{section.7.2}%
+\contentsline {subsection}{Test set-up procedures for empty weight \(\mathrm {cg}\) determination}{227}{section*.78}%
+\contentsline {subsection}{Calculating longitudinal center of gravity}{227}{section*.79}%
+\contentsline {subsubsection}{Example \(\mathrm {cg}\) calculations}{228}{section*.80}%
+\contentsline {paragraph}{Example Using Datum at Main Landing Gear}{228}{section*.81}%
+\contentsline {paragraph}{Example Using Datum at Prop Spinner}{228}{section*.82}%
+\contentsline {paragraph}{Example Lateral \(\mathrm {cg}\) Calculation}{229}{section*.83}%
+\contentsline {subsection}{Correcting empty weight \(\mathrm {cg}\) for changes in fuel, passengers, equipment or stores.}{229}{section*.84}%
+\contentsline {subsubsection}{Example \(\mathrm {cg}\) corrections}{229}{section*.85}%
+\contentsline {section}{\numberline {7.3}Vertical Center of Gravity Measurement}{230}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Moment \& Product of Inertia Measurement\nobreakspace {}}{232}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Radius of Gyration}{233}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Parallel Axis Theorem Applications}{234}{subsection.7.4.2}%
+\contentsline {subsection}{\numberline {7.4.3}Measuring Roll Inertia, \(I_{x_b}\) (spring oscillation method)}{235}{subsection.7.4.3}%
+\contentsline {subsection}{\numberline {7.4.4}Measuring Pitch Inertia, \(I_{y_b}\) (spring oscillation method)}{237}{subsection.7.4.4}%
+\contentsline {subsection}{\numberline {7.4.5}Measuring Yaw Inertia, \(I_{z_b}\) (spring oscillation method)}{238}{subsection.7.4.5}%
+\contentsline {subsection}{\numberline {7.4.6}Measuring Axis of Inclination and \(I_{xz}\)}{240}{subsection.7.4.6}%
+\contentsline {subsection}{\numberline {7.4.7}Guidelines for Spring Oscillation Method}{242}{subsection.7.4.7}%
+\contentsline {subsection}{\numberline {7.4.8}Swing Method}{243}{subsection.7.4.8}%
+\contentsline {section}{\numberline {7.5}References}{244}{section.7.5}%
+\contentsline {chapter}{\numberline {8}Motion \& Vibration Analysis}{245}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Recurring Abbreviations}{245}{section.8.1}%
+\contentsline {section}{\numberline {8.2}First Order Motion}{246}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Elements of First Order Motion}{246}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}First Order Motion Descriptive Parameters}{249}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}Determining \(\mittau \) from Step Input Time History}{250}{subsection.8.2.3}%
+\contentsline {section}{\numberline {8.3}Second Order Motion}{253}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Elements of Second Order Motion}{253}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Second Order Motion Descriptive Parameters}{254}{subsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.3.3}Determining Descriptive Parameters}{262}{subsection.8.3.3}%
+\contentsline {section}{\numberline {8.4}Complex Plane}{274}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Parameter Conversions}{278}{section.8.5}%
+\contentsline {section}{\numberline {8.6}Vibration Nomographs}{280}{section.8.6}%
+\contentsline {section}{\numberline {8.7}References}{282}{section.8.7}%
+\contentsline {chapter}{\numberline {9}Material Strength}{285}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Loads Terminology}{286}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Material Stress \& Strain}{287}{section.9.2}%
+\contentsline {section}{\numberline {9.3}V-n Diagram}{288}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Strain Gages}{291}{section.9.4}%
+\contentsline {section}{\numberline {9.5}References}{292}{section.9.5}%
+\contentsline {chapter}{\numberline {10}Reciprocating Engines}{295}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Recurring Abbreviations and Terminology}{295}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Reciprocating Engine Modeling}{297}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Reciprocating Engine Power Standardization (ref 10.5.4)}{303}{section.10.3}%
+\contentsline {section}{\numberline {10.4}FAA Approved Engine Temperature Corrections}{309}{section.10.4}%
+\contentsline {section}{\numberline {10.5}References}{309}{section.10.5}%
+\contentsline {chapter}{\numberline {11}Propellers}{311}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Abbreviations and Terminology}{311}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Propeller Geometry}{313}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Propeller Coefficients}{314}{section.11.3}%
+\contentsline {section}{\numberline {11.4}Propeller Efficiency and States}{315}{section.11.4}%
+\contentsline {section}{\numberline {11.5}Propeller Theory}{316}{section.11.5}%
+\contentsline {section}{\numberline {11.6}Propeller Modeling}{317}{section.11.6}%
+\contentsline {section}{\numberline {11.7}Propeller Flight Test}{331}{section.11.7}%
+\contentsline {section}{\numberline {11.8}References}{332}{section.11.8}%
+\contentsline {chapter}{\numberline {12}Fixed-Wing Performance Standardization}{333}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Recurring Abbreviations}{333}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Standardization Techniques}{335}{section.12.2}%
+\contentsline {section}{\numberline {12.3}Takeoff Distance}{336}{section.12.3}%
+\contentsline {subsection}{\numberline {12.3.1}Empirical Standardization Method}{336}{subsection.12.3.1}%
+\contentsline {subsection}{\numberline {12.3.2}Takeoff Distance Prediction}{338}{subsection.12.3.2}%
+\contentsline {section}{\numberline {12.4}Landing Distance}{342}{section.12.4}%
+\contentsline {subsection}{\numberline {12.4.1}Empirical Standardization Method}{343}{subsection.12.4.1}%
+\contentsline {subsection}{\numberline {12.4.2}Landing Distance Prediction}{344}{subsection.12.4.2}%
+\contentsline {section}{\numberline {12.5}Climb/Descent/Level Acceleration}{346}{section.12.5}%
+\contentsline {subsection}{\numberline {12.5.1}Climb/Descent/Acceleration Prediction}{347}{subsection.12.5.1}%
+\contentsline {subsection}{\numberline {12.5.2}Correcting to Standard Climb Rate}{347}{subsection.12.5.2}%
+\contentsline {subsection}{\numberline {12.5.3}Weight/Altitude/Temperature (WAT) Limits}{349}{subsection.12.5.3}%
+\contentsline {section}{\numberline {12.6}Level Turn Performance}{349}{section.12.6}%
+\contentsline {subsection}{\numberline {12.6.1}Sustained Level Turn Performance Prediction}{350}{subsection.12.6.1}%
+\contentsline {subsection}{\numberline {12.6.2}Sustained Level Turn Performance Correction}{352}{subsection.12.6.2}%
+\contentsline {subsection}{\numberline {12.6.3}Level Limit Turn Performance Correction}{352}{subsection.12.6.3}%
+\contentsline {section}{\numberline {12.7}Reciprocating Engine Cruise Performance}{354}{section.12.7}%
+\contentsline {subsection}{\numberline {12.7.1}Power Standardization}{354}{subsection.12.7.1}%
+\contentsline {subsection}{\numberline {12.7.2}Fuel Flow Standardization}{356}{subsection.12.7.2}%
+\contentsline {subsection}{\numberline {12.7.3}Endurance Optimization and Prediction}{357}{subsection.12.7.3}%
+\contentsline {subsection}{\numberline {12.7.4}Range Optimization and Prediction}{358}{subsection.12.7.4}%
+\contentsline {section}{\numberline {12.8}Jet Aircraft Cruise Performance}{359}{section.12.8}%
+\contentsline {subsection}{\numberline {12.8.1}Thrust Standardization}{359}{subsection.12.8.1}%
+\contentsline {subsection}{\numberline {12.8.2}Fuel Flow Standardization}{361}{subsection.12.8.2}%
+\contentsline {subsection}{\numberline {12.8.3}Endurance Optimization and Prediction}{362}{subsection.12.8.3}%
+\contentsline {subsection}{\numberline {12.8.4}Range Optimization and Prediction}{363}{subsection.12.8.4}%
+\contentsline {section}{\numberline {12.9}References}{365}{section.12.9}%
+\contentsline {chapter}{\numberline {13}Acoustics}{367}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Abbreviations and Terminology}{367}{section.13.1}%
+\contentsline {section}{\numberline {13.2}Acoustic Velocities, Spectrum, and Reference Levels}{368}{section.13.2}%
+\contentsline {section}{\numberline {13.3}Acoustic Pressure and Intensity}{369}{section.13.3}%
+\contentsline {section}{\numberline {13.4}Acoustic Weighting Curves}{370}{section.13.4}%
+\contentsline {section}{\numberline {13.5}1/3 Octave Center Frequencies}{371}{section.13.5}%
+\contentsline {section}{\numberline {13.6}References}{373}{section.13.6}%
+\contentsline {chapter}{\numberline {14}Electromagnetic Compatibility}{375}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Electromagnetic Compatibility (EMC)}{375}{section.14.1}%
+\contentsline {section}{\numberline {14.2}Abbreviations}{375}{section.14.2}%
+\contentsline {section}{\numberline {14.3}Terms}{376}{section.14.3}%
+\contentsline {section}{\numberline {14.4}Fundamentals}{377}{section.14.4}%
+\contentsline {subsection}{\numberline {14.4.1}Electric and Magnetic Fields}{377}{subsection.14.4.1}%
+\contentsline {subsection}{\numberline {14.4.2}Antennas}{378}{subsection.14.4.2}%
+\contentsline {subsubsection}{\numberline {14.4.2.1}Spectra}{379}{subsubsection.14.4.2.1}%
+\contentsline {subsubsection}{\numberline {14.4.2.2}Non-Ideal behavior of components}{379}{subsubsection.14.4.2.2}%
+\contentsline {section}{\numberline {14.5}Electromagnetic Interference (EMI)}{379}{section.14.5}%
+\contentsline {subsection}{\numberline {14.5.1}Interference Model}{380}{subsection.14.5.1}%
+\contentsline {subsection}{\numberline {14.5.2}Conducted Emissions}{381}{subsection.14.5.2}%
+\contentsline {subsection}{\numberline {14.5.3}Radiated Emissions}{381}{subsection.14.5.3}%
+\contentsline {subsection}{\numberline {14.5.4}Aviation Frequency Spectrum}{381}{subsection.14.5.4}%
+\contentsline {section}{\numberline {14.6}Testing}{382}{section.14.6}%
+\contentsline {subsection}{\numberline {14.6.1}Regulations and Industry Guidance}{382}{subsection.14.6.1}%
+\contentsline {subsection}{\numberline {14.6.2}Lab Testing}{382}{subsection.14.6.2}%
+\contentsline {subsection}{\numberline {14.6.3}Aircraft Ground Testing}{382}{subsection.14.6.3}%
+\contentsline {subsection}{\numberline {14.6.4}Aircraft Flight Testing}{382}{subsection.14.6.4}%
+\contentsline {subsection}{\numberline {14.6.5}Avionics changes and EMI testing}{383}{subsection.14.6.5}%
+\contentsline {section}{\numberline {14.7}Lightning}{383}{section.14.7}%
+\contentsline {subsection}{\numberline {14.7.1}Aircraft Lightning Zones}{383}{subsection.14.7.1}%
+\contentsline {subsection}{\numberline {14.7.2}Direct Effects}{383}{subsection.14.7.2}%
+\contentsline {subsection}{\numberline {14.7.3}Indirect Effects}{384}{subsection.14.7.3}%
+\contentsline {subsection}{\numberline {14.7.4}Instrumentation Precaution}{384}{subsection.14.7.4}%
+\contentsline {section}{\numberline {14.8}High Intensity Radiated Fields (HIRF)}{384}{section.14.8}%
+\contentsline {section}{\numberline {14.9}Precipitation Static (P-static)}{384}{section.14.9}%
+\contentsline {section}{\numberline {14.10}References}{385}{section.14.10}%
+\contentsline {chapter}{\numberline {15}Handling Qualities}{387}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Cooper-Harper Rating Related Figures}{387}{section.15.1}%
+\contentsline {chapter}{\numberline {16}Rotary Wing}{393}{chapter.16}%
+\contentsline {section}{\numberline {16.1}Principal Aeroderivatives}{393}{section.16.1}%
+\contentsline {subsection}{\numberline {16.1.1}Control Power}{393}{subsection.16.1.1}%
+\contentsline {subsection}{\numberline {16.1.2}Static Stability}{394}{subsection.16.1.2}%
+\contentsline {subsection}{\numberline {16.1.3}Damping}{395}{subsection.16.1.3}%
+\contentsline {subsection}{\numberline {16.1.4}Cross Coupling}{395}{subsection.16.1.4}%
+\contentsline {section}{\numberline {16.2}Forward Flight Static And Dynamic Stability\nobreakspace {}}{396}{section.16.2}%
+\contentsline {section}{\numberline {16.3}References}{398}{section.16.3}%
+\contentsline {chapter}{\numberline {17}Gas Turbine Propulsion}{399}{chapter.17}%
+\contentsline {section}{\numberline {17.1}Turbine Engine Basics}{399}{section.17.1}%
+\contentsline {subsection}{\numberline {17.1.1}Turbine Engine Types}{399}{subsection.17.1.1}%
+\contentsline {subsection}{\numberline {17.1.2}The Brayton Cycle}{401}{subsection.17.1.2}%
+\contentsline {subsection}{\numberline {17.1.3}Component Descriptions}{402}{subsection.17.1.3}%
+\contentsline {section}{\numberline {17.2}Propulsion System Analysis}{405}{section.17.2}%
+\contentsline {subsection}{\numberline {17.2.1}Standard Day Corrections}{406}{subsection.17.2.1}%
+\contentsline {subsection}{\numberline {17.2.2}Pressure and Temperature Relationships with Flight Parameters}{407}{subsection.17.2.2}%
+\contentsline {subsection}{\numberline {17.2.3}Reynolds Number Index}{409}{subsection.17.2.3}%
+\contentsline {subsection}{\numberline {17.2.4}Thrust Calculations}{410}{subsection.17.2.4}%
+\contentsline {section}{\numberline {17.3}Turbine Engine Operation}{411}{section.17.3}%
+\contentsline {subsection}{\numberline {17.3.1}Compressor operation during accelerations}{411}{subsection.17.3.1}%
+\contentsline {subsection}{\numberline {17.3.2}Compressor operation during decelerations}{412}{subsection.17.3.2}%
+\contentsline {subsection}{\numberline {17.3.3}Bleed air impacts during engine starts}{413}{subsection.17.3.3}%
+\contentsline {subsection}{\numberline {17.3.4}Variable Stator vane cambering effects}{414}{subsection.17.3.4}%
+\contentsline {subsection}{\numberline {17.3.5}Compressor impacts due to nozzle area for \underline {turbojet} engines}{415}{subsection.17.3.5}%
+\contentsline {subsection}{\numberline {17.3.6}Compressor impacts due to nozzle area for \underline {turbofan} engines}{415}{subsection.17.3.6}%
+\contentsline {subsection}{\numberline {17.3.7}Combustion Stability}{416}{subsection.17.3.7}%
+\contentsline {section}{\numberline {17.4}Additional Information}{417}{section.17.4}%
+\contentsline {subsection}{\numberline {17.4.1}Engine Stations}{417}{subsection.17.4.1}%
+\contentsline {subsection}{\numberline {17.4.2}Key Propulsion Terminology}{418}{subsection.17.4.2}%
+\contentsline {subsection}{\numberline {17.4.3}Aircraft and Associated Engines}{420}{subsection.17.4.3}%
+\contentsline {subsection}{\numberline {17.4.4}Additional Propulsion Resources}{422}{subsection.17.4.4}%
+\contentsline {chapter}{\numberline {18}Telemetry Control Room and Radio Communications}{423}{chapter.18}%
+\contentsline {chapter}{\numberline {19}The Electromagnetic Spectrum}{427}{chapter.19}%
+\contentsline {section}{\numberline {19.1}Electromagnetic Waves}{427}{section.19.1}%
+\contentsline {section}{\numberline {19.2}The Electromagnetic Spectrum}{428}{section.19.2}%
+\contentsline {section}{\numberline {19.3}Radio Frequency Electromagnetic Radiation}{430}{section.19.3}%
+\contentsline {section}{\numberline {19.4}Optical Frequency Electromagnetic Radiation}{432}{section.19.4}%
+\contentsline {section}{\numberline {19.5}Atmospheric Transmission Windows}{435}{section.19.5}%
+\contentsline {section}{\numberline {19.6}References}{436}{section.19.6}%
+\contentsline {chapter}{\numberline {20}Communication Systems Testing}{437}{chapter.20}%
+\contentsline {section}{\numberline {20.1}VHF Radios}{437}{section.20.1}%
+\contentsline {subsection}{\numberline {20.1.1}Technology}{437}{subsection.20.1.1}%
+\contentsline {subsection}{\numberline {20.1.2}Test Objectives}{438}{subsection.20.1.2}%
+\contentsline {subsection}{\numberline {20.1.3}Test technique}{441}{subsection.20.1.3}%
+\contentsline {subsection}{\numberline {20.1.4}Weather conditions}{442}{subsection.20.1.4}%
+\contentsline {subsection}{\numberline {20.1.5}Safety}{443}{subsection.20.1.5}%
+\contentsline {subsection}{\numberline {20.1.6}Tips and hints}{443}{subsection.20.1.6}%
+\contentsline {section}{\numberline {20.2}HF radios}{444}{section.20.2}%
+\contentsline {subsection}{\numberline {20.2.1}Technology}{444}{subsection.20.2.1}%
+\contentsline {subsection}{\numberline {20.2.2}Test Objectives}{445}{subsection.20.2.2}%
+\contentsline {subsection}{\numberline {20.2.3}Atmospheric conditions}{445}{subsection.20.2.3}%
+\contentsline {subsection}{\numberline {20.2.4}Test technique}{446}{subsection.20.2.4}%
+\contentsline {subsection}{\numberline {20.2.5}Safety}{447}{subsection.20.2.5}%
+\contentsline {subsection}{\numberline {20.2.6}Tips and hints}{447}{subsection.20.2.6}%
+\contentsline {section}{\numberline {20.3}SATCOM}{448}{section.20.3}%
+\contentsline {subsection}{\numberline {20.3.1}Technology}{448}{subsection.20.3.1}%
+\contentsline {subsection}{\numberline {20.3.2}Test Objectives}{450}{subsection.20.3.2}%
+\contentsline {subsubsection}{\numberline {20.3.2.1}Coverage}{450}{subsubsection.20.3.2.1}%
+\contentsline {subsection}{\numberline {20.3.3}Weather conditions}{451}{subsection.20.3.3}%
+\contentsline {subsection}{\numberline {20.3.4}Test technique}{452}{subsection.20.3.4}%
+\contentsline {subsubsection}{\numberline {20.3.4.1}Coverage}{452}{subsubsection.20.3.4.1}%
+\contentsline {subsection}{\numberline {20.3.5}Safety}{453}{subsection.20.3.5}%
+\contentsline {subsection}{\numberline {20.3.6}Tips and hints}{453}{subsection.20.3.6}%
+\contentsline {section}{\numberline {20.4}Other communication systems}{454}{section.20.4}%
+\contentsline {subsection}{\numberline {20.4.1}SELCAL}{454}{subsection.20.4.1}%
+\contentsline {subsection}{\numberline {20.4.2}TVHF}{454}{subsection.20.4.2}%
+\contentsline {subsection}{\numberline {20.4.3}Maritime radio}{454}{subsection.20.4.3}%
+\contentsline {subsection}{\numberline {20.4.4}V/UHF}{455}{subsection.20.4.4}%
+\contentsline {subsection}{\numberline {20.4.5}ALE}{455}{subsection.20.4.5}%
+\contentsline {subsection}{\numberline {20.4.6}Encryption technologies}{455}{subsection.20.4.6}%
+\contentsline {chapter}{\numberline {21}Real-Time Data Display Guidelines}{457}{chapter.21}%

@@ -97,9 +97,9 @@ I - \frac{\text{Imaginary} \left[ G_{yx} \left( f \right) \right]}{4 \pi \rho_0 
 where 
 
 \begin{align}
-\rho_0 &= \text{fluid density} = 1.293 \frac{\text{kg}}{\text{m^3}} \text{ for air}\\
+\rho_0 &= \text{fluid density} = 1.293 \frac{\text{kg}}{\text{m}^3} \text{ for air}\\
 \Delta r &= \text{microphone spacing (meters)}\\
-f &= \text{frequency}\\
+f &= \text{frequency}
 \end{align}
 
 **Intensity Spectrum Level (ISL)**

@@ -11854,7 +11854,7 @@ Complex pair roots: sinusoidal, convergent\strut
 \end{minipage} & \begin{minipage}[t]{0.39\columnwidth}\raggedright
 Imaginary pair roots: sinusoidal, neutral\strut
 \end{minipage} & \begin{minipage}[t]{0.39\columnwidth}\raggedright
-\begin{align} x\left(t\right) &=  A \sin \left( \omega_n t + \phi \right) \\ &= A \cos \left( \omega_n t \right) \end{align}\strut
+\[ x\left(t\right) =  A \sin \left( \omega_n t + \phi \right) = A \cos \left( \omega_n t \right) \]\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright
 \(-1 < \zeta < 0\)\strut
@@ -11928,7 +11928,7 @@ Time to \(\frac{1}{x}\) amplitude\strut
 \begin{minipage}[t]{0.24\columnwidth}\raggedright
 \textbf{\# cycles to decay}\strut
 \end{minipage} & \begin{minipage}[t]{0.71\columnwidth}\raggedright
-\[\text{# cycles} = \frac{\Delta t }{T} = \frac{\Delta t \omega_d}{2 \pi} \]\strut
+\[\text{\# cycles} = \frac{\Delta t }{T} = \frac{\Delta t \omega_d}{2 \pi} \]\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.24\columnwidth}\raggedright
 \# cycles to \(\frac{1}{2}\) amplitude\strut
@@ -12194,7 +12194,7 @@ To determine damping ratio
 \end{itemize}
 
 \[
-\zeta \approx \frac{7 - \mathrm{#overshoots}}{10}
+\zeta \approx \frac{7 - \mathrm{\# overshoots}}{10}
 \]
 ~
 Time Ratio
@@ -14955,16 +14955,28 @@ If the average excess thrust is not known, then approximate \(F_{\text{ex}}\) as
 After correcting the test day distance to zero wind and slope, use the following empirical equations to correct for non-standard weight, density, and temperature.
 Any desired values can be treated as the ``standard'' conditions.
 
-\begin{longtable}[]{@{}ll@{}}
-\toprule
-\textbf{Aircraft Propulsion Type} & \textbf{Standard Day Distance}\tabularnewline
-\midrule
-\endhead
-Fixed pitch propellers\footnote{Neglect temp correction for constant rpm evaluation} & \begin{align} S_{gs} &= S_{gt} \left( \frac{W_s}{W_t} \right)^{2.4} \left( \frac{\sigma_s}{\sigma_t} \right)^{-2.4} \left( \frac{T_{as}}{T_{at}} \right)^{0.5} \\ S_{as} &= S_{at} \left( \frac{W_s}{W_t} \right)^{2.2} \left( \frac{\sigma_s}{\sigma_t} \right)^{-2.2} \left( \frac{T_{as}}{T_{at}} \right)^{0.6} \end{align}\tabularnewline
-Turbo-propeller aircraft\footnote{For heavy aircraft, replace \(2.3\) \& \(-1.2\) with \(2.6\) \& \(-1.5\), respectively} & \begin{align} S_{gs} &= S_{gt} \left( \frac{W_s}{W_t} \right)^{2.6} \left( \frac{\sigma_s}{\sigma_t} \right)^{-1.7} \left( \frac{N_s}{N_t} \right)^{-0.7} \left( \frac{P_s}{P_t} \right)^{-0.9} \\ S_{gs} &= S_{gt} \left( \frac{W_s}{W_t} \right)^{2.3} \left( \frac{\sigma_s}{\sigma_t} \right)^{-1.2} \left( \frac{N_s}{N_t} \right)^{-0.8} \left( \frac{P_s}{P_t} \right)^{-1.1} \end{align}\tabularnewline
-Large jet aircraft\footnote{For light jets, replace \(2.3\) \& \(-0.7\) with \(2.6\) \& \(-1.0\), respectively} & \begin{align} S_{gs} &= S_{gt} \left( \frac{W_s}{W_t} \right)^{2.3} \left( \frac{\sigma_s}{\sigma_t} \right)^{-1.0} \left( \frac{F_{ns}}{F_{nt}} \right)^{-1.3}  \\ S_{gs} &= S_{gt} \left( \frac{W_s}{W_t} \right)^{2.3} \left( \frac{\sigma_s}{\sigma_t} \right)^{-0.7} \left( \frac{F_{ns}}{F_{nt}} \right)^{-1.6} \end{align}\tabularnewline
-\bottomrule
-\end{longtable}
+\textbf{Aircraft Propulsion Type and Standard Day Distance}
+
+Fixed pitch propellers\footnote{Neglect temp correction for constant rpm evaluation}
+
+\begin{align} 
+S_{gs} &= S_{gt} \left( \frac{W_s}{W_t} \right)^{2.4} \left( \frac{\sigma_s}{\sigma_t} \right)^{-2.4} \left( \frac{T_{as}}{T_{at}} \right)^{0.5} \\ 
+S_{as} &= S_{at} \left( \frac{W_s}{W_t} \right)^{2.2} \left( \frac{\sigma_s}{\sigma_t} \right)^{-2.2} \left( \frac{T_{as}}{T_{at}} \right)^{0.6} 
+\end{align}
+
+Turbo-propeller aircraft\footnote{For heavy aircraft, replace \(2.3\) \& \(-1.2\) with \(2.6\) \& \(-1.5\), respectively}
+
+\begin{align} 
+S_{gs} &= S_{gt} \left( \frac{W_s}{W_t} \right)^{2.6} \left( \frac{\sigma_s}{\sigma_t} \right)^{-1.7} \left( \frac{N_s}{N_t} \right)^{-0.7} \left( \frac{P_s}{P_t} \right)^{-0.9} \\ 
+S_{gs} &= S_{gt} \left( \frac{W_s}{W_t} \right)^{2.3} \left( \frac{\sigma_s}{\sigma_t} \right)^{-1.2} \left( \frac{N_s}{N_t} \right)^{-0.8} \left( \frac{P_s}{P_t} \right)^{-1.1} 
+\end{align}
+
+Large jet aircraft\footnote{For light jets, replace \(2.3\) \& \(-0.7\) with \(2.6\) \& \(-1.0\), respectively}
+
+\begin{align} 
+S_{gs} &= S_{gt} \left( \frac{W_s}{W_t} \right)^{2.3} \left( \frac{\sigma_s}{\sigma_t} \right)^{-1.0} \left( \frac{F_{ns}}{F_{nt}} \right)^{-1.3}  \\ 
+S_{gs} &= S_{gt} \left( \frac{W_s}{W_t} \right)^{2.3} \left( \frac{\sigma_s}{\sigma_t} \right)^{-0.7} \left( \frac{F_{ns}}{F_{nt}} \right)^{-1.6} 
+\end{align}
 
 where
 
@@ -15102,7 +15114,7 @@ A \textbf{direct approximation of the total takeoff distance}, \(S_{\mathrm{TO}}
 
 \[
 S_{\mathrm{TO}} = S_g F_{\text{pl}}
-\label{eq:s-to-fpl}
+\label{eq:s-to-fpl-approx}
 \]
 
 \(F_{\text{pl}}\) combines the effects of wing type, thrust-to-weight ratio, and pilot technique.
@@ -15123,7 +15135,7 @@ This is equivalent to a double integration of the aircraft's acceleration or its
 
 \[
 S_{\mathrm{TO}} = \int V_T \mathop{dt} = \iint a \mathop{dt} = \iint \frac{F_{\text{ex}}}{m} \mathop{dt} = \frac{1}{m} \iint F_{\text{ex}} \mathop{dt}
-\label{eq:s-to-fpl}
+\label{eq:s-to-fpl-exact}
 \]
 
 This double integration can be performed numerically or graphically.
@@ -15363,7 +15375,7 @@ S_a = \frac{50}{\left( \frac{C_D}{C_L} - \frac{T}{W} \right)} + \frac{ \frac{W}{
 A more \textbf{exact prediction of landing performance} requires accurate thrust and
 drag models and an integration of the aircraft's velocity across the landing
 time. This is equivalent to a double integration of the aircraft's acceleration
-as shown in Equation \eqref{eq:s-to-fpl}. This double integration can be performed
+as shown in Equation \eqref{eq:s-to-fpl-exact}. This double integration can be performed
 numerically or graphically. Similarly, Equation \eqref{eq:to-dist} can be adapted
 for landing as follows:
 
@@ -15549,11 +15561,10 @@ following sections address both the prediction and correction approaches.
 According to basic energy theory, an aircraft's specific excess power, \(P_s\),
 is related to the change in kinetic and potential energy as follows:
 
-{[}
-P\_s = \frac{P_{\text{ex}}}{W} = \frac{\left( F_n - D \right) V}{W} = \frac{dH}{dt} + \frac{H}{W} \frac{d W}{dt} + \frac{V}{g}\frac{dV}{dt} + \frac{V^2}{2Wg} \frac{dW}{dt}
-
+\[
+P_s = \frac{P_{\text{ex}}}{W} = \frac{\left( F_n - D \right) V}{W} = \frac{dH}{dt} + \frac{H}{W} \frac{d W}{dt} + \frac{V}{g}\frac{dV}{dt} + \frac{V^2}{2Wg} \frac{dW}{dt}
 \label{eq:p-sub-s}
-{]}
+\]
 
 where \(V\) is technically inertial speed. True airspeed and an assumption of
 zero wind is usually used instead of inertial speed. Since aircraft typically
@@ -15748,9 +15759,8 @@ R &= \frac{V_T^2}{g \sqrt{n_{\text{zw}}^2 - 1}} \\
 \omega &= \frac{g \sqrt{n_{\text{zw}}^2 - 1}}{V_T} \\
 \\
 n_{\text{zw}} &= \sqrt{ \left( \frac{\omega V}{g} \right)^2 + 1  } \\
-\end{align}
 \label{eq:r-omega-n-zw}
-{]}
+\end{align}
 
 \hypertarget{sustained-level-turn-performance-prediction}{%
 \subsection{Sustained Level Turn Performance Prediction}\label{sustained-level-turn-performance-prediction}}
@@ -15879,20 +15889,19 @@ but at standard conditions.
 n_{\text{zw}_{\text{std}}} = \frac{F_{g_{\text{std}}}}{W_s} \sin \alpha_{F_s} + 
 \left\{ 
       \left(
-              n_{\text{zw}_t} \frac{W_t}{W_s} -
-                  \frac{F_{g_t}}{W_s} \sin \alpha_{F_t}
-        \right)^2 + \\
-        \frac{\pi \mathrm{AR}eqS}{W_s^2}
-        \left[
-              \frac{W_t \dot{V}_{T_t}}{g} + 
-              \frac{W_t \dot{H}_t}{V_{T_t}} + 
-              F_{g_{\text{std}}} \cos \alpha_{F_{\text{std}}} -
-              F_{g_t} \cos \alpha_{F_t}
-        \right]
-  \right\}^{\frac{1}{2}}
-\end{align}
+            n_{\text{zw}_t} \frac{W_t}{W_s} -
+            \frac{F_{g_t}}{W_s} \sin \alpha_{F_t}
+      \right)^2 + 
+      \frac{\pi \mathrm{AR}eqS}{W_s^2}
+      \left[
+            \frac{W_t \dot{V}_{T_t}}{g} + 
+            \frac{W_t \dot{H}_t}{V_{T_t}} + 
+            F_{g_{\text{std}}} \cos \alpha_{F_{\text{std}}} -
+            F_{g_t} \cos \alpha_{F_t}
+      \right]
+\right\}^{\frac{1}{2}}
 \label{eq:load-factor-corr}
-{]}
+\end{align}
 
 then the above equation can be closely approximated as
 
@@ -15954,33 +15963,31 @@ M a_0 \sqrt{\theta_t} N_{xw_t}
 and
 
 \begin{align}
-\Delta P_s = M a_0 
-\left\{
-      \left(
+\frac{\Delta P_s}{M a_0} =
+      &\left(
             F_{g_s} \cos \alpha_{F_s} + F_e
-      \right) \frac{\sqrt{\theta_s}}{W_s} - 
-      \left(
+      \right) \frac{\sqrt{\theta_s}}{W_s} - \\
+      &\left(
             F_{g_t} \cos \alpha_{F_t} + F_e
       \right) \frac{\sqrt{\theta_t}}{W_t} + \\
-      SC_{D_0} \left[
+      &SC_{D_0} \left[
                      \frac{q_t \sqrt{\theta_t}}{W_t} -
                      \frac{q_s \sqrt{\theta_s}}{W_s}
                \right] + \\
-      \frac{S q_t \sqrt{\theta_t}}{W_t} 
+      &\frac{S q_t \sqrt{\theta_t}}{W_t} 
       \left(
             m \left[
                   \frac{N_{\text{zw}_t} W_t - Fg_{n_t} \sin \alpha_{F_t}}{q_t S}
             \right]^2 +
             \Delta C_{D_{\text{trim}_t}}
       \right) - \\
-      \frac{S q_s \sqrt{\theta_s}}{W_s} 
+      &\frac{S q_s \sqrt{\theta_s}}{W_s} 
       \left(
             m \left[
                   \frac{N_{\text{zw}_s} W_s - Fg_{n_s} \sin \alpha_{F_s}}{q_s S}
             \right]^2 +
             \Delta C_{D_{\text{trim}_s}}
       \right)
-\right\}
 \end{align}
 
 where
@@ -16003,9 +16010,8 @@ In the simplified case where \(\delta_t = \delta_s\), \(cg_t = cg_{\text{std}}\)
 and \(\sin \alpha_F = 0\), then the above equation reduces to
 
 \begin{align}
-\Delta P_s = M a_0 
-\left\{
-      \frac{\sqrt{\theta_s}}{W_s}
+\frac{\Delta P_s}{M a_0} =
+      &\frac{\sqrt{\theta_s}}{W_s}
       \left[
             F_{n_s} - qSC_{D_0} -
             \frac{\left(
@@ -16014,7 +16020,7 @@ and \(\sin \alpha_F = 0\), then the above equation reduces to
                   qS\pi \mathrm{AR} e      
                   }
       \right] - \\
-      \frac{\sqrt{\theta_t}}{W_t}
+      &\frac{\sqrt{\theta_t}}{W_t}
       \left[
             F_{n_t} - qSC_{D_0} -
             \frac{\left(
@@ -16023,10 +16029,8 @@ and \(\sin \alpha_F = 0\), then the above equation reduces to
                   qS\pi \mathrm{AR} e      
                   }
       \right]
-\right\}
-\end{align}
 \label{eq:delta-p-sub-s}
-{]}
+\end{align}
 
 \hypertarget{reciprocating-engine-cruise-performance}{%
 \section{Reciprocating Engine Cruise Performance}\label{reciprocating-engine-cruise-performance}}
@@ -16075,9 +16079,8 @@ To correct the power required curve to any standard altitude/weight condition, t
 P_s = P_t \left( \frac{W_s}{W_t} \right)^{\frac{3}{2}} \left( \frac{\sigma_t}{\sigma_s} \right)^{\frac{1}{2}} \\
 \\
 V_{T_s} = V_{T_t} \left( \frac{W_s}{W_t} \frac{\sigma_t}{\sigma_s} \right)^{\frac{1}{2}}\\
-\end{align}
 \label{eq:pwr-vel-std}
-{]}
+\end{align}
 
 Because the drag polar of low performance propeller aircraft generally collapses
 (generalizes) well to a single curve, it is often acceptable to correct
@@ -16090,9 +16093,8 @@ weight, the above correction simplifies to what is known as the
 P_m = P_{\text{iw}} = P_t \left( \frac{W_s}{W_t} \right)^{\frac{3}{2}} \left( \sigma_t \right)^{\frac{1}{2}}  \\
 \\
 V_{T_s} = V_{\text{iw}}= V_{e_t} \left( \frac{W_s}{W_t} \right)^{\frac{1}{2}} \\
-\end{align}
 \label{eq:pwr-vel-std-max-wt}
-{]}
+\end{align}
 
 Although all points along the test day power curve can be standardized, the most
 useful points are those for best range and endurance. When corrected to standard
@@ -16107,9 +16109,8 @@ reversing Equations \eqref{eq:pwr-vel-std-max-wt} as follows
 P_m = P_{\text{iw}} \left( \frac{W_m}{W_s} \right)^{\frac{3}{2}} \left( \frac{1}{\sigma_m} \right)^{\frac{1}{2}} \\
 \\
 V_{T_m} = V_{\text{iw}} \left( \frac{W_s}{W_t} \right)^{\frac{1}{2}} \left( \frac{1}{\sigma_m} \right)^{\frac{1}{2}}\\
-\end{align}
 \label{eq:pwr-vel-msn}
-{]}
+\end{align}
 
 The power \& optimal speed for best mission range (and mission endurance) are
 determined by applying the above equations to correct the points noted on the
@@ -16133,9 +16134,8 @@ standard days.
 \text{or} \\
 \\
 \dot{W}_{f_{\text{iw}}} = \dot{W}_{f_t} \left( \frac{W_s}{W_t} \right)^{\frac{3}{2}} \left( \sigma_t \right)^{\frac{1}{2}} \\
-\end{align}
 \label{eq:fuel-flow-std}
-{]}
+\end{align}
 
 Because \(\mathrm{BSFC}\) is affected by engine \(\mathrm{RPM}\) (due to
 friction losses), fuel flow results at one engine \(\mathrm{RPM}\) are never
@@ -16278,9 +16278,8 @@ standard conditions as follows
 F_{n_s} = F_{n_t} \frac{W_s}{W_t}\\
 \\
 V_{T_s} = V_{T_t} \sqrt{\frac{\theta_s}{\theta_t}}\\
-\end{align}
 \label{eq:net-thrust-speed-std}
-{]}
+\end{align}
 
 Although all points along the test day thrust curve can be standardized, the
 most useful points are those for best range and endurance. When corrected to
@@ -16344,9 +16343,8 @@ This relation allows standard fuel flow to be calculated as
 \dot{W}_{f_s} = \dot{W}_{f_t} \frac{\delta_s \sqrt{\theta_s}}{\delta_t \sqrt{\theta_t}} \\
 \\
 \text{if } C_{L_{\text{test}}} = C_{L_{\text{std}}}, M_{\text{test}} = M_{\text{std}} \\
-\end{align}
 \label{eq:std-fuel-flow}
-{]}
+\end{align}
 
 \hypertarget{endurance-optimization-and-prediction-1}{%
 \subsection{Endurance Optimization and Prediction}\label{endurance-optimization-and-prediction-1}}
@@ -16688,9 +16686,9 @@ I - \frac{\text{Imaginary} \left[ G_{yx} \left( f \right) \right]}{4 \pi \rho_0 
 where
 
 \begin{align}
-\rho_0 &= \text{fluid density} = 1.293 \frac{\text{kg}}{\text{m^3}} \text{ for air}\\
+\rho_0 &= \text{fluid density} = 1.293 \frac{\text{kg}}{\text{m}^3} \text{ for air}\\
 \Delta r &= \text{microphone spacing (meters)}\\
-f &= \text{frequency}\\
+f &= \text{frequency}
 \end{align}
 
 \textbf{Intensity Spectrum Level (ISL)}
@@ -16991,7 +16989,7 @@ Ratio}\strut
 The sensitivity of a radio receiver can be on the order of
 \(1 \frac{\mu \text{V}}{\text{m}}\), while RF field strengths for
 HIRF can be \(1\,000 \frac{\text{V}}{\text{m}}\), a factor of a
-billion or (180 \frac{\text{dB}\mu\text{V}}{\text{m}}.
+billion or \(180 \frac{\text{dB}\mu\text{V}}{\text{m}}\).
 
 \hypertarget{fundamentals-1}{%
 \section{Fundamentals}\label{fundamentals-1}}
@@ -18531,7 +18529,7 @@ Here, \(P_{t2}\) is in psf, and \(T_{t2}\) is in degrees Rankine.
 and temperature. The actual in-flight Reynolds Number Index depends on inlet
 recovery losses, since these are the conditions in which the engine is operating.
 
-\includegraphics[width=3.9658in,height=3.79851in]{media/17/image13.svg}
+\includegraphics[width=3.9658in,height=3.79851in]{media/17/image13.png}
 
 \textbf{Reynolds Number Index versus Altitude and Mach Number}
 
@@ -20581,80 +20579,16 @@ This section provides ``best practice guidelines'' for building real-time flight
 
     \begin{longtable}[]{@{}lccc@{}}
     \toprule
-    \begin{minipage}[b]{0.30\columnwidth}\raggedright
-    Element\strut
-    \end{minipage} & \begin{minipage}[b]{0.19\columnwidth}\centering
-    IADS\strut
-    \end{minipage} & \begin{minipage}[b]{0.19\columnwidth}\centering
-    Hex\strut
-    \end{minipage} & \begin{minipage}[b]{0.21\columnwidth}\centering
-    RGB\strut
-    \end{minipage}\tabularnewline
+    Element & IADS & Hex & RGB\tabularnewline
     \midrule
     \endhead
-    \begin{minipage}[t]{0.30\columnwidth}\raggedright
-    Display Background\strut
-    \end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\centering
-    \textbf{\colorbox[HTML]{FFFFFF}{\textcolor[HTML]{000000}{0x000000}}}\strut
-    \end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\centering
-    \textbf{\textbackslash colorbox{[}HTML{]}\{FFFFFF\}\{\textbackslash textcolor{[}HTML{]}\{000000\}\{\#000000\}\}}\strut
-    \end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\centering
-    \textbf{\colorbox[HTML]{FFFFFF}{\textcolor[HTML]{000000}{000, 000, 000}}}\strut
-    \end{minipage}\tabularnewline
-    \begin{minipage}[t]{0.30\columnwidth}\raggedright
-    Data Label/Text\strut
-    \end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\centering
-    \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{34B6F7}{0xF7B634}}}\strut
-    \end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\centering
-    \textbf{\textbackslash colorbox{[}HTML{]}\{000000\}\{\textbackslash textcolor{[}HTML{]}\{34B6F7\}\{\#34B6F7\}\}}\strut
-    \end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\centering
-    \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{34B6F7}{052, 182, 247}}}\strut
-    \end{minipage}\tabularnewline
-    \begin{minipage}[t]{0.30\columnwidth}\raggedright
-    Data w/no Limits\strut
-    \end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\centering
-    \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{E0E0E0}{0xE0E0E0}}}\strut
-    \end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\centering
-    \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{E0E0E0}{#E0E0E0}}}\strut
-    \end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\centering
-    \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{E0E0E0}{224, 224, 224}}}\strut
-    \end{minipage}\tabularnewline
-    \begin{minipage}[t]{0.30\columnwidth}\raggedright
-    Data with Limits:\textsuperscript{†}\strut
-    \end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\centering
-    \strut
-    \end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\centering
-    \strut
-    \end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\centering
-    \strut
-    \end{minipage}\tabularnewline
-    \begin{minipage}[t]{0.30\columnwidth}\raggedright
-    Nominal\strut
-    \end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\centering
-    \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{00C000}{0x00C000}}}\strut
-    \end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\centering
-    \textbf{\textbackslash colorbox{[}HTML{]}\{000000\}\{\textbackslash textcolor{[}HTML{]}\{00C000\}\{\#00C000\}\}}\strut
-    \end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\centering
-    \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{00C000}{000, 192, 000}}}\strut
-    \end{minipage}\tabularnewline
-    \begin{minipage}[t]{0.30\columnwidth}\raggedright
-    Caution\strut
-    \end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\centering
-    \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FFF000}{0x00F0FF}}}\strut
-    \end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\centering
-    \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FFF000}{#FFF000}}}\strut
-    \end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\centering
-    \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FFF000}{255, 240, 000}}}\strut
-    \end{minipage}\tabularnewline
-    \begin{minipage}[t]{0.30\columnwidth}\raggedright
-    Warning\strut
-    \end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\centering
-    \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FF0000}{0x0000FF}}}\strut
-    \end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\centering
-    \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FF0000}{#FF0000}}}\strut
-    \end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\centering
-    \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FF0000}{255, 000, 000}}}\strut
-    \end{minipage}\tabularnewline
+    Display Background & \textbf{\colorbox[HTML]{FFFFFF}{\textcolor[HTML]{000000}{0x000000}}} & \textbf{\colorbox[HTML]{FFFFFF}{\textcolor[HTML]{000000}{\#000000}}} & \textbf{\colorbox[HTML]{FFFFFF}{\textcolor[HTML]{000000}{000, 000, 000}}}\tabularnewline
+    Data Label/Text & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{34B6F7}{0xF7B634}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{34B6F7}{\#34B6F7}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{34B6F7}{052, 182, 247}}}\tabularnewline
+    Data w/no Limits & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{E0E0E0}{0xE0E0E0}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{E0E0E0}{\#E0E0E0}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{E0E0E0}{224, 224, 224}}}\tabularnewline
+    Data with Limits:\textsuperscript{†} & & &\tabularnewline
+    Nominal & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{00C000}{0x00C000}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{00C000}{\#00C000}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{00C000}{000, 192, 000}}}\tabularnewline
+    Caution & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FFF000}{0x00F0FF}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FFF000}{\#FFF000}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FFF000}{255, 240, 000}}}\tabularnewline
+    Warning & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FF0000}{0x0000FF}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FF0000}{\#FF0000}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FF0000}{255, 000, 000}}}\tabularnewline
     \bottomrule
     \end{longtable}
 
@@ -20688,9 +20622,9 @@ This section provides ``best practice guidelines'' for building real-time flight
     Element & IADS & Hex & RGB\tabularnewline
     \midrule
     \endhead
-    Advisory\textsuperscript{††} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{00FFFF}{0xFFFF00}}} & \textbf{\textbackslash colorbox{[}HTML{]}\{000000\}\{\textbackslash textcolor{[}HTML{]}\{00FFFF\}\{\#00FFFF\}\}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{00FFFF}{000, 255, 255}}}\tabularnewline
-    Caution & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FFF000}{0x00F0FF}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FFF000}{#FFF000}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FFF000}{255, 240, 000}}}\tabularnewline
-    Warning & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FF0000}{0x0000FF}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FF0000}{#FF0000}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FF0000}{255, 000, 000}}}\tabularnewline
+    Advisory\textsuperscript{††} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{00FFFF}{0xFFFF00}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{00FFFF}{\#00FFFF}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{00FFFF}{000, 255, 255}}}\tabularnewline
+    Caution & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FFF000}{0x00F0FF}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FFF000}{\#FFF000}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FFF000}{255, 240, 000}}}\tabularnewline
+    Warning & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FF0000}{0x0000FF}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FF0000}{\#FF0000}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FF0000}{255, 000, 000}}}\tabularnewline
     \bottomrule
     \end{longtable}
 
@@ -20713,10 +20647,10 @@ This section provides ``best practice guidelines'' for building real-time flight
     Element & IADS & Hex & RGB\tabularnewline
     \midrule
     \endhead
-    Message Text & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{808080}{0x808080}}} & \textbf{\textbackslash colorbox{[}HTML{]}\{000000\}\{\textbackslash textcolor{[}HTML{]}\{808080\}\{\#808080\}\}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{808080}{128, 128, 128}}}\tabularnewline
-    Advisory & \textbf{\colorbox[HTML]{00FFFF}{\textcolor[HTML]{808080}{0xFFFF00}}} & \textbf{\textbackslash colorbox{[}HTML{]}\{00FFFF\}\{\textbackslash textcolor{[}HTML{]}\{808080\}\{\#00FFFF\}\}} & \textbf{\colorbox[HTML]{00FFFF}{\textcolor[HTML]{808080}{000, 255, 255}}}\tabularnewline
-    Caution & \textbf{\colorbox[HTML]{FFF000}{\textcolor[HTML]{808080}{0x00F0FF}}} & \textbf{\colorbox[HTML]{FFF000}{\textcolor[HTML]{808080}{#FFF000}}} & \textbf{\colorbox[HTML]{FFF000}{\textcolor[HTML]{808080}{255, 240, 000}}}\tabularnewline
-    Warning & \textbf{\colorbox[HTML]{FF0000}{\textcolor[HTML]{808080}{0x0000FF}}} & \textbf{\colorbox[HTML]{FF0000}{\textcolor[HTML]{808080}{#FF0000}}} & \textbf{\colorbox[HTML]{FF0000}{\textcolor[HTML]{808080}{255, 000, 000}}}\tabularnewline
+    Message Text & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{808080}{0x808080}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{808080}{\#808080}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{808080}{128, 128, 128}}}\tabularnewline
+    Advisory & \textbf{\colorbox[HTML]{00FFFF}{\textcolor[HTML]{808080}{0xFFFF00}}} & \textbf{\colorbox[HTML]{00FFFF}{\textcolor[HTML]{808080}{\#00FFFF}}} & \textbf{\colorbox[HTML]{00FFFF}{\textcolor[HTML]{808080}{000, 255, 255}}}\tabularnewline
+    Caution & \textbf{\colorbox[HTML]{FFF000}{\textcolor[HTML]{808080}{0x00F0FF}}} & \textbf{\colorbox[HTML]{FFF000}{\textcolor[HTML]{808080}{\#FFF000}}} & \textbf{\colorbox[HTML]{FFF000}{\textcolor[HTML]{808080}{255, 240, 000}}}\tabularnewline
+    Warning & \textbf{\colorbox[HTML]{FF0000}{\textcolor[HTML]{808080}{0x0000FF}}} & \textbf{\colorbox[HTML]{FF0000}{\textcolor[HTML]{808080}{\#FF0000}}} & \textbf{\colorbox[HTML]{FF0000}{\textcolor[HTML]{808080}{255, 000, 000}}}\tabularnewline
     \bottomrule
     \end{longtable}
   \item
@@ -20816,7 +20750,7 @@ This section provides ``best practice guidelines'' for building real-time flight
 
     \begin{figure}
     \centering
-    \includegraphics{media/21/hollow-pointer.png}
+    \includegraphics{media/21/hollow-pointers.png}
     \caption{(ref:hollow-fill)}
     \end{figure}
   \item
@@ -21307,10 +21241,10 @@ Consider other methods to provide status discrimination. Whatever other methods 
     Color & IADS & Hex & RGB\tabularnewline
     \midrule
     \endhead
-    Blue & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{1040FF}{0xFF4010}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{1040FF}{#FF0000}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{1040FF}{016, 064, 255}}}\tabularnewline
-    Green & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{11C082}{0x82C011}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{11C082}{#FF0000}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{11C082}{017, 192, 130}}}\tabularnewline
-    Yellow & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FFFF00}{0x00FFFF}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FFFF00}{#FF0000}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FFFF00}{255, 255, 000}}}\tabularnewline
-    Red & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FF411E}{0x1E41FF}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FF411E}{#FF0000}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FF411E}{255, 065, 030}}}\tabularnewline
+    Blue & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{1040FF}{0xFF4010}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{1040FF}{\#FF0000}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{1040FF}{016, 064, 255}}}\tabularnewline
+    Green & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{11C082}{0x82C011}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{11C082}{\#FF0000}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{11C082}{017, 192, 130}}}\tabularnewline
+    Yellow & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FFFF00}{0x00FFFF}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FFFF00}{\#FF0000}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FFFF00}{255, 255, 000}}}\tabularnewline
+    Red & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FF411E}{0x1E41FF}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FF411E}{\#FF0000}}} & \textbf{\colorbox[HTML]{000000}{\textcolor[HTML]{FF411E}{255, 065, 030}}}\tabularnewline
     \bottomrule
     \end{longtable}
   \end{enumerate}

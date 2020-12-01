@@ -608,7 +608,7 @@ International's website:
   [17005]: media/17/image10.jpeg {width="1.1298611111111112in" height="1.51875in"}
   [17006]: media/17/image11.png {width="1.0541666666666667in" height="1.3770833333333334in"}
   [17007]: media/17/image12.jpg {width="6.791666666666667in" height="9.333333333333334in"}
-  [17008]: media/17/image13.svg {width="3.96579615048119in" height="3.798507217847769in"}
+  [17008]: media/17/image13.png {width="3.96579615048119in" height="3.798507217847769in"}
   [17009]: media/17/image14.png {width="3.1in" height="2.433333333333333in"}
   [17010]: media/17/image15.png {width="2.99375in" height="2.4472222222222224in"}
   [17011]: media/17/image16.png {width="5.3875in" height="1.6979166666666667in"}

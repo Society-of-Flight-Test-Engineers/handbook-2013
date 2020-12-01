@@ -75,7 +75,7 @@ Commonly used decibels for EMC:
 The sensitivity of a radio receiver can be on the order of 
 \(1 \frac{\mu \text{V}}{\text{m}}\), while RF field strengths for 
 HIRF can be \(1\,000 \frac{\text{V}}{\text{m}}\), a factor of a 
-billion or \(180 \frac{\text{dB}\mu\text{V}}{\text{m}}.
+billion or \(180 \frac{\text{dB}\mu\text{V}}{\text{m}}\).
 
 ## Fundamentals
 

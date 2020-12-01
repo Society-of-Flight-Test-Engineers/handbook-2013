@@ -402,7 +402,7 @@ Possible Solutions:
 | \(+1  <  \zeta\)        | Real & unequal roots: exponential, convergent | \[ x\left(t\right) = c_1 e^{-\omega_n \left( \zeta + \sqrt{\zeta^2 - 1} \right)t} + c_2 e^{-\omega_n \left( \zeta - \sqrt{\zeta^2 - 1} \right)t} \] |
 | \(\zeta = +1\)          | Real & equal roots: exponential, convergent   | \[ x\left(t\right) = c_1 e^{-\omega_n \zeta t} + c_2 t e^{-\omega_n \zeta t} \] |
 | \(0  <  \zeta  <  +1 \) | Complex pair roots: sinusoidal, convergent    | \[ x\left(t\right) =  A e^{-\zeta \omega_n t} \sin \left( \omega_d + \phi \right) \] |
-| \(\zeta = 0 \)          | Imaginary pair roots: sinusoidal, neutral     | \begin{align} x\left(t\right) &=  A \sin \left( \omega_n t + \phi \right) \\ &= A \cos \left( \omega_n t \right) \end{align}  |
+| \(\zeta = 0 \)          | Imaginary pair roots: sinusoidal, neutral     | \[ x\left(t\right) =  A \sin \left( \omega_n t + \phi \right) = A \cos \left( \omega_n t \right) \]  |
 | \(-1  <  \zeta  <  0 \) | Complex pair roots: sinusoidal, divergent     | \[ x\left(t\right) =  A e^{-\zeta \omega_n t} \sin \left( \omega_d + \phi \right) \] |
 | \(\zeta = -1 \)         | Real & equal roots: exponential, divergent    | \[ x\left(t\right) = c_1 e^{-\omega_n \zeta t} + c_2 t e^{-\omega_n \zeta t} \] |
 | \(\zeta  <  -1 \)       | Real & unequal roots: exponential, divergent  | \[ x\left(t\right) = c_1 e^{-\omega_n \left( \zeta + \sqrt{\zeta^2 - 1} \right)t} + c_2 e^{-\omega_n \left( \zeta - \sqrt{\zeta^2 - 1} \right)t} \] |
@@ -435,7 +435,7 @@ Motion typically described by \(\omega_n\) and \(\zeta\)
 |Time to \(\frac{1}{2}\) amplitude | \[ \equiv \Delta t_{\frac{1}{2}} = \frac{\ln \frac{2}{1}}{\zeta \omega_n} = \frac{0.6931}{\zeta \omega_n}  \] |
 |Time to \(\frac{1}{10}\) amplitude | \[ \equiv \Delta t_{\frac{1}{10}} = \frac{\ln \frac{10}{1}}{\zeta \omega_n} = \frac{2.3026}{\zeta \omega_n}  \] |
 |Time to \(\frac{1}{x}\) amplitude | \[ \equiv \Delta t_{\frac{1}{x}} = \frac{\ln x }{\zeta \omega_n}  \] |
-|**\# cycles to decay** | \[\text{# cycles} = \frac{\Delta t }{T} = \frac{\Delta t \omega_d}{2 \pi} \] |
+|**\# cycles to decay** | \[\text{\# cycles} = \frac{\Delta t }{T} = \frac{\Delta t \omega_d}{2 \pi} \] |
 |\# cycles to \(\frac{1}{2}\) amplitude  | \[\equiv C_{\frac{1}{2}} = \frac{0.6931}{\zeta \omega_n}\frac{\omega_d}{2 \pi} = \frac{0.6931}{2 \pi  }\frac{\omega_d}{\zeta \omega_n} = \frac{0.1103}{\varepsilon} \] |
 |\# cycles to \(\frac{1}{10}\) amplitude  | \[\equiv C_{\frac{1}{10}} = \frac{2.3026}{\zeta \omega_n}\frac{\omega_d}{2 \pi} = \frac{2.3026}{2 \pi  }\frac{\omega_d}{\zeta \omega_n} = \frac{0.3665}{\varepsilon} \] |
 |\# cycles to \(\frac{1}{x}\) amplitude  | \[\equiv C_{\frac{1}{x}} = \frac{\ln x }{2 \pi }\frac{\omega_d}{\zeta \omega_n} \] |
@@ -578,7 +578,7 @@ To determine damping ratio
 * If recorded measurements are not available and if the number of overshoots is between \(2\) and \(6\), then
 
 \[
-\zeta \approx \frac{7 - \mathrm{#overshoots}}{10}
+\zeta \approx \frac{7 - \mathrm{\# overshoots}}{10}
 \]
  
 Time Ratio
