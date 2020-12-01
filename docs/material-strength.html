@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>9 Material Strength | Flight Test Engineering Reference Handbook</title>
   <meta name="description" content="9 Material Strength | Flight Test Engineering Reference Handbook" />
-  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="9 Material Strength | Flight Test Engineering Reference Handbook" />
   <meta property="og:type" content="book" />
@@ -33,7 +33,7 @@
   
 <link rel="prev" href="motion-vibration-analysis.html"/>
 <link rel="next" href="reciprocating-engines.html"/>
-<script src="libs/header-attrs-2.2/header-attrs.js"></script>
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -51,6 +51,8 @@
 
 
 
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 
 
 
@@ -799,12 +801,11 @@
 <p><span class="math display">\[
   \sigma = \frac{P}{A}
 \]</span></p>
-<p><span class="math display">\[
-  \begin{align}
+<p>[
+<span class="math display">\[\begin{align}
   \text{where } \sigma &amp;= \text{the applied axial load} \\
   A &amp;= \text{cross-sectional area over which the load is applied} \\
-  \end{align}
-\]</span></p>
+  \end{align}\]</span></p>
 <p><strong>Strain</strong> (<span class="math inline">\(e\)</span>) is the deformation of a material under an applied load. In the basic form this can be presented as</p>
 <p><span class="math display">\[
   e = \frac{\Delta L}{L}
@@ -820,8 +821,8 @@
 <div id="v-n-diagram" class="section level2" number="9.3">
 <h2><span class="header-section-number">9.3</span> V-n Diagram</h2>
 <p><strong>Flight Path Normal Load Factor</strong> <span class="math inline">\(\left(N_{zw} \right)\)</span> can be expressed during level flight, as</p>
-<p><span class="math display">\[
-  \begin{align}
+<p>[
+<span class="math display">\[\begin{align}
   N_{zw} &amp;= \frac{1}{\cos \phi} = \frac{L}{W} \\
   \text{where } C_L &amp;= \text{lift coefficient} \\
   F_n &amp;= \text{net thrust} \\
@@ -831,26 +832,23 @@
   W &amp;= \text{gross weight} \\
   \alpha_F &amp;= \text{incidence angle between thrust line and relative wind} \\
   \phi &amp;= \text{angle of bank}
-  \end{align}
-\]</span></p>
+  \end{align}\]</span></p>
 <p><strong>Body Axis Normal Load Factor</strong> <span class="math inline">\(\left(N_{zb} \right)\)</span> is calculated as</p>
-<p><span class="math display">\[
-  \begin{align}
+<p>[
+<span class="math display">\[\begin{align}
   N_{zb} &amp;= \frac{N_{zw} - N_{xb} \sin \alpha}{\cos \alpha} \\
   \text{where } N_{xb} &amp;= \text{load factor along aircraft body x-axis} \\
   \alpha &amp;= \text{angle of attack} \\
-  \end{align}
-\]</span></p>
+  \end{align}\]</span></p>
 <p>For the simplified case of negligible thrust lift, the maximum achievable <span class="math inline">\(N_{zb}\)</span> at any flight speed can be calculated as</p>
-<p><span class="math display">\[
-  \begin{align}
+<p>[
+<span class="math display">\[\begin{align}
   N_{zb} &amp;= \left( \frac{V}{V_s} \right)^2 \\
   \text{where } &amp;\text{both speeds must be the same units} \\
   &amp;\text{(i.e., true, equivalent, calibrated)} \\
   V &amp;= \text{flight airspeed} \\
   V_s &amp;= \text{stall airspeed} \\
-  \end{align}
-\]</span> </p>
+  \end{align}\]</span> </p>
 <p>A general normal load flight envelope (V-n diagram) would appear as</p>
 <ul>
 <li>The envelope typically varies with:
@@ -865,63 +863,58 @@
 <ul>
 <li>It is frequently desirable to correct measured (test) <span class="math inline">\(N_{zb}\)</span> data to a standard weight or design gross weight ( <span class="math inline">\(\mathrm{GW}\)</span> ) using the relationship</li>
 </ul>
-<p><span class="math display">\[
-  \begin{align}
+<p>[
+<span class="math display">\[\begin{align}
   N_{zb} &amp;= N_{zw_{\text{test}}} \frac{W_t}{W_s} \\
   \text{where } W_t &amp;= \text{test weight} \\
   W_s &amp;= \text{standard weight} \\
-  \end{align}
-\]</span></p>
+  \end{align}\]</span></p>
 <ul>
 <li>The increase in load factor due to a vertical gust <span class="math inline">\(\Delta n\)</span> is calculated as</li>
 </ul>
-<p><span class="math display">\[
-  \begin{align}
+<p>[
+<span class="math display">\[\begin{align}
   \Delta n &amp;= \frac{0.155 m V_e \left( \mathrm{KU} \right) }{\frac{W}{S}} \\
   \text{where } m &amp;= \text{slope of } C_{L_{\alpha}} \text{ curve} \\
   V_e &amp;= \text{equivalent airspeed (knots)} \\
   \mathrm{KU} &amp;= \text{effective gust velocity (fps)} \\
   \frac{W}{S} &amp;= \text{wing loading (psf)} \\
-  \end{align}
-\]</span></p>
+  \end{align}\]</span></p>
 </div>
 <div id="strain-gages" class="section level2" number="9.4">
 <h2><span class="header-section-number">9.4</span> Strain Gages</h2>
 <p>The three strain gage configurations most commonly used are</p>
 <p><img src="media/09/image4.png" style="width:4.36389in;height:2.02083in" /></p>
 <p>Strain <span class="math inline">\(\left( e \right)\)</span> is measured using the electrical resistance measured via the strain gage in a material subject to load. For the uniaxial gauge</p>
-<p><span class="math display">\[
-  \begin{align}
+<p>[
+<span class="math display">\[\begin{align}
   K &amp;= \frac{ \left( \frac{\Delta R}{R} \right) }{e} \\
   \text{where } K &amp;= \text{gage factor (provided by manufacturer)} \\
   R &amp;= \text{unstrained resistance} \\
   \Delta R &amp;= \text{change in resistance due to load} \\
   &amp; + \Delta R \text{ for tension} \\
-  \end{align}
-\]</span></p>
+  \end{align}\]</span></p>
 <ul>
 <li>For the bi-axial gage oriented coincident with the principal axes (maximum strain), each leg of the gage is analyzed as a uniaxial gage using the above equation for the principle strains. The associated stresses are</li>
 </ul>
-<p><span class="math display">\[
-  \begin{align}
+<p>[
+<span class="math display">\[\begin{align}
   \sigma_{\text{max}} &amp;= E \frac{e_{\text{max}} + \nu e_{\text{min}}}{1 - \nu^2} \\
   \sigma_{\text{min}} &amp;= E \frac{e_{\text{min}} + \nu e_{\text{max}}}{1 - \nu^2} \\
   \text{where } &amp; e_{\text{max}} \text{ and } e_{\text{min}} \text{ are the measured principal strains in the appropriate legs of the bi-axial gage} \\
   E &amp;= \text{Young&#39;s Modulus of the material} \\
   \nu &amp;= \text{Poisson&#39;s ratio for the material (ratio of compression and tension strains)} \\
-  \end{align}
-\]</span></p>
+  \end{align}\]</span></p>
 <ul>
 <li>For the Rosette gage, the principal strains and stresses are derived as</li>
 </ul>
-<p><span class="math display">\[
-  \begin{align}
+<p>[
+<span class="math display">\[\begin{align}
   e_{\text{max,min}} &amp;= 0.5 \left(e_a + e_c \right) \pm 0.5 \sqrt{\left(e_a - e_c \right)^2 + \left(2e_b - e_a - e_c \right)^2  } \\
   \sigma_{\text{max,min}} &amp;= 0.5 E \left[ \frac{e_a + e_c}{1 - \nu} \right] \pm 0.5 \frac{\sqrt{\left(e_a - e_c \right)^2 + \left(2e_b - e_a - e_c \right)^2  }}{1 - \nu} \\
   \text{where } &amp; e \text{ denotes the strain in each of the three legs of the Rosette} \\
   &amp;\text{(+ is used for the maximum and - for the minimum)} \\
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 <p>To accurately measure the very small resistance changes in a strain gage, a <em>Wheatstone Bridge</em> is typically used</p>
 <p><img src="media/09/image7.png" style="width:4.49931in;height:2.3125in" /></p>
 </div>

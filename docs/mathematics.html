@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>2 Mathematics | Flight Test Engineering Reference Handbook</title>
   <meta name="description" content="2 Mathematics | Flight Test Engineering Reference Handbook" />
-  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="2 Mathematics | Flight Test Engineering Reference Handbook" />
   <meta property="og:type" content="book" />
@@ -33,7 +33,7 @@
   
 <link rel="prev" href="general-information.html"/>
 <link rel="next" href="universe-earth-atmospheric.html"/>
-<script src="libs/header-attrs-2.2/header-attrs.js"></script>
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -51,6 +51,8 @@
 
 
 
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 
 
 
@@ -557,7 +559,7 @@
 <tbody>
 <tr class="odd">
 <td align="left">Commutative</td>
-<td align="left"><span class="math display">\[\begin{align} a+b &amp;= b+a\\ ab &amp;= ba \end{align}\]</span></td>
+<td align="left"><span class="math display">\[ a+b = b+a ,\, ab = ba \]</span></td>
 </tr>
 <tr class="even">
 <td align="left">Associative</td>
@@ -634,22 +636,22 @@
 </tr>
 </tbody>
 </table>
-<p>Examples:
-<span class="math display">\[
+<p>Examples:</p>
+<p><span class="math display">\[
 \begin{array}{lllll}
 \log (6.54) =  0.8156 &amp;&amp;&amp;&amp;\\
-&amp; \log (6540) &amp;= \log (6.54 \times 10^3 ) &amp;=  0.8156 + 3 &amp;= \fbox{3.8156}&amp;\\
-&amp; \log ( 0.6540) &amp;= \log (6.54 \times 10^{-1}) &amp;=  0.8156 - 1 &amp;= \fbox{9.8156 - 10}&amp;\\
-&amp; \log ( 0.000 6540) &amp;= \log (6.54 \times 10^{-4}) &amp;=  0.8156 - 4 &amp;= \fbox{6.8156 - 10}&amp;
+&amp; \log (6540)         &amp;= \log (6.54 \times 10^3 )   &amp;=  0.8156 + 3 &amp;= \fbox{3.8156}\\
+&amp; \log ( 0.6540)      &amp;= \log (6.54 \times 10^{-1}) &amp;=  0.8156 - 1 &amp;= \fbox{9.8156 - 10}\\
+&amp; \log ( 0.000\,6540) &amp;= \log (6.54 \times 10^{-4}) &amp;=  0.8156 - 4 &amp;= \fbox{6.8156 - 10}\\
 \end{array}
 \]</span></p>
 <p><span class="math display">\[
 \begin{array}{lllll}
 \text{calculate } 68.31 \times  0.2754 &amp;&amp;&amp;&amp;\\
-&amp;log (68.31) &amp;= 1.8354&amp;&amp;\\
-&amp;log ( 0.2754) &amp;= - 0.56&amp;&amp;\\
+&amp;\log (68.31) &amp;= 1.8354&amp;&amp;\\
+&amp;\log ( 0.2754) &amp;= - 0.56&amp;&amp;\\
 &amp;1.8354 +(- 0.56) &amp;= 1.2745&amp;&amp;\\
-&amp;log^{-1} (1.2745) &amp;= \fbox{18.81}&amp;&amp;
+&amp;\log^{-1} (1.2745) &amp;= \fbox{18.81}&amp;&amp;\\
 \end{array}
 \]</span></p>
 <p><span class="math display">\[
@@ -697,13 +699,11 @@
 <p>and</p>
 <p><span class="math display">\[B =\sqrt[3]{-\frac{b}{2} - \sqrt{\frac{b^2}{4} + \frac{a^3}{27}}} \]</span></p>
 <p>then</p>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 x_1 &amp;= A + B\\
 x_2 &amp;= \frac{-(A + B)}{2} + \frac{\sqrt{-3}}{2} (A - B)\\
 x_3 &amp;= \frac{-(A + B)}{2} - \frac{\sqrt{-3}}{2} (A - B)
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 <p>Special cases:</p>
 <p>If <span class="math inline">\(\frac{b^2}{4} + \frac{a^3}{27} &lt; 0\)</span> , then the real roots are</p>
 <p><span class="math display">\[x_{1,2,3} = 2 \sqrt{\frac{-a}{3}} cos \left( \frac{\phi}{3} + 120° k \right)\]</span></p>
@@ -835,21 +835,17 @@ x_3 &amp;= \frac{-(A + B)}{2} - \frac{\sqrt{-3}}{2} (A - B)
 </table>
 <div id="triangle" class="section level4 unnumbered">
 <h4>Triangle</h4>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 A &amp;= \frac{bh}{2}\\
 \text{sum of interior angles} &amp;= 180°
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 </div>
 <div id="rectangle" class="section level4 unnumbered">
 <h4>Rectangle</h4>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 A &amp;= bh\\
 \text{sum of interior angles} &amp;= 360°
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 </div>
 <div id="parallelogram-opposite-sides-parallel" class="section level4 unnumbered">
 <h4>Parallelogram (opposite sides parallel)</h4>
@@ -952,8 +948,7 @@ V &amp;= 2 \pi ^2 R \rho^2 \\
 <p class="caption">Right Triangle</p>
 </div>
 <p>For any right triangle with hypotenuse <span class="math inline">\(h\)</span>, an acute angle <span class="math inline">\(\alpha\)</span>, side length <span class="math inline">\(o\)</span> opposite from <span class="math inline">\(\alpha\)</span>, and side length <span class="math inline">\(a\)</span> adjacent to <span class="math inline">\(\alpha\)</span>, the following terms are defined:</p>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 \text{sine } \alpha &amp;= \sin{\alpha} = \frac{o}{h} \\
 \text{cosine } \alpha &amp;= \cos{\alpha} = \frac{a}{h} \\
 \text{tangent } \alpha &amp;= \tan{\alpha} = \frac{o}{a} = \frac{\sin{\alpha}}{cos{\alpha}} \\
@@ -964,79 +959,65 @@ V &amp;= 2 \pi ^2 R \rho^2 \\
 \text{versine } \alpha &amp;= \text{vers } \alpha = 1 - \cos{\alpha} \\
 \text{coversine } \alpha &amp;= \text{covers } \alpha = 1 - \sin{\alpha} \\
 \text{haversine } \alpha &amp;= \text{hav } \alpha = \frac{\text{vers } \alpha}{2} \\
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 <p>also defined are the following…</p>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 \text{hyperbolic sine of } x &amp;= \sinh{x} = \frac{\mathrm{e}^x - \mathrm{e}^{-x}}{2} \\
 \text{hyperbolic cosine of } x &amp;= \cosh{x} = \frac{\mathrm{e}^x + \mathrm{e}^{-x}}{2} \\
 \text{hyperbolic tangent of } x &amp;= \tanh{x} = \frac{\sinh{x}}{\cosh{x}} = \frac{\mathrm{e}^x - \mathrm{e}^{-x}}{\mathrm{e}^x + \mathrm{e}^{-x}} \\
 \text{csch } x &amp;= \frac{1}{\sinh{x}} \\
 \text{sech } x &amp;= \frac{1}{\cosh{x}} \\
 \text{coth } x &amp;= \frac{1}{\tanh{x}} \\
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 <div id="identities-1" class="section level3 unnumbered">
 <h3>Identities</h3>
 <div id="pythagorean-identities" class="section level4 unnumbered">
 <h4>Pythagorean Identities:</h4>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 \sin^2{\alpha} + \cos^2{\alpha} &amp;= 1 \\
 1 + \tan^2{\alpha} &amp;= \sec^2{\alpha} \\
 1 + \cot^2{\alpha} &amp;= \csc^2{\alpha} \\
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 </div>
 <div id="half-angle-identities" class="section level4 unnumbered">
 <h4>Half Angle Identities:</h4>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 \sin{\frac{\alpha}{2}} &amp;= \pm \sqrt{\frac{1 - \cos{\alpha}}{2}} \text{ (negative if } \frac{\alpha}{2} \text{ is in quadrant III or IV)}\\
 \cos{\frac{\alpha}{2}} &amp;= \pm \sqrt{\frac{1 + \cos{\alpha}}{2}} \text{ (negative if } \frac{\alpha}{2} \text{ is in quadrant II or III)}\\
 \tan{\frac{\alpha}{2}} &amp;= \pm \sqrt{\frac{1 - \cos{\alpha}}{1 + \cos{\alpha}}} \text{ (negative if } \frac{\alpha}{2} \text{ is in quadrant II or IV)}\\
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 </div>
 <div id="double-angle-identities" class="section level4 unnumbered">
 <h4>Double-Angle Identities:</h4>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 \sin{2\alpha} &amp;= 2\sin{\alpha}\cos{\alpha}\\
 \cos{2\alpha} &amp;= 2\cos^2{\alpha} - 1 = 1 - 2\sin^2{\alpha} = \cos^2{\alpha} - \sin^2{\alpha}\\
 \tan{2\alpha} &amp;= \frac{2\tan{\alpha}}{1 - \tan^2{\alpha}}\\
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 </div>
 <div id="n-angle-identities" class="section level4 unnumbered">
 <h4>n-Angle Identities:</h4>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 \sin{3\alpha} &amp;= 3\sin{\alpha} - 4\sin^3{\alpha}\\
 \cos{3\alpha} &amp;= 4\cos^3{\alpha} - 3\cos{\alpha}\\
 \sin{n\alpha} &amp;= 2\sin\big(\left(n-1\right)\alpha\big) \cos{\alpha} - \sin(n-2)\alpha\\
 \cos{n\alpha} &amp;= 2\cos\big(\left(n-1\right)\alpha\big) \cos{\alpha} - \cos\left(n-2\right)\alpha\\
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 </div>
 <div id="two-angle-identities" class="section level4 unnumbered">
 <h4>Two-Angle Identities:</h4>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 \sin\left(\alpha + \beta\right) &amp;= \sin{\alpha}\cos{\beta} + \cos{\alpha}\sin{\beta}\\
 \cos\left(\alpha + \beta\right) &amp;= \cos{\alpha}\cos{\beta} - \sin{\alpha}\sin{\beta}\\
 \tan\left(\alpha + \beta\right) &amp;= \frac{\tan{\alpha} + \tan{\beta}}{1 - \tan{\alpha}\tan{\beta}}\\
 \sin\left(\alpha - \beta\right) &amp;= \sin{\alpha}\cos{\beta} - \cos{\alpha}\sin{\beta}\\
 \cos\left(\alpha - \beta\right) &amp;= \cos{\alpha}\cos{\beta} + \sin{\alpha}\sin{\beta}\\
 \tan\left(\alpha - \beta\right) &amp;= \frac{\tan{\alpha} - \tan{\beta}}{1 + \tan{\alpha}\tan{\beta}}\\
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 </div>
 <div id="sum-and-difference-identities" class="section level4 unnumbered">
 <h4>Sum and Difference Identities:</h4>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 \sin{\alpha} + \sin{\beta} &amp;=  2\sin{\frac{\alpha + \beta}{2}}\cos{\frac{\alpha - \beta}{2}}\\
 \sin{\alpha} - \sin{\beta} &amp;=  2\cos{\frac{\alpha + \beta}{2}}\sin{\frac{\alpha - \beta}{2}}\\
 \cos{\alpha} + \cos{\beta} &amp;=  2\cos{\frac{\alpha + \beta}{2}}\sin{\frac{\alpha - \beta}{2}}\\
@@ -1048,13 +1029,11 @@ V &amp;= 2 \pi ^2 R \rho^2 \\
 \sin^2{\alpha} - \sin^2{\beta} &amp;=  \sin\left(\alpha + \beta\right) \sin\left(\alpha - \beta\right)\\
 \cos^2{\alpha} - \cos^2{\beta} &amp;= -\sin\left(\alpha + \beta\right) \sin\left(\alpha - \beta\right)\\
 \cos^2{\alpha} - \sin^2{\beta} &amp;=  \cos\left(\alpha + \beta\right) \cos\left(\alpha - \beta\right)\\
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 </div>
 <div id="power-identities" class="section level4 unnumbered">
 <h4>Power Identities:</h4>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 \sin{\alpha}\sin{\beta} &amp;= \frac{\cos\left(\alpha - \beta\right) - \cos\left(\alpha + \beta\right)}{2}\\
 \cos{\alpha}\cos{\beta} &amp;= \frac{\cos\left(\alpha - \beta\right) + \cos\left(\alpha + \beta\right)}{2}\\
 \sin{\alpha}\cos{\beta} &amp;= \frac{\sin\left(\alpha + \beta\right) + \sin\left(\alpha - \beta\right)}{2}\\
@@ -1068,8 +1047,7 @@ V &amp;= 2 \pi ^2 R \rho^2 \\
 \cos^4{\alpha} &amp;= \frac{3 + 4\cos{2\alpha} + \cos{4\alpha}}{8}\\
 \sin^5{\alpha} &amp;= \frac{10\sin{\alpha} - 5\sin{3\alpha} + \sin{5\alpha}}{16}\\
 \cos^5{\alpha} &amp;= \frac{10\cos{\alpha} + 5\cos{3\alpha} + \cos{5\alpha}}{16}\\
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 </div>
 <div id="oblique-triangles" class="section level4 unnumbered">
 <h4>OBLIQUE TRIANGLES</h4>
@@ -1084,14 +1062,12 @@ V &amp;= 2 \pi ^2 R \rho^2 \\
 </div>
 <div id="law-of-cosines" class="section level5 unnumbered">
 <h5>Law of Cosines:</h5>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 a^2  &amp;= b^2  + c^2  - 2bc\cos{A}\\
 b^2  &amp;= a^2  + c^2  - 2ac\cos{B}\\
 c^2  &amp;= a^2  + b^2  - 2ab\cos{C}\\
 \cos{C} &amp;= \frac{a^2 +b^2 -c^2}{2ab}\\
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 </div>
 <div id="law-of-tangents" class="section level5 unnumbered">
 <h5>Law of Tangents:</h5>
@@ -1099,22 +1075,18 @@ c^2  &amp;= a^2  + b^2  - 2ab\cos{C}\\
 </div>
 <div id="projection-formulas" class="section level5 unnumbered">
 <h5>Projection Formulas:</h5>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 a &amp;= b\cos{C} + c\cos{B}\\
 b &amp;= c\cos{A} + a\cos{C}\\
 c &amp;= a\cos{B} + b\cos{A}\\
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 </div>
 <div id="mollweides-check-formulas" class="section level5 unnumbered">
 <h5>Mollweide’s Check Formulas:</h5>
-<p><span class="math display">\[
-\begin{align}
-\frac{a-b}{c} = \frac{\sin\frac{A-B}{2}}{\cos\frac{C}{2}}\\
-\frac{a+b}{c} = \frac{\cos\frac{A-B}{2}}{\sin\frac{C}{2}}\\
-\end{align}
-\]</span></p>
+<p><span class="math display">\[\begin{align}
+\frac{a-b}{c} &amp;= \frac{\sin\frac{A-B}{2}}{\cos\frac{C}{2}}\\
+\frac{a+b}{c} &amp;= \frac{\cos\frac{A-B}{2}}{\sin\frac{C}{2}}\\
+\end{align}\]</span></p>
 </div>
 </div>
 </div>
@@ -1249,13 +1221,11 @@ A^T = \begin{bmatrix}
 1 \\ 13 \\ 8
 \end{bmatrix} 
 \]</span></p>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 x_1 &amp;= \frac{1}{70} \left( 16 - 26 + 80 \right) = \frac{70}{70} &amp;= 1 \\
 x_2 &amp;= \frac{1}{70} \left( 12 0 208 - 80 \right) = \frac{140}{70} &amp;= 2 \\
 x_3 &amp;= \frac{1}{70} \left( 1 + 169 + 40 \right) = \frac{210}{70} &amp;= 3 \\
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 </div>
 <div id="cramers-rule" class="section level3" number="2.4.4">
 <h3><span class="header-section-number">2.4.4</span> Cramer’s Rule</h3>
@@ -1276,19 +1246,15 @@ x_1 \\ x_2 \\ x_3
 6 \\ 30 \\ 8
 \end{bmatrix}
 \]</span></p>
-<p><span class="math display">\[
-\begin{align}
-A = \begin{bmatrix} 1 &amp; 0 &amp; 2 \\ -3 &amp; 4 &amp; 6 \\ -1 &amp; -2 &amp; 3 \end{bmatrix} &amp; A_1 = \begin{bmatrix} 6 &amp; 0 &amp; 2 \\ 30 &amp; 4 &amp; 6 \\ 8 &amp; -2 &amp; 3 \end{bmatrix} \\
-A_2 = \begin{bmatrix} 1 &amp; 6 &amp; 2 \\ -3 &amp; 30 &amp; 6 \\ -1 &amp; 8 &amp; 3 \end{bmatrix} &amp; A_3 = \begin{bmatrix} 1 &amp; 0 &amp; 6 \\ -1 &amp; 4 &amp; 30 \\ -3 &amp; -2 &amp; 8 \end{bmatrix} \\
-\end{align}
-\]</span></p>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
+A &amp;= \begin{bmatrix} 1 &amp; 0 &amp; 2 \\ -3 &amp; 4 &amp; 6 \\ -1 &amp; -2 &amp; 3 \end{bmatrix} &amp; A_1 = \begin{bmatrix} 6 &amp; 0 &amp; 2 \\ 30 &amp; 4 &amp; 6 \\ 8 &amp; -2 &amp; 3 \end{bmatrix} \\
+A_2 &amp;= \begin{bmatrix} 1 &amp; 6 &amp; 2 \\ -3 &amp; 30 &amp; 6 \\ -1 &amp; 8 &amp; 3 \end{bmatrix} &amp; A_3 = \begin{bmatrix} 1 &amp; 0 &amp; 6 \\ -1 &amp; 4 &amp; 30 \\ -3 &amp; -2 &amp; 8 \end{bmatrix} \\
+\end{align}\]</span></p>
+<p><span class="math display">\[\begin{align}
 x_1 &amp;= \frac{\det\left( A_1 \right)}{\det\left( A \right)} = \frac{-40}{44} = \frac{-10}{11} \\
 x_2 &amp;= \frac{\det\left( A_2 \right)}{\det\left( A \right)} = \frac{72}{44} = \frac{18}{11} \\
 x_3 &amp;= \frac{\det\left( A_3 \right)}{\det\left( A \right)} = \frac{152}{44} = \frac{38}{11} \\
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 </div>
 </div>
 <div id="vector-algebra" class="section level2" number="2.5">
@@ -1338,7 +1304,7 @@ is the magnitude of the vector. We compute it thus:
 <span class="math display">\[ \left| \bar{A} \right| = \sqrt{\sum_{i=1}^{n} a_i^2} .\]</span>.
 For example, given a three-dimensional vector in the <span class="math inline">\(xyz\)</span> plane, we have:
 <span class="math display">\[ \left| \bar{A} \right| = \sqrt{a_x^2 + a_y^2 + a_z^2} .\]</span>
-The two types of notation, <span class="math inline">\(| \bar{A} |\)</span> and <span class="math inline">\(||\bar{A}||\)</span> are equivalent.</p>
+The two types of notation, <span class="math inline">\(| \bar{A} |\)</span> and <span class="math inline">\(|| \bar{A} ||\)</span> are equivalent.</p>
 <p>With this additional notation, we can also define the <strong>dot product</strong> this way:
 <span class="math display">\[\bar{A} \cdot \bar{B} = \left| \bar{A} \right| \left| \bar{B} \right| \cos{\theta} ,\]</span>
 where <span class="math inline">\(\theta\)</span> is the angle between the vectors.</p>
@@ -1693,7 +1659,7 @@ should be added to the result of every integration</li>
 <td><span class="math display">\[ \int_{}{} \sqrt{a^2 - u^2} = \frac{1}{2} \left( u \sqrt{a^2 - x^2} + a^2 \sin^{-1} \frac{u}{a} \right) \]</span></td>
 </tr>
 <tr class="even">
-<td><span class="math display">\[ \int_{}{} \frac{du}{a^2 + u^2} = \frac{1}{a} \tan^{-1} \frac{u}{a} \text{, } a \gt 0 \]</span></td>
+<td><span class="math display">\[ \int_{}{} \frac{du}{a^2 + u^2} = \frac{1}{a} \tan^{-1} \frac{u}{a} \text{, } a  &gt;  0 \]</span></td>
 </tr>
 <tr class="odd">
 <td><em>Expressions Containing Exponential and Logarithmic Functions</em></td>
@@ -1817,71 +1783,71 @@ should be added to the result of every integration</li>
 <tbody>
 <tr class="odd">
 <td><span class="math display">\[1 \text{ (step function)}\]</span></td>
-<td><span class="math display">\[\frac{1}{s} \text{, where } \left(s\gt 0\right) \]</span></td>
+<td><span class="math display">\[\frac{1}{s} \text{, where } \left(s &gt;  0\right) \]</span></td>
 </tr>
 <tr class="even">
 <td><span class="math display">\[t\]</span></td>
-<td><span class="math display">\[\frac{1}{s^2} \text{, where } \left(s\gt 0\right) \]</span></td>
+<td><span class="math display">\[\frac{1}{s^2} \text{, where } \left(s &gt;  0\right) \]</span></td>
 </tr>
 <tr class="odd">
 <td><span class="math display">\[t^{n-1}\]</span></td>
-<td><span class="math display">\[\frac{\left( n-1 \right)!}{s^n} \text{, where } \left(s\gt 0\right) \]</span></td>
+<td><span class="math display">\[\frac{\left( n-1 \right)!}{s^n} \text{, where } \left(s &gt;  0\right) \]</span></td>
 </tr>
 <tr class="even">
 <td><span class="math display">\[\sqrt{t}\]</span></td>
-<td><span class="math display">\[\frac{{\sqrt \pi  }}{{2{s^{\frac{3}{2}}}}} \text{, where } \left(s\gt 0\right) \]</span></td>
+<td><span class="math display">\[\frac{{\sqrt \pi  }}{{2{s^{\frac{3}{2}}}}} \text{, where } \left(s &gt;  0\right) \]</span></td>
 </tr>
 <tr class="odd">
 <td><span class="math display">\[\frac{1}{\sqrt{t}}\]</span></td>
-<td><span class="math display">\[\frac{{\sqrt \pi  }}{{{s^{\frac{1}{2}}}}} \text{, where } \left(s\gt 0\right) \]</span></td>
+<td><span class="math display">\[\frac{{\sqrt \pi  }}{{{s^{\frac{1}{2}}}}} \text{, where } \left(s &gt;  0\right) \]</span></td>
 </tr>
 <tr class="even">
 <td><span class="math display">\[{t^{n - \frac{1}{2}}},\,\,\,\,\,n = 1,2,3, \ldots\]</span></td>
-<td><span class="math display">\[\frac{{1 \cdot 3 \cdot 5 \cdots \left( {2n - 1} \right)\sqrt \pi  }}{{{2^n}{s^{n + \frac{1}{2}}}}} {, where } \left(s\gt 0\right) \]</span></td>
+<td><span class="math display">\[\frac{{1 \cdot 3 \cdot 5 \cdots \left( {2n - 1} \right)\sqrt \pi  }}{{{2^n}{s^{n + \frac{1}{2}}}}} {, where } \left(s &gt;  0\right) \]</span></td>
 </tr>
 <tr class="odd">
 <td><span class="math display">\[\mathrm{e}^{at}\]</span></td>
-<td><span class="math display">\[ \frac{1}{s-a} \text{, where } \left(s\gt a \right) \]</span></td>
+<td><span class="math display">\[ \frac{1}{s-a} \text{, where } \left(s &gt;  a \right) \]</span></td>
 </tr>
 <tr class="even">
 <td><span class="math display">\[t\mathrm{e}^{at}\]</span></td>
-<td><span class="math display">\[\frac{1}{{\left( {s - a} \right)}^{2}} \text{, where } \left(s\gt a \right) \]</span></td>
+<td><span class="math display">\[\frac{1}{{\left( {s - a} \right)}^{2}} \text{, where } \left(s &gt;  a \right) \]</span></td>
 </tr>
 <tr class="odd">
 <td><span class="math display">\[{t^n}{{e}^{at}},\,\,\,\,\,n = 1,2,3, \ldots\]</span></td>
-<td><span class="math display">\[\frac{{n!}}{{{{\left( {s - a} \right)}^{n + 1}}}} \text{, where } \left(s\gt a \right) \]</span></td>
+<td><span class="math display">\[\frac{{n!}}{{{{\left( {s - a} \right)}^{n + 1}}}} \text{, where } \left(s &gt;  a \right) \]</span></td>
 </tr>
 <tr class="even">
 <td><span class="math display">\[\sin{at} \]</span></td>
-<td><span class="math display">\[\frac{a}{s^2 + a^2} \text{, where } \left(s\gt 0 \right) \]</span></td>
+<td><span class="math display">\[\frac{a}{s^2 + a^2} \text{, where } \left(s &gt;  0 \right) \]</span></td>
 </tr>
 <tr class="odd">
 <td><span class="math display">\[\cos{at}\]</span></td>
-<td><span class="math display">\[\frac{s}{s^2 + a^2} \text{, where } \left(s\gt 0 \right) \]</span></td>
+<td><span class="math display">\[\frac{s}{s^2 + a^2} \text{, where } \left(s &gt;  0 \right) \]</span></td>
 </tr>
 <tr class="even">
 <td><span class="math display">\[\mathrm{e}^{bt} \sin{at}\]</span></td>
-<td><span class="math display">\[\frac{a}{\left(s - b \right)^2 + a^2} \text{, where } \left(s\gt b \right) \]</span></td>
+<td><span class="math display">\[\frac{a}{\left(s - b \right)^2 + a^2} \text{, where } \left(s &gt;  b \right) \]</span></td>
 </tr>
 <tr class="odd">
 <td><span class="math display">\[\mathrm{e}^{bt} \cos{at}\]</span></td>
-<td><span class="math display">\[\frac{s-b}{\left(s - b \right)^2 + a^2} \text{, where } \left(s\gt b \right) \]</span></td>
+<td><span class="math display">\[\frac{s-b}{\left(s - b \right)^2 + a^2} \text{, where } \left(s &gt;  b \right) \]</span></td>
 </tr>
 <tr class="even">
 <td><span class="math display">\[t \sin{at}\]</span></td>
-<td><span class="math display">\[\frac{2as}{\left(s^2  - a^2\right)^2} \text{, where } \left(s\gt a \right) \]</span></td>
+<td><span class="math display">\[\frac{2as}{\left(s^2  - a^2\right)^2} \text{, where } \left(s &gt;  a \right) \]</span></td>
 </tr>
 <tr class="odd">
 <td><span class="math display">\[t \cos{at}\]</span></td>
-<td><span class="math display">\[\frac{s^2  - a^2}{\left(s^2  + a^2\right)^2} \text{, where } \left(s\gt 0 \right) \]</span></td>
+<td><span class="math display">\[\frac{s^2  - a^2}{\left(s^2  + a^2\right)^2} \text{, where } \left(s &gt;  0 \right) \]</span></td>
 </tr>
 <tr class="even">
 <td><span class="math display">\[\sinh{at}\]</span></td>
-<td><span class="math display">\[\frac{a}{\left(s^2  - a^2\right)^2} \text{, where } \left(s\gt \lvert a \rvert \right) \]</span></td>
+<td><span class="math display">\[\frac{a}{\left(s^2  - a^2\right)^2} \text{, where } \left(s &gt;  \lvert a \rvert \right) \]</span></td>
 </tr>
 <tr class="odd">
 <td><span class="math display">\[\cosh{at}\]</span></td>
-<td><span class="math display">\[\frac{s}{\left(s^2  - a^2\right)^2} \text{, where } \left(s\gt \lvert a \rvert \right) \]</span></td>
+<td><span class="math display">\[\frac{s}{\left(s^2  - a^2\right)^2} \text{, where } \left(s &gt;  \lvert a \rvert \right) \]</span></td>
 </tr>
 <tr class="even">
 <td><span class="math display">\[\sin \left(at + b\right)\]</span></td>
@@ -1912,8 +1878,8 @@ should be added to the result of every integration</li>
 <td><span class="math display">\[\frac{1 - \mathrm{e}^{-cs}}{s^2 \left( 1 + \mathrm{e}^{-cs} \right)} \]</span></td>
 </tr>
 <tr class="odd">
-<td><span class="math display">\[ \begin{align} at \text{ for } 0 \leq t \lt c \\ \text{sawtooth wave, period } = c \end{align}\]</span></td>
-<td><span class="math display">\[ \frac{a \left( 1 + cs - \mathrm{e}^{-cs} \right) }{s^2 \left( 1 - \mathrm{e}^{-cs} \right) } \]</span></td>
+<td><span class="math display">\[\begin{align} at \text{ for } 0 \leq t  &lt;  c \\ \text{sawtooth wave, period } = c \end{align}\]</span></td>
+<td><span class="math display">\[ \frac{a \left( 1 + cs - \mathrm{e}^{-cs} \right) }{s^2 \left( 1 - \mathrm{e}^{-cs} \right) }\]</span></td>
 </tr>
 <tr class="even">
 <td><span class="math display">\[\sin{at} \sin{bt} \]</span></td>
@@ -1944,19 +1910,19 @@ should be added to the result of every integration</li>
 <tbody>
 <tr class="odd">
 <td>2.1</td>
-<td>Burington, Richard S., “Handbook of Mathematical Tables and Formulas”, McGraw-Hill Inc., 1973.</td>
+<td>Burington, Richard S., “Handbook of Mathematical Tables and Formulas,” McGraw-Hill Inc., 1973.</td>
 </tr>
 <tr class="even">
 <td>2.2</td>
-<td>Ayers, F., Moyer, R., “Trigonometry”, Schaum’s Outline series, McGraw-Hill Inc., 1990.</td>
+<td>Ayers, F., Moyer, R., “Trigonometry,” Schaum’s Outline series, McGraw-Hill Inc., 1990.</td>
 </tr>
 <tr class="odd">
 <td>2.3</td>
-<td>Esbach, Ovid W., “Handbook of Engineering Fundamentals”, John Wiley and Sons Inc., 1963.</td>
+<td>Esbach, Ovid W., “Handbook of Engineering Fundamentals,” John Wiley and Sons Inc., 1963.</td>
 </tr>
 <tr class="even">
 <td>2.4</td>
-<td>Hudson, Ralph G., “The Engineers’ Manual”, John Wiley and Sons Inc., 1944.</td>
+<td>Hudson, Ralph G., “The Engineers’ Manual,” John Wiley and Sons Inc., 1944.</td>
 </tr>
 <tr class="odd">
 <td>2.5</td>
@@ -1964,11 +1930,11 @@ should be added to the result of every integration</li>
 </tr>
 <tr class="even">
 <td>2.6</td>
-<td>“Flying Qualities Testing, Vol II”, 1997, National Test Pilot School, P.O. Box 658, Mojave CA, 93501.</td>
+<td>“Flying Qualities Testing, Vol II,” 1997, National Test Pilot School, P.O. Box 658, Mojave CA, 93501.</td>
 </tr>
 <tr class="odd">
 <td>2.7</td>
-<td>Lewis, G., <em>Chapter 2, Data Analysis</em>, from “Crew station Evaluation and Data Analysis, Vol IV”, 1997, National Test Pilot School, P.O. Box 658, Mojave CA, 93501.</td>
+<td>Lewis, G., <em>Chapter 2, Data Analysis</em>, from “Crew station Evaluation and Data Analysis, Vol IV,” 1997, National Test Pilot School, P.O. Box 658, Mojave CA, 93501.</td>
 </tr>
 </tbody>
 </table>

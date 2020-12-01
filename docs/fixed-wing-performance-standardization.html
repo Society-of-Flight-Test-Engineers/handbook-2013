@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>12 Fixed-Wing Performance Standardization | Flight Test Engineering Reference Handbook</title>
   <meta name="description" content="12 Fixed-Wing Performance Standardization | Flight Test Engineering Reference Handbook" />
-  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="12 Fixed-Wing Performance Standardization | Flight Test Engineering Reference Handbook" />
   <meta property="og:type" content="book" />
@@ -33,7 +33,7 @@
   
 <link rel="prev" href="propellers.html"/>
 <link rel="next" href="acoustics.html"/>
-<script src="libs/header-attrs-2.2/header-attrs.js"></script>
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -51,6 +51,8 @@
 
 
 
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 
 
 
@@ -910,32 +912,22 @@ S_{g_t} = S_{g_{zw}} \left[ 1 - \frac{W \sin \theta}{\left[ F_{\text{ex}} \right
 \]</span></p>
 <p>After correcting the test day distance to zero wind and slope, use the following empirical equations to correct for non-standard weight, density, and temperature.
 Any desired values can be treated as the “standard” conditions.</p>
-<table>
-<colgroup>
-<col width="52%" />
-<col width="47%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left"><strong>Aircraft Propulsion Type</strong></th>
-<th align="left"><strong>Standard Day Distance</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Fixed pitch propellers<a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a></td>
-<td align="left"><span class="math display">\[\begin{align} S_{gs} &amp;= S_{gt} \left( \frac{W_s}{W_t} \right)^{2.4} \left( \frac{\sigma_s}{\sigma_t} \right)^{-2.4} \left( \frac{T_{as}}{T_{at}} \right)^{0.5} \\ S_{as} &amp;= S_{at} \left( \frac{W_s}{W_t} \right)^{2.2} \left( \frac{\sigma_s}{\sigma_t} \right)^{-2.2} \left( \frac{T_{as}}{T_{at}} \right)^{0.6} \end{align} \]</span></td>
-</tr>
-<tr class="even">
-<td align="left">Turbo-propeller aircraft<a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a></td>
-<td align="left"><span class="math display">\[\begin{align} S_{gs} &amp;= S_{gt} \left( \frac{W_s}{W_t} \right)^{2.6} \left( \frac{\sigma_s}{\sigma_t} \right)^{-1.7} \left( \frac{N_s}{N_t} \right)^{-0.7} \left( \frac{P_s}{P_t} \right)^{-0.9} \\ S_{gs} &amp;= S_{gt} \left( \frac{W_s}{W_t} \right)^{2.3} \left( \frac{\sigma_s}{\sigma_t} \right)^{-1.2} \left( \frac{N_s}{N_t} \right)^{-0.8} \left( \frac{P_s}{P_t} \right)^{-1.1} \end{align} \]</span></td>
-</tr>
-<tr class="odd">
-<td align="left">Large jet aircraft<a href="#fn10" class="footnote-ref" id="fnref10"><sup>10</sup></a></td>
-<td align="left"><span class="math display">\[\begin{align} S_{gs} &amp;= S_{gt} \left( \frac{W_s}{W_t} \right)^{2.3} \left( \frac{\sigma_s}{\sigma_t} \right)^{-1.0} \left( \frac{F_{ns}}{F_{nt}} \right)^{-1.3}  \\ S_{gs} &amp;= S_{gt} \left( \frac{W_s}{W_t} \right)^{2.3} \left( \frac{\sigma_s}{\sigma_t} \right)^{-0.7} \left( \frac{F_{ns}}{F_{nt}} \right)^{-1.6} \end{align}\]</span></td>
-</tr>
-</tbody>
-</table>
+<p><strong>Aircraft Propulsion Type and Standard Day Distance</strong></p>
+<p>Fixed pitch propellers<a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a></p>
+<p><span class="math display">\[\begin{align} 
+S_{gs} &amp;= S_{gt} \left( \frac{W_s}{W_t} \right)^{2.4} \left( \frac{\sigma_s}{\sigma_t} \right)^{-2.4} \left( \frac{T_{as}}{T_{at}} \right)^{0.5} \\ 
+S_{as} &amp;= S_{at} \left( \frac{W_s}{W_t} \right)^{2.2} \left( \frac{\sigma_s}{\sigma_t} \right)^{-2.2} \left( \frac{T_{as}}{T_{at}} \right)^{0.6} 
+\end{align}\]</span></p>
+<p>Turbo-propeller aircraft<a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a></p>
+<p><span class="math display">\[\begin{align} 
+S_{gs} &amp;= S_{gt} \left( \frac{W_s}{W_t} \right)^{2.6} \left( \frac{\sigma_s}{\sigma_t} \right)^{-1.7} \left( \frac{N_s}{N_t} \right)^{-0.7} \left( \frac{P_s}{P_t} \right)^{-0.9} \\ 
+S_{gs} &amp;= S_{gt} \left( \frac{W_s}{W_t} \right)^{2.3} \left( \frac{\sigma_s}{\sigma_t} \right)^{-1.2} \left( \frac{N_s}{N_t} \right)^{-0.8} \left( \frac{P_s}{P_t} \right)^{-1.1} 
+\end{align}\]</span></p>
+<p>Large jet aircraft<a href="#fn10" class="footnote-ref" id="fnref10"><sup>10</sup></a></p>
+<p><span class="math display">\[\begin{align} 
+S_{gs} &amp;= S_{gt} \left( \frac{W_s}{W_t} \right)^{2.3} \left( \frac{\sigma_s}{\sigma_t} \right)^{-1.0} \left( \frac{F_{ns}}{F_{nt}} \right)^{-1.3}  \\ 
+S_{gs} &amp;= S_{gt} \left( \frac{W_s}{W_t} \right)^{2.3} \left( \frac{\sigma_s}{\sigma_t} \right)^{-0.7} \left( \frac{F_{ns}}{F_{nt}} \right)^{-1.6} 
+\end{align}\]</span></p>
 <p>where</p>
 <ul>
 <li><span class="math inline">\(P_t\)</span> = Test day brake power at the propeller</li>
@@ -999,7 +991,7 @@ C_{L_{\mathrm{IGE}}} = C_{L_{\mathrm{OGE}}} \mathrm{GE}_{C_L}
 </ul>
 <p>The above correction is <em>not used</em> above the height that predicts</p>
 <p><span class="math display">\[
-\mathrm{GE}_{C_L} \lt 1
+\mathrm{GE}_{C_L}  &lt;  1
 \]</span></p>
 <p><span class="math inline">\(C_{D_{\mathrm{IGE}}}\)</span> is the induced drag coefficient while in ground effect. Estimate this by determining the out-of-ground-effect drag coefficient, <span class="math inline">\(C_{D_{\mathrm{OGE}}}\)</span>, at the appropriate angle of attack and correcting it as follows:</p>
 <p><span class="math display" id="eq:est-c-d-ige">\[
@@ -1010,7 +1002,7 @@ C_{D_{\mathrm{IGE}}} = C_{D_{\mathrm{OGE}}} \mathrm{GE}_{C_D}
 where the ground effect factor, <span class="math inline">\(\mathrm{GE}_{C_D} = 0.2412 \ln \left( \frac{h}{b} \right) + 1.0829\)</span></p>
 <p>The above correction is <em>not used</em> above the height that predicts</p>
 <p><span class="math display">\[
-\mathrm{GE}_{C_D} \gt 1
+\mathrm{GE}_{C_D}  &gt;  1
 \]</span></p>
 <p>A <strong>direct approximation of takeoff air distance</strong> requires the desired speeds at liftoff and at 50 feet (typically <span class="math inline">\(1.1 V_s\)</span> and <span class="math inline">\(1.2 V_s\)</span>, respectively).
 It also requires an estimate of the average excess thrust as the aircraft climbs out of ground effect.</p>
@@ -1129,13 +1121,11 @@ A_3
 \]</span></p>
 <p>Although wheel reaction forces are not required for takeoff distance prediction, they are useful for accurate calculation of rotation capability and for braking effectiveness during landing ground rolls.
 For takeoff calculations, several simplifying assumptions can be made such as:</p>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 \mu_{\text{nw}} &amp;= \mu_m = 0.02 \\
 F_g &amp;\gg F_e \\
 D_t &amp;= 0
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 <p>This above approach can be repeated for the segment between rotation and liftoff.
 This is slightly more complicated because the changing angle of attack alters drag and acceleration.</p>
 <p>Precise <strong>predictions of the takeoff air distance</strong> can be made by applying Equation <a href="fixed-wing-performance-standardization.html#eq:direct-to-air">(12.11)</a> in small increments using accurate models that describe thrust as a function of airspeed and the lift &amp; drag changes due to climbing out of ground effect.</p>
@@ -1201,7 +1191,7 @@ increment or ratio method, Equations <a href="fixed-wing-performance-standardiza
 same equation used for the takeoff case, Equation <a href="fixed-wing-performance-standardization.html#eq:gnd-roll-dist-to">(12.8)</a>. This method requires a value for
 the average net thrust, <span class="math inline">\(T_{\text{avg}}\)</span> across the landing roll speed range and
 reasonable values for the wheel braking friction coefficient,
-<span class="math inline">\(0.35 \lt \mu \lt 0.50\)</span> for typical dry runway max braking. The same equations
+<span class="math inline">\(0.35 &lt; \mu &lt; 0.50\)</span> for typical dry runway max braking. The same equations
 for estimating ground effect also apply.</p>
 <p>A <strong>direct approximation of takeoff air distance</strong> including the flare requires
 the desired lift and associated drag coefficients, the thrust, and the applied
@@ -1241,7 +1231,7 @@ N_z = \cos \gamma + \frac{\dot{\gamma} V_T}{g}
 N_x = \frac{\dot{H}}{V_T} + \frac{\dot{V_T}}{g}
 \]</span></p>
 <p>where</p>
-<p><span class="math display" id="eq:p-sub-s">\[
+<p><span class="math display">\[
 \sin \gamma = \frac{\dot{H}}{V_T}
 \]</span></p>
 <p>An alternate method of calculating distance is the <strong>fixed time increment approach</strong>.
@@ -1358,10 +1348,10 @@ following sections address both the prediction and correction approaches.</p>
 <h3><span class="header-section-number">12.5.1</span> Climb/Descent/Acceleration Prediction</h3>
 <p>According to basic energy theory, an aircraft’s specific excess power, <span class="math inline">\(P_s\)</span>,
 is related to the change in kinetic and potential energy as follows:</p>
-<p>[
-P_s =  =  =  +   +  +  </p>
-<p>\tag{12.24}
-]</p>
+<p><span class="math display" id="eq:p-sub-s">\[
+P_s = \frac{P_{\text{ex}}}{W} = \frac{\left( F_n - D \right) V}{W} = \frac{dH}{dt} + \frac{H}{W} \frac{d W}{dt} + \frac{V}{g}\frac{dV}{dt} + \frac{V^2}{2Wg} \frac{dW}{dt}
+\tag{12.24}
+\]</span></p>
 <p>where <span class="math inline">\(V\)</span> is technically inertial speed. True airspeed and an assumption of
 zero wind is usually used instead of inertial speed. Since aircraft typically
 have negligible weight change during a maneuver, the above reduces to:</p>
@@ -1494,16 +1484,14 @@ For either approach, load factor, <span class="math inline">\(n_{\text{zw}}\)</s
 then the corresponding turn rate, <span class="math inline">\(\omega \left[ \frac{\text{radians}}{\text{sec}} \right]\)</span>,
 and radius, <span class="math inline">\(R \left[ \text{ft} \right]\)</span>, are calculated using the equations
 below.</p>
-<p><span class="math display" id="eq:r-omega-n-zw">\[
-\begin{align}
+<p><span class="math display" id="eq:r-omega-n-zw">\[\begin{align}
 R &amp;= \frac{V_T^2}{g \sqrt{n_{\text{zw}}^2 - 1}} \\
 \\
 \omega &amp;= \frac{g \sqrt{n_{\text{zw}}^2 - 1}}{V_T} \\
 \\
 n_{\text{zw}} &amp;= \sqrt{ \left( \frac{\omega V}{g} \right)^2 + 1  } \\
-\end{align}
 \tag{12.28}
-\]</span></p>
+\end{align}\]</span></p>
 <div id="sustained-level-turn-performance-prediction" class="section level3" number="12.6.1">
 <h3><span class="header-section-number">12.6.1</span> Sustained Level Turn Performance Prediction</h3>
 <ol style="list-style-type: decimal">
@@ -1579,7 +1567,7 @@ C_L = C_{L_{\alpha = 0}} + \frac{dC_L}{d\alpha} \alpha = C_{L_{\alpha = 0}} + C_
 successive iterations of Equations <a href="fixed-wing-performance-standardization.html#eq:load-factor-sus-turn">(12.29)</a> and <a href="fixed-wing-performance-standardization.html#eq:alpha-std">(12.30)</a>.</p>
 <p>In cases where</p>
 <p><span class="math display">\[
-\frac{F_g}{W} \sin \alpha_F \lt \frac{n_{\text{zw}}}{10}
+\frac{F_g}{W} \sin \alpha_F  &lt;  \frac{n_{\text{zw}}}{10}
 \]</span></p>
 <p>the angle of attack can be roughly estimated without significant error to the
 final result.</p>
@@ -1595,28 +1583,26 @@ thrust is different during (low angle of attack) climbs and accelerations.</p>
 <p>The equation below corrects any combination of test day climb, turn, and
 acceleration to a load factor for a sustained turn at the same dynamic pressure
 but at standard conditions.</p>
-<p><span class="math display" id="eq:load-factor-corr">\[
-\begin{align}
+<p><span class="math display" id="eq:load-factor-corr">\[\begin{align}
 n_{\text{zw}_{\text{std}}} = \frac{F_{g_{\text{std}}}}{W_s} \sin \alpha_{F_s} + 
 \left\{ 
       \left(
-              n_{\text{zw}_t} \frac{W_t}{W_s} -
-                  \frac{F_{g_t}}{W_s} \sin \alpha_{F_t}
-        \right)^2 + \\
-        \frac{\pi \mathrm{AR}eqS}{W_s^2}
-        \left[
-              \frac{W_t \dot{V}_{T_t}}{g} + 
-              \frac{W_t \dot{H}_t}{V_{T_t}} + 
-              F_{g_{\text{std}}} \cos \alpha_{F_{\text{std}}} -
-              F_{g_t} \cos \alpha_{F_t}
-        \right]
-  \right\}^{\frac{1}{2}}
-\end{align}
+            n_{\text{zw}_t} \frac{W_t}{W_s} -
+            \frac{F_{g_t}}{W_s} \sin \alpha_{F_t}
+      \right)^2 + 
+      \frac{\pi \mathrm{AR}eqS}{W_s^2}
+      \left[
+            \frac{W_t \dot{V}_{T_t}}{g} + 
+            \frac{W_t \dot{H}_t}{V_{T_t}} + 
+            F_{g_{\text{std}}} \cos \alpha_{F_{\text{std}}} -
+            F_{g_t} \cos \alpha_{F_t}
+      \right]
+\right\}^{\frac{1}{2}}
 \tag{12.31}
-\]</span></p>
+\end{align}\]</span></p>
 <p>then the above equation can be closely approximated as</p>
 <p><span class="math display">\[
-\text{If } \frac{F_g}{W} \sin \alpha_F \lt \frac{n_{\text{zw}}}{10}
+\text{If } \frac{F_g}{W} \sin \alpha_F  &lt;  \frac{n_{\text{zw}}}{10}
 \]</span></p>
 <p><span class="math display" id="eq:load-factor-std">\[
 n_{\text{zw}_{\text{std}}} = \frac{1}{W_S}
@@ -1662,37 +1648,33 @@ N_{xw_t} V_{T_t} =
 M a_0 \sqrt{\theta_t} N_{xw_t}
 \]</span></p>
 <p>and</p>
-<p><span class="math display">\[
-\begin{align}
-\Delta P_s = M a_0 
-\left\{
-      \left(
+<p><span class="math display">\[\begin{align}
+\frac{\Delta P_s}{M a_0} =
+      &amp;\left(
             F_{g_s} \cos \alpha_{F_s} + F_e
-      \right) \frac{\sqrt{\theta_s}}{W_s} - 
-      \left(
+      \right) \frac{\sqrt{\theta_s}}{W_s} - \\
+      &amp;\left(
             F_{g_t} \cos \alpha_{F_t} + F_e
       \right) \frac{\sqrt{\theta_t}}{W_t} + \\
-      SC_{D_0} \left[
+      &amp;SC_{D_0} \left[
                      \frac{q_t \sqrt{\theta_t}}{W_t} -
                      \frac{q_s \sqrt{\theta_s}}{W_s}
                \right] + \\
-      \frac{S q_t \sqrt{\theta_t}}{W_t} 
+      &amp;\frac{S q_t \sqrt{\theta_t}}{W_t} 
       \left(
             m \left[
                   \frac{N_{\text{zw}_t} W_t - Fg_{n_t} \sin \alpha_{F_t}}{q_t S}
             \right]^2 +
             \Delta C_{D_{\text{trim}_t}}
       \right) - \\
-      \frac{S q_s \sqrt{\theta_s}}{W_s} 
+      &amp;\frac{S q_s \sqrt{\theta_s}}{W_s} 
       \left(
             m \left[
                   \frac{N_{\text{zw}_s} W_s - Fg_{n_s} \sin \alpha_{F_s}}{q_s S}
             \right]^2 +
             \Delta C_{D_{\text{trim}_s}}
       \right)
-\right\}
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 <p>where</p>
 <p><span class="math display">\[
 \alpha_{F_t} = \iota_{T_t} - \frac{C_{L_{0_\alpha}}}{a} + \frac{N_{\text{zw}_t} W_t - F{g_t} \sin \alpha_{F_t}}{a q_t S}
@@ -1706,11 +1688,9 @@ M a_0 \sqrt{\theta_t} N_{xw_t}
 converges.</p>
 <p>In the simplified case where <span class="math inline">\(\delta_t = \delta_s\)</span>, <span class="math inline">\(cg_t = cg_{\text{std}}\)</span>,
 and <span class="math inline">\(\sin \alpha_F = 0\)</span>, then the above equation reduces to</p>
-<p><span class="math display" id="eq:delta-p-sub-s">\[
-\begin{align}
-\Delta P_s = M a_0 
-\left\{
-      \frac{\sqrt{\theta_s}}{W_s}
+<p><span class="math display" id="eq:delta-p-sub-s">\[\begin{align}
+\frac{\Delta P_s}{M a_0} =
+      &amp;\frac{\sqrt{\theta_s}}{W_s}
       \left[
             F_{n_s} - qSC_{D_0} -
             \frac{\left(
@@ -1719,7 +1699,7 @@ and <span class="math inline">\(\sin \alpha_F = 0\)</span>, then the above equat
                   qS\pi \mathrm{AR} e      
                   }
       \right] - \\
-      \frac{\sqrt{\theta_t}}{W_t}
+      &amp;\frac{\sqrt{\theta_t}}{W_t}
       \left[
             F_{n_t} - qSC_{D_0} -
             \frac{\left(
@@ -1728,10 +1708,8 @@ and <span class="math inline">\(\sin \alpha_F = 0\)</span>, then the above equat
                   qS\pi \mathrm{AR} e      
                   }
       \right]
-\right\}
-\end{align}
 \tag{12.34}
-\]</span></p>
+\end{align}\]</span></p>
 </div>
 </div>
 <div id="reciprocating-engine-cruise-performance" class="section level2" number="12.7">
@@ -1767,28 +1745,24 @@ optimal velocity for cruise performance can be determined from a power required
 curve as shown below.</p>
 <p><img src="media/12/power-speed-curve.png" style="width:2.38542in;height:1.33542in" /></p>
 <p>To correct the power required curve to any standard altitude/weight condition, the usual approach is to treat the lift coefficient as the anchor (<em>C<sub>L test </sub></em>= <em>C<sub>L std</sub></em>). This leads to the following power and velocity standardization equations</p>
-<p><span class="math display" id="eq:pwr-vel-std">\[
-\begin{align}
+<p><span class="math display" id="eq:pwr-vel-std">\[\begin{align}
 P_s = P_t \left( \frac{W_s}{W_t} \right)^{\frac{3}{2}} \left( \frac{\sigma_t}{\sigma_s} \right)^{\frac{1}{2}} \\
 \\
 V_{T_s} = V_{T_t} \left( \frac{W_s}{W_t} \frac{\sigma_t}{\sigma_s} \right)^{\frac{1}{2}}\\
-\end{align}
 \tag{12.35}
-\]</span></p>
+\end{align}\]</span></p>
 <p>Because the drag polar of low performance propeller aircraft generally collapses
 (generalizes) well to a single curve, it is often acceptable to correct
 <u>all</u> power required data to a single standard altitude/weight
 condition. When this condition is chosen to be standard day sea level at maximum
 weight, the above correction simplifies to what is known as the
 “<span class="math inline">\(P_{\text{iw}} \sim V_{\text{iw}}\)</span>” values.</p>
-<p><span class="math display" id="eq:pwr-vel-std-max-wt">\[
-\begin{align}
+<p><span class="math display" id="eq:pwr-vel-std-max-wt">\[\begin{align}
 P_m = P_{\text{iw}} = P_t \left( \frac{W_s}{W_t} \right)^{\frac{3}{2}} \left( \sigma_t \right)^{\frac{1}{2}}  \\
 \\
 V_{T_s} = V_{\text{iw}}= V_{e_t} \left( \frac{W_s}{W_t} \right)^{\frac{1}{2}} \\
-\end{align}
 \tag{12.36}
-\]</span></p>
+\end{align}\]</span></p>
 <p>Although all points along the test day power curve can be standardized, the most
 useful points are those for best range and endurance. When corrected to standard
 conditions, the performance of the test aircraft can be fairly compared to that
@@ -1796,14 +1770,12 @@ of another aircraft which has also been corrected to the same flight conditions.
 <p>Additionally, once the standard power and velocity are known and documented, the
 required power and airspeed for any “mission” conditions can be predicted by
 reversing Equations <a href="fixed-wing-performance-standardization.html#eq:pwr-vel-std-max-wt">(12.36)</a> as follows</p>
-<p><span class="math display" id="eq:pwr-vel-msn">\[
-\begin{align}
+<p><span class="math display" id="eq:pwr-vel-msn">\[\begin{align}
 P_m = P_{\text{iw}} \left( \frac{W_m}{W_s} \right)^{\frac{3}{2}} \left( \frac{1}{\sigma_m} \right)^{\frac{1}{2}} \\
 \\
 V_{T_m} = V_{\text{iw}} \left( \frac{W_s}{W_t} \right)^{\frac{1}{2}} \left( \frac{1}{\sigma_m} \right)^{\frac{1}{2}}\\
-\end{align}
 \tag{12.37}
-\]</span></p>
+\end{align}\]</span></p>
 <p>The power &amp; optimal speed for best mission range (and mission endurance) are
 determined by applying the above equations to correct the points noted on the
 above figure. To correct directly from test conditions to mission conditions,
@@ -1818,16 +1790,14 @@ be modified to correct the test fuel flow to standard values. For the following
 standardization equations to be accurate, the propeller efficiency and brake
 specific fuel consumption, <span class="math inline">\(\mathrm{BSFC}\)</span>, must be the same for test and
 standard days.</p>
-<p><span class="math display" id="eq:fuel-flow-std">\[
-\begin{align}
+<p><span class="math display" id="eq:fuel-flow-std">\[\begin{align}
 \dot{W}_{f_s} = \dot{W}_{f_t} \left( \frac{W_s}{W_t} \right)^{\frac{3}{2}} \left( \frac{\sigma_t}{\sigma_s} \right)^{\frac{1}{2}} \\
 \\
 \text{or} \\
 \\
 \dot{W}_{f_{\text{iw}}} = \dot{W}_{f_t} \left( \frac{W_s}{W_t} \right)^{\frac{3}{2}} \left( \sigma_t \right)^{\frac{1}{2}} \\
-\end{align}
 \tag{12.38}
-\]</span></p>
+\end{align}\]</span></p>
 <p>Because <span class="math inline">\(\mathrm{BSFC}\)</span> is affected by engine <span class="math inline">\(\mathrm{RPM}\)</span> (due to
 friction losses), fuel flow results at one engine <span class="math inline">\(\mathrm{RPM}\)</span> are never
 corrected to another <span class="math inline">\(\mathrm{RPM}\)</span>. Separate tests must be performed for each
@@ -1937,14 +1907,12 @@ C_L = \frac{ \frac{W}{\delta} }{1481 M^2 S}
 <span class="math inline">\(C_L\)</span> and <span class="math inline">\(M\)</span> is to match test &amp; standard values for <span class="math inline">\(\frac{W}{\delta}\)</span>.
 In this case, the test day net thrust required curve can be corrected to
 standard conditions as follows</p>
-<p><span class="math display" id="eq:net-thrust-speed-std">\[
-\begin{align}
+<p><span class="math display" id="eq:net-thrust-speed-std">\[\begin{align}
 F_{n_s} = F_{n_t} \frac{W_s}{W_t}\\
 \\
 V_{T_s} = V_{T_t} \sqrt{\frac{\theta_s}{\theta_t}}\\
-\end{align}
 \tag{12.45}
-\]</span></p>
+\end{align}\]</span></p>
 <p>Although all points along the test day thrust curve can be standardized, the
 most useful points are those for best range and endurance. When corrected to
 standard conditions, the performance of the test aircraft can be fairly compared
@@ -1990,14 +1958,12 @@ also be the same for both conditions.</p>
 \frac{\dot{W}_{f_t}}{\delta_t \sqrt{\theta_t}} = \frac{\dot{W}_{f_s}}{\delta_s \sqrt{\theta_s}}
 \]</span></p>
 <p>This relation allows standard fuel flow to be calculated as</p>
-<p><span class="math display" id="eq:std-fuel-flow">\[
-\begin{align}
+<p><span class="math display" id="eq:std-fuel-flow">\[\begin{align}
 \dot{W}_{f_s} = \dot{W}_{f_t} \frac{\delta_s \sqrt{\theta_s}}{\delta_t \sqrt{\theta_t}} \\
 \\
 \text{if } C_{L_{\text{test}}} = C_{L_{\text{std}}}, M_{\text{test}} = M_{\text{std}} \\
-\end{align}
 \tag{12.46}
-\]</span></p>
+\end{align}\]</span></p>
 </div>
 <div id="endurance-optimization-and-prediction-1" class="section level3" number="12.8.3">
 <h3><span class="header-section-number">12.8.3</span> Endurance Optimization and Prediction</h3>

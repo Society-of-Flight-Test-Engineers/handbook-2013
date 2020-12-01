@@ -183,25 +183,21 @@ The moment of inertia about any axis of a body is the summation of the product o
 
 ![][07010]
 
-\[
 \begin{align}
 I_{x_b} &\equiv \int \left( y^2 + z^2 \right) dm \\
 I_{y_b} &\equiv \int \left( x^2 + z^2 \right) dm \\
 I_{z_b} &\equiv \int \left( x^2 + y^2 \right) dm \\
 \end{align}
-\]
 
 Products of inertia are also calculated about any body axes. They represent the symmetry of mass distribution (comparing opposing quadrants).
 
 ![][07013]
 
-\[
 \begin{align}
 I_{xy} &= I_{yx} \equiv \int xy dm \\
 I_{yz} &= I_{zy} \equiv \int yz dm \\
 I_{zx} &= I_{xz} \equiv \int zx dm \\
 \end{align}
-\]
 
 
 * Aircraft moments and products of inertia are calculated using body axes as the reference system.
@@ -223,9 +219,9 @@ I_{zx} &= I_{xz} \equiv \int zx dm \\
 
 \(I_{z_b}\) is always the largest value.
 
-\(I_{y_b} \gt I_{x_b}\) for fuselage-loaded aircraft.
+\(I_{y_b}  >  I_{x_b}\) for fuselage-loaded aircraft.
 
-\(I_{x_b} \gt I_{y_b}\ \)for wing-loaded aircraft.
+\(I_{x_b}  >  I_{y_b}\ \)for wing-loaded aircraft.
 
 ![][07016]
 
@@ -245,8 +241,6 @@ Example: Correct original aircraft roll inertia, \(I_{x_b}\), to a modified valu
 * \( \Delta I_{x_{\text{comp}}} \) is composed of two components
 
 \[ \Delta I_{x_{\text{comp}}} = I_{x_{\text{comp}}} + m_{\text{comp}} r^2 \]
-
-![][07018] 
 
 * \( I_{x_{\text{comp}}} \) is the moment of inertia of just the new component about an axis which is parallel to the aircraft axis in question (this axis should run through the component's \(\mathrm{cg}\)).
 * \( I_{x_{\text{comp}}} \) can be determined analytically by summing the inertias of every mass element throughout the component (documented for simple shapes in various engineering handbooks).
@@ -383,7 +377,6 @@ or, for an uninstrumented aircraft,
 L &= I_x \dot{p} - I_{xz} \left( \dot{r} + pq \right) + \left( I_z - I_y \right) qr \text{and} \\
 N &= I_z \dot{r} - I_{xz} \left( \dot{p} - qr \right) + \left( I_y - I_x \right) pq \\
 \end{align}
-\]
 
 * When forcing small motions about only the yaw axis, \(pq\) and \(qr\) are negligible, giving
 
@@ -392,7 +385,6 @@ N &= I_z \dot{r} - I_{xz} \left( \dot{p} - qr \right) + \left( I_y - I_x \right)
 L &= I_x \dot{p} - I_{xz} \dot{r} \text{and} \\
 N &=  I_z \dot{r} - I_{xz} \dot{p} \\
 \end{align}
-\]
 
 * If \(\varepsilon\) (and therefore \(I_{xz}\)) is positive, then yawing to the right will generate a left rolling moment.
 * If \(\varepsilon\) and \(I_{xz}\) are negative, a right yaw will generate a *right* moment.
@@ -402,6 +394,7 @@ N &=  I_z \dot{r} - I_{xz} \dot{p} \\
 1. Graphically determine the angle \(\delta_0\) at which the restoring vector produced by the springs completely counteracts the roll motion.
 
 Plot \(\tan{\delta}\) vs \(\frac{\dot{p}}{\dot{r}} \) as shown.
+
 ![][07044] 
 
 3. Determine the point where \(\frac{\dot{p}}{\dot{r}} \) equals zero. This occurs at \( \tan{\delta_0} \).
@@ -465,7 +458,7 @@ Note: Since the \(I_{xz}\) test objective is to interpolate to a condition where
 |7.5.5 |Tanner H.L., "Measurement of the Moments of Inertia of an Airplane by a Simplified Method" NACA2201, Ames Aeronautical Laboratory, Moffet Field, CA, 1950.|
 |7.5.6 |Woodward, C.R., et al "Handbook of Instructions for Experimentally Determining the Moments of Inertia of Aircraft by the Spring Oscillation Method" TB-822-F-2, ASTIA AD97104, Cornell Aeronautical Laboratory, Buffalo, New York, 1955.|
   
-  [07001]: media/07/image1.svg {width="3.388888888888889in" height="1.7708333333333333in"}
+  [07001]: media/07/image1.png {width="3.388888888888889in" height="1.7708333333333333in"}
   [07002]: media/07/image2.svg {width="2.842361111111111in" height="1.398611111111111in"}
   [07003]: media/07/image3.svg {width="2.959722222222222in" height="1.4479166666666667in"}
   [07004]: media/07/image4.svg {width="2.9479166666666665in" height="1.4430555555555555in"}
@@ -473,49 +466,49 @@ Note: Since the \(I_{xz}\) test objective is to interpolate to a condition where
   [07006]: media/07/image6.svg {width="3.2916666666666665in" height="1.7215277777777778in"}
   [07007]: media/07/image7.png {width="6.5in" height="2.5854166666666667in"}
   [07008]: media/07/image8.svg {width="2.0375in" height="0.41597222222222224in"}
-  [07009]: media/07/image9.svg {width="3.1708333333333334in" height="2.6979166666666665in"}
-  [07010]: media/07/image13.svg {width="2.1645833333333333in" height="1.2826388888888889in"}
+  [07009]: media/07/image9.png {width="3.1708333333333334in" height="2.6979166666666665in"}
+  [07010]: media/07/image13.png {width="2.1645833333333333in" height="1.2826388888888889in"}
   [07011]: media/07/image14.svg {width="1.2034722222222223in" height="0.9270833333333334in"}
   [07012]: media/07/image15.svg {width="1.2291666666666667in" height="0.9791666666666666in"}
-  [07013]: media/07/image16.svg {width="1.792361111111111in" height="1.0708333333333333in"}
-  [07014]: media/07/image17.svg {width="3.3722222222222222in" height="2.3368055555555554in"}
+  [07013]: media/07/image16.png {width="1.792361111111111in" height="1.0708333333333333in"}
+  [07014]: media/07/image17.png {width="3.3722222222222222in" height="2.3368055555555554in"}
   [07015]: media/07/image18.svg {width="1.8854166666666667in" height="0.3402777777777778in"}
-  [07016]: media/07/image19.svg {width="4.5in" height="2.375in"}
+  [07016]: media/07/image19.png {width="4.5in" height="2.375in"}
   [07017]: media/07/image20.svg {width="1.6840277777777777in" height="0.2861111111111111in"}
   [07018]: media/07/image21.svg {width="2.0902777777777777in" height="0.3284722222222222in"}
   [07019]: media/07/image22.svg {width="2.4506944444444443in" height="0.2722222222222222in"}
   [07020]: media/07/image23.svg {width="1.4340277777777777in" height="0.2513888888888889in"}
-  [07021]: media/07/image24.svg {width="4.479166666666667in" height="1.5284722222222222in"}
-  [07022]: media/07/image25.svg {width="4.4527777777777775in" height="1.69375in"}
+  [07021]: media/07/image24.png {width="4.479166666666667in" height="1.5284722222222222in"}
+  [07022]: media/07/image25.png {width="4.4527777777777775in" height="1.69375in"}
   [07023]: media/07/image26.svg {width="0.6263888888888889in" height="0.4236111111111111in"}
   [07024]: media/07/image27.svg {width="0.9076388888888889in" height="0.5034722222222222in"}
   [07025]: media/07/image28.svg {width="2.529166666666667in" height="0.4895833333333333in"}
   [07026]: media/07/image29.svg {width="0.6388888888888888in" height="0.5173611111111112in"}
   [07027]: media/07/image30.svg {width="1.5in" height="0.375in"}
   [07028]: media/07/image31.svg {width="0.5972222222222222in" height="0.48333333333333334in"}
-  [07029]: media/07/image32.svg {width="4.5in" height="1.6666666666666667in"}
-  [07030]: media/07/image33.svg {width="4.5in" height="1.5833333333333333in"}
+  [07029]: media/07/image32.png {width="4.5in" height="1.6666666666666667in"}
+  [07030]: media/07/image33.png {width="4.5in" height="1.5833333333333333in"}
   [07031]: media/07/image34.svg {width="1.836111111111111in" height="0.4270833333333333in"}
   [07032]: media/07/image35.svg {width="2.529166666666667in" height="0.4895833333333333in"}
-  [07033]: media/07/image36.svg {width="4.5in" height="2.5729166666666665in"}
-  [07034]: media/07/image37.svg {width="3.8319444444444444in" height="3.0833333333333335in"}
-  [07035]: media/07/image38.svg {width="3.15625in" height="3.0833333333333335in"}
+  [07033]: media/07/image36.png {width="4.5in" height="2.5729166666666665in"}
+  [07034]: media/07/image37.png {width="3.8319444444444444in" height="3.0833333333333335in"}
+  [07035]: media/07/image38.png {width="3.15625in" height="3.0833333333333335in"}
   [07036]: media/07/image39.svg {width="1.367361111111111in" height="0.4895833333333333in"}
   [07037]: media/07/image40.svg {width="1.9819444444444445in" height="0.5076388888888889in"}
-  [07038]: media/07/image41.svg {width="4.5in" height="2.6770833333333335in"}
+  [07038]: media/07/image41.png {width="4.5in" height="2.6770833333333335in"}
   [07039]: media/07/image42.svg {width="2.1381944444444443in" height="0.2513888888888889in"}
   [07040]: media/07/image43.svg {width="2.145138888888889in" height="0.24930555555555556in"}
   [07041]: media/07/image44.svg {width="1.1958333333333333in" height="0.2326388888888889in"}
   [07042]: media/07/image45.svg {width="1.0354166666666667in" height="0.2652777777777778in"}
   [07043]: media/07/image46.svg {width="0.125in" height="0.2722222222222222in"}
-  [07044]: media/07/image47.svg {width="4.5in" height="2.5in"}
+  [07044]: media/07/image47.png {width="4.5in" height="2.5in"}
   [07045]: media/07/image48.svg {width="0.18194444444444444in" height="0.3993055555555556in"}
   [07046]: media/07/image49.svg {width="0.1486111111111111in" height="0.3263888888888889in"}
   [07047]: media/07/image50.svg {width="0.875in" height="0.2388888888888889in"}
   [07048]: media/07/image51.svg {width="1.132638888888889in" height="0.4548611111111111in"}
   [07049]: media/07/image52.svg {width="0.125in" height="0.25in"}
   [07050]: media/07/image53.svg {width="1.9048611111111111in" height="0.4423611111111111in"}
-  [07051]: media/07/image54.svg {width="2.982638888888889in" height="2.15625in"}
+  [07051]: media/07/image54.png {width="2.982638888888889in" height="2.15625in"}
   [07052]: media/07/image55.svg {width="0.7138888888888889in" height="0.5208333333333334in"}
   [07053]: media/07/image56.svg {width="1.2847222222222223in" height="0.5in"}
   [07054]: media/07/image57.svg {width="0.9583333333333334in" height="0.49375in"}

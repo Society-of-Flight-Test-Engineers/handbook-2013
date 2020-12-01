@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>3 Universe Earth Atmospheric | Flight Test Engineering Reference Handbook</title>
   <meta name="description" content="3 Universe Earth Atmospheric | Flight Test Engineering Reference Handbook" />
-  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="3 Universe Earth Atmospheric | Flight Test Engineering Reference Handbook" />
   <meta property="og:type" content="book" />
@@ -33,7 +33,7 @@
   
 <link rel="prev" href="mathematics.html"/>
 <link rel="next" href="pitot-statics.html"/>
-<script src="libs/header-attrs-2.2/header-attrs.js"></script>
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -51,6 +51,8 @@
 
 
 
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 
 
 
@@ -595,7 +597,7 @@
 <td>standard day seal level ambient density</td>
 </tr>
 <tr class="odd">
-<td><span class="math inline">\(rho\)</span></td>
+<td><span class="math inline">\(\rho\)</span></td>
 <td>ambient density</td>
 </tr>
 <tr class="even">
@@ -635,8 +637,8 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td>Avogadros number</td>
-<td><span class="math inline">\(N_0\)</span></td>
+<td>Avogadro’s number</td>
+<td><span class="math inline">\(N_A\)</span></td>
 <td><span class="math inline">\(6.022\,169 \times 10^{23}\)</span></td>
 <td>molecules/mole</td>
 </tr>
@@ -761,46 +763,52 @@
 <tr class="odd">
 <td>rotation rate</td>
 <td><span class="math inline">\(\omega\)</span></td>
-<td><span class="math inline">\(7.292\,115 \times 10^{−5} | rad/sec | | average density | | \(5.522\)</span></td>
-<td>g/cm<sup>3</sup></td>
+<td><span class="math inline">\(7.292\,115 \times 10^{−5}\)</span></td>
+<td>rad/sec</td>
 </tr>
 <tr class="even">
+<td>average density</td>
+<td></td>
+<td><span class="math inline">\(5.522\)</span></td>
+<td>g/cm<sup>3</sup></td>
+</tr>
+<tr class="odd">
 <td></td>
 <td></td>
 <td><span class="math inline">\(344.7\)</span></td>
 <td>lb/ft<sup>3</sup></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>radius average</td>
 <td><span class="math inline">\(R_{\mathrm{avg}}\)</span></td>
 <td><span class="math inline">\(6\,367\,444\)</span></td>
 <td>m</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td></td>
 <td></td>
 <td><span class="math inline">\(3956.538\)</span></td>
 <td>st. miles</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td></td>
 <td></td>
 <td><span class="math inline">\(20\,890\,522\)</span></td>
 <td>ft</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>radius at the equator</td>
 <td><span class="math inline">\(R_e\)</span></td>
 <td><span class="math inline">\(6\,378\,137\)</span></td>
 <td>m</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>radius at the poles</td>
 <td><span class="math inline">\(R_p\)</span></td>
 <td><span class="math inline">\(6\,356\,752\)</span></td>
 <td>m</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>radius as a function of latitude, <span class="math inline">\(\phi\)</span> (assumes perfect ellipsoid)</td>
 <td></td>
 <td><span class="math display">\[R = \sqrt{\left(\frac{\cos{\phi}}{R_e}\right)^2 + \left(\frac{\sin{\phi}}{R_p}\right)^2} \]</span></td>
@@ -947,14 +955,14 @@ g_{A/C} = \left[ g_{\mathrm{lsl}} + \omega^2 R \cos{\phi} \right] \left[ \frac{R
 </div>
 <div id="gravity-influence-on-aircraft-cruise-performance" class="section level3 unnumbered">
 <h3>Gravity Influence on Aircraft Cruise Performance</h3>
-<p>Even at the same altitude, changes in gravity due to latitude or centrifugal relief directly alter the required lift, drag, and fuel flow. For example, with sufficiently precise instrumentation, data collected heading West could show about 0.5% more drag and fuel flow than data collected heading East (centrifugal relief effect). After determining test and standard (or mission) values for <span class="math inline">\(g\)</span>, flight test values for <em>C_L, </em>C_D, drag, and fuel flow can be corrected to standard as follows:</p>
-<p><span class="math display">\[C_{L_{\mathrm{std}}} = C_{L_i} \frac{N_{z_{\omega_{\mathrm{std}}}}}{N_{Z_{\omega_i}}} \left[\frac{g_{\mathrm{std}}}{g_{A/C}} \right] \]</span></p>
-<p><span class="math display">\[C_{D_{\mathrm{std}}} = \frac{C^2_{L_{\mathrm{std}}}}{\pi A \text{Re}} \]</span></p>
+<p>Even at the same altitude, changes in gravity due to latitude or centrifugal relief directly alter the required lift, drag, and fuel flow. For example, with sufficiently precise instrumentation, data collected heading West could show about 0.5% more drag and fuel flow than data collected heading East (centrifugal relief effect). After determining test and standard (or mission) values for <span class="math inline">\(g\)</span>, flight test values for <span class="math inline">\(C_L\)</span>, <span class="math inline">\(C_D\)</span>, drag, and fuel flow can be corrected to standard as follows:</p>
+<p><span class="math display">\[C_{L_{\mathrm{std}}} = C_{L_t} \frac{N_{z_{\omega_{\mathrm{std}}}}}{N_{Z_{\omega_t}}} \left[\frac{g_{\mathrm{std}}}{g_{A/C}} \right] \]</span></p>
+<p><span class="math display">\[C_{D_{\mathrm{std}}} = \frac{C^2_{L_{\mathrm{std}}}}{\pi \mathrm{AR}e} \]</span></p>
 <p><span class="math display">\[\Delta D = D_{\mathrm{std}} - D_t = qS\left[C_{D_{i_{\mathrm{std}}}} - C_{D_{i_t}} \right] \]</span></p>
-<p><span class="math display">\[\dot{W}_{f_{\mathrm{std}}} = \dot{W}_{f_i} + \Delta D \cdot TFSC \]</span></p>
+<p><span class="math display">\[\dot{W}_{f_{\mathrm{std}}} = \dot{W}_{f_t} + \Delta D \cdot TFSC \]</span></p>
 <p>where <span class="math inline">\(N_z\)</span> = normal load factor,</p>
 <p><span class="math inline">\(C_L\)</span> = lift coefficient, <span class="math inline">\(C_D\)</span> = drag coefficient,</p>
-<p><span class="math inline">\(AR\)</span> = aspect ratio, <span class="math inline">\(e\)</span> = Oswald efficiency factor,</p>
+<p><span class="math inline">\(\mathrm{AR}\)</span> = aspect ratio, <span class="math inline">\(e\)</span> = Oswald efficiency factor,</p>
 <p><span class="math inline">\(\Delta D\)</span> = change in drag force,</p>
 <p><span class="math inline">\(TSFC\)</span> = thrust specific fuel consumption, and
 <span class="math inline">\(\dot{W}_{f_{\mathrm{std}}}\)</span> = standard day fuel flow</p>
@@ -1247,7 +1255,7 @@ g_{A/C} = \left[ g_{\mathrm{lsl}} + \omega^2 R \cos{\phi} \right] \left[ \frac{R
 <div id="divisions-of-the-atmosphere" class="section level3 unnumbered">
 <h3>Divisions of the Atmosphere</h3>
 <div class="figure">
-<img src="media/03/image19.svg" style="width:7in;height:8.25in" alt="" />
+<img src="media/03/image19.png" style="width:7in;height:8.25in" alt="" />
 <p class="caption">Divisions of the Atmosphere</p>
 </div>
 <p>Constantly changing atmospheric conditions cannot be duplicated at will to provide the exact environment in which a flight takes place. A standard atmosphere provides a common basis to relate all flight test, wind tunnel results, aircraft design and general performance. Several models of “standard atmosphere” exist with minor differences based on mathematical constants used in the calculations.</p>
@@ -1453,25 +1461,21 @@ g_{A/C} = \left[ g_{\mathrm{lsl}} + \omega^2 R \cos{\phi} \right] \left[ \frac{R
 <div id="troposphere" class="section level4 unnumbered">
 <h4>Troposphere</h4>
 <p>Below <span class="math inline">\(36\,089\)</span> ft (<span class="math inline">\(11\,000\)</span> m) and pressure less than <span class="math inline">\(22\,636\)</span> Pa</p>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 \theta &amp;= 1 − \left( L/Τ_ο \right) h = 1 - \left( 6.875\,5856 \times 10^{-6} \right) h \\
 \sigma &amp;= \theta^{n-1} \\
 \delta &amp;= \theta^n \\
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 <p>where <span class="math inline">\(n = 5.255\,876\)</span>, <span class="math inline">\(h\)</span> = geopotential altitude [ft]</p>
 </div>
 <div id="stratosphere" class="section level4 unnumbered">
 <h4>Stratosphere</h4>
 <p>Between <span class="math inline">\(36\,089\)</span> ft and <span class="math inline">\(65\,616\)</span> ft (<span class="math inline">\(11\,000\)</span> m and <span class="math inline">\(20\,000\)</span> m) the standard day temperature is a constant <span class="math inline">\(216.65\)</span> K, therefore:</p>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 \theta &amp;= 0.751\,865 \\
 \sigma &amp;= 0.297\,076\, \mathrm{e}^{0.000\,048\,063 \left[ h - 36\,089 \right]} \\
 \delta &amp;= 0.223\,361\, \mathrm{e}^{0.000\,048\,063 \left[ h - 36\,089 \right]} \\
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 <p>The above relations characterize the standard atmosphere table in this handbook.
 They may be re-written to solve for pressure altitude (<span class="math inline">\(H_p\)</span>) for any ambient pressure.</p>
 <p>Below the tropopause (ambient pressure greater than <span class="math inline">\(472.683\)</span> psf or <span class="math inline">\(22\,632\)</span> Pa)</p>
@@ -1759,7 +1763,7 @@ Crest to Trough [ft]</th>
 <div id="earth-modeling" class="section level3 unnumbered">
 <h3>Earth Modeling</h3>
 <p>The Geodetic System defines the location of any point relative to the earth using latitude, longitude and height (Figure 3.8-1, point P). Longitude and latitude are expressed in degrees, minutes, seconds. Longitude lines extend <span class="math inline">\(\pm\)</span> 180 degrees from the Prime Meridian, run north to south, and converge at the poles. Latitude lines are parallel to the equator and extend <span class="math inline">\(\pm\)</span> 90°.</p>
-<p><img src="media/03/image29.gif" style="width:4.71665in;height:3.32292in" /></p>
+<p><img src="media/03/image29.png" style="width:4.71665in;height:3.32292in" /></p>
 <p><code>http://www.colorado.edu/geography/gcraft/notes/coordsys/gif/latlon2.gif</code></p>
 <p><strong>Figure 3.8-1 Geodetic Coordinate System</strong></p>
 <p>The 1984 world geodetic system, WGS84, models the earth’s surface as an oblate spheroid - an ellipsoid rotated about its semi-minor axis. In this model, used by global positioning systems, the earth’s semi-major axis, <span class="math inline">\(a\)</span> is 6 378 137.0 meters and the semi-minor axis, <em>b is</em> 6 356 752.314 meters.</p>
@@ -1783,17 +1787,15 @@ Crest to Trough [ft]</th>
 <div id="ecef-transformations" class="section level3 unnumbered">
 <h3>ECEF Transformations</h3>
 <p>For the purpose of performance, navigation, or noise analysis, flight testers may require distances between two points (the shortest being along the great circle arc) and the average heading of that arc. Calculating these from typical Geodetic System Lat/Long inputs requires conversion to the Earth Centered Earth Fixed (ECEF) coordinate system as shown in Figure 3.8-3.</p>
-<p><img src="media/03/image31.svg" style="width:4.37408in;height:4.46226in" /></p>
+<p><img src="media/03/image31.png" style="width:4.37408in;height:4.46226in" /></p>
 <p><strong>Figure 3.8-3 Earth Centered Earth Fixed Coordinate System</strong></p>
 <p>The ECEF coordinate system is a Cartesian system with the origin at the earth’s center. In this system, the X-axis is defined by the intersection of the Prime Meridian and equatorial planes. The Z-axis goes through the North Pole. The Y-axis completes a right-handed orthogonal system by a plane 90 degrees east of the X-axis and its intersection with the equator.</p>
 <p>Geodetic System (lat/long/height) data converts to ECEF as follows:</p>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 x &amp;= \left(N + h \right)\cos{\varphi}\cos{\lambda} \\
 y &amp;= \left(N + h \right)\cos{\varphi}\sin{\lambda} \\
 z &amp;= \left(N \left[ 1-e^2 \right] + h \right) \sin{\varphi} \\
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 <p>where,</p>
 <p><span class="math inline">\(x\)</span> = ECEF coordinate parallel to the X-axis</p>
 <p><span class="math inline">\(y\)</span> = ECEF coordinate parallel to the Y-axis</p>
@@ -1813,7 +1815,7 @@ z &amp;= \left(N \left[ 1-e^2 \right] + h \right) \sin{\varphi} \\
 <div id="great-circle-calculations" class="section level3 unnumbered">
 <h3>Great Circle Calculations</h3>
 <p>Any plane passing through the center of a spheroid traces a <strong>Great Circle</strong> around the perimeter of that spheroid. The shortest distance between two points on the surface is that portion of the great circle arc encompassing both points (Figure 3.8-3).</p>
-<p><img src="media/03/image32.svg" style="width:3.30506in;height:3.31132in" /></p>
+<p><img src="media/03/image32.png" style="width:3.30506in;height:3.31132in" /></p>
 <p><strong>Figure 3.8-3 Great Circle Arc</strong></p>
 <p>Except when moving around the equator, navigating along a great circle route has the characteristic of intercepting longitude lines at different angles. In other words, the heading (or bearing) changes along the route. Analysis shows bearing <u>change</u> along a great circle route:</p>
 <ul>
@@ -1822,15 +1824,13 @@ z &amp;= \left(N \left[ 1-e^2 \right] + h \right) \sin{\varphi} \\
 <li>Is smallest when the final latitude is at the equator (for this case, bearing change ≈ longitude change x initial latitude/100).</li>
 </ul>
 <p>Calculate the <strong>great circle distance (D)</strong> between points (subscripts 1 and 2) as</p>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 P_{1} &amp;= \sqrt{x_{1}^{2} + y_{1}^{2} + z_{1}^{2}} \\
 P_{2} &amp;= \sqrt{x_{2}^{2} + y_{2}^{2} + z_{2}^{2}} \\
 \overset{\rightarrow}{P}_{1}  \overset{\rightarrow}P_{2} &amp;= P_{1} P_{2}\cos{\varphi} = x_{1} \cdot x_{2} + y_{1} \cdot y_{2} + z_{1} \cdot z_{2} \\
 \varphi &amp;= \arccos\left( \frac{x_{1} \cdot x_{2} + y_{1} \cdot y_{2} + z_{1} \cdot z_{2}}{P_{1} \cdot P_{2}} \right) \\
 D &amp;= P_{\mathrm{avg}} \cdot \varphi
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 <p>where
 <span class="math inline">\(P\)</span> = distance from earth center to any point (including height above the spheroid surface).</p>
 <p><span class="math inline">\(\overset{\rightarrow}{P}\)</span> = Vector from the Earth’s center to point P.</p>
@@ -1874,38 +1874,30 @@ It is accurate to within <span class="math inline">\(0.4\%\)</span> when changin
 <p><strong>Figure 3.8-4: Local X-Y Coordinate System Aligned with (a) <span class="math inline">\(\phi\)</span>, <span class="math inline">\(\lambda\)</span> Grid; (b) Runway</strong></p>
 <p>Because each degree of latitude change is not always exactly <span class="math inline">\(60\)</span> nm and because the spacing between degrees of longitude changes markedly with latitude, converting from degrees latitude &amp; longitude change to distance requires scaling factors.
 First select equatorial distances for each degree change</p>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 \phi_{\mathrm{scale}} \left\{ \phi = 0 \right\} &amp;= 110\,574 \text{m} = 362\,776.6 \text{ft} = 59.705\,18 \text{nm} \\
 \lambda_{\mathrm{scale}} \left\{ \phi = 0 \right\} &amp;= 111\,319.5 \text{m} = 365\,221.4 \text{ft} = 60.107\,72 \text{nm} \\
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 <p>Use average latitude to calculate latitude and longitude scaling factors</p>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 \phi_{\mathrm{scale}} &amp;= \frac{\phi_{\mathrm{scale}} \left\{ \phi = 0 \right\} }{ \left\lbrack \left( 1 - e^{2} \right)  \sin^{2}(\phi) \right\rbrack^{1.5} } \\
 \\
 \lambda_{\mathrm{scale}} &amp;= \frac{\lbrack \lambda_{\mathrm{scale}} \left\{ \phi = 0 \right\} \rbrack \cdot \cos{\phi}}{\sqrt{ \left(1 - e^2 \right) \sin^{2}{\phi}}} \\
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 <p>Calculate X and Y components of distances aligned with the latitude &amp; longitude grid (Figure 3.8-4a)</p>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 Y = \phi_{\mathrm{scale}} \left(\phi_1 - \phi_0 \right) \\
 X = \lambda_{\mathrm{scale}} \left(\lambda_1 - \lambda_0 \right) \\
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 <p>The 2-D <em>local</em> (vice great circle) distance between any two points on the X-Y plane is</p>
 <p><span class="math display">\[D = \sqrt{X^2 + Y^2} \]</span></p>
 <p>For field performance work, it is preferable to align X &amp; Y with the runway as shown in Figure 3.8-4b. To convert from grid-aligned to runway-aligned coordinates, apply a rotation matrix that ensures X remains positive when going from point <span class="math inline">\(\phi_0, \lambda_0\)</span> towards <span class="math inline">\(\phi_1, \lambda_1\)</span>. The rotation angle, <span class="math inline">\(\psi\)</span>, is positive counter-clockwise from true East to the direction of the runway. [Note: do not confuse <span class="math inline">\(\psi\)</span> with runway heading measured relative to magnetic north].</p>
 <p>The function <span class="math inline">\(\psi = \mathrm{atan2} \left( X,Y \right)\)</span> returns rotation angles from <span class="math inline">\(-\pi\)</span> to <span class="math inline">\(\pi\)</span>, so that rotating to headings between <span class="math inline">\(90°\)</span> and <span class="math inline">\(270°\)</span> results in negative rotation angles.</p>
 <p>For any point (<span class="math inline">\(\phi, \lambda\)</span>), calculate runway-aligned X &amp; Y distances using</p>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 X &amp;= \phi_{\mathrm{scale}} \left(\phi - \phi_0 \right)\sin{\psi} + \lambda_{\mathrm{scale}} \left(\lambda - \lambda_0 \right)\cos{\psi} \\
 Y &amp;= \phi_{\mathrm{scale}} \left(\phi - \phi_0 \right)\cos{\psi} - \lambda_{\mathrm{scale}} \left(\lambda - \lambda_0 \right)\sin{\psi} \\
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 <p>This provides a right-handed rectangular coordinate system where X is positive from (<span class="math inline">\(\phi_0, \lambda_0\)</span>) towards (<span class="math inline">\(\phi_1, \lambda_1\)</span>) and Y is positive left of the runway centerline (Figure 3.8-4b).</p>
 <p>Calculating aircraft height Z above the X-Y plane requires defining where the X-Y plane lies. An analyst may define Z=0 at some arbitrary height (i.e. GPS altitude at the beginning of a maneuver) and consider only changes from that reference.</p>
 <p>For field performance, it is typical to use the runway altitude as the reference. Because runway altitudes vary however, height should be surveyed and modeled or tabulated as a function runway centerline position, H{X}. For best accuracy, the runway survey accounts for GPS antenna height above the surface. Airplane height above the X-Y plane (Z) is then</p>
@@ -1949,7 +1941,7 @@ Y &amp;= \phi_{\mathrm{scale}} \left(\phi - \phi_0 \right)\cos{\psi} - \lambda_{
 </tr>
 <tr class="even">
 <td>3.2</td>
-<td>Lawless, Alan. R. et al, “Aerodynamics for Flight Testers”, National Test Pilot School, P.O. Box 658, Mojave CA, 93501, 1999.</td>
+<td>Lawless, Alan. R. et al, “Aerodynamics for Flight Testers,” National Test Pilot School, P.O. Box 658, Mojave CA, 93501, 1999.</td>
 </tr>
 <tr class="odd">
 <td>3.3</td>

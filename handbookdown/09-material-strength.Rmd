@@ -80,7 +80,6 @@
   \text{where } \sigma &= \text{the applied axial load} \\
   A &= \text{cross-sectional area over which the load is applied} \\
   \end{align}
-\]
 
 **Strain** (\(e\)) is the deformation of a material under an applied load. In the basic form this can be presented as
 
@@ -116,7 +115,6 @@ A typical stress & strain relationship for a material is illustrated as
   \alpha_F &= \text{incidence angle between thrust line and relative wind} \\
   \phi &= \text{angle of bank}
   \end{align}
-\]
 
 
 **Body Axis Normal Load Factor**  \( \left(N_{zb} \right) \) is calculated as
@@ -127,7 +125,6 @@ A typical stress & strain relationship for a material is illustrated as
   \text{where } N_{xb} &= \text{load factor along aircraft body x-axis} \\
   \alpha &= \text{angle of attack} \\
   \end{align}
-\]
 
 For the simplified case of negligible thrust lift, the maximum achievable \( N_{zb} \) at any flight speed can be calculated as
 
@@ -138,8 +135,7 @@ For the simplified case of negligible thrust lift, the maximum achievable \( N_{
   &\text{(i.e., true, equivalent, calibrated)} \\
   V &= \text{flight airspeed} \\
   V_s &= \text{stall airspeed} \\
-  \end{align}
-\] 
+  \end{align} 
 
 A general normal load flight envelope (V-n diagram) would appear as
 
@@ -159,7 +155,6 @@ A general normal load flight envelope (V-n diagram) would appear as
   \text{where } W_t &= \text{test weight} \\
   W_s &= \text{standard weight} \\
   \end{align}
-\]
 
 * The increase in load factor due to a vertical gust \( \Delta n \) is calculated as
 
@@ -171,7 +166,6 @@ A general normal load flight envelope (V-n diagram) would appear as
   \mathrm{KU} &= \text{effective gust velocity (fps)} \\
   \frac{W}{S} &= \text{wing loading (psf)} \\
   \end{align}
-\]
 
 ## Strain Gages
 
@@ -189,7 +183,6 @@ Strain \( \left( e \right) \) is measured using the electrical resistance measur
   \Delta R &= \text{change in resistance due to load} \\
   & + \Delta R \text{ for tension} \\
   \end{align}
-\]
 
 * For the bi-axial gage oriented coincident with the principal axes (maximum strain), each leg of the gage is analyzed as a uniaxial gage using the above equation for the principle strains. The associated stresses are
 
@@ -201,7 +194,6 @@ Strain \( \left( e \right) \) is measured using the electrical resistance measur
   E &= \text{Young's Modulus of the material} \\
   \nu &= \text{Poisson's ratio for the material (ratio of compression and tension strains)} \\
   \end{align}
-\]
 
 * For the Rosette gage, the principal strains and stresses are derived as
 
@@ -212,7 +204,6 @@ Strain \( \left( e \right) \) is measured using the electrical resistance measur
   \text{where } & e \text{ denotes the strain in each of the three legs of the Rosette} \\
   &\text{(+ is used for the maximum and - for the minimum)} \\
 \end{align}
-\]
 
 To accurately measure the very small resistance changes in a strain gage, a *Wheatstone Bridge* is typically used
 

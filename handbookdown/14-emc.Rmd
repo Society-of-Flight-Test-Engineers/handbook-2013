@@ -38,13 +38,11 @@ Test engineers.
 
 Decibel Logarithmic (base 10) expression for amplitude ratios.
 
-\[
 \begin{align}
 \text{dB(power)} &= 10 \log_10 \left( \frac{P_1}{P_2} \right) \\
 \text{dB(voltage)} &= 20 \log_10 \left( \frac{V_1}{V_2} \right) \\
 \text{dB(current)} &= 20 \log_10 \left( \frac{I_1}{I_2} \right) \\
 \end{align}
-\]
 
 Commonly used decibels for EMC:
 
@@ -77,7 +75,7 @@ Commonly used decibels for EMC:
 The sensitivity of a radio receiver can be on the order of 
 \(1 \frac{\mu \text{V}}{\text{m}}\), while RF field strengths for 
 HIRF can be \(1\,000 \frac{\text{V}}{\text{m}}\), a factor of a 
-billion or \(180 \frac{\text{dB}\mu\text{V}}{\text{m}}.
+billion or \(180 \frac{\text{dB}\mu\text{V}}{\text{m}}\).
 
 ## Fundamentals
 

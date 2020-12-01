@@ -8,7 +8,7 @@
 
 | | |
 |:-|:-|
-|Commutative| \[\begin{align} a+b &= b+a\\ ab &= ba \end{align}\]|
+|Commutative| \[ a+b = b+a ,\, ab = ba \] |
 |Associative| \[a+(b+c) = (a+b)+c\]|
 |Distributive| \[a(b+c) = ab+ac\]|
 
@@ -30,22 +30,23 @@
 |\[ \sqrt{a} + \sqrt{b} = \sqrt{a + b + 2\sqrt{ab}}\]||
 
 Examples:
+
 \[
 \begin{array}{lllll}
 \log (6.54) =  0.8156 &&&&\\
-& \log (6540) &= \log (6.54 \times 10^3 ) &=  0.8156 + 3 &= \fbox{3.8156}&\\
-& \log ( 0.6540) &= \log (6.54 \times 10^{-1}) &=  0.8156 - 1 &= \fbox{9.8156 - 10}&\\
-& \log ( 0.000 6540) &= \log (6.54 \times 10^{-4}) &=  0.8156 - 4 &= \fbox{6.8156 - 10}&
+& \log (6540)         &= \log (6.54 \times 10^3 )   &=  0.8156 + 3 &= \fbox{3.8156}\\
+& \log ( 0.6540)      &= \log (6.54 \times 10^{-1}) &=  0.8156 - 1 &= \fbox{9.8156 - 10}\\
+& \log ( 0.000\,6540) &= \log (6.54 \times 10^{-4}) &=  0.8156 - 4 &= \fbox{6.8156 - 10}\\
 \end{array}
 \]
 
 \[
 \begin{array}{lllll}
 \text{calculate } 68.31 \times  0.2754 &&&&\\
-&log (68.31) &= 1.8354&&\\
-&log ( 0.2754) &= - 0.56&&\\
+&\log (68.31) &= 1.8354&&\\
+&\log ( 0.2754) &= - 0.56&&\\
 &1.8354 +(- 0.56) &= 1.2745&&\\
-&log^{-1} (1.2745) &= \fbox{18.81}&&
+&\log^{-1} (1.2745) &= \fbox{18.81}&&\\
 \end{array}
 \]
 
@@ -77,6 +78,7 @@ Examples:
 \end{array}
 \]
 
+
 ### Equations
 
 #### Quadratic Equation {-}
@@ -107,13 +109,11 @@ and
 
 then
 
-\[
 \begin{align}
 x_1 &= A + B\\
 x_2 &= \frac{-(A + B)}{2} + \frac{\sqrt{-3}}{2} (A - B)\\
 x_3 &= \frac{-(A + B)}{2} - \frac{\sqrt{-3}}{2} (A - B)
 \end{align}
-\]
 
 Special cases:
 
@@ -260,21 +260,17 @@ Final value (\(FV\)) of an investment is a function of the initial principal inv
 
 #### Triangle {-}
 
-\[
 \begin{align}
 A &= \frac{bh}{2}\\
 \text{sum of interior angles} &= 180°
 \end{align}
-\]
 
 #### Rectangle {-}
 
-\[
 \begin{align}
 A &= bh\\
 \text{sum of interior angles} &= 360°
 \end{align}
-\]
 
 #### Parallelogram (opposite sides parallel) {-}
 
@@ -371,7 +367,6 @@ V &= 2 \pi ^2 R \rho^2 \\
 
 For any right triangle with hypotenuse \(h\), an acute angle \(\alpha\), side length \(o\) opposite from \(\alpha\), and side length \(a\) adjacent to \(\alpha\), the following terms are defined:
 
-\[
 \begin{align}
 \text{sine } \alpha &= \sin{\alpha} = \frac{o}{h} \\
 \text{cosine } \alpha &= \cos{\alpha} = \frac{a}{h} \\
@@ -384,11 +379,9 @@ For any right triangle with hypotenuse \(h\), an acute angle \(\alpha\), side le
 \text{coversine } \alpha &= \text{covers } \alpha = 1 - \sin{\alpha} \\
 \text{haversine } \alpha &= \text{hav } \alpha = \frac{\text{vers } \alpha}{2} \\
 \end{align}
-\]
 
 also defined are the following...
 
-\[
 \begin{align}
 \text{hyperbolic sine of } x &= \sinh{x} = \frac{\mathrm{e}^x - \mathrm{e}^{-x}}{2} \\
 \text{hyperbolic cosine of } x &= \cosh{x} = \frac{\mathrm{e}^x + \mathrm{e}^{-x}}{2} \\
@@ -397,54 +390,44 @@ also defined are the following...
 \text{sech } x &= \frac{1}{\cosh{x}} \\
 \text{coth } x &= \frac{1}{\tanh{x}} \\
 \end{align}
-\]
 
 ### Identities {-}
 
 #### Pythagorean Identities: {-}
 
-\[
 \begin{align}
 \sin^2{\alpha} + \cos^2{\alpha} &= 1 \\
 1 + \tan^2{\alpha} &= \sec^2{\alpha} \\
 1 + \cot^2{\alpha} &= \csc^2{\alpha} \\
 \end{align}
-\]
 
 #### Half Angle Identities: {-}
 
-\[
 \begin{align}
 \sin{\frac{\alpha}{2}} &= \pm \sqrt{\frac{1 - \cos{\alpha}}{2}} \text{ (negative if } \frac{\alpha}{2} \text{ is in quadrant III or IV)}\\
 \cos{\frac{\alpha}{2}} &= \pm \sqrt{\frac{1 + \cos{\alpha}}{2}} \text{ (negative if } \frac{\alpha}{2} \text{ is in quadrant II or III)}\\
 \tan{\frac{\alpha}{2}} &= \pm \sqrt{\frac{1 - \cos{\alpha}}{1 + \cos{\alpha}}} \text{ (negative if } \frac{\alpha}{2} \text{ is in quadrant II or IV)}\\
 \end{align}
-\]
 
 #### Double-Angle Identities: {-}
 
-\[
 \begin{align}
 \sin{2\alpha} &= 2\sin{\alpha}\cos{\alpha}\\
 \cos{2\alpha} &= 2\cos^2{\alpha} - 1 = 1 - 2\sin^2{\alpha} = \cos^2{\alpha} - \sin^2{\alpha}\\
 \tan{2\alpha} &= \frac{2\tan{\alpha}}{1 - \tan^2{\alpha}}\\
 \end{align}
-\]
 
 #### n-Angle Identities: {-}
 
-\[
 \begin{align}
 \sin{3\alpha} &= 3\sin{\alpha} - 4\sin^3{\alpha}\\
 \cos{3\alpha} &= 4\cos^3{\alpha} - 3\cos{\alpha}\\
 \sin{n\alpha} &= 2\sin\big(\left(n-1\right)\alpha\big) \cos{\alpha} - \sin(n-2)\alpha\\
 \cos{n\alpha} &= 2\cos\big(\left(n-1\right)\alpha\big) \cos{\alpha} - \cos\left(n-2\right)\alpha\\
 \end{align}
-\]
 
 #### Two-Angle Identities: {-}
 
-\[
 \begin{align}
 \sin\left(\alpha + \beta\right) &= \sin{\alpha}\cos{\beta} + \cos{\alpha}\sin{\beta}\\
 \cos\left(\alpha + \beta\right) &= \cos{\alpha}\cos{\beta} - \sin{\alpha}\sin{\beta}\\
@@ -453,11 +436,9 @@ also defined are the following...
 \cos\left(\alpha - \beta\right) &= \cos{\alpha}\cos{\beta} + \sin{\alpha}\sin{\beta}\\
 \tan\left(\alpha - \beta\right) &= \frac{\tan{\alpha} - \tan{\beta}}{1 + \tan{\alpha}\tan{\beta}}\\
 \end{align}
-\]
 
 #### Sum and Difference Identities: {-}
 
-\[
 \begin{align}
 \sin{\alpha} + \sin{\beta} &=  2\sin{\frac{\alpha + \beta}{2}}\cos{\frac{\alpha - \beta}{2}}\\
 \sin{\alpha} - \sin{\beta} &=  2\cos{\frac{\alpha + \beta}{2}}\sin{\frac{\alpha - \beta}{2}}\\
@@ -471,11 +452,9 @@ also defined are the following...
 \cos^2{\alpha} - \cos^2{\beta} &= -\sin\left(\alpha + \beta\right) \sin\left(\alpha - \beta\right)\\
 \cos^2{\alpha} - \sin^2{\beta} &=  \cos\left(\alpha + \beta\right) \cos\left(\alpha - \beta\right)\\
 \end{align}
-\]
 
 #### Power Identities: {-}
 
-\[
 \begin{align}
 \sin{\alpha}\sin{\beta} &= \frac{\cos\left(\alpha - \beta\right) - \cos\left(\alpha + \beta\right)}{2}\\
 \cos{\alpha}\cos{\beta} &= \frac{\cos\left(\alpha - \beta\right) + \cos\left(\alpha + \beta\right)}{2}\\
@@ -491,7 +470,6 @@ also defined are the following...
 \sin^5{\alpha} &= \frac{10\sin{\alpha} - 5\sin{3\alpha} + \sin{5\alpha}}{16}\\
 \cos^5{\alpha} &= \frac{10\cos{\alpha} + 5\cos{3\alpha} + \cos{5\alpha}}{16}\\
 \end{align}
-\]
 
 #### OBLIQUE TRIANGLES {-}
 
@@ -505,14 +483,12 @@ also defined are the following...
 
 ##### Law of Cosines: {-}
 
-\[
 \begin{align}
 a^2  &= b^2  + c^2  - 2bc\cos{A}\\
 b^2  &= a^2  + c^2  - 2ac\cos{B}\\
 c^2  &= a^2  + b^2  - 2ab\cos{C}\\
 \cos{C} &= \frac{a^2 +b^2 -c^2}{2ab}\\
 \end{align}
-\]
 
 ##### Law of Tangents: {-}
 
@@ -520,22 +496,18 @@ c^2  &= a^2  + b^2  - 2ab\cos{C}\\
 
 ##### Projection Formulas: {-}
 
-\[
 \begin{align}
 a &= b\cos{C} + c\cos{B}\\
 b &= c\cos{A} + a\cos{C}\\
 c &= a\cos{B} + b\cos{A}\\
 \end{align}
-\]
 
 ##### Mollweide's Check Formulas: {-}
 
-\[
 \begin{align}
-\frac{a-b}{c} = \frac{\sin\frac{A-B}{2}}{\cos\frac{C}{2}}\\
-\frac{a+b}{c} = \frac{\cos\frac{A-B}{2}}{\sin\frac{C}{2}}\\
+\frac{a-b}{c} &= \frac{\sin\frac{A-B}{2}}{\cos\frac{C}{2}}\\
+\frac{a+b}{c} &= \frac{\cos\frac{A-B}{2}}{\sin\frac{C}{2}}\\
 \end{align}
-\]
 
 ## Matrix Algebra 
 
@@ -690,13 +662,11 @@ Then, if \(y_1 = 1, y_2 = 13\), and \(y_3 = 8\):
 \end{bmatrix} 
 \]
 
-\[
 \begin{align}
 x_1 &= \frac{1}{70} \left( 16 - 26 + 80 \right) = \frac{70}{70} &= 1 \\
 x_2 &= \frac{1}{70} \left( 12 0 208 - 80 \right) = \frac{140}{70} &= 2 \\
 x_3 &= \frac{1}{70} \left( 1 + 169 + 40 \right) = \frac{210}{70} &= 3 \\
 \end{align}
-\]
 
 ### Cramer's Rule
 
@@ -720,20 +690,16 @@ x_1 \\ x_2 \\ x_3
 \end{bmatrix}
 \]
 
-\[
 \begin{align}
-A = \begin{bmatrix} 1 & 0 & 2 \\ -3 & 4 & 6 \\ -1 & -2 & 3 \end{bmatrix} & A_1 = \begin{bmatrix} 6 & 0 & 2 \\ 30 & 4 & 6 \\ 8 & -2 & 3 \end{bmatrix} \\
-A_2 = \begin{bmatrix} 1 & 6 & 2 \\ -3 & 30 & 6 \\ -1 & 8 & 3 \end{bmatrix} & A_3 = \begin{bmatrix} 1 & 0 & 6 \\ -1 & 4 & 30 \\ -3 & -2 & 8 \end{bmatrix} \\
+A &= \begin{bmatrix} 1 & 0 & 2 \\ -3 & 4 & 6 \\ -1 & -2 & 3 \end{bmatrix} & A_1 = \begin{bmatrix} 6 & 0 & 2 \\ 30 & 4 & 6 \\ 8 & -2 & 3 \end{bmatrix} \\
+A_2 &= \begin{bmatrix} 1 & 6 & 2 \\ -3 & 30 & 6 \\ -1 & 8 & 3 \end{bmatrix} & A_3 = \begin{bmatrix} 1 & 0 & 6 \\ -1 & 4 & 30 \\ -3 & -2 & 8 \end{bmatrix} \\
 \end{align}
-\]
 
-\[
 \begin{align}
 x_1 &= \frac{\det\left( A_1 \right)}{\det\left( A \right)} = \frac{-40}{44} = \frac{-10}{11} \\
 x_2 &= \frac{\det\left( A_2 \right)}{\det\left( A \right)} = \frac{72}{44} = \frac{18}{11} \\
 x_3 &= \frac{\det\left( A_3 \right)}{\det\left( A \right)} = \frac{152}{44} = \frac{38}{11} \\
 \end{align}
-\]
 
 ## Vector Algebra
 
@@ -787,7 +753,7 @@ is the magnitude of the vector. We compute it thus:
 \[ \left| \bar{A} \right| = \sqrt{\sum_{i=1}^{n} a_i^2} .\].
 For example, given a three-dimensional vector in the \(xyz\) plane, we have:
 \[ \left| \bar{A} \right| = \sqrt{a_x^2 + a_y^2 + a_z^2} .\]
-The two types of notation, \(| \bar{A} |\) and \(||\bar{A}||\) are equivalent.
+The two types of notation, \(| \bar{A} |\) and \(|| \bar{A} ||\) are equivalent.
 
 With this additional notation, we can also define the **dot product** this way:
 \[\bar{A} \cdot \bar{B} = \left| \bar{A} \right| \left| \bar{B} \right| \cos{\theta} ,\]
@@ -1095,7 +1061,7 @@ should be added to the result of every integration
 \[ \int_{}{} \frac{dx}{\sqrt{a^2 - x^2}} = \sin^{-1} \frac{x}{a} \]
 \[ \int_{}{} \frac{dx}{\sqrt{a^2 \pm x^2}} = \ln \left( x - \sqrt{a^2 \pm x^2} \right) \]
 \[ \int_{}{} \sqrt{a^2 - u^2} = \frac{1}{2} \left( u \sqrt{a^2 - x^2} + a^2 \sin^{-1} \frac{u}{a} \right) \]
-\[ \int_{}{} \frac{du}{a^2 + u^2} = \frac{1}{a} \tan^{-1} \frac{u}{a} \text{, } a \gt 0 \]
+\[ \int_{}{} \frac{du}{a^2 + u^2} = \frac{1}{a} \tan^{-1} \frac{u}{a} \text{, } a  >  0 \]
 *Expressions Containing Exponential and Logarithmic Functions*
 \[ \int_{}{} \frac{dx}{x} = \ln{x} \]
 \[ \int_{}{} \mathrm{e}^{x} dx = \mathrm{e}^{x} \]
@@ -1138,23 +1104,23 @@ should be added to the result of every integration
 
 Time Domain \(f(t) = \mathcal{L}^{-1} \left\{ F \left( s \right) \right\} \)      | Frequency Domain \(F\left( s \right) = \mathcal{L} \left\{ f \left( t \right) \right\}\)
 ---------------------------|---------------------------------
-\[1 \text{ (step function)}\]      | \[\frac{1}{s} \text{, where } \left(s\gt 0\right) \]
-\[t\]                         | \[\frac{1}{s^2} \text{, where } \left(s\gt 0\right) \]
-\[t^{n-1}\]                | \[\frac{\left( n-1 \right)!}{s^n} \text{, where } \left(s\gt 0\right) \]
-\[\sqrt{t}\]                  | \[\frac{{\sqrt \pi  }}{{2{s^{\frac{3}{2}}}}} \text{, where } \left(s\gt 0\right) \]
-\[\frac{1}{\sqrt{t}}\]         | \[\frac{{\sqrt \pi  }}{{{s^{\frac{1}{2}}}}} \text{, where } \left(s\gt 0\right) \]                            
-\[{t^{n - \frac{1}{2}}},\,\,\,\,\,n = 1,2,3, \ldots\]     | \[\frac{{1 \cdot 3 \cdot 5 \cdots \left( {2n - 1} \right)\sqrt \pi  }}{{{2^n}{s^{n + \frac{1}{2}}}}} {, where } \left(s\gt 0\right) \]
-\[\mathrm{e}^{at}\]                     | \[ \frac{1}{s-a} \text{, where } \left(s\gt a \right) \]
-\[t\mathrm{e}^{at}\]                    | \[\frac{1}{{\left( {s - a} \right)}^{2}} \text{, where } \left(s\gt a \right) \]
-\[{t^n}{{e}^{at}},\,\,\,\,\,n = 1,2,3, \ldots\] | \[\frac{{n!}}{{{{\left( {s - a} \right)}^{n + 1}}}} \text{, where } \left(s\gt a \right) \]
-\[\sin{at} \]                   | \[\frac{a}{s^2 + a^2} \text{, where } \left(s\gt 0 \right) \]
-\[\cos{at}\]                    | \[\frac{s}{s^2 + a^2} \text{, where } \left(s\gt 0 \right) \]
-\[\mathrm{e}^{bt} \sin{at}\]              | \[\frac{a}{\left(s - b \right)^2 + a^2} \text{, where } \left(s\gt b \right) \]
-\[\mathrm{e}^{bt} \cos{at}\]              | \[\frac{s-b}{\left(s - b \right)^2 + a^2} \text{, where } \left(s\gt b \right) \]
-\[t \sin{at}\]                  | \[\frac{2as}{\left(s^2  - a^2\right)^2} \text{, where } \left(s\gt a \right) \]
-\[t \cos{at}\]                  | \[\frac{s^2  - a^2}{\left(s^2  + a^2\right)^2} \text{, where } \left(s\gt 0 \right) \]
-\[\sinh{at}\]                   | \[\frac{a}{\left(s^2  - a^2\right)^2} \text{, where } \left(s\gt \lvert a \rvert \right) \]
-\[\cosh{at}\]                      |           \[\frac{s}{\left(s^2  - a^2\right)^2} \text{, where } \left(s\gt \lvert a \rvert \right) \]
+\[1 \text{ (step function)}\]      | \[\frac{1}{s} \text{, where } \left(s >  0\right) \]
+\[t\]                         | \[\frac{1}{s^2} \text{, where } \left(s >  0\right) \]
+\[t^{n-1}\]                | \[\frac{\left( n-1 \right)!}{s^n} \text{, where } \left(s >  0\right) \]
+\[\sqrt{t}\]                  | \[\frac{{\sqrt \pi  }}{{2{s^{\frac{3}{2}}}}} \text{, where } \left(s >  0\right) \]
+\[\frac{1}{\sqrt{t}}\]         | \[\frac{{\sqrt \pi  }}{{{s^{\frac{1}{2}}}}} \text{, where } \left(s >  0\right) \]                            
+\[{t^{n - \frac{1}{2}}},\,\,\,\,\,n = 1,2,3, \ldots\]     | \[\frac{{1 \cdot 3 \cdot 5 \cdots \left( {2n - 1} \right)\sqrt \pi  }}{{{2^n}{s^{n + \frac{1}{2}}}}} {, where } \left(s >  0\right) \]
+\[\mathrm{e}^{at}\]                     | \[ \frac{1}{s-a} \text{, where } \left(s >  a \right) \]
+\[t\mathrm{e}^{at}\]                    | \[\frac{1}{{\left( {s - a} \right)}^{2}} \text{, where } \left(s >  a \right) \]
+\[{t^n}{{e}^{at}},\,\,\,\,\,n = 1,2,3, \ldots\] | \[\frac{{n!}}{{{{\left( {s - a} \right)}^{n + 1}}}} \text{, where } \left(s >  a \right) \]
+\[\sin{at} \]                   | \[\frac{a}{s^2 + a^2} \text{, where } \left(s >  0 \right) \]
+\[\cos{at}\]                    | \[\frac{s}{s^2 + a^2} \text{, where } \left(s >  0 \right) \]
+\[\mathrm{e}^{bt} \sin{at}\]              | \[\frac{a}{\left(s - b \right)^2 + a^2} \text{, where } \left(s >  b \right) \]
+\[\mathrm{e}^{bt} \cos{at}\]              | \[\frac{s-b}{\left(s - b \right)^2 + a^2} \text{, where } \left(s >  b \right) \]
+\[t \sin{at}\]                  | \[\frac{2as}{\left(s^2  - a^2\right)^2} \text{, where } \left(s >  a \right) \]
+\[t \cos{at}\]                  | \[\frac{s^2  - a^2}{\left(s^2  + a^2\right)^2} \text{, where } \left(s >  0 \right) \]
+\[\sinh{at}\]                   | \[\frac{a}{\left(s^2  - a^2\right)^2} \text{, where } \left(s >  \lvert a \rvert \right) \]
+\[\cosh{at}\]                      |           \[\frac{s}{\left(s^2  - a^2\right)^2} \text{, where } \left(s >  \lvert a \rvert \right) \]
 \[\sin \left(at + b\right)\]                 |   \[\frac{s\sin{b} + a \cos{b}}{\left(s^2  + a^2\right)^2} \]
 \[\cos \left(at + b\right)\]                 |   \[\frac{s\cos{b} - a \sin{b}}{\left(s^2  + a^2\right)^2} \]
 \[\frac{\mathrm{e}^{at} - \mathrm{e}^{bt}}{a - b}\] | \[\frac{1}{\left(s-a\right)\left(s-b\right)} \]
@@ -1162,7 +1128,7 @@ Time Domain \(f(t) = \mathcal{L}^{-1} \left\{ F \left( s \right) \right\} \)    
 \[\delta \text{ (impulse function)}\]         | \[1\]
 \[\text{square wave, period }=2c\]      | \[\frac{1}{s \left( 1 + \mathrm{e}^{-cs} \right)} \]
 \[\text{triangular wave, period }=2c\]      | \[\frac{1 - \mathrm{e}^{-cs}}{s^2 \left( 1 + \mathrm{e}^{-cs} \right)} \]
-\[ \begin{align} at \text{ for } 0 \leq t \lt c \\ \text{sawtooth wave, period } = c \end{align}\]   | \[ \frac{a \left( 1 + cs - \mathrm{e}^{-cs} \right) }{s^2 \left( 1 - \mathrm{e}^{-cs} \right) } \]
+\begin{align} at \text{ for } 0 \leq t  <  c \\ \text{sawtooth wave, period } = c \end{align}   | \[ \frac{a \left( 1 + cs - \mathrm{e}^{-cs} \right) }{s^2 \left( 1 - \mathrm{e}^{-cs} \right) }\]
 \[\sin{at} \sin{bt} \]           |      \[ \frac{2abs}{\left( s^2 + \left(a+b\right)^2\right) \left( s^2 + \left(a-b\right)^2\right)} \]
 \[\frac{1 - \cos{at}}{a^2}  \]                   | \[ \frac{1}{s \left( s^2 + a^2 \right) } \]
 \[\frac{at - \sin{at}}{a^3}  \]                   | \[ \frac{1}{s^2 \left( s^2 + a^2 \right) } \]

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>6 Axis Systems and Transformations | Flight Test Engineering Reference Handbook</title>
   <meta name="description" content="6 Axis Systems and Transformations | Flight Test Engineering Reference Handbook" />
-  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="6 Axis Systems and Transformations | Flight Test Engineering Reference Handbook" />
   <meta property="og:type" content="book" />
@@ -33,7 +33,7 @@
   
 <link rel="prev" href="aerodynamics.html"/>
 <link rel="next" href="mass-properties.html"/>
-<script src="libs/header-attrs-2.2/header-attrs.js"></script>
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -51,6 +51,8 @@
 
 
 
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 
 
 
@@ -554,7 +556,7 @@
 <p>Both fixed-earth and moving-earth axis systems keep constant <em>orientation</em> with respect to the Earth. The <span class="math inline">\(z\)</span>-axis point towards the center of the Earth.
 <em>The origin of a fixed-earth system does not move relative to the Earth (such as a ground radar site).
 </em>The origin of a moving-earth system does not move relative to its host (such as an aircraft inertial reference unit).</p>
-<p><img src="media/06/image1.svg" style="width:4.70903in;height:3.83958in" /></p>
+<p><img src="media/06/image1.png" style="width:4.70903in;height:3.83958in" /></p>
 </div>
 <div id="aircraft-axis-systems" class="section level2" number="6.2">
 <h2><span class="header-section-number">6.2</span> Aircraft Axis Systems</h2>
@@ -562,46 +564,40 @@
 <div id="body-axis-system" class="section level3" number="6.2.1">
 <h3><span class="header-section-number">6.2.1</span> Body Axis System</h3>
 <p>The <em>body axis</em> system, denoted by a subscript <span class="math inline">\(b\)</span>, originates at the aircraft center of gravity. The positive direction of the <span class="math inline">\(x_b\)</span>-axis is towards the front. The positive direction of the <span class="math inline">\(y_b\)</span>-axis is towards the right wing tip, and the positive direction of the <span class="math inline">\(z_b\)</span>-axis is towards the bottom of the aircraft.</p>
-<p><img src="media/06/image2.svg" style="width:3.65625in;height:3.03125in" /></p>
+<p><img src="media/06/image2.png" style="width:3.65625in;height:3.03125in" /></p>
 </div>
 <div id="stability-axis-system" class="section level3" number="6.2.2">
 <h3><span class="header-section-number">6.2.2</span> Stability Axis System</h3>
 <p>The <em>stability axis</em> system is similar to the body axis system except that it is rotated about the <span class="math inline">\(y\)</span>-axis through the angle of attack <span class="math inline">\(\alpha\)</span>.</p>
-<p><img src="media/06/image4.svg" style="width:4.5in;height:1.625in" /></p>
+<p><img src="media/06/image4.png" style="width:4.5in;height:1.625in" /></p>
 <p>Forces, velocities or accelerations along the stability axes are related to the body axes as follows.
-<span class="math display">\[
-\begin{align}
+<span class="math display">\[\begin{align}
 x_b =&amp; x_s \cos \alpha − z_s \sin \alpha \\
 y_b =&amp; y_s \\
 z_b =&amp; z_s \cos \alpha + x_s \sin \alpha
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 <p>For cases where the z axis is defined positive upward (typical for normal-axis accelerometers), we have the following.
-<span class="math display">\[
-\begin{align}
+<span class="math display">\[\begin{align}
 x_b =&amp; x_s \cos \alpha + z_s \sin \alpha \\
 z_b =&amp; z_x \cos \alpha - x_s \sin \alpha
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 </div>
 <div id="wind-axis-system" class="section level3" number="6.2.3">
 <h3><span class="header-section-number">6.2.3</span> Wind Axis System</h3>
 <p>The <em>wind axis</em> system is similar to the stability axis system except it is rotated about the <span class="math inline">\(z_s\)</span>-axis through the angle of sideslip, <span class="math inline">\(\beta\)</span>.</p>
 <p>The term “wind” refers to the fact that the freestream relative wind approaches the aircraft directly along the <span class="math inline">\(x_w\)</span>-axis. This dictates that the true airspeed also lies along the same axis.</p>
-<p><img src="media/06/image5.svg" style="width:1.69931in;height:2.07014in" /></p>
+<p><img src="media/06/image5.png" style="width:1.69931in;height:2.07014in" /></p>
 <p>Forces, velocities, or accelerations along the wind axes are related to the stability axes as follows
-<span class="math display">\[
-\begin{align}
+<span class="math display">\[\begin{align}
 x_s =&amp;x_w \cos \beta - y_w \sin \beta \\
 y_s =&amp; y_w \cos \beta + x_w \sin \beta \\
 z_s =&amp; z_w
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 <p>The geometric relations between body, stability and wind axis velocities are defined and illustrated here. In general,
 <span class="math display">\[ \sin \alpha = \frac{w}{V_T \cos \beta}\]</span> and
 <span class="math display">\[\sin \beta = \frac{V}{V_T}.\]</span>
 If <span class="math inline">\(\beta\)</span> is small, then <span class="math inline">\(\sin \alpha = w/V_T\)</span> and <span class="math inline">\(\beta = V / V_T\)</span>. If <span class="math inline">\(alpha\)</span> is small, then <span class="math inline">\(\alpha = w/V_T\)</span>.</p>
-<p><img src="media/06/image6.svg" style="width:2.45903in;height:2.21875in" /></p>
+<p><img src="media/06/image6.png" style="width:2.45903in;height:2.21875in" /></p>
 <p>Most aircraft sideslip vanes do not measure <span class="math inline">\(\beta\)</span> directly. They measure the flanking angle, which is the projection of the relative wind into the aircraft’s <span class="math inline">\(x-y\)</span> plane. The difference between these two angles increases with angle of attack. Ignoring upwash, boom bending, and body axis rate corrections, calculate true sideslip as a function of vane <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> as follows:
 <span class="math display">\[\beta_{\mathrm{true}} = \tan^{-1} (an\beta_{\mathrm{vane}})).\]</span></p>
 </div>
@@ -632,13 +628,11 @@ z_w
 \end{bmatrix}
 \]</span></p>
 <p>After expansion,
-<span class="math display">\[
-\begin{align}
+<span class="math display">\[\begin{align}
 x_b =&amp; \cos \alpha (x_w \cos \beta - y_w \sin \beta) - z_w \sin \alpha \\
 y_b =&amp; x_w \sin \beta + y_w \cos \beta \\
 z_b =&amp; \sin \alpha (x_w \cos \beta - y_w \cos \beta) + z_w \cos \alpha 
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 <p>The inverse transform, converting from the body to the wind axis system is as follows.
 <span class="math display">\[
 \begin{bmatrix}
@@ -663,26 +657,22 @@ z_b
 \end{bmatrix}
 \]</span></p>
 <p>After expansion,
-<span class="math display">\[
-\begin{align}
+<span class="math display">\[\begin{align}
 x_w =&amp; \cos \beta (x_b \cos \alpha + z_b \sin \alpha) + y_b \sin \beta \\
 y_w =&amp; -\sin \beta(x_b \cos \alpha + z_b \sin \alpha) + y_b \cos \beta \\
 z_w =&amp; -x_b \sin \alpha + z_b \cos \alpha 
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 <p>Note that these equations apply to the sign convention with z+ down. If sign convention (and instrumentation calibration) use z+ upward, then the above equations become:
-<span class="math display">\[
-\begin{align}
+<span class="math display">\[\begin{align}
 x_w =&amp; \cos \beta (x_b \cos \alpha - z_b \sin \alpha) + y_b \sin \beta \\
 y_w =&amp; -\sin \beta(x_b \cos \alpha + z_b \sin \alpha) + y_b \cos \beta \\
 z_w =&amp; x_b \sin \alpha + z_b \cos \alpha 
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 </div>
 <div id="principle-axes" class="section level3" number="6.2.5">
 <h3><span class="header-section-number">6.2.5</span> Principle Axes</h3>
 <p>The <em>principle axes</em> are those about which the products of inertia are zero. They can be equated to the axis of “dumbells” which represent concentrated mass elements. Neglecting aerodynamic and gyroscopic effects, an aircraft rotating about one of its principle axes will not tend to cross-couple into motion about any other axis.</p>
-<p><img src="media/06/image11.svg" style="width:4.5in;height:2.375in" /></p>
+<p><img src="media/06/image11.png" style="width:4.5in;height:2.375in" /></p>
 </div>
 </div>
 <div id="euler-angles" class="section level2" number="6.3">
@@ -700,7 +690,7 @@ z_w =&amp; x_b \sin \alpha + z_b \cos \alpha
 <dd><span class="math inline">\(\phi\)</span> - The angle measured in the <span class="math inline">\(y-z\)</span> plane of the body-axis system between the <span class="math inline">\(y\)</span>-axis and the horizontal reference plane. Also known as the roll angle, it is a measure of the rotation about the <span class="math inline">\(x\)</span>-axis.
 </dd>
 </dl>
-<p><img src="media/06/image12.svg" style="width:4in;height:4.125in" /></p>
+<p><img src="media/06/image12.png" style="width:4in;height:4.125in" /></p>
 </div>
 <div id="flight-path-angles" class="section level2" number="6.4">
 <h2><span class="header-section-number">6.4</span> Flight Path Angles</h2>
@@ -718,14 +708,12 @@ z_w =&amp; x_b \sin \alpha + z_b \cos \alpha
 </dd>
 </dl>
 <p>The first two angles above are easily measured using ground-based radar, onboard GPS, or inertial reference systems. If only <span class="math inline">\(\alpha, \beta\)</span>, andthe Euler angles are available, then we can calculate the flightpath angles, assuming zero wind, as follows.
-<span class="math display">\[
-\begin{align}
+<span class="math display">\[\begin{align}
 \gamma =&amp; \arcsin [(\sin\theta  \cos\alpha - \cos\theta  \cos\phi  \sin\alpha) \cos\beta - \cos\theta  \sin\phi  \sin\beta] \\
 \sigma =&amp; \psi + \arcsin \left[\frac{\cos\phi \sin\beta - \sin\phi \sin\alpha \cos\beta}{\cos\gamma} \right]\\
 \mu =&amp; \arcsin\left[ \frac{\cos\theta \sin\phi \cos\beta + 
 (\sin\theta \cos\alpha -\cos\theta \cos\phi \sin\alpha)}{\cos\gamma}  \right]
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 <p>Technically, the above equations describe the <em>velocity vector</em>, that is, the angles relative to the air mass. If the air mass is moving relative to the Earth, as is usually the case, the above equations <em>do not</em> describe the true flight path.</p>
 <p>Ignorance of the difference between flight path and velocity vector angles can cause considerable confusion when analyzing data from different sources.</p>
 </div>
@@ -799,88 +787,72 @@ z_b
 <div id="acceleration-transformations" class="section level3" number="6.5.1">
 <h3><span class="header-section-number">6.5.1</span> Acceleration Transformations</h3>
 <p>First, we convert body-axis angular rates and linear accelerations into total accelerations along the body axes.
-<span class="math display">\[
-\begin{align}
+<span class="math display">\[\begin{align}
 a_x =&amp; \dot{u} + qw - rv \\
 a_y =&amp; \dot{v} + ru -pw \\
 a_z =&amp; \dot{w} + pv - qu
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 <p>We also convert the location and rates of mass elements, <span class="math inline">\(m_1\)</span>, into specific angular momentum.
-<span class="math display">\[
-\begin{align}
+<span class="math display">\[\begin{align}
 \frac{H}{m_1} =&amp; \, \bar{r_1} \times [\bar{\omega} \times \bar{r_1}] \\
 \left[ \frac{H}{m_1} \right]\hat{i} =&amp; \, p(y^2 + z^2) - q(xy) - r(xz)\\
 \left[ \frac{H}{m_1} \right]\hat{j} =&amp; \, q(x^2+z^2) - r(yz) - p(xy)\\
 \left[ \frac{H}{m_1} \right] \hat{k} =&amp; \, r(x^2+y^2) - p(xz) - q(yz)
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 </div>
 <div id="transformations-between-body-axis-rates-and-euler-angle-rates" class="section level3" number="6.5.2">
 <h3><span class="header-section-number">6.5.2</span> Transformations between body axis rates and Euler angle rates</h3>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 p =&amp; \, \dot{\phi} -\dot{\psi} \sin\theta\\
 q =&amp; \, \dot{\theta} \cos\phi + \dot{\psi} \cos{\theta} \sin{\phi}\\
 r =&amp; \, \dot{\psi} \cos\theta \cos\phi - \dot{\theta} \sin\phi\\
 \dot{\phi} =&amp; \, p + \tan\theta(q \sin\phi + r\cos\phi) \\
 \dot{\theta}=&amp; \, q \cos\phi - r\sin\phi\\
 \dot{\psi} =&amp; \frac{q \sin\phi + r \cos\phi}{\cos\theta} \, 
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 </div>
 <div id="transformations-from-aerodynamic-angles-to-aircraft-stability-axis-angular-rates" class="section level3" number="6.5.3">
 <h3><span class="header-section-number">6.5.3</span> Transformations from aerodynamic angles to aircraft stability axis angular rates</h3>
 <p>Subscripts <span class="math inline">\(b, s,\)</span> and <span class="math inline">\(w\)</span> denote the body, stability and wind axis systems.
-<span class="math display">\[
-\begin{align}
+<span class="math display">\[\begin{align}
 p_s =&amp; p_b \cos\alpha + r_b \sin\alpha\, \\
 q_s =&amp; \, q_b\\
 r_s =&amp; \, r_b \cos\alpha - p_b \sin\alpha
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 </div>
 <div id="transformations-from-aerodynamic-angles-to-the-aircraft-wind-axis-angular-rates" class="section level3" number="6.5.4">
 <h3><span class="header-section-number">6.5.4</span> Transformations from aerodynamic angles to the aircraft wind axis angular rates</h3>
 <p>Subscripts <span class="math inline">\(b, s,\)</span> and <span class="math inline">\(w\)</span> denote the body, stability and wind axis systems.
-<span class="math display">\[
-\begin{align}
+<span class="math display">\[\begin{align}
 p_w =&amp; p_s \cos\beta + q_s \sin\beta\, \\
 q_w =&amp; \, q_s \cos\beta - p_s\sin\beta\\
 r_w =&amp; \, r_s
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 </div>
 <div id="transformations-from-euler-angles-to-aircraft-body-axis-angular-rates" class="section level3" number="6.5.5">
 <h3><span class="header-section-number">6.5.5</span> Transformations from Euler angles to aircraft body axis angular rates</h3>
 <p>(Reference 6.6.3)
-<span class="math display">\[
-\begin{align}
+<span class="math display">\[\begin{align}
 \dot{p_b} =&amp; \, \ddot{\phi} - \ddot{\psi}\sin\theta - \dot{\psi} \, \dot{\theta} \cos\theta  \\
 \dot{q_b} =&amp; \, \ddot{\theta} \cos\phi - \dot{\theta} \, \dot{\phi} \sin{\phi} + \ddot{\phi} \cos\theta \sin\phi - \dot{\psi} \, \dot{\theta} \sin\theta \sin\phi + \dot{\psi} \, \dot{phi} \cos\theta \cos\phi \\
 \dot{r_b} =&amp; \, \ddot{\psi} \cos\theta \cos\phi - \dot{\psi} \, \dot{\theta} \sin\theta \cos\phi - \dot{\psi} \, \dot{\theta} \cos\theta \sin\phi - \ddot{\theta} \sin\phi - \dot{\theta} \, \dot{\phi} \cos\phi
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 </div>
 <div id="transformations-from-aerodynamic-angles-and-body-axis-angular-rates-to-aircraft-stability-axis-angular-rates" class="section level3" number="6.5.6">
 <h3><span class="header-section-number">6.5.6</span> Transformations from aerodynamic angles and body axis angular rates to aircraft stability axis angular rates</h3>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 \dot{p_s} =&amp; \, \dot{p_b} \cos\alpha + \dot{\alpha} \, p_b \sin\alpha + \dot{r_b}\sin\alpha + \dot{\alpha} \, r_b \cos\alpha  \\
 \dot{q_s} =&amp; \, \dot{q_b} \\
 \dot{r_s} =&amp; \, \dot{r_b} \cos\alpha - \dot{\alpha} \, r_b \sin\alpha - \dot{p_b}\sin\alpha - \dot{\alpha} \, p_b \cos\alpha
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 </div>
 <div id="transformations-from-aerodynamic-angles-and-aircraft-stability-axis-to-aircraft-wind-axis-angular-rates" class="section level3" number="6.5.7">
 <h3><span class="header-section-number">6.5.7</span> Transformations from aerodynamic angles and aircraft stability axis to aircraft wind axis angular rates</h3>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 \dot{p_w} =&amp; \, \dot{p_b} \cos\beta + \dot{\beta} \, p_s \sin\beta + \dot{q_s}\sin\beta + \dot{\beta} \, q_s \cos\beta  \\
 \dot{q_w} =&amp; \,  \dot{q_s} \cos\beta - \dot{\beta} \, q_s \sin\beta - \dot{p_s} \sin\beta - \dot{\beta} \, p_s \cos\beta\\
 \dot{r_w} =&amp; \, \dot{r_s}
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 </div>
 </div>
 <div id="references-4" class="section level2" number="6.6">
@@ -893,7 +865,7 @@ r_w =&amp; \, r_s
 <tbody>
 <tr class="odd">
 <td>6.6.1</td>
-<td>Lawless, Alan R., <em>Math and Physics for Flight Testers</em> “Chapter 7, Axis Systems and Transformations”, National Test Pilot School, Mojave CA, 1998.</td>
+<td>Lawless, Alan R., <em>Math and Physics for Flight Testers</em> “Chapter 7, Axis Systems and Transformations,” National Test Pilot School, Mojave CA, 1998.</td>
 </tr>
 <tr class="even">
 <td>6.6.2</td>

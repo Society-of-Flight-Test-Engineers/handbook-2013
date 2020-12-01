@@ -10,6 +10,8 @@ output:
       toc_depth: 1
       toc:
         collapse: section
+  bookdown::pdf_book: 
+    latex_engine: xelatex
 documentclass: book
 bibliography: []
 biblio-style: apalike

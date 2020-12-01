@@ -3,6 +3,7 @@
 ```{r, echo=FALSE}
 colorize <- function(x, txtcolor, boxcolor) {
   if (knitr::is_latex_output()) {
+    if (substr(x,1,1) == "#") {x <- paste("\\",x, sep="")}
     sprintf("\\colorbox[HTML]{%s}{\\textcolor[HTML]{%s}{%s}}", boxcolor, txtcolor, x)
   } else if (knitr::is_html_output()) {
     sprintf("<span style='padding-top: 10px; 
@@ -419,6 +420,6 @@ Consider other methods to provide status discrimination. Whatever other methods 
   [21009]: media/21/image9.png {width="5.249305555555556in" height="2.680609142607174in"}
   [21010]: media/21/image13.png {width="4.004861111111111in" height="5.342361111111111in"}
   [bar-graphs]: media/21/bar-graphs.png
-  [hollow-pointer]: media/21/hollow-pointer.png
+  [hollow-pointer]: media/21/hollow-pointers.png
   [preflight]: media/21/basic-fte-sa.png
   [safety]: media/21/fte-safety-monitoring.png

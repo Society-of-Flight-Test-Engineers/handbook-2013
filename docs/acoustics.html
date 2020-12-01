@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>13 Acoustics | Flight Test Engineering Reference Handbook</title>
   <meta name="description" content="13 Acoustics | Flight Test Engineering Reference Handbook" />
-  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="13 Acoustics | Flight Test Engineering Reference Handbook" />
   <meta property="og:type" content="book" />
@@ -33,7 +33,7 @@
   
 <link rel="prev" href="fixed-wing-performance-standardization.html"/>
 <link rel="next" href="electromagnetic-compatibility.html"/>
-<script src="libs/header-attrs-2.2/header-attrs.js"></script>
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -51,6 +51,8 @@
 
 
 
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 
 
 
@@ -772,39 +774,33 @@
 </tbody>
 </table>
 <p>where</p>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 r &amp;= \text{distance from source}\\
 Q &amp;= \text{directivity index of source}\\
 R &amp;= \text{room constant}\\
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 <p><strong>Acoustic Intensity</strong></p>
 <p><span class="math display">\[
 I - \frac{\text{Imaginary} \left[ G_{yx} \left( f \right) \right]}{4 \pi \rho_0 \Delta r f} = \frac{\text{Im} \left[ G_{yx} \left( f \right) \right]}{16.25 \Delta r f} \left( \text{for air} \right)
 \]</span></p>
 <p>where</p>
-<p><span class="math display">\[
-\begin{align}
-\rho_0 &amp;= \text{fluid density} = 1.293 \frac{\text{kg}}{\text{m^3}} \text{ for air}\\
+<p><span class="math display">\[\begin{align}
+\rho_0 &amp;= \text{fluid density} = 1.293 \frac{\text{kg}}{\text{m}^3} \text{ for air}\\
 \Delta r &amp;= \text{microphone spacing (meters)}\\
-f &amp;= \text{frequency}\\
-\end{align}
-\]</span></p>
+f &amp;= \text{frequency}
+\end{align}\]</span></p>
 <p><strong>Intensity Spectrum Level (ISL)</strong></p>
 <p>Intensity level of a sound contained within a band 1 <span class="math inline">\(\text{Hz}\)</span> wide</p>
 <p><span class="math display">\[
 \mathrm{ISL} = 10 \log \frac{I}{I_0 \Delta f} = \mathrm{IL} - 10 \log \Delta f \left( \text{dB} \right)
 \]</span></p>
 <p>where</p>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 f &amp;= \text{center frequency of band} \\
 I &amp;= \text{sound intensity} \left( \frac{\text{watts}}{\text{m}^2} \right) \\
 I_0 &amp;= 10^{-12} \frac{\text{watt}}{\text{m}^2} \text{reference intensity} \\
 \Delta f &amp;= \text{bandwidth} \left( \text{Hz} \right) \\
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 </div>
 <div id="acoustic-weighting-curves" class="section level2" number="13.4">
 <h2><span class="header-section-number">13.4</span> Acoustic Weighting Curves</h2>
@@ -1394,7 +1390,7 @@ I_0 &amp;= 10^{-12} \frac{\text{watt}}{\text{m}^2} \text{reference intensity} \\
 <div class="footnotes">
 <hr />
 <ol start="11">
-<li id="fn11"><p>Common octaves include, in <span class="math inline">\(\text{kHz}\)</span> <span class="math display">\[\begin{align} 0.0375&amp;-0.0750\\0.075&amp;-0.15\\0.15&amp;-0.30\\0.30&amp;-0.60\\0.6&amp;-1.2\\1.2&amp;-2.4\\2.4&amp;-4.8\\4.8&amp;-9.6\end{align} \]</span><a href="acoustics.html#fnref11" class="footnote-back">↩︎</a></p></li>
+<li id="fn11"><p>Common octaves include, in <span class="math inline">\(\text{kHz}\)</span> <span class="math display">\[\begin{align} 0.0375&amp;-0.0750\\0.075&amp;-0.15\\0.15&amp;-0.30\\0.30&amp;-0.60\\0.6&amp;-1.2\\1.2&amp;-2.4\\2.4&amp;-4.8\\4.8&amp;-9.6\end{align}\]</span><a href="acoustics.html#fnref11" class="footnote-back">↩︎</a></p></li>
 <li id="fn12"><p>The <span class="math inline">\(\mathrm{SPL}\)</span> contained within a band <span class="math inline">\(1 \text{ Hz}\)</span> wide<a href="acoustics.html#fnref12" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>

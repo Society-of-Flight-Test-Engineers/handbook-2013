@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>11 Propellers | Flight Test Engineering Reference Handbook</title>
   <meta name="description" content="11 Propellers | Flight Test Engineering Reference Handbook" />
-  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="11 Propellers | Flight Test Engineering Reference Handbook" />
   <meta property="og:type" content="book" />
@@ -33,7 +33,7 @@
   
 <link rel="prev" href="reciprocating-engines.html"/>
 <link rel="next" href="fixed-wing-performance-standardization.html"/>
-<script src="libs/header-attrs-2.2/header-attrs.js"></script>
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -51,6 +51,8 @@
 
 
 
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 
 
 
@@ -814,15 +816,13 @@ V_R = \sqrt{V_T^2 + \left( 2 \pi r n \right)^2}
 <h2><span class="header-section-number">11.3</span> Propeller Coefficients</h2>
 <p>Integrating lift and drag along a blade gives the thrust, <span class="math inline">\(T\)</span>, and torque, <span class="math inline">\(Q\)</span>.
 Multiply by number of blades, <span class="math inline">\(B\)</span>, to determine total <span class="math inline">\(T\)</span> and <span class="math inline">\(Q\)</span>.</p>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 T &amp;= qB \int_{R_1}^{R_2} \frac{c}{\sin^2 \phi} \left( C_L \cos \phi - C_D \sin \phi \right) dr \\
 Q &amp;= qB \int_{R_1}^{R_2} \frac{cr}{\sin^2 \phi} \left( C_L \sin \phi - C_D \cos \phi \right) dr \\
 \text{Thrust Coefficient, } C_T &amp;\equiv \frac{T}{\rho n^2 D^4} \\
 \text{Torque Coefficient, } C_Q &amp;\equiv \frac{Q}{\rho n^2 D^5} \\
 \text{Power Coefficient, } C_P &amp;\equiv \frac{P}{\rho n^3 D^5} = \frac{Q \times \omega}{\rho n^3 D^5} = \frac{Q \times 2 \pi n}{\rho n^3 D^5} = 2 \pi \frac{Q}{\rho n^2 D^5} = 2 \pi C_Q \\
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 <p>Typical effect of advance ratio on thrust and torque coefficients</p>
 <p><img src="media/11/image13.png" style="width:4.49931in;height:3.62431in" /></p>
 </div>
@@ -933,12 +933,10 @@ T = \frac{\eta_{\text{comp}} \mathrm{SHP}}{V_T} = \frac{326 \eta_{\text{comp}} \
 <li>Trim the aircraft at test <span class="math inline">\(\text{RPM}\)</span>, <span class="math inline">\(V_T\)</span> , &amp; altitude. Note <span class="math inline">\(\mathrm{SHP}\)</span> required.</li>
 <li>Repeat above test with drag device and load cell attached. Note the power requirement change, <span class="math inline">\(\Delta \mathrm{SHP}\)</span>, and load cell drag, <span class="math inline">\(\Delta D\)</span>.</li>
 </ul>
-<p><span class="math display">\[
-\begin{align}
+<p><span class="math display">\[\begin{align}
 \eta_p \cdot \mathrm{BHP}_{\mathrm{AC}} &amp;= \frac{V_T}{550}D \\
 \eta_p \cdot \mathrm{BHP}_{\mathrm{AC} + \Delta D} &amp;= \frac{V_T}{550} \left(D + \Delta D \right) \\
-\end{align}
-\]</span></p>
+\end{align}\]</span></p>
 <p><img src="media/11/image34.png" style="width:4.37431in;height:1.75in" /></p>
 <ul>
 <li>Calculate aircraft drag and prop efficiency as</li>
